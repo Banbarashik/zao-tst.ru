@@ -1,6 +1,11 @@
+import { cn } from "@/lib/utils";
+
 export default function ProductParagraph({
   children,
-  ...props
-}: { children: React.ReactNode } & React.ComponentProps<"p">) {
-  return <p className={props.className + " text-[17px]"}>{children}</p>;
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return <p className={cn("text-[17px]", className)}>{children}</p>;
 }
