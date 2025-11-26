@@ -162,6 +162,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ],
     },
     {
+      url: `${SITE_URL}/kalorifer-par`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+      images: [
+        `${pathToImgFolders.generalPages}/kalorifer_par_2.png`,
+        `${pathToImgFolders.generalPages}/kalorifer_par_3_4.png`,
+        `${pathToImgFolders.generalPages}/par_kalorifer_3.png`,
+        `${pathToImgFolders.generalPages}/par_kalorifer_4.png`,
+        `${pathToImgFolders.generalPages}/agregat_par.png`,
+        `${pathToImgFolders.generalPages}/par_agregat.png`,
+      ],
+    },
+    {
       url: `${SITE_URL}/kalorifery-ksk`,
       lastModified: new Date(),
       changeFrequency: "monthly",
