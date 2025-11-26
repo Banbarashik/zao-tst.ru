@@ -17,22 +17,34 @@ const kaloriferyCategories = [
   {
     name: "Калориферы КПСк",
     url: "/kalorifery-kpsk",
-    img: "/img/produkciya/kalorifery/kalorifer_kpsk.png",
+    img: {
+      url: "/img/produkciya/kalorifery/kalorifer_kpsk.png",
+      alt: "Паровые калориферы КПСк",
+    },
   },
   {
     name: "Калориферы КП",
     url: "/kalorifery-kp",
-    img: "/img/produkciya/kalorifery/kalorifer_kp.png",
+    img: {
+      url: "/img/produkciya/kalorifery/kalorifer_kp.png",
+      alt: "Паровые калориферы КП",
+    },
   },
   {
     name: "Калориферы КППС КППУ",
     url: "/kalorifery-par",
-    img: "/img/produkciya/kalorifery/kalorifer_kpps_kppu.png",
+    img: {
+      url: "/img/produkciya/kalorifery/kalorifer_kpps_kppu.png",
+      alt: "Паровые калориферы КППС КППУ",
+    },
   },
   {
-    name: "Калориферы КФБ П",
+    name: "Калориферы КФБ-А П",
     url: "/kalorifery-kfb",
-    img: "/img/produkciya/kalorifery/kalorifer_kfb-p.png",
+    img: {
+      url: "/img/produkciya/kalorifery/kalorifer_kfb-p.png",
+      alt: "Паровые калориферы КФБ-А П",
+    },
   },
 ];
 

@@ -38,8 +38,8 @@ function CategoryCard({ category, className }) {
         )}
       >
         <Image
-          src={category.img}
-          alt={category.name}
+          src={category.img.url ? category.img.url : category.img}
+          alt={category.img.alt ? category.img.alt : category.name}
           width={750}
           height={750}
         />
