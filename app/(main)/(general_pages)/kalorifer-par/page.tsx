@@ -259,22 +259,22 @@ export default function KaloriferParPage() {
                 </th>
               </tr>
               <tr>
-                <th className="p-1">бар</th>
-                <th className="p-1">МПа</th>
-                <th className="p-1">°C</th>
-                <th className="p-1">
+                <th className="w-18 p-1">бар</th>
+                <th className="w-18 p-1">МПа</th>
+                <th className="w-18 p-1">°C</th>
+                <th className="w-18 p-1">
                   м<sup>3</sup>/кг
                 </th>
-                <th className="p-1">
+                <th className="w-18 p-1">
                   кг/м<sup>3</sup>
                 </th>
-                <th className="p-1">кДж/( кг•°C)</th>
-                <th className="p-1">кДж/кг</th>
-                <th className="p-1">ккал/кг</th>
-                <th className="p-1">кДж/кг</th>
-                <th className="p-1">ккал/кг</th>
-                <th className="p-1">кДж/кг</th>
-                <th className="p-1">ккал/кг</th>
+                <th className="w-18 p-1">кДж/( кг•°C)</th>
+                <th className="w-18 p-1">кДж/кг</th>
+                <th className="w-18 p-1">ккал/кг</th>
+                <th className="w-18 p-1">кДж/кг</th>
+                <th className="w-18 p-1">ккал/кг</th>
+                <th className="w-18 p-1">кДж/кг</th>
+                <th className="w-18 p-1">ккал/кг</th>
               </tr>
             </thead>
             <tbody>
@@ -310,7 +310,7 @@ export default function KaloriferParPage() {
             теплообмен и снижает коэффициент теплопередачи.
           </ProductParagraph>
         </section>
-        <section className="text-[#5a769a]">
+        <section className="space-y-1 text-[#5a769a]">
           <Heading lvl={3} text="Перегретый пар" />
           <ProductParagraph className="text-base">
             Перегретый пар – это пар, который имеет более высокую температуру,
@@ -363,7 +363,7 @@ export default function KaloriferParPage() {
         </div>
       </section>
 
-      <section>
+      <section className="space-y-1">
         <Heading lvl={2} text="Работа парового калорифера" />
         <ProductParagraph>
           Установка калорифера осуществляется таким образом, чтобы
