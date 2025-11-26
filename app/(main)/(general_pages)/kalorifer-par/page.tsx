@@ -5,7 +5,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Паровые воздухонагреватели",
+  title: "Паровые калориферы",
   description:
     "Паровой калорифер для нагрева воздуха. Принцип работы паровоздушного теплообменника, модели паровых калориферов с теплоносителем насыщенный и перегретый пар",
   keywords:
@@ -53,8 +53,8 @@ export default function KaloriferParPage() {
           <div className="relative aspect-1000/650 w-full">
             <Image
               src="/img/general_pages/kalorifer_par_3_4.png"
-              alt="Конструкция парового воздухонагревателя"
-              title="Паровые трехрядные и четырехрядные калориферы"
+              alt="Конструкция паровоздушного калорифера"
+              title="Паровой калорифер трехрядный и четырехрядный"
               fill
             />
           </div>
@@ -107,16 +107,16 @@ export default function KaloriferParPage() {
           <div className="relative aspect-1000/650 w-full">
             <Image
               src="/img/general_pages/par_kalorifer_3.png"
-              alt="Работа парового биметаллического воздухонагревателя"
-              title="Паровой воздухонагреватель"
+              alt="Воздухонагреватель с теплоносителем пар"
+              title="Паровой воздухонагреватель биметаллический"
               fill
             />
           </div>
           <div className="relative aspect-1000/650 w-full">
             <Image
               src="/img/general_pages/par_kalorifer_4.png"
-              alt="Теплопередача парового калорифера"
-              title="Паровой теплообменник"
+              alt="Теплообменник одноходовой"
+              title="Паровой теплообменник оребренный"
               fill
             />
           </div>
