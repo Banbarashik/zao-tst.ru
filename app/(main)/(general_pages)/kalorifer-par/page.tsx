@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import Image from "next/image";
+import CategoryCards from "@/components/categoryCards";
 
 export const metadata: Metadata = {
   title: "Паровые калориферы",
@@ -11,6 +12,29 @@ export const metadata: Metadata = {
   keywords:
     "паровой калорифер,паровой воздухонагреватель,паровой теплообменник,паровоздушный калорифер,паровой калорифер принцип работы,паровой калорифер устройство,паровой калорифер,паровой калорифер поверхность нагрева,работа парового калорифера,модели паровых калориферов",
 };
+
+const kaloriferyCategories = [
+  {
+    name: "Калориферы КПСк",
+    url: "/kalorifery-kpsk",
+    img: "/img/produkciya/kalorifery/kalorifer_kpsk.png",
+  },
+  {
+    name: "Калориферы КП",
+    url: "/kalorifery-kp",
+    img: "/img/produkciya/kalorifery/kalorifer_kp.png",
+  },
+  {
+    name: "Калориферы КППС КППУ",
+    url: "/kalorifery-par",
+    img: "/img/produkciya/kalorifery/kalorifer_kpps_kppu.png",
+  },
+  {
+    name: "Калориферы КФБ П",
+    url: "/kalorifery-kfb",
+    img: "/img/produkciya/kalorifery/kalorifer_kfb-p.png",
+  },
+];
 
 // prettier-ignore
 const tableRows = [
@@ -394,17 +418,23 @@ export default function KaloriferParPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="space-y-6">
         <Heading lvl={2} text="Модели паровых калориферов" />
         <ProductParagraph>
           На предприятии ООО Т.С.Т. выпускаются паровоздушные биметаллические
           калориферы четырех серий, спроектированных и рассчитанных на широкий
           диапазон производительности и мощности, температур наружного воздуха и
-          водяного пара, условий эксплуатации. Паровые оребренные
-          воздухонагреватели от завода отличает относительная простота в
-          техническом обслуживании, довольно высокая надежность, скорость
-          восстановления работоспособного состояния при повреждении. На базе
-          теплообменников этого вида изготавливаются сборные
+          водяного пара, условий эксплуатации.
+        </ProductParagraph>
+        <CategoryCards
+          categories={kaloriferyCategories}
+          cardClassName="2xl:text-sm xl:px-3"
+        />
+        <ProductParagraph>
+          Паровые оребренные воздухонагреватели от завода отличает относительная
+          простота в техническом обслуживании, довольно высокая надежность,
+          скорость восстановления работоспособного состояния при повреждении. На
+          базе теплообменников этого вида изготавливаются сборные
           воздушно-отопительные агрегаты, включающие в себя паровой калорифер и
           вентилятор, установленные на несущей раме.
         </ProductParagraph>
