@@ -38,52 +38,64 @@ export default function KaloriferParPage() {
       <Heading lvl={1} text="Паровой калорифер" />
 
       <section className="space-y-6">
-        <table>
-          <thead>
-            <tr>
-              <th colSpan={12}>
-                Свойства насыщенного водяного пара в зависимости от давления
-              </th>
-            </tr>
-            <tr>
-              <th>Абсолютное давление</th>
-              <th>Температура</th>
-              <th>Удельный объем</th>
-              <th>Плотность</th>
-              <th>Теплоемкость</th>
-              <th colSpan={2}>Удельная энтальпия воды</th>
-              <th colSpan={2}>Скрытая теплота парообразования</th>
-              <th colSpan={2}>Полная теплота пара</th>
-            </tr>
-            <tr>
-              <th>бар</th>
-              <th>МПа</th>
-              <th>°C</th>
-              <th>
-                м<sup>3</sup>/кг
-              </th>
-              <th>
-                кг/м<sup>3</sup>
-              </th>
-              <th>кДж/( кг•°C)</th>
-              <th>кДж/кг</th>
-              <th>ккал/кг</th>
-              <th>кДж/кг</th>
-              <th>ккал/кг</th>
-              <th>кДж/кг</th>
-              <th>ккал/кг</th>
-            </tr>
-          </thead>
-          <tbody>
-            {tableRows.map((tr, idx) => (
-              <tr key={idx}>
-                {tr.map((td, idx) => (
-                  <td key={idx}>{td}</td>
-                ))}
+        <div className="w-full overflow-x-auto">
+          <table className="w-full min-w-231 xl:min-w-auto">
+            <thead>
+              <tr>
+                <th className="p-1 uppercase" colSpan={12}>
+                  Свойства насыщенного водяного пара в зависимости от давления
+                </th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+              <tr>
+                <th className="p-1" colSpan={2}>
+                  Абсолютное давление
+                </th>
+                <th className="p-1">Температура</th>
+                <th className="p-1">Удельный объем</th>
+                <th className="p-1">Плотность</th>
+                <th className="p-1">Теплоемкость</th>
+                <th className="p-1" colSpan={2}>
+                  Удельная энтальпия воды
+                </th>
+                <th className="p-1" colSpan={2}>
+                  Скрытая теплота парообразования
+                </th>
+                <th className="p-1" colSpan={2}>
+                  Полная теплота пара
+                </th>
+              </tr>
+              <tr>
+                <th className="p-1">бар</th>
+                <th className="p-1">МПа</th>
+                <th className="p-1">°C</th>
+                <th className="p-1">
+                  м<sup>3</sup>/кг
+                </th>
+                <th className="p-1">
+                  кг/м<sup>3</sup>
+                </th>
+                <th className="p-1">кДж/( кг•°C)</th>
+                <th className="p-1">кДж/кг</th>
+                <th className="p-1">ккал/кг</th>
+                <th className="p-1">кДж/кг</th>
+                <th className="p-1">ккал/кг</th>
+                <th className="p-1">кДж/кг</th>
+                <th className="p-1">ккал/кг</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tableRows.map((tr, idx) => (
+                <tr key={idx}>
+                  {tr.map((td, idx) => (
+                    <td key={idx} className="p-0.5">
+                      {td}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
         <Heading lvl={2} text="Принцип работы парового калорифера" />
         <ProductParagraph>
