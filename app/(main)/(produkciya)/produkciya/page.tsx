@@ -38,6 +38,7 @@ const produkciyaCategories = [
     img: "/img/produkciya/vozduchonagrevatelnye_ustanovki.png",
   },
 ];
+
 const linkButtons = [
   {
     name: "Калориферы",

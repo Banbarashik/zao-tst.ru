@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
-import Image from "next/image";
 import CategoryCards from "@/components/categoryCards";
+import LinkButtonsBlock from "@/components/linkButtonsBlock";
 
 export const metadata: Metadata = {
   title: "Калориферы. Производство",
@@ -58,6 +59,13 @@ const kaloriferyCategories = [
       img: "/img/produkciya/kalorifery/kalorifer_kfb-p.png",
     },
   ],
+];
+
+const linkButtons = [
+  {
+    name: "Паровой калорифер",
+    url: "/kalorifer-par",
+  },
 ];
 
 export default function KaloriferyPage() {
@@ -121,7 +129,7 @@ export default function KaloriferyPage() {
 
       <section>
         <Heading lvl={2} text="Виды калориферов" />
-        <ProductParagraph>
+        <ProductParagraph className="mb-4">
           Калориферы изготавливаются в одноходовом для пара и многоходовом для
           воды исполнении. В первом случае теплообменники устанавливаются в
           вертикальном положении, теплоноситель проходит по трубкам параллельно
@@ -129,6 +137,9 @@ export default function KaloriferyPage() {
           собой многократное последовательное движение теплоносителя; калориферы
           размещаются с горизонтальным расположением нагревательных элементов.
         </ProductParagraph>
+        <div className="w-1/2">
+          <LinkButtonsBlock buttons={linkButtons} />
+        </div>
       </section>
 
       {/* Секция "Типы калориферов" с подсекциями */}
