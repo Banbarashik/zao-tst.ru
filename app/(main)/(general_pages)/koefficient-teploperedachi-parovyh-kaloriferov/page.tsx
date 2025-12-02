@@ -139,104 +139,65 @@ const rowsAdj = {
   4: "четырехрядных",
 };
 
+function renderTable(products: any[], tableKey: "kpsk" | "kp") {
+  if (!products || products.length === 0) return null;
+  const { rows, series } = products[0];
+
+  return (
+    <table key={`${tableKey}-${series}-${rows}`}>
+      <thead>
+        <tr>
+          <th colSpan={15}>
+            КОЭФФИЦИЕНТЫ ТЕПЛОПЕРЕДАЧИ {rowsAdj[rows]} ПАРОВЫХ КАЛОРИФЕРОВ{" "}
+            {`${series} ${rows}`}, (Вт/(м2•°С)
+          </th>
+        </tr>
+        <tr>
+          <th rowSpan={2}>КАЛОРИФЕРЫ {`${series} ${rows}`}</th>
+          <th rowSpan={2}>Длина теплоотдающего элемента (в свету), м</th>
+          <th colSpan={13}>
+            Массовая скорость движения воздуха во фронтальном сечении{" "}
+            {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н, кг/м2с
+          </th>
+        </tr>
+        <tr>
+          {airMovementMassVelocity.map((v) => (
+            <th key={v}>{v}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {products.map((p, i) => (
+          <tr key={p.shortName + i}>
+            <td>{p.shortName}</td>
+            <td>{heatTransferElemLength[i]}</td>
+            {tableValues[tableKey][rows][i].map((v: any, j: number) => (
+              <td key={j}>{String(v)}</td>
+            ))}
+          </tr>
+        ))}
+        <tr>
+          <td colSpan={2}>АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ, ПА</td>
+          {tableValues[tableKey][rows][products.length].map(
+            (v: any, i: number) => (
+              <td key={i}>{String(v)}</td>
+            ),
+          )}
+        </tr>
+      </tbody>
+    </table>
+  );
+}
+
 export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
   return (
     <>
-      {[kpsk2, kpsk3, kpsk4].map(function (kpsk) {
-        const { rows, series } = kpsk[0];
+      {renderTable(kpsk2, "kpsk")}
+      {renderTable(kpsk3, "kpsk")}
+      {renderTable(kpsk4, "kpsk")}
 
-        return (
-          <table>
-            <thead>
-              <tr>
-                <th colSpan={15}>
-                  КОЭФФИЦИЕНТЫ ТЕПЛОПЕРЕДАЧИ {rowsAdj[rows]} ПАРОВЫХ КАЛОРИФЕРОВ{" "}
-                  {`${series} ${rows}`}, (Вт/(м2•°С)
-                </th>
-              </tr>
-              <tr>
-                <th rowSpan={2}>КАЛОРИФЕРЫ {`${series} ${rows}`}</th>
-                <th rowSpan={2}>Длина теплоотдающего элемента (в свету), м</th>
-                <th colSpan={13}>
-                  Массовая скорость движения воздуха во фронтальном сечении{" "}
-                  {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н,
-                  кг/м2с
-                </th>
-              </tr>
-              <tr>
-                {airMovementMassVelocity.map((v) => (
-                  <th>{v}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {kpsk.map((p, i) => (
-                <tr>
-                  <td>{p.shortName}</td>
-                  <td>{heatTransferElemLength[i]}</td>
-                  {tableValues.kpsk[rows][i].map((v) => (
-                    <td>{v}</td>
-                  ))}
-                </tr>
-              ))}
-              <tr>
-                <td colSpan={2}>АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ, ПА</td>
-                {tableValues.kpsk[rows][kpsk.length].map((v) => (
-                  <td>{v}</td>
-                ))}
-              </tr>
-            </tbody>
-          </table>
-        );
-      })}
-
-      {[kp3, kp4].map(function (kp) {
-        const { rows, series } = kp[0];
-
-        return (
-          <table>
-            <thead>
-              <tr>
-                <th colSpan={15}>
-                  КОЭФФИЦИЕНТЫ ТЕПЛОПЕРЕДАЧИ {rowsAdj[rows]} ПАРОВЫХ КАЛОРИФЕРОВ{" "}
-                  {`${series} ${rows}`}, (Вт/(м2•°С)
-                </th>
-              </tr>
-              <tr>
-                <th rowSpan={2}>КАЛОРИФЕРЫ {`${series} ${rows}`}</th>
-                <th rowSpan={2}>Длина теплоотдающего элемента (в свету), м</th>
-                <th colSpan={13}>
-                  Массовая скорость движения воздуха во фронтальном сечении{" "}
-                  {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н,
-                  кг/м2с
-                </th>
-              </tr>
-              <tr>
-                {airMovementMassVelocity.map((v) => (
-                  <th>{v}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {kp.map((p, i) => (
-                <tr>
-                  <td>{p.shortName}</td>
-                  <td>{heatTransferElemLength[i]}</td>
-                  {tableValues.kp[rows][i].map((v) => (
-                    <td>{v}</td>
-                  ))}
-                </tr>
-              ))}
-              <tr>
-                <td colSpan={2}>АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ, ПА</td>
-                {tableValues.kp[rows][kp.length].map((v) => (
-                  <td>{v}</td>
-                ))}
-              </tr>
-            </tbody>
-          </table>
-        );
-      })}
+      {renderTable(kp3, "kp")}
+      {renderTable(kp4, "kp")}
 
       <Heading lvl={1} text="Коэффициент теплопередачи парового калорифера" />
 
