@@ -120,24 +120,29 @@ const tableValues = {
   }
 };
 
-const kpsk = productData
-  .filter((p) => p.categories.includes("kpsk"))
-  .sort((a, b) => sortProducts(a.name, b.name));
-const kpsk2 = kpsk.filter((p) => p.rows == 2);
-const kpsk3 = kpsk.filter((p) => p.rows == 3);
-const kpsk4 = kpsk.filter((p) => p.rows == 4);
-
-const kp = productData
-  .filter((p) => p.categories.includes("kp"))
-  .sort((a, b) => sortProducts(a.name, b.name));
-const kp3 = kp.filter((p) => p.rows == 3);
-const kp4 = kp.filter((p) => p.rows == 4);
-
 const rowsAdj = {
   2: "двухрядных",
   3: "трехрядных",
   4: "четырехрядных",
 };
+
+// replaced repetitive product filtering with a small helper + config
+const getSeriesProducts = (category: string) =>
+  productData
+    .filter(
+      (p) => p.categories?.includes(category) && typeof p.rows === "number",
+    )
+    .sort((a, b) => sortProducts(a.name, b.name));
+
+const seriesConfigs: {
+  tableKey: "kpsk" | "kp";
+  category: string;
+  rows: number[];
+}[] = [
+  { tableKey: "kpsk", category: "kpsk", rows: [2, 3, 4] },
+  { tableKey: "kp", category: "kp", rows: [3, 4] },
+  // add more series here, e.g. { tableKey: "kfb", category: "kfb", rows: [3,4] }
+];
 
 function renderTable(products: any[], tableKey: "kpsk" | "kp") {
   if (!products || products.length === 0) return null;
@@ -190,6 +195,16 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp") {
 }
 
 export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
+  // build table elements dynamically using the small config above
+  const tables = seriesConfigs.flatMap((cfg) =>
+    cfg.rows.map((r) => {
+      const products = getSeriesProducts(cfg.category).filter(
+        (p) => p.rows === r,
+      );
+      return renderTable(products, cfg.tableKey);
+    }),
+  );
+
   return (
     <>
       <Heading lvl={1} text="Коэффициент теплопередачи парового калорифера" />
@@ -370,11 +385,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </section>
       </section>
 
-      {renderTable(kpsk2, "kpsk")}
-      {renderTable(kpsk3, "kpsk")}
-      {renderTable(kpsk4, "kpsk")}
-      {renderTable(kp3, "kpsk")}
-      {renderTable(kp4, "kpsk")}
+      {/* render all tables generated above */}
+      {tables}
     </>
   );
 }
