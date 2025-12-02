@@ -192,33 +192,65 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp") {
 export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
   return (
     <>
-      {renderTable(kpsk2, "kpsk")}
-      {renderTable(kpsk3, "kpsk")}
-      {renderTable(kpsk4, "kpsk")}
-
-      {renderTable(kp3, "kp")}
-      {renderTable(kp4, "kp")}
-
       <Heading lvl={1} text="Коэффициент теплопередачи парового калорифера" />
 
-      <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-        <div className="relative aspect-1000/650 w-full">
-          <Image
-            src="/img/general_pages/kalorifer_par_teploperedacha.png"
-            alt="Расчет коэффициента теплопередачи паровых теплообменников"
-            title="Паровой калорифер коэффициент теплопередачи"
-            fill
-          />
+      <section className="space-y-6">
+        <Heading
+          lvl={2}
+          text="Коэффициент теплопередачи калориферов КПСК КП КФБ-А"
+        />
+        <div className="space-y-1">
+          <ProductParagraph>
+            Коэффициент теплопередачи паровых калориферов есть показатель
+            интенсивности переноса тепловой энергии от греющего теплоносителя,
+            водяного пара, нагреваемому теплоносителю, воздуху, через
+            разделяющие их стенки трубчатых элементов со спирально-накатным
+            оребрением. Значение коэффициента теплопередачи устанавливает, какое
+            количество теплоты будет передано за единицу времени через один
+            квадратный метр площади поверхности теплообмена паровоздушного
+            воздухонагревателя при разности температур между теплоносителями в
+            один градус.
+          </ProductParagraph>
+          <ProductParagraph>
+            Процесс теплопередачи в паровом биметаллическом теплообменнике серии
+            КПСк, КП, КФБ-А П включает несколько последовательно протекающих
+            стадий:
+          </ProductParagraph>
+          <ul>
+            <li>
+              - конденсирующийся водяной пар отдает тепловую энергию внутренним
+              стенкам несущих стальных трубок;
+            </li>
+            <li>
+              - теплота распространяется по всему сечению трубок и по
+              алюминиевой оболочке с винтовыми накатными ребрами за счет
+              теплопроводности;
+            </li>
+            <li>
+              - нагретая оребренная поверхность передает тепло более холодному
+              воздуху конвективным путем.
+            </li>
+          </ul>
         </div>
-        <div className="relative aspect-1000/650 w-full">
-          <Image
-            src="/img/general_pages/kalorifer_par_soprotivlenie.png"
-            alt="Аэродинамическое сопротивление калориферов КПСк2 КПСк3 КПСк4"
-            title="Аэродинамическое сопротивление паровых калориферов"
-            fill
-          />
+        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <div className="relative aspect-1000/650 w-full">
+            <Image
+              src="/img/general_pages/kalorifer_par_teploperedacha.png"
+              alt="Расчет коэффициента теплопередачи паровых теплообменников"
+              title="Паровой калорифер коэффициент теплопередачи"
+              fill
+            />
+          </div>
+          <div className="relative aspect-1000/650 w-full">
+            <Image
+              src="/img/general_pages/kalorifer_par_soprotivlenie.png"
+              alt="Аэродинамическое сопротивление калориферов КПСк2 КПСк3 КПСк4"
+              title="Аэродинамическое сопротивление паровых калориферов"
+              fill
+            />
+          </div>
         </div>
-      </div>
+      </section>
 
       <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
         <div className="relative aspect-1000/650 w-full">
