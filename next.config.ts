@@ -62,11 +62,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/koefficient-teploperedachi-parovyh-kaloriferov",
-        destination: "/kalorifery-par#anchor1",
-        permanent: true,
-      },
-      {
         source: "/raschet-online-elektricheskih-kaloriferov",
         destination: "/elektronagrevateli#anchor1",
         permanent: true,
@@ -78,21 +73,6 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/raschet-online-vodianyh-kaloriferov",
-        destination: "/kalorifery-voda#anchor1",
-        permanent: true,
-      },
-      {
-        source: "/raschet-podbor-kaloriferov",
-        destination: "/kalorifery-voda#anchor1",
-        permanent: true,
-      },
-      {
-        source: "/koefficient-teploperedachi-kaloriferov",
-        destination: "/kalorifery-voda#anchor1",
-        permanent: true,
-      },
-      {
-        source: "/gidravlicheskoe-soprotivlenie-kaloriferov",
         destination: "/kalorifery-voda#anchor1",
         permanent: true,
       },
@@ -133,11 +113,6 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/podbor-raschet-kaloriferov",
-        destination: "/kalorifery-par",
-        permanent: false,
-      },
-      {
-        source: "/koefficient-teploperedachi-parovyh-kaloriferov",
         destination: "/kalorifery-par",
         permanent: false,
       },
