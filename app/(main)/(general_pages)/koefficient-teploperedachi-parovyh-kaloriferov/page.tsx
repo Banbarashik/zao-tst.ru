@@ -8,6 +8,7 @@ import Image from "next/image";
 import CategoryCards from "@/components/categoryCards";
 import { sortProducts } from "@/lib/utils";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Коэффициент теплопередачи паровых калориферов",
@@ -16,6 +17,106 @@ export const metadata: Metadata = {
   keywords:
     "коэффициент теплопередачи парового калорифера,коэффициент теплопередачи парового воздухонагревателя,коэффициент теплопередачи парового теплообменника,расчет коэффициента теплопередачи парового калорифера,формула коэффициента теплопередачи парового калорифера,аэродинамическое сопротивление парового калорифера,расчет аэродинамического сопротивления парового калорифера,формула аэродинамического сопротивления парового калорифера,коэффициент теплопередачи калориферов кпск,аэродинамическое сопротивление калориферов кпск",
 };
+
+interface CoefficientsRow {
+  modelName: string;
+  A: string | number;
+  n: string | number;
+  r: string | number;
+}
+
+interface CoefficientsTableConfig {
+  title: string;
+  rows: CoefficientsRow[];
+}
+
+const coefficientsConfigs: CoefficientsTableConfig[] = [
+  {
+    title:
+      "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА КОЭФФИЦИЕНТА ТЕПЛОПЕРЕДАЧИ ПАРОВЫХ КАЛОРИФЕРОВ КПСК",
+    rows: [
+      {
+        modelName: "Калорифер КПСк2 двухрядная модель",
+        A: 34.3,
+        n: 0.357,
+        r: -0.072,
+      },
+      {
+        modelName: "Калорифер КПСк3 трехрядная модель",
+        A: 30.3,
+        n: 0.405,
+        r: -0.066,
+      },
+      {
+        modelName: "Калорифер КПСк4 четырехрядная модель",
+        A: 26.1,
+        n: 0.476,
+        r: -0.036,
+      },
+    ],
+  },
+  {
+    title:
+      "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА КОЭФФИЦИЕНТА ТЕПЛОПЕРЕДАЧИ ПАРОВЫХ КАЛОРИФЕРОВ КП И КФБ-А П",
+    rows: [
+      {
+        modelName: "Калорифер КП3 Калорифер КФБ A3 трехрядная модель",
+        A: 43.5,
+        n: 0.431,
+        r: -0.072,
+      },
+      {
+        modelName: "Калорифер КП4 Калорифер КФБ A4 четырехрядная модель",
+        A: 37.2,
+        n: 0.452,
+        r: -0.063,
+      },
+    ],
+  },
+];
+
+function renderCoefficientsTable(config: CoefficientsTableConfig) {
+  return (
+    <table key={config.title} className="w-full border-collapse border">
+      <thead>
+        <tr>
+          <th
+            colSpan={config.rows[0] ? 10 : 1}
+            className="border p-2 text-center font-bold"
+          >
+            {config.title}
+          </th>
+        </tr>
+        <tr>
+          {config.rows.map((row) => (
+            <React.Fragment key={row.modelName}>
+              <th className="border p-2 text-center text-sm">
+                {row.modelName}
+              </th>
+              <th className="border p-2 text-center text-sm">A</th>
+              <th className="border p-2 text-center text-sm">п</th>
+              <th className="border p-2 text-center text-sm">г</th>
+            </React.Fragment>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {config.rows.map((row) => (
+            <React.Fragment key={row.modelName}>
+              <td className="border p-2 text-center text-sm">
+                {row.modelName}
+              </td>
+              <td className="border p-2 text-center text-sm">{row.A}</td>
+              <td className="border p-2 text-center text-sm">{row.n}</td>
+              <td className="border p-2 text-center text-sm">{row.r}</td>
+            </React.Fragment>
+          ))}
+        </tr>
+      </tbody>
+    </table>
+  );
+}
 
 const heatTransferElemLength = [
   "0.530",
