@@ -156,21 +156,6 @@ function renderCoefficientsTable(config: CoefficientsTableConfig) {
   );
 }
 
-const heatTransferElemLength = [
-  "0.530",
-  "0.655",
-  "0.780",
-  "0.905",
-  "1.155",
-  "0.530",
-  "0.655",
-  "0.780",
-  "0.905",
-  "1.155",
-  "1.655",
-  "1.655",
-];
-
 const airMovementMassVelocity = [
   "1.5",
   "2.0",
@@ -308,18 +293,63 @@ const getSeriesProducts = (category: string) =>
     )
     .sort((a, b) => sortProducts(a.name, b.name));
 
+const heatTransferElemLength = {
+  kpsk: [
+    "0.530",
+    "0.655",
+    "0.780",
+    "0.905",
+    "1.155",
+    "0.530",
+    "0.655",
+    "0.780",
+    "0.905",
+    "1.155",
+    "1.655",
+    "1.655",
+  ],
+  kp: ["0.530", "0.655", "0.780", "0.905", "1.155", "1.655", "1.655"],
+  kfb: [
+    "0.560",
+    "0.560",
+    "0.710",
+    "0.710",
+    "0.860",
+    "0.860",
+    "1.010",
+    "1.010",
+    "1.160",
+    "1.160",
+    "1.310",
+    "1.310",
+    "1.460",
+  ],
+};
+
 const seriesConfigs: {
   tableKey: "kpsk" | "kp" | "kfb";
   category: string;
   rows: number[];
 }[] = [
-  { tableKey: "kpsk", category: "kpsk", rows: [2, 3, 4] },
-  { tableKey: "kp", category: "kp", rows: [3, 4] },
-  { tableKey: "kfb", category: "kfb-a-p", rows: [3, 4] },
+  {
+    tableKey: "kpsk",
+    category: "kpsk",
+    rows: [2, 3, 4],
+  },
+  {
+    tableKey: "kp",
+    category: "kp",
+    rows: [3, 4],
+  },
+  {
+    tableKey: "kfb",
+    category: "kfb-a-p",
+    rows: [3, 4],
+  },
   // add more series here, e.g. { tableKey: "kfb", category: "kfb", rows: [3,4] }
 ];
 
-function renderTable(products: any[], tableKey: "kpsk" | "kp") {
+function renderTable(products: any[], tableKey: "kpsk" | "kp" | "kfb") {
   if (!products || products.length === 0) return null;
   const { rows, series } = products[0];
 
@@ -367,7 +397,7 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp") {
             {products.map((p, i) => (
               <tr key={p.shortName + i}>
                 <td>{p.shortName}</td>
-                <td>{heatTransferElemLength[i]}</td>
+                <td>{heatTransferElemLength[tableKey][i]}</td>
                 {tableValues[tableKey][rows][i].map((v: any, j: number) => (
                   <td key={j}>{String(v)}</td>
                 ))}
