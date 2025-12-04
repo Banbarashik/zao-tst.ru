@@ -150,48 +150,55 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp") {
   const { rows, series } = products[0];
 
   return (
-    <table key={`${tableKey}-${series}-${rows}`}>
-      <thead>
-        <tr>
-          <th colSpan={15}>
-            КОЭФФИЦИЕНТЫ ТЕПЛОПЕРЕДАЧИ {rowsAdj[rows]} ПАРОВЫХ КАЛОРИФЕРОВ{" "}
-            {`${series} ${rows}`}, (Вт/(м2•°С)
-          </th>
-        </tr>
-        <tr>
-          <th rowSpan={2}>КАЛОРИФЕРЫ {`${series} ${rows}`}</th>
-          <th rowSpan={2}>Длина теплоотдающего элемента (в свету), м</th>
-          <th colSpan={13}>
-            Массовая скорость движения воздуха во фронтальном сечении{" "}
-            {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н, кг/м2с
-          </th>
-        </tr>
-        <tr>
-          {airMovementMassVelocity.map((v) => (
-            <th key={v}>{v}</th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {products.map((p, i) => (
-          <tr key={p.shortName + i}>
-            <td>{p.shortName}</td>
-            <td>{heatTransferElemLength[i]}</td>
-            {tableValues[tableKey][rows][i].map((v: any, j: number) => (
-              <td key={j}>{String(v)}</td>
+    <>
+      <Heading
+        lvl={3}
+        text={`Таблица коэффициентов теплопередачи и аэродинамического сопротивления калориферов ${series}${rows} ${rowsAdj[rows]}`}
+        className="text-[#5a769a]"
+      />
+      <table key={`${tableKey}-${series}-${rows}`}>
+        <thead>
+          <tr>
+            <th colSpan={15}>
+              КОЭФФИЦИЕНТЫ ТЕПЛОПЕРЕДАЧИ {rowsAdj[rows]} ПАРОВЫХ КАЛОРИФЕРОВ{" "}
+              {`${series} ${rows}`}, (Вт/(м2•°С)
+            </th>
+          </tr>
+          <tr>
+            <th rowSpan={2}>КАЛОРИФЕРЫ {`${series} ${rows}`}</th>
+            <th rowSpan={2}>Длина теплоотдающего элемента (в свету), м</th>
+            <th colSpan={13}>
+              Массовая скорость движения воздуха во фронтальном сечении{" "}
+              {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н, кг/м2с
+            </th>
+          </tr>
+          <tr>
+            {airMovementMassVelocity.map((v) => (
+              <th key={v}>{v}</th>
             ))}
           </tr>
-        ))}
-        <tr>
-          <td colSpan={2}>АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ, ПА</td>
-          {tableValues[tableKey][rows][products.length].map(
-            (v: any, i: number) => (
-              <td key={i}>{String(v)}</td>
-            ),
-          )}
-        </tr>
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {products.map((p, i) => (
+            <tr key={p.shortName + i}>
+              <td>{p.shortName}</td>
+              <td>{heatTransferElemLength[i]}</td>
+              {tableValues[tableKey][rows][i].map((v: any, j: number) => (
+                <td key={j}>{String(v)}</td>
+              ))}
+            </tr>
+          ))}
+          <tr>
+            <td colSpan={2}>АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ, ПА</td>
+            {tableValues[tableKey][rows][products.length].map(
+              (v: any, i: number) => (
+                <td key={i}>{String(v)}</td>
+              ),
+            )}
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 }
 
@@ -525,7 +532,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           </li>
           <li>
             1.160 – длина теплоотдающего элемента КФБ-10 А4 по табличным данным,
-            м{" "}
+            м
           </li>
           <li>
             0.452 – значение из таблицы, выбранное для четырехрядных калориферов
@@ -577,10 +584,109 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </li>
           </ul>
         </ProductParagraph>
+        <ProductParagraph>Пример расчета 4</ProductParagraph>
+        <ProductParagraph>
+          Подсчитать аэродинамическое сопротивление парового калорифера КПСк 2-6
+          при массовой скорости воздуха в фронтальном сечении 5.3 кг/м
+          <sup>2</sup>•с.
+        </ProductParagraph>
+        <ProductParagraph className="text-2xl font-bold">
+          ΔP = 4.23 • 5.3<sup>1.832</sup> = 4.23 • 21.23 = 89.80
+        </ProductParagraph>
+        <ul>
+          <li>ΔP – аэродинамическое сопротивление, Па;</li>
+          <li>
+            4.23 – значение из таблицы, выбранное для двухрядных калориферов
+            КПСк;
+          </li>
+          <li>
+            5.3 – принятая массовая скорость воздуха в фронтальном сечении, кг/м
+            <sup>2</sup>•с;
+          </li>
+          <li>
+            1.832 – значение из таблицы, выбранное для двухрядных калориферов
+            КПСк.
+          </li>
+        </ul>
+        <ProductParagraph>Пример расчета 5</ProductParagraph>
+        <ProductParagraph>
+          Вычислить аэродинамическое сопротивление парового калорифера КП 307
+          при массовой скорости воздуха в фронтальном сечении 3.6 кг/м
+          <sup>2</sup>•с.
+        </ProductParagraph>
+        <ProductParagraph className="text-2xl font-bold">
+          ΔP = 6.37 • 3.6<sup>1.864</sup> = 6.37 • 10.89 = 69.37
+        </ProductParagraph>
+        <ul>
+          <li>ΔP – аэродинамическое сопротивление, Па;</li>
+          <li>
+            4.23 – значение из таблицы, выбранное для трехрядных калориферов КП;
+          </li>
+          <li>
+            3.6 – принятая массовая скорость воздуха в фронтальном сечении, кг/м
+            <sup>2</sup>•с;
+          </li>
+          <li>
+            1.864 – значение из таблицы, выбранное для трехрядных калориферов
+            КП.
+          </li>
+        </ul>
+        <ProductParagraph>Пример расчета 6</ProductParagraph>
+        <ProductParagraph>
+          Рассчитать аэродинамическое сопротивление парового калорифера КФБ-12
+          А4 при массовой скорости воздуха в фронтальном сечении 7.2 кг/м
+          <sup>2</sup>•с.
+        </ProductParagraph>
+        <ProductParagraph className="text-2xl font-bold">
+          ΔP = 8.67 • 7.2<sup>1.848</sup> = 8.67 • 38.40 = 332.93
+        </ProductParagraph>
+        <ul>
+          <li>ΔP – аэродинамическое сопротивление, Па;</li>
+          <li>
+            8.67 – значение из таблицы, выбранное для четырехрядных калориферов
+            КФБ-А;
+          </li>
+          <li>
+            7.2 – принятая массовая скорость воздуха в фронтальном сечении, кг/м
+            <sup>2</sup>•с;
+          </li>
+          <li>
+            1.848 – значение из таблицы, выбранное для четырехрядных калориферов
+            КФБ-А.
+          </li>
+        </ul>
       </section>
 
-      {/* render all tables generated above */}
-      {tables}
+      <section>
+        <Heading
+          lvl={2}
+          text="Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов"
+        />
+        <ProductParagraph>
+          В таблицах представлены значения коэффициентов теплопередачи паровых
+          калориферов всех серий, выпускаемых предприятием ООО Т.С.Т. Отдельной
+          строкой выложены данные по аэродинамическому сопротивлению.
+        </ProductParagraph>
+        <ProductParagraph>Пример расчета 7</ProductParagraph>
+        <ProductParagraph>
+          Рассчитать коэффициент теплопередачи и аэродинамическое сопротивление
+          парового воздухоподогревателя КПСк 4-10 с учетом массовой скорости в
+          набегающем потоке 5.2 кг/м<sup>2</sup>•с. В таблице для четырехрядных
+          калориферов КПСк4 находим теплообменник КПСк 4-10. На линии
+          расположения показателей значений теплопередачи, останавливаемся на
+          пересечении нужной нам массовой скорости. Отмечаем значения
+          коэффициента теплопередачи и аэродинамического сопротивления в нижней
+          строке. При необходимости корректируем показатели. Коэффициент
+          теплопередачи калорифера КПСк 4-10 при массовой скорости во
+          фронтальном сечении 5.2 кг/м<sup>2</sup>•с составляет 56.90 Вт/(м
+          <sup>2</sup>•°C), аэродинамическое сопротивление - 177.4 Па.
+        </ProductParagraph>
+      </section>
+
+      <section className="space-y-6">
+        {/* render all tables generated above */}
+        {tables}
+      </section>
     </>
   );
 }
