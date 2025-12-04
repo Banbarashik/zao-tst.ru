@@ -115,33 +115,37 @@ function renderCoefficientsTable(config: CoefficientsTableConfig) {
     <table key={config.title} className="w-full border-collapse border">
       <thead>
         <tr>
-          <th colSpan={12} className="border p-2 text-center font-bold">
+          <th
+            colSpan={config.rows.length * (config.columns.length + 1)}
+            className="border p-2 text-center font-bold"
+          >
             {config.title}
           </th>
-        </tr>
-        <tr>
-          {config.rows.map((row) => (
-            <React.Fragment key={row.modelName}>
-              <th className="border p-2 text-center text-sm">
-                {row.modelName}
-              </th>
-              <th className="border p-2 text-center text-sm">A</th>
-              <th className="border p-2 text-center text-sm">п</th>
-              <th className="border p-2 text-center text-sm">г</th>
-            </React.Fragment>
-          ))}
         </tr>
       </thead>
       <tbody>
         <tr>
           {config.rows.map((row) => (
             <React.Fragment key={row.modelName}>
-              <td className="border p-2 text-center text-sm">
+              <th rowSpan={2} className="border p-2 text-center text-sm">
                 {row.modelName}
-              </td>
-              <td className="border p-2 text-center text-sm">{row.A}</td>
-              <td className="border p-2 text-center text-sm">{row.n}</td>
-              <td className="border p-2 text-center text-sm">{row.r}</td>
+              </th>
+              {config.columns.map((col) => (
+                <th key={col} className="border p-2 text-center text-sm">
+                  {col}
+                </th>
+              ))}
+            </React.Fragment>
+          ))}
+        </tr>
+        <tr>
+          {config.rows.map((row) => (
+            <React.Fragment key={row.modelName}>
+              {config.columns.map((col) => (
+                <td key={col} className="border p-2 text-center text-sm">
+                  {row[col] ?? ""}
+                </td>
+              ))}
             </React.Fragment>
           ))}
         </tr>
