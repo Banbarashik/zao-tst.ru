@@ -20,20 +20,24 @@ export const metadata: Metadata = {
 
 interface CoefficientsRow {
   modelName: string;
-  A: string | number;
-  n: string | number;
-  r: string | number;
+  A?: string | number;
+  n?: string | number;
+  r?: string | number;
+  B?: string | number;
+  m?: string | number;
 }
 
 interface CoefficientsTableConfig {
   title: string;
+  columns: ("A" | "n" | "r" | "B" | "m")[]; // specify which columns to render
   rows: CoefficientsRow[];
 }
 
-const coefficientsConfigs: CoefficientsTableConfig[] = [
+const coefficientsConfigsHeatTransfer: CoefficientsTableConfig[] = [
   {
     title:
       "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА КОЭФФИЦИЕНТА ТЕПЛОПЕРЕДАЧИ ПАРОВЫХ КАЛОРИФЕРОВ КПСК",
+    columns: ["A", "n", "r"],
     rows: [
       {
         modelName: "Калорифер КПСк2 двухрядная модель",
@@ -58,6 +62,7 @@ const coefficientsConfigs: CoefficientsTableConfig[] = [
   {
     title:
       "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА КОЭФФИЦИЕНТА ТЕПЛОПЕРЕДАЧИ ПАРОВЫХ КАЛОРИФЕРОВ КП И КФБ-А П",
+    columns: ["A", "n", "r"],
     rows: [
       {
         modelName: "Калорифер КП3 Калорифер КФБ A3 трехрядная модель",
@@ -75,15 +80,42 @@ const coefficientsConfigs: CoefficientsTableConfig[] = [
   },
 ];
 
+const coefficientsConfigsAerodynamic: CoefficientsTableConfig[] = [
+  {
+    title:
+      "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА АЭРОДИНАМИЧЕСКОГО СОПРОТИВЛЕНИЯ ПАРОВЫХ КАЛОРИФЕРОВ КПСК",
+    columns: ["B", "m"],
+    rows: [
+      { modelName: "Калорифер КПСк2 двухрядная модель", B: 4.23, m: 1.832 },
+      { modelName: "Калорифер КПСк3 трехрядная модель", B: 6.05, m: 1.832 },
+      { modelName: "Калорифер КПСк4 четырехрядная модель", B: 8.63, m: 1.833 },
+    ],
+  },
+  {
+    title:
+      "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА АЭРОДИНАМИЧЕСКОГО СОПРОТИВЛЕНИЯ ПАРОВЫХ КАЛОРИФЕРОВ КП И КФБ-А П",
+    columns: ["B", "m"],
+    rows: [
+      {
+        modelName: "Калорифер КП3 Калорифер КФБ A3 трехрядная модель",
+        B: 6.37,
+        m: 1.864,
+      },
+      {
+        modelName: "Калорифер КП4 Калорифер КФБ A4 четырехрядная модель",
+        B: 8.67,
+        m: 1.848,
+      },
+    ],
+  },
+];
+
 function renderCoefficientsTable(config: CoefficientsTableConfig) {
   return (
     <table key={config.title} className="w-full border-collapse border">
       <thead>
         <tr>
-          <th
-            colSpan={config.rows[0] ? 10 : 1}
-            className="border p-2 text-center font-bold"
-          >
+          <th colSpan={12} className="border p-2 text-center font-bold">
             {config.title}
           </th>
         </tr>
@@ -251,7 +283,7 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp") {
   const { rows, series } = products[0];
 
   return (
-    <>
+    <React.Fragment key={products[0].id}>
       <Heading
         lvl={3}
         text={`Таблица коэффициентов теплопередачи и аэродинамического сопротивления калориферов ${series}${rows} ${rowsAdj[rows]}`}
@@ -299,7 +331,7 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp") {
           </tr>
         </tbody>
       </table>
-    </>
+    </React.Fragment>
   );
 }
 
@@ -542,6 +574,11 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             рядности воздухонагревателя.
           </li>
         </ul>
+        <div className="space-y-2">
+          {coefficientsConfigsHeatTransfer.map((config) =>
+            renderCoefficientsTable(config),
+          )}
+        </div>
         <ProductParagraph>Пример расчета 1</ProductParagraph>
         <ProductParagraph>
           Подсчитать коэффициент теплопередачи парового калорифера КПСк 3-11 при
@@ -665,26 +702,31 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </ProductParagraph>
         <ProductParagraph>
           Формула для расчета аэродинамического сопротивления парового
-          калорифера имеет вид:{" "}
+          калорифера имеет вид:
           <span className="text-2xl font-bold">
             ΔP = B • V <sup>m</sup>
           </span>
-          <ul>
-            <li>ΔP – аэродинамическое сопротивление, Па;</li>
-            <li>
-              B – значение из таблицы, принимаемое в зависимости от модели и
-              рядности воздухонагревателя;
-            </li>
-            <li>
-              V – действительная массовая скорость воздуха в фронтальном
-              сечении, кг/м²•с;
-            </li>
-            <li>
-              m – значение из таблицы, принимаемое в зависимости от модели и
-              рядности воздухонагревателя.
-            </li>
-          </ul>
         </ProductParagraph>
+        <ul>
+          <li>ΔP – аэродинамическое сопротивление, Па;</li>
+          <li>
+            B – значение из таблицы, принимаемое в зависимости от модели и
+            рядности воздухонагревателя;
+          </li>
+          <li>
+            V – действительная массовая скорость воздуха в фронтальном сечении,
+            кг/м²•с;
+          </li>
+          <li>
+            m – значение из таблицы, принимаемое в зависимости от модели и
+            рядности воздухонагревателя.
+          </li>
+        </ul>
+        <div className="space-y-2">
+          {coefficientsConfigsAerodynamic.map((config) =>
+            renderCoefficientsTable(config),
+          )}
+        </div>
         <ProductParagraph>Пример расчета 4</ProductParagraph>
         <ProductParagraph>
           Подсчитать аэродинамическое сопротивление парового калорифера КПСк 2-6
