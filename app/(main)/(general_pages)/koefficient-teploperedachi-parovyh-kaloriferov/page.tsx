@@ -112,45 +112,47 @@ const coefficientsConfigsAerodynamic: CoefficientsTableConfig[] = [
 
 function renderCoefficientsTable(config: CoefficientsTableConfig) {
   return (
-    <table key={config.title} className="w-full border-collapse border">
-      <thead>
-        <tr>
-          <th
-            colSpan={config.rows.length * (config.columns.length + 1)}
-            className="border p-2 text-center font-bold"
-          >
-            {config.title}
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          {config.rows.map((row) => (
-            <React.Fragment key={row.modelName}>
-              <th rowSpan={2} className="border p-2 text-center text-sm">
-                {row.modelName}
-              </th>
-              {config.columns.map((col) => (
-                <th key={col} className="border p-2 text-center text-sm">
-                  {col}
+    <div className="mb-2 w-full overflow-x-auto">
+      <table key={config.title} className="w-full min-w-231 xl:min-w-auto">
+        <thead>
+          <tr>
+            <th
+              colSpan={config.rows.length * (config.columns.length + 1)}
+              className="border p-2 text-center font-bold"
+            >
+              {config.title}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            {config.rows.map((row) => (
+              <React.Fragment key={row.modelName}>
+                <th rowSpan={2} className="border p-2 text-center text-sm">
+                  {row.modelName}
                 </th>
-              ))}
-            </React.Fragment>
-          ))}
-        </tr>
-        <tr>
-          {config.rows.map((row) => (
-            <React.Fragment key={row.modelName}>
-              {config.columns.map((col) => (
-                <td key={col} className="border p-2 text-center text-sm">
-                  {row[col] ?? ""}
-                </td>
-              ))}
-            </React.Fragment>
-          ))}
-        </tr>
-      </tbody>
-    </table>
+                {config.columns.map((col) => (
+                  <th key={col} className="border p-2 text-center text-sm">
+                    {col}
+                  </th>
+                ))}
+              </React.Fragment>
+            ))}
+          </tr>
+          <tr>
+            {config.rows.map((row) => (
+              <React.Fragment key={row.modelName}>
+                {config.columns.map((col) => (
+                  <td key={col} className="border p-2 text-center text-sm">
+                    {row[col] ?? ""}
+                  </td>
+                ))}
+              </React.Fragment>
+            ))}
+          </tr>
+        </tbody>
+      </table>
+    </div>
   );
 }
 
@@ -293,48 +295,53 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp") {
         text={`Таблица коэффициентов теплопередачи и аэродинамического сопротивления калориферов ${series}${rows} ${rowsAdj[rows]}`}
         className="text-[#5a769a]"
       />
-      <table key={`${tableKey}-${series}-${rows}`}>
-        <thead>
-          <tr>
-            <th colSpan={15}>
-              КОЭФФИЦИЕНТЫ ТЕПЛОПЕРЕДАЧИ {rowsAdj[rows]} ПАРОВЫХ КАЛОРИФЕРОВ{" "}
-              {`${series} ${rows}`}, (Вт/(м2•°С)
-            </th>
-          </tr>
-          <tr>
-            <th rowSpan={2}>КАЛОРИФЕРЫ {`${series} ${rows}`}</th>
-            <th rowSpan={2}>Длина теплоотдающего элемента (в свету), м</th>
-            <th colSpan={13}>
-              Массовая скорость движения воздуха во фронтальном сечении{" "}
-              {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н, кг/м2с
-            </th>
-          </tr>
-          <tr>
-            {airMovementMassVelocity.map((v) => (
-              <th key={v}>{v}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {products.map((p, i) => (
-            <tr key={p.shortName + i}>
-              <td>{p.shortName}</td>
-              <td>{heatTransferElemLength[i]}</td>
-              {tableValues[tableKey][rows][i].map((v: any, j: number) => (
-                <td key={j}>{String(v)}</td>
+      <div className="mb-2 w-full overflow-x-auto">
+        <table
+          key={`${tableKey}-${series}-${rows}`}
+          className="w-full min-w-231 xl:min-w-auto"
+        >
+          <thead>
+            <tr>
+              <th colSpan={15}>
+                КОЭФФИЦИЕНТЫ ТЕПЛОПЕРЕДАЧИ {rowsAdj[rows]} ПАРОВЫХ КАЛОРИФЕРОВ{" "}
+                {`${series} ${rows}`}, (Вт/(м2•°С)
+              </th>
+            </tr>
+            <tr>
+              <th rowSpan={2}>КАЛОРИФЕРЫ {`${series} ${rows}`}</th>
+              <th rowSpan={2}>Длина теплоотдающего элемента (в свету), м</th>
+              <th colSpan={13}>
+                Массовая скорость движения воздуха во фронтальном сечении{" "}
+                {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н, кг/м2с
+              </th>
+            </tr>
+            <tr>
+              {airMovementMassVelocity.map((v) => (
+                <th key={v}>{v}</th>
               ))}
             </tr>
-          ))}
-          <tr>
-            <td colSpan={2}>АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ, ПА</td>
-            {tableValues[tableKey][rows][products.length].map(
-              (v: any, i: number) => (
-                <td key={i}>{String(v)}</td>
-              ),
-            )}
-          </tr>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {products.map((p, i) => (
+              <tr key={p.shortName + i}>
+                <td>{p.shortName}</td>
+                <td>{heatTransferElemLength[i]}</td>
+                {tableValues[tableKey][rows][i].map((v: any, j: number) => (
+                  <td key={j}>{String(v)}</td>
+                ))}
+              </tr>
+            ))}
+            <tr>
+              <td colSpan={2}>АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ, ПА</td>
+              {tableValues[tableKey][rows][products.length].map(
+                (v: any, i: number) => (
+                  <td key={i}>{String(v)}</td>
+                ),
+              )}
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </React.Fragment>
   );
 }
