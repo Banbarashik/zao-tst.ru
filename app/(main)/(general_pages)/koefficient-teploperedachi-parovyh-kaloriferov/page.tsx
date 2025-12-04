@@ -112,7 +112,7 @@ const coefficientsConfigsAerodynamic: CoefficientsTableConfig[] = [
 
 function renderCoefficientsTable(config: CoefficientsTableConfig) {
   return (
-    <div key={config.title} className="mb-2 w-full overflow-x-auto">
+    <div key={config.title} className="w-full overflow-x-auto">
       <table className="w-full min-w-231 xl:min-w-auto">
         <thead>
           <tr>
@@ -128,11 +128,11 @@ function renderCoefficientsTable(config: CoefficientsTableConfig) {
           <tr>
             {config.rows.map((row) => (
               <React.Fragment key={row.modelName}>
-                <th rowSpan={2} className="border p-2 text-center text-sm">
+                <th rowSpan={2} className="border py-2 text-center text-sm">
                   {row.modelName}
                 </th>
                 {config.columns.map((col) => (
-                  <th key={col} className="border p-2 text-center text-sm">
+                  <th key={col} className="border py-2 text-center text-sm">
                     {col}
                   </th>
                 ))}
@@ -358,9 +358,9 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp" | "kfb") {
       <Heading
         lvl={3}
         text={`Таблица коэффициентов теплопередачи и аэродинамического сопротивления калориферов ${series}${rows} ${rowsAdj[rows]}`}
-        className="text-[#5a769a]"
+        className="text-[#496486]"
       />
-      <div className="mb-2 w-full overflow-x-auto">
+      <div className="w-full overflow-x-auto">
         <table
           key={`${tableKey}-${series}-${rows}`}
           className="w-full min-w-231 xl:min-w-auto"
@@ -442,39 +442,35 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           lvl={2}
           text="Коэффициент теплопередачи калориферов КПСК КП КФБ-А"
         />
-        <div className="space-y-1">
-          <ProductParagraph>
-            Коэффициент теплопередачи паровых калориферов есть показатель
-            интенсивности переноса тепловой энергии от греющего теплоносителя,
-            водяного пара, нагреваемому теплоносителю, воздуху, через
-            разделяющие их стенки трубчатых элементов со спирально-накатным
-            оребрением. Значение коэффициента теплопередачи устанавливает, какое
-            количество теплоты будет передано за единицу времени через один
-            квадратный метр площади поверхности теплообмена паровоздушного
-            воздухонагревателя при разности температур между теплоносителями в
-            один градус.
-          </ProductParagraph>
-          <ProductParagraph>
-            Процесс теплопередачи в паровом биметаллическом теплообменнике серии
-            КПСк, КП, КФБ-А П включает несколько последовательно протекающих
-            стадий:
-          </ProductParagraph>
-          <ul>
-            <li>
-              - конденсирующийся водяной пар отдает тепловую энергию внутренним
-              стенкам несущих стальных трубок;
-            </li>
-            <li>
-              - теплота распространяется по всему сечению трубок и по
-              алюминиевой оболочке с винтовыми накатными ребрами за счет
-              теплопроводности;
-            </li>
-            <li>
-              - нагретая оребренная поверхность передает тепло более холодному
-              воздуху конвективным путем.
-            </li>
-          </ul>
-        </div>
+        <ProductParagraph className="mb-2">
+          Коэффициент теплопередачи паровых калориферов есть показатель
+          интенсивности переноса тепловой энергии от греющего теплоносителя,
+          водяного пара, нагреваемому теплоносителю, воздуху, через разделяющие
+          их стенки трубчатых элементов со спирально-накатным оребрением.
+          Значение коэффициента теплопередачи устанавливает, какое количество
+          теплоты будет передано за единицу времени через один квадратный метр
+          площади поверхности теплообмена паровоздушного воздухонагревателя при
+          разности температур между теплоносителями в один градус.
+        </ProductParagraph>
+        <ProductParagraph className="mb-0">
+          Процесс теплопередачи в паровом биметаллическом теплообменнике серии
+          КПСк, КП, КФБ-А П включает несколько последовательно протекающих
+          стадий:
+        </ProductParagraph>
+        <ul>
+          <li>
+            - конденсирующийся водяной пар отдает тепловую энергию внутренним
+            стенкам несущих стальных трубок;
+          </li>
+          <li>
+            - теплота распространяется по всему сечению трубок и по алюминиевой
+            оболочке с винтовыми накатными ребрами за счет теплопроводности;
+          </li>
+          <li>
+            - нагретая оребренная поверхность передает тепло более холодному
+            воздуху конвективным путем.
+          </li>
+        </ul>
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
@@ -493,7 +489,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             />
           </div>
         </div>
-        <section className="text-[#5a769a]">
+        <section className="text-[#496486]">
           <Heading lvl={3} text="Теплоотдача парового калорифера" />
           <div className="mb-6 space-y-1">
             <ProductParagraph className="text-base">
@@ -555,7 +551,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </div>
           </div>
         </section>
-        <section className="text-[#5a769a]">
+        <section className="text-[#496486]">
           <Heading
             lvl={3}
             text="Интенсификация теплоотдачи парового калорифера"
@@ -641,7 +637,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             K = A • V <sup>n</sup> • L <sup>r</sup>
           </span>
         </ProductParagraph>
-        <ul>
+        <ul className="mb-6">
           <li>K – коэффициент теплопередачи, Вт/(м2•°C);</li>
           <li>
             A – значение из таблицы, принимаемое в зависимости от модели и
@@ -661,113 +657,128 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             рядности воздухонагревателя.
           </li>
         </ul>
-        <div className="space-y-2">
+        <div className="mb-6 space-y-4">
           {coefficientsConfigsHeatTransfer.map((config) =>
             renderCoefficientsTable(config),
           )}
         </div>
-        <ProductParagraph>Пример расчета 1</ProductParagraph>
-        <ProductParagraph>
-          Подсчитать коэффициент теплопередачи парового калорифера КПСк 3-11 при
-          массовой скорости воздуха в фронтальном сечении 4.4 кг/м<sup>2</sup>
-          •с.
-        </ProductParagraph>
-        <ProductParagraph className="text-2xl font-bold">
-          К = 30.3 • 4.4<sup>0.405</sup> • 1.655<sup>-0.066</sup> = 30.3 •
-          1.8222 • 0.9673 = 53.407
-        </ProductParagraph>
-        <ul>
-          <li>
-            K – коэффициент теплопередачи, Вт/(м<sup>2</sup>•°C);
-          </li>
-          <li>
-            30.3 – значение из таблицы, выбранное для трехрядных калориферов
-            КПСк;
-          </li>
-          <li>
-            4.4 – принятая массовая скорость воздуха в фронтальном сечении, кг/м
-            <sup>2</sup>•с;
-          </li>
-          <li>
-            1.655 – длина теплоотдающего элемента КПСк 3-11 по табличным данным,
-            м
-          </li>
-          <li>
-            0.405 – значение из таблицы, выбранное для трехрядных калориферов
-            КПСк;
-          </li>
-          <li>
-            -0.066 – значение из таблицы, выбранное для трехрядных калориферов
-            КПСк.
-          </li>
-        </ul>
-        <ProductParagraph>Пример расчета 2</ProductParagraph>
-        <ProductParagraph>
-          Рассчитать коэффициент теплопередачи парового калорифера КП 311 при
-          массовой скорости воздуха в фронтальном сечении 4.4 кг/м<sup>2</sup>
-          •с.
-        </ProductParagraph>
-        <ProductParagraph className="text-2xl font-bold">
-          К = 43.5 • 4.4<sup>0.431</sup> • 1.655<sup>-0.072</sup> = 43.5 •
-          1.8938 • 0.9644 = 79.448
-        </ProductParagraph>
-        <ul>
-          <li>
-            K – коэффициент теплопередачи, Вт/(м<sup>2</sup>•°C);
-          </li>
-          <li>
-            43.5 – значение из таблицы, выбранное для трехрядных калориферов КП;
-          </li>
-          <li>
-            4.4 – принятая массовая скорость воздуха в фронтальном сечении, кг/м
-            <sup>2</sup>•с;
-          </li>
-          <li>
-            1.655 – длина теплоотдающего элемента КП 311 по табличным данным, м
-          </li>
-          <li>
-            0.431 – значение из таблицы, выбранное для трехрядных калориферов
-            КП;
-          </li>
-          <li>
-            -0.072 – значение из таблицы, выбранное для трехрядных калориферов
-            КП.
-          </li>
-        </ul>
-        <ProductParagraph>Пример расчета 3</ProductParagraph>
-        <ProductParagraph>
-          Рассчитать коэффициент теплопередачи парового калорифера КФБ-10 А4 при
-          массовой скорости воздуха в фронтальном сечении 6.2 кг/м²•с.
-        </ProductParagraph>
-        <ProductParagraph className="text-2xl font-bold">
-          К = 37.2 • 6.2<sup>0.452</sup> • 1.160<sup>-0.063</sup> = 37.2 •
-          2.2812 • 0.9907 = 84.071
-        </ProductParagraph>
-        <ul>
-          <li>
-            K – коэффициент теплопередачи, Вт/(м<sup>2</sup>•°C);
-          </li>
-          <li>
-            37.2 – значение из таблицы, выбранное для четырехрядных калориферов
-            КФБ-А;
-          </li>
-          <li>
-            6.2 – принятая массовая скорость воздуха в фронтальном сечении, кг/м
-            <sup>2</sup>•с;
-          </li>
-          <li>
-            1.160 – длина теплоотдающего элемента КФБ-10 А4 по табличным данным,
-            м
-          </li>
-          <li>
-            0.452 – значение из таблицы, выбранное для четырехрядных калориферов
-            КФБ-А;
-          </li>
-          <li>
-            -0.063 – значение из таблицы, выбранное для четырехрядных
-            калориферов КФБ-А.
-          </li>
-        </ul>
+        <div className="space-y-4 text-[#6a2d2d]">
+          <div>
+            <ProductParagraph>Пример расчета 1</ProductParagraph>
+            <ProductParagraph>
+              Подсчитать коэффициент теплопередачи парового калорифера КПСк 3-11
+              при массовой скорости воздуха в фронтальном сечении 4.4 кг/м
+              <sup>2</sup>
+              •с.
+            </ProductParagraph>
+            <ProductParagraph className="text-xl font-bold">
+              К = 30.3 • 4.4<sup>0.405</sup> • 1.655<sup>-0.066</sup> = 30.3 •
+              1.8222 • 0.9673 = 53.407
+            </ProductParagraph>
+            <ul className="space-y-0.5">
+              <li>
+                K – коэффициент теплопередачи, Вт/(м<sup>2</sup>•°C);
+              </li>
+              <li>
+                30.3 – значение из таблицы, выбранное для трехрядных калориферов
+                КПСк;
+              </li>
+              <li>
+                4.4 – принятая массовая скорость воздуха в фронтальном сечении,
+                кг/м
+                <sup>2</sup>•с;
+              </li>
+              <li>
+                1.655 – длина теплоотдающего элемента КПСк 3-11 по табличным
+                данным, м
+              </li>
+              <li>
+                0.405 – значение из таблицы, выбранное для трехрядных
+                калориферов КПСк;
+              </li>
+              <li>
+                -0.066 – значение из таблицы, выбранное для трехрядных
+                калориферов КПСк.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ProductParagraph>Пример расчета 2</ProductParagraph>
+            <ProductParagraph>
+              Рассчитать коэффициент теплопередачи парового калорифера КП 311
+              при массовой скорости воздуха в фронтальном сечении 4.4 кг/м
+              <sup>2</sup>
+              •с.
+            </ProductParagraph>
+            <ProductParagraph className="text-xl font-bold">
+              К = 43.5 • 4.4<sup>0.431</sup> • 1.655<sup>-0.072</sup> = 43.5 •
+              1.8938 • 0.9644 = 79.448
+            </ProductParagraph>
+            <ul>
+              <li>
+                K – коэффициент теплопередачи, Вт/(м<sup>2</sup>•°C);
+              </li>
+              <li>
+                43.5 – значение из таблицы, выбранное для трехрядных калориферов
+                КП;
+              </li>
+              <li>
+                4.4 – принятая массовая скорость воздуха в фронтальном сечении,
+                кг/м
+                <sup>2</sup>•с;
+              </li>
+              <li>
+                1.655 – длина теплоотдающего элемента КП 311 по табличным
+                данным, м
+              </li>
+              <li>
+                0.431 – значение из таблицы, выбранное для трехрядных
+                калориферов КП;
+              </li>
+              <li>
+                -0.072 – значение из таблицы, выбранное для трехрядных
+                калориферов КП.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ProductParagraph>Пример расчета 3</ProductParagraph>
+            <ProductParagraph>
+              Рассчитать коэффициент теплопередачи парового калорифера КФБ-10 А4
+              при массовой скорости воздуха в фронтальном сечении 6.2 кг/м²•с.
+            </ProductParagraph>
+            <ProductParagraph className="text-xl font-bold">
+              К = 37.2 • 6.2<sup>0.452</sup> • 1.160<sup>-0.063</sup> = 37.2 •
+              2.2812 • 0.9907 = 84.071
+            </ProductParagraph>
+            <ul>
+              <li>
+                K – коэффициент теплопередачи, Вт/(м<sup>2</sup>•°C);
+              </li>
+              <li>
+                37.2 – значение из таблицы, выбранное для четырехрядных
+                калориферов КФБ-А;
+              </li>
+              <li>
+                6.2 – принятая массовая скорость воздуха в фронтальном сечении,
+                кг/м
+                <sup>2</sup>•с;
+              </li>
+              <li>
+                1.160 – длина теплоотдающего элемента КФБ-10 А4 по табличным
+                данным, м
+              </li>
+              <li>
+                0.452 – значение из таблицы, выбранное для четырехрядных
+                калориферов КФБ-А;
+              </li>
+              <li>
+                -0.063 – значение из таблицы, выбранное для четырехрядных
+                калориферов КФБ-А.
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -789,7 +800,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </ProductParagraph>
         <ProductParagraph>
           Формула для расчета аэродинамического сопротивления парового
-          калорифера имеет вид:
+          калорифера имеет вид:{" "}
           <span className="text-2xl font-bold">
             ΔP = B • V <sup>m</sup>
           </span>
@@ -820,7 +831,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           при массовой скорости воздуха в фронтальном сечении 5.3 кг/м
           <sup>2</sup>•с.
         </ProductParagraph>
-        <ProductParagraph className="text-2xl font-bold">
+        <ProductParagraph className="text-xl font-bold">
           ΔP = 4.23 • 5.3<sup>1.832</sup> = 4.23 • 21.23 = 89.80
         </ProductParagraph>
         <ul>
@@ -844,7 +855,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           при массовой скорости воздуха в фронтальном сечении 3.6 кг/м
           <sup>2</sup>•с.
         </ProductParagraph>
-        <ProductParagraph className="text-2xl font-bold">
+        <ProductParagraph className="text-xl font-bold">
           ΔP = 6.37 • 3.6<sup>1.864</sup> = 6.37 • 10.89 = 69.37
         </ProductParagraph>
         <ul>
@@ -867,7 +878,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           А4 при массовой скорости воздуха в фронтальном сечении 7.2 кг/м
           <sup>2</sup>•с.
         </ProductParagraph>
-        <ProductParagraph className="text-2xl font-bold">
+        <ProductParagraph className="text-xl font-bold">
           ΔP = 8.67 • 7.2<sup>1.848</sup> = 8.67 • 38.40 = 332.93
         </ProductParagraph>
         <ul>
