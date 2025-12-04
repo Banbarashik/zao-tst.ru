@@ -376,11 +376,13 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp" | "kfb") {
               </th>
             </tr>
             <tr>
-              <th rowSpan={2} className="px-3.5 uppercase">
+              <th rowSpan={2} className="w-30 px-1 uppercase">
                 Калориферы {`${series} ${rows}`}
               </th>
-              <th rowSpan={2}>Длина теплоотдающего элемента (в свету), м</th>
-              <th colSpan={13} className="py-0.5">
+              <th rowSpan={2} className="w-50">
+                Длина теплоотдающего элемента (в свету), м
+              </th>
+              <th colSpan={13} className="px-4 py-0.5">
                 Массовая скорость движения воздуха во фронтальном сечении{" "}
                 {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н, кг/м2с
               </th>
