@@ -337,22 +337,29 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp") {
         >
           <thead>
             <tr>
-              <th colSpan={15}>
-                КОЭФФИЦИЕНТЫ ТЕПЛОПЕРЕДАЧИ {rowsAdj[rows]} ПАРОВЫХ КАЛОРИФЕРОВ{" "}
-                {`${series} ${rows}`}, (Вт/(м2•°С)
+              <th colSpan={15} className="py-0.5 uppercase">
+                Коэффициенты теплопередачи {rowsAdj[rows]} паровых калориферов{" "}
+                {`${series} ${rows}`},{" "}
+                <span className="normal-case">
+                  (Вт/(м<sup>2</sup>•°С)
+                </span>
               </th>
             </tr>
             <tr>
-              <th rowSpan={2}>КАЛОРИФЕРЫ {`${series} ${rows}`}</th>
+              <th rowSpan={2} className="px-3.5 uppercase">
+                Калориферы {`${series} ${rows}`}
+              </th>
               <th rowSpan={2}>Длина теплоотдающего элемента (в свету), м</th>
-              <th colSpan={13}>
+              <th colSpan={13} className="py-0.5">
                 Массовая скорость движения воздуха во фронтальном сечении{" "}
                 {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н, кг/м2с
               </th>
             </tr>
             <tr>
               {airMovementMassVelocity.map((v) => (
-                <th key={v}>{v}</th>
+                <th key={v} className="py-0.5">
+                  {v}
+                </th>
               ))}
             </tr>
           </thead>
@@ -367,7 +374,9 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp") {
               </tr>
             ))}
             <tr>
-              <td colSpan={2}>АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ, ПА</td>
+              <td colSpan={2} className="uppercase">
+                Аэродинамическое сопротивление, ПА
+              </td>
               {tableValues[tableKey][rows][products.length].map(
                 (v: any, i: number) => (
                   <td key={i}>{String(v)}</td>
