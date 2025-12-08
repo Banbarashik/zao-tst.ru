@@ -278,7 +278,7 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp" | "kfb") {
               <th rowSpan={2} className="w-50">
                 Длина теплоотдающего элемента (в свету), м
               </th>
-              <th colSpan={13} className="px-4 py-0.5">
+              <th colSpan={13} className="px-6 py-0.5">
                 Массовая скорость движения воздуха во фронтальном сечении{" "}
                 {rowsAdj[rows]} калориферов {`${series}-${rows}`}, (Vp)Н, кг/м2с
               </th>
@@ -307,7 +307,9 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp" | "kfb") {
               </td>
               {tableValues[tableKey][rows][products.length].map(
                 (v: any, i: number) => (
-                  <td key={i}>{String(v)}</td>
+                  <td key={i} className="w-12">
+                    {String(v)}
+                  </td>
                 ),
               )}
             </tr>
