@@ -245,7 +245,7 @@ const seriesConfigs: {
   // add more series here, e.g. { tableKey: "kfb", category: "kfb", rows: [3,4] }
 ];
 
-function renderTable(products: any[], tableKey: "kpsk" | "kp" | "kfb") {
+function renderTable(products, tableKey: "kpsk" | "kp" | "kfb") {
   if (!products || products.length === 0) return null;
   const { rows, series } = products[0];
 
@@ -297,7 +297,7 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp" | "kfb") {
               <tr key={p.shortName + i}>
                 <td className="pl-1 text-left">{p.shortName}</td>
                 <td>{heatTransferElemLength[tableKey][i]}</td>
-                {tableValues[tableKey][rows][i].map((v: any, j: number) => (
+                {tableValues[tableKey][rows][i].map((v, j: number) => (
                   <td key={j}>{String(v)}</td>
                 ))}
               </tr>
@@ -307,7 +307,7 @@ function renderTable(products: any[], tableKey: "kpsk" | "kp" | "kfb") {
                 Аэродинамическое сопротивление, ПА
               </td>
               {tableValues[tableKey][rows][products.length].map(
-                (v: any, i: number) => (
+                (v, i: number) => (
                   <td key={i} className="w-12">
                     {String(v)}
                   </td>
