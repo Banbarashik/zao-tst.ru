@@ -18,6 +18,40 @@ export const metadata: Metadata = {
     "коэффициент теплопередачи парового калорифера,коэффициент теплопередачи парового воздухонагревателя,коэффициент теплопередачи парового теплообменника,расчет коэффициента теплопередачи парового калорифера,формула коэффициента теплопередачи парового калорифера,аэродинамическое сопротивление парового калорифера,расчет аэродинамического сопротивления парового калорифера,формула аэродинамического сопротивления парового калорифера,коэффициент теплопередачи калориферов кпск,аэродинамическое сопротивление калориферов кпск",
 };
 
+const linkButtons = {
+  pages: [
+    {
+      name: "Калориферы КПСК",
+      url: "/kalorifery-kpsk",
+    },
+    {
+      name: "Калориферы КП",
+      url: "/kalorifery-kp",
+    },
+    {
+      name: "Калориферы КФБ-А П",
+      url: "/kalorifery-kfb",
+    },
+  ],
+  documents: [
+    {
+      name: "Каталог КПСК",
+      url: "/documents/Kalorifer_KPSK_katalog_2025.pdf",
+      openNewTab: true,
+    },
+    {
+      name: "Каталог КП",
+      url: "/documents/Kalorifer_KP_katalog_2025.pdf",
+      openNewTab: true,
+    },
+    {
+      name: "Каталог КФБ-А П",
+      url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
+      openNewTab: true,
+    },
+  ],
+};
+
 interface CoefficientsRow {
   modelName: string;
   A?: string | number;
@@ -928,6 +962,10 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         {/* render all tables generated above */}
         {tables}
       </section>
+
+      {[linkButtons.pages, linkButtons.documents].map((btns, i) => (
+        <LinkButtonsBlock key={i} buttons={btns} />
+      ))}
     </>
   );
 }
