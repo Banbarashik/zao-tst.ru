@@ -67,7 +67,7 @@ export async function generateMetadata({
   return {
     ...category.metadata,
     title: `${category.metadata.title}${page ? ` - страница ${page}` : ""}`,
-    description: `${defaultCategory.metadata.description}${page ? ` - страница ${page}` : ""}`,
+    description: `${category.metadata.description}${page ? ` - страница ${page}` : ""}`,
   };
 }
 
