@@ -4,6 +4,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import Image from "next/image";
 import CategoryCards from "@/components/categoryCards";
+import LinkButtonsBlock from "@/components/linkButtonsBlock";
 
 export const metadata: Metadata = {
   title: "Паровые калориферы",
@@ -241,6 +242,16 @@ export default function KaloriferParPage() {
           случае нижняя часть теплообменника может быть заполнена воздухом и
           конденсатом.
         </ProductParagraph>
+        <div className="w-1/2">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                url: "/koefficient-teploperedachi-parovyh-kaloriferov",
+                name: "Коэффициент теплопередачи",
+              },
+            ]}
+          />
+        </div>
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Температура и давление насыщенного пара" />
           <ProductParagraph className="text-base">
