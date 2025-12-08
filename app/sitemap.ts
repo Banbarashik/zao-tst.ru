@@ -176,6 +176,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ],
     },
     {
+      url: `${SITE_URL}/koefficient-teploperedachi-parovyh-kaloriferov`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+      images: [
+        `${pathToImgFolders.generalPages}/kalorifer_par_teploperedacha.png`,
+        `${pathToImgFolders.generalPages}/kalorifer_par_soprotivlenie.png`,
+        `${pathToImgFolders.generalPages}/par_kalorifer_teploperedacha.png`,
+        `${pathToImgFolders.generalPages}/par_kalorifer_soprotivlenie.png`,
+      ],
+    },
+    {
       url: `${SITE_URL}/kalorifery-ksk`,
       lastModified: new Date(),
       changeFrequency: "monthly",
