@@ -800,7 +800,45 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           </li>
         </ul>
         <div className="space-y-2">
-          <table></table>
+          <div className="w-full overflow-x-auto">
+            <table className="w-full min-w-231 xl:min-w-auto">
+              <thead>
+                <tr>
+                  <th colSpan={12} className="py-0.5 uppercase">
+                    Эмпирические зависимости для расчета аэродинамического
+                    сопротивления паровых калориферов КПСК
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  {[
+                    "Калорифер КПСк2 двухрядная модель",
+                    "Калорифер КПСк3 трехрядная модель",
+                    "Калорифер КПСк4 четырехрядная модель",
+                  ].map((head) => (
+                    <React.Fragment key={head}>
+                      <th rowSpan={2} className="w-40 py-1">
+                        {head}
+                      </th>
+                      {["B", "m"].map((l) => (
+                        <td key={l} className="w-14">
+                          {l}
+                        </td>
+                      ))}
+                    </React.Fragment>
+                  ))}
+                </tr>
+                <tr>
+                  {["4.23", "1.832", "6.05", "1.832", "8.63", "1.833"].map(
+                    (v, i) => (
+                      <td key={i}>{v}</td>
+                    ),
+                  )}
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <ProductParagraph>Пример расчета 4</ProductParagraph>
         <ProductParagraph>
