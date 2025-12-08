@@ -784,7 +784,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             ΔP = B • V <sup>m</sup>
           </span>
         </ProductParagraph>
-        <ul>
+        <ul className="mb-6">
           <li>ΔP – аэродинамическое сопротивление, Па;</li>
           <li>
             B – значение из таблицы, принимаемое в зависимости от модели и
@@ -799,7 +799,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             рядности воздухонагревателя.
           </li>
         </ul>
-        <div className="space-y-2">
+        <div className="mb-6 space-y-4">
+          {/* TODO make DRYer */}
           <div className="w-full overflow-x-auto">
             <table className="w-full min-w-231 xl:min-w-auto">
               <thead>
@@ -818,7 +819,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
                     "Калорифер КПСк4 четырехрядная модель",
                   ].map((head) => (
                     <React.Fragment key={head}>
-                      <th rowSpan={2} className="w-40 py-1">
+                      <th rowSpan={2} className="w-38 py-1">
                         {head}
                       </th>
                       {["B", "m"].map((l) => (
@@ -835,6 +836,42 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
                       <td key={i}>{v}</td>
                     ),
                   )}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="w-full overflow-x-auto">
+            <table className="w-full min-w-231 xl:min-w-auto">
+              <thead>
+                <tr>
+                  <th colSpan={12} className="py-0.5 uppercase">
+                    Эмпирические зависимости для расчета аэродинамического
+                    сопротивления паровых калориферов КП и КФБ-А П
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  {[
+                    "Калорифер КП3 Калорифер КФБ А3 трехрядная модель",
+                    "Калорифер КП4 Калорифер КФБ А4 четырехрядная модель",
+                  ].map((head) => (
+                    <React.Fragment key={head}>
+                      <th rowSpan={2} className="w-40 py-1">
+                        {head}
+                      </th>
+                      {["B", "m"].map((l) => (
+                        <td key={l} className="w-14">
+                          {l}
+                        </td>
+                      ))}
+                    </React.Fragment>
+                  ))}
+                </tr>
+                <tr>
+                  {["6.37", "1.864", "8.67", "1.848"].map((v, i) => (
+                    <td key={i}>{v}</td>
+                  ))}
                 </tr>
               </tbody>
             </table>
