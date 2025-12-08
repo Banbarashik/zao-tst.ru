@@ -52,144 +52,6 @@ const linkButtons = {
   ],
 };
 
-interface CoefficientsRow {
-  modelName: string;
-  A?: string | number;
-  n?: string | number;
-  r?: string | number;
-  B?: string | number;
-  m?: string | number;
-}
-
-interface CoefficientsTableConfig {
-  title: string;
-  columns: ("A" | "n" | "r" | "B" | "m")[]; // specify which columns to render
-  rows: CoefficientsRow[];
-}
-
-const coefficientsConfigsHeatTransfer: CoefficientsTableConfig[] = [
-  {
-    title:
-      "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА КОЭФФИЦИЕНТА ТЕПЛОПЕРЕДАЧИ ПАРОВЫХ КАЛОРИФЕРОВ КПСК",
-    columns: ["A", "n", "r"],
-    rows: [
-      {
-        modelName: "Калорифер КПСк2 двухрядная модель",
-        A: 34.3,
-        n: 0.357,
-        r: -0.072,
-      },
-      {
-        modelName: "Калорифер КПСк3 трехрядная модель",
-        A: 30.3,
-        n: 0.405,
-        r: -0.066,
-      },
-      {
-        modelName: "Калорифер КПСк4 четырехрядная модель",
-        A: 26.1,
-        n: 0.476,
-        r: -0.036,
-      },
-    ],
-  },
-  {
-    title:
-      "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА КОЭФФИЦИЕНТА ТЕПЛОПЕРЕДАЧИ ПАРОВЫХ КАЛОРИФЕРОВ КП И КФБ-А П",
-    columns: ["A", "n", "r"],
-    rows: [
-      {
-        modelName: "Калорифер КП3 Калорифер КФБ A3 трехрядная модель",
-        A: 43.5,
-        n: 0.431,
-        r: -0.072,
-      },
-      {
-        modelName: "Калорифер КП4 Калорифер КФБ A4 четырехрядная модель",
-        A: 37.2,
-        n: 0.452,
-        r: -0.063,
-      },
-    ],
-  },
-];
-
-const coefficientsConfigsAerodynamic: CoefficientsTableConfig[] = [
-  {
-    title:
-      "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА АЭРОДИНАМИЧЕСКОГО СОПРОТИВЛЕНИЯ ПАРОВЫХ КАЛОРИФЕРОВ КПСК",
-    columns: ["B", "m"],
-    rows: [
-      { modelName: "Калорифер КПСк2 двухрядная модель", B: 4.23, m: 1.832 },
-      { modelName: "Калорифер КПСк3 трехрядная модель", B: 6.05, m: 1.832 },
-      { modelName: "Калорифер КПСк4 четырехрядная модель", B: 8.63, m: 1.833 },
-    ],
-  },
-  {
-    title:
-      "ЭМПИРИЧЕСКИЕ ЗАВИСИМОСТИ ДЛЯ РАСЧЕТА АЭРОДИНАМИЧЕСКОГО СОПРОТИВЛЕНИЯ ПАРОВЫХ КАЛОРИФЕРОВ КП И КФБ-А П",
-    columns: ["B", "m"],
-    rows: [
-      {
-        modelName: "Калорифер КП3 Калорифер КФБ A3 трехрядная модель",
-        B: 6.37,
-        m: 1.864,
-      },
-      {
-        modelName: "Калорифер КП4 Калорифер КФБ A4 четырехрядная модель",
-        B: 8.67,
-        m: 1.848,
-      },
-    ],
-  },
-];
-
-function renderCoefficientsTable(config: CoefficientsTableConfig) {
-  return (
-    <div key={config.title} className="w-full overflow-x-auto">
-      <table className="w-full min-w-231 xl:min-w-auto">
-        <thead>
-          <tr>
-            <th
-              colSpan={config.rows.length * (config.columns.length + 1)}
-              className="border p-2 text-center font-bold"
-            >
-              {config.title}
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            {config.rows.map((row) => (
-              <React.Fragment key={row.modelName}>
-                <th rowSpan={2} className="border py-2 text-center text-sm">
-                  {row.modelName}
-                </th>
-                {config.columns.map((col) => (
-                  <th key={col} className="border py-2 text-center text-sm">
-                    {col}
-                  </th>
-                ))}
-              </React.Fragment>
-            ))}
-          </tr>
-          <tr>
-            {config.rows.map((row) => (
-              <React.Fragment key={row.modelName}>
-                {config.columns.map((col) => (
-                  <td key={col} className="border p-2 text-center text-sm">
-                    {row[col] ?? ""}
-                  </td>
-                ))}
-              </React.Fragment>
-            ))}
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
 const airMovementMassVelocity = [
   "1.5",
   "2.0",
@@ -692,9 +554,54 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           </li>
         </ul>
         <div className="mb-6 space-y-4">
-          {coefficientsConfigsHeatTransfer.map((config) =>
-            renderCoefficientsTable(config),
-          )}
+          {/* TODO make DRYer */}
+          <div className="w-full overflow-x-auto">
+            <table className="w-full min-w-231 xl:min-w-auto">
+              <thead>
+                <tr>
+                  <th colSpan={12} className="py-0.5 uppercase">
+                    Эмпирические зависимости для расчета коэффициента
+                    теплопередачи паровых калориферов КПСК
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  {[
+                    "Калорифер КПСк2 двухрядная модель",
+                    "Калорифер КПСк3 трехрядная модель",
+                    "Калорифер КПСк4 четырехрядная модель",
+                  ].map((head) => (
+                    <React.Fragment key={head}>
+                      <th rowSpan={2} className="w-40 py-1">
+                        {head}
+                      </th>
+                      {["A", "n", "r"].map((l) => (
+                        <td key={l} className="w-14">
+                          {l}
+                        </td>
+                      ))}
+                    </React.Fragment>
+                  ))}
+                </tr>
+                <tr>
+                  {[
+                    "34.3",
+                    "0.357",
+                    "-0.072",
+                    "30.3",
+                    "0.405",
+                    "-0.066",
+                    "26.1",
+                    "0.476",
+                    "-0.036",
+                  ].map((v, i) => (
+                    <td key={i}>{v}</td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div className="space-y-4 text-[#6a2d2d]">
           <div>
@@ -855,9 +762,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           </li>
         </ul>
         <div className="space-y-2">
-          {coefficientsConfigsAerodynamic.map((config) =>
-            renderCoefficientsTable(config),
-          )}
+          <table></table>
         </div>
         <ProductParagraph>Пример расчета 4</ProductParagraph>
         <ProductParagraph>
