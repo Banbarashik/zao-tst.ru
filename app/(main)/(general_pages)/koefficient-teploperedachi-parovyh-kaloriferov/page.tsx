@@ -602,6 +602,44 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               </tbody>
             </table>
           </div>
+          <div className="w-full overflow-x-auto">
+            <table className="w-full min-w-231 xl:min-w-auto">
+              <thead>
+                <tr>
+                  <th colSpan={8} className="py-0.5 uppercase">
+                    Эмпирические зависимости для расчета коэффициента
+                    теплопередачи паровых калориферов КП и КФБ-А П
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  {[
+                    "Калорифер КП3 Калорифер КФБ А3 трехрядная модель",
+                    "Калорифер КП4 Калорифер КФБ А4 четырехрядная модель",
+                  ].map((head) => (
+                    <React.Fragment key={head}>
+                      <th rowSpan={2} className="w-50 py-1">
+                        {head}
+                      </th>
+                      {["A", "n", "r"].map((l) => (
+                        <td key={l} className="w-14">
+                          {l}
+                        </td>
+                      ))}
+                    </React.Fragment>
+                  ))}
+                </tr>
+                <tr>
+                  {["43.5", "0.431", "-0.072", "37.2", "0.452", "-0.063"].map(
+                    (v, i) => (
+                      <td key={i}>{v}</td>
+                    ),
+                  )}
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div className="space-y-4 text-[#6a2d2d]">
           <div>
