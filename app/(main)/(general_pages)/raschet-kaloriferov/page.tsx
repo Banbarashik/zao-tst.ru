@@ -1,6 +1,11 @@
+import productData from "@/data/products.json";
+
+import Image from "next/image";
+
 import ProductParagraph from "@/components/catalog/productParagraph";
 import Heading from "@/components/general_pages/heading";
-import Image from "next/image";
+import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import ProductLinks from "@/components/general_pages/productLinks";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор водяных, паровых и электрических калориферов",
@@ -8,6 +13,31 @@ export const metadata: Metadata = {
     "Расчет и подбор водяных, паровых и электрических калориферов. Описание, методика и порядок расчета, запас поверхности нагрева при подборе воздухонагревателей",
   keywords:
     "расчет калориферов,подбор калориферов,расчет и подбор калориферов вентиляции,расчет и подбор приточных калориферов,расчет и подбор калориферов для приточной вентиляции,расчет и подбор калориферов приточных установок,методика расчета калориферов,температура воздуха при расчете приточных калориферов,сопротивление при расчете калориферов,запас поверхности теплообмена калориферов",
+};
+
+const pritochnyeKalorifery = productData.filter(
+  (p) =>
+    p.categories.includes("pritochny-vodiany-kalorifery") ||
+    p.categories.includes("pritochny-parovy-kalorifery"),
+);
+
+const productLinks = {
+  water: [
+    pritochnyeKalorifery.find(({ id }) => id === "kpvs-572x572"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvu-845x845"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvs-1072x1072"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvu-1163x1163"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvs-1405x1405"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvu-1572x1572"),
+  ],
+  steam: [
+    pritochnyeKalorifery.find(({ id }) => id === "kppu-572x572"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpps-614x614"),
+    pritochnyeKalorifery.find(({ id }) => id === "kppu-799x799"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpps-905x905"),
+    pritochnyeKalorifery.find(({ id }) => id === "kppu-1345x1345"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpps-1572x1572"),
+  ],
 };
 
 export default function RaschetKaloriferovPage() {
@@ -166,7 +196,7 @@ export default function RaschetKaloriferovPage() {
           lvl={2}
           text="АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ ПРИ РАСЧЕТЕ КАЛОРИФЕРОВ"
         />
-        <ProductParagraph>
+        <ProductParagraph className="mb-6">
           Запас по воздуху вводят по-разному в зависимости от схемы
           регулирования: при наличии обводного клапана его, как правило, не
           требуется, а без байпаса закладывают запас на сопротивление
@@ -177,6 +207,16 @@ export default function RaschetKaloriferovPage() {
           аэродинамическое сопротивление считают как произведение сопротивления
           одного ряда на количество рядов.
         </ProductParagraph>
+        <div className="w-1/2">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "СОПРОТИВЛЕНИЕ ПАРОВЫХ КАЛОРИФЕРОВ",
+                url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+              },
+            ]}
+          />
+        </div>
       </section>
 
       <section>
@@ -292,14 +332,22 @@ export default function RaschetKaloriferovPage() {
 
       <section>
         <Heading lvl={2} text="КАЛЬКУЛЯТОРЫ ПОДБОРА И РАСЧЕТА КАЛОРИФЕРОВ" />
-        <ProductParagraph className="mb-2">
+        <ProductParagraph className="mb-4">
           Калькуляторы подбора предназначены для расчета и поверочной оценки
           работы водяных и паровых приточных калориферов. Пользователь выбирает
           типоразмер нагревателя с приблизительной к требуемой
           производительностью по воздуху. По умолчанию установлена двухрядная
           модель, представлены трехрядный и четырехрядный теплообменники.
         </ProductParagraph>
-        <ProductParagraph>
+        <ProductLinks
+          products={productLinks.water.map((p) => ({
+            ...p,
+            name: p.shortName,
+          }))}
+          gridTemplateCols="grid-cols-[repeat(auto-fill,minmax(140px,max-content))]"
+          className="mb-4"
+        />
+        <ProductParagraph className="mb-4">
           В поля значений вносятся данные по объему нагреваемого воздуха и его
           температуре на входе и выходе, типу и параметрам теплоносителя.
           Калькулятор в режиме онлайн выдает тепловую мощность выбранного
@@ -309,6 +357,14 @@ export default function RaschetKaloriferovPage() {
           скорость в фронтальном сечении калорифера и делает вывод о
           соответствии требованиям вышеперечисленных параметров.
         </ProductParagraph>
+        <ProductLinks
+          products={productLinks.steam.map((p) => ({
+            ...p,
+            name: p.shortName,
+          }))}
+          gridTemplateCols="grid-cols-[repeat(auto-fill,minmax(140px,max-content))]"
+          className="mb-4"
+        />
         <ProductParagraph>
           Проверку можно производить и на другие эксплуатационные режимы, не
           ограничиваясь расчетной точкой. Программа поддерживает моделирование
