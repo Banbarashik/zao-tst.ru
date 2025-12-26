@@ -766,7 +766,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </div>
       </section>
 
-      <section>
+      <section id="anchor1">
         <Heading
           lvl={2}
           text="Расчет аэродинамического сопротивления парового калорифера"
