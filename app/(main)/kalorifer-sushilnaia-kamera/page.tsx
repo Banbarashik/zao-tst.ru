@@ -1,11 +1,11 @@
 import productData from "@/data/products.json";
 
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Водяные и паровые калориферы для сушильных камер",
@@ -15,32 +15,32 @@ export const metadata: Metadata = {
     "калорифер для сушильной камеры,воздухонагреватель сушильных камер,теплообменник сушильных камер,водяной калорифер для сушильной камеры,паровой калорифер для сушильной камеры,расчет калорифера для сушильной камеры,мощность калорифера для сушильной камеры,расчет калорифера сушильной камеры онлайн,паровой калорифер для сушки зерна,водяной калорифер для сушки древесины",
 };
 
+const pritochnyeKalorifery = productData.filter(
+  (p) =>
+    p.categories.includes("pritochny-vodiany-kalorifery") ||
+    p.categories.includes("pritochny-parovy-kalorifery"),
+);
+
+const productLinks = {
+  water: [
+    pritochnyeKalorifery.find(({ id }) => id === "kpvs-614x614"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvu-754x754"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvs-780x780"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvs-905x905"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvu-1072x1072"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpvs-1239x1239"),
+  ],
+  steam: [
+    pritochnyeKalorifery.find(({ id }) => id === "kppu-663x663"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpps-697x697"),
+    pritochnyeKalorifery.find(({ id }) => id === "kpps-822x822"),
+    pritochnyeKalorifery.find(({ id }) => id === "kppu-1072x1072"),
+    pritochnyeKalorifery.find(({ id }) => id === "kppu-1299x1299"),
+    pritochnyeKalorifery.find(({ id }) => id === "kppu-1481x1481"),
+  ],
+};
+
 export default function KaloriferSushilnaiaKameraPage() {
-  const pritochnyeKalorifery = productData.filter(
-    (p) =>
-      p.categories.includes("pritochny-vodiany-kalorifery") ||
-      p.categories.includes("pritochny-parovy-kalorifery"),
-  );
-
-  const productLinks = {
-    water: [
-      pritochnyeKalorifery.find(({ id }) => id === "kpvs-614x614"),
-      pritochnyeKalorifery.find(({ id }) => id === "kpvu-754x754"),
-      pritochnyeKalorifery.find(({ id }) => id === "kpvs-780x780"),
-      pritochnyeKalorifery.find(({ id }) => id === "kpvs-905x905"),
-      pritochnyeKalorifery.find(({ id }) => id === "kpvu-1072x1072"),
-      pritochnyeKalorifery.find(({ id }) => id === "kpvs-1239x1239"),
-    ],
-    steam: [
-      pritochnyeKalorifery.find(({ id }) => id === "kppu-663x663"),
-      pritochnyeKalorifery.find(({ id }) => id === "kpps-697x697"),
-      pritochnyeKalorifery.find(({ id }) => id === "kpps-822x822"),
-      pritochnyeKalorifery.find(({ id }) => id === "kppu-1072x1072"),
-      pritochnyeKalorifery.find(({ id }) => id === "kppu-1299x1299"),
-      pritochnyeKalorifery.find(({ id }) => id === "kppu-1481x1481"),
-    ],
-  };
-
   return (
     <article className="flex flex-col space-y-6">
       <Heading lvl={1} text="Калориферы для сушильных камер" />
