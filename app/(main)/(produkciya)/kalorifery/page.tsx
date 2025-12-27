@@ -61,13 +61,6 @@ const kaloriferyCategories = [
   ],
 ];
 
-const linkButtons = [
-  {
-    name: "Паровой калорифер",
-    url: "/kalorifer-par",
-  },
-];
-
 export default function KaloriferyPage() {
   return (
     <article className="flex flex-col space-y-6">
@@ -138,7 +131,14 @@ export default function KaloriferyPage() {
           размещаются с горизонтальным расположением нагревательных элементов.
         </ProductParagraph>
         <div className="w-1/2">
-          <LinkButtonsBlock buttons={linkButtons} />
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "Паровой калорифер",
+                url: "/kalorifer-par",
+              },
+            ]}
+          />
         </div>
       </section>
 
@@ -217,6 +217,17 @@ export default function KaloriferyPage() {
           </ProductParagraph>
         </section>
       </section>
+
+      <div className="w-1/2">
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Расчет и подбор калориферов",
+              url: "/raschet-kaloriferov",
+            },
+          ]}
+        />
+      </div>
     </article>
   );
 }
