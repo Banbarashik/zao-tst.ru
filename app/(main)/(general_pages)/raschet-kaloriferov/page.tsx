@@ -23,21 +23,25 @@ const pritochnyeKalorifery = productData.filter(
 
 const productLinks = {
   water: [
-    pritochnyeKalorifery.find(({ id }) => id === "kpvs-572x572"),
-    pritochnyeKalorifery.find(({ id }) => id === "kpvu-845x845"),
-    pritochnyeKalorifery.find(({ id }) => id === "kpvs-1072x1072"),
-    pritochnyeKalorifery.find(({ id }) => id === "kpvu-1163x1163"),
-    pritochnyeKalorifery.find(({ id }) => id === "kpvs-1405x1405"),
-    pritochnyeKalorifery.find(({ id }) => id === "kpvu-1572x1572"),
-  ],
+    "kpvs-572x572",
+    "kpvu-845x845",
+    "kpvs-1072x1072",
+    "kpvu-1163x1163",
+    "kpvs-1405x1405",
+    "kpvu-1572x1572",
+  ].map((id) =>
+    pritochnyeKalorifery.find(({ id: productId }) => id === productId),
+  ),
   steam: [
-    pritochnyeKalorifery.find(({ id }) => id === "kppu-572x572"),
-    pritochnyeKalorifery.find(({ id }) => id === "kpps-614x614"),
-    pritochnyeKalorifery.find(({ id }) => id === "kppu-799x799"),
-    pritochnyeKalorifery.find(({ id }) => id === "kpps-905x905"),
-    pritochnyeKalorifery.find(({ id }) => id === "kppu-1345x1345"),
-    pritochnyeKalorifery.find(({ id }) => id === "kpps-1572x1572"),
-  ],
+    "kppu-572x572",
+    "kpps-614x614",
+    "kppu-799x799",
+    "kpps-905x905",
+    "kppu-1345x1345",
+    "kpps-1572x1572",
+  ].map((id) =>
+    pritochnyeKalorifery.find(({ id: productId }) => id === productId),
+  ),
 };
 
 export default function RaschetKaloriferovPage() {
