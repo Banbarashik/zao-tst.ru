@@ -1,9 +1,10 @@
 import productData from "@/data/products.json";
 
+import type { Metadata } from "next";
 import Image from "next/image";
 
-import ProductParagraph from "@/components/catalog/productParagraph";
 import Heading from "@/components/general_pages/heading";
+import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductLinks from "@/components/general_pages/productLinks";
 
@@ -20,7 +21,6 @@ const pritochnyeKalorifery = productData.filter(
     p.categories.includes("pritochny-vodiany-kalorifery") ||
     p.categories.includes("pritochny-parovy-kalorifery"),
 );
-
 const productLinks = {
   water: [
     "kpvs-572x572",
@@ -50,7 +50,7 @@ export default function RaschetKaloriferovPage() {
       <Heading lvl={1} text="Расчет и подбор калориферов" />
 
       <section className="space-y-2">
-        <Heading lvl={2} text="РАСЧЕТ КАЛОРИФЕРОВ" />
+        <Heading lvl={2} text="Расчет калориферов" />
         <ProductParagraph>
           При расчете и подборе водяного, парового или электрического
           калорифера, проектировании приточных калориферных установок проверяют
@@ -71,7 +71,7 @@ export default function RaschetKaloriferovPage() {
       </section>
 
       <section className="space-y-2">
-        <Heading lvl={2} text="МЕТОДИКА РАСЧЕТА КАЛОРИФЕРОВ" />
+        <Heading lvl={2} text="Методика расчета калориферов" />
         <ProductParagraph>
           Методы расчета основаны на тепловом балансе и уравнениях
           теплопередачи, решаемых совместно. По смыслу баланс приравнивает
@@ -105,7 +105,7 @@ export default function RaschetKaloriferovPage() {
       </section>
 
       <section className="space-y-2">
-        <Heading lvl={2} text="ПОДБОР КАЛОРИФЕРОВ" />
+        <Heading lvl={2} text="Подбор калориферов" />
         <ProductParagraph>
           Практически для каждой задачи подбора воздухонагревателей может
           существовать несколько проектов решения. Цель расчета — найти вариант,
@@ -129,7 +129,7 @@ export default function RaschetKaloriferovPage() {
       </section>
 
       <section className="space-y-2">
-        <Heading lvl={2} text="РАСЧЕТНАЯ ТЕМПЕРАТУРА ВОЗДУХА" />
+        <Heading lvl={2} text="Расчетная температура воздуха" />
         <ProductParagraph>
           В практике калорифер может включаться в систему воздухообмена тремя
           способами: как нагреватель приточного воздуха в приточно-вытяжной
@@ -183,7 +183,7 @@ export default function RaschetKaloriferovPage() {
       <section className="space-y-2">
         <Heading
           lvl={2}
-          text="МАССОВАЯ СКОРОСТЬ ВОЗДУХА ПРИ РАСЧЕТЕ КАЛОРИФЕРОВ"
+          text="Массовая скорость воздуха при расчете калориферов"
         />
         <ProductParagraph>
           Чтобы сократить число вариантов подбора и удержать сопротивление
@@ -198,7 +198,7 @@ export default function RaschetKaloriferovPage() {
       <section className="space-y-2">
         <Heading
           lvl={2}
-          text="АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ ПРИ РАСЧЕТЕ КАЛОРИФЕРОВ"
+          text="Аэродинамическое сопротивление при расчете калориферов"
         />
         <ProductParagraph className="mb-6">
           Запас по воздуху вводят по-разному в зависимости от схемы
@@ -215,7 +215,7 @@ export default function RaschetKaloriferovPage() {
           <LinkButtonsBlock
             buttons={[
               {
-                name: "СОПРОТИВЛЕНИЕ ПАРОВЫХ КАЛОРИФЕРОВ",
+                name: "Сопротивление паровых калориферов",
                 url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
               },
             ]}
@@ -226,7 +226,7 @@ export default function RaschetKaloriferovPage() {
       <section className="space-y-2">
         <Heading
           lvl={2}
-          text="ГИДРАВЛИЧЕСКОЕ СОПРОТИВЛЕНИЕ ПРИ РАСЧЕТЕ КАЛОРИФЕРОВ"
+          text="Гидравлическое сопротивление при расчете калориферов"
         />
         <ProductParagraph>
           Запас по воздуху вводят по-разному в зависимости от схемы
@@ -253,7 +253,7 @@ export default function RaschetKaloriferovPage() {
       </section>
 
       <section className="space-y-2">
-        <Heading lvl={2} text="ПОРЯДОК РАСЧЕТА И ПОДБОРА КАЛОРИФЕРОВ" />
+        <Heading lvl={2} text="Порядок расчета и подбора калориферов" />
         <ProductParagraph>
           Подбор электрической, паровой и водяной воздухонагревательной
           установки начинается с расчета теплового потока, который нужно
@@ -309,7 +309,7 @@ export default function RaschetKaloriferovPage() {
       </section>
 
       <section className="space-y-2">
-        <Heading lvl={2} text="ЗАПАС ПОВЕРХНОСТИ ТЕПЛООБМЕНА ПРИ РАСЧЕТЕ" />
+        <Heading lvl={2} text="Запас поверхности теплообмена при расчете" />
         <ProductParagraph>
           Для калориферных установок рекомендуется закладывать запас поверхности
           нагрева относительно расчетной величины на уровне 10–20%. Такой запас
@@ -335,7 +335,7 @@ export default function RaschetKaloriferovPage() {
       </section>
 
       <section className="space-y-2">
-        <Heading lvl={2} text="КАЛЬКУЛЯТОРЫ ПОДБОРА И РАСЧЕТА КАЛОРИФЕРОВ" />
+        <Heading lvl={2} text="Калькуляторы подбора и расчета калориферов" />
         <ProductParagraph className="mb-4">
           Калькуляторы подбора предназначены для расчета и поверочной оценки
           работы водяных и паровых приточных калориферов. Пользователь выбирает
