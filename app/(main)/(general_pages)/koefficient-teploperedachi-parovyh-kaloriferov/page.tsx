@@ -506,7 +506,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </ProductParagraph>
           </div>
         </section>
-        <div className="w-1/2">
+        <div className="sm:w-1/2">
           <LinkButtonsBlock
             buttons={[{ name: "Паровые калориферы", url: "/kalorifer-par" }]}
           />

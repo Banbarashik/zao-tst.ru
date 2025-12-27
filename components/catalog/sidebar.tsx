@@ -151,7 +151,6 @@ function RecursiveAccordion({
                 <Accordion.Header>
                   <Accordion.Trigger className="group relative w-full cursor-pointer text-left">
                     <Link
-                      scroll={false}
                       href={`/catalog/${node.slug}`}
                       className="relative block w-full rounded-sm bg-[#ffd77a] p-3 text-lg font-bold"
                     >
@@ -195,7 +194,6 @@ function RecursiveAccordion({
                 <Accordion.Header>
                   <Accordion.Trigger className="group relative w-full cursor-pointer text-left">
                     <Link
-                      scroll={false}
                       href={`/catalog/${node.slug}`}
                       className="relative block w-full p-3 text-lg font-bold"
                     >
@@ -212,7 +210,6 @@ function RecursiveAccordion({
                     return (
                       <div key={child.slug}>
                         <Link
-                          scroll={false}
                           href={`/catalog/${child.slug}`}
                           className={`block w-full rounded-sm p-3 ${
                             childIsActive
@@ -242,7 +239,6 @@ function RecursiveAccordion({
             <Accordion.Header>
               <Accordion.Trigger className="group relative w-full cursor-pointer text-left">
                 <Link
-                  scroll={false}
                   href={`/catalog/${node.slug}`}
                   className={`relative block w-full p-3 text-lg ${
                     isActive
@@ -270,7 +266,6 @@ function RecursiveAccordion({
         ) : (
           <div key={node.slug}>
             <Link
-              scroll={false}
               href={`/catalog/${node.slug}`}
               className={`block w-full rounded-sm p-3 ${
                 isActive ? "bg-[#ffd77a] font-bold" : "hover:text-primary"

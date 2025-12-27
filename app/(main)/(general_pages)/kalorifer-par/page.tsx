@@ -242,7 +242,7 @@ export default function KaloriferParPage() {
           случае нижняя часть теплообменника может быть заполнена воздухом и
           конденсатом.
         </ProductParagraph>
-        <div className="w-1/2">
+        <div className="sm:w-1/2">
           <LinkButtonsBlock
             buttons={[
               {

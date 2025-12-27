@@ -130,7 +130,7 @@ export default function KaloriferyPage() {
           собой многократное последовательное движение теплоносителя; калориферы
           размещаются с горизонтальным расположением нагревательных элементов.
         </ProductParagraph>
-        <div className="w-1/2">
+        <div className="sm:w-1/2">
           <LinkButtonsBlock
             buttons={[
               {
@@ -218,7 +218,7 @@ export default function KaloriferyPage() {
         </section>
       </section>
 
-      <div className="w-1/2">
+      <div className="sm:w-1/2">
         <LinkButtonsBlock
           buttons={[
             {

@@ -211,11 +211,11 @@ export default function RaschetKaloriferovPage() {
           аэродинамическое сопротивление считают как произведение сопротивления
           одного ряда на количество рядов.
         </ProductParagraph>
-        <div className="w-1/2">
+        <div className="sm:w-1/2">
           <LinkButtonsBlock
             buttons={[
               {
-                name: "Сопротивление паровых калориферов",
+                name: "Сопротивление калориферов пар",
                 url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
               },
             ]}
