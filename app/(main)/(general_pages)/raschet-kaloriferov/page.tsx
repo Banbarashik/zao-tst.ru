@@ -45,7 +45,7 @@ export default function RaschetKaloriferovPage() {
     <>
       <Heading lvl={1} text="Расчет и подбор калориферов" />
 
-      <section>
+      <section className="space-y-2">
         <Heading lvl={2} text="РАСЧЕТ КАЛОРИФЕРОВ" />
         <ProductParagraph>
           При расчете и подборе водяного, парового или электрического
@@ -66,9 +66,9 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="space-y-2">
         <Heading lvl={2} text="МЕТОДИКА РАСЧЕТА КАЛОРИФЕРОВ" />
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Методы расчета основаны на тепловом балансе и уравнениях
           теплопередачи, решаемых совместно. По смыслу баланс приравнивает
           тепловой поток, переданный воздуху, теплу, потерянному первичным
@@ -100,7 +100,7 @@ export default function RaschetKaloriferovPage() {
         </div>
       </section>
 
-      <section>
+      <section className="space-y-2">
         <Heading lvl={2} text="ПОДБОР КАЛОРИФЕРОВ" />
         <ProductParagraph>
           Практически для каждой задачи подбора воздухонагревателей может
@@ -124,9 +124,9 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="space-y-2">
         <Heading lvl={2} text="РАСЧЕТНАЯ ТЕМПЕРАТУРА ВОЗДУХА" />
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           В практике калорифер может включаться в систему воздухообмена тремя
           способами: как нагреватель приточного воздуха в приточно-вытяжной
           вентиляции, как элемент схемы со смешением приточного и
@@ -139,7 +139,7 @@ export default function RaschetKaloriferovPage() {
           таком режиме теплопроизводительность воздухонагревателей получается
           наибольшей, поэтому он задает расчетный максимум.
         </ProductParagraph>
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Если рециркуляция не применяется, начальную температуру нагреваемого
           воздуха берут по параметрам наружного воздуха, нормируемым СНиП. В
           общих случаях для вентиляции используют среднюю температуру наиболее
@@ -176,7 +176,7 @@ export default function RaschetKaloriferovPage() {
         </div>
       </section>
 
-      <section>
+      <section className="space-y-2">
         <Heading
           lvl={2}
           text="МАССОВАЯ СКОРОСТЬ ВОЗДУХА ПРИ РАСЧЕТЕ КАЛОРИФЕРОВ"
@@ -191,7 +191,7 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="space-y-2">
         <Heading
           lvl={2}
           text="АЭРОДИНАМИЧЕСКОЕ СОПРОТИВЛЕНИЕ ПРИ РАСЧЕТЕ КАЛОРИФЕРОВ"
@@ -219,12 +219,12 @@ export default function RaschetKaloriferovPage() {
         </div>
       </section>
 
-      <section>
+      <section className="space-y-2">
         <Heading
           lvl={2}
           text="ГИДРАВЛИЧЕСКОЕ СОПРОТИВЛЕНИЕ ПРИ РАСЧЕТЕ КАЛОРИФЕРОВ"
         />
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Запас по воздуху вводят по-разному в зависимости от схемы
           регулирования: при наличии обводного клапана его, как правило, не
           требуется, а без байпаса закладывают запас на сопротивление
@@ -248,9 +248,9 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="space-y-2">
         <Heading lvl={2} text="ПОРЯДОК РАСЧЕТА И ПОДБОРА КАЛОРИФЕРОВ" />
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Подбор электрической, паровой и водяной воздухонагревательной
           установки начинается с расчета теплового потока, который нужно
           передать воздуху, при известном его расходе и температуре на входе и
@@ -258,7 +258,7 @@ export default function RaschetKaloriferovPage() {
           первичного теплоносителя: график горячей воды, параметры пара,
           температура поверхности электронагревателей.
         </ProductParagraph>
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Далее задаются массовой скоростью воздуха и вычисляют требуемое
           фронтальное сечение для прохода нагреваемого воздушного потока через
           теплообменник. По нужной фронтальной площади и паспортным данным,
@@ -268,33 +268,33 @@ export default function RaschetKaloriferovPage() {
           уточняют фактическую весовую скорость воздуха в подобранных
           теплообменниках.
         </ProductParagraph>
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Определяют расход и скорость греющей воды в трубках многоходового
           воздухонагревателя, расход греющего пара у одноходовых моделей.
         </ProductParagraph>
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Рассчитывают коэффициент теплопередачи, который зависит от вида
           теплоносителя и скорости его прохождения по теплообменным трубкам,
           весовой скорости воздуха в фронтальном сечении, габаритных размеров,
           конструкционных и теплотехнических характеристик калориферов.
         </ProductParagraph>
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Находят средний температурный напор.
         </ProductParagraph>
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Подсчитывают фактическую тепловую мощность подобранных многоходовых и
           одноходовых воздухонагревателей, электрокалориферной установки.
         </ProductParagraph>
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Вычисляют действительные расход и скорость греющей воды в трубках
           многоходового теплообменника, расход греющего пара у одноходовых
           моделей.
         </ProductParagraph>
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           К концу расчета фиксируют значения аэродинамических и гидравлических
           сопротивлений.
         </ProductParagraph>
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           В традиционном конструкторском расчете исходными данными считаются
           расход воздуха, температуры воздуха на входе и выходе, параметры
           греющего теплоносителя. Методика сравнительно проста и достаточно
@@ -304,9 +304,9 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="space-y-2">
         <Heading lvl={2} text="ЗАПАС ПОВЕРХНОСТИ ТЕПЛООБМЕНА ПРИ РАСЧЕТЕ" />
-        <ProductParagraph className="mb-2">
+        <ProductParagraph>
           Для калориферных установок рекомендуется закладывать запас поверхности
           нагрева относительно расчетной величины на уровне 10–20%. Такой запас
           нужен, чтобы учесть ухудшение характеристик из-за не отвечающих
@@ -330,7 +330,7 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="space-y-2">
         <Heading lvl={2} text="КАЛЬКУЛЯТОРЫ ПОДБОРА И РАСЧЕТА КАЛОРИФЕРОВ" />
         <ProductParagraph className="mb-4">
           Калькуляторы подбора предназначены для расчета и поверочной оценки
