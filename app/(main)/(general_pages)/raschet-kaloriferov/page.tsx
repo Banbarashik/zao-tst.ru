@@ -26,7 +26,7 @@ const productLinks = {
     "kpvs-572x572",
     "kpvu-845x845",
     "kpvs-1072x1072",
-    "kpvu-1163x1163",
+    "kpvu-1345x1345",
     "kpvs-1405x1405",
     "kpvu-1572x1572",
   ].map((id) =>
