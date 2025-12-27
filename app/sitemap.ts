@@ -134,6 +134,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.0,
     },
     {
+      url: `${SITE_URL}/raschet-kaloriferov`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+      images: [
+        `${pathToImgFolders.generalPages}/podbor_kalorifer_energy.png`,
+        `${pathToImgFolders.generalPages}/podbor_kalorifer_water.png`,
+        `${pathToImgFolders.generalPages}/podbor_kalorifer_steam.png`,
+        `${pathToImgFolders.generalPages}/podbor_kalorifer.png`,
+      ],
+    },
+    {
       url: `${SITE_URL}/kalorifery-voda`,
       lastModified: new Date(),
       changeFrequency: "monthly",
