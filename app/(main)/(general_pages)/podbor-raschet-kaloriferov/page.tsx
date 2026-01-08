@@ -12,6 +12,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductLinks from "@/components/general_pages/productLinks";
 import Link from "next/link";
+import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор паровых калориферов",
@@ -697,6 +698,74 @@ export default function PodborRaschetKaloriferovPage() {
             },
           ]}
         />
+      </section>
+
+      <section id="anchor4" className="space-y-4">
+        <Heading lvl={2} text="РАСЧЕТ РАСХОДА ПАРА ДЛЯ НАГРЕВА" />
+        <div>
+          <ProductParagraph>
+            4. Рассчитываем расход пара, исходя из требуемой тепловой мощности
+            для нагрева заданного объема воздуха.{" "}
+            <span className="block text-2xl font-bold">
+              G <sub className="font-normal">пар</sub> = Q / r{" "}
+              <sub className="font-normal">пар</sub>
+            </span>
+          </ProductParagraph>
+          <ul>
+            <li>
+              G <sub>ПАР</sub> – расход пара, кг/сек;
+            </li>
+            <li>Q - расход тепла для нагрева воздуха, Вт;</li>
+            <li>
+              r <sub>ПАР</sub> - скрытая теплота парообразования, Дж/кг
+            </li>
+          </ul>
+        </div>
+        <ProductParagraph>
+          Скрытая теплота парообразования или конденсации отображает количество
+          энергии, которое расходуется для превращения одного килограмма кипящей
+          воды при определенном давлении в килограмм пара. Такое же количество
+          тепла высвобождается при конденсации килограмма пара в килограмм воды.
+          С увеличением давления температура вскипания воды увеличивается, а
+          скрытая теплота парообразования, наоборот, уменьшается. Значение
+          принимается с учетом параметров используемого теплоносителя по
+          выложенной таблице теплофизических свойств насыщенного водяного пара.
+        </ProductParagraph>
+        <div className="text-[#6a2d2d]">
+          <ProductParagraph>
+            Пример расчета и подбора парового калорифера. ШАГ 4
+          </ProductParagraph>
+          <ProductParagraph>
+            Подобрать паровой калорифер для нагрева приточного воздуха объемом
+            9000 м³/час. Расчетная температура наружного воздуха принимается по
+            средней температуре наиболее холодной пятидневки г. Барнаула -39°С.
+            Температура в рабочей зоне производственного помещения +22°С.
+            Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+          </ProductParagraph>
+          <ProductParagraph>
+            ДЕЙСТВИЕ 4. Рассчитывается потребление сухого насыщенного пара
+            давлением 0.1 МПа для нагрева приточного воздуха объемом 9000 м³/час
+            от -39°С до +22°С.
+          </ProductParagraph>
+          <ProductParagraph>
+            Подсчет расхода пара:{" "}
+            <span className="text-xl font-bold">
+              G <sub>пар</sub> = 205576 / 2257510 = 0.091 кг/сек = 328 кг/час
+            </span>
+          </ProductParagraph>
+          <ul>
+            <li>
+              G <sub>ПАР</sub> – расход пара, кг/сек;
+            </li>
+            <li>205576 - расход тепла для нагрева воздуха, Вт;</li>
+            <li>
+              2257510 - скрытая теплота парообразования (Дж/кг) насыщенного пара
+              давлением 0.1 МПа, принимается по таблице: 2257.51 кДж/кг =
+              2257510 Дж/кг.
+            </li>
+          </ul>
+        </div>
+        <SaturatedSteamPropertiesTable />
       </section>
     </>
   );
