@@ -13,6 +13,7 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductLinks from "@/components/general_pages/productLinks";
 import Link from "next/link";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
+import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор паровых калориферов",
@@ -766,6 +767,134 @@ export default function PodborRaschetKaloriferovPage() {
           </ul>
         </div>
         <SaturatedSteamPropertiesTable />
+      </section>
+
+      <section id="anchor5" className="space-y-4">
+        <Heading lvl={2} text="РАСЧЕТ КОЭФФИЦИЕНТА ТЕПЛОПЕРЕДАЧИ" />
+        <div>
+          <ProductParagraph>
+            5. Расчет коэффициента теплопередачи выбранных паровых
+            воздухонагревателей. Коэффициент теплопередачи можно установить
+            двумя способами: используя формулу со значениями, полученными на
+            основе обработки экспериментальных данных; воспользовавшись
+            таблицами с рассчитанными результатами по каждой модели калориферов,
+            выпускаемых нашим предприятием.
+          </ProductParagraph>
+          <ProductParagraph>
+            Формула для нахождения коэффициента теплопередачи имеет вид:{" "}
+            <span className="text-2xl font-bold">
+              К = A • v <sup>n</sup> • L r
+            </span>
+          </ProductParagraph>
+          <ul>
+            <li>К – коэффициент теплопередачи, Вт/(м²•°С)</li>
+            <li>
+              v - действительная массовая скорость воздуха в подобранном
+              паровоздушном калорифере, кг/м²•с;
+            </li>
+            <li>
+              L - длина теплоотдающего элемента в свету принятого по табличным
+              данным воздухоподогревателя, м
+            </li>
+            <li>A, n, r - значение модуля и степеней из таблицы.</li>
+          </ul>
+        </div>
+        <CalcHeatTransferCoefficientTables />
+        <div className="text-[#6a2d2d]">
+          <ProductParagraph>
+            Пример расчета и подбора парового калорифера. ШАГ 5
+          </ProductParagraph>
+          <ProductParagraph>
+            Подобрать паровой калорифер для нагрева приточного воздуха объемом
+            9000 м³/час. Расчетная температура наружного воздуха принимается по
+            средней температуре наиболее холодной пятидневки г. Барнаула -39°С.
+            Температура в рабочей зоне производственного помещения +22°С.
+            Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+          </ProductParagraph>
+          <ProductParagraph>
+            ДЕЙСТВИЕ 5. Рассчитываем коэффициент теплопередачи для паровых
+            воздухонагревателей, выбранных для расчета и подбора. Принимаем
+            модели КПСк 2-10, КПСк 3-10, КПСк 4-10, КП 310, КП 410 с массовой
+            скоростью 5.77 кг/(м²•с), КФБ-7 А3 и КФБ-7 А4 с массовой скоростью
+            5.41 кг/(м²•с), КФБ-8 А3 и КФБ-8 А4 с массовой скоростью в
+            фронтальном сечении 4.61 кг/(м²•с). Длину теплообменных элементов по
+            каждому калориферу берем из таблицы с характеристиками.
+          </ProductParagraph>
+          <ul>
+            <li>
+              Находим коэффициент теплопередачи для калорифера КПСк 2-10:{" "}
+              <span className="block text-xl font-bold">
+                К = 34.3 • 5.77 0.357 • 1.155 -0.072 = 63.50 Вт/(м²•°C)
+              </span>
+            </li>
+            <li>
+              Находим коэффициент теплопередачи для калорифера КПСк 3-10:{" "}
+              <span className="block text-xl font-bold">
+                К = 30.3 • 5.77 0.405 • 1.155 -0.066 = 61.08 Вт/(м²•°C)
+              </span>
+            </li>
+            <li>
+              Находим коэффициент теплопередачи для калорифера КПСк 4-10:{" "}
+              <span className="block text-xl font-bold">
+                К = 26.1 • 5.77 0.476 • 1.155 -0.036 = 57.21 Вт/(м²•°C)
+              </span>
+            </li>
+            <li>
+              Находим коэффициент теплопередачи для калорифера КП 310:{" "}
+              <span className="block text-xl font-bold">
+                К = 43.5 • 5.77 0.431 • 1.155 -0.072 = 91.64 Вт/(м²•°C)
+              </span>
+            </li>
+            <li>
+              Находим коэффициент теплопередачи для калорифера КП 410:{" "}
+              <span className="block text-xl font-bold">
+                К = 37.2 • 5.77 0.452 • 1.155 -0.063 = 81.40 Вт/(м²•°C)
+              </span>
+            </li>
+            <li>
+              Находим коэффициент теплопередачи для калорифера КФБ-7 А3:{" "}
+              <span className="block text-xl font-bold">
+                К = 43.5 • 5.41 0.431 • 0.860 -0.072 = 91.04 Вт/(м²•°C)
+              </span>
+            </li>
+            <li>
+              Находим коэффициент теплопередачи для калорифера КФБ-7 А4:{" "}
+              <span className="block text-xl font-bold">
+                К = 37.2 • 5.41 0.452 • 0.860 -0.063 = 80.59 Вт/(м²•°C)
+              </span>
+            </li>
+            <li>
+              Находим коэффициент теплопередачи для калорифера КФБ-8 А3:{" "}
+              <span className="block text-xl font-bold">
+                К = 43.5 • 4.61 0.431 • 1.010 -0.072 = 83.96 Вт/(м²•°C)
+              </span>
+            </li>
+            <li>
+              Находим коэффициент теплопередачи для калорифера КФБ-8 А4:{" "}
+              <span className="block text-xl font-bold">
+                К = 37.2 • 4.61 0.452 • 1.010 -0.063 = 74.14 Вт/(м²•°C)
+              </span>
+            </li>
+          </ul>
+        </div>
+        <ProductParagraph className="text-[#5a769a]">
+          Подробное описание нахождения коэффициента теплопередачи паровых
+          калориферов и таблицы с расчетными данными по каждой модели можно
+          посмотреть на странице сайта: Коэффициент теплопередачи паровых
+          калориферов.
+        </ProductParagraph>
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "РАСЧЕТ КОЭФФИЦИЕНТОВ ПАР",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+            },
+            {
+              name: "ТАБЛИЦЫ КОЭФФИЦИЕНТОВ ПАР",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+            },
+          ]}
+        />
       </section>
     </>
   );

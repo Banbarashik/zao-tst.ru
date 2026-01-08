@@ -514,7 +514,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </div>
       </section>
 
-      <section>
+      <section id="anchor2">
         <Heading
           lvl={2}
           text="Расчет коэффициента теплопередачи парового калорифера"
@@ -883,7 +883,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </div>
       </section>
 
-      <section>
+      <section id="anchor3">
         <Heading
           lvl={2}
           text="Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов"
