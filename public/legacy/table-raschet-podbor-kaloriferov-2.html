@@ -5,15 +5,42 @@
     <script src="https://code.jquery.com/jquery-git.min.js"></script>
     <script src="tables.js"></script>
     <link href="table.css" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      th {
+        font-size: 14px;
+      }
+      .steam_kal_name {
+        width: 180px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .length {
+        width: 200px;
+      }
+      .btn {
+        font-size: 13.3px;
+      }
+    </style>
   </head>
   <body>
     <!-- Таблицы (начало) -->
-    <div id="primary">
+    <div id="primary" class="table-with-scroll">
       <form class="table-buttons-wrap">
         <input id="table_btn1" type="radio" checked name="as" />
         <input id="table_btn2" type="radio" name="as" />
-        <label for="table_btn1" class="btn btn1">Плотность воздуха</label
-        ><label for="table_btn2" class="btn btn2">Теплоемкость воздуха</label>
+        <input id="table_btn3" type="radio" name="as" />
+        <input id="table_btn4" type="radio" name="as" />
+        <input id="table_btn5" type="radio" name="as" />
+        <input id="table_btn6" type="radio" name="as" />
+        <label for="table_btn1" class="btn btn1">Калориферы КП</label>
+        <label for="table_btn2" class="btn btn2">Калориферы КФБ-А3 П</label>
+        <label for="table_btn3" class="btn btn3">Калориферы КФБ-А4 П</label>
+        <label for="table_btn4" class="btn btn4">Калориферы КПСк2</label>
+        <label for="table_btn5" class="btn btn5">Калориферы КПСк3</label>
+        <label for="table_btn6" class="btn btn6">Калориферы КПСк4</label>
       </form>
     </div>
     <div class="table-wrap table-with-scroll">
@@ -23,17 +50,19 @@
           <table>
             <thead>
               <tr>
-                <th rowspan="2">Наименование парового калорифера</th>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование парового калорифера
+                </th>
                 <th colspan="2">Площадь, м<sup>2</sup></th>
-                <th rowspan="2">
+                <th rowspan="2" class="length">
                   Длина L теплоотдающего элемента (в свету), м
                 </th>
                 <th rowspan="2">Емкость, м<sup>3</sup></th>
                 <th rowspan="2">Масса, кг</th>
               </tr>
               <tr>
-                <th>поверхности нагрева, F<sub>к</sub></th>
-                <th>фронтального сечения, F<sub>ф</sub></th>
+                <th>поверхности нагрева, F к</th>
+                <th>фронтального сечения, F ф</th>
               </tr>
             </thead>
 
@@ -161,93 +190,626 @@
           <table>
             <thead>
               <tr>
-                <th
-                  colspan="16"
-                  style="text-transform: uppercase; font-size: 10pt"
-                >
-                  Теплоемкость воздуха в зависимости от температуры
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование парового калорифера
                 </th>
+                <th colspan="2">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="length">
+                  Длина L теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Емкость, м<sup>3</sup></th>
+                <th rowspan="2">Масса, кг</th>
+              </tr>
+              <tr>
+                <th>поверхности нагрева, F к</th>
+                <th>фронтального сечения, F ф</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="first-two-cols" style="width: 150px">
-                  Температура, °С
-                </td>
-                <td class="degrees">-50</td>
-                <td class="degrees">-45</td>
-                <td class="degrees">-40</td>
-                <td class="degrees">-35</td>
-                <td class="degrees">-30</td>
-                <td class="degrees">-25</td>
-                <td class="degrees">-20</td>
-                <td class="degrees">-15</td>
-                <td class="degrees">-10</td>
-                <td class="degrees">-5</td>
-                <td class="degrees">0</td>
-                <td class="degrees">+5</td>
-                <td class="degrees">+10</td>
-                <td class="degrees">+15</td>
-                <td class="degrees">+20</td>
+                <td>КФБ-2 А3 П</td>
+                <td>7.7</td>
+                <td>0.202</td>
+                <td>0.560</td>
+                <td>0.00646</td>
+                <td>35</td>
               </tr>
               <tr>
-                <td class="first-two-cols">Теплоемкость, Дж/(кг•°С)</td>
-                <td>1013</td>
-                <td>1012</td>
-                <td>1011</td>
-                <td>1010</td>
-                <td>1010</td>
-                <td>1009</td>
-                <td>1008</td>
-                <td>1007</td>
-                <td>1006</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
+                <td>КФБ-3 А3 П</td>
+                <td>9.7</td>
+                <td>0.269</td>
+                <td>0.560</td>
+                <td>0.00834</td>
+                <td>44</td>
               </tr>
               <tr>
-                <td class="first-two-cols">Температура, °С</td>
-                <td class="degrees">+25</td>
-                <td class="degrees">+30</td>
-                <td class="degrees">+35</td>
-                <td class="degrees">+40</td>
-                <td class="degrees">+45</td>
-                <td class="degrees">+50</td>
-                <td class="degrees">+55</td>
-                <td class="degrees">+60</td>
-                <td class="degrees">+65</td>
-                <td class="degrees">+70</td>
-                <td class="degrees">+75</td>
-                <td class="degrees">+80</td>
-                <td class="degrees">+85</td>
-                <td class="degrees">+90</td>
-                <td class="degrees">+100</td>
+                <td>КФБ-4 А3 П</td>
+                <td>12.3</td>
+                <td>0.341</td>
+                <td>0.710</td>
+                <td>0.00957</td>
+                <td>49</td>
               </tr>
               <tr>
-                <td class="first-two-cols">Теплоемкость, Дж/(кг•°С)</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1005</td>
-                <td>1006</td>
-                <td>1006</td>
-                <td>1007</td>
-                <td>1007</td>
-                <td>1008</td>
-                <td>1009</td>
-                <td>1009</td>
+                <td>КФБ-5 А3 П</td>
+                <td>16.1</td>
+                <td>0.426</td>
+                <td>0.710</td>
+                <td>0.01232</td>
+                <td>61</td>
+              </tr>
+              <tr>
+                <td>КФБ-6 А3 П</td>
+                <td>19.4</td>
+                <td>0.516</td>
+                <td>0.860</td>
+                <td>0.01394</td>
+                <td>72</td>
+              </tr>
+              <tr>
+                <td>КФБ-7 А3 П</td>
+                <td>24.1</td>
+                <td>0.619</td>
+                <td>0.860</td>
+                <td>0.01707</td>
+                <td>87</td>
+              </tr>
+              <tr>
+                <td>КФБ-8 А3 П</td>
+                <td>28.2</td>
+                <td>0.727</td>
+                <td>1.010</td>
+                <td>0.01907</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>КФБ-9 А3 П</td>
+                <td>31.8</td>
+                <td>0.848</td>
+                <td>1.010</td>
+                <td>0.02172</td>
+                <td>115</td>
+              </tr>
+              <tr>
+                <td>КФБ-10 А3 П</td>
+                <td>36.5</td>
+                <td>0.974</td>
+                <td>1.160</td>
+                <td>0.02397</td>
+                <td>132</td>
+              </tr>
+              <tr>
+                <td>КФБ-11 А3 П</td>
+                <td>42.7</td>
+                <td>1.114</td>
+                <td>1.160</td>
+                <td>0.02787</td>
+                <td>149</td>
+              </tr>
+              <tr>
+                <td>КФБ-12 А3 П</td>
+                <td>48.2</td>
+                <td>1.258</td>
+                <td>1.310</td>
+                <td>0.03050</td>
+                <td>167</td>
+              </tr>
+              <tr>
+                <td>КФБ-13 А3 П</td>
+                <td>55.2</td>
+                <td>1.415</td>
+                <td>1.310</td>
+                <td>0.03479</td>
+                <td>194</td>
+              </tr>
+              <tr>
+                <td>КФБ-14 А3 П</td>
+                <td>61.5</td>
+                <td>1.577</td>
+                <td>1.460</td>
+                <td>0.03780</td>
+                <td>221</td>
               </tr>
             </tbody>
           </table>
-          <!-- Конец 2-й таблицы -->
         </div>
+        <!-- Конец 2-й таблицы -->
+
+        <!-- Начало 3-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование парового калорифера
+                </th>
+                <th colspan="2">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="length">
+                  Длина L теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Емкость, м<sup>3</sup></th>
+                <th rowspan="2">Масса, кг</th>
+              </tr>
+              <tr>
+                <th>поверхности нагрева, F к</th>
+                <th>фронтального сечения, F ф</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>КФБ-2 А4 П</td>
+                <td>10.0</td>
+                <td>0.202</td>
+                <td>0.560</td>
+                <td>0.00863</td>
+                <td>41</td>
+              </tr>
+              <tr>
+                <td>КФБ-3 А4 П</td>
+                <td>13.4</td>
+                <td>0.269</td>
+                <td>0.560</td>
+                <td>0.01150</td>
+                <td>53</td>
+              </tr>
+              <tr>
+                <td>КФБ-4 А4 П</td>
+                <td>16.9</td>
+                <td>0.341</td>
+                <td>0.710</td>
+                <td>0.01320</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>КФБ-5 А4 П</td>
+                <td>21.2</td>
+                <td>0.426</td>
+                <td>0.710</td>
+                <td>0.01651</td>
+                <td>81</td>
+              </tr>
+              <tr>
+                <td>КФБ-6 А4 П</td>
+                <td>25.6</td>
+                <td>0.516</td>
+                <td>0.860</td>
+                <td>0.01863</td>
+                <td>96</td>
+              </tr>
+              <tr>
+                <td>КФБ-7 А4 П</td>
+                <td>31.7</td>
+                <td>0.619</td>
+                <td>0.860</td>
+                <td>0.02285</td>
+                <td>116</td>
+              </tr>
+              <tr>
+                <td>КФБ-8 А4 П</td>
+                <td>37.2</td>
+                <td>0.727</td>
+                <td>1.010</td>
+                <td>0.02549</td>
+                <td>133</td>
+              </tr>
+              <tr>
+                <td>КФБ-9 А4 П</td>
+                <td>43.2</td>
+                <td>0.848</td>
+                <td>1.010</td>
+                <td>0.02906</td>
+                <td>154</td>
+              </tr>
+              <tr>
+                <td>КФБ-10 А4 П</td>
+                <td>49.5</td>
+                <td>0.974</td>
+                <td>1.160</td>
+                <td>0.03204</td>
+                <td>173</td>
+              </tr>
+              <tr>
+                <td>КФБ-11 А4 П</td>
+                <td>56.5</td>
+                <td>1.114</td>
+                <td>1.160</td>
+                <td>0.03728</td>
+                <td>198</td>
+              </tr>
+              <tr>
+                <td>КФБ-12 А4 П</td>
+                <td>63.7</td>
+                <td>1.258</td>
+                <td>1.310</td>
+                <td>0.04076</td>
+                <td>220</td>
+              </tr>
+              <tr>
+                <td>КФБ-13 А4 П</td>
+                <td>73.0</td>
+                <td>1.415</td>
+                <td>1.310</td>
+                <td>0.04651</td>
+                <td>256</td>
+              </tr>
+              <tr>
+                <td>КФБ-14 А4 П</td>
+                <td>81.4</td>
+                <td>1.577</td>
+                <td>1.460</td>
+                <td>0.05051</td>
+                <td>289</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 3-й таблицы -->
+
+        <!-- Начало 4-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование парового калорифера
+                </th>
+                <th colspan="2">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="length">
+                  Длина L теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Емкость, м<sup>3</sup></th>
+                <th rowspan="2">Масса, кг</th>
+              </tr>
+              <tr>
+                <th>поверхности нагрева, F к</th>
+                <th>фронтального сечения, F ф</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>КПСк 2-1</td>
+                <td>6.7</td>
+                <td>0.197</td>
+                <td>0.530</td>
+                <td>0.00238</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-2</td>
+                <td>8.2</td>
+                <td>0.244</td>
+                <td>0.655</td>
+                <td>0.00266</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-3</td>
+                <td>9.8</td>
+                <td>0.290</td>
+                <td>0.780</td>
+                <td>0.00294</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-4</td>
+                <td>11.3</td>
+                <td>0.337</td>
+                <td>0.905</td>
+                <td>0.00322</td>
+                <td>31</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-5</td>
+                <td>14.4</td>
+                <td>0.430</td>
+                <td>1.155</td>
+                <td>0.00379</td>
+                <td>36</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-6</td>
+                <td>9.0</td>
+                <td>0.267</td>
+                <td>0.530</td>
+                <td>0.00318</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-7</td>
+                <td>11.1</td>
+                <td>0.329</td>
+                <td>0.655</td>
+                <td>0.00356</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-8</td>
+                <td>13.2</td>
+                <td>0.392</td>
+                <td>0.780</td>
+                <td>0.00395</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-9</td>
+                <td>15.3</td>
+                <td>0.455</td>
+                <td>0.905</td>
+                <td>0.00433</td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-10</td>
+                <td>19.5</td>
+                <td>0.581</td>
+                <td>1.155</td>
+                <td>0.00509</td>
+                <td>46</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-11</td>
+                <td>57.1</td>
+                <td>1.660</td>
+                <td>1.655</td>
+                <td>0.01345</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>КПСк 2-12</td>
+                <td>86.2</td>
+                <td>2.488</td>
+                <td>1.655</td>
+                <td>0.02028</td>
+                <td>174</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 4-й таблицы -->
+
+        <!-- Начало 5-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование парового калорифера
+                </th>
+                <th colspan="2">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="length">
+                  Длина L теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Емкость, м<sup>3</sup></th>
+                <th rowspan="2">Масса, кг</th>
+              </tr>
+              <tr>
+                <th>поверхности нагрева, F к</th>
+                <th>фронтального сечения, F ф</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>КПСк 3-1</td>
+                <td>10.2</td>
+                <td>0.197</td>
+                <td>0.530</td>
+                <td>0.00312</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-2</td>
+                <td>12.5</td>
+                <td>0.244</td>
+                <td>0.655</td>
+                <td>0.00355</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-3</td>
+                <td>14.9</td>
+                <td>0.290</td>
+                <td>0.780</td>
+                <td>0.00398</td>
+                <td>36</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-4</td>
+                <td>17.3</td>
+                <td>0.337</td>
+                <td>0.905</td>
+                <td>0.00441</td>
+                <td>41</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-5</td>
+                <td>22.1</td>
+                <td>0.430</td>
+                <td>1.155</td>
+                <td>0.00527</td>
+                <td>48</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-6</td>
+                <td>13.7</td>
+                <td>0.267</td>
+                <td>0.530</td>
+                <td>0.00417</td>
+                <td>37</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-7</td>
+                <td>16.9</td>
+                <td>0.329</td>
+                <td>0.655</td>
+                <td>0.00475</td>
+                <td>43</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-8</td>
+                <td>20.1</td>
+                <td>0.392</td>
+                <td>0.780</td>
+                <td>0.00533</td>
+                <td>49</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-9</td>
+                <td>23.3</td>
+                <td>0.455</td>
+                <td>0.905</td>
+                <td>0.00591</td>
+                <td>54</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-10</td>
+                <td>29.7</td>
+                <td>0.581</td>
+                <td>1.155</td>
+                <td>0.00707</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-11</td>
+                <td>86.2</td>
+                <td>1.660</td>
+                <td>1.655</td>
+                <td>0.01900</td>
+                <td>163</td>
+              </tr>
+              <tr>
+                <td>КПСк 3-12</td>
+                <td>129.9</td>
+                <td>2.488</td>
+                <td>1.655</td>
+                <td>0.02861</td>
+                <td>242</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 5-й таблицы -->
+
+        <!-- Начало 6-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование парового калорифера
+                </th>
+                <th colspan="2">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="length">
+                  Длина L теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Емкость, м<sup>3</sup></th>
+                <th rowspan="2">Масса, кг</th>
+              </tr>
+              <tr>
+                <th>поверхности нагрева, F к</th>
+                <th>фронтального сечения, F ф</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>КПСк 4-1</td>
+                <td>13.3</td>
+                <td>0.197</td>
+                <td>0.530</td>
+                <td>0.00415</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-2</td>
+                <td>16.4</td>
+                <td>0.244</td>
+                <td>0.655</td>
+                <td>0.00471</td>
+                <td>38</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-3</td>
+                <td>19.5</td>
+                <td>0.290</td>
+                <td>0.780</td>
+                <td>0.00528</td>
+                <td>44</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-4</td>
+                <td>22.6</td>
+                <td>0.337</td>
+                <td>0.905</td>
+                <td>0.00584</td>
+                <td>48</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-5</td>
+                <td>28.8</td>
+                <td>0.430</td>
+                <td>1.155</td>
+                <td>0.00697</td>
+                <td>59</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-6</td>
+                <td>18.0</td>
+                <td>0.267</td>
+                <td>0.530</td>
+                <td>0.00557</td>
+                <td>43</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-7</td>
+                <td>22.2</td>
+                <td>0.329</td>
+                <td>0.655</td>
+                <td>0.00632</td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-8</td>
+                <td>26.4</td>
+                <td>0.392</td>
+                <td>0.780</td>
+                <td>0.00709</td>
+                <td>59</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-9</td>
+                <td>30.6</td>
+                <td>0.455</td>
+                <td>0.905</td>
+                <td>0.00785</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-10</td>
+                <td>39.0</td>
+                <td>0.581</td>
+                <td>1.155</td>
+                <td>0.00937</td>
+                <td>79</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-11</td>
+                <td>114.2</td>
+                <td>1.660</td>
+                <td>1.655</td>
+                <td>0.02529</td>
+                <td>206</td>
+              </tr>
+              <tr>
+                <td>КПСк 4-12</td>
+                <td>172.4</td>
+                <td>2.488</td>
+                <td>1.655</td>
+                <td>0.03816</td>
+                <td>307</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 6-й таблицы -->
       </div>
       <!-- Таблицы (конец) -->
     </div>

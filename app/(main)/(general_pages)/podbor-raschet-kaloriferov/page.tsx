@@ -591,6 +591,11 @@ export default function PodborRaschetKaloriferovPage() {
           температуру нагреваемого воздуха, давление и температуру
           теплоносителя.
         </ProductParagraph>
+        <iframe
+          src="/legacy/table-raschet-podbor-kaloriferov-2.html"
+          title=""
+          className="h-140 w-full"
+        />
       </section>
     </>
   );
