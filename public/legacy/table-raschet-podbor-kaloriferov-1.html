@@ -1,0 +1,210 @@
+<!doctype html>
+
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-git.min.js"></script>
+    <script src="tables.js"></script>
+    <link href="table.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Таблицы (начало) -->
+    <div id="primary">
+      <form class="table-buttons-wrap">
+        <input id="table_btn1" type="radio" checked name="as" />
+        <input id="table_btn2" type="radio" name="as" />
+        <label for="table_btn1" class="btn btn1">Плотность воздуха</label
+        ><label for="table_btn2" class="btn btn2">Теплоемкость воздуха</label>
+      </form>
+    </div>
+    <div class="table-wrap table-with-scroll">
+      <div id="secondary">
+        <!-- Начало 1-й таблицы -->
+        <div style="display: block">
+          <table>
+            <thead>
+              <tr>
+                <th
+                  colspan="16"
+                  style="text-transform: uppercase; font-size: 10pt"
+                >
+                  Плотность воздуха в зависимости от температуры
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="first-two-cols" style="width: 150px">
+                  температура, °С
+                </td>
+                <td class="degrees">-50</td>
+                <td class="degrees">-45</td>
+                <td class="degrees">-40</td>
+                <td class="degrees">-35</td>
+                <td class="degrees">-30</td>
+                <td class="degrees">-25</td>
+                <td class="degrees">-20</td>
+                <td class="degrees">-15</td>
+                <td class="degrees">-10</td>
+                <td class="degrees">-5</td>
+                <td class="degrees">0</td>
+                <td class="degrees">+5</td>
+                <td class="degrees">+10</td>
+                <td class="degrees">+15</td>
+                <td class="degrees">+20</td>
+              </tr>
+              <tr>
+                <td class="first-two-cols">плотность, кг/м³</td>
+                <td>1.58</td>
+                <td>1.55</td>
+                <td>1.51</td>
+                <td>1.48</td>
+                <td>1.45</td>
+                <td>1.42</td>
+                <td>1.39</td>
+                <td>1.37</td>
+                <td>1.34</td>
+                <td>1.32</td>
+                <td>1.29</td>
+                <td>1.27</td>
+                <td>1.25</td>
+                <td>1.23</td>
+                <td>1.20</td>
+              </tr>
+              <tr>
+                <td class="first-two-cols">температура, °С</td>
+                <td class="degrees">+25</td>
+                <td class="degrees">+30</td>
+                <td class="degrees">+35</td>
+                <td class="degrees">+40</td>
+                <td class="degrees">+45</td>
+                <td class="degrees">+50</td>
+                <td class="degrees">+55</td>
+                <td class="degrees">+60</td>
+                <td class="degrees">+65</td>
+                <td class="degrees">+70</td>
+                <td class="degrees">+75</td>
+                <td class="degrees">+80</td>
+                <td class="degrees">+85</td>
+                <td class="degrees">+90</td>
+                <td class="degrees">+100</td>
+              </tr>
+              <tr>
+                <td class="first-two-cols">плотность, кг/м³</td>
+                <td>1.18</td>
+                <td>1.16</td>
+                <td>1.15</td>
+                <td>1.13</td>
+                <td>1.11</td>
+                <td>1.09</td>
+                <td>1.08</td>
+                <td>1.06</td>
+                <td>1.04</td>
+                <td>1.03</td>
+                <td>1.01</td>
+                <td>1.00</td>
+                <td>0.99</td>
+                <td>0.97</td>
+                <td>0.95</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 1-й таблицы -->
+
+        <!-- Начало 2-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th
+                  colspan="16"
+                  style="text-transform: uppercase; font-size: 10pt"
+                >
+                  Теплоемкость воздуха в зависимости от температуры
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="first-two-cols" style="width: 150px">
+                  температура, °С
+                </td>
+                <td class="degrees">-50</td>
+                <td class="degrees">-45</td>
+                <td class="degrees">-40</td>
+                <td class="degrees">-35</td>
+                <td class="degrees">-30</td>
+                <td class="degrees">-25</td>
+                <td class="degrees">-20</td>
+                <td class="degrees">-15</td>
+                <td class="degrees">-10</td>
+                <td class="degrees">-5</td>
+                <td class="degrees">0</td>
+                <td class="degrees">+5</td>
+                <td class="degrees">+10</td>
+                <td class="degrees">+15</td>
+                <td class="degrees">+20</td>
+              </tr>
+              <tr>
+                <td class="first-two-cols">плотность, кг/м³</td>
+                <td>1013</td>
+                <td>1012</td>
+                <td>1011</td>
+                <td>1010</td>
+                <td>1010</td>
+                <td>1009</td>
+                <td>1008</td>
+                <td>1007</td>
+                <td>1006</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+              </tr>
+              <tr>
+                <td class="first-two-cols">температура, °С</td>
+                <td class="degrees">+25</td>
+                <td class="degrees">+30</td>
+                <td class="degrees">+35</td>
+                <td class="degrees">+40</td>
+                <td class="degrees">+45</td>
+                <td class="degrees">+50</td>
+                <td class="degrees">+55</td>
+                <td class="degrees">+60</td>
+                <td class="degrees">+65</td>
+                <td class="degrees">+70</td>
+                <td class="degrees">+75</td>
+                <td class="degrees">+80</td>
+                <td class="degrees">+85</td>
+                <td class="degrees">+90</td>
+                <td class="degrees">+100</td>
+              </tr>
+              <tr>
+                <td class="first-two-cols">плотность, кг/м³</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1005</td>
+                <td>1006</td>
+                <td>1006</td>
+                <td>1007</td>
+                <td>1007</td>
+                <td>1008</td>
+                <td>1009</td>
+                <td>1009</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Конец 2-й таблицы -->
+        </div>
+      </div>
+      <!-- Таблицы (конец) -->
+    </div>
+  </body>
+</html>

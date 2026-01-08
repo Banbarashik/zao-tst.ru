@@ -409,6 +409,14 @@ export default function PodborRaschetKaloriferovPage() {
 
         <SteamHeaterTempTable data={cityTemps} />
       </section>
+
+      <section>
+        <iframe
+          src="/legacy/table-raschet-podbor-kaloriferov-1.html"
+          title=""
+          className="h-45 w-full"
+        />
+      </section>
     </>
   );
 }
