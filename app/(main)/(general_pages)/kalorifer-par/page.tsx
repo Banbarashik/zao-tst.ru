@@ -441,7 +441,7 @@ export default function KaloriferParPage() {
         </ProductParagraph>
       </section>
 
-      <section className="space-y-6">
+      <section id="anchor2" className="space-y-6">
         <Heading lvl={2} text="Модели паровых калориферов" />
         <ProductParagraph>
           На предприятии ООО Т.С.Т. выпускаются паровоздушные биметаллические

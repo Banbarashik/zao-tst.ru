@@ -128,7 +128,7 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section className="space-y-2">
+      <section id="anchor1" className="space-y-2">
         <Heading lvl={2} text="Расчетная температура воздуха" />
         <ProductParagraph>
           В практике калорифер может включаться в систему воздухообмена тремя
