@@ -252,7 +252,7 @@ export default function KaloriferParPage() {
             ]}
           />
         </div>
-        <section className="text-[#5a769a]">
+        <section id="anchor1" className="text-[#5a769a]">
           <Heading lvl={3} text="Температура и давление насыщенного пара" />
           <ProductParagraph className="text-base">
             Температура кипения воды зависит от давления. При уменьшении

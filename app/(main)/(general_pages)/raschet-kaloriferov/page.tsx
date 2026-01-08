@@ -180,7 +180,7 @@ export default function RaschetKaloriferovPage() {
         </div>
       </section>
 
-      <section className="space-y-2">
+      <section id="anchor2" className="space-y-2">
         <Heading
           lvl={2}
           text="Массовая скорость воздуха при расчете калориферов"
