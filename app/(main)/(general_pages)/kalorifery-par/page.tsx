@@ -155,7 +155,7 @@ export default function KaloriferyParPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section id="anchor3">
         <Heading lvl={2} text="Расчет и подбор приточных паровых калориферов" />
         <ProductParagraph>
           Выбрав номер калорифера с приближенным для выполнения вашей задачи
