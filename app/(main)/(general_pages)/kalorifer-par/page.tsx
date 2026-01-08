@@ -5,6 +5,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import Image from "next/image";
 import CategoryCards from "@/components/categoryCards";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 
 export const metadata: Metadata = {
   title: "Паровые калориферы",
@@ -48,26 +49,6 @@ const kaloriferyCategories = [
     },
   },
 ];
-
-// prettier-ignore
-const tableRows = [
-  [1, 0.1, 99.6, 1.69, 0.59, 2.0267, 417.44, 99.72, 2257.51, 539.30, 2674.95, 639.02],
-  [1.5, 0.15, 111.4, 1.16, 0.86, 2.0768, 467.08, 111.58, 2226.03, 531.78, 2693.11, 643.36],
-  [2, 0.2, 120.2, 0.89, 1.13, 2.1208, 504.68, 120.56, 2201.56, 525.93, 2706.24, 646.49],
-  [2.5, 0.25, 127.4, 0.72, 1.39, 2.1608, 535.35, 127.89, 2181.15, 521.06, 2716.50, 648.95],
-  [3, 0.3, 133.5, 0.61, 1.65, 2.1981, 561.46, 134.13, 2163.44, 516.82, 2724.89, 650.95],
-  [3.5, 0.35, 138.9, 0.52, 1.91, 2.2331, 584.31, 139.59, 2147.65, 513.05, 2731.97, 652.64],
-  [4, 0.4, 143.6, 0.46, 2.16, 2.2664, 604.72, 144.46, 2133.33, 509.63, 2738.06, 654.09],
-  [4.5, 0.45, 147.9, 0.41, 2.42, 2.2983, 623.22, 148.88, 2120.16, 506.49, 2743.39, 655.37],
-  [5, 0.5, 151.8, 0.37, 2.67, 2.3289, 640.19, 152.93, 2107.92, 503.56, 2748.11, 656.50],
-  [6, 0.6, 158.8, 0.32, 3.17, 2.3873, 670.50, 160.18, 2085.64, 498.24, 2756.14, 658.41],
-  [7, 0.7, 165.0, 0.27, 3.67, 2.4424, 697.14, 166.54, 2065.61, 493.45, 2762.75, 659.99],
-  [8, 0.8, 170.4, 0.24, 4.16, 2.4951, 721.02, 172.24, 2047.29, 489.08, 2768.30, 661.32],
-  [9, 0.9, 175.4, 0.21, 4.66, 2.5456, 742.73, 177.43, 2030.31, 485.02, 2773.04, 662.45],
-  [10, 1.0, 179.9, 0.19, 5.15, 2.5944, 762.68, 182.20, 2014.44, 481.23, 2777.12, 663.43],
-  [11, 1.1, 184.1, 0.18, 5.63, 2.6418, 781.20, 186.62, 1999.47, 477.65, 2780.67, 664.27],
-  [12, 1.2, 188.0, 0.16, 6.13, 2.6878, 798.50, 190.75, 1985.27, 474.26, 2783.77, 665.01]
-]
 
 export default function KaloriferParPage() {
   return (
@@ -278,65 +259,7 @@ export default function KaloriferParPage() {
             его температура.
           </ProductParagraph>
         </section>
-        {/* TABLE */}
-        <div className="w-full overflow-x-auto">
-          <table className="w-full min-w-231 xl:min-w-auto">
-            <thead>
-              <tr>
-                <th className="p-1 uppercase" colSpan={12}>
-                  Свойства насыщенного водяного пара в зависимости от давления
-                </th>
-              </tr>
-              <tr>
-                <th className="p-1" colSpan={2}>
-                  Абсолютное давление
-                </th>
-                <th className="p-1">Температура</th>
-                <th className="p-1">Удельный объем</th>
-                <th className="p-1">Плотность</th>
-                <th className="p-1">Теплоемкость</th>
-                <th className="p-1" colSpan={2}>
-                  Удельная энтальпия воды
-                </th>
-                <th className="p-1" colSpan={2}>
-                  Скрытая теплота парообразования
-                </th>
-                <th className="p-1" colSpan={2}>
-                  Полная теплота пара
-                </th>
-              </tr>
-              <tr>
-                <th className="w-18 p-1">бар</th>
-                <th className="w-18 p-1">МПа</th>
-                <th className="w-18 p-1">°C</th>
-                <th className="w-18 p-1">
-                  м<sup>3</sup>/кг
-                </th>
-                <th className="w-18 p-1">
-                  кг/м<sup>3</sup>
-                </th>
-                <th className="w-18 p-1">кДж/( кг•°C)</th>
-                <th className="w-18 p-1">кДж/кг</th>
-                <th className="w-18 p-1">ккал/кг</th>
-                <th className="w-18 p-1">кДж/кг</th>
-                <th className="w-18 p-1">ккал/кг</th>
-                <th className="w-18 p-1">кДж/кг</th>
-                <th className="w-18 p-1">ккал/кг</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tableRows.map((tr, idx) => (
-                <tr key={idx}>
-                  {tr.map((td, idx) => (
-                    <td key={idx} className="p-0.5">
-                      {td}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <SaturatedSteamPropertiesTable />
         <ProductParagraph>
           На интенсивность теплообмена существенно влияет подготовка и качество
           подаваемого в оребренный калорифер водяного пара, содержание в нем
