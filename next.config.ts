@@ -57,11 +57,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/podbor-raschet-kaloriferov",
-        destination: "/kalorifery-par#anchor1",
-        permanent: true,
-      },
-      {
         source: "/raschet-online-elektricheskih-kaloriferov",
         destination: "/elektronagrevateli#anchor1",
         permanent: true,
@@ -109,11 +104,6 @@ const nextConfig: NextConfig = {
       {
         source: "/gidravlicheskoe-soprotivlenie-kaloriferov",
         destination: "/kalorifery-voda",
-        permanent: false,
-      },
-      {
-        source: "/podbor-raschet-kaloriferov",
-        destination: "/kalorifery-par",
         permanent: false,
       },
       {
