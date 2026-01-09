@@ -14,6 +14,7 @@ import ProductLinks from "@/components/general_pages/productLinks";
 import Link from "next/link";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
+import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор паровых калориферов",
@@ -1408,6 +1409,115 @@ export default function PodborRaschetKaloriferovPage() {
                 <span>Калорифер КФБ-8 А4:</span>
                 <Formula example>
                   φ = ((290142 - 205576) / 205576) • 100 = +41%
+                </Formula>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="anchor10" className="space-y-4">
+        <Heading lvl={2} text="РАСЧЕТ ВОЗДУШНОГО СОПРОТИВЛЕНИЯ" />
+        <div>
+          <ProductParagraph>
+            10. Расчет аэродинамического сопротивления подобранных калориферов.
+            Величину потерь по воздуху можно узнать двумя способами: используя
+            формулу с аппроксимационными значениями, полученными на основе
+            обработки экспериментальных данных; воспользовавшись таблицами с
+            рассчитанными результатами по каждой модели паровых калориферов,
+            выпускаемых нашим предприятием.
+          </ProductParagraph>
+          <ProductParagraph>
+            Формула для вычисления аэродинамического сопротивления имеет вид:{" "}
+            <Formula>
+              ΔP = B • V <sup>m</sup>
+            </Formula>
+          </ProductParagraph>
+          <ul>
+            <li> ΔP – аэродинамическое сопротивление, Па;</li>
+            <li>
+              v – действительная массовая скорость воздуха в подобранном
+              теплообменнике, кг/м²•с;
+            </li>
+            <li>B, m - значение модуля и степени из таблицы.</li>
+          </ul>
+        </div>
+        <CalcAerodynamicResistanceTables />
+        <div className="text-example space-y-4">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 10
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 10. Рассчитывается аэродинамическое сопротивление
+              выбранных теплообменников. Принимаем модели КПСк и КП с массовой
+              скоростью 5.77 кг/(м²•с), КФБ А3 и А4 7-го номера с массовой
+              скоростью 5.41 кг/(м²•с), КФБ А3 и А4 8-го номера с массовой
+              скоростью в фронтальном сечении 4.61 кг/(м²•с). Значения модуля и
+              степеней берутся из таблицы эмпирических показателей.
+            </ProductParagraph>
+            <ul className="max-w-134 space-y-2 sm:space-y-1">
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КПСк 2-10:</span>
+                <Formula example>
+                  ΔP = 4.23 • 5.77 <sup>1.832</sup> = 105 Па
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КПСк 3-10:</span>
+                <Formula example>
+                  ΔP = 6.05 • 5.77 <sup>1.832</sup> = 150 Па
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КПСк 4-10:</span>
+                <Formula example>
+                  ΔP = 8.63 • 5.77 <sup>1.833</sup> = 214 Па
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КП 310:</span>
+                <Formula example>
+                  ΔP = 6.37 • 5.77 <sup>1.864</sup> = 167 Па
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КП 410:</span>
+                <Formula example>
+                  ΔP = 8.67 • 5.77 <sup>1.848</sup> = 221 Па
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-7 А3:</span>
+                <Formula example>
+                  ΔP = 6.37 • 5.41 <sup>1.864</sup> = 148 Па
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-7 А4:</span>
+                <Formula example>
+                  ΔP = 8.67 • 5.41 <sup>1.848</sup> = 196 Па
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-8 А3:</span>
+                <Formula example>
+                  ΔP = 6.37 • 4.61 <sup>1.864</sup> = 110 Па
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-8 А4:</span>
+                <Formula example>
+                  ΔP = 8.67 • 4.61 <sup>1.848</sup> = 146 Па
                 </Formula>
               </li>
             </ul>
