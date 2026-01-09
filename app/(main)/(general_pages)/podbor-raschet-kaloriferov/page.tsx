@@ -677,19 +677,19 @@ export default function PodborRaschetKaloriferovPage() {
             будет одинакова.
           </ProductParagraph>
           <FormulasList>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калориферы КПСк и КП 10-го номера:
               <span className="block text-xl font-bold">
                 v = (12060/3600) / 0.581 = 5.77 кг/(м²•с)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калориферы КФБ-А 7-го номера:
               <span className="block text-xl font-bold">
                 v = (12060/3600) / 0.619 = 5.41 кг/(м²•с)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калориферы КФБ-А 8-го номера:
               <span className="block text-xl font-bold">
                 v = (12060/3600) / 0.727 = 4.61 кг/(м²•с)
@@ -839,63 +839,63 @@ export default function PodborRaschetKaloriferovPage() {
             каждому калориферу берем из таблицы с характеристиками.
           </ProductParagraph>
           <FormulasList>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калорифер КПСк 2-10
               <span className="text-xl font-bold">
                 К = 34.3 • 5.77 <sup>0.357</sup> • 1.155 <sup>-0.072</sup> =
                 63.50 Вт/(м²•°C)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калорифер КПСк 3-10
               <span className="text-xl font-bold">
                 К = 30.3 • 5.77 <sup>0.405</sup> • 1.155 <sup>-0.066</sup> =
                 61.08 Вт/(м²•°C)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калорифер КПСк 4-10
               <span className="text-xl font-bold">
                 К = 26.1 • 5.77 <sup>0.476</sup> • 1.155 <sup>-0.036</sup> =
                 57.21 Вт/(м²•°C)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калорифер КП 310
               <span className="text-xl font-bold">
                 К = 43.5 • 5.77 <sup>0.431</sup> • 1.155 <sup>-0.072</sup> =
                 91.64 Вт/(м²•°C)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калорифер КП 410
               <span className="text-xl font-bold">
                 К = 37.2 • 5.77 <sup>0.452</sup> • 1.155 <sup>-0.063</sup> =
                 81.40 Вт/(м²•°C)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калорифер КФБ-7 А3
               <span className="text-xl font-bold">
                 К = 43.5 • 5.41 <sup>0.431</sup> • 0.860 <sup>-0.072</sup> =
                 91.04 Вт/(м²•°C)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калорифер КФБ-7 А4
               <span className="text-xl font-bold">
                 К = 37.2 • 5.41 <sup>0.452</sup> • 0.860 <sup>-0.063</sup> =
                 80.59 Вт/(м²•°C)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калорифер КФБ-8 А3
               <span className="text-xl font-bold">
                 К = 43.5 • 4.61 <sup>0.431</sup> • 1.010 <sup>-0.072</sup> =
                 83.96 Вт/(м²•°C)
               </span>
             </li>
-            <li className="flex items-center justify-between gap-2">
+            <li className="flex items-baseline justify-between gap-2">
               Калорифер КФБ-8 А4
               <span className="text-xl font-bold">
                 К = 37.2 • 4.61 <sup>0.452</sup> • 1.010 <sup>-0.063</sup> =
@@ -1136,55 +1136,55 @@ export default function PodborRaschetKaloriferovPage() {
               температурный напор идентичен для всех выбранных моделей.
             </ProductParagraph>
             <ul className="max-w-xl space-y-2 sm:space-y-0.5">
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 2-10:</span>
                 <span className="text-xl font-bold">
                   Q 1 = 63.50 • 19.5 • 105.2 = 130264 Вт
                 </span>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 3-10:</span>
                 <span className="text-xl font-bold">
                   Q 1 = 61.08 • 29.7 • 105.2 = 190841 Вт
                 </span>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 4-10:</span>
                 <span className="text-xl font-bold">
                   Q 1 = 57.21 • 39.0 • 105.2 = 234721 Вт
                 </span>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КП 310:</span>
                 <span className="text-xl font-bold">
                   Q 1 = 91.64 • 21.9 • 105.2 = 211128 Вт
                 </span>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КП 410:</span>
                 <span className="text-xl font-bold">
                   Q 1 = 81.40 • 28.7 • 105.2 = 245766 Вт
                 </span>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-7 А3:</span>
                 <span className="text-xl font-bold">
                   Q 1 = 91.04 • 24.1 • 105.2 = 230816 Вт
                 </span>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-7 А4:</span>
                 <span className="text-xl font-bold">
                   Q 1 = 80.59 • 31.7 • 105.2 = 268755 Вт
                 </span>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-8 А3:</span>
                 <span className="text-xl font-bold">
                   Q 1 = 83.96 • 28.2 • 105.2 = 249079 Вт
                 </span>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-8 А4:</span>
                 <span className="text-xl font-bold">
                   Q 1 = 74.14 • 37.2 • 105.2 = 290142 Вт
@@ -1238,14 +1238,14 @@ export default function PodborRaschetKaloriferovPage() {
               -39°С до +22°С.
             </ProductParagraph>
             <ul className="max-w-180 space-y-2 sm:space-y-1">
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 2-10:</span>
                 <Formula example>
                   g <sub>пар</sub> = 130264 / 2257510 = 0.058 кг/сек = 208
                   кг/час
                 </Formula>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 3-10:</span>
 
                 <Formula example>
@@ -1253,49 +1253,49 @@ export default function PodborRaschetKaloriferovPage() {
                   кг/час
                 </Formula>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 4-10:</span>
                 <Formula example>
                   g <sub>пар</sub> = 234721 / 2257510 = 0.104 кг/сек = 374
                   кг/час
                 </Formula>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КП 310:</span>
                 <Formula example>
                   g <sub>пар</sub> = 211128 / 2257510 = 0.094 кг/сек = 338
                   кг/час
                 </Formula>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КП 410:</span>
                 <Formula example>
                   g <sub>пар</sub> = 245766 / 2257510 = 0.109 кг/сек = 392
                   кг/час
                 </Formula>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-7 А3:</span>
                 <Formula example>
                   g <sub>пар</sub> = 230816 / 2257510 = 0.102 кг/сек = 367
                   кг/час
                 </Formula>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-7 А4:</span>
                 <Formula example>
                   g <sub>пар</sub> = 268755 / 2257510 = 0.119 кг/сек = 428
                   кг/час
                 </Formula>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-8 А3:</span>
                 <Formula example>
                   g <sub>пар</sub> = 249079 / 2257510 = 0.110 кг/сек = 396
                   кг/час
                 </Formula>
               </li>
-              <li className="flex items-center justify-between gap-2">
+              <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-8 А4:</span>
                 <Formula example>
                   g <sub>пар</sub> = 290142 / 2257510 = 0.129 кг/сек = 464
