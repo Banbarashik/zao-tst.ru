@@ -101,6 +101,8 @@
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
   --color-primary-darker: var(--primary-darker);
+  --color-secondary-text: var(--secondary-text);
+  --color-example: var(--example);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);

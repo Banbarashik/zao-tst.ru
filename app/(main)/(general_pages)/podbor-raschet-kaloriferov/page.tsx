@@ -1306,6 +1306,114 @@ export default function PodborRaschetKaloriferovPage() {
           </div>
         </div>
       </section>
+
+      <section id="anchor9" className="space-y-4">
+        <Heading lvl={2} text="ЗАПАС ТЕПЛОВОЙ МОЩНОСТИ ПАРОВОГО КАЛОРИФЕРА" />
+        <div>
+          <ProductParagraph>
+            9. Определяем запас тепловой производительности или поверхности
+            нагрева принятых калориферов:
+            <span className="block text-2xl font-bold">
+              φ = ((Q 1 - Q) / Q) • 100
+            </span>
+          </ProductParagraph>
+          <ul>
+            <li>φ – запас поверхности нагрева или мощности, %;</li>
+            <li>
+              Q <sub>1</sub> – вырабатываемая калорифером производительность по
+              теплу, Вт;
+            </li>
+            <li>Q - требуемая тепловая мощность, Вт;</li>
+          </ul>
+          <ProductParagraph className="text-secondary-text">
+            Фактическая мощность по теплу паровоздушного калорифера должна быть
+            больше, чем расчетная. Диапазон допустимого соотношения фактической
+            и расчетной мощности, в зависимости от условий поставленной задачи и
+            качества теплоносителя может составлять от 100 до 120 процентов. В
+            общих случаях оптимальный запас поверхности нагрева должен
+            находиться на уровне 10%, допустимый интервал от 0 до 20%. Если при
+            подборе получен меньший или больший запас рекомендуется принять
+            другой теплообменник и произвести повторный расчет.
+          </ProductParagraph>
+        </div>
+        <div className="text-example space-y-4">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 9
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 9. Рассчитывается запас площади поверхности теплообмена
+              выбранных теплообменников, проводится анализ его соответствия
+              рекомендуемому диапазону.
+            </ProductParagraph>
+            <ul className="max-w-2xl space-y-2 sm:space-y-1">
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КПСк 2-10:</span>
+                <Formula example className="tracking-[0.1px]">
+                  φ = ((130264 - 205576) / 205576) • 100 = -37%
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КПСк 3-10:</span>
+                <Formula example className="tracking-[0.35px]">
+                  φ = ((190841 - 205576) / 205576) • 100 = -7%
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КПСк 4-10:</span>
+                <Formula example>
+                  φ = ((234721 - 205576) / 205576) • 100 = +14%
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КП 310:</span>
+                <Formula example className="tracking-[0.3px]">
+                  φ = ((211128 - 205576) / 205576) • 100 = +3%
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КП 410:</span>
+                <Formula example>
+                  φ = ((245766 - 205576) / 205576) • 100 = +20%
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-7 А3:</span>
+                <Formula example>
+                  φ = ((230816 - 205576) / 205576) • 100 = +12%
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-7 А4:</span>
+                <Formula example>
+                  φ = ((268755 - 205576) / 205576) • 100 = +31%
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-8 А3:</span>
+                <Formula example>
+                  φ = ((249079 - 205576) / 205576) • 100 = +21%
+                </Formula>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-8 А4:</span>
+                <Formula example>
+                  φ = ((290142 - 205576) / 205576) • 100 = +41%
+                </Formula>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
@@ -1314,9 +1422,11 @@ function FormulasList({ children }) {
   return <ul className="max-w-2xl space-y-2 sm:space-y-0.5">{children}</ul>;
 }
 
-function Formula({ example = false, children }) {
+function Formula({ example = false, className = "", children }) {
   return (
-    <span className={`font-bold ${example ? "text-xl" : "text-2xl"}`}>
+    <span
+      className={`font-bold ${example ? "text-xl" : "text-2xl"} ${className}`}
+    >
       {children}
     </span>
   );
