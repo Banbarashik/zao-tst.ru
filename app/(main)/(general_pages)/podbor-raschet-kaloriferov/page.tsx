@@ -676,21 +676,21 @@ export default function PodborRaschetKaloriferovPage() {
             воздухоподогревателя одного номера, вне зависимости от рядности,
             будет одинакова.
           </ProductParagraph>
-          <ul>
-            <li>
-              Уточняем массовую скорость для калориферов КПСк и КП 10-го номера:{" "}
+          <ul className="max-w-2xl space-y-2 sm:space-y-0.5">
+            <li className="flex items-center justify-between gap-2">
+              Калориферы КПСк и КП 10-го номера:
               <span className="block text-xl font-bold">
                 v = (12060/3600) / 0.581 = 5.77 кг/(м²•с)
               </span>
             </li>
-            <li>
-              Уточняем массовую скорость для калориферов КФБ-А 7-го номера:{" "}
+            <li className="flex items-center justify-between gap-2">
+              Калориферы КФБ-А 7-го номера:
               <span className="block text-xl font-bold">
                 v = (12060/3600) / 0.619 = 5.41 кг/(м²•с)
               </span>
             </li>
-            <li>
-              Уточняем массовую скорость для калориферов КФБ-А 8-го номера:{" "}
+            <li className="flex items-center justify-between gap-2">
+              Калориферы КФБ-А 8-го номера:
               <span className="block text-xl font-bold">
                 v = (12060/3600) / 0.727 = 4.61 кг/(м²•с)
               </span>
@@ -838,66 +838,66 @@ export default function PodborRaschetKaloriferovPage() {
             фронтальном сечении 4.61 кг/(м²•с). Длину теплообменных элементов по
             каждому калориферу берем из таблицы с характеристиками.
           </ProductParagraph>
-          <ul>
-            <li>
-              Находим коэффициент теплопередачи для калорифера КПСк 2-10:{" "}
-              <span className="block text-xl font-bold">
+          <ul className="max-w-2xl space-y-2 sm:space-y-0.5">
+            <li className="flex items-center justify-between gap-2">
+              Калорифер КПСк 2-10
+              <span className="text-xl font-bold">
                 К = 34.3 • 5.77 <sup>0.357</sup> • 1.155 <sup>-0.072</sup> =
                 63.50 Вт/(м²•°C)
               </span>
             </li>
-            <li>
-              Находим коэффициент теплопередачи для калорифера КПСк 3-10:{" "}
-              <span className="block text-xl font-bold">
+            <li className="flex items-center justify-between gap-2">
+              Калорифер КПСк 3-10
+              <span className="text-xl font-bold">
                 К = 30.3 • 5.77 <sup>0.405</sup> • 1.155 <sup>-0.066</sup> =
                 61.08 Вт/(м²•°C)
               </span>
             </li>
-            <li>
-              Находим коэффициент теплопередачи для калорифера КПСк 4-10:{" "}
-              <span className="block text-xl font-bold">
+            <li className="flex items-center justify-between gap-2">
+              Калорифер КПСк 4-10
+              <span className="text-xl font-bold">
                 К = 26.1 • 5.77 <sup>0.476</sup> • 1.155 <sup>-0.036</sup> =
                 57.21 Вт/(м²•°C)
               </span>
             </li>
-            <li>
-              Находим коэффициент теплопередачи для калорифера КП 310:{" "}
-              <span className="block text-xl font-bold">
+            <li className="flex items-center justify-between gap-2">
+              Калорифер КП 310
+              <span className="text-xl font-bold">
                 К = 43.5 • 5.77 <sup>0.431</sup> • 1.155 <sup>-0.072</sup> =
                 91.64 Вт/(м²•°C)
               </span>
             </li>
-            <li>
-              Находим коэффициент теплопередачи для калорифера КП 410:{" "}
-              <span className="block text-xl font-bold">
+            <li className="flex items-center justify-between gap-2">
+              Калорифер КП 410
+              <span className="text-xl font-bold">
                 К = 37.2 • 5.77 <sup>0.452</sup> • 1.155 <sup>-0.063</sup> =
                 81.40 Вт/(м²•°C)
               </span>
             </li>
-            <li>
-              Находим коэффициент теплопередачи для калорифера КФБ-7 А3:{" "}
-              <span className="block text-xl font-bold">
+            <li className="flex items-center justify-between gap-2">
+              Калорифер КФБ-7 А3
+              <span className="text-xl font-bold">
                 К = 43.5 • 5.41 <sup>0.431</sup> • 0.860 <sup>-0.072</sup> =
                 91.04 Вт/(м²•°C)
               </span>
             </li>
-            <li>
-              Находим коэффициент теплопередачи для калорифера КФБ-7 А4:{" "}
-              <span className="block text-xl font-bold">
+            <li className="flex items-center justify-between gap-2">
+              Калорифер КФБ-7 А4
+              <span className="text-xl font-bold">
                 К = 37.2 • 5.41 <sup>0.452</sup> • 0.860 <sup>-0.063</sup> =
                 80.59 Вт/(м²•°C)
               </span>
             </li>
-            <li>
-              Находим коэффициент теплопередачи для калорифера КФБ-8 А3:{" "}
-              <span className="block text-xl font-bold">
+            <li className="flex items-center justify-between gap-2">
+              Калорифер КФБ-8 А3
+              <span className="text-xl font-bold">
                 К = 43.5 • 4.61 <sup>0.431</sup> • 1.010 <sup>-0.072</sup> =
                 83.96 Вт/(м²•°C)
               </span>
             </li>
-            <li>
-              Находим коэффициент теплопередачи для калорифера КФБ-8 А4:{" "}
-              <span className="block text-xl font-bold">
+            <li className="flex items-center justify-between gap-2">
+              Калорифер КФБ-8 А4
+              <span className="text-xl font-bold">
                 К = 37.2 • 4.61 <sup>0.452</sup> • 1.010 <sup>-0.063</sup> =
                 74.14 Вт/(м²•°C)
               </span>
@@ -955,10 +955,12 @@ export default function PodborRaschetKaloriferovPage() {
                 точках
               </ProductParagraph>
               <ProductParagraph className="text-2xl font-bold">
-                Δ T <sub>Б</sub> = T s - t нач
+                Δ T <sub>Б</sub> = T s - t{" "}
+                <span className="font-normal">нач</span>
               </ProductParagraph>
               <ProductParagraph className="text-2xl font-bold">
-                Δ T <sub>М</sub> = T s - t кон
+                Δ T <sub>М</sub> = T s - t{" "}
+                <span className="font-normal">кон</span>
               </ProductParagraph>
               <ul>
                 <li>
@@ -1044,9 +1046,7 @@ export default function PodborRaschetKaloriferovPage() {
             Δ T <sub>М</sub> = 99.6 – 22 = 77.6
           </ProductParagraph>
           <ul>
-            <li>
-              99.6 - температура пара при избыточном давлении 0.1 МПа, °С;
-            </li>
+            <li>99.6 - температура пара при давлении 0.1 МПа, °С;</li>
             <li>
               -39 - температура холодного воздуха на входе в теплообменник, °С;
             </li>
