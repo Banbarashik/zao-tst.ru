@@ -1088,6 +1088,10 @@ export default function PodborRaschetKaloriferovPage() {
         <Heading lvl={2} text="РАСЧЕТ ТЕПЛОВОЙ МОЩНОСТИ ПАРОВОГО КАЛОРИФЕРА" />
         <div>
           <ProductParagraph>
+            7. Уточняем фактическую тепловую мощность выбранных паровых
+            калориферов.
+          </ProductParagraph>
+          <ProductParagraph>
             Формула для нахождения теплопроизводительности имеет вид:{" "}
             <span className="text-2xl font-bold">
               Q <sub>1</sub> = К • F к • Δ T
@@ -1190,10 +1194,130 @@ export default function PodborRaschetKaloriferovPage() {
           </div>
         </div>
       </section>
+
+      <section id="anchor8" className="space-y-4">
+        <Heading lvl={2} text="РАСЧЕТ РАСХОДА ПАРА ДЛЯ НАГРЕВА" />
+        <div>
+          <ProductParagraph>
+            8. Уточняем фактический расход пара выбранных калориферов:{" "}
+            <Formula>
+              g <sub>пар</sub> = Q <sub>1</sub> / r <sub>пар</sub>
+            </Formula>
+          </ProductParagraph>
+          <ul>
+            <li>
+              g <sub>ПАР</sub> – фактический расход пара, кг/сек;
+            </li>
+            <li>
+              Q <sub>1</sub> – вырабатываемая калорифером производительность по
+              теплу, Вт;
+            </li>
+            <li>
+              r <sub>ПАР</sub> - скрытая теплота парообразования, Дж/кг
+            </li>
+          </ul>
+        </div>
+        <div className="space-y-4 text-[#6a2d2d]">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 8
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 8. Рассчитывается действительный расход сухого
+              насыщенного пара давлением 0.1 МПа подобранными паровыми
+              калориферами при нагреве приточного воздуха объемом 9000 м³/час от
+              -39°С до +22°С.
+            </ProductParagraph>
+            <ul className="max-w-180 space-y-2 sm:space-y-1">
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КПСк 2-10:</span>
+                <Formula example>
+                  g <sub>пар</sub> = 130264 / 2257510 = 0.058 кг/сек = 208
+                  кг/час
+                </Formula>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КПСк 3-10:</span>
+
+                <Formula example>
+                  g <sub>пар</sub> = 190841 / 2257510 = 0.085 кг/сек = 306
+                  кг/час
+                </Formula>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КПСк 4-10:</span>
+                <Formula example>
+                  g <sub>пар</sub> = 234721 / 2257510 = 0.104 кг/сек = 374
+                  кг/час
+                </Formula>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КП 310:</span>
+                <Formula example>
+                  g <sub>пар</sub> = 211128 / 2257510 = 0.094 кг/сек = 338
+                  кг/час
+                </Formula>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КП 410:</span>
+                <Formula example>
+                  g <sub>пар</sub> = 245766 / 2257510 = 0.109 кг/сек = 392
+                  кг/час
+                </Formula>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КФБ-7 А3:</span>
+                <Formula example>
+                  g <sub>пар</sub> = 230816 / 2257510 = 0.102 кг/сек = 367
+                  кг/час
+                </Formula>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КФБ-7 А4:</span>
+                <Formula example>
+                  g <sub>пар</sub> = 268755 / 2257510 = 0.119 кг/сек = 428
+                  кг/час
+                </Formula>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КФБ-8 А3:</span>
+                <Formula example>
+                  g <sub>пар</sub> = 249079 / 2257510 = 0.110 кг/сек = 396
+                  кг/час
+                </Formula>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КФБ-8 А4:</span>
+                <Formula example>
+                  g <sub>пар</sub> = 290142 / 2257510 = 0.129 кг/сек = 464
+                  кг/час
+                </Formula>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
 
 function FormulasList({ children }) {
   return <ul className="max-w-2xl space-y-2 sm:space-y-0.5">{children}</ul>;
+}
+
+function Formula({ example = false, children }) {
+  return (
+    <span className={`font-bold ${example ? "text-xl" : "text-2xl"}`}>
+      {children}
+    </span>
+  );
 }

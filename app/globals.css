@@ -62,6 +62,10 @@
   --muted: #6b7280; /* Muted text */
   --muted-foreground: #f5f5f5; /* Muted on dark */
   --border: #e5e7eb; /* Border */
+
+  /* GENERAL PAGE COLORS */
+  --secondary-text: #5a769a;
+  --example: #6a2d2d;
 }
 
 @theme inline {
