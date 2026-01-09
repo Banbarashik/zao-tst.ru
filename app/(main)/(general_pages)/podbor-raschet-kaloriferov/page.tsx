@@ -326,7 +326,7 @@ export default function PodborRaschetKaloriferovPage() {
     <>
       <Heading lvl={1} text="Подбор и расчет калорифера парового" />
 
-      <section className="space-y-2">
+      <section className="mb-4 space-y-5">
         <Heading lvl={2} text="РАСЧЕТ И ПОДБОР КАЛОРИФЕРОВ КПСК КП КФБ-А" />
         <ProductParagraph className="mb-1">
           Расчет и подбор паровых калориферов осуществляется в следующей
@@ -380,7 +380,7 @@ export default function PodborRaschetKaloriferovPage() {
             },
           ]}
         />
-        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+        <div className="mb-12 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/500 w-full">
             <Image
               src="/img/general_pages/kalorifer_podbor_par.png"
@@ -431,7 +431,7 @@ export default function PodborRaschetKaloriferovPage() {
         <SteamHeaterTempTable data={cityTemps} />
       </section>
 
-      <section id="anchor1" className="space-y-4">
+      <section id="anchor1" className="mb-4 space-y-4">
         <Heading lvl={2} text="РАСЧЕТ МОЩНОСТИ ПО ТЕПЛУ" />
         <div>
           <ProductParagraph>
@@ -482,67 +482,73 @@ export default function PodborRaschetKaloriferovPage() {
         <iframe
           src="/legacy/table-raschet-podbor-kaloriferov-1.html"
           title="Таблица свойств воздуха"
-          className="h-45 w-full"
+          className="h-46 w-full"
         />
-        <div className="text-[#6a2d2d]">
-          <ProductParagraph>
-            Пример расчета и подбора парового калорифера. ШАГ 1
-          </ProductParagraph>
-          <ProductParagraph>
-            Подобрать паровой калорифер для нагрева приточного воздуха объемом
-            9000 м³/час. Расчетная температура наружного воздуха принимается по
-            средней температуре наиболее холодной пятидневки г. Барнаула -39°С.
-            Температура в рабочей зоне производственного помещения +22°С.
-            Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
-          </ProductParagraph>
-          <ProductParagraph>
-            ДЕЙСТВИЕ 1. Определить тепловую мощность, необходимую для нагрева
-            9000 м³/час с температуры -39 до +22 градусов.
-          </ProductParagraph>
-          <ol>
-            <li>
-              <ProductParagraph>
-                1.1 Определяем массовый расход нагреваемого воздуха:{" "}
-                <span className="text-xl font-bold">
-                  G = 9000 • 1.34 = 12060 кг/час
-                </span>
-              </ProductParagraph>
-              <ul>
-                <li>G - массовый расход воздуха, кг/час;</li>
-                <li>
-                  9000 - объемное количество нагреваемого воздуха, м³/час;
-                </li>
-                <li>
-                  1.34 - плотность воздуха при средней температуре воздуха
-                  -8.5°С.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ProductParagraph>
-                1.2 Определяем расход теплоты для нагрева воздушного потока:{" "}
-                <span className="block text-xl font-bold">
-                  Q = (12060/3600) • 1006 • ((22-(-39)) = 3.35 • 1006 • 61 =
-                  205576 Вт
-                </span>
-              </ProductParagraph>
-              <ul>
-                <li>Q - требуемая тепловая мощность, Вт;</li>
-                <li>12060 - массовый расход воздуха, кг/час;</li>
-                <li>
-                  1006 - удельная теплоемкость воздуха при средней температуре
-                  воздуха -8.5°С, Дж/(кг•°С);
-                </li>
-                <li>+22 – температура воздуха на выходе из калорифера, °С;</li>
-                <li>-39 – температура воздуха на входе в калорифер, °С;</li>
-                <li>61 – перепад температур воздуха, °С.</li>
-              </ul>
-            </li>
-          </ol>
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 1
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 1. Определить тепловую мощность, необходимую для нагрева
+              9000 м³/час с температуры -39 до +22 градусов.
+            </ProductParagraph>
+            <ol>
+              <li>
+                <ProductParagraph>
+                  1.1 Определяем массовый расход нагреваемого воздуха:{" "}
+                  <span className="text-xl font-bold">
+                    G = 9000 • 1.34 = 12060 кг/час
+                  </span>
+                </ProductParagraph>
+                <ul>
+                  <li>G - массовый расход воздуха, кг/час;</li>
+                  <li>
+                    9000 - объемное количество нагреваемого воздуха, м³/час;
+                  </li>
+                  <li>
+                    1.34 - плотность воздуха при средней температуре воздуха
+                    -8.5°С.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ProductParagraph>
+                  1.2 Определяем расход теплоты для нагрева воздушного потока:{" "}
+                  <span className="block text-xl font-bold">
+                    Q = (12060/3600) • 1006 • ((22-(-39)) = 3.35 • 1006 • 61 =
+                    205576 Вт
+                  </span>
+                </ProductParagraph>
+                <ul>
+                  <li>Q - требуемая тепловая мощность, Вт;</li>
+                  <li>12060 - массовый расход воздуха, кг/час;</li>
+                  <li>
+                    1006 - удельная теплоемкость воздуха при средней температуре
+                    воздуха -8.5°С, Дж/(кг•°С);
+                  </li>
+                  <li>
+                    +22 – температура воздуха на выходе из калорифера, °С;
+                  </li>
+                  <li>-39 – температура воздуха на входе в калорифер, °С;</li>
+                  <li>61 – перепад температур воздуха, °С.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
 
-      <section id="anchor2" className="space-y-4">
+      <section id="anchor2" className="mb-4 space-y-4">
         <Heading lvl={2} text="РАСЧЕТ ПЛОЩАДИ ФРОНТАЛЬНОГО СЕЧЕНИЯ" />
         <div>
           <ProductParagraph>
@@ -566,40 +572,45 @@ export default function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
-        <div className="text-[#6a2d2d]">
-          <ProductParagraph>
-            Пример расчета и подбора парового калорифера. ШАГ 2
-          </ProductParagraph>
-          <ProductParagraph>
-            Подобрать паровой калорифер для нагрева приточного воздуха объемом
-            9000 м³/час. Расчетная температура наружного воздуха принимается по
-            средней температуре наиболее холодной пятидневки г. Барнаула -39°С.
-            Температура в рабочей зоне производственного помещения +22°С.
-            Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
-          </ProductParagraph>
-          <ProductParagraph>
-            ДЕЙСТВИЕ 2. Расчет площади фронтального сечения под весовой расход
-            воздуха 12060 кг/час. Принимаем массовую скорость – 5.0 кг/(м²•с).
-          </ProductParagraph>
-          <ProductParagraph>
-            Находим площадь фронтального сечения:{" "}
-            <span className="text-xl font-bold">
-              f = (12060/3600) / 5.0 = 0.670 м²
-            </span>
-          </ProductParagraph>
-          <ul>
-            <li>f - площадь фронтального сечения, м²;</li>
-            <li>12060 - массовый расход воздуха, кг/час;</li>
-            <li>5.0 - массовая скорость воздуха, кг/(м²•с).</li>
-          </ul>
-          <ProductParagraph>
-            По результатам расчета найденная площадь фронтального сечения
-            составляет 0.670 м². Ориентируясь на табличные данные паровых
-            воздухонагревателей принимаем к подбору наиболее приближенные к
-            этому значению модели: КПСк 2-10, КПСк 3-10, КПСк 4-10, КП 310, КП
-            410 (площадь фронтального сечения этих теплообменников - 0.581 м²);
-            КФБ-7 А3 и КФБ-7 А4 (0.619 м²); КФБ-8 А3 и КФБ-8 А4 (0.727 м²).
-          </ProductParagraph>
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 2
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 2. Расчет площади фронтального сечения под весовой расход
+              воздуха 12060 кг/час. Принимаем массовую скорость – 5.0 кг/(м²•с).
+            </ProductParagraph>
+            <ProductParagraph>
+              Находим площадь фронтального сечения:{" "}
+              <span className="text-xl font-bold">
+                f = (12060/3600) / 5.0 = 0.670 м²
+              </span>
+            </ProductParagraph>
+            <ul>
+              <li>f - площадь фронтального сечения, м²;</li>
+              <li>12060 - массовый расход воздуха, кг/час;</li>
+              <li>5.0 - массовая скорость воздуха, кг/(м²•с).</li>
+            </ul>
+            <ProductParagraph>
+              По результатам расчета найденная площадь фронтального сечения
+              составляет 0.670 м². Ориентируясь на табличные данные паровых
+              воздухонагревателей принимаем к подбору наиболее приближенные к
+              этому значению модели: КПСк 2-10, КПСк 3-10, КПСк 4-10, КП 310, КП
+              410 (площадь фронтального сечения этих теплообменников - 0.581
+              м²); КФБ-7 А3 и КФБ-7 А4 (0.619 м²); КФБ-8 А3 и КФБ-8 А4 (0.727
+              м²).
+            </ProductParagraph>
+          </div>
         </div>
         <ProductParagraph className="text-[#5a769a]">
           Ниже представлена таблица с техническими характеристиками двух, трех и
@@ -637,8 +648,12 @@ export default function PodborRaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section id="anchor3" className="space-y-4">
-        <Heading lvl={2} text="РАСЧЕТ МАССОВОЙ СКОРОСТИ ВОЗДУХА" />
+      <section id="anchor3" className="mb-4 space-y-4">
+        <Heading
+          lvl={2}
+          text="РАСЧЕТ МАССОВОЙ СКОРОСТИ ВОЗДУХА"
+          className="mb-0"
+        />
         <div>
           <ProductParagraph>
             3. Находим действительную массовую скорость для выбранных
@@ -656,55 +671,59 @@ export default function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
-        <div className="text-[#6a2d2d]">
-          <ProductParagraph>
-            Пример расчета и подбора парового калорифера. ШАГ 3
-          </ProductParagraph>
-          <ProductParagraph>
-            Подобрать паровой калорифер для нагрева приточного воздуха объемом
-            9000 м³/час. Расчетная температура наружного воздуха принимается по
-            средней температуре наиболее холодной пятидневки г. Барнаула -39°С.
-            Температура в рабочей зоне производственного помещения +22°С.
-            Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
-          </ProductParagraph>
-          <ProductParagraph>
-            ДЕЙСТВИЕ 3. Найти действительную массовую скорость в фронтальном
-            сечении теплообменников, выбранных для расчета и подбора. Принимаем
-            воздухонагреватели КПСк и КП 10-го номера, КФБ-А 7-го и 8-го
-            номеров, как имеющие приближенное значение по фронтальному сечению
-            для прохода воздуха: 0.581 м², 0.619 м², 0.727 м² соответственно.
-            Массовая скорость в фронтальном сечении каждого парового
-            воздухоподогревателя одного номера, вне зависимости от рядности,
-            будет одинакова.
-          </ProductParagraph>
-          <FormulasList>
-            <li className="flex items-baseline justify-between gap-2">
-              Калориферы КПСк и КП 10-го номера:
-              <span className="block text-xl font-bold">
-                v = (12060/3600) / 0.581 = 5.77 кг/(м²•с)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калориферы КФБ-А 7-го номера:
-              <span className="block text-xl font-bold">
-                v = (12060/3600) / 0.619 = 5.41 кг/(м²•с)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калориферы КФБ-А 8-го номера:
-              <span className="block text-xl font-bold">
-                v = (12060/3600) / 0.727 = 4.61 кг/(м²•с)
-              </span>
-            </li>
-          </FormulasList>
-          <ul>
-            <li>v – массовая скорость в фронтальном сечении, кг/(м²•с);</li>
-            <li>12060 - массовый расход воздуха, кг/час;</li>
-            <li>
-              0.581, 0.619, 0.727 - площадь фронтального сечения калориферов
-              КПСк, КП, КФБ-А принимаемых в расчет, м².
-            </li>
-          </ul>
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 3
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 3. Найти действительную массовую скорость в фронтальном
+              сечении теплообменников, выбранных для расчета и подбора.
+              Принимаем воздухонагреватели КПСк и КП 10-го номера, КФБ-А 7-го и
+              8-го номеров, как имеющие приближенное значение по фронтальному
+              сечению для прохода воздуха: 0.581 м², 0.619 м², 0.727 м²
+              соответственно. Массовая скорость в фронтальном сечении каждого
+              парового воздухоподогревателя одного номера, вне зависимости от
+              рядности, будет одинакова.
+            </ProductParagraph>
+            <FormulasList>
+              <li className="flex items-baseline justify-between gap-2">
+                Калориферы КПСк и КП 10-го номера
+                <span className="block text-xl font-bold">
+                  v = (12060/3600) / 0.581 = 5.77 кг/(м²•с)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калориферы КФБ-А 7-го номера
+                <span className="block text-xl font-bold">
+                  v = (12060/3600) / 0.619 = 5.41 кг/(м²•с)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калориферы КФБ-А 8-го номера
+                <span className="block text-xl font-bold">
+                  v = (12060/3600) / 0.727 = 4.61 кг/(м²•с)
+                </span>
+              </li>
+            </FormulasList>
+            <ul>
+              <li>v – массовая скорость в фронтальном сечении, кг/(м²•с);</li>
+              <li>12060 - массовый расход воздуха, кг/час;</li>
+              <li>
+                0.581, 0.619, 0.727 - площадь фронтального сечения калориферов
+                КПСк, КП, КФБ-А принимаемых в расчет, м².
+              </li>
+            </ul>
+          </div>
         </div>
         <LinkButtonsBlock
           buttons={[
@@ -720,7 +739,7 @@ export default function PodborRaschetKaloriferovPage() {
         />
       </section>
 
-      <section id="anchor4" className="space-y-4">
+      <section id="anchor4" className="mb-4 space-y-4">
         <Heading lvl={2} text="РАСЧЕТ РАСХОДА ПАРА ДЛЯ НАГРЕВА" />
         <div>
           <ProductParagraph>
@@ -741,7 +760,7 @@ export default function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
-        <ProductParagraph className="text-[#5a769a]">
+        <ProductParagraph className="text-secondary-text">
           Скрытая теплота парообразования или конденсации отображает количество
           энергии, которое расходуется для превращения одного килограмма кипящей
           воды при определенном давлении в килограмм пара. Такое же количество
@@ -751,44 +770,48 @@ export default function PodborRaschetKaloriferovPage() {
           принимается с учетом параметров используемого теплоносителя по
           выложенной таблице теплофизических свойств насыщенного водяного пара.
         </ProductParagraph>
-        <div className="text-[#6a2d2d]">
-          <ProductParagraph>
-            Пример расчета и подбора парового калорифера. ШАГ 4
-          </ProductParagraph>
-          <ProductParagraph>
-            Подобрать паровой калорифер для нагрева приточного воздуха объемом
-            9000 м³/час. Расчетная температура наружного воздуха принимается по
-            средней температуре наиболее холодной пятидневки г. Барнаула -39°С.
-            Температура в рабочей зоне производственного помещения +22°С.
-            Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
-          </ProductParagraph>
-          <ProductParagraph>
-            ДЕЙСТВИЕ 4. Рассчитывается потребление сухого насыщенного пара
-            давлением 0.1 МПа для нагрева приточного воздуха объемом 9000 м³/час
-            от -39°С до +22°С.
-          </ProductParagraph>
-          <ProductParagraph>
-            Подсчет расхода пара:{" "}
-            <span className="text-xl font-bold">
-              G <sub>пар</sub> = 205576 / 2257510 = 0.091 кг/сек = 328 кг/час
-            </span>
-          </ProductParagraph>
-          <ul>
-            <li>
-              G <sub>ПАР</sub> – расход пара, кг/сек;
-            </li>
-            <li>205576 - расход тепла для нагрева воздуха, Вт;</li>
-            <li>
-              2257510 - скрытая теплота парообразования (Дж/кг) насыщенного пара
-              давлением 0.1 МПа, принимается по таблице: 2257.51 кДж/кг =
-              2257510 Дж/кг.
-            </li>
-          </ul>
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 4
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 4. Рассчитывается потребление сухого насыщенного пара
+              давлением 0.1 МПа для нагрева приточного воздуха объемом 9000
+              м³/час от -39°С до +22°С.
+            </ProductParagraph>
+            <ProductParagraph>
+              Подсчет расхода пара:{" "}
+              <span className="text-xl font-bold">
+                G <sub>пар</sub> = 205576 / 2257510 = 0.091 кг/сек = 328 кг/час
+              </span>
+            </ProductParagraph>
+            <ul>
+              <li>
+                G <sub>ПАР</sub> – расход пара, кг/сек;
+              </li>
+              <li>205576 - расход тепла для нагрева воздуха, Вт;</li>
+              <li>
+                2257510 - скрытая теплота парообразования (Дж/кг) насыщенного
+                пара давлением 0.1 МПа, принимается по таблице: 2257.51 кДж/кг =
+                2257510 Дж/кг.
+              </li>
+            </ul>
+          </div>
         </div>
         <SaturatedSteamPropertiesTable />
       </section>
 
-      <section id="anchor5" className="space-y-4">
+      <section id="anchor5" className="mb-4 space-y-4">
         <Heading lvl={2} text="РАСЧЕТ КОЭФФИЦИЕНТА ТЕПЛОПЕРЕДАЧИ" />
         <div>
           <ProductParagraph>
@@ -819,93 +842,97 @@ export default function PodborRaschetKaloriferovPage() {
           </ul>
         </div>
         <CalcHeatTransferCoefficientTables />
-        <div className="text-[#6a2d2d]">
-          <ProductParagraph>
-            Пример расчета и подбора парового калорифера. ШАГ 5
-          </ProductParagraph>
-          <ProductParagraph>
-            Подобрать паровой калорифер для нагрева приточного воздуха объемом
-            9000 м³/час. Расчетная температура наружного воздуха принимается по
-            средней температуре наиболее холодной пятидневки г. Барнаула -39°С.
-            Температура в рабочей зоне производственного помещения +22°С.
-            Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
-          </ProductParagraph>
-          <ProductParagraph>
-            ДЕЙСТВИЕ 5. Рассчитываем коэффициент теплопередачи для паровых
-            воздухонагревателей, выбранных для расчета и подбора. Принимаем
-            модели КПСк 2-10, КПСк 3-10, КПСк 4-10, КП 310, КП 410 с массовой
-            скоростью 5.77 кг/(м²•с), КФБ-7 А3 и КФБ-7 А4 с массовой скоростью
-            5.41 кг/(м²•с), КФБ-8 А3 и КФБ-8 А4 с массовой скоростью в
-            фронтальном сечении 4.61 кг/(м²•с). Длину теплообменных элементов по
-            каждому калориферу берем из таблицы с характеристиками.
-          </ProductParagraph>
-          <FormulasList>
-            <li className="flex items-baseline justify-between gap-2">
-              Калорифер КПСк 2-10
-              <span className="text-xl font-bold">
-                К = 34.3 • 5.77 <sup>0.357</sup> • 1.155 <sup>-0.072</sup> =
-                63.50 Вт/(м²•°C)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калорифер КПСк 3-10
-              <span className="text-xl font-bold">
-                К = 30.3 • 5.77 <sup>0.405</sup> • 1.155 <sup>-0.066</sup> =
-                61.08 Вт/(м²•°C)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калорифер КПСк 4-10
-              <span className="text-xl font-bold">
-                К = 26.1 • 5.77 <sup>0.476</sup> • 1.155 <sup>-0.036</sup> =
-                57.21 Вт/(м²•°C)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калорифер КП 310
-              <span className="text-xl font-bold">
-                К = 43.5 • 5.77 <sup>0.431</sup> • 1.155 <sup>-0.072</sup> =
-                91.64 Вт/(м²•°C)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калорифер КП 410
-              <span className="text-xl font-bold">
-                К = 37.2 • 5.77 <sup>0.452</sup> • 1.155 <sup>-0.063</sup> =
-                81.40 Вт/(м²•°C)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калорифер КФБ-7 А3
-              <span className="text-xl font-bold">
-                К = 43.5 • 5.41 <sup>0.431</sup> • 0.860 <sup>-0.072</sup> =
-                91.04 Вт/(м²•°C)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калорифер КФБ-7 А4
-              <span className="text-xl font-bold">
-                К = 37.2 • 5.41 <sup>0.452</sup> • 0.860 <sup>-0.063</sup> =
-                80.59 Вт/(м²•°C)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калорифер КФБ-8 А3
-              <span className="text-xl font-bold">
-                К = 43.5 • 4.61 <sup>0.431</sup> • 1.010 <sup>-0.072</sup> =
-                83.96 Вт/(м²•°C)
-              </span>
-            </li>
-            <li className="flex items-baseline justify-between gap-2">
-              Калорифер КФБ-8 А4
-              <span className="text-xl font-bold">
-                К = 37.2 • 4.61 <sup>0.452</sup> • 1.010 <sup>-0.063</sup> =
-                74.14 Вт/(м²•°C)
-              </span>
-            </li>
-          </FormulasList>
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 5
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 5. Рассчитываем коэффициент теплопередачи для паровых
+              воздухонагревателей, выбранных для расчета и подбора. Принимаем
+              модели КПСк 2-10, КПСк 3-10, КПСк 4-10, КП 310, КП 410 с массовой
+              скоростью 5.77 кг/(м²•с), КФБ-7 А3 и КФБ-7 А4 с массовой скоростью
+              5.41 кг/(м²•с), КФБ-8 А3 и КФБ-8 А4 с массовой скоростью в
+              фронтальном сечении 4.61 кг/(м²•с). Длину теплообменных элементов
+              по каждому калориферу берем из таблицы с характеристиками.
+            </ProductParagraph>
+            <FormulasList>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КПСк 2-10
+                <span className="text-xl font-bold">
+                  К = 34.3 • 5.77 <sup>0.357</sup> • 1.155 <sup>-0.072</sup> =
+                  63.50 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КПСк 3-10
+                <span className="text-xl font-bold">
+                  К = 30.3 • 5.77 <sup>0.405</sup> • 1.155 <sup>-0.066</sup> =
+                  61.08 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КПСк 4-10
+                <span className="text-xl font-bold">
+                  К = 26.1 • 5.77 <sup>0.476</sup> • 1.155 <sup>-0.036</sup> =
+                  57.21 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КП 310
+                <span className="text-xl font-bold">
+                  К = 43.5 • 5.77 <sup>0.431</sup> • 1.155 <sup>-0.072</sup> =
+                  91.64 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КП 410
+                <span className="text-xl font-bold">
+                  К = 37.2 • 5.77 <sup>0.452</sup> • 1.155 <sup>-0.063</sup> =
+                  81.40 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КФБ-7 А3
+                <span className="text-xl font-bold">
+                  К = 43.5 • 5.41 <sup>0.431</sup> • 0.860 <sup>-0.072</sup> =
+                  91.04 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КФБ-7 А4
+                <span className="text-xl font-bold">
+                  К = 37.2 • 5.41 <sup>0.452</sup> • 0.860 <sup>-0.063</sup> =
+                  80.59 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КФБ-8 А3
+                <span className="text-xl font-bold">
+                  К = 43.5 • 4.61 <sup>0.431</sup> • 1.010 <sup>-0.072</sup> =
+                  83.96 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КФБ-8 А4
+                <span className="text-xl font-bold">
+                  К = 37.2 • 4.61 <sup>0.452</sup> • 1.010 <sup>-0.063</sup> =
+                  74.14 Вт/(м²•°C)
+                </span>
+              </li>
+            </FormulasList>
+          </div>
         </div>
-        <ProductParagraph className="text-[#5a769a]">
+        <ProductParagraph className="text-secondary-text">
           Подробное описание нахождения коэффициента теплопередачи паровых
           калориферов и таблицы с расчетными данными по каждой модели можно
           посмотреть на странице сайта: Коэффициент теплопередачи паровых
@@ -925,7 +952,7 @@ export default function PodborRaschetKaloriferovPage() {
         />
       </section>
 
-      <section id="anchor6" className="space-y-4">
+      <section id="anchor6" className="mb-4 space-y-4">
         <Heading lvl={2} text="РАСЧЕТ ТЕМПЕРАТУРНОГО НАПОРА" />
         <ProductParagraph>
           6. Расчет среднего по поверхности температурного напора. Ниже
@@ -934,7 +961,7 @@ export default function PodborRaschetKaloriferovPage() {
           и воздуха на входе и выходе из калорифера. Вычисления проводятся с
           помощью калькулятора с функцией нахождения логарифма.
         </ProductParagraph>
-        <ProductParagraph className="text-[#5a769a]">
+        <ProductParagraph className="text-secondary-text">
           Принцип работы паровоздушного калорифера построен на теплообмене двух
           сред, которые можно разделить на два потока или контура: первый контур
           или греющая сторона - теплоноситель пар, второй контур или нагреваемая
@@ -1023,69 +1050,74 @@ export default function PodborRaschetKaloriferovPage() {
             />
           </div>
         </div>
-        <div className="text-[#6a2d2d]">
-          <ProductParagraph>
-            Пример расчета и подбора парового калорифера. ШАГ 6
-          </ProductParagraph>
-          <ProductParagraph>
-            Подобрать паровой калорифер для нагрева приточного воздуха объемом
-            9000 м³/час. Расчетная температура наружного воздуха принимается по
-            средней температуре наиболее холодной пятидневки г. Барнаула -39°С.
-            Температура в рабочей зоне производственного помещения +22°С.
-            Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
-          </ProductParagraph>
-          <ProductParagraph>
-            ДЕЙСТВИЕ 6. Рассчитываем температурный напор для выбранных паровых
-            калориферов. Исходные данные: теплоноситель - сухой насыщенный пар
-            давлением 0.1 МПа, температура воздуха на входе -39°С, температура
-            воздуха на выходе +22°С.
-          </ProductParagraph>
-          <ProductParagraph className="text-xl font-bold">
-            Δ T <sub>Б</sub> = 99.6 – (-39) = 138.6
-          </ProductParagraph>
-          <ProductParagraph className="text-xl font-bold">
-            Δ T <sub>М</sub> = 99.6 – 22 = 77.6
-          </ProductParagraph>
-          <ul>
-            <li>99.6 - температура пара при давлении 0.1 МПа, °С;</li>
-            <li>
-              -39 - температура холодного воздуха на входе в теплообменник, °С;
-            </li>
-            <li>
-              +22 - температура нагретого воздуха на выходе из теплообменника,
-              °С;
-            </li>
-            <li>
-              138.6 - большая разность температур между паром и воздухом на
-              входе в теплообменник, °С;
-            </li>
-            <li>
-              77.6 - меньшая разность температур между паром и воздухом на
-              выходе из теплообменника, °С.
-            </li>
-          </ul>
-          <ProductParagraph className="text-xl font-bold">
-            Δ T = (138.6 – 77.6) / ln (138.6 / 77.6) = 61 / ln 1.78608 = 61 /
-            2.71828 n 1.78608 = 61 / 0.580 = 105.2 °С
-          </ProductParagraph>
-          <ul>
-            <li>
-              1.78608 – значение, полученное при делении показателя большей
-              разности температур на меньшую разность температур;
-            </li>
-            <li>
-              0.580 - показатель степени в которую нужно возвести число 2.71828,
-              чтобы получить число 1.78608;
-            </li>
-            <li>
-              105.2 – температурный напор при заданных параметрах
-              теплоносителей, °С;
-            </li>
-          </ul>
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 6
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 6. Рассчитываем температурный напор для выбранных паровых
+              калориферов. Исходные данные: теплоноситель - сухой насыщенный пар
+              давлением 0.1 МПа, температура воздуха на входе -39°С, температура
+              воздуха на выходе +22°С.
+            </ProductParagraph>
+            <ProductParagraph className="text-xl font-bold">
+              Δ T <sub>Б</sub> = 99.6 – (-39) = 138.6
+            </ProductParagraph>
+            <ProductParagraph className="text-xl font-bold">
+              Δ T <sub>М</sub> = 99.6 – 22 = 77.6
+            </ProductParagraph>
+            <ul>
+              <li>99.6 - температура пара при давлении 0.1 МПа, °С;</li>
+              <li>
+                -39 - температура холодного воздуха на входе в теплообменник,
+                °С;
+              </li>
+              <li>
+                +22 - температура нагретого воздуха на выходе из теплообменника,
+                °С;
+              </li>
+              <li>
+                138.6 - большая разность температур между паром и воздухом на
+                входе в теплообменник, °С;
+              </li>
+              <li>
+                77.6 - меньшая разность температур между паром и воздухом на
+                выходе из теплообменника, °С.
+              </li>
+            </ul>
+            <ProductParagraph className="text-xl font-bold">
+              Δ T = (138.6 – 77.6) / ln (138.6 / 77.6) = 61 / ln 1.78608 = 61 /
+              2.71828 n 1.78608 = 61 / 0.580 = 105.2 °С
+            </ProductParagraph>
+            <ul>
+              <li>
+                1.78608 – значение, полученное при делении показателя большей
+                разности температур на меньшую разность температур;
+              </li>
+              <li>
+                0.580 - показатель степени в которую нужно возвести число
+                2.71828, чтобы получить число 1.78608;
+              </li>
+              <li>
+                105.2 – температурный напор при заданных параметрах
+                теплоносителей, °С;
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section id="anchor7" className="space-y-4">
+      <section id="anchor7" className="mb-4 space-y-4">
         <Heading lvl={2} text="РАСЧЕТ ТЕПЛОВОЙ МОЩНОСТИ ПАРОВОГО КАЛОРИФЕРА" />
         <div>
           <ProductParagraph>
@@ -1115,7 +1147,7 @@ export default function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
-        <div className="space-y-4 text-[#6a2d2d]">
+        <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
               Пример расчета и подбора парового калорифера. ШАГ 7
@@ -1138,55 +1170,55 @@ export default function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <ul className="max-w-xl space-y-2 sm:space-y-0.5">
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 2-10:</span>
+                <span>Калорифер КПСк 2-10</span>
                 <span className="text-xl font-bold">
                   Q 1 = 63.50 • 19.5 • 105.2 = 130264 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 3-10:</span>
+                <span>Калорифер КПСк 3-10</span>
                 <span className="text-xl font-bold">
                   Q 1 = 61.08 • 29.7 • 105.2 = 190841 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 4-10:</span>
+                <span>Калорифер КПСк 4-10</span>
                 <span className="text-xl font-bold">
                   Q 1 = 57.21 • 39.0 • 105.2 = 234721 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КП 310:</span>
+                <span>Калорифер КП 310</span>
                 <span className="text-xl font-bold">
                   Q 1 = 91.64 • 21.9 • 105.2 = 211128 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КП 410:</span>
+                <span>Калорифер КП 410</span>
                 <span className="text-xl font-bold">
                   Q 1 = 81.40 • 28.7 • 105.2 = 245766 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-7 А3:</span>
+                <span>Калорифер КФБ-7 А3</span>
                 <span className="text-xl font-bold">
                   Q 1 = 91.04 • 24.1 • 105.2 = 230816 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-7 А4:</span>
+                <span>Калорифер КФБ-7 А4</span>
                 <span className="text-xl font-bold">
                   Q 1 = 80.59 • 31.7 • 105.2 = 268755 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-8 А3:</span>
+                <span>Калорифер КФБ-8 А3</span>
                 <span className="text-xl font-bold">
                   Q 1 = 83.96 • 28.2 • 105.2 = 249079 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-8 А4:</span>
+                <span>Калорифер КФБ-8 А4</span>
                 <span className="text-xl font-bold">
                   Q 1 = 74.14 • 37.2 • 105.2 = 290142 Вт
                 </span>
@@ -1196,8 +1228,12 @@ export default function PodborRaschetKaloriferovPage() {
         </div>
       </section>
 
-      <section id="anchor8" className="space-y-4">
-        <Heading lvl={2} text="РАСЧЕТ РАСХОДА ПАРА ДЛЯ НАГРЕВА" />
+      <section id="anchor8" className="mb-4 space-y-4">
+        <Heading
+          lvl={2}
+          text="РАСЧЕТ РАСХОДА ПАРА ДЛЯ НАГРЕВА"
+          className="mb-0"
+        />
         <div>
           <ProductParagraph>
             8. Уточняем фактический расход пара выбранных калориферов:{" "}
@@ -1218,7 +1254,7 @@ export default function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
-        <div className="space-y-4 text-[#6a2d2d]">
+        <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
               Пример расчета и подбора парового калорифера. ШАГ 8
@@ -1240,14 +1276,14 @@ export default function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <ul className="max-w-180 space-y-2 sm:space-y-1">
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 2-10:</span>
+                <span>Калорифер КПСк 2-10</span>
                 <Formula example>
                   g <sub>пар</sub> = 130264 / 2257510 = 0.058 кг/сек = 208
                   кг/час
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 3-10:</span>
+                <span>Калорифер КПСк 3-10</span>
 
                 <Formula example>
                   g <sub>пар</sub> = 190841 / 2257510 = 0.085 кг/сек = 306
@@ -1255,49 +1291,49 @@ export default function PodborRaschetKaloriferovPage() {
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 4-10:</span>
+                <span>Калорифер КПСк 4-10</span>
                 <Formula example>
                   g <sub>пар</sub> = 234721 / 2257510 = 0.104 кг/сек = 374
                   кг/час
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КП 310:</span>
+                <span>Калорифер КП 310</span>
                 <Formula example>
                   g <sub>пар</sub> = 211128 / 2257510 = 0.094 кг/сек = 338
                   кг/час
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КП 410:</span>
+                <span>Калорифер КП 410</span>
                 <Formula example>
                   g <sub>пар</sub> = 245766 / 2257510 = 0.109 кг/сек = 392
                   кг/час
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-7 А3:</span>
+                <span>Калорифер КФБ-7 А3</span>
                 <Formula example>
                   g <sub>пар</sub> = 230816 / 2257510 = 0.102 кг/сек = 367
                   кг/час
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-7 А4:</span>
+                <span>Калорифер КФБ-7 А4</span>
                 <Formula example>
                   g <sub>пар</sub> = 268755 / 2257510 = 0.119 кг/сек = 428
                   кг/час
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-8 А3:</span>
+                <span>Калорифер КФБ-8 А3</span>
                 <Formula example>
                   g <sub>пар</sub> = 249079 / 2257510 = 0.110 кг/сек = 396
                   кг/час
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-8 А4:</span>
+                <span>Калорифер КФБ-8 А4</span>
                 <Formula example>
                   g <sub>пар</sub> = 290142 / 2257510 = 0.129 кг/сек = 464
                   кг/час
@@ -1308,7 +1344,7 @@ export default function PodborRaschetKaloriferovPage() {
         </div>
       </section>
 
-      <section id="anchor9" className="space-y-4">
+      <section id="anchor9" className="mb-4 space-y-4">
         <Heading lvl={2} text="ЗАПАС ТЕПЛОВОЙ МОЩНОСТИ ПАРОВОГО КАЛОРИФЕРА" />
         <div>
           <ProductParagraph>
@@ -1337,7 +1373,7 @@ export default function PodborRaschetKaloriferovPage() {
             другой теплообменник и произвести повторный расчет.
           </ProductParagraph>
         </div>
-        <div className="text-example space-y-4">
+        <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
               Пример расчета и подбора парового калорифера. ШАГ 9
@@ -1358,55 +1394,55 @@ export default function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <ul className="max-w-2xl space-y-2 sm:space-y-1">
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 2-10:</span>
+                <span>Калорифер КПСк 2-10</span>
                 <Formula example className="tracking-[0.1px]">
                   φ = ((130264 - 205576) / 205576) • 100 = -37%
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 3-10:</span>
+                <span>Калорифер КПСк 3-10</span>
                 <Formula example className="tracking-[0.35px]">
                   φ = ((190841 - 205576) / 205576) • 100 = -7%
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 4-10:</span>
+                <span>Калорифер КПСк 4-10</span>
                 <Formula example>
                   φ = ((234721 - 205576) / 205576) • 100 = +14%
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КП 310:</span>
+                <span>Калорифер КП 310</span>
                 <Formula example className="tracking-[0.3px]">
                   φ = ((211128 - 205576) / 205576) • 100 = +3%
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КП 410:</span>
+                <span>Калорифер КП 410</span>
                 <Formula example>
                   φ = ((245766 - 205576) / 205576) • 100 = +20%
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-7 А3:</span>
+                <span>Калорифер КФБ-7 А3</span>
                 <Formula example>
                   φ = ((230816 - 205576) / 205576) • 100 = +12%
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-7 А4:</span>
+                <span>Калорифер КФБ-7 А4</span>
                 <Formula example>
                   φ = ((268755 - 205576) / 205576) • 100 = +31%
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-8 А3:</span>
+                <span>Калорифер КФБ-8 А3</span>
                 <Formula example>
                   φ = ((249079 - 205576) / 205576) • 100 = +21%
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-8 А4:</span>
+                <span>Калорифер КФБ-8 А4</span>
                 <Formula example>
                   φ = ((290142 - 205576) / 205576) • 100 = +41%
                 </Formula>
@@ -1461,7 +1497,7 @@ export default function PodborRaschetKaloriferovPage() {
           </ul>
         </div>
         <CalcAerodynamicResistanceTables />
-        <div className="text-example space-y-4">
+        <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
               Пример расчета и подбора парового калорифера. ШАГ 10
@@ -1485,49 +1521,49 @@ export default function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <ul className="max-w-134 space-y-2 sm:space-y-1">
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 2-10:</span>
+                <span>Калорифер КПСк 2-10</span>
                 <Formula example>
                   ΔP = 4.23 • 5.77 <sup>1.832</sup> = 105 Па
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 3-10:</span>
+                <span>Калорифер КПСк 3-10</span>
                 <Formula example>
                   ΔP = 6.05 • 5.77 <sup>1.832</sup> = 150 Па
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КПСк 4-10:</span>
+                <span>Калорифер КПСк 4-10</span>
                 <Formula example>
                   ΔP = 8.63 • 5.77 <sup>1.833</sup> = 214 Па
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КП 310:</span>
+                <span>Калорифер КП 310</span>
                 <Formula example>
                   ΔP = 6.37 • 5.77 <sup>1.864</sup> = 167 Па
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КП 410:</span>
+                <span>Калорифер КП 410</span>
                 <Formula example>
                   ΔP = 8.67 • 5.77 <sup>1.848</sup> = 221 Па
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-7 А3:</span>
+                <span>Калорифер КФБ-7 А3</span>
                 <Formula example>
                   ΔP = 6.37 • 5.41 <sup>1.864</sup> = 148 Па
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-7 А4:</span>
+                <span>Калорифер КФБ-7 А4</span>
                 <Formula example>
                   ΔP = 8.67 • 5.41 <sup>1.848</sup> = 196 Па
                 </Formula>
               </li>
               <li className="flex items-baseline justify-between gap-2">
-                <span>Калорифер КФБ-8 А3:</span>
+                <span>Калорифер КФБ-8 А3</span>
                 <Formula example>
                   ΔP = 6.37 • 4.61 <sup>1.864</sup> = 110 Па
                 </Formula>
