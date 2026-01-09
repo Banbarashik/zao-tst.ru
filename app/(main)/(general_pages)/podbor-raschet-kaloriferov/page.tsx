@@ -1083,6 +1083,113 @@ export default function PodborRaschetKaloriferovPage() {
           </ul>
         </div>
       </section>
+
+      <section id="anchor7" className="space-y-4">
+        <Heading lvl={2} text="РАСЧЕТ ТЕПЛОВОЙ МОЩНОСТИ ПАРОВОГО КАЛОРИФЕРА" />
+        <div>
+          <ProductParagraph>
+            Формула для нахождения теплопроизводительности имеет вид:{" "}
+            <span className="text-2xl font-bold">
+              Q <sub>1</sub> = К • F к • Δ T
+            </span>
+          </ProductParagraph>
+          <ul>
+            <li>
+              Q <sub>1</sub> – вырабатываемая калорифером производительность по
+              теплу, Вт;
+            </li>
+            <li>
+              К – коэффициент теплопередачи выбранного калорифера, Вт/(м²•°С)
+            </li>
+            <li>
+              F к – площадь поверхности теплообмена выбранного калорифера, м²;
+            </li>
+            <li>
+              Δ T – температурный напор при заданных параметрах теплоносителей,
+              °С.
+            </li>
+          </ul>
+        </div>
+        <div className="space-y-4 text-[#6a2d2d]">
+          <div>
+            <ProductParagraph>
+              Пример расчета и подбора парового калорифера. ШАГ 7
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать паровой калорифер для нагрева приточного воздуха объемом
+              9000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г. Барнаула
+              -39°С. Температура в рабочей зоне производственного помещения
+              +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 7. Рассчитываем действительную тепловую мощность
+              подобранных паровых воздухонагревателей. Коэффициент теплопередачи
+              для каждого калорифера принимаем из соответствующего расчета,
+              площадь поверхности теплообмена вносим из табличных данных,
+              температурный напор идентичен для всех выбранных моделей.
+            </ProductParagraph>
+            <ul className="max-w-xl space-y-2 sm:space-y-0.5">
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КПСк 2-10:</span>
+                <span className="text-xl font-bold">
+                  Q 1 = 63.50 • 19.5 • 105.2 = 130264 Вт
+                </span>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КПСк 3-10:</span>
+                <span className="text-xl font-bold">
+                  Q 1 = 61.08 • 29.7 • 105.2 = 190841 Вт
+                </span>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КПСк 4-10:</span>
+                <span className="text-xl font-bold">
+                  Q 1 = 57.21 • 39.0 • 105.2 = 234721 Вт
+                </span>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КП 310:</span>
+                <span className="text-xl font-bold">
+                  Q 1 = 91.64 • 21.9 • 105.2 = 211128 Вт
+                </span>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КП 410:</span>
+                <span className="text-xl font-bold">
+                  Q 1 = 81.40 • 28.7 • 105.2 = 245766 Вт
+                </span>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КФБ-7 А3:</span>
+                <span className="text-xl font-bold">
+                  Q 1 = 91.04 • 24.1 • 105.2 = 230816 Вт
+                </span>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КФБ-7 А4:</span>
+                <span className="text-xl font-bold">
+                  Q 1 = 80.59 • 31.7 • 105.2 = 268755 Вт
+                </span>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КФБ-8 А3:</span>
+                <span className="text-xl font-bold">
+                  Q 1 = 83.96 • 28.2 • 105.2 = 249079 Вт
+                </span>
+              </li>
+              <li className="flex items-center justify-between gap-2">
+                <span>Калорифер КФБ-8 А4:</span>
+                <span className="text-xl font-bold">
+                  Q 1 = 74.14 • 37.2 • 105.2 = 290142 Вт
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
