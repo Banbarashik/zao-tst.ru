@@ -379,6 +379,24 @@ export default function PodborRaschetKaloriferovPage() {
             },
           ]}
         />
+        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <div className="relative aspect-1000/500 w-full">
+            <Image
+              src="/img/general_pages/kalorifer_podbor_par.png"
+              alt="Расчет площади фронтального сечения парового калорифера"
+              title="Расчет парового калорифера"
+              fill
+            />
+          </div>
+          <div className="relative aspect-1000/500 w-full">
+            <Image
+              src="/img/general_pages/kalorifer_podbor_steam.png"
+              alt="Расчет массовой скорости в фронтальном сечении парового калорифера"
+              title="Подбор парового калорифера"
+              fill
+            />
+          </div>
+        </div>
         <ProductParagraph>
           Все действия по подбору паровых воздухонагревателей КПСк, КП, КФБ-А П
           выложены в пошаговых расчетах. Прилагаются каталоги с характеристиками
@@ -983,6 +1001,24 @@ export default function PodborRaschetKaloriferovPage() {
               </ProductParagraph>
             </li>
           </ol>
+        </div>
+        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <div className="relative aspect-800/500 w-full">
+            <Image
+              src="/img/general_pages/par_kalorifer_temperatura_napor.png"
+              alt="Расчет температурного напора парового калорифера"
+              title="Средний логарифмический температурный напор"
+              fill
+            />
+          </div>
+          <div className="relative aspect-800/500 w-full">
+            <Image
+              src="/img/general_pages/steam_kalorifer_temperatura_napor.png"
+              alt="Дельта температур при расчете и подборе парового калорифера"
+              title="Формула логарифмического температурного напора"
+              fill
+            />
+          </div>
         </div>
         <div className="text-[#6a2d2d]">
           <ProductParagraph>
