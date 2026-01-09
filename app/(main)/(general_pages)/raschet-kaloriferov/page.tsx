@@ -195,7 +195,7 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section className="space-y-2">
+      <section id="anchor4" className="space-y-2">
         <Heading
           lvl={2}
           text="Аэродинамическое сопротивление при расчете калориферов"
@@ -308,7 +308,7 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section className="space-y-2">
+      <section id="anchor3" className="space-y-2">
         <Heading lvl={2} text="Запас поверхности теплообмена при расчете" />
         <ProductParagraph>
           Для калориферных установок рекомендуется закладывать запас поверхности

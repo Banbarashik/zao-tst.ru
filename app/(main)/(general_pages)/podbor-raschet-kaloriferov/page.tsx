@@ -1414,6 +1414,24 @@ export default function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
+        <ProductParagraph className="text-secondary-text">
+          Из подобранных моделей калориферы КПСк 2-10 и КПСк 3-10 имеют
+          недостаточную тепловую мощность. Запас площади поверхности паровых
+          воздухонагревателей КФБ-7 А4, КФБ-8 А3 и КФБ-8 А4 превышает
+          рекомендуемый диапазон.
+        </ProductParagraph>
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "ЗАПАС ПОВЕРХНОСТИ НАГРЕВА",
+              url: "/raschet-kaloriferov#anchor3",
+            },
+            {
+              name: "ЗАПАС СОПРОТИВЛЕНИЯ ПАР",
+              url: "/raschet-kaloriferov#anchor4",
+            },
+          ]}
+        />
       </section>
 
       <section id="anchor10" className="space-y-4">
@@ -1523,6 +1541,24 @@ export default function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
+        <ProductParagraph className="text-secondary-text">
+          Подробное описание нахождения потерь по воздушной стороне паровых
+          калориферов и таблицы с расчетными данными по каждой модели можно
+          посмотреть на странице сайта: Аэродинамическое сопротивление паровых
+          калориферов.
+        </ProductParagraph>
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "РАСЧЕТ СОПРОТИВЛЕНИЯ ПАР",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+            },
+            {
+              name: "ТАБЛИЦЫ СОПРОТИВЛЕНИЯ ПАР",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+            },
+          ]}
+        />
       </section>
     </>
   );
