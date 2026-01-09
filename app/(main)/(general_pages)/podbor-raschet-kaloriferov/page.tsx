@@ -676,7 +676,7 @@ export default function PodborRaschetKaloriferovPage() {
             воздухоподогревателя одного номера, вне зависимости от рядности,
             будет одинакова.
           </ProductParagraph>
-          <ul className="max-w-2xl space-y-2 sm:space-y-0.5">
+          <FormulasList>
             <li className="flex items-center justify-between gap-2">
               Калориферы КПСк и КП 10-го номера:
               <span className="block text-xl font-bold">
@@ -695,7 +695,7 @@ export default function PodborRaschetKaloriferovPage() {
                 v = (12060/3600) / 0.727 = 4.61 кг/(м²•с)
               </span>
             </li>
-          </ul>
+          </FormulasList>
           <ul>
             <li>v – массовая скорость в фронтальном сечении, кг/(м²•с);</li>
             <li>12060 - массовый расход воздуха, кг/час;</li>
@@ -838,7 +838,7 @@ export default function PodborRaschetKaloriferovPage() {
             фронтальном сечении 4.61 кг/(м²•с). Длину теплообменных элементов по
             каждому калориферу берем из таблицы с характеристиками.
           </ProductParagraph>
-          <ul className="max-w-2xl space-y-2 sm:space-y-0.5">
+          <FormulasList>
             <li className="flex items-center justify-between gap-2">
               Калорифер КПСк 2-10
               <span className="text-xl font-bold">
@@ -902,7 +902,7 @@ export default function PodborRaschetKaloriferovPage() {
                 74.14 Вт/(м²•°C)
               </span>
             </li>
-          </ul>
+          </FormulasList>
         </div>
         <ProductParagraph className="text-[#5a769a]">
           Подробное описание нахождения коэффициента теплопередачи паровых
@@ -1085,4 +1085,8 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
     </>
   );
+}
+
+function FormulasList({ children }) {
+  return <ul className="max-w-2xl space-y-2 sm:space-y-0.5">{children}</ul>;
 }
