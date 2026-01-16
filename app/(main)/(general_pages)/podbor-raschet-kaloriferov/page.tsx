@@ -1,5 +1,3 @@
-import productData from "@/data/products.json";
-
 import React from "react";
 
 import type { Metadata } from "next";
@@ -10,7 +8,6 @@ import { ArrowBigDownDash } from "lucide-react";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
-import ProductLinks from "@/components/general_pages/productLinks";
 import Link from "next/link";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
