@@ -126,7 +126,7 @@ export default function KaloriferParPage() {
               name: "Расчет паровых калориферов",
             },
             {
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
               name: "Сопротивление калориферов",
             },
           ]}
