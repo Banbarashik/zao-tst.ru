@@ -421,7 +421,7 @@ const kaloriferProps = [
   },
 ];
 
-export function KaloriferPropsTable<T extends Record<string, unknown>>({
+function KaloriferPropsTable<T extends Record<string, unknown>>({
   columns,
   data,
 }: {
@@ -468,7 +468,7 @@ export default function PodborRaschetKaloriferovPage() {
       <Heading lvl={1} text="Подбор и расчет калорифера парового" />
 
       <section className="mb-4 space-y-5">
-        <Heading lvl={2} text="РАСЧЕТ И ПОДБОР КАЛОРИФЕРОВ КПСК КП КФБ-А П" />
+        <Heading lvl={2} text="Расчет и подбор калориферов КПСК КП КФБ-А П" />
         <ProductParagraph className="mb-1">
           Расчет и подбор паровых калориферов осуществляется в следующей
           последовательности:
@@ -512,11 +512,11 @@ export default function PodborRaschetKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "ПАРОВЫЕ КАЛОРИФЕРЫ",
+              name: "Паровые калориферы",
               url: "/kalorifer-par",
             },
             {
-              name: "КАЛЬКУЛЯТОР ПАРОВОЙ КАЛОРИФЕР",
+              name: "Калькулятор паровой калорифер",
               url: "/kalorifery-par#anchor3",
             },
           ]}
@@ -550,11 +550,11 @@ export default function PodborRaschetKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "РАСЧЕТНАЯ ТЕМПЕРАТУРА ВОЗДУХА",
+              name: "Расчетная температура воздуха",
               url: "/raschet-kaloriferov#anchor1",
             },
             {
-              name: "МОДЕЛИ ПАРОВЫХ КАЛОРИФЕРОВ",
+              name: "Модели паровых калориферов",
               url: "/kalorifer-par#anchor2",
             },
           ]}
@@ -574,7 +574,7 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
 
       <section id="anchor1" className="mb-4 space-y-4">
-        <Heading lvl={2} text="РАСЧЕТ МОЩНОСТИ ПО ТЕПЛУ" />
+        <Heading lvl={2} text="Расчет мощности по теплу" />
         <div>
           <ProductParagraph>
             1. Находим тепловую мощность для нагрева необходимого объема
@@ -690,7 +690,7 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
 
       <section id="anchor2" className="mb-4 space-y-4">
-        <Heading lvl={2} text="РАСЧЕТ ПЛОЩАДИ ФРОНТАЛЬНОГО СЕЧЕНИЯ" />
+        <Heading lvl={2} text="Расчет площади фронтального сечения" />
         <div>
           <ProductParagraph>
             2. Установив необходимую тепловую мощность, определяем площадь
@@ -794,7 +794,7 @@ export default function PodborRaschetKaloriferovPage() {
       <section id="anchor3" className="mb-4 space-y-4">
         <Heading
           lvl={2}
-          text="РАСЧЕТ МАССОВОЙ СКОРОСТИ ВОЗДУХА"
+          text="Расчет массовой скорости воздуха"
           className="mb-0"
         />
         <div>
@@ -871,11 +871,11 @@ export default function PodborRaschetKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "МАССОВАЯ СКОРОСТЬ ВОЗДУХА",
+              name: "Массовая скорость воздуха",
               url: "/raschet-kaloriferov#anchor2",
             },
             {
-              name: "ПАРАМЕТРЫ ВОДЯНОГО ПАРА",
+              name: "Параметры водяного пара",
               url: "/kalorifer-par#anchor1",
             },
           ]}
@@ -883,7 +883,7 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
 
       <section id="anchor4" className="mb-4 space-y-4">
-        <Heading lvl={2} text="РАСЧЕТ РАСХОДА ПАРА ДЛЯ НАГРЕВА" />
+        <Heading lvl={2} text="Расчет расхода пара для нагрева" />
         <div>
           <ProductParagraph>
             4. Рассчитываем расход пара, исходя из требуемой тепловой мощности
@@ -955,7 +955,7 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
 
       <section id="anchor5" className="mb-4 space-y-4">
-        <Heading lvl={2} text="РАСЧЕТ КОЭФФИЦИЕНТА ТЕПЛОПЕРЕДАЧИ" />
+        <Heading lvl={2} text="Расчет коэффициента теплопередачи" />
         <div>
           <ProductParagraph>
             5. Произвести расчет коэффициента теплопередачи выбранных паровых
@@ -1085,11 +1085,11 @@ export default function PodborRaschetKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "РАСЧЕТ КОЭФФИЦИЕНТОВ ПАР",
+              name: "Расчет коэффициентов пар",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
             },
             {
-              name: "ТАБЛИЦЫ КОЭФФИЦИЕНТОВ ПАР",
+              name: "Таблицы коэффициентов пар",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
             },
           ]}
@@ -1097,7 +1097,7 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
 
       <section id="anchor6" className="mb-4 space-y-4">
-        <Heading lvl={2} text="РАСЧЕТ ТЕМПЕРАТУРНОГО НАПОРА" />
+        <Heading lvl={2} text="Расчет температурного напора" />
         <ProductParagraph>
           6. Выполнить расчет среднего по поверхности температурного напора.
           Ниже представлена формула для определения температурного напора с
@@ -1261,7 +1261,7 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
 
       <section id="anchor7" className="mb-4 space-y-4">
-        <Heading lvl={2} text="РАСЧЕТ ТЕПЛОВОЙ МОЩНОСТИ ПАРОВОГО КАЛОРИФЕРА" />
+        <Heading lvl={2} text="Расчет тепловой мощности парового калорифера" />
         <div>
           <ProductParagraph>
             7. Уточняем фактическую тепловую мощность выбранных паровых
@@ -1374,7 +1374,7 @@ export default function PodborRaschetKaloriferovPage() {
       <section id="anchor8" className="mb-4 space-y-4">
         <Heading
           lvl={2}
-          text="РАСЧЕТ РАСХОДА ПАРА ДЛЯ НАГРЕВА"
+          text="Расчет расхода пара для нагрева"
           className="mb-0"
         />
         <div>
@@ -1488,7 +1488,7 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
 
       <section id="anchor9" className="mb-4 space-y-4">
-        <Heading lvl={2} text="ЗАПАС ТЕПЛОВОЙ МОЩНОСТИ ПАРОВОГО КАЛОРИФЕРА" />
+        <Heading lvl={2} text="Запас тепловой мощности парового калорифера" />
         <div>
           <ProductParagraph>
             9. Определяем запас тепловой производительности или поверхности
@@ -1602,11 +1602,11 @@ export default function PodborRaschetKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "ЗАПАС ПОВЕРХНОСТИ НАГРЕВА",
+              name: "Запас поверхности нагрева",
               url: "/raschet-kaloriferov#anchor3",
             },
             {
-              name: "ЗАПАС СОПРОТИВЛЕНИЯ ПАР",
+              name: "Запас сопротивления пар",
               url: "/raschet-kaloriferov#anchor4",
             },
           ]}
@@ -1614,7 +1614,7 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
 
       <section id="anchor10" className="mb-4 space-y-4">
-        <Heading lvl={2} text="РАСЧЕТ ВОЗДУШНОГО СОПРОТИВЛЕНИЯ" />
+        <Heading lvl={2} text="Расчет воздушного сопротивления" />
         <div>
           <ProductParagraph>
             10. Произвести расчет аэродинамического сопротивления подобранных
@@ -1729,11 +1729,11 @@ export default function PodborRaschetKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "РАСЧЕТ СОПРОТИВЛЕНИЯ ПАР",
+              name: "Расчет сопротивления пар",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
             },
             {
-              name: "ТАБЛИЦЫ СОПРОТИВЛЕНИЯ ПАР",
+              name: "Таблицы сопротивления пар",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
             },
           ]}
@@ -1741,7 +1741,7 @@ export default function PodborRaschetKaloriferovPage() {
       </section>
 
       <section id="anchor11" className="mb-4 space-y-4">
-        <Heading lvl={2} text="ПОДБОР ПАРОВОГО КАЛОРИФЕРА" />
+        <Heading lvl={2} text="Подбор парового калорифера" />
         <ProductParagraph>
           11. Правильный и корректный подбор паровых калориферов направлен на
           поиск технического решения, обеспечивающего требуемый нагрев воздуха
@@ -1763,11 +1763,11 @@ export default function PodborRaschetKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "РАСЧЕТ И ПОДБОР КАЛОРИФЕРОВ",
+              name: "Расчет и подбор калориферов",
               url: "/raschet-kaloriferov",
             },
             {
-              name: "ПРОИЗВОДСТВО КАЛОРИФЕРОВ",
+              name: "Производство калориферов",
               url: "/kalorifery",
             },
           ]}
