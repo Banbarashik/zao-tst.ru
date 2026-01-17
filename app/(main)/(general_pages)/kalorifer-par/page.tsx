@@ -119,6 +119,18 @@ export default function KaloriferParPage() {
           соединяются между собой и образуют сплошную поверхность нагрева без
           пропусков холодных воздушных струй.
         </ProductParagraph>
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/podbor-raschet-kaloriferov",
+              name: "Расчет паровых калориферов",
+            },
+            {
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+              name: "Сопротивление калориферов",
+            },
+          ]}
+        />
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Процесс парообразования" />
           <ProductParagraph className="text-base">
@@ -223,16 +235,18 @@ export default function KaloriferParPage() {
           случае нижняя часть теплообменника может быть заполнена воздухом и
           конденсатом.
         </ProductParagraph>
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                url: "/koefficient-teploperedachi-parovyh-kaloriferov",
-                name: "Коэффициент теплопередачи",
-              },
-            ]}
-          />
-        </div>
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov",
+              name: "Коэффициент теплопередачи",
+            },
+            {
+              url: "/podbor-raschet-kaloriferov#anchor4",
+              name: "Расчет расхода пара",
+            },
+          ]}
+        />
         <section id="anchor1" className="text-[#5a769a]">
           <Heading lvl={3} text="Температура и давление насыщенного пара" />
           <ProductParagraph className="text-base">
