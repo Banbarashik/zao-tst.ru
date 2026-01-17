@@ -1614,6 +1614,18 @@ export default function PodborRaschetKaloriferovPage() {
           выпускаемых нашим предприятием спирально-накатных теплообменников
           можно ознакомиться на странице: Калориферы. Производство.
         </ProductParagraph>
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "РАСЧЕТ И ПОДБОР КАЛОРИФЕРОВ",
+              url: "/raschet-kaloriferov",
+            },
+            {
+              name: "ПРОИЗВОДСТВО КАЛОРИФЕРОВ",
+              url: "/kalorifery",
+            },
+          ]}
+        />
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
