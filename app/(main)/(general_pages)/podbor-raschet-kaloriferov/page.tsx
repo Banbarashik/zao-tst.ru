@@ -429,36 +429,38 @@ function KaloriferPropsTable<T extends Record<string, unknown>>({
   data: readonly T[];
 }) {
   return (
-    <table className="text-black">
-      <thead>
-        <tr>
-          {columns.map((col) => (
-            <th key={String(col.key)} className="px-2 py-1">
-              {col.label}
-            </th>
-          ))}
-        </tr>
-      </thead>
-
-      <tbody>
-        {data.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            {columns.map((col, colIndex) => {
-              const value = row[col.key];
-
-              return (
-                <td
-                  key={String(col.key)}
-                  className={colIndex === 0 ? "py-0.5 pl-1.5 text-left" : ""}
-                >
-                  {col.render ? col.render(value, row) : String(value)}
-                </td>
-              );
-            })}
+    <div className="w-full overflow-x-auto">
+      <table className="w-full min-w-231 text-black xl:min-w-auto">
+        <thead>
+          <tr>
+            {columns.map((col) => (
+              <th key={String(col.key)} className="px-2 py-1">
+                {col.label}
+              </th>
+            ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+
+        <tbody>
+          {data.map((row, rowIndex) => (
+            <tr key={rowIndex}>
+              {columns.map((col, colIndex) => {
+                const value = row[col.key];
+
+                return (
+                  <td
+                    key={String(col.key)}
+                    className={colIndex === 0 ? "py-0.5 pl-1.5 text-left" : ""}
+                  >
+                    {col.render ? col.render(value, row) : String(value)}
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
