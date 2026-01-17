@@ -127,7 +127,7 @@ export default function RaschetKaloriferovPage() {
           компоновки калориферов.
         </ProductParagraph>
       </section>
-      <div className="w-1/2">
+      <div className="sm:w-1/2">
         <LinkButtonsBlock
           buttons={[
             {
@@ -325,7 +325,7 @@ export default function RaschetKaloriferovPage() {
         <ProductParagraph className="mb-4">
           Находят средний температурный напор.
         </ProductParagraph>
-        <div className="mb-4 w-1/2">
+        <div className="mb-4 sm:w-1/2">
           <LinkButtonsBlock
             buttons={[
               {
