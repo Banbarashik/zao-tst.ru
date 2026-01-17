@@ -127,6 +127,16 @@ export default function RaschetKaloriferovPage() {
           компоновки калориферов.
         </ProductParagraph>
       </section>
+      <div className="w-1/2">
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/podbor-raschet-kaloriferov",
+              name: "Подбор паровых калориферов",
+            },
+          ]}
+        />
+      </div>
 
       <section id="anchor1" className="space-y-2">
         <Heading lvl={2} text="Расчетная температура воздуха" />
@@ -256,7 +266,7 @@ export default function RaschetKaloriferovPage() {
 
       <section className="space-y-2">
         <Heading lvl={2} text="Порядок расчета и подбора калориферов" />
-        <ProductParagraph>
+        <ProductParagraph className="mb-4">
           Подбор электрической, паровой и водяной воздухонагревательной
           установки начинается с расчета теплового потока, который нужно
           передать воздуху, при известном его расходе и температуре на входе и
@@ -264,6 +274,20 @@ export default function RaschetKaloriferovPage() {
           первичного теплоносителя: график горячей воды, параметры пара,
           температура поверхности электронагревателей.
         </ProductParagraph>
+        <div className="mb-4">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                url: "/podbor-raschet-kaloriferov#anchor1",
+                name: "Расчет мощности пар",
+              },
+              {
+                url: "/podbor-raschet-kaloriferov#anchor2",
+                name: "Расчет фронтального сечения",
+              },
+            ]}
+          />
+        </div>
         <ProductParagraph>
           Далее задаются массовой скоростью воздуха и вычисляют требуемое
           фронтальное сечение для прохода нагреваемого воздушного потока через
@@ -274,19 +298,43 @@ export default function RaschetKaloriferovPage() {
           уточняют фактическую весовую скорость воздуха в подобранных
           теплообменниках.
         </ProductParagraph>
-        <ProductParagraph>
+        <ProductParagraph className="mb-4">
           Определяют расход и скорость греющей воды в трубках многоходового
           воздухонагревателя, расход греющего пара у одноходовых моделей.
         </ProductParagraph>
+        <div className="mb-4">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                url: "/podbor-raschet-kaloriferov#anchor8",
+                name: "Расход насыщенного пара",
+              },
+              {
+                url: "/podbor-raschet-kaloriferov#anchor5",
+                name: "Теплопередача пар",
+              },
+            ]}
+          />
+        </div>
         <ProductParagraph>
           Рассчитывают коэффициент теплопередачи, который зависит от вида
           теплоносителя и скорости его прохождения по теплообменным трубкам,
           весовой скорости воздуха в фронтальном сечении, габаритных размеров,
           конструкционных и теплотехнических характеристик калориферов.
         </ProductParagraph>
-        <ProductParagraph>
+        <ProductParagraph className="mb-4">
           Находят средний температурный напор.
         </ProductParagraph>
+        <div className="mb-4 w-1/2">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                url: "/podbor-raschet-kaloriferov#anchor6",
+                name: "Температурный напор пар",
+              },
+            ]}
+          />
+        </div>
         <ProductParagraph>
           Подсчитывают фактическую тепловую мощность подобранных многоходовых и
           одноходовых воздухонагревателей, электрокалориферной установки.

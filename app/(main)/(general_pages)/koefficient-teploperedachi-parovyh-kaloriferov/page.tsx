@@ -508,11 +508,15 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </ProductParagraph>
           </div>
         </section>
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[{ name: "Паровые калориферы", url: "/kalorifer-par" }]}
-          />
-        </div>
+        <LinkButtonsBlock
+          buttons={[
+            { name: "Паровые калориферы", url: "/kalorifer-par" },
+            {
+              name: "Расчет парового калорифера",
+              url: "/podbor-raschet-kaloriferov",
+            },
+          ]}
+        />
       </section>
 
       <section id="anchor2">
@@ -550,7 +554,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             V – действительная массовая скорость воздуха в фронтальном сечении,
             кг/м<sup>2</sup>•с;
           </li>
-          <li>L – длина теплоотдающего элемента подобранного калорифера, м </li>
+          <li>L – длина теплоотдающего элемента подобранного калорифера, м;</li>
           <li>
             n – значение из таблицы, принимаемое в зависимости от модели и
             рядности воздухонагревателя;
@@ -589,7 +593,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               </li>
               <li>
                 1.655 – длина теплоотдающего элемента КПСк 3-11 по табличным
-                данным, м
+                данным, м;
               </li>
               <li>
                 0.405 – значение из таблицы, выбранное для трехрядных
@@ -628,7 +632,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               </li>
               <li>
                 1.655 – длина теплоотдающего элемента КП 311 по табличным
-                данным, м
+                данным, м;
               </li>
               <li>
                 0.431 – значение из таблицы, выбранное для трехрядных
@@ -666,7 +670,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               </li>
               <li>
                 1.160 – длина теплоотдающего элемента КФБ-10 А4 по табличным
-                данным, м
+                данным, м;
               </li>
               <li>
                 0.452 – значение из таблицы, выбранное для четырехрядных

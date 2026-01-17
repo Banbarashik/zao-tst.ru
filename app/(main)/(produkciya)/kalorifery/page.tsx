@@ -63,7 +63,7 @@ const kaloriferyCategories = [
 
 export default function KaloriferyPage() {
   return (
-    <article className="flex flex-col space-y-6">
+    <article className="@container flex w-full flex-col space-y-6">
       <Heading lvl={1} text="Калориферы" />
 
       <section>
@@ -130,16 +130,18 @@ export default function KaloriferyPage() {
           собой многократное последовательное движение теплоносителя; калориферы
           размещаются с горизонтальным расположением нагревательных элементов.
         </ProductParagraph>
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                name: "Паровой калорифер",
-                url: "/kalorifer-par",
-              },
-            ]}
-          />
-        </div>
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Паровой калорифер",
+              url: "/kalorifer-par",
+            },
+            {
+              name: "Расчет паровых калориферов",
+              url: "/podbor-raschet-kaloriferov",
+            },
+          ]}
+        />
       </section>
 
       {/* Секция "Типы калориферов" с подсекциями */}
