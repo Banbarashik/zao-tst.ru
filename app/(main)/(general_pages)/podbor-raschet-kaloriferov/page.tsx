@@ -318,6 +318,150 @@ export function SteamHeaterTempTable({ data, blocksPerRow = 5 }: Props) {
   );
 }
 
+type KaloriferPropColumn<T> = {
+  key: keyof T;
+  label: string;
+  render?: (value: T[keyof T], row: T) => React.ReactNode;
+};
+
+const kaloriferPropColumns /* : KaloriferPropColumn<{
+  name: string;
+  heatReserve: number;
+  resistance: number;
+  dimensions: string;
+  weight: number;
+  render?: (value: T[keyof T], row: T) => React.ReactNode;
+}>[] */ = [
+  {
+    key: "name",
+    label: "Наименование парового калорифера",
+  },
+  {
+    key: "heatReserve",
+    label: "Запас поверхности нагрева, %",
+    render: (value: number) => (value > 0 ? `+${value}` : String(value)),
+  },
+  {
+    key: "resistance",
+    label: "Аэродинамическое сопротивление, Па",
+  },
+  {
+    key: "dimensions",
+    label: "Внешние габаритные размеры, мм",
+  },
+  {
+    key: "weight",
+    label: "Масса, кг",
+  },
+] as const;
+
+const kaloriferProps = [
+  {
+    name: "Калорифер КПСк 2-10",
+    heatReserve: -37,
+    resistance: 105,
+    dimensions: "1357 × 572 × 180",
+    weight: 46,
+  },
+  {
+    name: "Калорифер КПСк 3-10",
+    heatReserve: -7,
+    resistance: 150,
+    dimensions: "1357 × 572 × 180",
+    weight: 65,
+  },
+  {
+    name: "Калорифер КПСк 4-10",
+    heatReserve: 19,
+    resistance: 214,
+    dimensions: "1357 × 572 × 180",
+    weight: 79,
+  },
+  {
+    name: "Калорифер КП 310",
+    heatReserve: 3,
+    resistance: 167,
+    dimensions: "1357 × 572 × 180",
+    weight: 74,
+  },
+  {
+    name: "Калорифер КП 410",
+    heatReserve: 20,
+    resistance: 221,
+    dimensions: "1357 × 572 × 220",
+    weight: 92,
+  },
+  {
+    name: "Калорифер КФБ-7 A3",
+    heatReserve: 12,
+    resistance: 148,
+    dimensions: "1060 × 790 × 180",
+    weight: 87,
+  },
+  {
+    name: "Калорифер КФБ-7 A4",
+    heatReserve: 31,
+    resistance: 196,
+    dimensions: "1060 × 790 × 220",
+    weight: 116,
+  },
+  {
+    name: "Калорифер КФБ-8 A3",
+    heatReserve: 21,
+    resistance: 110,
+    dimensions: "1210 × 790 × 180",
+    weight: 100,
+  },
+  {
+    name: "Калорифер КФБ-8 A4",
+    heatReserve: 41,
+    resistance: 146,
+    dimensions: "1210 × 790 × 220",
+    weight: 133,
+  },
+];
+
+export function KaloriferPropsTable<T extends Record<string, unknown>>({
+  columns,
+  data,
+}: {
+  columns: readonly KaloriferPropColumn<T>[];
+  data: readonly T[];
+}) {
+  return (
+    <table className="text-black">
+      <thead>
+        <tr>
+          {columns.map((col) => (
+            <th key={String(col.key)} className="px-2 py-1">
+              {col.label}
+            </th>
+          ))}
+        </tr>
+      </thead>
+
+      <tbody>
+        {data.map((row, rowIndex) => (
+          <tr key={rowIndex}>
+            {columns.map((col, colIndex) => {
+              const value = row[col.key];
+
+              return (
+                <td
+                  key={String(col.key)}
+                  className={colIndex === 0 ? "pl-1.5 text-left" : ""}
+                >
+                  {col.render ? col.render(value, row) : String(value)}
+                </td>
+              );
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
 export default function PodborRaschetKaloriferovPage() {
   return (
     <>
@@ -1666,6 +1810,10 @@ export default function PodborRaschetKaloriferovPage() {
               </li>
             </ul>
           </div>
+          <KaloriferPropsTable
+            columns={kaloriferPropColumns}
+            data={kaloriferProps}
+          />
           <div>
             <ProductParagraph>
               В результате расчета и подбора паровых калориферов для обеспечения
