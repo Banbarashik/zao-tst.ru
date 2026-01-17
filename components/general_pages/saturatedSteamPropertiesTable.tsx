@@ -56,7 +56,7 @@ export default function SaturatedSteamPropertiesTable() {
             <th className="w-18 p-1">
               кг/м<sup>3</sup>
             </th>
-            <th className="w-18 p-1">кДж/( кг•°C)</th>
+            <th className="w-18 p-1">кДж/(кг•°C)</th>
             <th className="w-18 p-1">кДж/кг</th>
             <th className="w-18 p-1">ккал/кг</th>
             <th className="w-18 p-1">кДж/кг</th>
