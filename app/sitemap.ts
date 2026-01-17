@@ -146,6 +146,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ],
     },
     {
+      url: `${SITE_URL}/podbor-raschet-kaloriferov`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+      images: [
+        `${pathToImgFolders.generalPages}/kalorifer_podbor_par.png`,
+        `${pathToImgFolders.generalPages}/kalorifer_podbor_steam.png`,
+        `${pathToImgFolders.generalPages}/par_kalorifer_temperatura_napor.png`,
+        `${pathToImgFolders.generalPages}/steam_kalorifer_temperatura_napor.png`,
+      ],
+    },
+    {
       url: `${SITE_URL}/kalorifery-voda`,
       lastModified: new Date(),
       changeFrequency: "monthly",
