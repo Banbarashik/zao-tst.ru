@@ -220,16 +220,18 @@ export default function KaloriferyPage() {
         </section>
       </section>
 
-      <div className="sm:w-1/2">
-        <LinkButtonsBlock
-          buttons={[
-            {
-              name: "Расчет и подбор калориферов",
-              url: "/raschet-kaloriferov",
-            },
-          ]}
-        />
-      </div>
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Расчет и подбор калориферов",
+            url: "/raschet-kaloriferov",
+          },
+          {
+            name: "Калориферы для сушки",
+            url: "/kalorifer-sushilnaia-kamera",
+          },
+        ]}
+      />
     </article>
   );
 }
