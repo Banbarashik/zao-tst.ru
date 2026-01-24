@@ -1843,7 +1843,7 @@ export default function PodborRaschetKaloriferovPage() {
       <section id="anchor12" className="space-y-4">
         <Heading
           lvl={2}
-          text="РАСЧЕТ И ПОДБОР ПАРОВЫХ КАЛОРИФЕРОВ ДЛЯ ТЕХНОЛОГИЧЕСКОГО НАГРЕВА"
+          text="Расчет и подбор паровых калориферов для технологического нагрева"
         />
         <ProductParagraph>
           Для высокотемпературного нагрева воздуха в рамках обеспечения
@@ -1913,8 +1913,8 @@ export default function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="text-example">
-                <ProductParagraph>
-                  4 КАЛОРИФЕРА КФБ-12 А4. НАГРЕВ ОТ 10°С ДО 144°С
+                <ProductParagraph className="uppercase">
+                  4 калорифера КФБ-12 А4. Нагрев от 10°с до 144°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 1.01 = 25250 кг/час</li>
@@ -1931,8 +1931,8 @@ export default function PodborRaschetKaloriferovPage() {
                 </ul>
               </div>
               <div className="text-example">
-                <ProductParagraph>
-                  4 КАЛОРИФЕРА КФБ-12 А3. НАГРЕВ ОТ 10°С ДО 139°С
+                <ProductParagraph className="uppercase">
+                  4 калорифера КФБ-12 А3. Нагрев от 10°с до 139°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 1.01 = 25250 кг/час</li>
@@ -1957,8 +1957,8 @@ export default function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="text-example">
-                <ProductParagraph>
-                  КАЛОРИФЕР КФБ-12 А4 ПЕРВОГО РЯДА. НАГРЕВ ОТ 10°С ДО 78°С
+                <ProductParagraph className="uppercase">
+                  Калорифер КФБ-12 А4 первого ряда. Нагрев от 10°с до 78°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 1.11 = 27750 кг/час</li>
@@ -1985,8 +1985,8 @@ export default function PodborRaschetKaloriferovPage() {
                 </ul>
               </div>
               <div className="text-example">
-                <ProductParagraph>
-                  КАЛОРИФЕР КФБ-12 А3 ПЕРВОГО РЯДА. НАГРЕВ ОТ 10°С ДО 70°С
+                <ProductParagraph className="uppercase">
+                  Калорифер КФБ-12 А3 первого ряда. Нагрев от 10°с до 70°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 1.13 = 28250 кг/час</li>
@@ -2023,8 +2023,8 @@ export default function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="text-example">
-                <ProductParagraph>
-                  КАЛОРИФЕР КФБ-12 А4 ВТОРОГО РЯДА. НАГРЕВ ОТ 78°С ДО 116°С
+                <ProductParagraph className="uppercase">
+                  Калорифер КФБ-12 А4 второго ряда. Нагрев от 78°с до 116°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 0.96 = 24000 кг/час</li>
@@ -2051,8 +2051,8 @@ export default function PodborRaschetKaloriferovPage() {
                 </ul>
               </div>
               <div className="text-example">
-                <ProductParagraph>
-                  КАЛОРИФЕР КФБ-12 А3 ВТОРОГО РЯДА. НАГРЕВ ОТ 70°С ДО 107°С
+                <ProductParagraph className="uppercase">
+                  Калорифер КФБ-12 А3 второго ряда. Нагрев от 70°с до 107°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 0.98 = 24500 кг/час</li>
@@ -2089,8 +2089,8 @@ export default function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="text-example">
-                <ProductParagraph>
-                  КАЛОРИФЕР КФБ-12 А4 ТРЕТЬЕГО РЯДА. НАГРЕВ ОТ 116°С ДО 135°С
+                <ProductParagraph className="uppercase">
+                  Калорифер КФБ-12 А4 третьего ряда. Нагрев от 116°с до 135°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 0.89 = 22250 кг/час</li>
@@ -2117,8 +2117,8 @@ export default function PodborRaschetKaloriferovPage() {
                 </ul>
               </div>
               <div className="text-example">
-                <ProductParagraph>
-                  КАЛОРИФЕР КФБ-12 А3 ТРЕТЬЕГО РЯДА. НАГРЕВ ОТ 107°С ДО 128°С
+                <ProductParagraph className="uppercase">
+                  Калорифер КФБ-12 А3 третьего ряда. Нагрев от 107°с до 128°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 0.90 = 22500 кг/час</li>
@@ -2155,8 +2155,8 @@ export default function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="text-example">
-                <ProductParagraph>
-                  КАЛОРИФЕР КФБ-12 А4 ЧЕТВЕРТОГО РЯДА. НАГРЕВ ОТ 135°С ДО 144°С
+                <ProductParagraph className="uppercase">
+                  Калорифер КФБ-12 А4 четвертого ряда. Нагрев от 135°с до 144°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 0.86 = 21500 кг/час</li>
@@ -2183,8 +2183,8 @@ export default function PodborRaschetKaloriferovPage() {
                 </ul>
               </div>
               <div className="text-example">
-                <ProductParagraph>
-                  КАЛОРИФЕР КФБ-12 А3 ЧЕТВЕРТОГО РЯДА. НАГРЕВ ОТ 128°С ДО 139°С
+                <ProductParagraph className="uppercase">
+                  Калорифер КФБ-12 А3 четвертого ряда. Нагрев от 128°с до 139°с
                 </ProductParagraph>
                 <ul className="font-bold">
                   <li>G = 25000 • 0.87 = 21750 кг/час</li>
