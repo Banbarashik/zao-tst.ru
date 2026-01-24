@@ -1859,6 +1859,24 @@ export default function PodborRaschetKaloriferovPage() {
           значения каждого ряда по тепловой мощности, расходу пара и
           аэродинамическому сопротивлению суммируются.
         </ProductParagraph>
+        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <div className="relative aspect-1000/500 w-full">
+            <Image
+              src="/img/general_pages/kalorifer_podbor_par_blok.png"
+              alt="Расчет многорядной установки паровых воздухонагревателей"
+              title="Установка четырехрядных паровых калориферов"
+              fill
+            />
+          </div>
+          <div className="relative aspect-1000/500 w-full">
+            <Image
+              src="/img/general_pages/kalorifer_podbor_blok_par.png"
+              alt="Подбор многорядной установки паровых воздухонагревателей"
+              title="Установка трехрядных паровых калориферов"
+              fill
+            />
+          </div>
+        </div>
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1886,6 +1904,7 @@ export default function PodborRaschetKaloriferovPage() {
             калорифера на количество рядов.
           </ProductParagraph>
         </div>
+
         <div className="space-y-4">
           <div>
             <ProductParagraph className="text-example mb-2">
@@ -2193,6 +2212,25 @@ export default function PodborRaschetKaloriferovPage() {
             </div>
           </div>
 
+          <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+            <div className="relative aspect-1000/500 w-full">
+              <Image
+                src="/img/general_pages/kalorifer_podbor_blok_steam.png"
+                alt="Высокотемпературный подогрев воздуха для технологических линий"
+                title="Температура воздуха при многоступенчатом нагреве паром"
+                fill
+              />
+            </div>
+            <div className="relative aspect-1000/500 w-full">
+              <Image
+                src="/img/general_pages/kalorifer_podbor_steam_blok.png"
+                alt="Технологический нагрев воздуха паровыми теплообменниками"
+                title="Температура воздуха многорядных паровых установок"
+                fill
+              />
+            </div>
+          </div>
+
           <div>
             <ProductParagraph className="text-example mb-2">
               Итоговые результаты основного расчета. Отмечаем температуру
@@ -2221,6 +2259,7 @@ export default function PodborRaschetKaloriferovPage() {
             </div>
           </div>
         </div>
+
         <div className="text-example">
           <ProductParagraph>
             Теплоаэродинамические характеристики воздухонагревательного блока,
