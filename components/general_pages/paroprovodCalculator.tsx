@@ -25,9 +25,7 @@ export default function ParoprovodCalculator() {
   };
 
   const handleNumericInput = (value: string, setter: (val: string) => void) => {
-    if (/^-?\d*\.?\d*$/.test(value) || value === "") {
-      setter(value);
-    }
+    if (/^\d+$/.test(value) || value === "") setter(value);
   };
 
   return (
@@ -38,8 +36,6 @@ export default function ParoprovodCalculator() {
           value={rashodPara}
           onChange={(e) => handleNumericInput(e.target.value, setRashodPara)}
           onBlur={(e) => {
-            if (e.target.value === "-" || e.target.value === ".")
-              return setRashodPara("");
             if (Number(e.target.value) < 20) setRashodPara("20");
             if (Number(e.target.value) > 30000) setRashodPara("30000");
           }}
@@ -52,8 +48,6 @@ export default function ParoprovodCalculator() {
           value={v}
           onChange={(e) => handleNumericInput(e.target.value, setV)}
           onBlur={(e) => {
-            if (e.target.value === "-" || e.target.value === ".")
-              return setV("");
             if (Number(e.target.value) < 10) setV("10");
             if (Number(e.target.value) > 70) setV("70");
           }}
