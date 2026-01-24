@@ -155,6 +155,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         `${pathToImgFolders.generalPages}/kalorifer_podbor_steam.png`,
         `${pathToImgFolders.generalPages}/par_kalorifer_temperatura_napor.png`,
         `${pathToImgFolders.generalPages}/steam_kalorifer_temperatura_napor.png`,
+        `${pathToImgFolders.generalPages}/kalorifer_podbor_par_blok.png`,
+        `${pathToImgFolders.generalPages}/kalorifer_podbor_blok_par.png`,
+        `${pathToImgFolders.generalPages}/kalorifer_podbor_blok_steam.png`,
+        `${pathToImgFolders.generalPages}/kalorifer_podbor_steam_blok.png`,
       ],
     },
     {
