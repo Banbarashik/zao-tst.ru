@@ -31,8 +31,8 @@ export default function ParoprovodCalculator() {
   };
 
   return (
-    <div className="flex flex-col">
-      <label>
+    <div className="flex flex-col items-end gap-2">
+      <label className="flex items-center gap-2">
         Расход пара, кг/час
         <input
           value={rashodPara}
@@ -41,9 +41,10 @@ export default function ParoprovodCalculator() {
             if (e.target.value === "-" || e.target.value === ".")
               setRashodPara("");
           }}
+          className={`${rashodPara !== "" ? "bg-[#ffeb9a]" : "bg-[#b0c4de]"} rounded-sm border border-[#723910] p-1.25 outline-none`}
         />
       </label>
-      <label>
+      <label className="flex items-center gap-2">
         Скорость пара, м/с
         <input
           value={v}
@@ -51,13 +52,17 @@ export default function ParoprovodCalculator() {
           onBlur={(e) => {
             if (e.target.value === "-" || e.target.value === ".") setV("");
           }}
+          className={`${v !== "" ? "bg-[#ffeb9a]" : "bg-[#b0c4de]"} rounded-sm border border-[#723910] p-1.25 outline-none`}
         />
       </label>
-      <label>
+      <label className="flex items-center gap-2">
         Давление насыщенного пара, МПа
         <select
           value={davleniePara}
           onChange={(e) => setDavleniePara(e.target.value)}
+          className={
+            "rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 outline-none"
+          }
         >
           <option value="1.69">0.1</option>
           <option value="1.16">0.15</option>
@@ -78,12 +83,27 @@ export default function ParoprovodCalculator() {
         </select>
       </label>
       <div className="flex gap-2">
-        <button onClick={calculate}>Рассчитать</button>
-        <button onClick={reset}>Сброс</button>
+        <button
+          onClick={calculate}
+          className="radius-xs cursor-pointer border border-black bg-[#d9d9d9] p-1"
+        >
+          Рассчитать
+        </button>
+        <button
+          onClick={reset}
+          className="radius-xs cursor-pointer border border-black bg-[#d9d9d9] p-1"
+        >
+          Сброс
+        </button>
       </div>
-      <label>
+      <label className="flex items-center gap-2">
         Диаметр паропровода, мм
-        <input value={d} readOnly disabled />
+        <input
+          value={d}
+          readOnly
+          disabled
+          className={"rounded-sm border border-[#723910] p-1.25 outline-none"}
+        />
       </label>
     </div>
   );
