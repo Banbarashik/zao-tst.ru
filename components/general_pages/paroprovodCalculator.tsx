@@ -39,7 +39,9 @@ export default function ParoprovodCalculator() {
           onChange={(e) => handleNumericInput(e.target.value, setRashodPara)}
           onBlur={(e) => {
             if (e.target.value === "-" || e.target.value === ".")
-              setRashodPara("");
+              return setRashodPara("");
+            if (Number(e.target.value) < 20) setRashodPara("20");
+            if (Number(e.target.value) > 30000) setRashodPara("30000");
           }}
           className={`${rashodPara !== "" ? "bg-[#ffeb9a]" : "bg-[#b0c4de]"} rounded-sm border border-[#723910] p-1.25 outline-none`}
         />
@@ -50,7 +52,10 @@ export default function ParoprovodCalculator() {
           value={v}
           onChange={(e) => handleNumericInput(e.target.value, setV)}
           onBlur={(e) => {
-            if (e.target.value === "-" || e.target.value === ".") setV("");
+            if (e.target.value === "-" || e.target.value === ".")
+              return setV("");
+            if (Number(e.target.value) < 10) setV("10");
+            if (Number(e.target.value) > 70) setV("70");
           }}
           className={`${v !== "" ? "bg-[#ffeb9a]" : "bg-[#b0c4de]"} rounded-sm border border-[#723910] p-1.25 outline-none`}
         />
