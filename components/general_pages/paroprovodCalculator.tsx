@@ -14,7 +14,7 @@ export default function ParoprovodCalculator() {
     const numV = Number(v);
     const q = numRashod * numDavlenie; // объемный расход пара, м³/ч
     if (rashodPara !== "" && v !== "")
-      setD(String(Math.sqrt((354 * q) / numV)));
+      setD(String(Math.round(Math.sqrt((354 * q) / numV))));
   };
 
   const reset = () => {
