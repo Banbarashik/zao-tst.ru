@@ -2,6 +2,7 @@ import Heading from "@/components/general_pages/heading";
 import type { Metadata } from "next";
 
 import ParoprovodCalculator from "@/components/general_pages/paroprovodCalculator";
+import { ParoprovodTable } from "@/components/general_pages/paroprovodTable";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор диаметра паропроводов",
@@ -19,6 +20,7 @@ export default function ParoprovodPage() {
         text="Подбор диаметра паропровода для парового калорифера"
       />
       <ParoprovodCalculator />
+      <ParoprovodTable />
     </>
   );
 }
