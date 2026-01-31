@@ -29,7 +29,7 @@ export default function ParoprovodCalculator() {
   };
 
   return (
-    <div className="flex flex-col items-end gap-2">
+    <div className="flex flex-col items-end gap-2 border border-[#b4b4b4] p-2">
       <label className="flex items-center gap-2">
         Расход пара, кг/час
         <input
