@@ -1,0 +1,109 @@
+"use client";
+
+import { useState } from "react";
+
+export default function ParoprovodCalculator() {
+  const [rashodPara, setRashodPara] = useState(""); // Расход пара, кг/час
+  const [davleniePara, setDavleniePara] = useState("1.694"); // Давление насыщенного пара, МПа
+  const [v, setV] = useState(""); // Скорость пара, м/с
+  const [d, setD] = useState(""); // Диаметр паропровода, мм
+
+  const calculate = () => {
+    const numRashod = Number(rashodPara);
+    const numDavlenie = Number(davleniePara);
+    const numV = Number(v);
+    const q = numRashod * numDavlenie; // объемный расход пара, м³/ч
+    if (rashodPara !== "" && v !== "")
+      setD(String(Math.round(Math.sqrt((354 * q) / numV) * 100) / 100));
+  };
+
+  const reset = () => {
+    setRashodPara("");
+    setDavleniePara("1.694");
+    setV("");
+    setD("");
+  };
+
+  const handleNumericInput = (value: string, setter: (val: string) => void) => {
+    if (/^\d+$/.test(value) || value === "") setter(value);
+  };
+
+  return (
+    <div className="flex flex-col items-end gap-2 border border-[#b4b4b4] p-2">
+      <label className="flex items-center gap-2">
+        Расход пара, кг/час
+        <input
+          value={rashodPara}
+          onChange={(e) => handleNumericInput(e.target.value, setRashodPara)}
+          onBlur={(e) => {
+            if (Number(e.target.value) < 20) setRashodPara("20");
+            if (Number(e.target.value) > 30000) setRashodPara("30000");
+          }}
+          className={`${rashodPara !== "" ? "bg-[#ffeb9a]" : "bg-[#b0c4de]"} rounded-sm border border-[#723910] p-1.25 outline-none`}
+        />
+      </label>
+      <label className="flex items-center gap-2">
+        Скорость пара, м/с
+        <input
+          value={v}
+          onChange={(e) => handleNumericInput(e.target.value, setV)}
+          onBlur={(e) => {
+            if (Number(e.target.value) < 10) setV("10");
+            if (Number(e.target.value) > 70) setV("70");
+          }}
+          className={`${v !== "" ? "bg-[#ffeb9a]" : "bg-[#b0c4de]"} rounded-sm border border-[#723910] p-1.25 outline-none`}
+        />
+      </label>
+      <label className="flex items-center gap-2">
+        Давление насыщенного пара, МПа
+        <select
+          value={davleniePara}
+          onChange={(e) => setDavleniePara(e.target.value)}
+          className={
+            "rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 outline-none"
+          }
+        >
+          <option value="1.694">0.1</option>
+          <option value="1.159">0.15</option>
+          <option value="0.8854">0.2</option>
+          <option value="0.7184">0.25</option>
+          <option value="0.6056">0.3</option>
+          <option value="0.5240">0.35</option>
+          <option value="0.4622">0.4</option>
+          <option value="0.4138">0.45</option>
+          <option value="0.3747">0.5</option>
+          <option value="0.3155">0.6</option>
+          <option value="0.2727">0.7</option>
+          <option value="0.2403">0.8</option>
+          <option value="0.2148">0.9</option>
+          <option value="0.1943">1.0</option>
+          <option value="0.1774">1.1</option>
+          <option value="0.1632">1.2</option>
+        </select>
+      </label>
+      <div className="flex gap-2">
+        <button
+          onClick={calculate}
+          className="radius-xs cursor-pointer border border-black bg-[#d9d9d9] p-1"
+        >
+          Рассчитать
+        </button>
+        <button
+          onClick={reset}
+          className="radius-xs cursor-pointer border border-black bg-[#d9d9d9] p-1"
+        >
+          Сброс
+        </button>
+      </div>
+      <label className="flex items-center gap-2">
+        Внутренний диаметр, мм
+        <input
+          value={d}
+          readOnly
+          disabled
+          className={"rounded-sm border border-[#723910] p-1.25 outline-none"}
+        />
+      </label>
+    </div>
+  );
+}

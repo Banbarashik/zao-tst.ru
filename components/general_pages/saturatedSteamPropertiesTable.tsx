@@ -30,7 +30,7 @@ export default function SaturatedSteamPropertiesTable() {
           </tr>
           <tr>
             <th className="p-1" colSpan={2}>
-              Абсолютное давление
+              Давление
             </th>
             <th className="p-1">Температура</th>
             <th className="p-1">Удельный объем</th>

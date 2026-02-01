@@ -1400,7 +1400,7 @@ export default function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
-        <div className="text-example space-y-2">
+        <div className="text-example mb-6 space-y-2">
           <div>
             <ProductParagraph>
               Пример расчета и подбора парового калорифера. ШАГ 8
@@ -1487,6 +1487,16 @@ export default function PodborRaschetKaloriferovPage() {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="sm:w-1/2">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "Подбор диаметра паропровода",
+                url: "/paroprovod#anchor5",
+              },
+            ]}
+          />
         </div>
       </section>
 
