@@ -14,6 +14,59 @@ export const metadata: Metadata = {
     "расчет и подбор парового калорифера,формула для расчета и подбора паровых калориферов,формула тепловой мощности парового калорифера,расчет производительности парового калорифера,расчет температурного напора парового калорифера,формула температурного напора парового калорифера,расчет калориферов кпск,расчет паровых калориферов кпск,подбор калориферов кпск,подбор паровых калориферов кпск",
 };
 
+type PipeSize = {
+  dnMm: number;
+  dnInch: string;
+  outerDiameter: number;
+  wallThickness: number;
+  innerDiameter: number;
+};
+
+export const pipeSizes: PipeSize[] = [
+  {
+    dnMm: 32,
+    dnInch: "1 1/4",
+    outerDiameter: 42.4,
+    wallThickness: 2.6,
+    innerDiameter: 37.2,
+  },
+  {
+    dnMm: 40,
+    dnInch: "1 1/2",
+    outerDiameter: 48.3,
+    wallThickness: 2.6,
+    innerDiameter: 43.1,
+  },
+  {
+    dnMm: 50,
+    dnInch: "2",
+    outerDiameter: 60.3,
+    wallThickness: 2.9,
+    innerDiameter: 54.5,
+  },
+  {
+    dnMm: 65,
+    dnInch: "2 1/2",
+    outerDiameter: 76.1,
+    wallThickness: 2.9,
+    innerDiameter: 70.3,
+  },
+  {
+    dnMm: 80,
+    dnInch: "3",
+    outerDiameter: 88.9,
+    wallThickness: 3.2,
+    innerDiameter: 82.5,
+  },
+  {
+    dnMm: 100,
+    dnInch: "4",
+    outerDiameter: 114.3,
+    wallThickness: 3.6,
+    innerDiameter: 107.1,
+  },
+];
+
 const tableData1: PressureBlock[] = [
   {
     pressure: 0.1,
@@ -653,10 +706,62 @@ export default function ParoprovodPage() {
           редукционными клапанами требуется увеличивать диаметр труб, чтобы
           сохранить скорость в рекомендуемом диапазоне.
         </ProductParagraph>
+        <div className="w-full overflow-x-auto">
+          <table className="w-full min-w-231 xl:min-w-auto">
+            <thead>
+              <tr>
+                <th className="py-1">
+                  <div className="uppercase">Условный диаметр</div> Ду, мм
+                </th>
+                <th className="py-1">
+                  <div className="uppercase">Условный диаметр</div> Ду, дюймы
+                </th>
+                <th className="py-1">
+                  <div className="uppercase">Внешний диаметр</div> мм
+                </th>
+                <th className="py-1">
+                  <div className="uppercase">Толщина стенки</div> мм
+                </th>
+                <th className="py-1">
+                  <div className="uppercase">Внутренний диаметр</div> мм
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {pipeSizes.map((row) => (
+                <tr key={row.dnMm}>
+                  <td className="py-0.5">{row.dnMm}</td>
+                  <td>
+                    <FractionInch value={row.dnInch} />
+                  </td>
+                  <td>{row.outerDiameter}</td>
+                  <td>{row.wallThickness}</td>
+                  <td>{row.innerDiameter}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <ParoprovodTable data={tableData1} />
       <ParoprovodTable data={tableData2} />
+    </>
+  );
+}
+
+function FractionInch({ value }: { value: string }) {
+  const [whole, fraction] = value.split(" ");
+
+  if (!fraction) return <>{whole}</>;
+
+  const [num, den] = fraction.split("/");
+
+  return (
+    <>
+      {whole}
+      <sup>{num}</sup>/<sub>{den}</sub>
     </>
   );
 }
