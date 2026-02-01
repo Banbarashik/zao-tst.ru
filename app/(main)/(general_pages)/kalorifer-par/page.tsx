@@ -280,6 +280,16 @@ export default function KaloriferParPage() {
           жидкости и температура. Высокий коэффициент теплопередачи достигается
           при использовании сухого насыщенного пара.
         </ProductParagraph>
+        <div className="sm:w-1/2">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "Расчет диаметра паропровода",
+                url: "/paroprovod#anchor2",
+              },
+            ]}
+          />
+        </div>
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Сухой и влажный насыщенный пар" />
           <ProductParagraph className="text-base">

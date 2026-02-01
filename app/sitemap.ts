@@ -134,6 +134,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.0,
     },
     {
+      url: `${SITE_URL}/paroprovod`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${SITE_URL}/raschet-kaloriferov`,
       lastModified: new Date(),
       changeFrequency: "monthly",

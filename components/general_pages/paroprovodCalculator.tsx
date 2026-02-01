@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function ParoprovodCalculator() {
   const [rashodPara, setRashodPara] = useState(""); // Расход пара, кг/час
-  const [davleniePara, setDavleniePara] = useState("1.69"); // Давление насыщенного пара, МПа
+  const [davleniePara, setDavleniePara] = useState("1.694"); // Давление насыщенного пара, МПа
   const [v, setV] = useState(""); // Скорость пара, м/с
   const [d, setD] = useState(""); // Диаметр паропровода, мм
 
@@ -14,12 +14,12 @@ export default function ParoprovodCalculator() {
     const numV = Number(v);
     const q = numRashod * numDavlenie; // объемный расход пара, м³/ч
     if (rashodPara !== "" && v !== "")
-      setD(String(Math.round(Math.sqrt((354 * q) / numV))));
+      setD(String(Math.round(Math.sqrt((354 * q) / numV) * 100) / 100));
   };
 
   const reset = () => {
     setRashodPara("");
-    setDavleniePara("1.69");
+    setDavleniePara("1.694");
     setV("");
     setD("");
   };
@@ -63,22 +63,22 @@ export default function ParoprovodCalculator() {
             "rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 outline-none"
           }
         >
-          <option value="1.69">0.1</option>
-          <option value="1.16">0.15</option>
-          <option value="0.89">0.2</option>
-          <option value="0.72">0.25</option>
-          <option value="0.61">0.3</option>
-          <option value="0.52">0.35</option>
-          <option value="0.46">0.4</option>
-          <option value="0.41">0.45</option>
-          <option value="0.37">0.5</option>
-          <option value="0.32">0.6</option>
-          <option value="0.27">0.7</option>
-          <option value="0.24">0.8</option>
-          <option value="0.21">0.9</option>
-          <option value="0.19">1.0</option>
-          <option value="0.18">1.1</option>
-          <option value="0.16">1.2</option>
+          <option value="1.694">0.1</option>
+          <option value="1.159">0.15</option>
+          <option value="0.8854">0.2</option>
+          <option value="0.7184">0.25</option>
+          <option value="0.6056">0.3</option>
+          <option value="0.5240">0.35</option>
+          <option value="0.4622">0.4</option>
+          <option value="0.4138">0.45</option>
+          <option value="0.3747">0.5</option>
+          <option value="0.3155">0.6</option>
+          <option value="0.2727">0.7</option>
+          <option value="0.2403">0.8</option>
+          <option value="0.2148">0.9</option>
+          <option value="0.1943">1.0</option>
+          <option value="0.1774">1.1</option>
+          <option value="0.1632">1.2</option>
         </select>
       </label>
       <div className="flex gap-2">
@@ -96,7 +96,7 @@ export default function ParoprovodCalculator() {
         </button>
       </div>
       <label className="flex items-center gap-2">
-        Диаметр паропровода, мм
+        Внутренний диаметр, мм
         <input
           value={d}
           readOnly

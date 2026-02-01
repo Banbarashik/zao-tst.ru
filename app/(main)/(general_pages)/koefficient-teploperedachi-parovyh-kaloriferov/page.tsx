@@ -390,7 +390,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             />
           </div>
         </div>
-        <section className="text-[#496486]">
+        <section className="space-y-4 text-[#496486]">
           <Heading lvl={3} text="Теплоотдача парового калорифера" />
           <div className="mb-6 space-y-1">
             <ProductParagraph className="text-base">
@@ -432,6 +432,16 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               воздухонагревателя, что приводит к падению его
               теплопроизводительности.
             </ProductParagraph>
+          </div>
+          <div className="sm:w-1/2">
+            <LinkButtonsBlock
+              buttons={[
+                {
+                  name: "Таблица подбора паропровода",
+                  url: "/paroprovod#anchor5",
+                },
+              ]}
+            />
           </div>
           <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
             <div className="relative aspect-1000/650 w-full">
