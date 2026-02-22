@@ -13,6 +13,7 @@ const pathToImgFolders = {
   home: `${pathToImgFolder}/home`,
   generalPages: `${pathToImgFolder}/general_pages`,
   produkciya: `${pathToImgFolder}/produkciya`,
+  kalorifery: `${pathToImgFolder}/kalorifery`,
 };
 
 function traverseCategories(
@@ -75,6 +76,23 @@ function traverseProducts(nodes: Product[]): MetadataRoute.Sitemap {
 
     if (node.scheme?.url) images.push(`${SITE_URL}${node.scheme.url}`);
     else if (node.scheme) images.push(`${SITE_URL}${node.scheme}`);
+
+    if (
+      node.categories.includes("pritochny-vodiany-kalorifery") ||
+      node.categories.includes("pritochny-parovy-kalorifery")
+    ) {
+      const seriesEng = {
+        КПВС: "kpvs",
+        КППС: "kpps",
+        КПВУ: "kpvu",
+        КППУ: "kppu",
+      };
+
+      images.push(
+        `${pathToImgFolders.kalorifery}/${seriesEng[node.series]}/${seriesEng[node.series]}-${node.size}_3.png`,
+        `${pathToImgFolders.kalorifery}/${seriesEng[node.series]}/${seriesEng[node.series]}-${node.size}_4.png`,
+      );
+    }
 
     return {
       url: `${SITE_URL}/${node.id}`,
