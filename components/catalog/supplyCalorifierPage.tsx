@@ -38,12 +38,6 @@ export default function SupplyCalorifierPage({
     specsTableValues,
     calculator,
   } = product;
-
-  // if size < 1072 - aspect 1000/500
-  // else - aspect 1000/600
-
-  // 2 variants - 3 rows and 4 rows
-  // src={`/img/kalorifery/${seriesEng}/${seriesEng}-${size}_${v.rows}.png`}
   const internalSize = size - 72;
 
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
@@ -55,21 +49,18 @@ export default function SupplyCalorifierPage({
   const isSteam = heatCarrier === "steam";
 
   // TODO create a prop 'mass' on the supply calorifier variant object
-  const variantMass = {
-    3: specsTableValues[specsTableValues.length - 1],
-    4: specsTableValues[specsTableValues.length],
-  };
+  const threeRowsVariantMass = specsTableValues[specsTableValues.length - 2];
   const fourRowsVariantHeatExchangeSurfaceArea =
-    specsTableValues[specsTableValues.length - 3];
+    specsTableValues[specsTableValues.length - 4];
 
   const threeRowsVariant = variants.find((v) => v.rows === 3);
   const threeRowsVariantImage = {
     url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`,
     alt:
       series === "КПВС" || series === "КППС"
-        ? `3 d модель ${heatCarrierAdj.gen} приточного калорифера. Масса ${variantMass[3]} кг`
+        ? `3 d модель ${heatCarrierAdj.gen} приточного калорифера. Масса ${threeRowsVariantMass} кг`
         : series === "КПВУ" || series === "КППУ"
-          ? `Чертеж ${heatCarrierAdj.gen} воздухонагревателя. Вес ${variantMass[3]} кг`
+          ? `Чертеж ${heatCarrierAdj.gen} воздухонагревателя. Вес ${threeRowsVariantMass} кг`
           : "",
     title:
       series === "КПВС" || series === "КППС"
