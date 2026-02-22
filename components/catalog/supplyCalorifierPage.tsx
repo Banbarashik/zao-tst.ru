@@ -35,6 +35,7 @@ export default function SupplyCalorifierPage({
     nextProduct,
     img,
     drawing,
+    specsTableValues,
     calculator,
   } = product;
 
@@ -53,8 +54,53 @@ export default function SupplyCalorifierPage({
   const isWater = heatCarrier === "water";
   const isSteam = heatCarrier === "steam";
 
+  // TODO create a prop 'mass' on the supply calorifier variant object
+  const variantMass = {
+    3: specsTableValues[specsTableValues.length - 1],
+    4: specsTableValues[specsTableValues.length],
+  };
+  const fourRowsVariantHeatExchangeSurfaceArea =
+    specsTableValues[specsTableValues.length - 3];
+
   const threeRowsVariant = variants.find((v) => v.rows === 3);
+  const threeRowsVariantImage = {
+    url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`,
+    alt:
+      series === "КПВС" || series === "КППС"
+        ? `3 d модель ${heatCarrierAdj.gen} приточного калорифера. Масса ${variantMass[3]} кг`
+        : series === "КПВУ" || series === "КППУ"
+          ? `Чертеж ${heatCarrierAdj.gen} воздухонагревателя. Вес ${variantMass[3]} кг`
+          : "",
+    title:
+      series === "КПВС" || series === "КППС"
+        ? `${capitalizeFirst(heatCarrierAdj.nom)} калорифер. Производительность по воздуху ${airPower} м3/час. Тепловая мощность ${threeRowsVariant?.heatPower} кВт. Внутренние габариты ${internalSize} х ${internalSize} мм`
+        : series === "КПВУ"
+          ? `Воздухонагреватель. Объем приточного воздуха ${airPower} м3/час. Тепловая производительность ${threeRowsVariant?.heatPower} кВт. Габариты внутреннего сечения ${internalSize} х ${internalSize} мм`
+          : series === "КППУ"
+            ? `Приточный паровой нагреватель. Объем воздуха ${airPower} м3/час. Производительность ${threeRowsVariant?.heatPower} кВт. Габариты фронтального сечения ${internalSize} х ${internalSize} мм`
+            : "",
+  };
+
   const fourRowsVariant = variants.find((v) => v.rows === 4);
+  const fourRowsVariantImage = {
+    url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`,
+    alt:
+      series === "КПВС" || series === "КППС"
+        ? `Чертеж ${heatCarrierAdj.gen} теплообменника. Площадь поверхности теплообмена ${fourRowsVariantHeatExchangeSurfaceArea} м2`
+        : series === "КПВУ"
+          ? `3 d модель воздухонагревателя. Площадь поверхности теплопередачи ${fourRowsVariantHeatExchangeSurfaceArea} м2`
+          : series === "КППУ"
+            ? `3 d модель парового воздухонагревателя. Площадь теплообмена ${fourRowsVariantHeatExchangeSurfaceArea} м2`
+            : "",
+    title:
+      series === "КПВС" || series === "КППС"
+        ? `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель. Объем нагреваемого воздуха ${airPower} м3/час. Производительность по теплу ${fourRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
+        : series === "КПВУ"
+          ? `Калорифер. Объем нагреваемого воздуха ${airPower} м3/час. Мощность по теплу ${fourRowsVariant?.heatPower} кВт. Внешние габаритные размеры ${size} х ${size} мм`
+          : series === "КППУ"
+            ? `Калорифер с теплоносителем пар. Производительность воздуха ${airPower} м3/час. Мощность ${fourRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
+            : "",
+  };
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
@@ -142,9 +188,9 @@ export default function SupplyCalorifierPage({
       </ProductParagraph>
       <div>
         <Image
-          src={`/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`}
-          alt={`3 d модель ${heatCarrierAdj.gen} приточного калорифера. Масса 100 кг`}
-          title={`${capitalizeFirst(heatCarrierAdj.nom)} калорифер. Производительность по воздуху ${airPower} м3/час. Тепловая мощность ${threeRowsVariant.heatPower} кВт. Внутренние габариты ${internalSize} х ${internalSize} мм`}
+          src={threeRowsVariantImage.url}
+          alt={threeRowsVariantImage.alt}
+          title={threeRowsVariantImage.title}
           fill
         />
       </div>
@@ -208,7 +254,7 @@ export default function SupplyCalorifierPage({
           </thead>
           <tbody>
             <tr>
-              {product.specsTableValues.map((value, i) => {
+              {specsTableValues.map((value, i) => {
                 const fractionMatch = String(value).match(
                   /^(\d+)\s+(\d+)\/(\d+)$/,
                 );
