@@ -12,6 +12,7 @@ export type Product = {
   id: string;
   name: string;
   shortName: string;
+  series: string;
   heatCarrier: "water" | "steam";
   categories: string[];
   prevProduct?: {
