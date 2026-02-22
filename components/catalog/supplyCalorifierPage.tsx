@@ -18,6 +18,7 @@ export default function SupplyCalorifierPage({
 }) {
   const {
     shortName,
+    series,
     heatCarrier,
     variants,
     prevProduct,
@@ -32,7 +33,6 @@ export default function SupplyCalorifierPage({
 
   const shortNameWithoutHyphen = shortName.replace("-", " ");
   const shortNameWithHyphen = shortName.replace(" ", "-");
-  const [nameAbbrev] = shortName.match(/^[А-ЯA-Z]+/)!;
 
   const isWater = heatCarrier === "water";
   const isSteam = heatCarrier === "steam";
@@ -186,12 +186,12 @@ export default function SupplyCalorifierPage({
               <th className="small-cols">C</th>
               <th className="small-cols w-10">мм</th>
               {isWater && <th className="small-cols w-10 pt-1">&quot;</th>}
-              <th className="kal2">{nameAbbrev}2</th>
-              <th className="kal2">{nameAbbrev}3</th>
-              <th className="kal2">{nameAbbrev}4</th>
-              <th className="kal2">{nameAbbrev}2</th>
-              <th className="kal2">{nameAbbrev}3</th>
-              <th className="kal2">{nameAbbrev}4</th>
+              <th className="kal2">{series}2</th>
+              <th className="kal2">{series}3</th>
+              <th className="kal2">{series}4</th>
+              <th className="kal2">{series}2</th>
+              <th className="kal2">{series}3</th>
+              <th className="kal2">{series}4</th>
             </tr>
           </thead>
           <tbody>
