@@ -186,13 +186,27 @@ export default function SupplyCalorifierPage({
           </>
         )}
       </ProductParagraph>
-      <div>
-        <Image
-          src={threeRowsVariantImage.url}
-          alt={threeRowsVariantImage.alt}
-          title={threeRowsVariantImage.title}
-          fill
-        />
+      <div className="mb-8 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+        <div
+          className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
+        >
+          <Image
+            src={threeRowsVariantImage.url}
+            alt={threeRowsVariantImage.alt}
+            title={threeRowsVariantImage.title}
+            fill
+          />
+        </div>
+        <div
+          className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
+        >
+          <Image
+            src={fourRowsVariantImage.url}
+            alt={fourRowsVariantImage.alt}
+            title={fourRowsVariantImage.title}
+            fill
+          />
+        </div>
       </div>
       <ProductSubheader text={`Технические характеристики ${shortName}`} />
       <div className="w-full overflow-x-auto">
