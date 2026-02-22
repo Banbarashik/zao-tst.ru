@@ -13,6 +13,7 @@ export type Product = {
   name: string;
   shortName: string;
   series: string;
+  rows: number;
   size: number;
   heatCarrier: "water" | "steam";
   categories: string[];
@@ -36,7 +37,7 @@ export type Product = {
   specsTableValues: (string | number)[];
 };
 
-export type SupplyCalorifier = Product & {
+export type SupplyCalorifier = Omit<Product, "rows"> & {
   variants: ProductVariant[];
   calculator: string;
 };
