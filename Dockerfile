@@ -30,7 +30,7 @@ RUN apk add --no-cache libc6-compat vips-dev
 RUN corepack enable
 
 # node_modules с dev-зависимостями — только для сборки
-COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/node_modules ./node_modules ./prisma
 # Остальной код
 COPY . .
 
