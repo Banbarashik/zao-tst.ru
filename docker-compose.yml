@@ -1,4 +1,16 @@
 services:
+  migrate:
+    build:
+      context: .
+      target: deps # use the deps stage — has node_modules + prisma
+    command: npx prisma migrate deploy
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    networks:
+      - default # same network as postgres
+
   app:
     build: .
     container_name: tst
@@ -8,7 +20,9 @@ services:
     env_file:
       - .env
     depends_on:
-      - postgres
+      - migrate # app starts only after migrations run
+    networks:
+      - default
 
   postgres:
     image: postgres:16
@@ -19,6 +33,11 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     mem_limit: 512m
+    networks:
+      - default
+
+networks:
+  default:
 
 volumes:
   postgres_data:
