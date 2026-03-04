@@ -13,6 +13,8 @@ RUN apk add --no-cache libc6-compat
 RUN corepack enable
 
 COPY package.json pnpm-lock.yaml .npmrc* ./
+COPY prisma ./prisma
+COPY prisma.config.ts ./prisma.config.ts
 RUN pnpm install --frozen-lockfile
 
 ##############################
@@ -30,7 +32,7 @@ RUN apk add --no-cache libc6-compat vips-dev
 RUN corepack enable
 
 # node_modules с dev-зависимостями — только для сборки
-COPY --from=deps /app/node_modules ./node_modules ./prisma
+COPY --from=deps /app/node_modules ./node_modules
 # Остальной код
 COPY . .
 
