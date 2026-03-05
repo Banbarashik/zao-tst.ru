@@ -2,7 +2,18 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function LegacyHtml({ path }: { path: string }) {
+export default function LegacyHtml({
+  path,
+  className = "",
+}: {
+  path: string;
+  className?: string;
+}) {
+  if (!path.startsWith("/legacy/")) {
+    console.error("Invalid legacy HTML path");
+    return;
+  }
+
   const [html, setHtml] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -15,7 +26,7 @@ export default function LegacyHtml({ path }: { path: string }) {
   useEffect(() => {
     if (!containerRef.current) return;
 
-    const scripts = containerRef.current.querySelectorAll("script");
+    const scripts = containerRef.current?.querySelectorAll("script") ?? [];
 
     scripts.forEach((script) => {
       const newScript = document.createElement("script");
@@ -32,5 +43,11 @@ export default function LegacyHtml({ path }: { path: string }) {
     });
   }, [html]);
 
-  return <div ref={containerRef} dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <div
+      ref={containerRef}
+      dangerouslySetInnerHTML={{ __html: html }}
+      className={className}
+    />
+  );
 }
