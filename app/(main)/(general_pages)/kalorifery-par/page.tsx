@@ -105,7 +105,10 @@ export default function KaloriferyParPage() {
             тепловая мощность парового калорифера для соблюдения заданных
             условий.
           </ProductParagraph>
-          <LegacyHtml path="/legacy/calculator-kalorifery-par-1.html" />
+          <LegacyHtml
+            path="/legacy/calculator-kalorifery-par-1.html"
+            className="legacy-calculator"
+          />
         </section>
         <section className="mb-4">
           <Heading lvl={2} text="Онлайн-расчет расхода пара калорифером" />
@@ -117,7 +120,10 @@ export default function KaloriferyParPage() {
             результатам онлайн-расчета показывается необходимый расход
             теплоносителя для выработки указанной производительности по теплу.
           </ProductParagraph>
-          <LegacyHtml path="/legacy/calculator-kalorifery-par-3.html" />
+          <LegacyHtml
+            path="/legacy/calculator-kalorifery-par-3.html"
+            className="legacy-calculator"
+          />
         </section>
         <section className="mb-4">
           <Heading
@@ -132,7 +138,10 @@ export default function KaloriferyParPage() {
             результатам онлайн-расчета показывается вырабатываемая калорифером
             мощность.
           </ProductParagraph>
-          <LegacyHtml path="/legacy/calculator-kalorifery-par-4.html" />
+          <LegacyHtml
+            path="/legacy/calculator-kalorifery-par-4.html"
+            className="legacy-calculator"
+          />
         </section>
 
         <ProductParagraph>
@@ -190,7 +199,7 @@ export default function KaloriferyParPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-kalorifery-par-kpps.html"
-            className="w-231"
+            className="legacy-table w-231"
           />
         </div>
         <Image
@@ -220,7 +229,7 @@ export default function KaloriferyParPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-kalorifery-par-kppu.html"
-            className="w-231"
+            className="legacy-table w-231"
           />
         </div>
         <Image

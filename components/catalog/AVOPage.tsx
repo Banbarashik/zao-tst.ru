@@ -11,7 +11,7 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
-import LegacyHtml from "../legacyHtml";
+import LegacyHtml from "@/components/legacyHtml";
 
 const tableHeaders = {
   water: [
@@ -255,7 +255,10 @@ export default function AVOPage({ product }) {
         {tableIndicators[product.heatCarrier]}.
       </ProductParagraph>
       <div className="overflow-x-auto">
-        <LegacyHtml path={product.tableWithTabs} className="w-231" />
+        <LegacyHtml
+          path={product.tableWithTabs}
+          className="legacy-table w-231"
+        />
       </div>
       <ProductParagraph className="mb-8">
         Табличные данные можно использовать при подборе сопутствующего{" "}

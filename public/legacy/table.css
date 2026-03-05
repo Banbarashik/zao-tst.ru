@@ -1,19 +1,14 @@
-body {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-}
-
 /* Скрытие всех таблиц, кроме выбранной (начало) */
-#secondary div,
-#secondary2 div,
-#secondary3 div,
-#secondary4 div {
+.legacy-html #secondary div,
+.legacy-html #secondary2 div,
+.legacy-html #secondary3 div,
+.legacy-html #secondary4 div {
   display: none;
 }
 /* Скрытие всех таблиц, кроме выбранной (конец) */
 
 /* Скрытие кружков от радио-инпутов (начало) */
-input[type="radio"] {
+.legacy-html.legacy-table input[type="radio"] {
   display: none;
 }
 /* Скрытие кружков от радио-инпутов (конец) */
@@ -26,7 +21,7 @@ input[type="radio"] {
 }
 /* Обёртка для кнопок (конец) */
 /* Внешний вид кнопок переключения таблиц (начало) */
-.btn {
+.legacy-html .btn {
   position: relative;
 
   padding-top: 5px;
@@ -51,36 +46,36 @@ input[type="radio"] {
 /* Внешний вид кнопок переключения таблиц (конец) */
 
 /* Правая граница для последней кнопки (начало) */
-.btn:last-child {
+.legacy-html .btn:last-child {
   border-right: 1px solid black;
 }
 /* Правая граница для последней кнопки (конец) */
 
 /* Поведение кнопок для переключения таблиц (начало) */
-#table_btn1:checked ~ .btn1,
-#table_btn2:checked ~ .btn2,
-#table_btn3:checked ~ .btn3,
-#table_btn4:checked ~ .btn4,
-#table_btn5:checked ~ .btn5,
-#table_btn6:checked ~ .btn6,
-#table_btn7:checked ~ .btn7,
-#table_btn8:checked ~ .btn8,
-#table_btn11:checked ~ .btn1,
-#table_btn22:checked ~ .btn2,
-#table_btn33:checked ~ .btn3,
-#table_btn44:checked ~ .btn4,
-#table_btn55:checked ~ .btn5,
-#table_btn66:checked ~ .btn6,
-#table_btn77:checked ~ .btn7,
-#table_btn88:checked ~ .btn8,
-#table_btn99:checked ~ .btn9,
-#table_btn100:checked ~ .btn100,
-#table_btn111:checked ~ .btn111,
-#table_btn222:checked ~ .btn222,
-#table_btn333:checked ~ .btn333,
-#table_btn444:checked ~ .btn444,
-#table_btn555:checked ~ .btn555,
-#table_btn666:checked ~ .btn666 {
+.legacy-html #table_btn1:checked ~ .btn1,
+.legacy-html #table_btn2:checked ~ .btn2,
+.legacy-html #table_btn3:checked ~ .btn3,
+.legacy-html #table_btn4:checked ~ .btn4,
+.legacy-html #table_btn5:checked ~ .btn5,
+.legacy-html #table_btn6:checked ~ .btn6,
+.legacy-html #table_btn7:checked ~ .btn7,
+.legacy-html #table_btn8:checked ~ .btn8,
+.legacy-html #table_btn11:checked ~ .btn1,
+.legacy-html #table_btn22:checked ~ .btn2,
+.legacy-html #table_btn33:checked ~ .btn3,
+.legacy-html #table_btn44:checked ~ .btn4,
+.legacy-html #table_btn55:checked ~ .btn5,
+.legacy-html #table_btn66:checked ~ .btn6,
+.legacy-html #table_btn77:checked ~ .btn7,
+.legacy-html #table_btn88:checked ~ .btn8,
+.legacy-html #table_btn99:checked ~ .btn9,
+.legacy-html #table_btn100:checked ~ .btn100,
+.legacy-html #table_btn111:checked ~ .btn111,
+.legacy-html #table_btn222:checked ~ .btn222,
+.legacy-html #table_btn333:checked ~ .btn333,
+.legacy-html #table_btn444:checked ~ .btn444,
+.legacy-html #table_btn555:checked ~ .btn555,
+.legacy-html #table_btn666:checked ~ .btn666 {
   color: #e4572e;
   background-color: #f3f4f6;
   border-bottom: 2px solid #f3f4f6;
@@ -88,19 +83,19 @@ input[type="radio"] {
 /* Поведение кнопок для переключения таблиц (конец) */
 
 /* Стилизация непосредственно таблицы (начало) */
-table {
+.legacy-html.legacy-table table {
   width: 100%;
   border-collapse: collapse;
 
   font-size: 10.3pt;
   text-align: center;
 }
-table,
-td,
-th {
+.legacy-html.legacy-table table,
+.legacy-html.legacy-table td,
+.legacy-html.legacy-table th {
   border: 1px solid #723910;
 }
-th {
+.legacy-html.legacy-table th {
   font-weight: normal;
   font-size: 9pt;
   line-height: 18px;
@@ -108,43 +103,43 @@ th {
 /* Стилизация непосредственно таблицы (конец) */
 
 /* Таблицы для АО+ вода и АО+ пар (начало) */
-.water-and-steam th {
+.legacy-html .water-and-steam th {
   font-size: 10pt;
   font-weight: 700;
 }
-.water-and-steam .small-cols th {
+.legacy-html .water-and-steam .small-cols th {
   width: 50px;
 }
-.water-and-steam .small-cols .kal {
+.legacy-html .water-and-steam .small-cols .kal {
   width: 100px;
 }
 
-.water-and-steam-inner {
+.legacy-html .water-and-steam-inner {
   font-size: 11pt;
   background-color: transparent;
 }
-.water-and-steam-inner .small-cols {
+.legacy-html .water-and-steam-inner .small-cols {
   font-weight: 400;
   font-size: 11pt;
 }
-.water-and-steam-inner .dy {
+.legacy-html .water-and-steam-inner .dy {
   font-size: 14px;
   width: 90px;
 }
-.water-and-steam-inner .mass {
+.legacy-html .water-and-steam-inner .mass {
   width: 160px;
 }
-.water-and-steam-inner .kal2 {
+.legacy-html .water-and-steam-inner .kal2 {
   font-weight: 400;
   font-size: 11pt;
 }
 
-.table-legend {
+.legacy-html .table-legend {
   font-family: "Times New Roman", serif;
 }
 /* Таблицы для АО+ вода и АО+ пар (конец) */
 
-.table-wrap {
+.legacy-html .table-wrap {
   padding: 10px 12px;
   margin-bottom: 5px;
   margin-top: -1px;
@@ -153,24 +148,24 @@ th {
   overflow: auto;
 }
 
-.ksk-table tr:nth-child(3) td:nth-child(n + 2),
-.kpsk-table tr:nth-child(4) td:nth-child(n + 2),
-.avo-hl-kp tr:nth-child(5) td:nth-child(n + 2) {
+.legacy-html .ksk-table tr:nth-child(3) td:nth-child(n + 2),
+.legacy-html .kpsk-table tr:nth-child(4) td:nth-child(n + 2),
+.legacy-html .avo-hl-kp tr:nth-child(5) td:nth-child(n + 2) {
   width: 42px;
 }
 
-.table-wrap td:first-child {
+.legacy-html .table-wrap td:first-child {
   padding: 3px 0 3px 3px;
   text-align: left;
   font-size: 11pt;
   line-height: 18px;
 }
 
-.table-with-bold-cells tr:nth-child(2) td:nth-child(n + 2),
-.table-with-bold-cells tr:first-child td:nth-child(2),
-.table-with-bold-cells tr:nth-child(3) td:nth-child(n + 2),
-.kpsk-table tr:nth-child(4) td:nth-child(n + 2),
-.avo-hl-kp tr:nth-child(5) td:nth-child(n + 2) {
+.legacy-html .table-with-bold-cells tr:nth-child(2) td:nth-child(n + 2),
+.legacy-html .table-with-bold-cells tr:first-child td:nth-child(2),
+.legacy-html .table-with-bold-cells tr:nth-child(3) td:nth-child(n + 2),
+.legacy-html .kpsk-table tr:nth-child(4) td:nth-child(n + 2),
+.legacy-html .avo-hl-kp tr:nth-child(5) td:nth-child(n + 2) {
   font-weight: 700;
 }
 
@@ -186,41 +181,41 @@ th {
   }
 } */
 
-#primary.table-with-scroll,
-#primary2.table-with-scroll,
-#primary3.table-with-scroll,
-#primary4.table-with-scroll {
+.legacy-html #primary.table-with-scroll,
+.legacy-html #primary2.table-with-scroll,
+.legacy-html #primary3.table-with-scroll,
+.legacy-html #primary4.table-with-scroll {
   overflow-x: auto;
 }
-#primary.tabs-fix,
-#primary2.tabs-fix {
+.legacy-html #primary.tabs-fix,
+.legacy-html #primary2.tabs-fix {
   /* margin-top: 16px; */
 }
-#primary.table-with-scroll::-webkit-scrollbar,
-#primary2.table-with-scroll::-webkit-scrollbar,
-#primary3.table-with-scroll::-webkit-scrollbar,
-#primary4.table-with-scroll::-webkit-scrollbar {
+.legacy-html #primary.table-with-scroll::-webkit-scrollbar,
+.legacy-html #primary2.table-with-scroll::-webkit-scrollbar,
+.legacy-html #primary3.table-with-scroll::-webkit-scrollbar,
+.legacy-html #primary4.table-with-scroll::-webkit-scrollbar {
   display: none;
 }
-.table-wrap.table2.table-with-scroll {
+.legacy-html .table-wrap.table2.table-with-scroll {
   margin-top: -4px;
 }
 /* Стилизация таблиц, которым требуется скролл (конец) */
 
-.gray-col {
+.legacy-html .gray-col {
   background-color: #e5e7eb;
 }
 
-.coolant-graph {
+.legacy-html .coolant-graph {
   background-color: rgb(204, 204, 204);
   color: #b04322;
   font-weight: bold;
 }
 
-.model {
+.legacy-html .model {
   width: 160px;
 }
 
-.po_teplu {
+.legacy-html .po_teplu {
   width: 65px;
 }

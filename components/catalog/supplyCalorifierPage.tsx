@@ -129,7 +129,7 @@ export default function SupplyCalorifierPage({
         {isWater &&
           "Скорость теплоносителя в трубках: оптимальная 0.2-0.5 м/с, допустимая - 0.12-1.2 м/с."}
       </ProductParagraph>
-      <LegacyHtml path={calculator} />
+      <LegacyHtml path={calculator} className="legacy-calculator" />
       <ProductParagraph className="mb-8">
         {nextProduct && (
           <>

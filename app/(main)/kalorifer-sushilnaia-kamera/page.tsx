@@ -210,7 +210,10 @@ export default function KaloriferSushilnaiaKameraPage() {
             </li>
           </ul>
         </div>
-        <LegacyHtml path="/legacy/calculator-tvv-890-890.html" />
+        <LegacyHtml
+          path="/legacy/calculator-tvv-890-890.html"
+          className="legacy-calculator"
+        />
       </section>
 
       <section className="space-y-1">
@@ -282,7 +285,10 @@ export default function KaloriferSushilnaiaKameraPage() {
             </li>
           </ul>
         </div>
-        <LegacyHtml path="/legacy/calculator-kp-1572-1572.html" />
+        <LegacyHtml
+          path="/legacy/calculator-kp-1572-1572.html"
+          className="legacy-calculator"
+        />
       </section>
 
       <section className="space-y-1">

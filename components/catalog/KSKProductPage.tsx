@@ -439,7 +439,10 @@ export default function KSKProductPage({ product }: { product: KSKProduct }) {
         {product.heatCarrier === "steam" && " и расходом пара"}.
       </ProductParagraph>
       <div className="overflow-x-auto">
-        <LegacyHtml path={product.tableWithTabs} className="w-231" />
+        <LegacyHtml
+          path={product.tableWithTabs}
+          className="legacy-table w-231"
+        />
       </div>
       <ProductParagraph className={isCalorifier ? "mb-4" : "mb-8"}>
         Табличные данные можно использовать при подборе сопутствующего

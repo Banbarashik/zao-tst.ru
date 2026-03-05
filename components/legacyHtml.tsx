@@ -47,7 +47,7 @@ export default function LegacyHtml({
     <div
       ref={containerRef}
       dangerouslySetInnerHTML={{ __html: html }}
-      className={className}
+      className={`legacy-html ${className}`}
     />
   );
 }

@@ -178,7 +178,7 @@ export default function KaloriferyKPPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-kalorifery-kp.html"
-            className="w-231"
+            className="legacy-table w-231"
           />
         </div>
         <ProductParagraph>

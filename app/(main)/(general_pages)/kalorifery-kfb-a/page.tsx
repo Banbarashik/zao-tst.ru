@@ -224,7 +224,7 @@ export default function KaloriferyKFBAPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-kalorifery-kfb-a.html"
-            className="w-231"
+            className="legacy-table w-231"
           />
         </div>
         <ProductParagraph>

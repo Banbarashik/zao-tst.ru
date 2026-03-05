@@ -161,7 +161,10 @@ export default function KaloriferySFO() {
           требуемая мощность электрического нагревателя для соблюдения заданных
           условий.
         </ProductParagraph>
-        <LegacyHtml path="/legacy/calculator-elektronagrevateli-1.html" />
+        <LegacyHtml
+          path="/legacy/calculator-elektronagrevateli-1.html"
+          className="legacy-calculator"
+        />
       </section>
 
       <section>
@@ -176,7 +179,10 @@ export default function KaloriferySFO() {
           По результатам онлайн-расчета представлена температура выходящего
           нагретого воздуха.
         </ProductParagraph>
-        <LegacyHtml path="/legacy/calculator-elektronagrevateli-2.html" />
+        <LegacyHtml
+          path="/legacy/calculator-elektronagrevateli-2.html"
+          className="legacy-calculator"
+        />
       </section>
 
       <section>

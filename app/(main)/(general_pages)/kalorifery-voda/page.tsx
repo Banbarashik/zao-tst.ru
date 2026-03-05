@@ -103,7 +103,10 @@ export default function KaloriferyVodaPage() {
             тепловая мощность водяного калорифера для соблюдения заданных
             условий.
           </ProductParagraph>
-          <LegacyHtml path="/legacy/calculator-kalorifery-voda-1.html" />
+          <LegacyHtml
+            path="/legacy/calculator-kalorifery-voda-1.html"
+            className="legacy-calculator"
+          />
         </section>
         <section className="mb-4">
           <Heading
@@ -119,7 +122,10 @@ export default function KaloriferyVodaPage() {
             необходимое количество теплоносителя в час при данном температурном
             графике.
           </ProductParagraph>
-          <LegacyHtml path="/legacy/calculator-kalorifery-voda-3.html" />
+          <LegacyHtml
+            path="/legacy/calculator-kalorifery-voda-3.html"
+            className="legacy-calculator"
+          />
         </section>
 
         <ProductParagraph>
@@ -175,7 +181,10 @@ export default function KaloriferyVodaPage() {
           элементов, стальные трубки диаметром 16 мм с накатным алюминиевым
           оребрением.
         </ProductParagraph>
-        <LegacyHtml path="/legacy/table-kalorifery-voda-kpvs.html" />
+        <LegacyHtml
+          path="/legacy/table-kalorifery-voda-kpvs.html"
+          className="legacy-table"
+        />
         <Image
           src="/img/general_pages/kalorifery_pritochnye_vodianye_kpvs_chertez.png"
           alt="Водяные приточные калориферы габаритные размеры"
@@ -200,7 +209,10 @@ export default function KaloriferyVodaPage() {
           рядов теплопередающих элементов, стальные трубки диаметром 22 мм с
           накатным алюминиевым оребрением.
         </ProductParagraph>
-        <LegacyHtml path="/legacy/table-kalorifery-voda-kpvu.html" />
+        <LegacyHtml
+          path="/legacy/table-kalorifery-voda-kpvu.html"
+          className="legacy-table"
+        />
         <Image
           src="/img/general_pages/kalorifery_pritochnye_vodianye_kpvu_chertez.png"
           alt="Водяные приточные калориферы технические характеристики"
