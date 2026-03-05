@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <link href="calculator.css" rel="stylesheet" />
+    <link href="/legacy/calculator.css" rel="stylesheet" />
     <script>
       function calculator(form) {
         const k = Number(form.k.value);
@@ -48,8 +48,11 @@
         <input
           type="text"
           name="k"
-          onchange="this.value=this.value.replace(/([^0-9])/g,'');"
-          onkeyup="var n=this.value.replace(/([^0-9])/g,''); if(n!=this.value) this.value=n;"
+          onchange="this.value = this.value.replace(/([^0-9])/g, '')"
+          onkeyup="
+            var n = this.value.replace(/([^0-9])/g, '');
+            if (n != this.value) this.value = n;
+          "
         />
       </label>
 
@@ -58,7 +61,7 @@
         <input
           type="text"
           name="l"
-          onkeyup="this.value=this.value.replace(/([^-0-9])/g,'');"
+          onkeyup="this.value = this.value.replace(/([^-0-9])/g, '')"
         />
       </label>
 
@@ -67,7 +70,7 @@
         <input
           type="text"
           name="m"
-          onkeyup="this.value=this.value.replace(/([^0-9.])/g,'');"
+          onkeyup="this.value = this.value.replace(/([^0-9.])/g, '')"
         />
       </label>
 

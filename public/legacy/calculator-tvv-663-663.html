@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <link href="calculator.css" rel="stylesheet" />
+    <link href="/legacy/calculator.css" rel="stylesheet" />
     <script>
       function calculate() {
         let cool = document.calculator.coolant;
@@ -17,7 +17,7 @@
 
         // значения которые нужно менять (начало)
         let F = [7.5, 0.349, 0.00118, 9.94, 30.4, 0.512, 0.1299, 4.67, 1.864];
-        let G = [11.5, 0.349, 0.00180, 14.14, 29.4, 0.515, 0.0945, 6.37, 1.864];
+        let G = [11.5, 0.349, 0.0018, 14.14, 29.4, 0.515, 0.0945, 6.37, 1.864];
         let H = [15.0, 0.349, 0.00236, 16.78, 28.1, 0.518, 0.0681, 8.67, 1.848];
         // значения которые нужно менять (конец)
 
@@ -405,7 +405,7 @@
           Запас площади поверхности нагрева калорифера:
           <input
             id="result1"
-            oninput="calculate();"
+            oninput="calculate()"
             style="width: 65px; background-color: rgb(255, 255, 255)"
             disabled
           />
