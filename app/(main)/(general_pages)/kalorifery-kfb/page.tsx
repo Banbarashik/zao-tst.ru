@@ -9,6 +9,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы паровые КФБ-А П",
@@ -187,11 +188,12 @@ export default function KaloriferyKFBPage() {
           height={1}
           className="mb-4"
         />
-        <iframe
-          src="/legacy/table-kalorifery-kfb.html"
-          title="Калориферы КФБ-А3 П Калориферы КФБ-А4 П"
-          className="h-107 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path="/legacy/table-kalorifery-kfb.html"
+            className="w-231"
+          />
+        </div>
         <ProductParagraph>
           Структура условного обозначения паровых калориферов КФБ-А производства
           ООО «Т.С.Т.». Калорифер КФБ-7 А4 УХЛ3 П (ТУ 4863-002-55613706-02): КФБ

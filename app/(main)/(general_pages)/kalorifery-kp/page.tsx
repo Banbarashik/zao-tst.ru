@@ -9,6 +9,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы паровые КП",
@@ -174,11 +175,12 @@ export default function KaloriferyKPPage() {
           height={1}
           className="mb-3"
         />
-        <iframe
-          src="/legacy/table-kalorifery-kp.html"
-          title="Калориферы КП3 Калориферы КП4"
-          className="h-74 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path="/legacy/table-kalorifery-kp.html"
+            className="w-231"
+          />
+        </div>
         <ProductParagraph>
           Структура условного обозначения паровых калориферов КП производства
           ООО «Т.С.Т.». Калорифер КП 312-02 УХЛ3 (ТУ 4863-002-55613706-02): КП –

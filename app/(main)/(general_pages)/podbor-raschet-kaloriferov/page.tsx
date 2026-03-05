@@ -12,6 +12,7 @@ import Link from "next/link";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
 import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор паровых калориферов",
@@ -624,11 +625,12 @@ export default function PodborRaschetKaloriferovPage() {
             </li>
           </ol>
         </div>
-        <iframe
-          src="/legacy/table-raschet-podbor-kaloriferov-1.html"
-          title="Таблица свойств воздуха"
-          className="h-46 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path="/legacy/table-raschet-podbor-kaloriferov-1.html"
+            className="w-231"
+          />
+        </div>
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -767,11 +769,12 @@ export default function PodborRaschetKaloriferovPage() {
           разные объем и температуру нагреваемого воздуха, давление и
           температуру теплоносителя.
         </ProductParagraph>
-        <iframe
-          src="/legacy/table-raschet-podbor-kaloriferov-2.html"
-          title=""
-          className="h-115 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path="/legacy/table-raschet-podbor-kaloriferov-2.html"
+            className="w-231"
+          />
+        </div>
         <ProductParagraph className="text-[#5a769a]">
           Если при поверочном расчете определена площадь фронтального сечения, а
           в таблице для подбора паровых калориферов нет моделей с таким

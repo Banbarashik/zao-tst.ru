@@ -11,6 +11,7 @@ import ProductCard from "@/components/catalog/productCard";
 import ProductHeader from "@/components/catalog/productHeader";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
+import LegacyHtml from "@/components/legacyHtml";
 
 const seriesEng = {
   КПВС: "kpvs",
@@ -128,15 +129,7 @@ export default function SupplyCalorifierPage({
         {isWater &&
           "Скорость теплоносителя в трубках: оптимальная 0.2-0.5 м/с, допустимая - 0.12-1.2 м/с."}
       </ProductParagraph>
-      <iframe
-        src={calculator}
-        title="Калькулятор калорифера"
-        className={`${
-          isWater
-            ? "h-224 min-[325px]:h-220 min-[363px]:h-210 min-[375px]:h-206 min-[416px]:h-200 min-[431px]:h-196 min-[456px]:h-194 min-[471px]:h-190 min-[485px]:h-180 min-[512px]:h-172 min-[559px]:h-163 min-[590px]:h-152"
-            : "h-158 min-[325px]:h-154 min-[363px]:h-148 min-[413px]:h-143 min-[431px]:h-139 min-[472px]:h-135 min-[485px]:h-126 min-[508px]:h-122 min-[590px]:h-110"
-        } w-full`}
-      />
+      <LegacyHtml path={calculator} />
       <ProductParagraph className="mb-8">
         {nextProduct && (
           <>

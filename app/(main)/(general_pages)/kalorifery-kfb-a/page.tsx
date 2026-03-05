@@ -9,6 +9,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы водяные КФБ-А М",
@@ -220,11 +221,12 @@ export default function KaloriferyKFBAPage() {
           width={968}
           height={1}
         />
-        <iframe
-          src="/legacy/table-kalorifery-kfb-a.html"
-          title="Калориферы КФБ-А3 М Калориферы КФБ-А4 М"
-          className="h-107 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path="/legacy/table-kalorifery-kfb-a.html"
+            className="w-231"
+          />
+        </div>
         <ProductParagraph>
           Структура условного обозначения водяных калориферов КФБ-А производства
           ООО «Т.С.Т.». Калорифер КФБ-12 А3 УХЛ3 М (ТУ 4863-002-55613706-02):

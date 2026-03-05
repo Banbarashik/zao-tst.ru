@@ -9,6 +9,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы приточные водяные",
@@ -102,11 +103,7 @@ export default function KaloriferyVodaPage() {
             тепловая мощность водяного калорифера для соблюдения заданных
             условий.
           </ProductParagraph>
-          <iframe
-            src="/legacy/calculator-kalorifery-voda-1.html"
-            title="Калькулятор расчета мощности водяного калорифера"
-            className="w-full min-[320px]:h-66 min-[519px]:h-62 min-[531px]:h-57 min-[542px]:h-53 min-[551px]:h-48"
-          />
+          <LegacyHtml path="/legacy/calculator-kalorifery-voda-1.html" />
         </section>
         <section className="mb-4">
           <Heading
@@ -122,11 +119,7 @@ export default function KaloriferyVodaPage() {
             необходимое количество теплоносителя в час при данном температурном
             графике.
           </ProductParagraph>
-          <iframe
-            src="/legacy/calculator-kalorifery-voda-3.html"
-            title="Калькулятор расчета расхода теплоносителя калорифером"
-            className="w-full min-[320px]:h-66 min-[519px]:h-62 min-[531px]:h-57 min-[542px]:h-53 min-[551px]:h-48"
-          />
+          <LegacyHtml path="/legacy/calculator-kalorifery-voda-3.html" />
         </section>
 
         <ProductParagraph>
@@ -182,11 +175,7 @@ export default function KaloriferyVodaPage() {
           элементов, стальные трубки диаметром 16 мм с накатным алюминиевым
           оребрением.
         </ProductParagraph>
-        <iframe
-          src="/legacy/table-kalorifery-voda-kpvs.html"
-          title="Калориферы КПВС"
-          className="mb-2 h-82 w-full"
-        />
+        <LegacyHtml path="/legacy/table-kalorifery-voda-kpvs.html" />
         <Image
           src="/img/general_pages/kalorifery_pritochnye_vodianye_kpvs_chertez.png"
           alt="Водяные приточные калориферы габаритные размеры"
@@ -211,11 +200,7 @@ export default function KaloriferyVodaPage() {
           рядов теплопередающих элементов, стальные трубки диаметром 22 мм с
           накатным алюминиевым оребрением.
         </ProductParagraph>
-        <iframe
-          src="/legacy/table-kalorifery-voda-kpvu.html"
-          title="Калориферы КПВУ"
-          className="mb-2 h-76 w-full"
-        />
+        <LegacyHtml path="/legacy/table-kalorifery-voda-kpvu.html" />
         <Image
           src="/img/general_pages/kalorifery_pritochnye_vodianye_kpvu_chertez.png"
           alt="Водяные приточные калориферы технические характеристики"

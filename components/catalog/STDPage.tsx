@@ -12,6 +12,7 @@ import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "../legacyHtml";
 
 const tableIndicators: Record<string, string> = {
   water:
@@ -319,11 +320,9 @@ export default function STDPage({ product }) {
         теплоносителя, можно ознакомиться с основными теплотехническими
         показателями: {tableIndicators[product.heatCarrier]}.
       </ProductParagraph>
-      <iframe
-        src={product.tableWithTabs}
-        title={`Таблица расчета и подбора ${heatCarrierAdj?.gen} агрегата ${product.shortName}`}
-        className="mb-1 h-66 w-full"
-      />
+      <div className="overflow-x-auto">
+        <LegacyHtml path={product.tableWithTabs} className="w-231" />
+      </div>
       <ProductParagraph className="mb-8">
         Табличные данные можно использовать при подборе сопутствующего{" "}
         {tableEquipment[product.heatCarrier]} оборудования.

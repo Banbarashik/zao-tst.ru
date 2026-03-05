@@ -9,6 +9,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Электрокалориферы СФО. Производство",
@@ -160,11 +161,7 @@ export default function KaloriferySFO() {
           требуемая мощность электрического нагревателя для соблюдения заданных
           условий.
         </ProductParagraph>
-        <iframe
-          src="/legacy/calculator-elektronagrevateli-1.html"
-          title="Калькулятор расчета мощности электрического калорифера"
-          className="w-full min-[320px]:h-71 min-[357px]:h-66 min-[519px]:h-62 min-[523px]:h-57 min-[534px]:h-53 min-[609px]:h-48"
-        />
+        <LegacyHtml path="/legacy/calculator-elektronagrevateli-1.html" />
       </section>
 
       <section>
@@ -179,11 +176,7 @@ export default function KaloriferySFO() {
           По результатам онлайн-расчета представлена температура выходящего
           нагретого воздуха.
         </ProductParagraph>
-        <iframe
-          src="/legacy/calculator-elektronagrevateli-2.html"
-          title="Калькулятор расчета температуры воздуха на выходе из электрокалорифера"
-          className="w-full min-[320px]:h-71 min-[334px]:h-66 min-[500px]:h-62 min-[534px]:h-57 min-[542px]:h-53 min-[587px]:h-48"
-        />
+        <LegacyHtml path="/legacy/calculator-elektronagrevateli-2.html" />
       </section>
 
       <section>

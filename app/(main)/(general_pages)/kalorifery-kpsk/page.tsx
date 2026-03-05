@@ -9,6 +9,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы паровые КПСк",
@@ -203,11 +204,12 @@ export default function KaloriferyKPSKPage() {
           height={1}
           className="mb-3"
         />
-        <iframe
-          src="/legacy/table-kalorifery-kpsk.html"
-          title="Калориферы КПСк2 Калориферы КПСк3 Калориферы КПСк4"
-          className="h-105 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path="/legacy/table-kalorifery-kpsk.html"
+            className="w-231"
+          />
+        </div>
         <ProductParagraph>
           Структура условного обозначения паровых калориферов КПСк производства
           ООО «Т.С.Т. Калорифер КПСк 3-11-02 У3 (ТУ 4863-002-55613706-02): КПСк

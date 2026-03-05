@@ -11,6 +11,7 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
+import LegacyHtml from "@/components/legacyHtml";
 
 const tableEquipment: Record<string, string> = {
   water: "насосно-смесительного",
@@ -437,11 +438,9 @@ export default function KSKProductPage({ product }: { product: KSKProduct }) {
         вырабатываемой мощностью
         {product.heatCarrier === "steam" && " и расходом пара"}.
       </ProductParagraph>
-      <iframe
-        src={product.tableWithTabs}
-        title={`Таблица рабочих параметров ${isCalorifier ? "калорифера" : "агрегата"}`}
-        className={`${isCalorifier ? "h-65" : "h-59"} mb-1 w-full`}
-      />
+      <div className="overflow-x-auto">
+        <LegacyHtml path={product.tableWithTabs} className="w-231" />
+      </div>
       <ProductParagraph className={isCalorifier ? "mb-4" : "mb-8"}>
         Табличные данные можно использовать при подборе сопутствующего
         {isCalorifier && " вентиляционного и"}{" "}

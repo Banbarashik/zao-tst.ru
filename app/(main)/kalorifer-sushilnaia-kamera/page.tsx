@@ -6,6 +6,7 @@ import Image from "next/image";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Водяные и паровые калориферы для сушильных камер",
@@ -209,10 +210,7 @@ export default function KaloriferSushilnaiaKameraPage() {
             </li>
           </ul>
         </div>
-        <iframe
-          src="/legacy/calculator-tvv-890-890.html"
-          className="h-153 w-full"
-        />
+        <LegacyHtml path="/legacy/calculator-tvv-890-890.html" />
       </section>
 
       <section className="space-y-1">
@@ -284,10 +282,7 @@ export default function KaloriferSushilnaiaKameraPage() {
             </li>
           </ul>
         </div>
-        <iframe
-          src="/legacy/calculator-kp-1572-1572.html"
-          className="h-108 w-full"
-        />
+        <LegacyHtml path="/legacy/calculator-kp-1572-1572.html" />
       </section>
 
       <section className="space-y-1">

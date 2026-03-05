@@ -9,6 +9,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы водяные КСк",
@@ -193,10 +194,12 @@ export default function KaloriferyKSKPage() {
           height={1}
           className="mb-3"
         />
-        <iframe
-          src="/legacy/table-kalorifery-ksk.html"
-          className="h-105 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path="/legacy/table-kalorifery-ksk.html"
+            className="w-231"
+          />
+        </div>
         <ProductParagraph>
           Структура условного обозначения водяных калориферов КСк производства
           ООО «Т.С.Т.». Калорифер КСк 4-10-02 ХЛ3 (ТУ 4863-002-55613706-02): КСк

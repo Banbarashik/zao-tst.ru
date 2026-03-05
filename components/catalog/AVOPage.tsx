@@ -11,6 +11,7 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
+import LegacyHtml from "../legacyHtml";
 
 const tableHeaders = {
   water: [
@@ -141,7 +142,6 @@ export default function AVOPage({ product }) {
           </SimilarProductLink>
         </div>
       </div>
-
       <section className="mb-4">
         <ProductSubheader
           text={`Технические характеристики агрегатов АВО ХЛ ${heatCarrierAdj.pluGen}`}
@@ -243,7 +243,6 @@ export default function AVOPage({ product }) {
           </div>
         </div>
       </section>
-
       <ProductSubheader
         text={`Таблица расчета и подбора ${heatCarrierAdj?.pluGen} агрегатов ${product.shortName}`}
       />
@@ -255,16 +254,13 @@ export default function AVOPage({ product }) {
         ознакомиться с основными теплотехническими показателями:{" "}
         {tableIndicators[product.heatCarrier]}.
       </ProductParagraph>
-      <iframe
-        src={product.tableWithTabs}
-        title={`Таблица расчета и подбора ${heatCarrierAdj?.gen} агрегата ${product.shortName}`}
-        className="mb-1 h-65 w-full"
-      />
+      <div className="overflow-x-auto">
+        <LegacyHtml path={product.tableWithTabs} className="w-231" />
+      </div>
       <ProductParagraph className="mb-8">
         Табличные данные можно использовать при подборе сопутствующего{" "}
         {tableEquipment[product.heatCarrier]} оборудования.
       </ProductParagraph>
-
       <ProductSubheader
         text={`Габаритные размеры агрегатов ${product.shortName} ${heatCarrierAdj.pluGen}`}
       />
@@ -301,7 +297,6 @@ export default function AVOPage({ product }) {
           ))}
         </tbody>
       </table>
-
       <LinkButtonsBlock buttons={linkButtons} />
     </div>
   );
