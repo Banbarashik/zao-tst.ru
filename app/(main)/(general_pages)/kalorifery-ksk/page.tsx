@@ -197,7 +197,7 @@ export default function KaloriferyKSKPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-kalorifery-ksk.html"
-            className="legacy-table w-231"
+            className="legacy-table min-w-231"
           />
         </div>
         <ProductParagraph>

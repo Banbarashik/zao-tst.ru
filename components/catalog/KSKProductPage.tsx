@@ -441,7 +441,7 @@ export default function KSKProductPage({ product }: { product: KSKProduct }) {
       <div className="overflow-x-auto">
         <LegacyHtml
           path={product.tableWithTabs}
-          className="legacy-table w-231"
+          className="legacy-table min-w-231"
         />
       </div>
       <ProductParagraph className={isCalorifier ? "mb-4" : "mb-8"}>

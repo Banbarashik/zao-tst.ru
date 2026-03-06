@@ -181,10 +181,12 @@ export default function KaloriferyVodaPage() {
           элементов, стальные трубки диаметром 16 мм с накатным алюминиевым
           оребрением.
         </ProductParagraph>
-        <LegacyHtml
-          path="/legacy/table-kalorifery-voda-kpvs.html"
-          className="legacy-table"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path="/legacy/table-kalorifery-voda-kpvs.html"
+            className="legacy-table min-w-231"
+          />
+        </div>
         <Image
           src="/img/general_pages/kalorifery_pritochnye_vodianye_kpvs_chertez.png"
           alt="Водяные приточные калориферы габаритные размеры"
@@ -209,10 +211,12 @@ export default function KaloriferyVodaPage() {
           рядов теплопередающих элементов, стальные трубки диаметром 22 мм с
           накатным алюминиевым оребрением.
         </ProductParagraph>
-        <LegacyHtml
-          path="/legacy/table-kalorifery-voda-kpvu.html"
-          className="legacy-table"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path="/legacy/table-kalorifery-voda-kpvu.html"
+            className="legacy-table min-w-231"
+          />
+        </div>
         <Image
           src="/img/general_pages/kalorifery_pritochnye_vodianye_kpvu_chertez.png"
           alt="Водяные приточные калориферы технические характеристики"

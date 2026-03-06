@@ -164,7 +164,7 @@ export default function KaloriferyTVVPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-kalorifery-tvv.html"
-            className="legacy-table w-231"
+            className="legacy-table min-w-231"
           />
         </div>
         <ProductParagraph>

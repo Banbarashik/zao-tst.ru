@@ -628,7 +628,7 @@ export default function PodborRaschetKaloriferovPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-raschet-podbor-kaloriferov-1.html"
-            className="legacy-table w-231"
+            className="legacy-table min-w-231"
           />
         </div>
         <div className="text-example space-y-2">
@@ -772,7 +772,7 @@ export default function PodborRaschetKaloriferovPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-raschet-podbor-kaloriferov-2.html"
-            className="legacy-table w-231"
+            className="legacy-table legacy-raschet-podbor-table min-w-231"
           />
         </div>
         <ProductParagraph className="text-[#5a769a]">

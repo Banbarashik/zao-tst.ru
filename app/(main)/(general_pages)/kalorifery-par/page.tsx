@@ -199,7 +199,7 @@ export default function KaloriferyParPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-kalorifery-par-kpps.html"
-            className="legacy-table w-231"
+            className="legacy-table min-w-231"
           />
         </div>
         <Image
@@ -229,7 +229,7 @@ export default function KaloriferyParPage() {
         <div className="overflow-x-auto">
           <LegacyHtml
             path="/legacy/table-kalorifery-par-kppu.html"
-            className="legacy-table w-231"
+            className="legacy-table min-w-231"
           />
         </div>
         <Image

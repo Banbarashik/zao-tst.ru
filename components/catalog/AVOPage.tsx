@@ -257,7 +257,7 @@ export default function AVOPage({ product }) {
       <div className="overflow-x-auto">
         <LegacyHtml
           path={product.tableWithTabs}
-          className="legacy-table w-231"
+          className="legacy-table min-w-231"
         />
       </div>
       <ProductParagraph className="mb-8">
