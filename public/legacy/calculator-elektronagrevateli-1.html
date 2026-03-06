@@ -8,7 +8,7 @@
         return Math.min(Math.max(v, min), max);
       }
 
-      function calculator(form) {
+      function calculatorElektronagrevateliOne(form) {
         // parse and clamp to the correct ranges (match data-min/data-max)
         const a = clampNum(Number(form.a.value), 500, 100000) || 0;
         const b = clampNum(Number(form.b.value), -50, 40) || 0;
@@ -18,8 +18,10 @@
       }
 
       // add/remove .has-value on inputs so they turn yellow when non-empty
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form.calculator");
+      function init() {
+        const form = document.querySelector(
+          "form.calculator.elektronagrevateli-1",
+        );
         if (!form) return;
         const inputs = form.querySelectorAll('input[type="text"]');
 
@@ -81,13 +83,15 @@
             inputs.forEach((i) => i.classList.remove("has-value"));
           });
         }
-      });
+      }
+
+      init();
     </script>
   </head>
 
   <body>
     <!-- Калькулятор (начало) -->
-    <form class="calculator">
+    <form class="calculator elektronagrevateli-1">
       <label>
         Объем нагреваемого воздуха, м³/ч
         <input type="text" name="a" data-min="500" data-max="100000" />
@@ -107,7 +111,7 @@
         <input
           type="button"
           value="Рассчитать"
-          onclick="calculator(this.form)"
+          onclick="calculatorElektronagrevateliOne(this.form)"
         />
         <input type="reset" value="Сброс" />
       </div>
