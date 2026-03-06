@@ -117,7 +117,7 @@
 }
 /* Сложные калькуляторы (конец) */
 
-.legacy-html input.bg-transparent {
+.legacy-html.legacy-calculator input.bg-transparent {
   background: transparent;
 }
 
@@ -136,11 +136,11 @@
   outline: none;
 }
 
-.legacy-html input.has-value {
+.legacy-html.legacy-calculator input.has-value {
   background-color: #ffeb9a;
 }
 
-.legacy-html input.out-of-range {
+.legacy-html.legacy-calculator input.out-of-range {
   border-color: #c00;
   background: rgba(255, 0, 0, 0.04);
   color: #700;
