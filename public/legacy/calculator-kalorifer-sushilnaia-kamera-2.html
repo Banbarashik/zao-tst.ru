@@ -3,18 +3,34 @@
   <head>
     <link href="/legacy/calculator.css" rel="stylesheet" />
     <script>
-      function calculate() {
-        console.log(document.calculator.coolant);
-        let cool = document.calculator.coolant;
-        let cal = document.getElementById("calorifer");
+      function calculateKaloriferSushilnaiaKameraTwo() {
+        let cool = document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2",
+        ).coolant;
+        let cal = document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #calorifer",
+        );
 
         let B1 = cal.value;
-        let B3 = +document.getElementById("concentration").value / 100;
-        let B4 = +document.getElementById("coolantInputT").value;
-        let B5 = +document.getElementById("coolantOutputT").value;
-        let B6 = +document.getElementById("volume").value;
-        let B7 = +document.getElementById("airInputT").value;
-        let B8 = +document.getElementById("airOutputT").value;
+        let B3 =
+          +document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #concentration",
+          ).value / 100;
+        let B4 = +document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #coolantInputT",
+        ).value;
+        let B5 = +document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #coolantOutputT",
+        ).value;
+        let B6 = +document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #volume",
+        ).value;
+        let B7 = +document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #airInputT",
+        ).value;
+        let B8 = +document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #airOutputT",
+        ).value;
 
         // значения которые нужно менять (начало)
         let F = [14.5, 0.669, 0.00165, 12.5, 30.4, 0.512, 0.1299, 4.67, 1.864];
@@ -63,106 +79,206 @@
         ];
 
         // вывод результатов
-        document.getElementById("percents").innerHTML =
-          (B3 * 100).toFixed(0) + " %";
-        document.getElementById("result1").value = B9().toFixed(0) + " %";
-        document.getElementById("result2").value = B10().toFixed(2);
-        document.getElementById("result3").value = B11().toFixed(2);
-        document.getElementById("result4").value = B12().toFixed(0);
-        document.getElementById("result5").value = B13().toFixed(1);
-        document.getElementById("result6").value = B14().toFixed(0);
-        document.getElementById("result7").value = B15().toFixed(0);
+        document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #percents",
+        ).innerHTML = (B3 * 100).toFixed(0) + " %";
+        document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+        ).value = B9().toFixed(0) + " %";
+        document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+        ).value = B10().toFixed(2);
+        document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+        ).value = B11().toFixed(2);
+        document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #result4",
+        ).value = B12().toFixed(0);
+        document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #result5",
+        ).value = B13().toFixed(1);
+        document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #result6",
+        ).value = B14().toFixed(0);
+        document.querySelector(
+          ".calculator-kalorifer-sushilnaia-kamera-2 #result7",
+        ).value = B15().toFixed(0);
 
         if (
-          document.getElementById("result2").value < 1.5 ||
-          document.getElementById("result2").value > 8
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).value < 1.5 ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).value > 8
         ) {
-          document.getElementById("result2").style.backgroundColor =
-            "rgb(255, 160, 122)";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).style.backgroundColor = "rgb(255, 160, 122)";
         } else if (
-          document.getElementById("result2").value > 1.5 &&
-          document.getElementById("result2").value < 8
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).value > 1.5 &&
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).value < 8
         ) {
-          document.getElementById("result2").style.backgroundColor =
-            "rgb(217, 217, 217)";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).style.backgroundColor = "rgb(217, 217, 217)";
         }
 
         if (
-          document.getElementById("result3").value < 0.12 ||
-          document.getElementById("result3").value > 1.2
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+          ).value < 0.12 ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+          ).value > 1.2
         ) {
-          document.getElementById("result3").style.backgroundColor =
-            "rgb(255, 160, 122)";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+          ).style.backgroundColor = "rgb(255, 160, 122)";
         } else {
-          document.getElementById("result3").style.backgroundColor =
-            "rgb(217, 217, 217)";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+          ).style.backgroundColor = "rgb(217, 217, 217)";
         }
 
         if (
-          parseInt(document.getElementById("result1").value) < 0 ||
-          parseInt(document.getElementById("result1").value) > 20
+          parseInt(
+            document.querySelector(
+              ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+            ).value,
+          ) < 0 ||
+          parseInt(
+            document.querySelector(
+              ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+            ).value,
+          ) > 20
         ) {
-          document.getElementById("result1").style.backgroundColor =
-            "rgb(255, 160, 122)";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+          ).style.backgroundColor = "rgb(255, 160, 122)";
         } else {
-          document.getElementById("result1").style.backgroundColor =
-            "rgb(255, 255, 255)";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+          ).style.backgroundColor = "rgb(255, 255, 255)";
         }
 
         if (
-          document.getElementById("result1").value == "NaN %" ||
-          document.getElementById("result1").value == "Infinity %" ||
-          document.getElementById("result1").value == "-Infinity %"
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+          ).value == "NaN %" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+          ).value == "Infinity %" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+          ).value == "-Infinity %"
         ) {
-          document.getElementById("result1").value = "%";
-          document.getElementById("result1").style.backgroundColor =
-            "rgb(255, 255, 255)";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+          ).value = "%";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result1",
+          ).style.backgroundColor = "rgb(255, 255, 255)";
         }
         if (
-          document.getElementById("result2").value == "NaN" ||
-          document.getElementById("result2").value == "Infinity" ||
-          document.getElementById("result2").value == "-Infinity"
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).value == "NaN" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).value == "Infinity" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).value == "-Infinity"
         ) {
-          document.getElementById("result2").value = "";
-          document.getElementById("result2").style.backgroundColor =
-            "rgb(217, 217, 217)";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).value = "";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result2",
+          ).style.backgroundColor = "rgb(217, 217, 217)";
         }
         if (
-          document.getElementById("result3").value == "NaN" ||
-          document.getElementById("result3").value == "Infinity" ||
-          document.getElementById("result3").value == "-Infinity"
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+          ).value == "NaN" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+          ).value == "Infinity" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+          ).value == "-Infinity"
         ) {
-          document.getElementById("result3").value = "";
-          document.getElementById("result3").style.backgroundColor =
-            "rgb(217, 217, 217)";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+          ).value = "";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result3",
+          ).style.backgroundColor = "rgb(217, 217, 217)";
         }
         if (
-          document.getElementById("result4").value == "NaN" ||
-          document.getElementById("result4").value == "Infinity" ||
-          document.getElementById("result4").value == "-Infinity"
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result4",
+          ).value == "NaN" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result4",
+          ).value == "Infinity" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result4",
+          ).value == "-Infinity"
         ) {
-          document.getElementById("result4").value = "";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result4",
+          ).value = "";
         }
         if (
-          document.getElementById("result5").value == "NaN" ||
-          document.getElementById("result5").value == "Infinity" ||
-          document.getElementById("result5").value == "-Infinity"
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result5",
+          ).value == "NaN" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result5",
+          ).value == "Infinity" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result5",
+          ).value == "-Infinity"
         ) {
-          document.getElementById("result5").value = "";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result5",
+          ).value = "";
         }
         if (
-          document.getElementById("result6").value == "NaN" ||
-          document.getElementById("result6").value == "Infinity" ||
-          document.getElementById("result6").value == "-Infinity"
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result6",
+          ).value == "NaN" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result6",
+          ).value == "Infinity" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result6",
+          ).value == "-Infinity"
         ) {
-          document.getElementById("result6").value = "";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result6",
+          ).value = "";
         }
         if (
-          document.getElementById("result7").value == "NaN" ||
-          document.getElementById("result7").value == "Infinity" ||
-          document.getElementById("result7").value == "-Infinity"
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result7",
+          ).value == "NaN" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result7",
+          ).value == "Infinity" ||
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result7",
+          ).value == "-Infinity"
         ) {
-          document.getElementById("result7").value = "";
+          document.querySelector(
+            ".calculator-kalorifer-sushilnaia-kamera-2 #result7",
+          ).value = "";
         }
 
         function B9() {
@@ -332,9 +448,9 @@
     <!-- Калькулятор (начало) -->
     <form
       onsubmit="return false;"
-      oninput="calculate()"
+      oninput="calculateKaloriferSushilnaiaKameraTwo()"
       name="calculator"
-      class="calculator advanced-calculator"
+      class="calculator advanced-calculator calculator-kalorifer-sushilnaia-kamera-2"
     >
       <div>
         <span class="unselectable">Модель калорифера</span>
