@@ -8,15 +8,15 @@
         return Math.min(Math.max(v, min), max);
       }
 
-      function calculator(form) {
+      function calculatorKaloriferyParFour(form) {
         const e = clampNum(Number(form.e.value), 10, 2000) || 0;
         const f = Number(form.f.value);
         const j = ((e / 3600) * f) / 1000;
         form.total.value = j.toFixed(0);
       }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form.calculator");
+      function init() {
+        const form = document.querySelector("form.calculator.kalorifery-par-4");
         if (!form) return;
         const inputs = form.querySelectorAll('input[type="text"]');
 
@@ -78,13 +78,15 @@
             inputs.forEach((i) => i.classList.remove("has-value"));
           });
         }
-      });
+      }
+
+      init();
     </script>
   </head>
 
   <body>
     <!-- Калькулятор (начало) -->
-    <form class="calculator">
+    <form class="calculator kalorifery-par-4">
       <label style="margin-bottom: 10px">
         Расход пара, кг/час
         <input type="text" name="e" data-min="10" data-max="2000" />
@@ -110,7 +112,7 @@
         <input
           type="button"
           value="Рассчитать"
-          onclick="calculator(this.form)"
+          onclick="calculatorKaloriferyParFour(this.form)"
         />
         <input type="reset" value="Сброс" />
       </div>
