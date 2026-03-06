@@ -9,15 +9,15 @@ export default function LegacyHtml({
   path: string;
   className?: string;
 }) {
-  if (!path.startsWith("/legacy/")) {
-    console.error("Invalid legacy HTML path");
-    return;
-  }
-
   const [html, setHtml] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!path.startsWith("/legacy/")) {
+      console.error("Invalid legacy HTML path");
+      return;
+    }
+
     fetch(path)
       .then((res) => res.text())
       .then((text) => setHtml(text));
