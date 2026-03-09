@@ -5,14 +5,16 @@ import type { Metadata } from "next";
 import { capitalizeFirst } from "@/lib/utils";
 import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
 import { getRowsNumberAdj } from "@/lib/rowsNumberAdj";
+import { createProductSchema } from "@/lib/schema/product";
 
+import { JsonLd } from "@/components/utils/jsonLd";
+import SupplyCalorifierPage from "@/components/catalog/supplyCalorifierPage";
+import KSKProductPage from "@/components/catalog/KSKProductPage";
 import STDPage from "@/components/catalog/STDPage";
 import AVOPage from "@/components/catalog/AVOPage";
+import ElectroEquipmentPage from "@/components/catalog/ElectroEquipmentPage";
 import TenyPage from "@/components/catalog/TenyPage";
 import QuestionButton from "@/components/questionButton";
-import KSKProductPage from "@/components/catalog/KSKProductPage";
-import SupplyCalorifierPage from "@/components/catalog/supplyCalorifierPage";
-import ElectroEquipmentPage from "@/components/catalog/ElectroEquipmentPage";
 
 function getProductType(categories: string[]) {
   if (
@@ -197,8 +199,12 @@ export default async function ProductPage({
 
   const productType = getProductType(product.categories);
 
+  const schema = createProductSchema(product);
+
   return (
     <>
+      <JsonLd data={schema} />
+
       {productType === "supplyCalorifier" && (
         <SupplyCalorifierPage product={product} />
       )}
