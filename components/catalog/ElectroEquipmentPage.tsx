@@ -172,6 +172,7 @@ export default function ElectroEquipmentPage({ product }) {
       name: catalogLinkText[preciseCategory],
       url: "/documents/" + catalogLinkUrl[preciseCategory],
       openNewTab: true,
+      goal: "open_pdf",
     },
   ];
 

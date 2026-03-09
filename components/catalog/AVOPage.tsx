@@ -88,6 +88,7 @@ export default function AVOPage({ product }) {
       name: `Каталог ${heatCarrierAdj.pluGen} агрегатов АВО ХЛ`,
       url: "/documents/Agregat_AVO-HL_katalog_2025.pdf",
       openNewTab: true,
+      goal: "open_pdf",
     },
   ];
 

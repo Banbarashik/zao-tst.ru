@@ -294,6 +294,7 @@ export default function SupplyCalorifierPage({
               ? "/documents/Kalorifer_KPVS_KPVU_katalog_2025.pdf"
               : "/documents/Kalorifer_KPPS_KPPU_katalog_2025.pdf",
             openNewTab: true,
+            goal: "open_pdf",
           },
         ]}
       />

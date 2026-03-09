@@ -44,16 +44,19 @@ const linkButtons = [
     name: "Калориферы",
     url: "/documents/Sertificat_kalorifery.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Отопительные агрегаты",
     url: "/documents/Sertificat_agregaty.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Воздухонагревательные установки",
     url: "/documents/Sertificat_ustanovki.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 

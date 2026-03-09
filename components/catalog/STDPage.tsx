@@ -91,6 +91,7 @@ export default function STDPage({ product }) {
         ? "/documents/Agregat_STD-300_katalog_2025.pdf"
         : "/documents/Agregat_STD-300-HL_katalog_2025.pdf",
       openNewTab: true,
+      goal: "open_pdf",
     },
   ];
 

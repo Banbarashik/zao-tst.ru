@@ -40,16 +40,19 @@ const linkButtons = {
       name: "Каталог КПСК",
       url: "/documents/Kalorifer_KPSK_katalog_2025.pdf",
       openNewTab: true,
+      goal: "open_pdf",
     },
     {
       name: "Каталог КП",
       url: "/documents/Kalorifer_KP_katalog_2025.pdf",
       openNewTab: true,
+      goal: "open_pdf",
     },
     {
       name: "Каталог КФБ-А П",
       url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
       openNewTab: true,
+      goal: "open_pdf",
     },
   ],
 };

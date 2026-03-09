@@ -30,11 +30,13 @@ const linkButtons = [
     name: "Каталог водяных калориферов КФБ",
     url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист калориферов КФБ-А М",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 

@@ -31,11 +31,13 @@ const linkButtons = [
     name: "Каталог калориферов КПСк",
     url: "/documents/Kalorifer_KPSK_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист калориферов КПСк",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 
