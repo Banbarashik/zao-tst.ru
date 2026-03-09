@@ -1,45 +1,28 @@
-type Product = {
-  id: string;
-  name: string;
-  shortName?: string;
-  series?: string;
-  model?: string;
-  heatPower?: number;
-  price?: number;
-  airPower?: number;
-  rows?: number;
-  img?: { url: string };
-  variants?: Variant[];
-};
+import { SITE_URL } from "@/constants";
+const CONTEXT = "https://schema.org";
+const BRAND = "Т.С.Т.";
 
-type Variant = {
-  id: string;
-  name: string;
-  heatPower?: number;
-  price?: number;
-  rows?: number;
-};
+import type { Product } from "@/types";
 
 export function createProductSchema(product: Product) {
-  const baseUrl = "https://zao-tst.ru";
-
-  const image = product.img ? `${baseUrl}${product.img.url}` : undefined;
+  const image = product.img ? `${SITE_URL}${product.img.url}` : undefined;
 
   // ----- PRODUCT WITH VARIANTS -----
-  if (product.variants) {
+  if (product.variants?.length) {
     return {
-      "@context": "https://schema.org",
+      "@context": CONTEXT,
       "@type": "ProductGroup",
-      "@id": `${baseUrl}/${product.id}`,
+      "@id": `${SITE_URL}/${product.id}`,
       name: product.name,
       brand: {
         "@type": "Brand",
-        name: "ТСТ",
+        name: BRAND,
       },
       image,
+      variesBy: ["rows"],
       hasVariant: product.variants.map((v) => ({
         "@type": "Product",
-        "@id": `${baseUrl}/${v.id}`,
+        "@id": `${SITE_URL}/${product.id}#${v.id}`,
         name: v.name,
         sku: v.id,
         additionalProperty: [
@@ -61,7 +44,7 @@ export function createProductSchema(product: Product) {
               price: v.price,
               priceCurrency: "RUB",
               availability: "https://schema.org/InStock",
-              url: `${baseUrl}/${v.id}`,
+              url: `${SITE_URL}/${product.id}`,
             }
           : undefined,
       })),
@@ -70,15 +53,15 @@ export function createProductSchema(product: Product) {
 
   // ----- PRODUCT WITHOUT VARIANTS -----
   return {
-    "@context": "https://schema.org",
+    "@context": CONTEXT,
     "@type": "Product",
-    "@id": `${baseUrl}/${product.id}`,
+    "@id": `${SITE_URL}/${product.id}`,
     name: product.name,
     image,
     sku: product.id,
     brand: {
       "@type": "Brand",
-      name: "ТСТ",
+      name: BRAND,
     },
     additionalProperty: [
       product.rows && {
@@ -105,7 +88,7 @@ export function createProductSchema(product: Product) {
           price: product.price,
           priceCurrency: "RUB",
           availability: "https://schema.org/InStock",
-          url: `${baseUrl}/${product.id}`,
+          url: `${SITE_URL}/${product.id}`,
         }
       : undefined,
   };
