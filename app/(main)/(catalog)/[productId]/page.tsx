@@ -197,49 +197,33 @@ export default async function ProductPage({
 
   const productType = getProductType(product.categories);
 
-  if (productType === "supplyCalorifier")
-    return (
-      <>
+  return (
+    <>
+      {productType === "supplyCalorifier" && (
         <SupplyCalorifierPage product={product} />
-        <QuestionButton />
-      </>
-    );
+      )}
 
-  if (
-    productType === "ksk_kpsk" ||
-    productType === "tvv_kp" ||
-    productType === "kfb" ||
-    productType === "ao2"
-  )
-    return (
-      <>
-        <KSKProductPage product={product} />
-        <QuestionButton />
-      </>
-    );
+      {(productType === "ksk_kpsk" ||
+        productType === "tvv_kp" ||
+        productType === "kfb" ||
+        productType === "ao2") && <KSKProductPage product={product} />}
 
-  if (productType === "std300" || productType === "std300-hl")
-    return (
-      <>
+      {(productType === "std300" || productType === "std300-hl") && (
         <STDPage product={product} />
-        <QuestionButton />
-      </>
-    );
+      )}
 
-  if (productType === "avo")
-    return (
-      <>
-        <AVOPage product={product} />
-        <QuestionButton />
-      </>
-    );
+      {productType === "avo" && <AVOPage product={product} />}
 
-  if (
-    productType === "sfo" ||
-    productType === "sfotc" ||
-    productType === "shuk"
-  )
-    return <ElectroEquipmentPage product={product} />;
+      {(productType === "sfo" ||
+        productType === "sfotc" ||
+        productType === "shuk") && <ElectroEquipmentPage product={product} />}
 
-  if (productType === "teny") return <TenyPage product={product} />;
+      {productType === "teny" && <TenyPage product={product} />}
+
+      {productType !== "sfo" &&
+        productType !== "sfotc" &&
+        productType !== "shuk" &&
+        productType !== "teny" && <QuestionButton />}
+    </>
+  );
 }
