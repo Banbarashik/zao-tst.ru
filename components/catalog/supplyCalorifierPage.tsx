@@ -40,6 +40,7 @@ export default function SupplyCalorifierPage({
     calculator,
   } = product;
   const internalSize = size - 72;
+  const frameSize = Math.ceil(size / 50) * 50;
 
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
 
@@ -48,6 +49,10 @@ export default function SupplyCalorifierPage({
 
   const isWater = heatCarrier === "water";
   const isSteam = heatCarrier === "steam";
+  const isKPVS = series === "КПВС";
+  const isKPPS = series === "КППС";
+  const isKPVU = series === "КПВУ";
+  const isKPPU = series === "КППУ";
 
   // TODO create a prop 'mass' on the supply calorifier variant object
   const threeRowsVariantMass = specsTableValues[specsTableValues.length - 2];
@@ -94,6 +99,50 @@ export default function SupplyCalorifierPage({
             : "",
   };
 
+  const heatPowers = new Intl.ListFormat("ru-RU", {
+    style: "long",
+    type: "conjunction",
+  }).format(variants.map((variant) => String(variant.heatPower)));
+
+  const modelText = (
+    <ProductParagraph className="mb-8">
+      {(isKPVS || isKPPS) && (
+        <>
+          Загрузить актуальные CAD-модели {isKPPS && "паровых"} калориферов{" "}
+          {shortName} можно по ссылке в верхней части страницы.{" "}
+          {isKPVS ? "Водяные воздухонагреватели" : "Воздухонагреватели"} с
+          тепловой мощностью {heatPowers} кВт специально разработаны для
+          приточных систем с производительностью по воздуху {airPower} м
+          <sup>3</sup>/час. {isKPVS ? "Внутренний" : "Внешний"} габаритный
+          размер по фланцам составляет{" "}
+          {isKPVS ? `${internalSize}x${internalSize}` : `${size}x${size}`} мм,
+          что позволяет применять данный {isKPPS && "паровой"} теплообменник для
+          монтажа в камеры и стандартные проемы размером {frameSize}х{frameSize}{" "}
+          мм.{" "}
+        </>
+      )}
+      {(isKPVU || isKPPU) && (
+        <>
+          Загрузить актуальные CAD-модели воздухонагревателей {shortName} можно
+          по ссылке в верхней части страницы.{" "}
+          {capitalizeFirst(heatCarrierAdj.plu)} калориферы с производительностью
+          по теплу {heatPowers} кВт специально разработаны для приточных систем
+          с объемом {isKPVU ? "нагреваемого" : "подогреваемого"} воздуха{" "}
+          {airPower} м{<sup>3</sup>}/час. Габаритные размеры по{" "}
+          {isKPVU ? "внутренним" : "внешним"} фланцам составляют{" "}
+          {isKPVU ? `${internalSize}x${internalSize}` : `${size}x${size}`} мм,
+          что позволяет задействовать данный теплообменник для монтажа в камеры
+          и стандартные проемы размером {frameSize}х{frameSize} мм.{" "}
+        </>
+      )}
+      <>
+        {isKPPU ? "Конструкторские чертежи" : "Чертежи"} предназначены для
+        использования в {isKPVU && "конструкторских"} проектах и подготовки
+        присоединяемых к {isKPVS && "водяному"} калориферу элементов вентиляции.
+      </>
+    </ProductParagraph>
+  );
+
   return (
     <div className="@container w-full lg:overflow-x-auto">
       <ProductHeader product={product} />
@@ -130,7 +179,7 @@ export default function SupplyCalorifierPage({
           "Скорость теплоносителя в трубках: оптимальная 0.2-0.5 м/с, допустимая - 0.12-1.2 м/с."}
       </ProductParagraph>
       <LegacyHtml path={calculator} className="legacy-calculator" />
-      <ProductParagraph className="mb-8">
+      <ProductParagraph className="mb-7">
         {nextProduct && (
           <>
             Если запас площади поверхности теплообмена не достаточен ни для
@@ -170,6 +219,10 @@ export default function SupplyCalorifierPage({
           </>
         )}
       </ProductParagraph>
+      <ProductSubheader
+        text={`3D-модели калорифера ${shortName} для проектирования`}
+        className="mb-6"
+      />
       <div className="mb-8 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
         <div
           className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
@@ -192,6 +245,7 @@ export default function SupplyCalorifierPage({
           />
         </div>
       </div>
+      {modelText}
       <ProductSubheader text={`Технические характеристики ${shortName}`} />
       <div className="w-full overflow-x-auto">
         <table className="single-table water-and-steam water-and-steam-inner mb-1 w-full min-w-231 xl:min-w-auto">
