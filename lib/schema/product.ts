@@ -24,6 +24,7 @@ export function createProductSchema(product: Product) {
         "@type": "Product",
         "@id": `${SITE_URL}/${product.id}#${v.id}`,
         name: v.name,
+        image,
         sku: v.id,
         additionalProperty: [
           v.rows && {
