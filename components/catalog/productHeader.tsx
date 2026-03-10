@@ -39,12 +39,12 @@ export default function ProductHeader({
           sideOffset={10}
           className="w-40 rounded-sm p-0"
         >
-          <ol>
+          <ol className="outline-accent overflow-hidden rounded-sm outline">
             {modelLinks.map((ml) => (
               <li key={ml.text}>
                 <Link
                   href={ml.url}
-                  className="hover:text-primary-darker block py-1.5 text-center hover:bg-gray-100"
+                  className="hover:text-primary-darker block py-1.75 text-center hover:bg-gray-100"
                   onClick={() => setIsOpen(false)}
                 >
                   {ml.text}
