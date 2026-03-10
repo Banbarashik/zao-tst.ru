@@ -143,9 +143,14 @@ export default function SupplyCalorifierPage({
     </ProductParagraph>
   );
 
+  const modelLinks = variants.map((v) => ({
+    text: `${series} ${size}x${size}_${v.rows}`,
+    url: `/models/${seriesEng[series]}/kalorifer_${seriesEng[series]}-${size}_${v.rows}.step`,
+  }));
+
   return (
     <div className="@container w-full lg:overflow-x-auto">
-      <ProductHeader product={product} />
+      <ProductHeader text={product.name} modelLinks={modelLinks} />
       <ProductParagraph className="mb-4">
         Приточный {heatCarrierAdj?.nom} калорифер {shortNameWithHyphen}{" "}
         выпускается в двух, трех и четырех рядном исполнении. Номинальная

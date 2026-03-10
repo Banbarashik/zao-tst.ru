@@ -1,15 +1,18 @@
 import Link from "next/link";
 
-import type { SupplyCalorifier, Product } from "@/types";
-
 export default function ProductHeader({
-  product,
+  text,
+  modelLinks,
 }: {
-  product: Product | SupplyCalorifier;
+  text: string;
+  modelLinks: {
+    text: string;
+    url: string;
+  }[];
 }) {
   return (
     <div className="mb-4 flex items-center justify-between gap-4">
-      <h1 className="text-xl font-bold uppercase">{product.name}</h1>
+      <h1 className="text-xl font-bold uppercase">{text}</h1>
       <Link
         href="#"
         className="bg-accent rounded-md px-3 py-2 text-sm font-semibold"
