@@ -34,7 +34,11 @@ export default function ProductHeader({
             Скачать 3D-модель
           </Button>
         </PopoverTrigger>
-        <PopoverContent align="start" className="w-40 rounded-sm p-0">
+        <PopoverContent
+          align="start"
+          sideOffset={10}
+          className="w-40 rounded-sm p-0"
+        >
           <ol>
             {modelLinks.map((ml) => (
               <li key={ml.text}>
