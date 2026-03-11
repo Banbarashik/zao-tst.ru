@@ -15,6 +15,7 @@ import AVOPage from "@/components/catalog/AVOPage";
 import ElectroEquipmentPage from "@/components/catalog/ElectroEquipmentPage";
 import TenyPage from "@/components/catalog/TenyPage";
 import QuestionButton from "@/components/questionButton";
+import KPSKProductPage from "@/components/catalog/KPSKProductPage";
 
 function getProductType(categories: string[]) {
   if (
@@ -22,8 +23,12 @@ function getProductType(categories: string[]) {
     categories.includes("pritochny-parovy-kalorifery")
   )
     return "supplyCalorifier";
-  if (categories.includes("ksk") || categories.includes("kpsk"))
-    return "ksk_kpsk";
+  /* if (categories.includes("ksk") || categories.includes("kpsk"))
+    return "ksk_kpsk"; */
+  //! TEMPORARY
+  if (categories.includes("ksk")) return "ksk";
+  if (categories.includes("kpsk")) return "kpsk";
+  //! TEMPORARY
   if (categories.includes("tvv") || categories.includes("kp")) return "tvv_kp";
   if (categories.includes("kfb")) return "kfb";
   if (categories.includes("ao2")) return "ao2";
@@ -80,7 +85,9 @@ export async function generateMetadata({
     };
   }
 
-  if (productType === "ksk_kpsk") {
+  //! TEMPORARY
+  // if (productType === "ksk_kpsk") {
+  if (productType === "ksk" || productType === "kpsk") {
     const name = `${product.series} ${product.rows} ${product.size}`;
 
     return {
@@ -209,10 +216,14 @@ export default async function ProductPage({
         <SupplyCalorifierPage product={product} />
       )}
 
-      {(productType === "ksk_kpsk" ||
+      {/* TEMPORARY */}
+      {(productType === "ksk" ||
         productType === "tvv_kp" ||
         productType === "kfb" ||
         productType === "ao2") && <KSKProductPage product={product} />}
+
+      {productType === "kpsk" && <KPSKProductPage product={product} />}
+      {/* TEMPORARY */}
 
       {(productType === "std300" || productType === "std300-hl") && (
         <STDPage product={product} />
