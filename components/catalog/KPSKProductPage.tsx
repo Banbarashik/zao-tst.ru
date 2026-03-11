@@ -279,6 +279,22 @@ export default function KPSKProductPage({ product }) {
 
       <section className="mb-4">
         <ProductSubheader
+          text={`Производство и назначение калорифера ${product.shortName}`}
+        />
+        <ProductParagraph>
+          Паровой калорифер {product.shortName} — промышленный теплообменник
+          рекуперативного типа, используемый в системах воздушного отопления и
+          вентиляции, сушильных установках и в котором нагрев воздуха
+          осуществляется за счет конденсации пара внутри теплообменных труб.
+          Производство воздухонагревателя КП-Ск {product.rows}-{product.size} 03
+          У3 осуществляется согласно техническим условиям с проверкой каждого
+          калорифера на герметичность и прочность пробным повышенным давлением
+          теплоносителя.
+        </ProductParagraph>
+      </section>
+
+      <section className="mb-4">
+        <ProductSubheader
           text={`Технические характеристики ${isCalorifier ? `калорифера ${product.shortName} ${heatCarrierAdj?.gen}` : `агрегата ${product.model}`}`}
         />
         {/* TABLES */}
