@@ -7,8 +7,8 @@ import { capitalizeFirst } from "@/lib/utils";
 import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
 
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import { ModelDownloadButton } from "@/components/catalog/modelDownloadButton";
 import ProductCard from "@/components/catalog/productCard";
-import ProductHeader from "@/components/catalog/productHeader";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LegacyHtml from "@/components/legacyHtml";
@@ -150,7 +150,10 @@ export default function SupplyCalorifierPage({
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
-      <ProductHeader text={product.name} modelLinks={modelLinks} />
+      <div className="mb-4 flex items-center justify-between gap-4">
+        <h1 className="text-xl font-bold uppercase">{product.name}</h1>
+        <ModelDownloadButton modelLinks={modelLinks} />
+      </div>
       <ProductParagraph className="mb-4">
         Приточный {heatCarrierAdj?.nom} калорифер {shortNameWithHyphen}{" "}
         выпускается в двух, трех и четырех рядном исполнении. Номинальная
