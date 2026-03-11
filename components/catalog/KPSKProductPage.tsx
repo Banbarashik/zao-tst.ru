@@ -203,6 +203,42 @@ export default function KPSKProductPage({ product }) {
     },
   ];
 
+  const techSupportTable1Rows = [
+    ["Инженерная поддержка", "консультация по подбору"],
+    ["Технологическая поддержка", "расчет параметров под ТЗ"],
+    ["Проектная документация", "предоставление 3D-моделей"],
+    ["Производственный сервис", "нестандартная комплектация"],
+  ];
+  const techSupportTable2Rows = [
+    [
+      "Статус оборудования",
+      product.size >= 6 && product.size <= 10
+        ? "в наличии"
+        : "под изготовление",
+    ],
+    [
+      `Срок производства ${product.shortName}`,
+      `от ${product.size <= 5 ? "7" : product.size <= 10 ? "5" : "10"} рабочих дней`,
+    ],
+    ["Комплект документов", "паспорт, сертификат"],
+    ["Гарантийный срок", "12 месяцев"],
+  ];
+
+  const specificationsTable1Rows = [
+    ["Предприятие-производитель", "ООО «Т.С.Т.»"],
+    ["Наименование модели", `калорифер ${product.shortName}`],
+    ["Конструктивное исполнение", "02"],
+    ["Технические требования", "ТУ 4863-002-55613706-02"],
+    ["Категория размещения", "У3 по ГОСТ 15150-69"],
+  ];
+  const specificationsTable2Rows = [
+    ["Теплоноситель", "насыщенный перегретый пар"],
+    ["Параметры теплоносителя", "T до 190°С, P до 1.2 МПа"],
+    ["Качество теплоносителя", "ГОСТ 20995 СНиП 2-04.07-86"],
+    ["Параметры воздуха", "ГОСТ 12.1.005-88"],
+    ["Монтаж и эксплуатация", "СНиП 41-01-2003"],
+  ];
+
   return (
     <div className="@container w-full lg:overflow-x-auto">
       <h1 className="mb-8 text-xl font-bold uppercase">{product.name}</h1>
@@ -294,9 +330,49 @@ export default function KPSKProductPage({ product }) {
       </section>
 
       <section className="mb-4">
+        <h3 className="mb-3 text-xl">Техническое сопровождение</h3>
+        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:gap-6 md:gap-10 lg:gap-6 xl:gap-8">
+          {[techSupportTable1Rows, techSupportTable2Rows].map(
+            (tableRows, i) => (
+              <table
+                key={i}
+                className="basis-full"
+                // style={{ border: "1px solid rgb(229, 231, 235)" }}
+              >
+                <tbody className="text-left">
+                  {tableRows.map((row, i) => (
+                    <tr key={i}>
+                      <th
+                        className="w-1/2 px-1 py-1.5"
+                        // style={{ border: "1px solid rgb(229, 231, 235)" }}
+                      >
+                        {row[0]}
+                      </th>
+                      <td
+                        className="w-1/2 px-1 py-1.5"
+                        // style={{ border: "1px solid rgb(229, 231, 235)" }}
+                      >
+                        {row[1]}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ),
+          )}
+        </div>
+      </section>
+
+      <section className="mb-4">
         <ProductSubheader
           text={`Технические характеристики ${isCalorifier ? `калорифера ${product.shortName} ${heatCarrierAdj?.gen}` : `агрегата ${product.model}`}`}
         />
+        <ProductParagraph className="mb-3">
+          В техническом блоке отражены основные типовые теплоаэродинамические и
+          конструкционные характеристики данной модели. Параметры работы
+          калорифера {product.shortName} на эксплуатационных режимах,
+          отличающихся от паспортных приведены в расчетной таблице.
+        </ProductParagraph>
         {/* TABLES */}
         <div className="mb-6 flex flex-col sm:flex-row sm:gap-6 md:gap-10 lg:gap-6 xl:gap-8">
           <table
@@ -432,126 +508,218 @@ export default function KPSKProductPage({ product }) {
         )}
       </section>
 
-      <ProductSubheader
-        text={`Таблица расчета и подбора ${heatCarrierAdj?.gen} ${isCalorifier ? "калорифера" : "агрегата"} ${isCalorifier ? product.shortName : product.model}`}
-      />
-      <ProductParagraph className="mb-3">
-        Ниже представлены расчетные данные {heatCarrierAdj?.gen}{" "}
-        {isCalorifier
-          ? `калорифера ${product.shortName}`
-          : `агрегата ${product.shortName.replace(" ", "")} (на базе ${rowsNumberAdj.gen} ${heatCarrierAdj.gen} калорифера ${product.calorifier.replace(/[0-9]/g, "")})`}{" "}
-        производства ООО Т.С.Т. Выбрав в верхней части таблицы подходящий вам
-        график теплоносителя, можно ознакомиться с основными теплотехническими
-        показателями: температурой воздуха на выходе,
-        {isCalorifier &&
-          product.heatCarrier === "water" &&
-          " гидравлическим и аэродинамическим сопротивлением,"}{" "}
-        {!isCalorifier &&
-          product.heatCarrier === "water" &&
-          " сопротивлением по воде и расходом теплоносителя,"}{" "}
-        {isCalorifier &&
-          product.heatCarrier === "steam" &&
-          " аэродинамическим сопротивлением,"}{" "}
-        вырабатываемой мощностью
-        {product.heatCarrier === "steam" && " и расходом пара"}.
-      </ProductParagraph>
-      <div className="overflow-x-auto">
-        <LegacyHtml
-          path={product.tableWithTabs}
-          className="legacy-table min-w-231"
+      <section className="mb-4">
+        <ProductSubheader
+          text={`Конструкция калорифера ${product.shortName}`}
         />
-      </div>
-      <ProductParagraph className={isCalorifier ? "mb-4" : "mb-8"}>
-        Табличные данные можно использовать при подборе сопутствующего
-        {isCalorifier && " вентиляционного и"}{" "}
-        {tableEquipment[product.heatCarrier]} оборудования.
-      </ProductParagraph>
+        <ProductParagraph>
+          Калорифер одноходовой {product.shortName} выполнен в виде жесткого
+          стального каркаса прямоугольного сечения с трубными решетками и
+          боковыми съемными щитками, распределительным и сборным коллекторами,
+          патрубками и пакетом трубок с алюминиевым спирально- накатным
+          оребрением, расположенных в шахматном порядке. Паровой
+          воздухонагреватель должен эксплуатироваться: в системах отопления,
+          вентиляции, кондиционирования с температурой теплоносителя не выше
+          130°С, давлением не более 0.3 МПа, теплоотдающие элементы изготовлены
+          из стальных электросварных прямошовных труб; для технологического
+          нагрева с температурой теплоносителя до 190°С, давлением до 1.2 МПа,
+          теплоотдающие элементы изготовлены из бесшовных холоднодеформированных
+          труб.
+        </ProductParagraph>
+      </section>
 
-      <ProductSubheader
-        text={`Габаритные размеры ${isCalorifier ? "калорифера" : `${heatCarrierAdj.gen} агрегата`} ${isCalorifier ? product.shortName : product.model}`}
-      />
-      <Image
-        src={product.drawing}
-        title={`${capitalizeFirst(heatCarrierAdj.nom)} ${isCalorifier ? `калорифер ${product.shortName}` : `агрегат ${product.model}`} габаритные размеры`}
-        alt={`${isCalorifier ? `Калорифер ${product.shortName} ${heatCarrierAdj?.nom}` : `Отопительный агрегат ${product.model}`} технические характеристики`}
-        width={968}
-        height={1}
-        className="mb-4"
-      />
-      {isCalorifier && (
-        <div className="mb-10 w-full overflow-x-auto">
-          <table className={`w-full min-w-231 xl:min-w-auto`}>
+      <section className={isCalorifier ? "mb-4" : "mb-8"}>
+        <ProductSubheader
+          text={`Таблица расчета и подбора ${heatCarrierAdj?.gen} ${isCalorifier ? "калорифера" : "агрегата"} ${isCalorifier ? product.shortName : product.model}`}
+        />
+        <ProductParagraph className="mb-3">
+          Ниже представлены расчетные данные {heatCarrierAdj?.gen}{" "}
+          {isCalorifier
+            ? `калорифера ${product.shortName}`
+            : `агрегата ${product.shortName.replace(" ", "")} (на базе ${rowsNumberAdj.gen} ${heatCarrierAdj.gen} калорифера ${product.calorifier.replace(/[0-9]/g, "")})`}{" "}
+          производства ООО Т.С.Т. Выбрав в верхней части таблицы подходящий вам
+          график теплоносителя, можно ознакомиться с основными теплотехническими
+          показателями: температурой воздуха на выходе,
+          {isCalorifier &&
+            product.heatCarrier === "water" &&
+            " гидравлическим и аэродинамическим сопротивлением,"}{" "}
+          {!isCalorifier &&
+            product.heatCarrier === "water" &&
+            " сопротивлением по воде и расходом теплоносителя,"}{" "}
+          {isCalorifier &&
+            product.heatCarrier === "steam" &&
+            " аэродинамическим сопротивлением,"}{" "}
+          вырабатываемой мощностью
+          {product.heatCarrier === "steam" && " и расходом пара"}.
+        </ProductParagraph>
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            path={product.tableWithTabs}
+            className="legacy-table min-w-231"
+          />
+        </div>
+        <ProductParagraph>
+          Табличные данные можно использовать при подборе сопутствующего
+          {isCalorifier && " вентиляционного и"}{" "}
+          {tableEquipment[product.heatCarrier]} оборудования.
+        </ProductParagraph>
+      </section>
+
+      <section className="mb-6">
+        <ProductSubheader
+          text={`Габаритные размеры ${isCalorifier ? "калорифера" : `${heatCarrierAdj.gen} агрегата`} ${isCalorifier ? product.shortName : product.model}`}
+        />
+        <ProductParagraph className="mb-4">
+          На чертеже калорифера {product.shortName} указаны габаритные и
+          присоединительные размеры парового теплообменника, диаметр условного
+          прохода патрубков. По запросу воздухонагреватели могут изготавливаться
+          с фланцами или с патрубками не стандартного диаметра, конфигурации и
+          расположения.
+        </ProductParagraph>
+        <Image
+          src={product.drawing}
+          title={`${capitalizeFirst(heatCarrierAdj.nom)} ${isCalorifier ? `калорифер ${product.shortName}` : `агрегат ${product.model}`} габаритные размеры`}
+          alt={`${isCalorifier ? `Калорифер ${product.shortName} ${heatCarrierAdj?.nom}` : `Отопительный агрегат ${product.model}`} технические характеристики`}
+          width={968}
+          height={1}
+          className="mb-4"
+        />
+        {isCalorifier && (
+          <div className="w-full overflow-x-auto">
+            <table className={`w-full min-w-231 xl:min-w-auto`}>
+              <thead>
+                <tr>
+                  <th
+                    colSpan={9}
+                    className="pl-1 text-left"
+                    style={{ fontSize: "11pt" }}
+                  >
+                    Габаритные и присоединительные размеры калорифера{" "}
+                    {product.shortName} {heatCarrierAdj?.gen}, мм
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  {product.heatCarrier === "water" ? (
+                    <>
+                      <td>L</td>
+                      <td>L 1</td>
+                      <td>L 2</td>
+                      <td>L 3</td>
+                      <td>H</td>
+                      <td>H 1</td>
+                      <td>H 2</td>
+                    </>
+                  ) : (
+                    <>
+                      <td>H</td>
+                      <td>H 1</td>
+                      <td>H 2</td>
+                      <td>H 3</td>
+                      <td>B</td>
+                      <td>B 1</td>
+                      <td>B 2</td>
+                    </>
+                  )}
+                  <td>C</td>
+                  <td>dy</td>
+                </tr>
+                <tr>
+                  {product.sizeTableValues.map((value, i) => (
+                    <td key={i} style={{ fontSize: "11pt" }}>
+                      {value}
+                    </td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+        {isAgregat && (
+          <table className="w-full">
             <thead>
               <tr>
-                <th
-                  colSpan={9}
-                  className="pl-1 text-left"
-                  style={{ fontSize: "11pt" }}
-                >
-                  Габаритные и присоединительные размеры калорифера{" "}
-                  {product.shortName} {heatCarrierAdj?.gen}, мм
-                </th>
+                <th colSpan={3}>Габаритные размеры, мм</th>
+              </tr>
+              <tr>
+                <th className="w-1/3">L</th>
+                <th className="w-1/3">B</th>
+                <th className="w-1/3">H</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                {product.heatCarrier === "water" ? (
-                  <>
-                    <td>L</td>
-                    <td>L 1</td>
-                    <td>L 2</td>
-                    <td>L 3</td>
-                    <td>H</td>
-                    <td>H 1</td>
-                    <td>H 2</td>
-                  </>
-                ) : (
-                  <>
-                    <td>H</td>
-                    <td>H 1</td>
-                    <td>H 2</td>
-                    <td>H 3</td>
-                    <td>B</td>
-                    <td>B 1</td>
-                    <td>B 2</td>
-                  </>
-                )}
-                <td>C</td>
-                <td>dy</td>
-              </tr>
-              <tr>
-                {product.sizeTableValues.map((value, i) => (
-                  <td key={i} style={{ fontSize: "11pt" }}>
-                    {value}
-                  </td>
+                {product.sizeTableValues.map((v, idx) => (
+                  <td key={idx}>{v}</td>
                 ))}
               </tr>
             </tbody>
           </table>
+        )}
+      </section>
+
+      <section className="mb-10">
+        <h3 className="mb-2 text-xl">
+          Спецификация и стандарты калорифера {product.shortName}
+        </h3>
+        <ProductParagraph className="mb-3">
+          Во время подготовки паровых воздухоподогревателей к работе и при их
+          эксплуатации обязаны соблюдаться общие и специальные правила техники
+          безопасности. Пусконаладочные работы, включающие монтаж, обвязку и
+          запуск калорифера {product.shortName} в работу должны производиться
+          при обязательном участии специализированных монтажных организаций.
+        </ProductParagraph>
+        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:gap-6 md:gap-10 lg:gap-6 xl:gap-8">
+          {[specificationsTable1Rows, specificationsTable2Rows].map(
+            (tableRows, i) => (
+              <table
+                key={i}
+                className="basis-full"
+                // style={{ border: "1px solid rgb(229, 231, 235)" }}
+              >
+                <tbody className="text-left">
+                  {tableRows.map((row, i) => (
+                    <tr key={i}>
+                      <th
+                        className="w-1/2 px-1 py-1.5"
+                        // style={{ border: "1px solid rgb(229, 231, 235)" }}
+                      >
+                        {row[0]}
+                      </th>
+                      <td
+                        className="w-1/2 px-1 py-1.5"
+                        // style={{ border: "1px solid rgb(229, 231, 235)" }}
+                      >
+                        {row[1]}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ),
+          )}
         </div>
-      )}
-      {isAgregat && (
-        <table className="mb-10 w-full">
-          <thead>
-            <tr>
-              <th colSpan={3}>Габаритные размеры, мм</th>
-            </tr>
-            <tr>
-              <th className="w-1/3">L</th>
-              <th className="w-1/3">B</th>
-              <th className="w-1/3">H</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              {product.sizeTableValues.map((v, idx) => (
-                <td key={idx}>{v}</td>
-              ))}
-            </tr>
-          </tbody>
-        </table>
-      )}
-      <LinkButtonsBlock buttons={linkButtons} />
+      </section>
+
+      <div className="mb-6">
+        <LinkButtonsBlock buttons={linkButtons} />
+      </div>
+
+      <section>
+        <h3 className="mb-2 text-xl">
+          Оплата и доставка калорифера {product.shortName}
+        </h3>
+        <ProductParagraph>
+          Заказать калорифер {product.shortName} на нашем предприятии можно
+          следующими способами:
+        </ProductParagraph>
+        <ul>
+          <li>• позвонив по телефону: +7 (904) 968-14-88</li>
+          <li>• заполнив форму заявки на нашем сайте</li>
+          <li>• отправив письмо на электронную почту: zao_tst@mail.ru</li>
+        </ul>
+      </section>
     </div>
   );
 }
