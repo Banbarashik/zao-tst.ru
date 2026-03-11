@@ -44,7 +44,10 @@ export function ModelDownloadButton({
               <Link
                 href={ml.url}
                 className="hover:text-primary-darker block py-1.75 text-center hover:bg-gray-100"
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  reachGoal("model_download");
+                }}
               >
                 {ml.text}
               </Link>
