@@ -87,7 +87,7 @@ export async function generateMetadata({
 
   //! TEMPORARY
   // if (productType === "ksk_kpsk") {
-  if (productType === "ksk" || productType === "kpsk") {
+  if (productType === "ksk") {
     const name = `${product.series} ${product.rows} ${product.size}`;
 
     return {
@@ -96,6 +96,17 @@ export async function generateMetadata({
       keywords: `${name},калорифер ${name},калорифер ${name} ${heatCarrierAdj.nom},калорифер ${name} технические характеристики,калорифер ${name} габаритные размеры,купить калорифер ${product.shortName},калорифер ${name} цена,калорифер ${name} расчет,калорифер ${name} подбор,калорифер ${name} мощность`,
     };
   }
+
+  if (productType === "kpsk") {
+    const name = `${product.series} ${product.rows} ${product.size}`;
+
+    return {
+      title: `${product.name}: расчет мощности и подбор по производительности`,
+      description: `Калорифер ${product.shortName} ${heatCarrierAdj.nom} - производитель предприятие ООО Т.С.Т. Производство, характеристики, размеры, мощность, расчет, подбор, цена калорифера ${name}`,
+      keywords: `${name},калорифер ${name},калорифер ${name} ${heatCarrierAdj.nom},калорифер ${name} технические характеристики,калорифер ${name} габаритные размеры,купить калорифер ${product.shortName},калорифер ${name} цена,калорифер ${name} расчет,калорифер ${name} подбор,калорифер ${name} мощность`,
+    };
+  }
+  //! TEMPORARY
 
   if (productType === "tvv_kp") {
     const series = product.heatCarrier === "water" ? "ВНВ" : "ВНП";

@@ -135,7 +135,7 @@ const ao2TableHeaders = {
   ],
 };
 
-export default function KPSKProductPage({ product }: { product: KSKProduct }) {
+export default function KPSKProductPage({ product }) {
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
 
   const isCalorifier = product.categories.includes("kalorifer");
