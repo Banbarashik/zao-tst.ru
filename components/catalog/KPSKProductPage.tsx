@@ -135,6 +135,21 @@ const ao2TableHeaders = {
   ],
 };
 
+const calculatorBySize = {
+  1: { airPower: 2000, url: "/kppu-572x572" },
+  2: { airPower: 2500, url: "/kpps-572x572" },
+  3: { airPower: 3000, url: "/kpps-614x614" },
+  4: { airPower: 4000, url: "/kpps-697x697" },
+  5: { airPower: 5000, url: "/kpps-780x780" },
+  6: { airPower: 2500, url: "/kppu-617x617" },
+  7: { airPower: 3500, url: "/kpps-655x655" },
+  8: { airPower: 4000, url: "/kppu-754x754" },
+  9: { airPower: 5000, url: "/kppu-845x845" },
+  10: { airPower: 6000, url: "/kpps-655x655" },
+  11: { airPower: 16000, url: "/kpps-1239x1239" },
+  12: { airPower: 25000, url: "/kpps-1572x1572" },
+};
+
 export default function KPSKProductPage({ product }) {
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
 
@@ -542,7 +557,7 @@ export default function KPSKProductPage({ product }) {
         </div>
       </section>
 
-      <section className={isCalorifier ? "mb-4" : "mb-8"}>
+      <section className="mb-8">
         <ProductSubheader
           text={`Таблица расчета и подбора ${heatCarrierAdj?.gen} ${isCalorifier ? "калорифера" : "агрегата"} ${isCalorifier ? product.shortName : product.model}`}
         />
@@ -572,11 +587,20 @@ export default function KPSKProductPage({ product }) {
             className="legacy-table min-w-231"
           />
         </div>
-        <ProductParagraph>
+        <ProductParagraph className="mb-4">
           Табличные данные можно использовать при подборе сопутствующего
           {isCalorifier && " вентиляционного и"}{" "}
           {tableEquipment[product.heatCarrier]} оборудования.
         </ProductParagraph>
+        <LinkButtonsBlock
+          buttons={[
+            { name: "Подбор диаметра паропровода", url: "/paroprovod" },
+            {
+              name: `Онлайн калькулятор ${calculatorBySize[product.size].airPower} м³/ч`,
+              url: calculatorBySize[product.size].url,
+            },
+          ]}
+        />
       </section>
 
       <section className="mb-6">
@@ -733,14 +757,20 @@ export default function KPSKProductPage({ product }) {
           <ul className="text-[17px]">
             <li>
               • позвонив по телефону:{" "}
-              <a href="tel:+79049681488" className="font-bold">
+              <a
+                href="tel:+79049681488"
+                className="hover:text-primary-dark font-bold"
+              >
                 +7 (904) 968-14-88
               </a>
             </li>
             <li>• заполнив форму заявки на нашем сайте</li>
             <li>
               • отправив письмо на электронную почту:{" "}
-              <a href="mailto:zao_tst@mail.ru" className="font-bold">
+              <a
+                href="mailto:zao_tst@mail.ru"
+                className="hover:text-primary-dark font-bold"
+              >
                 zao_tst@mail.ru
               </a>
             </li>
