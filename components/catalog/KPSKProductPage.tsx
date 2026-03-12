@@ -227,7 +227,7 @@ export default function KPSKProductPage({ product }) {
   const techSupportTable2Rows = [
     [
       "Статус оборудования",
-      product.size >= 6 && product.size <= 10
+      product.size >= 6 && product.size <= 10 && product.rows !== 2
         ? "в наличии"
         : "под изготовление",
     ],
