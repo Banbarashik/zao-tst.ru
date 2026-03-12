@@ -8,7 +8,17 @@ import useYandexMetrika from "@/hooks/useYandexMetrika";
 
 import { Button } from "@/components/ui/button";
 
-export default function LinkButtonsBlock({ buttons }) {
+export default function LinkButtonsBlock({
+  buttons,
+}: {
+  buttons: {
+    name: string;
+    url: string;
+    hiddenText?: string;
+    openNewTab?: boolean;
+    goal?: string;
+  }[];
+}) {
   const { reachGoal } = useYandexMetrika();
 
   const buttonsAmount = buttons.length;
@@ -25,7 +35,7 @@ export default function LinkButtonsBlock({ buttons }) {
           key={btn.name}
           asChild
           className="shrink basis-full rounded-none border border-[#723910] bg-gray-200 text-black uppercase"
-          onClick={btn.goal && (() => reachGoal(btn.goal))}
+          onClick={() => btn.goal && reachGoal(btn.goal)}
         >
           <Link href={btn.url} target={btn.openNewTab ? "_blank" : "_self"}>
             {btn.name}
