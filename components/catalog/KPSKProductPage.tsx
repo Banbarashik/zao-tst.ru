@@ -598,6 +598,7 @@ export default function KPSKProductPage({ product }) {
             {
               name: `Онлайн калькулятор ${calculatorBySize[product.size].airPower} м³/ч`,
               url: calculatorBySize[product.size].url,
+              hiddenText: `Калькулятор расчета ${heatCarrierAdj.gen} калорифера на производительность ${calculatorBySize[product.size].airPower} м3/ч`,
             },
           ]}
         />
