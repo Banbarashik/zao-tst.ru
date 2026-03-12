@@ -135,10 +135,12 @@ export default function KaloriferyPage() {
             {
               name: "Паровой калорифер",
               url: "/kalorifer-par",
+              hiddenText: "Устройство и принцип работы парового калорифера",
             },
             {
               name: "Расчет паровых калориферов",
               url: "/podbor-raschet-kaloriferov",
+              hiddenText: "Расчет и подбор паровых калориферов",
             },
           ]}
         />
@@ -225,10 +227,12 @@ export default function KaloriferyPage() {
           {
             name: "Расчет и подбор калориферов",
             url: "/raschet-kaloriferov",
+            hiddenText: "Порядок расчета и подбора калориферов",
           },
           {
             name: "Калориферы для сушки",
             url: "/kalorifer-sushilnaia-kamera",
+            hiddenText: "Изготовление калориферов для сушильных камер",
           },
         ]}
       />

@@ -133,6 +133,8 @@ export default function RaschetKaloriferovPage() {
             {
               url: "/podbor-raschet-kaloriferov",
               name: "Подбор паровых калориферов",
+              hiddenText:
+                "Расчет и подбор калориферов для технологического нагрева",
             },
           ]}
         />
@@ -227,6 +229,8 @@ export default function RaschetKaloriferovPage() {
               {
                 name: "Сопротивление калориферов пар",
                 url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+                hiddenText:
+                  "Формулы для расчета аэродинамического сопротивления паровых калориферов",
               },
             ]}
           />
@@ -280,10 +284,13 @@ export default function RaschetKaloriferovPage() {
               {
                 url: "/podbor-raschet-kaloriferov#anchor1",
                 name: "Расчет мощности пар",
+                hiddenText: "Расчет тепловой мощности парового калорифера",
               },
               {
                 url: "/podbor-raschet-kaloriferov#anchor2",
                 name: "Расчет фронтального сечения",
+                hiddenText:
+                  "Подбор фронтального сечения парового калорифера для прохода воздуха",
               },
             ]}
           />
@@ -308,10 +315,13 @@ export default function RaschetKaloriferovPage() {
               {
                 url: "/podbor-raschet-kaloriferov#anchor8",
                 name: "Расход насыщенного пара",
+                hiddenText: "Расчет расхода пара воздухонагревателем",
               },
               {
                 url: "/podbor-raschet-kaloriferov#anchor5",
                 name: "Теплопередача пар",
+                hiddenText:
+                  "Расчет коэффициента теплопередачи парового калорифера",
               },
             ]}
           />
@@ -331,6 +341,7 @@ export default function RaschetKaloriferovPage() {
               {
                 url: "/podbor-raschet-kaloriferov#anchor6",
                 name: "Температурный напор пар",
+                hiddenText: "Расчет среднего логарифмического напора",
               },
             ]}
           />

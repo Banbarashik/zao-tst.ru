@@ -442,6 +442,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
                 {
                   name: "Таблица подбора паропровода",
                   url: "/paroprovod#anchor5",
+                  hiddenText:
+                    "Таблица подбора диаметра паропровода от давления пара",
                 },
               ]}
             />
@@ -523,10 +525,16 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </section>
         <LinkButtonsBlock
           buttons={[
-            { name: "Паровые калориферы", url: "/kalorifer-par" },
+            {
+              name: "Паровые калориферы",
+              url: "/kalorifer-par",
+              hiddenText:
+                "Пар как теплоноситель для парового воздухонагревателя",
+            },
             {
               name: "Расчет парового калорифера",
               url: "/podbor-raschet-kaloriferov",
+              hiddenText: "Формулы для расчета и подбора паровых калориферов",
             },
           ]}
         />

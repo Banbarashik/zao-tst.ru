@@ -124,10 +124,13 @@ export default function KaloriferParPage() {
             {
               url: "/podbor-raschet-kaloriferov",
               name: "Расчет паровых калориферов",
+              hiddenText: "Расчет и подбор паровых калориферов КПСк",
             },
             {
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
               name: "Сопротивление калориферов",
+              hiddenText:
+                "Расчет аэродинамического сопротивления парового калорифера",
             },
           ]}
         />
@@ -240,10 +243,12 @@ export default function KaloriferParPage() {
             {
               url: "/koefficient-teploperedachi-parovyh-kaloriferov",
               name: "Коэффициент теплопередачи",
+              hiddenText: "Коэффициент теплопередачи парового калорифера",
             },
             {
               url: "/podbor-raschet-kaloriferov#anchor4",
               name: "Расчет расхода пара",
+              hiddenText: "Расчет расхода пара для подачи в калорифер",
             },
           ]}
         />
@@ -286,6 +291,7 @@ export default function KaloriferParPage() {
               {
                 name: "Расчет диаметра паропровода",
                 url: "/paroprovod#anchor2",
+                hiddenText: "Калькулятор расчета диаметра паропровода",
               },
             ]}
           />
