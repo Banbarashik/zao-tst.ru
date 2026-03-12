@@ -272,7 +272,7 @@ export default function HeaderWithSearch(): JSX.Element {
         <Logo place="header" />
         <ul className="4xl:ml-12 3xl:ml-8 text-primary-darker ml-3 flex flex-col items-start gap-y-2 xl:text-lg">
           <li className="hover:font-semibold">
-            <a href="tel:89617378314" className="flex items-center gap-2.5">
+            <a href="tel:+79617378314" className="flex items-center gap-2.5">
               <span className="border-primary-darker rounded-full border p-1.25">
                 <PhoneCall className="size-4 xl:size-5" />
               </span>
