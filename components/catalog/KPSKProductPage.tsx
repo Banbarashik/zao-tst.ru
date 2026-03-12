@@ -720,7 +720,7 @@ export default function KPSKProductPage({ product }) {
         <LinkButtonsBlock buttons={linkButtons} />
       </div>
 
-      <section className="space-y-4">
+      <section className="text-example space-y-4">
         <h3 className="mb-2 text-xl">
           Оплата и доставка калорифера {product.shortName}
         </h3>
@@ -733,20 +733,14 @@ export default function KPSKProductPage({ product }) {
           <ul className="text-[17px]">
             <li>
               • позвонив по телефону:{" "}
-              <a
-                href="tel:+79049681488"
-                className="text-primary-darker hover:text-primary-dark"
-              >
+              <a href="tel:+79049681488" className="font-bold">
                 +7 (904) 968-14-88
               </a>
             </li>
             <li>• заполнив форму заявки на нашем сайте</li>
             <li>
               • отправив письмо на электронную почту:{" "}
-              <a
-                href="mailto:zao_tst@mail.ru"
-                className="text-primary-darker hover:text-primary-dark"
-              >
+              <a href="mailto:zao_tst@mail.ru" className="font-bold">
                 zao_tst@mail.ru
               </a>
             </li>
