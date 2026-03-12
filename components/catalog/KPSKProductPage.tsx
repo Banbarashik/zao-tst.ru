@@ -239,6 +239,22 @@ export default function KPSKProductPage({ product }) {
     ["Монтаж и эксплуатация", "СНиП 41-01-2003"],
   ];
 
+  const productDimensions = {
+    frontWidth: product.sizeTableValues[6],
+    fullHeight: product.sizeTableValues[3] + 65,
+    reshetkaWidth: 180,
+  };
+
+  const productVolume = (
+    (productDimensions.frontWidth / 1000) *
+    (productDimensions.fullHeight / 1000) *
+    (productDimensions.reshetkaWidth / 1000)
+  ).toFixed(3);
+
+  const productDimensionsString = `${(productDimensions.frontWidth / 1000).toFixed(3)} м х ${(productDimensions.fullHeight / 1000).toFixed(3)} м х ${(productDimensions.reshetkaWidth / 1000).toFixed(3)} м`;
+
+  const productWeight = product.specsTableValues[9];
+
   return (
     <div className="@container w-full lg:overflow-x-auto">
       <h1 className="mb-8 text-xl font-bold uppercase">{product.name}</h1>
@@ -706,19 +722,78 @@ export default function KPSKProductPage({ product }) {
         <LinkButtonsBlock buttons={linkButtons} />
       </div>
 
-      <section>
+      <section className="space-y-4">
         <h3 className="mb-2 text-xl">
           Оплата и доставка калорифера {product.shortName}
         </h3>
-        <ProductParagraph>
-          Заказать калорифер {product.shortName} на нашем предприятии можно
-          следующими способами:
-        </ProductParagraph>
-        <ul>
-          <li>• позвонив по телефону: +7 (904) 968-14-88</li>
-          <li>• заполнив форму заявки на нашем сайте</li>
-          <li>• отправив письмо на электронную почту: zao_tst@mail.ru</li>
-        </ul>
+
+        <div>
+          <ProductParagraph>
+            Заказать калорифер {product.shortName} на нашем предприятии можно
+            следующими способами:
+          </ProductParagraph>
+          <ul className="text-[17px]">
+            <li>
+              • позвонив по телефону:{" "}
+              <a
+                href="tel:+79049681488"
+                className="text-primary-darker hover:text-primary-dark"
+              >
+                +7 (904) 968-14-88
+              </a>
+            </li>
+            <li>• заполнив форму заявки на нашем сайте</li>
+            <li>
+              • отправив письмо на электронную почту:{" "}
+              <a
+                href="mailto:zao_tst@mail.ru"
+                className="text-primary-darker hover:text-primary-dark"
+              >
+                zao_tst@mail.ru
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ProductParagraph>
+            Способы оплаты калорифера {product.shortName}:
+          </ProductParagraph>
+          <ul className="text-[17px]">
+            <li>• на основании счета с частичной или полной оплатой</li>
+            <li>• на основании договора с частичной или полной постоплатой</li>
+          </ul>
+        </div>
+        <div>
+          <ProductParagraph>Первичная документация:</ProductParagraph>
+          <ul className="text-[17px]">
+            <li>• универсальный передаточный документ УПД</li>
+            <li>• обмен документами через ЭДО</li>
+          </ul>
+        </div>
+
+        <div>
+          <ProductParagraph>
+            Доставка калорифера {product.shortName}:
+          </ProductParagraph>
+          <ul className="text-[17px]">
+            <li>
+              • самовывоз со склада завода, расположенного по адресу: г.
+              Киселевск, ул. Юргинская 1
+            </li>
+            <li>
+              • с терминалов ТК «ПЭК», «Деловые Линии» и др. г. Прокопьевска
+            </li>
+            <li>• поставка автотранспортом нашего предприятия</li>
+          </ul>
+        </div>
+
+        <div>
+          Данные парового теплообменника КП-Ск {product.rows}-{product.size} для
+          транспортировки. Внешние габаритные размеры: {productDimensionsString}
+          ; объем: {productVolume} м<sup>3</sup> ; вес калорифера{" "}
+          {product.shortName}: {productWeight} кг.
+        </div>
       </section>
     </div>
   );
