@@ -379,7 +379,7 @@ export default function KPSKProductPage({ product }) {
         </div>
       </section>
 
-      <section className="mb-4">
+      <section className="mb-6">
         <ProductSubheader
           text={`Технические характеристики ${isCalorifier ? `калорифера ${product.shortName} ${heatCarrierAdj?.gen}` : `агрегата ${product.model}`}`}
         />
@@ -390,7 +390,7 @@ export default function KPSKProductPage({ product }) {
           отличающихся от паспортных приведены в расчетной таблице.
         </ProductParagraph>
         {/* TABLES */}
-        <div className="mb-6 flex flex-col sm:flex-row sm:gap-6 md:gap-10 lg:gap-6 xl:gap-8">
+        <div className="flex flex-col sm:flex-row sm:gap-6 md:gap-10 lg:gap-6 xl:gap-8">
           <table
             className="basis-full"
             style={{ border: "1px solid rgb(229, 231, 235)" }}
@@ -475,60 +475,13 @@ export default function KPSKProductPage({ product }) {
             </tbody>
           </table>
         </div>
-        {/* ROW OF IMAGES */}
-        {product.frontView && product.parts && (
-          <div className="flex flex-col gap-4 sm:flex-row md:gap-6 lg:gap-4 xl:gap-10">
-            <div
-              className={`relative w-full`}
-              style={{
-                aspectRatio: `${product.frontView.width}/${product.frontView.height}`,
-              }}
-            >
-              <Image
-                src={product.frontView.url}
-                alt={
-                  isCalorifier
-                    ? `Воздухонагреватель ${isKFB ? product.model : product.shortName} ${heatCarrierAdj.nom}`
-                    : `${capitalizeFirst(heatCarrierAdj.nom)} воздушный агрегат ${product.shortName} ${product.rows === 3 ? "трехрядный" : "четырехрядный"}`
-                }
-                title={
-                  isCalorifier
-                    ? product.name
-                    : `Агрегат ${product.model} ${heatCarrierAdj.nom}`
-                }
-                fill
-              />
-            </div>
-            <div
-              className={`relative w-full`}
-              style={{
-                aspectRatio: `${product.parts.width}/${product.parts.height}`,
-              }}
-            >
-              <Image
-                src={product.parts.url}
-                alt={
-                  isCalorifier
-                    ? `${product.name} чертеж`
-                    : `Воздушно-отопительный агрегат ${product.shortName} ${product.calorifier} ${heatCarrierAdj.nom}`
-                }
-                title={
-                  isCalorifier
-                    ? `Калорифер ${heatCarrierAdj.nom} ${isKFB ? product.model : product.shortName}`
-                    : `${capitalizeFirst(heatCarrierAdj.nom)} отопительный агрегат ${product.model}`
-                }
-                fill
-              />
-            </div>
-          </div>
-        )}
       </section>
 
-      <section className="mb-4">
+      <section className="mb-8">
         <ProductSubheader
           text={`Конструкция калорифера ${product.shortName}`}
         />
-        <ProductParagraph>
+        <ProductParagraph className="mb-6">
           Калорифер одноходовой {product.shortName} выполнен в виде жесткого
           стального каркаса прямоугольного сечения с трубными решетками и
           боковыми съемными щитками, распределительным и сборным коллекторами,
@@ -542,6 +495,51 @@ export default function KPSKProductPage({ product }) {
           теплоотдающие элементы изготовлены из бесшовных холоднодеформированных
           труб.
         </ProductParagraph>
+        {/* ROW OF IMAGES */}
+        <div className="flex flex-col gap-4 sm:flex-row md:gap-6 lg:gap-4 xl:gap-10">
+          <div
+            className={`relative w-full`}
+            style={{
+              aspectRatio: `${product.frontView.width}/${product.frontView.height}`,
+            }}
+          >
+            <Image
+              src={product.frontView.url}
+              alt={
+                isCalorifier
+                  ? `Воздухонагреватель ${isKFB ? product.model : product.shortName} ${heatCarrierAdj.nom}`
+                  : `${capitalizeFirst(heatCarrierAdj.nom)} воздушный агрегат ${product.shortName} ${product.rows === 3 ? "трехрядный" : "четырехрядный"}`
+              }
+              title={
+                isCalorifier
+                  ? product.name
+                  : `Агрегат ${product.model} ${heatCarrierAdj.nom}`
+              }
+              fill
+            />
+          </div>
+          <div
+            className={`relative w-full`}
+            style={{
+              aspectRatio: `${product.parts.width}/${product.parts.height}`,
+            }}
+          >
+            <Image
+              src={product.parts.url}
+              alt={
+                isCalorifier
+                  ? `${product.name} чертеж`
+                  : `Воздушно-отопительный агрегат ${product.shortName} ${product.calorifier} ${heatCarrierAdj.nom}`
+              }
+              title={
+                isCalorifier
+                  ? `Калорифер ${heatCarrierAdj.nom} ${isKFB ? product.model : product.shortName}`
+                  : `${capitalizeFirst(heatCarrierAdj.nom)} отопительный агрегат ${product.model}`
+              }
+              fill
+            />
+          </div>
+        </div>
       </section>
 
       <section className={isCalorifier ? "mb-4" : "mb-8"}>
@@ -838,7 +836,7 @@ export default function KPSKProductPage({ product }) {
         <div>
           Данные парового теплообменника КП-Ск {product.rows}-{product.size} для
           транспортировки. Внешние габаритные размеры: {productDimensionsString}
-          ; объем: {productVolume} м<sup>3</sup> ; вес калорифера{" "}
+          ; объем: {productVolume} м<sup>3</sup>; вес калорифера{" "}
           {product.shortName}: {productWeight} кг.
         </div>
       </section>
