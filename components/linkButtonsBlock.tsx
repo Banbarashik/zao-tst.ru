@@ -29,6 +29,9 @@ export default function LinkButtonsBlock({ buttons }) {
         >
           <Link href={btn.url} target={btn.openNewTab ? "_blank" : "_self"}>
             {btn.name}
+            {btn.hiddenText && (
+              <span className="sr-only">{btn.hiddenText}</span>
+            )}
           </Link>
         </Button>
       ))}
