@@ -191,7 +191,6 @@ export default function KPSKProductPage({ product }) {
   const isCalorifier = product.categories.includes("kalorifer");
   const isAgregat = product.categories.includes("agregaty");
   const isKFB = product.categories.includes("kfb");
-  const isKSK = product.categories.includes("ksk");
 
   const categories = ["ksk", "kpsk", "tvv", "kp", "kfb", "ao2"];
   const category = categories.find((cat) => product.categories.includes(cat));
@@ -242,7 +241,7 @@ export default function KPSKProductPage({ product }) {
 
   const linkButtons = [
     [
-      isKSK
+      category === "ksk"
         ? { name: "Калорифер для низких температур", url: "/kalorifery-tvv" }
         : { name: "Подбор диаметра паропровода", url: "/paroprovod" },
       {
@@ -397,7 +396,7 @@ export default function KPSKProductPage({ product }) {
           рекуперативного типа, используемый в системах воздушного отопления и
           вентиляции, сушильных установках и в котором нагрев воздуха
           осуществляется за счет конденсации пара внутри теплообменных труб.
-          Производство воздухонагревателя КП-Ск {product.rows}-{product.size} 03
+          Производство воздухонагревателя КП-Ск {product.rows}-{product.size} 02
           У3 осуществляется согласно техническим условиям с проверкой каждого
           калорифера на герметичность и прочность пробным повышенным давлением
           теплоносителя.
