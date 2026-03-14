@@ -187,6 +187,7 @@ const seriesEng = {
 
 export default function KPSKProductPage({ product }) {
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
+  const engSeries = seriesEng[product.series]; //! TEMP
 
   const isCalorifier = product.categories.includes("kalorifer");
   const isAgregat = product.categories.includes("agregaty");
@@ -318,6 +319,11 @@ export default function KPSKProductPage({ product }) {
     kpsk: `КП-Ск ${product.rows}-${product.size} 02 ${product.climate}`,
   };
 
+  const productManufactureText = {
+    ksk: `Водяной калорифер ${product.shortName} — промышленный рекуперативный теплообменник, предназначенный для нагрева приточного или рециркуляционного воздуха в системах вентиляции, отопления и кондиционирования за счет энергии горячей или перегретой воды. Производство калорифера ${product.shortName} 02 ХЛ3 осуществляется в соответствии с установленными требованиями технических условий с обязательной проверкой каждого воздухонагревательного аппарата на прочность и герметичность.`,
+    kpsk: `Паровой калорифер ${product.shortName} — промышленный теплообменник рекуперативного типа, используемый в системах воздушного отопления и вентиляции, сушильных установках и в котором нагрев воздуха осуществляется за счет конденсации пара внутри теплообменных труб. Производство воздухонагревателя КП-Ск ${product.rows}-${product.size} 02 У3 осуществляется согласно техническим условиям с проверкой каждого калорифера на герметичность и прочность пробным повышенным давлением теплоносителя.`,
+  };
+
   return (
     <div className="@container w-full lg:overflow-x-auto">
       <h1 className="mb-8 text-xl font-bold uppercase">{product.name}</h1>
@@ -396,16 +402,7 @@ export default function KPSKProductPage({ product }) {
         <ProductSubheader
           text={`Производство и назначение калорифера ${product.shortName}`}
         />
-        <ProductParagraph>
-          {capitalizeFirst(heatCarrierAdj.nom)} калорифер {product.shortName} —
-          промышленный теплообменник рекуперативного типа, используемый в
-          системах воздушного отопления и вентиляции, сушильных установках и в
-          котором нагрев воздуха осуществляется за счет конденсации пара внутри
-          теплообменных труб. Производство воздухонагревателя{" "}
-          {fullModelName[seriesEng[product.series]]} осуществляется согласно
-          техническим условиям с проверкой каждого калорифера на герметичность и
-          прочность пробным повышенным давлением теплоносителя.
-        </ProductParagraph>
+        <ProductParagraph>{productManufactureText[engSeries]}</ProductParagraph>
       </section>
 
       <section className="mb-4">
