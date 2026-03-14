@@ -190,6 +190,8 @@ export default function KPSKProductPage({ product }) {
   const engSeries = seriesEng[product.series]; //! TEMP
   const isKSK = engSeries === "ksk";
   const isKPSK = engSeries === "kpsk";
+  const isWater = product.heatCarrier === "water";
+  const isSteam = product.heatCarrier === "steam";
 
   const isCalorifier = product.categories.includes("kalorifer");
   const isAgregat = product.categories.includes("agregaty");
@@ -318,7 +320,7 @@ export default function KPSKProductPage({ product }) {
   ];
 
   const productFrontWidth = product.sizeTableValues[6];
-  const productFullHeight = product.sizeTableValues[3] + 65;
+  const productFullHeight = product.sizeTableValues[3] + (isSteam ? 65 : 0);
   const reshetkaWidth = 180;
   const productWeight = product.specsTableValues[9];
 
@@ -873,7 +875,9 @@ export default function KPSKProductPage({ product }) {
         </div>
 
         <div>
-          Данные парового теплообменника КП-Ск {product.rows}-{product.size} для
+          Данные {heatCarrierAdj.gen} теплообменника{" "}
+          {isKSK && product.shortName}
+          {isKPSK && `КП-Ск ${product.rows}-${product.size}`} для
           транспортировки. Внешние габаритные размеры: {productDimensionsString}
           ; объем: {productVolume} м<sup>3</sup>; вес калорифера{" "}
           {product.shortName}: {productWeight} кг.
