@@ -135,21 +135,54 @@ const ao2TableHeaders = {
   ],
 };
 
-const calculatorBySize = {
-  kpsk: {
-    1: { airPower: 2000, url: "/kppu-572x572" },
-    2: { airPower: 2500, url: "/kpps-572x572" },
-    3: { airPower: 3000, url: "/kpps-614x614" },
-    4: { airPower: 4000, url: "/kpps-697x697" },
-    5: { airPower: 5000, url: "/kpps-780x780" },
-    6: { airPower: 2500, url: "/kppu-617x617" },
-    7: { airPower: 3500, url: "/kpps-655x655" },
-    8: { airPower: 4000, url: "/kppu-754x754" },
-    9: { airPower: 5000, url: "/kppu-845x845" },
-    10: { airPower: 6000, url: "/kpps-655x655" },
-    11: { airPower: 16000, url: "/kpps-1239x1239" },
-    12: { airPower: 25000, url: "/kpps-1572x1572" },
+const calculatorUrlBySize = {
+  ksk: {
+    1: "/kpvu-572x572",
+    2: "/kpvs-572x572",
+    3: "/kpvs-614x614",
+    4: "/kpvs-697x697",
+    5: "/kpvs-780x780",
+    6: "/kpvu-617x617",
+    7: "/kpvs-655x655",
+    8: "/kpvu-754x754",
+    9: "/kpvu-845x845",
+    10: "/kpvs-655x655",
+    11: "/kpvs-1239x1239",
+    12: "/kpvs-1572x1572",
   },
+  kpsk: {
+    1: "/kppu-572x572",
+    2: "/kpps-572x572",
+    3: "/kpps-614x614",
+    4: "/kpps-697x697",
+    5: "/kpps-780x780",
+    6: "/kppu-617x617",
+    7: "/kpps-655x655",
+    8: "/kppu-754x754",
+    9: "/kppu-845x845",
+    10: "/kpps-655x655",
+    11: "/kpps-1239x1239",
+    12: "/kpps-1572x1572",
+  },
+};
+const calculatorAirPowerBySize = {
+  1: 2000,
+  2: 2500,
+  3: 3000,
+  4: 4000,
+  5: 5000,
+  6: 2500,
+  7: 3500,
+  8: 4000,
+  9: 5000,
+  10: 6000,
+  11: 16000,
+  12: 25000,
+};
+
+const seriesEng = {
+  КСк: "ksk",
+  КПСк: "kpsk",
 };
 
 export default function KPSKProductPage({ product }) {
@@ -158,6 +191,7 @@ export default function KPSKProductPage({ product }) {
   const isCalorifier = product.categories.includes("kalorifer");
   const isAgregat = product.categories.includes("agregaty");
   const isKFB = product.categories.includes("kfb");
+  const isKSK = product.categories.includes("ksk");
 
   const categories = ["ksk", "kpsk", "tvv", "kp", "kfb", "ao2"];
   const category = categories.find((cat) => product.categories.includes(cat));
@@ -207,17 +241,28 @@ export default function KPSKProductPage({ product }) {
     URLs = ["ao2-kpsk-ksk", "Agregat_AO2_katalog_2025.pdf"];
 
   const linkButtons = [
-    {
-      name: `${isKFB || isAgregat ? heatCarrierAdj.plu : ""} ${isCalorifier ? "калориферы" : "агрегаты"} ${product.series} ${isKFB || isAgregat ? "" : "- характеристики"}`,
-      url: "/" + URLs[0],
-      openNewTab: false,
-    },
-    {
-      name: `Каталог ${isAgregat ? heatCarrierAdj.pluGen : ""} ${isCalorifier ? "калориферов" : "агрегатов"} ${product.series} ${isKFB && product.heatCarrier === "water" ? "М" : isKFB && product.heatCarrier === "steam" ? "П" : ""}`,
-      url: "/documents/" + URLs[1],
-      openNewTab: true,
-      goal: "open_pdf",
-    },
+    [
+      isKSK
+        ? { name: "Калорифер для низких температур", url: "/kalorifery-tvv" }
+        : { name: "Подбор диаметра паропровода", url: "/paroprovod" },
+      {
+        name: `Онлайн калькулятор ${calculatorAirPowerBySize[product.size]} м³/ч`,
+        url: calculatorUrlBySize[seriesEng[product.series]][product.size],
+        hiddenText: `Калькулятор расчета ${heatCarrierAdj.gen} калорифера на производительность ${calculatorAirPowerBySize[product.size]} м3/ч`,
+      },
+    ],
+    [
+      {
+        name: `${isKFB || isAgregat ? heatCarrierAdj.plu : ""} ${isCalorifier ? "калориферы" : "агрегаты"} ${product.series} ${isKFB || isAgregat ? "" : "- характеристики"}`,
+        url: "/" + URLs[0],
+      },
+      {
+        name: `Каталог ${isAgregat ? heatCarrierAdj.pluGen : ""} ${isCalorifier ? "калориферов" : "агрегатов"} ${product.series} ${isKFB && product.heatCarrier === "water" ? "М" : isKFB && product.heatCarrier === "steam" ? "П" : ""}`,
+        url: "/documents/" + URLs[1],
+        openNewTab: true,
+        goal: "open_pdf",
+      },
+    ],
   ];
 
   const techSupportTable1Rows = [
@@ -364,26 +409,12 @@ export default function KPSKProductPage({ product }) {
         <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:gap-6 md:gap-10 lg:gap-6 xl:gap-8">
           {[techSupportTable1Rows, techSupportTable2Rows].map(
             (tableRows, i) => (
-              <table
-                key={i}
-                className="basis-full"
-                // style={{ border: "1px solid rgb(229, 231, 235)" }}
-              >
+              <table key={i} className="basis-full">
                 <tbody className="text-left">
                   {tableRows.map((row, i) => (
                     <tr key={i}>
-                      <th
-                        className="w-1/2 px-1 py-1.5"
-                        // style={{ border: "1px solid rgb(229, 231, 235)" }}
-                      >
-                        {row[0]}
-                      </th>
-                      <td
-                        className="w-1/2 px-1 py-1.5"
-                        // style={{ border: "1px solid rgb(229, 231, 235)" }}
-                      >
-                        {row[1]}
-                      </td>
+                      <th className="w-1/2 px-1 py-1.5">{row[0]}</th>
+                      <td className="w-1/2 px-1 py-1.5">{row[1]}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -591,16 +622,7 @@ export default function KPSKProductPage({ product }) {
           {isCalorifier && " вентиляционного и"}{" "}
           {tableEquipment[product.heatCarrier]} оборудования.
         </ProductParagraph>
-        <LinkButtonsBlock
-          buttons={[
-            { name: "Подбор диаметра паропровода", url: "/paroprovod" },
-            {
-              name: `Онлайн калькулятор ${calculatorBySize[product.size].airPower} м³/ч`,
-              url: calculatorBySize[product.size].url,
-              hiddenText: `Калькулятор расчета ${heatCarrierAdj.gen} калорифера на производительность ${calculatorBySize[product.size].airPower} м3/ч`,
-            },
-          ]}
-        />
+        <LinkButtonsBlock buttons={linkButtons[0]} />
       </section>
 
       <section className="mb-6">
@@ -711,26 +733,12 @@ export default function KPSKProductPage({ product }) {
         <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:gap-6 md:gap-10 lg:gap-6 xl:gap-8">
           {[specificationsTable1Rows, specificationsTable2Rows].map(
             (tableRows, i) => (
-              <table
-                key={i}
-                className="basis-full"
-                // style={{ border: "1px solid rgb(229, 231, 235)" }}
-              >
+              <table key={i} className="basis-full">
                 <tbody className="text-left">
                   {tableRows.map((row, i) => (
                     <tr key={i}>
-                      <th
-                        className="w-1/2 px-1 py-1.5"
-                        // style={{ border: "1px solid rgb(229, 231, 235)" }}
-                      >
-                        {row[0]}
-                      </th>
-                      <td
-                        className="w-1/2 px-1 py-1.5"
-                        // style={{ border: "1px solid rgb(229, 231, 235)" }}
-                      >
-                        {row[1]}
-                      </td>
+                      <th className="w-1/2 px-1 py-1.5">{row[0]}</th>
+                      <td className="w-1/2 px-1 py-1.5">{row[1]}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -741,7 +749,7 @@ export default function KPSKProductPage({ product }) {
       </section>
 
       <div className="mb-6">
-        <LinkButtonsBlock buttons={linkButtons} />
+        <LinkButtonsBlock buttons={linkButtons[1]} />
       </div>
 
       <section className="text-example space-y-4">
