@@ -188,6 +188,8 @@ const seriesEng = {
 export default function KPSKProductPage({ product }) {
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
   const engSeries = seriesEng[product.series]; //! TEMP
+  const isKSK = engSeries === "ksk";
+  const isKPSK = engSeries === "kpsk";
 
   const isCalorifier = product.categories.includes("kalorifer");
   const isAgregat = product.categories.includes("agregaty");
@@ -242,7 +244,7 @@ export default function KPSKProductPage({ product }) {
 
   const linkButtons = [
     [
-      category === "ksk"
+      isKSK
         ? {
             name: "Калорифер для низких температур",
             url: "/kalorifery-tvv",
@@ -300,12 +302,17 @@ export default function KPSKProductPage({ product }) {
     ["Наименование модели", `калорифер ${product.shortName}`],
     ["Конструктивное исполнение", "02"],
     ["Технические требования", "ТУ 4863-002-55613706-02"],
-    ["Категория размещения", "У3 по ГОСТ 15150-69"],
+    ["Категория размещения", `${product.climate} по ГОСТ 15150-69`],
   ];
   const specificationsTable2Rows = [
-    ["Теплоноситель", "насыщенный перегретый пар"],
+    [
+      "Теплоноситель",
+      product.heatCarrier === "water"
+        ? "горячая перегретая вода"
+        : "насыщенный перегретый пар",
+    ],
     ["Параметры теплоносителя", "T до 190°С, P до 1.2 МПа"],
-    ["Качество теплоносителя", "ГОСТ 20995 СНиП 2-04.07-86"],
+    ["Качество теплоносителя", `ГОСТ 20995${isKPSK ? " СНиП 2-04.07-86" : ""}`],
     ["Параметры воздуха", "ГОСТ 12.1.005-88"],
     ["Монтаж и эксплуатация", "СНиП 41-01-2003"],
   ];
