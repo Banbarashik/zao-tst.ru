@@ -313,6 +313,11 @@ export default function KPSKProductPage({ product }) {
 
   const productDimensionsString = `${(productFrontWidth / 1000).toFixed(3)} м х ${(productFullHeight / 1000).toFixed(3)} м х ${(reshetkaWidth / 1000).toFixed(3)} м`;
 
+  const fullModelName = {
+    ksk: `${product.model} ${product.climate}`,
+    kpsk: `КП-Ск ${product.rows}-${product.size} 02 ${product.climate}`,
+  };
+
   return (
     <div className="@container w-full lg:overflow-x-auto">
       <h1 className="mb-8 text-xl font-bold uppercase">{product.name}</h1>
@@ -392,14 +397,14 @@ export default function KPSKProductPage({ product }) {
           text={`Производство и назначение калорифера ${product.shortName}`}
         />
         <ProductParagraph>
-          Паровой калорифер {product.shortName} — промышленный теплообменник
-          рекуперативного типа, используемый в системах воздушного отопления и
-          вентиляции, сушильных установках и в котором нагрев воздуха
-          осуществляется за счет конденсации пара внутри теплообменных труб.
-          Производство воздухонагревателя КП-Ск {product.rows}-{product.size} 02
-          У3 осуществляется согласно техническим условиям с проверкой каждого
-          калорифера на герметичность и прочность пробным повышенным давлением
-          теплоносителя.
+          {capitalizeFirst(heatCarrierAdj.nom)} калорифер {product.shortName} —
+          промышленный теплообменник рекуперативного типа, используемый в
+          системах воздушного отопления и вентиляции, сушильных установках и в
+          котором нагрев воздуха осуществляется за счет конденсации пара внутри
+          теплообменных труб. Производство воздухонагревателя{" "}
+          {fullModelName[seriesEng[product.series]]} осуществляется согласно
+          техническим условиям с проверкой каждого калорифера на герметичность и
+          прочность пробным повышенным давлением теплоносителя.
         </ProductParagraph>
       </section>
 
