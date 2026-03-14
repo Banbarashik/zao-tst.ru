@@ -243,8 +243,17 @@ export default function KPSKProductPage({ product }) {
   const linkButtons = [
     [
       category === "ksk"
-        ? { name: "Калорифер для низких температур", url: "/kalorifery-tvv" }
-        : { name: "Подбор диаметра паропровода", url: "/paroprovod" },
+        ? {
+            name: "Калорифер для низких температур",
+            url: "/kalorifery-tvv",
+            hiddenText:
+              "Водяные калориферы для низких температурных режимов входящего воздуха",
+          }
+        : {
+            name: "Подбор диаметра паропровода",
+            url: "/paroprovod",
+            hiddenText: "Нахождение диаметра паропровода от расхода пара",
+          },
       {
         name: `Онлайн калькулятор ${calculatorAirPowerBySize[product.size]} м³/ч`,
         url: calculatorUrlBySize[seriesEng[product.series]][product.size],
