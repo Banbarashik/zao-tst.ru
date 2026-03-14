@@ -82,7 +82,6 @@ export default function AVOPage({ product }) {
     {
       name: `${heatCarrierAdj.plu} агрегаты АВО ХЛ`,
       url: "/avo-tvv-kp",
-      openNewTab: false,
     },
     {
       name: `Каталог ${heatCarrierAdj.pluGen} агрегатов АВО ХЛ`,

@@ -348,7 +348,6 @@ export default function SupplyCalorifierPage({
           {
             name: `${heatCarrierAdj.plu} приточные калориферы`,
             url: isWater ? "/kalorifery-voda" : "/kalorifery-par",
-            openNewTab: false,
           },
           {
             name: `Каталог калориферов ${product.series}`,

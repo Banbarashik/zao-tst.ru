@@ -193,7 +193,6 @@ export default function KSKProductPage({ product }: { product: KSKProduct }) {
     {
       name: `${isKFB || isAgregat ? heatCarrierAdj.plu : ""} ${isCalorifier ? "калориферы" : "агрегаты"} ${product.series} ${isKFB || isAgregat ? "" : "- характеристики"}`,
       url: "/" + URLs[0],
-      openNewTab: false,
     },
     {
       name: `Каталог ${isAgregat ? heatCarrierAdj.pluGen : ""} ${isCalorifier ? "калориферов" : "агрегатов"} ${product.series} ${isKFB && product.heatCarrier === "water" ? "М" : isKFB && product.heatCarrier === "steam" ? "П" : ""}`,

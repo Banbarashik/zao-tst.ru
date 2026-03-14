@@ -83,7 +83,6 @@ export default function STDPage({ product }) {
       name: `${heatCarrierAdj.plu} агрегаты ${product.shortName}`,
       url:
         product.heatCarrier === "water" ? "/std300-ksk-kpsk" : "/std300-tvv-kp",
-      openNewTab: false,
     },
     {
       name: `Каталог ${isSTD300 ? heatCarrierAdj.pluGen : ""} агрегатов ${isSTD300 ? product.shortName : product.model}`,
