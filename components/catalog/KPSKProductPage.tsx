@@ -190,7 +190,7 @@ export default function KPSKProductPage({ product }) {
   const engSeries = seriesEng[product.series]; //! TEMP
   const isKSK = engSeries === "ksk";
   const isKPSK = engSeries === "kpsk";
-  const isWater = product.heatCarrier === "water";
+  // const isWater = product.heatCarrier === "water";
   const isSteam = product.heatCarrier === "steam";
 
   const isCalorifier = product.categories.includes("kalorifer");
