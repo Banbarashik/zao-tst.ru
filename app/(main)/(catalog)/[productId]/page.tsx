@@ -23,12 +23,8 @@ function getProductType(categories: string[]) {
     categories.includes("pritochny-parovy-kalorifery")
   )
     return "supplyCalorifier";
-  /* if (categories.includes("ksk") || categories.includes("kpsk"))
-    return "ksk_kpsk"; */
-  //! TEMPORARY
-  if (categories.includes("ksk")) return "ksk";
-  if (categories.includes("kpsk")) return "kpsk";
-  //! TEMPORARY
+  if (categories.includes("ksk") || categories.includes("kpsk"))
+    return "ksk_kpsk";
   if (categories.includes("tvv") || categories.includes("kp")) return "tvv_kp";
   if (categories.includes("kfb")) return "kfb";
   if (categories.includes("ao2")) return "ao2";
@@ -85,9 +81,7 @@ export async function generateMetadata({
     };
   }
 
-  //! TEMPORARY
-  // if (productType === "ksk_kpsk") {
-  if (productType === "ksk" || productType === "kpsk") {
+  if (productType === "ksk_kpsk") {
     const name = `${product.series} ${product.rows} ${product.size}`;
 
     return {
@@ -216,14 +210,11 @@ export default async function ProductPage({
         <SupplyCalorifierPage product={product} />
       )}
 
-      {/* TEMPORARY */}
-      {(productType === "ksk" ||
-        productType === "tvv_kp" ||
+      {(productType === "tvv_kp" ||
         productType === "kfb" ||
         productType === "ao2") && <KSKProductPage product={product} />}
 
-      {productType === "kpsk" && <KPSKProductPage product={product} />}
-      {/* TEMPORARY */}
+      {productType === "ksk_kpsk" && <KPSKProductPage product={product} />}
 
       {(productType === "std300" || productType === "std300-hl") && (
         <STDPage product={product} />
