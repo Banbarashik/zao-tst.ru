@@ -136,18 +136,20 @@ const ao2TableHeaders = {
 };
 
 const calculatorBySize = {
-  1: { airPower: 2000, url: "/kppu-572x572" },
-  2: { airPower: 2500, url: "/kpps-572x572" },
-  3: { airPower: 3000, url: "/kpps-614x614" },
-  4: { airPower: 4000, url: "/kpps-697x697" },
-  5: { airPower: 5000, url: "/kpps-780x780" },
-  6: { airPower: 2500, url: "/kppu-617x617" },
-  7: { airPower: 3500, url: "/kpps-655x655" },
-  8: { airPower: 4000, url: "/kppu-754x754" },
-  9: { airPower: 5000, url: "/kppu-845x845" },
-  10: { airPower: 6000, url: "/kpps-655x655" },
-  11: { airPower: 16000, url: "/kpps-1239x1239" },
-  12: { airPower: 25000, url: "/kpps-1572x1572" },
+  kpsk: {
+    1: { airPower: 2000, url: "/kppu-572x572" },
+    2: { airPower: 2500, url: "/kpps-572x572" },
+    3: { airPower: 3000, url: "/kpps-614x614" },
+    4: { airPower: 4000, url: "/kpps-697x697" },
+    5: { airPower: 5000, url: "/kpps-780x780" },
+    6: { airPower: 2500, url: "/kppu-617x617" },
+    7: { airPower: 3500, url: "/kpps-655x655" },
+    8: { airPower: 4000, url: "/kppu-754x754" },
+    9: { airPower: 5000, url: "/kppu-845x845" },
+    10: { airPower: 6000, url: "/kpps-655x655" },
+    11: { airPower: 16000, url: "/kpps-1239x1239" },
+    12: { airPower: 25000, url: "/kpps-1572x1572" },
+  },
 };
 
 export default function KPSKProductPage({ product }) {
@@ -254,21 +256,18 @@ export default function KPSKProductPage({ product }) {
     ["Монтаж и эксплуатация", "СНиП 41-01-2003"],
   ];
 
-  const productDimensions = {
-    frontWidth: product.sizeTableValues[6],
-    fullHeight: product.sizeTableValues[3] + 65,
-    reshetkaWidth: 180,
-  };
+  const productFrontWidth = product.sizeTableValues[6];
+  const productFullHeight = product.sizeTableValues[3] + 65;
+  const reshetkaWidth = 180;
+  const productWeight = product.specsTableValues[9];
 
   const productVolume = (
-    (productDimensions.frontWidth / 1000) *
-    (productDimensions.fullHeight / 1000) *
-    (productDimensions.reshetkaWidth / 1000)
+    (productFrontWidth / 1000) *
+    (productFullHeight / 1000) *
+    (reshetkaWidth / 1000)
   ).toFixed(3);
 
-  const productDimensionsString = `${(productDimensions.frontWidth / 1000).toFixed(3)} м х ${(productDimensions.fullHeight / 1000).toFixed(3)} м х ${(productDimensions.reshetkaWidth / 1000).toFixed(3)} м`;
-
-  const productWeight = product.specsTableValues[9];
+  const productDimensionsString = `${(productFrontWidth / 1000).toFixed(3)} м х ${(productFullHeight / 1000).toFixed(3)} м х ${(reshetkaWidth / 1000).toFixed(3)} м`;
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
