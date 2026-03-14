@@ -1,13 +1,13 @@
 import productData from "@/data/products.json";
 
-import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
+import React from "react";
 
 import { sortProducts } from "@/lib/utils";
 
-import ProductParagraph from "@/components/catalog/productParagraph";
 import { Button } from "@/components/ui/button";
+import ProductParagraph from "@/components/catalog/productParagraph";
 
 export const metadata: Metadata = {
   title: "Прайс-лист воздушно-отопительного оборудования",
@@ -122,12 +122,12 @@ export default function ContactsAndPricesPage() {
         {/* pritochnye tables */}
         <div>
           <h3 className="mb-2 hidden text-center text-lg uppercase sm:block sm:text-xl">
-            ПРИТОЧНЫЕ ВОДЯНЫЕ И ПАРОВЫЕ КАЛОРИФЕРЫ
+            Приточные водяные и паровые калориферы
           </h3>
           <div className="flex flex-col gap-3 sm:flex-row">
             <div className="basis-full space-y-2">
               <h3 className="text-lg uppercase sm:hidden sm:text-xl">
-                ПРИТОЧНЫЕ КАЛОРИФЕРЫ – ВОДЯНЫЕ КПВС И ПАРОВЫЕ КППС
+                Приточные калориферы – водяные КПВС и паровые КППС
               </h3>
               <table className="w-full">
                 <thead className="uppercase">
@@ -161,7 +161,7 @@ export default function ContactsAndPricesPage() {
                   className="rounded-none border border-[#723910] bg-gray-200 px-2.5 text-black uppercase"
                 >
                   <Link href="/catalog/pritochny-vodiany-kalorifery">
-                    ПРИТОЧНЫЕ ВОДЯНЫЕ КАЛОРИФЕРЫ
+                    Приточные водяные калориферы
                   </Link>
                 </Button>
                 <Button
@@ -172,14 +172,14 @@ export default function ContactsAndPricesPage() {
                     target="_blank"
                     href="/documents/Kalorifer_KPVS_KPVU_katalog_2025.pdf"
                   >
-                    КАТАЛОГ КАЛОРИФЕРОВ КПВС КПВУ
+                    Каталог калориферов КПВС КПВУ
                   </Link>
                 </Button>
               </div>
             </div>
             <div className="flex basis-full flex-col gap-2">
               <h3 className="text-lg uppercase sm:hidden sm:text-xl">
-                ПРИТОЧНЫЕ КАЛОРИФЕРЫ – ВОДЯНЫЕ КПВУ И ПАРОВЫЕ КППУ
+                Приточные калориферы – водяные КПВУ и паровые КППУ
               </h3>
               <table className="w-full">
                 <thead className="uppercase">
@@ -213,7 +213,7 @@ export default function ContactsAndPricesPage() {
                   className="rounded-none border border-[#723910] bg-gray-200 text-black uppercase"
                 >
                   <Link href="/catalog/pritochny-parovy-kalorifery">
-                    ПРИТОЧНЫЕ ПАРОВЫЕ КАЛОРИФЕРЫ
+                    Приточные паровые калориферы
                   </Link>
                 </Button>
                 <Button
@@ -224,7 +224,7 @@ export default function ContactsAndPricesPage() {
                     target="_blank"
                     href="/documents/Kalorifer_KPPS_KPPU_katalog_2025.pdf"
                   >
-                    КАТАЛОГ КАЛОРИФЕРОВ КППС КППУ
+                    Каталог калориферов КППС КППУ
                   </Link>
                 </Button>
               </div>
@@ -235,12 +235,12 @@ export default function ContactsAndPricesPage() {
         {/* ksk-kpsk tables */}
         <div>
           <h3 className="mb-2 hidden text-center text-lg uppercase sm:block sm:text-xl">
-            КАЛОРИФЕРЫ ВОДЯНЫЕ КСК И ПАРОВЫЕ КПСК
+            Калориферы водяные КСк и паровые КПСк
           </h3>
           <div className="flex flex-col gap-3 sm:flex-row">
             <div className="basis-full space-y-2">
               <h3 className="text-lg uppercase sm:hidden sm:text-xl">
-                КАЛОРИФЕРЫ ВОДЯНЫЕ КСК
+                Калориферы водяные КСк
               </h3>
               <table className="w-full">
                 <thead className="uppercase">
@@ -283,7 +283,7 @@ export default function ContactsAndPricesPage() {
                   asChild
                   className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-2.5 text-black uppercase"
                 >
-                  <Link href="/catalog/ksk">КАЛОРИФЕРЫ КСК</Link>
+                  <Link href="/catalog/ksk">Калориферы КСк</Link>
                 </Button>
                 <Button
                   asChild
@@ -293,7 +293,7 @@ export default function ContactsAndPricesPage() {
                     target="_blank"
                     href="/documents/Kalorifer_KSK_katalog_2025.pdf"
                   >
-                    КАТАЛОГ КСК
+                    Каталог КСк
                   </Link>
                 </Button>
               </div>
@@ -344,7 +344,7 @@ export default function ContactsAndPricesPage() {
                   asChild
                   className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-2.5 text-black uppercase"
                 >
-                  <Link href="/catalog/kpsk">КАЛОРИФЕРЫ КПСК</Link>
+                  <Link href="/catalog/kpsk">Калориферы КПСк</Link>
                 </Button>
                 <Button
                   asChild
@@ -354,7 +354,7 @@ export default function ContactsAndPricesPage() {
                     target="_blank"
                     href="/documents/Kalorifer_KPSK_katalog_2025.pdf"
                   >
-                    КАТАЛОГ КПСК
+                    Каталог КПСк
                   </Link>
                 </Button>
               </div>
@@ -375,18 +375,18 @@ export default function ContactsAndPricesPage() {
         {/* tvv-kp-kfb tables */}
         <div className="space-y-2">
           <h3 className="mb-2 hidden text-center text-lg uppercase sm:block sm:text-xl">
-            КАЛОРИФЕРЫ ДЛЯ НИЗКИХ ТЕМПЕРАТУР
+            Калориферы для низких температур
           </h3>
           <div className="flex flex-col gap-3 sm:flex-row">
             <div className="basis-full space-y-2">
               <h3 className="text-lg uppercase sm:hidden sm:text-xl">
-                КАЛОРИФЕРЫ ВОДЯНЫЕ ТВВ И ПАРОВЫЕ КП
+                Калориферы водяные ТВВ и паровые КП
               </h3>
               <table className="w-full">
                 <thead className="uppercase">
                   <tr>
                     <th colSpan={2} className="px-1 py-1.5 text-left">
-                      КАЛОРИФЕРЫ ТВВ КП
+                      Калориферы ТВВ КП
                     </th>
                     <th colSpan={2}>Цена с учетом НДС</th>
                   </tr>
@@ -423,13 +423,13 @@ export default function ContactsAndPricesPage() {
                     asChild
                     className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 text-black uppercase"
                   >
-                    <Link href="/catalog/tvv">КАЛОРИФЕРЫ ТВВ</Link>
+                    <Link href="/catalog/tvv">Калориферы ТВВ</Link>
                   </Button>
                   <Button
                     asChild
                     className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 text-black uppercase"
                   >
-                    <Link href="/catalog/kp">КАЛОРИФЕРЫ КП</Link>
+                    <Link href="/catalog/kp">Калориферы КП</Link>
                   </Button>
                 </div>
                 <div className="flex basis-full flex-col gap-2">
@@ -441,7 +441,7 @@ export default function ContactsAndPricesPage() {
                       target="_blank"
                       href="/documents/Kalorifer_TVV_katalog_2025.pdf"
                     >
-                      КАТАЛОГ ТВВ
+                      Каталог ТВВ
                     </Link>
                   </Button>
                   <Button
@@ -452,7 +452,7 @@ export default function ContactsAndPricesPage() {
                       target="_blank"
                       href="/documents/Kalorifer_KP_katalog_2025.pdf"
                     >
-                      КАТАЛОГ КП
+                      Каталог КП
                     </Link>
                   </Button>
                 </div>
@@ -461,13 +461,13 @@ export default function ContactsAndPricesPage() {
 
             <div className="basis-full space-y-2">
               <h3 className="text-lg uppercase sm:hidden sm:text-xl">
-                КАЛОРИФЕРЫ ВОДЯНЫЕ И ПАРОВЫЕ КФБ-А
+                Калориферы водяные и паровые КФБ-А
               </h3>
               <table className="w-full">
                 <thead className="uppercase">
                   <tr>
                     <th colSpan={2} className="px-1 py-1.5 text-left">
-                      КАЛОРИФЕРЫ
+                      Калориферы
                     </th>
                     <th colSpan={2}>Цена с учетом НДС</th>
                   </tr>
@@ -498,13 +498,13 @@ export default function ContactsAndPricesPage() {
               asChild
               className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 text-black uppercase"
             >
-              <Link href="/catalog/kfb-a-m">КАЛОРИФЕРЫ КФБ-А М</Link>
+              <Link href="/catalog/kfb-a-m">Калориферы КФБ-А М</Link>
             </Button>
             <Button
               asChild
               className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 text-black uppercase"
             >
-              <Link href="/catalog/kfb-a-p">КАЛОРИФЕРЫ КФБ-А П</Link>
+              <Link href="/catalog/kfb-a-p">Калориферы КФБ-А П</Link>
             </Button>
             <Button
               asChild
@@ -514,7 +514,7 @@ export default function ContactsAndPricesPage() {
                 target="_blank"
                 href="/documents/Kalorifer_KFB_katalog_2025.pdf"
               >
-                КАТАЛОГ КФБ-А
+                Каталог КФБ-А
               </Link>
             </Button>
           </div>
@@ -535,23 +535,23 @@ export default function ContactsAndPricesPage() {
         {/* ao2-avo-std tables */}
         <div className="space-y-2">
           <h3 className="mb-2 hidden text-center text-lg uppercase sm:block sm:text-xl">
-            ОТОПИТЕЛЬНЫЕ АГРЕГАТЫ ВОДЯНЫЕ И ПАРОВЫЕ
+            Отопительные агрегаты водяные и паровые
           </h3>
           <div className="flex flex-col gap-3 sm:flex-row">
             <div className="basis-full space-y-2">
               <h3 className="text-lg uppercase sm:hidden sm:text-xl">
-                АГРЕГАТЫ АО 2 ВОДЯНЫЕ И ПАРОВЫЕ
+                Агрегаты АО 2 водяные и паровые
               </h3>
               <table className="w-full">
                 <thead className="uppercase">
                   <tr>
-                    <th className="px-1 py-1 text-left">АГРЕГАТЫ АО 2</th>
+                    <th className="px-1 py-1 text-left">Агрегаты АО 2</th>
                     <th colSpan={2}>Цена с учетом НДС</th>
                   </tr>
                   <tr>
-                    <td className="px-1 py-1 text-right">КАЛОРИФЕР</td>
-                    <th>3 РЯДА</th>
-                    <th>4 РЯДА</th>
+                    <td className="px-1 py-1 text-right">Калорифер</td>
+                    <th>3 ряда</th>
+                    <th>4 ряда</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -588,14 +588,14 @@ export default function ContactsAndPricesPage() {
                       target="_blank"
                       href="/documents/Agregat_AO2_katalog_2025.pdf"
                     >
-                      КАТАЛОГ АО2
+                      Каталог АО2
                     </Link>
                   </Button>
                   <Button
                     asChild
                     className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-2 text-black uppercase"
                   >
-                    <Link href="/catalog/avo-tvv">АГРЕГАТЫ АВО ХЛ</Link>
+                    <Link href="/catalog/avo-tvv">Агрегаты АВО ХЛ</Link>
                   </Button>
                 </div>
                 <div className="flex gap-2">
@@ -607,7 +607,7 @@ export default function ContactsAndPricesPage() {
                       target="_blank"
                       href="/documents/Agregat_STD-300_katalog_2025.pdf"
                     >
-                      КАТАЛОГ СТД-300
+                      Каталог СТД-300
                     </Link>
                   </Button>
                   <Button
@@ -618,7 +618,7 @@ export default function ContactsAndPricesPage() {
                       target="_blank"
                       href="/documents/Agregat_AVO-HL_katalog_2025.pdf"
                     >
-                      КАТАЛОГ АВО ХЛ
+                      Каталог АВО ХЛ
                     </Link>
                   </Button>
                 </div>
@@ -627,16 +627,16 @@ export default function ContactsAndPricesPage() {
 
             <div className="basis-full space-y-2">
               <h3 className="text-lg uppercase sm:hidden sm:text-xl">
-                АГРЕГАТЫ АВО ХЛ СТД-300 ВОДЯНЫЕ И ПАРОВЫЕ
+                Агрегаты АВО ХЛ СТД-300 водяные и паровые
               </h3>
               <table className="w-full">
                 <thead className="uppercase">
                   <tr>
-                    <th className="px-1 py-1 text-left">АГРЕГАТЫ АВО ХЛ</th>
-                    <th>ЦЕНА С УЧЕТОМ НДС</th>
+                    <th className="px-1 py-1 text-left">Агрегаты АВО ХЛ</th>
+                    <th>Цена с учетом НДС</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="uppercase">
                   {avoTvvVariants.map((p) => (
                     <tr key={p.id}>
                       <td className="px-1 py-1 text-left">{p.shortName}</td>
@@ -647,8 +647,8 @@ export default function ContactsAndPricesPage() {
                     <td colSpan={2} />
                   </tr>
                   <tr>
-                    <td className="px-1 py-1 text-left">АГРЕГАТЫ СТД-300</td>
-                    <th className="px-1">ЦЕНА С УЧЕТОМ НДС</th>
+                    <td className="px-1 py-1 text-left">Агрегаты СТД-300</td>
+                    <th className="px-1">Цена с учетом НДС</th>
                   </tr>
                   {std300.map((p) => (
                     <tr key={p.id}>
@@ -673,13 +673,13 @@ export default function ContactsAndPricesPage() {
                   asChild
                   className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 text-black uppercase"
                 >
-                  <Link href="/catalog/std300-v">АГРЕГАТЫ СТД-300 В</Link>
+                  <Link href="/catalog/std300-v">Агрегаты СТД-300 В</Link>
                 </Button>
                 <Button
                   asChild
                   className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 text-black uppercase"
                 >
-                  <Link href="/catalog/std300-p">АГРЕГАТЫ СТД-300 П</Link>
+                  <Link href="/catalog/std300-p">Агрегаты СТД-300 П</Link>
                 </Button>
                 <Button
                   asChild
@@ -689,7 +689,7 @@ export default function ContactsAndPricesPage() {
                     target="_blank"
                     href="/documents/Agregat_STD-300-HL_katalog_2025.pdf"
                   >
-                    КАТАЛОГ СТД-300 ХЛ
+                    Каталог СТД-300 ХЛ
                   </Link>
                 </Button>
               </div>
@@ -701,19 +701,19 @@ export default function ContactsAndPricesPage() {
                 asChild
                 className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-2.5 text-black uppercase"
               >
-                <Link href="/catalog/ao2-v">АГРЕГАТЫ АО2 В</Link>
+                <Link href="/catalog/ao2-v">Агрегаты АО2 В</Link>
               </Button>
               <Button
                 asChild
                 className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-2.5 text-black uppercase"
               >
-                <Link href="/catalog/ao2-p">АГРЕГАТЫ АО2 П</Link>
+                <Link href="/catalog/ao2-p">Агрегаты АО2 П</Link>
               </Button>
               <Button
                 asChild
                 className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-2.5 text-black uppercase"
               >
-                <Link href="/catalog/avo-tvv">АГРЕГАТЫ АВО ХЛ</Link>
+                <Link href="/catalog/avo-tvv">Агрегаты АВО ХЛ</Link>
               </Button>
             </div>
             <div className="flex gap-2">
@@ -721,13 +721,13 @@ export default function ContactsAndPricesPage() {
                 asChild
                 className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-2.5 text-black uppercase"
               >
-                <Link href="/catalog/std300-v">АГРЕГАТЫ СТД-300 В</Link>
+                <Link href="/catalog/std300-v">Агрегаты СТД-300 В</Link>
               </Button>
               <Button
                 asChild
                 className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-2.5 text-black uppercase"
               >
-                <Link href="/catalog/std300-p">АГРЕГАТЫ СТД-300 П</Link>
+                <Link href="/catalog/std300-p">Агрегаты СТД-300 П</Link>
               </Button>
               <Button
                 asChild
@@ -737,7 +737,7 @@ export default function ContactsAndPricesPage() {
                   target="_blank"
                   href="/documents/Agregat_AO2_katalog_2025.pdf"
                 >
-                  КАТАЛОГ АО2
+                  Каталог АО2
                 </Link>
               </Button>
             </div>
@@ -750,7 +750,7 @@ export default function ContactsAndPricesPage() {
                   target="_blank"
                   href="/documents/Agregat_STD-300_katalog_2025.pdf"
                 >
-                  КАТАЛОГ СТД-300
+                  Каталог СТД-300
                 </Link>
               </Button>
               <Button
@@ -761,7 +761,7 @@ export default function ContactsAndPricesPage() {
                   target="_blank"
                   href="/documents/Agregat_STD-300-HL_katalog_2025.pdf"
                 >
-                  КАТАЛОГ СТД-300 ХЛ
+                  Каталог СТД-300 ХЛ
                 </Link>
               </Button>
               <Button
@@ -772,7 +772,7 @@ export default function ContactsAndPricesPage() {
                   target="_blank"
                   href="/documents/Agregat_AVO-HL_katalog_2025.pdf"
                 >
-                  КАТАЛОГ АВО ХЛ
+                  Каталог АВО ХЛ
                 </Link>
               </Button>
             </div>
@@ -807,10 +807,10 @@ export default function ContactsAndPricesPage() {
                 <thead className="uppercase">
                   <tr>
                     <th colSpan={2} className="px-1 py-1.5 text-left">
-                      КАЛОРИФЕРЫ СФО
+                      Калориферы СФО
                     </th>
                     <th colSpan={2} className="px-1 text-left">
-                      УСТАНОВКИ СФОЦ
+                      Установки СФОЦ
                     </th>
                   </tr>
                   <tr>
@@ -836,13 +836,13 @@ export default function ContactsAndPricesPage() {
                     asChild
                     className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-1 text-black uppercase"
                   >
-                    <Link href="/catalog/sfo">КАЛОРИФЕРЫ СФО</Link>
+                    <Link href="/catalog/sfo">Калориферы СФО</Link>
                   </Button>
                   <Button
                     asChild
                     className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-1 text-black uppercase"
                   >
-                    <Link href="/catalog/sfotc">УСТАНОВКИ СФОЦ</Link>
+                    <Link href="/catalog/sfotc">Установки СФОЦ</Link>
                   </Button>
                 </div>
                 <div className="flex gap-2">
@@ -854,7 +854,7 @@ export default function ContactsAndPricesPage() {
                       target="_blank"
                       href="/documents/Electrokalorifer_SFO_katalog_2025.pdf"
                     >
-                      КАТАЛОГ СФО
+                      Каталог СФО
                     </Link>
                   </Button>
                   <Button
@@ -865,7 +865,7 @@ export default function ContactsAndPricesPage() {
                       target="_blank"
                       href="/documents/Electroustanovka_SFOTC_katalog_2025.pdf"
                     >
-                      КАТАЛОГ СФОЦ
+                      Каталог СФОЦ
                     </Link>
                   </Button>
                 </div>
@@ -881,7 +881,7 @@ export default function ContactsAndPricesPage() {
                 <thead className="uppercase">
                   <tr>
                     <th colSpan={2} className="px-1 py-1.5 text-left">
-                      ШКАФЫ ШУК
+                      Шкафы ШУК
                     </th>
                     <th colSpan={2} className="px-1 text-left">
                       ТЭНР
@@ -912,13 +912,13 @@ export default function ContactsAndPricesPage() {
                     asChild
                     className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-1 text-black uppercase"
                   >
-                    <Link href="/catalog/shuk">ШКАФЫ ШУК</Link>
+                    <Link href="/catalog/shuk">Шкафы ШУК</Link>
                   </Button>
                   <Button
                     asChild
                     className="shrink-1 basis-full rounded-none border border-[#723910] bg-gray-200 px-1 text-black uppercase"
                   >
-                    <Link href="/catalog/teny">ТЭНЫ ТЭНР</Link>
+                    <Link href="/catalog/teny">ТЭНы ТЭНР</Link>
                   </Button>
                 </div>
                 <div className="flex gap-2">
@@ -930,7 +930,7 @@ export default function ContactsAndPricesPage() {
                       target="_blank"
                       href="/documents/Electroshkaf_SHUK_katalog_2025.pdf"
                     >
-                      КАТАЛОГ ШУК
+                      Каталог ШУК
                     </Link>
                   </Button>
                   <Button
@@ -941,7 +941,7 @@ export default function ContactsAndPricesPage() {
                       target="_blank"
                       href="/documents/Electroten_TENY_katalog_2025.pdf"
                     >
-                      КАТАЛОГ ТЭНР
+                      Каталог ТЭНР
                     </Link>
                   </Button>
                 </div>
@@ -970,10 +970,10 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  ПОЛНОЕ НАИМЕНОВАНИЕ
+                  Полное наименование
                 </th>
                 <td colSpan={4}>
                   Общество с ограниченной ответственностью «Т.С.Т.»
@@ -982,20 +982,20 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="px-1 py-0.75"
+                  className="px-1 py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  СОКРАЩЕННОЕ НАИМЕНОВАНИЕ
+                  Сокращенное наименование
                 </th>
                 <td colSpan={4}>ООО «Т.С.Т.»</td>
               </tr>
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  ЮРИДИЧЕСКИЙ АДРЕС
+                  Юридический адрес
                 </th>
                 <td colSpan={4} className="px-1">
                   630108, Новосибирск г., Широкая ул., здание 1А, офис 207/1
@@ -1004,10 +1004,10 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  ПОЧТОВЫЙ АДРЕС
+                  Почтовый адрес
                 </th>
                 <td colSpan={4} className="px-1">
                   652710, Кемеровская обл., Киселевск г., Юргинская ул., дом № 1
@@ -1026,7 +1026,7 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
                   БИК
@@ -1037,10 +1037,10 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  РАСЧЕТНЫЙ СЧЕТ
+                  Расчетный счет
                 </th>
                 <td colSpan={2}>407 028 105 1307 00 000 31</td>
                 <td colSpan={2}>407 028 100 2621 01 023 57</td>
@@ -1048,10 +1048,10 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  БАНК
+                  Банк
                 </th>
                 <td colSpan={2} className="px-1">
                   Филиал «Центральный» Банка ВТБ ПАО г. Москва
@@ -1063,10 +1063,10 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="px-1 py-0.75"
+                  className="px-1 py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  КОРРЕСПОНДЕНТСКИЙ СЧЕТ
+                  Корреспондентский счет
                 </th>
                 <td colSpan={2}>301 018 101 4525 00 004 11</td>
                 <td colSpan={2}>301 018 102 0000 00 006 12</td>
@@ -1074,7 +1074,7 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
                   ОКВЭД
@@ -1086,40 +1086,40 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  ТЕЛЕФОН/ФАКС
+                  Телефон/Факс
                 </th>
                 <td colSpan={4}>+7 (961) 737-83-14</td>
               </tr>
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  E-MAIL
+                  E-mail
                 </th>
                 <td colSpan={4}>zao_tst@mail.ru</td>
               </tr>
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  ВЕБ-САЙТ
+                  Веб-сайт
                 </th>
                 <td colSpan={4}>https://zao-tst.ru</td>
               </tr>
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  ТЕХНИЧЕСКИЕ ВОПРОСЫ
+                  Технические вопросы
                 </th>
                 <td colSpan={2}>8-961-737-83-14</td>
                 <td colSpan={2}>Киляков Вадим Анатольевич</td>
@@ -1127,10 +1127,10 @@ export default function ContactsAndPricesPage() {
               <tr className="text-sm">
                 <th
                   colSpan={4}
-                  className="py-0.75"
+                  className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  ОТДЕЛ ПРОДАЖ
+                  Отдел продаж
                 </th>
                 <td colSpan={2}>8-904-968-14-88</td>
                 <td colSpan={2} className="px-1">
