@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 
 export default function LinkButtonsBlock({
   buttons,
+  className = "",
 }: {
   buttons: {
     name: string;
@@ -18,6 +19,7 @@ export default function LinkButtonsBlock({
     openNewTab?: boolean;
     goal?: string;
   }[];
+  className?: string;
 }) {
   const { reachGoal } = useYandexMetrika();
 
@@ -25,7 +27,7 @@ export default function LinkButtonsBlock({
 
   return (
     <div
-      className={cn("flex flex-col gap-2", {
+      className={cn(className, "flex flex-col gap-2", {
         "@min-[616px]:flex-row": buttonsAmount === 2,
         "@3xl:flex-row": buttonsAmount === 3,
       })}
