@@ -724,11 +724,13 @@ export default function KPSKProductPage({ product }) {
           Спецификация и стандарты калорифера {product.shortName}
         </h3>
         <ProductParagraph className="mb-3">
-          Во время подготовки паровых воздухоподогревателей к работе и при их
-          эксплуатации обязаны соблюдаться общие и специальные правила техники
-          безопасности. Пусконаладочные работы, включающие монтаж, обвязку и
-          запуск калорифера {product.shortName} в работу должны производиться
-          при обязательном участии специализированных монтажных организаций.
+          Во время подготовки {heatCarrierAdj.pluGen} воздухоподогревателей к
+          работе и при их эксплуатации обязаны соблюдаться общие и специальные
+          правила техники безопасности.{" "}
+          {engSeries === "ksk" &&
+            "При установке калориферов в секции монтажные щитки демонтируются, теплообменники соединяются между собой и образуют сплошную поверхность нагрева без пропусков холодных воздушных струй."}
+          {engSeries === "kpsk" &&
+            `Пусконаладочные работы, включающие монтаж, обвязку и запуск калорифера ${product.shortName} в работу должны производиться при обязательном участии специализированных монтажных организаций.`}
         </ProductParagraph>
         <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:gap-6 md:gap-10 lg:gap-6 xl:gap-8">
           {[specificationsTable1Rows, specificationsTable2Rows].map(
@@ -748,9 +750,7 @@ export default function KPSKProductPage({ product }) {
         </div>
       </section>
 
-      <div className="mb-6">
-        <LinkButtonsBlock buttons={linkButtons[1]} />
-      </div>
+      <LinkButtonsBlock buttons={linkButtons[1]} className="mb-6" />
 
       <section className="text-example space-y-4">
         <h3 className="mb-2 text-xl">
