@@ -4,13 +4,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 import { sortProducts } from "@/lib/utils";
+import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
-import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы приточные водяные",
@@ -43,13 +43,21 @@ const linkButtons = [
 ];
 
 export default async function KaloriferyVodaPage() {
-  const [calculator1Html, calculator2Html, table1Html, table2Html] =
-    await getLegacyHtmls([
-      "/legacy/calculator-kalorifery-voda-1.html",
-      "/legacy/calculator-kalorifery-voda-3.html",
-      "/legacy/table-kalorifery-voda-kpvs.html",
-      "/legacy/table-kalorifery-voda-kpvu.html",
-    ]);
+  const [
+    calculator1Html,
+    calculator2Html,
+    calculator3Html,
+    calculator4Html,
+    table1Html,
+    table2Html,
+  ] = await getLegacyHtmls([
+    "/legacy/calculator-kalorifery-voda-1.html",
+    "/legacy/calculator-kalorifery-voda-3.html",
+    "/legacy/calculator-ksk-989-989.html",
+    "/legacy/calculator-tvv-845-845.html",
+    "/legacy/table-kalorifery-voda-kpvs.html",
+    "/legacy/table-kalorifery-voda-kpvu.html",
+  ]);
 
   return (
     <>
@@ -159,7 +167,7 @@ export default async function KaloriferyVodaPage() {
           lvl={2}
           text="Калькулятор подбора водяных приточных калориферов"
         />
-        <ProductParagraph>
+        <ProductParagraph className="mb-4">
           Подбор с помощью онлайн калькулятора осуществляется следующим образом:
           1. вносятся данные по воздуху – производительность, температура на
           входе и требуемая на выходе; 2. выбирается вид теплоносителя, вода или
@@ -169,6 +177,37 @@ export default async function KaloriferyVodaPage() {
           тепловой мощности следует перейти к последующему или предыдущему
           номеру водяного приточного воздухонагревателя.
         </ProductParagraph>
+        <section className="text-example">
+          <Heading
+            lvl={3}
+            text={
+              <>
+                Пример калькулятора на производительность 10000 м<sup>3</sup>
+                /час
+              </>
+            }
+          />
+          <ProductParagraph className="mb-2 text-base">
+            Синие поля обязательны для заполнения. Запас площади поверхности
+            нагрева: оптимальный 10%, допустимый 0-20%. Массовая скорость
+            воздуха в фронтальном сечении: оптимальная 3-5 кг/м<sup>2</sup>•с,
+            допустимая 1.5-8 кг/м<sup>2</sup>•с. Скорость теплоносителя в
+            трубках: оптимальная 0.2-0.5 м/с, допустимая - 0.12-1.2 м/с.
+          </ProductParagraph>
+          <LegacyHtml
+            html={calculator3Html}
+            className="legacy-calculator mb-2"
+          />
+
+          <ProductParagraph>
+            Чтобы{" "}
+            <span className="font-semibold">
+              рассчитать параметры для другой производительности
+            </span>
+            , перейдите на страницу выбранной модели водяного калорифера из
+            списка ниже.
+          </ProductParagraph>
+        </section>
       </section>
 
       <section>
@@ -196,6 +235,35 @@ export default async function KaloriferyVodaPage() {
           width={968}
           height={1}
         />
+      </section>
+
+      <section className="text-example">
+        <Heading
+          lvl={3}
+          text={
+            <>
+              Пример калькулятора на производительность 5000 м<sup>3</sup>
+              /час
+            </>
+          }
+        />
+        <ProductParagraph className="mb-2 text-base">
+          Синие поля обязательны для заполнения. Запас площади поверхности
+          нагрева: оптимальный 10%, допустимый 0-20%. Массовая скорость воздуха
+          в фронтальном сечении: оптимальная 3-5 кг/м<sup>2</sup>•с, допустимая
+          1.5-8 кг/м<sup>2</sup>•с. Скорость теплоносителя в трубках:
+          оптимальная 0.2-0.5 м/с, допустимая - 0.12-1.2 м/с.
+        </ProductParagraph>
+        <LegacyHtml html={calculator4Html} className="legacy-calculator mb-2" />
+
+        <ProductParagraph>
+          Чтобы{" "}
+          <span className="font-semibold">
+            рассчитать параметры для другой производительности
+          </span>
+          , перейдите на страницу выбранной модели водяного калорифера из списка
+          ниже.
+        </ProductParagraph>
       </section>
 
       <section className="mb-8">

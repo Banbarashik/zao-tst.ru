@@ -47,12 +47,16 @@ export default async function KaloriferyParPage() {
     calculator1Html,
     calculator2Html,
     calculator3Html,
+    calculator4Html,
+    calculator5Html,
     table1Html,
     table2Html,
   ] = await getLegacyHtmls([
     "/legacy/calculator-kalorifery-par-1.html",
     "/legacy/calculator-kalorifery-par-3.html",
     "/legacy/calculator-kalorifery-par-4.html",
+    "/legacy/calculator-kpsk-1030-1030.html",
+    "/legacy/calculator-kp-1481-1481.html",
     "/legacy/table-kalorifery-par-kpps.html",
     "/legacy/table-kalorifery-par-kppu.html",
   ]);
@@ -178,7 +182,7 @@ export default async function KaloriferyParPage() {
           lvl={2}
           text="Калькулятор подбора паровых приточных калориферов"
         />
-        <ProductParagraph>
+        <ProductParagraph className="mb-4">
           Подбор с помощью онлайн калькулятора осуществляется следующим образом:
           1. вносятся данные по воздуху – производительность, температура на
           входе и требуемая на выходе; 2. выбирается давление пара; 3. в
@@ -187,6 +191,37 @@ export default async function KaloriferyParPage() {
           тепловой мощности следует перейти к последующему или предыдущему
           номеру парового приточного воздухонагревателя.
         </ProductParagraph>
+
+        <section className="text-example">
+          <Heading
+            lvl={3}
+            text={
+              <>
+                Пример калькулятора на производительность 11000 м<sup>3</sup>
+                /час
+              </>
+            }
+          />
+          <ProductParagraph className="mb-2 text-base">
+            Синие поля обязательны для заполнения. Запас площади поверхности
+            нагрева: оптимальный 10%, допустимый 0-20%. Массовая скорость
+            воздуха в фронтальном сечении: оптимальная 3-5 кг/м<sup>2</sup>•с,
+            допустимая 1.5-8 кг/м<sup>2</sup>•с.
+          </ProductParagraph>
+          <LegacyHtml
+            html={calculator4Html}
+            className="legacy-calculator mb-2"
+          />
+
+          <ProductParagraph>
+            Чтобы{" "}
+            <span className="font-semibold">
+              рассчитать параметры для другой производительности
+            </span>
+            , перейдите на страницу выбранной модели парового калорифера из
+            списка ниже.
+          </ProductParagraph>
+        </section>
       </section>
 
       <section>
@@ -214,6 +249,34 @@ export default async function KaloriferyParPage() {
           width={968}
           height={1}
         />
+      </section>
+
+      <section className="text-example">
+        <Heading
+          lvl={3}
+          text={
+            <>
+              Пример калькулятора на производительность 20000 м<sup>3</sup>
+              /час
+            </>
+          }
+        />
+        <ProductParagraph className="mb-2 text-base">
+          Синие поля обязательны для заполнения. Запас площади поверхности
+          нагрева: оптимальный 10%, допустимый 0-20%. Массовая скорость воздуха
+          в фронтальном сечении: оптимальная 3-5 кг/м<sup>2</sup>•с, допустимая
+          1.5-8 кг/м<sup>2</sup>•с.
+        </ProductParagraph>
+        <LegacyHtml html={calculator5Html} className="legacy-calculator mb-2" />
+
+        <ProductParagraph>
+          Чтобы{" "}
+          <span className="font-semibold">
+            рассчитать параметры для другой производительности
+          </span>
+          , перейдите на страницу выбранной модели парового калорифера из списка
+          ниже.
+        </ProductParagraph>
       </section>
 
       <section className="mb-8">
