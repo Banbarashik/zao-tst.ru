@@ -10,6 +10,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы паровые КП",
@@ -40,7 +41,9 @@ const linkButtons = [
   },
 ];
 
-export default function KaloriferyKPPage() {
+export default async function KaloriferyKPPage() {
+  const tableHtml = await getLegacyHtml("/legacy/table-kalorifery-kp.html");
+
   return (
     <>
       <Heading lvl={1} text="Калориферы КП паровые" />
@@ -178,10 +181,7 @@ export default function KaloriferyKPPage() {
           className="mb-3"
         />
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-kalorifery-kp.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
         </div>
         <ProductParagraph>
           Структура условного обозначения паровых калориферов КП производства

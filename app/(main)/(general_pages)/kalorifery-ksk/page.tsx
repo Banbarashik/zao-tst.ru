@@ -10,6 +10,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы водяные КСк",
@@ -41,7 +42,9 @@ const linkButtons = [
   },
 ];
 
-export default function KaloriferyKSKPage() {
+export default async function KaloriferyKSKPage() {
+  const tableHtml = await getLegacyHtml("/legacy/table-kalorifery-ksk.html");
+
   return (
     <>
       <Heading lvl={1} text="Калориферы КСк водяные" />
@@ -197,10 +200,7 @@ export default function KaloriferyKSKPage() {
           className="mb-3"
         />
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-kalorifery-ksk.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
         </div>
         <ProductParagraph>
           Структура условного обозначения водяных калориферов КСк производства

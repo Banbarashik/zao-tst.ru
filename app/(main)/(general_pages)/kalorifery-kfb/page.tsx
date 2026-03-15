@@ -10,6 +10,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы паровые КФБ-А П",
@@ -40,7 +41,9 @@ const linkButtons = [
   },
 ];
 
-export default function KaloriferyKFBPage() {
+export default async function KaloriferyKFBPage() {
+  const tableHtml = await getLegacyHtml("/legacy/table-kalorifery-kfb.html");
+
   return (
     <>
       <Heading lvl={1} text="Калориферы КФБ-А П паровые" />
@@ -191,10 +194,7 @@ export default function KaloriferyKFBPage() {
           className="mb-4"
         />
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-kalorifery-kfb.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
         </div>
         <ProductParagraph>
           Структура условного обозначения паровых калориферов КФБ-А производства

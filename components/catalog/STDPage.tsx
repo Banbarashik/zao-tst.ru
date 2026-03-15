@@ -13,6 +13,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 const tableIndicators: Record<string, string> = {
   water:
@@ -71,7 +72,9 @@ function tableHeaders(model: string) {
   };
 }
 
-export default function STDPage({ product }) {
+export default async function STDPage({ product }) {
+  const tableHtml = await getLegacyHtml(product.tableWithTabs);
+
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
   const oppositeHeatCarrier =
     product.heatCarrier === "water" ? "steam" : "water";
@@ -321,10 +324,7 @@ export default function STDPage({ product }) {
         показателями: {tableIndicators[product.heatCarrier]}.
       </ProductParagraph>
       <div className="overflow-x-auto">
-        <LegacyHtml
-          path={product.tableWithTabs}
-          className="legacy-table min-w-231"
-        />
+        <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
       </div>
       <ProductParagraph className="mb-8">
         Табличные данные можно использовать при подборе сопутствующего{" "}

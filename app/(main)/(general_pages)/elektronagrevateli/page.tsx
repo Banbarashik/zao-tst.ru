@@ -10,6 +10,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Электрокалориферы СФО. Производство",
@@ -38,7 +39,12 @@ const linkButtons = [
   },
 ];
 
-export default function KaloriferySFO() {
+export default async function KaloriferySFO() {
+  const [calculator1Html, calculator2Html] = await getLegacyHtmls([
+    "/legacy/calculator-elektronagrevateli-1.html",
+    "/legacy/calculator-elektronagrevateli-2.html",
+  ]);
+
   return (
     <>
       <Heading lvl={1} text="Электрические калориферы СФО" />
@@ -163,10 +169,7 @@ export default function KaloriferySFO() {
           требуемая мощность электрического нагревателя для соблюдения заданных
           условий.
         </ProductParagraph>
-        <LegacyHtml
-          path="/legacy/calculator-elektronagrevateli-1.html"
-          className="legacy-calculator"
-        />
+        <LegacyHtml html={calculator1Html} className="legacy-calculator" />
       </section>
 
       <section>
@@ -181,10 +184,7 @@ export default function KaloriferySFO() {
           По результатам онлайн-расчета представлена температура выходящего
           нагретого воздуха.
         </ProductParagraph>
-        <LegacyHtml
-          path="/legacy/calculator-elektronagrevateli-2.html"
-          className="legacy-calculator"
-        />
+        <LegacyHtml html={calculator2Html} className="legacy-calculator" />
       </section>
 
       <section>

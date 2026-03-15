@@ -12,6 +12,7 @@ import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 const tableEquipment: Record<string, string> = {
   water: "насосно-смесительного",
@@ -185,7 +186,9 @@ const seriesEng = {
   КПСк: "kpsk",
 };
 
-export default function KPSKProductPage({ product }) {
+export default async function KPSKProductPage({ product }) {
+  const tableHtml = await getLegacyHtml(product.tableWithTabs);
+
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
   const engSeries = seriesEng[product.series]; //! TEMP
   const isKSK = engSeries === "ksk";
@@ -620,10 +623,7 @@ export default function KPSKProductPage({ product }) {
           {product.heatCarrier === "steam" && " и расходом пара"}.
         </ProductParagraph>
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path={product.tableWithTabs}
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
         </div>
         <ProductParagraph className="mb-4">
           Табличные данные можно использовать при подборе сопутствующего

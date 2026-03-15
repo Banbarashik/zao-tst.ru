@@ -12,6 +12,7 @@ import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 const tableHeaders = {
   water: [
@@ -56,7 +57,9 @@ const tableHeaders = {
   ],
 };
 
-export default function AVOPage({ product }) {
+export default async function AVOPage({ product }) {
+  const tableHtml = await getLegacyHtml(product.tableWithTabs);
+
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
   const oppositeHeatCarrier =
     product.heatCarrier === "water" ? "steam" : "water";
@@ -255,10 +258,7 @@ export default function AVOPage({ product }) {
         {tableIndicators[product.heatCarrier]}.
       </ProductParagraph>
       <div className="overflow-x-auto">
-        <LegacyHtml
-          path={product.tableWithTabs}
-          className="legacy-table min-w-231"
-        />
+        <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
       </div>
       <ProductParagraph className="mb-8">
         Табличные данные можно использовать при подборе сопутствующего{" "}

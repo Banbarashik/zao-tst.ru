@@ -12,6 +12,7 @@ import ProductCard from "@/components/catalog/productCard";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 const seriesEng = {
   КПВС: "kpvs",
@@ -20,7 +21,7 @@ const seriesEng = {
   КППУ: "kppu",
 };
 
-export default function SupplyCalorifierPage({
+export default async function SupplyCalorifierPage({
   product,
 }: {
   product: SupplyCalorifier;
@@ -39,6 +40,8 @@ export default function SupplyCalorifierPage({
     specsTableValues,
     calculator,
   } = product;
+  const calculatorHtml = await getLegacyHtml(calculator);
+
   const internalSize = size - 72;
   const frameSize = Math.ceil(size / 50) * 50;
 
@@ -186,7 +189,7 @@ export default function SupplyCalorifierPage({
         {isWater &&
           "Скорость теплоносителя в трубках: оптимальная 0.2-0.5 м/с, допустимая - 0.12-1.2 м/с."}
       </ProductParagraph>
-      <LegacyHtml path={calculator} className="legacy-calculator" />
+      <LegacyHtml html={calculatorHtml} className="legacy-calculator" />
       <ProductParagraph className="mb-7">
         {nextProduct && (
           <>

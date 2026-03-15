@@ -10,6 +10,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы приточные паровые",
@@ -41,7 +42,21 @@ const linkButtons = [
   },
 ];
 
-export default function KaloriferyParPage() {
+export default async function KaloriferyParPage() {
+  const [
+    calculator1Html,
+    calculator2Html,
+    calculator3Html,
+    table1Html,
+    table2Html,
+  ] = await getLegacyHtmls([
+    "/legacy/calculator-kalorifery-par-1.html",
+    "/legacy/calculator-kalorifery-par-3.html",
+    "/legacy/calculator-kalorifery-par-4.html",
+    "/legacy/table-kalorifery-par-kpps.html",
+    "/legacy/table-kalorifery-par-kppu.html",
+  ]);
+
   return (
     <>
       <Heading lvl={1} text="Калориферы приточные КППС и КППУ" />
@@ -107,10 +122,7 @@ export default function KaloriferyParPage() {
             тепловая мощность парового калорифера для соблюдения заданных
             условий.
           </ProductParagraph>
-          <LegacyHtml
-            path="/legacy/calculator-kalorifery-par-1.html"
-            className="legacy-calculator"
-          />
+          <LegacyHtml html={calculator1Html} className="legacy-calculator" />
         </section>
         <section className="mb-4">
           <Heading lvl={2} text="Онлайн-расчет расхода пара калорифером" />
@@ -122,10 +134,7 @@ export default function KaloriferyParPage() {
             результатам онлайн-расчета показывается необходимый расход
             теплоносителя для выработки указанной производительности по теплу.
           </ProductParagraph>
-          <LegacyHtml
-            path="/legacy/calculator-kalorifery-par-3.html"
-            className="legacy-calculator"
-          />
+          <LegacyHtml html={calculator2Html} className="legacy-calculator" />
         </section>
         <section className="mb-4">
           <Heading
@@ -140,10 +149,7 @@ export default function KaloriferyParPage() {
             результатам онлайн-расчета показывается вырабатываемая калорифером
             мощность.
           </ProductParagraph>
-          <LegacyHtml
-            path="/legacy/calculator-kalorifery-par-4.html"
-            className="legacy-calculator"
-          />
+          <LegacyHtml html={calculator3Html} className="legacy-calculator" />
         </section>
 
         <ProductParagraph>
@@ -199,10 +205,7 @@ export default function KaloriferyParPage() {
           накатным алюминиевым оребрением.
         </ProductParagraph>
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-kalorifery-par-kpps.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={table1Html} className="legacy-table min-w-231" />
         </div>
         <Image
           src="/img/general_pages/kalorifery_pritochnye_parovye_kpps_chertez.png"
@@ -229,10 +232,7 @@ export default function KaloriferyParPage() {
           алюминиевым оребрением.
         </ProductParagraph>
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-kalorifery-par-kppu.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={table2Html} className="legacy-table min-w-231" />
         </div>
         <Image
           src="/img/general_pages/kalorifery_pritochnye_parovye_kppu_chertez.png"

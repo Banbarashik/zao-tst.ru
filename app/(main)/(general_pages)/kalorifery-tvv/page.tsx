@@ -10,6 +10,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы водяные ТВВ",
@@ -40,7 +41,9 @@ const linkButtons = [
   },
 ];
 
-export default function KaloriferyTVVPage() {
+export default async function KaloriferyTVVPage() {
+  const [tableHtml] = await getLegacyHtml("/legacy/table-kalorifery-tvv.html");
+
   return (
     <>
       <Heading lvl={1} text="Калориферы ТВВ водяные" />
@@ -164,10 +167,7 @@ export default function KaloriferyTVVPage() {
           className="mb-3"
         />
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-kalorifery-tvv.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
         </div>
         <ProductParagraph>
           Структура условного обозначения водяных калориферов ТВВ производства

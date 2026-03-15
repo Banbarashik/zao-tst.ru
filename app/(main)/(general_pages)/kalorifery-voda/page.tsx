@@ -10,6 +10,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы приточные водяные",
@@ -41,7 +42,15 @@ const linkButtons = [
   },
 ];
 
-export default function KaloriferyVodaPage() {
+export default async function KaloriferyVodaPage() {
+  const [calculator1Html, calculator2Html, table1Html, table2Html] =
+    await getLegacyHtmls([
+      "/legacy/calculator-kalorifery-voda-1.html",
+      "/legacy/calculator-kalorifery-voda-3.html",
+      "/legacy/table-kalorifery-voda-kpvs.html",
+      "/legacy/table-kalorifery-voda-kpvu.html",
+    ]);
+
   return (
     <>
       <Heading lvl={1} text="Калориферы приточные КПВС и КПВУ" />
@@ -105,10 +114,7 @@ export default function KaloriferyVodaPage() {
             тепловая мощность водяного калорифера для соблюдения заданных
             условий.
           </ProductParagraph>
-          <LegacyHtml
-            path="/legacy/calculator-kalorifery-voda-1.html"
-            className="legacy-calculator"
-          />
+          <LegacyHtml html={calculator1Html} className="legacy-calculator" />
         </section>
         <section className="mb-4">
           <Heading
@@ -124,10 +130,7 @@ export default function KaloriferyVodaPage() {
             необходимое количество теплоносителя в час при данном температурном
             графике.
           </ProductParagraph>
-          <LegacyHtml
-            path="/legacy/calculator-kalorifery-voda-3.html"
-            className="legacy-calculator"
-          />
+          <LegacyHtml html={calculator2Html} className="legacy-calculator" />
         </section>
 
         <ProductParagraph>
@@ -184,10 +187,7 @@ export default function KaloriferyVodaPage() {
           оребрением.
         </ProductParagraph>
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-kalorifery-voda-kpvs.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={table1Html} className="legacy-table min-w-231" />
         </div>
         <Image
           src="/img/general_pages/kalorifery_pritochnye_vodianye_kpvs_chertez.png"
@@ -214,10 +214,7 @@ export default function KaloriferyVodaPage() {
           накатным алюминиевым оребрением.
         </ProductParagraph>
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-kalorifery-voda-kpvu.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={table2Html} className="legacy-table min-w-231" />
         </div>
         <Image
           src="/img/general_pages/kalorifery_pritochnye_vodianye_kpvu_chertez.png"

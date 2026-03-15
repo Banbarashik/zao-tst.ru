@@ -10,6 +10,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы паровые КПСк",
@@ -41,7 +42,9 @@ const linkButtons = [
   },
 ];
 
-export default function KaloriferyKPSKPage() {
+export default async function KaloriferyKPSKPage() {
+  const tableHtml = await getLegacyHtml("/legacy/table-kalorifery-kpsk.html");
+
   return (
     <>
       <Heading lvl={1} text="Калориферы КПСк паровые" />
@@ -207,10 +210,7 @@ export default function KaloriferyKPSKPage() {
           className="mb-3"
         />
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-kalorifery-kpsk.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
         </div>
         <ProductParagraph>
           Структура условного обозначения паровых калориферов КПСк производства
