@@ -1,6 +1,9 @@
-import React from "react";
+import fs from "fs/promises";
+import path from "path";
 
+import React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 
 import { ArrowBigDownDash } from "lucide-react";
@@ -8,7 +11,6 @@ import { ArrowBigDownDash } from "lucide-react";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
-import Link from "next/link";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
 import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
@@ -465,7 +467,16 @@ function KaloriferPropsTable<T extends Record<string, unknown>>({
   );
 }
 
-export default function PodborRaschetKaloriferovPage() {
+export default async function PodborRaschetKaloriferovPage() {
+  const table1FilePath = path.join(
+    process.cwd(),
+    "public",
+    "legacy",
+    "table-raschet-podbor-kaloriferov-1.html",
+  );
+
+  const table1Html = await fs.readFile(table1FilePath, "utf8");
+
   return (
     <>
       <Heading lvl={1} text="Подбор и расчет калорифера парового" />
@@ -632,10 +643,7 @@ export default function PodborRaschetKaloriferovPage() {
           </ol>
         </div>
         <div className="overflow-x-auto">
-          <LegacyHtml
-            path="/legacy/table-raschet-podbor-kaloriferov-1.html"
-            className="legacy-table min-w-231"
-          />
+          <LegacyHtml html={table1Html} className="legacy-table min-w-231" />
         </div>
         <div className="text-example space-y-2">
           <div>
