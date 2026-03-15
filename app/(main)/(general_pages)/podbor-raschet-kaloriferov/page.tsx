@@ -1,12 +1,11 @@
-import fs from "fs/promises";
-import path from "path";
-
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
 import { ArrowBigDownDash } from "lucide-react";
+
+import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
@@ -468,14 +467,10 @@ function KaloriferPropsTable<T extends Record<string, unknown>>({
 }
 
 export default async function PodborRaschetKaloriferovPage() {
-  const table1FilePath = path.join(
-    process.cwd(),
-    "public",
-    "legacy",
-    "table-raschet-podbor-kaloriferov-1.html",
-  );
-
-  const table1Html = await fs.readFile(table1FilePath, "utf8");
+  const [table1Html, table2Html] = await getLegacyHtmls([
+    "/legacy/table-raschet-podbor-kaloriferov-1.html",
+    "/legacy/table-raschet-podbor-kaloriferov-2.html",
+  ]);
 
   return (
     <>
@@ -785,7 +780,7 @@ export default async function PodborRaschetKaloriferovPage() {
         </ProductParagraph>
         <div className="overflow-x-auto">
           <LegacyHtml
-            path="/legacy/table-raschet-podbor-kaloriferov-2.html"
+            html={table2Html}
             className="legacy-table legacy-raschet-podbor-table min-w-231"
           />
         </div>
