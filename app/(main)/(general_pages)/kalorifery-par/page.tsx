@@ -55,8 +55,8 @@ export default async function KaloriferyParPage() {
     "/legacy/calculator-kalorifery-par-1.html",
     "/legacy/calculator-kalorifery-par-3.html",
     "/legacy/calculator-kalorifery-par-4.html",
-    "/legacy/calculator-kpsk-1030-1030.html",
-    "/legacy/calculator-kp-1481-1481.html",
+    "/legacy/calculator-kalorifery-par-5.html",
+    "/legacy/calculator-kalorifery-par-6.html",
     "/legacy/table-kalorifery-par-kpps.html",
     "/legacy/table-kalorifery-par-kppu.html",
   ]);

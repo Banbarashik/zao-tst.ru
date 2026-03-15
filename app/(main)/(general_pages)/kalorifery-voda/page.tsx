@@ -53,8 +53,8 @@ export default async function KaloriferyVodaPage() {
   ] = await getLegacyHtmls([
     "/legacy/calculator-kalorifery-voda-1.html",
     "/legacy/calculator-kalorifery-voda-3.html",
-    "/legacy/calculator-ksk-989-989.html",
-    "/legacy/calculator-tvv-845-845.html",
+    "/legacy/calculator-kalorifery-voda-4.html",
+    "/legacy/calculator-kalorifery-voda-5.html",
     "/legacy/table-kalorifery-voda-kpvs.html",
     "/legacy/table-kalorifery-voda-kpvu.html",
   ]);
