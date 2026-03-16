@@ -194,7 +194,7 @@ export default async function KPSKProductPage({ product }) {
   const isKSK = engSeries === "ksk";
   const isKPSK = engSeries === "kpsk";
   const isWater = product.heatCarrier === "water";
-  const isSteam = product.heatCarrier === "steam";
+  // const isSteam = product.heatCarrier === "steam";
 
   const isCalorifier = product.categories.includes("kalorifer");
   const isAgregat = product.categories.includes("agregaty");
