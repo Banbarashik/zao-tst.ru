@@ -28,7 +28,7 @@ export function TehnicheskayaSearchForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2">
+    <form onSubmit={handleSubmit} className="flex w-160 gap-2">
       <Input
         value={query}
         onChange={(e) => setQuery(e.target.value)}
