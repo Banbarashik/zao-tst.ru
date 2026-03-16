@@ -193,7 +193,7 @@ export default async function KPSKProductPage({ product }) {
   const engSeries = seriesEng[product.series]; //! TEMP
   const isKSK = engSeries === "ksk";
   const isKPSK = engSeries === "kpsk";
-  // const isWater = product.heatCarrier === "water";
+  const isWater = product.heatCarrier === "water";
   const isSteam = product.heatCarrier === "steam";
 
   const isCalorifier = product.categories.includes("kalorifer");
@@ -322,8 +322,12 @@ export default async function KPSKProductPage({ product }) {
     ["Монтаж и эксплуатация", "СНиП 41-01-2003"],
   ];
 
-  const productFrontWidth = product.sizeTableValues[6];
-  const productFullHeight = product.sizeTableValues[3] + (isSteam ? 65 : 0);
+  const productFrontWidth = isWater
+    ? product.sizeTableValues[3]
+    : product.sizeTableValues[6];
+  const productFullHeight = isWater
+    ? product.sizeTableValues[6]
+    : product.sizeTableValues[3] + 65;
   const reshetkaWidth = 180;
   const productWeight = product.specsTableValues[9];
 
