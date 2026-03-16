@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "../public/legacy/table.css";
+@import "../public/legacy/calculator.css";
 
 @custom-variant dark (&:is(.dark *));
 
