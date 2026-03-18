@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { TehnicheskayaSearchForm } from "@/components/tehnicheskayaSearchForm";
 import Heading from "@/components/general_pages/heading";
+import ProductParagraph from "@/components/catalog/productParagraph";
 
 export const metadata: Metadata = {
   title: "Подбор и изготовление калориферов и воздухонагревателей",
@@ -15,8 +16,39 @@ export const metadata: Metadata = {
 export default function TehnicheskayaStranica() {
   return (
     <main className="3xl:px-0 mx-auto w-full max-w-336 space-y-10 px-2 pt-6 pb-14 sm:pt-14 lg:px-6 xl:px-10">
-      <Heading lvl={1} text="Производство и расчет воздухонагревателей" />
       <TehnicheskayaSearchForm />
+      <div>
+        <Heading
+          lvl={1}
+          text="Производство и расчет воздухонагревателей"
+          className="mb-4"
+        />
+        <section className="space-y-6">
+          <ProductParagraph>
+            Техническая страница разделена на три блока, каждый из которых
+            наполнен ссылками на страницы с технологическим представлением,
+            обзором характеристик, чертежами и моделями для проектирования,
+            калькуляторами и таблицами для расчета и подбора воздухонагревателей
+            определенного вида.
+          </ProductParagraph>
+
+          <TechEntries entries={globalEntries} />
+
+          <ProductParagraph>
+            Все рекуперативные поверхностные воздухонагреватели, выпускаемые
+            нашим предприятием, классифицируются по виду применяемых
+            теплоносителей. К первой группе относятся водовоздушные
+            воздухонагреватели, в которых процесс теплопередачи осуществляется с
+            участием воды или гликолевых растворов. Второй раздел представляет
+            данные по паровоздушным воздухонагревателям, где передача тепловой
+            энергии воздуху протекает в условиях изменения агрегатного состояния
+            теплоносителя – водяного пара. Последняя часть посвящена
+            электровоздушным воздухонагревателям, в которых теплообмен от одного
+            потока к другому реализуется с использованием электрической энергии.
+          </ProductParagraph>
+        </section>
+      </div>
+
       <section>
         <Heading
           lvl={2}
@@ -163,12 +195,12 @@ function TechEntry({
   description = "",
 }: TechEntry) {
   return (
-    <article className="border hover:border-[#dadada] hover:bg-gray-100">
+    <article className="hover:border-primary-dark border hover:bg-[#edeff4]">
       <Link href={url} className="flex items-start gap-4 px-4 py-3">
-        <Image src={img.url} alt={img.alt} width={100} height={1} />
+        <Image src={img.url} alt={title} width={100} height={1} />
         <div>
-          <h3 className="text-primary-dark">{title}</h3>
-          <p className="text-[15px]">{description}</p>
+          <h3 className="text-primary-dark inline">{title}. </h3>
+          <p className="inline text-[15px]">{description}</p>
         </div>
       </Link>
     </article>
@@ -187,6 +219,38 @@ function TechEntries({ entries }: { entries: TechEntry[] }) {
   );
 }
 
+const globalEntries: TechEntry[] = [
+  {
+    url: "/kalorifery",
+    img: {
+      url: "/img/search/kalorifer_model.png",
+      alt: "Приточные водяные калориферы",
+    },
+    title: "Производство водяных и паровых калориферов",
+    description:
+      "Назначение промышленных калориферов. Конструкция калориферов. Виды и типы промышленных калориферов. Водяные и паровые калориферы приточной вентиляции. Стандартные серийные калориферы. Воздухонагреватели для низких температурных режимов. Теплообменники для шахт и рудников. Калориферы для сушки материала. Изготовление калориферов нестандартных габаритных размеров заявленной мощности.",
+  },
+  {
+    url: "/otopitelnye-agregaty",
+    img: {
+      url: "/img/search/agregat_avo_model.png",
+      alt: "Приточные водяные калориферы",
+    },
+    title: "Производство водяных и паровых агрегатов",
+    description:
+      "Назначение отопительных агрегатов. Сфера применения воздушно-отопительных агрегатов. Виды и типы отопительных агрегатов. Конструкция водяных и паровых агрегатов воздушного отопления. Серийные отопительные агрегаты. Воздушно-отопительные агрегаты для работы в неблагоприятных условиях эксплуатации.",
+  },
+  {
+    url: "/vozduchonagrevatelnye-ustanovki",
+    img: {
+      url: "/img/search/ustanovka_model_electro.png",
+      alt: "Приточные водяные калориферы",
+    },
+    title: "Производство электрических воздухонагревателей",
+    description:
+      "Назначение воздухонагревательных установок. Сфера применения электронагревателей. Типы электрического воздухонагревательного оборудования. Конструкция электронагревательных установок. Электрокалориферы для шахт и рудников.",
+  },
+];
 const waterHeaterEntries: TechEntry[] = [
   {
     url: "/kalorifery-voda",
