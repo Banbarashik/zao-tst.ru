@@ -5,6 +5,7 @@ import Image from "next/image";
 import { TehnicheskayaSearchForm } from "@/components/tehnicheskayaSearchForm";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
+import LinkButtonsBlock from "@/components/linkButtonsBlock";
 
 export const metadata: Metadata = {
   title: "Подбор и изготовление калориферов и воздухонагревателей",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function TehnicheskayaStranica() {
   return (
-    <main className="3xl:px-0 mx-auto w-full max-w-336 space-y-10 px-2 pt-6 pb-14 sm:pt-14 lg:px-6 xl:px-10">
+    <main className="3xl:px-0 @container mx-auto w-full max-w-336 space-y-10 px-2 pt-6 pb-14 sm:pt-14 lg:px-6 xl:px-10">
       <TehnicheskayaSearchForm />
       <div>
         <Heading
@@ -46,10 +47,40 @@ export default function TehnicheskayaStranica() {
             электровоздушным воздухонагревателям, в которых теплообмен от одного
             потока к другому реализуется с использованием электрической энергии.
           </ProductParagraph>
+
+          <LinkButtonsBlock
+            buttons={[
+              {
+                url: "/tehnicheskaya-stranica#anchor1",
+                name: "Водяные воздухонагреватели",
+              },
+              {
+                url: "/tehnicheskaya-stranica#anchor2",
+                name: "Паровые воздухонагреватели",
+              },
+              {
+                url: "/tehnicheskaya-stranica#anchor3",
+                name: "Электрические нагреватели",
+              },
+            ]}
+          />
+
+          <TechEntry
+            {...{
+              url: "/raschet-kaloriferov",
+              img: {
+                url: "/img/tehnicheskaya/kalorifer_podbor.png",
+                alt: "",
+              },
+              title: "Критерии расчета и подбора калориферов",
+              description:
+                "Методика расчета водяных, паровых и электрических калориферов. Выбор вида, типа, модели, номера и количества воздушных теплообменников. Порядок подбора и сравнение воздухонагревателей. Параметры расчетной температуры воздуха. Аэродинамическое и гидравлическое сопротивление, массовая скорость воздуха при расчете калориферов. Запас поверхности теплообмена при подборе калориферов.",
+            }}
+          />
         </section>
       </div>
 
-      <section>
+      <section id="anchor1">
         <Heading
           lvl={2}
           text="Расчет и подбор водяных воздухонагревателей"
@@ -57,7 +88,7 @@ export default function TehnicheskayaStranica() {
         />
         <TechEntries entries={waterHeaterEntries} />
       </section>
-      <section>
+      <section id="anchor2">
         <Heading
           lvl={2}
           text="Расчет и подбор паровых воздухонагревателей"
@@ -65,7 +96,7 @@ export default function TehnicheskayaStranica() {
         />
         <TechEntries entries={steamHeaterEntries} />
       </section>
-      <section>
+      <section id="anchor3">
         <Heading
           lvl={2}
           text="Расчет и подбор электрических воздухонагревателей"
@@ -73,107 +104,6 @@ export default function TehnicheskayaStranica() {
         />
         <TechEntries entries={electroHeaterEntries} />
       </section>
-      {/* <div className="space-y-3">
-        <div className="flex gap-4 border px-4 py-3 text-[15px]">
-          <img src="/img/search/kalorifer_model.png" className="h-16" />
-          <p>
-            <a className="text-primary-dark cursor-pointer">
-              Производство калориферов
-            </a>
-            . Назначение калориферов. Конструкция калориферов. Применение
-            калориферов. Типы и виды калориферов. Калориферы для низких
-            температурных режимов. Калориферы водяные и паровые для сушки
-            материалов. Назначение калориферов. Конструкция калориферов.
-            Применение калориферов. Типы и виды калориферов. Калориферы для
-            низких температурных режимов. Калориферы водяные и паровые для сушки
-            материалов.
-          </p>
-        </div>
-        <div className="flex gap-4 border px-4 py-3 text-[15px]">
-          <img src="/img/search/kalorifer_model.png" className="h-16" />
-          <p>
-            <a className="text-primary-dark cursor-pointer">
-              Производство калориферов
-            </a>
-            . Назначение калориферов. Конструкция калориферов. Применение
-            калориферов. Типы и виды калориферов. Калориферы для низких
-            температурных режимов. Калориферы водяные и паровые для сушки
-            материалов.
-          </p>
-        </div>
-        <div className="flex gap-4 border px-4 py-3 text-[15px]">
-          <img src="/img/search/kalorifer_model.png" className="h-16" />
-          <p>
-            <a className="text-primary-dark cursor-pointer">
-              Производство калориферов
-            </a>
-            . Назначение калориферов. Конструкция калориферов. Применение
-            калориферов. Типы и виды калориферов. Калориферы для низких
-            температурных режимов. Калориферы водяные и паровые для сушки
-            материалов.
-          </p>
-        </div>
-        <div className="flex gap-4 border px-4 py-3 text-[15px]">
-          <img src="/img/search/kalorifer_model.png" className="h-16" />
-          <p>
-            <a className="text-primary-dark cursor-pointer">
-              Производство калориферов
-            </a>
-            . Назначение калориферов. Конструкция калориферов. Применение
-            калориферов. Типы и виды калориферов. Калориферы для низких
-            температурных режимов. Калориферы водяные и паровые для сушки
-            материалов.
-          </p>
-        </div>
-        <div className="flex gap-4 border px-4 py-3 text-[15px]">
-          <img src="/img/search/kalorifer_model.png" className="h-16" />
-          <p>
-            <a className="text-primary-dark cursor-pointer">
-              Производство калориферов
-            </a>
-            . Назначение калориферов. Конструкция калориферов. Применение
-            калориферов. Типы и виды калориферов. Калориферы для низких
-            температурных режимов. Калориферы водяные и паровые для сушки
-            материалов.
-          </p>
-        </div>
-        <div className="flex gap-4 border px-4 py-3 text-[15px]">
-          <img src="/img/search/kalorifer_model.png" className="h-16" />
-          <p>
-            <a className="text-primary-dark cursor-pointer">
-              Производство калориферов
-            </a>
-            . Назначение калориферов. Конструкция калориферов. Применение
-            калориферов. Типы и виды калориферов. Калориферы для низких
-            температурных режимов. Калориферы водяные и паровые для сушки
-            материалов.
-          </p>
-        </div>
-        <div className="flex gap-4 border px-4 py-3 text-[15px]">
-          <img src="/img/search/kalorifer_model.png" className="h-16" />
-          <p>
-            <a className="text-primary-dark cursor-pointer">
-              Производство калориферов
-            </a>
-            . Назначение калориферов. Конструкция калориферов. Применение
-            калориферов. Типы и виды калориферов. Калориферы для низких
-            температурных режимов. Калориферы водяные и паровые для сушки
-            материалов.
-          </p>
-        </div>
-        <div className="flex gap-4 border px-4 py-3 text-[15px]">
-          <img src="/img/search/kalorifer_model.png" className="h-16" />
-          <p>
-            <a className="text-primary-dark cursor-pointer">
-              Производство калориферов
-            </a>
-            . Назначение калориферов. Конструкция калориферов. Применение
-            калориферов. Типы и виды калориферов. Калориферы для низких
-            температурных режимов. Калориферы водяные и паровые для сушки
-            материалов.
-          </p>
-        </div>
-      </div> */}
     </main>
   );
 }
@@ -305,7 +235,7 @@ const waterHeaterEntries: TechEntry[] = [
   {
     url: "/ao2-ksk-kpsk",
     img: {
-      url: "/img/search/kalorifer_model_voda.png",
+      url: "/img/search/agregat_model.png",
       alt: "Приточные водяные калориферы",
     },
     title: "Воздушно-отопительные агрегаты АО2 водяные",
@@ -315,7 +245,7 @@ const waterHeaterEntries: TechEntry[] = [
   {
     url: "/avo-tvv-kp",
     img: {
-      url: "/img/search/kalorifer_model_voda.png",
+      url: "/img/search/agregat_model.png",
       alt: "Приточные водяные калориферы",
     },
     title: "Агрегаты воздушного отопления АВО ХЛ водяные",
@@ -325,7 +255,7 @@ const waterHeaterEntries: TechEntry[] = [
   {
     url: "/std300-ksk-kpsk",
     img: {
-      url: "/img/search/kalorifer_model_voda.png",
+      url: "/img/search/agregat_std_model.png",
       alt: "Приточные водяные калориферы",
     },
     title: "Агрегаты отопительные водяные СТД-300",
@@ -347,7 +277,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/kalorifer-par#anchor1",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Теплоноситель водяной пар для парового калорифера",
@@ -407,7 +337,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/ao2-kpsk-ksk",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/search/agregat_model.png",
       alt: "Паровые калориферы",
     },
     title: "Воздушно-отопительные агрегаты АО2 паровые",
@@ -417,7 +347,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/avo-tvv-kp",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/search/agregat_model.png",
       alt: "Паровые калориферы",
     },
     title: "Агрегаты воздушного отопления АВО ХЛ паровые",
@@ -427,7 +357,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/std300-tvv-kp",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/search/agregat_std_model.png",
       alt: "Паровые калориферы",
     },
     title: "Агрегаты отопительные паровые СТД-300",
@@ -437,7 +367,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/podbor-raschet-kaloriferov",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Подробный поэтапный расчет и подбор паровых калориферов",
@@ -447,7 +377,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/podbor-raschet-kaloriferov#anchor1",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Расчет тепловой мощности для нагрева воздуха паровым калорифером",
@@ -457,7 +387,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/podbor-raschet-kaloriferov#anchor2",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Расчет площади фронтального сечения парового калорифера",
@@ -467,7 +397,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/podbor-raschet-kaloriferov#anchor3",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Расчет массовой скорости воздуха для паровых калориферов",
@@ -477,7 +407,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/podbor-raschet-kaloriferov#anchor4",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Расчет расхода пара для нагрева воздуха паровым калорифером",
@@ -487,7 +417,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/podbor-raschet-kaloriferov#anchor6",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Расчет среднего температурного напора паровых калориферов",
@@ -497,7 +427,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/podbor-raschet-kaloriferov#anchor12",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Расчет и подбор паровых калориферов для технологического нагрева",
@@ -507,7 +437,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/koefficient-teploperedachi-parovyh-kaloriferov",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Расчет коэффициента теплопередачи паровых калориферов",
@@ -517,7 +447,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Расчет аэродинамического сопротивления паровых калориферов",
@@ -527,7 +457,7 @@ const steamHeaterEntries: TechEntry[] = [
   {
     url: "/paroprovod",
     img: {
-      url: "/img/search/kalorifer_model_par.png",
+      url: "/img/tehnicheskaya/kalorifer_par_podbor.png",
       alt: "Паровые калориферы",
     },
     title: "Расчет и подбор диаметра паропровода",
