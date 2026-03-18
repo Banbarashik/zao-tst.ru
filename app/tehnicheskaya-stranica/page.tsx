@@ -1,14 +1,47 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
 import { TehnicheskayaSearchForm } from "@/components/tehnicheskayaSearchForm";
+import Heading from "@/components/general_pages/heading";
+
+export const metadata: Metadata = {
+  title: "Подбор и изготовление калориферов и воздухонагревателей",
+  description:
+    "Расчет и подбор водяных, паровых и электрических воздухонагревателей. Инженерная поддержка и техническое сопровождение. Чертежи и модели для проектирования",
+  keywords: "",
+};
 
 export default function TehnicheskayaStranica() {
   return (
-    <main className="3xl:px-0 mx-auto w-full max-w-336 space-y-6 px-2 pt-6 pb-14 sm:pt-14 lg:px-6 xl:px-10">
+    <main className="3xl:px-0 mx-auto w-full max-w-336 space-y-10 px-2 pt-6 pb-14 sm:pt-14 lg:px-6 xl:px-10">
+      <Heading lvl={1} text="Производство и расчет воздухонагревателей" />
       <TehnicheskayaSearchForm />
-      <TechEntries entries={waterHeaterEntries} />
-      <div className="space-y-3">
+      <section>
+        <Heading
+          lvl={2}
+          text="Расчет и подбор водяных воздухонагревателей"
+          className="mb-4"
+        />
+        <TechEntries entries={waterHeaterEntries} />
+      </section>
+      <section>
+        <Heading
+          lvl={2}
+          text="Расчет и подбор паровых воздухонагревателей"
+          className="mb-4"
+        />
+        <TechEntries entries={steamHeaterEntries} />
+      </section>
+      <section>
+        <Heading
+          lvl={2}
+          text="Расчет и подбор электрических воздухонагревателей"
+          className="mb-4"
+        />
+        <TechEntries entries={electroHeaterEntries} />
+      </section>
+      {/* <div className="space-y-3">
         <div className="flex gap-4 border px-4 py-3 text-[15px]">
           <img src="/img/search/kalorifer_model.png" className="h-16" />
           <p>
@@ -108,7 +141,7 @@ export default function TehnicheskayaStranica() {
             материалов.
           </p>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
