@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function TehnicheskayaStranica() {
   return (
-    <main className="3xl:px-0 @container mx-auto w-full max-w-336 space-y-10 px-2 pt-6 pb-14 sm:pt-14 lg:px-6 xl:px-10">
+    <main className="3xl:px-0 @container mx-auto w-full max-w-336 space-y-10 px-2 pt-6 pb-20 sm:pt-14 lg:px-6 xl:px-10">
       <TehnicheskayaSearchForm />
       <div>
         <Heading

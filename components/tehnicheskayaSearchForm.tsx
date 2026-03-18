@@ -28,12 +28,12 @@ export function TehnicheskayaSearchForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex w-160 gap-2">
+    <form onSubmit={handleSubmit} className="mb-8 flex w-full max-w-214 gap-2">
       <Input
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
-        placeholder="Поиск…"
+        placeholder="Поиск по всему сайту…"
         className="flex-1"
       />
       <Button type="submit">Найти</Button>
