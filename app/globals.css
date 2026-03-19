@@ -249,14 +249,14 @@ th {
   opacity: 1;
   outline: 0;
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
 }
 @media (width < 80rem) {
   .btn-flip {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .btn-flip:hover:after {

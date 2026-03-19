@@ -296,7 +296,6 @@ export default function HeaderWithSearch(): JSX.Element {
           <NavigationMenu />
           <ContactFormTrigger
             triggerBtnVariant="default"
-            triggerBtnSize="lg"
             triggerBtnClassName="h-12 px-3 cursor-pointer hover:bg-primary-dark text-base font-bold xl:text-xl border border-[#A5A5A5]"
             amountClassName="bg-accent absolute text-black right-0 bottom-0 inline-flex size-6 translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full text-sm font-semibold"
           />
