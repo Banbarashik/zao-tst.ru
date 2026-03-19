@@ -8,10 +8,11 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 
 export const metadata: Metadata = {
-  title: "Подбор и изготовление калориферов и воздухонагревателей",
+  title: "Расчет и изготовление калориферов и воздухонагревателей",
   description:
     "Расчет и подбор водяных, паровых и электрических воздухонагревателей. Инженерная поддержка и техническое сопровождение. Чертежи и модели для проектирования",
-  keywords: "",
+  keywords:
+    "расчет воздухонагревателя,расчет мощности воздухонагревателя,расчет воздухонагревателя приточной вентиляции",
 };
 
 export default function TehnicheskayaStranica() {
@@ -21,7 +22,7 @@ export default function TehnicheskayaStranica() {
       <div>
         <Heading
           lvl={1}
-          text="Производство и расчет воздухонагревателей"
+          text="Производство и подбор воздухонагревателей"
           className="mb-4"
         />
         <section className="space-y-6">
