@@ -120,8 +120,14 @@ function TechEntry({
 }: TechEntry) {
   return (
     <article className="hover:border-primary-dark border hover:bg-[#edeff4]">
-      <Link href={url} className="flex items-start gap-4 px-4 py-3">
-        <Image src={img} alt={title} width={100} height={1} />
+      <Link href={url} className="block items-start gap-4 px-4 py-3 sm:flex">
+        <Image
+          src={img}
+          alt={title}
+          width={100}
+          height={1}
+          className="float-left mr-4 sm:float-none sm:m-0"
+        />
         <div>
           <h3 className="text-primary-dark inline">{title}. </h3>
           <p className="inline text-[15px]">{description}</p>
