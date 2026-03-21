@@ -72,6 +72,7 @@ const formSchema = z.object({
         ? "Обязательное поле"
         : "Некорректная электронная почта",
   }), // E-mail
+  tel: z.string().max(200), // Номер телефона
   region: z.string().max(200), // Регион, город
   products: z.array(
     z.object({
@@ -135,6 +136,7 @@ export default function ContactForm({
         username: parsed?.username || "",
         company: parsed?.company || "",
         email: parsed?.email || "",
+        tel: parsed?.tel || "",
         region: parsed?.region || "",
         products: selectedProducts, // Always use current selection for product
         message: parsed?.message || "",
@@ -151,6 +153,7 @@ export default function ContactForm({
       username: "",
       company: "",
       email: "",
+      tel: "",
       region: "",
       products: selectedProducts,
       message: "",
@@ -237,6 +240,7 @@ export default function ContactForm({
         username: "",
         company: "",
         email: "",
+        tel: "",
         region: "",
         products: [],
         message: "",
@@ -390,6 +394,19 @@ export default function ContactForm({
                     <FormControl>
                       <Input type="email" {...field} />
                     </FormControl>
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="tel"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Номер телефона</FormLabel>
+                    <FormControl>
+                      <Input {...field} />
+                    </FormControl>
+                    <FormMessage />
                   </FormItem>
                 )}
               />
