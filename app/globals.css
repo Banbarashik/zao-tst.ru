@@ -370,18 +370,18 @@ th {
   overflow: hidden;
 }
 
-#button-7 {
+.button-7 {
   position: relative;
   cursor: pointer;
 }
 
-#button-7 span {
+.button-7 span {
   position: relative;
   left: 0;
   transition: all 0.35s ease-Out;
 }
 
-#dub-arrow {
+.dub-arrow {
   width: 100%;
   height: 100%;
   background: var(--accent);
@@ -395,10 +395,10 @@ th {
   bottom: 0;
 }
 
-#button-7:hover #dub-arrow {
+.button-7:hover .dub-arrow {
   left: 0;
 }
 
-#button-7:hover span {
+.button-7:hover span {
   left: 100%;
 }

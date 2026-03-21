@@ -95,15 +95,24 @@ export default function ContactsAndPricesPage() {
         </ProductParagraph>
 
         <div className="flex flex-col gap-8">
-          <Link
-            href="/documents/Price_list_zao_tst_2025.pdf"
-            className="button sm:w-60 sm:self-end"
-            id="button-7"
-            target="_blank"
-          >
-            <div id="dub-arrow">Скачать</div>
-            <span>Прайс-лист</span>
-          </Link>
+          <div className="flex flex-col justify-between gap-8 sm:flex-row">
+            <Link
+              href="/documents/Company_zao_tst_card.pdf"
+              className="button button-7 sm:w-76"
+              target="_blank"
+            >
+              <div className="dub-arrow">Скачать</div>
+              <span>Карточка предприятия</span>
+            </Link>
+            <Link
+              href="/documents/Price_list_zao_tst_2025.pdf"
+              className="button button-7 sm:w-60"
+              target="_blank"
+            >
+              <div className="dub-arrow">Скачать</div>
+              <span>Прайс-лист</span>
+            </Link>
+          </div>
           <h2 className="self-center font-bold uppercase sm:text-lg lg:text-xl xl:text-[22px]">
             Цена/прайс-лист калориферов
           </h2>
