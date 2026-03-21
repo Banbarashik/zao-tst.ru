@@ -76,31 +76,31 @@ export default function NavigationMenu({
                   </AccordionTrigger>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/"
+                      href="/produkciya"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Продукция Доставка
                     </Link>
                     <Link
-                      href="/"
+                      href="/kalorifery"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Калориферы
                     </Link>
                     <Link
-                      href="/"
+                      href="/otopitelnye-agregaty"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Агрегаты
                     </Link>
                     <Link
-                      href="/"
+                      href="/vozduchonagrevatelnye-ustanovki"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Установки
                     </Link>
                     <Link
-                      href="/"
+                      href="/kontakty-prajs"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Контакты Прайс-лист
@@ -123,25 +123,25 @@ export default function NavigationMenu({
                   </div>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down col-span-2 grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/"
+                      href="/kalorifery-voda#anchor1"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Калькулятор Вода
                     </Link>
                     <Link
-                      href="/"
+                      href="/elektronagrevateli#anchor1"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Калькулятор Электро
                     </Link>
                     <Link
-                      href="/"
+                      href="/kalorifery-par#anchor1"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Калькулятор Пар
                     </Link>
                     <Link
-                      href="/"
+                      href="/tehnicheskaya-stranica"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Техническая страница
@@ -162,25 +162,25 @@ export default function NavigationMenu({
                   </Link>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/"
+                      href="/catalog/pritochny-vodiany-kalorifery"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КПВС КПВУ
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/tvv"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       ТВВ
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/ksk"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КСК
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/kfb-a-m"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КФБ-А М
@@ -189,7 +189,7 @@ export default function NavigationMenu({
                 </AccordionItem>
                 <AccordionItem value="steam" className="contents border-0">
                   <Link
-                    href="/"
+                    href="/catalog/parovy-kalorifery"
                     className="col-span-1 [&:has(>h3[data-state=closed])]:col-start-2 [&:has(>h3[data-state=closed])]:row-start-1"
                   >
                     <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
@@ -198,25 +198,25 @@ export default function NavigationMenu({
                   </Link>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down col-span-2 grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/"
+                      href="/catalog/pritochny-parovy-kalorifery"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КППС КППУ
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/kp"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КП
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/kpsk"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КПСК
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/kfb-a-p"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КФБ-А П
@@ -234,37 +234,37 @@ export default function NavigationMenu({
                   </Link>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/"
+                      href="/catalog/ao2-v"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       АО2 ВОДА
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/ao2-p"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       АО2 ПАР
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/avo-tvv"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       АВО ХЛ ВОДА
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/avo-kp"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       АВО ХЛ ПАР
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/std300-v"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       СТД-300 ВОДА
                     </Link>
                     <Link
-                      href="/"
+                      href="/catalog/std300-p"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       СТД-300 ПАР
