@@ -418,7 +418,7 @@ const electroHeaterEntries: TechEntry[] = [
       "• Конструктивные модели шкафов управления • Порядок работы шкафа управления электрическим калорифером • Пускозащитная аппаратура • Электрическая схема подключения шкафов ШУК",
   },
   {
-    url: "/teny-orebrenny-e",
+    url: "/teny-orebrenny'e",
     img: "/img/tehnicheskaya/electro_model_tenr.png",
     title: "ТЭНы оребренные воздушные",
     description:
