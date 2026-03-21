@@ -71,7 +71,7 @@ export default function NavigationMenu({
                   value="produkciya-zayavka"
                   className="contents border-0"
                 >
-                  <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
+                  <AccordionTrigger className="col-span-1 justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
                     Продукция Заявка
                   </AccordionTrigger>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
@@ -112,13 +112,42 @@ export default function NavigationMenu({
                     />
                   </AccordionContent>
                 </AccordionItem>
-                <div className="col-start-2 row-start-1 flex flex-1/2 border border-[#dcdcdc] bg-[#e4e4e4] py-4 data-[state=open]:bg-[#ebebeb]">
-                  <ContactFormTrigger
-                    hasCloseBtn
-                    triggerBtnClassName="text-primary max-[350px]:text-xs w-full h-full"
-                    amountClassName="absolute max-[350px]:text-[10px] border border-primary text-primary right-0 -translate-x-6 -translate-y-2 inline-flex size-4 items-center justify-center rounded-full text-[10px]"
-                  />
-                </div>
+                <AccordionItem
+                  value="calculators"
+                  className="contents border-0"
+                >
+                  <div className="col-span-1 [&:has(>h3[data-state=closed])]:col-start-2 [&:has(>h3[data-state=closed])]:row-start-1">
+                    <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
+                      Калькуляторы подбора
+                    </AccordionTrigger>
+                  </div>
+                  <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down col-span-2 grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
+                    <Link
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      Калькулятор Вода
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      Калькулятор Электро
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      Калькулятор Пар
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      Техническая страница
+                    </Link>
+                  </AccordionContent>
+                </AccordionItem>
               </div>
 
               <div className="grid grid-cols-2 border-b">
