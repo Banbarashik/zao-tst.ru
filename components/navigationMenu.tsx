@@ -77,31 +77,31 @@ export default function NavigationMenu({
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
                       href="/produkciya"
-                      className="block border border-[#efefef] px-4 py-3"
+                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
                     >
                       Продукция Доставка
                     </Link>
                     <Link
                       href="/kalorifery"
-                      className="block border border-[#efefef] px-4 py-3"
+                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
                     >
                       Калориферы
                     </Link>
                     <Link
                       href="/otopitelnye-agregaty"
-                      className="block border border-[#efefef] px-4 py-3"
+                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
                     >
                       Агрегаты
                     </Link>
                     <Link
                       href="/vozduchonagrevatelnye-ustanovki"
-                      className="block border border-[#efefef] px-4 py-3"
+                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
                     >
                       Установки
                     </Link>
                     <Link
                       href="/kontakty-prajs"
-                      className="block border border-[#efefef] px-4 py-3"
+                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
                     >
                       Контакты Прайс-лист
                     </Link>
@@ -124,25 +124,25 @@ export default function NavigationMenu({
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down col-span-2 grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
                       href="/kalorifery-voda#anchor1"
-                      className="block border border-[#efefef] px-4 py-3"
+                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
                     >
                       Калькулятор Вода
                     </Link>
                     <Link
                       href="/elektronagrevateli#anchor1"
-                      className="block border border-[#efefef] px-4 py-3"
+                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
                     >
                       Калькулятор Электро
                     </Link>
                     <Link
                       href="/kalorifery-par#anchor1"
-                      className="block border border-[#efefef] px-4 py-3"
+                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
                     >
                       Калькулятор Пар
                     </Link>
                     <Link
                       href="/tehnicheskaya-stranica"
-                      className="block border border-[#efefef] px-4 py-3"
+                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
                     >
                       Техническая страница
                     </Link>
