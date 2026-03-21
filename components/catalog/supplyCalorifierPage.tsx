@@ -57,50 +57,33 @@ export default async function SupplyCalorifierPage({
   const isKPVU = series === "КПВУ";
   const isKPPU = series === "КППУ";
 
-  // TODO create a prop 'mass' on the supply calorifier variant object
-  const threeRowsVariantMass = specsTableValues[specsTableValues.length - 2];
-  const fourRowsVariantHeatExchangeSurfaceArea =
-    specsTableValues[specsTableValues.length - 4];
-
   const threeRowsVariant = variants.find((v) => v.rows === 3);
-  const threeRowsVariantImage = {
-    url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`,
-    alt:
-      series === "КПВС" || series === "КППС"
-        ? `3 d модель ${heatCarrierAdj.gen} приточного калорифера. Масса ${threeRowsVariantMass} кг`
-        : series === "КПВУ" || series === "КППУ"
-          ? `Чертеж ${heatCarrierAdj.gen} воздухонагревателя. Вес ${threeRowsVariantMass} кг`
-          : "",
-    title:
-      series === "КПВС" || series === "КППС"
-        ? `${capitalizeFirst(heatCarrierAdj.nom)} калорифер. Производительность по воздуху ${airPower} м3/час. Тепловая мощность ${threeRowsVariant?.heatPower} кВт. Внутренние габариты ${internalSize} х ${internalSize} мм`
-        : series === "КПВУ"
-          ? `Воздухонагреватель. Объем приточного воздуха ${airPower} м3/час. Тепловая производительность ${threeRowsVariant?.heatPower} кВт. Габариты внутреннего сечения ${internalSize} х ${internalSize} мм`
-          : series === "КППУ"
-            ? `Приточный паровой нагреватель. Объем воздуха ${airPower} м3/час. Производительность ${threeRowsVariant?.heatPower} кВт. Габариты фронтального сечения ${internalSize} х ${internalSize} мм`
-            : "",
+  const fourRowsVariant = variants.find((v) => v.rows === 4);
+
+  const threeRowsImageMetadata = {
+    kpvs_kpps: {
+      alt: `Чертеж ${heatCarrierAdj.gen} калорифера для приточных систем трехрядного с тепловой мощностью ${threeRowsVariant?.heatPower} кВт`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} калорифер производительностью: ${airPower} м3/час; ${threeRowsVariant?.heatPower} кВт`,
+    },
+    kpvu_kppu: {
+      alt: `Чертеж ${heatCarrierAdj.gen} воздухонагревателя для приточных установок с мощностью по теплу ${threeRowsVariant?.heatPower} кВт`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель производительностью: ${airPower} м3/час; ${threeRowsVariant?.heatPower} кВт`,
+    },
   };
 
-  const fourRowsVariant = variants.find((v) => v.rows === 4);
-  const fourRowsVariantImage = {
-    url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`,
-    alt:
-      series === "КПВС" || series === "КППС"
-        ? `Чертеж ${heatCarrierAdj.gen} теплообменника. Площадь поверхности теплообмена ${fourRowsVariantHeatExchangeSurfaceArea} м2`
-        : series === "КПВУ"
-          ? `3 d модель воздухонагревателя. Площадь поверхности теплопередачи ${fourRowsVariantHeatExchangeSurfaceArea} м2`
-          : series === "КППУ"
-            ? `3 d модель парового воздухонагревателя. Площадь теплообмена ${fourRowsVariantHeatExchangeSurfaceArea} м2`
-            : "",
-    title:
-      series === "КПВС" || series === "КППС"
-        ? `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель. Объем нагреваемого воздуха ${airPower} м3/час. Производительность по теплу ${fourRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
-        : series === "КПВУ"
-          ? `Калорифер. Объем нагреваемого воздуха ${airPower} м3/час. Мощность по теплу ${fourRowsVariant?.heatPower} кВт. Внешние габаритные размеры ${size} х ${size} мм`
-          : series === "КППУ"
-            ? `Калорифер с теплоносителем пар. Производительность воздуха ${airPower} м3/час. Мощность ${fourRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
-            : "",
+  const fourRowsImageMetadata = {
+    kpvs_kpps: {
+      alt: `3 d модель ${heatCarrierAdj.gen} приточного калорифера четырехрядного производительностью ${airPower} м3/час`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} калорифер: объем ${airPower} м3/час; мощность ${fourRowsVariant?.heatPower} кВт`,
+    },
+    kpvu_kppu: {
+      alt: `3 d модель ${heatCarrierAdj.gen} приточного воздухонагревателя производительностью ${airPower} м3/час`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель: объем ${airPower} м3/час; мощность ${fourRowsVariant?.heatPower} кВт`,
+    },
   };
+
+  const threeRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`;
+  const fourRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`;
 
   const heatPowers = new Intl.ListFormat("ru-RU", {
     style: "long",
@@ -239,9 +222,17 @@ export default async function SupplyCalorifierPage({
           className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
         >
           <Image
-            src={threeRowsVariantImage.url}
-            alt={threeRowsVariantImage.alt}
-            title={threeRowsVariantImage.title}
+            src={threeRowsImage}
+            alt={
+              threeRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].alt
+            }
+            title={
+              threeRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].title
+            }
             fill
           />
         </div>
@@ -249,9 +240,17 @@ export default async function SupplyCalorifierPage({
           className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
         >
           <Image
-            src={fourRowsVariantImage.url}
-            alt={fourRowsVariantImage.alt}
-            title={fourRowsVariantImage.title}
+            src={fourRowsImage}
+            alt={
+              fourRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].alt
+            }
+            title={
+              fourRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].title
+            }
             fill
           />
         </div>

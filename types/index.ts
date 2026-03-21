@@ -74,6 +74,7 @@ export interface ContactFormData {
   username?: string;
   company?: string;
   email: string;
+  tel?: string;
   region?: string;
   products: SelectedProduct[];
   message: string;
