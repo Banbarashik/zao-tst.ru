@@ -68,37 +68,48 @@ export default function NavigationMenu({
             <Accordion type="single" collapsible>
               <div className="grid grid-cols-2 border-b">
                 <AccordionItem
-                  value="produkciya-price"
+                  value="produkciya-zayavka"
                   className="contents border-0"
                 >
                   <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
-                    Продукция Прайс-лист
+                    Продукция Заявка
                   </AccordionTrigger>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/produkciya"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
-                      Продукция
+                      Продукция Доставка
                     </Link>
                     <Link
-                      href="/tehnicheskaya-stranica"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
-                      Техническая страница
+                      Калориферы
                     </Link>
                     <Link
-                      href="/kontakty-prajs"
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      Агрегаты
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      Установки
+                    </Link>
+                    <Link
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       Контакты Прайс-лист
                     </Link>
-                    <Link
-                      href="/raschet-kaloriferov"
-                      className="block border border-[#efefef] px-4 py-3"
-                    >
-                      Расчет калориферов
-                    </Link>
+                    <ContactFormTrigger
+                      hasCloseBtn
+                      triggerBtnClassName="text-primary max-[350px]:text-xs w-full h-full"
+                      amountClassName="absolute max-[350px]:text-[10px] border border-primary text-primary right-0 -translate-x-6 -translate-y-2 inline-flex size-4 items-center justify-center rounded-full text-[10px]"
+                    />
                   </AccordionContent>
                 </AccordionItem>
                 <div className="col-start-2 row-start-1 flex flex-1/2 border border-[#dcdcdc] bg-[#e4e4e4] py-4 data-[state=open]:bg-[#ebebeb]">
