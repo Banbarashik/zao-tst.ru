@@ -58,8 +58,8 @@ export default async function SupplyCalorifierPage({
   const isKPPU = series === "КППУ";
 
   // TODO create a prop 'mass' on the supply calorifier variant object
-  const threeRowsVariantMass = specsTableValues[specsTableValues.length - 2];
-  const fourRowsVariantHeatExchangeSurfaceArea =
+  const fourRowsVariantMass = specsTableValues[specsTableValues.length - 2];
+  const threeRowsVariantHeatExchangeSurfaceArea =
     specsTableValues[specsTableValues.length - 4];
 
   const threeRowsVariant = variants.find((v) => v.rows === 3);
@@ -67,17 +67,19 @@ export default async function SupplyCalorifierPage({
     url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`,
     alt:
       series === "КПВС" || series === "КППС"
-        ? `3 d модель ${heatCarrierAdj.gen} приточного калорифера. Масса ${threeRowsVariantMass} кг`
-        : series === "КПВУ" || series === "КППУ"
-          ? `Чертеж ${heatCarrierAdj.gen} воздухонагревателя. Вес ${threeRowsVariantMass} кг`
-          : "",
+        ? `Чертеж ${heatCarrierAdj.gen} теплообменника. Площадь поверхности теплообмена ${threeRowsVariantHeatExchangeSurfaceArea} м2`
+        : series === "КПВУ"
+          ? `3 d модель воздухонагревателя. Площадь поверхности теплопередачи ${threeRowsVariantHeatExchangeSurfaceArea} м2`
+          : series === "КППУ"
+            ? `3 d модель парового воздухонагревателя. Площадь теплообмена ${threeRowsVariantHeatExchangeSurfaceArea} м2`
+            : "",
     title:
       series === "КПВС" || series === "КППС"
-        ? `${capitalizeFirst(heatCarrierAdj.nom)} калорифер. Производительность по воздуху ${airPower} м3/час. Тепловая мощность ${threeRowsVariant?.heatPower} кВт. Внутренние габариты ${internalSize} х ${internalSize} мм`
+        ? `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель. Объем нагреваемого воздуха ${airPower} м3/час. Производительность по теплу ${threeRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
         : series === "КПВУ"
-          ? `Воздухонагреватель. Объем приточного воздуха ${airPower} м3/час. Тепловая производительность ${threeRowsVariant?.heatPower} кВт. Габариты внутреннего сечения ${internalSize} х ${internalSize} мм`
+          ? `Калорифер. Объем нагреваемого воздуха ${airPower} м3/час. Мощность по теплу ${threeRowsVariant?.heatPower} кВт. Внешние габаритные размеры ${size} х ${size} мм`
           : series === "КППУ"
-            ? `Приточный паровой нагреватель. Объем воздуха ${airPower} м3/час. Производительность ${threeRowsVariant?.heatPower} кВт. Габариты фронтального сечения ${internalSize} х ${internalSize} мм`
+            ? `Калорифер с теплоносителем пар. Производительность воздуха ${airPower} м3/час. Мощность ${threeRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
             : "",
   };
 
@@ -86,19 +88,17 @@ export default async function SupplyCalorifierPage({
     url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`,
     alt:
       series === "КПВС" || series === "КППС"
-        ? `Чертеж ${heatCarrierAdj.gen} теплообменника. Площадь поверхности теплообмена ${fourRowsVariantHeatExchangeSurfaceArea} м2`
-        : series === "КПВУ"
-          ? `3 d модель воздухонагревателя. Площадь поверхности теплопередачи ${fourRowsVariantHeatExchangeSurfaceArea} м2`
-          : series === "КППУ"
-            ? `3 d модель парового воздухонагревателя. Площадь теплообмена ${fourRowsVariantHeatExchangeSurfaceArea} м2`
-            : "",
+        ? `3 d модель ${heatCarrierAdj.gen} приточного калорифера. Масса ${fourRowsVariantMass} кг`
+        : series === "КПВУ" || series === "КППУ"
+          ? `Чертеж ${heatCarrierAdj.gen} воздухонагревателя. Вес ${fourRowsVariantMass} кг`
+          : "",
     title:
       series === "КПВС" || series === "КППС"
-        ? `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель. Объем нагреваемого воздуха ${airPower} м3/час. Производительность по теплу ${fourRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
+        ? `${capitalizeFirst(heatCarrierAdj.nom)} калорифер. Производительность по воздуху ${airPower} м3/час. Тепловая мощность ${fourRowsVariant?.heatPower} кВт. Внутренние габариты ${internalSize} х ${internalSize} мм`
         : series === "КПВУ"
-          ? `Калорифер. Объем нагреваемого воздуха ${airPower} м3/час. Мощность по теплу ${fourRowsVariant?.heatPower} кВт. Внешние габаритные размеры ${size} х ${size} мм`
+          ? `Воздухонагреватель. Объем приточного воздуха ${airPower} м3/час. Тепловая производительность ${fourRowsVariant?.heatPower} кВт. Габариты внутреннего сечения ${internalSize} х ${internalSize} мм`
           : series === "КППУ"
-            ? `Калорифер с теплоносителем пар. Производительность воздуха ${airPower} м3/час. Мощность ${fourRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
+            ? `Приточный паровой нагреватель. Объем воздуха ${airPower} м3/час. Производительность ${fourRowsVariant?.heatPower} кВт. Габариты фронтального сечения ${internalSize} х ${internalSize} мм`
             : "",
   };
 
