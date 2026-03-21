@@ -249,7 +249,7 @@ const waterHeaterEntries: TechEntry[] = [
 const steamHeaterEntries: TechEntry[] = [
   {
     url: "/kalorifer-par",
-    img: "/img/tehnicheskaya/kalorifer_model_par.png",
+    img: "/img/tehnicheskaya/kalorifer_model_steam.png",
     title: "Паровые калориферы",
     description:
       "• Устройство и принцип работы парового калорифера • Поверхность нагрева и теплопередача паровоздушных нагревателей • Повышение максимальной эффективности и интенсификации теплообмена в работе парового воздухонагревателя • Модели теплообменников с теплоносителем насыщенный и перегретый пар",
@@ -319,7 +319,7 @@ const steamHeaterEntries: TechEntry[] = [
   },
   {
     url: "/podbor-raschet-kaloriferov",
-    img: "/img/tehnicheskaya/kalorifer_model_steam.png",
+    img: "/img/tehnicheskaya/kalorifer_par_model_podbor.png",
     title: "Подробный поэтапный расчет и подбор паровых калориферов",
     description:
       "• Таблицы и формулы для подбора паровых воздухонагревателей серии КПСк, КП и КФБ-А П • Расчетная температура воздуха для подбора паровых калориферов • Нахождение фактической тепловой производительности и расхода пара • Выбор оптимального варианта по установленному запасу площади поверхности теплообмена парового воздухонагревателя",
