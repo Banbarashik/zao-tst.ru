@@ -189,7 +189,7 @@ export default function NavigationMenu({
                 </AccordionItem>
                 <AccordionItem value="steam" className="contents border-0">
                   <Link
-                    href="/catalog/parovy-kalorifery"
+                    href="/"
                     className="col-span-1 [&:has(>h3[data-state=closed])]:col-start-2 [&:has(>h3[data-state=closed])]:row-start-1"
                   >
                     <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
@@ -198,40 +198,28 @@ export default function NavigationMenu({
                   </Link>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down col-span-2 grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/catalog/kpsk"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
-                      КПСк
+                      КППС КППУ
                     </Link>
                     <Link
-                      href="/kalorifery-par#anchor2"
-                      className="block border border-[#efefef] px-4 py-3 hover:bg-gray-100"
-                    >
-                      Калькулятор подбора
-                    </Link>
-                    <Link
-                      href="/catalog/kp"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КП
                     </Link>
                     <Link
-                      href="/catalog/kpps"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
-                      КППС
+                      КПСК
                     </Link>
                     <Link
-                      href="/catalog/kfb-a-p"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КФБ-А П
-                    </Link>
-                    <Link
-                      href="/catalog/kppu"
-                      className="block border border-[#efefef] px-4 py-3"
-                    >
-                      КППУ
                     </Link>
                   </AccordionContent>
                 </AccordionItem>
