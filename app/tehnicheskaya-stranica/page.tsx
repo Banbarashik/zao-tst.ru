@@ -419,7 +419,7 @@ const electroHeaterEntries: TechEntry[] = [
   },
   {
     url: "/teny-orebrenny-e",
-    img: "/img/tehnicheskaya/electro_model.png",
+    img: "/img/tehnicheskaya/electro_model_tenr.png",
     title: "ТЭНы оребренные воздушные",
     description:
       "• Назначение оребренных ТЭН • Конструкция оребренных воздушных электронагревателей • Принцип работы ТЭНР • Организация съема тепла • Скорость подачи воздуха",
