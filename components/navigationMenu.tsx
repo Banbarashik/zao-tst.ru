@@ -162,37 +162,25 @@ export default function NavigationMenu({
                   </Link>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/kalorifery-voda#anchor2"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
-                      Калькулятор подбора
+                      КПВС КПВУ
                     </Link>
                     <Link
-                      href="/catalog/ksk"
-                      className="block border border-[#efefef] px-4 py-3"
-                    >
-                      КСк
-                    </Link>
-                    <Link
-                      href="/catalog/kpvs"
-                      className="block border border-[#efefef] px-4 py-3"
-                    >
-                      КПВС
-                    </Link>
-                    <Link
-                      href="/catalog/tvv"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       ТВВ
                     </Link>
                     <Link
-                      href="/catalog/kpvu"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
-                      КПВУ
+                      КСК
                     </Link>
                     <Link
-                      href="/catalog/kfb-a-m"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       КФБ-А М
