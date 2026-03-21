@@ -282,28 +282,28 @@ export default function NavigationMenu({
                   </Link>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down col-span-2 grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/catalog/shuk"
-                      className="block border border-[#efefef] px-4 py-3"
-                    >
-                      ШУК
-                    </Link>
-                    <Link
                       href="/catalog/sfo"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       СФО
                     </Link>
                     <Link
-                      href="/catalog/teny"
+                      href="/catalog/shuk"
                       className="block border border-[#efefef] px-4 py-3"
                     >
-                      ТЭНР
+                      ШУК
                     </Link>
                     <Link
                       href="/catalog/sfotc"
                       className="block border border-[#efefef] px-4 py-3"
                     >
                       СФОЦ
+                    </Link>
+                    <Link
+                      href="/catalog/teny"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      ТЭНР
                     </Link>
                   </AccordionContent>
                 </AccordionItem>
