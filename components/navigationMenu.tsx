@@ -311,6 +311,12 @@ export default function NavigationMenu({
         data-back="Паровые калориферы"
         data-front="Калькулятор подбора"
       />
+      <Link
+        href="/"
+        className="btn-flip w-min text-sm xl:text-base"
+        data-back="Электро калориферы"
+        data-front="Калькулятор подбора"
+      />
     </div>
   );
 }
