@@ -72,7 +72,10 @@ export default function NavigationMenu({
                   className="contents border-0"
                 >
                   <AccordionTrigger className="col-span-1 justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
-                    Продукция Заявка
+                    <span>
+                      <span>Продукция </span>
+                      <span className="text-primary-dark">Заявка</span>
+                    </span>
                   </AccordionTrigger>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
