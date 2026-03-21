@@ -87,7 +87,7 @@ export default function OtopitelnyeAgregatyPage() {
               fill
             />
           </div>
-          <div className="relative aspect-24/17 w-full">
+          <div className="relative aspect-square w-full">
             <Image
               src="/img/produkciya/agregaty/agregaty_vodianye_parovye.png"
               alt="Паровой отопительный агрегат - конструкция"
