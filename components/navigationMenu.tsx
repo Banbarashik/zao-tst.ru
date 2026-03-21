@@ -280,21 +280,21 @@ export default function NavigationMenu({
     <div className="flex">
       <Link
         href="/produkciya"
-        className="flex flex-col justify-center border border-[#A5A5A5] bg-[#e3e3e3] px-4 text-center text-(--primary-darker) uppercase shadow-[0px_1px_0_#bdbdbd,2px_4px_6px_#dbdbdb] transition-all duration-300 hover:border-[rgba(0,0,0,0.2)] hover:bg-[#d1d1d1] hover:text-[#8f6063] hover:shadow-[1px_1px_2px_rgba(255,255,255,0.95)] hover:text-shadow-[-1px_-1px_0_#b3b3b3] lg:text-xs xl:text-sm"
+        className="flex flex-col justify-center border border-[#A5A5A5] bg-[#e3e3e3] px-2 text-center text-[11px] text-(--primary-darker) uppercase shadow-[0px_1px_0_#bdbdbd,2px_4px_6px_#dbdbdb] transition-all duration-300 hover:border-[rgba(0,0,0,0.2)] hover:bg-[#d1d1d1] hover:text-[#8f6063] hover:shadow-[1px_1px_2px_rgba(255,255,255,0.95)] hover:text-shadow-[-1px_-1px_0_#b3b3b3] xl:px-4 xl:text-xs"
       >
         <div>Продукция</div>
         <div>Сертификаты</div>
       </Link>
       <Link
         href="/kontakty-prajs"
-        className="flex flex-col justify-center border border-[#A5A5A5] bg-[#e3e3e3] px-4 text-center text-(--primary-darker) uppercase shadow-[0px_1px_0_#bdbdbd,2px_4px_6px_#dbdbdb] transition-all duration-300 hover:border-[rgba(0,0,0,0.2)] hover:bg-[#d1d1d1] hover:text-[#8f6063] hover:shadow-[1px_1px_2px_rgba(255,255,255,0.95)] hover:text-shadow-[-1px_-1px_0_#b3b3b3] lg:text-xs xl:text-sm"
+        className="flex flex-col justify-center border border-[#A5A5A5] bg-[#e3e3e3] px-2 text-center text-[11px] text-(--primary-darker) uppercase shadow-[0px_1px_0_#bdbdbd,2px_4px_6px_#dbdbdb] transition-all duration-300 hover:border-[rgba(0,0,0,0.2)] hover:bg-[#d1d1d1] hover:text-[#8f6063] hover:shadow-[1px_1px_2px_rgba(255,255,255,0.95)] hover:text-shadow-[-1px_-1px_0_#b3b3b3] xl:px-4 xl:text-xs"
       >
         <div>Контакты</div>
         <div>Прайс-лист</div>
       </Link>
       <Link
         href="/tehnicheskaya-stranica"
-        className="flex flex-col justify-center border border-[#A5A5A5] bg-[#e3e3e3] px-4 text-center text-(--primary-darker) uppercase shadow-[0px_1px_0_#bdbdbd,2px_4px_6px_#dbdbdb] transition-all duration-300 hover:border-[rgba(0,0,0,0.2)] hover:bg-[#d1d1d1] hover:text-[#8f6063] hover:shadow-[1px_1px_2px_rgba(255,255,255,0.95)] hover:text-shadow-[-1px_-1px_0_#b3b3b3] lg:text-xs xl:text-sm"
+        className="flex flex-col justify-center border border-[#A5A5A5] bg-[#e3e3e3] px-2 text-center text-[11px] text-(--primary-darker) uppercase shadow-[0px_1px_0_#bdbdbd,2px_4px_6px_#dbdbdb] transition-all duration-300 hover:border-[rgba(0,0,0,0.2)] hover:bg-[#d1d1d1] hover:text-[#8f6063] hover:shadow-[1px_1px_2px_rgba(255,255,255,0.95)] hover:text-shadow-[-1px_-1px_0_#b3b3b3] xl:px-4 xl:text-xs"
       >
         <div>Техническая</div>
         <div>страница</div>
@@ -312,7 +312,7 @@ export default function NavigationMenu({
         data-front="Калькулятор подбора"
       />
       <Link
-        href="/"
+        href="/elektronagrevateli#anchor1"
         className="btn-flip w-min text-sm xl:text-base"
         data-back="Электро калориферы"
         data-front="Калькулятор подбора"
