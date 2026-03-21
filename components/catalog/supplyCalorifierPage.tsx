@@ -57,12 +57,8 @@ export default async function SupplyCalorifierPage({
   const isKPVU = series === "КПВУ";
   const isKPPU = series === "КППУ";
 
-  // TODO create a prop 'mass' on the supply calorifier variant object
   const threeRowsVariant = variants.find((v) => v.rows === 3);
   const fourRowsVariant = variants.find((v) => v.rows === 4);
-  const threeRowsVariantHeatExchangeSurfaceArea =
-    specsTableValues[specsTableValues.length - 4];
-  const fourRowsVariantMass = specsTableValues[specsTableValues.length - 2];
 
   const threeRowsImageMetadata = {
     kpvs_kpps: {
@@ -86,13 +82,8 @@ export default async function SupplyCalorifierPage({
     },
   };
 
-  const threeRowsVariantImage = {
-    url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`,
-  };
-
-  const fourRowsVariantImage = {
-    url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`,
-  };
+  const threeRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`;
+  const fourRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`;
 
   const heatPowers = new Intl.ListFormat("ru-RU", {
     style: "long",
@@ -231,9 +222,17 @@ export default async function SupplyCalorifierPage({
           className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
         >
           <Image
-            src={threeRowsVariantImage.url}
-            alt={threeRowsVariantImage.alt}
-            title={threeRowsVariantImage.title}
+            src={threeRowsImage}
+            alt={
+              threeRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].alt
+            }
+            title={
+              threeRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].title
+            }
             fill
           />
         </div>
@@ -241,9 +240,17 @@ export default async function SupplyCalorifierPage({
           className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
         >
           <Image
-            src={fourRowsVariantImage.url}
-            alt={fourRowsVariantImage.alt}
-            title={fourRowsVariantImage.title}
+            src={fourRowsImage}
+            alt={
+              fourRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].alt
+            }
+            title={
+              fourRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].title
+            }
             fill
           />
         </div>
