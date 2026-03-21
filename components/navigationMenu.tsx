@@ -234,16 +234,40 @@ export default function NavigationMenu({
                   </Link>
                   <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
                     <Link
-                      href="/catalog/vodiany-agregaty"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
-                      Водяные АО АВО СТД
+                      АО2 ВОДА
                     </Link>
                     <Link
-                      href="/catalog/parovy-agregaty"
+                      href="/"
                       className="block border border-[#efefef] px-4 py-3"
                     >
-                      Паровые АО АВО СТД
+                      АО2 ПАР
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      АВО ХЛ ВОДА
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      АВО ХЛ ПАР
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      СТД-300 ВОДА
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block border border-[#efefef] px-4 py-3"
+                    >
+                      СТД-300 ПАР
                     </Link>
                   </AccordionContent>
                 </AccordionItem>
