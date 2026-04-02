@@ -131,7 +131,7 @@ export default async function SupplyCalorifierPage({
 
   const modelLinks = variants.map((v) => ({
     text: `${series} ${size}x${size}_${v.rows}`,
-    url: `/models/${seriesEng[series]}/kalorifer_${seriesEng[series]}-${size}_${v.rows}.zip`,
+    path: `/${seriesEng[series]}/kalorifer_${seriesEng[series]}-${size}_${v.rows}.zip`,
   }));
 
   return (
