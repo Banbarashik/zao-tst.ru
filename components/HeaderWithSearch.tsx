@@ -12,7 +12,8 @@ import { PhoneCall, Mail, Search, X } from "lucide-react";
 import Logo from "@/components/ui/logo";
 import NavigationMenu from "@/components/navigationMenu";
 import ContactFormTrigger from "@/components/contactFormTrigger";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
+import { AuthButton } from "@/components/authButton";
 
 // Define the type for search index items
 interface SearchItem {
@@ -312,6 +313,8 @@ export default function HeaderWithSearch(): JSX.Element {
             className="group-hover:stroke-3"
           />
         </button>
+
+        <AuthButton />
       </nav>
 
       {/* Search block: input row stays in-flow; results overlay absolute so no layout shift */}
