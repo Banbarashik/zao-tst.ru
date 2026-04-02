@@ -9,6 +9,8 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы водяные КФБ-А М",
@@ -29,15 +31,19 @@ const linkButtons = [
     name: "Каталог водяных калориферов КФБ",
     url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист калориферов КФБ-А М",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 
-export default function KaloriferyKFBAPage() {
+export default async function KaloriferyKFBAPage() {
+  const tableHtml = await getLegacyHtml("/legacy/table-kalorifery-kfb-a.html");
+
   return (
     <>
       <Heading lvl={1} text="Калориферы КФБ-А М водяные" />
@@ -220,11 +226,9 @@ export default function KaloriferyKFBAPage() {
           width={968}
           height={1}
         />
-        <iframe
-          src="/legacy/table-kalorifery-kfb-a.html"
-          title="Калориферы КФБ-А3 М Калориферы КФБ-А4 М"
-          className="h-107 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
+        </div>
         <ProductParagraph>
           Структура условного обозначения водяных калориферов КФБ-А производства
           ООО «Т.С.Т.». Калорифер КФБ-12 А3 УХЛ3 М (ТУ 4863-002-55613706-02):

@@ -36,11 +36,13 @@ const linkButtons = [
     name: "Каталог агрегатов паровых СТД-300",
     url: "/documents/Agregat_STD-300-HL_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист агрегатов СТД-300 хл",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 

@@ -9,6 +9,8 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы водяные ТВВ",
@@ -29,15 +31,19 @@ const linkButtons = [
     name: "Каталог водяных калориферов ТВВ",
     url: "/documents/Kalorifer_TVV_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист калориферов ТВВ",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 
-export default function KaloriferyTVVPage() {
+export default async function KaloriferyTVVPage() {
+  const [tableHtml] = await getLegacyHtml("/legacy/table-kalorifery-tvv.html");
+
   return (
     <>
       <Heading lvl={1} text="Калориферы ТВВ водяные" />
@@ -160,10 +166,9 @@ export default function KaloriferyTVVPage() {
           height={1}
           className="mb-3"
         />
-        <iframe
-          src="/legacy/table-kalorifery-tvv.html"
-          className="h-74 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
+        </div>
         <ProductParagraph>
           Структура условного обозначения водяных калориферов ТВВ производства
           ООО «Т.С.Т.». Калорифер ТВВ 409-02 ХЛ3 (ТУ 4863-002-55613706-02): ТВВ

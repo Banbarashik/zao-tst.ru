@@ -9,6 +9,8 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Электрокалориферы СФО. Производство",
@@ -27,15 +29,22 @@ const linkButtons = [
     name: "Каталог электрокалориферов СФО",
     url: "/documents/Electrokalorifer_SFO_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист калориферов СФО",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 
-export default function KaloriferySFO() {
+export default async function KaloriferySFO() {
+  const [calculator1Html, calculator2Html] = await getLegacyHtmls([
+    "/legacy/calculator-elektronagrevateli-1.html",
+    "/legacy/calculator-elektronagrevateli-2.html",
+  ]);
+
   return (
     <>
       <Heading lvl={1} text="Электрические калориферы СФО" />
@@ -160,11 +169,7 @@ export default function KaloriferySFO() {
           требуемая мощность электрического нагревателя для соблюдения заданных
           условий.
         </ProductParagraph>
-        <iframe
-          src="/legacy/calculator-elektronagrevateli-1.html"
-          title="Калькулятор расчета мощности электрического калорифера"
-          className="w-full min-[320px]:h-71 min-[357px]:h-66 min-[519px]:h-62 min-[523px]:h-57 min-[534px]:h-53 min-[609px]:h-48"
-        />
+        <LegacyHtml html={calculator1Html} className="legacy-calculator" />
       </section>
 
       <section>
@@ -179,11 +184,7 @@ export default function KaloriferySFO() {
           По результатам онлайн-расчета представлена температура выходящего
           нагретого воздуха.
         </ProductParagraph>
-        <iframe
-          src="/legacy/calculator-elektronagrevateli-2.html"
-          title="Калькулятор расчета температуры воздуха на выходе из электрокалорифера"
-          className="w-full min-[320px]:h-71 min-[334px]:h-66 min-[500px]:h-62 min-[534px]:h-57 min-[542px]:h-53 min-[587px]:h-48"
-        />
+        <LegacyHtml html={calculator2Html} className="legacy-calculator" />
       </section>
 
       <section>

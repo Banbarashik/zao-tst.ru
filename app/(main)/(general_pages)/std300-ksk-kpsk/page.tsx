@@ -36,11 +36,13 @@ const linkButtons = [
     name: "Каталог водяных агрегатов",
     url: "/documents/Agregat_STD-300_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист агрегатов СТД-300 в",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 

@@ -166,12 +166,12 @@ export default function ElectroEquipmentPage({ product }) {
     {
       name: tableLinkText[preciseCategory],
       url: "/" + tableLinkUrl[preciseCategory],
-      openNewTab: false,
     },
     {
       name: catalogLinkText[preciseCategory],
       url: "/documents/" + catalogLinkUrl[preciseCategory],
       openNewTab: true,
+      goal: "open_pdf",
     },
   ];
 

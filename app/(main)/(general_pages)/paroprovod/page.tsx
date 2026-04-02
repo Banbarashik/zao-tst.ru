@@ -915,10 +915,12 @@ export default function ParoprovodPage() {
             {
               name: "Расчет расхода пара",
               url: "/podbor-raschet-kaloriferov#anchor4",
+              hiddenText: "Расчет расхода пара для нагрева воздуха",
             },
             {
               name: "Расчет паровых калориферов",
               url: "/podbor-raschet-kaloriferov",
+              hiddenText: "Подбор паровых воздухонагревателей",
             },
           ]}
         />
@@ -970,10 +972,13 @@ export default function ParoprovodPage() {
           {
             name: "Паровые воздухонагреватели",
             url: "/kalorifer-par",
+            hiddenText:
+              "Модели паровых калориферов с теплоносителем водяной пар",
           },
           {
             name: "Производство калориферов",
             url: "/kalorifery",
+            hiddenText: "Производство водяных и паровых калориферов",
           },
         ]}
       />

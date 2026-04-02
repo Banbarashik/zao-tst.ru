@@ -7,10 +7,12 @@ import { capitalizeFirst } from "@/lib/utils";
 import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
 
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import { ModelDownloadButton } from "@/components/catalog/modelDownloadButton";
 import ProductCard from "@/components/catalog/productCard";
-import ProductHeader from "@/components/catalog/productHeader";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
+import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 const seriesEng = {
   КПВС: "kpvs",
@@ -19,7 +21,7 @@ const seriesEng = {
   КППУ: "kppu",
 };
 
-export default function SupplyCalorifierPage({
+export default async function SupplyCalorifierPage({
   product,
 }: {
   product: SupplyCalorifier;
@@ -38,7 +40,10 @@ export default function SupplyCalorifierPage({
     specsTableValues,
     calculator,
   } = product;
+  const calculatorHtml = await getLegacyHtml(calculator);
+
   const internalSize = size - 72;
+  const frameSize = Math.ceil(size / 50) * 50;
 
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
 
@@ -47,55 +52,94 @@ export default function SupplyCalorifierPage({
 
   const isWater = heatCarrier === "water";
   const isSteam = heatCarrier === "steam";
-
-  // TODO create a prop 'mass' on the supply calorifier variant object
-  const threeRowsVariantMass = specsTableValues[specsTableValues.length - 2];
-  const fourRowsVariantHeatExchangeSurfaceArea =
-    specsTableValues[specsTableValues.length - 4];
+  const isKPVS = series === "КПВС";
+  const isKPPS = series === "КППС";
+  const isKPVU = series === "КПВУ";
+  const isKPPU = series === "КППУ";
 
   const threeRowsVariant = variants.find((v) => v.rows === 3);
-  const threeRowsVariantImage = {
-    url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`,
-    alt:
-      series === "КПВС" || series === "КППС"
-        ? `3 d модель ${heatCarrierAdj.gen} приточного калорифера. Масса ${threeRowsVariantMass} кг`
-        : series === "КПВУ" || series === "КППУ"
-          ? `Чертеж ${heatCarrierAdj.gen} воздухонагревателя. Вес ${threeRowsVariantMass} кг`
-          : "",
-    title:
-      series === "КПВС" || series === "КППС"
-        ? `${capitalizeFirst(heatCarrierAdj.nom)} калорифер. Производительность по воздуху ${airPower} м3/час. Тепловая мощность ${threeRowsVariant?.heatPower} кВт. Внутренние габариты ${internalSize} х ${internalSize} мм`
-        : series === "КПВУ"
-          ? `Воздухонагреватель. Объем приточного воздуха ${airPower} м3/час. Тепловая производительность ${threeRowsVariant?.heatPower} кВт. Габариты внутреннего сечения ${internalSize} х ${internalSize} мм`
-          : series === "КППУ"
-            ? `Приточный паровой нагреватель. Объем воздуха ${airPower} м3/час. Производительность ${threeRowsVariant?.heatPower} кВт. Габариты фронтального сечения ${internalSize} х ${internalSize} мм`
-            : "",
+  const fourRowsVariant = variants.find((v) => v.rows === 4);
+
+  const threeRowsImageMetadata = {
+    kpvs_kpps: {
+      alt: `Чертеж ${heatCarrierAdj.gen} калорифера для приточных систем трехрядного с тепловой мощностью ${threeRowsVariant?.heatPower} кВт`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} калорифер производительностью: ${airPower} м3/час; ${threeRowsVariant?.heatPower} кВт`,
+    },
+    kpvu_kppu: {
+      alt: `Чертеж ${heatCarrierAdj.gen} воздухонагревателя для приточных установок с мощностью по теплу ${threeRowsVariant?.heatPower} кВт`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель производительностью: ${airPower} м3/час; ${threeRowsVariant?.heatPower} кВт`,
+    },
   };
 
-  const fourRowsVariant = variants.find((v) => v.rows === 4);
-  const fourRowsVariantImage = {
-    url: `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`,
-    alt:
-      series === "КПВС" || series === "КППС"
-        ? `Чертеж ${heatCarrierAdj.gen} теплообменника. Площадь поверхности теплообмена ${fourRowsVariantHeatExchangeSurfaceArea} м2`
-        : series === "КПВУ"
-          ? `3 d модель воздухонагревателя. Площадь поверхности теплопередачи ${fourRowsVariantHeatExchangeSurfaceArea} м2`
-          : series === "КППУ"
-            ? `3 d модель парового воздухонагревателя. Площадь теплообмена ${fourRowsVariantHeatExchangeSurfaceArea} м2`
-            : "",
-    title:
-      series === "КПВС" || series === "КППС"
-        ? `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель. Объем нагреваемого воздуха ${airPower} м3/час. Производительность по теплу ${fourRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
-        : series === "КПВУ"
-          ? `Калорифер. Объем нагреваемого воздуха ${airPower} м3/час. Мощность по теплу ${fourRowsVariant?.heatPower} кВт. Внешние габаритные размеры ${size} х ${size} мм`
-          : series === "КППУ"
-            ? `Калорифер с теплоносителем пар. Производительность воздуха ${airPower} м3/час. Мощность ${fourRowsVariant?.heatPower} кВт. Габаритные размеры ${size} х ${size} мм`
-            : "",
+  const fourRowsImageMetadata = {
+    kpvs_kpps: {
+      alt: `3 d модель ${heatCarrierAdj.gen} приточного калорифера четырехрядного производительностью ${airPower} м3/час`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} калорифер: объем ${airPower} м3/час; мощность ${fourRowsVariant?.heatPower} кВт`,
+    },
+    kpvu_kppu: {
+      alt: `3 d модель ${heatCarrierAdj.gen} приточного воздухонагревателя производительностью ${airPower} м3/час`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель: объем ${airPower} м3/час; мощность ${fourRowsVariant?.heatPower} кВт`,
+    },
   };
+
+  const threeRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`;
+  const fourRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`;
+
+  const heatPowers = new Intl.ListFormat("ru-RU", {
+    style: "long",
+    type: "conjunction",
+  }).format(variants.map((variant) => String(variant.heatPower)));
+
+  const modelText = (
+    <ProductParagraph className="mb-8">
+      {(isKPVS || isKPPS) && (
+        <>
+          Загрузить актуальные CAD-модели {isKPPS && "паровых"} калориферов{" "}
+          {shortName} можно по ссылке в верхней части страницы.{" "}
+          {isKPVS ? "Водяные воздухонагреватели" : "Воздухонагреватели"} с
+          тепловой мощностью {heatPowers} кВт специально разработаны для
+          приточных систем с производительностью по воздуху {airPower} м
+          <sup>3</sup>/час. {isKPVS ? "Внутренний" : "Внешний"} габаритный
+          размер по фланцам составляет{" "}
+          {isKPVS ? `${internalSize}x${internalSize}` : `${size}x${size}`} мм,
+          что позволяет применять данный {isKPPS && "паровой"} теплообменник для
+          монтажа в камеры и стандартные проемы размером {frameSize}х{frameSize}{" "}
+          мм.{" "}
+        </>
+      )}
+      {(isKPVU || isKPPU) && (
+        <>
+          Загрузить актуальные CAD-модели воздухонагревателей {shortName} можно
+          по ссылке в верхней части страницы.{" "}
+          {capitalizeFirst(heatCarrierAdj.plu)} калориферы с производительностью
+          по теплу {heatPowers} кВт специально разработаны для приточных систем
+          с объемом {isKPVU ? "нагреваемого" : "подогреваемого"} воздуха{" "}
+          {airPower} м{<sup>3</sup>}/час. Габаритные размеры по{" "}
+          {isKPVU ? "внутренним" : "внешним"} фланцам составляют{" "}
+          {isKPVU ? `${internalSize}x${internalSize}` : `${size}x${size}`} мм,
+          что позволяет задействовать данный теплообменник для монтажа в камеры
+          и стандартные проемы размером {frameSize}х{frameSize} мм.{" "}
+        </>
+      )}
+      <>
+        {isKPPU ? "Конструкторские чертежи" : "Чертежи"} предназначены для
+        использования в {isKPVU && "конструкторских"} проектах и подготовки
+        присоединяемых к {isKPVS && "водяному"} калориферу элементов вентиляции.
+      </>
+    </ProductParagraph>
+  );
+
+  const modelLinks = variants.map((v) => ({
+    text: `${series} ${size}x${size}_${v.rows}`,
+    url: `/models/${seriesEng[series]}/kalorifer_${seriesEng[series]}-${size}_${v.rows}.zip`,
+  }));
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
-      <ProductHeader product={product} />
+      <div className="mb-4 flex items-center justify-between gap-4">
+        <h1 className="text-xl font-bold uppercase">{product.name}</h1>
+        <ModelDownloadButton modelLinks={modelLinks} />
+      </div>
       <ProductParagraph className="mb-4">
         Приточный {heatCarrierAdj?.nom} калорифер {shortNameWithHyphen}{" "}
         выпускается в двух, трех и четырех рядном исполнении. Номинальная
@@ -128,16 +172,8 @@ export default function SupplyCalorifierPage({
         {isWater &&
           "Скорость теплоносителя в трубках: оптимальная 0.2-0.5 м/с, допустимая - 0.12-1.2 м/с."}
       </ProductParagraph>
-      <iframe
-        src={calculator}
-        title="Калькулятор калорифера"
-        className={`${
-          isWater
-            ? "h-224 min-[325px]:h-220 min-[363px]:h-210 min-[375px]:h-206 min-[416px]:h-200 min-[431px]:h-196 min-[456px]:h-194 min-[471px]:h-190 min-[485px]:h-180 min-[512px]:h-172 min-[559px]:h-163 min-[590px]:h-152"
-            : "h-158 min-[325px]:h-154 min-[363px]:h-148 min-[413px]:h-143 min-[431px]:h-139 min-[472px]:h-135 min-[485px]:h-126 min-[508px]:h-122 min-[590px]:h-110"
-        } w-full`}
-      />
-      <ProductParagraph className="mb-8">
+      <LegacyHtml html={calculatorHtml} className="legacy-calculator" />
+      <ProductParagraph className="mb-7">
         {nextProduct && (
           <>
             Если запас площади поверхности теплообмена не достаточен ни для
@@ -177,14 +213,26 @@ export default function SupplyCalorifierPage({
           </>
         )}
       </ProductParagraph>
+      <ProductSubheader
+        text={`3D-модели калорифера ${shortName} для проектирования`}
+        className="mb-6"
+      />
       <div className="mb-8 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
         <div
           className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
         >
           <Image
-            src={threeRowsVariantImage.url}
-            alt={threeRowsVariantImage.alt}
-            title={threeRowsVariantImage.title}
+            src={threeRowsImage}
+            alt={
+              threeRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].alt
+            }
+            title={
+              threeRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].title
+            }
             fill
           />
         </div>
@@ -192,13 +240,22 @@ export default function SupplyCalorifierPage({
           className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
         >
           <Image
-            src={fourRowsVariantImage.url}
-            alt={fourRowsVariantImage.alt}
-            title={fourRowsVariantImage.title}
+            src={fourRowsImage}
+            alt={
+              fourRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].alt
+            }
+            title={
+              fourRowsImageMetadata[
+                isKPVS || isKPPS ? "kpvs_kpps" : "kpvu_kppu"
+              ].title
+            }
             fill
           />
         </div>
       </div>
+      {modelText}
       <ProductSubheader text={`Технические характеристики ${shortName}`} />
       <div className="w-full overflow-x-auto">
         <table className="single-table water-and-steam water-and-steam-inner mb-1 w-full min-w-231 xl:min-w-auto">
@@ -293,7 +350,6 @@ export default function SupplyCalorifierPage({
           {
             name: `${heatCarrierAdj.plu} приточные калориферы`,
             url: isWater ? "/kalorifery-voda" : "/kalorifery-par",
-            openNewTab: false,
           },
           {
             name: `Каталог калориферов ${product.series}`,
@@ -301,6 +357,7 @@ export default function SupplyCalorifierPage({
               ? "/documents/Kalorifer_KPVS_KPVU_katalog_2025.pdf"
               : "/documents/Kalorifer_KPPS_KPPU_katalog_2025.pdf",
             openNewTab: true,
+            goal: "open_pdf",
           },
         ]}
       />

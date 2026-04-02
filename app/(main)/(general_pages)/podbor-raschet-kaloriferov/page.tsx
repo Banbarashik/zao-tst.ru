@@ -1,17 +1,19 @@
 import React from "react";
-
 import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 
 import { ArrowBigDownDash } from "lucide-react";
 
+import { getLegacyHtmls } from "@/lib/legacyHtml";
+
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
-import Link from "next/link";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
 import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
+import LegacyHtml from "@/components/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор паровых калориферов",
@@ -464,7 +466,12 @@ function KaloriferPropsTable<T extends Record<string, unknown>>({
   );
 }
 
-export default function PodborRaschetKaloriferovPage() {
+export default async function PodborRaschetKaloriferovPage() {
+  const [table1Html, table2Html] = await getLegacyHtmls([
+    "/legacy/table-raschet-podbor-kaloriferov-1.html",
+    "/legacy/table-raschet-podbor-kaloriferov-2.html",
+  ]);
+
   return (
     <>
       <Heading lvl={1} text="Подбор и расчет калорифера парового" />
@@ -517,10 +524,13 @@ export default function PodborRaschetKaloriferovPage() {
             {
               name: "Паровые калориферы",
               url: "/kalorifer-par",
+              hiddenText:
+                "Температура и давление теплоносителя для парового калорифера",
             },
             {
               name: "Калькулятор паровой калорифер",
               url: "/kalorifery-par#anchor3",
+              hiddenText: "Калькулятор подбора паровых калориферов онлайн",
             },
           ]}
         />
@@ -555,10 +565,13 @@ export default function PodborRaschetKaloriferovPage() {
             {
               name: "Расчетная температура воздуха",
               url: "/raschet-kaloriferov#anchor1",
+              hiddenText:
+                "Температура воздуха при расчете калориферов приточной вентиляции",
             },
             {
               name: "Модели паровых калориферов",
               url: "/kalorifer-par#anchor2",
+              hiddenText: "Калориферы для парового воздушного отопления",
             },
           ]}
         />
@@ -624,11 +637,9 @@ export default function PodborRaschetKaloriferovPage() {
             </li>
           </ol>
         </div>
-        <iframe
-          src="/legacy/table-raschet-podbor-kaloriferov-1.html"
-          title="Таблица свойств воздуха"
-          className="h-46 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml html={table1Html} className="legacy-table min-w-231" />
+        </div>
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -767,11 +778,12 @@ export default function PodborRaschetKaloriferovPage() {
           разные объем и температуру нагреваемого воздуха, давление и
           температуру теплоносителя.
         </ProductParagraph>
-        <iframe
-          src="/legacy/table-raschet-podbor-kaloriferov-2.html"
-          title=""
-          className="h-115 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml
+            html={table2Html}
+            className="legacy-table legacy-raschet-podbor-table min-w-231"
+          />
+        </div>
         <ProductParagraph className="text-[#5a769a]">
           Если при поверочном расчете определена площадь фронтального сечения, а
           в таблице для подбора паровых калориферов нет моделей с таким
@@ -876,10 +888,14 @@ export default function PodborRaschetKaloriferovPage() {
             {
               name: "Массовая скорость воздуха",
               url: "/raschet-kaloriferov#anchor2",
+              hiddenText:
+                "Массовая скорость воздуха в фронтальном сечении калорифера",
             },
             {
               name: "Параметры водяного пара",
               url: "/kalorifer-par#anchor1",
+              hiddenText:
+                "Таблица свойств водяного пара в зависимости от давления",
             },
           ]}
         />
@@ -1090,10 +1106,14 @@ export default function PodborRaschetKaloriferovPage() {
             {
               name: "Расчет коэффициентов пар",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+              hiddenText:
+                "Расчет коэффициента теплопередачи парового воздухонагревателя",
             },
             {
               name: "Таблицы коэффициентов пар",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+              hiddenText:
+                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
             },
           ]}
         />
@@ -1494,6 +1514,8 @@ export default function PodborRaschetKaloriferovPage() {
               {
                 name: "Подбор диаметра паропровода",
                 url: "/paroprovod#anchor5",
+                hiddenText:
+                  "Таблица подбора диаметра паропровода от скорости пара",
               },
             ]}
           />
@@ -1617,10 +1639,14 @@ export default function PodborRaschetKaloriferovPage() {
             {
               name: "Запас поверхности нагрева",
               url: "/raschet-kaloriferov#anchor3",
+              hiddenText:
+                "Запас поверхности теплообмена при расчете калориферов",
             },
             {
               name: "Запас сопротивления пар",
               url: "/raschet-kaloriferov#anchor4",
+              hiddenText:
+                "Запас аэродинамического сопротивления при подборе калориферов",
             },
           ]}
         />
@@ -1739,18 +1765,18 @@ export default function PodborRaschetKaloriferovPage() {
           посмотреть на странице сайта: Аэродинамическое сопротивление паровых
           калориферов.
         </ProductParagraph>
-        <LinkButtonsBlock
-          buttons={[
-            {
-              name: "Расчет сопротивления пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
-            },
-            {
-              name: "Таблицы сопротивления пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
-            },
-          ]}
-        />
+        <div className="sm:w-1/2">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "Расчет сопротивления пар",
+                url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+                hiddenText:
+                  "Расчет аэродинамического сопротивления калориферов КПСк",
+              },
+            ]}
+          />
+        </div>
       </section>
 
       <section id="anchor11" className="mb-4 space-y-4">
@@ -1778,10 +1804,13 @@ export default function PodborRaschetKaloriferovPage() {
             {
               name: "Расчет и подбор калориферов",
               url: "/raschet-kaloriferov",
+              hiddenText:
+                "Расчет и подбор калориферов для приточной вентиляции",
             },
             {
               name: "Производство калориферов",
               url: "/kalorifery",
+              hiddenText: "Изготовление калориферов для приточной вентиляции",
             },
           ]}
         />

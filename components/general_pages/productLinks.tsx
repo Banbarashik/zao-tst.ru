@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+import { KSK_SERIES, KPSK_SERIES } from "@/constants";
+
+import { capitalizeFirst } from "@/lib/utils";
+import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
+
 import { Button } from "@/components/ui/button";
 
 import { cn } from "@/lib/utils";
@@ -31,7 +36,8 @@ export default function ProductLinks({
 }
 
 function ProductLink({ product }) {
-  const { id, name, airPower, heatPower } = product;
+  const { id, name, heatCarrier, airPower, heatPower, series } = product;
+  const heatCarrierAdj = getHeatCarrierAdj(heatCarrier);
 
   return (
     <Button
@@ -46,6 +52,12 @@ function ProductLink({ product }) {
           <span className="text-sm">
             {airPower} м<sup>3</sup>/ч{heatPower ? `; ${heatPower} кВт` : ""}
           </span>
+          {(series === KSK_SERIES || series === KPSK_SERIES) && (
+            <span className="sr-only">
+              {`${capitalizeFirst(heatCarrierAdj.nom)} калорифер ${name}: расчет
+              мощности ${heatPower} кВт и подбор по производительности ${airPower} м3/час`}
+            </span>
+          )}
         </div>
       </Link>
     </Button>

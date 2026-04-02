@@ -1,14 +1,13 @@
 <!doctype html>
 <html>
   <head>
-    <link href="calculator.css" rel="stylesheet" />
     <script>
       function clampNum(v, min, max) {
         if (!Number.isFinite(v)) return NaN;
         return Math.min(Math.max(v, min), max);
       }
 
-      function calculator(form) {
+      function calculatorElektronagrevateliTwo(form) {
         const k = clampNum(Number(form.k.value), 500, 100000) || 0;
         const l = clampNum(Number(form.l.value), -50, 40) || 0;
         const m = clampNum(Number(form.m.value), 2.5, 247.5) || 0;
@@ -28,8 +27,10 @@
         }
       }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form.calculator");
+      function init() {
+        const form = document.querySelector(
+          "form.calculator.elektronagrevateli-2",
+        );
         if (!form) return;
         const inputs = form.querySelectorAll('input[type="text"]');
 
@@ -94,13 +95,15 @@
             if (out) out.classList.remove("out-of-range");
           });
         }
-      });
+      }
+
+      init();
     </script>
   </head>
 
   <body>
     <!-- Калькулятор (начало) -->
-    <form class="calculator">
+    <form class="calculator elektronagrevateli-2">
       <label>
         Объем приточного воздуха, м³/ч
         <input type="text" name="k" data-min="500" data-max="100000" />
@@ -120,7 +123,7 @@
         <input
           type="button"
           value="Рассчитать"
-          onclick="calculator(this.form)"
+          onclick="calculatorElektronagrevateliTwo(this.form)"
         />
         <input type="reset" value="Сброс" />
       </div>

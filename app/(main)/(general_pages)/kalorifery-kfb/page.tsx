@@ -9,6 +9,8 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы паровые КФБ-А П",
@@ -29,15 +31,19 @@ const linkButtons = [
     name: "Каталог паровых калориферов КФБ",
     url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист калориферов КФБ-А П",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 
-export default function KaloriferyKFBPage() {
+export default async function KaloriferyKFBPage() {
+  const tableHtml = await getLegacyHtml("/legacy/table-kalorifery-kfb.html");
+
   return (
     <>
       <Heading lvl={1} text="Калориферы КФБ-А П паровые" />
@@ -187,11 +193,9 @@ export default function KaloriferyKFBPage() {
           height={1}
           className="mb-4"
         />
-        <iframe
-          src="/legacy/table-kalorifery-kfb.html"
-          title="Калориферы КФБ-А3 П Калориферы КФБ-А4 П"
-          className="h-107 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
+        </div>
         <ProductParagraph>
           Структура условного обозначения паровых калориферов КФБ-А производства
           ООО «Т.С.Т.». Калорифер КФБ-7 А4 УХЛ3 П (ТУ 4863-002-55613706-02): КФБ

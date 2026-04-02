@@ -6,6 +6,8 @@ import Image from "next/image";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
+import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Водяные и паровые калориферы для сушильных камер",
@@ -40,7 +42,12 @@ const productLinks = {
   ],
 };
 
-export default function KaloriferSushilnaiaKameraPage() {
+export default async function KaloriferSushilnaiaKameraPage() {
+  const [calculator1Html, calculator2Html] = await getLegacyHtmls([
+    "/legacy/calculator-kalorifer-sushilnaia-kamera-2.html",
+    "/legacy/calculator-kalorifer-sushilnaia-kamera-1.html",
+  ]);
+
   return (
     <article className="flex flex-col space-y-6">
       <Heading lvl={1} text="Калориферы для сушильных камер" />
@@ -209,10 +216,7 @@ export default function KaloriferSushilnaiaKameraPage() {
             </li>
           </ul>
         </div>
-        <iframe
-          src="/legacy/calculator-tvv-890-890.html"
-          className="h-153 w-full"
-        />
+        <LegacyHtml html={calculator1Html} className="legacy-calculator" />
       </section>
 
       <section className="space-y-1">
@@ -284,10 +288,7 @@ export default function KaloriferSushilnaiaKameraPage() {
             </li>
           </ul>
         </div>
-        <iframe
-          src="/legacy/calculator-kp-1572-1572.html"
-          className="h-108 w-full"
-        />
+        <LegacyHtml html={calculator2Html} className="legacy-calculator" />
       </section>
 
       <section className="space-y-1">

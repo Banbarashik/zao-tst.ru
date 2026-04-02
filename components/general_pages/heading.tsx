@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 export default function Heading({
@@ -6,7 +7,7 @@ export default function Heading({
   className = "",
 }: {
   lvl: 1 | 2 | 3;
-  text: string;
+  text: ReactNode;
   className?: string;
 }) {
   if (lvl === 1)

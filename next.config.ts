@@ -62,11 +62,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/tehnicheskaya-stranica",
-        destination: "/kalorifery-voda#anchor1",
-        permanent: true,
-      },
-      {
         source: "/raschet-online-vodianyh-kaloriferov",
         destination: "/kalorifery-voda#anchor1",
         permanent: true,

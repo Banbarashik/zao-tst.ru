@@ -27,11 +27,13 @@ const linkButtons = [
     name: "Каталог электроустановок СФОЦ",
     url: "/documents/Electroustanovka_SFOTC_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист установок СФОЦ",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 

@@ -11,6 +11,8 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
+import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 const tableEquipment: Record<string, string> = {
   water: "насосно-смесительного",
@@ -134,7 +136,13 @@ const ao2TableHeaders = {
   ],
 };
 
-export default function KSKProductPage({ product }: { product: KSKProduct }) {
+export default async function KSKProductPage({
+  product,
+}: {
+  product: KSKProduct;
+}) {
+  const tableHtml = await getLegacyHtml(product.tableWithTabs);
+
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
 
   const isCalorifier = product.categories.includes("kalorifer");
@@ -192,12 +200,12 @@ export default function KSKProductPage({ product }: { product: KSKProduct }) {
     {
       name: `${isKFB || isAgregat ? heatCarrierAdj.plu : ""} ${isCalorifier ? "калориферы" : "агрегаты"} ${product.series} ${isKFB || isAgregat ? "" : "- характеристики"}`,
       url: "/" + URLs[0],
-      openNewTab: false,
     },
     {
       name: `Каталог ${isAgregat ? heatCarrierAdj.pluGen : ""} ${isCalorifier ? "калориферов" : "агрегатов"} ${product.series} ${isKFB && product.heatCarrier === "water" ? "М" : isKFB && product.heatCarrier === "steam" ? "П" : ""}`,
       url: "/documents/" + URLs[1],
       openNewTab: true,
+      goal: "open_pdf",
     },
   ];
 
@@ -437,11 +445,9 @@ export default function KSKProductPage({ product }: { product: KSKProduct }) {
         вырабатываемой мощностью
         {product.heatCarrier === "steam" && " и расходом пара"}.
       </ProductParagraph>
-      <iframe
-        src={product.tableWithTabs}
-        title={`Таблица рабочих параметров ${isCalorifier ? "калорифера" : "агрегата"}`}
-        className={`${isCalorifier ? "h-65" : "h-59"} mb-1 w-full`}
-      />
+      <div className="overflow-x-auto">
+        <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
+      </div>
       <ProductParagraph className={isCalorifier ? "mb-4" : "mb-8"}>
         Табличные данные можно использовать при подборе сопутствующего
         {isCalorifier && " вентиляционного и"}{" "}

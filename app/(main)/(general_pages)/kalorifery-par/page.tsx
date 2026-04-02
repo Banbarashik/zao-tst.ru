@@ -9,6 +9,8 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 export const metadata: Metadata = {
   title: "Калориферы приточные паровые",
@@ -30,15 +32,35 @@ const linkButtons = [
     name: "Каталог паровых калориферов",
     url: "/documents/Kalorifer_KPPS_KPPU_katalog_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
   {
     name: "Прайс-лист паровых калориферов",
     url: "/documents/Price_list_zao_tst_2025.pdf",
     openNewTab: true,
+    goal: "open_pdf",
   },
 ];
 
-export default function KaloriferyParPage() {
+export default async function KaloriferyParPage() {
+  const [
+    calculator1Html,
+    calculator2Html,
+    calculator3Html,
+    calculator4Html,
+    calculator5Html,
+    table1Html,
+    table2Html,
+  ] = await getLegacyHtmls([
+    "/legacy/calculator-kalorifery-par-1.html",
+    "/legacy/calculator-kalorifery-par-3.html",
+    "/legacy/calculator-kalorifery-par-4.html",
+    "/legacy/calculator-kalorifery-par-5.html",
+    "/legacy/calculator-kalorifery-par-6.html",
+    "/legacy/table-kalorifery-par-kpps.html",
+    "/legacy/table-kalorifery-par-kppu.html",
+  ]);
+
   return (
     <>
       <Heading lvl={1} text="Калориферы приточные КППС и КППУ" />
@@ -104,11 +126,7 @@ export default function KaloriferyParPage() {
             тепловая мощность парового калорифера для соблюдения заданных
             условий.
           </ProductParagraph>
-          <iframe
-            src="/legacy/calculator-kalorifery-par-1.html"
-            title="Калькулятор расчета мощности парового калорифера"
-            className="w-full min-[320px]:h-66 min-[519px]:h-62 min-[531px]:h-57 min-[542px]:h-53 min-[551px]:h-48"
-          />
+          <LegacyHtml html={calculator1Html} className="legacy-calculator" />
         </section>
         <section className="mb-4">
           <Heading lvl={2} text="Онлайн-расчет расхода пара калорифером" />
@@ -120,11 +138,7 @@ export default function KaloriferyParPage() {
             результатам онлайн-расчета показывается необходимый расход
             теплоносителя для выработки указанной производительности по теплу.
           </ProductParagraph>
-          <iframe
-            src="/legacy/calculator-kalorifery-par-3.html"
-            title="Калькулятор расчета расхода пара калорифером"
-            className="w-full min-[320px]:h-59 min-[405px]:h-55 min-[413px]:h-50 min-[444px]:h-46"
-          />
+          <LegacyHtml html={calculator2Html} className="legacy-calculator" />
         </section>
         <section className="mb-4">
           <Heading
@@ -139,11 +153,7 @@ export default function KaloriferyParPage() {
             результатам онлайн-расчета показывается вырабатываемая калорифером
             мощность.
           </ProductParagraph>
-          <iframe
-            src="/legacy/calculator-kalorifery-par-4.html"
-            title="Калькулятор расчета мощности калорифера от расхода пара"
-            className="w-full min-[320px]:h-59 min-[405px]:h-55 min-[413px]:h-50 min-[444px]:h-46"
-          />
+          <LegacyHtml html={calculator3Html} className="legacy-calculator" />
         </section>
 
         <ProductParagraph>
@@ -172,7 +182,7 @@ export default function KaloriferyParPage() {
           lvl={2}
           text="Калькулятор подбора паровых приточных калориферов"
         />
-        <ProductParagraph>
+        <ProductParagraph className="mb-4">
           Подбор с помощью онлайн калькулятора осуществляется следующим образом:
           1. вносятся данные по воздуху – производительность, температура на
           входе и требуемая на выходе; 2. выбирается давление пара; 3. в
@@ -181,6 +191,37 @@ export default function KaloriferyParPage() {
           тепловой мощности следует перейти к последующему или предыдущему
           номеру парового приточного воздухонагревателя.
         </ProductParagraph>
+
+        <section className="text-example">
+          <Heading
+            lvl={3}
+            text={
+              <>
+                Пример калькулятора на производительность 11000 м<sup>3</sup>
+                /час
+              </>
+            }
+          />
+          <ProductParagraph className="mb-2 text-base">
+            Синие поля обязательны для заполнения. Запас площади поверхности
+            нагрева: оптимальный 10%, допустимый 0-20%. Массовая скорость
+            воздуха в фронтальном сечении: оптимальная 3-5 кг/м<sup>2</sup>•с,
+            допустимая 1.5-8 кг/м<sup>2</sup>•с.
+          </ProductParagraph>
+          <LegacyHtml
+            html={calculator4Html}
+            className="legacy-calculator mb-2"
+          />
+
+          <ProductParagraph>
+            Чтобы{" "}
+            <span className="font-semibold">
+              рассчитать параметры для другой производительности
+            </span>
+            , перейдите на страницу выбранной модели парового калорифера из
+            списка ниже.
+          </ProductParagraph>
+        </section>
       </section>
 
       <section>
@@ -198,11 +239,9 @@ export default function KaloriferyParPage() {
           рядов теплопередающих элементов, стальные трубки диаметром 16 мм с
           накатным алюминиевым оребрением.
         </ProductParagraph>
-        <iframe
-          src="/legacy/table-kalorifery-par-kpps.html"
-          title="Калориферы КППС"
-          className="mb-2 h-82 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml html={table1Html} className="legacy-table min-w-231" />
+        </div>
         <Image
           src="/img/general_pages/kalorifery_pritochnye_parovye_kpps_chertez.png"
           alt="Паровые приточные калориферы габаритные размеры"
@@ -210,6 +249,34 @@ export default function KaloriferyParPage() {
           width={968}
           height={1}
         />
+      </section>
+
+      <section className="text-example">
+        <Heading
+          lvl={3}
+          text={
+            <>
+              Пример калькулятора на производительность 20000 м<sup>3</sup>
+              /час
+            </>
+          }
+        />
+        <ProductParagraph className="mb-2 text-base">
+          Синие поля обязательны для заполнения. Запас площади поверхности
+          нагрева: оптимальный 10%, допустимый 0-20%. Массовая скорость воздуха
+          в фронтальном сечении: оптимальная 3-5 кг/м<sup>2</sup>•с, допустимая
+          1.5-8 кг/м<sup>2</sup>•с.
+        </ProductParagraph>
+        <LegacyHtml html={calculator5Html} className="legacy-calculator mb-2" />
+
+        <ProductParagraph>
+          Чтобы{" "}
+          <span className="font-semibold">
+            рассчитать параметры для другой производительности
+          </span>
+          , перейдите на страницу выбранной модели парового калорифера из списка
+          ниже.
+        </ProductParagraph>
       </section>
 
       <section className="mb-8">
@@ -227,11 +294,9 @@ export default function KaloriferyParPage() {
           теплопередающих элементов, стальные трубки диаметром 22 мм с накатным
           алюминиевым оребрением.
         </ProductParagraph>
-        <iframe
-          src="/legacy/table-kalorifery-par-kppu.html"
-          title="Калориферы КППУ"
-          className="mb-2 h-76 w-full"
-        />
+        <div className="overflow-x-auto">
+          <LegacyHtml html={table2Html} className="legacy-table min-w-231" />
+        </div>
         <Image
           src="/img/general_pages/kalorifery_pritochnye_parovye_kppu_chertez.png"
           alt="Паровые приточные калориферы технические характеристики"

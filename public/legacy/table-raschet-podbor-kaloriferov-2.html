@@ -2,56 +2,81 @@
 
 <html>
   <head>
-    <script src="https://code.jquery.com/jquery-git.min.js"></script>
-    <script src="tables.js"></script>
-    <link href="table.css" rel="stylesheet" />
+    <script>
+      function setupRadioSwitch(primaryId, secondaryId) {
+        const primary = document.getElementById(primaryId);
+        const secondaryDivs = document.querySelectorAll(`#${secondaryId} div`);
+
+        if (!primary) return;
+
+        primary.addEventListener("click", function (e) {
+          if (e.target.matches('input[type="radio"]')) {
+            const radios = Array.from(
+              primary.querySelectorAll('input[type="radio"]'),
+            );
+            const index = radios.indexOf(e.target);
+
+            secondaryDivs.forEach((div) => {
+              div.style.display = "none";
+            });
+
+            if (secondaryDivs[index]) {
+              secondaryDivs[index].style.display = "block";
+            }
+          }
+        });
+      }
+
+      setupRadioSwitch("primary2", "secondary2");
+    </script>
+
     <style>
-      * {
+      .legacy-table.legacy-raschet-podbor-table * {
         box-sizing: border-box;
       }
-      th {
+      .legacy-table.legacy-raschet-podbor-table th {
         font-size: 14px;
       }
-      .steam_kal_name {
+      .legacy-table.legacy-raschet-podbor-table .steam_kal_name {
         width: 180px;
         padding-left: 16px;
         padding-right: 16px;
       }
-      .length {
+      .legacy-table.legacy-raschet-podbor-table .length {
         width: 200px;
       }
-      .btn {
+      .legacy-table.legacy-raschet-podbor-table .btn {
         font-size: 13.3px;
       }
-      a {
+      .legacy-table.legacy-raschet-podbor-table a {
         color: #5e2129;
         text-decoration: none;
       }
-      a:hover {
+      .legacy-table.legacy-raschet-podbor-table a:hover {
         color: #c74f2b;
       }
     </style>
   </head>
   <body>
     <!-- Таблицы (начало) -->
-    <div id="primary" class="table-with-scroll">
+    <div id="primary2" class="table-with-scroll">
       <form class="table-buttons-wrap">
-        <input id="table_btn1" type="radio" checked name="as" />
-        <input id="table_btn2" type="radio" name="as" />
-        <input id="table_btn3" type="radio" name="as" />
+        <input id="table_btn3" type="radio" checked name="as" />
         <input id="table_btn4" type="radio" name="as" />
         <input id="table_btn5" type="radio" name="as" />
         <input id="table_btn6" type="radio" name="as" />
-        <label for="table_btn1" class="btn btn1">Калориферы КП</label>
-        <label for="table_btn2" class="btn btn2">Калориферы КФБ-А3 П</label>
-        <label for="table_btn3" class="btn btn3">Калориферы КФБ-А4 П</label>
-        <label for="table_btn4" class="btn btn4">Калориферы КПСк2</label>
-        <label for="table_btn5" class="btn btn5">Калориферы КПСк3</label>
-        <label for="table_btn6" class="btn btn6">Калориферы КПСк4</label>
+        <input id="table_btn7" type="radio" name="as" />
+        <input id="table_btn8" type="radio" name="as" />
+        <label for="table_btn3" class="btn btn3">Калориферы КП</label>
+        <label for="table_btn4" class="btn btn4">Калориферы КФБ-А3 П</label>
+        <label for="table_btn5" class="btn btn5">Калориферы КФБ-А4 П</label>
+        <label for="table_btn6" class="btn btn6">Калориферы КПСк2</label>
+        <label for="table_btn7" class="btn btn7">Калориферы КПСк3</label>
+        <label for="table_btn8" class="btn btn8">Калориферы КПСк4</label>
       </form>
     </div>
     <div class="table-wrap table-with-scroll">
-      <div id="secondary">
+      <div id="secondary2">
         <!-- Начало 1-й таблицы -->
         <div style="display: block">
           <table>

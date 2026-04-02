@@ -1,14 +1,13 @@
 <!doctype html>
 <html>
   <head>
-    <link href="calculator.css" rel="stylesheet" />
     <script>
       function clampNum(v, min, max) {
         if (!Number.isFinite(v)) return NaN;
         return Math.min(Math.max(v, min), max);
       }
 
-      function calculator(form) {
+      function calculatorKaloriferyParOne(form) {
         const a = clampNum(Number(form.a.value), 500, 100000) || 0;
         const b = clampNum(Number(form.b.value), -40, 40) || 0;
         const c = clampNum(Number(form.c.value), -40, 135) || 0;
@@ -16,8 +15,8 @@
         form.total.value = d.toFixed(1);
       }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form.calculator");
+      function init() {
+        const form = document.querySelector("form.calculator.kalorifery-par-1");
         if (!form) return;
         const inputs = form.querySelectorAll('input[type="text"]');
 
@@ -79,13 +78,15 @@
             inputs.forEach((i) => i.classList.remove("has-value"));
           });
         }
-      });
+      }
+
+      init();
     </script>
   </head>
 
   <body>
     <!-- Калькулятор (начало) -->
-    <form class="calculator">
+    <form class="calculator kalorifery-par-1">
       <label>
         Объем нагреваемого воздуха, м³/ч
         <input type="text" name="a" data-min="500" data-max="100000" />
@@ -105,7 +106,7 @@
         <input
           type="button"
           value="Рассчитать"
-          onclick="calculator(this.form)"
+          onclick="calculatorKaloriferyParOne(this.form)"
         />
         <input type="reset" value="Сброс" />
       </div>

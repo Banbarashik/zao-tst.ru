@@ -1,36 +1,24 @@
 <!doctype html>
 <html>
   <head>
-    <link href="calculator.css" rel="stylesheet" />
     <script>
       function clampNum(v, min, max) {
         if (!Number.isFinite(v)) return NaN;
         return Math.min(Math.max(v, min), max);
       }
 
-      function calculator(form) {
+      function calculatorKaloriferyVodaThree(form) {
         const e = clampNum(Number(form.e.value), 10, 1000) || 0;
         const f = clampNum(Number(form.f.value), 50, 150) || 0;
         const j = clampNum(Number(form.j.value), 30, 90) || 0;
         const h = ((e * 1000) / (4200 * (f - j))) * 3600;
-
-        const outEl = form.total;
-        // write value
-        outEl.value = h.toFixed(0);
-        // check optional data-min / data-max on the output and toggle warning class
-        const min = Number(outEl.dataset.min ?? NaN);
-        const max = Number(outEl.dataset.max ?? NaN);
-        if (Number.isFinite(min) && Number.isFinite(max)) {
-          if (r < min || r > max) outEl.classList.add("out-of-range");
-          else outEl.classList.remove("out-of-range");
-        } else {
-          // no range specified: ensure class removed
-          outEl.classList.remove("out-of-range");
-        }
+        form.total.value = h.toFixed(0);
       }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form.calculator");
+      function init() {
+        const form = document.querySelector(
+          "form.calculator.kalorifery-voda-3",
+        );
         if (!form) return;
         const inputs = form.querySelectorAll('input[type="text"]');
 
@@ -95,13 +83,15 @@
             if (out) out.classList.remove("out-of-range");
           });
         }
-      });
+      }
+
+      init();
     </script>
   </head>
 
   <body>
     <!-- Калькулятор (начало) -->
-    <form class="calculator">
+    <form class="calculator kalorifery-voda-3">
       <label>
         <span style="margin-left: 13px">Мощность водяного калорифера, кВт</span>
         <input type="text" name="e" data-min="10" data-max="1000" />
@@ -121,7 +111,7 @@
         <input
           type="button"
           value="Рассчитать"
-          onclick="calculator(this.form)"
+          onclick="calculatorKaloriferyVodaThree(this.form)"
         />
         <input type="reset" value="Сброс" />
       </div>

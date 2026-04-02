@@ -273,7 +273,7 @@ export default function HeaderWithSearch(): JSX.Element {
         <Logo place="header" />
         <ul className="4xl:ml-12 3xl:ml-8 text-primary-darker ml-3 flex flex-col items-start gap-y-2 xl:text-lg">
           <li className="hover:font-semibold">
-            <a href="tel:89617378314" className="flex items-center gap-2.5">
+            <a href="tel:+79617378314" className="flex items-center gap-2.5">
               <span className="border-primary-darker rounded-full border p-1.25">
                 <PhoneCall className="size-4 xl:size-5" />
               </span>
@@ -297,8 +297,7 @@ export default function HeaderWithSearch(): JSX.Element {
           <NavigationMenu />
           <ContactFormTrigger
             triggerBtnVariant="default"
-            triggerBtnSize="lg"
-            triggerBtnClassName="h-12 px-3 cursor-pointer hover:bg-primary-dark text-base font-bold xl:text-xl border border-[#A5A5A5]"
+            triggerBtnClassName="h-12 px-2 xl:px-3 cursor-pointer hover:bg-primary-dark text-sm font-bold xl:text-xl border border-[#A5A5A5]"
             amountClassName="bg-accent absolute text-black right-0 bottom-0 inline-flex size-6 translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full text-sm font-semibold"
           />
         </div>

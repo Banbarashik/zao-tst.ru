@@ -1,9 +1,5 @@
-body {
-  margin: 0;
-}
-
 /* Калькуляторы (начало) */
-.calculator {
+.legacy-html.legacy-calculator .calculator {
   padding-top: 8px;
   padding-bottom: 3px;
   padding-right: 11px;
@@ -14,19 +10,19 @@ body {
   line-height: 18px;
 }
 
-label,
-.calculator-buttons {
+.legacy-html.legacy-calculator label,
+.legacy-html .calculator-buttons {
   display: block;
 
   margin-bottom: 5px;
 }
-input {
+.legacy-html.legacy-calculator input {
   font: inherit;
 }
-select {
+.legacy-html.legacy-calculator select {
   margin-bottom: 15px;
 }
-input[type="text"] {
+.legacy-html.legacy-calculator input[type="text"] {
   box-sizing: border-box;
 
   padding: 5px;
@@ -36,8 +32,8 @@ input[type="text"] {
 
   background-color: rgb(176, 196, 222);
 }
-.calculator-buttons input[type="button"],
-.calculator-buttons input[type="reset"] {
+.legacy-html .calculator-buttons input[type="button"],
+.legacy-html .calculator-buttons input[type="reset"] {
   box-sizing: content-box;
 
   padding: 5px;
@@ -51,16 +47,16 @@ input[type="text"] {
 /* Калькуляторы (конец) */
 
 /* Сложные калькуляторы (начало) */
-:disabled {
+.legacy-html :disabled {
   color: rgb(50, 50, 50);
 }
-#calorifer {
+.legacy-html #calorifer {
   margin-left: 4px;
   padding-left: 0;
   padding-right: 0;
 }
-.advanced-calculator input,
-.advanced-calculator select {
+.legacy-html .advanced-calculator input,
+.legacy-html .advanced-calculator select {
   box-sizing: border-box;
 
   padding: 5px;
@@ -72,7 +68,7 @@ input[type="text"] {
 
   font: inherit;
 }
-.advanced-calculator input[type="range"] {
+.legacy-html .advanced-calculator input[type="range"] {
   overflow: hidden;
   width: 180px;
   padding: 0;
@@ -81,35 +77,35 @@ input[type="text"] {
   background-color: rgb(192, 192, 192);
   outline: none;
 }
-.advanced-calculator input[type="radio"] {
+.legacy-html .advanced-calculator input[type="radio"] {
   display: initial;
 }
-input[type="range"]::-webkit-slider-thumb {
+.legacy-html input[type="range"]::-webkit-slider-thumb {
   width: 10px;
   -webkit-appearance: none;
   height: 15px;
   background: #434343;
   box-shadow: -89px 0 0 80px rgb(176, 196, 222);
 }
-.numbers_input {
+.legacy-html .numbers_input {
   margin-bottom: 10px;
 }
-.results input {
+.legacy-html .results input {
   width: 100px;
 }
-.numbers_input input[type="number"] {
+.legacy-html .numbers_input input[type="number"] {
   background-color: rgb(176, 196, 222);
 }
-.results span {
+.legacy-html .results span {
   font-weight: 600;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.legacy-html input::-webkit-outer-spin-button,
+.legacy-html input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-.unselectable {
+.legacy-html .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -121,11 +117,11 @@ input::-webkit-inner-spin-button {
 }
 /* Сложные калькуляторы (конец) */
 
-input.bg-transparent {
+.legacy-html.legacy-calculator input.bg-transparent {
   background: transparent;
 }
 
-.steam-pressure {
+.legacy-html .steam-pressure {
   width: 60px;
   height: 30px;
   border-radius: 4px;
@@ -136,15 +132,15 @@ input.bg-transparent {
   background-color: #e4e1d6;
 }
 
-.steam-pressure:focus {
+.legacy-html .steam-pressure:focus {
   outline: none;
 }
 
-input.has-value {
+.legacy-html.legacy-calculator input.has-value {
   background-color: #ffeb9a;
 }
 
-input.out-of-range {
+.legacy-html.legacy-calculator input.out-of-range {
   border-color: #c00;
   background: rgba(255, 0, 0, 0.04);
   color: #700;

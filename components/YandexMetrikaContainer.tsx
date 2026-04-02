@@ -23,7 +23,11 @@ const YandexMetrikaContainer: React.FC<Props> = ({ enabled }) => {
 
   return (
     <YandexMetrikaInitializer
-      initParameters={{ webvisor: true, defer: true }}
+      initParameters={{
+        webvisor: true,
+        defer: true,
+        accurateTrackBounce: true,
+      }}
     />
   );
 };

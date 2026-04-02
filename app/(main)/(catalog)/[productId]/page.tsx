@@ -5,14 +5,17 @@ import type { Metadata } from "next";
 import { capitalizeFirst } from "@/lib/utils";
 import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
 import { getRowsNumberAdj } from "@/lib/rowsNumberAdj";
+import { createProductSchema } from "@/lib/schema/product";
 
+import { JsonLd } from "@/components/utils/jsonLd";
+import SupplyCalorifierPage from "@/components/catalog/supplyCalorifierPage";
+import KSKProductPage from "@/components/catalog/KSKProductPage";
 import STDPage from "@/components/catalog/STDPage";
 import AVOPage from "@/components/catalog/AVOPage";
+import ElectroEquipmentPage from "@/components/catalog/ElectroEquipmentPage";
 import TenyPage from "@/components/catalog/TenyPage";
 import QuestionButton from "@/components/questionButton";
-import KSKProductPage from "@/components/catalog/KSKProductPage";
-import SupplyCalorifierPage from "@/components/catalog/supplyCalorifierPage";
-import ElectroEquipmentPage from "@/components/catalog/ElectroEquipmentPage";
+import KPSKProductPage from "@/components/catalog/KPSKProductPage";
 
 function getProductType(categories: string[]) {
   if (
@@ -197,49 +200,38 @@ export default async function ProductPage({
 
   const productType = getProductType(product.categories);
 
-  if (productType === "supplyCalorifier")
-    return (
-      <>
+  const schema = createProductSchema(product);
+
+  return (
+    <>
+      <JsonLd data={schema} />
+
+      {productType === "supplyCalorifier" && (
         <SupplyCalorifierPage product={product} />
-        <QuestionButton />
-      </>
-    );
+      )}
 
-  if (
-    productType === "ksk_kpsk" ||
-    productType === "tvv_kp" ||
-    productType === "kfb" ||
-    productType === "ao2"
-  )
-    return (
-      <>
-        <KSKProductPage product={product} />
-        <QuestionButton />
-      </>
-    );
+      {(productType === "tvv_kp" ||
+        productType === "kfb" ||
+        productType === "ao2") && <KSKProductPage product={product} />}
 
-  if (productType === "std300" || productType === "std300-hl")
-    return (
-      <>
+      {productType === "ksk_kpsk" && <KPSKProductPage product={product} />}
+
+      {(productType === "std300" || productType === "std300-hl") && (
         <STDPage product={product} />
-        <QuestionButton />
-      </>
-    );
+      )}
 
-  if (productType === "avo")
-    return (
-      <>
-        <AVOPage product={product} />
-        <QuestionButton />
-      </>
-    );
+      {productType === "avo" && <AVOPage product={product} />}
 
-  if (
-    productType === "sfo" ||
-    productType === "sfotc" ||
-    productType === "shuk"
-  )
-    return <ElectroEquipmentPage product={product} />;
+      {(productType === "sfo" ||
+        productType === "sfotc" ||
+        productType === "shuk") && <ElectroEquipmentPage product={product} />}
 
-  if (productType === "teny") return <TenyPage product={product} />;
+      {productType === "teny" && <TenyPage product={product} />}
+
+      {productType !== "sfo" &&
+        productType !== "sfotc" &&
+        productType !== "shuk" &&
+        productType !== "teny" && <QuestionButton />}
+    </>
+  );
 }

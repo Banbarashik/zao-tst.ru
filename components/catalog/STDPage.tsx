@@ -12,6 +12,8 @@ import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import LegacyHtml from "@/components/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 const tableIndicators: Record<string, string> = {
   water:
@@ -70,7 +72,9 @@ function tableHeaders(model: string) {
   };
 }
 
-export default function STDPage({ product }) {
+export default async function STDPage({ product }) {
+  const tableHtml = await getLegacyHtml(product.tableWithTabs);
+
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
   const oppositeHeatCarrier =
     product.heatCarrier === "water" ? "steam" : "water";
@@ -82,7 +86,6 @@ export default function STDPage({ product }) {
       name: `${heatCarrierAdj.plu} агрегаты ${product.shortName}`,
       url:
         product.heatCarrier === "water" ? "/std300-ksk-kpsk" : "/std300-tvv-kp",
-      openNewTab: false,
     },
     {
       name: `Каталог ${isSTD300 ? heatCarrierAdj.pluGen : ""} агрегатов ${isSTD300 ? product.shortName : product.model}`,
@@ -90,6 +93,7 @@ export default function STDPage({ product }) {
         ? "/documents/Agregat_STD-300_katalog_2025.pdf"
         : "/documents/Agregat_STD-300-HL_katalog_2025.pdf",
       openNewTab: true,
+      goal: "open_pdf",
     },
   ];
 
@@ -319,11 +323,9 @@ export default function STDPage({ product }) {
         теплоносителя, можно ознакомиться с основными теплотехническими
         показателями: {tableIndicators[product.heatCarrier]}.
       </ProductParagraph>
-      <iframe
-        src={product.tableWithTabs}
-        title={`Таблица расчета и подбора ${heatCarrierAdj?.gen} агрегата ${product.shortName}`}
-        className="mb-1 h-66 w-full"
-      />
+      <div className="overflow-x-auto">
+        <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
+      </div>
       <ProductParagraph className="mb-8">
         Табличные данные можно использовать при подборе сопутствующего{" "}
         {tableEquipment[product.heatCarrier]} оборудования.

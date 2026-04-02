@@ -40,16 +40,19 @@ const linkButtons = {
       name: "Каталог КПСК",
       url: "/documents/Kalorifer_KPSK_katalog_2025.pdf",
       openNewTab: true,
+      goal: "open_pdf",
     },
     {
       name: "Каталог КП",
       url: "/documents/Kalorifer_KP_katalog_2025.pdf",
       openNewTab: true,
+      goal: "open_pdf",
     },
     {
       name: "Каталог КФБ-А П",
       url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
       openNewTab: true,
+      goal: "open_pdf",
     },
   ],
 };
@@ -439,6 +442,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
                 {
                   name: "Таблица подбора паропровода",
                   url: "/paroprovod#anchor5",
+                  hiddenText:
+                    "Таблица подбора диаметра паропровода от давления пара",
                 },
               ]}
             />
@@ -520,10 +525,16 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </section>
         <LinkButtonsBlock
           buttons={[
-            { name: "Паровые калориферы", url: "/kalorifer-par" },
+            {
+              name: "Паровые калориферы",
+              url: "/kalorifer-par",
+              hiddenText:
+                "Пар как теплоноситель для парового воздухонагревателя",
+            },
             {
               name: "Расчет парового калорифера",
               url: "/podbor-raschet-kaloriferov",
+              hiddenText: "Формулы для расчета и подбора паровых калориферов",
             },
           ]}
         />
