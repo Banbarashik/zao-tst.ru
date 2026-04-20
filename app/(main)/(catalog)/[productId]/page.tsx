@@ -85,7 +85,7 @@ export async function generateMetadata({
     const name = `${product.series} ${product.rows} ${product.size}`;
 
     return {
-      title: `Калорифер ${heatCarrierAdj.nom} ${product.shortName}`,
+      title: `Калорифер ${heatCarrierAdj.nom} ${product.shortName}. Производство`,
       description: `Калорифер ${product.shortName} ${heatCarrierAdj.nom} - производитель предприятие ООО Т.С.Т. Производство, характеристики, размеры, мощность, расчет, подбор, цена калорифера ${name}`,
       keywords: `${name},калорифер ${name},калорифер ${name} ${heatCarrierAdj.nom},калорифер ${name} технические характеристики,калорифер ${name} габаритные размеры,купить калорифер ${product.shortName},калорифер ${name} цена,калорифер ${name} расчет,калорифер ${name} подбор,калорифер ${name} мощность`,
     };
@@ -98,7 +98,7 @@ export async function generateMetadata({
     const shortAltName = `${series} ${size}`;
 
     return {
-      title: `Калорифер ${heatCarrierAdj.nom} ${product.shortName}`,
+      title: `Калорифер ${heatCarrierAdj.nom} ${product.shortName}. Производство`,
       description: `Калорифер ${product.shortName} ${heatCarrierAdj.nom} – производитель ООО Т.С.Т. Производство, характеристики, расчет, цена ${heatCarrierAdj.gen} воздухонагревателя холодного климата ${series} 113 ${size} 22 ХЛ`,
       keywords: `калорифер ${product.shortName},калорифер ${product.shortName} цена,калорифер ${product.shortName} технические характеристики,калорифер ${product.shortName} габаритные размеры,калорифер ${product.shortName} подбор,калорифер ${shortAltName},калорифер ${shortAltName} ${heatCarrierAdj.nom},${altName},${altName} 22 хл,${altName} купить`,
     };
@@ -109,7 +109,7 @@ export async function generateMetadata({
       product.heatCarrier === "water" ? "многоходовой" : "одноходовой";
 
     return {
-      title: `Калорифер ${heatCarrierAdj.nom} ${product.model}`,
+      title: `Калорифер ${heatCarrierAdj.nom} ${product.model}. Производство`,
       description: `Калорифер ${product.shortName} ${heatCarrierAdj.nom} – производитель ООО Т.С.Т. Производство, технические характеристики, размеры, расчет, подбор, цена ${heatCarrierAdj.gen} калорифера ${product.shortName}`,
       keywords: `калорифер ${product.model},калорифер ${product.shortName} ${heatCarrierAdj.nom},калорифер ${product.shortName} ${heatCarrierAdj.nom} технические характеристики,калорифер ${product.shortName} ${heatCarrierAdj.nom} габаритные размеры,калорифер ${product.model} расчет и подбор,цена калорифера ${product.shortName} ${heatCarrierAdj.gen},купить калорифер ${product.shortName} ${heatCarrierAdj.nom},калорифер для шахт ${product.shortName} ${heatCarrierAdj.nom},калорифер ${product.shortName} ${amountOfWays},${product.heatCarrier === "water" ? "калориферная секция водяная" : "калорифер для сушилок паровой"} ${product.shortName}`,
     };
