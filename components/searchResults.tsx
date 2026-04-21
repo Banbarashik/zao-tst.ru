@@ -1,9 +1,8 @@
-// components/SearchResults.tsx
 "use client";
 
 import searchIndex from "@/public/search-index.json";
 
-import { useEffect, useMemo, useState, useRef } from "react";
+import { useEffect, useMemo, useState, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import MiniSearch from "minisearch";
@@ -23,11 +22,15 @@ export default function SearchResults({
   const [docs, setDocs] = useState<Doc[] | null>(null);
   const [q, setQ] = useState(initialQuery);
   const [results, setResults] = useState<[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
   const router = useRouter();
 
+  const abortControllerRef = useRef<AbortController | null>(null);
+  const debounceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const fetchedOnce = useRef(false);
+
   useEffect(() => {
-    if (fetchedOnce.current) return; // защита от StrictMode (dev)
+    if (fetchedOnce.current) return;
     fetchedOnce.current = true;
 
     const unique = Array.from(
@@ -60,68 +63,115 @@ export default function SearchResults({
       },
       tokenize: (s) => s.toLowerCase().match(/[a-zа-яё0-9]+/gi) || [],
     });
-    ms.addAll(docs); // ← добавляем РОВНО один раз
+    ms.addAll(docs);
     return ms;
   }, [docs]);
 
-  useEffect(() => {
-    if (!miniSearch || !q) return setResults([]);
-
-    const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-
-    // feature-detect Unicode property escapes; fall back if not available
-    const supportsUnicodeProps = (() => {
-      try {
-        new RegExp("\\p{L}", "u");
-        return true;
-      } catch {
-        return false;
+  const performSearch = useCallback(
+    async (query: string, signal: AbortSignal) => {
+      if (!miniSearch || !query) {
+        setResults([]);
+        return;
       }
-    })();
 
-    const raw = miniSearch.search(q);
-    const qNorm = q.toLowerCase().replace(/\s+/g, " ").trim();
-    const boosted = raw
-      .map((r) => {
-        const doc = docsMap.get(r.id);
-        const title = (doc?.title || "").toLowerCase();
-        const content = (doc?.content || "").toLowerCase();
+      setIsSearching(true);
 
-        // Use terms returned by MiniSearch if available, otherwise split query
-        const terms = r.terms && r.terms.length ? r.terms : q.split(/\s+/);
-
-        let score = r.score ?? 0;
-        // very large boost if entire normalized query appears verbatim
-        if (qNorm && (title.includes(qNorm) || content.includes(qNorm))) {
-          score += 2000;
+      // Defer computation to next idle time (off main thread)
+      await new Promise((resolve) => {
+        if ("scheduler" in window && "yield" in (window as any).scheduler) {
+          // Use scheduler.yield if available (Chrome 123+)
+          (window as any).scheduler.yield().then(resolve);
+        } else {
+          // Fallback: use requestIdleCallback or setTimeout
+          requestIdleCallback(() => resolve(null), { timeout: 50 });
         }
-        for (const term of terms) {
-          if (!term) continue;
-          const t = String(term).toLowerCase();
-          const e = esc(t);
+      });
 
-          // Unicode-aware whole-word check (letters & numbers). Fallback to ascii-friendly check.
-          const re = supportsUnicodeProps
-            ? new RegExp(`(?<![\\p{L}\\p{N}])${e}(?![\\p{L}\\p{N}])`, "iu")
-            : new RegExp(`(^|[^A-Za-z0-9])${e}([^A-Za-z0-9]|$)`, "i");
+      if (signal.aborted) return;
 
-          if (re.test(title)) score += 100;
-          if (re.test(content)) score += 40;
+      const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+      const supportsUnicodeProps = (() => {
+        try {
+          new RegExp("\\p{L}", "u");
+          return true;
+        } catch {
+          return false;
         }
+      })();
 
-        return { ...r, score, _doc: doc };
-      })
-      .sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+      const raw = miniSearch.search(query);
+      const qNorm = query.toLowerCase().replace(/\s+/g, " ").trim();
 
-    setResults(boosted);
-  }, [q, miniSearch, docsMap]);
+      const boosted = raw
+        .map((r) => {
+          if (signal.aborted) throw new Error("Search cancelled");
+
+          const doc = docsMap.get(r.id);
+          const title = (doc?.title || "").toLowerCase();
+          const content = (doc?.content || "").toLowerCase();
+
+          const terms =
+            r.terms && r.terms.length ? r.terms : query.split(/\s+/);
+
+          let score = r.score ?? 0;
+          if (qNorm && (title.includes(qNorm) || content.includes(qNorm))) {
+            score += 2000;
+          }
+
+          for (const term of terms) {
+            if (!term) continue;
+            const t = String(term).toLowerCase();
+            const e = esc(t);
+
+            const re = supportsUnicodeProps
+              ? new RegExp(`(?<![\\p{L}\\p{N}])${e}(?![\\p{L}\\p{N}])`, "iu")
+              : new RegExp(`(^|[^A-Za-z0-9])${e}([^A-Za-z0-9]|$)`, "i");
+
+            if (re.test(title)) score += 100;
+            if (re.test(content)) score += 40;
+          }
+
+          return { ...r, score, _doc: doc };
+        })
+        .sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+
+      if (!signal.aborted) {
+        setResults(boosted);
+      }
+
+      setIsSearching(false);
+    },
+    [miniSearch, docsMap],
+  );
+
+  useEffect(() => {
+    // Cancel previous search
+    abortControllerRef.current?.abort();
+    abortControllerRef.current = new AbortController();
+
+    // Clear debounce timeout
+    if (debounceTimeoutRef.current) {
+      clearTimeout(debounceTimeoutRef.current);
+    }
+
+    // Debounce: wait 300ms before searching
+    debounceTimeoutRef.current = setTimeout(() => {
+      performSearch(q, abortControllerRef.current!.signal);
+    }, 300);
+
+    return () => {
+      if (debounceTimeoutRef.current) {
+        clearTimeout(debounceTimeoutRef.current);
+      }
+    };
+  }, [q, performSearch]);
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const v = q.trim();
     if (!v) return;
     router.replace(`/search?q=${encodeURIComponent(v)}`);
-    // страница перегрузится сервером с новым searchParams, и initialQuery обновится
   };
 
   return (
@@ -134,10 +184,12 @@ export default function SearchResults({
         />
       </form>
 
+      {isSearching && <p className="text-sm text-gray-500">Поиск…</p>}
+
       <ul className="space-y-6">
         {results.slice(0, 10).map((r) => {
-          const termsTitle = r.terms || []; // в title подсвечиваем всё
-          const termsBody = filterTermsForSnippet(termsTitle); // в сниппете — без чисел/«16x1.5»
+          const termsTitle = r.terms || [];
+          const termsBody = filterTermsForSnippet(termsTitle);
 
           const doc = docsMap.get(r.id);
           if (!doc) return null;
@@ -165,7 +217,7 @@ export default function SearchResults({
             </li>
           );
         })}
-        {!results.length && q && (
+        {!results.length && q && !isSearching && (
           <li className="text-sm text-gray-500">Ничего не найдено</li>
         )}
       </ul>
