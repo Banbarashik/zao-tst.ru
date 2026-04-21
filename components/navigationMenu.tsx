@@ -13,7 +13,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import ContactFormTrigger from "./contactFormTrigger";
+import ContactFormTrigger from "@/components/contactFormTrigger";
 
 export default function NavigationMenu({
   variant = "desktop",
@@ -81,30 +81,35 @@ export default function NavigationMenu({
                     <Link
                       href="/produkciya"
                       className="block border border-[#efefef] px-3 py-3 sm:px-4"
+                      onClick={() => setOpen(false)}
                     >
                       Продукция Доставка
                     </Link>
                     <Link
                       href="/kalorifery"
                       className="block border border-[#efefef] px-3 py-3 sm:px-4"
+                      onClick={() => setOpen(false)}
                     >
                       Калориферы
                     </Link>
                     <Link
                       href="/otopitelnye-agregaty"
                       className="block border border-[#efefef] px-3 py-3 sm:px-4"
+                      onClick={() => setOpen(false)}
                     >
                       Агрегаты
                     </Link>
                     <Link
                       href="/vozduchonagrevatelnye-ustanovki"
                       className="block border border-[#efefef] px-3 py-3 sm:px-4"
+                      onClick={() => setOpen(false)}
                     >
                       Установки
                     </Link>
                     <Link
                       href="/kontakty-prajs"
                       className="block border border-[#efefef] px-3 py-3 sm:px-4"
+                      onClick={() => setOpen(false)}
                     >
                       Контакты Прайс-лист
                     </Link>
@@ -128,24 +133,28 @@ export default function NavigationMenu({
                     <Link
                       href="/kalorifery-voda#anchor1"
                       className="block border border-[#efefef] px-3 py-3 sm:px-4"
+                      onClick={() => setOpen(false)}
                     >
                       Калькулятор Вода
                     </Link>
                     <Link
                       href="/elektronagrevateli#anchor1"
                       className="block border border-[#efefef] px-3 py-3 sm:px-4"
+                      onClick={() => setOpen(false)}
                     >
                       Калькулятор Электро
                     </Link>
                     <Link
                       href="/kalorifery-par#anchor1"
                       className="block border border-[#efefef] px-3 py-3 sm:px-4"
+                      onClick={() => setOpen(false)}
                     >
                       Калькулятор Пар
                     </Link>
                     <Link
                       href="/tehnicheskaya-stranica"
                       className="block border border-[#efefef] px-3 py-3 sm:px-4"
+                      onClick={() => setOpen(false)}
                     >
                       Техническая страница
                     </Link>
@@ -167,24 +176,28 @@ export default function NavigationMenu({
                     <Link
                       href="/catalog/pritochny-vodiany-kalorifery"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       КПВС КПВУ
                     </Link>
                     <Link
                       href="/catalog/tvv"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       ТВВ
                     </Link>
                     <Link
                       href="/catalog/ksk"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       КСК
                     </Link>
                     <Link
                       href="/catalog/kfb-a-m"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       КФБ-А М
                     </Link>
@@ -203,24 +216,28 @@ export default function NavigationMenu({
                     <Link
                       href="/catalog/pritochny-parovy-kalorifery"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       КППС КППУ
                     </Link>
                     <Link
                       href="/catalog/kp"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       КП
                     </Link>
                     <Link
                       href="/catalog/kpsk"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       КПСК
                     </Link>
                     <Link
                       href="/catalog/kfb-a-p"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       КФБ-А П
                     </Link>
@@ -239,36 +256,42 @@ export default function NavigationMenu({
                     <Link
                       href="/catalog/ao2-v"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       АО2 ВОДА
                     </Link>
                     <Link
                       href="/catalog/ao2-p"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       АО2 ПАР
                     </Link>
                     <Link
                       href="/catalog/avo-tvv"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       АВО ХЛ ВОДА
                     </Link>
                     <Link
                       href="/catalog/avo-kp"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       АВО ХЛ ПАР
                     </Link>
                     <Link
                       href="/catalog/std300-v"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       СТД-300 ВОДА
                     </Link>
                     <Link
                       href="/catalog/std300-p"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       СТД-300 ПАР
                     </Link>
@@ -287,24 +310,28 @@ export default function NavigationMenu({
                     <Link
                       href="/catalog/sfo"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       СФО
                     </Link>
                     <Link
                       href="/catalog/shuk"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       ШУК
                     </Link>
                     <Link
                       href="/catalog/sfotc"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       СФОЦ
                     </Link>
                     <Link
                       href="/catalog/teny"
                       className="block border border-[#efefef] px-4 py-3"
+                      onClick={() => setOpen(false)}
                     >
                       ТЭНР
                     </Link>
