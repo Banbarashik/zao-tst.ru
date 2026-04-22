@@ -15,6 +15,8 @@ import Image from "next/image";
 import Logo from "@/components/ui/logo";
 import { Mail, PhoneCall, Search } from "lucide-react";
 
+import { Calculator } from "lucide-react";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,12 +36,30 @@ export default function RootLayout({
         </head>
         <body className="font-arial flex min-h-screen flex-col antialiased">
           <header className="w-full text-white">
+            {/* NAV BAR */}
+            <div className="border-b border-white/10 bg-[#4c2b20]/95">
+              <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 text-sm">
+                <a className="ml-auto flex items-center gap-1 py-2 transition hover:text-[#ffd166]">
+                  <Calculator />
+                  Подбор водяных калориферов
+                </a>
+                <a className="flex items-center gap-1 py-2 transition hover:text-[#ffd166]">
+                  <Calculator />
+                  Подбор паровых калориферов
+                </a>
+                <a className="mr-auto flex items-center gap-1 py-2 transition hover:text-[#ffd166]">
+                  <Calculator />
+                  Подбор электрокалориферов
+                </a>
+              </div>
+            </div>
+
             {/* MAIN BAR */}
             <div className="bg-[#5e2129]">
               <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-4">
                 <Logo place="header" />
 
-                <ul className="4xl:ml-12 3xl:ml-8 ml-3 flex flex-col items-start gap-y-2 text-white xl:text-sm">
+                <ul className="4xl:ml-12 3xl:ml-8 ml-3 flex flex-col items-start gap-y-2 text-white xl:text-[15px]">
                   <li className="hover:font-semibold">
                     <a
                       href="tel:+79617378314"
@@ -86,25 +106,31 @@ export default function RootLayout({
             {/* NAV BAR */}
             <div className="bg-primary-darker/95 border-t border-white/10">
               <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 text-sm">
-                <a className="border-b-2 border-[#ffd166] py-3 text-[#ffd166]">
+                <a className="mb-0.75 border-b-2 border-[#ffd166] py-3 text-[#ffd166]">
                   Главная
                 </a>
-
-                <a className="group relative py-3 transition hover:text-[#ffd166]">
-                  Продукция
+                <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+                  Каталог
+                </a>
+                <a className="group relative mb-0.75 py-3 transition hover:text-[#ffd166]">
+                  Продукция Сертификаты
                   <span className="absolute -bottom-0.5 left-0 h-[2px] w-0 bg-[#ffd166] transition-all group-hover:w-full"></span>
                 </a>
-
-                <a className="py-3 transition hover:text-[#ffd166]">
-                  Сертификаты
+                <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+                  Калориферы
                 </a>
-                <a className="py-3 transition hover:text-[#ffd166]">
-                  Прайс-лист
+                <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+                  Агрегаты
                 </a>
-                <a className="py-3 transition hover:text-[#ffd166]">
-                  Калькулятор
+                <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+                  Установки
                 </a>
-                <a className="py-3 transition hover:text-[#ffd166]">Контакты</a>
+                <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+                  Техническая страница
+                </a>
+                <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+                  Контакты Прайс лист
+                </a>
               </div>
             </div>
           </header>
