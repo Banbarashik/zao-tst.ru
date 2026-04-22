@@ -1,30 +1,41 @@
+import Link from "next/link";
+
 import { Calculator, Mail, PhoneCall, Search } from "lucide-react";
 
 import Logo from "@/components/ui/logo";
 
 export default function NavigationMenu() {
   return (
-    <div className="w-full text-white">
+    <div className="text-white">
       {/* CALCULATORS BAR */}
       <div className="border-b border-white/10 bg-[#4c2b20]/95">
-        <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 text-sm">
-          <a className="ml-auto flex items-center gap-1 py-2 transition hover:text-[#ffd166]">
+        <div className="mx-auto flex w-max items-center gap-8 text-sm">
+          <Link
+            href="/kalorifery-voda#anchor1"
+            className="hover:text-accent flex items-center gap-1 py-2 transition"
+          >
             <Calculator />
             Подбор водяных калориферов
-          </a>
-          <a className="flex items-center gap-1 py-2 transition hover:text-[#ffd166]">
+          </Link>
+          <Link
+            href="/kalorifery-par#anchor1"
+            className="hover:text-accent flex items-center gap-1 py-2 transition"
+          >
             <Calculator />
             Подбор паровых калориферов
-          </a>
-          <a className="mr-auto flex items-center gap-1 py-2 transition hover:text-[#ffd166]">
+          </Link>
+          <Link
+            href="/elektronagrevateli#anchor1"
+            className="hover:text-accent flex items-center gap-1 py-2 transition"
+          >
             <Calculator />
             Подбор электрокалориферов
-          </a>
+          </Link>
         </div>
       </div>
 
       {/* MAIN BAR */}
-      <div className="bg-[#5e2129]">
+      <div className="bg-primary-darker">
         <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-4">
           <Logo place="header" />
 
@@ -59,7 +70,7 @@ export default function NavigationMenu() {
               <input
                 type="text"
                 placeholder="Поиск товаров..."
-                className="border-accent/10 w-full max-w-md rounded-lg border bg-white/10 px-4 py-2.5 pl-10 text-sm text-white placeholder-white/60 outline-none focus:ring focus:ring-[#ffd166]/50"
+                className="border-accent/10 focus:ring-accent/50 w-full max-w-md rounded-lg border bg-white/10 px-4 py-2.5 pl-10 text-sm text-white placeholder-white/60 outline-none focus:ring"
               />
               <Search className="absolute top-1/2 left-3 -translate-y-1/2 text-white/60" />
             </div>
@@ -75,29 +86,23 @@ export default function NavigationMenu() {
       {/* NAV BAR */}
       <div className="bg-primary-darker/95 border-t border-white/10">
         <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 text-sm">
-          <a className="mb-0.75 border-b-2 border-[#ffd166] py-3 text-[#ffd166]">
+          <a className="border-accent text-accent mb-0.75 border-b-2 py-3">
             Главная
           </a>
-          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
-            Каталог
-          </a>
-          <a className="group relative mb-0.75 py-3 transition hover:text-[#ffd166]">
+          <a className="hover:text-accent mb-0.75 py-3 transition">Каталог</a>
+          <a className="group hover:text-accent relative mb-0.75 py-3 transition">
             Продукция Сертификаты
-            <span className="absolute -bottom-0.5 left-0 h-[2px] w-0 bg-[#ffd166] transition-all group-hover:w-full"></span>
+            <span className="bg-accent absolute -bottom-0.5 left-0 h-[2px] w-0 transition-all group-hover:w-full"></span>
           </a>
-          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+          <a className="hover:text-accent mb-0.75 py-3 transition">
             Калориферы
           </a>
-          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
-            Агрегаты
-          </a>
-          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
-            Установки
-          </a>
-          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+          <a className="hover:text-accent mb-0.75 py-3 transition">Агрегаты</a>
+          <a className="hover:text-accent mb-0.75 py-3 transition">Установки</a>
+          <a className="hover:text-accent mb-0.75 py-3 transition">
             Техническая страница
           </a>
-          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+          <a className="hover:text-accent mb-0.75 py-3 transition">
             Контакты Прайс лист
           </a>
         </div>
