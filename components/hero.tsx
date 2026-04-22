@@ -2,15 +2,12 @@
 
 import * as React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-
-import { Button } from "@/components/ui/button";
 
 const slides = [
   {
@@ -106,13 +103,6 @@ export default function Hero() {
                     {slide.text}
                   </p>
                 )}
-                <Button
-                  size="xl"
-                  className="hover:bg-primary-dark relative z-10 border border-[#C6C3B5] font-bold"
-                  asChild
-                >
-                  <Link href="/catalog">Каталог</Link>
-                </Button>
               </div>
             </CarouselItem>
           ))}
