@@ -86,25 +86,55 @@ export default function NavigationMenu() {
       {/* NAV BAR */}
       <div className="bg-primary-darker/95 border-t border-white/10">
         <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 text-sm">
-          <a className="border-accent text-accent mb-0.75 border-b-2 py-3">
+          <Link
+            href="/"
+            className="border-accent text-accent mb-0.75 border-b-2 py-3"
+          >
             Главная
-          </a>
-          <a className="hover:text-accent mb-0.75 py-3 transition">Каталог</a>
-          <a className="group hover:text-accent relative mb-0.75 py-3 transition">
+          </Link>
+          <Link
+            href="/catalog"
+            className="hover:text-accent mb-0.75 py-3 transition"
+          >
+            Каталог
+          </Link>
+          <Link
+            href="/produkciya"
+            className="group hover:text-accent relative mb-0.75 py-3 transition"
+          >
             Продукция Сертификаты
             <span className="bg-accent absolute -bottom-0.5 left-0 h-[2px] w-0 transition-all group-hover:w-full"></span>
-          </a>
-          <a className="hover:text-accent mb-0.75 py-3 transition">
+          </Link>
+          <Link
+            href="/kalorifery"
+            className="hover:text-accent mb-0.75 py-3 transition"
+          >
             Калориферы
-          </a>
-          <a className="hover:text-accent mb-0.75 py-3 transition">Агрегаты</a>
-          <a className="hover:text-accent mb-0.75 py-3 transition">Установки</a>
-          <a className="hover:text-accent mb-0.75 py-3 transition">
+          </Link>
+          <Link
+            href="/otopitelnye-agregaty"
+            className="hover:text-accent mb-0.75 py-3 transition"
+          >
+            Агрегаты
+          </Link>
+          <Link
+            href="/vozduchonagrevatelnye-ustanovki"
+            className="hover:text-accent mb-0.75 py-3 transition"
+          >
+            Установки
+          </Link>
+          <Link
+            href="/tehnicheskaya-stranica"
+            className="hover:text-accent mb-0.75 py-3 transition"
+          >
             Техническая страница
-          </a>
-          <a className="hover:text-accent mb-0.75 py-3 transition">
+          </Link>
+          <Link
+            href="/kontakty-prajs"
+            className="hover:text-accent mb-0.75 py-3 transition"
+          >
             Контакты Прайс лист
-          </a>
+          </Link>
         </div>
       </div>
     </div>
