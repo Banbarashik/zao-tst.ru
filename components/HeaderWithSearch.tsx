@@ -10,9 +10,9 @@ import Image from "next/image";
 import { PhoneCall, Mail, Search, X } from "lucide-react";
 
 import Logo from "@/components/ui/logo";
-import NavigationMenu from "@/components/navigationMenu";
+import { Button } from "@/components/ui/button";
+import NavigationMenu from "@/components/mobileNavigationMenu";
 import ContactFormTrigger from "@/components/contactFormTrigger";
-import { Button } from "./ui/button";
 
 // Define the type for search index items
 interface SearchItem {

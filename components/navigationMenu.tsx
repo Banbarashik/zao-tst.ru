@@ -1,392 +1,107 @@
-// TODO check if there's code that is no longer needed
+import { Calculator, Mail, PhoneCall, Search } from "lucide-react";
 
-"use client";
+import Logo from "@/components/ui/logo";
 
-import Link from "next/link";
-import { useState, useRef, useEffect } from "react";
-
-import { ChevronDown } from "lucide-react";
-
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "@/components/ui/accordion";
-import ContactFormTrigger from "@/components/contactFormTrigger";
-
-export default function NavigationMenu({
-  variant = "desktop",
-}: {
-  variant?: "desktop" | "mobile";
-}) {
-  const [open, setOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
-
-  // Close menu on outside click
-  // navigationMenu.tsx
-  // ...
-  useEffect(() => {
-    if (!open) return;
-
-    const onDocPointerDown = (event: PointerEvent) => {
-      const path = (event.composedPath && event.composedPath()) || [];
-
-      const isInsideMenu = menuRef.current
-        ? path.includes(menuRef.current)
-        : false;
-
-      // Любой узел с data-menu-ignore-close="true" — безопасная зона
-      const isSafeZone = path.some(
-        (el) => (el as HTMLElement)?.dataset?.menuIgnoreClose === "true",
-      );
-
-      if (!isInsideMenu && !isSafeZone) {
-        setOpen(false);
-      }
-    };
-
-    document.addEventListener("pointerdown", onDocPointerDown);
-    return () => document.removeEventListener("pointerdown", onDocPointerDown);
-  }, [open]);
-  // ...
-
-  if (variant === "mobile") {
-    return (
-      <div className="w-full" ref={menuRef}>
-        <button
-          className="flex w-full items-center justify-center gap-3 border border-[#bfbfbf] bg-[#dcdcdc] px-4 py-3 text-lg font-semibold"
-          onClick={() => setOpen((o) => !o)}
-        >
-          <span>Меню</span>
-          <ChevronDown
-            className={`${open ? "rotate-180" : "rotate-0"} transition duration-200`}
-          />
-        </button>
-        {open && (
-          <div className="flex flex-col border-t bg-[#f3f3f3] shadow-md">
-            <Accordion type="single" collapsible>
-              <div className="grid grid-cols-2 border-b">
-                <AccordionItem
-                  value="produkciya-zayavka"
-                  className="contents border-0"
-                >
-                  <AccordionTrigger className="col-span-1 justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
-                    <span>
-                      <span>Продукция </span>
-                      <span className="text-primary-dark">Заявка</span>
-                    </span>
-                  </AccordionTrigger>
-                  <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
-                    <Link
-                      href="/produkciya"
-                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
-                      onClick={() => setOpen(false)}
-                    >
-                      Продукция Доставка
-                    </Link>
-                    <Link
-                      href="/kalorifery"
-                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
-                      onClick={() => setOpen(false)}
-                    >
-                      Калориферы
-                    </Link>
-                    <Link
-                      href="/otopitelnye-agregaty"
-                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
-                      onClick={() => setOpen(false)}
-                    >
-                      Агрегаты
-                    </Link>
-                    <Link
-                      href="/vozduchonagrevatelnye-ustanovki"
-                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
-                      onClick={() => setOpen(false)}
-                    >
-                      Установки
-                    </Link>
-                    <Link
-                      href="/kontakty-prajs"
-                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
-                      onClick={() => setOpen(false)}
-                    >
-                      Контакты Прайс-лист
-                    </Link>
-                    <ContactFormTrigger
-                      hasCloseBtn
-                      triggerBtnClassName="text-primary max-[350px]:text-xs w-full h-full"
-                      amountClassName="absolute max-[350px]:text-[10px] border border-primary text-primary right-0 -translate-x-6 -translate-y-2 inline-flex size-4 items-center justify-center rounded-full text-[10px]"
-                    />
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem
-                  value="calculators"
-                  className="contents border-0"
-                >
-                  <div className="col-span-1 [&:has(>h3[data-state=closed])]:col-start-2 [&:has(>h3[data-state=closed])]:row-start-1">
-                    <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
-                      Калькуляторы подбора
-                    </AccordionTrigger>
-                  </div>
-                  <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down col-span-2 grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
-                    <Link
-                      href="/kalorifery-voda#anchor1"
-                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
-                      onClick={() => setOpen(false)}
-                    >
-                      Калькулятор Вода
-                    </Link>
-                    <Link
-                      href="/elektronagrevateli#anchor1"
-                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
-                      onClick={() => setOpen(false)}
-                    >
-                      Калькулятор Электро
-                    </Link>
-                    <Link
-                      href="/kalorifery-par#anchor1"
-                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
-                      onClick={() => setOpen(false)}
-                    >
-                      Калькулятор Пар
-                    </Link>
-                    <Link
-                      href="/tehnicheskaya-stranica"
-                      className="block border border-[#efefef] px-3 py-3 sm:px-4"
-                      onClick={() => setOpen(false)}
-                    >
-                      Техническая страница
-                    </Link>
-                  </AccordionContent>
-                </AccordionItem>
-              </div>
-
-              <div className="grid grid-cols-2 border-b">
-                <AccordionItem value="water" className="contents border-0">
-                  <Link
-                    href="/catalog/vodiany-kalorifery"
-                    className="col-span-1"
-                  >
-                    <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
-                      Водяные калориферы
-                    </AccordionTrigger>
-                  </Link>
-                  <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
-                    <Link
-                      href="/catalog/pritochny-vodiany-kalorifery"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      КПВС КПВУ
-                    </Link>
-                    <Link
-                      href="/catalog/tvv"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      ТВВ
-                    </Link>
-                    <Link
-                      href="/catalog/ksk"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      КСК
-                    </Link>
-                    <Link
-                      href="/catalog/kfb-a-m"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      КФБ-А М
-                    </Link>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="steam" className="contents border-0">
-                  <Link
-                    href="/catalog/parovy-kalorifery"
-                    className="col-span-1 [&:has(>h3[data-state=closed])]:col-start-2 [&:has(>h3[data-state=closed])]:row-start-1"
-                  >
-                    <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
-                      Паровые калориферы
-                    </AccordionTrigger>
-                  </Link>
-                  <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down col-span-2 grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
-                    <Link
-                      href="/catalog/pritochny-parovy-kalorifery"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      КППС КППУ
-                    </Link>
-                    <Link
-                      href="/catalog/kp"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      КП
-                    </Link>
-                    <Link
-                      href="/catalog/kpsk"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      КПСК
-                    </Link>
-                    <Link
-                      href="/catalog/kfb-a-p"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      КФБ-А П
-                    </Link>
-                  </AccordionContent>
-                </AccordionItem>
-              </div>
-
-              <div className="grid grid-cols-2 border-b">
-                <AccordionItem value="agregaty" className="contents border-0">
-                  <Link href="/catalog/agregaty" className="col-span-1">
-                    <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
-                      Отопительные агрегаты
-                    </AccordionTrigger>
-                  </Link>
-                  <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
-                    <Link
-                      href="/catalog/ao2-v"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      АО2 ВОДА
-                    </Link>
-                    <Link
-                      href="/catalog/ao2-p"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      АО2 ПАР
-                    </Link>
-                    <Link
-                      href="/catalog/avo-tvv"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      АВО ХЛ ВОДА
-                    </Link>
-                    <Link
-                      href="/catalog/avo-kp"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      АВО ХЛ ПАР
-                    </Link>
-                    <Link
-                      href="/catalog/std300-v"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      СТД-300 ВОДА
-                    </Link>
-                    <Link
-                      href="/catalog/std300-p"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      СТД-300 ПАР
-                    </Link>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="electro" className="contents border-0">
-                  <Link
-                    href="/catalog/energonagrevatelynoe-oborudovanie"
-                    className="col-span-1 [&:has(>h3[data-state=closed])]:col-start-2 [&:has(>h3[data-state=closed])]:row-start-1"
-                  >
-                    <AccordionTrigger className="justify-evenly gap-0 rounded-none border border-[#dcdcdc] bg-[#e4e4e4] data-[state=open]:bg-[#ebebeb] max-[350px]:text-xs">
-                      Электронагреватели
-                    </AccordionTrigger>
-                  </Link>
-                  <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down col-span-2 grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
-                    <Link
-                      href="/catalog/sfo"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      СФО
-                    </Link>
-                    <Link
-                      href="/catalog/shuk"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      ШУК
-                    </Link>
-                    <Link
-                      href="/catalog/sfotc"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      СФОЦ
-                    </Link>
-                    <Link
-                      href="/catalog/teny"
-                      className="block border border-[#efefef] px-4 py-3"
-                      onClick={() => setOpen(false)}
-                    >
-                      ТЭНР
-                    </Link>
-                  </AccordionContent>
-                </AccordionItem>
-              </div>
-            </Accordion>
-          </div>
-        )}
-      </div>
-    );
-  }
-
-  // Desktop menu
+export default function NavigationMenu() {
   return (
-    <div className="flex">
-      <Link
-        href="/produkciya"
-        className="flex flex-col justify-center border border-[#A5A5A5] bg-[#e3e3e3] px-2 text-center text-[11px] text-(--primary-darker) uppercase shadow-[0px_1px_0_#bdbdbd,2px_4px_6px_#dbdbdb] transition-all duration-300 hover:border-[rgba(0,0,0,0.2)] hover:bg-[#d1d1d1] hover:text-[#8f6063] hover:shadow-[1px_1px_2px_rgba(255,255,255,0.95)] hover:text-shadow-[-1px_-1px_0_#b3b3b3] xl:px-4 xl:text-xs"
-      >
-        <div>Продукция</div>
-        <div>Сертификаты</div>
-      </Link>
-      <Link
-        href="/kontakty-prajs"
-        className="flex flex-col justify-center border border-[#A5A5A5] bg-[#e3e3e3] px-2 text-center text-[11px] text-(--primary-darker) uppercase shadow-[0px_1px_0_#bdbdbd,2px_4px_6px_#dbdbdb] transition-all duration-300 hover:border-[rgba(0,0,0,0.2)] hover:bg-[#d1d1d1] hover:text-[#8f6063] hover:shadow-[1px_1px_2px_rgba(255,255,255,0.95)] hover:text-shadow-[-1px_-1px_0_#b3b3b3] xl:px-4 xl:text-xs"
-      >
-        <div>Контакты</div>
-        <div>Прайс-лист</div>
-      </Link>
-      <Link
-        href="/tehnicheskaya-stranica"
-        className="flex flex-col justify-center border border-[#A5A5A5] bg-[#e3e3e3] px-2 text-center text-[11px] text-(--primary-darker) uppercase shadow-[0px_1px_0_#bdbdbd,2px_4px_6px_#dbdbdb] transition-all duration-300 hover:border-[rgba(0,0,0,0.2)] hover:bg-[#d1d1d1] hover:text-[#8f6063] hover:shadow-[1px_1px_2px_rgba(255,255,255,0.95)] hover:text-shadow-[-1px_-1px_0_#b3b3b3] xl:px-4 xl:text-xs"
-      >
-        <div>Техническая</div>
-        <div>страница</div>
-      </Link>
-      <Link
-        href="/kalorifery-voda#anchor1"
-        className="btn-flip w-min text-sm xl:text-base"
-        data-back="Водяные калориферы"
-        data-front="Калькулятор подбора"
-      />
-      <Link
-        href="/kalorifery-par#anchor1"
-        className="btn-flip w-min text-sm xl:text-base"
-        data-back="Паровые калориферы"
-        data-front="Калькулятор подбора"
-      />
-      <Link
-        href="/elektronagrevateli#anchor1"
-        className="btn-flip w-min text-sm xl:text-base"
-        data-back="Электро калориферы"
-        data-front="Калькулятор подбора"
-      />
+    <div className="w-full text-white">
+      {/* CALCULATORS BAR */}
+      <div className="border-b border-white/10 bg-[#4c2b20]/95">
+        <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 text-sm">
+          <a className="ml-auto flex items-center gap-1 py-2 transition hover:text-[#ffd166]">
+            <Calculator />
+            Подбор водяных калориферов
+          </a>
+          <a className="flex items-center gap-1 py-2 transition hover:text-[#ffd166]">
+            <Calculator />
+            Подбор паровых калориферов
+          </a>
+          <a className="mr-auto flex items-center gap-1 py-2 transition hover:text-[#ffd166]">
+            <Calculator />
+            Подбор электрокалориферов
+          </a>
+        </div>
+      </div>
+
+      {/* MAIN BAR */}
+      <div className="bg-[#5e2129]">
+        <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-4">
+          <Logo place="header" />
+
+          <ul className="4xl:ml-12 3xl:ml-8 ml-3 flex flex-col items-start gap-y-2 text-white xl:text-[15px]">
+            <li className="group">
+              <a
+                href="tel:+79617378314"
+                className="flex items-center gap-2.5 group-hover:text-[#7ebab5]"
+              >
+                <span className="rounded-full border border-white p-1.25 group-hover:border-[#7ebab5]">
+                  <PhoneCall className="size-4 xl:size-4" />
+                </span>
+                <span>+7 (961) 737-83-14</span>
+              </a>
+            </li>
+            <li className="group">
+              <a
+                href="mailto:zao_tst@mail.ru"
+                className="flex items-center gap-2.5 group-hover:text-[#7ebab5]"
+              >
+                <span className="rounded-full border border-white p-1.25 group-hover:border-[#7ebab5]">
+                  <Mail className="size-4 xl:size-4" />
+                </span>
+                <span>zao_tst@mail.ru</span>
+              </a>
+            </li>
+          </ul>
+
+          {/* Search */}
+          <div className="ml-6 flex-1">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Поиск товаров..."
+                className="border-accent/10 w-full max-w-md rounded-lg border bg-white/10 px-4 py-2.5 pl-10 text-sm text-white placeholder-white/60 outline-none focus:ring focus:ring-[#ffd166]/50"
+              />
+              <Search className="absolute top-1/2 left-3 -translate-y-1/2 text-white/60" />
+            </div>
+          </div>
+
+          {/* CTA */}
+          <button className="bg-primary rounded-lg border border-white/50 px-5 py-2.5 font-semibold shadow-sm transition hover:bg-[#c74f2b] hover:shadow-md">
+            Подать заявку
+          </button>
+        </div>
+      </div>
+
+      {/* NAV BAR */}
+      <div className="bg-primary-darker/95 border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 text-sm">
+          <a className="mb-0.75 border-b-2 border-[#ffd166] py-3 text-[#ffd166]">
+            Главная
+          </a>
+          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+            Каталог
+          </a>
+          <a className="group relative mb-0.75 py-3 transition hover:text-[#ffd166]">
+            Продукция Сертификаты
+            <span className="absolute -bottom-0.5 left-0 h-[2px] w-0 bg-[#ffd166] transition-all group-hover:w-full"></span>
+          </a>
+          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+            Калориферы
+          </a>
+          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+            Агрегаты
+          </a>
+          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+            Установки
+          </a>
+          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+            Техническая страница
+          </a>
+          <a className="mb-0.75 py-3 transition hover:text-[#ffd166]">
+            Контакты Прайс лист
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
