@@ -86,48 +86,61 @@ export default function NavigationMenu() {
       {/* NAV BAR */}
       <div className="bg-primary-darker/95 border-t border-white/10">
         <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 pb-1 text-sm">
-          <Link href="/" className="border-accent text-accent border-b-2 py-3">
+          <Link
+            href="/"
+            className="group border-accent text-accent relative border-b-2 pt-2.5 pb-2"
+          >
             Главная
+            <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
-          <Link href="/catalog" className="hover:text-accent py-3 transition">
+          <Link
+            href="/catalog"
+            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
+          >
             Каталог
+            <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/produkciya"
-            className="group hover:text-accent relative py-3 transition"
+            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
           >
             Продукция Сертификаты
-            <span className="bg-accent absolute -bottom-0.5 left-0 h-[2px] w-0 transition-all group-hover:w-full"></span>
+            <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/kalorifery"
-            className="hover:text-accent py-3 transition"
+            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
           >
             Калориферы
+            <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/otopitelnye-agregaty"
-            className="hover:text-accent py-3 transition"
+            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
           >
             Агрегаты
+            <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/vozduchonagrevatelnye-ustanovki"
-            className="hover:text-accent py-3 transition"
+            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
           >
             Установки
+            <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/tehnicheskaya-stranica"
-            className="hover:text-accent py-3 transition"
+            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
           >
             Техническая страница
+            <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/kontakty-prajs"
-            className="hover:text-accent py-3 transition"
+            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
           >
             Контакты Прайс лист
+            <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
         </div>
       </div>
