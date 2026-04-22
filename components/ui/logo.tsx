@@ -10,12 +10,12 @@ export default function Logo({ place }: { place: "header" | "footer" }) {
           className="flex shrink-0 items-center justify-start gap-3"
         >
           <Image
-            src="/img/logo_header.png"
+            src="/img/logo_footer.png"
             alt="Логотип ООО 'ТСТ'"
             width={68}
             height={68}
           />
-          <div className="text-primary-darker 3xl:block mt-3 hidden space-y-0.5 font-serif font-semibold md:block lg:hidden">
+          <div className="3xl:block mt-3 hidden space-y-0.5 font-serif font-semibold text-white md:block lg:hidden">
             <p className="text-[17px]">Предприятие ООО Т.С.Т.</p>
             <p className="">Отопительное оборудование</p>
           </div>
