@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import { Calculator, Mail, PhoneCall, Search } from "lucide-react";
@@ -5,6 +8,8 @@ import { Calculator, Mail, PhoneCall, Search } from "lucide-react";
 import Logo from "@/components/ui/logo";
 
 export default function NavigationMenu() {
+  const pathname = usePathname();
+
   return (
     <div className="text-white">
       {/* CALCULATORS BAR */}
@@ -88,56 +93,88 @@ export default function NavigationMenu() {
         <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 pb-1 text-sm">
           <Link
             href="/"
-            className="group border-accent text-accent relative border-b-2 pt-2.5 pb-2"
+            className={`group relative border-b-2 pt-2.5 pb-2 transition ${
+              pathname === "/"
+                ? "border-accent text-accent"
+                : "hover:text-accent border-transparent"
+            }`}
           >
             Главная
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/catalog"
-            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
+            className={`group relative border-b-2 pt-2.5 pb-2 transition ${
+              pathname === "/catalog" || pathname.startsWith("/catalog/")
+                ? "border-accent text-accent"
+                : "hover:text-accent border-transparent"
+            }`}
           >
             Каталог
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/produkciya"
-            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
+            className={`group relative border-b-2 pt-2.5 pb-2 transition ${
+              pathname === "/produkciya"
+                ? "border-accent text-accent"
+                : "hover:text-accent border-transparent"
+            }`}
           >
             Продукция Сертификаты
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/kalorifery"
-            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
+            className={`group relative border-b-2 pt-2.5 pb-2 transition ${
+              pathname === "/kalorifery"
+                ? "border-accent text-accent"
+                : "hover:text-accent border-transparent"
+            }`}
           >
             Калориферы
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/otopitelnye-agregaty"
-            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
+            className={`group relative border-b-2 pt-2.5 pb-2 transition ${
+              pathname === "/otopitelnye-agregaty"
+                ? "border-accent text-accent"
+                : "hover:text-accent border-transparent"
+            }`}
           >
             Агрегаты
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/vozduchonagrevatelnye-ustanovki"
-            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
+            className={`group relative border-b-2 pt-2.5 pb-2 transition ${
+              pathname === "/vozduchonagrevatelnye-ustanovki"
+                ? "border-accent text-accent"
+                : "hover:text-accent border-transparent"
+            }`}
           >
             Установки
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/tehnicheskaya-stranica"
-            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
+            className={`group relative border-b-2 pt-2.5 pb-2 transition ${
+              pathname === "/tehnicheskaya-stranica"
+                ? "border-accent text-accent"
+                : "hover:text-accent border-transparent"
+            }`}
           >
             Техническая страница
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             href="/kontakty-prajs"
-            className="group hover:text-accent relative border-b-2 border-transparent pt-2.5 pb-2 transition"
+            className={`group relative border-b-2 pt-2.5 pb-2 transition ${
+              pathname === "/kontakty-prajs"
+                ? "border-accent text-accent"
+                : "hover:text-accent border-transparent"
+            }`}
           >
             Контакты Прайс лист
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
