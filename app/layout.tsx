@@ -60,23 +60,23 @@ export default function RootLayout({
                 <Logo place="header" />
 
                 <ul className="4xl:ml-12 3xl:ml-8 ml-3 flex flex-col items-start gap-y-2 text-white xl:text-[15px]">
-                  <li className="hover:font-semibold">
+                  <li className="group">
                     <a
                       href="tel:+79617378314"
-                      className="flex items-center gap-2.5"
+                      className="flex items-center gap-2.5 group-hover:text-[#7ebab5]"
                     >
-                      <span className="rounded-full border border-white p-1.25">
+                      <span className="rounded-full border border-white p-1.25 group-hover:border-[#7ebab5]">
                         <PhoneCall className="size-4 xl:size-4" />
                       </span>
                       <span>+7 (961) 737-83-14</span>
                     </a>
                   </li>
-                  <li className="hover:text-shadow-[0_0_1px_currentColor]">
+                  <li className="group">
                     <a
                       href="mailto:zao_tst@mail.ru"
-                      className="flex items-center gap-2.5"
+                      className="flex items-center gap-2.5 group-hover:text-[#7ebab5]"
                     >
-                      <span className="rounded-full border border-white p-1.25">
+                      <span className="rounded-full border border-white p-1.25 group-hover:border-[#7ebab5]">
                         <Mail className="size-4 xl:size-4" />
                       </span>
                       <span>zao_tst@mail.ru</span>
