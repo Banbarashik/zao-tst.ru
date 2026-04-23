@@ -70,17 +70,7 @@ export default function NavigationMenu() {
             </li>
           </ul>
 
-          {/* Search */}
-          <div className="ml-6 flex-1">
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Поиск товаров..."
-                className="border-accent/10 focus:ring-accent/50 w-full max-w-md rounded-lg border bg-white/10 px-4 py-2.5 pl-10 text-sm text-white placeholder-white/60 outline-none focus:ring"
-              />
-              <Search className="absolute top-1/2 left-3 -translate-y-1/2 text-white/60" />
-            </div>
-          </div>
+          <NavSearch />
 
           <ContactFormTrigger
             triggerBtnVariant="default"
@@ -183,6 +173,19 @@ export default function NavigationMenu() {
           </Link>
         </div>
       </div>
+    </div>
+  );
+}
+
+function NavSearch() {
+  return (
+    <div className="relative ml-6 flex-1">
+      <input
+        type="text"
+        placeholder="Поиск по сайту..."
+        className="border-accent/10 focus:ring-accent/50 w-full max-w-md rounded-lg border bg-white/10 px-4 py-2.5 pl-10 text-sm text-white placeholder-white/60 outline-none focus:ring"
+      />
+      <Search className="absolute top-1/2 left-2 -translate-y-1/2 text-white/60" />
     </div>
   );
 }
