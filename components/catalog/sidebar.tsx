@@ -311,7 +311,7 @@ export default function Sidebar() {
       {currentSlug === "" || currentSlug === "all" ? (
         <div
           className="w-full rounded-xl border-2 p-2 sm:w-80 [@media(min-height:920px)]:fixed"
-          style={{ top: "calc(var(--site-header-height, 160px) + 0.5rem)" }}
+          style={{ top: "calc(var(--site-header-height, 232px) + 0.5rem)" }}
         >
           <Accordion.Root type="multiple" value={open} onValueChange={setOpen}>
             <RecursiveAccordion
@@ -327,7 +327,7 @@ export default function Sidebar() {
           value={open}
           onValueChange={setOpen}
           className="w-full sm:w-80 [@media(min-height:920px)]:fixed"
-          style={{ top: "calc(var(--site-header-height, 160px) + 0.5rem)" }}
+          style={{ top: "calc(var(--site-header-height, 232px) + 0.5rem)" }}
         >
           <RecursiveAccordion
             nodes={treeToRender}

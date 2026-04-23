@@ -30,7 +30,7 @@ export default function NavigationMenu() {
         : 0;
       document.documentElement.style.setProperty(
         "--site-header-height",
-        `${Math.ceil(calcH + mainH + navH)}px`,
+        `${Math.ceil(calcH + mainH + navH + 46)}px`,
       );
     };
 
