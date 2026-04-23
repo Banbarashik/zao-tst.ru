@@ -310,7 +310,7 @@ export default function Sidebar() {
     <aside className="hidden w-full shrink-0 sm:w-78 lg:block">
       {currentSlug === "" || currentSlug === "all" ? (
         <div
-          className="w-full rounded-xl border-2 p-2 sm:w-80 [@media(min-height:920px)]:fixed"
+          className="w-full rounded-xl border-2 p-2 transition-all duration-300 sm:w-80 [@media(min-height:920px)]:fixed"
           style={{ top: "calc(var(--site-header-height, 232px) + 0.5rem)" }}
         >
           <Accordion.Root type="multiple" value={open} onValueChange={setOpen}>
@@ -326,7 +326,7 @@ export default function Sidebar() {
           type="multiple"
           value={open}
           onValueChange={setOpen}
-          className="w-full sm:w-80 [@media(min-height:920px)]:fixed"
+          className="w-full transition-all duration-300 sm:w-80 [@media(min-height:920px)]:fixed"
           style={{ top: "calc(var(--site-header-height, 232px) + 0.5rem)" }}
         >
           <RecursiveAccordion
