@@ -18,51 +18,56 @@ export default function NavigationMenu() {
   const navBarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!navBarRef.current || !mainBarRef.current) return;
+    if (!calcBarRef.current || !mainBarRef.current || !navBarRef.current)
+      return;
 
-    let navVisible = true;
+    const getNavVisible = () =>
+      navBarRef.current!.getBoundingClientRect().top > 0;
 
-    const updateHeaderHeight = (visible: boolean) => {
-      const calcH = calcBarRef.current?.getBoundingClientRect().height ?? 0;
-      const mainH = mainBarRef.current?.getBoundingClientRect().height ?? 0;
-      const navH = visible
-        ? (navBarRef.current?.getBoundingClientRect().height ?? 0)
-        : 0;
+    const updateHeaderHeight = () => {
+      const visible = getNavVisible();
+      const calcH = calcBarRef.current!.offsetHeight;
+      const mainH = mainBarRef.current!.offsetHeight;
+      const navH = visible ? navBarRef.current!.offsetHeight : 0;
+
       document.documentElement.style.setProperty(
         "--site-header-height",
         `${Math.ceil(calcH + mainH + navH + 46)}px`,
       );
+      document.documentElement.style.setProperty(
+        "--sidebar-raise",
+        visible ? "0px" : "-40px",
+      );
     };
+
+    updateHeaderHeight(); // important initial set
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        navVisible = entry.isIntersecting;
         if (mainBarRef.current) {
-          if (entry.isIntersecting) {
-            mainBarRef.current.classList.remove("opacity-90");
-          } else {
-            mainBarRef.current.classList.add("opacity-90");
-          }
+          mainBarRef.current.classList.toggle(
+            "opacity-90",
+            !entry.isIntersecting,
+          );
         }
-        updateHeaderHeight(navVisible);
+        updateHeaderHeight();
       },
       { threshold: 0 },
     );
 
     observer.observe(navBarRef.current);
 
-    const resizeObserver = new ResizeObserver(() =>
-      updateHeaderHeight(navVisible),
-    );
-    if (calcBarRef.current) resizeObserver.observe(calcBarRef.current);
+    const resizeObserver = new ResizeObserver(updateHeaderHeight);
+    resizeObserver.observe(calcBarRef.current);
     resizeObserver.observe(mainBarRef.current);
     resizeObserver.observe(navBarRef.current);
 
-    updateHeaderHeight(navBarRef.current.getBoundingClientRect().top >= 0);
+    window.addEventListener("scroll", updateHeaderHeight, { passive: true });
 
     return () => {
       observer.disconnect();
       resizeObserver.disconnect();
+      window.removeEventListener("scroll", updateHeaderHeight);
     };
   }, []);
 
