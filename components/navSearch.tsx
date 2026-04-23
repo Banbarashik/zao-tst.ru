@@ -1,11 +1,13 @@
 "use client";
 
 import searchIndex from "@/data/general-pages-search-index.json";
+
+import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
+
 import { Search } from "lucide-react";
-import Link from "next/link";
 
 interface SearchItem {
   title: string;
@@ -46,12 +48,18 @@ export default function NavSearch() {
     return () => document.removeEventListener("pointerdown", onPointerDown);
   }, []);
 
+  const handleResetSearch = () => {
+    setSearchInput("");
+    setSearchResults([]);
+  };
+
   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       e.preventDefault();
       const q = searchInput.trim();
       if (q.length > 0) {
         router.push(`/search?q=${encodeURIComponent(q)}`);
+        handleResetSearch();
       }
     }
   };
@@ -79,6 +87,7 @@ export default function NavSearch() {
             <li key={item.url}>
               <Link
                 href={item.url}
+                onClick={handleResetSearch}
                 className="flex items-center gap-2 rounded p-2 hover:bg-gray-200"
               >
                 <Image
@@ -95,6 +104,7 @@ export default function NavSearch() {
           <li>
             <Link
               href={`/search?q=${searchInput}`}
+              onClick={handleResetSearch}
               className="flex items-center gap-2 rounded p-2 text-gray-900 hover:bg-gray-200"
             >
               Все результаты
