@@ -37,7 +37,7 @@ export default function Home() {
       </main>
 
       {/* CONTACT FORM SECTION START */}
-      <div className="relative flex w-full items-center justify-center gap-20 overflow-hidden px-2 pt-8 pb-20 sm:pt-14 sm:pb-20 md:py-14 lg:py-25">
+      <div className="relative flex w-full items-center justify-center gap-20 overflow-hidden px-2 pt-8 pb-20 sm:pt-14 lg:py-10">
         <Image
           src="/img/home/contact_form.png"
           alt="Промышленное воздушное отопление"
@@ -45,7 +45,7 @@ export default function Home() {
           fill
           priority
         />
-        {<div className="absolute inset-0 bg-white/40" />} {/* FOG */}
+        <div className="absolute inset-0 bg-white/40" /> {/* FOG */}
         <div className="z-10 flex w-full flex-col items-center lg:flex-row lg:justify-evenly lg:gap-4 lg:px-6 xl:justify-center xl:gap-20 xl:px-12">
           <div className="relative text-center lg:w-max xl:w-full xl:max-w-xl xl:shrink-0">
             <span className="absolute inset-0 -z-10 rounded-md bg-[#a6a6a6] opacity-100 blur-[90px]"></span>
@@ -58,7 +58,7 @@ export default function Home() {
             </p>
           </div>
           <div className="max-w-xl">
-            <ContactForm outOfContext />
+            <ContactForm outOfContext compact />
           </div>
         </div>
       </div>

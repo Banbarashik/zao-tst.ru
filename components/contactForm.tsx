@@ -93,6 +93,7 @@ const formSchema = z.object({
 
 export default function ContactForm({
   outOfContext = false /* whether use local state or context */,
+  compact = false,
 }) {
   const formId = useId();
 
@@ -347,14 +348,16 @@ export default function ContactForm({
 
   // 8. Render the form
   return (
-    <ScrollArea className="h-dvh max-h-208 max-w-screen rounded-md lg:max-w-xl">
+    <ScrollArea
+      className={`h-dvh max-w-screen rounded-md lg:max-w-xl ${compact ? "max-h-174.5" : "max-h-208"}`}
+    >
       <Card>
         <CardContent>
           <Form {...form}>
             <form
               id={formId}
               onSubmit={form.handleSubmit(onSubmit)}
-              className="space-y-4 sm:space-y-6"
+              className={compact ? "space-y-3" : "space-y-4 sm:space-y-6"}
             >
               <FormField
                 control={form.control}
@@ -363,7 +366,10 @@ export default function ContactForm({
                   <FormItem>
                     <FormLabel>Ваше имя</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input
+                        {...field}
+                        className={compact ? "h-7 rounded-sm" : ""}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -376,7 +382,10 @@ export default function ContactForm({
                   <FormItem>
                     <FormLabel>Название организации</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input
+                        {...field}
+                        className={compact ? "h-7 rounded-sm" : ""}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -392,7 +401,11 @@ export default function ContactForm({
                       <FormMessage className="leading-none" />
                     </div>
                     <FormControl>
-                      <Input type="email" {...field} />
+                      <Input
+                        type="email"
+                        {...field}
+                        className={compact ? "h-7 rounded-sm" : ""}
+                      />
                     </FormControl>
                   </FormItem>
                 )}
@@ -404,7 +417,10 @@ export default function ContactForm({
                   <FormItem>
                     <FormLabel>Номер телефона</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input
+                        {...field}
+                        className={compact ? "h-7 rounded-sm" : ""}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -417,7 +433,10 @@ export default function ContactForm({
                   <FormItem>
                     <FormLabel>Регион, город</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input
+                        {...field}
+                        className={compact ? "h-7 rounded-sm" : ""}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -459,7 +478,7 @@ export default function ContactForm({
                 control={form.control}
                 name="files"
                 render={() => (
-                  <FormItem>
+                  <FormItem className={compact ? "mb-4" : ""}>
                     <FormLabel>Вложения</FormLabel>
                     <FormControl>
                       <div className="flex flex-col gap-2">
