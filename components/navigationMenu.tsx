@@ -13,36 +13,66 @@ import NavSearch from "./navSearch";
 
 export default function NavigationMenu() {
   const pathname = usePathname();
+  const calcBarRef = useRef<HTMLDivElement>(null);
   const mainBarRef = useRef<HTMLDivElement>(null);
   const navBarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (navBarRef.current) {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (mainBarRef.current) {
-            if (entry.isIntersecting) {
-              // Nav bar is visible - main bar at full opacity
-              mainBarRef.current.classList.remove("opacity-90");
-            } else {
-              // Nav bar is out of view - reduce main bar opacity
-              mainBarRef.current.classList.add("opacity-90");
-            }
-          }
-        },
-        { threshold: 0 },
+    if (!navBarRef.current || !mainBarRef.current) return;
+
+    let navVisible = true;
+
+    const updateHeaderHeight = (visible: boolean) => {
+      const calcH = calcBarRef.current?.getBoundingClientRect().height ?? 0;
+      const mainH = mainBarRef.current?.getBoundingClientRect().height ?? 0;
+      const navH = visible
+        ? (navBarRef.current?.getBoundingClientRect().height ?? 0)
+        : 0;
+      document.documentElement.style.setProperty(
+        "--site-header-height",
+        `${Math.ceil(calcH + mainH + navH)}px`,
       );
+    };
 
-      observer.observe(navBarRef.current);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        navVisible = entry.isIntersecting;
+        if (mainBarRef.current) {
+          if (entry.isIntersecting) {
+            mainBarRef.current.classList.remove("opacity-90");
+          } else {
+            mainBarRef.current.classList.add("opacity-90");
+          }
+        }
+        updateHeaderHeight(navVisible);
+      },
+      { threshold: 0 },
+    );
 
-      return () => observer.disconnect();
-    }
+    observer.observe(navBarRef.current);
+
+    const resizeObserver = new ResizeObserver(() =>
+      updateHeaderHeight(navVisible),
+    );
+    if (calcBarRef.current) resizeObserver.observe(calcBarRef.current);
+    resizeObserver.observe(mainBarRef.current);
+    resizeObserver.observe(navBarRef.current);
+
+    updateHeaderHeight(navBarRef.current.getBoundingClientRect().top >= 0);
+
+    return () => {
+      observer.disconnect();
+      resizeObserver.disconnect();
+    };
   }, []);
 
   return (
     <>
       {/* CALCULATORS BAR */}
-      <div className="hidden border-b border-white/10 bg-[#4c2b20]/95 text-white lg:block">
+      <div
+        ref={calcBarRef}
+        className="hidden border-b border-white/10 bg-[#4c2b20]/95 text-white lg:block"
+      >
         <div className="mx-auto flex w-max items-center gap-8 text-sm">
           <Link
             href="/kalorifery-voda#anchor1"
