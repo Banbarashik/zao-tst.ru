@@ -47,7 +47,7 @@ export default function NavigationMenu() {
         <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-4">
           <Logo place="header" />
 
-          <ul className="4xl:ml-12 3xl:ml-8 ml-3 flex flex-col items-start gap-y-2 text-[15px] text-white">
+          <ul className="ml-6 flex flex-col items-start gap-y-2 text-[15px] text-white">
             <li className="group">
               <a
                 href="tel:+79617378314"
@@ -76,7 +76,7 @@ export default function NavigationMenu() {
 
           <ContactFormTrigger
             triggerBtnVariant="default"
-            triggerBtnClassName="h-12 px-5 cursor-pointer rounded-lg hover:bg-primary-dark font-bold text-base border border-[#A5A5A5]"
+            triggerBtnClassName="h-12 ml-auto px-5 cursor-pointer rounded-lg hover:bg-primary-dark font-bold text-base border border-[#A5A5A5]"
             amountClassName="bg-accent absolute text-black right-0 bottom-0 inline-flex size-6 translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full text-sm font-semibold"
           />
         </div>

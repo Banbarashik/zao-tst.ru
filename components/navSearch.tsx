@@ -65,7 +65,10 @@ export default function NavSearch() {
   };
 
   return (
-    <div ref={wrapperRef} className="relative flex-1">
+    <div
+      ref={wrapperRef}
+      className="relative mr-2 ml-4 w-full max-w-md flex-1 xl:ml-6"
+    >
       <input
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}
