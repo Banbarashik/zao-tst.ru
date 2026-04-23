@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 import { Calculator, Mail, PhoneCall, Search } from "lucide-react";
 
@@ -12,11 +13,36 @@ import NavSearch from "./navSearch";
 
 export default function NavigationMenu() {
   const pathname = usePathname();
+  const mainBarRef = useRef<HTMLDivElement>(null);
+  const navBarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (navBarRef.current) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (mainBarRef.current) {
+            if (entry.isIntersecting) {
+              // Nav bar is visible - main bar at full opacity
+              mainBarRef.current.classList.remove("opacity-90");
+            } else {
+              // Nav bar is out of view - reduce main bar opacity
+              mainBarRef.current.classList.add("opacity-90");
+            }
+          }
+        },
+        { threshold: 0 },
+      );
+
+      observer.observe(navBarRef.current);
+
+      return () => observer.disconnect();
+    }
+  }, []);
 
   return (
-    <div className="text-white">
+    <>
       {/* CALCULATORS BAR */}
-      <div className="border-b border-white/10 bg-[#4c2b20]/95">
+      <div className="hidden border-b border-white/10 bg-[#4c2b20]/95 text-white lg:block">
         <div className="mx-auto flex w-max items-center gap-8 text-sm">
           <Link
             href="/kalorifery-voda#anchor1"
@@ -43,7 +69,10 @@ export default function NavigationMenu() {
       </div>
 
       {/* MAIN BAR */}
-      <div className="bg-primary-darker">
+      <div
+        ref={mainBarRef}
+        className="bg-primary-darker sticky top-0 z-50 hidden text-white transition-opacity duration-500 lg:block"
+      >
         <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-4">
           <Logo place="header" />
 
@@ -83,7 +112,10 @@ export default function NavigationMenu() {
       </div>
 
       {/* NAV BAR */}
-      <div className="bg-primary-darker/95 border-t border-white/10">
+      <div
+        ref={navBarRef}
+        className="bg-primary-darker/95 hidden border-t border-white/10 text-white lg:block"
+      >
         <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 pb-1 text-sm">
           <Link
             href="/"
@@ -175,6 +207,6 @@ export default function NavigationMenu() {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 }

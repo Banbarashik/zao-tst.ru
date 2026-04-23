@@ -31,9 +31,9 @@ export default function RootLayout({
           </Suspense>
         </head>
         <body className="font-arial flex min-h-screen flex-col antialiased">
-          <div className="hidden lg:block">
-            <NavigationMenu />
-          </div>
+          {/* <div className="hidden lg:block">
+          </div> */}
+          <NavigationMenu />
           {/* Sticky trigger outside flex context */}
           <div className="sticky top-0 z-40 bg-white lg:hidden">
             <MobileNavigationMenu />
