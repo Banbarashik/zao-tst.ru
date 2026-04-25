@@ -145,7 +145,7 @@ export default function Header() {
             className="ml-auto"
             onClick={() => openMobileSearch(!mobileSearchOpened)}
           >
-            <Search className="size-9 sm:hidden" />
+            <Search className="size-7 sm:hidden" />
           </button>
 
           <ContactFormTrigger
