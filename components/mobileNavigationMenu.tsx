@@ -66,7 +66,7 @@ export default function MobileNavigationMenu() {
                 <AccordionTrigger className="bg-primary-darker/90 data-[state=open]:bg-primary-darker/55 col-span-1 justify-evenly gap-0 rounded-none border border-black/50 max-[350px]:text-xs">
                   <span>
                     <span>Продукция </span>
-                    <span className="text-primary">Заявка</span>
+                    <span className="text-accent">Заявка</span>
                   </span>
                 </AccordionTrigger>
                 <AccordionContent className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down grid grid-cols-[repeat(2,1fr)] overflow-hidden px-0 pb-0 max-[350px]:text-xs">
@@ -107,7 +107,7 @@ export default function MobileNavigationMenu() {
                   </Link>
                   <ContactFormTrigger
                     hasCloseBtn
-                    triggerBtnClassName="text-primary border rounded-none border-black/20 max-[350px]:text-xs w-full h-full "
+                    triggerBtnClassName="text-accent border rounded-none border-black/20 max-[350px]:text-xs w-full h-full "
                     amountClassName="absolute max-[350px]:text-[10px] border border-primary text-primary right-0 -translate-x-6 -translate-y-2 inline-flex size-4 items-center justify-center rounded-full text-[10px]"
                   />
                 </AccordionContent>
