@@ -7,9 +7,8 @@ import { useEffect, useRef } from "react";
 import { Calculator, Mail, PhoneCall, Search } from "lucide-react";
 
 import Logo from "@/components/ui/logo";
-import ContactFormTrigger from "./contactFormTrigger";
-
-import NavSearch from "./navSearch";
+import NavSearch from "@/components/navSearch";
+import ContactFormTrigger from "@/components/contactFormTrigger";
 
 export default function Header() {
   const pathname = usePathname();
@@ -106,12 +105,12 @@ export default function Header() {
       {/* MAIN BAR */}
       <div
         ref={mainBarRef}
-        className="bg-primary-darker sticky top-0 z-50 hidden text-white transition-opacity duration-500 lg:block"
+        className="lg:bg-primary-darker bg-primary-darker/92 static top-0 z-50 text-white transition-opacity duration-500 lg:sticky"
       >
-        <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-4">
+        <div className="mx-auto flex max-w-7xl items-center px-4 py-4 md:gap-2 lg:gap-6">
           <Logo place="header" />
 
-          <ul className="ml-6 flex flex-col items-start gap-y-2 text-[15px] text-white">
+          <ul className="ml-4 flex flex-col items-start gap-y-2 text-[15px] text-white lg:ml-6">
             <li className="group">
               <a
                 href="tel:+79617378314"
@@ -140,7 +139,7 @@ export default function Header() {
 
           <ContactFormTrigger
             triggerBtnVariant="default"
-            triggerBtnClassName="h-12 ml-auto px-5 cursor-pointer rounded-lg hover:bg-primary-dark font-bold text-base border border-[#A5A5A5]"
+            triggerBtnClassName="h-12 ml-auto px-5 hidden lg:block cursor-pointer rounded-lg hover:bg-primary-dark font-bold text-base border border-[#A5A5A5]"
             amountClassName="bg-accent absolute text-black right-0 bottom-0 inline-flex size-6 translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full text-sm font-semibold"
           />
         </div>
