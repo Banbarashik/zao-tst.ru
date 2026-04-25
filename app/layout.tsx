@@ -7,11 +7,10 @@ import { ProductSelectionProvider } from "@/context/ProductSelectionContext";
 
 import YandexMetrikaContainer from "@/components/YandexMetrikaContainer";
 
-import Footer from "@/components/footer";
-import NavigationMenu from "@/components/navigationMenu";
-import BackToTop from "@/components/backToTopButton";
-
+import Header from "@/components/header";
 import MobileNavigationMenu from "@/components/mobileNavigationMenu";
+import BackToTop from "@/components/backToTopButton";
+import Footer from "@/components/footer";
 
 export default function RootLayout({
   children,
@@ -31,9 +30,7 @@ export default function RootLayout({
           </Suspense>
         </head>
         <body className="font-arial flex min-h-screen flex-col antialiased">
-          {/* <div className="hidden lg:block">
-          </div> */}
-          <NavigationMenu />
+          <Header />
           {/* Sticky trigger outside flex context */}
           <div className="sticky top-0 z-40 bg-white lg:hidden">
             <MobileNavigationMenu />

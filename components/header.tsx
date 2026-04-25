@@ -11,7 +11,7 @@ import ContactFormTrigger from "./contactFormTrigger";
 
 import NavSearch from "./navSearch";
 
-export default function NavigationMenu() {
+export default function Header() {
   const pathname = usePathname();
   const calcBarRef = useRef<HTMLDivElement>(null);
   const mainBarRef = useRef<HTMLDivElement>(null);
