@@ -2,16 +2,20 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import { Calculator, Mail, PhoneCall, Search } from "lucide-react";
 
+import { Button } from "@/components/ui/button";
 import Logo from "@/components/ui/logo";
 import NavSearch from "@/components/navSearch";
 import ContactFormTrigger from "@/components/contactFormTrigger";
 
 export default function Header() {
   const pathname = usePathname();
+
+  const [mobileSearchOpened, openMobileSearch] = useState(false);
+
   const calcBarRef = useRef<HTMLDivElement>(null);
   const mainBarRef = useRef<HTMLDivElement>(null);
   const navBarRef = useRef<HTMLDivElement>(null);
@@ -135,8 +139,14 @@ export default function Header() {
             </li>
           </ul>
 
-          <NavSearch className="hidden sm:block" />
-          <Search className="ml-auto size-8" />
+          <NavSearch className="mr-2 ml-4 hidden w-full flex-1 sm:block xl:ml-6" />
+
+          <button
+            className="ml-auto"
+            onClick={() => openMobileSearch(!mobileSearchOpened)}
+          >
+            <Search className="size-9 sm:hidden" />
+          </button>
 
           <ContactFormTrigger
             triggerBtnVariant="default"
@@ -144,6 +154,11 @@ export default function Header() {
             amountClassName="bg-accent absolute text-black right-0 bottom-0 inline-flex size-6 translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full text-sm font-semibold"
           />
         </div>
+        {mobileSearchOpened && (
+          <div className="mb-6 px-2 sm:hidden">
+            <NavSearch className="mx-auto" />
+          </div>
+        )}
       </div>
 
       {/* NAV BAR */}

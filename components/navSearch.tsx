@@ -67,13 +67,7 @@ export default function NavSearch({ className = "" }) {
   };
 
   return (
-    <div
-      ref={wrapperRef}
-      className={cn(
-        "relative mr-2 ml-4 w-full max-w-md flex-1 xl:ml-6",
-        className,
-      )}
-    >
+    <div ref={wrapperRef} className={cn("relative max-w-md", className)}>
       <input
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}
