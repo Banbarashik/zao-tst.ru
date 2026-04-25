@@ -7,6 +7,8 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 
+import { cn } from "@/lib/utils";
+
 import { Search } from "lucide-react";
 
 interface SearchItem {
@@ -15,7 +17,7 @@ interface SearchItem {
   img: string;
 }
 
-export default function NavSearch() {
+export default function NavSearch({ className = "" }) {
   const router = useRouter();
   const [searchResults, setSearchResults] = useState<SearchItem[]>([]);
   const [searchInput, setSearchInput] = useState("");
@@ -67,7 +69,10 @@ export default function NavSearch() {
   return (
     <div
       ref={wrapperRef}
-      className="relative mr-2 ml-4 w-full max-w-md flex-1 xl:ml-6"
+      className={cn(
+        "relative mr-2 ml-4 w-full max-w-md flex-1 xl:ml-6",
+        className,
+      )}
     >
       <input
         value={searchInput}

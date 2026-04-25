@@ -135,7 +135,8 @@ export default function Header() {
             </li>
           </ul>
 
-          <NavSearch />
+          <NavSearch className="hidden sm:block" />
+          <Search className="ml-auto size-8" />
 
           <ContactFormTrigger
             triggerBtnVariant="default"
