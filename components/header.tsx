@@ -49,7 +49,7 @@ export default function Header() {
       ([entry]) => {
         if (mainBarRef.current) {
           mainBarRef.current.classList.toggle(
-            "opacity-90",
+            "lg:opacity-90",
             !entry.isIntersecting,
           );
         }
