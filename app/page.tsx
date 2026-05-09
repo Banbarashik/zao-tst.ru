@@ -1,6 +1,10 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 
+import { ORGANIZATION_SCHEMA } from "@/constants/seo";
+
+import { JsonLd } from "@/components/utils/jsonLd";
+
 import Hero from "@/components/hero";
 import ContactForm from "@/components/contactForm";
 import Catalog from "@/components/catalog";
@@ -19,6 +23,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <JsonLd data={ORGANIZATION_SCHEMA} />
+
       <Hero />
       <main className="max-w-8xl mx-auto px-3 py-8 sm:px-6 sm:pt-11 sm:pb-11 md:pb-14 lg:px-12 lg:pt-16 lg:pb-24">
         <h1 className="mb-4 text-lg font-bold uppercase sm:text-xl md:text-2xl lg:text-[26px] xl:text-[28px]">
