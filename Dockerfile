@@ -9,10 +9,13 @@ WORKDIR /app
 # Нужен только на сборке, если есть нативные модули
 RUN apk add --no-cache libc6-compat
 
-# Corepack только здесь
+# Фиксируем версию corepack/pnpm
+RUN npm install -g corepack@latest
 RUN corepack enable
+RUN corepack prepare pnpm@10.12.1 --activate
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc* ./
+
 RUN pnpm install --frozen-lockfile
 
 ##############################
@@ -27,10 +30,15 @@ ENV NODE_ENV=production \
 
 # Нужен только на сборке, если есть нативные модули
 RUN apk add --no-cache libc6-compat vips-dev
+
+# Фиксируем версию corepack/pnpm
+RUN npm install -g corepack@latest
 RUN corepack enable
+RUN corepack prepare pnpm@10.12.1 --activate
 
 # node_modules с dev-зависимостями — только для сборки
 COPY --from=deps /app/node_modules ./node_modules
+
 # Остальной код
 COPY . .
 
@@ -43,9 +51,9 @@ RUN pnpm build && rm -rf .next/cache
 FROM node:22-alpine AS runner
 WORKDIR /app
 
-# Без libc6-compat — рантайм чище и меньше
 # Пользователь non-root
-RUN addgroup -g 1001 -S nodejs && adduser -u 1001 -S nextjs -G nodejs
+RUN addgroup -g 1001 -S nodejs && \
+    adduser -u 1001 -S nextjs -G nodejs
 
 ENV NODE_ENV=production \
     HOSTNAME=0.0.0.0 \
@@ -59,5 +67,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=builder /app/.next/server ./.next/server
 
 USER nextjs
+
 EXPOSE 3000
+
 CMD ["node", "server.js"]
