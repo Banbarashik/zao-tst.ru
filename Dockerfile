@@ -3,7 +3,7 @@
 ##############################
 # 1) Deps (dev+prod для сборки)
 ##############################
-FROM node:20-alpine AS deps
+FROM node:22.13-alpine AS deps
 WORKDIR /app
 
 # Нужен только на сборке, если есть нативные модули
@@ -40,7 +40,7 @@ RUN pnpm build && rm -rf .next/cache
 ##############################
 # 3) Runtime (минимальный)
 ##############################
-FROM node:20-alpine AS runner
+FROM node:22.13-alpine AS runner
 WORKDIR /app
 
 # Без libc6-compat — рантайм чище и меньше
