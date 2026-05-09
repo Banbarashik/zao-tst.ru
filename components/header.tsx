@@ -6,7 +6,6 @@ import { useState, useEffect, useRef } from "react";
 
 import { Calculator, Mail, PhoneCall, Search } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
 import Logo from "@/components/ui/logo";
 import NavSearch from "@/components/navSearch";
 import ContactFormTrigger from "@/components/contactFormTrigger";

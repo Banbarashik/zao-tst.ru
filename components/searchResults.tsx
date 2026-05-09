@@ -78,9 +78,9 @@ export default function SearchResults({
 
       // Defer computation to next idle time (off main thread)
       await new Promise((resolve) => {
-        if ("scheduler" in window && "yield" in (window as any).scheduler) {
+        if ("scheduler" in window && "yield" in window.scheduler) {
           // Use scheduler.yield if available (Chrome 123+)
-          (window as any).scheduler.yield().then(resolve);
+          window.scheduler.yield().then(resolve);
         } else {
           // Fallback: use requestIdleCallback or setTimeout
           requestIdleCallback(() => resolve(null), { timeout: 50 });
