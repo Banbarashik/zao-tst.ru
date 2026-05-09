@@ -113,7 +113,9 @@ export function ProductMultiSelect({
             type="button"
             className="hover:border-ring hover:ring-ring/50 w-full max-w-80 justify-start border hover:ring-[3px] sm:max-w-131"
           >
-            <span className="truncate">
+            <span
+              className={`truncate ${selectedProductData.length === 0 ? "text-muted" : ""}`}
+            >
               {selectedProductData.length === 0
                 ? "Выберите товары"
                 : selectedProductData
