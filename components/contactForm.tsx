@@ -604,10 +604,10 @@ export default function ContactForm({
                         checked={field.value ?? false}
                         onCheckedChange={(val) => field.onChange(!!val)}
                         aria-required
-                        className="cursor-pointer"
+                        className="size-5 cursor-pointer border-blue-400"
                       />
                     </FormControl>
-                    <div className="space-y-1 leading-none">
+                    <div className="space-y-1">
                       <FormLabel style={{ color: "black" }}>
                         <div>
                           Нажимая на кнопку Вы соглашаетесь с{" "}
