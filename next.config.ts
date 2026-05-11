@@ -2,14 +2,6 @@ import productData from "@/data/products.json";
 
 import type { NextConfig } from "next";
 
-module.exports = {
-  experimental: {
-    serverActions: {
-      bodySizeLimit: "50mb",
-    },
-  },
-};
-
 const pritochnyeKaloriferyRedirects = productData
   .filter(
     (p) =>
@@ -41,6 +33,11 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   output: "standalone",
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "50mb",
+    },
+  },
   async redirects() {
     return [
       ...pritochnyeKaloriferyRedirects,
