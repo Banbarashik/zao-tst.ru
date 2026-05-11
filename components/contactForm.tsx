@@ -259,7 +259,8 @@ export default function ContactForm({
         removeFormData();
       }
     } catch (error) {
-      setError(error.message);
+      console.error("Ошибка отправки формы:", error); // Логирование для отладки
+      setError("Ошибка отправки. Попробуйте еще раз."); // Фиксированное сообщение
     } finally {
       setLoading(false);
     }

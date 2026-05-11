@@ -26,8 +26,12 @@ export async function sendEmail(formData) {
       })),
     });
 
-    if (error) throw new Error(error.message);
-  } catch {
+    if (error) {
+      console.error("Ошибка от Resend API:", error); // Логирование деталей
+      throw new Error("Ошибка отправки. Попробуйте еще раз.");
+    }
+  } catch (originalError) {
+    console.error("Общая ошибка отправки:", originalError); // Логирование для любых исключений
     throw new Error("Ошибка отправки. Попробуйте еще раз.");
   }
 }
