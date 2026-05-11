@@ -635,7 +635,11 @@ export default function ContactForm({
             disabled={loading}
             className="cursor-pointer"
           >
-            {loading ? "Отправка..." : "Оставить заявку"}
+            {loading
+              ? retryAttempt > 0
+                ? `Отправка... (попытка ${retryAttempt}/${MAX_RETRIES})`
+                : "Отправка..."
+              : "Оставить заявку"}
           </Button>
           {selectedProducts.length > 0 && !error && (
             <p>
