@@ -15,18 +15,23 @@ export async function sendEmail(formData) {
       html: `
       <p>Имя: ${formData.username}</p>
       <p>Название организации: ${formData.company}</p>
-      <p>E-mail: ${formData.email}<p>
-      <p>Регион, город: ${formData.region}<p>
-      <p>Интересующие товары: ${formData.products}<p>
-      <p>Сообщение: ${formData.message}<p>`,
+      <p>E-mail: ${formData.email}</p>
+      <p>Номер телефона: ${formData.tel}</p>
+      <p>Регион, город: ${formData.region}</p>
+      <p>Интересующие товары: ${formData.products}</p>
+      <p>Сообщение: ${formData.message}</p>`,
       attachments: formData.attachments?.map((file) => ({
         filename: file.filename,
         content: file.content,
       })),
     });
 
-    if (error) throw new Error(error.message);
-  } catch {
+    if (error) {
+      console.error("Ошибка от Resend API:", error); // Логирование деталей
+      throw new Error("Ошибка отправки. Попробуйте еще раз.");
+    }
+  } catch (originalError) {
+    console.error("Общая ошибка отправки:", originalError); // Логирование для любых исключений
     throw new Error("Ошибка отправки. Попробуйте еще раз.");
   }
 }

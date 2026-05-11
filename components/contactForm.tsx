@@ -34,6 +34,8 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { ProductMultiSelect } from "@/components/productMultiSelect";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
+const MAX_RETRIES = 3;
+
 // Allowed file types/extensions
 const ALLOWED_TYPES = [
   "application/pdf",
@@ -60,8 +62,14 @@ const ALLOWED_EXTENSIONS = [
   ".rar",
   ".zip",
 ];
-const MAX_FILE_SIZE = 25 * 1024 * 1024; // 25MB
-const MAX_FILES = 10; // Maximum number of files
+const MAX_FILE_SIZE = 15 * 1024 * 1024; // 15MB per file
+const MAX_TOTAL_FILE_SIZE = 25 * 1024 * 1024; // 25MB total
+const MAX_FILES = 10;
+
+// Функция для расчёта общего размера файлов
+const calculateTotalFileSize = (files: File[]): number => {
+  return files.reduce((sum, file) => sum + file.size, 0);
+};
 
 const formSchema = z.object({
   username: z.string().max(200), // Имя
@@ -103,6 +111,7 @@ export default function ContactForm({
   const [selectedFiles, setSelectedFiles] = React.useState<File[]>([]);
 
   const [loading, setLoading] = React.useState(false);
+  const [retryAttempt, setRetryAttempt] = React.useState(0);
   const [sent, setSent] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
 
@@ -201,6 +210,7 @@ export default function ContactForm({
     setLoading(true);
     setError(null);
     setSent(false);
+    setRetryAttempt(0);
 
     // Convert products to human-readable form
     const readableProducts = values.products
@@ -225,44 +235,67 @@ export default function ContactForm({
       );
     }
 
-    try {
-      await sendEmail({ ...values, products: readableProducts, attachments });
-      setSent(true);
+    let lastError: any = null;
 
-      // Clear product selection BEFORE resetting the form
-      if (outOfContext) {
-        setLocalSelectedProducts([]);
-      } else {
-        context?.set([]);
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+      setRetryAttempt(attempt); // Обновляем статус для UI
+      console.log(`Попытка отправки ${attempt}/${MAX_RETRIES}`);
+
+      try {
+        await sendEmail({ ...values, products: readableProducts, attachments });
+
+        setSent(true);
+        setRetryAttempt(0);
+        setLoading(false);
+
+        // Clear product selection BEFORE resetting the form
+        if (outOfContext) {
+          setLocalSelectedProducts([]);
+        } else {
+          context?.set([]);
+        }
+
+        // Reset the form to its default values
+        form.reset({
+          username: "",
+          company: "",
+          email: "",
+          tel: "",
+          region: "",
+          products: [],
+          message: "",
+          files: undefined,
+        });
+
+        // Clear file input and file list
+        setSelectedFiles([]);
+        if (fileInputRef.current) {
+          fileInputRef.current.value = "";
+        }
+
+        // Optionally clear localStorage after successful submit:
+        if (!outOfContext && typeof window !== "undefined") {
+          removeFormData();
+        }
+
+        return; // Выход из функции при успехе
+      } catch (error) {
+        lastError = error;
+        console.error(`Ошибка на попытке ${attempt}:`, error);
+
+        if (attempt < MAX_RETRIES) {
+          // Ждем перед следующей попыткой (экспоненциальная задержка)
+          const delay = Math.pow(2, attempt - 1) * 1000; // 1s, 2s, 4s...
+          console.log(`Ждем ${delay}ms перед следующей попыткой`);
+          await new Promise((resolve) => setTimeout(resolve, delay));
+        }
       }
-
-      // Reset the form to its default values
-      form.reset({
-        username: "",
-        company: "",
-        email: "",
-        tel: "",
-        region: "",
-        products: [],
-        message: "",
-        files: undefined,
-      });
-
-      // Clear file input and file list
-      setSelectedFiles([]);
-      if (fileInputRef.current) {
-        fileInputRef.current.value = "";
-      }
-
-      // Optionally clear localStorage after successful submit:
-      if (!outOfContext && typeof window !== "undefined") {
-        removeFormData();
-      }
-    } catch (error) {
-      setError(error.message);
-    } finally {
-      setLoading(false);
     }
+
+    console.error("Все попытки отправки неудачны:", lastError);
+    setError("Ошибка отправки. Попробуйте еще раз.");
+    setRetryAttempt(0);
+    setLoading(false);
   }
 
   // Reset "sent" when user starts typing after successful submit
@@ -290,11 +323,12 @@ export default function ContactForm({
     }
 
     Array.from(files).forEach((file) => {
-      // Check file size
+      // Check individual file size
       if (file.size > MAX_FILE_SIZE) {
-        errorMsg = `Файл "${file.name}" превышает 25 МБ.`;
+        errorMsg = `Файл "${file.name}" превышает 15 МБ`;
         return;
       }
+
       // Check file type by MIME or extension
       const ext = file.name.slice(file.name.lastIndexOf(".")).toLowerCase();
       if (
@@ -310,6 +344,20 @@ export default function ContactForm({
     if (errorMsg) {
       setError(errorMsg);
     } else {
+      // Check total size limit
+      const newTotalSize =
+        calculateTotalFileSize(selectedFiles) +
+        calculateTotalFileSize(validFiles);
+
+      if (newTotalSize > MAX_TOTAL_FILE_SIZE) {
+        setError(
+          `Общий размер файлов превышает 25 МБ ` +
+            `Текущий размер: ${(newTotalSize / (1024 * 1024)).toFixed(2)} МБ`,
+        );
+        if (fileInputRef.current) fileInputRef.current.value = "";
+        return;
+      }
+
       setError(null);
       setSelectedFiles((prev) => {
         const newFiles = validFiles.filter(
@@ -512,8 +560,11 @@ export default function ContactForm({
                           {/* Custom file summary */}
                           <div className="cursor-default text-sm text-gray-500">
                             {selectedFiles.length === 0
-                              ? "Файл не выбран"
-                              : `Выбрано файлов: ${selectedFiles.length}`}
+                              ? "Файлы не выбраны"
+                              : `Выбрано файлов: ${selectedFiles.length} (${(
+                                  calculateTotalFileSize(selectedFiles) /
+                                  (1024 * 1024)
+                                ).toFixed(2)} МБ из 25 МБ)`}
                           </div>
                         </div>
                         {/* Show list of selected files */}
@@ -553,10 +604,10 @@ export default function ContactForm({
                         checked={field.value ?? false}
                         onCheckedChange={(val) => field.onChange(!!val)}
                         aria-required
-                        className="cursor-pointer"
+                        className="size-5 cursor-pointer border-blue-400"
                       />
                     </FormControl>
-                    <div className="space-y-1 leading-none">
+                    <div className="space-y-1">
                       <FormLabel style={{ color: "black" }}>
                         <div>
                           Нажимая на кнопку Вы соглашаетесь с{" "}
@@ -586,7 +637,7 @@ export default function ContactForm({
           >
             {loading ? "Отправка..." : "Оставить заявку"}
           </Button>
-          {selectedProducts.length > 0 && (
+          {selectedProducts.length > 0 && !error && (
             <p>
               Итоговая стоимость:{" "}
               {getTotalPrice(selectedProducts).toLocaleString("ru-RU")} руб.
@@ -597,7 +648,9 @@ export default function ContactForm({
               Заявка успешно отправлена!
             </p>
           )}
-          {error && <p className="font-bold text-red-600">{error}</p>}
+          {error && (
+            <p className="text-right font-bold text-red-600">{error}</p>
+          )}
         </CardFooter>
       </Card>
       <ScrollBar orientation="horizontal" />
