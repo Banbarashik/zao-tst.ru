@@ -613,7 +613,7 @@ export default function ContactForm({
           >
             {loading ? "Отправка..." : "Оставить заявку"}
           </Button>
-          {selectedProducts.length > 0 && (
+          {selectedProducts.length > 0 && !error && (
             <p>
               Итоговая стоимость:{" "}
               {getTotalPrice(selectedProducts).toLocaleString("ru-RU")} руб.
