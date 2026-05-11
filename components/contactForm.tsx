@@ -34,6 +34,8 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { ProductMultiSelect } from "@/components/productMultiSelect";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
+const MAX_RETRIES = 3;
+
 // Allowed file types/extensions
 const ALLOWED_TYPES = [
   "application/pdf",
@@ -103,6 +105,7 @@ export default function ContactForm({
   const [selectedFiles, setSelectedFiles] = React.useState<File[]>([]);
 
   const [loading, setLoading] = React.useState(false);
+  const [retryAttempt, setRetryAttempt] = React.useState(0);
   const [sent, setSent] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
 
@@ -201,6 +204,7 @@ export default function ContactForm({
     setLoading(true);
     setError(null);
     setSent(false);
+    setRetryAttempt(0);
 
     // Convert products to human-readable form
     const readableProducts = values.products
@@ -225,45 +229,67 @@ export default function ContactForm({
       );
     }
 
-    try {
-      await sendEmail({ ...values, products: readableProducts, attachments });
-      setSent(true);
+    let lastError: any = null;
 
-      // Clear product selection BEFORE resetting the form
-      if (outOfContext) {
-        setLocalSelectedProducts([]);
-      } else {
-        context?.set([]);
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+      setRetryAttempt(attempt); // Обновляем статус для UI
+      console.log(`Попытка отправки ${attempt}/${MAX_RETRIES}`);
+
+      try {
+        await sendEmail({ ...values, products: readableProducts, attachments });
+
+        setSent(true);
+        setRetryAttempt(0);
+        setLoading(false);
+
+        // Clear product selection BEFORE resetting the form
+        if (outOfContext) {
+          setLocalSelectedProducts([]);
+        } else {
+          context?.set([]);
+        }
+
+        // Reset the form to its default values
+        form.reset({
+          username: "",
+          company: "",
+          email: "",
+          tel: "",
+          region: "",
+          products: [],
+          message: "",
+          files: undefined,
+        });
+
+        // Clear file input and file list
+        setSelectedFiles([]);
+        if (fileInputRef.current) {
+          fileInputRef.current.value = "";
+        }
+
+        // Optionally clear localStorage after successful submit:
+        if (!outOfContext && typeof window !== "undefined") {
+          removeFormData();
+        }
+
+        return; // Выход из функции при успехе
+      } catch (error) {
+        lastError = error;
+        console.error(`Ошибка на попытке ${attempt}:`, error);
+
+        if (attempt < MAX_RETRIES) {
+          // Ждем перед следующей попыткой (экспоненциальная задержка)
+          const delay = Math.pow(2, attempt - 1) * 1000; // 1s, 2s, 4s...
+          console.log(`Ждем ${delay}ms перед следующей попыткой`);
+          await new Promise((resolve) => setTimeout(resolve, delay));
+        }
       }
-
-      // Reset the form to its default values
-      form.reset({
-        username: "",
-        company: "",
-        email: "",
-        tel: "",
-        region: "",
-        products: [],
-        message: "",
-        files: undefined,
-      });
-
-      // Clear file input and file list
-      setSelectedFiles([]);
-      if (fileInputRef.current) {
-        fileInputRef.current.value = "";
-      }
-
-      // Optionally clear localStorage after successful submit:
-      if (!outOfContext && typeof window !== "undefined") {
-        removeFormData();
-      }
-    } catch (error) {
-      console.error("Ошибка отправки формы:", error); // Логирование для отладки
-      setError("Ошибка отправки. Попробуйте еще раз."); // Фиксированное сообщение
-    } finally {
-      setLoading(false);
     }
+
+    console.error("Все попытки отправки неудачны:", lastError);
+    setError("Ошибка отправки. Попробуйте еще раз.");
+    setRetryAttempt(0);
+    setLoading(false);
   }
 
   // Reset "sent" when user starts typing after successful submit
