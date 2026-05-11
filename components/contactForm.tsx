@@ -325,7 +325,7 @@ export default function ContactForm({
     Array.from(files).forEach((file) => {
       // Check individual file size
       if (file.size > MAX_FILE_SIZE) {
-        errorMsg = `Файл "${file.name}" превышает 15 МБ.`;
+        errorMsg = `Файл "${file.name}" превышает 15 МБ`;
         return;
       }
 
