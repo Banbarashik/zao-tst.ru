@@ -235,7 +235,7 @@ export default function ContactForm({
       );
     }
 
-    let lastError: any = null;
+    let lastError = null;
 
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
       setRetryAttempt(attempt); // Обновляем статус для UI
