@@ -62,8 +62,14 @@ const ALLOWED_EXTENSIONS = [
   ".rar",
   ".zip",
 ];
-const MAX_FILE_SIZE = 25 * 1024 * 1024; // 25MB
-const MAX_FILES = 10; // Maximum number of files
+const MAX_FILE_SIZE = 15 * 1024 * 1024; // 15MB per file
+const MAX_TOTAL_FILE_SIZE = 25 * 1024 * 1024; // 25MB total
+const MAX_FILES = 10;
+
+// Функция для расчёта общего размера файлов
+const calculateTotalFileSize = (files: File[]): number => {
+  return files.reduce((sum, file) => sum + file.size, 0);
+};
 
 const formSchema = z.object({
   username: z.string().max(200), // Имя
@@ -317,11 +323,12 @@ export default function ContactForm({
     }
 
     Array.from(files).forEach((file) => {
-      // Check file size
+      // Check individual file size
       if (file.size > MAX_FILE_SIZE) {
-        errorMsg = `Файл "${file.name}" превышает 25 МБ.`;
+        errorMsg = `Файл "${file.name}" превышает 15 МБ.`;
         return;
       }
+
       // Check file type by MIME or extension
       const ext = file.name.slice(file.name.lastIndexOf(".")).toLowerCase();
       if (
@@ -337,6 +344,20 @@ export default function ContactForm({
     if (errorMsg) {
       setError(errorMsg);
     } else {
+      // Check total size limit
+      const newTotalSize =
+        calculateTotalFileSize(selectedFiles) +
+        calculateTotalFileSize(validFiles);
+
+      if (newTotalSize > MAX_TOTAL_FILE_SIZE) {
+        setError(
+          `Общий размер файлов превышает 25 МБ ` +
+            `Текущий размер: ${(newTotalSize / (1024 * 1024)).toFixed(2)} МБ`,
+        );
+        if (fileInputRef.current) fileInputRef.current.value = "";
+        return;
+      }
+
       setError(null);
       setSelectedFiles((prev) => {
         const newFiles = validFiles.filter(
@@ -539,8 +560,11 @@ export default function ContactForm({
                           {/* Custom file summary */}
                           <div className="cursor-default text-sm text-gray-500">
                             {selectedFiles.length === 0
-                              ? "Файл не выбран"
-                              : `Выбрано файлов: ${selectedFiles.length}`}
+                              ? "Файлы не выбраны"
+                              : `Выбрано файлов: ${selectedFiles.length} (${(
+                                  calculateTotalFileSize(selectedFiles) /
+                                  (1024 * 1024)
+                                ).toFixed(2)} МБ из 25 МБ)`}
                           </div>
                         </div>
                         {/* Show list of selected files */}
@@ -624,7 +648,9 @@ export default function ContactForm({
               Заявка успешно отправлена!
             </p>
           )}
-          {error && <p className="font-bold text-red-600">{error}</p>}
+          {error && (
+            <p className="text-right font-bold text-red-600">{error}</p>
+          )}
         </CardFooter>
       </Card>
       <ScrollBar orientation="horizontal" />
