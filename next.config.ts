@@ -38,6 +38,7 @@ const nextConfig: NextConfig = {
       bodySizeLimit: "50mb",
     },
   },
+  allowedDevOrigins: ["*.ngrok-free.app"],
   async redirects() {
     return [
       ...pritochnyeKaloriferyRedirects,
