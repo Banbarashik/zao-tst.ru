@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { ModelViewer } from "@/components/modelViewer";
+
 const productCategories = [
   {
     name: "Водяные и паровые приточные калориферы. Онлайн калькулятор подбора",
@@ -158,6 +160,35 @@ export default function Catalog() {
           </li>
         );
       })}
+      <li className="flex w-full flex-col">
+        <h2 className="text-base font-bold uppercase sm:text-lg md:text-xl lg:text-[22px] xl:text-2xl"></h2>
+        <ul className="mt-6 mb-6 flex flex-wrap gap-2 sm:flex-nowrap sm:gap-2 md:gap-4 lg:gap-10 xl:gap-12">
+          <li className="w-full">
+            <Link
+              href="#"
+              className="hover:text-primary bg-card text-card-foreground flex h-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:px-4 lg:text-sm xl:px-10 2xl:text-base"
+            >
+              <Image
+                src="/img/home/zao_tst_kalorifery_kpvs-kpvu.png"
+                alt=""
+                width={750}
+                height={750}
+                className="px-6"
+              />
+              <p className="font-bold tracking-wide uppercase">
+                Водяные калориферы КПВС и КПВУ
+              </p>
+            </Link>
+          </li>
+          <li className="bg-card text-card-foreground flex w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:px-4 lg:text-sm xl:px-10 2xl:text-base">
+            <ModelViewer modelUrl="/models/ksk-3-8.glb" />
+            <p className="font-bold tracking-wide uppercase">
+              3D-модель калорифера КСк
+            </p>
+          </li>
+        </ul>
+        <p></p>
+      </li>
     </ul>
   );
 }
