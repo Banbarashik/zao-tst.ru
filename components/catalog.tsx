@@ -162,11 +162,11 @@ export default function Catalog() {
       })}
       <li className="flex w-full flex-col">
         <h2 className="text-base font-bold uppercase sm:text-lg md:text-xl lg:text-[22px] xl:text-2xl"></h2>
-        <ul className="mt-6 mb-6 flex flex-wrap gap-2 sm:flex-nowrap sm:gap-2 md:gap-4 lg:gap-10 xl:gap-12">
-          <li className="w-full">
+        <ul className="mt-6 mb-6 flex flex-wrap gap-2 sm:gap-2 md:flex-nowrap md:gap-4 lg:gap-10 xl:gap-12">
+          <li className="basis-full">
             <Link
               href="#"
-              className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 h-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:px-4 lg:text-sm xl:px-10 2xl:text-base"
+              className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 h-full w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:px-4 lg:text-sm xl:px-10 2xl:text-base"
             >
               <div className="relative aspect-16/10 h-full">
                 <Image
@@ -181,7 +181,7 @@ export default function Catalog() {
               </p>
             </Link>
           </li>
-          <li className="bg-card text-card-foreground flex w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:px-4 lg:text-sm xl:px-10 2xl:text-base">
+          <li className="bg-card text-card-foreground flex aspect-16/10 basis-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:aspect-auto md:px-4 md:text-center md:text-[13px] lg:px-4 lg:text-sm xl:px-10 2xl:text-base">
             <ModelViewer modelUrl="/models/ksk-3-8.glb" />
             <p className="font-bold tracking-wide uppercase">
               3D-модель калорифера КСк
