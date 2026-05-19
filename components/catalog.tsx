@@ -166,7 +166,7 @@ export default function Catalog() {
           <li className="basis-full">
             <Link
               href="#"
-              className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 h-full w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:px-4 lg:text-sm xl:px-10 2xl:text-base"
+              className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 h-full w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:aspect-auto md:px-4 md:text-center md:text-[13px] lg:aspect-16/10 lg:h-auto lg:px-4 lg:text-sm xl:px-10 2xl:text-base"
             >
               <div className="relative aspect-16/10 h-full">
                 <Image
