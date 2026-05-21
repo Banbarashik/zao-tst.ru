@@ -5,54 +5,74 @@ import { Object3D } from "three";
 
 // ─── Dimensions (mm) ────────────────────────────────────────────────────────
 const TUBE_LENGTH = 794;
-const PLATE_RADIUS = 39;
+const PLATE_DIAMETER = 39;
+const PLATE_RADIUS = PLATE_DIAMETER / 2; // 19.5mm (gives a 2.5mm gap between plates)
 const PLATE_THICKNESS = 1.15;
 const PLATE_COUNT = 52;
-const TUBE_RADIUS = 16;
-const TUBE_PITCH = 41.5;
-const TUBE_COUNT = 35;
+const TUBE_RADIUS = 11;
+const TUBE_PITCH = 41.5; // Vertical distance between tubes in the same column
+const TUBE_COUNT = 35; // 12 + 11 + 12
 
-// Computed step: fits all 52 plates evenly within 794mm (~14.4mm gap, close to your 15mm)
-const PLATE_STEP = (TUBE_LENGTH - PLATE_THICKNESS) / (PLATE_COUNT - 1); // ≈ 15.55mm
+// First and last plates are 15mm from the ends of the 794mm tube
+const PLATE_EDGE_OFFSET = 15;
+const PLATE_SPAN = TUBE_LENGTH - PLATE_EDGE_OFFSET * 2; // 764mm total span
+const PLATE_STEP = PLATE_SPAN / (PLATE_COUNT - 1); // ≈ 14.98mm center-to-center
 
-const TUBE_ROWS = 5; // rows of tubes (5 × 7 = 35)
-const TUBE_COLS = 7; // columns of tubes
-
-// Polygon count per circle — 16 is indistinguishable from 64 at normal viewing distance
+// Low poly count for ultra-smooth rendering performance
 const PLATE_SEGMENTS = 16;
 const TUBE_SEGMENTS = 12;
-
-// Scale: work in mm, scale down to Three.js units
-const SCALE = 0.001;
+const SCALE = 0.001; // Scale mm down to Three.js meters
 
 const TOTAL_PLATES = TUBE_COUNT * PLATE_COUNT;
 
-// ─── Helpers ────────────────────────────────────────────────────────────────
+// ─── Heavy Industrial Material Tuning ──────────────────────────────────────
+// Slightly bumped roughness to 0.4 to capture an authentic, non-glossy, raw industrial steel look
+const METAL_PROPS = { color: "#B0B5BC", metalness: 0.85, roughness: 0.4 };
+
+// ─── Geometry Positioning Helper ───────────────────────────────────────────
 function getTubePositions() {
   const positions = [];
-  for (let row = 0; row < TUBE_ROWS; row++) {
-    for (let col = 0; col < TUBE_COLS; col++) {
-      positions.push([
-        (col - (TUBE_COLS - 1) / 2) * TUBE_PITCH * SCALE,
-        (row - (TUBE_ROWS - 1) / 2) * TUBE_PITCH * SCALE,
-      ]);
-    }
+  const P_V = TUBE_PITCH;
+  // Horizontal column spacing based on an equilateral triangular pitch layout
+  const P_H = TUBE_PITCH * Math.sin(Math.PI / 3); // ≈ 35.94mm
+
+  // Column 1 (Left): 12 tubes centered vertically
+  for (let i = 0; i < 12; i++) {
+    const y = (i - 11 / 2) * P_V * SCALE;
+    const z = -P_H * SCALE;
+    positions.push({ y, z });
   }
+
+  // Column 2 (Middle): 11 tubes staggered perfectly in the vertical gaps
+  for (let i = 0; i < 11; i++) {
+    const y = (i - 5) * P_V * SCALE;
+    const z = 0;
+    positions.push({ y, z });
+  }
+
+  // Column 3 (Right): 12 tubes matching Column 1
+  for (let i = 0; i < 12; i++) {
+    const y = (i - 11 / 2) * P_V * SCALE;
+    const z = P_H * SCALE;
+    positions.push({ y, z });
+  }
+
   return positions;
 }
 
-const METAL_PROPS = { color: "#C0C0C8", metalness: 0.95, roughness: 0.25 };
-
-// ─── Tubes (35 instances = 1 draw call) ────────────────────────────────────
+// ─── Tubes Component (1 Draw Call) ─────────────────────────────────────────
 export function Tubes() {
-  const ref = useRef();
+  const ref = useRef<any>();
   const dummy = useMemo(() => new Object3D(), []);
   const tubePositions = useMemo(() => getTubePositions(), []);
 
   useEffect(() => {
-    tubePositions.forEach(([x, y], i) => {
-      dummy.position.set(x, y, 0);
-      dummy.rotation.set(Math.PI / 2, 0, 0); // CylinderGeometry is Y-up by default; rotate to run along Z
+    if (!ref.current) return;
+
+    tubePositions.forEach(({ y, z }, i) => {
+      dummy.position.set(0, y, z);
+      // CylinderGeometry is Y-up by default. Rotate 90° on Z to lay flat along the X-axis
+      dummy.rotation.set(0, 0, Math.PI / 2);
       dummy.updateMatrix();
       ref.current.setMatrixAt(i, dummy.matrix);
     });
@@ -74,22 +94,26 @@ export function Tubes() {
   );
 }
 
-// ─── Plates (1820 instances = 1 draw call) ──────────────────────────────────
+// ─── Plates Component (1 Draw Call) ────────────────────────────────────────
 export function Plates() {
-  const ref = useRef();
+  const ref = useRef<any>();
   const dummy = useMemo(() => new Object3D(), []);
   const tubePositions = useMemo(() => getTubePositions(), []);
 
   useEffect(() => {
-    let idx = 0;
-    const halfTube = (TUBE_LENGTH * SCALE) / 2;
+    if (!ref.current) return;
 
-    tubePositions.forEach(([x, y]) => {
+    let idx = 0;
+    const halfSpan = (PLATE_SPAN * SCALE) / 2;
+
+    tubePositions.forEach(({ y, z }) => {
       for (let p = 0; p < PLATE_COUNT; p++) {
-        // Distribute plates evenly from one end of the tube to the other
-        const z = -halfTube + (PLATE_THICKNESS / 2 + p * PLATE_STEP) * SCALE;
+        // Distribute positions cleanly along the X axis within the defined span offsets
+        const x = -halfSpan + p * PLATE_STEP * SCALE;
+
         dummy.position.set(x, y, z);
-        dummy.rotation.set(Math.PI / 2, 0, 0); // disc face perpendicular to Z axis
+        // Rotate flat circular disc faces so they are perpendicular to the X-axis
+        dummy.rotation.set(0, 0, Math.PI / 2);
         dummy.updateMatrix();
         ref.current.setMatrixAt(idx, dummy.matrix);
         idx++;
