@@ -3,6 +3,7 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
+import { Plates, Tubes } from "./heatExchangerTubes";
 
 function Model({ url }) {
   const { scene } = useGLTF(url);
@@ -17,6 +18,8 @@ export function ModelViewer({ modelUrl }) {
       <directionalLight position={[0, -1, 2]} intensity={1.5} />
 
       <Suspense fallback={null}>
+        <Tubes />
+        <Plates />
         <Model url={modelUrl} />
       </Suspense>
 
