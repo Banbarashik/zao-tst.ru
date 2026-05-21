@@ -16,14 +16,10 @@ export function ModelViewer({ modelUrl }) {
       <directionalLight position={[0.3, -0.05, 0.4]} intensity={1.5} />
       <directionalLight position={[0, -1, 2]} intensity={1.5} />
 
-      {/* <ambientLight intensity={0.6} />
-      <directionalLight position={[2, 2, 1.5]} intensity={1.2} />
-      <directionalLight position={[-1.5, 1, -1.5]} intensity={0.4} />
-      <directionalLight position={[0, -1.5, 1]} intensity={0.2} /> */}
-
       <Suspense fallback={null}>
         <Model url={modelUrl} />
       </Suspense>
+
       <OrbitControls maxDistance={1.4} enablePan={false} />
       <Environment preset="warehouse" environmentIntensity={1.5} />
     </Canvas>

@@ -171,7 +171,7 @@ export default function Catalog() {
               className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 h-full w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:text-sm xl:px-10 2xl:text-base"
             >
               <div className="relative aspect-16/10 h-full">
-                <Image src="/img/KPVS_KPVU_SFO_2.png" alt="" fill />
+                <Image src="/img/KPVS_KPVU_SFO_3.png" alt="" fill />
               </div>
               <p className="font-bold tracking-wide uppercase">
                 Расчетно-технический блок
@@ -179,7 +179,7 @@ export default function Catalog() {
             </Link>
           </li>
           <li className="bg-card text-card-foreground hidden w-full basis-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:flex sm:text-[13px] md:w-full md:px-4 lg:text-sm xl:px-10 2xl:text-base">
-            <ModelViewer modelUrl="/models/ksk-3_Shitok.glb" />
+            <ModelViewer modelUrl="/models/ksk-3-8_empty.glb" />
             <p className="font-bold tracking-wide uppercase">
               Интерактивная 3D-модель
             </p>
