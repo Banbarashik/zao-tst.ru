@@ -165,10 +165,10 @@ export default function Catalog() {
           Инженерный подбор калориферов и агрегатов
         </h2>
         <ul className="my-6 grid gap-2 sm:grid-cols-2 md:gap-4 lg:gap-10 xl:gap-12">
-          <li className="w-full">
+          <li className="h-full w-full">
             <Link
               href="#"
-              className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 h-full w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:text-sm xl:px-10 2xl:text-base"
+              className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:text-sm xl:px-10 2xl:text-base"
             >
               <div className="relative aspect-16/10 h-full">
                 <Image src="/img/home/KPVS_KPVU_SFO.png" alt="" fill />
@@ -178,7 +178,7 @@ export default function Catalog() {
               </p>
             </Link>
           </li>
-          <li className="bg-card text-card-foreground hidden w-full basis-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:flex sm:text-[13px] md:w-full md:px-4 lg:text-sm xl:px-10 2xl:text-base">
+          <li className="bg-card text-card-foreground hidden aspect-16/10 flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:flex sm:text-[13px] md:px-4 lg:text-sm xl:px-10 2xl:text-base">
             <ModelViewer
               modelUrl="/models/ksk-3-8.glb"
               placeholderUrl="/img/home/model_placeholder.png"

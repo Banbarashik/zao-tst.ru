@@ -56,10 +56,7 @@ export function ModelViewer({
   const [isReady, setIsReady] = useState(false);
 
   return (
-    <div
-      className="relative w-full overflow-hidden rounded-xl"
-      style={{ aspectRatio: "16/10" }}
-    >
+    <div className="relative h-full w-full overflow-hidden rounded-xl">
       {/* ── Placeholder + button (visible until user clicks) ── */}
       {!isStarted && (
         <div className="absolute inset-0">
