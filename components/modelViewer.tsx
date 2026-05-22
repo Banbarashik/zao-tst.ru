@@ -62,7 +62,7 @@ export function ModelViewer({
         <div className="absolute inset-0">
           <img
             src={placeholderUrl}
-            alt="3D-модель калорифера КСк 3-8"
+            alt="3D-модель водяного калорифера"
             className="h-full w-full object-cover"
             style={{ filter: "blur(6px)", transform: "scale(1.05)" }} // scale hides blur edges
           />

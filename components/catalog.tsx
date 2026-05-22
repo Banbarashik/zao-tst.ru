@@ -171,7 +171,12 @@ export default function Catalog() {
               className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:text-sm xl:px-10 2xl:text-base"
             >
               <div className="relative aspect-16/10 h-full">
-                <Image src="/img/home/KPVS_KPVU_SFO.png" alt="" fill />
+                <Image
+                  src="/img/home/zao_tst_podbor_vozduchonagrevatel.png"
+                  alt="Расчет и подбор воздушно-отопительного оборудования"
+                  sizes="(max-width: 639px) 100vw, (max-width: 767px) 33vw, (max-width: 1023px) 50vw, 562px"
+                  fill
+                />
               </div>
               <p className="font-bold tracking-wide uppercase">
                 Расчетно-технический блок
@@ -180,8 +185,8 @@ export default function Catalog() {
           </li>
           <li className="bg-card text-card-foreground hidden aspect-16/10 flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:flex sm:text-[13px] md:px-4 lg:text-sm xl:px-10 2xl:text-base">
             <ModelViewer
-              modelUrl="/models/ksk-3-8.glb"
-              placeholderUrl="/img/home/model_placeholder.png"
+              modelUrl="/models/kalorifer.glb"
+              placeholderUrl="/img/home/kalorifer.png"
             />
             <p className="font-bold tracking-wide uppercase">
               Интерактивная 3D-модель
