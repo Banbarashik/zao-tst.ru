@@ -12,7 +12,7 @@ function Model({ url }) {
 
 export function ModelViewer({ modelUrl }) {
   return (
-    <Canvas camera={{ position: [-0.75, 0.1, 0.85], fov: 45 }}>
+    <Canvas camera={{ position: [-0.5, 0.25, 1], fov: 45 }}>
       <directionalLight position={[-0.6, 0, -0.2]} intensity={1} />
       <directionalLight position={[0.3, -0.05, 0.4]} intensity={1.5} />
       <directionalLight position={[0, -1, 2]} intensity={1.5} />
@@ -23,7 +23,7 @@ export function ModelViewer({ modelUrl }) {
         <Model url={modelUrl} />
       </Suspense>
 
-      <OrbitControls maxDistance={1.4} enablePan={false} />
+      <OrbitControls minDistance={0.6} maxDistance={1.4} enablePan={false} />
       <Environment preset="warehouse" environmentIntensity={1.5} />
     </Canvas>
   );
