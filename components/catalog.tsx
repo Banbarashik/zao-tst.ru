@@ -171,7 +171,7 @@ export default function Catalog() {
               className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 h-full w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:text-sm xl:px-10 2xl:text-base"
             >
               <div className="relative aspect-16/10 h-full">
-                <Image src="/img/KPVS_KPVU_SFO.png" alt="" fill />
+                <Image src="/img/home/KPVS_KPVU_SFO.png" alt="" fill />
               </div>
               <p className="font-bold tracking-wide uppercase">
                 Расчетно-технический блок
