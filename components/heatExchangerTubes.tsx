@@ -8,7 +8,7 @@ const TUBE_LENGTH = 794;
 const PLATE_DIAMETER = 39;
 const PLATE_RADIUS = PLATE_DIAMETER / 2; // 19.5mm (gives a 2.5mm gap between plates)
 const PLATE_THICKNESS = 1.15;
-const PLATE_COUNT = 52;
+const PLATE_COUNT = 104;
 const TUBE_RADIUS = 11;
 const TUBE_PITCH = 41.5; // Vertical distance between tubes in the same column
 const TUBE_COUNT = 35; // 12 + 11 + 12
@@ -27,7 +27,7 @@ const TOTAL_PLATES = TUBE_COUNT * PLATE_COUNT;
 
 // ─── Heavy Industrial Material Tuning ──────────────────────────────────────
 // Slightly bumped roughness to 0.4 to capture an authentic, non-glossy, raw industrial steel look
-const METAL_PROPS = { color: "#B0B5BC", metalness: 0.85, roughness: 0.4 };
+const METAL_PROPS = { color: "#7d929b", metalness: 0.85, roughness: 0.4 };
 
 // ─── Geometry Positioning Helper ───────────────────────────────────────────
 function getTubePositions() {
