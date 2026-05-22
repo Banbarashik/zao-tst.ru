@@ -64,13 +64,13 @@ export function ModelViewer({
             src={placeholderUrl}
             alt="3D-модель водяного калорифера"
             className="h-full w-full object-cover"
-            style={{ filter: "blur(6px)", transform: "scale(1.05)" }} // scale hides blur edges
+            style={{ filter: "blur(2px)", transform: "scale(1)" }} // scale hides blur edges
           />
           {/* Dark scrim so the button is readable over any image */}
           <div className="absolute inset-0 bg-black/20" />
           <button
             onClick={() => setIsStarted(true)}
-            className="absolute top-1/2 left-1/2 flex w-max -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center gap-2 rounded-full bg-white/90 px-6 py-3 text-xs font-semibold text-gray-900 shadow-lg backdrop-blur transition hover:bg-white md:text-sm"
+            className="absolute top-1/2 left-1/2 flex w-max -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center gap-2 rounded-full bg-blue-100 px-6 py-3 text-xs font-semibold text-gray-900 shadow-lg backdrop-blur transition hover:bg-white md:text-sm"
           >
             {/* Simple play/cube icon — swap for whatever fits your design */}
             <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
@@ -90,7 +90,12 @@ export function ModelViewer({
         <>
           {!isReady && <LoadingOverlay />}
 
-          <Canvas camera={{ position: [-0.5, 0.25, 1], fov: 45 }}>
+          <Canvas
+            camera={{
+              position: [-0.8, 0.2, 1.1],
+              fov: 35,
+            }}
+          >
             <directionalLight position={[-0.6, 0, -0.2]} intensity={1} />
             <directionalLight position={[0.3, -0.05, 0.4]} intensity={1.5} />
             <directionalLight position={[0, -1, 2]} intensity={1.5} />
@@ -105,7 +110,7 @@ export function ModelViewer({
 
             <OrbitControls
               enablePan={false}
-              maxDistance={1.4}
+              maxDistance={1.8}
               minDistance={0.6}
             />
           </Canvas>

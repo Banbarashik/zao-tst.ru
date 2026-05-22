@@ -183,7 +183,7 @@ export default function Catalog() {
               </p>
             </Link>
           </li>
-          <li className="bg-card text-card-foreground hidden aspect-16/10 flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:flex sm:text-[13px] md:px-4 lg:text-sm xl:px-10 2xl:text-base">
+          <li className="bg-card text-card-foreground flex aspect-16/10 h-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:h-auto sm:text-[13px] md:px-4 lg:text-sm xl:px-10 2xl:text-base">
             <ModelViewer
               modelUrl="/models/kalorifer.glb"
               placeholderUrl="/img/home/kalorifer.png"
