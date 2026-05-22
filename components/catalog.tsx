@@ -179,7 +179,10 @@ export default function Catalog() {
             </Link>
           </li>
           <li className="bg-card text-card-foreground hidden w-full basis-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:flex sm:text-[13px] md:w-full md:px-4 lg:text-sm xl:px-10 2xl:text-base">
-            <ModelViewer modelUrl="/models/ksk-3-8.glb" />
+            <ModelViewer
+              modelUrl="/models/ksk-3-8.glb"
+              placeholderUrl="/img/home/model_placeholder.png"
+            />
             <p className="font-bold tracking-wide uppercase">
               Интерактивная 3D-модель
             </p>
