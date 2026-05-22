@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useMemo } from "react";
-import { Object3D } from "three";
+import { Object3D, InstancedMesh } from "three";
 
 // ─── Dimensions (mm) ────────────────────────────────────────────────────────
 const TUBE_LENGTH = 794;
@@ -62,7 +62,7 @@ function getTubePositions() {
 
 // ─── Tubes Component (1 Draw Call) ─────────────────────────────────────────
 export function Tubes() {
-  const ref = useRef<any>();
+  const ref = useRef<InstancedMesh>(null);
   const dummy = useMemo(() => new Object3D(), []);
   const tubePositions = useMemo(() => getTubePositions(), []);
 
@@ -96,7 +96,7 @@ export function Tubes() {
 
 // ─── Plates Component (1 Draw Call) ────────────────────────────────────────
 export function Plates() {
-  const ref = useRef<any>();
+  const ref = useRef<InstancedMesh>(null);
   const dummy = useMemo(() => new Object3D(), []);
   const tubePositions = useMemo(() => getTubePositions(), []);
 

@@ -3,7 +3,8 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
-import { Plates, Tubes } from "./heatExchangerTubes";
+
+import { Plates, Tubes } from "@/components//heatExchangerTubes";
 
 function Model({ url }) {
   const { scene } = useGLTF(url);
