@@ -33,11 +33,11 @@ function LoadingOverlay() {
     <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/10 backdrop-blur-sm">
       <div className="h-1 w-48 overflow-hidden rounded-full bg-white/30">
         <div
-          className="h-full rounded-full bg-white transition-all duration-300"
+          className="h-full rounded-full bg-black/20 transition-all duration-300"
           style={{ width: `${progress}%` }}
         />
       </div>
-      <span className="text-sm font-medium text-white drop-shadow">
+      <span className="font-medium text-black/40 drop-shadow">
         {Math.round(progress)}%
       </span>
     </div>
@@ -70,10 +70,10 @@ export function ModelViewer({
             style={{ filter: "blur(6px)", transform: "scale(1.05)" }} // scale hides blur edges
           />
           {/* Dark scrim so the button is readable over any image */}
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/20" />
           <button
             onClick={() => setIsStarted(true)}
-            className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center gap-2 rounded-full bg-white/90 px-6 py-3 text-sm font-semibold text-gray-900 shadow-lg backdrop-blur transition hover:bg-white"
+            className="absolute top-1/2 left-1/2 flex w-max -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center gap-2 rounded-full bg-white/90 px-6 py-3 text-xs font-semibold text-gray-900 shadow-lg backdrop-blur transition hover:bg-white md:text-sm"
           >
             {/* Simple play/cube icon — swap for whatever fits your design */}
             <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
@@ -81,7 +81,7 @@ export function ModelViewer({
             </svg>
             Активировать 3D-модель
           </button>
-          <div className="absolute top-1/2 left-1/2 mt-16 -translate-x-1/2 -translate-y-1/2 text-center text-white/80 drop-shadow">
+          <div className="absolute top-1/2 left-1/2 mt-12 w-max -translate-x-1/2 -translate-y-1/2 text-center text-sm text-white drop-shadow md:mt-16 lg:text-base">
             <p>Вращать — левая кнопка мыши</p>
             <p>Масштабировать — колесико мыши</p>
           </div>
