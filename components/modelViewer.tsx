@@ -65,7 +65,7 @@ export function ModelViewer({
         <div className="absolute inset-0">
           <img
             src={placeholderUrl}
-            alt="3D model preview"
+            alt="3D-модель калорифера КСк 3-8"
             className="h-full w-full object-cover"
             style={{ filter: "blur(6px)", transform: "scale(1.05)" }} // scale hides blur edges
           />
@@ -73,14 +73,18 @@ export function ModelViewer({
           <div className="absolute inset-0 bg-black/30" />
           <button
             onClick={() => setIsStarted(true)}
-            className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-2 rounded-full bg-white/90 px-6 py-3 text-sm font-semibold text-gray-900 shadow-lg backdrop-blur transition hover:bg-white"
+            className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center gap-2 rounded-full bg-white/90 px-6 py-3 text-sm font-semibold text-gray-900 shadow-lg backdrop-blur transition hover:bg-white"
           >
             {/* Simple play/cube icon — swap for whatever fits your design */}
             <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
               <path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A1 1 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.32-.18.72-.18 1.04 0l7.9 4.44c.32.17.53.5.53.88v9z" />
             </svg>
-            View 3D Model
+            Активировать 3D-модель
           </button>
+          <div className="absolute top-1/2 left-1/2 mt-16 -translate-x-1/2 -translate-y-1/2 text-center text-white/80 drop-shadow">
+            <p>Вращать — левая кнопка мыши</p>
+            <p>Масштабировать — колесико мыши</p>
+          </div>
         </div>
       )}
 
