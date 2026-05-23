@@ -15,12 +15,12 @@ interface TempColumn {
   resistance: number;
 }
 
-interface TableSection {
+export interface TableSection {
   /** Список колонок (каждая — одна температура) */
   columns: TempColumn[];
 }
 
-interface TableData {
+export interface TableData {
   /** Производительность по воздуху, м³/час */
   airflow: number;
   /** Скорость в живом сечении, м/сек */
