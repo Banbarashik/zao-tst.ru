@@ -80,24 +80,6 @@ export interface ContactFormData {
   message: string;
 }
 
-export type ProductTableData = {
-  headers: TableRowData[];
-  rows: TableRowData[];
-  caption?: string;
-};
-
-type TableRowData = {
-  cells: TableCellData[];
-};
-
-type TableCellData = {
-  content: React.ReactNode;
-  colspan?: number;
-  rowspan?: number;
-  className?: string;
-  style?: React.CSSProperties;
-};
-
 export type YandexMetrikaInitParameters = {
   accurateTrackBounce?: boolean | number;
   childIframe?: boolean;
