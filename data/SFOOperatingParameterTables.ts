@@ -1,11 +1,9 @@
-import type { TablesByPower } from "@/types/SFOOperatingParameterTable";
+import type {
+  TablesByPower,
+  SFODataStructure,
+} from "@/types/SFOOperatingParameterTable";
 
-export const SFOOperatingParameterTables: Partial<
-  Record<
-    "sfo250",
-    Partial<Record<"airflow12000" | "airflow8000", TablesByPower>>
-  >
-> = {
+export const SFOOperatingParameterTables: SFODataStructure = {
   sfo250: {
     airflow12000: {
       fullPower: {
