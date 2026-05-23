@@ -80,6 +80,8 @@ export interface ContactFormData {
   message: string;
 }
 
+// * YANDEX METRIKA * //
+
 export type YandexMetrikaInitParameters = {
   accurateTrackBounce?: boolean | number;
   childIframe?: boolean;
