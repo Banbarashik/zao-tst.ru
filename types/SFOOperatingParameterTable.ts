@@ -39,8 +39,9 @@ export interface TableData {
 
 export interface TablesByPower {
   fullPower: TableData;
-  twoThirdsPower: TableData;
-  oneThirdPower: TableData;
+  twoThirdsPower?: TableData;
+  oneThirdPower?: TableData;
+  oneHalfPower?: TableData;
 }
 
 // ─── Model-specific airflow configuration ──────────────────────────────────────
