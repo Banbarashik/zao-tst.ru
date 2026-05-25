@@ -37,12 +37,26 @@ export interface TableData {
   sections: [TableSection, TableSection];
 }
 
-export interface TablesByPower {
+type PowerSetStandard = {
   fullPower: TableData;
-  twoThirdsPower?: TableData;
-  oneThirdPower?: TableData;
-  oneHalfPower?: TableData;
-}
+  twoThirdsPower: TableData;
+  oneThirdPower: TableData;
+};
+
+type PowerSetWithHalf = {
+  fullPower: TableData;
+  oneHalfPower: TableData;
+};
+
+type ModelPowerConfig = {
+  sfo16: PowerSetWithHalf;
+  sfo25: PowerSetStandard;
+  sfo40: PowerSetStandard;
+  sfo60: PowerSetStandard;
+  sfo100: PowerSetStandard;
+  sfo160: PowerSetStandard;
+  sfo250: PowerSetStandard;
+};
 
 // ─── Model-specific airflow configuration ──────────────────────────────────────
 /**
@@ -65,6 +79,6 @@ export type ModelAirflowConfig = {
  */
 export type SFODataStructure = {
   [Model in keyof ModelAirflowConfig]: {
-    [Airflow in ModelAirflowConfig[Model]]: TablesByPower;
+    [Airflow in ModelAirflowConfig[Model]]: ModelPowerConfig[Model];
   };
 };
