@@ -49,10 +49,13 @@ export interface TablesByPower {
  * Use this to define which airflows are valid for each model.
  */
 export type ModelAirflowConfig = {
-  sfo250: "airflow12000" | "airflow8000" | "airflow6000";
-  sfo16: "airflow6000" | "airflow2000";
-  sfo40: "airflow10000";
-  // Add other models and their available airflows as data becomes available
+  sfo16: "airflow1800" | "airflow2000" | "airflow2200";
+  sfo25: "airflow2000" | "airflow2300" | "airflow2500";
+  sfo40: "airflow3000" | "airflow3500" | "airflow4000";
+  sfo60: "airflow4000" | "airflow5000" | "airflow5500";
+  sfo100: "airflow5000" | "airflow6000" | "airflow7000";
+  sfo160: "airflow8000" | "airflow10000" | "airflow12000";
+  sfo250: "airflow12000" | "airflow15000" | "airflow18000";
 };
 
 /**
