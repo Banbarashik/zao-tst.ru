@@ -6,10 +6,10 @@ import type {
 
 // ─── Цветовые классы (Tailwind) ───────────────────────────────────────────────
 const COLOR_CLASS: Record<NonNullable<CellColor>, string> = {
-  green: "bg-green-200  text-green-900",
-  yellow: "bg-yellow-100 text-yellow-900",
-  orange: "bg-orange-200 text-orange-900",
-  red: "bg-red-400    text-red-900",
+  green: "bg-green-200  text-red-900",
+  yellow: "bg-yellow-100 text-red-900",
+  orange: "",
+  red: "bg-[#fabf8f]    text-red-900",
 };
 
 function cellColorClass(color: CellColor): string {
@@ -29,7 +29,7 @@ function TableRows({ section }: { section: TableSection }) {
     <>
       {/* Строка 1: Температура входящего воздуха */}
       <tr>
-        <td className="border border-gray-300 px-3 py-1 text-sm">
+        <td colSpan={2} className="border border-gray-300 px-3 py-1 text-sm">
           Температура входящего воздуха, °C
         </td>
         {columns.map((col, i) => (
@@ -44,7 +44,7 @@ function TableRows({ section }: { section: TableSection }) {
 
       {/* Строка 2: Температура воздуха на выходе */}
       <tr>
-        <td className="border border-gray-300 px-3 py-1 text-sm">
+        <td colSpan={2} className="border border-gray-300 px-3 py-1 text-sm">
           Температура воздуха на выходе, °C
         </td>
         {columns.map((col, i) => (
@@ -59,14 +59,14 @@ function TableRows({ section }: { section: TableSection }) {
 
       {/* Строка 3: Температура поверхности ТЭНа */}
       <tr>
-        <td className="border border-gray-300 px-3 py-1 text-sm">
+        <td colSpan={2} className="border border-gray-300 px-3 py-1 text-sm">
           Температура поверхности ТЭНа, °C
         </td>
         {columns.map((col, i) => (
           <td
             key={i}
             className={`border border-gray-300 px-3 py-1 text-center text-sm ${
-              col.surfaceTemp >= 181 ? "font-semibold text-red-600" : ""
+              col.surfaceTemp >= 181 ? "text-[#c00000]" : ""
             }`}
           >
             {col.surfaceTemp}
@@ -76,7 +76,7 @@ function TableRows({ section }: { section: TableSection }) {
 
       {/* Строка 4: Аэродинамическое сопротивление */}
       <tr>
-        <td className="border border-gray-300 px-3 py-1 text-sm">
+        <td colSpan={2} className="border border-gray-300 px-3 py-1 text-sm">
           Аэродинамическое сопротивление, Па
         </td>
         {columns.map((col, i) => (
@@ -123,7 +123,7 @@ export function SFOOperatingParameterTable({
             {/* Скорость */}
             <th
               className="border border-gray-300 px-3 py-2 text-center text-sm font-normal"
-              colSpan={maxCols - 2}
+              colSpan={4}
             >
               Скорость в живом сечении, м/сек
             </th>
@@ -134,7 +134,7 @@ export function SFOOperatingParameterTable({
             {/* Мощность */}
             <th
               className="border border-gray-300 px-3 py-2 text-center text-sm font-normal"
-              colSpan={maxCols - sections[0].columns.length + 1}
+              colSpan={4}
             >
               {powerLabel}
             </th>
