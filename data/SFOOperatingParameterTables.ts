@@ -1,7 +1,4 @@
-import type {
-  TablesByPower,
-  SFODataStructure,
-} from "@/types/SFOOperatingParameterTable";
+import type { SFODataStructure } from "@/types/SFOOperatingParameterTable";
 
 export const SFOOperatingParameterTables: SFODataStructure = {
   sfo250: {
@@ -16,35 +13,35 @@ export const SFOOperatingParameterTables: SFODataStructure = {
             columns: [
               {
                 inputTemp: -45,
-                color: "red",
+                color: "green",
                 outputTemp: 3,
                 surfaceTemp: 108,
                 resistance: 130,
               },
               {
                 inputTemp: -40,
-                color: "red",
+                color: "green",
                 outputTemp: 9,
                 surfaceTemp: 115,
                 resistance: 122,
               },
               {
                 inputTemp: -35,
-                color: "orange",
+                color: "green",
                 outputTemp: 15,
                 surfaceTemp: 121,
                 resistance: 115,
               },
               {
                 inputTemp: -30,
-                color: "orange",
+                color: "green",
                 outputTemp: 21,
                 surfaceTemp: 128,
                 resistance: 108,
               },
               {
                 inputTemp: -25,
-                color: "yellow",
+                color: "green",
                 outputTemp: 27,
                 surfaceTemp: 135,
                 resistance: 102,
@@ -58,7 +55,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: -15,
-                color: "green",
+                color: "yellow",
                 outputTemp: 39,
                 surfaceTemp: 148,
                 resistance: 92,
@@ -72,14 +69,14 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: -5,
-                color: "yellow",
+                color: "red",
                 outputTemp: 52,
                 surfaceTemp: 161,
                 resistance: 82,
               },
               {
                 inputTemp: 0,
-                color: "yellow",
+                color: "red",
                 outputTemp: 58,
                 surfaceTemp: 168,
                 resistance: 78,
