@@ -1,31 +1,10 @@
 import Image from "next/image";
 
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
-import ProductSubheader from "@/components/catalog/productSubheader";
-import ProductParagraph from "@/components/catalog/productParagraph";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/electroProductOverviewSection";
 import { ElectroSpecsSection } from "@/components/catalog/electro/electroSpecsSection";
 import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimensionsSection";
-
-const equipmentType = {
-  sfo: {
-    nom: "электрокалорифер",
-    nomAlt: "электрический калорифер",
-    gen: "электрокалорифера",
-    pluGen: "электрокалориферов",
-  },
-  sfotc: {
-    nom: "электрокалориферная установка",
-    nomAlt: "установка с электрокалорифером",
-    gen: "установки",
-    pluGen: "электрокалориферных установок",
-  },
-  shuk: {
-    nom: "шкаф ШУК",
-    gen: "шкафа управления",
-    pluGen: "шкафов ШУК",
-  },
-};
+import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODrawingAndCircuitSection";
 
 //TODO unite into one object
 const tableLinkUrl = {
@@ -84,47 +63,7 @@ export default function ElectroEquipmentPage({ product }) {
       <ElectroProductOverviewSection product={product} />
       <ElectroSpecsSection product={product} />
 
-      {(isSHUK || isSFO) && (
-        <ProductSubheader
-          text={`Чертеж и электрическая схема подключения ${equipmentType[preciseCategory].gen} ${product.shortName}`}
-        />
-      )}
-      {isSFO && (
-        <>
-          <ProductParagraph className="mb-2">
-            Ниже представлены чертеж с габаритными размерами и электрическая
-            схема подключения электрокалорифера {product.shortName}.
-          </ProductParagraph>
-          <div className="flex w-full flex-col gap-3 sm:mb-10 sm:flex-row sm:gap-0">
-            <div
-              className="relative w-full"
-              style={{
-                aspectRatio: `${product.drawing.width} / ${product.drawing.height}`,
-              }}
-            >
-              <Image
-                src={product.drawing.url}
-                title={`${productName} габаритные размеры`}
-                alt={`${product.altName} габаритные размеры`}
-                fill
-              />
-            </div>
-            <div
-              className="relative w-full"
-              style={{
-                aspectRatio: `${product.scheme.width} / ${product.scheme.height}`,
-              }}
-            >
-              <Image
-                src={product.scheme.url}
-                alt={`${product.altName} электрическая схема подключения`}
-                title={`${product.name} электрическая схема подключения`}
-                fill
-              />
-            </div>
-          </div>
-        </>
-      )}
+      {isSFO && <SFODrawingAndCircuitSection product={product} />}
       {isSFOTC && <SFOTCDimensionsSection product={product} />}
       {isSHUK && (
         <>
