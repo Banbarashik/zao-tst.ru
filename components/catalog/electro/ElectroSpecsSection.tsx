@@ -5,26 +5,10 @@ import { capitalizeFirst } from "@/lib/utils";
 
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
-
-const equipmentType = {
-  sfo: {
-    nom: "электрокалорифер",
-    nomAlt: "электрический калорифер",
-    gen: "электрокалорифера",
-    pluGen: "электрокалориферов",
-  },
-  sfotc: {
-    nom: "электрокалориферная установка",
-    nomAlt: "установка с электрокалорифером",
-    gen: "установки",
-    pluGen: "электрокалориферных установок",
-  },
-  shuk: {
-    nom: "шкаф ШУК",
-    gen: "шкафа управления",
-    pluGen: "шкафов ШУК",
-  },
-};
+import {
+  ELECTRO_CATEGORY_META,
+  getPreciseElectroCategory,
+} from "@/components/catalog/electro/electroCategoryMeta";
 
 const tableLabels = {
   sfo: [
@@ -110,11 +94,8 @@ const tableLabels = {
 };
 
 export function ElectroSpecsSection({ product }) {
-  const preciseCategories = ["sfo", "sfotc", "shuk"];
-  const preciseCategory = preciseCategories.find((cat) =>
-    product.categories.includes(cat),
-  );
-
+  const preciseCategory = getPreciseElectroCategory(product) ?? "sfo";
+  const categoryMeta = ELECTRO_CATEGORY_META[preciseCategory];
   const isSFO = preciseCategory === "sfo";
   const isSFOTC = preciseCategory === "sfotc";
   const isSHUK = preciseCategory === "shuk";
@@ -122,7 +103,7 @@ export function ElectroSpecsSection({ product }) {
   return (
     <section>
       <ProductSubheader
-        text={`Технические характеристики ${equipmentType[preciseCategory].gen} ${product.shortName}`}
+        text={`Технические характеристики ${categoryMeta.gen} ${product.shortName}`}
       />
       <ProductParagraph className="mb-3">
         В таблице приведены основные технические характеристики и справочные
@@ -141,8 +122,8 @@ export function ElectroSpecsSection({ product }) {
           >
             <Image
               src={product.frontView.url}
-              title={`${capitalizeFirst(equipmentType[preciseCategory].nom)} ${product.shortName}`}
-              alt={`${capitalizeFirst(equipmentType[preciseCategory].nom)} ${product.altShortName}`}
+              title={`${capitalizeFirst(categoryMeta.nom)} ${product.shortName}`}
+              alt={`${capitalizeFirst(categoryMeta.nom)} ${product.altShortName}`}
               fill
             />
           </div>
@@ -154,8 +135,8 @@ export function ElectroSpecsSection({ product }) {
           >
             <Image
               src={product.parts.url}
-              title={`${capitalizeFirst(equipmentType[preciseCategory].nomAlt)} ${product.shortName}`}
-              alt={`${capitalizeFirst(equipmentType[preciseCategory].nomAlt)} ${product.altShortName}`}
+              title={`${capitalizeFirst(categoryMeta.nomAlt ?? categoryMeta.nom)} ${product.shortName}`}
+              alt={`${capitalizeFirst(categoryMeta.nomAlt ?? categoryMeta.nom)} ${product.altShortName}`}
               fill
             />
           </div>
