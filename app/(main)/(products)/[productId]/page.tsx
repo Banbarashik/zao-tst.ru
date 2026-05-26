@@ -12,7 +12,7 @@ import SupplyCalorifierPage from "@/components/catalog/supplyCalorifierPage";
 import KSKProductPage from "@/components/catalog/KSKProductPage";
 import STDPage from "@/components/catalog/STDPage";
 import AVOPage from "@/components/catalog/AVOPage";
-import ElectroEquipmentPage from "@/components/catalog/ElectroEquipmentPage";
+import ElectroEquipmentPage from "@/components/catalog/electro/ElectroEquipmentPage";
 import TenyPage from "@/components/catalog/TenyPage";
 import QuestionButton from "@/components/questionButton";
 import KPSKProductPage from "@/components/catalog/KPSKProductPage";
