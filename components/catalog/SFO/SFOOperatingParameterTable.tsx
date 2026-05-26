@@ -75,15 +75,12 @@ interface TableProps {
   className?: string;
 }
 
-export function SFOOperatingParameterTable({
-  data,
-  className = "",
-}: TableProps) {
+export function SFOOperatingParameterTable({ data }: TableProps) {
   const { airflow, velocity, powerLabel, power, sections } = data;
 
   return (
-    <div className={`overflow-x-auto ${className}`}>
-      <table className="border-collapse">
+    <div className="w-full overflow-x-auto">
+      <table className="w-full min-w-231 xl:min-w-auto">
         <thead>
           <tr>
             {/* Производительность */}
