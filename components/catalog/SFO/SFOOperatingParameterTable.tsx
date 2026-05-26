@@ -29,14 +29,9 @@ function TableRows({ section }: { section: TableSection }) {
     <>
       {/* Строка 1: Температура входящего воздуха */}
       <tr>
-        <td colSpan={2} className="border border-gray-300 px-3 py-1 text-sm">
-          Температура входящего воздуха, °C
-        </td>
+        <td colSpan={2}>Температура входящего воздуха, °C</td>
         {columns.map((col, i) => (
-          <td
-            key={i}
-            className={`border border-gray-300 px-3 py-1 text-center text-sm font-medium ${cellColorClass(col.color)}`}
-          >
+          <td key={i} className={`${cellColorClass(col.color)}`}>
             {fmt(col.inputTemp)}
           </td>
         ))}
@@ -44,30 +39,19 @@ function TableRows({ section }: { section: TableSection }) {
 
       {/* Строка 2: Температура воздуха на выходе */}
       <tr>
-        <td colSpan={2} className="border border-gray-300 px-3 py-1 text-sm">
-          Температура воздуха на выходе, °C
-        </td>
+        <td colSpan={2}>Температура воздуха на выходе, °C</td>
         {columns.map((col, i) => (
-          <td
-            key={i}
-            className="border border-gray-300 px-3 py-1 text-center text-sm"
-          >
-            {fmt(col.outputTemp)}
-          </td>
+          <td key={i}>{fmt(col.outputTemp)}</td>
         ))}
       </tr>
 
       {/* Строка 3: Температура поверхности ТЭНа */}
       <tr>
-        <td colSpan={2} className="border border-gray-300 px-3 py-1 text-sm">
-          Температура поверхности ТЭНа, °C
-        </td>
+        <td colSpan={2}>Температура поверхности ТЭНа, °C</td>
         {columns.map((col, i) => (
           <td
             key={i}
-            className={`border border-gray-300 px-3 py-1 text-center text-sm ${
-              col.surfaceTemp >= 181 ? "text-[#c00000]" : ""
-            }`}
+            className={`${col.surfaceTemp >= 181 ? "text-[#c00000]" : ""}`}
           >
             {col.surfaceTemp}
           </td>
@@ -76,16 +60,9 @@ function TableRows({ section }: { section: TableSection }) {
 
       {/* Строка 4: Аэродинамическое сопротивление */}
       <tr>
-        <td colSpan={2} className="border border-gray-300 px-3 py-1 text-sm">
-          Аэродинамическое сопротивление, Па
-        </td>
+        <td colSpan={2}>Аэродинамическое сопротивление, Па</td>
         {columns.map((col, i) => (
-          <td
-            key={i}
-            className="border border-gray-300 px-3 py-1 text-center text-sm"
-          >
-            {col.resistance}
-          </td>
+          <td key={i}>{col.resistance}</td>
         ))}
       </tr>
     </>
@@ -104,43 +81,22 @@ export function SFOOperatingParameterTable({
 }: TableProps) {
   const { airflow, velocity, powerLabel, power, sections } = data;
 
-  // Максимальное кол-во колонок среди обеих секций (для правильного colspan)
-  const maxCols = Math.max(...sections.map((s) => s.columns.length));
-
   return (
     <div className={`overflow-x-auto ${className}`}>
-      <table className="border-collapse border border-gray-300 text-gray-800">
+      <table className="border-collapse">
         <thead>
           <tr>
             {/* Производительность */}
-            <th className="w-56 border border-gray-300 px-3 py-2 text-left text-sm font-normal">
-              Производительность по воздуху, м³/час
-            </th>
-            <th className="border border-gray-300 px-3 py-2 text-center text-sm font-medium">
-              {airflow}
-            </th>
+            <th>Производительность по воздуху, м³/час</th>
+            <th>{airflow}</th>
 
             {/* Скорость */}
-            <th
-              className="border border-gray-300 px-3 py-2 text-center text-sm font-normal"
-              colSpan={4}
-            >
-              Скорость в живом сечении, м/сек
-            </th>
-            <th className="border border-gray-300 px-3 py-2 text-center text-sm font-medium">
-              {velocity}
-            </th>
+            <th colSpan={4}>Скорость в живом сечении, м/сек</th>
+            <th>{velocity}</th>
 
             {/* Мощность */}
-            <th
-              className="border border-gray-300 px-3 py-2 text-center text-sm font-normal"
-              colSpan={4}
-            >
-              {powerLabel}
-            </th>
-            <th className="border border-gray-300 px-3 py-2 text-center text-sm font-medium">
-              {power}
-            </th>
+            <th colSpan={4}>{powerLabel}</th>
+            <th>{power}</th>
           </tr>
         </thead>
 
