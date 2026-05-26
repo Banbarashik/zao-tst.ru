@@ -24,62 +24,64 @@ export function SFOComparativeAnalysisTable({
   data: SFOComparativeAnalysisTableData;
 }) {
   return (
-    <table>
-      <caption>
-        СРАВНИТЕЛЬНЫЙ АНАЛИЗ РАБОЧИХ РЕЖИМОВ ЭЛЕКТРОКАЛОРИФЕРА {data.model}
-      </caption>
+    <div className="w-full overflow-x-auto">
+      <table className="w-full min-w-231 xl:min-w-auto">
+        <caption className="border border-b-0 border-[#723910]">
+          Сравнительный анализ рабочих режимов электрокалорифера {data.model}
+        </caption>
 
-      <tbody>
-        <tr>
-          <td>Производительность</td>
+        <tbody>
+          <tr>
+            <th>Производительность</th>
 
-          {data.modes.map((mode) => (
-            <td key={mode.performance}>{mode.performance}</td>
-          ))}
-        </tr>
+            {data.modes.map((mode) => (
+              <td key={mode.performance}>{mode.performance}</td>
+            ))}
+          </tr>
 
-        <tr>
-          <td>Оценка теплосъема</td>
+          <tr>
+            <th>Оценка теплосъема</th>
 
-          {data.modes.map((mode) => (
-            <td key={mode.performance}>{thermalLoadMap[mode.thermalLoad]}</td>
-          ))}
-        </tr>
+            {data.modes.map((mode) => (
+              <td key={mode.performance}>{thermalLoadMap[mode.thermalLoad]}</td>
+            ))}
+          </tr>
 
-        <tr>
-          <td>Эффективность нагрева</td>
+          <tr>
+            <th>Эффективность нагрева</th>
 
-          {data.modes.map((mode) => (
-            <td key={mode.performance}>{mode.heatingEfficiency}</td>
-          ))}
-        </tr>
+            {data.modes.map((mode) => (
+              <td key={mode.performance}>{mode.heatingEfficiency}</td>
+            ))}
+          </tr>
 
-        <tr>
-          <td>Ресурс ТЭНов</td>
+          <tr>
+            <th>Ресурс ТЭНов</th>
 
-          {data.modes.map((mode) => (
-            <td key={mode.performance}>
-              {heatingElementLifeMap[mode.heatingElementLife]}
-            </td>
-          ))}
-        </tr>
+            {data.modes.map((mode) => (
+              <td key={mode.performance}>
+                {heatingElementLifeMap[mode.heatingElementLife]}
+              </td>
+            ))}
+          </tr>
 
-        <tr>
-          <td>Риск перегрева</td>
+          <tr>
+            <th>Риск перегрева</th>
 
-          {data.modes.map((mode) => (
-            <td key={mode.performance}>{mode.overheatingRisk}</td>
-          ))}
-        </tr>
+            {data.modes.map((mode) => (
+              <td key={mode.performance}>{mode.overheatingRisk}</td>
+            ))}
+          </tr>
 
-        <tr>
-          <td>Шумы и вибрация</td>
+          <tr>
+            <th>Шумы и вибрация</th>
 
-          {data.modes.map((mode) => (
-            <td key={mode.performance}>{noiseMap[mode.noiseAndVibration]}</td>
-          ))}
-        </tr>
-      </tbody>
-    </table>
+            {data.modes.map((mode) => (
+              <td key={mode.performance}>{noiseMap[mode.noiseAndVibration]}</td>
+            ))}
+          </tr>
+        </tbody>
+      </table>
+    </div>
   );
 }
