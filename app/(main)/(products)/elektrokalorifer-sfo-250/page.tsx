@@ -14,7 +14,8 @@ import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOCom
 import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
 
 export default function SFO250Page() {
-  const [isSpoiler1Opened, setSpoiler1Opened] = useState(true);
+  const [isSpoiler1Opened, setIsSpoiler1Opened] = useState(false);
+  const [isSpoiler2Opened, setIsSpoiler2Opened] = useState(true);
 
   const product = productData.find((p) => p.id === "elektrokalorifer-sfo-250");
 
@@ -90,7 +91,7 @@ export default function SFO250Page() {
             </p>
             <div
               className="cursor-pointer font-semibold text-blue-700"
-              onClick={() => setSpoiler1Opened(!isSpoiler1Opened)}
+              onClick={() => setIsSpoiler1Opened(!isSpoiler1Opened)}
             >
               Режимы работы при расходе 12 000 м³/ч
             </div>
@@ -133,6 +134,13 @@ export default function SFO250Page() {
                 </li>
               </ul>
             </div>
+            <div
+              className="cursor-pointer font-semibold text-blue-700"
+              onClick={() => setIsSpoiler2Opened(!isSpoiler2Opened)}
+            >
+              Режимы работы при расходе 15 000 м³/ч
+            </div>
+            {isSpoiler2Opened && <Analysis15000 />}
           </li>
           {/* 3. Режим «Технологического догрева». Расход 18 000 м<sup>3</sup>/ч. */}
           <li className="space-y-2">
@@ -347,6 +355,108 @@ function Analysis12000() {
         мощности. Для обеспечения безаварийной работы и долговечности
         оборудования рекомендуется использовать ступенчатое переключение секций
         по мере прогрева наружного воздуха.
+      </p>
+    </section>
+  );
+}
+
+function Analysis15000() {
+  return (
+    <section className="space-y-4 text-[17px]">
+      <h3 className="mb-2 text-xl">
+        Инженерный анализ режимов работы СФО-250 при расходе 15 000 м³/ч
+      </h3>
+      <p>
+        Производительность 15 000 м³/ч является расчетным оптимумом для СФО-250
+        в системах приточной вентиляции. Массовая скорость потока обеспечивает
+        интенсивный теплосъем, что позволяет максимально эффективно использовать
+        установленную мощность ТЭНов при умеренном аэродинамическом
+        сопротивлении.
+      </p>
+      <ol className="space-y-4">
+        <li className="space-y-4">
+          <SFOOperatingParameterTable
+            data={SFOOperatingParameterTables.sfo250.airflow15000.fullPower}
+          />
+          <p>
+            <span className="text-example">
+              1. Режим полной мощности. 247.5 кВт – 3 работающие секции •
+              Основные параметры
+            </span>{" "}
+            Дельта нагрева 38…50 градусов. Зона «НОРМА» до +5°C. Точка «ПРЕДЕЛ»
+            +30°C. Сопротивление 89–200 Па{" "}
+            <span className="text-example">• Характеристика</span>{" "}
+            Высокопроизводительный нагрев для северного исполнения{" "}
+            <span className="text-example">• Особенности</span> Калорифер
+            обеспечивает подъем температуры, позволяющий подавать комфортный
+            «плюсовой» воздух даже при экстремальных морозах на входе{" "}
+            <span className="text-example">• Результат</span> Расход воздуха
+            отодвигает предельную точку, что делает этот режим базовым для
+            зимнего периода <span className="text-example">• Рекомендация</span>{" "}
+            График работы оптимален для систем основного отопления и мощных
+            приточных установок. Рекомендуется снижение нагрузки при повышении
+            температуры наружного воздуха выше нуля
+          </p>
+        </li>
+        <li className="space-y-4">
+          <SFOOperatingParameterTable
+            data={
+              SFOOperatingParameterTables.sfo250.airflow15000.twoThirdsPower
+            }
+          />
+          <p>
+            <span className="text-example">
+              2. Режим частичной мощности. 165 кВт – 2 работающие секции •
+              Основные параметры
+            </span>{" "}
+            Дельта нагрева 24…34 градуса. Зона «НОРМА» до +15°C. Точка «ПРЕДЕЛ»
+            +45°C. Сопротивление 80–205 Па{" "}
+            <span className="text-example">• Характеристика</span> Универсальный
+            «всесезонный» режим с эксплуатационной гибкостью модели при
+            номинальных нагрузках <span className="text-example">• Эффект</span>{" "}
+            Работа двух рядов ТЭНов при таком обдуве создает стабильный тепловой
+            фон. Зона безопасной эксплуатации расширяется и фактически снимает
+            любые ограничения по перегреву в весенне-летний период{" "}
+            <span className="text-example">• Аэродинамика</span> Сопротивление
+            на холодном пуске достигает 205 Па. Это потребует выбора вентилятора
+            с соответствующей напорной характеристикой{" "}
+            <span className="text-example">• Преимущества</span> Режим
+            предпочтителен для объектов, где требуется поддержание стабильной
+            температуры при значительных колебаниях входящего воздуха
+          </p>
+        </li>
+        <li className="space-y-4">
+          <SFOOperatingParameterTable
+            data={SFOOperatingParameterTables.sfo250.airflow15000.oneThirdPower}
+          />
+          <p>
+            <span className="text-example">
+              3. Режим дежурного подогрева. 82.5 кВт – 1 работающая секция •
+              Основные параметры
+            </span>{" "}
+            Дельта нагрева 12…17 градусов. Зона «НОРМА» до +20°C. Точка «ПРЕДЕЛ»
+            +60°C. Сопротивление 72–211 Па{" "}
+            <span className="text-example">• Характеристика</span> При включении
+            одной секции калорифера, ТЭНы работают в максимально благоприятном
+            режиме <span className="text-example">• Аэродинамика</span>{" "}
+            Сопротивление достигло максимума для этого расхода, так как воздух
+            нагревается на меньшую дельту температур и сохраняет высокую
+            плотность <span className="text-example">• Эффект</span> Работа
+            только первого ряда ТЭНов делает перегрев практически невозможным во
+            всем диапазоне уличных температур{" "}
+            <span className="text-example">• Применение</span> Подходит для
+            поддержания регламентного температурного диапазона в весенне-летний
+            период
+          </p>
+        </li>
+      </ol>
+      <p className="text-example">
+        <span className="block">Общий вывод для 15 000 м³/ч:</span> Данный
+        расход является наиболее сбалансированным для СФО-250. Сопротивление в
+        диапазоне 100–200 Па дает возможность применять стандартные вентиляторы
+        низкого давления, а гибкое управление секциями позволяет эксплуатировать
+        калорифер круглогодично — от арктических морозов до технологического
+        догрева горячего воздуха.
       </p>
     </section>
   );
