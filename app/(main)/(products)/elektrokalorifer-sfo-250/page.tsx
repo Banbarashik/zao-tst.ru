@@ -4,15 +4,17 @@ import { useState } from "react";
 
 import productData from "@/data/products.json";
 import { SFOComparativeAnalysisTables } from "@/data/SFOComparativeAnalysisTables";
+import { SFOOperatingParameterTables } from "@/data/SFOOperatingParameterTables";
 
 import ProductSubheader from "@/components/catalog/productSubheader";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
 import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
 import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODrawingAndCircuitSection";
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
+import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
 
 export default function SFO250Page() {
-  const [isSpoiler1Opened, setSpoiler1Opened] = useState(false);
+  const [isSpoiler1Opened, setSpoiler1Opened] = useState(true);
 
   const product = productData.find((p) => p.id === "elektrokalorifer-sfo-250");
 
@@ -256,8 +258,96 @@ export default function SFO250Page() {
 
 function Analysis12000() {
   return (
-    <section>
-      <h3>Инженерный анализ режимов работы СФО-250 при расходе 12 000 м³/ч</h3>
+    <section className="space-y-4 text-[17px]">
+      <h3 className="mb-2 text-xl">
+        Инженерный анализ режимов работы СФО-250 при расходе 12 000 м³/ч
+      </h3>
+      <p>
+        Производительность 12 000 м³/ч является сбалансированным режимом
+        «тепловой пушки». Работа установки характеризуется высокой
+        эффективностью теплопередачи и значительным температурным напором. При
+        данном объеме обдува эксплуатация калорифера требует строгого контроля
+        мощности в зависимости от температуры входящего воздуха.
+      </p>
+      <ol className="space-y-4">
+        <li className="space-y-4">
+          <SFOOperatingParameterTable
+            data={SFOOperatingParameterTables.sfo250.airflow12000.fullPower}
+          />
+          <p>
+            <span className="text-example">
+              1. Режим полной мощности. 247.5 кВт – 3 работающие секции •
+              Основные параметры
+            </span>{" "}
+            Дельта нагрева 48…60 градусов. Зона «НОРМА» до -15°C. Точка «ПРЕДЕЛ»
+            +10°C. Сопротивление 70–130 Па{" "}
+            <span className="text-example">• Характеристика</span> Глубокий
+            нагрев приточного воздуха в условиях экстремально низких температур
+            наружной среды <span className="text-example">• Особенности</span>{" "}
+            Высокая тепловая дельта позволяет использовать калорифер как мощный
+            автономный агрегат отопления, однако уже при +10°C на входе
+            поверхность ТЭНов достигает критического порога{" "}
+            <span className="text-example">• Аэродинамика</span> Сопротивление
+            от 130 Па и ниже является комфортным для систем вентиляции{" "}
+            <span className="text-example">• Рекомендация</span> Не использовать
+            при положительных температурах наружного воздуха
+          </p>
+        </li>
+        <li className="space-y-4">
+          <SFOOperatingParameterTable
+            data={
+              SFOOperatingParameterTables.sfo250.airflow12000.twoThirdsPower
+            }
+          />
+          <p>
+            <span className="text-example">
+              2. Режим частичной мощности. 165 кВт – 2 работающие секции •
+              Основные параметры
+            </span>{" "}
+            Дельта нагрева 31…40 градусов. Зона «НОРМА» до -5°C. Точка «ПРЕДЕЛ»
+            +25°C. Сопротивление 63–134 Па{" "}
+            <span className="text-example">• Характеристика</span> Оптимальный
+            тепловой режим для переходного периода с расширенными возможностями
+            калорифера при малом обдуве{" "}
+            <span className="text-example">• Результат</span> Отключение одной
+            секции радикально разгружает тепловую оболочку работающих элементов
+            с увеличением безопасного диапазона работы{" "}
+            <span className="text-example">• Аэродинамика</span> Сопротивление
+            при холодном пуске выросло. Воздух нагревается чуть слабее и
+            остается более плотным, что немного увеличивает нагрузку на
+            вентилятор <span className="text-example">• Преимущество</span> Риск
+            перегрева металла снижается на 25-30%, что значительно продлевает
+            ресурс изоляционного слоя периклаза внутри ТЭНов
+          </p>
+        </li>
+        <li className="space-y-4">
+          <SFOOperatingParameterTable
+            data={SFOOperatingParameterTables.sfo250.airflow12000.oneThirdPower}
+          />
+          <p>
+            <span className="text-example">
+              3. Режим дежурного подогрева. 82.5 кВт – 1 работающая секция •
+              Основные параметры
+            </span>{" "}
+            Дельта нагрева 15…20 градусов. Зона «НОРМА» до +10°C. Точка «ПРЕДЕЛ»
+            +40°C. Сопротивление 57–139 Па{" "}
+            <span className="text-example">• Характеристика</span> При одной
+            трети мощности калорифера, ТЭНы работают в максимально благоприятном
+            режиме <span className="text-example">• Эффект</span> Работа только
+            первого ряда ТЭНов делает перегрев практически невозможным во всем
+            диапазоне температур отопительного и переходного периодов{" "}
+            <span className="text-example">• Применение</span> Режим подходит
+            для поддержания технологических температур в весенне-летний период
+          </p>
+        </li>
+      </ol>
+      <p className="text-example">
+        <span className="block">Общий вывод для 12 000 м³/ч:</span>
+        Данный расход воздуха накладывает ограничения на использование 100%
+        мощности. Для обеспечения безаварийной работы и долговечности
+        оборудования рекомендуется использовать ступенчатое переключение секций
+        по мере прогрева наружного воздуха.
+      </p>
     </section>
   );
 }
