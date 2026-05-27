@@ -87,7 +87,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
             columns: [
               {
                 inputTemp: 5,
-                color: "orange",
+                color: "red",
                 outputTemp: 27,
                 surfaceTemp: 184,
                 resistance: 117,
@@ -187,7 +187,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 10,
-                color: "orange",
+                color: "red",
                 outputTemp: 25,
                 surfaceTemp: 183,
                 resistance: 113,
@@ -296,7 +296,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 15,
-                color: "orange",
+                color: "red",
                 outputTemp: 36,
                 surfaceTemp: 184,
                 resistance: 129,
@@ -410,7 +410,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 20,
-                color: "orange",
+                color: "red",
                 outputTemp: 33,
                 surfaceTemp: 184,
                 resistance: 125,
@@ -533,7 +533,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 25,
-                color: "orange",
+                color: "red",
                 outputTemp: 44,
                 surfaceTemp: 185,
                 resistance: 140,
@@ -661,7 +661,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 30,
-                color: "orange",
+                color: "red",
                 outputTemp: 43,
                 surfaceTemp: 185,
                 resistance: 135,
@@ -758,7 +758,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
             columns: [
               {
                 inputTemp: 5,
-                color: "orange",
+                color: "red",
                 outputTemp: 36,
                 surfaceTemp: 180,
                 resistance: 107,
@@ -865,7 +865,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 15,
-                color: "orange",
+                color: "red",
                 outputTemp: 35,
                 surfaceTemp: 183,
                 resistance: 99,
@@ -979,7 +979,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 20,
-                color: "orange",
+                color: "red",
                 outputTemp: 30,
                 surfaceTemp: 180,
                 resistance: 96,
@@ -1095,7 +1095,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 20,
-                color: "orange",
+                color: "red",
                 outputTemp: 48,
                 surfaceTemp: 183,
                 resistance: 120,
@@ -1216,7 +1216,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 25,
-                color: "orange",
+                color: "red",
                 outputTemp: 43,
                 surfaceTemp: 181,
                 resistance: 116,
@@ -1351,7 +1351,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 35,
-                color: "orange",
+                color: "red",
                 outputTemp: 44,
                 surfaceTemp: 184,
                 resistance: 108,
@@ -1474,7 +1474,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 25,
-                color: "orange",
+                color: "red",
                 outputTemp: 51,
                 surfaceTemp: 180,
                 resistance: 134,
@@ -1609,7 +1609,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 35,
-                color: "orange",
+                color: "red",
                 outputTemp: 52,
                 surfaceTemp: 184,
                 resistance: 124,
@@ -1751,7 +1751,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 40,
-                color: "orange",
+                color: "red",
                 outputTemp: 48,
                 surfaceTemp: 182,
                 resistance: 120,
@@ -1869,7 +1869,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 20,
-                color: "orange",
+                color: "red",
                 outputTemp: 64,
                 surfaceTemp: 184,
                 resistance: 82,
@@ -1997,7 +1997,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 30,
-                color: "orange",
+                color: "red",
                 outputTemp: 59,
                 surfaceTemp: 183,
                 resistance: 77,
@@ -2139,7 +2139,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 40,
-                color: "orange",
+                color: "red",
                 outputTemp: 54,
                 surfaceTemp: 182,
                 resistance: 71,
@@ -2276,7 +2276,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 35,
-                color: "orange",
+                color: "red",
                 outputTemp: 74,
                 surfaceTemp: 185,
                 resistance: 95,
@@ -2425,7 +2425,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 45,
-                color: "orange",
+                color: "red",
                 outputTemp: 71,
                 surfaceTemp: 185,
                 resistance: 89,
@@ -2581,7 +2581,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 55,
-                color: "orange",
+                color: "red",
                 outputTemp: 68,
                 surfaceTemp: 185,
                 resistance: 83,
@@ -2732,7 +2732,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 45,
-                color: "orange",
+                color: "red",
                 outputTemp: 80,
                 surfaceTemp: 184,
                 resistance: 112,
@@ -2888,7 +2888,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 55,
-                color: "orange",
+                color: "red",
                 outputTemp: 78,
                 surfaceTemp: 185,
                 resistance: 105,
@@ -3044,7 +3044,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 60,
-                color: "orange",
+                color: "red",
                 outputTemp: 71,
                 surfaceTemp: 180,
                 resistance: 102,
@@ -3155,7 +3155,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 15,
-                color: "orange",
+                color: "red",
                 outputTemp: 64,
                 surfaceTemp: 181,
                 resistance: 79,
@@ -3283,7 +3283,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 30,
-                color: "orange",
+                color: "red",
                 outputTemp: 63,
                 surfaceTemp: 184,
                 resistance: 70,
@@ -3425,7 +3425,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 40,
-                color: "orange",
+                color: "red",
                 outputTemp: 56,
                 surfaceTemp: 181,
                 resistance: 66,
@@ -3562,7 +3562,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 35,
-                color: "orange",
+                color: "red",
                 outputTemp: 76,
                 surfaceTemp: 180,
                 resistance: 99,
@@ -3711,7 +3711,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 45,
-                color: "orange",
+                color: "red",
                 outputTemp: 72,
                 surfaceTemp: 180,
                 resistance: 93,
@@ -3867,7 +3867,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 60,
-                color: "orange",
+                color: "red",
                 outputTemp: 74,
                 surfaceTemp: 184,
                 resistance: 83,
@@ -4018,7 +4018,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 45,
-                color: "orange",
+                color: "red",
                 outputTemp: 83,
                 surfaceTemp: 183,
                 resistance: 109,
@@ -4174,7 +4174,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 55,
-                color: "orange",
+                color: "red",
                 outputTemp: 80,
                 surfaceTemp: 183,
                 resistance: 102,
@@ -4330,7 +4330,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 65,
-                color: "orange",
+                color: "red",
                 outputTemp: 78,
                 surfaceTemp: 182,
                 resistance: 95,
@@ -4441,7 +4441,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 15,
-                color: "orange",
+                color: "red",
                 outputTemp: 67,
                 surfaceTemp: 182,
                 resistance: 73,
@@ -4569,7 +4569,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 30,
-                color: "orange",
+                color: "red",
                 outputTemp: 65,
                 surfaceTemp: 184,
                 resistance: 65,
@@ -4711,7 +4711,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 40,
-                color: "orange",
+                color: "red",
                 outputTemp: 58,
                 surfaceTemp: 180,
                 resistance: 61,
@@ -4841,7 +4841,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 30,
-                color: "orange",
+                color: "red",
                 outputTemp: 75,
                 surfaceTemp: 180,
                 resistance: 89,
@@ -4990,7 +4990,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 45,
-                color: "orange",
+                color: "red",
                 outputTemp: 75,
                 surfaceTemp: 184,
                 resistance: 80,
@@ -5146,7 +5146,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 55,
-                color: "orange",
+                color: "red",
                 outputTemp: 70,
                 surfaceTemp: 181,
                 resistance: 75,
@@ -5297,7 +5297,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 45,
-                color: "orange",
+                color: "red",
                 outputTemp: 85,
                 surfaceTemp: 182,
                 resistance: 104,
@@ -5453,7 +5453,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 55,
-                color: "orange",
+                color: "red",
                 outputTemp: 82,
                 surfaceTemp: 181,
                 resistance: 98,
@@ -5609,7 +5609,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 65,
-                color: "orange",
+                color: "red",
                 outputTemp: 78,
                 surfaceTemp: 180,
                 resistance: 92,
@@ -5720,7 +5720,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 15,
-                color: "orange",
+                color: "red",
                 outputTemp: 73,
                 surfaceTemp: 185,
                 resistance: 68,
@@ -5841,7 +5841,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 25,
-                color: "orange",
+                color: "red",
                 outputTemp: 63,
                 surfaceTemp: 180,
                 resistance: 64,
@@ -5983,7 +5983,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 40,
-                color: "orange",
+                color: "red",
                 outputTemp: 59,
                 surfaceTemp: 180,
                 resistance: 57,
@@ -6120,7 +6120,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 35,
-                color: "orange",
+                color: "red",
                 outputTemp: 83,
                 surfaceTemp: 184,
                 resistance: 86,
@@ -6269,7 +6269,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 45,
-                color: "orange",
+                color: "red",
                 outputTemp: 77,
                 surfaceTemp: 181,
                 resistance: 81,
@@ -6425,7 +6425,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 60,
-                color: "orange",
+                color: "red",
                 outputTemp: 76,
                 surfaceTemp: 183,
                 resistance: 73,
@@ -6583,7 +6583,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 50,
-                color: "orange",
+                color: "red",
                 outputTemp: 92,
                 surfaceTemp: 184,
                 resistance: 107,
@@ -6739,7 +6739,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 60,
-                color: "orange",
+                color: "red",
                 outputTemp: 88,
                 surfaceTemp: 182,
                 resistance: 100,
@@ -6895,7 +6895,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 70,
-                color: "orange",
+                color: "red",
                 outputTemp: 84,
                 surfaceTemp: 181,
                 resistance: 94,
@@ -6960,7 +6960,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: -15,
-                color: "yellow",
+                color: "green",
                 outputTemp: 39,
                 surfaceTemp: 148,
                 resistance: 92,
@@ -6974,14 +6974,14 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: -5,
-                color: "red",
+                color: "yellow",
                 outputTemp: 52,
                 surfaceTemp: 161,
                 resistance: 82,
               },
               {
                 inputTemp: 0,
-                color: "red",
+                color: "yellow",
                 outputTemp: 58,
                 surfaceTemp: 168,
                 resistance: 78,
@@ -6999,7 +6999,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 10,
-                color: "orange",
+                color: "red",
                 outputTemp: 70,
                 surfaceTemp: 181,
                 resistance: 70,
@@ -7018,35 +7018,35 @@ export const SFOOperatingParameterTables: SFODataStructure = {
             columns: [
               {
                 inputTemp: -45,
-                color: "red",
+                color: "green",
                 outputTemp: -14,
                 surfaceTemp: 93,
                 resistance: 134,
               },
               {
                 inputTemp: -40,
-                color: "red",
+                color: "green",
                 outputTemp: -9,
                 surfaceTemp: 99,
                 resistance: 126,
               },
               {
                 inputTemp: -35,
-                color: "orange",
+                color: "green",
                 outputTemp: -3,
                 surfaceTemp: 106,
                 resistance: 119,
               },
               {
                 inputTemp: -30,
-                color: "orange",
+                color: "green",
                 outputTemp: 3,
                 surfaceTemp: 112,
                 resistance: 112,
               },
               {
                 inputTemp: -25,
-                color: "yellow",
+                color: "green",
                 outputTemp: 9,
                 surfaceTemp: 119,
                 resistance: 106,
@@ -7067,14 +7067,14 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: -10,
-                color: "yellow",
+                color: "green",
                 outputTemp: 26,
                 surfaceTemp: 138,
                 resistance: 90,
               },
               {
                 inputTemp: -5,
-                color: "yellow",
+                color: "green",
                 outputTemp: 31,
                 surfaceTemp: 144,
                 resistance: 85,
@@ -7120,7 +7120,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 25,
-                color: "orange",
+                color: "red",
                 outputTemp: 65,
                 surfaceTemp: 181,
                 resistance: 63,
@@ -7139,35 +7139,35 @@ export const SFOOperatingParameterTables: SFODataStructure = {
             columns: [
               {
                 inputTemp: -45,
-                color: "red",
+                color: "green",
                 outputTemp: -30,
                 surfaceTemp: 79,
                 resistance: 139,
               },
               {
                 inputTemp: -40,
-                color: "red",
+                color: "green",
                 outputTemp: -25,
                 surfaceTemp: 85,
                 resistance: 131,
               },
               {
                 inputTemp: -35,
-                color: "orange",
+                color: "green",
                 outputTemp: -19,
                 surfaceTemp: 91,
                 resistance: 123,
               },
               {
                 inputTemp: -30,
-                color: "orange",
+                color: "green",
                 outputTemp: -14,
                 surfaceTemp: 97,
                 resistance: 116,
               },
               {
                 inputTemp: -25,
-                color: "yellow",
+                color: "green",
                 outputTemp: -9,
                 surfaceTemp: 103,
                 resistance: 110,
@@ -7188,21 +7188,21 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: -10,
-                color: "yellow",
+                color: "green",
                 outputTemp: 7,
                 surfaceTemp: 122,
                 resistance: 93,
               },
               {
                 inputTemp: -5,
-                color: "yellow",
+                color: "green",
                 outputTemp: 13,
                 surfaceTemp: 128,
                 resistance: 88,
               },
               {
                 inputTemp: 0,
-                color: "yellow",
+                color: "green",
                 outputTemp: 18,
                 surfaceTemp: 133,
                 resistance: 83,
@@ -7213,14 +7213,14 @@ export const SFOOperatingParameterTables: SFODataStructure = {
             columns: [
               {
                 inputTemp: 5,
-                color: "yellow",
+                color: "green",
                 outputTemp: 23,
                 surfaceTemp: 139,
                 resistance: 79,
               },
               {
                 inputTemp: 10,
-                color: "yellow",
+                color: "green",
                 outputTemp: 29,
                 surfaceTemp: 145,
                 resistance: 75,
@@ -7262,7 +7262,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 40,
-                color: "orange",
+                color: "red",
                 outputTemp: 60,
                 surfaceTemp: 181,
                 resistance: 57,
@@ -7392,7 +7392,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 30,
-                color: "orange",
+                color: "red",
                 outputTemp: 80,
                 surfaceTemp: 180,
                 resistance: 89,
@@ -7541,7 +7541,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 45,
-                color: "orange",
+                color: "red",
                 outputTemp: 79,
                 surfaceTemp: 182,
                 resistance: 80,
@@ -7697,7 +7697,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 60,
-                color: "orange",
+                color: "red",
                 outputTemp: 77,
                 surfaceTemp: 184,
                 resistance: 72,
@@ -7855,7 +7855,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 50,
-                color: "orange",
+                color: "red",
                 outputTemp: 94,
                 surfaceTemp: 185,
                 resistance: 105,
@@ -8011,7 +8011,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 60,
-                color: "orange",
+                color: "red",
                 outputTemp: 89,
                 surfaceTemp: 183,
                 resistance: 99,
@@ -8167,7 +8167,7 @@ export const SFOOperatingParameterTables: SFODataStructure = {
               },
               {
                 inputTemp: 70,
-                color: "orange",
+                color: "red",
                 outputTemp: 84,
                 surfaceTemp: 181,
                 resistance: 93,
