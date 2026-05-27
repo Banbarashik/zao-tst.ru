@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 import productData from "@/data/products.json";
 import { SFOComparativeAnalysisTables } from "@/data/SFOComparativeAnalysisTables";
 
@@ -8,6 +12,8 @@ import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODra
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
 
 export default function SFO250Page() {
+  const [isSpoiler1Opened, setSpoiler1Opened] = useState(false);
+
   const product = productData.find((p) => p.id === "elektrokalorifer-sfo-250");
 
   return (
@@ -80,9 +86,13 @@ export default function SFO250Page() {
               значения, за которыми могут последовать необратимые механические
               изменения конструкции находятся в красной зоне.
             </p>
-            <div className="font-semibold text-blue-700">
+            <div
+              className="cursor-pointer font-semibold text-blue-700"
+              onClick={() => setSpoiler1Opened(!isSpoiler1Opened)}
+            >
               Режимы работы при расходе 12 000 м³/ч
             </div>
+            {isSpoiler1Opened && <Analysis12000 />}
           </li>
           {/* 2. Режим «Магистральной вентиляции». Расход 15 000 м<sup>3</sup>/ч. */}
           <li className="space-y-2">
@@ -241,5 +251,13 @@ export default function SFO250Page() {
       <ElectroSpecsSection product={product} />
       <SFODrawingAndCircuitSection product={product} />
     </div>
+  );
+}
+
+function Analysis12000() {
+  return (
+    <section>
+      <h3>Инженерный анализ режимов работы СФО-250 при расходе 12 000 м³/ч</h3>
+    </section>
   );
 }
