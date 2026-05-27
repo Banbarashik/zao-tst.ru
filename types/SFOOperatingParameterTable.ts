@@ -1,6 +1,6 @@
 // ─── Типы ────────────────────────────────────────────────────────────────────
 
-export type CellColor = "green" | "yellow" | "orange" | "red" | null;
+export type CellColor = "green" | "yellow" | "red" | null;
 
 interface TempColumn {
   /** Значение температуры входящего воздуха, °C */

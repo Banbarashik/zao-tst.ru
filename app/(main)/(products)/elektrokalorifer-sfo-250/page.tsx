@@ -13,15 +13,21 @@ import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODra
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
 import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
 
+import { Triangle } from "lucide-react";
+
 export default function SFO250Page() {
   const [isSpoiler1Opened, setIsSpoiler1Opened] = useState(false);
   const [isSpoiler2Opened, setIsSpoiler2Opened] = useState(false);
-  const [isSpoiler3Opened, setIsSpoiler3Opened] = useState(true);
+  const [isSpoiler3Opened, setIsSpoiler3Opened] = useState(false);
 
   const product = productData.find((p) => p.id === "elektrokalorifer-sfo-250");
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
+      <h1 className="mb-8 text-2xl font-bold uppercase">{product!.name}</h1>
+      <ElectroProductOverviewSection product={product} />
+      <ElectroSpecsSection product={product} />
+
       {/* Технический обзор эксплуатации электрокалорифера СФО-250 */}
       <section className="space-y-4 text-[17px]">
         <ProductSubheader text="Технический обзор эксплуатации электрокалорифера СФО-250" />
@@ -44,7 +50,7 @@ export default function SFO250Page() {
             <div>
               <p>
                 <span className="text-example">
-                  1. Режим «Глубокого автономного отопления».
+                  ⚙️ 1. Режим «Глубокого автономного отопления».
                 </span>{" "}
                 Расход 12 000 м<sup>3</sup>/ч.
               </p>
@@ -79,7 +85,7 @@ export default function SFO250Page() {
                 </li>
               </ul>
             </div>
-            <p className="text-secondary-text">
+            <p className="text-secondary-text text-base">
               В таблицах приведены параметры эксплуатации электрического
               калорифера СФО-250 на разную производительность, температуру
               входящего воздуха, полную или частичную мощность. Безопасные и
@@ -91,19 +97,30 @@ export default function SFO250Page() {
               изменения конструкции находятся в красной зоне.
             </p>
             <div
-              className="cursor-pointer font-semibold text-blue-700"
+              className="group text-primary-dark flex cursor-pointer items-center justify-between border-2 p-1.5 text-lg"
               onClick={() => setIsSpoiler1Opened(!isSpoiler1Opened)}
             >
-              Режимы работы при расходе 12 000 м³/ч
+              <div>
+                Режимы работы при расходе 12 000 м<sup>3</sup>/ч
+              </div>
+              <Triangle
+                fill="#c74f2b"
+                strokeWidth={0}
+                className="-rotate-90 transition duration-300 group-hover:-rotate-180"
+                style={{ rotate: isSpoiler1Opened ? "-180deg" : "" }}
+                width={22}
+                height={22}
+              />
             </div>
             {isSpoiler1Opened && <Analysis12000 />}
           </li>
+
           {/* 2. Режим «Магистральной вентиляции». Расход 15 000 м<sup>3</sup>/ч. */}
           <li className="space-y-2">
             <div>
               <p>
                 <span className="text-example">
-                  2. Режим «Магистральной вентиляции».
+                  ⚙️ 2. Режим «Магистральной вентиляции».
                 </span>{" "}
                 Расход 15 000 м<sup>3</sup>/ч.
               </p>
@@ -136,19 +153,30 @@ export default function SFO250Page() {
               </ul>
             </div>
             <div
-              className="cursor-pointer font-semibold text-blue-700"
+              className="group text-primary-dark flex cursor-pointer items-center justify-between border-2 p-1.5 text-lg"
               onClick={() => setIsSpoiler2Opened(!isSpoiler2Opened)}
             >
-              Режимы работы при расходе 15 000 м³/ч
+              <div>
+                Режимы работы при расходе 15 000 м<sup>3</sup>/ч
+              </div>
+              <Triangle
+                fill="#c74f2b"
+                strokeWidth={0}
+                className="-rotate-90 transition duration-300 group-hover:-rotate-180"
+                style={{ rotate: isSpoiler2Opened ? "-180deg" : "" }}
+                width={22}
+                height={22}
+              />
             </div>
             {isSpoiler2Opened && <Analysis15000 />}
           </li>
+
           {/* 3. Режим «Технологического догрева». Расход 18 000 м<sup>3</sup>/ч. */}
           <li className="space-y-2">
             <div>
               <p>
                 <span className="text-example">
-                  3. Режим «Технологического догрева».
+                  ⚙️ 3. Режим «Технологического догрева».
                 </span>{" "}
                 Расход 18 000 м<sup>3</sup>/ч.
               </p>
@@ -179,22 +207,28 @@ export default function SFO250Page() {
               </ul>
             </div>
             <div
-              className="cursor-pointer font-semibold text-blue-700"
+              className="group text-primary-dark flex cursor-pointer items-center justify-between border-2 p-1.5 text-lg"
               onClick={() => setIsSpoiler3Opened(!isSpoiler3Opened)}
             >
-              Режимы работы при расходе 18 000 м³/ч
+              <div>
+                Режимы работы при расходе 18 000 м<sup>3</sup>/ч
+              </div>
+              <Triangle
+                fill="#c74f2b"
+                strokeWidth={0}
+                className="-rotate-90 transition duration-300 group-hover:-rotate-180"
+                style={{ rotate: isSpoiler3Opened ? "-180deg" : "" }}
+                width={22}
+                height={22}
+              />
             </div>
             {isSpoiler3Opened && <Analysis18000 />}
           </li>
         </ol>
 
-        <SFOComparativeAnalysisTable
-          data={SFOComparativeAnalysisTables.sfo250}
-        />
-
         <div>
           <button>Скачать полный инженерный паспорт расчетов СФО-250</button>
-          <p className="text-secondary-text">
+          <p className="text-secondary-text text-base">
             Представлен расширенный теплотехнический и аэродинамический анализ
             модели СФО-250 во всем диапазоне производительности (от минимального
             до максимального расхода воздуха). Файл содержит развернутые таблицы
@@ -203,10 +237,14 @@ export default function SFO250Page() {
           </p>
         </div>
 
+        <SFOComparativeAnalysisTable
+          data={SFOComparativeAnalysisTables.sfo250}
+        />
+
         <div>
           <p className="text-example">
-            Адаптивное управление тепловой нагрузкой СФО-250: «Баланс расхода и
-            мощности»
+            ⚙️ Адаптивное управление тепловой нагрузкой СФО-250: «Баланс расхода
+            и мощности»
           </p>
           <p>
             Для обеспечения безаварийной работы СФО-250 в условиях меняющихся
@@ -264,17 +302,16 @@ export default function SFO250Page() {
         </section>
       </section>
 
-      <h1 className="mb-8 text-2xl font-bold uppercase">{product!.name}</h1>
-      <ElectroProductOverviewSection product={product} />
-      <ElectroSpecsSection product={product} />
       <SFODrawingAndCircuitSection product={product} />
     </div>
   );
 }
 
+const TEXT_UNDER_ANALYSIS_TABLE_CLASS = "text-[15px] leading-4.5";
+
 function Analysis12000() {
   return (
-    <section className="space-y-4 text-[17px]">
+    <section className="space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm">
       <h3 className="mb-2 text-xl">
         Инженерный анализ режимов работы СФО-250 при расходе 12 000 м³/ч
       </h3>
@@ -286,11 +323,11 @@ function Analysis12000() {
         мощности в зависимости от температуры входящего воздуха.
       </p>
       <ol className="space-y-4">
-        <li className="space-y-4">
+        <li className="space-y-2">
           <SFOOperatingParameterTable
             data={SFOOperatingParameterTables.sfo250.airflow12000.fullPower}
           />
-          <p>
+          <p className={TEXT_UNDER_ANALYSIS_TABLE_CLASS}>
             <span className="text-example">
               1. Режим полной мощности. 247.5 кВт – 3 работающие секции •
               Основные параметры
@@ -309,13 +346,13 @@ function Analysis12000() {
             при положительных температурах наружного воздуха
           </p>
         </li>
-        <li className="space-y-4">
+        <li className="space-y-2">
           <SFOOperatingParameterTable
             data={
               SFOOperatingParameterTables.sfo250.airflow12000.twoThirdsPower
             }
           />
-          <p>
+          <p className={TEXT_UNDER_ANALYSIS_TABLE_CLASS}>
             <span className="text-example">
               2. Режим частичной мощности. 165 кВт – 2 работающие секции •
               Основные параметры
@@ -336,11 +373,11 @@ function Analysis12000() {
             ресурс изоляционного слоя периклаза внутри ТЭНов
           </p>
         </li>
-        <li className="space-y-4">
+        <li className="space-y-2">
           <SFOOperatingParameterTable
             data={SFOOperatingParameterTables.sfo250.airflow12000.oneThirdPower}
           />
-          <p>
+          <p className={TEXT_UNDER_ANALYSIS_TABLE_CLASS}>
             <span className="text-example">
               3. Режим дежурного подогрева. 82.5 кВт – 1 работающая секция •
               Основные параметры
@@ -357,7 +394,7 @@ function Analysis12000() {
           </p>
         </li>
       </ol>
-      <p className="text-example">
+      <p className="text-[rgb(192,0,0)]">
         <span className="block">Общий вывод для 12 000 м³/ч:</span>
         Данный расход воздуха накладывает ограничения на использование 100%
         мощности. Для обеспечения безаварийной работы и долговечности
@@ -370,7 +407,7 @@ function Analysis12000() {
 
 function Analysis15000() {
   return (
-    <section className="space-y-4 text-[17px]">
+    <section className="space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm">
       <h3 className="mb-2 text-xl">
         Инженерный анализ режимов работы СФО-250 при расходе 15 000 м³/ч
       </h3>
@@ -382,11 +419,11 @@ function Analysis15000() {
         сопротивлении.
       </p>
       <ol className="space-y-4">
-        <li className="space-y-4">
+        <li className="space-y-2">
           <SFOOperatingParameterTable
             data={SFOOperatingParameterTables.sfo250.airflow15000.fullPower}
           />
-          <p>
+          <p className={TEXT_UNDER_ANALYSIS_TABLE_CLASS}>
             <span className="text-example">
               1. Режим полной мощности. 247.5 кВт – 3 работающие секции •
               Основные параметры
@@ -406,13 +443,13 @@ function Analysis15000() {
             температуры наружного воздуха выше нуля
           </p>
         </li>
-        <li className="space-y-4">
+        <li className="space-y-2">
           <SFOOperatingParameterTable
             data={
               SFOOperatingParameterTables.sfo250.airflow15000.twoThirdsPower
             }
           />
-          <p>
+          <p className={TEXT_UNDER_ANALYSIS_TABLE_CLASS}>
             <span className="text-example">
               2. Режим частичной мощности. 165 кВт – 2 работающие секции •
               Основные параметры
@@ -433,11 +470,11 @@ function Analysis15000() {
             температуры при значительных колебаниях входящего воздуха
           </p>
         </li>
-        <li className="space-y-4">
+        <li className="space-y-2">
           <SFOOperatingParameterTable
             data={SFOOperatingParameterTables.sfo250.airflow15000.oneThirdPower}
           />
-          <p>
+          <p className={TEXT_UNDER_ANALYSIS_TABLE_CLASS}>
             <span className="text-example">
               3. Режим дежурного подогрева. 82.5 кВт – 1 работающая секция •
               Основные параметры
@@ -458,7 +495,7 @@ function Analysis15000() {
           </p>
         </li>
       </ol>
-      <p className="text-example">
+      <p className="text-[rgb(192,0,0)]">
         <span className="block">Общий вывод для 15 000 м³/ч:</span> Данный
         расход является наиболее сбалансированным для СФО-250. Сопротивление в
         диапазоне 100–200 Па дает возможность применять стандартные вентиляторы
@@ -472,7 +509,7 @@ function Analysis15000() {
 
 function Analysis18000() {
   return (
-    <section className="space-y-4 text-[17px]">
+    <section className="space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm">
       <h3 className="mb-2 text-xl">
         Инженерный анализ режимов работы СФО-250 при расходе 18 000 м³/ч
       </h3>
@@ -484,11 +521,11 @@ function Analysis18000() {
         грамотного подхода к аэродинамике всей системы.
       </p>
       <ol className="space-y-4">
-        <li className="space-y-4">
+        <li className="space-y-2">
           <SFOOperatingParameterTable
             data={SFOOperatingParameterTables.sfo250.airflow18000.fullPower}
           />
-          <p>
+          <p className={TEXT_UNDER_ANALYSIS_TABLE_CLASS}>
             <span className="text-example">
               1. Режим полной мощности. 247.5 кВт – 3 работающие секции •
               Основные параметры
@@ -510,13 +547,13 @@ function Analysis18000() {
             сети воздуховодов
           </p>
         </li>
-        <li className="space-y-4">
+        <li className="space-y-2">
           <SFOOperatingParameterTable
             data={
               SFOOperatingParameterTables.sfo250.airflow18000.twoThirdsPower
             }
           />
-          <p>
+          <p className={TEXT_UNDER_ANALYSIS_TABLE_CLASS}>
             <span className="text-example">
               2. Режим частичной мощности. 165 кВт – 2 работающие секции •
               Основные параметры
@@ -534,11 +571,11 @@ function Analysis18000() {
             предмет вибраций и надежности крепления
           </p>
         </li>
-        <li className="space-y-4">
+        <li className="space-y-2">
           <SFOOperatingParameterTable
             data={SFOOperatingParameterTables.sfo250.airflow18000.oneThirdPower}
           />
-          <p>
+          <p className={TEXT_UNDER_ANALYSIS_TABLE_CLASS}>
             <span className="text-example">
               3. Режим дежурного подогрева. 82.5 кВт – 1 работающая секция •
               Основные параметры
@@ -555,7 +592,7 @@ function Analysis18000() {
           </p>
         </li>
       </ol>
-      <p className="text-example">
+      <p className="text-[rgb(192,0,0)]">
         <span className="block">Общий вывод для 18 000 м³/ч:</span>
         Эксплуатация СФО-250 на максимальном по производительности режиме
         требует особого внимания к аэродинамическому расчету сети. Высокая

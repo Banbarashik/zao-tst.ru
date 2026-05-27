@@ -26,13 +26,13 @@ export function SFOComparativeAnalysisTable({
   return (
     <div className="w-full overflow-x-auto">
       <table className="w-full min-w-231 xl:min-w-auto">
-        <caption className="border border-b-0 border-[#723910]">
+        <caption className="border border-b-0 border-[#723910] py-1">
           Сравнительный анализ рабочих режимов электрокалорифера {data.model}
         </caption>
 
         <tbody>
           <tr>
-            <th>Производительность</th>
+            <th className="py-1">Производительность</th>
 
             {data.modes.map((mode) => (
               <td key={mode.performance}>{mode.performance}</td>
@@ -40,7 +40,7 @@ export function SFOComparativeAnalysisTable({
           </tr>
 
           <tr>
-            <th>Оценка теплосъема</th>
+            <th className="py-1">Оценка теплосъема</th>
 
             {data.modes.map((mode) => (
               <td key={mode.performance}>{thermalLoadMap[mode.thermalLoad]}</td>
@@ -48,7 +48,7 @@ export function SFOComparativeAnalysisTable({
           </tr>
 
           <tr>
-            <th>Эффективность нагрева</th>
+            <th className="py-1">Эффективность нагрева</th>
 
             {data.modes.map((mode) => (
               <td key={mode.performance}>{mode.heatingEfficiency}</td>
@@ -56,7 +56,7 @@ export function SFOComparativeAnalysisTable({
           </tr>
 
           <tr>
-            <th>Ресурс ТЭНов</th>
+            <th className="py-1">Ресурс ТЭНов</th>
 
             {data.modes.map((mode) => (
               <td key={mode.performance}>
@@ -66,7 +66,7 @@ export function SFOComparativeAnalysisTable({
           </tr>
 
           <tr>
-            <th>Риск перегрева</th>
+            <th className="py-1">Риск перегрева</th>
 
             {data.modes.map((mode) => (
               <td key={mode.performance}>{mode.overheatingRisk}</td>
@@ -74,7 +74,7 @@ export function SFOComparativeAnalysisTable({
           </tr>
 
           <tr>
-            <th>Шумы и вибрация</th>
+            <th className="py-1">Шумы и вибрация</th>
 
             {data.modes.map((mode) => (
               <td key={mode.performance}>{noiseMap[mode.noiseAndVibration]}</td>
