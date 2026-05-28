@@ -13,7 +13,7 @@ import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODra
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
 import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
 
-import { Triangle } from "lucide-react";
+import { Triangle, Download } from "lucide-react";
 
 export default function SFO250Page() {
   const [isSpoiler1Opened, setIsSpoiler1Opened] = useState(false);
@@ -226,8 +226,14 @@ export default function SFO250Page() {
           </li>
         </ol>
 
-        <div>
-          <button>Скачать полный инженерный паспорт расчетов СФО-250</button>
+        <div className="flex gap-10 pl-6">
+          <div className="relative cursor-pointer">
+            <span className="absolute top-0.5 left-2 -translate-1/2 font-semibold text-red-700">
+              PDF
+            </span>
+            <Download className="absolute -right-1 -bottom-1" />
+            <div className="h-30 w-28 border-3" />
+          </div>
           <p className="text-secondary-text text-base">
             Представлен расширенный теплотехнический и аэродинамический анализ
             модели СФО-250 во всем диапазоне производительности (от минимального
@@ -606,3 +612,5 @@ function Analysis18000() {
     </section>
   );
 }
+
+function SpoilerToggle() {}
