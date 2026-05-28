@@ -1,3 +1,7 @@
+// TODO: make the component a server one by creating dedicated components for client stuff
+// TODO: create a global component for the pdf miniature
+// TODO: make it ping Yandex metrike on click
+
 "use client";
 
 import productData from "@/data/products.json";
@@ -8,14 +12,15 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Triangle, Download } from "lucide-react";
+
+import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
 import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
 import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODrawingAndCircuitSection";
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
 import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
-
-import { Triangle, Download } from "lucide-react";
 
 export default function SFO250Page() {
   const [isSpoiler1Opened, setIsSpoiler1Opened] = useState(false);
@@ -31,7 +36,7 @@ export default function SFO250Page() {
       <ElectroSpecsSection product={product} />
 
       {/* Технический обзор эксплуатации электрокалорифера СФО-250 */}
-      <section className="space-y-4 text-[17px]">
+      <section className="mb-4 space-y-4 text-[17px]">
         <ProductSubheader text="Технический обзор эксплуатации электрокалорифера СФО-250" />
         <p>
           Электрокалорифер СФО-250 является самой высокопроизводительной моделью
@@ -47,7 +52,7 @@ export default function SFO250Page() {
         </p>
 
         <ol className="space-y-4">
-          {/* 1. Режим «Глубокого автономного отопления». */}
+          {/* 1. Режим «Глубокого автономного отопления». Расход 12 000 м³/ч. */}
           <li className="space-y-2">
             <div>
               <p>
@@ -210,7 +215,7 @@ export default function SFO250Page() {
             <Download className="absolute -right-1 -bottom-1" />
             <Image
               src="/img/elektro/elektrokalorifer_sfo_250_doc.png"
-              alt="#"
+              alt="Расчет электрокалорифера СФО-250"
               width={100}
               height={1}
               className="border-3"
@@ -270,7 +275,7 @@ export default function SFO250Page() {
           </ul>
         </div>
 
-        <section>
+        <section className="border-primary rounded-lg border-l-4 pl-4">
           <h3 className="mb-3 text-xl">
             Системные преимущества и рекомендации по СФО-250
           </h3>
@@ -291,15 +296,31 @@ export default function SFO250Page() {
       </section>
 
       <SFODrawingAndCircuitSection product={product} />
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Электрокалориферы СФО",
+            url: "/elektronagrevateli",
+          },
+          {
+            name: "Каталог калориферов СФО",
+            url: "/documents/Electrokalorifer_SFO_katalog_2025.pdf",
+            openNewTab: true,
+            goal: "open_pdf",
+          },
+        ]}
+      />
     </div>
   );
 }
 
+const ANALYSIS_SECTION_CLASS =
+  "space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm";
 const TEXT_UNDER_ANALYSIS_TABLE_CLASS = "text-[15px] leading-4.5";
 
 function Analysis12000() {
   return (
-    <section className="space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm">
+    <section className={ANALYSIS_SECTION_CLASS}>
       <h3 className="mb-2 text-xl">
         Инженерный анализ режимов работы СФО-250 при расходе 12 000 м³/ч
       </h3>
@@ -395,7 +416,7 @@ function Analysis12000() {
 
 function Analysis15000() {
   return (
-    <section className="space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm">
+    <section className={ANALYSIS_SECTION_CLASS}>
       <h3 className="mb-2 text-xl">
         Инженерный анализ режимов работы СФО-250 при расходе 15 000 м³/ч
       </h3>
@@ -497,7 +518,7 @@ function Analysis15000() {
 
 function Analysis18000() {
   return (
-    <section className="space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm">
+    <section className={ANALYSIS_SECTION_CLASS}>
       <h3 className="mb-2 text-xl">
         Инженерный анализ режимов работы СФО-250 при расходе 18 000 м³/ч
       </h3>
@@ -603,7 +624,7 @@ function SpoilerToggle({ isOpened, onClick, children }) {
     >
       <div>{children}</div>
       <Triangle
-        fill="#c74f2b"
+        fill="var(--primary-dark)"
         strokeWidth={0}
         className="-rotate-90 transition duration-300 group-hover:-rotate-180"
         style={{ rotate: isOpened ? "-180deg" : "" }}
