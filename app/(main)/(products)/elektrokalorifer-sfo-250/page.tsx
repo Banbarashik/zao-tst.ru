@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
-
 import productData from "@/data/products.json";
 import { SFOComparativeAnalysisTables } from "@/data/SFOComparativeAnalysisTables";
 import { SFOOperatingParameterTables } from "@/data/SFOOperatingParameterTables";
+
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 import ProductSubheader from "@/components/catalog/productSubheader";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
@@ -197,13 +199,23 @@ export default function SFO250Page() {
         </ol>
 
         <div className="flex gap-10 pl-6">
-          <div className="relative cursor-pointer">
-            <span className="absolute top-0.5 left-2 -translate-1/2 font-semibold text-red-700">
+          <Link
+            href="/documents/Electrokalorifer_SFO-250.pdf"
+            target="_blank"
+            className="relative shrink-0 cursor-pointer"
+          >
+            <span className="absolute top-0.5 left-2 -translate-1/2 rounded-md px-1 text-lg font-bold text-red-700">
               PDF
             </span>
             <Download className="absolute -right-1 -bottom-1" />
-            <div className="h-30 w-28 border-3" />
-          </div>
+            <Image
+              src="/img/elektro/elektrokalorifer_sfo_250_doc.png"
+              alt="#"
+              width={100}
+              height={1}
+              className="border-3"
+            />
+          </Link>
           <p className="text-secondary-text text-base">
             Представлен расширенный теплотехнический и аэродинамический анализ
             модели СФО-250 во всем диапазоне производительности (от минимального
