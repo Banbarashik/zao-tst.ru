@@ -96,22 +96,12 @@ export default function SFO250Page() {
               значения, за которыми могут последовать необратимые механические
               изменения конструкции находятся в красной зоне.
             </p>
-            <div
-              className="group text-primary-dark flex cursor-pointer items-center justify-between border-2 p-1.5 text-lg"
+            <SpoilerToggle
+              isOpened={isSpoiler1Opened}
               onClick={() => setIsSpoiler1Opened(!isSpoiler1Opened)}
             >
-              <div>
-                Режимы работы при расходе 12 000 м<sup>3</sup>/ч
-              </div>
-              <Triangle
-                fill="#c74f2b"
-                strokeWidth={0}
-                className="-rotate-90 transition duration-300 group-hover:-rotate-180"
-                style={{ rotate: isSpoiler1Opened ? "-180deg" : "" }}
-                width={22}
-                height={22}
-              />
-            </div>
+              Режимы работы при расходе 12 000 м<sup>3</sup>/ч
+            </SpoilerToggle>
             {isSpoiler1Opened && <Analysis12000 />}
           </li>
 
@@ -152,22 +142,12 @@ export default function SFO250Page() {
                 </li>
               </ul>
             </div>
-            <div
-              className="group text-primary-dark flex cursor-pointer items-center justify-between border-2 p-1.5 text-lg"
+            <SpoilerToggle
+              isOpened={isSpoiler2Opened}
               onClick={() => setIsSpoiler2Opened(!isSpoiler2Opened)}
             >
-              <div>
-                Режимы работы при расходе 15 000 м<sup>3</sup>/ч
-              </div>
-              <Triangle
-                fill="#c74f2b"
-                strokeWidth={0}
-                className="-rotate-90 transition duration-300 group-hover:-rotate-180"
-                style={{ rotate: isSpoiler2Opened ? "-180deg" : "" }}
-                width={22}
-                height={22}
-              />
-            </div>
+              Режимы работы при расходе 15 000 м<sup>3</sup>/ч
+            </SpoilerToggle>
             {isSpoiler2Opened && <Analysis15000 />}
           </li>
 
@@ -206,22 +186,12 @@ export default function SFO250Page() {
                 </li>
               </ul>
             </div>
-            <div
-              className="group text-primary-dark flex cursor-pointer items-center justify-between border-2 p-1.5 text-lg"
+            <SpoilerToggle
+              isOpened={isSpoiler3Opened}
               onClick={() => setIsSpoiler3Opened(!isSpoiler3Opened)}
             >
-              <div>
-                Режимы работы при расходе 18 000 м<sup>3</sup>/ч
-              </div>
-              <Triangle
-                fill="#c74f2b"
-                strokeWidth={0}
-                className="-rotate-90 transition duration-300 group-hover:-rotate-180"
-                style={{ rotate: isSpoiler3Opened ? "-180deg" : "" }}
-                width={22}
-                height={22}
-              />
-            </div>
+              Режимы работы при расходе 18 000 м<sup>3</sup>/ч
+            </SpoilerToggle>
             {isSpoiler3Opened && <Analysis18000 />}
           </li>
         </ol>
@@ -613,4 +583,21 @@ function Analysis18000() {
   );
 }
 
-function SpoilerToggle() {}
+function SpoilerToggle({ isOpened, onClick, children }) {
+  return (
+    <div
+      className="group text-primary-dark flex cursor-pointer items-center justify-between border-2 p-1.5 text-lg"
+      onClick={onClick}
+    >
+      <div>{children}</div>
+      <Triangle
+        fill="#c74f2b"
+        strokeWidth={0}
+        className="-rotate-90 transition duration-300 group-hover:-rotate-180"
+        style={{ rotate: isOpened ? "-180deg" : "" }}
+        width={22}
+        height={22}
+      />
+    </div>
+  );
+}
