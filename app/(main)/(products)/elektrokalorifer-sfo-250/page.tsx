@@ -214,7 +214,7 @@ export default function SFO250Page() {
             </span>
             <Download className="absolute -right-1 -bottom-1" />
             <Image
-              src="/img/elektro/elektrokalorifer_sfo_250_doc.png"
+              src="/img/elektro/electrokalorifer_sfo-250_doc.png"
               alt="Расчет электрокалорифера СФО-250"
               width={100}
               height={1}
