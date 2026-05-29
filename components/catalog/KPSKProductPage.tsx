@@ -5,14 +5,15 @@ import Image from "next/image";
 import { capitalizeFirst, sortProducts } from "@/lib/utils";
 import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
 import { getRowsNumberAdj } from "@/lib/rowsNumberAdj";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 import ProductCard from "@/components/catalog/productCard";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
+import { DeliverySection } from "@/components/catalog/DeliverySection";
 import LegacyHtml from "@/components/legacyHtml";
-import { getLegacyHtml } from "@/lib/legacyHtml";
 
 const tableEquipment: Record<string, string> = {
   water: "насосно-смесительного",
@@ -329,15 +330,19 @@ export default async function KPSKProductPage({ product }) {
     ? product.sizeTableValues[6]
     : product.sizeTableValues[3] + 65;
   const reshetkaWidth = 180;
-  const productWeight = product.specsTableValues[9];
+  const productWeight = product.specsTableValues[9] as number;
 
-  const productVolume = (
+  const productVolume = +(
     (productFrontWidth / 1000) *
     (productFullHeight / 1000) *
     (reshetkaWidth / 1000)
   ).toFixed(3);
 
-  const productDimensionsString = `${(productFrontWidth / 1000).toFixed(3)} м х ${(productFullHeight / 1000).toFixed(3)} м х ${(reshetkaWidth / 1000).toFixed(3)} м`;
+  const productDimensions = [
+    +(productFrontWidth / 1000).toFixed(3),
+    +(productFullHeight / 1000).toFixed(3),
+    +(reshetkaWidth / 1000).toFixed(3),
+  ];
 
   const productManufactureText = {
     ksk: `Водяной калорифер ${product.shortName} — промышленный рекуперативный теплообменник, предназначенный для нагрева приточного или рециркуляционного воздуха в системах вентиляции, отопления и кондиционирования за счет энергии горячей или перегретой воды. Производство калорифера ${product.shortName} 02 ХЛ3 осуществляется в соответствии с установленными требованиями технических условий с обязательной проверкой каждого воздухонагревательного аппарата на прочность и герметичность.`,
@@ -765,128 +770,14 @@ export default async function KPSKProductPage({ product }) {
 
       <LinkButtonsBlock buttons={linkButtons[1]} className="mb-6" />
 
-      <section className="text-example space-y-4">
-        <h3 className="mb-2 text-xl">
-          Оплата и доставка калорифера {product.shortName}
-        </h3>
-
-        <div>
-          <ProductParagraph>
-            Заказать калорифер {product.shortName} на нашем предприятии можно
-            следующими способами:
-          </ProductParagraph>
-          <ul className="text-[17px]">
-            <li>
-              • позвонив по телефону:{" "}
-              <a
-                href="tel:+79049681488"
-                className="hover:text-primary-dark font-bold"
-              >
-                +7 (904) 968-14-88
-              </a>
-            </li>
-            <li>• заполнив форму заявки на нашем сайте</li>
-            <li>
-              • отправив письмо на электронную почту:{" "}
-              <a
-                href="mailto:zao_tst@mail.ru"
-                className="hover:text-primary-dark font-bold"
-              >
-                zao_tst@mail.ru
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ProductParagraph>
-            Способы оплаты калорифера {product.shortName}:
-          </ProductParagraph>
-          <ul className="text-[17px]">
-            <li>• на основании счета с частичной или полной оплатой</li>
-            <li>• на основании договора с частичной или полной постоплатой</li>
-          </ul>
-        </div>
-
-        <div>
-          <ProductParagraph>Первичная документация:</ProductParagraph>
-          <ul className="text-[17px]">
-            <li>• универсальный передаточный документ УПД</li>
-            <li>• обмен документами через ЭДО</li>
-          </ul>
-        </div>
-
-        <div className="w-full overflow-auto">
-          <table className="w-full min-w-231">
-            <thead>
-              <tr>
-                <th colSpan={4} className="uppercase">
-                  Банковские реквизиты ООО «Т.С.Т.»
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>ИНН</th>
-                <th>КПП</th>
-                <td>5404002676</td>
-                <td>540401001</td>
-              </tr>
-              <tr>
-                <th colSpan={2}>БИК</th>
-                <td>044525411</td>
-                <td>043207612</td>
-              </tr>
-              <tr>
-                <th colSpan={2} className="uppercase">
-                  Расчетный счет
-                </th>
-                <td>407 028 105 1307 00 000 31</td>
-                <td>407 028 100 2621 01 023 57</td>
-              </tr>
-              <tr>
-                <th colSpan={2} className="uppercase">
-                  Банк
-                </th>
-                <td>Филиал «Центральный» Банка ВТБ ПАО г. Москва</td>
-                <td>Кемеровское отделение № 8615 ПАО Сбербанк г. Кемерово</td>
-              </tr>
-              <tr>
-                <th colSpan={2} className="uppercase">
-                  Корреспондентский счет
-                </th>
-                <td>301 018 101 4525 00 004 11</td>
-                <td>301 018 102 0000 00 006 12</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div>
-          <ProductParagraph>
-            Доставка калорифера {product.shortName}:
-          </ProductParagraph>
-          <ul className="text-[17px]">
-            <li>
-              • самовывоз со склада завода, расположенного по адресу: г.
-              Киселевск, ул. Юргинская 1
-            </li>
-            <li>
-              • с терминалов ТК «ПЭК», «Деловые Линии» и др. г. Прокопьевска
-            </li>
-            <li>• поставка автотранспортом нашего предприятия</li>
-          </ul>
-        </div>
-
-        <div>
-          Данные {heatCarrierAdj.gen} теплообменника{" "}
-          {isKSK && product.shortName}
-          {isKPSK && `КП-Ск ${product.rows}-${product.size}`} для
-          транспортировки. Внешние габаритные размеры: {productDimensionsString}
-          ; объем: {productVolume} м<sup>3</sup>; вес калорифера{" "}
-          {product.shortName}: {productWeight} кг.
-        </div>
-      </section>
+      <DeliverySection
+        product={product}
+        specs={{
+          dimensions: productDimensions,
+          volume: productVolume,
+          weight: productWeight,
+        }}
+      />
     </div>
   );
 }
