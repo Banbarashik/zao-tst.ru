@@ -2,19 +2,17 @@
 // TODO: create a global component for the pdf miniature
 // TODO: make it ping Yandex metrike on click
 
-"use client";
-
 import productData from "@/data/products.json";
 import { SFOComparativeAnalysisTables } from "@/data/SFOComparativeAnalysisTables";
 import { SFOOperatingParameterTables } from "@/data/SFOOperatingParameterTables";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Triangle, Download } from "lucide-react";
+import { Download } from "lucide-react";
 
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import Spoiler from "@/components/ui/spoiler";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
 import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
@@ -24,11 +22,11 @@ import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOper
 import { DeliverySection } from "@/components/catalog/DeliverySection";
 
 export default function SFO250Page() {
-  const [isSpoiler1Opened, setIsSpoiler1Opened] = useState(false);
-  const [isSpoiler2Opened, setIsSpoiler2Opened] = useState(false);
-  const [isSpoiler3Opened, setIsSpoiler3Opened] = useState(false);
-
   const product = productData.find((p) => p.id === "elektrokalorifer-sfo-250");
+
+  if (!product) {
+    return null;
+  }
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
@@ -104,13 +102,15 @@ export default function SFO250Page() {
               значения, за которыми могут последовать необратимые механические
               изменения конструкции находятся в красной зоне.
             </p>
-            <SpoilerToggle
-              isOpened={isSpoiler1Opened}
-              onClick={() => setIsSpoiler1Opened(!isSpoiler1Opened)}
+            <Spoiler
+              title={
+                <>
+                  Режимы работы при расходе 12 000 m<sup>3</sup>/ч
+                </>
+              }
             >
-              Режимы работы при расходе 12 000 м<sup>3</sup>/ч
-            </SpoilerToggle>
-            {isSpoiler1Opened && <Analysis12000 />}
+              <Analysis12000 />
+            </Spoiler>
           </li>
 
           {/* 2. Режим «Магистральной вентиляции». Расход 15 000 м<sup>3</sup>/ч. */}
@@ -150,13 +150,15 @@ export default function SFO250Page() {
                 </li>
               </ul>
             </div>
-            <SpoilerToggle
-              isOpened={isSpoiler2Opened}
-              onClick={() => setIsSpoiler2Opened(!isSpoiler2Opened)}
+            <Spoiler
+              title={
+                <>
+                  Режимы работы при расходе 15 000 m<sup>3</sup>/ч
+                </>
+              }
             >
-              Режимы работы при расходе 15 000 м<sup>3</sup>/ч
-            </SpoilerToggle>
-            {isSpoiler2Opened && <Analysis15000 />}
+              <Analysis15000 />
+            </Spoiler>
           </li>
 
           {/* 3. Режим «Технологического догрева». Расход 18 000 м<sup>3</sup>/ч. */}
@@ -194,13 +196,15 @@ export default function SFO250Page() {
                 </li>
               </ul>
             </div>
-            <SpoilerToggle
-              isOpened={isSpoiler3Opened}
-              onClick={() => setIsSpoiler3Opened(!isSpoiler3Opened)}
+            <Spoiler
+              title={
+                <>
+                  Режимы работы при расходе 18 000 m<sup>3</sup>/ч
+                </>
+              }
             >
-              Режимы работы при расходе 18 000 м<sup>3</sup>/ч
-            </SpoilerToggle>
-            {isSpoiler3Opened && <Analysis18000 />}
+              <Analysis18000 />
+            </Spoiler>
           </li>
         </ol>
 
@@ -315,7 +319,7 @@ export default function SFO250Page() {
 }
 
 const ANALYSIS_SECTION_CLASS =
-  "space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm";
+  "space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm mt-4";
 const TEXT_UNDER_ANALYSIS_TABLE_CLASS = "text-[15px] leading-4.5";
 
 function Analysis12000() {
@@ -613,25 +617,6 @@ function Analysis18000() {
         отказоустойчивости.
       </p>
     </section>
-  );
-}
-
-function SpoilerToggle({ isOpened, onClick, children }) {
-  return (
-    <div
-      className="group text-primary-dark flex cursor-pointer items-center justify-between border-2 p-1.5 text-lg"
-      onClick={onClick}
-    >
-      <div>{children}</div>
-      <Triangle
-        fill="var(--primary-dark)"
-        strokeWidth={0}
-        className="-rotate-90 transition duration-300 group-hover:-rotate-180"
-        style={{ rotate: isOpened ? "-180deg" : "" }}
-        width={22}
-        height={22}
-      />
-    </div>
   );
 }
 
