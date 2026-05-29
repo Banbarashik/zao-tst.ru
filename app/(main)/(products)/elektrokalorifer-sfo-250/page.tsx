@@ -6,17 +6,20 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import Spoiler from "@/components/ui/spoiler";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import { PDFDownloadCard } from "@/components/PDFDownloadCard";
+import { DeliverySection } from "@/components/catalog/DeliverySection";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
 import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
 import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODrawingAndCircuitSection";
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
 import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
-import { DeliverySection } from "@/components/catalog/DeliverySection";
+import { createSFOMetadata } from "@/lib/metadata";
+
+const product = productData.find((p) => p.id === "elektrokalorifer-sfo-250");
+
+export const metadata = createSFOMetadata(product?.name, product?.size);
 
 export default function SFO250Page() {
-  const product = productData.find((p) => p.id === "elektrokalorifer-sfo-250");
-
-  if (!product) return null;
+  if (!product) return;
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
