@@ -32,7 +32,7 @@ export default function SFO250Page() {
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
-      <h1 className="mb-8 text-2xl font-bold uppercase">{product!.name}</h1>
+      <h1 className="mb-8 text-2xl font-bold uppercase">{product?.name}</h1>
       <ElectroProductOverviewSection product={product} />
       <ElectroSpecsSection product={product} />
 
@@ -205,23 +205,11 @@ export default function SFO250Page() {
         </ol>
 
         <div className="flex gap-10 pl-6">
-          <Link
-            href="/documents/Electrokalorifer_SFO-250.pdf"
-            target="_blank"
-            className="relative shrink-0 cursor-pointer"
-          >
-            <span className="absolute top-0.5 left-2 -translate-1/2 rounded-md px-1 text-lg font-bold text-red-700">
-              PDF
-            </span>
-            <Download className="absolute -right-1 -bottom-1" />
-            <Image
-              src="/img/elektro/electrokalorifer_sfo-250_doc.png"
-              alt="Расчет электрокалорифера СФО-250"
-              width={100}
-              height={1}
-              className="border-3"
-            />
-          </Link>
+          <PDFDownloadCard
+            url="/documents/Electrokalorifer_SFO-250.pdf"
+            img="/img/elektro/electrokalorifer_sfo-250_doc.png"
+            alt="Расчет электрокалорифера СФО-250"
+          />
           <p className="text-secondary-text text-base">
             Представлен расширенный теплотехнический и аэродинамический анализ
             модели СФО-250 во всем диапазоне производительности (от минимального
@@ -297,6 +285,7 @@ export default function SFO250Page() {
       </section>
 
       <SFODrawingAndCircuitSection product={product} />
+
       <LinkButtonsBlock
         buttons={[
           {
@@ -643,5 +632,28 @@ function SpoilerToggle({ isOpened, onClick, children }) {
         height={22}
       />
     </div>
+  );
+}
+
+// prettier-ignore
+function PDFDownloadCard({ url, img, alt }: { url: string; img: string; alt: string }) {
+  return (
+    <Link
+      href={url}
+      target="_blank"
+      className="relative shrink-0 cursor-pointer"
+    >
+      <span className="absolute top-0.5 left-2 -translate-1/2 rounded-md px-1 text-lg font-bold text-red-700">
+        PDF
+      </span>
+      <Download className="absolute -right-1 -bottom-1" />
+      <Image
+        src={img}
+        alt={alt}
+        width={100}
+        height={1}
+        className="border-3"
+      />
+    </Link>
   );
 }
