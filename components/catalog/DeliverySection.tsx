@@ -9,13 +9,21 @@ export function DeliverySection({
     weight: number;
   };
 }) {
+  if (
+    !specs.dimensions ||
+    !specs.weight ||
+    specs.dimensions.length !== 3 ||
+    specs.dimensions.some((dm) => typeof dm !== "number")
+  )
+    return <></>;
+
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
 
   const isKSK = product.categories.includes("ksk");
   const isKPSK = product.categories.includes("kpsk");
   const isSFO = product.categories.includes("sfo");
 
-  const volume = specs.dimensions.reduce((sum, cur) => sum * cur);
+  const volume = specs.dimensions.reduce((sum, cur) => sum * cur, 1);
 
   return (
     <section className="text-example space-y-4 text-[17px]">
