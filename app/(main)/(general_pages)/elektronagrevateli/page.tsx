@@ -287,13 +287,13 @@ export default async function KaloriferySFO() {
                 <td colSpan={2} className="first-two-cols">
                   Производительность по воздуху, м³/ч, не менее
                 </td>
-                <td>1000</td>
-                <td>1500</td>
-                <td>2500</td>
+                <td>1800</td>
+                <td>1700</td>
+                <td>2000</td>
                 <td>3000</td>
                 <td>4000</td>
-                <td>7000</td>
-                <td>10000</td>
+                <td>6000</td>
+                <td>9000</td>
               </tr>
               <tr>
                 <td colSpan={2} className="first-two-cols">
