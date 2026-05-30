@@ -14214,6 +14214,16 @@
       "alt": "Электрокалорифер СФО-16",
       "title": "Электрокалорифер ЭКО-16"
     },
+    "frontView": {
+      "url": "/img/elektro/electrokalorifer_sfo_16_front_view.png",
+      "width": 1000,
+      "height": 450
+    },
+    "parts": {
+      "url": "/img/elektro/electrokalorifer_sfo_16_parts.png",
+      "width": 1000,
+      "height": 450
+    },
     "drawing": {
       "url": "/img/elektro/elektrokalorifer_sfo_16_chertezh.png",
       "width": 1200,
@@ -14267,6 +14277,16 @@
       "url": "/img/elektro/elektrokalorifer_sfo-16_sfo-60.png",
       "alt": "Электрокалорифер СФО-25",
       "title": "Электрокалорифер ЭКО-25"
+    },
+    "frontView": {
+      "url": "/img/elektro/electrokalorifer_sfo_25_front_view.png",
+      "width": 1000,
+      "height": 500
+    },
+    "parts": {
+      "url": "/img/elektro/electrokalorifer_sfo_25_parts.png",
+      "width": 1000,
+      "height": 500
     },
     "drawing": {
       "url": "/img/elektro/elektrokalorifer_sfo_25_chertezh.png",
@@ -14322,6 +14342,16 @@
       "alt": "Электрокалорифер СФО-40",
       "title": "Электрокалорифер ЭКО-40"
     },
+    "frontView": {
+      "url": "/img/elektro/electrokalorifer_sfo_40_front_view.png",
+      "width": 1000,
+      "height": 600
+    },
+    "parts": {
+      "url": "/img/elektro/electrokalorifer_sfo_40_parts.png",
+      "width": 1000,
+      "height": 600
+    },
     "drawing": {
       "url": "/img/elektro/elektrokalorifer_sfo_40_chertezh.png",
       "width": 1200,
@@ -14375,6 +14405,16 @@
       "url": "/img/elektro/elektrokalorifer_sfo-16_sfo-60.png",
       "alt": "Электрокалорифер СФО-60",
       "title": "Электрокалорифер ЭКО-60"
+    },
+    "frontView": {
+      "url": "/img/elektro/electrokalorifer_sfo_60_front_view.png",
+      "width": 1000,
+      "height": 650
+    },
+    "parts": {
+      "url": "/img/elektro/electrokalorifer_sfo_60_parts.png",
+      "width": 1000,
+      "height": 700
     },
     "drawing": {
       "url": "/img/elektro/elektrokalorifer_sfo_60_chertezh.png",
@@ -14433,12 +14473,12 @@
     "frontView": {
       "url": "/img/elektro/electrokalorifer_sfo_100_front_view.png",
       "width": 1000,
-      "height": 750
+      "height": 700
     },
     "parts": {
       "url": "/img/elektro/electrokalorifer_sfo_100_parts.png",
       "width": 1000,
-      "height": 750
+      "height": 700
     },
     "drawing": {
       "url": "/img/elektro/elektrokalorifer_sfo_100_chertezh.png",
@@ -14493,6 +14533,16 @@
       "url": "/img/elektro/elektrokalorifer_sfo-100_sfo-250.png",
       "alt": "Электрокалорифер СФО-160",
       "title": "Электрокалорифер ЭКО-160"
+    },
+    "frontView": {
+      "url": "/img/elektro/electrokalorifer_sfo_160_front_view.png",
+      "width": 1000,
+      "height": 750
+    },
+    "parts": {
+      "url": "/img/elektro/electrokalorifer_sfo_160_parts.png",
+      "width": 1000,
+      "height": 750
     },
     "drawing": {
       "url": "/img/elektro/elektrokalorifer_sfo_160_chertezh.png",
