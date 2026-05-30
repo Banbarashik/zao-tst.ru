@@ -152,7 +152,7 @@ function TechReviewSection() {
               </li>
             </ul>
           </div>
-          <Spoiler title={<>Режимы работы СФО-25 при расходе 3 500 м³/ч</>}>
+          <Spoiler title={<>Режимы работы СФО-40 при расходе 3 500 м³/ч</>}>
             <Analysis3500 />
           </Spoiler>
         </li>
@@ -190,7 +190,7 @@ function TechReviewSection() {
               </li>
             </ul>
           </div>
-          <Spoiler title={<>Режимы работы СФО-25 при расходе 4 000 м³/ч</>}>
+          <Spoiler title={<>Режимы работы СФО-40 при расходе 4 000 м³/ч</>}>
             <Analysis4000 />
           </Spoiler>
         </li>
