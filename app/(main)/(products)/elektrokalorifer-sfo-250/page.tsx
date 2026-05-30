@@ -224,11 +224,12 @@ function TechReviewSection() {
         </li>
       </ol>
 
-      <div className="flex gap-10 pl-6">
+      <div className="gap-10 pl-6 sm:flex">
         <PDFDownloadCard
           url="/documents/Electrokalorifer_SFO-250.pdf"
           img="/img/elektro/electrokalorifer_sfo-250_doc.png"
           alt="Расчет электрокалорифера СФО-250"
+          className="float-left mr-4 h-full sm:float-none sm:m-0"
         />
         <p className="text-secondary-text text-base">
           Представлен расширенный теплотехнический и аэродинамический анализ
