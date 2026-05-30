@@ -45,11 +45,7 @@ export default function SFO250Page() {
       />
       <DeliverySection
         product={product}
-        specs={{
-          dimensions: [1.615, 0.72, 0.24],
-          volume: 0.279,
-          weight: 82,
-        }}
+        specs={{ dimensions: [1.615, 0.72, 0.24], weight: 82 }}
       />
     </div>
   );

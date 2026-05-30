@@ -6,7 +6,6 @@ export function DeliverySection({
 }: {
   specs: {
     dimensions: number[];
-    volume: number;
     weight: number;
   };
 }) {
@@ -15,6 +14,8 @@ export function DeliverySection({
   const isKSK = product.categories.includes("ksk");
   const isKPSK = product.categories.includes("kpsk");
   const isSFO = product.categories.includes("sfo");
+
+  const volume = specs.dimensions.reduce((sum, cur) => sum * cur);
 
   return (
     <section className="text-example space-y-4 text-[17px]">
@@ -137,8 +138,8 @@ export function DeliverySection({
         {isKPSK && `КП-Ск ${product.rows}-${product.size}`} для транспортировки.
         Внешние габаритные размеры: {specs.dimensions[0].toFixed(3)} м х{" "}
         {specs.dimensions[1].toFixed(3)} м х {specs.dimensions[2].toFixed(3)} м;
-        объем: {specs.volume} м<sup>3</sup>; вес калорифера {product.shortName}:{" "}
-        {specs.weight} кг.
+        объем: {volume.toFixed(3)} м<sup>3</sup>; вес калорифера{" "}
+        {product.shortName}: {specs.weight} кг.
       </p>
     </section>
   );
