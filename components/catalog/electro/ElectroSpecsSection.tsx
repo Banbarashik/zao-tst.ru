@@ -112,36 +112,34 @@ export function ElectroSpecsSection({ product }) {
         {isSHUK && "шкафа управления калорифером"} {product.shortName} в работу.
       </ProductParagraph>
       {/* 2 IMAGES ROW */}
-      {product.frontView && product.parts && (
-        <div className="mb-4 flex flex-col gap-4 sm:flex-row md:gap-6 lg:gap-4 xl:gap-10">
-          <div
-            className={`relative w-full`}
-            style={{
-              aspectRatio: `${product.frontView.width}/${product.frontView.height}`,
-            }}
-          >
-            <Image
-              src={product.frontView.url}
-              title={`${capitalizeFirst(categoryMeta.nom)} ${product.shortName}`}
-              alt={`${capitalizeFirst(categoryMeta.nom)} ${product.altShortName}`}
-              fill
-            />
-          </div>
-          <div
-            className={`relative w-full`}
-            style={{
-              aspectRatio: `${product.parts.width}/${product.parts.height}`,
-            }}
-          >
-            <Image
-              src={product.parts.url}
-              title={`${capitalizeFirst(categoryMeta.nomAlt ?? categoryMeta.nom)} ${product.shortName}`}
-              alt={`${capitalizeFirst(categoryMeta.nomAlt ?? categoryMeta.nom)} ${product.altShortName}`}
-              fill
-            />
-          </div>
+      <div className="mb-4 flex flex-col gap-4 sm:flex-row md:gap-6 lg:gap-4 xl:gap-10">
+        <div
+          className={`relative w-full`}
+          style={{
+            aspectRatio: `${product.frontView?.width}/${product.frontView?.height}`,
+          }}
+        >
+          <Image
+            src={product.frontView?.url || "/"}
+            title={`${capitalizeFirst(categoryMeta.nom)} ${product.shortName}`}
+            alt={`${capitalizeFirst(categoryMeta.nom)} ${product.altShortName}`}
+            fill
+          />
         </div>
-      )}
+        <div
+          className={`relative w-full`}
+          style={{
+            aspectRatio: `${product.parts?.width}/${product.parts?.height}`,
+          }}
+        >
+          <Image
+            src={product.parts?.url || "/"}
+            title={`${capitalizeFirst(categoryMeta.nomAlt ?? categoryMeta.nom)} ${product.shortName}`}
+            alt={`${capitalizeFirst(categoryMeta.nomAlt ?? categoryMeta.nom)} ${product.altShortName}`}
+            fill
+          />
+        </div>
+      </div>
       {/* TABLE */}
       <div className="mb-6 w-full overflow-x-auto">
         <table className="mx-auto w-176">
