@@ -58,7 +58,7 @@ function TableRows({ section }: { section: TableSection }) {
         {columns.map((col, i) => (
           <td
             key={i}
-            className={`${col.surfaceTemp >= 181 ? "text-[#c00000]" : ""}`}
+            className={`${col.surfaceTemp >= 180 ? "text-[#c00000]" : ""}`}
           >
             {col.surfaceTemp}
           </td>

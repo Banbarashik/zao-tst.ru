@@ -187,7 +187,7 @@ function TechReviewSection() {
         <PDFDownloadCard
           url="/documents/Electrokalorifer_SFO-16.pdf"
           img="/img/elektro/electrokalorifer_sfo-16_doc.png"
-          alt="Расчет электрокалорифера СФО-250"
+          alt="Расчет электрокалорифера СФО-16"
         />
         <p className="text-secondary-text text-base">
           Представлен расширенный теплотехнический и аэродинамический анализ
