@@ -22,14 +22,15 @@ export default function ContactFormTrigger({
   const [isMounted, setIsMounted] = useState(false);
   const { selected } = useProductSelection();
 
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => setIsMounted(true));
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
   const selectedProductsAmount = selected.reduce(
     (amount, selectedProduct) => amount + selectedProduct.amount,
     0,
   );
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   return (
     <Dialog.Root>

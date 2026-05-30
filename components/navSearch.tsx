@@ -5,7 +5,7 @@ import searchIndex from "@/data/general-pages-search-index.json";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useState, useEffect, useRef } from "react";
+import { useMemo, useState, useEffect, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -19,30 +19,27 @@ interface SearchItem {
 
 export default function NavSearch({ className = "" }) {
   const router = useRouter();
-  const [searchResults, setSearchResults] = useState<SearchItem[]>([]);
   const [searchInput, setSearchInput] = useState("");
+  const [showResults, setShowResults] = useState(false);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
 
-  // Load/compute search results
-  useEffect(() => {
-    if (!searchInput) {
-      setSearchResults([]);
-      return;
-    }
-    const results = (searchIndex as SearchItem[]).filter((item) =>
-      item.title.toLowerCase().includes(searchInput.toLowerCase()),
-    );
-    setSearchResults(results);
-  }, [searchInput]);
+  const searchResults = useMemo(
+    () =>
+      searchInput
+        ? (searchIndex as SearchItem[]).filter((item) =>
+            item.title.toLowerCase().includes(searchInput.toLowerCase()),
+          )
+        : [],
+    [searchInput],
+  );
 
   // Hide results when clicking/tapping outside the search area
   useEffect(() => {
     const onPointerDown = (e: PointerEvent) => {
       const target = e.target as Node | null;
       if (!wrapperRef.current) return;
-      // if click is outside the whole search wrapper, clear results
       if (target && !wrapperRef.current.contains(target)) {
-        setSearchResults([]);
+        setShowResults(false);
       }
     };
 
@@ -52,7 +49,7 @@ export default function NavSearch({ className = "" }) {
 
   const handleResetSearch = () => {
     setSearchInput("");
-    setSearchResults([]);
+    setShowResults(false);
   };
 
   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -70,14 +67,18 @@ export default function NavSearch({ className = "" }) {
     <div ref={wrapperRef} className={cn("relative max-w-md", className)}>
       <input
         value={searchInput}
-        onChange={(e) => setSearchInput(e.target.value)}
+        onChange={(e) => {
+          const value = e.target.value;
+          setSearchInput(value);
+          setShowResults(value.trim().length > 0);
+        }}
         onKeyDown={handleInputKeyDown}
         placeholder="Поиск по сайту..."
         className="border-accent/10 focus:ring-accent/50 w-full rounded-lg border bg-white/10 px-4 py-2.5 pl-10 text-sm text-white placeholder-white/60 outline-none focus:ring"
       />
       <Search className="absolute top-1/2 left-2 -translate-y-1/2 text-white/60" />
 
-      {searchResults.length > 0 && (
+      {showResults && searchResults.length > 0 && (
         <ul
           className="absolute right-0 left-0 z-50 mt-0 border-t bg-white shadow-sm outline outline-[#A5A5A5]"
           style={{

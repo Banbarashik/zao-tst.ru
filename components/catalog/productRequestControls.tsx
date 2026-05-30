@@ -17,7 +17,8 @@ export default function ProductRequestControls({
 }) {
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
-    setIsMounted(true);
+    const frame = window.requestAnimationFrame(() => setIsMounted(true));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   const { selected, add, remove, setAmount } = useProductSelection();

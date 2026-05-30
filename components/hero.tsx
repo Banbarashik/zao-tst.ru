@@ -58,7 +58,11 @@ export default function Hero() {
 
   return (
     <header className="relative">
-      <Carousel opts={{ loop: true }} className="w-full" setApi={setEmblaApi}>
+      <Carousel
+        opts={{ loop: true }}
+        className="w-full"
+        onApiReady={setEmblaApi}
+      >
         <CarouselContent>
           {slides.map((slide, idx) => (
             <CarouselItem

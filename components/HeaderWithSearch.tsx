@@ -2,7 +2,7 @@
 
 import searchIndex from "@/data/general-pages-search-index.json";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -26,9 +26,18 @@ export default function HeaderWithSearch(): JSX.Element {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [wasManuallyOpened, setWasManuallyOpened] = useState(false);
   const [navVisible, setNavVisible] = useState(true);
-  const [searchResults, setSearchResults] = useState<SearchItem[]>([]);
   const [searchInput, setSearchInput] = useState("");
   const [shouldFocus, setShouldFocus] = useState(false); // Add this near other state declarations
+
+  const searchResults = useMemo(
+    () =>
+      searchInput
+        ? (searchIndex as SearchItem[]).filter((item) =>
+            item.title.toLowerCase().includes(searchInput.toLowerCase()),
+          )
+        : [],
+    [searchInput],
+  );
 
   const navRef = useRef<HTMLElement | null>(null);
   const lastScrollY = useRef<number>(0);
@@ -48,16 +57,7 @@ export default function HeaderWithSearch(): JSX.Element {
   const locked = useRef(false);
 
   // Load/compute search results
-  useEffect(() => {
-    if (!searchInput) {
-      setSearchResults([]);
-      return;
-    }
-    const results = (searchIndex as SearchItem[]).filter((item) =>
-      item.title.toLowerCase().includes(searchInput.toLowerCase()),
-    );
-    setSearchResults(results);
-  }, [searchInput]);
+  // `searchResults` is derived from `searchInput` and does not need its own effect.
 
   // Nav visibility observer
   useEffect(() => {

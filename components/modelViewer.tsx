@@ -1,6 +1,7 @@
 "use client";
 
 import { Suspense, useState, useEffect } from "react";
+import Image from "next/image";
 import { Canvas } from "@react-three/fiber";
 import {
   OrbitControls,
@@ -22,7 +23,7 @@ function Model({ url }: { url: string }) {
 function SceneReadySignal({ onReady }: { onReady: () => void }) {
   useEffect(() => {
     onReady();
-  }, []);
+  }, [onReady]);
   return null;
 }
 
@@ -60,11 +61,13 @@ export function ModelViewer({
       {/* ── Placeholder + button (visible until user clicks) ── */}
       {!isStarted && (
         <div className="absolute inset-0">
-          <img
+          <Image
             src={placeholderUrl}
             alt="3D-модель водяного калорифера"
-            className="h-full w-full object-cover"
-            style={{ filter: "blur(2px)", transform: "scale(1)" }} // scale hides blur edges
+            fill
+            sizes="100vw"
+            className="object-cover"
+            style={{ filter: "blur(2px)", transform: "scale(1)" }}
           />
           {/* Dark scrim so the button is readable over any image */}
           <div className="absolute inset-0 bg-black/20" />

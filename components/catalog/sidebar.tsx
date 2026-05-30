@@ -303,7 +303,8 @@ export default function Sidebar() {
 
   // Update open state when currentSlug changes
   useEffect(() => {
-    setOpen(openItems);
+    const frame = window.requestAnimationFrame(() => setOpen(openItems));
+    return () => window.cancelAnimationFrame(frame);
   }, [openItems]);
 
   return (

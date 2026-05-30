@@ -39,10 +39,6 @@ export default function SearchResults({
     setDocs(unique);
   }, []);
 
-  useEffect(() => {
-    setQ(initialQuery);
-  }, [initialQuery]);
-
   const docsMap = useMemo(() => {
     const m = new Map<string, Doc>();
     (docs ?? []).forEach((d) => m.set(d.url, d));
