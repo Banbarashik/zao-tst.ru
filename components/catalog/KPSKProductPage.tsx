@@ -323,20 +323,14 @@ export default async function KPSKProductPage({ product }) {
     ["Монтаж и эксплуатация", "СНиП 41-01-2003"],
   ];
 
-  const productFrontWidth = isWater
-    ? product.sizeTableValues[3]
-    : product.sizeTableValues[6];
-  const productFullHeight = isWater
-    ? product.sizeTableValues[6]
-    : product.sizeTableValues[3] + 65;
-  const reshetkaWidth = 180;
+  const productFrontWidth =
+    (isWater ? product.sizeTableValues[3] : product.sizeTableValues[6]) / 1000;
+  const productFullHeight =
+    (isWater ? product.sizeTableValues[6] : product.sizeTableValues[3] + 65) /
+    1000;
+  const reshetkaWidth = 0.18;
   const productWeight = product.specsTableValues[9] as number;
-
-  const productDimensions = [
-    +(productFrontWidth / 1000).toFixed(3),
-    +(productFullHeight / 1000).toFixed(3),
-    +(reshetkaWidth / 1000).toFixed(3),
-  ];
+  const productVolume = productFrontWidth * productFullHeight * reshetkaWidth;
 
   const productManufactureText = {
     ksk: `Водяной калорифер ${product.shortName} — промышленный рекуперативный теплообменник, предназначенный для нагрева приточного или рециркуляционного воздуха в системах вентиляции, отопления и кондиционирования за счет энергии горячей или перегретой воды. Производство калорифера ${product.shortName} 02 ХЛ3 осуществляется в соответствии с установленными требованиями технических условий с обязательной проверкой каждого воздухонагревательного аппарата на прочность и герметичность.`,
@@ -766,7 +760,18 @@ export default async function KPSKProductPage({ product }) {
 
       <DeliverySection
         product={product}
-        specs={{ dimensions: productDimensions, weight: productWeight }}
+        specsNote={
+          <>
+            Данные {heatCarrierAdj.gen} теплообменника{" "}
+            {isKSK && product.shortName}
+            {isKPSK && `КП-Ск ${product.rows}-${product.size}`} для
+            транспортировки. Внешние габаритные размеры:{" "}
+            {productFrontWidth.toFixed(3)} м х {productFullHeight.toFixed(3)} м
+            х {reshetkaWidth.toFixed(3)} м; объем: {productVolume.toFixed(3)} м
+            <sup>3</sup>; вес калорифера {product.shortName}: {productWeight}{" "}
+            кг.
+          </>
+        }
       />
     </div>
   );

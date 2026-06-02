@@ -2,7 +2,7 @@
 
 import searchIndex from "@/data/general-pages-search-index.json";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { JSX, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
