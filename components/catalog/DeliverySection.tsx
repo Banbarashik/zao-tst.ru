@@ -6,7 +6,7 @@ export function DeliverySection({
   specs,
   specsNote,
 }: {
-  specs: { dimensions: number[]; weight: number };
+  specs?: { dimensions: number[]; weight: number };
   specsNote?: ReactNode;
 }) {
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
@@ -15,7 +15,7 @@ export function DeliverySection({
   const isKPSK = product.categories.includes("kpsk");
   const isSFO = product.categories.includes("sfo");
 
-  const volume = specs.dimensions.reduce((sum, cur) => sum * cur, 1);
+  const volume = specs?.dimensions.reduce((sum, cur) => sum * cur, 1);
 
   const defaultSpecsNote = (
     <>
@@ -23,10 +23,10 @@ export function DeliverySection({
       {(isKSK || isKPSK) && `${heatCarrierAdj.gen} теплообменника`}{" "}
       {isKSK && product.shortName}
       {isKPSK && `КП-Ск ${product.rows}-${product.size}`} для транспортировки.
-      Внешние габаритные размеры: {specs.dimensions[0].toFixed(3)} м х{" "}
-      {specs.dimensions[1].toFixed(3)} м х {specs.dimensions[2].toFixed(3)} м;
-      объем: {volume.toFixed(3)} м<sup>3</sup>; вес калорифера{" "}
-      {product.shortName}: {specs.weight} кг.
+      Внешние габаритные размеры: {specs?.dimensions[0].toFixed(3)} м х{" "}
+      {specs?.dimensions[1].toFixed(3)} м х {specs?.dimensions[2].toFixed(3)} м;
+      объем: {volume?.toFixed(3)} м<sup>3</sup>; вес калорифера{" "}
+      {product.shortName}: {specs?.weight} кг.
     </>
   );
 
