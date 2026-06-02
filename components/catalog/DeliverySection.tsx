@@ -1,14 +1,34 @@
+import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
 import type { ReactNode } from "react";
 
 export function DeliverySection({
   product,
+  specs,
   specsNote,
 }: {
-  specsNote: ReactNode;
+  specs: { dimensions: number[]; weight: number };
+  specsNote?: ReactNode;
 }) {
+  const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
+
   const isKSK = product.categories.includes("ksk");
   const isKPSK = product.categories.includes("kpsk");
   const isSFO = product.categories.includes("sfo");
+
+  const volume = specs.dimensions.reduce((sum, cur) => sum * cur, 1);
+
+  const defaultSpecsNote = (
+    <>
+      Данные {isSFO && "воздухонагревателя"}{" "}
+      {(isKSK || isKPSK) && `${heatCarrierAdj.gen} теплообменника`}{" "}
+      {isKSK && product.shortName}
+      {isKPSK && `КП-Ск ${product.rows}-${product.size}`} для транспортировки.
+      Внешние габаритные размеры: {specs.dimensions[0].toFixed(3)} м х{" "}
+      {specs.dimensions[1].toFixed(3)} м х {specs.dimensions[2].toFixed(3)} м;
+      объем: {volume.toFixed(3)} м<sup>3</sup>; вес калорифера{" "}
+      {product.shortName}: {specs.weight} кг.
+    </>
+  );
 
   return (
     <section className="text-example space-y-4 text-[17px]">
@@ -124,7 +144,7 @@ export function DeliverySection({
         </ul>
       </div>
 
-      <p className="text-base">{specsNote}</p>
+      <p className="text-base">{specsNote ?? defaultSpecsNote}</p>
     </section>
   );
 }
