@@ -332,12 +332,6 @@ export default async function KPSKProductPage({ product }) {
   const reshetkaWidth = 180;
   const productWeight = product.specsTableValues[9] as number;
 
-  const productVolume = +(
-    (productFrontWidth / 1000) *
-    (productFullHeight / 1000) *
-    (reshetkaWidth / 1000)
-  ).toFixed(3);
-
   const productDimensions = [
     +(productFrontWidth / 1000).toFixed(3),
     +(productFullHeight / 1000).toFixed(3),
@@ -772,11 +766,7 @@ export default async function KPSKProductPage({ product }) {
 
       <DeliverySection
         product={product}
-        specs={{
-          dimensions: productDimensions,
-          volume: productVolume,
-          weight: productWeight,
-        }}
+        specs={{ dimensions: productDimensions, weight: productWeight }}
       />
     </div>
   );
