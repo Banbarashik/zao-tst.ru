@@ -29,7 +29,7 @@ export default function LinkButtonsBlock({
     <div
       className={cn(className, "flex flex-col gap-2", {
         "@min-[616px]:flex-row": buttonsAmount === 2,
-        "@3xl:flex-row": buttonsAmount === 3,
+        "@3xl:flex-row": buttonsAmount >= 3,
       })}
     >
       {buttons.map((btn) => (
