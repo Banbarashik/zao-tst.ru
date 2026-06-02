@@ -13,6 +13,7 @@ import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LegacyHtml from "@/components/legacyHtml";
 import { getLegacyHtml } from "@/lib/legacyHtml";
+import { DeliverySection } from "@/components/catalog/DeliverySection";
 
 const seriesEng = {
   КПВС: "kpvs",
@@ -45,7 +46,7 @@ export default async function SupplyCalorifierPage({
   const internalSize = size - 72;
   const frameSize = Math.ceil(size / 50) * 50;
 
-  const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
+  const heatCarrierAdj = getHeatCarrierAdj(heatCarrier);
 
   const shortNameWithoutHyphen = shortName.replace("-", " ");
   const shortNameWithHyphen = shortName.replace(" ", "-");
@@ -57,9 +58,18 @@ export default async function SupplyCalorifierPage({
   const isKPVU = series === "КПВУ";
   const isKPPU = series === "КППУ";
 
+  const dimensions = [
+    specsTableValues[3] / 1000,
+    (isWater ? specsTableValues[4] : specsTableValues[4] + 65) / 1000,
+  ];
+  const weight = {
+    two: specsTableValues.at(-3),
+    three: specsTableValues.at(-2),
+    four: specsTableValues.at(-1),
+  };
+
   const threeRowsVariant = variants.find((v) => v.rows === 3);
   const fourRowsVariant = variants.find((v) => v.rows === 4);
-
   const threeRowsImageMetadata = {
     kpvs_kpps: {
       alt: `Чертеж ${heatCarrierAdj.gen} калорифера для приточных систем трехрядного с тепловой мощностью ${threeRowsVariant?.heatPower} кВт`,
@@ -70,7 +80,6 @@ export default async function SupplyCalorifierPage({
       title: `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель производительностью: ${airPower} м3/час; ${threeRowsVariant?.heatPower} кВт`,
     },
   };
-
   const fourRowsImageMetadata = {
     kpvs_kpps: {
       alt: `3 d модель ${heatCarrierAdj.gen} приточного калорифера четырехрядного производительностью ${airPower} м3/час`,
@@ -81,7 +90,6 @@ export default async function SupplyCalorifierPage({
       title: `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель: объем ${airPower} м3/час; мощность ${fourRowsVariant?.heatPower} кВт`,
     },
   };
-
   const threeRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`;
   const fourRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`;
 
@@ -127,6 +135,14 @@ export default async function SupplyCalorifierPage({
         присоединяемых к {isKPVS && "водяному"} калориферу элементов вентиляции.
       </>
     </ProductParagraph>
+  );
+
+  const fourRowsSpecsNoteText = (
+    <>
+      4-х рядная модель: {dimensions[0].toFixed(3)} м х{" "}
+      {dimensions[1].toFixed(3)} м х 0.220 м; объем:{" "}
+      {(dimensions[0] * dimensions[1] * 0.22).toFixed(3)} м<sup>3</sup>;
+    </>
   );
 
   const modelLinks = variants.map((v) => ({
@@ -360,6 +376,22 @@ export default async function SupplyCalorifierPage({
             goal: "open_pdf",
           },
         ]}
+      />
+
+      <DeliverySection
+        product={product}
+        specsNote={
+          <>
+            Данные {heatCarrierAdj.gen} теплообменника {product.shortName} для
+            транспортировки. Внешние габаритные размеры
+            {(isKPVU || isKPPU) && " (2-х и 3-х рядная модели)"}:{" "}
+            {dimensions[0].toFixed(3)} м х {dimensions[1].toFixed(3)} м х 0.180
+            м; объем: {(dimensions[0] * dimensions[1] * 0.18).toFixed(3)} м
+            <sup>3</sup>; {isKPVU || (isKPPU && fourRowsSpecsNoteText)} вес
+            калорифера: {series}2 - {weight.two} кг, {series}3 - {weight.three}{" "}
+            кг, {series}4 - {weight.four} кг.
+          </>
+        }
       />
     </div>
   );
