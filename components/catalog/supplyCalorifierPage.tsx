@@ -229,6 +229,7 @@ export default async function SupplyCalorifierPage({
           </>
         )}
       </ProductParagraph>
+
       <ProductSubheader
         text={`3D-модели калорифера ${shortName} для проектирования`}
         className="mb-6"
@@ -272,94 +273,6 @@ export default async function SupplyCalorifierPage({
         </div>
       </div>
       {modelText}
-      <ProductSubheader text={`Технические характеристики ${shortName}`} />
-      <div className="w-full overflow-x-auto">
-        <table className="single-table water-and-steam water-and-steam-inner mb-1 w-full min-w-231 xl:min-w-auto">
-          <thead>
-            <tr>
-              <th rowSpan={2}>
-                Производительность <br /> по воздуху, м<sup>3</sup>/час
-              </th>
-              <th colSpan={5}>
-                Габаритные и <br /> присоединительные размеры, мм
-              </th>
-              <th colSpan={isWater ? 2 : 1} className="dy">
-                dy
-              </th>
-              <th colSpan={3}>
-                Площадь поверхности <br /> теплообмена, м<sup>2</sup>
-              </th>
-              <th colSpan={3} className="mass">
-                Масса, кг
-              </th>
-            </tr>
-            <tr>
-              <th className="small-cols">
-                {isWater && "L"}
-                {isSteam && "H"}
-                <br />
-                {isWater && "H"}
-                {isSteam && "B"}
-              </th>
-              <th className="small-cols">
-                {isWater && "L1"}
-                {isSteam && "H1"}
-                <br />
-                {isWater && "H1"}
-                {isSteam && "B1"}
-              </th>
-              <th className="small-cols">
-                {isWater && "L2"}
-                {isSteam && "H2"}
-                <br />
-                {isWater && "H2"}
-                {isSteam && "B2"}
-              </th>
-              <th className="small-cols">
-                {isWater && "L3"}
-                {isSteam && "H3"}
-              </th>
-              <th className="small-cols">C</th>
-              <th className="small-cols w-10">мм</th>
-              {isWater && <th className="small-cols w-10 pt-1">&quot;</th>}
-              <th className="kal2">{series}2</th>
-              <th className="kal2">{series}3</th>
-              <th className="kal2">{series}4</th>
-              <th className="kal2">{series}2</th>
-              <th className="kal2">{series}3</th>
-              <th className="kal2">{series}4</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              {specsTableValues.map((value, i) => {
-                const fractionMatch = String(value).match(
-                  /^(\d+)\s+(\d+)\/(\d+)$/,
-                );
-                if (fractionMatch) {
-                  const [, whole, numerator, denominator] = fractionMatch;
-                  return (
-                    <td key={i}>
-                      {whole} <sup>{numerator}</sup>/<sub>{denominator}</sub>
-                    </td>
-                  );
-                }
-                return <td key={i}>{value}</td>;
-              })}
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      {drawing && (
-        <Image
-          src={drawing}
-          alt={`Габаритные размеры ${heatCarrierAdj?.gen} калорифера ${shortNameWithoutHyphen}`}
-          title={`Технические характеристики ${heatCarrierAdj?.gen} калорифера ${shortNameWithoutHyphen}`}
-          width={968}
-          height={1}
-          className="mb-10"
-        />
-      )}
 
       <LinkButtonsBlock
         buttons={[
@@ -376,7 +289,147 @@ export default async function SupplyCalorifierPage({
             goal: "open_pdf",
           },
         ]}
+        className="mb-6"
       />
+
+      <section className="mb-6 space-y-4">
+        <ProductSubheader text={`Технические характеристики ${shortName}`} />
+
+        <p className="text-secondary-text">
+          Представленные в онлайн-калькуляторе теплоаэродинамические параметры
+          применимы исключительно к приточным калориферам серии КПВС, КППС,
+          КПВУ, КППУ. Расчетный алгоритм жестко интегрирован с их специфическими
+          конструктивными константами: геометрической конфигурацией шахматного
+          пучка, шагом и конфигурацией развитой поверхности спирально-накатного
+          алюминиевого оребрения, обеспечивающим наименьшее аэродинамическое
+          сопротивление при прохождении воздушного потока.
+        </p>
+
+        <div className="w-full overflow-x-auto">
+          <table className="single-table water-and-steam water-and-steam-inner mb-1 w-full min-w-231 xl:min-w-auto">
+            <thead>
+              <tr>
+                <th rowSpan={2}>
+                  Производительность <br /> по воздуху, м<sup>3</sup>/час
+                </th>
+                <th colSpan={5}>
+                  Габаритные и <br /> присоединительные размеры, мм
+                </th>
+                <th colSpan={isWater ? 2 : 1} className="dy">
+                  dy
+                </th>
+                <th colSpan={3}>
+                  Площадь поверхности <br /> теплообмена, м<sup>2</sup>
+                </th>
+                <th colSpan={3} className="mass">
+                  Масса, кг
+                </th>
+              </tr>
+              <tr>
+                <th className="small-cols">
+                  {isWater && "L"}
+                  {isSteam && "H"}
+                  <br />
+                  {isWater && "H"}
+                  {isSteam && "B"}
+                </th>
+                <th className="small-cols">
+                  {isWater && "L1"}
+                  {isSteam && "H1"}
+                  <br />
+                  {isWater && "H1"}
+                  {isSteam && "B1"}
+                </th>
+                <th className="small-cols">
+                  {isWater && "L2"}
+                  {isSteam && "H2"}
+                  <br />
+                  {isWater && "H2"}
+                  {isSteam && "B2"}
+                </th>
+                <th className="small-cols">
+                  {isWater && "L3"}
+                  {isSteam && "H3"}
+                </th>
+                <th className="small-cols">C</th>
+                <th className="small-cols w-10">мм</th>
+                {isWater && <th className="small-cols w-10 pt-1">&quot;</th>}
+                <th className="kal2">{series}2</th>
+                <th className="kal2">{series}3</th>
+                <th className="kal2">{series}4</th>
+                <th className="kal2">{series}2</th>
+                <th className="kal2">{series}3</th>
+                <th className="kal2">{series}4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                {specsTableValues.map((value, i) => {
+                  const fractionMatch = String(value).match(
+                    /^(\d+)\s+(\d+)\/(\d+)$/,
+                  );
+                  if (fractionMatch) {
+                    const [, whole, numerator, denominator] = fractionMatch;
+                    return (
+                      <td key={i}>
+                        {whole} <sup>{numerator}</sup>/<sub>{denominator}</sub>
+                      </td>
+                    );
+                  }
+                  return <td key={i}>{value}</td>;
+                })}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {drawing && (
+          <Image
+            src={drawing}
+            alt={`Габаритные размеры ${heatCarrierAdj?.gen} калорифера ${shortNameWithoutHyphen}`}
+            title={`Технические характеристики ${heatCarrierAdj?.gen} калорифера ${shortNameWithoutHyphen}`}
+            width={968}
+            height={1}
+          />
+        )}
+
+        <p className="text-secondary-text">
+          Номенклатура типовых стандартных воздухонагревателей марки КСк, КПСк,
+          ТВВ, КП с применительными непосредственно к этим моделям базовыми
+          теплотехническими характеристиками и подробными расчетными таблицами
+          представлена в соответствующих разделах сайта.
+        </p>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Калориферы КСК",
+              url: "/kalorifery-ksk",
+            },
+            {
+              name: "Калориферы КПСК",
+              url: "/kalorifery-kpsk",
+            },
+            {
+              name: "Калориферы ТВВ",
+              url: "/kalorifery-tvv",
+            },
+            {
+              name: "Калориферы КП",
+              url: "/kalorifery-kp",
+            },
+          ]}
+          className="mb-4"
+        />
+
+        <p className="text-[rgb(192,0,0)]">
+          Внутренняя теплофизика этих линеек строго разграничена, поэтому
+          сведение параметров приточной вентиляции на базе калькулятора подбора
+          требует обязательного использования именно соответствующих моделей
+          приточных калориферов для исключения нерасчетных режимов в общей
+          схеме.
+        </p>
+      </section>
 
       <DeliverySection
         product={product}
