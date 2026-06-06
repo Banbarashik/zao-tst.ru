@@ -155,7 +155,6 @@ export default async function KaloriferySFO() {
       </section>
 
       <section id="anchor1">
-        <span id="anchor2" className="invisible relative -top-13" />
         <Heading
           lvl={2}
           text="Онлайн-расчет мощности электрического калорифера"
