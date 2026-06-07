@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import { sortProducts } from "@/lib/utils";
 
+import { Anchor } from "@/components/utils/anchor";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
@@ -154,7 +155,8 @@ export default async function KaloriferySFO() {
         </ProductParagraph>
       </section>
 
-      <section id="anchor1">
+      <section>
+        <Anchor num={1} />
         <Heading
           lvl={2}
           text="Онлайн-расчет мощности электрического калорифера"

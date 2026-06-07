@@ -11,6 +11,7 @@ import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
 import { getLegacyHtmls } from "@/lib/legacyHtml";
+import { Anchor } from "@/components/utils/anchor";
 
 export const metadata: Metadata = {
   title: "Калориферы приточные паровые",
@@ -90,10 +91,8 @@ export default async function KaloriferyParPage() {
           и КППУ изготавливаемых по ТУ 4863-006-55613706-25 насчитывает 48
           номеров.
         </ProductParagraph>
-        <div
-          id="anchor1"
-          className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0"
-        >
+        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <Anchor num={1} />
           <div className="relative aspect-16/10 w-full">
             <Image
               src="/img/general_pages/kalorifer_pritochnyi_parovoi.png"
@@ -113,9 +112,9 @@ export default async function KaloriferyParPage() {
         </div>
       </section>
 
-      <section id="anchor1" className="space-y-6">
+      <section className="space-y-6">
         <section>
-          <span id="anchor2" className="invisible relative -top-13" />
+          <Anchor num={2} device="mobile" />
           <Heading lvl={2} text="Онлайн-расчет мощности парового калорифера" />
           <ProductParagraph className="mb-3">
             Расход тепла паровым калорифером на подогрев приточного воздуха. В
@@ -165,7 +164,8 @@ export default async function KaloriferyParPage() {
         </ProductParagraph>
       </section>
 
-      <section id="anchor3">
+      <section>
+        <Anchor num={3} />
         <Heading lvl={2} text="Расчет и подбор приточных паровых калориферов" />
         <ProductParagraph>
           Выбрав номер калорифера с приближенным для выполнения вашей задачи

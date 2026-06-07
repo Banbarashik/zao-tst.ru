@@ -11,6 +11,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
+import { Anchor } from "@/components/utils/anchor";
 
 export const metadata: Metadata = {
   title: "Калориферы приточные водяные",
@@ -86,10 +87,8 @@ export default async function KaloriferyVodaPage() {
           КПВС и КПВУ изготавливаемых по ТУ 4863-006-55613706-25 насчитывает 48
           номеров.
         </ProductParagraph>
-        <div
-          id="anchor1"
-          className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0"
-        >
+        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <Anchor num={1} />
           <div className="relative aspect-16/10 w-full">
             <Image
               src="/img/general_pages/kalorifer_pritochnyi_vodianoi.png"
@@ -111,7 +110,7 @@ export default async function KaloriferyVodaPage() {
 
       <section className="space-y-6">
         <section>
-          <span id="anchor2" className="invisible relative -top-13" />
+          <Anchor num={2} device="mobile" />
           <Heading lvl={2} text="Онлайн-расчет мощности водяного калорифера" />
           <ProductParagraph className="mb-3">
             Расход тепла водяным калорифером на подогрев приточного воздуха. В

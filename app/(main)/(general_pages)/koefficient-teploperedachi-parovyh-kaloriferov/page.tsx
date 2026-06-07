@@ -11,6 +11,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
 import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
+import { Anchor } from "@/components/utils/anchor";
 
 export const metadata: Metadata = {
   title: "Коэффициент теплопередачи паровых калориферов",
@@ -540,7 +541,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         />
       </section>
 
-      <section id="anchor2">
+      <section>
+        <Anchor num={2} />
         <Heading
           lvl={2}
           text="Расчет коэффициента теплопередачи парового калорифера"
@@ -706,7 +708,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </div>
       </section>
 
-      <section id="anchor1">
+      <section>
+        <Anchor num={1} />
         <Heading
           lvl={2}
           text="Расчет аэродинамического сопротивления парового калорифера"
@@ -832,7 +835,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </div>
       </section>
 
-      <section id="anchor3">
+      <section>
+        <Anchor num={3} />
         <Heading
           lvl={2}
           text="Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов"
