@@ -34,7 +34,7 @@ const productCategories = [
       {
         name: "Калориферы КПСК",
         url: "/catalog/kpsk",
-        img: "/img/home/zao_tst_kalorifery_kpsk.png",
+        img: "/img/home/kpsk4-6_11_2.png",
       },
       {
         name: "Агрегаты АО 2",
@@ -61,7 +61,7 @@ const productCategories = [
       {
         name: "Калориферы КП",
         url: "/catalog/kp",
-        img: "/img/home/zao_tst_kalorifery_kp.png",
+        img: "/img/home/kfbP-4-5_5.png",
       },
       {
         name: "Агрегаты АВО ХЛ",
@@ -88,7 +88,7 @@ const productCategories = [
       {
         name: "Калориферы КФБ-А ХЛ паровые",
         url: "/catalog/kfb-a-p",
-        img: "/img/home/zao_tst_kalorifery_kfb-p.png",
+        img: "/img/home/kfb-p_5.png",
       },
     ],
   },
