@@ -2,15 +2,30 @@ import sfoWiringTablesData from "@/data/sfoWiringTables.json";
 
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 
 import type { SfoWiringSchema } from "@/types/sfoWiringSchema";
 
 import Spoiler from "@/components/ui/spoiler";
+import Heading from "@/components/general_pages/heading";
 import { SfoWiringTable } from "@/components/general_pages/SfoWiringTable";
+
+export const metadata: Metadata = {
+  title: "Схемы подключения электрокалориферов СФО-16...СФО-250",
+  description:
+    "Подбор кабелей и проводов для электрокалориферов СФО. Формулы расчета токов, таблицы минимальных сечений по ПУЭ и трехфазные схемы подключения установок СФО",
+  keywords:
+    "подключение электрического калорифера,схема подключения электрокалорифера сфо,расчет токовой нагрузки электрокалорифера,формула токовой нагрузки 380 В,подбор сечения кабеля электрокалорифера по пуэ,подбор кабеля по мощности электрокалорифера,таблица подбора кабеля электрического калорифера,подбор кабеля для калорифера сфо 250,схема подключения калорифера сфо 100,схема шкафа автоматики калорифера сфо 160",
+};
 
 export default function ElektrokaloriferyPage() {
   return (
     <>
+      <Heading
+        lvl={1}
+        text="Расчет и подбор сечения кабеля для электрокалориферов СФО"
+      />
+
       <PowerTable />
       {/* СХЕМЫ-ТАБЛИЦЫ */}
       <ol className="space-y-12">
