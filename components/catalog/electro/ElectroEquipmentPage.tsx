@@ -41,7 +41,7 @@ export default function ElectroEquipmentPage({
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
-      <h1 className="mb-8 text-2xl font-bold uppercase">{productName}</h1>
+      <h1 className="mb-8 text-xl font-bold uppercase">{productName}</h1>
       <ElectroProductOverviewSection product={product} />
       <ElectroSpecsSection product={product} />
       <SpecificSection product={product} />
