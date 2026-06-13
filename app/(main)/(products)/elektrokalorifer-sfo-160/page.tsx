@@ -2,17 +2,19 @@ import productData from "@/data/products.json";
 import { SFOComparativeAnalysisTables } from "@/data/SFOComparativeAnalysisTables";
 import { SFOOperatingParameterTables } from "@/data/SFOOperatingParameterTables";
 
+import { createSFOMetadata } from "@/lib/metadata";
+
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import Spoiler from "@/components/ui/spoiler";
 import ProductSubheader from "@/components/catalog/productSubheader";
 import { PDFDownloadCard } from "@/components/PDFDownloadCard";
+import { ModelDownloadButton } from "@/components/catalog/modelDownloadButton";
 import { DeliverySection } from "@/components/catalog/DeliverySection";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
 import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
 import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODrawingAndCircuitSection";
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
 import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
-import { createSFOMetadata } from "@/lib/metadata";
 
 const product = productData.find((p) => p.id === "elektrokalorifer-sfo-160");
 
@@ -23,7 +25,17 @@ export default function SFO60Page() {
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
-      <h1 className="mb-8 text-2xl font-bold uppercase">{product?.name}</h1>
+      <div className="mb-8 flex items-center justify-between gap-4">
+        <h1 className="text-xl font-bold uppercase">{product?.name}</h1>
+        <ModelDownloadButton
+          modelLinks={[
+            {
+              text: product.shortName,
+              url: `/models/sfo/elektrokalorifer_sfo-${product.size}.zip`,
+            },
+          ]}
+        />
+      </div>
       <ElectroProductOverviewSection product={product} />
       <ElectroSpecsSection product={product} />
       <TechReviewSection />
