@@ -9,6 +9,7 @@ import type { SfoWiringSchema } from "@/types/sfoWiringSchema";
 import Spoiler from "@/components/ui/spoiler";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
+import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import { SfoWiringTable } from "@/components/general_pages/SfoWiringTable";
 
 export const metadata: Metadata = {
@@ -121,7 +122,7 @@ export default function ElektrokaloriferyPage() {
               автомата в ЩУ и сечение магистрального питающего кабеля от ГРЩ при
               одновременном включении всех нагревательных секций.
               <span className="block text-2xl font-bold">
-                I = P общ / (
+                I = P <sub>общ</sub> / (
                 <math>
                   <msqrt>
                     <mn>3</mn>
@@ -142,7 +143,7 @@ export default function ElektrokaloriferyPage() {
               контактора (пускателя) в шкафу автоматики и сечение внешних
               кабелей распределительных секций до калорифера.
               <span className="block text-2xl font-bold">
-                I = P сек / (
+                I = P <sub>сек</sub> / (
                 <math>
                   <msqrt>
                     <mn>3</mn>
@@ -162,7 +163,7 @@ export default function ElektrokaloriferyPage() {
               Определяет локальную токовую нагрузку на внутренние гибкие
               термостойкие провода при работе соответствующей ступени мощности.
               <span className="block text-2xl font-bold">
-                I = P блок / (
+                I = P <sub>блок</sub> / (
                 <math>
                   <msqrt>
                     <mn>3</mn>
@@ -503,7 +504,7 @@ export default function ElektrokaloriferyPage() {
       </section>
 
       {/* Примечание к монтажным схемам СФО */}
-      <section className="space-y-4">
+      <section className="border-primary space-y-4 rounded-lg border-l-4 pl-4">
         <Heading lvl={2} text="Примечание к монтажным схемам СФО" />
         <ProductParagraph>
           Представленная в настоящем руководстве трехзвенная монтажная схема
@@ -520,6 +521,18 @@ export default function ElektrokaloriferyPage() {
           ПУЭ.
         </ProductParagraph>
       </section>
+
+      <LinkButtonsBlock
+        buttons={[
+          { name: "Электрокалориферы СФО 16…250", url: "/elektronagrevateli" },
+          {
+            name: "Каталог электрокалориферов СФО",
+            url: "/documents/Electrokalorifer_SFO_katalog_2025.pdf",
+            openNewTab: true,
+            goal: "open_pdf",
+          },
+        ]}
+      />
     </>
   );
 }
