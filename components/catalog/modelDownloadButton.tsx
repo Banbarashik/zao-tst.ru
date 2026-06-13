@@ -16,12 +16,14 @@ export function ModelDownloadButton({
   modelLinks,
 }: {
   modelLinks: {
-    text: string;
-    url: string;
+    text: string | undefined;
+    url: string | undefined;
   }[];
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const { reachGoal } = useYandexMetrika();
+
+  if (modelLinks.some((ml) => !ml.text || !ml.url)) return <></>;
 
   return (
     <Popover open={isOpen} onOpenChange={setIsOpen}>
