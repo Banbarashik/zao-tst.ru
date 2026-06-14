@@ -40,6 +40,27 @@ export default function SFO40Page() {
       <ElectroSpecsSection product={product} />
       <TechReviewSection />
       <SFODrawingAndCircuitSection product={product} />
+
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Расчет токовых нагрузок",
+            url: "/elektrokalorifery#anchor1",
+          },
+          {
+            name: "Подбор сечения кабеля СФО-40",
+            url: "/elektrokalorifery#anchor4",
+          },
+        ]}
+        className="mb-6"
+      />
+
+      <DeliverySection
+        product={product}
+        specs={{ dimensions: [0.395, 0.72, 0.24], weight: 18 }}
+        className="mb-6"
+      />
+
       <LinkButtonsBlock
         buttons={[
           {
@@ -53,11 +74,6 @@ export default function SFO40Page() {
             goal: "open_pdf",
           },
         ]}
-        className="mb-6"
-      />
-      <DeliverySection
-        product={product}
-        specs={{ dimensions: [0.395, 0.72, 0.24], weight: 18 }}
       />
     </div>
   );

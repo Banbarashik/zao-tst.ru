@@ -20,7 +20,7 @@ const product = productData.find((p) => p.id === "elektrokalorifer-sfo-25");
 
 export const metadata = createSFOMetadata(product?.name, product?.size);
 
-export default function SFO250Page() {
+export default function SFO25Page() {
   if (!product) return;
 
   return (
@@ -40,6 +40,27 @@ export default function SFO250Page() {
       <ElectroSpecsSection product={product} />
       <TechReviewSection />
       <SFODrawingAndCircuitSection product={product} />
+
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Расчет токовых нагрузок",
+            url: "/elektrokalorifery#anchor1",
+          },
+          {
+            name: "Подбор сечения кабеля СФО-25",
+            url: "/elektrokalorifery#anchor3",
+          },
+        ]}
+        className="mb-6"
+      />
+
+      <DeliverySection
+        product={product}
+        specs={{ dimensions: [0.26, 0.72, 0.24], weight: 11 }}
+        className="mb-6"
+      />
+
       <LinkButtonsBlock
         buttons={[
           {
@@ -53,11 +74,6 @@ export default function SFO250Page() {
             goal: "open_pdf",
           },
         ]}
-        className="mb-6"
-      />
-      <DeliverySection
-        product={product}
-        specs={{ dimensions: [0.26, 0.72, 0.24], weight: 11 }}
       />
     </div>
   );
