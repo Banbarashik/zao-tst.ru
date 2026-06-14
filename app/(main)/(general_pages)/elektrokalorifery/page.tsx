@@ -328,7 +328,7 @@ export default function ElektrokaloriferyPage() {
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-20/9 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-16.png"
+                  src="/img/general_pages/kalorifer_sfo-16.png"
                   alt="Подключение фазных термостойких проводов в коробе СФО-16"
                   title="Схема подключения фазных блоков электрокалорифера СФО-16"
                   fill
@@ -336,7 +336,7 @@ export default function ElektrokaloriferyPage() {
               </div>
               <div className="relative aspect-20/9 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-16_electro.png"
+                  src="/img/general_pages/kalorifer_sfo-16_electro.png"
                   alt="Подключение нулевого провода к шине ТЭНов СФО-16"
                   title="Схема подключения нейтральной стороны калорифера СФО-16"
                   fill
@@ -355,7 +355,7 @@ export default function ElektrokaloriferyPage() {
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-2/1 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-25.png"
+                  src="/img/general_pages/kalorifer_sfo-25.png"
                   alt="Подключение фазных термостойких проводов в коробе СФО-25"
                   title="Схема подключения фазных блоков электрокалорифера СФО-25"
                   fill
@@ -363,7 +363,7 @@ export default function ElektrokaloriferyPage() {
               </div>
               <div className="relative aspect-2/1 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-25_electro.png"
+                  src="/img/general_pages/kalorifer_sfo-25_electro.png"
                   alt="Подключение нулевого провода к шине ТЭНов СФО-25"
                   title="Схема подключения нейтральной стороны калорифера СФО-25"
                   fill
@@ -382,7 +382,7 @@ export default function ElektrokaloriferyPage() {
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-5/3 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-40.png"
+                  src="/img/general_pages/kalorifer_sfo-40.png"
                   alt="Подключение фазных термостойких проводов в коробе СФО-40"
                   title="Схема подключения фазных блоков электрокалорифера СФО-40"
                   fill
@@ -390,7 +390,7 @@ export default function ElektrokaloriferyPage() {
               </div>
               <div className="relative aspect-5/3 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-40_electro.png"
+                  src="/img/general_pages/kalorifer_sfo-40_electro.png"
                   alt="Подключение нулевого провода к шине ТЭНов СФО-40"
                   title="Схема подключения нейтральной стороны калорифера СФО-40"
                   fill
@@ -409,7 +409,7 @@ export default function ElektrokaloriferyPage() {
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-20/13 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-60.png"
+                  src="/img/general_pages/kalorifer_sfo-60.png"
                   alt="Подключение фазных термостойких проводов в коробе СФО-60"
                   title="Схема подключения фазных блоков электрокалорифера СФО-60"
                   fill
@@ -417,7 +417,7 @@ export default function ElektrokaloriferyPage() {
               </div>
               <div className="relative aspect-20/13 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-60_electro.png"
+                  src="/img/general_pages/kalorifer_sfo-60_electro.png"
                   alt="Подключение нулевого провода к шине ТЭНов СФО-60"
                   title="Схема подключения нейтральной стороны калорифера СФО-60"
                   fill
@@ -436,7 +436,7 @@ export default function ElektrokaloriferyPage() {
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-10/7 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-100.png"
+                  src="/img/general_pages/kalorifer_sfo-100.png"
                   alt="Подключение фазных термостойких проводов в коробе СФО-100"
                   title="Схема подключения фазных блоков электрокалорифера СФО-100"
                   fill
@@ -444,7 +444,7 @@ export default function ElektrokaloriferyPage() {
               </div>
               <div className="relative aspect-10/7 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-100_electro.png"
+                  src="/img/general_pages/kalorifer_sfo-100_electro.png"
                   alt="Подключение нулевого провода к шине ТЭНов СФО-100"
                   title="Схема подключения нейтральной стороны калорифера СФО-100"
                   fill
@@ -463,7 +463,7 @@ export default function ElektrokaloriferyPage() {
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-4/3 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-160.png"
+                  src="/img/general_pages/kalorifer_sfo-160.png"
                   alt="Подключение фазных термостойких проводов в коробе СФО-160"
                   title="Схема подключения фазных блоков электрокалорифера СФО-160"
                   fill
@@ -471,7 +471,7 @@ export default function ElektrokaloriferyPage() {
               </div>
               <div className="relative aspect-4/3 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-160_electro.png"
+                  src="/img/general_pages/kalorifer_sfo-160_electro.png"
                   alt="Подключение нулевого провода к шине ТЭНов СФО-160"
                   title="Схема подключения нейтральной стороны калорифера СФО-160"
                   fill
@@ -490,7 +490,7 @@ export default function ElektrokaloriferyPage() {
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-10/9 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-250.png"
+                  src="/img/general_pages/kalorifer_sfo-250.png"
                   alt="Подключение фазных термостойких проводов в коробе СФО-250"
                   title="Схема подключения фазных блоков электрокалорифера СФО-250"
                   fill
@@ -498,7 +498,7 @@ export default function ElektrokaloriferyPage() {
               </div>
               <div className="relative aspect-10/9 w-full">
                 <Image
-                  src="/img/kalorifer_sfo-250_electro.png"
+                  src="/img/general_pages/kalorifer_sfo-250_electro.png"
                   alt="Подключение нулевого провода к шине ТЭНов СФО-250"
                   title="Схема подключения нейтральной стороны калорифера СФО-250"
                   fill
