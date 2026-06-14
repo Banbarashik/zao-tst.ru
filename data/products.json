@@ -14206,7 +14206,7 @@
     "altSeries": "ЭКО",
     "size": 16,
     "categories": ["kalorifer", "energonagrevatelynoe-oborudovanie", "sfo"],
-    "airPower": 1000,
+    "airPower": 1500,
     "heatPower": 15,
     "price": 13717,
     "img": {
@@ -14272,7 +14272,7 @@
     "altSeries": "ЭКО",
     "size": 25,
     "categories": ["kalorifer", "energonagrevatelynoe-oborudovanie", "sfo"],
-    "airPower": 1500,
+    "airPower": 2000,
     "heatPower": 22.5,
     "price": 17976,
     "img": {
@@ -14338,7 +14338,7 @@
     "altSeries": "ЭКО",
     "size": 40,
     "categories": ["kalorifer", "energonagrevatelynoe-oborudovanie", "sfo"],
-    "airPower": 2500,
+    "airPower": 3000,
     "heatPower": 45,
     "price": 26258,
     "img": {
@@ -14404,7 +14404,7 @@
     "altSeries": "ЭКО",
     "size": 60,
     "categories": ["kalorifer", "energonagrevatelynoe-oborudovanie", "sfo"],
-    "airPower": 3000,
+    "airPower": 5000,
     "heatPower": 67.5,
     "price": 39407,
     "img": {
@@ -14470,7 +14470,7 @@
     "altSeries": "ЭКО",
     "size": 100,
     "categories": ["kalorifer", "energonagrevatelynoe-oborudovanie", "sfo"],
-    "airPower": 4000,
+    "airPower": 6000,
     "heatPower": 90,
     "price": 51905,
     "img": {
@@ -14536,7 +14536,7 @@
     "altSeries": "ЭКО",
     "size": 160,
     "categories": ["kalorifer", "energonagrevatelynoe-oborudovanie", "sfo"],
-    "airPower": 7000,
+    "airPower": 10000,
     "heatPower": 157.5,
     "price": 92085,
     "img": {
@@ -14602,7 +14602,7 @@
     "altSeries": "ЭКО",
     "size": 250,
     "categories": ["kalorifer", "energonagrevatelynoe-oborudovanie", "sfo"],
-    "airPower": 10000,
+    "airPower": 15000,
     "heatPower": 247.5,
     "price": 130216,
     "img": {
