@@ -167,7 +167,7 @@ export default function Catalog() {
         <ul className="my-6 grid gap-2 sm:grid-cols-2 md:gap-4 lg:gap-10 xl:gap-12">
           <li className="h-full w-full">
             <Link
-              href="#"
+              href="/tehnicheskaya-stranica"
               className="hover:text-primary bg-card text-card-foreground relative flex aspect-16/10 w-full flex-col items-center gap-4 rounded-xl border px-2 pt-7 pb-6 text-center shadow-sm sm:text-[13px] md:px-4 md:text-center md:text-[13px] lg:h-auto lg:text-sm xl:px-10 2xl:text-base"
             >
               <div className="relative aspect-16/10 h-full">
