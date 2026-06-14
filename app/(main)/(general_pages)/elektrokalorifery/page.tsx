@@ -40,7 +40,7 @@ export default function ElektrokaloriferyPage() {
           жил и коммутационных узлов.
         </ProductParagraph>
 
-        <div>
+        <div className="space-y-2 rounded-lg border-l-4 border-[#574184] pl-4">
           <ProductParagraph>
             Настоящее руководство содержит комплексную техническую базу для
             подключения электрокалориферов СФО мощностью от 15 до 247.5 кВт:
@@ -69,7 +69,7 @@ export default function ElektrokaloriferyPage() {
       <section className="space-y-4">
         <Heading lvl={2} text="Электротехнический расчет токовых нагрузок" />
 
-        <div>
+        <div className="mb-0">
           <ProductParagraph>
             Формула для определения токовой нагрузки в трехфазных сетях
             переменного тока при равномерном распределении мощности по фазам:
@@ -99,42 +99,51 @@ export default function ElektrokaloriferyPage() {
           </ol>
         </div>
 
-        <ProductParagraph>
-          В виду того, что нагревательная нагрузка ТЭНов является чисто активной
-          (омической), коэффициент мощности равен единице. Поскольку внутренняя
-          схема соединений нагревателей — «звезда», каждый отдельный ТЭН
-          работает на фазном напряжении 220 В, а вся нагревательная секция
-          подключается к трехфазной сети линейного напряжения 380 В.
+        <ProductParagraph className="text-secondary-text">
+          В виду того, что нагрузка ТЭНов является чисто активной (омической),
+          коэффициент мощности равен единице. Поскольку внутренняя схема
+          соединений нагревателей — «звезда», каждый отдельный ТЭН работает на
+          фазном напряжении 220 В, а вся нагревательная секция подключается к
+          трехфазной сети линейного напряжения 380 В.
         </ProductParagraph>
 
-        <ProductParagraph>
+        <ProductParagraph className="m-0">
           Для полноценного проектирования системы автоматики и кабельных трасс
           расчет токовых нагрузок разделяется на три уровня:
         </ProductParagraph>
         <ol>
           <li>
             <ProductParagraph>
-              1. Расчетный ток линии электрокалорифера (общий ток), А
+              1. Расчетный ток линии электрокалорифера (общий ток), А:{" "}
+              <span className="text-2xl font-bold">
+                I = P <sub className="font-normal">общ</sub> / (
+                <math>
+                  <msqrt>
+                    <mn>3</mn>
+                  </msqrt>
+                </math>{" "}
+                • U • <span className="font-normal">cos</span> φ)
+              </span>
             </ProductParagraph>
             <ProductParagraph>
               Общий ток, потребляемый всей установкой на полной паспортной
               мощности. Определяет параметры центрального вводного защитного
               автомата в ЩУ и сечение магистрального питающего кабеля от ГРЩ при
               одновременном включении всех нагревательных секций.
-              <span className="block text-2xl font-bold">
-                I = P <sub>общ</sub> / (
+            </ProductParagraph>
+          </li>
+          <li>
+            <ProductParagraph>
+              2. Расчетный ток одной секции, А:{" "}
+              <span className="text-2xl font-bold">
+                I = P <sub className="font-normal">сек</sub> / (
                 <math>
                   <msqrt>
                     <mn>3</mn>
                   </msqrt>
                 </math>{" "}
-                • U • cos φ)
+                • U • <span className="font-normal">cos</span> φ)
               </span>
-            </ProductParagraph>
-          </li>
-          <li>
-            <ProductParagraph>
-              2. Расчетный ток одной секции, А
             </ProductParagraph>
             <ProductParagraph>
               Сила тока, потребляемая одной независимой ступенью мощности
@@ -142,35 +151,26 @@ export default function ElektrokaloriferyPage() {
               «звезду»). Этот параметр определяет номинал индивидуального
               контактора (пускателя) в шкафу автоматики и сечение внешних
               кабелей распределительных секций до калорифера.
-              <span className="block text-2xl font-bold">
-                I = P <sub>сек</sub> / (
+            </ProductParagraph>
+          </li>
+          <li>
+            <ProductParagraph>
+              3. Расчетный ток блока секции, А:{" "}
+              <span className="text-2xl font-bold">
+                I = P <sub className="font-normal">блок</sub> / (
                 <math>
                   <msqrt>
                     <mn>3</mn>
                   </msqrt>
                 </math>{" "}
-                • U • cos φ)
+                • U • <span className="font-normal">cos</span> φ)
               </span>
-            </ProductParagraph>
-          </li>
-          <li>
-            <ProductParagraph>
-              3. Расчетный ток блока секции, А
             </ProductParagraph>
             <ProductParagraph>
               Ток, протекающий по отдельному фазному проводнику к одному
               конкретному нагревательному блоку внутри клеммного короба.
               Определяет локальную токовую нагрузку на внутренние гибкие
               термостойкие провода при работе соответствующей ступени мощности.
-              <span className="block text-2xl font-bold">
-                I = P <sub>блок</sub> / (
-                <math>
-                  <msqrt>
-                    <mn>3</mn>
-                  </msqrt>
-                </math>{" "}
-                • U • cos φ)
-              </span>
             </ProductParagraph>
           </li>
         </ol>
@@ -180,11 +180,11 @@ export default function ElektrokaloriferyPage() {
             Пример расчета токовых нагрузок для электрокалорифера СФО-250 (247.5
             кВт)
           </ProductParagraph>
-          <ol className="space-y-2">
+          <ol>
             <li>
               <ProductParagraph>
-                1. Расчетный ток магистральной линии СФО-250, А
-                <span className="block text-xl font-bold">
+                1. Расчетный ток магистральной линии СФО-250, А:{" "}
+                <span className="text-xl font-bold">
                   I = 247500 / (1.732 • 380 • 1) = 376.1 А
                 </span>
               </ProductParagraph>
@@ -198,8 +198,8 @@ export default function ElektrokaloriferyPage() {
             </li>
             <li>
               <ProductParagraph>
-                2. Расчетный ток одной секции СФО-250, А
-                <span className="block text-xl font-bold">
+                2. Расчетный ток одной секции СФО-250, А:{" "}
+                <span className="text-xl font-bold">
                   I = 82500 / (1.732 • 380 • 1) = 125.4 А
                 </span>
               </ProductParagraph>
@@ -213,8 +213,8 @@ export default function ElektrokaloriferyPage() {
             </li>
             <li>
               <ProductParagraph>
-                3. Расчетный ток блока секции СФО-250, А
-                <span className="block text-xl font-bold">
+                3. Расчетный ток блока секции СФО-250, А:{" "}
+                <span className="text-xl font-bold">
                   I = 27500 / (1.732 • 380 • 1) = 41.8 А
                 </span>
               </ProductParagraph>
@@ -231,13 +231,13 @@ export default function ElektrokaloriferyPage() {
       </section>
 
       {/* Выбор сечения кабеля при проектировании и монтаже */}
-      <section className="space-y-4">
+      <section className="mb-4 space-y-4">
         <Heading
           lvl={2}
           text="Выбор сечения кабеля при проектировании и монтаже"
         />
 
-        <ProductParagraph>
+        <ProductParagraph className="mb-0">
           Инженерный подбор кабельно-проводниковой продукции для мощных
           электрокалориферных установок не может ограничиваться исключительно
           базовой электрической мощностью оборудования. Номинальные токовые
@@ -247,7 +247,9 @@ export default function ElektrokaloriferyPage() {
         </ProductParagraph>
         <ol>
           <li>
-            <span className="text-example">1. Среда и способ прокладки.</span>{" "}
+            <span className="text-[rgb(192,0,0)]">
+              1. Среда и способ прокладки.
+            </span>{" "}
             Теплоотдача кабеля, проложенного открыто на воздухе, в замкнутом
             кабельном канале, в стальной трубе или непосредственно в грунте
             (земляной траншее), существенно различается. Земля обеспечивает
@@ -257,7 +259,7 @@ export default function ElektrokaloriferyPage() {
             оплавления изоляции.
           </li>
           <li>
-            <span className="text-example">
+            <span className="text-[rgb(192,0,0)]">
               2. Групповая прокладка (коэффициент совместности).
             </span>{" "}
             При укладке нескольких силовых линий в один общий пучок, закрытый
@@ -267,7 +269,7 @@ export default function ElektrokaloriferyPage() {
             сечение проводников.
           </li>
           <li>
-            <span className="text-example">
+            <span className="text-[rgb(192,0,0)]">
               3. Температурный режим эксплуатации.
             </span>{" "}
             Все стандартные таблицы электротехнических справочников рассчитаны
@@ -277,7 +279,7 @@ export default function ElektrokaloriferyPage() {
             металла, требуя введения понижающих коэффициентов.
           </li>
           <li>
-            <span className="text-example">
+            <span className="text-[rgb(192,0,0)]">
               4. Протяженность трассы (потери напряжения).
             </span>{" "}
             При длине кабельной линии более 25–30 метров ключевым критерием
@@ -287,7 +289,7 @@ export default function ElektrokaloriferyPage() {
             тепловую мощность.
           </li>
           <li>
-            <span className="text-example">
+            <span className="text-[rgb(192,0,0)]">
               5. Механическая прочность и тепловые смещения.
             </span>{" "}
             Силовые контакты нагревателей постоянно испытывают циклические
@@ -504,7 +506,7 @@ export default function ElektrokaloriferyPage() {
       </section>
 
       {/* Примечание к монтажным схемам СФО */}
-      <section className="border-primary space-y-4 rounded-lg border-l-4 pl-4">
+      <section className="space-y-4 rounded-lg border-l-4 border-[#574184] pl-4">
         <Heading lvl={2} text="Примечание к монтажным схемам СФО" />
         <ProductParagraph>
           Представленная в настоящем руководстве трехзвенная монтажная схема
