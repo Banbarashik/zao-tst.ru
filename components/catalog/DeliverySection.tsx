@@ -1,13 +1,17 @@
-import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
 import type { ReactNode } from "react";
+
+import { cn } from "@/lib/utils";
+import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
 
 export function DeliverySection({
   product,
   specs,
   specsNote,
+  className = "",
 }: {
   specs?: { dimensions: number[]; weight: number };
   specsNote?: ReactNode;
+  className?: string;
 }) {
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
 
@@ -31,7 +35,7 @@ export function DeliverySection({
   );
 
   return (
-    <section className="text-example space-y-4 text-[17px]">
+    <section className={cn("text-example space-y-4 text-[17px]", className)}>
       <h3 className="mb-2 text-xl">
         Оплата и доставка {isSFO && "электрокалорифера"}{" "}
         {(isKSK || isKPSK) && "калорифера"} {product.shortName}
