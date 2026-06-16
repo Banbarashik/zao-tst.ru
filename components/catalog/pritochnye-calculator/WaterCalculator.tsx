@@ -103,7 +103,7 @@ export function WaterCalculator({
       setResults(res);
       onStateChange?.({
         type: "water",
-        modelLabel: rowLabels[next.rowCount],
+        modelLabel: model.label,
         inputs: next,
         results: res,
       });

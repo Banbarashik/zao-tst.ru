@@ -97,7 +97,7 @@ export function SteamCalculator({
       setResults(res);
       onStateChange?.({
         type: "steam",
-        modelLabel: rowLabels[next.rowCount],
+        modelLabel: model.label,
         inputs: next,
         results: res,
       });
