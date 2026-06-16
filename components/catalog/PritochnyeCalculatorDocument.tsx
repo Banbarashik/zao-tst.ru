@@ -226,9 +226,8 @@ function rowCount(rowKey: string): string {
   return rowKey === "2_rows" ? "2" : rowKey === "3_rows" ? "3" : "4";
 }
 
-// Пути к встроенным логотипам — лежат в public/
-const LOGO_SMALL = "/heaters/logo-tst-small.png"; // image1.png из шаблона
-const LOGO_BIG = "/heaters/logo-tst-big.png"; // image2.png из шаблона (футер)
+const LOGO_HEADER = "/img/doc_header_logo.png";
+const LOGO_FOOTER = "/img/doc_footer_logo.png";
 
 // ─── Компонент одной строки таблицы данных ───────────────────────────────────
 
@@ -527,7 +526,7 @@ export function PritochnyeCalculatorDocument({
         {/* ── Шапка ── */}
         <View style={s.headerTable}>
           {/* Левый логотип */}
-          <Image src={LOGO_SMALL} style={s.headerLogo} />
+          <Image src={LOGO_HEADER} style={s.headerLogo} />
 
           {/* Центральный текст */}
           <View style={s.headerCenter}>
@@ -544,7 +543,7 @@ export function PritochnyeCalculatorDocument({
           </View>
 
           {/* Правый логотип */}
-          <Image src={LOGO_SMALL} style={s.headerLogo} />
+          <Image src={LOGO_HEADER} style={s.headerLogo} />
         </View>
 
         {/* ── Мета-строки (номер / дата / модель / рядность) ── */}
@@ -585,7 +584,7 @@ export function PritochnyeCalculatorDocument({
 
         {/* ── Футер — логотип ООО ТСТ, выровнен вправо ── */}
         <View style={s.footer}>
-          <Image src={LOGO_BIG} style={s.footerLogo} />
+          <Image src={LOGO_FOOTER} style={s.footerLogo} />
         </View>
       </Page>
     </Document>
