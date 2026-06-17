@@ -12,6 +12,7 @@ import type {
   WaterCalculatorState,
   SteamCalculatorState,
 } from "@/types/pritochnye-calculator";
+import { Product } from "@/types";
 
 // ─── Регистрация шрифта ───────────────────────────────────────────────────────
 Font.register({
@@ -166,8 +167,14 @@ const s = StyleSheet.create({
     paddingVertical: 3.5,
     paddingHorizontal: 4,
     fontSize: 8,
-    borderRightWidth: 0.5,
-    borderRightColor: BORDER_GOLD,
+    borderLeftWidth: 0.5,
+    borderLeftColor: BORDER_GOLD,
+  },
+  dataLabelCellFirst: {
+    width: "37.5%",
+    paddingVertical: 3.5,
+    paddingHorizontal: 4,
+    fontSize: 8,
   },
   dataValueCell: {
     width: "12.5%",
@@ -175,18 +182,13 @@ const s = StyleSheet.create({
     paddingHorizontal: 2,
     fontSize: 8,
     textAlign: "center",
-    borderRightWidth: 0.5,
-    borderRightColor: BORDER_GOLD,
+    borderLeftWidth: 0.5,
+    borderLeftColor: BORDER_GOLD,
     justifyContent: "center",
   },
-  dataValueCellLast: {
-    // правая колонка результата — без правой рамки
-    width: "12.5%",
-    paddingVertical: 3.5,
-    paddingHorizontal: 2,
-    fontSize: 8,
-    textAlign: "center",
-    justifyContent: "center",
+  // Для значений, которые могут не поместиться (напр. «пропиленгликоль»)
+  dataValueSmall: {
+    fontSize: 6.5,
   },
 
   // ── Футер ──
@@ -239,6 +241,10 @@ interface DataRowProps {
   isLast?: boolean;
 }
 
+// Значение считается «длинным» если оно шире узкой ячейки (~65pt при 8pt шрифте).
+// Эмпирический порог: больше 8 символов → уменьшаем шрифт до 6.5pt.
+const LONG_VALUE_THRESHOLD = 8;
+
 function DataTableRow({
   leftLabel,
   leftValue,
@@ -247,19 +253,23 @@ function DataTableRow({
   isLast,
 }: DataRowProps) {
   const rowStyle = isLast ? s.dataRowLast : s.dataRow;
+  const leftValueStyle =
+    leftValue.length > LONG_VALUE_THRESHOLD ? s.dataValueSmall : undefined;
+  const rightValueStyle =
+    rightValue.length > LONG_VALUE_THRESHOLD ? s.dataValueSmall : undefined;
   return (
     <View style={rowStyle}>
-      <View style={s.dataLabelCell}>
+      <View style={s.dataLabelCellFirst}>
         <Text>{leftLabel}</Text>
       </View>
       <View style={s.dataValueCell}>
-        <Text>{leftValue}</Text>
+        <Text style={leftValueStyle}>{leftValue}</Text>
       </View>
       <View style={s.dataLabelCell}>
         <Text>{rightLabel}</Text>
       </View>
-      <View style={s.dataValueCellLast}>
-        <Text>{rightValue}</Text>
+      <View style={s.dataValueCell}>
+        <Text style={rightValueStyle}>{rightValue}</Text>
       </View>
     </View>
   );
@@ -267,7 +277,13 @@ function DataTableRow({
 
 // ─── Водяной документ ─────────────────────────────────────────────────────────
 
-function WaterContent({ state }: { state: WaterCalculatorState }) {
+function WaterContent({
+  state,
+  airPower,
+}: {
+  state: WaterCalculatorState;
+  airPower: number | null;
+}) {
   const { inputs: i, results: r, modelLabel } = state;
 
   const coolantLabel =
@@ -285,7 +301,11 @@ function WaterContent({ state }: { state: WaterCalculatorState }) {
         {"Приточный водяной калорифер "}
         <Text>{modelLabel} </Text>
         {
-          "выпускается в двух, трех и четырех рядном исполнении. Номинальная производительность по воздуху варьируется в зависимости от рядности калорифера и параметров эксплуатации. Конструктивное исполнение воздухонагревателя адаптировано к циклическим температурным расширениям, гидравлическим и аэродинамическим нагрузкам и готово к интеграции в существующий контур без модернизации питающих сетей."
+          "выпускается в двух, трех и четырех рядном исполнении. Номинальная производительность по воздуху – "
+        }
+        <Text>{airPower ?? "-"} </Text>
+        {
+          "метров кубических в час, тепловая мощность варьируется в зависимости от рядности калорифера и параметров эксплуатации. Конструктивное исполнение воздухонагревателя адаптировано к циклическим температурным расширениям, гидравлическим и аэродинамическим нагрузкам и готово к интеграции в существующий контур без модернизации питающих сетей."
         }
       </Text>
       <View style={s.spacer} />
@@ -336,7 +356,7 @@ function WaterContent({ state }: { state: WaterCalculatorState }) {
 
         {/* Строки */}
         <DataTableRow
-          leftLabel={"ОБЪЕМ НАГРЕВАЕМОГО ВОЗДУХА, М\\u00B3/ЧАС"}
+          leftLabel={"ОБЪЕМ НАГРЕВАЕМОГО ВОЗДУХА, М³/ЧАС"}
           leftValue={fmt(i.airVolume, 0)}
           rightLabel="ТЕПЛОВАЯ МОЩНОСТЬ, КВТ"
           rightValue={fmt(r?.thermalPower, 0)}
@@ -362,7 +382,7 @@ function WaterContent({ state }: { state: WaterCalculatorState }) {
         <DataTableRow
           leftLabel="КОНЦЕНТРАЦИЯ ГЛИКОЛЕЙ, %"
           leftValue={fmt(i.glycolConcentration, 0)}
-          rightLabel={"МАССОВАЯ СКОРОСТЬ ВОЗДУХА, КГ/(М\\u00B2\\u2022С)"}
+          rightLabel={"МАССОВАЯ СКОРОСТЬ ВОЗДУХА, КГ/(М²•С)"}
           rightValue={fmt(r?.airMassVelocity, 2)}
         />
         <DataTableRow
@@ -398,7 +418,13 @@ function WaterContent({ state }: { state: WaterCalculatorState }) {
 
 // ─── Паровой документ ─────────────────────────────────────────────────────────
 
-function SteamContent({ state }: { state: SteamCalculatorState }) {
+function SteamContent({
+  state,
+  airPower,
+}: {
+  state: SteamCalculatorState;
+  airPower: number | null;
+}) {
   const { inputs: i, results: r, modelLabel } = state;
 
   return (
@@ -408,7 +434,11 @@ function SteamContent({ state }: { state: SteamCalculatorState }) {
         {"Приточный паровой калорифер "}
         <Text>{modelLabel} </Text>
         {
-          "выпускается в двух, трех и четырех рядном исполнении. Номинальная производительность по воздуху варьируется в зависимости от рядности калорифера и параметров эксплуатации. Конструктивное исполнение воздухонагревателя адаптировано к циклическим температурным расширениям, гидравлическим и аэродинамическим нагрузкам и готово к интеграции в существующий контур без модернизации питающих сетей."
+          "выпускается в двух, трех и четырех рядном исполнении. Номинальная производительность по воздуху – "
+        }
+        <Text>{airPower ?? "-"} </Text>
+        {
+          "метров кубических в час, тепловая мощность варьируется в зависимости от рядности калорифера и параметров эксплуатации. Конструктивное исполнение воздухонагревателя адаптировано к циклическим температурным расширениям, гидравлическим и аэродинамическим нагрузкам и готово к интеграции в существующий контур без модернизации питающих сетей."
         }
       </Text>
       <View style={s.spacer} />
@@ -455,7 +485,7 @@ function SteamContent({ state }: { state: SteamCalculatorState }) {
         </View>
 
         <DataTableRow
-          leftLabel={"ОБЪЕМ НАГРЕВАЕМОГО ВОЗДУХА, М\\u00B3/ЧАС"}
+          leftLabel={"ОБЪЕМ НАГРЕВАЕМОГО ВОЗДУХА, М³/ЧАС"}
           leftValue={fmt(i.airVolume, 0)}
           rightLabel="ТЕПЛОВАЯ МОЩНОСТЬ, КВТ"
           rightValue={fmt(r?.thermalPower, 0)}
@@ -475,7 +505,7 @@ function SteamContent({ state }: { state: SteamCalculatorState }) {
         <DataTableRow
           leftLabel="ДАВЛЕНИЕ СУХОГО НАСЫЩЕННОГО ПАРА, МПА"
           leftValue={i.steamPressure.replace(" МПа", "")}
-          rightLabel={"МАССОВАЯ СКОРОСТЬ ВОЗДУХА, КГ/(М\\u00B2\\u2022С)"}
+          rightLabel={"МАССОВАЯ СКОРОСТЬ ВОЗДУХА, КГ/(М²•С)"}
           rightValue={fmt(r?.airMassVelocity, 2)}
         />
         {/* Последняя строка — левая часть пустая */}
@@ -507,14 +537,18 @@ function SteamContent({ state }: { state: SteamCalculatorState }) {
 
 interface HeaterCalculatorDocumentProps {
   state: CalculatorState;
+  /** Объект товара из products.json — источник airPower и прочих каталожных данных */
+  product?: Product;
 }
 
 export function PritochnyeCalculatorDocument({
   state,
+  product,
 }: HeaterCalculatorDocumentProps) {
   const docNum = calcNum();
   const rows = rowCount(state.inputs.rowCount);
   const label = state.modelLabel;
+  const airPower = product?.airPower ?? null;
 
   return (
     <Document
@@ -577,9 +611,9 @@ export function PritochnyeCalculatorDocument({
 
         {/* ── Тело ── */}
         {state.type === "water" ? (
-          <WaterContent state={state} />
+          <WaterContent state={state} airPower={airPower} />
         ) : (
-          <SteamContent state={state} />
+          <SteamContent state={state} airPower={airPower} />
         )}
 
         {/* ── Футер — логотип ООО ТСТ, выровнен вправо ── */}

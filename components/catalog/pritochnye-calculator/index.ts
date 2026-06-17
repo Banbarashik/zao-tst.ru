@@ -1,6 +1,7 @@
 // Компоненты
 export { WaterCalculator } from "@/components/catalog/pritochnye-calculator/WaterCalculator";
 export { SteamCalculator } from "@/components/catalog/pritochnye-calculator/SteamCalculator";
+export { PdfDownloadButton } from "@/components/catalog/pritochnye-calculator/PdfDownloadButton";
 
 // Конфигурация — для добавления новых моделей
 export {
@@ -11,6 +12,12 @@ export {
 
 // Чистые функции расчёта — для PDF-генерации без рендера UI
 export { calculateWater, calculateSteam } from "@/lib/pritochnye-calculator";
+
+// PDF
+export {
+  generateCalculatorPdf,
+  downloadCalculatorPdf,
+} from "@/lib/generateCalculatorPdf";
 
 // Типы
 export type {

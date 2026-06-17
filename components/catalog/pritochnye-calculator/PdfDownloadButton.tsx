@@ -3,11 +3,12 @@
 import { useState } from "react";
 import type { CalculatorState } from "@/types/pritochnye-calculator";
 import { downloadCalculatorPdf } from "@/lib/generateCalculatorPdf";
+import type { Product } from "@/types";
 
 interface PdfDownloadButtonProps {
   /** Текущее состояние калькулятора. null — кнопка задизейблена. */
   state: CalculatorState | null;
-  /** Опциональный className для стилизации */
+  products: Product[];
   className?: string;
 }
 
@@ -18,6 +19,7 @@ interface PdfDownloadButtonProps {
  */
 export function PdfDownloadButton({
   state,
+  products,
   className,
 }: PdfDownloadButtonProps) {
   const [loading, setLoading] = useState(false);
@@ -30,7 +32,7 @@ export function PdfDownloadButton({
     setLoading(true);
     setError(null);
     try {
-      await downloadCalculatorPdf(state);
+      await downloadCalculatorPdf(state, products);
     } catch (err) {
       console.error("PDF generation failed:", err);
       setError("Не удалось сформировать PDF");
