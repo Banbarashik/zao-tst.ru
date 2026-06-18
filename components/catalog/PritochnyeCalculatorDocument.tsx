@@ -65,8 +65,8 @@ const s = StyleSheet.create({
     marginBottom: 4,
   },
   headerLogo: {
-    width: 50,
-    height: 42,
+    width: 67,
+    height: 53,
     objectFit: "contain",
   },
   headerCenter: {
@@ -198,8 +198,8 @@ const s = StyleSheet.create({
     right: MARGIN,
   },
   footerLogo: {
-    width: 76,
-    height: 45,
+    width: 86,
+    height: 55,
     objectFit: "contain",
   },
 });
