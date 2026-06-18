@@ -31,7 +31,6 @@ Font.register({
 
 // ─── Константы документа ──────────────────────────────────────────────────────
 
-const BORDER_GOLD = "#948A54";
 const TEXT_BLACK = "#000000";
 const FONT = "Roboto";
 
@@ -62,7 +61,6 @@ const s = StyleSheet.create({
   headerTable: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 4,
   },
   headerLogo: {
     width: 67,
@@ -95,12 +93,10 @@ const s = StyleSheet.create({
   metaTable: {
     flexDirection: "row",
     flexWrap: "wrap",
-    marginTop: 6,
-    marginBottom: 4,
   },
   metaCell: {
     width: "25%",
-    paddingVertical: 3,
+    paddingVertical: 5,
     paddingHorizontal: 4,
     fontSize: 10,
   },
@@ -108,20 +104,16 @@ const s = StyleSheet.create({
   // ── Параграфы ──
   para: {
     fontSize: 8,
-    marginBottom: 4,
-    lineHeight: 1.4,
+    lineHeight: 1.2,
     textAlign: "justify",
   },
 
-  spacer: { height: 6 },
+  spacer: { height: 18 },
 
   // ── Регуляторная таблица (2 колонки) ──
-  reg2table: {
-    marginBottom: 6,
-  },
   reg2row: {
     flexDirection: "row",
-    paddingVertical: 2,
+    paddingVertical: 5,
     paddingHorizontal: 4,
     fontSize: 10,
   },
@@ -135,55 +127,49 @@ const s = StyleSheet.create({
   // ── Основная таблица данных ──
   dataTable: {
     borderWidth: 0.5,
-    borderColor: BORDER_GOLD,
     marginBottom: 6,
   },
   dataHeaderRow: {
     flexDirection: "row",
     borderBottomWidth: 0.5,
-    borderBottomColor: BORDER_GOLD,
   },
   dataHeaderCell: {
     width: "50%",
     textAlign: "center",
-    paddingVertical: 4,
+    paddingVertical: 5,
     paddingHorizontal: 4,
     fontSize: 10,
   },
   dataHeaderDivider: {
     borderLeftWidth: 0.5,
-    borderLeftColor: BORDER_GOLD,
   },
   dataRow: {
     flexDirection: "row",
     borderBottomWidth: 0.5,
-    borderBottomColor: BORDER_GOLD,
   },
   dataRowLast: {
     flexDirection: "row",
   },
   dataLabelCell: {
     width: "37.5%",
-    paddingVertical: 3.5,
+    paddingVertical: 5,
     paddingHorizontal: 4,
     fontSize: 8,
     borderLeftWidth: 0.5,
-    borderLeftColor: BORDER_GOLD,
   },
   dataLabelCellFirst: {
     width: "37.5%",
-    paddingVertical: 3.5,
+    paddingVertical: 5,
     paddingHorizontal: 4,
     fontSize: 8,
   },
   dataValueCell: {
     width: "12.5%",
-    paddingVertical: 3.5,
+    paddingVertical: 5,
     paddingHorizontal: 2,
     fontSize: 8,
     textAlign: "center",
     borderLeftWidth: 0.5,
-    borderLeftColor: BORDER_GOLD,
     justifyContent: "center",
   },
   // Для значений, которые могут не поместиться (напр. «пропиленгликоль»)
@@ -311,7 +297,7 @@ function WaterContent({
       <View style={s.spacer} />
 
       {/* Регуляторная таблица */}
-      <View style={s.reg2table}>
+      <View>
         {[
           ["Предприятие-производитель", "ООО «Т.С.Т.»"],
           ["Технические требования", "ТУ 4863-006-55613706-25"],
@@ -443,7 +429,7 @@ function SteamContent({
       </Text>
       <View style={s.spacer} />
 
-      <View style={s.reg2table}>
+      <View>
         {[
           ["Предприятие-производитель", "ООО «Т.С.Т.»"],
           ["Технические требования", "ТУ 4863-006-55613706-25"],
@@ -579,6 +565,8 @@ export function PritochnyeCalculatorDocument({
           {/* Правый логотип */}
           <Image src={LOGO_HEADER} style={s.headerLogo} />
         </View>
+
+        <View style={s.spacer} />
 
         {/* ── Мета-строки (номер / дата / модель / рядность) ── */}
         <View style={s.metaTable}>
