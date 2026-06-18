@@ -75,18 +75,18 @@ const s = StyleSheet.create({
     paddingHorizontal: 6,
   },
   headerBold: {
-    fontSize: 11,
+    fontSize: 16,
     fontFamily: "Roboto",
     fontWeight: "bold",
     textAlign: "center",
   },
   headerNormal: {
-    fontSize: 10,
+    fontSize: 13,
     textAlign: "center",
     lineHeight: 1.3,
   },
   headerSmall: {
-    fontSize: 8,
+    fontSize: 11,
     textAlign: "center",
     lineHeight: 1.3,
   },
