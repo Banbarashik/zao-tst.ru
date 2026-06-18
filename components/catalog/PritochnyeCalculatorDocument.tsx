@@ -184,15 +184,8 @@ const s = StyleSheet.create({
     fontSize: 6.5,
   },
   // Для невалидных значений (выходящих за пределы диапазона)
-  dataValueCellInvalid: {
-    width: "12.5%",
-    paddingVertical: 5,
-    paddingHorizontal: 2,
-    fontSize: 8,
-    textAlign: "center",
-    borderLeftWidth: 0.5,
-    justifyContent: "center",
-    backgroundColor: "#FF6347",
+  dataValueTextInvalid: {
+    color: "#FF6347",
   },
 
   // ── Футер ──
@@ -263,9 +256,9 @@ function DataTableRow({
     leftValue.length > LONG_VALUE_THRESHOLD ? s.dataValueSmall : undefined;
   const rightValueStyle =
     rightValue.length > LONG_VALUE_THRESHOLD ? s.dataValueSmall : undefined;
-  const rightValueCellStyle = rightValueInvalid
-    ? s.dataValueCellInvalid
-    : s.dataValueCell;
+  const rightValueTextStyle: any = rightValueInvalid
+    ? [rightValueStyle, s.dataValueTextInvalid].filter(Boolean)
+    : rightValueStyle;
 
   return (
     <View style={rowStyle}>
@@ -278,8 +271,8 @@ function DataTableRow({
       <View style={s.dataLabelCell}>
         <Text>{rightLabel}</Text>
       </View>
-      <View style={rightValueCellStyle}>
-        <Text style={rightValueStyle}>{rightValue}</Text>
+      <View style={s.dataValueCell}>
+        <Text style={rightValueTextStyle}>{rightValue}</Text>
       </View>
     </View>
   );
