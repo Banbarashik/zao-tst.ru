@@ -10,6 +10,11 @@ import type {
 } from "@/types/pritochnye-calculator";
 import { WATER_MODELS } from "@/data/pritochnye-calculator-models";
 import { calculateWater } from "@/lib/pritochnye-calculator";
+import {
+  WATER_RESULT_RANGES,
+  validateWaterResults,
+  isValueInRange,
+} from "@/lib/pritochnye-calculator-validation";
 
 // ─── Вспомогательные компоненты ──────────────────────────────────────────────
 
@@ -19,7 +24,7 @@ interface ResultFieldProps {
   unit?: string;
   decimals?: number;
   /** Диапазон допустимых значений для подсветки */
-  validRange?: [number, number];
+  validRange?: readonly [number, number];
 }
 
 function ResultField({
@@ -120,11 +125,13 @@ export function WaterCalculator({
     recalculate(next);
   }
 
+  const validation = validateWaterResults(results);
   const reserveOk =
     results !== null &&
-    isFinite(results.heatingAreaReserve) &&
-    results.heatingAreaReserve >= 0 &&
-    results.heatingAreaReserve <= 20;
+    isValueInRange(
+      results.heatingAreaReserve,
+      WATER_RESULT_RANGES.heatingAreaReserve,
+    );
 
   const reserveDisplay =
     results === null || !isFinite(results.heatingAreaReserve)
@@ -283,13 +290,13 @@ export function WaterCalculator({
           label="Массовая скорость воздуха в фронт. сечении, кг/м²·с"
           value={results?.airMassVelocity ?? null}
           decimals={2}
-          validRange={[1.5, 8]}
+          validRange={WATER_RESULT_RANGES.airMassVelocity}
         />
         <ResultField
           label="Скорость теплоносителя, м/сек"
           value={results?.coolantVelocity ?? null}
           decimals={2}
-          validRange={[0.12, 1.2]}
+          validRange={WATER_RESULT_RANGES.coolantVelocity}
         />
       </div>
     </div>

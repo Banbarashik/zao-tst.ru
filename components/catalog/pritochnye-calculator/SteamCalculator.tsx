@@ -13,6 +13,11 @@ import {
   type SteamPressure,
 } from "@/data/pritochnye-calculator-models";
 import { calculateSteam } from "@/lib/pritochnye-calculator";
+import {
+  STEAM_RESULT_RANGES,
+  validateSteamResults,
+  isValueInRange,
+} from "@/lib/pritochnye-calculator-validation";
 
 // ─── Вспомогательный компонент ────────────────────────────────────────────────
 
@@ -20,7 +25,7 @@ interface ResultFieldProps {
   label: string;
   value: number | null;
   decimals?: number;
-  validRange?: [number, number];
+  validRange?: readonly [number, number];
 }
 
 function ResultField({
@@ -114,11 +119,13 @@ export function SteamCalculator({
     recalculate(next);
   }
 
+  const validation = validateSteamResults(results);
   const reserveOk =
     results !== null &&
-    isFinite(results.heatingAreaReserve) &&
-    results.heatingAreaReserve >= 0 &&
-    results.heatingAreaReserve <= 20;
+    isValueInRange(
+      results.heatingAreaReserve,
+      STEAM_RESULT_RANGES.heatingAreaReserve,
+    );
 
   const reserveDisplay =
     results === null || !isFinite(results.heatingAreaReserve)
@@ -225,7 +232,7 @@ export function SteamCalculator({
           label="Массовая скорость воздуха в фронт. сечении, кг/м²·с"
           value={results?.airMassVelocity ?? null}
           decimals={2}
-          validRange={[1.5, 8]}
+          validRange={STEAM_RESULT_RANGES.airMassVelocity}
         />
       </div>
     </div>

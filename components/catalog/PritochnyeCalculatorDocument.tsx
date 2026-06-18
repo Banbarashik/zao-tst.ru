@@ -13,6 +13,13 @@ import type {
   SteamCalculatorState,
 } from "@/types/pritochnye-calculator";
 import { Product } from "@/types";
+import {
+  validateWaterResults,
+  validateSteamResults,
+  WATER_RESULT_RANGES,
+  STEAM_RESULT_RANGES,
+  isFieldInvalid,
+} from "@/lib/pritochnye-calculator-validation";
 
 // ─── Регистрация шрифта ───────────────────────────────────────────────────────
 Font.register({
@@ -176,6 +183,17 @@ const s = StyleSheet.create({
   dataValueSmall: {
     fontSize: 6.5,
   },
+  // Для невалидных значений (выходящих за пределы диапазона)
+  dataValueCellInvalid: {
+    width: "12.5%",
+    paddingVertical: 5,
+    paddingHorizontal: 2,
+    fontSize: 8,
+    textAlign: "center",
+    borderLeftWidth: 0.5,
+    justifyContent: "center",
+    backgroundColor: "#FF6347",
+  },
 
   // ── Футер ──
   footer: {
@@ -225,6 +243,7 @@ interface DataRowProps {
   rightLabel: string;
   rightValue: string;
   isLast?: boolean;
+  rightValueInvalid?: boolean;
 }
 
 // Значение считается «длинным» если оно шире узкой ячейки (~65pt при 8pt шрифте).
@@ -237,12 +256,17 @@ function DataTableRow({
   rightLabel,
   rightValue,
   isLast,
+  rightValueInvalid,
 }: DataRowProps) {
   const rowStyle = isLast ? s.dataRowLast : s.dataRow;
   const leftValueStyle =
     leftValue.length > LONG_VALUE_THRESHOLD ? s.dataValueSmall : undefined;
   const rightValueStyle =
     rightValue.length > LONG_VALUE_THRESHOLD ? s.dataValueSmall : undefined;
+  const rightValueCellStyle = rightValueInvalid
+    ? s.dataValueCellInvalid
+    : s.dataValueCell;
+
   return (
     <View style={rowStyle}>
       <View style={s.dataLabelCellFirst}>
@@ -254,7 +278,7 @@ function DataTableRow({
       <View style={s.dataLabelCell}>
         <Text>{rightLabel}</Text>
       </View>
-      <View style={s.dataValueCell}>
+      <View style={rightValueCellStyle}>
         <Text style={rightValueStyle}>{rightValue}</Text>
       </View>
     </View>
@@ -271,6 +295,7 @@ function WaterContent({
   airPower: number | null;
 }) {
   const { inputs: i, results: r, modelLabel } = state;
+  const validation = validateWaterResults(r);
 
   const coolantLabel =
     i.coolant === "water"
@@ -346,6 +371,7 @@ function WaterContent({
           leftValue={fmt(i.airVolume, 0)}
           rightLabel="ТЕПЛОВАЯ МОЩНОСТЬ, КВТ"
           rightValue={fmt(r?.thermalPower, 0)}
+          rightValueInvalid={!validation.thermalPower}
         />
         <DataTableRow
           leftLabel="ТЕМПЕРАТУРА ВХОДЯЩЕГО ВОЗДУХА, °С"
@@ -370,18 +396,21 @@ function WaterContent({
           leftValue={fmt(i.glycolConcentration, 0)}
           rightLabel={"МАССОВАЯ СКОРОСТЬ ВОЗДУХА, КГ/(М²•С)"}
           rightValue={fmt(r?.airMassVelocity, 2)}
+          rightValueInvalid={!validation.airMassVelocity}
         />
         <DataTableRow
           leftLabel="ТЕМПЕРАТУРА ТЕПЛОНОСИТЕЛЯ НА ВХОДЕ, °С"
           leftValue={fmt(i.coolantInputT, 0)}
           rightLabel="СКОРОСТЬ ТЕПЛОНОСИТЕЛЯ, М/СЕК"
           rightValue={fmt(r?.coolantVelocity, 2)}
+          rightValueInvalid={!validation.coolantVelocity}
         />
         <DataTableRow
           leftLabel="ТЕМПЕРАТУРА ТЕПЛОНОСИТЕЛЯ НА ВЫХОДЕ, °С"
           leftValue={fmt(i.coolantOutputT, 0)}
           rightLabel="ЗАПАС ПОВЕРХНОСТИ НАГРЕВА, %"
           rightValue={fmt(r?.heatingAreaReserve, 0)}
+          rightValueInvalid={!validation.heatingAreaReserve}
           isLast
         />
       </View>
@@ -412,6 +441,7 @@ function SteamContent({
   airPower: number | null;
 }) {
   const { inputs: i, results: r, modelLabel } = state;
+  const validation = validateSteamResults(r);
 
   return (
     <>
@@ -475,6 +505,7 @@ function SteamContent({
           leftValue={fmt(i.airVolume, 0)}
           rightLabel="ТЕПЛОВАЯ МОЩНОСТЬ, КВТ"
           rightValue={fmt(r?.thermalPower, 0)}
+          rightValueInvalid={!validation.thermalPower}
         />
         <DataTableRow
           leftLabel="ТЕМПЕРАТУРА ВХОДЯЩЕГО ВОЗДУХА, °С"
@@ -487,12 +518,14 @@ function SteamContent({
           leftValue={fmt(i.airOutputT, 0)}
           rightLabel="РАСХОД ТЕПЛОНОСИТЕЛЯ, КГ/ЧАС"
           rightValue={fmt(r?.steamConsumption, 0)}
+          rightValueInvalid={!validation.steamConsumption}
         />
         <DataTableRow
           leftLabel="ДАВЛЕНИЕ СУХОГО НАСЫЩЕННОГО ПАРА, МПА"
           leftValue={i.steamPressure.replace(" МПа", "")}
           rightLabel={"МАССОВАЯ СКОРОСТЬ ВОЗДУХА, КГ/(М²•С)"}
           rightValue={fmt(r?.airMassVelocity, 2)}
+          rightValueInvalid={!validation.airMassVelocity}
         />
         {/* Последняя строка — левая часть пустая */}
         <DataTableRow
@@ -500,6 +533,7 @@ function SteamContent({
           leftValue=""
           rightLabel="ЗАПАС ПОВЕРХНОСТИ НАГРЕВА, %"
           rightValue={fmt(r?.heatingAreaReserve, 0)}
+          rightValueInvalid={!validation.heatingAreaReserve}
           isLast
         />
       </View>
