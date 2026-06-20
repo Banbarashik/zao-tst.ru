@@ -16,9 +16,6 @@ import { Product } from "@/types";
 import {
   validateWaterResults,
   validateSteamResults,
-  WATER_RESULT_RANGES,
-  STEAM_RESULT_RANGES,
-  isFieldInvalid,
 } from "@/lib/pritochnye-calculator-validation";
 
 // ─── Регистрация шрифта ───────────────────────────────────────────────────────
@@ -58,7 +55,7 @@ const s = StyleSheet.create({
     fontFamily: FONT,
     fontSize: 8, // 8pt ≈ 16 half-pts (основной текст шаблона)
     paddingTop: MARGIN,
-    paddingBottom: MARGIN + 30, // + место под логотип футера
+    paddingBottom: MARGIN - 20, // + место под логотип футера
     paddingHorizontal: MARGIN,
     color: TEXT_BLACK,
     backgroundColor: "#FFFFFF",
@@ -120,7 +117,7 @@ const s = StyleSheet.create({
   // ── Регуляторная таблица (2 колонки) ──
   reg2row: {
     flexDirection: "row",
-    paddingVertical: 5,
+    paddingVertical: 3,
     paddingHorizontal: 4,
     fontSize: 10,
   },
@@ -214,7 +211,7 @@ const s = StyleSheet.create({
   // ── Футер ──
   footer: {
     position: "absolute",
-    bottom: MARGIN,
+    bottom: MARGIN - 15,
     right: MARGIN,
   },
   footerLogo: {
