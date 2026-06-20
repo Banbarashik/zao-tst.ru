@@ -197,6 +197,19 @@ const s = StyleSheet.create({
   dataValueTextInvalid: {
     color: "#7f1d1d",
   },
+  warningBox: {
+    marginTop: 6,
+    paddingVertical: 6,
+    paddingHorizontal: 8,
+    borderWidth: 0.5,
+    borderColor: "#b91c1c",
+    backgroundColor: "#fef2f2",
+  },
+  warningText: {
+    color: "#7f1d1d",
+    fontSize: 8,
+    lineHeight: 1.2,
+  },
 
   // ── Футер ──
   footer: {
@@ -287,6 +300,25 @@ function DataTableRow({
       <View style={rightValueCellStyle}>
         <Text style={rightValueTextStyle}>{rightValue}</Text>
       </View>
+    </View>
+  );
+}
+
+function ValidationWarning({
+  hasInvalidValues,
+}: {
+  hasInvalidValues: boolean;
+}) {
+  if (!hasInvalidValues) return null;
+
+  return (
+    <View style={s.warningBox}>
+      <Text style={s.warningText}>
+        Выделенные цветом и фоном параметры результатов расчета выходят за рамки
+        стандартных рекомендаций по эксплуатации и превышают рекомендуемые
+        рабочие значения или расчетные запасы. Просим проверить корректность
+        введенных данных.
+      </Text>
     </View>
   );
 }
@@ -420,6 +452,9 @@ function WaterContent({
           isLast
         />
       </View>
+      <ValidationWarning
+        hasInvalidValues={Object.values(validation).some((value) => !value)}
+      />
       <View style={s.spacer} />
 
       {/* Нижний параграф */}
@@ -543,6 +578,9 @@ function SteamContent({
           isLast
         />
       </View>
+      <ValidationWarning
+        hasInvalidValues={Object.values(validation).some((value) => !value)}
+      />
       <View style={s.spacer} />
 
       <Text style={s.para}>
