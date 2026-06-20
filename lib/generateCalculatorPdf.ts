@@ -1,12 +1,20 @@
+import productData from "@/data/products.json";
+
 import { pdf } from "@react-pdf/renderer";
 import { createElement } from "react";
+import { mergePdfs, fetchDrawingPdf } from "@/lib/mergePdfs";
+import { MODEL_DRAWINGS } from "@/data/pritochnye-calculator-drawings";
 import type { CalculatorState } from "@/types/pritochnye-calculator";
 import type { Product } from "@/types";
 import { PritochnyeCalculatorDocument } from "@/components/catalog/PritochnyeCalculatorDocument";
 
 /**
  * Генерирует PDF из состояния калькулятора и возвращает Blob.
- * Вызывается на клиенте (браузер).
+ *
+ * Если для модели существует чертёж в MODEL_DRAWINGS, он подгружается
+ * и добавляется второй страницей к сгенерированному документу.
+ * Отсутствие чертежа не приводит к ошибке — документ просто состоит
+ * из одной страницы, как раньше.
  *
  * @param state    Текущее состояние калькулятора (inputs + results)
  * @param products Массив товаров из products.json — нужен для airPower
@@ -16,10 +24,25 @@ export async function generateCalculatorPdf(
   state: CalculatorState,
   products: Product[],
 ): Promise<Blob> {
-  const product = products.find((p) => p.id === state.inputs.modelId);
+  const product = productData.find((p) => p.id === state.inputs.modelId);
   const doc = createElement(PritochnyeCalculatorDocument, { state, product });
-  const blob = await pdf(doc).toBlob();
-  return blob;
+  const mainBlob = await pdf(doc).toBlob();
+
+  const drawingUrl = MODEL_DRAWINGS[state.inputs.modelId];
+  if (!drawingUrl) {
+    // Чертежа для этой модели ещё нет — отдаём документ как есть
+    return mainBlob;
+  }
+
+  const drawingBytes = await fetchDrawingPdf(drawingUrl);
+  if (!drawingBytes) {
+    // Файл прописан в конфиге, но не загрузился (404, сеть и т.д.) —
+    // не блокируем пользователя, просто отдаём документ без чертежа
+    console.warn(`Не удалось загрузить чертёж: ${drawingUrl}`);
+    return mainBlob;
+  }
+
+  return mergePdfs([mainBlob, drawingBytes]);
 }
 
 /**
@@ -37,7 +60,6 @@ export async function downloadCalculatorPdf(
     .replace(/[^a-zA-Zа-яА-Я0-9_\-x]/g, "");
 
   const name = filename ?? `Расчёт_${safeLabel}`;
-
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement("a");
   anchor.href = url;
