@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { usePdf } from "@/hooks/usePdf";
+
 import type { CalculatorState } from "@/types/pritochnye-calculator";
-import { downloadCalculatorPdf } from "@/lib/generateCalculatorPdf";
 import type { Product } from "@/types";
 
 interface PdfDownloadButtonProps {
@@ -22,23 +22,22 @@ export function PdfDownloadButton({
   products,
   className,
 }: PdfDownloadButtonProps) {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const disabled = state === null || state.results === null || loading;
+  const { loading, error, disabled, generate } = usePdf({ state, products });
 
   async function handleClick() {
-    if (!state) return;
-    setLoading(true);
-    setError(null);
-    try {
-      await downloadCalculatorPdf(state, products);
-    } catch (err) {
-      console.error("PDF generation failed:", err);
-      setError("Не удалось сформировать PDF");
-    } finally {
-      setLoading(false);
-    }
+    const blob = await generate();
+    if (!blob || !state) return;
+
+    const safeLabel = state.modelLabel
+      .replace(/\s+/g, "_")
+      .replace(/[^a-zA-Zа-яА-Я0-9_\-x]/g, "");
+
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = `Расчёт_${safeLabel}.pdf`;
+    anchor.click();
+    URL.revokeObjectURL(url);
   }
 
   return (
@@ -64,7 +63,6 @@ export function PdfDownloadButton({
       >
         {loading ? "Формирование PDF…" : "Скачать PDF"}
       </button>
-
       {error && (
         <p style={{ color: "#cc3300", fontSize: 12, marginTop: 4 }}>{error}</p>
       )}

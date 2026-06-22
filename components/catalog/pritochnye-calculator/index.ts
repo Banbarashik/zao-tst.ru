@@ -2,6 +2,10 @@
 export { WaterCalculator } from "@/components/catalog/pritochnye-calculator/WaterCalculator";
 export { SteamCalculator } from "@/components/catalog/pritochnye-calculator/SteamCalculator";
 export { PdfDownloadButton } from "@/components/catalog/pritochnye-calculator/PdfDownloadButton";
+export { PdfPrintButton } from "@/components/catalog/pritochnye-calculator/PdfPrintButton";
+
+// Хуки
+export { usePdf } from "@/hooks/usePdf";
 
 // Конфигурация — для добавления новых моделей
 export {
