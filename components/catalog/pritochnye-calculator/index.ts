@@ -1,4 +1,5 @@
 // Компоненты
+export { CalculatorBlock } from "@/components/catalog/pritochnye-calculator/CalculatorBlock";
 export { WaterCalculator } from "@/components/catalog/pritochnye-calculator/WaterCalculator";
 export { SteamCalculator } from "@/components/catalog/pritochnye-calculator/SteamCalculator";
 export { PdfDownloadButton } from "@/components/catalog/pritochnye-calculator/PdfDownloadButton";
