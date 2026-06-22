@@ -37,14 +37,14 @@ function ResultField({
   const formatted =
     value === null || !isFinite(value) ? "" : value.toFixed(decimals);
 
-  let bg = "bg-[rgb(217,217,217)]";
-  if (validRange && formatted !== "") {
-    const num = parseFloat(formatted);
-    bg =
-      num < validRange[0] || num > validRange[1]
-        ? "bg-[rgb(255,160,122)]"
-        : "bg-[rgb(217,217,217)]";
-  }
+  const isInvalidValue =
+    validRange !== undefined && value !== null && isFinite(value)
+      ? !isValueInRange(value, validRange)
+      : false;
+
+  const inputStyle = {
+    backgroundColor: isInvalidValue ? "rgb(255,160,122)" : "rgb(217,217,217)",
+  };
 
   return (
     <p className="unselectable mt-0 mb-1.5">
@@ -53,7 +53,8 @@ function ResultField({
         readOnly
         disabled
         value={formatted}
-        className={`${bg} ml-2 w-24 px-1`}
+        style={inputStyle}
+        className="ml-2 w-24 px-1"
       />
     </p>
   );
@@ -120,17 +121,19 @@ export function SteamCalculator({
   }
 
   const validation = validateSteamResults(results);
+  const hasReserveValue =
+    results !== null && isFinite(results.heatingAreaReserve);
   const reserveOk =
-    results !== null &&
+    hasReserveValue &&
     isValueInRange(
       results.heatingAreaReserve,
       STEAM_RESULT_RANGES.heatingAreaReserve,
     );
+  const reserveInvalid = hasReserveValue && !reserveOk;
 
-  const reserveDisplay =
-    results === null || !isFinite(results.heatingAreaReserve)
-      ? "%"
-      : `${results.heatingAreaReserve.toFixed(0)} %`;
+  const reserveDisplay = !hasReserveValue
+    ? "%"
+    : `${results.heatingAreaReserve.toFixed(0)} %`;
 
   return (
     <div className="space-y-6 border border-[rgb(180,180,180)] p-2 text-right">
@@ -206,9 +209,9 @@ export function SteamCalculator({
             value={reserveDisplay}
             style={{
               width: 65,
-              backgroundColor: reserveOk
-                ? "rgb(255,255,255)"
-                : "rgb(255,160,122)",
+              backgroundColor: reserveInvalid
+                ? "rgb(255,160,122)"
+                : "rgb(255,255,255)",
             }}
           />
         </p>
