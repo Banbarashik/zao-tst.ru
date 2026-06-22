@@ -139,7 +139,7 @@ export function WaterCalculator({
       : `${results.heatingAreaReserve.toFixed(0)} %`;
 
   return (
-    <div className="space-y-6 border border-[rgb(180,180,180)] p-2 text-right">
+    <div className="calculator advanced-calculator">
       {/* Модель */}
       <div>
         <span className="unselectable">Модель калорифера</span>
@@ -147,6 +147,7 @@ export function WaterCalculator({
           value={inputs.rowCount}
           onChange={(e) => update("rowCount", e.target.value as RowCount)}
           style={{ backgroundColor: "rgb(176, 196, 222)" }}
+          className="ml-2"
         >
           {(["2_rows", "3_rows", "4_rows"] as RowCount[]).map((r) => (
             <option key={r} value={r}>
@@ -165,6 +166,7 @@ export function WaterCalculator({
             placeholder="м³/ч"
             value={inputs.airVolume || ""}
             onChange={(e) => update("airVolume", +e.target.value)}
+            className="ml-2"
           />
         </p>
         <p className="unselectable">
@@ -174,6 +176,7 @@ export function WaterCalculator({
             placeholder="°С"
             value={inputs.airInputT || ""}
             onChange={(e) => update("airInputT", +e.target.value)}
+            className="ml-2"
           />
         </p>
         <p className="unselectable">
@@ -183,12 +186,13 @@ export function WaterCalculator({
             placeholder="°С"
             value={inputs.airOutputT || ""}
             onChange={(e) => update("airOutputT", +e.target.value)}
+            className="ml-2"
           />
         </p>
       </div>
 
       {/* Теплоноситель */}
-      <div style={{ marginTop: 15 }} className="unselectable">
+      <div style={{ margin: "5px 0 0 0" }} className="unselectable inline-flex">
         <span>Теплоноситель</span>
         {(
           [
@@ -237,6 +241,7 @@ export function WaterCalculator({
             placeholder="°С"
             value={inputs.coolantInputT || ""}
             onChange={(e) => update("coolantInputT", +e.target.value)}
+            className="ml-2"
           />
         </p>
         <p className="unselectable">
@@ -246,6 +251,7 @@ export function WaterCalculator({
             placeholder="°С"
             value={inputs.coolantOutputT || ""}
             onChange={(e) => update("coolantOutputT", +e.target.value)}
+            className="ml-2"
           />
         </p>
       </div>
@@ -263,6 +269,7 @@ export function WaterCalculator({
                 ? "rgb(255,255,255)"
                 : "rgb(255,160,122)",
             }}
+            className="ml-2"
           />
         </p>
 

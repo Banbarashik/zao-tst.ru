@@ -28,7 +28,7 @@ export function CalculatorBlock({
   const [state, setState] = useState<CalculatorState | null>(null);
 
   return (
-    <div className={cn("rounded-xl border bg-white p-4", className)}>
+    <div className={cn("legacy-html legacy-calculator", className)}>
       {type === "water" ? (
         <WaterCalculator modelId={modelId} onStateChange={setState} />
       ) : (
