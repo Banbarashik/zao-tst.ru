@@ -28,14 +28,14 @@ export function CalculatorBlock({
   const [state, setState] = useState<CalculatorState | null>(null);
 
   return (
-    <div className={cn(className)}>
+    <div className={cn("border border-[#b4b4b4] p-3", className)}>
       {type === "water" ? (
         <WaterCalculator modelId={modelId} onStateChange={setState} />
       ) : (
         <SteamCalculator modelId={modelId} onStateChange={setState} />
       )}
 
-      <div className="mt-4 flex flex-wrap justify-end gap-3">
+      <div className="flex justify-end gap-2">
         <PdfPrintButton state={state} products={products} />
         <PdfDownloadButton state={state} products={products} />
       </div>
