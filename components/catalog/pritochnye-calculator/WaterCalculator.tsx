@@ -194,39 +194,33 @@ export function WaterCalculator({
       </div>
 
       {/* Теплоноситель */}
-      <div style={{ margin: "5px 0 0 0" }} className="unselectable inline-flex">
-        <span>Теплоноситель</span>
-        {(
-          [
-            ["water", "вода"],
-            ["ethyleneGlycol", "этиленгликоль"],
-            ["propyleneGlycol", "пропиленгликоль"],
-          ] as [CoolantType, string][]
-        ).map(([val, label]) => (
-          <label key={val} className="ml-2">
-            <input
-              type="radio"
-              name={`coolant-${modelId}`}
-              value={val}
-              checked={inputs.coolant === val}
-              onChange={() => update("coolant", val)}
-            />{" "}
-            {label}
-          </label>
-        ))}
-      </div>
-
-      <div className="numbers_input">
-        <p
-          className="unselectable"
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            alignItems: "center",
-          }}
-        >
+      <div className="space-y-1.5">
+        <div className="space-x-2">
+          <span>Теплоноситель</span>
+          {(
+            [
+              ["water", "вода"],
+              ["ethyleneGlycol", "этиленгликоль"],
+              ["propyleneGlycol", "пропиленгликоль"],
+            ] as [CoolantType, string][]
+          ).map(([val, label]) => (
+            <label key={val} className="space-x-1">
+              <input
+                type="radio"
+                name={`coolant-${modelId}`}
+                value={val}
+                checked={inputs.coolant === val}
+                onChange={() => update("coolant", val)}
+              />
+              <span>{label}</span>
+            </label>
+          ))}
+        </div>
+        <div className="flex items-center gap-1">
           <span>Концентрация гликолей:</span>
-          <span style={{ width: 50 }}>{inputs.glycolConcentration} %</span>
+          <span className="w-11.5 text-right">
+            {inputs.glycolConcentration} %
+          </span>
           <input
             type="range"
             min={0}
@@ -234,28 +228,29 @@ export function WaterCalculator({
             step={1}
             value={inputs.glycolConcentration}
             onChange={(e) => update("glycolConcentration", +e.target.value)}
+            className="ml-1.25 w-45 appearance-none overflow-hidden rounded-sm border border-[#723910] bg-[#c0c0c0] p-0 outline-none [&::-webkit-slider-thumb]:h-3.75 [&::-webkit-slider-thumb]:w-2.5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-[#434343] [&::-webkit-slider-thumb]:[box-shadow:-89px_0_0_80px_rgb(176,196,222)]"
           />
-        </p>
-        <p className="unselectable">
-          Температура теплоносителя на входе:
+        </div>
+        <div className="flex gap-2 bg-red-200">
+          <div className="py-1">Температура теплоносителя на входе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.coolantInputT || ""}
             onChange={(e) => update("coolantInputT", +e.target.value)}
-            className="ml-2"
+            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
-        <p className="unselectable">
-          Температура теплоносителя на выходе:
+        </div>
+        <div className="flex gap-2 bg-red-200">
+          <div className="py-1">Температура теплоносителя на выходе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.coolantOutputT || ""}
             onChange={(e) => update("coolantOutputT", +e.target.value)}
-            className="ml-2"
+            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
+        </div>
       </div>
 
       {/* Результаты */}
