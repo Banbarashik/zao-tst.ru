@@ -44,11 +44,11 @@ function ResultField({
       : false;
 
   return (
-    <div className="flex justify-end gap-2">
+    <div className="flex items-center justify-end gap-2 text-right">
       <div className="py-1">{label}</div>
       <div
         className={cn(
-          "flex basis-25 items-center rounded-sm border border-[#723910] p-1.25 leading-none select-none",
+          "flex min-h-8 w-25 shrink-0 items-center rounded-sm border border-[#723910] p-1.25 leading-none select-none",
           isInvalidValue ? "bg-[#ffa07a]" : "bg-[#d9d9d9]",
         )}
       >
@@ -143,7 +143,7 @@ export function WaterCalculator({
     <div className="space-y-4.5">
       {/* Модель */}
       <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
-        <div className="py-1 text-right">Модель калорифера</div>
+        <div className="py-1">Модель калорифера</div>
         <select
           value={inputs.rowCount}
           onChange={(e) => update("rowCount", e.target.value as RowCount)}
@@ -160,7 +160,7 @@ export function WaterCalculator({
       {/* Воздух */}
       <div className="space-y-1.5">
         <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
-          <div className="py-1 text-right">Объём нагреваемого воздуха:</div>
+          <div className="py-1">Объём нагреваемого воздуха:</div>
           <input
             type="number"
             placeholder="м³/ч"
@@ -170,7 +170,7 @@ export function WaterCalculator({
           />
         </div>
         <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
-          <div className="py-1 text-right">Температура входящего воздуха:</div>
+          <div className="py-1">Температура входящего воздуха:</div>
           <input
             type="number"
             placeholder="°С"
@@ -180,9 +180,7 @@ export function WaterCalculator({
           />
         </div>
         <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
-          <div className="py-1 text-right">
-            Требуемая температура воздуха на выходе:
-          </div>
+          <div className="py-1">Требуемая температура воздуха на выходе:</div>
           <input
             type="number"
             placeholder="°С"
@@ -255,13 +253,13 @@ export function WaterCalculator({
 
       {/* Результаты */}
       <div className="space-y-2">
-        <div className="mb-5 flex justify-end gap-2">
+        <div className="mb-5 flex items-center justify-end gap-2 text-right">
           <div className="py-1">
             Запас площади поверхности нагрева калорифера:
           </div>
           <div
             className={cn(
-              "flex basis-16 items-center overflow-x-hidden rounded-sm border border-[#723910] p-1.25 leading-none text-nowrap select-none",
+              "flex min-h-8 w-25 shrink-0 items-center overflow-x-hidden rounded-sm border border-[#723910] p-1.25 leading-none text-nowrap select-none sm:w-16",
               reserveInvalid ? "bg-[#ffa07a]" : "bg-[#ffffff]",
             )}
           >
