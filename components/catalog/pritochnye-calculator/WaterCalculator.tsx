@@ -47,7 +47,7 @@ function ResultField({
   };
 
   return (
-    <div className="flex gap-2 bg-green-200">
+    <div className="flex gap-2">
       <div className="py-1">{label}</div>
       <div
         style={inputStyle}
@@ -141,9 +141,9 @@ export function WaterCalculator({
     : `${results.heatingAreaReserve.toFixed(0)} %`;
 
   return (
-    <div className="space-y-1.5">
+    <div className="space-y-4.5">
       {/* Модель */}
-      <div className="flex gap-2 bg-gray-200">
+      <div className="flex justify-end gap-2">
         <div className="py-1">Модель калорифера</div>
         <select
           value={inputs.rowCount}
@@ -160,34 +160,34 @@ export function WaterCalculator({
 
       {/* Воздух */}
       <div className="space-y-1.5">
-        <div className="flex gap-2 bg-amber-200">
+        <div className="flex gap-2">
           <div className="py-1">Объём нагреваемого воздуха:</div>
           <input
             type="number"
             placeholder="м³/ч"
             value={inputs.airVolume || ""}
             onChange={(e) => update("airVolume", +e.target.value)}
-            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
-        <div className="flex gap-2 bg-amber-200">
+        <div className="flex gap-2">
           <div className="py-1">Температура входящего воздуха:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.airInputT || ""}
             onChange={(e) => update("airInputT", +e.target.value)}
-            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
-        <div className="flex gap-2 bg-amber-200">
+        <div className="flex gap-2">
           <div className="py-1">Требуемая температура воздуха на выходе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.airOutputT || ""}
             onChange={(e) => update("airOutputT", +e.target.value)}
-            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
       </div>
@@ -230,31 +230,31 @@ export function WaterCalculator({
             className="ml-1.25 w-45 appearance-none overflow-hidden rounded-sm border border-[#723910] bg-[#c0c0c0] p-0 outline-none [&::-webkit-slider-thumb]:h-3.75 [&::-webkit-slider-thumb]:w-2.5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-[#434343] [&::-webkit-slider-thumb]:[box-shadow:-89px_0_0_80px_rgb(176,196,222)]"
           />
         </div>
-        <div className="flex gap-2 bg-red-200">
+        <div className="flex gap-2">
           <div className="py-1">Температура теплоносителя на входе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.coolantInputT || ""}
             onChange={(e) => update("coolantInputT", +e.target.value)}
-            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
-        <div className="flex gap-2 bg-red-200">
+        <div className="flex gap-2">
           <div className="py-1">Температура теплоносителя на выходе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.coolantOutputT || ""}
             onChange={(e) => update("coolantOutputT", +e.target.value)}
-            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
       </div>
 
       {/* Результаты */}
       <div className="space-y-2">
-        <div className="mb-5 flex gap-2 bg-green-200">
+        <div className="mb-5 flex gap-2">
           <div className="py-1">
             Запас площади поверхности нагрева калорифера:
           </div>
