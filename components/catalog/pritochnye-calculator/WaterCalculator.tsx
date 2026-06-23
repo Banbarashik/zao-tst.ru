@@ -143,13 +143,12 @@ export function WaterCalculator({
   return (
     <div className="space-y-1.5">
       {/* Модель */}
-      <div>
-        <span className="unselectable">Модель калорифера</span>
+      <div className="flex gap-2 bg-gray-200">
+        <div className="py-1">Модель калорифера</div>
         <select
           value={inputs.rowCount}
           onChange={(e) => update("rowCount", e.target.value as RowCount)}
-          style={{ backgroundColor: "rgb(176, 196, 222)" }}
-          className="ml-2"
+          className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25"
         >
           {(["2_rows", "3_rows", "4_rows"] as RowCount[]).map((r) => (
             <option key={r} value={r}>
