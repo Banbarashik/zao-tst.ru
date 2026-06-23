@@ -141,7 +141,7 @@ export function WaterCalculator({
     : `${results.heatingAreaReserve.toFixed(0)} %`;
 
   return (
-    <div className="">
+    <div className="space-y-1.5">
       {/* Модель */}
       <div>
         <span className="unselectable">Модель калорифера</span>
@@ -160,37 +160,37 @@ export function WaterCalculator({
       </div>
 
       {/* Воздух */}
-      <div className="numbers_input">
-        <p className="unselectable">
-          Объём нагреваемого воздуха:
+      <div className="space-y-1.5">
+        <div className="flex gap-2 bg-amber-200">
+          <div className="py-1">Объём нагреваемого воздуха:</div>
           <input
             type="number"
             placeholder="м³/ч"
             value={inputs.airVolume || ""}
             onChange={(e) => update("airVolume", +e.target.value)}
-            className="ml-2"
+            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
-        <p className="unselectable">
-          Температура входящего воздуха:
+        </div>
+        <div className="flex gap-2 bg-amber-200">
+          <div className="py-1">Температура входящего воздуха:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.airInputT || ""}
             onChange={(e) => update("airInputT", +e.target.value)}
-            className="ml-2"
+            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
-        <p className="unselectable">
-          Требуемая температура воздуха на выходе:
+        </div>
+        <div className="flex gap-2 bg-amber-200">
+          <div className="py-1">Требуемая температура воздуха на выходе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.airOutputT || ""}
             onChange={(e) => update("airOutputT", +e.target.value)}
-            className="ml-2"
+            className="flex basis-25 items-center rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
+        </div>
       </div>
 
       {/* Теплоноситель */}
