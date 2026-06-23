@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { cn } from "@/lib/utils";
 import type {
   SteamCalculatorInputs,
   SteamCalculatorResults,
@@ -45,16 +46,14 @@ function ResultField({
       ? !isValueInRange(value, validRange)
       : false;
 
-  const inputStyle = {
-    backgroundColor: isInvalidValue ? "rgb(255,160,122)" : "rgb(217,217,217)",
-  };
-
   return (
     <div className="flex justify-end gap-2">
       <div className="py-1">{label}</div>
       <div
-        style={inputStyle}
-        className="flex basis-25 items-center rounded-sm border border-[#723910] p-1.25 leading-none select-none"
+        className={cn(
+          "flex basis-25 items-center rounded-sm border border-[#723910] p-1.25 leading-none select-none",
+          isInvalidValue ? "bg-[#ffa07a]" : "bg-[#d9d9d9]",
+        )}
       >
         {formatted}
       </div>
@@ -213,12 +212,10 @@ export function SteamCalculator({
             Запас площади поверхности нагрева калорифера:
           </div>
           <div
-            style={{
-              backgroundColor: reserveInvalid
-                ? "rgb(255,160,122)"
-                : "rgb(255,255,255)",
-            }}
-            className="flex basis-16 items-center overflow-x-hidden rounded-sm border border-[#723910] p-1.25 leading-none text-nowrap select-none"
+            className={cn(
+              "flex basis-16 items-center overflow-x-hidden rounded-sm border border-[#723910] p-1.25 leading-none text-nowrap select-none",
+              reserveInvalid ? "bg-[#ffa07a]" : "bg-[#ffffff]",
+            )}
           >
             {reserveDisplay}
           </div>
