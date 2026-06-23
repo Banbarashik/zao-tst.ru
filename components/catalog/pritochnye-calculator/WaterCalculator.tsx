@@ -47,17 +47,16 @@ function ResultField({
   };
 
   return (
-    <p className="unselectable mt-0 mb-1.5">
-      {label}
-      <input
-        readOnly
-        disabled
-        value={formatted}
+    <div className="flex gap-2 bg-green-200">
+      <div className="py-1">{label}</div>
+      <div
         style={inputStyle}
-        className="ml-2 w-24 px-1"
-      />
-      {unit && <span className="ml-1 text-sm">{unit}</span>}
-    </p>
+        className="flex basis-25 items-center rounded-sm border border-[#723910] p-1.25 leading-none"
+      >
+        {formatted}
+      </div>
+      {unit && <span className="text-sm">{unit}</span>}
+    </div>
   );
 }
 
@@ -142,7 +141,7 @@ export function WaterCalculator({
     : `${results.heatingAreaReserve.toFixed(0)} %`;
 
   return (
-    <div className="calculator advanced-calculator">
+    <div className="">
       {/* Модель */}
       <div>
         <span className="unselectable">Модель калорифера</span>
@@ -260,21 +259,22 @@ export function WaterCalculator({
       </div>
 
       {/* Результаты */}
-      <div className="results">
-        <p className="unselectable" style={{ margin: "20px 0" }}>
-          Запас площади поверхности нагрева калорифера:
-          <input
-            disabled
-            value={reserveDisplay}
+      <div className="space-y-2">
+        <div className="mb-5 flex gap-2 bg-green-200">
+          <div className="py-1">
+            Запас площади поверхности нагрева калорифера:
+          </div>
+          <div
             style={{
-              width: 65,
               backgroundColor: reserveInvalid
                 ? "rgb(255,160,122)"
                 : "rgb(255,255,255)",
             }}
-            className="ml-2"
-          />
-        </p>
+            className="flex basis-25 items-center rounded-sm border border-[#723910] p-1.25 leading-none"
+          >
+            {reserveDisplay}
+          </div>
+        </div>
 
         <ResultField
           label="Тепловая мощность, кВт"

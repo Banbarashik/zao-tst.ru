@@ -28,7 +28,7 @@ export function CalculatorBlock({
   const [state, setState] = useState<CalculatorState | null>(null);
 
   return (
-    <div className={cn("legacy-html legacy-calculator", className)}>
+    <div className={cn(className)}>
       {type === "water" ? (
         <WaterCalculator modelId={modelId} onStateChange={setState} />
       ) : (
