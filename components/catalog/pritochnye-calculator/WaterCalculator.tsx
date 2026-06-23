@@ -47,11 +47,11 @@ function ResultField({
   };
 
   return (
-    <div className="flex gap-2">
+    <div className="flex justify-end gap-2">
       <div className="py-1">{label}</div>
       <div
         style={inputStyle}
-        className="flex basis-25 items-center rounded-sm border border-[#723910] p-1.25 leading-none"
+        className="flex basis-25 items-center rounded-sm border border-[#723910] p-1.25 leading-none select-none"
       >
         {formatted}
       </div>
@@ -160,7 +160,7 @@ export function WaterCalculator({
 
       {/* Воздух */}
       <div className="space-y-1.5">
-        <div className="flex gap-2">
+        <div className="flex justify-end gap-2">
           <div className="py-1">Объём нагреваемого воздуха:</div>
           <input
             type="number"
@@ -170,7 +170,7 @@ export function WaterCalculator({
             className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
-        <div className="flex gap-2">
+        <div className="flex justify-end gap-2">
           <div className="py-1">Температура входящего воздуха:</div>
           <input
             type="number"
@@ -180,7 +180,7 @@ export function WaterCalculator({
             className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
-        <div className="flex gap-2">
+        <div className="flex justify-end gap-2">
           <div className="py-1">Требуемая температура воздуха на выходе:</div>
           <input
             type="number"
@@ -194,7 +194,7 @@ export function WaterCalculator({
 
       {/* Теплоноситель */}
       <div className="space-y-1.5">
-        <div className="space-x-2">
+        <div className="flex justify-end gap-2">
           <span>Теплоноситель</span>
           {(
             [
@@ -215,7 +215,7 @@ export function WaterCalculator({
             </label>
           ))}
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center justify-end gap-1">
           <span>Концентрация гликолей:</span>
           <span className="w-11.5 text-right">
             {inputs.glycolConcentration} %
@@ -230,7 +230,7 @@ export function WaterCalculator({
             className="ml-1.25 w-45 appearance-none overflow-hidden rounded-sm border border-[#723910] bg-[#c0c0c0] p-0 outline-none [&::-webkit-slider-thumb]:h-3.75 [&::-webkit-slider-thumb]:w-2.5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-[#434343] [&::-webkit-slider-thumb]:[box-shadow:-89px_0_0_80px_rgb(176,196,222)]"
           />
         </div>
-        <div className="flex gap-2">
+        <div className="flex justify-end gap-2">
           <div className="py-1">Температура теплоносителя на входе:</div>
           <input
             type="number"
@@ -240,7 +240,7 @@ export function WaterCalculator({
             className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
-        <div className="flex gap-2">
+        <div className="flex justify-end gap-2">
           <div className="py-1">Температура теплоносителя на выходе:</div>
           <input
             type="number"
@@ -254,7 +254,7 @@ export function WaterCalculator({
 
       {/* Результаты */}
       <div className="space-y-2">
-        <div className="mb-5 flex gap-2">
+        <div className="mb-5 flex justify-end gap-2">
           <div className="py-1">
             Запас площади поверхности нагрева калорифера:
           </div>
@@ -264,7 +264,7 @@ export function WaterCalculator({
                 ? "rgb(255,160,122)"
                 : "rgb(255,255,255)",
             }}
-            className="flex basis-25 items-center rounded-sm border border-[#723910] p-1.25 leading-none"
+            className="flex basis-16 items-center overflow-x-hidden rounded-sm border border-[#723910] p-1.25 leading-none text-nowrap select-none"
           >
             {reserveDisplay}
           </div>
