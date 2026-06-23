@@ -33,10 +33,10 @@ export function PdfPrintButton({
         onClick={handleClick}
         disabled={disabled}
         className={cn(
-          "rounded-sm px-3 py-2 shadow-xs transition duration-300",
+          "w-full min-w-30 rounded-sm px-3 py-2 shadow-xs transition duration-150",
           disabled
             ? "cursor-not-allowed bg-[#ccc] text-white"
-            : "bg-accent hover:bg-accent/90 cursor-pointer text-black",
+            : "bg-accent hover:bg-accent-dark cursor-pointer text-black",
         )}
       >
         {loading ? "Формирование PDF…" : "Печать"}

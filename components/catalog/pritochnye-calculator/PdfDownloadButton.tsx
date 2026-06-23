@@ -48,10 +48,10 @@ export function PdfDownloadButton({
         onClick={handleClick}
         disabled={disabled}
         className={cn(
-          "rounded-sm px-3 py-2 text-white shadow-xs transition duration-300",
+          "w-full min-w-30 rounded-sm px-3 py-2 text-white shadow-xs transition duration-150",
           disabled
             ? "cursor-not-allowed bg-[#ccc]"
-            : "bg-primary hover:bg-primary/90 cursor-pointer",
+            : "cursor-pointer bg-[hsl(193,52%,54%)] hover:bg-[hsl(193,52%,44%)]",
         )}
       >
         {loading ? "Формирование PDF…" : "Скачать PDF"}
