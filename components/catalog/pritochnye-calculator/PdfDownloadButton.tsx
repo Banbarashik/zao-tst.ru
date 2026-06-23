@@ -2,6 +2,8 @@
 
 import { usePdf } from "@/hooks/usePdf";
 
+import { cn } from "@/lib/utils";
+
 import type { CalculatorState } from "@/types/pritochnye-calculator";
 import type { Product } from "@/types";
 
@@ -20,7 +22,7 @@ interface PdfDownloadButtonProps {
 export function PdfDownloadButton({
   state,
   products,
-  className,
+  className = "",
 }: PdfDownloadButtonProps) {
   const { loading, error, disabled, generate } = usePdf({ state, products });
 
@@ -45,27 +47,16 @@ export function PdfDownloadButton({
       <button
         onClick={handleClick}
         disabled={disabled}
-        className={className}
-        style={
-          !className
-            ? {
-                marginTop: 12,
-                padding: "8px 18px",
-                backgroundColor: disabled ? "#cccccc" : "#1a56a0",
-                color: "#ffffff",
-                border: "none",
-                borderRadius: 4,
-                cursor: disabled ? "not-allowed" : "pointer",
-                fontSize: 14,
-              }
-            : undefined
-        }
+        className={cn(
+          "rounded-sm px-3 py-2 text-white shadow-xs transition duration-300",
+          disabled
+            ? "cursor-not-allowed bg-[#ccc]"
+            : "bg-primary hover:bg-primary/90 cursor-pointer",
+        )}
       >
         {loading ? "Формирование PDF…" : "Скачать PDF"}
       </button>
-      {error && (
-        <p style={{ color: "#cc3300", fontSize: 12, marginTop: 4 }}>{error}</p>
-      )}
+      {error && <p className="mt-1 text-xs text-[#cc3300]">{error}</p>}
     </div>
   );
 }

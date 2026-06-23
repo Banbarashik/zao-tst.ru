@@ -1,9 +1,12 @@
 "use client";
 
+import { usePdf } from "@/hooks/usePdf";
+
+import { cn } from "@/lib/utils";
+import { printPdfBlob } from "@/lib/printPdf";
+
 import type { CalculatorState } from "@/types/pritochnye-calculator";
 import type { Product } from "@/types/index";
-import { usePdf } from "@/hooks/usePdf";
-import { printPdfBlob } from "@/lib/printPdf";
 
 interface PdfPrintButtonProps {
   state: CalculatorState | null;
@@ -14,7 +17,7 @@ interface PdfPrintButtonProps {
 export function PdfPrintButton({
   state,
   products,
-  className,
+  className = "",
 }: PdfPrintButtonProps) {
   const { loading, error, disabled, generate } = usePdf({ state, products });
 
@@ -29,27 +32,16 @@ export function PdfPrintButton({
       <button
         onClick={handleClick}
         disabled={disabled}
-        className={className}
-        style={
-          !className
-            ? {
-                marginTop: 12,
-                padding: "8px 18px",
-                backgroundColor: disabled ? "#cccccc" : "#2e7d32",
-                color: "#ffffff",
-                border: "none",
-                borderRadius: 4,
-                cursor: disabled ? "not-allowed" : "pointer",
-                fontSize: 14,
-              }
-            : undefined
-        }
+        className={cn(
+          "rounded-sm px-3 py-2 shadow-xs transition duration-300",
+          disabled
+            ? "cursor-not-allowed bg-[#ccc] text-white"
+            : "bg-accent hover:bg-accent/90 cursor-pointer text-black",
+        )}
       >
         {loading ? "Формирование PDF…" : "Печать"}
       </button>
-      {error && (
-        <p style={{ color: "#cc3300", fontSize: 12, marginTop: 4 }}>{error}</p>
-      )}
+      {error && <p className="mt-1 text-xs text-[#cc3300]">{error}</p>}
     </div>
   );
 }
