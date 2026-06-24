@@ -279,7 +279,7 @@ function DataTableRow({
   const rightValueCellStyle = rightValueInvalid
     ? s.dataValueCellInvalid
     : s.dataValueCell;
-  const rightValueTextStyle: any = rightValueInvalid
+  const rightValueTextStyle = rightValueInvalid
     ? [rightValueStyle, s.dataValueTextInvalid].filter(Boolean)
     : rightValueStyle;
 
