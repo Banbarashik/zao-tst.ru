@@ -1,9 +1,6 @@
-import productData from "@/data/products.json";
-
 import { pdf } from "@react-pdf/renderer";
 import { createElement } from "react";
 import { mergePdfs, fetchDrawingPdf } from "@/lib/mergePdfs";
-import { MODEL_DRAWINGS } from "@/data/pritochnye-calculator-drawings";
 import type { CalculatorState } from "@/types/pritochnye-calculator";
 import type { Product } from "@/types";
 import { PritochnyeCalculatorDocument } from "@/components/catalog/PritochnyeCalculatorDocument";
@@ -24,11 +21,11 @@ export async function generateCalculatorPdf(
   state: CalculatorState,
   products: Product[],
 ): Promise<Blob> {
-  const product = productData.find((p) => p.id === state.inputs.modelId);
+  const product = products.find((p) => p.id === state.inputs.modelId);
   const doc = createElement(PritochnyeCalculatorDocument, { state, product });
   const mainBlob = await pdf(doc).toBlob();
 
-  const drawingUrl = MODEL_DRAWINGS[state.inputs.modelId];
+  const drawingUrl = `/drawings/${state.inputs.modelId}.pdf`;
   if (!drawingUrl) {
     // Чертежа для этой модели ещё нет — отдаём документ как есть
     return mainBlob;

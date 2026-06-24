@@ -24,7 +24,6 @@ export {
   downloadCalculatorPdf,
 } from "@/lib/generateCalculatorPdf";
 export { mergePdfs, fetchDrawingPdf } from "@/lib/mergePdfs";
-export { MODEL_DRAWINGS } from "@/data/pritochnye-calculator-drawings";
 
 // Типы
 export type {
