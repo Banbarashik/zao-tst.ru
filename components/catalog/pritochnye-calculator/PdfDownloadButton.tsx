@@ -35,11 +35,10 @@ export function PdfDownloadButton({
       .replace(/[^a-zA-Zа-яА-Я0-9_\-x]/g, "");
 
     const url = URL.createObjectURL(blob);
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = `Расчёт_${safeLabel}.pdf`;
-    anchor.click();
-    URL.revokeObjectURL(url);
+    window.open(url, "_blank");
+    // Небольшая задержка перед revoke — нужна, чтобы браузер
+    // успел открыть вкладку до того, как URL станет недействительным
+    setTimeout(() => URL.revokeObjectURL(url), 10_000);
   }
 
   return (
