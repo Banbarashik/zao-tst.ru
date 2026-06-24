@@ -46,6 +46,7 @@
   --secondary: #232f34; /* Industrial blue-gray */
   --secondary-foreground: #fff; /* White text on secondary */
   --accent: #ffd166; /* Warm yellow accent */
+  --accent-dark: #ffc233;
   --background: #f5f5f5; /* Light background */
   --accent-background: #ededed;
   --foreground: #1e1e1e; /* Main text */
@@ -84,6 +85,7 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-accent-background: var(--accent-background);
   --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);

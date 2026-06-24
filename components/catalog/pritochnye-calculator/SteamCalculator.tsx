@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { cn } from "@/lib/utils";
 import type {
   SteamCalculatorInputs,
   SteamCalculatorResults,
@@ -13,44 +14,51 @@ import {
   type SteamPressure,
 } from "@/data/pritochnye-calculator-models";
 import { calculateSteam } from "@/lib/pritochnye-calculator";
+import {
+  STEAM_RESULT_RANGES,
+  validateSteamResults,
+  isValueInRange,
+} from "@/lib/pritochnye-calculator-validation";
 
 // ─── Вспомогательный компонент ────────────────────────────────────────────────
 
 interface ResultFieldProps {
   label: string;
   value: number | null;
+  unit?: string;
   decimals?: number;
-  validRange?: [number, number];
+  /** Диапазон допустимых значений для подсветки */
+  validRange?: readonly [number, number];
 }
 
 function ResultField({
   label,
   value,
+  unit,
   decimals = 0,
   validRange,
 }: ResultFieldProps) {
   const formatted =
     value === null || !isFinite(value) ? "" : value.toFixed(decimals);
 
-  let bg = "bg-[rgb(217,217,217)]";
-  if (validRange && formatted !== "") {
-    const num = parseFloat(formatted);
-    bg =
-      num < validRange[0] || num > validRange[1]
-        ? "bg-[rgb(255,160,122)]"
-        : "bg-[rgb(217,217,217)]";
-  }
+  const isInvalidValue =
+    validRange !== undefined && value !== null && isFinite(value)
+      ? !isValueInRange(value, validRange)
+      : false;
 
   return (
-    <p className="unselectable mt-0 mb-1.5">
-      {label}
-      <input
-        readOnly
-        disabled
-        value={formatted}
-        className={`${bg} ml-2 w-24 px-1`}
-      />
-    </p>
+    <div className="flex items-center justify-end gap-2 text-right">
+      <div className="py-1">{label}</div>
+      <div
+        className={cn(
+          "flex min-h-8 w-25 shrink-0 items-center rounded-sm border border-[#723910] p-1.25 leading-none select-none",
+          isInvalidValue ? "bg-[#ffa07a]" : "bg-[#d9d9d9]",
+        )}
+      >
+        {formatted}
+      </div>
+      {unit && <span className="text-sm">{unit}</span>}
+    </div>
   );
 }
 
@@ -97,7 +105,7 @@ export function SteamCalculator({
       setResults(res);
       onStateChange?.({
         type: "steam",
-        modelLabel: rowLabels[next.rowCount],
+        modelLabel: model.label,
         inputs: next,
         results: res,
       });
@@ -114,26 +122,30 @@ export function SteamCalculator({
     recalculate(next);
   }
 
+  const validation = validateSteamResults(results);
+  const hasReserveValue =
+    results !== null && isFinite(results.heatingAreaReserve);
   const reserveOk =
-    results !== null &&
-    isFinite(results.heatingAreaReserve) &&
-    results.heatingAreaReserve >= 0 &&
-    results.heatingAreaReserve <= 20;
+    hasReserveValue &&
+    isValueInRange(
+      results.heatingAreaReserve,
+      STEAM_RESULT_RANGES.heatingAreaReserve,
+    );
+  const reserveInvalid = hasReserveValue && !reserveOk;
 
-  const reserveDisplay =
-    results === null || !isFinite(results.heatingAreaReserve)
-      ? "%"
-      : `${results.heatingAreaReserve.toFixed(0)} %`;
+  const reserveDisplay = !hasReserveValue
+    ? "%"
+    : `${results.heatingAreaReserve.toFixed(0)} %`;
 
   return (
-    <div className="space-y-6 border border-[rgb(180,180,180)] p-2 text-right">
+    <div className="space-y-4.5">
       {/* Модель */}
-      <div>
-        <span className="unselectable">Модель калорифера</span>
+      <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+        <div className="py-1 text-right">Модель калорифера</div>
         <select
           value={inputs.rowCount}
           onChange={(e) => update("rowCount", e.target.value as RowCount)}
-          style={{ backgroundColor: "rgb(176, 196, 222)" }}
+          className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25"
         >
           {(["2_rows", "3_rows", "4_rows"] as RowCount[]).map((r) => (
             <option key={r} value={r}>
@@ -144,43 +156,46 @@ export function SteamCalculator({
       </div>
 
       {/* Воздух */}
-      <div className="numbers_input">
-        <p className="unselectable">
-          Объём нагреваемого воздуха:
+      <div className="mb-2 space-y-1.5">
+        <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+          <div className="py-1">Объём нагреваемого воздуха:</div>
           <input
             type="number"
             placeholder="м³/ч"
             value={inputs.airVolume || ""}
             onChange={(e) => update("airVolume", +e.target.value)}
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
-        <p className="unselectable">
-          Температура входящего воздуха:
+        </div>
+        <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+          <div className="py-1">Температура входящего воздуха:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.airInputT || ""}
             onChange={(e) => update("airInputT", +e.target.value)}
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
-        <p className="unselectable">
-          Требуемая температура воздуха на выходе:
+        </div>
+        <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+          <div className="py-1">Требуемая температура воздуха на выходе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.airOutputT || ""}
             onChange={(e) => update("airOutputT", +e.target.value)}
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
+        </div>
       </div>
 
       {/* Давление пара */}
-      <div>
-        <span className="unselectable">Давление сухого насыщенного пара</span>
+      <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+        <div className="py-1">Давление сухого насыщенного пара</div>
         <select
           value={inputs.steamPressure}
           onChange={(e) => update("steamPressure", e.target.value)}
-          style={{ backgroundColor: "rgb(176, 196, 222)", marginBottom: 0 }}
+          className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25"
         >
           {STEAM_PRESSURES.map((p) => (
             <option key={p} value={p}>
@@ -191,20 +206,20 @@ export function SteamCalculator({
       </div>
 
       {/* Результаты */}
-      <div className="results">
-        <p className="unselectable" style={{ margin: "20px 0" }}>
-          Запас площади поверхности нагрева калорифера:
-          <input
-            disabled
-            value={reserveDisplay}
-            style={{
-              width: 65,
-              backgroundColor: reserveOk
-                ? "rgb(255,255,255)"
-                : "rgb(255,160,122)",
-            }}
-          />
-        </p>
+      <div className="space-y-2">
+        <div className="mb-5 flex items-center justify-end gap-2 text-right">
+          <div className="py-1">
+            Запас площади поверхности нагрева калорифера:
+          </div>
+          <div
+            className={cn(
+              "flex min-h-8 w-25 shrink-0 items-center overflow-x-hidden rounded-sm border border-[#723910] p-1.25 leading-none text-nowrap select-none sm:w-16",
+              reserveInvalid ? "bg-[#ffa07a]" : "bg-[#ffffff]",
+            )}
+          >
+            {reserveDisplay}
+          </div>
+        </div>
 
         <ResultField
           label="Тепловая мощность, кВт"
@@ -225,7 +240,7 @@ export function SteamCalculator({
           label="Массовая скорость воздуха в фронт. сечении, кг/м²·с"
           value={results?.airMassVelocity ?? null}
           decimals={2}
-          validRange={[1.5, 8]}
+          validRange={STEAM_RESULT_RANGES.airMassVelocity}
         />
       </div>
     </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { cn } from "@/lib/utils";
 import type {
   WaterCalculatorInputs,
   WaterCalculatorResults,
@@ -10,6 +11,11 @@ import type {
 } from "@/types/pritochnye-calculator";
 import { WATER_MODELS } from "@/data/pritochnye-calculator-models";
 import { calculateWater } from "@/lib/pritochnye-calculator";
+import {
+  WATER_RESULT_RANGES,
+  validateWaterResults,
+  isValueInRange,
+} from "@/lib/pritochnye-calculator-validation";
 
 // ─── Вспомогательные компоненты ──────────────────────────────────────────────
 
@@ -19,7 +25,7 @@ interface ResultFieldProps {
   unit?: string;
   decimals?: number;
   /** Диапазон допустимых значений для подсветки */
-  validRange?: [number, number];
+  validRange?: readonly [number, number];
 }
 
 function ResultField({
@@ -32,26 +38,24 @@ function ResultField({
   const formatted =
     value === null || !isFinite(value) ? "" : value.toFixed(decimals);
 
-  let bg = "bg-[rgb(217,217,217)]";
-  if (validRange && formatted !== "") {
-    const num = parseFloat(formatted);
-    bg =
-      num < validRange[0] || num > validRange[1]
-        ? "bg-[rgb(255,160,122)]"
-        : "bg-[rgb(217,217,217)]";
-  }
+  const isInvalidValue =
+    validRange !== undefined && value !== null && isFinite(value)
+      ? !isValueInRange(value, validRange)
+      : false;
 
   return (
-    <p className="unselectable mt-0 mb-1.5">
-      {label}
-      <input
-        readOnly
-        disabled
-        value={formatted}
-        className={`${bg} ml-2 w-24 px-1`}
-      />
-      {unit && <span className="ml-1 text-sm">{unit}</span>}
-    </p>
+    <div className="flex items-center justify-end gap-2 text-right">
+      <div className="py-1">{label}</div>
+      <div
+        className={cn(
+          "flex min-h-8 w-25 shrink-0 items-center rounded-sm border border-[#723910] p-1.25 leading-none select-none",
+          isInvalidValue ? "bg-[#ffa07a]" : "bg-[#d9d9d9]",
+        )}
+      >
+        {formatted}
+      </div>
+      {unit && <span className="text-sm">{unit}</span>}
+    </div>
   );
 }
 
@@ -103,7 +107,7 @@ export function WaterCalculator({
       setResults(res);
       onStateChange?.({
         type: "water",
-        modelLabel: rowLabels[next.rowCount],
+        modelLabel: model.label,
         inputs: next,
         results: res,
       });
@@ -120,26 +124,30 @@ export function WaterCalculator({
     recalculate(next);
   }
 
+  const validation = validateWaterResults(results);
+  const hasReserveValue =
+    results !== null && isFinite(results.heatingAreaReserve);
   const reserveOk =
-    results !== null &&
-    isFinite(results.heatingAreaReserve) &&
-    results.heatingAreaReserve >= 0 &&
-    results.heatingAreaReserve <= 20;
+    hasReserveValue &&
+    isValueInRange(
+      results.heatingAreaReserve,
+      WATER_RESULT_RANGES.heatingAreaReserve,
+    );
+  const reserveInvalid = hasReserveValue && !reserveOk;
 
-  const reserveDisplay =
-    results === null || !isFinite(results.heatingAreaReserve)
-      ? "%"
-      : `${results.heatingAreaReserve.toFixed(0)} %`;
+  const reserveDisplay = !hasReserveValue
+    ? "%"
+    : `${results.heatingAreaReserve.toFixed(0)} %`;
 
   return (
-    <div className="space-y-6 border border-[rgb(180,180,180)] p-2 text-right">
+    <div className="space-y-4.5">
       {/* Модель */}
-      <div>
-        <span className="unselectable">Модель калорифера</span>
+      <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+        <div className="py-1">Модель калорифера</div>
         <select
           value={inputs.rowCount}
           onChange={(e) => update("rowCount", e.target.value as RowCount)}
-          style={{ backgroundColor: "rgb(176, 196, 222)" }}
+          className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25"
         >
           {(["2_rows", "3_rows", "4_rows"] as RowCount[]).map((r) => (
             <option key={r} value={r}>
@@ -150,70 +158,67 @@ export function WaterCalculator({
       </div>
 
       {/* Воздух */}
-      <div className="numbers_input">
-        <p className="unselectable">
-          Объём нагреваемого воздуха:
+      <div className="space-y-1.5">
+        <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+          <div className="py-1">Объём нагреваемого воздуха:</div>
           <input
             type="number"
             placeholder="м³/ч"
             value={inputs.airVolume || ""}
             onChange={(e) => update("airVolume", +e.target.value)}
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
-        <p className="unselectable">
-          Температура входящего воздуха:
+        </div>
+        <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+          <div className="py-1">Температура входящего воздуха:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.airInputT || ""}
             onChange={(e) => update("airInputT", +e.target.value)}
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
-        <p className="unselectable">
-          Требуемая температура воздуха на выходе:
+        </div>
+        <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+          <div className="py-1">Требуемая температура воздуха на выходе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.airOutputT || ""}
             onChange={(e) => update("airOutputT", +e.target.value)}
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
+        </div>
       </div>
 
       {/* Теплоноситель */}
-      <div style={{ marginTop: 15 }} className="unselectable">
-        <span>Теплоноситель</span>
-        {(
-          [
-            ["water", "вода"],
-            ["ethyleneGlycol", "этиленгликоль"],
-            ["propyleneGlycol", "пропиленгликоль"],
-          ] as [CoolantType, string][]
-        ).map(([val, label]) => (
-          <label key={val} className="ml-2">
-            <input
-              type="radio"
-              name={`coolant-${modelId}`}
-              value={val}
-              checked={inputs.coolant === val}
-              onChange={() => update("coolant", val)}
-            />{" "}
-            {label}
-          </label>
-        ))}
-      </div>
-
-      <div className="numbers_input">
-        <p
-          className="unselectable"
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            alignItems: "center",
-          }}
-        >
+      <div className="space-y-1.5">
+        <div className="flex flex-col justify-end gap-2 text-right sm:flex-row">
+          <span>Теплоноситель</span>
+          {(
+            [
+              ["water", "вода"],
+              ["ethyleneGlycol", "этиленгликоль"],
+              ["propyleneGlycol", "пропиленгликоль"],
+            ] as [CoolantType, string][]
+          ).map(([val, label]) => (
+            <label key={val} className="space-x-1">
+              <input
+                type="radio"
+                name={`coolant-${modelId}`}
+                value={val}
+                checked={inputs.coolant === val}
+                onChange={() => update("coolant", val)}
+              />
+              <span>{label}</span>
+            </label>
+          ))}
+        </div>
+        <div className="ml-auto flex max-w-fit flex-col items-center justify-end gap-1 sm:flex-row">
           <span>Концентрация гликолей:</span>
-          <span style={{ width: 50 }}>{inputs.glycolConcentration} %</span>
+          <span className="ml-auto w-11.5 text-right">
+            {inputs.glycolConcentration} %
+          </span>
           <input
             type="range"
             min={0}
@@ -221,43 +226,46 @@ export function WaterCalculator({
             step={1}
             value={inputs.glycolConcentration}
             onChange={(e) => update("glycolConcentration", +e.target.value)}
+            className="ml-1.25 w-45 appearance-none overflow-hidden rounded-sm border border-[#723910] bg-[#c0c0c0] p-0 outline-none [&::-webkit-slider-thumb]:h-3.75 [&::-webkit-slider-thumb]:w-2.5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-[#434343] [&::-webkit-slider-thumb]:[box-shadow:-89px_0_0_80px_rgb(176,196,222)]"
           />
-        </p>
-        <p className="unselectable">
-          Температура теплоносителя на входе:
+        </div>
+        <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+          <div className="py-1">Температура теплоносителя на входе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.coolantInputT || ""}
             onChange={(e) => update("coolantInputT", +e.target.value)}
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
-        <p className="unselectable">
-          Температура теплоносителя на выходе:
+        </div>
+        <div className="ml-auto flex max-w-83 flex-col justify-end gap-x-2 text-right sm:max-w-none sm:flex-row">
+          <div className="py-1">Температура теплоносителя на выходе:</div>
           <input
             type="number"
             placeholder="°С"
             value={inputs.coolantOutputT || ""}
             onChange={(e) => update("coolantOutputT", +e.target.value)}
+            className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
-        </p>
+        </div>
       </div>
 
       {/* Результаты */}
-      <div className="results">
-        <p className="unselectable" style={{ margin: "20px 0" }}>
-          Запас площади поверхности нагрева калорифера:
-          <input
-            disabled
-            value={reserveDisplay}
-            style={{
-              width: 65,
-              backgroundColor: reserveOk
-                ? "rgb(255,255,255)"
-                : "rgb(255,160,122)",
-            }}
-          />
-        </p>
+      <div className="space-y-2">
+        <div className="mb-5 flex items-center justify-end gap-2 text-right">
+          <div className="py-1">
+            Запас площади поверхности нагрева калорифера:
+          </div>
+          <div
+            className={cn(
+              "flex min-h-8 w-25 shrink-0 items-center overflow-x-hidden rounded-sm border border-[#723910] p-1.25 leading-none text-nowrap select-none sm:w-16",
+              reserveInvalid ? "bg-[#ffa07a]" : "bg-[#ffffff]",
+            )}
+          >
+            {reserveDisplay}
+          </div>
+        </div>
 
         <ResultField
           label="Тепловая мощность, кВт"
@@ -283,13 +291,13 @@ export function WaterCalculator({
           label="Массовая скорость воздуха в фронт. сечении, кг/м²·с"
           value={results?.airMassVelocity ?? null}
           decimals={2}
-          validRange={[1.5, 8]}
+          validRange={WATER_RESULT_RANGES.airMassVelocity}
         />
         <ResultField
           label="Скорость теплоносителя, м/сек"
           value={results?.coolantVelocity ?? null}
           decimals={2}
-          validRange={[0.12, 1.2]}
+          validRange={WATER_RESULT_RANGES.coolantVelocity}
         />
       </div>
     </div>
