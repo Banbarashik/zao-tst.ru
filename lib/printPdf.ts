@@ -46,7 +46,7 @@ export function printPdfBlob(blob: Blob): void {
         setTimeout(() => {
           document.body.removeChild(iframe);
           URL.revokeObjectURL(url);
-        }, 60_000); // 1 минута — достаточно для завершения диалога
+        }, 600_000); // 10 минут — достаточно для завершения диалога
       }
     }, 500);
   };
