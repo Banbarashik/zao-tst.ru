@@ -15,6 +15,16 @@
         const outEl = form.total;
         // write value
         outEl.value = r.toFixed(0);
+
+        // 🔥 дельта нагрева
+        const deltaT = r - l;
+
+        // ⚡ ток
+        const current = (m * 1000) / 658.16;
+
+        form.deltaT.value = deltaT.toFixed(1);
+        form.current.value = current.toFixed(1);
+
         // check optional data-min / data-max on the output and toggle warning class
         const min = Number(outEl.dataset.min ?? NaN);
         const max = Number(outEl.dataset.max ?? NaN);
@@ -105,17 +115,17 @@
     <!-- Калькулятор (начало) -->
     <form class="calculator elektronagrevateli-2">
       <label>
-        Объем приточного воздуха, м³/ч
+        Объем нагреваемого воздуха, м<sup>3</sup>/ч
         <input type="text" name="k" data-min="500" data-max="100000" />
       </label>
 
       <label>
-        Температура приточного воздуха, °С
+        Температура воздуха на входе, °С
         <input type="text" name="l" data-min="-50" data-max="40" />
       </label>
 
       <label>
-        Мощность электрического калорифера, кВт
+        Мощность электрокалорифера, кВт
         <input type="text" name="m" data-min="2.5" data-max="247.5" />
       </label>
 
@@ -129,7 +139,7 @@
       </div>
 
       <label>
-        Температура выходящего воздуха, °С
+        Температура воздуха на выходе, °С
         <input
           type="text"
           name="total"
@@ -138,6 +148,16 @@
           disabled
           class="bg-transparent"
         />
+      </label>
+      <label>
+        <span class="text-black/70">Дельта нагрева, °С</span>
+        <input type="text" name="deltaT" disabled class="bg-transparent" />
+      </label>
+      <label>
+        <span class="text-black/70"
+          >Токовая нагрузка в трехфазных сетях, А</span
+        >
+        <input type="text" name="current" disabled class="bg-transparent" />
       </label>
     </form>
     <!-- Калькулятор (конец) -->
