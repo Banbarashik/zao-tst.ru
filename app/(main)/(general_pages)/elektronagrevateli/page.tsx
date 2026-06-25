@@ -96,6 +96,7 @@ export default async function KaloriferySFO() {
           электрокалорифер может работать на 1/3, 2/3 и полную установленную
           мощность.
         </ProductParagraph>
+        <div className="mx-auto my-1.75 h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
         <ProductParagraph>
           Внутри каждого тэна размещена нихромовая токопроводящая спираль. Чтобы
           изолировать спираль от металлической оболочки и для более эффективной
@@ -111,6 +112,7 @@ export default async function KaloriferySFO() {
           подключении приточного электрокалорифера к сети 380В на каждом ТЭНе
           было 220В. Мощность каждого ТЭНа составляет 2.5 кВт.
         </ProductParagraph>
+        <div className="mx-auto my-1.75 h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
         <ProductParagraph>
           Для контроля и ограничения температуры на поверхности алюминиевого
           оребрения ТЭНа, защиты электрического воздухонагревателя от аварийного
@@ -141,6 +143,7 @@ export default async function KaloriferySFO() {
           увеличению эффективности теплосъема и общей передаваемой тепловой
           мощности электрического калорифера.
         </ProductParagraph>
+        <div className="mx-auto my-1.75 h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
         <ProductParagraph>
           Канальные электрокалориферы СФО рассчитаны на работу в воздушном
           потоке. Принцип работы электрокалорифера заключается в том, что
