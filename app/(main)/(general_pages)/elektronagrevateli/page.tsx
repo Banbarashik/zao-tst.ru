@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 import { sortProducts } from "@/lib/utils";
+import { getLegacyHtmls } from "@/lib/legacyHtml";
 
 import { Anchor } from "@/components/utils/anchor";
 import Heading from "@/components/general_pages/heading";
@@ -11,7 +12,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
-import { getLegacyHtmls } from "@/lib/legacyHtml";
+import { SfoOperatingModesTable } from "@/components/general_pages/SfoOperatingModesTable";
 
 export const metadata: Metadata = {
   title: "Электрокалориферы СФО. Производство",
@@ -194,14 +195,16 @@ export default async function KaloriferySFO() {
           text="Технические характеристики электрокалориферов СФО"
         />
         <ProductParagraph className="mb-4">
-          Электрические калориферы СФО подразделяются на семь типоразмеров. Все
-          модели имеют одинаковую ширину - 720 мм и глубину - 240 мм. Высота
-          обогревателей варьируется от 230 до 1615 мм. Соответственно, растет
-          количество установленных оребренных тэнов и общая тепловая мощность
-          установки. Каждая из моделей канального электронагревателя рассчитана
-          на подогрев определенного объема воздуха в час. Номинальная
-          производительность по воздуху электрокалориферов - от 1000 до 12000
-          м³/час, производительность по теплу - от 16 до 250 кВт.
+          Промышленные электрокалориферы серии СФО представляют собой
+          унифицированную линейку канальных воздухонагревателей мощностью от 15
+          до 247.5 кВт. Оборудование спроектировано для работы в составе систем
+          приточной вентиляции, воздушного дежурного отопления, а также в
+          технологических линиях мягкой сушки, требующих стабильного умеренного
+          нагрева воздушного потока. Конструкция корпусов полностью адаптирована
+          для интеграции в разветвленные вентиляционные сети и рассчитана на
+          расход воздуха от 1700 до 18000 м<sup>3</sup>/ч, гарантируя
+          равномерный обдув всего пучка ТЭНов и исключая образование застойных
+          зон перегрева металла.
         </ProductParagraph>
         <ProductLinks
           products={products.map((p) => ({
@@ -209,12 +212,48 @@ export default async function KaloriferySFO() {
             name: p.shortName,
           }))}
           gridTemplateCols="grid-cols-[repeat(auto-fill,minmax(130px,max-content))]"
+          className="mb-6"
+        />
+
+        <section className="mb-6 space-y-3">
+          <Heading
+            lvl={3}
+            text="Сводная таблица подбора и режимов работы калориферов СФО"
+          />
+          <ProductParagraph className="text-secondary-text">
+            Ниже представлена таблица всех возможных комбинаций работы
+            электрокалориферов. С ее помощью можно предварительно подобрать
+            модель СФО под требуемую тепловую мощность и необходимую
+            производительность. Выложены сведения как для номинального режима
+            (100%), так и для систем с частичным подключением секций (1/3 и 2/3
+            нагрузки).
+          </ProductParagraph>
+          <SfoOperatingModesTable />
+          <ProductParagraph className="text-secondary-text">
+            В сводной таблице приведены граничные эксплуатационные диапазоны для
+            экспресс-подбора оборудования. Развернутые теплотехнические карты,
+            детальные графики аэродинамического сопротивления корпуса, градиент
+            нагрева ТЭНов и пошаговые итерационные выкладки для конкретных
+            значений расхода воздуха представлены на индивидуальных страницах
+            каждой модели СФО.
+          </ProductParagraph>
+        </section>
+
+        <LinkButtonsBlock
+          buttons={[
+            { name: "Электротехнический расчет", url: "/elektrokalorifery" },
+            {
+              name: "Подключение калориферов",
+              url: "/elektrokalorifery#anchor9",
+            },
+          ]}
         />
       </section>
 
       <section className="mb-4">
         <Heading lvl={2} text="Габаритные размеры электрокалориферов СФО" />
 
+        {/* ТАБЛИЦА ГАБАРИТНЫХ РАЗМЕРОВ КАЛОРИФЕРОВ СФО */}
         <div className="mb-3 w-full overflow-x-auto">
           <table className="w-full min-w-231 xl:min-w-auto">
             <thead>

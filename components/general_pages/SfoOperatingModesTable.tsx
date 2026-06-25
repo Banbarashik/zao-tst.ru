@@ -36,38 +36,13 @@ function ConfigRow({ config, powerKw, rowSpan }: ConfigRowProps) {
   return (
     <tr>
       {/* Power cell: only rendered for the first row in a group */}
-      {powerKw !== undefined && (
-        <td
-          rowSpan={rowSpan}
-          className="border-border border px-3 py-2 text-center align-middle font-medium"
-        >
-          {powerKw}
-        </td>
-      )}
-
-      <td className="border-border border px-3 py-2 text-center">
-        {formatAirflow(config.airflow)}
-      </td>
-
-      <td className="border-border border px-3 py-2 text-center font-medium">
-        {config.model}
-      </td>
-
-      <td className="border-border border px-3 py-2 text-center">
-        {config.sections}
-      </td>
-
-      <td className="border-border border px-3 py-2 text-center">
-        {formatRange(config.inletTemp)}
-      </td>
-
-      <td className="border-border border px-3 py-2 text-center">
-        {formatRange(config.outletTemp)}
-      </td>
-
-      <td className="border-border border px-3 py-2 text-center">
-        {formatRange(config.heatingDelta)}
-      </td>
+      {powerKw !== undefined && <td rowSpan={rowSpan}>{powerKw}</td>}
+      <td className="py-1">{formatAirflow(config.airflow)}</td>
+      <td className="px-4">{config.model}</td>
+      <td>{config.sections}</td>
+      <td>{formatRange(config.inletTemp)}</td>
+      <td>{formatRange(config.outletTemp)}</td>
+      <td>{formatRange(config.heatingDelta)}</td>
     </tr>
   );
 }
@@ -78,58 +53,36 @@ function ConfigRow({ config, powerKw, rowSpan }: ConfigRowProps) {
 
 export function SfoOperatingModesTable() {
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse text-sm">
+    <div className="w-full overflow-x-auto">
+      <table className="w-full min-w-231 xl:min-w-auto">
         <thead>
           {/* Row 1: top-level headers */}
-          <tr className="bg-muted">
-            <th
-              rowSpan={2}
-              className="border-border border px-3 py-2 text-center align-middle font-semibold"
-            >
-              Мощность,&nbsp;кВт
+          <tr>
+            <th rowSpan={2} className="px-1">
+              Мощность, кВт
             </th>
-            <th
-              rowSpan={2}
-              className="border-border border px-3 py-2 text-center align-middle font-semibold"
-            >
-              Диапазон производительности,&nbsp;м³/ч
+            <th rowSpan={2} className="px-3">
+              Диапазон производительности, м<sup>3</sup>/ч
             </th>
-            <th
-              rowSpan={2}
-              className="border-border border px-3 py-2 text-center align-middle font-semibold"
-            >
+            <th rowSpan={2} className="px-1">
               Модель
             </th>
-            <th
-              rowSpan={2}
-              className="border-border border px-3 py-2 text-center align-middle font-semibold"
-            >
+            <th rowSpan={2} className="px-1">
               Кол-во подкл. секций
             </th>
             {/* Merged header for the two temperature columns */}
-            <th
-              colSpan={2}
-              className="border-border border px-3 py-2 text-center font-semibold"
-            >
-              Диапазон температуры воздуха,&nbsp;°C
+            <th colSpan={2} className="px-1">
+              Диапазон температуры воздуха, °C
             </th>
-            <th
-              rowSpan={2}
-              className="border-border border px-3 py-2 text-center align-middle font-semibold"
-            >
-              Дельта нагрева воздуха,&nbsp;°C
+            <th rowSpan={2} className="px-1">
+              Дельта нагрева воздуха, °C
             </th>
           </tr>
 
           {/* Row 2: sub-headers for inlet / outlet */}
-          <tr className="bg-muted">
-            <th className="border-border border px-3 py-2 text-center font-semibold">
-              на входе
-            </th>
-            <th className="border-border border px-3 py-2 text-center font-semibold">
-              на выходе
-            </th>
+          <tr>
+            <th className="py-1">на входе</th>
+            <th>на выходе</th>
           </tr>
         </thead>
 
