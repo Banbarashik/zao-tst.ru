@@ -5,3 +5,5 @@ export const SITE_URL = "https://zao-tst.ru";
 
 export const KSK_SERIES = "КСк";
 export const KPSK_SERIES = "КПСк";
+
+export const GENERATE_CALC_PDF_GOAL = "generate_calc_pdf";

@@ -1,5 +1,8 @@
 "use client";
 
+import { GENERATE_CALC_PDF_GOAL } from "@/constants";
+
+import useYandexMetrika from "@/hooks/useYandexMetrika";
 import { usePdf } from "@/hooks/usePdf";
 
 import { cn } from "@/lib/utils";
@@ -24,15 +27,14 @@ export function PdfDownloadButton({
   products,
   className = "",
 }: PdfDownloadButtonProps) {
+  const { reachGoal } = useYandexMetrika();
   const { loading, error, disabled, generate } = usePdf({ state, products });
 
   async function handleClick() {
+    reachGoal(GENERATE_CALC_PDF_GOAL);
+
     const blob = await generate();
     if (!blob || !state) return;
-
-    const safeLabel = state.modelLabel
-      .replace(/\s+/g, "_")
-      .replace(/[^a-zA-Zа-яА-Я0-9_\-x]/g, "");
 
     const url = URL.createObjectURL(blob);
     window.open(url, "_blank");

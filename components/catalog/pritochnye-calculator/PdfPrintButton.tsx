@@ -1,5 +1,8 @@
 "use client";
 
+import { GENERATE_CALC_PDF_GOAL } from "@/constants";
+
+import useYandexMetrika from "@/hooks/useYandexMetrika";
 import { usePdf } from "@/hooks/usePdf";
 
 import { cn } from "@/lib/utils";
@@ -19,9 +22,12 @@ export function PdfPrintButton({
   products,
   className = "",
 }: PdfPrintButtonProps) {
+  const { reachGoal } = useYandexMetrika();
   const { loading, error, disabled, generate } = usePdf({ state, products });
 
   async function handleClick() {
+    reachGoal(GENERATE_CALC_PDF_GOAL);
+
     const blob = await generate();
     if (!blob) return;
     printPdfBlob(blob);
