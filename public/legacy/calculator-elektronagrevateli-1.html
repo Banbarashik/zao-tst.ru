@@ -9,9 +9,9 @@
 
       function calculatorElektronagrevateliOne(form) {
         // parse and clamp to the correct ranges (match data-min/data-max)
-        const a = clampNum(Number(form.a.value), 500, 100000) || 0;
-        const b = clampNum(Number(form.b.value), -50, 40) || 0;
-        const c = clampNum(Number(form.c.value), -20, 80) || 0;
+        const a = clampNum(Number(form.a.value), 1000, 100000) || 0;
+        const b = clampNum(Number(form.b.value), -50, 65) || 0;
+        const c = clampNum(Number(form.c.value), -50, 100) || 0;
         const d = ((a * (353 / (273.15 + b))) / 3600000) * 1009 * (c - b);
         form.total.value = d.toFixed(1);
 
@@ -103,17 +103,17 @@
     <form class="calculator elektronagrevateli-1">
       <label>
         Объем нагреваемого воздуха, м<sup>3</sup>/ч
-        <input type="text" name="a" data-min="500" data-max="100000" />
+        <input type="text" name="a" data-min="1000" data-max="100000" />
       </label>
 
       <label>
         Температура воздуха на входе, °С
-        <input type="text" name="b" data-min="-50" data-max="40" />
+        <input type="text" name="b" data-min="-50" data-max="65" />
       </label>
 
       <label>
         Температура воздуха на выходе, °С
-        <input type="text" name="c" data-min="-20" data-max="80" />
+        <input type="text" name="c" data-min="-50" data-max="100" />
       </label>
 
       <div class="calculator-buttons">

@@ -7,12 +7,20 @@
         return Math.min(Math.max(v, min), max);
       }
 
+      function setOutOfRangeClass(isOutOfRange, el) {
+        isOutOfRange
+          ? el.classList.add("out-of-range")
+          : el.classList.remove("out-of-range");
+      }
+
       function calculatorElektronagrevateliTwo(form) {
-        const k = clampNum(Number(form.k.value), 500, 100000) || 0;
-        const l = clampNum(Number(form.l.value), -50, 40) || 0;
+        const k = clampNum(Number(form.k.value), 1000, 100000) || 0;
+        const l = clampNum(Number(form.l.value), -50, 65) || 0;
         const m = clampNum(Number(form.m.value), 2.5, 247.5) || 0;
         const r = m / (((k * (353 / (273.15 + l))) / 3600000) * 1009) + l;
+        console.log(k, l, m, r);
         const outEl = form.total;
+        const deltaEl = form.deltaT;
         // write value
         outEl.value = r.toFixed(0);
 
@@ -22,11 +30,13 @@
         // ⚡ ток
         const current = (m * 1000) / 658.16;
 
-        form.deltaT.value = deltaT.toFixed(1);
+        deltaEl.value = deltaT.toFixed(1);
         form.current.value = current.toFixed(1);
 
+        setOutOfRangeClass(r > 100, outEl);
+        setOutOfRangeClass(deltaT > 150, deltaEl);
         // check optional data-min / data-max on the output and toggle warning class
-        const min = Number(outEl.dataset.min ?? NaN);
+        /* const min = Number(outEl.dataset.min ?? NaN);
         const max = Number(outEl.dataset.max ?? NaN);
         if (Number.isFinite(min) && Number.isFinite(max)) {
           if (r < min || r > max) outEl.classList.add("out-of-range");
@@ -34,7 +44,7 @@
         } else {
           // no range specified: ensure class removed
           outEl.classList.remove("out-of-range");
-        }
+        } */
       }
 
       function init() {
@@ -101,8 +111,11 @@
           resetBtn.addEventListener("click", () => {
             inputs.forEach((i) => i.classList.remove("has-value"));
             // also clear out-of-range highlight on the output
-            const out = form.querySelector('input[name="total"]');
-            if (out) out.classList.remove("out-of-range");
+            form
+              .querySelectorAll("input")
+              .forEach((el) => el.classList.remove("out-of-range"));
+            // const out = form.querySelector('input[name="total"]');
+            // if (out) out.classList.remove("out-of-range");
           });
         }
       }
@@ -116,12 +129,12 @@
     <form class="calculator elektronagrevateli-2">
       <label>
         Объем нагреваемого воздуха, м<sup>3</sup>/ч
-        <input type="text" name="k" data-min="500" data-max="100000" />
+        <input type="text" name="k" data-min="1000" data-max="100000" />
       </label>
 
       <label>
         Температура воздуха на входе, °С
-        <input type="text" name="l" data-min="-50" data-max="40" />
+        <input type="text" name="l" data-min="-50" data-max="65" />
       </label>
 
       <label>
@@ -143,7 +156,6 @@
         <input
           type="text"
           name="total"
-          data-min="-50"
           data-max="100"
           disabled
           class="bg-transparent"
@@ -151,7 +163,13 @@
       </label>
       <label>
         <span class="text-black/70">Дельта нагрева, °С</span>
-        <input type="text" name="deltaT" disabled class="bg-transparent" />
+        <input
+          type="text"
+          name="deltaT"
+          data-max="150"
+          disabled
+          class="bg-transparent"
+        />
       </label>
       <label>
         <span class="text-black/70"
