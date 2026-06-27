@@ -234,8 +234,12 @@ export function WaterCalculator({
           <input
             type="number"
             placeholder="°С"
+            min={0}
             value={inputs.coolantInputT || ""}
             onChange={(e) => update("coolantInputT", +e.target.value)}
+            onBlur={(e) => {
+              if (+e.target.value < 0) update("coolantInputT", 0);
+            }}
             className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
@@ -244,8 +248,12 @@ export function WaterCalculator({
           <input
             type="number"
             placeholder="°С"
+            min={0}
             value={inputs.coolantOutputT || ""}
             onChange={(e) => update("coolantOutputT", +e.target.value)}
+            onBlur={(e) => {
+              if (+e.target.value < 0) update("coolantOutputT", 0);
+            }}
             className="rounded-sm border border-[#723910] bg-[#b0c4de] p-1.25 leading-none"
           />
         </div>
