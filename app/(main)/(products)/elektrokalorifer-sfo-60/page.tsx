@@ -25,16 +25,18 @@ export default function SFO60Page() {
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
-      <div className="mb-8 flex items-center justify-between gap-4">
+      <div className="mb-8 flex flex-col justify-between gap-4 @md:flex-row @md:items-center">
         <h1 className="text-xl font-bold uppercase">{product?.name}</h1>
-        <ModelDownloadButton
-          modelLinks={[
-            {
-              text: product.shortName,
-              url: `/models/sfo/elektrokalorifer_sfo-${product.size}.zip`,
-            },
-          ]}
-        />
+        <div className="self-end @md:self-auto">
+          <ModelDownloadButton
+            modelLinks={[
+              {
+                text: product.shortName,
+                url: `/models/sfo/elektrokalorifer_sfo-${product.size}.zip`,
+              },
+            ]}
+          />
+        </div>
       </div>
       <ElectroProductOverviewSection product={product} />
       <ElectroSpecsSection product={product} />
