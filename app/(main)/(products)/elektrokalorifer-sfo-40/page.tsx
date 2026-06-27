@@ -51,7 +51,7 @@ export default function SFO40Page() {
           },
           {
             name: "Подбор сечения кабеля СФО-40",
-            url: "/elektrokalorifery#anchor4",
+            url: "/elektrokalorifery#anchor5",
           },
         ]}
         className="mb-6"

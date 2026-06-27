@@ -247,7 +247,7 @@ export default async function KaloriferySFO() {
             { name: "Электротехнический расчет", url: "/elektrokalorifery" },
             {
               name: "Подключение калориферов",
-              url: "/elektrokalorifery#anchor9",
+              url: "/elektrokalorifery#anchor2",
             },
           ]}
         />

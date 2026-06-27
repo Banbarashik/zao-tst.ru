@@ -308,6 +308,7 @@ export default function ElektrokaloriferyPage() {
 
       {/* Принципиально-монтажные схемы подключения по моделям */}
       <section className="space-y-10">
+        <Anchor num={2} />
         <Heading
           lvl={2}
           text="Принципиально-монтажные схемы подключения по моделям"
@@ -324,7 +325,7 @@ export default function ElektrokaloriferyPage() {
         {/* СХЕМЫ-ТАБЛИЦЫ */}
         <ol className="space-y-12">
           <li className="space-y-4">
-            <Anchor num={2} />
+            <Anchor num={3} />
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-20/9 w-full">
                 <Image
@@ -351,7 +352,7 @@ export default function ElektrokaloriferyPage() {
           </li>
 
           <li className="space-y-4">
-            <Anchor num={3} />
+            <Anchor num={4} />
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-2/1 w-full">
                 <Image
@@ -378,7 +379,7 @@ export default function ElektrokaloriferyPage() {
           </li>
 
           <li className="space-y-4">
-            <Anchor num={4} />
+            <Anchor num={5} />
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-5/3 w-full">
                 <Image
@@ -405,7 +406,7 @@ export default function ElektrokaloriferyPage() {
           </li>
 
           <li className="space-y-4">
-            <Anchor num={5} />
+            <Anchor num={6} />
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-20/13 w-full">
                 <Image
@@ -432,7 +433,7 @@ export default function ElektrokaloriferyPage() {
           </li>
 
           <li className="space-y-4">
-            <Anchor num={6} />
+            <Anchor num={7} />
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-10/7 w-full">
                 <Image
@@ -459,7 +460,7 @@ export default function ElektrokaloriferyPage() {
           </li>
 
           <li className="space-y-4">
-            <Anchor num={7} />
+            <Anchor num={8} />
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-4/3 w-full">
                 <Image
@@ -486,7 +487,7 @@ export default function ElektrokaloriferyPage() {
           </li>
 
           <li className="space-y-4">
-            <Anchor num={8} />
+            <Anchor num={9} />
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
               <div className="relative aspect-10/9 w-full">
                 <Image

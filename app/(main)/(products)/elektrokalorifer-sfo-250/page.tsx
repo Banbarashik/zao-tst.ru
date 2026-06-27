@@ -51,7 +51,7 @@ export default function SFO250Page() {
           },
           {
             name: "Подбор сечения кабеля СФО-250",
-            url: "/elektrokalorifery#anchor8",
+            url: "/elektrokalorifery#anchor9",
           },
         ]}
         className="mb-6"
