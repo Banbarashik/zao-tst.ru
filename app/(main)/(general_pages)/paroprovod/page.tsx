@@ -779,24 +779,31 @@ export default function ParoprovodPage() {
         <div>
           <ProductParagraph>
             Формула расчета диаметра трубопровода пара имеет вид:{" "}
-            <span className="text-3xl">
-              D =
-              <math>
+            <math className="font-arial text-2xl font-bold">
+              <mrow>
+                <mi>D</mi>
+                <mo>=</mo>
                 <msqrt>
-                  <mfrac className="font-arial text-3xl font-bold">
-                    <mrow>
-                      <mn>
-                        354 • G <sub>пар</sub>
-                      </mn>
-                      <mn>
-                        • V <sub>пар</sub>
-                      </mn>
-                    </mrow>
-                    <mn>v</mn>
-                  </mfrac>
+                  <mrow>
+                    <mo>(</mo>
+                    <mn>354</mn>
+                    <mo>•</mo>
+                    <msub>
+                      <mi>G</mi>
+                      <mtext>пар</mtext>
+                    </msub>
+                    <mo>•</mo>
+                    <msub>
+                      <mi>V</mi>
+                      <mtext>пар</mtext>
+                    </msub>
+                    <mo>)</mo>
+                    <mo>÷</mo>
+                    <mi>v</mi>
+                  </mrow>
                 </msqrt>
-              </math>
-            </span>
+              </mrow>
+            </math>
           </ProductParagraph>
           <ul>
             <li>D – расчетное значение внутреннего диаметра, мм;</li>
@@ -856,19 +863,28 @@ export default function ParoprovodPage() {
               МПа при массовом расходе теплоносителя 82 кг/час и скорости потока
               25 м/сек.
             </ProductParagraph>
-            <ProductParagraph className="text-2xl font-bold">
-              D =
-              <math>
-                <msqrt>
-                  <mfrac className="font-arial text-3xl font-bold">
+            <ProductParagraph>
+              <math className="font-arial text-xl font-bold">
+                <mrow>
+                  <mi>D</mi>
+                  <mo>=</mo>
+                  <msqrt>
                     <mrow>
-                      <mn>354 • 82 • 1.694</mn>
+                      <mo>(</mo>
+                      <mn>354</mn>
+                      <mo>•</mo>
+                      <mn>82</mn>
+                      <mo>•</mo>
+                      <mn>1.694</mn>
+                      <mo>)</mo>
+                      <mo>÷</mo>
+                      <mn>25</mn>
                     </mrow>
-                    <mn>25</mn>
-                  </mfrac>
-                </msqrt>
-              </math>{" "}
-              = 44.35
+                  </msqrt>
+                  <mo>=</mo>
+                  <mn>44.35</mn>
+                </mrow>
+              </math>
             </ProductParagraph>
             <ul>
               <li>D – расчетное значение внутреннего диаметра, мм;</li>
@@ -889,19 +905,28 @@ export default function ParoprovodPage() {
               МПа при массовом расходе теплоносителя 1530 кг/час и скорости
               потока 30 м/сек.
             </ProductParagraph>
-            <ProductParagraph className="text-2xl font-bold">
-              D =
-              <math>
-                <msqrt>
-                  <mfrac className="font-arial text-3xl font-bold">
+            <ProductParagraph>
+              <math className="font-arial text-xl font-bold">
+                <mrow>
+                  <mi>D</mi>
+                  <mo>=</mo>
+                  <msqrt>
                     <mrow>
-                      <mn>354 • 1530 • 0.2403</mn>
+                      <mo>(</mo>
+                      <mn>354</mn>
+                      <mo>•</mo>
+                      <mn>1530</mn>
+                      <mo>•</mo>
+                      <mn>0.2403</mn>
+                      <mo>)</mo>
+                      <mo>÷</mo>
+                      <mn>30</mn>
                     </mrow>
-                    <mn>30</mn>
-                  </mfrac>
-                </msqrt>
-              </math>{" "}
-              = 65.87
+                  </msqrt>
+                  <mo>=</mo>
+                  <mn>65.87</mn>
+                </mrow>
+              </math>
             </ProductParagraph>
             <ul>
               <li>D – расчетное значение внутреннего диаметра, мм;</li>
