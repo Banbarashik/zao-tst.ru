@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Mail } from "lucide-react";
+import { Mail, MapPinned, Smartphone } from "lucide-react";
 import { GithubIcon } from "@/components/icons/github";
 
 import Logo from "@/components/ui/logo";
@@ -11,7 +11,7 @@ export default function Footer() {
       id="footer"
       className="bg-secondary text-secondary-foreground 4xl:justify-center relative py-4 pr-2 sm:pr-4 sm:pb-10 sm:pl-26 lg:flex lg:h-62 lg:items-center lg:gap-16 xl:h-auto xl:p-10"
     >
-      <div className="4xl:justify-start 4xl:gap-20 4xl:w-auto lg:ml-auto lg:flex lg:items-center lg:gap-16 xl:ml-0 xl:w-full xl:justify-between">
+      <div className="4xl:justify-start 4xl:gap-20 3xl:gap-10 4xl:w-auto lg:ml-auto lg:flex lg:items-center lg:gap-16 xl:ml-0 xl:w-full xl:justify-between">
         <div className="mb-6 flex items-center justify-center gap-4 sm:justify-start lg:order-last lg:m-0">
           <Logo place="footer" />
           <div className="text-lg">
@@ -66,22 +66,30 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <ul className="3xl:block hidden font-medium xl:text-sm 2xl:text-base">
-          <li>
-            Юр. адрес: г. Новосибирск, ул. Широкая, здание 1 А, офис 207/1
-          </li>
-          <li>Почтовый адрес: 652710, г. Киселевск, ул. Юргинская, дом 1</li>
-        </ul>
-        <ul className="3xl:block hidden xl:text-sm 2xl:text-base">
-          <li>
-            <span className="font-semibold">8-961-737-83-14</span> - технические
-            вопросы
-          </li>
-          <li>
-            <span className="font-semibold">8-904-968-14-88</span> - отдел
-            продаж
-          </li>
-        </ul>
+        <p className="3xl:block hidden font-medium xl:text-sm 2xl:text-base">
+          <span className="mb-2 flex gap-2">
+            <MapPinned /> <span>Юридический / почтовый адрес:</span>
+          </span>
+          <span className="block">
+            652707, Кемеровская область-Кузбасс, г. Киселевск, ул. Юргинская, д.
+            1
+          </span>
+        </p>
+        <div className="3xl:block hidden xl:text-sm 2xl:text-base">
+          <div className="mb-1 flex gap-1">
+            <Smartphone />
+            Телефоны:
+          </div>
+          <ul>
+            <li>
+              <span>8-961-737-83-14</span> - технические вопросы
+            </li>
+            <li>
+              <span>8-904-968-14-88</span> - отдел продаж
+            </li>
+          </ul>
+        </div>
+
         <div className="order-first hidden space-y-1 text-[15px] xl:block">
           <p className="mb-2">Разработка сайта:</p>
           <Link
