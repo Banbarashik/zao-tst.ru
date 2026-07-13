@@ -63,7 +63,7 @@ export default async function KaloriferySFO() {
           3442-004-55613706-02.
         </ProductParagraph>
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-          <div className="relative aspect-16/10 w-full">
+          <div className="relative aspect-4/3 w-full">
             <Image
               src="/img/general_pages/elektrokalorifer_sfo_komplektatciia.png"
               alt="Электрический калорифер СФО"
@@ -71,7 +71,7 @@ export default async function KaloriferySFO() {
               fill
             />
           </div>
-          <div className="relative aspect-16/10 w-full">
+          <div className="relative aspect-4/3 w-full">
             <Image
               src="/img/general_pages/elektrokalorifery_sfo_proizvodstvo.png"
               alt="Производство электрокалориферов СФО"
@@ -124,7 +124,10 @@ export default async function KaloriferySFO() {
           надежно касаться оребрения электронагревателя. В случае превышения
           температуры тэна выше допустимых 190°С, происходит размыкание контакта
           реле, разрывается цепь управления и отключаются все секции
-          нагревательных элементов.
+          нагревательных элементов. Монтажные отверстия{" "}
+          <span className="text-primary-dark">(5)</span> предназначены для
+          соединения со смежным оборудованием вентиляционно-отопительной
+          системы.
         </ProductParagraph>
       </section>
 

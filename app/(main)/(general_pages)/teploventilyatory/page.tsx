@@ -55,7 +55,7 @@ export default function UstanovkiSFOTC() {
         </ProductParagraph>
 
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-          <div className="relative aspect-16/10 w-full">
+          <div className="relative aspect-4/3 w-full">
             <Image
               src="/img/general_pages/elektrokalorifernaia_ustanovka_sfotc_komplektatciia.png"
               alt="Электрическая приточная установка СФОЦ"
@@ -63,7 +63,7 @@ export default function UstanovkiSFOTC() {
               fill
             />
           </div>
-          <div className="relative aspect-16/10 w-full">
+          <div className="relative aspect-4/3 w-full">
             <Image
               src="/img/general_pages/elektrokalorifernaia_ustanovka_sfotc_proizvodstvo.png"
               alt="Производство электрокалориферных установок СФОЦ"
