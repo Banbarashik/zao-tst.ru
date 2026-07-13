@@ -102,7 +102,7 @@ export function DeliverySection({
               <th>ИНН</th>
               <th>КПП</th>
               <td>5404002676</td>
-              <td>540401001</td>
+              <td>421401001</td>
             </tr>
             <tr>
               <th colSpan={2}>БИК</th>

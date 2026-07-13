@@ -1,8 +1,7 @@
 import productData from "@/data/products.json";
 
-import Link from "next/link";
 import type { Metadata } from "next";
-import React from "react";
+import Link from "next/link";
 
 import { sortProducts } from "@/lib/utils";
 
@@ -1005,22 +1004,11 @@ export default function ContactsAndPricesPage() {
                   className="py-0.75 uppercase"
                   style={{ fontSize: "14px" }}
                 >
-                  Юридический адрес
+                  Юридический / почтовый адрес
                 </th>
                 <td colSpan={4} className="px-1">
-                  630108, Новосибирск г., Широкая ул., здание 1А, офис 207/1
-                </td>
-              </tr>
-              <tr className="text-sm">
-                <th
-                  colSpan={4}
-                  className="py-0.75 uppercase"
-                  style={{ fontSize: "14px" }}
-                >
-                  Почтовый адрес
-                </th>
-                <td colSpan={4} className="px-1">
-                  652710, Кемеровская обл., Киселевск г., Юргинская ул., дом № 1
+                  652707, Кемеровская область-Кузбасс, г. Киселевск, ул.
+                  Юргинская, д. 1
                 </td>
               </tr>
               <tr className="text-sm">
@@ -1029,7 +1017,7 @@ export default function ContactsAndPricesPage() {
                 <th>ОКПО</th>
                 <th>ОГРН</th>
                 <td>5404002676</td>
-                <td>540401001</td>
+                <td>421401001</td>
                 <td>55613706</td>
                 <td>1155476002483</td>
               </tr>
