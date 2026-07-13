@@ -9,9 +9,10 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="bg-secondary text-secondary-foreground 4xl:justify-center relative py-4 pr-2 sm:pr-4 sm:pb-10 sm:pl-26 lg:flex lg:h-62 lg:items-center lg:gap-16 xl:h-auto xl:p-10"
+      className="bg-secondary text-secondary-foreground 4xl:justify-center relative py-4 pr-2 sm:pr-4 sm:pb-10 sm:pl-26 lg:flex lg:h-62 lg:items-center lg:gap-16 lg:pl-0 xl:h-auto xl:p-10"
     >
-      <div className="4xl:justify-start 4xl:gap-20 3xl:gap-10 4xl:w-auto lg:ml-auto lg:flex lg:items-center lg:gap-16 xl:ml-0 xl:w-full xl:justify-between">
+      <div className="4xl:justify-start 4xl:gap-20 3xl:gap-10 4xl:w-auto lg:flex lg:w-full lg:items-center lg:justify-between lg:gap-15 xl:ml-0">
+        <div className="w-26 xl:hidden" />
         <div className="mb-6 flex items-center justify-center gap-4 sm:justify-start lg:order-last lg:m-0">
           <Logo place="footer" />
           <div className="text-lg">
@@ -26,7 +27,31 @@ export default function Footer() {
           </div>
         </div>
         <div className="3xl:hidden space-y-3 text-end sm:text-start">
-          <ul>
+          <p>
+            <span className="mb-2 flex gap-2">
+              <MapPinned /> <span>Юридический / почтовый адрес:</span>
+            </span>
+            <span className="block">
+              652707, Кемеровская область-Кузбасс, г. Киселевск, ул. Юргинская,
+              д. 1
+            </span>
+          </p>
+
+          <div className="mb-2 hidden gap-1 lg:flex xl:hidden">
+            <Smartphone />
+            Телефоны:
+          </div>
+          <ul className="space-y-1.5">
+            <li className="flex gap-2">
+              <Smartphone className="hidden xl:block" /> 8-961-737-83-14 -
+              технические вопросы
+            </li>
+            <li className="flex gap-2">
+              <Smartphone className="hidden xl:block" /> 8-904-968-14-88 - отдел
+              продаж
+            </li>
+          </ul>
+          {/* <ul>
             <li className="flex flex-col sm:flex-row sm:gap-2">
               <div>
                 Технические вопросы<span className="hidden sm:inline">:</span>
@@ -39,16 +64,17 @@ export default function Footer() {
               </div>
               <div className="font-semibold">8-904-968-14-88</div>
             </li>
-          </ul>
-          <ul className="space-y-2 font-medium">
+          </ul> */}
+
+          {/* <ul className="space-y-2 font-medium">
             <li className="flex flex-col sm:flex-row sm:flex-wrap sm:gap-x-2">
               <div>
                 Юридический адрес<span className="hidden sm:inline">:</span>
               </div>
-              {/* 0-639 */}
+              0-639
               <div className="sm:hidden">г. Новосибирск, ул. Широкая,</div>
               <div className="sm:hidden">здание 1 А, офис 207/1</div>
-              {/* 640-767 */}
+              640-767
               <div className="hidden sm:block">
                 г. Новосибирск, ул. Широкая, здание 1 А,
               </div>
@@ -64,7 +90,7 @@ export default function Footer() {
                 <span className="hidden sm:inline">, дом 1</span>
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
         <p className="3xl:block hidden font-medium xl:text-sm 2xl:text-base">
           <span className="mb-2 flex gap-2">
