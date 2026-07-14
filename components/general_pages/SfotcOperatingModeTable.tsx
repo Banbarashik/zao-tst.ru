@@ -22,12 +22,12 @@ const STATUS_LABEL: Record<OutletStatus, string> = {
 function OutletCell({ reading }: { reading: PowerLevelReading }) {
   const displayValue =
     reading.status === "unavailable"
-      ? "—"
+      ? "⛔"
       : `${reading.outletTempC! > 0 ? "+" : ""}${reading.outletTempC}`;
 
   return (
     <td
-      className={`border border-gray-300 px-2 py-1 text-center font-medium ${STATUS_STYLES[reading.status]}`}
+      className={`${STATUS_STYLES[reading.status]}`}
       title={STATUS_LABEL[reading.status]}
     >
       {displayValue}
@@ -36,21 +36,13 @@ function OutletCell({ reading }: { reading: PowerLevelReading }) {
 }
 
 function PressureCell({ reading }: { reading: PowerLevelReading }) {
-  return (
-    <td className="border border-gray-300 px-2 py-1 text-center">
-      {reading.availablePressurePa ?? "—"}
-    </td>
-  );
+  return <td>{reading.availablePressurePa ?? ""}</td>;
 }
 
 function PowerLevelHeader({ spec }: { spec: PowerLevelSpec }) {
   return (
-    <th
-      colSpan={2}
-      className="border border-gray-300 px-2 py-1 text-center align-bottom font-normal"
-    >
-      {spec.label}
-      <br />({spec.kw} кВт)
+    <th colSpan={2}>
+      {spec.label} ({spec.kw} кВт)
     </th>
   );
 }
@@ -81,7 +73,7 @@ export function SfotcOperatingModeTable({
             <th>
               Производительность по воздуху: 12000 м<sup>3</sup>/час
             </th>
-            <th>Статический напор вентилятора: 949 ПА</th>
+            <th>Статический напор вентилятора: 949 Па</th>
           </tr>
         </thead>
       </table>
@@ -91,54 +83,26 @@ export function SfotcOperatingModeTable({
         </caption>
         <thead>
           <tr>
-            <th
-              colSpan={1}
-              rowSpan={3}
-              className="border border-gray-300 px-2 py-1 align-bottom font-normal"
-            >
-              Температура
-              <br />
-              на входе, °С
+            <th rowSpan={2} style={{ borderBottomWidth: "0" }}>
+              Температура на входе, °С
             </th>
-            <th
-              colSpan={7}
-              className="border border-gray-300 px-2 py-1 text-center font-semibold"
-            >
-              Производительность по воздуху: {table.airFlowM3h} м3/час
-              <br />
-              Статический напор вентилятора: {table.fanStaticPressurePa} Па
-            </th>
-          </tr>
-          <tr>
             <PowerLevelHeader spec={table.powerLevels.full} />
             <PowerLevelHeader spec={table.powerLevels.twoThirds} />
             <PowerLevelHeader spec={table.powerLevels.oneThird} />
           </tr>
           <tr>
-            <th className="border border-gray-300 px-2 py-1 font-normal">
-              T на выходе, °С
-            </th>
-            <th className="border border-gray-300 px-2 py-1 font-normal">
-              Располагаемый напор, Па
-            </th>
-            <th className="border border-gray-300 px-2 py-1 font-normal">
-              T на выходе, °С
-            </th>
-            <th className="border border-gray-300 px-2 py-1 font-normal">
-              Располагаемый напор, Па
-            </th>
-            <th className="border border-gray-300 px-2 py-1 font-normal">
-              T на выходе, °С
-            </th>
-            <th className="border border-gray-300 px-2 py-1 font-normal">
-              Располагаемый напор, Па
-            </th>
+            <th style={{ borderBottomWidth: "0" }}>T на выходе, °С</th>
+            <th style={{ borderBottomWidth: "0" }}>Располагаемый напор, Па</th>
+            <th style={{ borderBottomWidth: "0" }}>T на выходе, °С</th>
+            <th style={{ borderBottomWidth: "0" }}>Располагаемый напор, Па</th>
+            <th style={{ borderBottomWidth: "0" }}>T на выходе, °С</th>
+            <th style={{ borderBottomWidth: "0" }}>Располагаемый напор, Па</th>
           </tr>
         </thead>
         <tbody>
           {table.rows.map((row) => (
             <tr key={row.inletTempC}>
-              <td className="border border-gray-300 px-2 py-1 text-center">
+              <td className="text-red-700">
                 {row.inletTempC > 0 ? "+" : ""}
                 {row.inletTempC}
               </td>
