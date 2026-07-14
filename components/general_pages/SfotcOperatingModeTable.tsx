@@ -74,8 +74,18 @@ export function SfotcOperatingModeTable({
   className,
 }: SfotcOperatingModeTableProps) {
   return (
-    <div className={className}>
-      <table className="w-full border-collapse text-sm">
+    <div className="w-full overflow-x-auto">
+      <table className="-mb-px w-full min-w-231 xl:min-w-auto">
+        <thead className="uppercase">
+          <tr>
+            <th>
+              Производительность по воздуху: 12000 м<sup>3</sup>/час
+            </th>
+            <th>Статический напор вентилятора: 949 ПА</th>
+          </tr>
+        </thead>
+      </table>
+      <table className="w-full min-w-231 xl:min-w-auto">
         <caption className="sr-only">
           Производительность по воздуху: {table.airFlowM3h} м3/час
         </caption>
