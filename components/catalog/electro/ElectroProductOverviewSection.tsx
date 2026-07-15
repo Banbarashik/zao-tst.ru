@@ -40,7 +40,7 @@ export function ElectroProductOverviewSection({ product }) {
       <div className="sm:col-span-full sm:row-start-2 xl:col-auto xl:row-start-1">
         <div className="mb-3 text-xl">
           <h2>{productName}.</h2>
-          {!isSHUK && <p>ТУ 3442-004-55613706-02</p>}
+          {!isSHUK && <p>ТУ 3442-005-55613706-02</p>}
         </div>
         {isSHUK ? (
           <>
