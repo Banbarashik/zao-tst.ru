@@ -26,6 +26,9 @@ export default function SFOTC250Page() {
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
+      <h1 className="mb-8 text-xl font-bold uppercase">
+        Электрокалориферная установка {product?.shortName}
+      </h1>
       <ElectroProductOverviewSection product={product} />
       <ElectroSpecsSection product={product} />
       <TechReviewSection />
