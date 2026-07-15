@@ -9,6 +9,7 @@ import ProductSubheader from "@/components/catalog/productSubheader";
 import Spoiler from "@/components/ui/spoiler";
 import { PDFDownloadCard } from "@/components/PDFDownloadCard";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import { DeliverySection } from "@/components/catalog/DeliverySection";
 
 const product = productData.find((p) => p.id === "ustanovka-sfotc-250");
 
@@ -25,6 +26,12 @@ export default function SFOTC250Page() {
       <ElectroSpecsSection product={product} />
       <TechReviewSection />
       <SFOTCDimensionsSection product={product} />
+
+      <DeliverySection
+        product={product}
+        specs={{ dimensions: [2.38, 1.15, 1.755], weight: 370 }}
+        className="mb-6"
+      />
 
       <LinkButtonsBlock
         buttons={[

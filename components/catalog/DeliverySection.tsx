@@ -15,9 +15,11 @@ export function DeliverySection({
 }) {
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
 
+  const isKalorifer = product.categories.includes("kalorifer");
   const isKSK = product.categories.includes("ksk");
   const isKPSK = product.categories.includes("kpsk");
   const isSFO = product.categories.includes("sfo");
+  const isSFOTC = product.categories.includes("sfotc");
 
   const volume = specs?.dimensions.reduce((sum, cur) => sum * cur, 1);
 
@@ -27,10 +29,11 @@ export function DeliverySection({
       {(isKSK || isKPSK) && `${heatCarrierAdj.gen} теплообменника`}{" "}
       {isKSK && product.shortName}
       {isKPSK && `КП-Ск ${product.rows}-${product.size}`} для транспортировки.
-      Внешние габаритные размеры: {specs?.dimensions[0].toFixed(3)} м х{" "}
-      {specs?.dimensions[1].toFixed(3)} м х {specs?.dimensions[2].toFixed(3)} м;
-      объем: {volume?.toFixed(3)} м<sup>3</sup>; вес калорифера{" "}
-      {product.shortName}: {specs?.weight} кг.
+      Внешние габаритные размеры{isSFOTC && ` установки ${product.shortName}`}:{" "}
+      {specs?.dimensions[0].toFixed(3)} м х {specs?.dimensions[1].toFixed(3)} м
+      х {specs?.dimensions[2].toFixed(3)} м; объем: {volume?.toFixed(3)} м
+      <sup>3</sup>; вес{isKalorifer ? ` калорифера ${product.shortName}:` : ":"}{" "}
+      {specs?.weight} кг.
     </>
   );
 
@@ -38,13 +41,14 @@ export function DeliverySection({
     <section className={cn("text-example space-y-4 text-[17px]", className)}>
       <h3 className="mb-2 text-xl">
         Оплата и доставка {isSFO && "электрокалорифера"}{" "}
-        {(isKSK || isKPSK) && "калорифера"} {product.shortName}
+        {(isKSK || isKPSK) && "калорифера"} {isSFOTC && "установки"}{" "}
+        {product.shortName}
       </h3>
 
       <div>
         <p>
-          Заказать калорифер {product.shortName} на нашем предприятии можно
-          следующими способами:
+          Заказать {isKalorifer && "калорифер"} {isSFOTC && "установку"}{" "}
+          {product.shortName} на нашем предприятии можно следующими способами:
         </p>
         <ul>
           <li>
@@ -71,7 +75,8 @@ export function DeliverySection({
 
       <div>
         <p>
-          Способы оплаты {isSFO && "электрического"} калорифера{" "}
+          Способы оплаты {isSFO && "электрического"}{" "}
+          {isKalorifer && "калорифера"} {isSFOTC && "установки"}{" "}
           {product.shortName}:
         </p>
         <ul>
@@ -135,7 +140,10 @@ export function DeliverySection({
       </div>
 
       <div>
-        <p>Доставка калорифера {product.shortName}:</p>
+        <p>
+          Доставка {isKalorifer && "калорифера"} {isSFOTC && "установки"}{" "}
+          {product.shortName}:
+        </p>
         <ul>
           <li>
             • самовывоз со склада завода, расположенного по адресу: г.
