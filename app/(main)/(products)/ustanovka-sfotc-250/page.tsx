@@ -8,6 +8,7 @@ import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimens
 import ProductSubheader from "@/components/catalog/productSubheader";
 import Spoiler from "@/components/ui/spoiler";
 import { PDFDownloadCard } from "@/components/PDFDownloadCard";
+import LinkButtonsBlock from "@/components/linkButtonsBlock";
 
 const product = productData.find((p) => p.id === "ustanovka-sfotc-250");
 
@@ -20,10 +21,25 @@ export default function SFOTC250Page() {
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
-      {/* <ElectroProductOverviewSection product={product} />
+      <ElectroProductOverviewSection product={product} />
       <ElectroSpecsSection product={product} />
-      <SFOTCDimensionsSection product={product} /> */}
       <TechReviewSection />
+      <SFOTCDimensionsSection product={product} />
+
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Установки СФОЦ - характеристики",
+            url: "/teploventilyatory",
+          },
+          {
+            name: "Каталог установок СФОЦ",
+            url: "/documents/Electroustanovka_SFOTC_katalog_2025.pdf",
+            openNewTab: true,
+            goal: "open_pdf",
+          },
+        ]}
+      />
     </div>
   );
 }
