@@ -1,24 +1,28 @@
 import productData from "@/data/products.json";
 import { sfotcOperatingModes } from "@/data/sfotcOperatingModes";
 
+import { createSFOTCMetadata } from "@/lib/metadata";
+
+import Spoiler from "@/components/ui/spoiler";
+import ProductSubheader from "@/components/catalog/productSubheader";
+import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import { PDFDownloadCard } from "@/components/PDFDownloadCard";
+
+import { SfotcOperatingModeTable } from "@/components/general_pages/SfotcOperatingModeTable";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
 import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
-import { SfotcOperatingModeTable } from "@/components/general_pages/SfotcOperatingModeTable";
 import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimensionsSection";
-import ProductSubheader from "@/components/catalog/productSubheader";
-import Spoiler from "@/components/ui/spoiler";
-import { PDFDownloadCard } from "@/components/PDFDownloadCard";
-import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import { DeliverySection } from "@/components/catalog/DeliverySection";
+
+const getTable = (airFlow) =>
+  sfotcOperatingModes.find((mode) => mode.id === `sfotc-250-${airFlow}`);
 
 const product = productData.find((p) => p.id === "ustanovka-sfotc-250");
 
+export const metadata = createSFOTCMetadata(product?.name, product?.size);
+
 export default function SFOTC250Page() {
   if (!product) return;
-
-  const table = sfotcOperatingModes.find(
-    (mode) => mode.id === "sfotc-250-17000",
-  )!;
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
@@ -189,7 +193,7 @@ function TechReviewSection() {
                   </>
                 }
               >
-                a
+                <Analysis12000 />
               </Spoiler>
             </li>
             {/* Режим 14 000 – 15 000 м<sup>3</sup>/ч — «Номинальный / Сбалансированный» */}
@@ -225,7 +229,7 @@ function TechReviewSection() {
                   </>
                 }
               >
-                a
+                <Analysis15000 />
               </Spoiler>
             </li>
             {/* Режим 16 000 – 17 000 м<sup>3</sup>/ч — «Высокообъемный / Максимальный расход» */}
@@ -263,7 +267,7 @@ function TechReviewSection() {
                   </>
                 }
               >
-                a
+                <Analysis17000 />
               </Spoiler>
             </li>
           </ul>
@@ -410,6 +414,33 @@ function TechReviewSection() {
           </div>
         </li>
       </ol>
+    </section>
+  );
+}
+
+const ANALYSIS_SECTION_CLASS =
+  "space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm mt-4";
+
+function Analysis12000() {
+  return (
+    <section className={ANALYSIS_SECTION_CLASS}>
+      <SfotcOperatingModeTable table={getTable(12000)} />
+    </section>
+  );
+}
+
+function Analysis15000() {
+  return (
+    <section className={ANALYSIS_SECTION_CLASS}>
+      <SfotcOperatingModeTable table={getTable(15000)} />
+    </section>
+  );
+}
+
+function Analysis17000() {
+  return (
+    <section className={ANALYSIS_SECTION_CLASS}>
+      <SfotcOperatingModeTable table={getTable(17000)} />
     </section>
   );
 }
