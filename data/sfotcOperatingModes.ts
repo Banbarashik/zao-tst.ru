@@ -2,6 +2,848 @@ import type { ModeTableData } from "@/types/sfotcOperatingModes";
 
 export const sfotcOperatingModes: ModeTableData[] = [
   {
+    id: "sfotc-60-4000",
+    airFlowM3h: 4000,
+    fanStaticPressurePa: 662,
+    powerLevels: {
+      full: { label: "Полная мощность", kw: 67.5 },
+      twoThirds: { label: "Частичная мощность 2/3", kw: 45.0 },
+      oneThird: { label: "Минимальная мощность 1/3", kw: 22.5 },
+    },
+    rows: [
+      {
+        inletTempC: -30,
+        full: { outletTempC: 11, availablePressurePa: 535, status: "normal" },
+        twoThirds: {
+          outletTempC: -4,
+          availablePressurePa: 531,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -17,
+          availablePressurePa: 528,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -25,
+        full: { outletTempC: 17, availablePressurePa: 542, status: "normal" },
+        twoThirds: {
+          outletTempC: 2,
+          availablePressurePa: 539,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -12,
+          availablePressurePa: 535,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -20,
+        full: { outletTempC: 23, availablePressurePa: 549, status: "normal" },
+        twoThirds: {
+          outletTempC: 7,
+          availablePressurePa: 545,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -7,
+          availablePressurePa: 542,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -15,
+        full: { outletTempC: 29, availablePressurePa: 555, status: "normal" },
+        twoThirds: {
+          outletTempC: 13,
+          availablePressurePa: 552,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -1,
+          availablePressurePa: 549,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -10,
+        full: { outletTempC: 35, availablePressurePa: 560, status: "normal" },
+        twoThirds: {
+          outletTempC: 19,
+          availablePressurePa: 557,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 4,
+          availablePressurePa: 555,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -5,
+        full: { outletTempC: 40, availablePressurePa: 566, status: "warning" },
+        twoThirds: {
+          outletTempC: 24,
+          availablePressurePa: 563,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 9,
+          availablePressurePa: 560,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 0,
+        full: { outletTempC: 46, availablePressurePa: 571, status: "warning" },
+        twoThirds: {
+          outletTempC: 30,
+          availablePressurePa: 568,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 14,
+          availablePressurePa: 565,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 5,
+        full: { outletTempC: 52, availablePressurePa: 575, status: "warning" },
+        twoThirds: {
+          outletTempC: 35,
+          availablePressurePa: 573,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 20,
+          availablePressurePa: 570,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 10,
+        full: { outletTempC: 58, availablePressurePa: 579, status: "warning" },
+        twoThirds: {
+          outletTempC: 41,
+          availablePressurePa: 577,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 25,
+          availablePressurePa: 575,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 15,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: 46,
+          availablePressurePa: 581,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 30,
+          availablePressurePa: 579,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 20,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: 52,
+          availablePressurePa: 585,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 35,
+          availablePressurePa: 583,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 25,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: 41,
+          availablePressurePa: 587,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 30,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: 46,
+          availablePressurePa: 590,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 35,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: 51,
+          availablePressurePa: 593,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 40,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+      },
+    ],
+  },
+  {
+    id: "sfotc-60-5000",
+    airFlowM3h: 5000,
+    fanStaticPressurePa: 489,
+    powerLevels: {
+      full: { label: "Полная мощность", kw: 67.5 },
+      twoThirds: { label: "Частичная мощность 2/3", kw: 45.0 },
+      oneThird: { label: "Минимальная мощность 1/3", kw: 22.5 },
+    },
+    rows: [
+      {
+        inletTempC: -30,
+        full: { outletTempC: 2, availablePressurePa: 294, status: "normal" },
+        twoThirds: {
+          outletTempC: -9,
+          availablePressurePa: 290,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -20,
+          availablePressurePa: 286,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -25,
+        full: { outletTempC: 8, availablePressurePa: 305, status: "normal" },
+        twoThirds: {
+          outletTempC: -4,
+          availablePressurePa: 301,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -15,
+          availablePressurePa: 297,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -20,
+        full: { outletTempC: 14, availablePressurePa: 315, status: "normal" },
+        twoThirds: {
+          outletTempC: 2,
+          availablePressurePa: 311,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -10,
+          availablePressurePa: 308,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -15,
+        full: { outletTempC: 19, availablePressurePa: 325, status: "normal" },
+        twoThirds: {
+          outletTempC: 7,
+          availablePressurePa: 321,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -4,
+          availablePressurePa: 317,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -10,
+        full: { outletTempC: 25, availablePressurePa: 333, status: "normal" },
+        twoThirds: {
+          outletTempC: 12,
+          availablePressurePa: 329,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 1,
+          availablePressurePa: 326,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -5,
+        full: { outletTempC: 31, availablePressurePa: 342, status: "normal" },
+        twoThirds: {
+          outletTempC: 18,
+          availablePressurePa: 338,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 6,
+          availablePressurePa: 335,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 0,
+        full: { outletTempC: 36, availablePressurePa: 349, status: "normal" },
+        twoThirds: {
+          outletTempC: 23,
+          availablePressurePa: 346,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 11,
+          availablePressurePa: 343,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 5,
+        full: { outletTempC: 42, availablePressurePa: 356, status: "normal" },
+        twoThirds: {
+          outletTempC: 29,
+          availablePressurePa: 353,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 16,
+          availablePressurePa: 350,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 10,
+        full: { outletTempC: 48, availablePressurePa: 362, status: "normal" },
+        twoThirds: {
+          outletTempC: 34,
+          availablePressurePa: 360,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 22,
+          availablePressurePa: 357,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 15,
+        full: { outletTempC: 53, availablePressurePa: 369, status: "warning" },
+        twoThirds: {
+          outletTempC: 40,
+          availablePressurePa: 366,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 27,
+          availablePressurePa: 363,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 20,
+        full: { outletTempC: 59, availablePressurePa: 374, status: "warning" },
+        twoThirds: {
+          outletTempC: 45,
+          availablePressurePa: 372,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 32,
+          availablePressurePa: 369,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 25,
+        full: { outletTempC: 65, availablePressurePa: 380, status: "warning" },
+        twoThirds: {
+          outletTempC: 50,
+          availablePressurePa: 377,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 37,
+          availablePressurePa: 375,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 30,
+        full: { outletTempC: 70, availablePressurePa: 385, status: "warning" },
+        twoThirds: {
+          outletTempC: 56,
+          availablePressurePa: 382,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 43,
+          availablePressurePa: 380,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 35,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: 61,
+          availablePressurePa: 387,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 48,
+          availablePressurePa: 385,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 40,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: 67,
+          availablePressurePa: 392,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 53,
+          availablePressurePa: 390,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 45,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: 58,
+          availablePressurePa: 394,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 50,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: 63,
+          availablePressurePa: 398,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 55,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+      },
+    ],
+  },
+  {
+    id: "sfotc-60-5500",
+    airFlowM3h: 5500,
+    fanStaticPressurePa: 400,
+    powerLevels: {
+      full: { label: "Полная мощность", kw: 67.5 },
+      twoThirds: { label: "Частичная мощность 2/3", kw: 45.0 },
+      oneThird: { label: "Минимальная мощность 1/3", kw: 22.5 },
+    },
+    rows: [
+      {
+        inletTempC: -30,
+        full: { outletTempC: -1, availablePressurePa: 167, status: "normal" },
+        twoThirds: {
+          outletTempC: -11,
+          availablePressurePa: 162,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -21,
+          availablePressurePa: 157,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -25,
+        full: { outletTempC: 5, availablePressurePa: 175, status: "normal" },
+        twoThirds: {
+          outletTempC: -6,
+          availablePressurePa: 170,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -16,
+          availablePressurePa: 166,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -20,
+        full: { outletTempC: 10, availablePressurePa: 182, status: "normal" },
+        twoThirds: {
+          outletTempC: 0,
+          availablePressurePa: 178,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -11,
+          availablePressurePa: 174,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -15,
+        full: { outletTempC: 16, availablePressurePa: 191, status: "normal" },
+        twoThirds: {
+          outletTempC: 5,
+          availablePressurePa: 186,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: -5,
+          availablePressurePa: 182,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -10,
+        full: { outletTempC: 22, availablePressurePa: 197, status: "normal" },
+        twoThirds: {
+          outletTempC: 10,
+          availablePressurePa: 193,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 0,
+          availablePressurePa: 189,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: -5,
+        full: { outletTempC: 27, availablePressurePa: 203, status: "normal" },
+        twoThirds: {
+          outletTempC: 16,
+          availablePressurePa: 199,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 5,
+          availablePressurePa: 195,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 0,
+        full: { outletTempC: 33, availablePressurePa: 209, status: "normal" },
+        twoThirds: {
+          outletTempC: 21,
+          availablePressurePa: 205,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 10,
+          availablePressurePa: 201,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 5,
+        full: { outletTempC: 38, availablePressurePa: 214, status: "normal" },
+        twoThirds: {
+          outletTempC: 26,
+          availablePressurePa: 211,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 15,
+          availablePressurePa: 207,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 10,
+        full: { outletTempC: 44, availablePressurePa: 219, status: "normal" },
+        twoThirds: {
+          outletTempC: 32,
+          availablePressurePa: 216,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 21,
+          availablePressurePa: 213,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 15,
+        full: { outletTempC: 50, availablePressurePa: 224, status: "normal" },
+        twoThirds: {
+          outletTempC: 37,
+          availablePressurePa: 221,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 26,
+          availablePressurePa: 218,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 20,
+        full: { outletTempC: 55, availablePressurePa: 229, status: "warning" },
+        twoThirds: {
+          outletTempC: 43,
+          availablePressurePa: 226,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 31,
+          availablePressurePa: 223,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 25,
+        full: { outletTempC: 61, availablePressurePa: 233, status: "warning" },
+        twoThirds: {
+          outletTempC: 48,
+          availablePressurePa: 230,
+          status: "normal",
+        },
+        oneThird: {
+          outletTempC: 36,
+          availablePressurePa: 228,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 30,
+        full: { outletTempC: 67, availablePressurePa: 237, status: "warning" },
+        twoThirds: {
+          outletTempC: 53,
+          availablePressurePa: 235,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 41,
+          availablePressurePa: 232,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 35,
+        full: { outletTempC: 72, availablePressurePa: 241, status: "warning" },
+        twoThirds: {
+          outletTempC: 59,
+          availablePressurePa: 239,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 47,
+          availablePressurePa: 236,
+          status: "normal",
+        },
+      },
+      {
+        inletTempC: 40,
+        full: { outletTempC: 78, availablePressurePa: 245, status: "warning" },
+        twoThirds: {
+          outletTempC: 64,
+          availablePressurePa: 243,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 52,
+          availablePressurePa: 241,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 45,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: 70,
+          availablePressurePa: 247,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 57,
+          availablePressurePa: 245,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 50,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: 75,
+          availablePressurePa: 251,
+          status: "warning",
+        },
+        oneThird: {
+          outletTempC: 62,
+          availablePressurePa: 249,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 55,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: 67,
+          availablePressurePa: 253,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 60,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: 72,
+          availablePressurePa: 257,
+          status: "warning",
+        },
+      },
+      {
+        inletTempC: 65,
+        full: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        twoThirds: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+        oneThird: {
+          outletTempC: null,
+          availablePressurePa: null,
+          status: "unavailable",
+        },
+      },
+    ],
+  },
+  {
     id: "sfotc-100-5000",
     airFlowM3h: 5000,
     fanStaticPressurePa: 628,
