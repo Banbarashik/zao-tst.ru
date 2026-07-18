@@ -71,15 +71,18 @@ export function SfotcOperatingModeTable({
         <thead className="uppercase">
           <tr>
             <th>
-              Производительность по воздуху: 12000 м<sup>3</sup>/час
+              Производительность по воздуху: {table.airFlowM3h} м<sup>3</sup>
+              /час
             </th>
-            <th>Статический напор вентилятора: 949 Па</th>
+            <th>
+              Статический напор вентилятора: {table.fanStaticPressurePa} Па
+            </th>
           </tr>
         </thead>
       </table>
       <table className="w-full min-w-231 xl:min-w-auto">
         <caption className="sr-only">
-          Производительность по воздуху: {table.airFlowM3h} м3/час
+          Производительность по воздуху: {table.airFlowM3h} м<sup>3</sup>/час
         </caption>
         <thead>
           <tr>
