@@ -36,7 +36,7 @@ export default function SFOTC100Page() {
 
       <DeliverySection
         product={product}
-        specs={{ dimensions: [0, 0, 0], weight: 0 }}
+        specs={{ dimensions: [1.505, 0.918, 1.135], weight: 172 }}
         className="mb-6"
       />
 
