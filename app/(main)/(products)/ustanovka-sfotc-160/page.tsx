@@ -554,7 +554,7 @@ const ANALYSIS_SECTION_CLASS =
 function Analysis8000() {
   return (
     <section className={ANALYSIS_SECTION_CLASS}>
-      {/* <SfotcOperatingModeTable table={getTable(8000)} /> */}
+      <SfotcOperatingModeTable table={getTable(8000)} />
     </section>
   );
 }
@@ -562,7 +562,7 @@ function Analysis8000() {
 function Analysis9000() {
   return (
     <section className={ANALYSIS_SECTION_CLASS}>
-      {/* <SfotcOperatingModeTable table={getTable(9000)} /> */}
+      <SfotcOperatingModeTable table={getTable(9000)} />
     </section>
   );
 }
@@ -570,7 +570,7 @@ function Analysis9000() {
 function Analysis10000() {
   return (
     <section className={ANALYSIS_SECTION_CLASS}>
-      {/* <SfotcOperatingModeTable table={getTable(10000)} /> */}
+      <SfotcOperatingModeTable table={getTable(10000)} />
     </section>
   );
 }
@@ -578,7 +578,7 @@ function Analysis10000() {
 function Analysis12000() {
   return (
     <section className={ANALYSIS_SECTION_CLASS}>
-      {/* <SfotcOperatingModeTable table={getTable(12000)} /> */}
+      <SfotcOperatingModeTable table={getTable(12000)} />
     </section>
   );
 }

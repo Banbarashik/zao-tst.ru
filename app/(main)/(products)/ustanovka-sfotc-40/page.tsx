@@ -415,7 +415,7 @@ const ANALYSIS_SECTION_CLASS =
 function Analysis3000() {
   return (
     <section className={ANALYSIS_SECTION_CLASS}>
-      {/* <SfotcOperatingModeTable table={getTable(3000)} /> */}
+      <SfotcOperatingModeTable table={getTable(3000)} />
     </section>
   );
 }
@@ -423,7 +423,7 @@ function Analysis3000() {
 function Analysis3500() {
   return (
     <section className={ANALYSIS_SECTION_CLASS}>
-      {/* <SfotcOperatingModeTable table={getTable(3500)} /> */}
+      <SfotcOperatingModeTable table={getTable(3500)} />
     </section>
   );
 }
