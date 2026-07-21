@@ -8,7 +8,7 @@ import ProductSubheader from "@/components/catalog/productSubheader";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import { PDFDownloadCard } from "@/components/PDFDownloadCard";
 
-import { SfotcOperatingModeTable } from "@/components/general_pages/SfotcOperatingModeTable";
+import { SfotcOperatingModeTable } from "@/components/catalog/electro/SfotcOperatingModeTable";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
 import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
 import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimensionsSection";

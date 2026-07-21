@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import type {
   ModeTableData,
   OutletStatus,
@@ -19,11 +20,20 @@ const STATUS_LABEL: Record<OutletStatus, string> = {
   unavailable: "недостижимо",
 };
 
+/** Fallback reading used when a row has no entry for a given power level
+ *  (shouldn't normally happen if data is generated correctly, but keeps
+ *  the component from crashing on malformed input). */
+const MISSING_READING: PowerLevelReading = {
+  outletTempC: null,
+  availablePressurePa: null,
+  status: "unavailable",
+};
+
 function OutletCell({ reading }: { reading: PowerLevelReading }) {
   const displayValue =
-    reading.status === "unavailable"
-      ? "⛔"
-      : `${reading.outletTempC! > 0 ? "+" : ""}${reading.outletTempC}`;
+    reading.status === "unavailable" || reading.outletTempC === null
+      ? "—"
+      : `${reading.outletTempC > 0 ? "+" : ""}${reading.outletTempC}`;
 
   return (
     <td
@@ -36,13 +46,14 @@ function OutletCell({ reading }: { reading: PowerLevelReading }) {
 }
 
 function PressureCell({ reading }: { reading: PowerLevelReading }) {
-  return <td>{reading.availablePressurePa ?? ""}</td>;
+  return <td>{reading.availablePressurePa ?? "—"}</td>;
 }
 
 function PowerLevelHeader({ spec }: { spec: PowerLevelSpec }) {
   return (
     <th colSpan={2}>
-      {spec.label} ({spec.kw} кВт)
+      {spec.label}
+      <br />({spec.kw} кВт)
     </th>
   );
 }
@@ -55,7 +66,8 @@ export interface SfotcOperatingModeTableProps {
 
 /**
  * Renders a single heater performance table: outlet temperature and
- * available static pressure at three power levels, across a range of
+ * available static pressure at each power level the table has (2, 3, or
+ * more — driven entirely by `table.powerLevels`), across a range of
  * inlet temperatures.
  *
  * Stateless and driven entirely by `table`; render N of these for N tables
@@ -89,17 +101,19 @@ export function SfotcOperatingModeTable({
             <th rowSpan={2} style={{ borderBottomWidth: "0" }}>
               Температура на входе, °С
             </th>
-            <PowerLevelHeader spec={table.powerLevels.full} />
-            <PowerLevelHeader spec={table.powerLevels.twoThirds} />
-            <PowerLevelHeader spec={table.powerLevels.oneThird} />
+            {table.powerLevels.map((spec) => (
+              <PowerLevelHeader key={spec.key} spec={spec} />
+            ))}
           </tr>
           <tr>
-            <th style={{ borderBottomWidth: "0" }}>T на выходе, °С</th>
-            <th style={{ borderBottomWidth: "0" }}>Располагаемый напор, Па</th>
-            <th style={{ borderBottomWidth: "0" }}>T на выходе, °С</th>
-            <th style={{ borderBottomWidth: "0" }}>Располагаемый напор, Па</th>
-            <th style={{ borderBottomWidth: "0" }}>T на выходе, °С</th>
-            <th style={{ borderBottomWidth: "0" }}>Располагаемый напор, Па</th>
+            {table.powerLevels.map((spec) => (
+              <Fragment key={spec.key}>
+                <th style={{ borderBottomWidth: "0" }}>T на выходе, °С</th>
+                <th style={{ borderBottomWidth: "0" }}>
+                  Располагаемый напор, Па
+                </th>
+              </Fragment>
+            ))}
           </tr>
         </thead>
         <tbody>
@@ -109,12 +123,15 @@ export function SfotcOperatingModeTable({
                 {row.inletTempC > 0 ? "+" : ""}
                 {row.inletTempC}
               </td>
-              <OutletCell reading={row.full} />
-              <PressureCell reading={row.full} />
-              <OutletCell reading={row.twoThirds} />
-              <PressureCell reading={row.twoThirds} />
-              <OutletCell reading={row.oneThird} />
-              <PressureCell reading={row.oneThird} />
+              {table.powerLevels.map((spec) => {
+                const reading = row.readings[spec.key] ?? MISSING_READING;
+                return (
+                  <Fragment key={spec.key}>
+                    <OutletCell reading={reading} />
+                    <PressureCell reading={reading} />
+                  </Fragment>
+                );
+              })}
             </tr>
           ))}
         </tbody>
