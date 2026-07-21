@@ -1,7 +1,7 @@
 import productData from "@/data/products.json";
 import { sfotcOperatingModes } from "@/data/sfotcOperatingModes";
 
-import { createSFOMetadata } from "@/lib/metadata";
+import { createSFOTCMetadata } from "@/lib/metadata";
 
 import Spoiler from "@/components/ui/spoiler";
 import ProductSubheader from "@/components/catalog/productSubheader";
@@ -19,7 +19,7 @@ const getTable = (airFlow) =>
 
 const product = productData.find((p) => p.id === "ustanovka-sfotc-40");
 
-export const metadata = createSFOMetadata(product?.name, product?.size);
+export const metadata = createSFOTCMetadata(product?.name, product?.size);
 
 export default function SFOTC40Page() {
   if (!product) return;
