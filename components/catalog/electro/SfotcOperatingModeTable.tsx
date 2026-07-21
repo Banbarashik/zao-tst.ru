@@ -32,7 +32,7 @@ const MISSING_READING: PowerLevelReading = {
 function OutletCell({ reading }: { reading: PowerLevelReading }) {
   const displayValue =
     reading.status === "unavailable" || reading.outletTempC === null
-      ? "—"
+      ? "⛔"
       : `${reading.outletTempC > 0 ? "+" : ""}${reading.outletTempC}`;
 
   return (
@@ -52,8 +52,7 @@ function PressureCell({ reading }: { reading: PowerLevelReading }) {
 function PowerLevelHeader({ spec }: { spec: PowerLevelSpec }) {
   return (
     <th colSpan={2}>
-      {spec.label}
-      <br />({spec.kw} кВт)
+      {spec.label} ({spec.kw} кВт)
     </th>
   );
 }
