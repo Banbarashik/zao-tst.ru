@@ -456,6 +456,7 @@ export default function UstanovkiSFOTC() {
                 <td>157.5</td>
                 <td>247.5</td>
               </tr>
+
               <tr>
                 <td colSpan={2} className="first-two-cols">
                   Число электрических секций
@@ -468,6 +469,7 @@ export default function UstanovkiSFOTC() {
                 <td>3</td>
                 <td>3</td>
               </tr>
+
               <tr>
                 <td colSpan={2} className="first-two-cols">
                   Мощность одной секции, кВт
@@ -480,69 +482,10 @@ export default function UstanovkiSFOTC() {
                 <td>52.5</td>
                 <td>82.5</td>
               </tr>
+
               <tr>
                 <td colSpan={2} className="first-two-cols">
-                  Номинальная производительность по воздуху, м<sup>3</sup>/ч
-                </td>
-                <td>1000</td>
-                <td>2000</td>
-                <td>3000</td>
-                <td>4000</td>
-                <td>6000</td>
-                <td>8000</td>
-                <td>12000</td>
-              </tr>
-              <tr>
-                <td colSpan={2} className="first-two-cols">
-                  Рабочий интервал производительности, м<sup>3</sup>/ч
-                </td>
-                <td>400-1100</td>
-                <td>800-2100</td>
-                <td>1700-4400</td>
-                <td>2200-5700</td>
-                <td>3400-8800</td>
-                <td>4400-11500</td>
-                <td>6800-17800</td>
-              </tr>
-              <tr>
-                <td colSpan={2} className="first-two-cols">
-                  Перепад t входящего / выходящего воздуха, °С
-                </td>
-                <td>30</td>
-                <td>40</td>
-                <td>50</td>
-                <td>55</td>
-                <td>60</td>
-                <td>65</td>
-                <td>70</td>
-              </tr>
-              <tr>
-                <td colSpan={2} className="first-two-cols">
-                  Аэродинамическое сопротивление, не более, Па
-                </td>
-                <td>150</td>
-                <td>200</td>
-                <td>200</td>
-                <td>250</td>
-                <td>250</td>
-                <td>250</td>
-                <td>300</td>
-              </tr>
-              <tr>
-                <td colSpan={2} className="first-two-cols">
-                  Давление, развиваемое вентилятором, Па
-                </td>
-                <td>190-100</td>
-                <td>300-160</td>
-                <td>510-270</td>
-                <td>350-190</td>
-                <td>830-450</td>
-                <td>570-310</td>
-                <td>1350-730</td>
-              </tr>
-              <tr>
-                <td colSpan={2} className="first-two-cols">
-                  Номер вентилятора ВЦ 4-75 (ВР 85-77)
+                  Номер вентилятора ВР 85-77
                 </td>
                 <td>2.5</td>
                 <td>3.15</td>
@@ -552,30 +495,111 @@ export default function UstanovkiSFOTC() {
                 <td>6.3</td>
                 <td>6.3</td>
               </tr>
+
               <tr>
                 <td colSpan={2} className="first-two-cols">
                   Двигатель вентилятора, кВт
                 </td>
-                <td>0.25</td>
-                <td>0.25</td>
+                <td>0.55</td>
+                <td>1.5</td>
                 <td>0.75</td>
-                <td>0.75</td>
+                <td>1.5</td>
                 <td>2.2</td>
                 <td>2.2</td>
                 <td>7.5</td>
               </tr>
+
               <tr>
                 <td colSpan={2} className="first-two-cols">
                   об/мин
                 </td>
+                <td>3000</td>
+                <td>3000</td>
                 <td>1500</td>
                 <td>1500</td>
-                <td>1500</td>
-                <td>1000</td>
                 <td>1500</td>
                 <td>1000</td>
                 <td>1500</td>
               </tr>
+
+              <tr>
+                <td colSpan={2} className="first-two-cols">
+                  Номинальная производительность по воздуху, м<sup>3</sup>/ч
+                </td>
+                <td>1500</td>
+                <td>2000</td>
+                <td>3000</td>
+                <td>5000</td>
+                <td>6000</td>
+                <td>10000</td>
+                <td>15000</td>
+              </tr>
+
+              <tr>
+                <td colSpan={2} className="first-two-cols">
+                  Диапазон производительности вентилятора, м<sup>3</sup>/ч
+                </td>
+                <td>800-2200</td>
+                <td>1600-4400</td>
+                <td>1600-4400</td>
+                <td>3300-6100</td>
+                <td>3300-8700</td>
+                <td>4400-11600</td>
+                <td>6800-17800</td>
+              </tr>
+
+              <tr>
+                <td colSpan={2} className="first-two-cols">
+                  Рабочий интервал производительности, м<sup>3</sup>/ч
+                </td>
+                <td>1800-2000</td>
+                <td>2000-2500</td>
+                <td>3000-3500</td>
+                <td>4000-5500</td>
+                <td>5000-7000</td>
+                <td>8000-12000</td>
+                <td>12000-17000</td>
+              </tr>
+
+              <tr>
+                <td colSpan={2} className="first-two-cols">
+                  Давление, развиваемое вентилятором, Па
+                </td>
+                <td>780-415</td>
+                <td>1320-705</td>
+                <td>505-270</td>
+                <td>830-540</td>
+                <td>830-450</td>
+                <td>570-310</td>
+                <td>1350-725</td>
+              </tr>
+
+              <tr>
+                <td colSpan={2} className="first-two-cols">
+                  Диапазон располагаемого напора, Па
+                </td>
+                <td>186-30</td>
+                <td>684-198</td>
+                <td>239-35</td>
+                <td>593-157</td>
+                <td>564-88</td>
+                <td>368-18</td>
+                <td>892-325</td>
+              </tr>
+
+              <tr>
+                <td colSpan={2} className="first-two-cols">
+                  Перепад t входящего / выходящего воздуха, °C
+                </td>
+                <td>20</td>
+                <td>25</td>
+                <td>35</td>
+                <td>40</td>
+                <td>45</td>
+                <td>50</td>
+                <td>55</td>
+              </tr>
+
               <tr>
                 <td colSpan={2} className="first-two-cols">
                   Напряжение питающей сети, В
