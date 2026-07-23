@@ -1,5 +1,6 @@
 import productData from "@/data/products.json";
 import { sfotcOperatingModes } from "@/data/sfotcOperatingModes";
+import { sfotc25Table } from "@/data/sfotcSpecTables";
 
 import { createSFOTCMetadata } from "@/lib/metadata";
 
@@ -10,9 +11,9 @@ import { PDFDownloadCard } from "@/components/PDFDownloadCard";
 
 import { SfotcOperatingModeTable } from "@/components/catalog/electro/SfotcOperatingModeTable";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
-import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
 import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimensionsSection";
 import { DeliverySection } from "@/components/catalog/DeliverySection";
+import { SfotcSpecSection } from "@/components/catalog/electro/SfotcSpecSection";
 
 const getTable = (airFlow) =>
   sfotcOperatingModes.find((mode) => mode.id === `sfotc-25-${airFlow}`);
@@ -30,7 +31,7 @@ export default function SFOTC25Page() {
         Электрокалориферная установка {product?.shortName}
       </h1>
       <ElectroProductOverviewSection product={product} />
-      <ElectroSpecsSection product={product} />
+      <SfotcSpecSection product={product} table={sfotc25Table} />
       <TechReviewSection />
       <SFOTCDimensionsSection product={product} />
 
