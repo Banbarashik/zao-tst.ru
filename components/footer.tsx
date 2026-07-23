@@ -51,11 +51,10 @@ export default function Footer() {
         <div className="3xl:hidden hidden space-y-3 sm:block">
           <p>
             <span className="mb-2 flex gap-2">
-              <MapPinned /> <span>Юридический / почтовый адрес:</span>
+              <MapPinned /> <span>Адрес предприятия:</span>
             </span>
             <span className="block">
-              652707, Кемеровская область-Кузбасс, г. Киселевск, ул. Юргинская,
-              д. 1
+              Кемеровская область, г. Киселевск, ул. Юргинская, 1
             </span>
           </p>
 
@@ -77,11 +76,10 @@ export default function Footer() {
 
         <p className="3xl:block hidden font-medium xl:text-sm 2xl:text-base">
           <span className="mb-2 flex gap-2">
-            <MapPinned /> <span>Юридический / почтовый адрес:</span>
+            <MapPinned /> <span>Адрес предприятия:</span>
           </span>
           <span className="block">
-            652707, Кемеровская область-Кузбасс, г. Киселевск, ул. Юргинская, д.
-            1
+            Кемеровская область, г. Киселевск, ул. Юргинская, 1
           </span>
         </p>
         <div className="3xl:block hidden xl:text-sm 2xl:text-base">
