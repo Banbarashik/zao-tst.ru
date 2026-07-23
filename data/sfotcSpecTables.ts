@@ -1,0 +1,70 @@
+import { SfotcSpecTableData } from "@/types/sfotcSpecTable";
+
+// Rows for the fan motor / pressure / current parameters have TWO values,
+// reflecting the two alternative fan-motor configurations for this model.
+export const sfotc160Table: SfotcSpecTableData = {
+  title: "СФОТЦ-160",
+  // prettier-ignore
+  rows: [
+    { id: "supply-voltage", label: "Напряжение питающей сети, В", values: ["380"] },
+    { id: "supply-frequency", label: "Частота питающей сети, Гц", values: ["50"] },
+    { id: "supply-phases", label: "Число фаз питающей сети", values: ["3"] },
+    { id: "fan-model", label: "Номер комплектуемого вентилятора ВР 85-77", values: ["6.3"] },
+    { id: "fan-motor-power", label: "Двигатель вентилятора, кВт", values: ["2.2", "7.5"] },
+    { id: "fan-motor-rpm", label: "об/мин", values: ["1000", "1500"] },
+    { id: "air-flow-rated", label: "Номинальная производительность по воздуху, м³/ч", values: ["10000"] },
+    { id: "air-flow-range", label: "Диапазон производительности вентилятора, м³/ч", values: ["4400-11600", "6800-17800"] },
+    { id: "fan-pressure", label: "Полное давление, развиваемое вентилятором, Па", values: ["570-310", "1350-725"] },
+    { id: "heater-resistance", label: "Аэродинамическое сопротивление калорифера, не более, Па", values: ["250"] },
+    { id: "heater-power-total", label: "Установленная мощность электрокалорифера, кВт", values: ["157.5"] },
+    { id: "section-count", label: "Количество электрических секций", values: ["3"] },
+    { id: "section-power", label: "Мощность одной секции электрокалорифера, кВт", values: ["52.5"] },
+    { id: "heater-elements-count", label: "Количество установленных нагревателей, шт.", values: ["63"] },
+    { id: "spare-elements", label: "Запасные нагревательные элементы, шт.", values: ["10"] },
+    { id: "temp-delta", label: "Перепад t входящего / выходящего воздуха, °С", values: ["50"] },
+    { id: "current-heater-line", label: "Расчетный ток линии электрокалорифера, А", values: ["240"] },
+    { id: "current-section", label: "Расчетный ток одной секции электрокалорифера, А", values: ["80"] },
+    { id: "current-motor-line", label: "Расчетный ток линии электродвигателя вентилятора, А", values: ["5", "16"] },
+    { id: "current-motor-startup", label: "Пусковые токи электродвигателя, А", values: ["36", "110"] },
+    { id: "current-main", label: "Расчетный ток магистрали, питающей установку, А", values: ["245", "256"] },
+    { id: "cable-supply", label: "Силовой кабель от сети, минимальное сечение медной жилы кабеля, мм2", values: ["95"] },
+    { id: "cable-section", label: "Кабель на секции, минимальное сечение медной жилы на каждую фазу секции, мм2", values: ["25"] },
+    { id: "cable-motor", label: "Кабель на электродвигатель, минимальное сечение медной жилы кабеля, мм2", values: ["2.5", "4"] },
+    { id: "dimensions", label: "Внешние габаритные размеры, мм", values: ["1730 х 1150 х 1430"] },
+    { id: "weight", label: "Масса агрегата в сборе, кг", values: ["256", "285"] },
+  ],
+};
+
+// Every row has a single value -> `values` arrays all have length 1.
+export const sfotc250Table: SpecTableData = {
+  title: "СФОТЦ-250",
+  // prettier-ignore
+  rows: [
+    { id: "supply-voltage", label: "Напряжение питающей сети, В", values: ["380"] },
+    { id: "supply-frequency", label: "Частота питающей сети, Гц", values: ["50"] },
+    { id: "supply-phases", label: "Число фаз питающей сети", values: ["3"] },
+    { id: "fan-model", label: "Номер комплектуемого вентилятора ВР 85-77", values: ["6.3"] },
+    { id: "fan-motor-power", label: "Двигатель вентилятора, кВт", values: ["7.5"] },
+    { id: "fan-motor-rpm", label: "об/мин", values: ["1500"] },
+    { id: "air-flow-rated", label: "Номинальная производительность по воздуху, м³/ч", values: ["15000"] },
+    { id: "air-flow-range", label: "Диапазон производительности вентилятора, м³/ч", values: ["6800-17800"] },
+    { id: "fan-pressure", label: "Полное давление, развиваемое вентилятором, Па", values: ["1350-725"] },
+    { id: "heater-resistance", label: "Аэродинамическое сопротивление калорифера, не более, Па", values: ["250"] },
+    { id: "heater-power-total", label: "Установленная мощность электрокалорифера, кВт", values: ["247.5"] },
+    { id: "section-count", label: "Количество электрических секций", values: ["3"] },
+    { id: "section-power", label: "Мощность одной секции электрокалорифера, кВт", values: ["82.5"] },
+    { id: "heater-elements-count", label: "Количество установленных нагревателей, шт.", values: ["99"] },
+    { id: "spare-elements", label: "Запасные нагревательные элементы, шт.", values: ["16"] },
+    { id: "temp-delta", label: "Перепад t входящего / выходящего воздуха, °С", values: ["55"] },
+    { id: "current-heater-line", label: "Расчетный ток линии электрокалорифера, А", values: ["376"] },
+    { id: "current-section", label: "Расчетный ток одной секции электрокалорифера, А", values: ["125"] },
+    { id: "current-motor-line", label: "Расчетный ток линии электродвигателя вентилятора, А", values: ["16"] },
+    { id: "current-motor-startup", label: "Пусковые токи электродвигателя, А", values: ["110"] },
+    { id: "current-main", label: "Расчетный ток магистрали, питающей установку, А", values: ["392"] },
+    { id: "cable-supply", label: "Силовой кабель от сети, минимальное сечение медной жилы кабеля, мм2", values: ["185"] },
+    { id: "cable-section", label: "Кабель на секции, минимальное сечение медной жилы на каждую фазу секции, мм2", values: ["50"] },
+    { id: "cable-motor", label: "Кабель на электродвигатель, минимальное сечение медной жилы кабеля, мм2", values: ["4"] },
+    { id: "dimensions", label: "Внешние габаритные размеры, мм", values: ["2380 х 1150 х 1705"] },
+    { id: "weight", label: "Масса агрегата в сборе, кг", values: ["370"] },
+  ],
+};

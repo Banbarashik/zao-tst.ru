@@ -1,5 +1,6 @@
 import productData from "@/data/products.json";
 import { sfotcOperatingModes } from "@/data/sfotcOperatingModes";
+import { sfotc160Table } from "@/data/sfotcSpecTables";
 
 import { createSFOTCMetadata } from "@/lib/metadata";
 
@@ -8,9 +9,9 @@ import ProductSubheader from "@/components/catalog/productSubheader";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import { PDFDownloadCard } from "@/components/PDFDownloadCard";
 
+import { SfotcSpecSection } from "@/components/catalog/electro/SfotcSpecSection";
 import { SfotcOperatingModeTable } from "@/components/catalog/electro/SfotcOperatingModeTable";
 import { ElectroProductOverviewSection } from "@/components/catalog/electro/ElectroProductOverviewSection";
-import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
 import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimensionsSection";
 import { DeliverySection } from "@/components/catalog/DeliverySection";
 
@@ -30,7 +31,7 @@ export default function SFOTC160Page() {
         Электрокалориферная установка {product?.shortName}
       </h1>
       <ElectroProductOverviewSection product={product} />
-      <ElectroSpecsSection product={product} />
+      <SfotcSpecSection product={product} table={sfotc160Table} />
       <TechReviewSection />
       <SFOTCDimensionsSection product={product} />
 
