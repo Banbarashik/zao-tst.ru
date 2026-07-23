@@ -277,9 +277,9 @@ function TechReviewSection() {
           </ul>
           <div className="gap-10 pl-6 sm:flex">
             <PDFDownloadCard
-              url=""
+              url="/documents/Electrokalorifer_SFOTC-250.pdf"
               img="/img/elektro/electrokalorifer_sfotc-250_doc.png"
-              alt=""
+              alt="Подбор электрокалорифера СФОЦ-250"
               className="float-left mr-4 h-full sm:float-none sm:m-0"
             />
             <p className="text-secondary-text text-base">

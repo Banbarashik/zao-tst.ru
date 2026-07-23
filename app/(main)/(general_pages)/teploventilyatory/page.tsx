@@ -269,7 +269,7 @@ export default function UstanovkiSFOTC() {
             <ul>
               <li>
                 <span className="text-example">• Тепловая мощность:</span> 67.5
-                кВт (Трехступенчатый нагрев: 67.5/ 45/22.5 кВт)
+                кВт (Трехступенчатый нагрев: 67.5/45/22.5 кВт)
               </li>
               <li>
                 <span className="text-example">
