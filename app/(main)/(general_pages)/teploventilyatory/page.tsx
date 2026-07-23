@@ -61,6 +61,7 @@ export default function UstanovkiSFOTC() {
         </div>
       </section>
 
+      {/* Конструкция установок СФОЦ */}
       <section className="space-y-2">
         <Heading lvl={2} text="Конструкция установок СФОЦ" />
         <ProductParagraph>
@@ -102,6 +103,7 @@ export default function UstanovkiSFOTC() {
 
       <div className="mx-auto h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
+      {/* Принцип работы и аэродинамический расчет сети */}
       <section className="space-y-2">
         <Heading lvl={2} text="Принцип работы и аэродинамический расчет сети" />
         <ProductParagraph>
@@ -115,7 +117,27 @@ export default function UstanovkiSFOTC() {
           вентиляционной сети осуществляется через выходной прямоугольный фланец
           вентилятора.
         </ProductParagraph>
-        <ProductParagraph className="border-l-6 border-blue-400/80 pl-2">
+
+        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <div className="relative aspect-3/2 w-full scale-x-[-1]">
+            <Image
+              src="/img/general_pages/ustanovka_sfotc_podbor.png"
+              alt="Электрическая установка для нагрева воздуха"
+              title="Электрическая воздухонагревательная приточная установка"
+              fill
+            />
+          </div>
+          <div className="relative aspect-3/2 w-full">
+            <Image
+              src="/img/general_pages/ustanovka_sfotc.png"
+              alt="Эксплуатация электрокалориферных установок СФОЦ (ЭКОЦ)"
+              title="Принцип работы электрокалориферной установки"
+              fill
+            />
+          </div>
+        </div>
+
+        <ProductParagraph>
           Подбор и расчет установок СФОЦ выполняются на основе статического
           давления вентилятора. При расчете учитываются внутренние
           аэродинамические потери на калорифере СФО: из располагаемого напора
@@ -130,6 +152,7 @@ export default function UstanovkiSFOTC() {
 
       <div className="mx-auto h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
+      {/* Технические характеристики установок СФОЦ */}
       <section className="space-y-4">
         <Heading lvl={2} text="Технические характеристики установок СФОЦ" />
         <ProductParagraph>
@@ -363,6 +386,7 @@ export default function UstanovkiSFOTC() {
 
       <div className="mx-auto h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
+      {/* Инженерная градация сетей */}
       <section className="border-primary rounded-lg border-l-4 pl-4">
         <Heading lvl={3} text="Инженерная градация сетей" />
 
@@ -410,6 +434,7 @@ export default function UstanovkiSFOTC() {
         </ul>
       </section>
 
+      {/* Габаритные размеры установок СФОЦ */}
       <section className="mb-4">
         <Heading lvl={2} text="Габаритные размеры установок СФОЦ" />
 
