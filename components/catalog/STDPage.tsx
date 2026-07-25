@@ -319,7 +319,7 @@ export default async function STDPage({ product }) {
         {product.shortName} (на базе трех и четырех рядного{" "}
         {product.heatCarrier === "water" ? "многоходового" : "одноходового"}{" "}
         {heatCarrierAdj.gen} калорифера {product.calorifier}) производства ООО
-        Т.С.Т. Выбрав в верхней части таблицы подходящий вам график
+        «Т.С.Т.». Выбрав в верхней части таблицы подходящий вам график
         теплоносителя, можно ознакомиться с основными теплотехническими
         показателями: {tableIndicators[product.heatCarrier]}.
       </ProductParagraph>

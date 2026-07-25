@@ -843,8 +843,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         />
         <ProductParagraph className="mb-6">
           В таблицах представлены значения коэффициентов теплопередачи паровых
-          калориферов всех серий, выпускаемых предприятием ООО Т.С.Т. Отдельной
-          строкой выложены данные по аэродинамическому сопротивлению.
+          калориферов всех серий, выпускаемых предприятием ООО «Т.С.Т.».
+          Отдельной строкой выложены данные по аэродинамическому сопротивлению.
         </ProductParagraph>
         <div className="text-[#6a2d2d]">
           <ProductParagraph>Пример расчета 7</ProductParagraph>

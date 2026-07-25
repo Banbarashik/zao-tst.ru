@@ -430,7 +430,7 @@ export default async function KSKProductPage({
         {isCalorifier
           ? `калорифера ${product.shortName}`
           : `агрегата ${product.shortName.replace(" ", "")} (на базе ${rowsNumberAdj.gen} ${heatCarrierAdj.gen} калорифера ${product.calorifier.replace(/[0-9]/g, "")})`}{" "}
-        производства ООО Т.С.Т. Выбрав в верхней части таблицы подходящий вам
+        производства ООО «Т.С.Т.». Выбрав в верхней части таблицы подходящий вам
         график теплоносителя, можно ознакомиться с основными теплотехническими
         показателями: температурой воздуха на выходе,
         {isCalorifier &&

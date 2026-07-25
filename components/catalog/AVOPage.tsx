@@ -252,7 +252,7 @@ export default async function AVOPage({ product }) {
       <ProductParagraph className="mb-3">
         Ниже представлены расчетные данные воздушно-отопительных агрегатов{" "}
         {product.shortName} (на базе четырехрядного {heatCarrierAdj.gen}{" "}
-        калорифера {product.calorifier}) производства ООО Т.С.Т. Выбрав в
+        калорифера {product.calorifier}) производства ООО «Т.С.Т.». Выбрав в
         верхней части таблицы подходящий вам график теплоносителя, можно
         ознакомиться с основными теплотехническими показателями:{" "}
         {tableIndicators[product.heatCarrier]}.
