@@ -3,7 +3,8 @@ import { ElectroProductOverviewSection } from "@/components/catalog/electro/Elec
 import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSection";
 import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimensionsSection";
 import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODrawingAndCircuitSection";
-import { SHUKDrawingAndCircuitSection } from "./SHUKDrawingAndCircuitSection";
+import { SHUKDrawingAndCircuitSection } from "@/components/catalog/electro/SHUKDrawingAndCircuitSection";
+import { DeliverySection } from "@/components/catalog/DeliverySection";
 import {
   ELECTRO_CATEGORY_META,
   getElectroProductTitle,
@@ -45,6 +46,12 @@ export default function ElectroEquipmentPage({
       <ElectroProductOverviewSection product={product} />
       <ElectroSpecsSection product={product} />
       <SpecificSection product={product} />
+
+      <DeliverySection
+        product={product}
+        specs={{ dimensions: [0, 0, 0], weight: 0 }}
+        className="mb-6"
+      />
 
       <LinkButtonsBlock buttons={linkButtons} />
     </div>

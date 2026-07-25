@@ -20,35 +20,39 @@ export function DeliverySection({
   const isKPSK = product.categories.includes("kpsk");
   const isSFO = product.categories.includes("sfo");
   const isSFOTC = product.categories.includes("sfotc");
+  const isSHUK = product.categories.includes("shuk");
 
   const volume = specs?.dimensions.reduce((sum, cur) => sum * cur, 1);
 
   const defaultSpecsNote = (
     <>
-      Данные {isSFO && "воздухонагревателя"}{" "}
+      Данные {isSHUK && "шкафа управления"} {isSFO && "воздухонагревателя"}{" "}
       {(isKSK || isKPSK) && `${heatCarrierAdj.gen} теплообменника`}{" "}
       {isKSK && product.shortName}
       {isKPSK && `КП-Ск ${product.rows}-${product.size}`} для транспортировки.
       Внешние габаритные размеры{isSFOTC && ` установки ${product.shortName}`}:{" "}
       {specs?.dimensions[0].toFixed(3)} м х {specs?.dimensions[1].toFixed(3)} м
-      х {specs?.dimensions[2].toFixed(3)} м; объем: {volume?.toFixed(3)} м
-      <sup>3</sup>; вес{isKalorifer ? ` калорифера ${product.shortName}:` : ":"}{" "}
-      {specs?.weight} кг.
+      х {specs?.dimensions[2].toFixed(3)} м; объем
+      {isSHUK && ` ${product.shortName}`}: {volume?.toFixed(3)} м<sup>3</sup>;
+      вес {isSHUK ? "блока" : ""}
+      {isKalorifer ? ` калорифера ${product.shortName}:` : ":"} {specs?.weight}{" "}
+      кг.
     </>
   );
 
   return (
     <section className={cn("text-example space-y-4 text-[17px]", className)}>
       <h3 className="mb-2 text-xl">
-        Оплата и доставка {isSFO && "электрокалорифера"}{" "}
-        {(isKSK || isKPSK) && "калорифера"} {isSFOTC && "установки"}{" "}
-        {product.shortName}
+        Оплата и доставка {isSHUK && "шкафа управления"}
+        {isSFO && "электрокалорифера"} {(isKSK || isKPSK) && "калорифера"}{" "}
+        {isSFOTC && "установки"} {product.shortName}
       </h3>
 
       <div>
         <p>
-          Заказать {isKalorifer && "калорифер"} {isSFOTC && "установку"}{" "}
-          {product.shortName} на нашем предприятии можно следующими способами:
+          Заказать {isSHUK && "шкаф"} {isKalorifer && "калорифер"}{" "}
+          {isSFOTC && "установку"} {product.shortName} на нашем предприятии
+          можно следующими способами:
         </p>
         <ul>
           <li>
@@ -75,9 +79,9 @@ export function DeliverySection({
 
       <div>
         <p>
-          Способы оплаты {isSFO && "электрического"}{" "}
-          {isKalorifer && "калорифера"} {isSFOTC && "установки"}{" "}
-          {product.shortName}:
+          Способы оплаты {isSHUK && "шкафа управления калорифером"}{" "}
+          {isSFO && "электрического"} {isKalorifer && "калорифера"}{" "}
+          {isSFOTC && "установки"} {product.shortName}:
         </p>
         <ul>
           <li>• на основании счета с частичной или полной оплатой</li>
@@ -141,8 +145,8 @@ export function DeliverySection({
 
       <div>
         <p>
-          Доставка {isKalorifer && "калорифера"} {isSFOTC && "установки"}{" "}
-          {product.shortName}:
+          Доставка {isSHUK && "шкафа управления"} {isKalorifer && "калорифера"}{" "}
+          {isSFOTC && "установки"} {product.shortName}:
         </p>
         <ul>
           <li>
