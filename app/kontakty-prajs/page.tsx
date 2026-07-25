@@ -6,6 +6,7 @@ import Link from "next/link";
 import { sortProducts } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import { SlidingButton } from "@/components/slidingButton";
 
@@ -113,6 +114,9 @@ export default function ContactsAndPricesPage() {
               openNewTab
             />
           </div>
+
+          <Separator />
+
           <h2 className="self-center font-bold uppercase sm:text-lg lg:text-xl xl:text-[22px]">
             Цена/прайс-лист калориферов
           </h2>
@@ -240,6 +244,8 @@ export default function ContactsAndPricesPage() {
             </div>
           </div>
         </div>
+
+        <Separator />
 
         {/* ksk-kpsk tables */}
         <div>
@@ -371,6 +377,8 @@ export default function ContactsAndPricesPage() {
           </div>
         </div>
       </div>
+
+      <Separator />
 
       <ProductParagraph>
         Серийно изготавливаются воздухонагреватели с увеличенным диаметром
@@ -535,6 +543,8 @@ export default function ContactsAndPricesPage() {
         электросварными трубками диаметром 16х1.5 и 22х1.5 мм. Цены калориферов
         на базе бесшовных цельнотянутых трубок уточняйте по запросу.
       </p>
+
+      <Separator />
 
       <h2 className="text-center font-bold uppercase sm:text-lg lg:text-xl xl:text-[22px]">
         Цена/прайс-лист отопительных агрегатов
@@ -796,6 +806,8 @@ export default function ContactsAndPricesPage() {
         изготовленными с бесшовными трубками, уточняйте по запросу.
       </p>
 
+      <Separator />
+
       <h2 className="text-center font-bold uppercase sm:text-lg lg:text-xl xl:text-[22px]">
         Цена/Прайс-лист электронагревательного оборудования
       </h2>
@@ -969,6 +981,9 @@ export default function ContactsAndPricesPage() {
           вентиляционного, насосно-смесительного оборудования и
           пароконденсатного оборудования.
         </ProductParagraph>
+
+        <Separator />
+
         <h2 className="text-center font-bold uppercase sm:text-lg lg:text-xl xl:text-[22px]">
           Контактные данные/реквизиты
         </h2>
