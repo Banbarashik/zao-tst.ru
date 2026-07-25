@@ -17,28 +17,11 @@ const SectionByCategory = {
   shuk: SHUKDrawingAndCircuitSection,
 } as const;
 
-export default function ElectroEquipmentPage({
-  product,
-}: {
-  product: { categories: string[]; name: string; shortName: string };
-}) {
+export default function ElectroEquipmentPage({ product }) {
   const preciseCategory = getPreciseElectroCategory(product) ?? "sfo";
   const categoryMeta = ELECTRO_CATEGORY_META[preciseCategory];
   const productName = getElectroProductTitle(product, preciseCategory);
   const SpecificSection = SectionByCategory[preciseCategory];
-
-  const linkButtons = [
-    {
-      name: categoryMeta.tableLinkText,
-      url: `/${categoryMeta.tablePageUrl}`,
-    },
-    {
-      name: categoryMeta.catalogLinkText,
-      url: `/documents/${categoryMeta.catalogFileName}`,
-      openNewTab: true,
-      goal: "open_pdf",
-    },
-  ];
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
@@ -49,11 +32,24 @@ export default function ElectroEquipmentPage({
 
       <DeliverySection
         product={product}
-        specs={{ dimensions: [0, 0, 0], weight: 0 }}
+        specs={{ dimensions: product.dimensions, weight: product.weight }}
         className="mb-6"
       />
 
-      <LinkButtonsBlock buttons={linkButtons} />
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: categoryMeta.tableLinkText,
+            url: `/${categoryMeta.tablePageUrl}`,
+          },
+          {
+            name: categoryMeta.catalogLinkText,
+            url: `/documents/${categoryMeta.catalogFileName}`,
+            openNewTab: true,
+            goal: "open_pdf",
+          },
+        ]}
+      />
     </div>
   );
 }
