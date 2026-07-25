@@ -14,6 +14,7 @@ import { ElectroProductOverviewSection } from "@/components/catalog/electro/Elec
 import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimensionsSection";
 import { DeliverySection } from "@/components/catalog/DeliverySection";
 import { SfotcSpecSection } from "@/components/catalog/electro/SfotcSpecSection";
+import { ModelDownloadButton } from "@/components/catalog/modelDownloadButton";
 
 const getTable = (airFlow) =>
   sfotcOperatingModes.find((mode) => mode.id === `sfotc-60-${airFlow}`);
@@ -27,9 +28,22 @@ export default function SFOTC60Page() {
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
-      <h1 className="mb-8 text-xl font-bold uppercase">
-        Электрокалориферная установка {product?.shortName}
-      </h1>
+      <div className="mb-8 flex flex-col justify-between gap-4 @md:flex-row @md:items-center">
+        <h1 className="text-xl font-bold uppercase">
+          Электрокалориферная установка {product?.shortName}
+        </h1>
+        <div className="self-end @md:self-auto">
+          <ModelDownloadButton
+            modelLinks={[
+              {
+                text: product.shortName,
+                url: `/models/sfotc/elektrokalorifer_sfotc-${product.size}.zip`,
+              },
+            ]}
+          />
+        </div>
+      </div>
+
       <ElectroProductOverviewSection product={product} />
       <SfotcSpecSection product={product} table={sfotc60Table} />
       <TechReviewSection />
