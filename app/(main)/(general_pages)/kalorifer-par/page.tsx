@@ -7,6 +7,7 @@ import CategoryCards from "@/components/categoryCards";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 import { Anchor } from "@/components/utils/anchor";
+import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Паровые калориферы",
@@ -395,6 +396,8 @@ export default function KaloriferParPage() {
           модели и количества конденсатоотводчиков, правильное их размещение.
         </ProductParagraph>
       </section>
+
+      <Separator />
 
       <section className="space-y-6">
         <Anchor num={2} />

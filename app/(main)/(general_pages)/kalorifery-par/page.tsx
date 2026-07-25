@@ -12,6 +12,7 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
 import { getLegacyHtmls } from "@/lib/legacyHtml";
 import { Anchor } from "@/components/utils/anchor";
+import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Калориферы приточные паровые",
@@ -127,7 +128,7 @@ export default async function KaloriferyParPage() {
           </ProductParagraph>
           <LegacyHtml html={calculator1Html} className="legacy-calculator" />
         </section>
-        <section className="mb-4">
+        <section>
           <Heading lvl={2} text="Онлайн-расчет расхода пара калорифером" />
           <ProductParagraph className="mb-3">
             Расход пара в зависимости от мощности калорифера. В верхнее поле
@@ -139,7 +140,7 @@ export default async function KaloriferyParPage() {
           </ProductParagraph>
           <LegacyHtml html={calculator2Html} className="legacy-calculator" />
         </section>
-        <section className="mb-4">
+        <section>
           <Heading
             lvl={2}
             text="Онлайн-расчет мощности калорифера от расхода пара"
@@ -154,6 +155,8 @@ export default async function KaloriferyParPage() {
           </ProductParagraph>
           <LegacyHtml html={calculator3Html} className="legacy-calculator" />
         </section>
+
+        <Separator />
 
         <ProductParagraph>
           Калькуляторы онлайн-расчета предоставляют общую информацию по
@@ -177,7 +180,7 @@ export default async function KaloriferyParPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="space-y-6">
         <Heading
           lvl={2}
           text="Калькулятор подбора паровых приточных калориферов"
@@ -191,6 +194,8 @@ export default async function KaloriferyParPage() {
           тепловой мощности следует перейти к последующему или предыдущему
           номеру парового приточного воздухонагревателя.
         </ProductParagraph>
+
+        <Separator />
 
         <section className="text-example">
           <Heading
@@ -250,6 +255,8 @@ export default async function KaloriferyParPage() {
           height={1}
         />
       </section>
+
+      <Separator />
 
       <section className="text-example">
         <Heading

@@ -12,6 +12,7 @@ import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
 import { Anchor } from "@/components/utils/anchor";
+import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Калориферы приточные водяные",
@@ -123,7 +124,7 @@ export default async function KaloriferyVodaPage() {
           </ProductParagraph>
           <LegacyHtml html={calculator1Html} className="legacy-calculator" />
         </section>
-        <section className="mb-4">
+        <section>
           <Heading
             lvl={2}
             text="Онлайн-расчет расхода теплоносителя калорифером"
@@ -139,6 +140,8 @@ export default async function KaloriferyVodaPage() {
           </ProductParagraph>
           <LegacyHtml html={calculator2Html} className="legacy-calculator" />
         </section>
+
+        <Separator />
 
         <ProductParagraph>
           Калькуляторы онлайн-расчета предоставляют общую информацию по
@@ -161,7 +164,7 @@ export default async function KaloriferyVodaPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="space-y-6">
         <Heading
           lvl={2}
           text="Калькулятор подбора водяных приточных калориферов"
@@ -176,6 +179,9 @@ export default async function KaloriferyVodaPage() {
           тепловой мощности следует перейти к последующему или предыдущему
           номеру водяного приточного воздухонагревателя.
         </ProductParagraph>
+
+        <Separator />
+
         <section className="text-example">
           <Heading
             lvl={3}
@@ -235,6 +241,8 @@ export default async function KaloriferyVodaPage() {
           height={1}
         />
       </section>
+
+      <Separator />
 
       <section className="text-example">
         <Heading
