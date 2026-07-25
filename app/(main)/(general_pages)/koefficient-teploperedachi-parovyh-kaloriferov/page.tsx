@@ -12,6 +12,7 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
 import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
 import { Anchor } from "@/components/utils/anchor";
+import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Коэффициент теплопередачи паровых калориферов",
@@ -541,6 +542,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         />
       </section>
 
+      <Separator />
+
       <section>
         <Anchor num={2} />
         <Heading
@@ -590,7 +593,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         <CalcHeatTransferCoefficientTables />
         <div className="space-y-4 text-[#6a2d2d]">
           <div>
-            <ProductParagraph>Пример расчета 1</ProductParagraph>
+            <ProductParagraph>⚙️ Пример расчета 1</ProductParagraph>
             <ProductParagraph>
               Подсчитать коэффициент теплопередачи парового калорифера КПСк 3-11
               при массовой скорости воздуха в фронтальном сечении 4.4 кг/м
@@ -629,7 +632,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </ul>
           </div>
           <div>
-            <ProductParagraph>Пример расчета 2</ProductParagraph>
+            <ProductParagraph>⚙️ Пример расчета 2</ProductParagraph>
             <ProductParagraph>
               Рассчитать коэффициент теплопередачи парового калорифера КП 311
               при массовой скорости воздуха в фронтальном сечении 4.4 кг/м
@@ -668,7 +671,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </ul>
           </div>
           <div>
-            <ProductParagraph>Пример расчета 3</ProductParagraph>
+            <ProductParagraph>⚙️ Пример расчета 3</ProductParagraph>
             <ProductParagraph>
               Рассчитать коэффициент теплопередачи парового калорифера КФБ-10 А4
               при массовой скорости воздуха в фронтальном сечении 6.2 кг/м
@@ -707,6 +710,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           </div>
         </div>
       </section>
+
+      <Separator />
 
       <section>
         <Anchor num={1} />
@@ -751,7 +756,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         <CalcAerodynamicResistanceTables />
         <div className="space-y-4 text-[#6a2d2d]">
           <div>
-            <ProductParagraph>Пример расчета 4</ProductParagraph>
+            <ProductParagraph>⚙️ Пример расчета 4</ProductParagraph>
             <ProductParagraph>
               Подсчитать аэродинамическое сопротивление парового калорифера КПСк
               2-6 при массовой скорости воздуха в фронтальном сечении 5.3 кг/м
@@ -778,7 +783,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </ul>
           </div>
           <div>
-            <ProductParagraph>Пример расчета 5</ProductParagraph>
+            <ProductParagraph>⚙️ Пример расчета 5</ProductParagraph>
             <ProductParagraph>
               Вычислить аэродинамическое сопротивление парового калорифера КП
               307 при массовой скорости воздуха в фронтальном сечении 3.6 кг/м
@@ -805,7 +810,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </ul>
           </div>
           <div>
-            <ProductParagraph>Пример расчета 6</ProductParagraph>
+            <ProductParagraph>⚙️ Пример расчета 6</ProductParagraph>
             <ProductParagraph>
               Рассчитать аэродинамическое сопротивление парового калорифера
               КФБ-12 А4 при массовой скорости воздуха в фронтальном сечении 7.2
@@ -835,6 +840,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       <section>
         <Anchor num={3} />
         <Heading
@@ -847,7 +854,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           Отдельной строкой выложены данные по аэродинамическому сопротивлению.
         </ProductParagraph>
         <div className="text-[#6a2d2d]">
-          <ProductParagraph>Пример расчета 7</ProductParagraph>
+          <ProductParagraph>⚙️ Пример расчета 7</ProductParagraph>
           <ProductParagraph>
             Рассчитать коэффициент теплопередачи и аэродинамическое
             сопротивление парового воздухоподогревателя КПСк 4-10 с учетом

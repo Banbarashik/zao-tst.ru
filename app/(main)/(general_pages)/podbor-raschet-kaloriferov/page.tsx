@@ -15,6 +15,7 @@ import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHe
 import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
 import LegacyHtml from "@/components/legacyHtml";
 import { Anchor } from "@/components/utils/anchor";
+import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор паровых калориферов",
@@ -590,6 +591,8 @@ export default async function PodborRaschetKaloriferovPage() {
         <SteamHeaterTempTable data={cityTemps} />
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={1} />
         <Heading lvl={2} text="Расчет мощности по теплу" />
@@ -645,7 +648,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 1
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 1
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -705,6 +708,8 @@ export default async function PodborRaschetKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={2} />
         <Heading lvl={2} text="Расчет площади фронтального сечения" />
@@ -733,7 +738,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 2
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 2
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -809,6 +814,8 @@ export default async function PodborRaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={3} />
         <Heading
@@ -836,7 +843,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 3
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 3
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -905,6 +912,8 @@ export default async function PodborRaschetKaloriferovPage() {
         />
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={4} />
         <Heading lvl={2} text="Расчет расхода пара для нагрева" />
@@ -940,7 +949,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 4
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 4
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -978,6 +987,8 @@ export default async function PodborRaschetKaloriferovPage() {
         <SaturatedSteamPropertiesTable />
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={5} />
         <Heading lvl={2} text="Расчет коэффициента теплопередачи" />
@@ -1014,7 +1025,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 5
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 5
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -1125,6 +1136,8 @@ export default async function PodborRaschetKaloriferovPage() {
         />
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={6} />
         <Heading lvl={2} text="Расчет температурного напора" />
@@ -1227,7 +1240,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 6
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 6
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -1290,6 +1303,8 @@ export default async function PodborRaschetKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={7} />
         <Heading lvl={2} text="Расчет тепловой мощности парового калорифера" />
@@ -1324,7 +1339,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 7
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 7
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -1402,6 +1417,8 @@ export default async function PodborRaschetKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={8} />
         <Heading
@@ -1432,7 +1449,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example mb-6 space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 8
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 8
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -1531,6 +1548,8 @@ export default async function PodborRaschetKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={9} />
         <Heading lvl={2} text="Запас тепловой мощности парового калорифера" />
@@ -1564,7 +1583,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 9
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 9
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -1662,6 +1681,8 @@ export default async function PodborRaschetKaloriferovPage() {
         />
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={10} />
         <Heading lvl={2} text="Расчет воздушного сопротивления" />
@@ -1693,7 +1714,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 10
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 10
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -1790,6 +1811,8 @@ export default async function PodborRaschetKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       <section className="mb-4 space-y-4">
         <Anchor num={11} />
         <Heading lvl={2} text="Подбор парового калорифера" />
@@ -1829,7 +1852,7 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора парового калорифера. ШАГ 11
+              ⚙️ Пример расчета и подбора парового калорифера. ШАГ 11
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровой калорифер для нагрева приточного воздуха объемом
@@ -1891,6 +1914,8 @@ export default async function PodborRaschetKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       <section className="space-y-4">
         <Anchor num={12} />
         <Heading
@@ -1933,8 +1958,8 @@ export default async function PodborRaschetKaloriferovPage() {
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
-              Пример расчета и подбора паровых калориферов для технологического
-              нагрева
+              ⚙️ Пример расчета и подбора паровых калориферов для
+              технологического нагрева
             </ProductParagraph>
             <ProductParagraph>
               Подобрать паровые калориферы для нагрева воздуха объемом 25000
