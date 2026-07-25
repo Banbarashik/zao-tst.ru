@@ -174,6 +174,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         `${pathToImgFolders.tehnicheskaya}/ustanovka_model_electrokalor.png`,
         `${pathToImgFolders.tehnicheskaya}/sfo_scheme.png`,
         `${pathToImgFolders.tehnicheskaya}/kalorifer_sfo_16-250.png`,
+        `${pathToImgFolders.tehnicheskaya}/kalorifer_sfotc_16-250.png`,
       ],
     },
     {
@@ -441,6 +442,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         `${pathToImgFolders.generalPages}/elektrokalorifernaia_ustanovka_sfotc_chertezh.png`,
         `${pathToImgFolders.generalPages}/elektrokalorifernaia_ustanovka_sfotc_proizvodstvo.png`,
         `${pathToImgFolders.generalPages}/elektrokalorifernaia_ustanovka_sfotc_komplektatciia.png`,
+        `${pathToImgFolders.generalPages}/ustanovka_sfotc_podbor.png`,
+        `${pathToImgFolders.generalPages}/ustanovka_sfotc.png`,
       ],
     },
     {
