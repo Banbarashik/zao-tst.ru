@@ -4,6 +4,7 @@ import CategoryCards from "@/components/categoryCards";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import Image from "next/image";
+import { LEFT_BLUE_BRACKET } from "@/constants/styles";
 
 export const metadata: Metadata = {
   title: "Отопительные агрегаты. Производство",
@@ -173,7 +174,7 @@ export default function OtopitelnyeAgregatyPage() {
         </section>
       </section>
 
-      <section>
+      <section className={LEFT_BLUE_BRACKET}>
         <Heading
           lvl={3}
           text="Сфера применения агрегатов воздушного отопления"

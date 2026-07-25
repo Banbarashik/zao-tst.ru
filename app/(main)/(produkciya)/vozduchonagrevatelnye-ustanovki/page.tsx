@@ -4,6 +4,7 @@ import CategoryCards from "@/components/categoryCards";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import Image from "next/image";
+import { LEFT_BLUE_BRACKET } from "@/constants/styles";
 
 export const metadata: Metadata = {
   title: "Воздухонагревательные электрические установки",
@@ -127,7 +128,7 @@ export default function KaloriferyPage() {
         />
       </section>
 
-      <section>
+      <section className={LEFT_BLUE_BRACKET}>
         <Heading lvl={3} text="Электрокалориферы для шахт и рудников" />
         <ProductParagraph>
           В практике применения общепромышленных электрических калориферов

@@ -9,6 +9,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import { LEFT_BLUE_BRACKET } from "@/constants/styles";
 
 export const metadata: Metadata = {
   title: "Шкафы управления калорифером ШУК. Производство",
@@ -434,7 +435,7 @@ export default function ShkafyUpravleniyaSHUK() {
         </div>
       </section>
 
-      <section className="mb-4">
+      <section className={`${LEFT_BLUE_BRACKET} mb-4`}>
         <Heading lvl={2} text="Подключение и порядок работы ШУК" />
         <ProductParagraph>
           Установить на электрокалорифер температурное реле SK ТРМ 11-01.
@@ -477,15 +478,16 @@ export default function ShkafyUpravleniyaSHUK() {
           установки следует выключить автоматический выключатель SA.
           Светосигнальная арматура HL1 и HL2 гаснет.
         </ProductParagraph>
-        <ProductParagraph>
-          Структура условного обозначения шкафов управления калорифером ШУК
-          производства ООО «Т.С.Т.». Шкаф управления калорифером ШУК - Р/ УХЛ4:
-          ШУК - шкаф управления калорифером; Р - номинальная мощность, кВт; УХЛ4
-          - климатическое исполнение и категория размещения.
-        </ProductParagraph>
       </section>
 
       <LinkButtonsBlock buttons={linkButtons} />
+
+      <ProductParagraph>
+        Структура условного обозначения шкафов управления калорифером ШУК
+        производства ООО «Т.С.Т.». Шкаф управления калорифером ШУК - Р/ УХЛ4:
+        ШУК - шкаф управления калорифером; Р - номинальная мощность, кВт; УХЛ4 -
+        климатическое исполнение и категория размещения.
+      </ProductParagraph>
     </>
   );
 }

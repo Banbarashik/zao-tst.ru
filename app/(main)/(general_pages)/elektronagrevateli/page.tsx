@@ -13,6 +13,7 @@ import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
 import { SfoOperatingModesTable } from "@/components/general_pages/SfoOperatingModesTable";
+import { LEFT_BLUE_BRACKET } from "@/constants/styles";
 
 export const metadata: Metadata = {
   title: "Электрокалориферы СФО. Производство",
@@ -456,12 +457,12 @@ export default async function KaloriferySFO() {
           className="mx-auto mb-2"
         />
 
-        <section>
+        <section className={LEFT_BLUE_BRACKET}>
           <Heading lvl={3} text="Базовые инженерные стандарты линейки СФО" />
 
           <ul className="text-[17px]">
             <li>
-              <span className="text-example">⚙️ Фланцевое присоединение:</span>{" "}
+              <span className="text-example">Фланцевое присоединение:</span>{" "}
               Входные и выходные сечения воздухонагревателей оснащены
               интегрированными монтажными фланцами. Размеры и шаг отверстий
               фланцев полностью соответствуют общепринятым стандартам
@@ -469,7 +470,7 @@ export default async function KaloriferySFO() {
             </li>
             <li>
               <span className="text-example">
-                ⚙️ Коммутационные зоны (Выносные короба):
+                Коммутационные зоны (Выносные короба):
               </span>{" "}
               С боковых сторон корпуса предусмотрены выступающие кабельные
               короба глубиной 100 мм. Пространство этих коробов специально
@@ -482,16 +483,14 @@ export default async function KaloriferySFO() {
               зажимам.
             </li>
             <li>
-              <span className="text-example">⚙️ Энергетическая схема:</span>{" "}
+              <span className="text-example">Энергетическая схема:</span>{" "}
               Питание осуществляется от трехфазной сети переменного тока 380 В
               (50 Гц). Внутреннее соединение нагревателей выполнено по схеме
               «звезда» с выводом изолированной нейтрали, что обеспечивает
               симметричную нагрузку на питающую сеть предприятия.
             </li>
             <li>
-              <span className="text-example">
-                ⚙️ Ступенчатое регулирование:
-              </span>{" "}
+              <span className="text-example">Ступенчатое регулирование:</span>{" "}
               Архитектура внутренних подключений поддерживает разделение общей
               мощности на независимые распределительные секции. Это позволяет
               организовать пошаговый запуск и плавное управление нагревом без
