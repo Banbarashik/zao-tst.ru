@@ -31,7 +31,7 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
 
   const [zoom, setZoom] = useState(ZOOM_CONFIG.min);
   const [center, setCenter] = useState<Coordinates>(
-    createCoordinates(95, 66), // примерный центр РФ — подбирается под выбранную проекцию
+    createCoordinates(92, 66), // примерный центр РФ — подбирается под выбранную проекцию
   );
   const [activeCity, setActiveCity] = useState<City | null>(null);
 
@@ -57,7 +57,7 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
   );
 
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-full w-full border p-2">
       {/* Кнопки зума — колесо мыши/pinch обрабатывается ZoomableGroup автоматически */}
       <div className="absolute top-4 right-4 z-10 flex flex-col gap-1">
         <button
@@ -79,8 +79,8 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
       <ComposableMap
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
-          rotate: [-106, -69, 0],
-          scale: 862,
+          rotate: [-106, -68.5, 0],
+          scale: 866,
           center: createCoordinates(0, 0),
         }}
         className="h-full w-full"
