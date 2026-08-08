@@ -31,7 +31,7 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
 
   const [zoom, setZoom] = useState(ZOOM_CONFIG.min);
   const [center, setCenter] = useState<Coordinates>(
-    createCoordinates(90, 65), // примерный центр РФ — подбирается под выбранную проекцию
+    createCoordinates(95, 66), // примерный центр РФ — подбирается под выбранную проекцию
   );
   const [activeCity, setActiveCity] = useState<City | null>(null);
 
@@ -79,8 +79,8 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
       <ComposableMap
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
-          rotate: [-100, -60, 0],
-          scale: 900,
+          rotate: [-106, -69, 0],
+          scale: 862,
           center: createCoordinates(0, 0),
         }}
         className="h-full w-full"
