@@ -1,20 +1,20 @@
 [
   {
-    "id": "ekaterinburg",
-    "cityName": "Екатеринбург",
-    "coordinates": [60.6122, 56.8519],
+    "id": "moscow",
+    "cityName": "Москва",
+    "coordinates": [37.6173, 55.7558],
     "tier": 1,
-    "regionId": "sverdlovsk-region",
-    "regionUrl": "/regions/sverdlovsk-region",
+    "regionId": "moscow",
+    "regionUrl": "/regions/moscow",
     "summary": ""
   },
   {
-    "id": "nizhny-tagil",
-    "cityName": "Нижний Тагил",
-    "coordinates": [59.965, 57.9194],
-    "tier": 3,
-    "regionId": "sverdlovsk-region",
-    "regionUrl": "/regions/sverdlovsk-region",
+    "id": "saint-petersburg",
+    "cityName": "Санкт-Петербург",
+    "coordinates": [30.3351, 59.9343],
+    "tier": 1,
+    "regionId": "saint-petersburg",
+    "regionUrl": "/regions/saint-petersburg",
     "summary": ""
   },
   {
@@ -27,12 +27,1309 @@
     "summary": ""
   },
   {
+    "id": "nizhny-novgorod",
+    "cityName": "Нижний Новгород",
+    "coordinates": [44.0059, 56.3269],
+    "tier": 1,
+    "regionId": "nizhny-novgorod-region",
+    "regionUrl": "/regions/nizhny-novgorod-region",
+    "summary": ""
+  },
+  {
+    "id": "ekaterinburg",
+    "cityName": "Екатеринбург",
+    "coordinates": [60.6122, 56.8519],
+    "tier": 1,
+    "regionId": "sverdlovsk-region",
+    "regionUrl": "/regions/sverdlovsk-region",
+    "summary": ""
+  },
+  {
+    "id": "kazan",
+    "cityName": "Казань",
+    "coordinates": [49.1064, 55.7961],
+    "tier": 1,
+    "regionId": "tatarstan",
+    "regionUrl": "/regions/tatarstan",
+    "summary": ""
+  },
+  {
+    "id": "rostov-on-don",
+    "cityName": "Ростов-на-Дону",
+    "coordinates": [39.7015, 47.2357],
+    "tier": 1,
+    "regionId": "rostov-region",
+    "regionUrl": "/regions/rostov-region",
+    "summary": ""
+  },
+  {
+    "id": "omsk",
+    "cityName": "Омск",
+    "coordinates": [73.3682, 54.9885],
+    "tier": 1,
+    "regionId": "omsk-region",
+    "regionUrl": "/regions/omsk-region",
+    "summary": ""
+  },
+  {
+    "id": "samara",
+    "cityName": "Самара",
+    "coordinates": [50.1002, 53.1959],
+    "tier": 1,
+    "regionId": "samara-region",
+    "regionUrl": "/regions/samara-region",
+    "summary": ""
+  },
+  {
+    "id": "ufa",
+    "cityName": "Уфа",
+    "coordinates": [55.9587, 54.7388],
+    "tier": 1,
+    "regionId": "bashkortostan",
+    "regionUrl": "/regions/bashkortostan",
+    "summary": ""
+  },
+  {
+    "id": "krasnoyarsk",
+    "cityName": "Красноярск",
+    "coordinates": [92.8932, 56.0153],
+    "tier": 1,
+    "regionId": "krasnoyarsk-region",
+    "regionUrl": "/regions/krasnoyarsk-region",
+    "summary": ""
+  },
+  {
+    "id": "voronezh",
+    "cityName": "Воронеж",
+    "coordinates": [39.2003, 51.6608],
+    "tier": 1,
+    "regionId": "voronezh-region",
+    "regionUrl": "/regions/voronezh-region",
+    "summary": ""
+  },
+  {
+    "id": "perm",
+    "cityName": "Пермь",
+    "coordinates": [56.2294, 58.0105],
+    "tier": 1,
+    "regionId": "perm-region",
+    "regionUrl": "/regions/perm-region",
+    "summary": ""
+  },
+  {
+    "id": "volgograd",
+    "cityName": "Волгоград",
+    "coordinates": [44.5169, 48.708],
+    "tier": 1,
+    "regionId": "volgograd-region",
+    "regionUrl": "/regions/volgograd-region",
+    "summary": ""
+  },
+  {
+    "id": "krasnodar",
+    "cityName": "Краснодар",
+    "coordinates": [38.9769, 45.0355],
+    "tier": 1,
+    "regionId": "krasnodar-region",
+    "regionUrl": "/regions/krasnodar-region",
+    "summary": ""
+  },
+  {
+    "id": "saratov",
+    "cityName": "Саратов",
+    "coordinates": [46.0342, 51.5331],
+    "tier": 1,
+    "regionId": "saratov-region",
+    "regionUrl": "/regions/saratov-region",
+    "summary": ""
+  },
+  {
+    "id": "tyumen",
+    "cityName": "Тюмень",
+    "coordinates": [65.5343, 57.153],
+    "tier": 1,
+    "regionId": "tyumen-region",
+    "regionUrl": "/regions/tyumen-region",
+    "summary": ""
+  },
+  {
+    "id": "chelyabinsk",
+    "cityName": "Челябинск",
+    "coordinates": [61.4026, 55.1644],
+    "tier": 1,
+    "regionId": "chelyabinsk-region",
+    "regionUrl": "/regions/chelyabinsk-region",
+    "summary": ""
+  },
+  {
+    "id": "irkutsk",
+    "cityName": "Иркутск",
+    "coordinates": [104.2807, 52.2864],
+    "tier": 1,
+    "regionId": "irkutsk-region",
+    "regionUrl": "/regions/irkutsk-region",
+    "summary": ""
+  },
+  {
+    "id": "barnaul",
+    "cityName": "Барнаул",
+    "coordinates": [83.7784, 53.3474],
+    "tier": 1,
+    "regionId": "altai-region",
+    "regionUrl": "/regions/altai-region",
+    "summary": ""
+  },
+  {
+    "id": "tomsk",
+    "cityName": "Томск",
+    "coordinates": [84.948, 56.4846],
+    "tier": 1,
+    "regionId": "tomsk-region",
+    "regionUrl": "/regions/tomsk-region",
+    "summary": ""
+  },
+  {
+    "id": "chita",
+    "cityName": "Чита",
+    "coordinates": [113.5009, 52.034],
+    "tier": 1,
+    "regionId": "zabaykalsky-region",
+    "regionUrl": "/regions/zabaykalsky-region",
+    "summary": ""
+  },
+  {
+    "id": "ulan-ude",
+    "cityName": "Улан-Удэ",
+    "coordinates": [107.584, 51.8335],
+    "tier": 1,
+    "regionId": "buryatia",
+    "regionUrl": "/regions/buryatia",
+    "summary": ""
+  },
+  {
+    "id": "yakutsk",
+    "cityName": "Якутск",
+    "coordinates": [129.7331, 62.0273],
+    "tier": 1,
+    "regionId": "sakha",
+    "regionUrl": "/regions/sakha",
+    "summary": ""
+  },
+  {
+    "id": "khabarovsk",
+    "cityName": "Хабаровск",
+    "coordinates": [135.0719, 48.4802],
+    "tier": 1,
+    "regionId": "khabarovsk-region",
+    "regionUrl": "/regions/khabarovsk-region",
+    "summary": ""
+  },
+  {
+    "id": "vladivostok",
+    "cityName": "Владивосток",
+    "coordinates": [131.8869, 43.1155],
+    "tier": 1,
+    "regionId": "primorsky-region",
+    "regionUrl": "/regions/primorsky-region",
+    "summary": ""
+  },
+  {
+    "id": "tolyatti",
+    "cityName": "Тольятти",
+    "coordinates": [49.4194, 53.5078],
+    "tier": 1,
+    "regionId": "samara-region",
+    "regionUrl": "/regions/samara-region",
+    "summary": ""
+  },
+  {
+    "id": "izhevsk",
+    "cityName": "Ижевск",
+    "coordinates": [53.2048, 56.8527],
+    "tier": 1,
+    "regionId": "udmurtia",
+    "regionUrl": "/regions/udmurtia",
+    "summary": ""
+  },
+  {
+    "id": "makhachkala",
+    "cityName": "Махачкала",
+    "coordinates": [47.5047, 42.9849],
+    "tier": 1,
+    "regionId": "dagestan",
+    "regionUrl": "/regions/dagestan",
+    "summary": ""
+  },
+  {
+    "id": "orenburg",
+    "cityName": "Оренбург",
+    "coordinates": [55.101, 51.7682],
+    "tier": 1,
+    "regionId": "orenburg-region",
+    "regionUrl": "/regions/orenburg-region",
+    "summary": ""
+  },
+  {
+    "id": "penza",
+    "cityName": "Пенза",
+    "coordinates": [45.0183, 53.195],
+    "tier": 1,
+    "regionId": "penza-region",
+    "regionUrl": "/regions/penza-region",
+    "summary": ""
+  },
+  {
+    "id": "ryazan",
+    "cityName": "Рязань",
+    "coordinates": [39.7359, 54.6296],
+    "tier": 1,
+    "regionId": "ryazan-region",
+    "regionUrl": "/regions/ryazan-region",
+    "summary": ""
+  },
+  {
+    "id": "yaroslavl",
+    "cityName": "Ярославль",
+    "coordinates": [39.8938, 57.6261],
+    "tier": 1,
+    "regionId": "yaroslavl-region",
+    "regionUrl": "/regions/yaroslavl-region",
+    "summary": ""
+  },
+  {
+    "id": "lipetsk",
+    "cityName": "Липецк",
+    "coordinates": [39.5708, 52.6031],
+    "tier": 1,
+    "regionId": "lipetsk-region",
+    "regionUrl": "/regions/lipetsk-region",
+    "summary": ""
+  },
+  {
+    "id": "tula",
+    "cityName": "Тула",
+    "coordinates": [37.6178, 54.1931],
+    "tier": 1,
+    "regionId": "tula-region",
+    "regionUrl": "/regions/tula-region",
+    "summary": ""
+  },
+  {
+    "id": "kaliningrad",
+    "cityName": "Калининград",
+    "coordinates": [20.4522, 54.7104],
+    "tier": 1,
+    "regionId": "kaliningrad-region",
+    "regionUrl": "/regions/kaliningrad-region",
+    "summary": ""
+  },
+  {
+    "id": "astrakhan",
+    "cityName": "Астрахань",
+    "coordinates": [48.0408, 46.3497],
+    "tier": 1,
+    "regionId": "astrakhan-region",
+    "regionUrl": "/regions/astrakhan-region",
+    "summary": ""
+  },
+  {
+    "id": "stavropol",
+    "cityName": "Ставрополь",
+    "coordinates": [41.9691, 45.0445],
+    "tier": 1,
+    "regionId": "stavropol-region",
+    "regionUrl": "/regions/stavropol-region",
+    "summary": ""
+  },
+  {
+    "id": "vladimir",
+    "cityName": "Владимир",
+    "coordinates": [40.4066, 56.1291],
+    "tier": 2,
+    "regionId": "vladimir-region",
+    "regionUrl": "/regions/vladimir-region",
+    "summary": ""
+  },
+  {
+    "id": "ivanovo",
+    "cityName": "Иваново",
+    "coordinates": [40.9739, 57.0003],
+    "tier": 2,
+    "regionId": "ivanovo-region",
+    "regionUrl": "/regions/ivanovo-region",
+    "summary": ""
+  },
+  {
+    "id": "kostroma",
+    "cityName": "Кострома",
+    "coordinates": [40.9269, 57.7679],
+    "tier": 2,
+    "regionId": "kostroma-region",
+    "regionUrl": "/regions/kostroma-region",
+    "summary": ""
+  },
+  {
+    "id": "bryansk",
+    "cityName": "Брянск",
+    "coordinates": [34.3668, 53.2436],
+    "tier": 2,
+    "regionId": "bryansk-region",
+    "regionUrl": "/regions/bryansk-region",
+    "summary": ""
+  },
+  {
+    "id": "orel",
+    "cityName": "Орёл",
+    "coordinates": [36.0638, 52.9703],
+    "tier": 2,
+    "regionId": "oryol-region",
+    "regionUrl": "/regions/oryol-region",
+    "summary": ""
+  },
+  {
+    "id": "kursk",
+    "cityName": "Курск",
+    "coordinates": [36.1926, 51.7304],
+    "tier": 2,
+    "regionId": "kursk-region",
+    "regionUrl": "/regions/kursk-region",
+    "summary": ""
+  },
+  {
+    "id": "belgorod",
+    "cityName": "Белгород",
+    "coordinates": [36.5873, 50.5954],
+    "tier": 2,
+    "regionId": "belgorod-region",
+    "regionUrl": "/regions/belgorod-region",
+    "summary": ""
+  },
+  {
+    "id": "smolensk",
+    "cityName": "Смоленск",
+    "coordinates": [32.0453, 54.7826],
+    "tier": 2,
+    "regionId": "smolensk-region",
+    "regionUrl": "/regions/smolensk-region",
+    "summary": ""
+  },
+  {
+    "id": "kaluga",
+    "cityName": "Калуга",
+    "coordinates": [36.2598, 54.5138],
+    "tier": 2,
+    "regionId": "kaluga-region",
+    "regionUrl": "/regions/kaluga-region",
+    "summary": ""
+  },
+  {
+    "id": "tver",
+    "cityName": "Тверь",
+    "coordinates": [35.9118, 56.8587],
+    "tier": 2,
+    "regionId": "tver-region",
+    "regionUrl": "/regions/tver-region",
+    "summary": ""
+  },
+  {
+    "id": "tambov",
+    "cityName": "Тамбов",
+    "coordinates": [41.4423, 52.7212],
+    "tier": 2,
+    "regionId": "tambov-region",
+    "regionUrl": "/regions/tambov-region",
+    "summary": ""
+  },
+  {
+    "id": "saransk",
+    "cityName": "Саранск",
+    "coordinates": [45.1839, 54.1874],
+    "tier": 2,
+    "regionId": "mordovia",
+    "regionUrl": "/regions/mordovia",
+    "summary": ""
+  },
+  {
+    "id": "cheboksary",
+    "cityName": "Чебоксары",
+    "coordinates": [47.2519, 56.1439],
+    "tier": 2,
+    "regionId": "chuvashia",
+    "regionUrl": "/regions/chuvashia",
+    "summary": ""
+  },
+  {
+    "id": "yoshkar-ola",
+    "cityName": "Йошкар-Ола",
+    "coordinates": [47.886, 56.6344],
+    "tier": 2,
+    "regionId": "mari-el",
+    "regionUrl": "/regions/mari-el",
+    "summary": ""
+  },
+  {
+    "id": "kirov",
+    "cityName": "Киров",
+    "coordinates": [49.668, 58.6036],
+    "tier": 2,
+    "regionId": "kirov-region",
+    "regionUrl": "/regions/kirov-region",
+    "summary": ""
+  },
+  {
+    "id": "siktivkar",
+    "cityName": "Сыктывкар",
+    "coordinates": [50.8119, 61.6688],
+    "tier": 2,
+    "regionId": "komi",
+    "regionUrl": "/regions/komi",
+    "summary": ""
+  },
+  {
+    "id": "petrozavodsk",
+    "cityName": "Петрозаводск",
+    "coordinates": [34.3641, 61.7849],
+    "tier": 2,
+    "regionId": "karelia",
+    "regionUrl": "/regions/karelia",
+    "summary": ""
+  },
+  {
+    "id": "arkhangelsk",
+    "cityName": "Архангельск",
+    "coordinates": [40.5158, 64.5399],
+    "tier": 2,
+    "regionId": "arkhangelsk-region",
+    "regionUrl": "/regions/arkhangelsk-region",
+    "summary": ""
+  },
+  {
+    "id": "vologda",
+    "cityName": "Вологда",
+    "coordinates": [39.2062, 59.2205],
+    "tier": 2,
+    "regionId": "vologda-region",
+    "regionUrl": "/regions/vologda-region",
+    "summary": ""
+  },
+  {
+    "id": "murmansk",
+    "cityName": "Мурманск",
+    "coordinates": [33.0749, 68.9707],
+    "tier": 2,
+    "regionId": "murmansk-region",
+    "regionUrl": "/regions/murmansk-region",
+    "summary": ""
+  },
+  {
+    "id": "pskov",
+    "cityName": "Псков",
+    "coordinates": [28.3318, 57.8194],
+    "tier": 2,
+    "regionId": "pskov-region",
+    "regionUrl": "/regions/pskov-region",
+    "summary": ""
+  },
+  {
+    "id": "veliky-novgorod",
+    "cityName": "Великий Новгород",
+    "coordinates": [31.2758, 58.5215],
+    "tier": 2,
+    "regionId": "novgorod-region",
+    "regionUrl": "/regions/novgorod-region",
+    "summary": ""
+  },
+  {
+    "id": "maikop",
+    "cityName": "Майкоп",
+    "coordinates": [40.1043, 44.6098],
+    "tier": 2,
+    "regionId": "adygea",
+    "regionUrl": "/regions/adygea",
+    "summary": ""
+  },
+  {
+    "id": "cherkessk",
+    "cityName": "Черкесск",
+    "coordinates": [41.9734, 44.2269],
+    "tier": 2,
+    "regionId": "karachay-cherkessia",
+    "regionUrl": "/regions/karachay-cherkessia",
+    "summary": ""
+  },
+  {
+    "id": "nalchik",
+    "cityName": "Нальчик",
+    "coordinates": [43.6071, 43.4853],
+    "tier": 2,
+    "regionId": "kabardino-balkaria",
+    "regionUrl": "/regions/kabardino-balkaria",
+    "summary": ""
+  },
+  {
+    "id": "vladikavkaz",
+    "cityName": "Владикавказ",
+    "coordinates": [44.6818, 43.0205],
+    "tier": 2,
+    "regionId": "north-ossetia",
+    "regionUrl": "/regions/north-ossetia",
+    "summary": ""
+  },
+  {
+    "id": "grozny",
+    "cityName": "Грозный",
+    "coordinates": [45.6982, 43.3178],
+    "tier": 2,
+    "regionId": "chechnya",
+    "regionUrl": "/regions/chechnya",
+    "summary": ""
+  },
+  {
+    "id": "magas",
+    "cityName": "Магас",
+    "coordinates": [44.7614, 43.1686],
+    "tier": 2,
+    "regionId": "ingushetia",
+    "regionUrl": "/regions/ingushetia",
+    "summary": ""
+  },
+  {
+    "id": "elista",
+    "cityName": "Элиста",
+    "coordinates": [44.2558, 46.3083],
+    "tier": 2,
+    "regionId": "kalmykia",
+    "regionUrl": "/regions/kalmykia",
+    "summary": ""
+  },
+  {
+    "id": "surgut",
+    "cityName": "Сургут",
+    "coordinates": [73.3962, 61.254],
+    "tier": 2,
+    "regionId": "khanty-mansi",
+    "regionUrl": "/regions/khanty-mansi",
+    "summary": ""
+  },
+  {
+    "id": "khanty-mansiysk",
+    "cityName": "Ханты-Мансийск",
+    "coordinates": [69.0189, 61.0032],
+    "tier": 2,
+    "regionId": "khanty-mansi",
+    "regionUrl": "/regions/khanty-mansi",
+    "summary": ""
+  },
+  {
+    "id": "salekhard",
+    "cityName": "Салехард",
+    "coordinates": [66.6111, 66.53],
+    "tier": 2,
+    "regionId": "yamalo-nenets",
+    "regionUrl": "/regions/yamalo-nenets",
+    "summary": ""
+  },
+  {
+    "id": "nizhnevartovsk",
+    "cityName": "Нижневартовск",
+    "coordinates": [76.5531, 60.9397],
+    "tier": 2,
+    "regionId": "khanty-mansi",
+    "regionUrl": "/regions/khanty-mansi",
+    "summary": ""
+  },
+  {
+    "id": "kurgan",
+    "cityName": "Курган",
+    "coordinates": [65.3414, 55.4649],
+    "tier": 2,
+    "regionId": "kurgan-region",
+    "regionUrl": "/regions/kurgan-region",
+    "summary": ""
+  },
+  {
+    "id": "gorno-altaysk",
+    "cityName": "Горно-Алтайск",
+    "coordinates": [85.9606, 51.9581],
+    "tier": 2,
+    "regionId": "altai-republic",
+    "regionUrl": "/regions/altai-republic",
+    "summary": ""
+  },
+  {
+    "id": "abakan",
+    "cityName": "Абакан",
+    "coordinates": [91.4424, 53.7212],
+    "tier": 2,
+    "regionId": "khakassia",
+    "regionUrl": "/regions/khakassia",
+    "summary": ""
+  },
+  {
+    "id": "kyzyl",
+    "cityName": "Кызыл",
+    "coordinates": [94.4378, 51.7191],
+    "tier": 2,
+    "regionId": "tuva",
+    "regionUrl": "/regions/tuva",
+    "summary": ""
+  },
+  {
+    "id": "blagoveshchensk",
+    "cityName": "Благовещенск",
+    "coordinates": [127.5272, 50.2907],
+    "tier": 2,
+    "regionId": "amur-region",
+    "regionUrl": "/regions/amur-region",
+    "summary": ""
+  },
+  {
+    "id": "birobidzhan",
+    "cityName": "Биробиджан",
+    "coordinates": [132.9218, 48.7946],
+    "tier": 2,
+    "regionId": "jewish-autonomous-region",
+    "regionUrl": "/regions/jewish-autonomous-region",
+    "summary": ""
+  },
+  {
+    "id": "yuzhno-sakhalinsk",
+    "cityName": "Южно-Сахалинск",
+    "coordinates": [142.738, 46.9591],
+    "tier": 2,
+    "regionId": "sakhalin-region",
+    "regionUrl": "/regions/sakhalin-region",
+    "summary": ""
+  },
+  {
+    "id": "petropavlovsk-kamchatsky",
+    "cityName": "Петропавловск-Камчатский",
+    "coordinates": [158.6507, 53.037],
+    "tier": 2,
+    "regionId": "kamchatka-region",
+    "regionUrl": "/regions/kamchatka-region",
+    "summary": ""
+  },
+  {
+    "id": "magadan",
+    "cityName": "Магадан",
+    "coordinates": [150.8086, 59.5682],
+    "tier": 2,
+    "regionId": "magadan-region",
+    "regionUrl": "/regions/magadan-region",
+    "summary": ""
+  },
+  {
+    "id": "anadyr",
+    "cityName": "Анадырь",
+    "coordinates": [177.5103, 64.7335],
+    "tier": 2,
+    "regionId": "chukotka",
+    "regionUrl": "/regions/chukotka",
+    "summary": ""
+  },
+  {
+    "id": "nizhny-tagil",
+    "cityName": "Нижний Тагил",
+    "coordinates": [59.965, 57.9194],
+    "tier": 2,
+    "regionId": "sverdlovsk-region",
+    "regionUrl": "/regions/sverdlovsk-region",
+    "summary": ""
+  },
+  {
     "id": "berdsk",
     "cityName": "Бердск",
     "coordinates": [83.0937, 54.7597],
     "tier": 2,
     "regionId": "novosibirsk-region",
     "regionUrl": "/regions/novosibirsk-region",
+    "summary": ""
+  },
+  {
+    "id": "biysk",
+    "cityName": "Бийск",
+    "coordinates": [85.2072, 52.5396],
+    "tier": 2,
+    "regionId": "altai-region",
+    "regionUrl": "/regions/altai-region",
+    "summary": ""
+  },
+  {
+    "id": "severodvinsk",
+    "cityName": "Северодвинск",
+    "coordinates": [39.8302, 64.5635],
+    "tier": 2,
+    "regionId": "arkhangelsk-region",
+    "regionUrl": "/regions/arkhangelsk-region",
+    "summary": ""
+  },
+  {
+    "id": "cherepovets",
+    "cityName": "Череповец",
+    "coordinates": [37.9091, 59.1269],
+    "tier": 2,
+    "regionId": "vologda-region",
+    "regionUrl": "/regions/vologda-region",
+    "summary": ""
+  },
+  {
+    "id": "novorossiysk",
+    "cityName": "Новороссийск",
+    "coordinates": [37.768, 44.7239],
+    "tier": 2,
+    "regionId": "krasnodar-region",
+    "regionUrl": "/regions/krasnodar-region",
+    "summary": ""
+  },
+  {
+    "id": "sochi",
+    "cityName": "Сочи",
+    "coordinates": [39.7303, 43.5855],
+    "tier": 2,
+    "regionId": "krasnodar-region",
+    "regionUrl": "/regions/krasnodar-region",
+    "summary": ""
+  },
+  {
+    "id": "taganrog",
+    "cityName": "Таганрог",
+    "coordinates": [38.9356, 47.2362],
+    "tier": 2,
+    "regionId": "rostov-region",
+    "regionUrl": "/regions/rostov-region",
+    "summary": ""
+  },
+  {
+    "id": "nakhodka",
+    "cityName": "Находка",
+    "coordinates": [132.8735, 42.824],
+    "tier": 2,
+    "regionId": "primorsky-region",
+    "regionUrl": "/regions/primorsky-region",
+    "summary": ""
+  },
+  {
+    "id": "ulyanovsk",
+    "cityName": "Ульяновск",
+    "coordinates": [48.4028, 54.3142],
+    "tier": 2,
+    "regionId": "ulyanovsk-region",
+    "regionUrl": "/regions/ulyanovsk-region",
+    "summary": ""
+  },
+  {
+    "id": "naberezhnye-chelny",
+    "cityName": "Набережные Челны",
+    "coordinates": [52.3199, 55.7435],
+    "tier": 2,
+    "regionId": "tatarstan",
+    "regionUrl": "/regions/tatarstan",
+    "summary": ""
+  },
+  {
+    "id": "balakovo",
+    "cityName": "Балаково",
+    "coordinates": [47.8007, 52.033],
+    "tier": 2,
+    "regionId": "saratov-region",
+    "regionUrl": "/regions/saratov-region",
+    "summary": ""
+  },
+  {
+    "id": "magnitogorsk",
+    "cityName": "Магнитогорск",
+    "coordinates": [59.0754, 53.4072],
+    "tier": 2,
+    "regionId": "chelyabinsk-region",
+    "regionUrl": "/regions/chelyabinsk-region",
+    "summary": ""
+  },
+  {
+    "id": "rybinsk",
+    "cityName": "Рыбинск",
+    "coordinates": [38.8526, 58.0485],
+    "tier": 2,
+    "regionId": "yaroslavl-region",
+    "regionUrl": "/regions/yaroslavl-region",
+    "summary": ""
+  },
+  {
+    "id": "kamensk-uralsky",
+    "cityName": "Каменск-Уральский",
+    "coordinates": [61.917, 56.4149],
+    "tier": 3,
+    "regionId": "sverdlovsk-region",
+    "regionUrl": "/regions/sverdlovsk-region",
+    "summary": ""
+  },
+  {
+    "id": "serov",
+    "cityName": "Серов",
+    "coordinates": [60.5736, 59.6048],
+    "tier": 3,
+    "regionId": "sverdlovsk-region",
+    "regionUrl": "/regions/sverdlovsk-region",
+    "summary": ""
+  },
+  {
+    "id": "iskitim",
+    "cityName": "Искитим",
+    "coordinates": [83.3044, 54.6399],
+    "tier": 3,
+    "regionId": "novosibirsk-region",
+    "regionUrl": "/regions/novosibirsk-region",
+    "summary": ""
+  },
+  {
+    "id": "rubtsovsk",
+    "cityName": "Рубцовск",
+    "coordinates": [81.2078, 51.5012],
+    "tier": 3,
+    "regionId": "altai-region",
+    "regionUrl": "/regions/altai-region",
+    "summary": ""
+  },
+  {
+    "id": "seversk",
+    "cityName": "Северск",
+    "coordinates": [84.8808, 56.6039],
+    "tier": 3,
+    "regionId": "tomsk-region",
+    "regionUrl": "/regions/tomsk-region",
+    "summary": ""
+  },
+  {
+    "id": "achinsk",
+    "cityName": "Ачинск",
+    "coordinates": [90.5285, 56.2694],
+    "tier": 3,
+    "regionId": "krasnoyarsk-region",
+    "regionUrl": "/regions/krasnoyarsk-region",
+    "summary": ""
+  },
+  {
+    "id": "norilsk",
+    "cityName": "Норильск",
+    "coordinates": [88.2027, 69.349],
+    "tier": 3,
+    "regionId": "krasnoyarsk-region",
+    "regionUrl": "/regions/krasnoyarsk-region",
+    "summary": ""
+  },
+  {
+    "id": "zheleznogorsk",
+    "cityName": "Железногорск",
+    "coordinates": [93.531, 56.2529],
+    "tier": 3,
+    "regionId": "krasnoyarsk-region",
+    "regionUrl": "/regions/krasnoyarsk-region",
+    "summary": ""
+  },
+  {
+    "id": "bratsk",
+    "cityName": "Братск",
+    "coordinates": [101.634, 56.1514],
+    "tier": 3,
+    "regionId": "irkutsk-region",
+    "regionUrl": "/regions/irkutsk-region",
+    "summary": ""
+  },
+  {
+    "id": "angarsk",
+    "cityName": "Ангарск",
+    "coordinates": [103.8882, 52.5448],
+    "tier": 3,
+    "regionId": "irkutsk-region",
+    "regionUrl": "/regions/irkutsk-region",
+    "summary": ""
+  },
+  {
+    "id": "ust-iliMsk",
+    "cityName": "Усть-Илимск",
+    "coordinates": [102.6619, 57.9431],
+    "tier": 3,
+    "regionId": "irkutsk-region",
+    "regionUrl": "/regions/irkutsk-region",
+    "summary": ""
+  },
+  {
+    "id": "novy-urengoy",
+    "cityName": "Новый Уренгой",
+    "coordinates": [76.6336, 66.0839],
+    "tier": 3,
+    "regionId": "yamalo-nenets",
+    "regionUrl": "/regions/yamalo-nenets",
+    "summary": ""
+  },
+  {
+    "id": "noVy-urengoy",
+    "cityName": "Ноябрьск",
+    "coordinates": [75.6167, 63.1931],
+    "tier": 3,
+    "regionId": "yamalo-nenets",
+    "regionUrl": "/regions/yamalo-nenets",
+    "summary": ""
+  },
+  {
+    "id": "gatchina",
+    "cityName": "Гатчина",
+    "coordinates": [30.1283, 59.5652],
+    "tier": 3,
+    "regionId": "leningrad-region",
+    "regionUrl": "/regions/leningrad-region",
+    "summary": ""
+  },
+  {
+    "id": "vyborg",
+    "cityName": "Выборг",
+    "coordinates": [28.7528, 60.7076],
+    "tier": 3,
+    "regionId": "leningrad-region",
+    "regionUrl": "/regions/leningrad-region",
+    "summary": ""
+  },
+  {
+    "id": "kolpino",
+    "cityName": "Колпино",
+    "coordinates": [30.7388, 59.7397],
+    "tier": 3,
+    "regionId": "saint-petersburg",
+    "regionUrl": "/regions/saint-petersburg",
+    "summary": ""
+  },
+  {
+    "id": "balashikha",
+    "cityName": "Балашиха",
+    "coordinates": [37.9382, 55.7963],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "khimki",
+    "cityName": "Химки",
+    "coordinates": [37.4304, 55.8887],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "podolsk",
+    "cityName": "Подольск",
+    "coordinates": [37.5448, 55.4312],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "lyubertsy",
+    "cityName": "Люберцы",
+    "coordinates": [37.8981, 55.678],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "korolev",
+    "cityName": "Королёв",
+    "coordinates": [37.8547, 55.9222],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "mytishchi",
+    "cityName": "Мытищи",
+    "coordinates": [37.735, 55.9105],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "elektrostal",
+    "cityName": "Электросталь",
+    "coordinates": [38.4445, 55.7844],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "sergiev-posad",
+    "cityName": "Сергиев Посад",
+    "coordinates": [38.1357, 56.3107],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "kolomna",
+    "cityName": "Коломна",
+    "coordinates": [38.7533, 55.0958],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "orekhovo-zuevo",
+    "cityName": "Орехово-Зуево",
+    "coordinates": [38.976, 55.8067],
+    "tier": 3,
+    "regionId": "moscow-region",
+    "regionUrl": "/regions/moscow-region",
+    "summary": ""
+  },
+  {
+    "id": "zheleznogorsk-kursk",
+    "cityName": "Железногорск",
+    "coordinates": [35.3585, 52.3379],
+    "tier": 3,
+    "regionId": "kursk-region",
+    "regionUrl": "/regions/kursk-region",
+    "summary": ""
+  },
+  {
+    "id": "stary-oskol",
+    "cityName": "Старый Оскол",
+    "coordinates": [37.8417, 51.2967],
+    "tier": 3,
+    "regionId": "belgorod-region",
+    "regionUrl": "/regions/belgorod-region",
+    "summary": ""
+  },
+  {
+    "id": "novy-oskol",
+    "cityName": "Новый Оскол",
+    "coordinates": [37.8675, 50.7634],
+    "tier": 3,
+    "regionId": "belgorod-region",
+    "regionUrl": "/regions/belgorod-region",
+    "summary": ""
+  },
+  {
+    "id": "yelets",
+    "cityName": "Елец",
+    "coordinates": [38.501, 52.6152],
+    "tier": 3,
+    "regionId": "lipetsk-region",
+    "regionUrl": "/regions/lipetsk-region",
+    "summary": ""
+  },
+  {
+    "id": "efremov",
+    "cityName": "Ефремов",
+    "coordinates": [38.0926, 53.1465],
+    "tier": 3,
+    "regionId": "tula-region",
+    "regionUrl": "/regions/tula-region",
+    "summary": ""
+  },
+  {
+    "id": "novomoskovsk",
+    "cityName": "Новомосковск",
+    "coordinates": [38.2846, 54.0108],
+    "tier": 3,
+    "regionId": "tula-region",
+    "regionUrl": "/regions/tula-region",
+    "summary": ""
+  },
+  {
+    "id": "kovrov",
+    "cityName": "Ковров",
+    "coordinates": [41.3153, 56.3577],
+    "tier": 3,
+    "regionId": "vladimir-region",
+    "regionUrl": "/regions/vladimir-region",
+    "summary": ""
+  },
+  {
+    "id": "murom",
+    "cityName": "Муром",
+    "coordinates": [42.0318, 55.5792],
+    "tier": 3,
+    "regionId": "vladimir-region",
+    "regionUrl": "/regions/vladimir-region",
+    "summary": ""
+  },
+  {
+    "id": "dzerzhinsk",
+    "cityName": "Дзержинск",
+    "coordinates": [43.4556, 56.2376],
+    "tier": 3,
+    "regionId": "nizhny-novgorod-region",
+    "regionUrl": "/regions/nizhny-novgorod-region",
+    "summary": ""
+  },
+  {
+    "id": "arzamas",
+    "cityName": "Арзамас",
+    "coordinates": [43.8399, 55.3948],
+    "tier": 3,
+    "regionId": "nizhny-novgorod-region",
+    "regionUrl": "/regions/nizhny-novgorod-region",
+    "summary": ""
+  },
+  {
+    "id": "sterlitamak",
+    "cityName": "Стерлитамак",
+    "coordinates": [55.9502, 53.6302],
+    "tier": 3,
+    "regionId": "bashkortostan",
+    "regionUrl": "/regions/bashkortostan",
+    "summary": ""
+  },
+  {
+    "id": "salavat",
+    "cityName": "Салават",
+    "coordinates": [55.9077, 53.3617],
+    "tier": 3,
+    "regionId": "bashkortostan",
+    "regionUrl": "/regions/bashkortostan",
+    "summary": ""
+  },
+  {
+    "id": "neftekamsk",
+    "cityName": "Нефтекамск",
+    "coordinates": [54.2483, 56.0883],
+    "tier": 3,
+    "regionId": "bashkortostan",
+    "regionUrl": "/regions/bashkortostan",
+    "summary": ""
+  },
+  {
+    "id": "almetyevsk",
+    "cityName": "Альметьевск",
+    "coordinates": [52.2973, 54.9014],
+    "tier": 3,
+    "regionId": "tatarstan",
+    "regionUrl": "/regions/tatarstan",
+    "summary": ""
+  },
+  {
+    "id": "elabuga",
+    "cityName": "Елабуга",
+    "coordinates": [52.0647, 55.7567],
+    "tier": 3,
+    "regionId": "tatarstan",
+    "regionUrl": "/regions/tatarstan",
+    "summary": ""
+  },
+  {
+    "id": "zelenodolsk",
+    "cityName": "Зеленодольск",
+    "coordinates": [48.4681, 55.8464],
+    "tier": 3,
+    "regionId": "tatarstan",
+    "regionUrl": "/regions/tatarstan",
+    "summary": ""
+  },
+
+  {
+    "id": "kemerovo",
+    "cityName": "Кемерово",
+    "coordinates": [86.0873, 55.3552],
+    "tier": 1,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "novokuznetsk",
+    "cityName": "Новокузнецк",
+    "coordinates": [87.1295, 53.7575],
+    "tier": 1,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "leninsk-kuzneckij",
+    "cityName": "Ленинск-Кузнецкий",
+    "coordinates": [86.165, 54.666],
+    "tier": 2,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "yurga",
+    "cityName": "Юрга",
+    "coordinates": [84.947, 55.716],
+    "tier": 2,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "anzhero-sudzhensk",
+    "cityName": "Анжеро-Судженск",
+    "coordinates": [86.032, 56.082],
+    "tier": 2,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "tashtagol",
+    "cityName": "Таштагол",
+    "coordinates": [87.873, 52.785],
+    "tier": 2,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "mezhdurechensk",
+    "cityName": "Междуреченск",
+    "coordinates": [88.062, 53.693],
+    "tier": 2,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "belovo",
+    "cityName": "Белово",
+    "coordinates": [86.301, 54.42],
+    "tier": 3,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "berezovskij",
+    "cityName": "Березовский",
+    "coordinates": [85.853, 54.178],
+    "tier": 3,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "kiselevsk",
+    "cityName": "Киселевск",
+    "coordinates": [86.709, 54.001],
+    "tier": 3,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
+    "summary": ""
+  },
+  {
+    "id": "prokopyevsk",
+    "cityName": "Прокопьевск",
+    "coordinates": [86.7193, 53.883],
+    "tier": 3,
+    "regionId": "kemerovo-region",
+    "regionUrl": "/regions/kemerovo-region",
     "summary": ""
   }
 ]
