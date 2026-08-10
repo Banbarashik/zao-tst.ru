@@ -14,7 +14,7 @@ import {
   createTranslateExtent,
   type Coordinates,
 } from "@vnedyalk0v/react19-simple-maps";
-import type { City } from "@/types/map";
+import type { City, Region } from "@/types/map";
 import {
   TIER_ZOOM_THRESHOLDS,
   TIER_MARKER_STYLE,
@@ -23,6 +23,7 @@ import {
 
 interface RussiaMapProps {
   cities: City[];
+  regions: Region[];
 }
 
 // ── Геометрия карты ──────────────────────────────────────────────────────
@@ -36,12 +37,8 @@ interface RussiaMapProps {
 const MAP_WIDTH = 1100;
 const MAP_HEIGHT = 629;
 
-// rotate/scale подобраны ранее (не меняются здесь), translate — НОВЫЙ
-// параметр, вычисленный так, чтобы центр bbox карты совпадал с центром
-// viewBox 1100x629 (а не с геометрическим центром width/2, height/2,
-// который использовался бы по умолчанию — центр карты в исходных
-// координатах проекции не совпадает с (0,0), поэтому дефолтный offset
-// давал бы карту не по центру).
+// rotate/scale подобраны ранее (не меняются здесь), translate — вычислен
+// так, чтобы центр bbox карты совпадал с центром viewBox 1100x629.
 //
 // Как это было посчитано (нужно повторить при следующем изменении
 // rotate/scale/MAP_WIDTH/MAP_HEIGHT):
@@ -57,26 +54,22 @@ const projection = geoAzimuthalEqualArea()
 
 // Границы панорамирования — точно по контуру карты (0% допуска), в тех же
 // пиксельных координатах viewBox, что и projection.translate выше.
-// При zoom = ZOOM_CONFIG.min (=1) карта уже целиком видна благодаря тому,
-// что MAP_WIDTH/MAP_HEIGHT подобраны под её реальные пропорции — поэтому
-// панорамирование на минимальном zoom невозможно по построению (не нужно
-// поднимать minZoom, как в прошлой версии для 800x600).
-//
-// На максимальном zoom PAN_EXTENT позволяет доехать точно до края карты
-// (координаты границ) и не дальше — то есть можно рассмотреть любой
-// регион вплотную, включая Калининград и Дальний Восток, но нельзя
-// укатиться в пустоту за пределы контура России.
 const PAN_EXTENT = createTranslateExtent(
   createCoordinates(24, 14),
   createCoordinates(1076, 615),
 );
 
-export default function RussiaMap({ cities }: RussiaMapProps) {
+export default function RussiaMap({ cities, regions }: RussiaMapProps) {
   const [zoom, setZoom] = useState(ZOOM_CONFIG.min);
   const [center, setCenter] = useState<Coordinates>(
     createCoordinates(92, 66), // примерный центр РФ в GPS — используется ZoomableGroup для позиционирования при панорамировании
   );
-  const [activeCity, setActiveCity] = useState<City | null>(null);
+  const [activeRegion, setActiveRegion] = useState<Region | null>(null);
+
+  // Быстрый доступ к Region по id (= geo.properties.iso_3166_2) при клике на полигон
+  const regionsById = useMemo(() => {
+    return new Map(regions.map((region) => [region.id, region]));
+  }, [regions]);
 
   // Фильтрация городов по текущему уровню zoom — пересчитывается только при смене zoom
   const visibleCities = useMemo(() => {
@@ -134,29 +127,43 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
         >
           <Geographies geography={russiaMap}>
             {({ geographies }) =>
-              geographies.map((geo) => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  style={{
-                    default: {
-                      fill: "#E5E5E5",
-                      stroke: "#FFFFFF",
-                      outline: "none",
-                    },
-                    hover: {
-                      fill: "#D6D6DA",
-                      stroke: "#FFFFFF",
-                      outline: "none",
-                    },
-                    pressed: {
-                      fill: "#D6D6DA",
-                      stroke: "#FFFFFF",
-                      outline: "none",
-                    },
-                  }}
-                />
-              ))
+              geographies.map((geo) => {
+                // iso_3166_2 из Natural Earth ("RU-SVE" и т.п.) — тот же id,
+                // что и в Region/City.regionId, связывает полигон с данными области
+                const regionId = geo.properties?.iso_3166_2 as
+                  | string
+                  | undefined;
+                const region = regionId ? regionsById.get(regionId) : undefined;
+
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onClick={() => region && setActiveRegion(region)}
+                    className={region ? "cursor-pointer" : "cursor-default"}
+                    style={{
+                      default: {
+                        fill: "#E5E5E5",
+                        stroke: "#FFFFFF",
+                        outline: "none",
+                      },
+                      hover: {
+                        fill: region ? "#D6D6DA" : "#E5E5E5",
+                        stroke: "#FFFFFF",
+                        outline: "none",
+                      },
+                      focused: {
+                        fill: region ? "#4bacc6" : "#E5E5E5",
+                        stroke: "#FFFFFF",
+                        outline: "none",
+                      },
+                    }}
+                  >
+                    {/* Нативный SVG tooltip при наведении на область — без доп. библиотек */}
+                    {region && <title>{region.name}</title>}
+                  </Geography>
+                );
+              })
             }
           </Geographies>
 
@@ -169,12 +176,15 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
                   city.coordinates[0],
                   city.coordinates[1],
                 )}
-                onClick={() => setActiveCity(city)}
               >
+                {/* Города больше не кликабельны — только hover-tooltip с названием.
+                    Вся интерактивность (popover, переход по ссылке) перенесена
+                    на полигоны областей выше. */}
+                <title>{city.cityName}</title>
                 <circle
                   r={markerStyle.radius}
                   fill={markerStyle.fill}
-                  className="cursor-pointer stroke-black"
+                  className="stroke-black"
                   strokeWidth={0.4}
                 />
               </Marker>
@@ -183,24 +193,21 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
         </ZoomableGroup>
       </ComposableMap>
 
-      {activeCity && (
+      {activeRegion && (
         <div
           className="absolute bottom-4 left-4 z-10 max-w-xs rounded-lg bg-white p-4 shadow-lg"
           role="dialog"
         >
           <button
-            onClick={() => setActiveCity(null)}
+            onClick={() => setActiveRegion(null)}
             aria-label="Закрыть"
             className="absolute top-2 right-2 text-neutral-400 hover:text-neutral-700"
           >
             ×
           </button>
-          <h3 className="mb-1 text-base font-semibold">
-            {activeCity.cityName}
-          </h3>
-          <p className="mb-3 text-sm text-neutral-600">{activeCity.summary}</p>
+          <h3 className="mb-3 text-base font-semibold">{activeRegion.name}</h3>
           <a
-            href={activeCity.regionUrl}
+            href={activeRegion.url}
             className="text-primary text-sm font-medium hover:underline"
           >
             Подробнее об области →

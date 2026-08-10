@@ -18,30 +18,12 @@
     "summary": ""
   },
   {
-    "id": "novosibirsk",
-    "cityName": "Новосибирск",
-    "coordinates": [82.9346, 55.0084],
-    "tier": 1,
-    "regionId": "novosibirsk-region",
-    "regionUrl": "/regions/novosibirsk-region",
-    "summary": ""
-  },
-  {
     "id": "nizhny-novgorod",
     "cityName": "Нижний Новгород",
     "coordinates": [44.0059, 56.3269],
     "tier": 1,
     "regionId": "nizhny-novgorod-region",
     "regionUrl": "/regions/nizhny-novgorod-region",
-    "summary": ""
-  },
-  {
-    "id": "ekaterinburg",
-    "cityName": "Екатеринбург",
-    "coordinates": [60.6122, 56.8519],
-    "tier": 1,
-    "regionId": "sverdlovsk-region",
-    "regionUrl": "/regions/sverdlovsk-region",
     "summary": ""
   },
   {
@@ -729,24 +711,6 @@
     "summary": ""
   },
   {
-    "id": "nizhny-tagil",
-    "cityName": "Нижний Тагил",
-    "coordinates": [59.965, 57.9194],
-    "tier": 2,
-    "regionId": "sverdlovsk-region",
-    "regionUrl": "/regions/sverdlovsk-region",
-    "summary": ""
-  },
-  {
-    "id": "berdsk",
-    "cityName": "Бердск",
-    "coordinates": [83.0937, 54.7597],
-    "tier": 2,
-    "regionId": "novosibirsk-region",
-    "regionUrl": "/regions/novosibirsk-region",
-    "summary": ""
-  },
-  {
     "id": "biysk",
     "cityName": "Бийск",
     "coordinates": [85.2072, 52.5396],
@@ -1331,5 +1295,34 @@
     "regionId": "kemerovo-region",
     "regionUrl": "/regions/kemerovo-region",
     "summary": ""
+  },
+
+  {
+    "id": "ekaterinburg",
+    "cityName": "Екатеринбург",
+    "coordinates": [60.6122, 56.8519],
+    "tier": 1,
+    "regionId": "RU-SVE"
+  },
+  {
+    "id": "nizhny-tagil",
+    "cityName": "Нижний Тагил",
+    "coordinates": [59.965, 57.9194],
+    "tier": 3,
+    "regionId": "RU-SVE"
+  },
+  {
+    "id": "novosibirsk",
+    "cityName": "Новосибирск",
+    "coordinates": [82.9346, 55.0084],
+    "tier": 1,
+    "regionId": "RU-NVS"
+  },
+  {
+    "id": "berdsk",
+    "cityName": "Бердск",
+    "coordinates": [83.0937, 54.7597],
+    "tier": 2,
+    "regionId": "RU-NVS"
   }
 ]

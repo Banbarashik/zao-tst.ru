@@ -1,14 +1,31 @@
 export type CityTier = 1 | 2 | 3;
 
+/**
+ * Город — точка на карте. Больше не несёт данных об области (regionUrl,
+ * summary) — это ответственность Region. City хранит только regionId,
+ * который связывает город с его областью (foreign key), без дублирования
+ * самих данных области в каждом городе.
+ */
 export interface City {
   id: string;
   cityName: string;
   /** [longitude, latitude] — стандартный порядок GPS-координат для d3-geo / react-simple-maps */
   coordinates: [number, number];
   tier: CityTier;
+  /** ISO 3166-2 код региона (напр. "RU-SVE"), связывает город с Region и с geo.properties.iso_3166_2 в russia.json */
   regionId: string;
-  regionUrl: string;
-  summary: string;
+}
+
+/**
+ * Область (субъект РФ) — теперь основная интерактивная единица карты:
+ * кликабельна, открывает popover со ссылкой на страницу области.
+ * id соответствует geo.properties.iso_3166_2 из russia.json — так
+ * полигон конкретного региона на карте находит свои данные.
+ */
+export interface Region {
+  id: string;
+  name: string;
+  url: string;
 }
 
 /** Пороги zoom, при достижении которых открывается очередной tier городов. */
