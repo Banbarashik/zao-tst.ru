@@ -2,6 +2,7 @@
 
 import russiaMap from "@/public/russia.json";
 import { useMemo, useState, useCallback } from "react";
+import { geoAzimuthalEqualArea } from "d3-geo";
 import {
   ComposableMap,
   Geographies,
@@ -20,42 +21,56 @@ interface RussiaMapProps {
   cities: City[];
 }
 
-// Границы панорамирования в пиксельных координатах ПОСЛЕ проекции (не GPS!).
-// Рассчитаны из вашего реального public/russia.json: для каждой из 84
-// геометрий регионов посчитан path.bounds() под текущую проекцию
-// (rotate=[-106, -68.5, 0], scale=866), затем взят общий bbox + запас 10%.
+// ── Геометрия карты ──────────────────────────────────────────────────────
 //
-// ВАЖНО про систему координат: ComposableMap без явных width/height использует
-// дефолт 800x600, а проекция внутри рисуется с translate = [width/2, height/2] =
-// [400, 300] (origin в центре видимой области, а не в (0,0)). Поэтому bbox,
-// посчитанный в "чистых" координатах проекции (translate([0,0])), нужно
-// сдвинуть на этот оффсет — что и сделано ниже. Именно это несовпадение
-// систем координат было причиной прошлого расхождения между расчётным
-// и рабочим PAN_EXTENT.
+// Внутренняя система координат SVG. Соотношение сторон 1100:629 ≈ 1.7488,
+// что почти точно совпадает с реальным соотношением сторон территории
+// России в этой проекции (1051.6 / 600.6 ≈ 1.7509, разница <0.2%).
+// Именно поэтому viewBox подобран под ЭТИ числа, а не под 4:3 или 16:9 —
+// это единственный способ показать всю территорию без обрезки и без
+// пустых полей (letterboxing) одновременно.
+const MAP_WIDTH = 1100;
+const MAP_HEIGHT = 629;
+
+// rotate/scale подобраны ранее (не меняются здесь), translate — НОВЫЙ
+// параметр, вычисленный так, чтобы центр bbox карты совпадал с центром
+// viewBox 1100x629 (а не с геометрическим центром width/2, height/2,
+// который использовался бы по умолчанию — центр карты в исходных
+// координатах проекции не совпадает с (0,0), поэтому дефолтный offset
+// давал бы карту не по центру).
 //
-// Диапазон здесь шире, чем в вашем рабочем варианте (-100,0)/(760,700) —
-// специально: более тесный extent зажимает панорамирование раньше, чем
-// пользователь успевает доехать до диаметрально удалённых регионов при
-// высоком zoom (сама область в мировых координатах статична, а видимый
-// на экране кусок при увеличении zoom физически меньше — поэтому нужен
-// больший запас хода по краям, а не меньший).
+// Как это было посчитано (нужно повторить при следующем изменении
+// rotate/scale/MAP_WIDTH/MAP_HEIGHT):
+//   1. path.bounds() по всем 84 геометриям russia.json под rotate/scale
+//      с translate([0,0]) → bbox в "чистых" координатах проекции
+//      (сейчас: X=[-614.75, 436.85], Y=[-264.26, 336.34])
+//   2. mapCenter = ((minX+maxX)/2, (minY+maxY)/2)
+//   3. translate = (MAP_WIDTH/2 - mapCenter.x, MAP_HEIGHT/2 - mapCenter.y)
+const projection = geoAzimuthalEqualArea()
+  .rotate([-106, -68.5, 0])
+  .scale(866)
+  .translate([638.95, 278.46]);
+
+// Границы панорамирования — точно по контуру карты (0% допуска), в тех же
+// пиксельных координатах viewBox, что и projection.translate выше.
+// При zoom = ZOOM_CONFIG.min (=1) карта уже целиком видна благодаря тому,
+// что MAP_WIDTH/MAP_HEIGHT подобраны под её реальные пропорции — поэтому
+// панорамирование на минимальном zoom невозможно по построению (не нужно
+// поднимать minZoom, как в прошлой версии для 800x600).
 //
-// 3 региона (Санкт-Петербург, Карелия, Севастополь) дали некорректный bbox
-// из-за особенностей их мультиполигонов на этой проекции — исключены из
-// расчёта, но не влияют на итоговые границы: они лежат внутри общей
-// области карты, накрытой соседними регионами.
-//
-// При любом изменении rotate/scale/center/width/height эти значения
-// инвалидируются и требуют пересчёта.
+// На максимальном zoom PAN_EXTENT позволяет доехать точно до края карты
+// (координаты границ) и не дальше — то есть можно рассмотреть любой
+// регион вплотную, включая Калининград и Дальний Восток, но нельзя
+// укатиться в пустоту за пределы контура России.
 const PAN_EXTENT = createTranslateExtent(
-  createCoordinates(-320, -24),
-  createCoordinates(942, 696),
+  createCoordinates(24, 14),
+  createCoordinates(1076, 615),
 );
 
 export default function RussiaMap({ cities }: RussiaMapProps) {
   const [zoom, setZoom] = useState(ZOOM_CONFIG.min);
   const [center, setCenter] = useState<Coordinates>(
-    createCoordinates(92, 66), // примерный центр РФ — подбирается под выбранную проекцию
+    createCoordinates(92, 66), // примерный центр РФ в GPS — используется ZoomableGroup для позиционирования при панорамировании
   );
   const [activeCity, setActiveCity] = useState<City | null>(null);
 
@@ -101,12 +116,9 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
       </div>
 
       <ComposableMap
-        projection="geoAzimuthalEqualArea"
-        projectionConfig={{
-          rotate: [-106, -68.5, 0],
-          scale: 866,
-          center: createCoordinates(0, 0),
-        }}
+        projection={projection}
+        width={MAP_WIDTH}
+        height={MAP_HEIGHT}
         className="h-full w-full"
       >
         <ZoomableGroup
@@ -154,11 +166,12 @@ export default function RussiaMap({ cities }: RussiaMapProps) {
               onClick={() => setActiveCity(city)}
             >
               {/* Капля с острым концом — путь можно заменить на кастомный SVG-дизайн */}
-              <path
+              {/* <path
                 d="M0,0 C-6,-10 -6,-18 0,-24 C6,-18 6,-10 0,0 Z"
                 className="fill-primary cursor-pointer stroke-white"
                 strokeWidth={1}
-              />
+              /> */}
+              <circle cx="5" cy="5" r="4" fill="#007bff" stroke="black" />
             </Marker>
           ))}
         </ZoomableGroup>
