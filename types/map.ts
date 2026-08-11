@@ -46,11 +46,11 @@ export const ZOOM_CONFIG = {
 };
 
 /**
- * Визуальное оформление маркеров-капель по tier.
- * `scale` применяется к базовому SVG-path капли (см. RussiaMap.tsx) через
- * CSS transform — так размер меняется одним числом, а не переписыванием
- * самого path для каждого tier.
+ * Визуальное оформление маркеров-городов по tier.
+ * Маркер — простой SVG <circle>, radius задаёт размер напрямую в пикселях
+ * viewBox (см. RussiaMap.tsx).
  */
+
 export const TIER_MARKER_STYLE: Record<
   CityTier,
   { fill: string; radius: number }
