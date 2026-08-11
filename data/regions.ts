@@ -154,8 +154,14 @@ export const regions: Region[] = [
   },
   {
     id: "RU-MOS",
-    name: "Московская область",
+    name: "Москва",
     url: "/moskva",
+    hadDelivery: true,
+  },
+  {
+    id: "RU-MOW",
+    name: "Московская область",
+    url: "/moskovskaya-oblast",
     hadDelivery: true,
   },
   {
