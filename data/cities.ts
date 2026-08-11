@@ -213,6 +213,13 @@ export const cities: City[] = [
 
   // Карачаево-Черкесская Республика (RU-KC)
   {
+    id: "cherkessk",
+    cityName: "Черкесск",
+    coordinates: [42.0483, 44.2284],
+    tier: 1,
+    regionId: "RU-KC",
+  },
+  {
     id: "erken-shahar",
     cityName: "Эркен-Шахар",
     coordinates: [41.9361, 44.3703],
@@ -1128,10 +1135,17 @@ export const cities: City[] = [
 
   // Ставропольский край (RU-STA)
   {
+    id: "stavropol",
+    cityName: "Ставрополь",
+    coordinates: [41.9734, 45.0428],
+    tier: 1,
+    regionId: "RU-STA",
+  },
+  {
     id: "budennovsk",
     cityName: "Буденновск",
     coordinates: [44.1378, 44.7814],
-    tier: 1,
+    tier: 2,
     regionId: "RU-STA",
   },
   {
@@ -1371,10 +1385,17 @@ export const cities: City[] = [
 
   // Ямало-Ненецкий АО (RU-YAN)
   {
+    id: "Ямало-Ненецкий АО",
+    cityName: "Салехард",
+    coordinates: [66.6019, 66.53],
+    tier: 1,
+    regionId: "RU-YAN",
+  },
+  {
     id: "tarko-sale",
     cityName: "Тарко-Сале",
     coordinates: [77.8178, 64.915],
-    tier: 1,
+    tier: 2,
     regionId: "RU-YAN",
   },
 
