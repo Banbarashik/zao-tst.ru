@@ -135,12 +135,20 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
                   | undefined;
                 const region = regionId ? regionsById.get(regionId) : undefined;
 
+                // Кликабельны и выделяются hover-цветом только регионы с
+                // доставкой; название при наведении показывается для ЛЮБОГО
+                // региона, включая hadDelivery: false — это не завязано на
+                // интерактивность, а просто информация "что это за область".
+                const isInteractive = region?.hadDelivery ?? false;
+
                 return (
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    onClick={() => region && setActiveRegion(region)}
-                    className={region ? "cursor-pointer" : "cursor-default"}
+                    onClick={() => isInteractive && setActiveRegion(region!)}
+                    className={
+                      isInteractive ? "cursor-pointer" : "cursor-default"
+                    }
                     style={{
                       default: {
                         fill: "#E5E5E5",
@@ -149,20 +157,21 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
                         filter: "drop-shadow(0 1px 1px rgba(0, 0, 0, 0.18))",
                       },
                       hover: {
-                        fill: region ? "#D6D6DA" : "#E5E5E5",
+                        fill: isInteractive ? "#D6D6DA" : "#E5E5E5",
                         stroke: "#FFFFFF",
                         outline: "none",
                         filter: "drop-shadow(0 1px 1px rgba(0, 0, 0, 0.24))",
                       },
                       focused: {
-                        fill: region ? "#4bacc6" : "#E5E5E5",
+                        fill: isInteractive ? "#4bacc6" : "#E5E5E5",
                         stroke: "#FFFFFF",
                         outline: "none",
                         filter: "drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3))",
                       },
                     }}
                   >
-                    {/* Нативный SVG tooltip при наведении на область — без доп. библиотек */}
+                    {/* Нативный SVG tooltip при наведении — показывается для
+                        всех регионов независимо от hadDelivery. */}
                     {region && <title>{region.name}</title>}
                   </Geography>
                 );
