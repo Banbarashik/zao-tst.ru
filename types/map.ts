@@ -26,6 +26,7 @@ export interface Region {
   id: string;
   name: string;
   url: string;
+  hadDelivery: boolean;
 }
 
 /** Пороги zoom, при достижении которых открывается очередной tier городов. */

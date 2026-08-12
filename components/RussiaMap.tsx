@@ -146,16 +146,19 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
                         fill: "#E5E5E5",
                         stroke: "#FFFFFF",
                         outline: "none",
+                        filter: "drop-shadow(0 1px 1px rgba(0, 0, 0, 0.18))",
                       },
                       hover: {
                         fill: region ? "#D6D6DA" : "#E5E5E5",
                         stroke: "#FFFFFF",
                         outline: "none",
+                        filter: "drop-shadow(0 1px 1px rgba(0, 0, 0, 0.24))",
                       },
                       focused: {
                         fill: region ? "#4bacc6" : "#E5E5E5",
                         stroke: "#FFFFFF",
                         outline: "none",
+                        filter: "drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3))",
                       },
                     }}
                   >
