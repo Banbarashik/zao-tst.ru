@@ -1,7 +1,7 @@
 "use client";
 
 import russiaMap from "@/public/russia.json";
-import { useMemo, useState, useCallback } from "react";
+import { useMemo, useState, useCallback, useRef, useEffect } from "react";
 import { geoAzimuthalEqualArea } from "d3-geo";
 import {
   ComposableMap,
@@ -65,11 +65,31 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
     createCoordinates(92, 66), // примерный центр РФ в GPS — используется ZoomableGroup для позиционирования при панорамировании
   );
   const [activeRegion, setActiveRegion] = useState<Region | null>(null);
+  const popupRef = useRef<HTMLDivElement | null>(null);
 
   // Быстрый доступ к Region по id (= geo.properties.iso_3166_2) при клике на полигон
   const regionsById = useMemo(() => {
     return new Map(regions.map((region) => [region.id, region]));
   }, [regions]);
+
+  useEffect(() => {
+    const handlePointerDown = (event: PointerEvent) => {
+      const target = event.target as Node | null;
+      if (!popupRef.current || !target) {
+        return;
+      }
+
+      if (!popupRef.current.contains(target)) {
+        setActiveRegion(null);
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+    };
+  }, []);
 
   // Фильтрация городов по текущему уровню zoom — пересчитывается только при смене zoom
   const visibleCities = useMemo(() => {
@@ -207,6 +227,7 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
 
       {activeRegion && (
         <div
+          ref={popupRef}
           className="absolute bottom-4 left-4 z-10 max-w-xs rounded-lg bg-white p-4 shadow-lg"
           role="dialog"
         >
