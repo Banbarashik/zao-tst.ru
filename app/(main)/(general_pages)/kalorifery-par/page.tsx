@@ -11,7 +11,7 @@ import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
 import { getLegacyHtmls } from "@/lib/legacyHtml";
-import { Anchor } from "@/components/utils/anchor";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
@@ -93,7 +93,7 @@ export default async function KaloriferyParPage() {
           номеров.
         </ProductParagraph>
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-          <Anchor num={1} />
+          <NumberedAnchor num={1} />
           <div className="relative aspect-16/10 w-full">
             <Image
               src="/img/general_pages/kalorifer_pritochnyi_parovoi.png"
@@ -115,7 +115,7 @@ export default async function KaloriferyParPage() {
 
       <section className="space-y-6">
         <section>
-          <Anchor num={2} device="mobile" />
+          <NumberedAnchor num={2} device="mobile" />
           <Heading lvl={2} text="Онлайн-расчет мощности парового калорифера" />
           <ProductParagraph className="mb-3">
             Расход тепла паровым калорифером на подогрев приточного воздуха. В
@@ -168,7 +168,7 @@ export default async function KaloriferyParPage() {
       </section>
 
       <section>
-        <Anchor num={3} />
+        <NumberedAnchor num={3} />
         <Heading lvl={2} text="Расчет и подбор приточных паровых калориферов" />
         <ProductParagraph>
           Выбрав номер калорифера с приближенным для выполнения вашей задачи

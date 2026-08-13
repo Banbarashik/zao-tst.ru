@@ -11,7 +11,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
-import { Anchor } from "@/components/utils/anchor";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
@@ -89,7 +89,7 @@ export default async function KaloriferyVodaPage() {
           номеров.
         </ProductParagraph>
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-          <Anchor num={1} />
+          <NumberedAnchor num={1} />
           <div className="relative aspect-16/10 w-full">
             <Image
               src="/img/general_pages/kalorifer_pritochnyi_vodianoi.png"
@@ -111,7 +111,7 @@ export default async function KaloriferyVodaPage() {
 
       <section className="space-y-6">
         <section>
-          <Anchor num={2} device="mobile" />
+          <NumberedAnchor num={2} device="mobile" />
           <Heading lvl={2} text="Онлайн-расчет мощности водяного калорифера" />
           <ProductParagraph className="mb-3">
             Расход тепла водяным калорифером на подогрев приточного воздуха. В

@@ -11,7 +11,7 @@ import ProductLinks from "@/components/general_pages/productLinks";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
 import { getLegacyHtml } from "@/lib/legacyHtml";
-import { Anchor } from "@/components/utils/anchor";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 
 export const metadata: Metadata = {
   title: "Калориферы водяные ТВВ",
@@ -129,7 +129,7 @@ export default async function KaloriferyTVVPage() {
       </section>
 
       <section>
-        <Anchor num={1} />
+        <NumberedAnchor num={1} />
         <Heading lvl={2} text="Технические характеристики калориферов ТВВ" />
         <ProductParagraph className="mb-4">
           Калориферы водяные серии ТВВ изготавливаются в двух вариантах: ТВВ 3 –

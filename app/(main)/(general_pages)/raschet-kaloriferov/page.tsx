@@ -7,7 +7,7 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductLinks from "@/components/general_pages/productLinks";
-import { Anchor } from "@/components/utils/anchor";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор водяных, паровых и электрических калориферов",
@@ -142,7 +142,7 @@ export default function RaschetKaloriferovPage() {
       </div>
 
       <section className="space-y-2">
-        <Anchor num={1} />
+        <NumberedAnchor num={1} />
         <Heading lvl={2} text="Расчетная температура воздуха" />
         <ProductParagraph>
           В практике калорифер может включаться в систему воздухообмена тремя
@@ -195,7 +195,7 @@ export default function RaschetKaloriferovPage() {
       </section>
 
       <section className="space-y-2">
-        <Anchor num={2} />
+        <NumberedAnchor num={2} />
         <Heading
           lvl={2}
           text="Массовая скорость воздуха при расчете калориферов"
@@ -211,7 +211,7 @@ export default function RaschetKaloriferovPage() {
       </section>
 
       <section className="space-y-2">
-        <Anchor num={4} />
+        <NumberedAnchor num={4} />
         <Heading
           lvl={2}
           text="Аэродинамическое сопротивление при расчете калориферов"
@@ -374,7 +374,7 @@ export default function RaschetKaloriferovPage() {
       </section>
 
       <section className="space-y-2">
-        <Anchor num={3} />
+        <NumberedAnchor num={3} />
         <Heading lvl={2} text="Запас поверхности теплообмена при расчете" />
         <ProductParagraph>
           Для калориферных установок рекомендуется закладывать запас поверхности

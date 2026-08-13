@@ -6,7 +6,7 @@ import { TehnicheskayaSearchForm } from "@/components/tehnicheskayaSearchForm";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
-import { Anchor } from "@/components/utils/anchor";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 
 export const metadata: Metadata = {
   title: "Расчет и изготовление калориферов и воздухонагревателей",
@@ -95,7 +95,7 @@ export default function TehnicheskayaStranica() {
       </section>
 
       <section>
-        <Anchor num={1} />
+        <NumberedAnchor num={1} />
         <Heading
           lvl={2}
           text="Расчет и подбор водяных воздухонагревателей"
@@ -104,7 +104,7 @@ export default function TehnicheskayaStranica() {
         <TechEntries entries={waterHeaterEntries} />
       </section>
       <section>
-        <Anchor num={2} />
+        <NumberedAnchor num={2} />
         <Heading
           lvl={2}
           text="Расчет и подбор паровых воздухонагревателей"
@@ -113,7 +113,7 @@ export default function TehnicheskayaStranica() {
         <TechEntries entries={steamHeaterEntries} />
       </section>
       <section>
-        <Anchor num={3} />
+        <NumberedAnchor num={3} />
         <Heading
           lvl={2}
           text="Расчет и подбор электрических воздухонагревателей"

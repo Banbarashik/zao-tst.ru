@@ -6,7 +6,7 @@ import ParoprovodCalculator from "@/components/general_pages/paroprovodCalculato
 import { ParoprovodTable } from "@/components/general_pages/paroprovodTable";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
-import { Anchor } from "@/components/utils/anchor";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор диаметра паропроводов",
@@ -660,7 +660,7 @@ export default function ParoprovodPage() {
       </section>
 
       <section className="space-y-1">
-        <Anchor num={1} />
+        <NumberedAnchor num={1} />
         <Heading lvl={2} text="Дренаж паропровода" />
         <ProductParagraph>
           Высокое содержание влаги в теплоносителе и последующее скопление
@@ -700,7 +700,7 @@ export default function ParoprovodPage() {
       </section>
 
       <section className="space-y-3">
-        <Anchor num={2} />
+        <NumberedAnchor num={2} />
         <Heading lvl={2} text="Калькулятор расчета диаметра паропровода" />
         <ProductParagraph>
           Расчет диаметра паропровода по давлению, скорости и расходу
@@ -723,7 +723,7 @@ export default function ParoprovodPage() {
       </section>
 
       <section className="space-y-4">
-        <Anchor num={3} />
+        <NumberedAnchor num={3} />
         <Heading lvl={2} text="Скорость пара в трубопроводе" />
         <ProductParagraph>
           Диаметр паропровода из представленных в таблице размеров труб выбирают
@@ -774,7 +774,7 @@ export default function ParoprovodPage() {
       </section>
 
       <section className="space-y-4">
-        <Anchor num={4} />
+        <NumberedAnchor num={4} />
         <Heading lvl={2} text="Формула для расчета диаметра паропровода" />
         <div>
           <ProductParagraph>
@@ -974,7 +974,7 @@ export default function ParoprovodPage() {
       </section>
 
       <section className="space-y-4">
-        <Anchor num={5} />
+        <NumberedAnchor num={5} />
         <Heading lvl={2} text="Таблица подбора диаметра паропровода" />
         <ProductParagraph>
           Таблицы подбора размеров труб паропровода по давлению от 0.1 до 1.2

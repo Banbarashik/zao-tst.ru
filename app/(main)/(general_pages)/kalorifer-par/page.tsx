@@ -6,7 +6,7 @@ import Image from "next/image";
 import CategoryCards from "@/components/categoryCards";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
-import { Anchor } from "@/components/utils/anchor";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
@@ -255,7 +255,7 @@ export default function KaloriferParPage() {
           ]}
         />
         <section className="text-[#5a769a]">
-          <Anchor num={1} />
+          <NumberedAnchor num={1} />
           <Heading lvl={3} text="Температура и давление насыщенного пара" />
           <ProductParagraph className="text-base">
             Температура кипения воды зависит от давления. При уменьшении
@@ -400,7 +400,7 @@ export default function KaloriferParPage() {
       <Separator />
 
       <section className="space-y-6">
-        <Anchor num={2} />
+        <NumberedAnchor num={2} />
         <Heading lvl={2} text="Модели паровых калориферов" />
         <ProductParagraph>
           На предприятии ООО «Т.С.Т.» выпускаются паровоздушные биметаллические

@@ -14,7 +14,7 @@ import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedS
 import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
 import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
 import LegacyHtml from "@/components/legacyHtml";
-import { Anchor } from "@/components/utils/anchor";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
@@ -594,7 +594,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={1} />
+        <NumberedAnchor num={1} />
         <Heading lvl={2} text="Расчет мощности по теплу" />
         <div>
           <ProductParagraph>
@@ -711,7 +711,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={2} />
+        <NumberedAnchor num={2} />
         <Heading lvl={2} text="Расчет площади фронтального сечения" />
         <div>
           <ProductParagraph>
@@ -817,7 +817,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={3} />
+        <NumberedAnchor num={3} />
         <Heading
           lvl={2}
           text="Расчет массовой скорости воздуха"
@@ -915,7 +915,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={4} />
+        <NumberedAnchor num={4} />
         <Heading lvl={2} text="Расчет расхода пара для нагрева" />
         <div>
           <ProductParagraph>
@@ -990,7 +990,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={5} />
+        <NumberedAnchor num={5} />
         <Heading lvl={2} text="Расчет коэффициента теплопередачи" />
         <div>
           <ProductParagraph>
@@ -1139,7 +1139,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={6} />
+        <NumberedAnchor num={6} />
         <Heading lvl={2} text="Расчет температурного напора" />
         <ProductParagraph>
           6. Выполнить расчет среднего по поверхности температурного напора.
@@ -1306,7 +1306,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={7} />
+        <NumberedAnchor num={7} />
         <Heading lvl={2} text="Расчет тепловой мощности парового калорифера" />
         <div>
           <ProductParagraph>
@@ -1420,7 +1420,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={8} />
+        <NumberedAnchor num={8} />
         <Heading
           lvl={2}
           text="Расчет расхода пара для нагрева"
@@ -1551,7 +1551,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={9} />
+        <NumberedAnchor num={9} />
         <Heading lvl={2} text="Запас тепловой мощности парового калорифера" />
         <div>
           <ProductParagraph>
@@ -1684,7 +1684,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={10} />
+        <NumberedAnchor num={10} />
         <Heading lvl={2} text="Расчет воздушного сопротивления" />
         <div>
           <ProductParagraph>
@@ -1814,7 +1814,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="mb-4 space-y-4">
-        <Anchor num={11} />
+        <NumberedAnchor num={11} />
         <Heading lvl={2} text="Подбор парового калорифера" />
         <ProductParagraph>
           11. Правильный и корректный подбор паровых калориферов направлен на
@@ -1917,7 +1917,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <Separator />
 
       <section className="space-y-4">
-        <Anchor num={12} />
+        <NumberedAnchor num={12} />
         <Heading
           lvl={2}
           text="Расчет и подбор паровых калориферов для технологического нагрева"
