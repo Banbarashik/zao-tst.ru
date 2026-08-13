@@ -2,6 +2,7 @@
 
 import russiaMap from "@/public/russia.json";
 import { useMemo, useState, useCallback, useRef, useEffect } from "react";
+import Link from "next/link";
 import { geoAzimuthalEqualArea } from "d3-geo";
 import {
   ComposableMap,
@@ -113,7 +114,7 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
   );
 
   return (
-    <div className="relative h-full w-full border p-2">
+    <div className="@container relative h-full w-full border p-2">
       {/* Кнопки зума — колесо мыши/pinch обрабатывается ZoomableGroup автоматически */}
       <div className="absolute top-4 right-4 z-10 flex flex-col gap-1">
         <button
@@ -228,23 +229,25 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
       {activeRegion && (
         <div
           ref={popupRef}
-          className="absolute bottom-4 left-4 z-10 max-w-xs rounded-lg bg-white p-4 shadow-lg"
+          className="absolute bottom-4 left-4 z-10 max-w-xs rounded-lg border bg-white p-2 shadow-lg @2xl:p-4 @2xl:pr-6"
           role="dialog"
         >
           <button
             onClick={() => setActiveRegion(null)}
             aria-label="Закрыть"
-            className="absolute top-2 right-2 text-neutral-400 hover:text-neutral-700"
+            className="absolute top-2 right-2 hidden cursor-pointer text-neutral-400 hover:text-neutral-700 @2xl:block"
           >
             ×
           </button>
-          <h3 className="mb-3 text-base font-semibold">{activeRegion.name}</h3>
-          <a
+          <h3 className="text-xs font-semibold @2xl:mb-2.5 @2xl:text-base">
+            {activeRegion.name}
+          </h3>
+          <Link
             href={activeRegion.url}
-            className="text-primary text-sm font-medium hover:underline"
+            className="text-primary text-xs font-medium hover:underline @2xl:text-sm"
           >
-            Подробнее об области →
-          </a>
+            Региональные поставки →
+          </Link>
         </div>
       )}
     </div>
