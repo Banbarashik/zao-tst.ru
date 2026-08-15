@@ -243,7 +243,7 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
             {activeRegion.name}
           </h3>
           <Link
-            href={activeRegion.url}
+            href={`regions/${activeRegion.url}`}
             className="text-primary text-xs font-medium hover:underline @2xl:text-sm"
           >
             Региональные поставки →
