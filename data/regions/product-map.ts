@@ -1,4 +1,4 @@
-import { PRODUCT_ID_SET } from "./product-ids.generated";
+import { PRODUCT_ID_SET } from "./product-catalog";
 import type { ProductId, ProductReference } from "./types";
 
 export const PRODUCT_CATEGORY_ROUTES: Record<string, string> = {

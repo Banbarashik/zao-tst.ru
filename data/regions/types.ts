@@ -78,4 +78,4 @@ export interface RegionData extends RegionSupplyData {
   transportTerminals: TransportTerminals;
 }
 
-export type ProductId = import("./product-ids.generated").ProductId;
+export type ProductId = import("./product-catalog").ProductId;
