@@ -7,6 +7,7 @@ import {
   type RegionSlug,
 } from "@/data/regions/regions.generated";
 import { getRegion } from "@/data/regions/regions";
+import { getRegionSections } from "@/data/regions/region-sections";
 import type {
   Company,
   ProductReference,
@@ -255,66 +256,6 @@ function TransportTerminals({
   );
 }
 
-function getPageSections(regionSlug: RegionSlug) {
-  const region = getRegion(regionSlug);
-
-  if (!region) {
-    return null;
-  }
-
-  const capitalCompanies: Company[] = [];
-  const cityDeliveryCounts = new Map<string, number>();
-  const cityOrder: string[] = [];
-  const cityBySlug = new Map<string, Company["settlement"]>();
-
-  for (const company of region.companies) {
-    if (company.settlement.name === region.capital.name) {
-      capitalCompanies.push(company);
-      continue;
-    }
-
-    if (company.settlement.type !== "city") {
-      continue;
-    }
-
-    if (!cityDeliveryCounts.has(company.settlement.slug)) {
-      cityOrder.push(company.settlement.slug);
-      cityBySlug.set(company.settlement.slug, company.settlement);
-    }
-
-    cityDeliveryCounts.set(
-      company.settlement.slug,
-      (cityDeliveryCounts.get(company.settlement.slug) ?? 0) +
-        company.deliveries.length,
-    );
-  }
-
-  const anchorCitySlugs = cityOrder.filter(
-    (citySlug) => (cityDeliveryCounts.get(citySlug) ?? 0) >= 4,
-  );
-  const anchorCitySet = new Set(anchorCitySlugs);
-
-  const anchorCities = anchorCitySlugs.map((citySlug) => ({
-    settlement: cityBySlug.get(citySlug)!,
-    companies: region.companies.filter(
-      (company) => company.settlement.slug === citySlug,
-    ),
-  }));
-
-  const remainderCompanies = region.companies.filter(
-    (company) =>
-      company.settlement.name !== region.capital.name &&
-      !anchorCitySet.has(company.settlement.slug),
-  );
-
-  return {
-    region,
-    capitalCompanies,
-    anchorCities,
-    remainderCompanies,
-  };
-}
-
 export default async function RegionPage({
   params,
 }: {
@@ -326,14 +267,14 @@ export default async function RegionPage({
     notFound();
   }
 
-  const sections = getPageSections(regionSlug as RegionSlug);
+  const region = getRegion(regionSlug as RegionSlug);
 
-  if (!sections) {
+  if (!region) {
     notFound();
   }
 
-  const { region, capitalCompanies, anchorCities, remainderCompanies } =
-    sections;
+  const { capitalCompanies, anchorCities, remainderCompanies } =
+    getRegionSections(region);
 
   return (
     <article className="space-y-8">

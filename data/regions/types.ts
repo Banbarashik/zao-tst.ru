@@ -62,6 +62,18 @@ export interface RegionSupplyData {
   companies: Company[];
 }
 
+export type ProductDeliveryLocation =
+  | {
+      kind: "city";
+      name: string;
+      href: string;
+    }
+  | {
+      kind: "region";
+      name: string;
+      href: string;
+    };
+
 export interface TransportTerminal {
   company: string;
   address: string;
