@@ -72,6 +72,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#leninsk-kuznetskiy"
     },
     {
+      "kind": "city",
+      "name": "Полысаево",
+      "href": "/regions/kemerovo#polysaevo"
+    },
+    {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast"
@@ -87,9 +92,19 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk"
     },
     {
+      "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk"
+    },
+    {
       "kind": "region",
       "name": "Республика Хакасия",
       "href": "/regions/abakan#respublika-hakasiya"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     }
   ],
   "kalorifer-ksk-4-11": [
@@ -164,9 +179,9 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#prokopevsk"
     },
     {
-      "kind": "city",
-      "name": "Красноярск",
-      "href": "/regions/krasnoyarsk"
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
     },
     {
       "kind": "region",
@@ -182,6 +197,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Курск",
       "href": "/regions/kursk"
+    },
+    {
+      "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg"
     },
     {
       "kind": "city",
@@ -244,11 +264,6 @@ export const productDeliveries = {
       "href": "/regions/kazan"
     },
     {
-      "kind": "city",
-      "name": "Саяногорск",
-      "href": "/regions/abakan#sayanogorsk"
-    },
-    {
       "kind": "region",
       "name": "Республика Хакасия",
       "href": "/regions/abakan#respublika-hakasiya"
@@ -282,6 +297,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Челябинск",
       "href": "/regions/chelyabinsk"
+    },
+    {
+      "kind": "city",
+      "name": "Ярославль",
+      "href": "/regions/yaroslavl"
     }
   ],
   "kalorifer-ksk-4-12": [
@@ -349,11 +369,6 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast"
-    },
-    {
-      "kind": "region",
-      "name": "Красноярский край",
-      "href": "/regions/krasnoyarsk#krasnoyarskiy-kray"
     },
     {
       "kind": "city",
@@ -636,11 +651,6 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
-      "name": "Томск",
-      "href": "/regions/tomsk"
-    },
-    {
-      "kind": "city",
       "name": "Тюмень",
       "href": "/regions/tyumen"
     }
@@ -727,6 +737,11 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk"
     },
     {
+      "kind": "city",
+      "name": "Омск",
+      "href": "/regions/omsk"
+    },
+    {
       "kind": "region",
       "name": "Оренбургская область",
       "href": "/regions/orenburg#orenburgskaya-oblast"
@@ -799,6 +814,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#novokuznetsk"
     },
     {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
       "kind": "city",
       "name": "Киров",
       "href": "/regions/kirov"
@@ -852,6 +872,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Республика Бурятия",
       "href": "/regions/ulan-ude#respublika-buryatiya"
+    },
+    {
+      "kind": "city",
+      "name": "Казань",
+      "href": "/regions/kazan"
     },
     {
       "kind": "city",
@@ -972,6 +997,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Пенза",
+      "href": "/regions/penza"
+    },
+    {
+      "kind": "city",
       "name": "Пермь",
       "href": "/regions/perm"
     },
@@ -1018,6 +1048,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#novokuznetsk"
     },
     {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
       "kind": "region",
       "name": "Приморский край",
       "href": "/regions/vladivostok#primorskiy-kray"
@@ -1055,6 +1090,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#novokuznetsk"
     },
     {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
       "kind": "city",
       "name": "Липецк",
       "href": "/regions/lipetsk"
@@ -1073,6 +1113,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Саяногорск",
       "href": "/regions/abakan#sayanogorsk"
+    },
+    {
+      "kind": "city",
+      "name": "Челябинск",
+      "href": "/regions/chelyabinsk"
     },
     {
       "kind": "city",
@@ -1155,6 +1200,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Киселевск",
+      "href": "/regions/kemerovo#kiselevsk"
+    },
+    {
+      "kind": "city",
       "name": "Ленинск-Кузнецкий",
       "href": "/regions/kemerovo#leninsk-kuznetskiy"
     },
@@ -1170,8 +1220,23 @@ export const productDeliveries = {
     },
     {
       "kind": "region",
+      "name": "Красноярский край",
+      "href": "/regions/krasnoyarsk#krasnoyarskiy-kray"
+    },
+    {
+      "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "region",
       "name": "Московская область",
       "href": "/regions/moskva#moskovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
     },
     {
       "kind": "city",
@@ -1267,6 +1332,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
       "name": "Горно-Алтайск",
       "href": "/regions/gorno-altaysk"
     },
@@ -1284,6 +1354,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Екатеринбург",
       "href": "/regions/ekaterinburg"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     },
     {
       "kind": "region",
@@ -1366,13 +1441,38 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Киселевск",
+      "href": "/regions/kemerovo#kiselevsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
       "name": "Прокопьевск",
       "href": "/regions/kemerovo#prokopevsk"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
     },
     {
       "kind": "city",
       "name": "Красноярск",
       "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "region",
+      "name": "Республика Саха (Якутия)",
+      "href": "/regions/yakutsk#respublika-saha-yakutiya"
     },
     {
       "kind": "city",
@@ -1458,6 +1558,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk"
     },
@@ -1465,6 +1570,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Орёл",
       "href": "/regions/orel"
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
     },
     {
       "kind": "city",
@@ -1480,6 +1590,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Ростов-на-Дону",
       "href": "/regions/rostov-na-donu"
+    },
+    {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg"
     },
     {
       "kind": "region",
@@ -1540,6 +1655,11 @@ export const productDeliveries = {
     },
     {
       "kind": "region",
+      "name": "Красноярский край",
+      "href": "/regions/krasnoyarsk#krasnoyarskiy-kray"
+    },
+    {
+      "kind": "region",
       "name": "Московская область",
       "href": "/regions/moskva#moskovskaya-oblast"
     },
@@ -1554,9 +1674,19 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk"
     },
     {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
+    },
+    {
       "kind": "region",
       "name": "Республика Саха (Якутия)",
       "href": "/regions/yakutsk#respublika-saha-yakutiya"
+    },
+    {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg"
     }
   ],
   "shkaf-upravleniia-shuk-250": [
@@ -1584,6 +1714,16 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Красноярск",
       "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
     },
     {
       "kind": "region",
@@ -1619,11 +1759,6 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Хабаровск",
       "href": "/regions/habarovsk"
-    },
-    {
-      "kind": "region",
-      "name": "Челябинская область",
-      "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
     }
   ],
   "kalorifer-kpsk-2-6": [
@@ -1631,6 +1766,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Барнаул",
       "href": "/regions/barnaul"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "kalorifer-kpsk-4-6": [
@@ -1673,6 +1813,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Киселевск",
+      "href": "/regions/kemerovo#kiselevsk"
+    },
+    {
+      "kind": "city",
       "name": "Новокузнецк",
       "href": "/regions/kemerovo#novokuznetsk"
     },
@@ -1703,8 +1848,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Орск",
+      "href": "/regions/orenburg#orsk"
+    },
+    {
+      "kind": "city",
       "name": "Пермь",
       "href": "/regions/perm"
+    },
+    {
+      "kind": "city",
+      "name": "Сыктывкар",
+      "href": "/regions/syktyvkar"
     },
     {
       "kind": "city",
@@ -1715,6 +1870,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Казань",
       "href": "/regions/kazan"
+    },
+    {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg"
     },
     {
       "kind": "city",
@@ -1777,6 +1937,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Киселевск",
       "href": "/regions/kemerovo#kiselevsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
     },
     {
       "kind": "city",
@@ -1872,6 +2037,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Приморский край",
       "href": "/regions/vladivostok#primorskiy-kray"
+    },
+    {
+      "kind": "city",
+      "name": "Якутск",
+      "href": "/regions/yakutsk"
     },
     {
       "kind": "city",
@@ -2001,6 +2171,11 @@ export const productDeliveries = {
       "href": "/regions/sankt-peterburg"
     },
     {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
       "kind": "region",
       "name": "Новосибирская область",
       "href": "/regions/novosibirsk#novosibirskaya-oblast"
@@ -2014,11 +2189,6 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Омск",
       "href": "/regions/omsk"
-    },
-    {
-      "kind": "city",
-      "name": "Пермь",
-      "href": "/regions/perm"
     },
     {
       "kind": "city",
@@ -2143,11 +2313,6 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#novokuznetsk"
     },
     {
-      "kind": "city",
-      "name": "Красноярск",
-      "href": "/regions/krasnoyarsk"
-    },
-    {
       "kind": "region",
       "name": "Красноярский край",
       "href": "/regions/krasnoyarsk#krasnoyarskiy-kray"
@@ -2194,6 +2359,26 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk"
+    },
+    {
+      "kind": "city",
+      "name": "Самара",
+      "href": "/regions/samara"
+    },
+    {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
+    },
+    {
+      "kind": "city",
       "name": "Ярославль",
       "href": "/regions/yaroslavl"
     }
@@ -2233,6 +2418,21 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Московская область",
       "href": "/regions/moskva#moskovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Саратов",
+      "href": "/regions/saratov"
     },
     {
       "kind": "region",
@@ -2312,6 +2512,11 @@ export const productDeliveries = {
       "href": "/regions/sankt-peterburg"
     },
     {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
       "kind": "region",
       "name": "Новосибирская область",
       "href": "/regions/novosibirsk#novosibirskaya-oblast"
@@ -2340,6 +2545,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Саратов",
       "href": "/regions/saratov"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     },
     {
       "kind": "city",
@@ -2405,13 +2615,13 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
-      "name": "Нижний Новгород",
-      "href": "/regions/nizhniy-novgorod"
+      "name": "Москва",
+      "href": "/regions/moskva"
     },
     {
       "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk"
+      "name": "Нижний Новгород",
+      "href": "/regions/nizhniy-novgorod"
     },
     {
       "kind": "city",
@@ -2482,6 +2692,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Ленинск-Кузнецкий",
+      "href": "/regions/kemerovo#leninsk-kuznetskiy"
+    },
+    {
+      "kind": "city",
       "name": "Новокузнецк",
       "href": "/regions/kemerovo#novokuznetsk"
     },
@@ -2489,6 +2704,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Прокопьевск",
       "href": "/regions/kemerovo#prokopevsk"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
     },
     {
       "kind": "city",
@@ -2599,8 +2819,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Омск",
+      "href": "/regions/omsk"
+    },
+    {
+      "kind": "city",
       "name": "Саяногорск",
       "href": "/regions/abakan#sayanogorsk"
+    },
+    {
+      "kind": "city",
+      "name": "Рязань",
+      "href": "/regions/ryazan"
     },
     {
       "kind": "city",
@@ -2611,6 +2841,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Тверская область",
       "href": "/regions/tver#tverskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     }
   ],
   "kalorifer-kp-412": [
@@ -2631,8 +2866,33 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk"
     },
     {
       "kind": "region",
@@ -2660,11 +2920,6 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
-    },
-    {
-      "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -2700,6 +2955,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
       "name": "Полысаево",
       "href": "/regions/kemerovo#polysaevo"
     },
@@ -2712,6 +2972,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Нижний Новгород",
+      "href": "/regions/nizhniy-novgorod"
     },
     {
       "kind": "city",
@@ -2797,6 +3062,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
       "name": "Нижний Новгород",
       "href": "/regions/nizhniy-novgorod"
     },
@@ -2868,6 +3138,11 @@ export const productDeliveries = {
       "href": "/regions/sankt-peterburg"
     },
     {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
       "kind": "region",
       "name": "Новосибирская область",
       "href": "/regions/novosibirsk#novosibirskaya-oblast"
@@ -2893,6 +3168,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Киселевск",
       "href": "/regions/kemerovo#kiselevsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
     },
     {
       "kind": "city",
@@ -2980,6 +3260,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Кемерово",
       "href": "/regions/kemerovo"
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
     },
     {
       "kind": "city",
@@ -3137,13 +3422,38 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Ленинск-Кузнецкий",
+      "href": "/regions/kemerovo#leninsk-kuznetskiy"
+    },
+    {
+      "kind": "city",
       "name": "Новокузнецк",
       "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg"
     },
     {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "region",
+      "name": "Новосибирская область",
+      "href": "/regions/novosibirsk#novosibirskaya-oblast"
     },
     {
       "kind": "city",
@@ -3285,6 +3595,11 @@ export const productDeliveries = {
       "href": "/regions/krasnoyarsk"
     },
     {
+      "kind": "region",
+      "name": "Красноярский край",
+      "href": "/regions/krasnoyarsk#krasnoyarskiy-kray"
+    },
+    {
       "kind": "city",
       "name": "Санкт-Петербург",
       "href": "/regions/sankt-peterburg"
@@ -3320,9 +3635,19 @@ export const productDeliveries = {
       "href": "/regions/penza#penzenskaya-oblast"
     },
     {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
+    },
+    {
       "kind": "region",
       "name": "Приморский край",
       "href": "/regions/vladivostok#primorskiy-kray"
+    },
+    {
+      "kind": "city",
+      "name": "Горно-Алтайск",
+      "href": "/regions/gorno-altaysk"
     },
     {
       "kind": "city",
@@ -3461,6 +3786,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo"
     },
     {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
@@ -3491,6 +3821,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Воронеж",
       "href": "/regions/voronezh"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -3528,6 +3863,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Кемерово",
       "href": "/regions/kemerovo"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "city",
@@ -3585,6 +3925,21 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Киселевск",
       "href": "/regions/kemerovo#kiselevsk"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk"
     }
   ],
   "kalorifer-ksk-2-8": [
@@ -3667,6 +4022,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
+    },
+    {
+      "kind": "city",
       "name": "Ульяновск",
       "href": "/regions/ulyanovsk"
     },
@@ -3703,6 +4063,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#kemerovskaya-oblast"
     },
     {
+      "kind": "city",
+      "name": "Киров",
+      "href": "/regions/kirov"
+    },
+    {
       "kind": "region",
       "name": "Краснодарский край",
       "href": "/regions/krasnodar#krasnodarskiy-kray"
@@ -3714,8 +4079,23 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
       "name": "Курган",
       "href": "/regions/kurgan"
+    },
+    {
+      "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "region",
+      "name": "Московская область",
+      "href": "/regions/moskva#moskovskaya-oblast"
     },
     {
       "kind": "city",
@@ -3731,6 +4111,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Орск",
+      "href": "/regions/orenburg#orsk"
     },
     {
       "kind": "city",
@@ -3778,6 +4163,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Бийск",
       "href": "/regions/barnaul#biysk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "kalorifer-kpsk-3-1": [
@@ -3822,6 +4212,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Бийск",
       "href": "/regions/barnaul#biysk"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
     },
     {
       "kind": "city",
@@ -3876,6 +4271,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo"
     },
     {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
       "kind": "region",
       "name": "Красноярский край",
       "href": "/regions/krasnoyarsk#krasnoyarskiy-kray"
@@ -3892,6 +4292,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Омск",
+      "href": "/regions/omsk"
+    },
+    {
+      "kind": "city",
       "name": "Пермь",
       "href": "/regions/perm"
     },
@@ -3899,6 +4304,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Самарская область",
       "href": "/regions/samara#samarskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     },
     {
       "kind": "city",
@@ -3941,11 +4351,6 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Прокопьевск",
       "href": "/regions/kemerovo#prokopevsk"
-    },
-    {
-      "kind": "region",
-      "name": "Кемеровская область",
-      "href": "/regions/kemerovo#kemerovskaya-oblast"
     },
     {
       "kind": "region",
@@ -4011,6 +4416,16 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
       "name": "Пермь",
       "href": "/regions/perm"
     },
@@ -4031,6 +4446,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
+    },
+    {
+      "kind": "city",
       "name": "Тюмень",
       "href": "/regions/tyumen"
     },
@@ -4045,6 +4465,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Алтайский край",
       "href": "/regions/barnaul#altayskiy-kray"
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
     },
     {
       "kind": "city",
@@ -4095,6 +4520,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
       "name": "Пермь",
       "href": "/regions/perm"
     },
@@ -4137,8 +4567,23 @@ export const productDeliveries = {
     },
     {
       "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "region",
       "name": "Московская область",
       "href": "/regions/moskva#moskovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -4242,9 +4687,19 @@ export const productDeliveries = {
       "href": "/regions/moskva#moskovskaya-oblast"
     },
     {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
       "kind": "region",
       "name": "Самарская область",
       "href": "/regions/samara#samarskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     }
   ],
   "kalorifer-kpsk-2-12": [
@@ -4257,6 +4712,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Кемерово",
       "href": "/regions/kemerovo"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "agregat-ao2-3-ksk4-vozdushniy-vodyanoy": [
@@ -4272,8 +4732,23 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
+    },
+    {
+      "kind": "city",
       "name": "Екатеринбург",
       "href": "/regions/ekaterinburg"
+    },
+    {
+      "kind": "region",
+      "name": "Ставропольский край",
+      "href": "/regions/stavropol#stavropolskiy-kray"
     }
   ],
   "kalorifer-kpsk-3-10": [
@@ -4304,6 +4779,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk"
     },
@@ -4311,6 +4791,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Оренбургская область",
       "href": "/regions/orenburg#orenburgskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
     },
     {
       "kind": "region",
@@ -4401,8 +4886,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
     },
     {
       "kind": "region",
@@ -4428,11 +4923,6 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Хабаровск",
       "href": "/regions/habarovsk"
-    },
-    {
-      "kind": "region",
-      "name": "Челябинская область",
-      "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
     },
     {
       "kind": "city",
@@ -4470,6 +4960,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -4568,6 +5063,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo"
     },
     {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
       "kind": "region",
       "name": "Краснодарский край",
       "href": "/regions/krasnodar#krasnodarskiy-kray"
@@ -4658,6 +5158,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Архангельск",
       "href": "/regions/arhangelsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "kalorifer-kpsk-4-1": [
@@ -4695,6 +5200,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
       "name": "Омск",
       "href": "/regions/omsk"
     },
@@ -4709,6 +5219,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Белгород",
       "href": "/regions/belgorod"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "city",
@@ -4743,6 +5258,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#novokuznetsk"
     },
     {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
       "kind": "city",
       "name": "Киров",
       "href": "/regions/kirov"
@@ -4763,14 +5283,14 @@ export const productDeliveries = {
       "href": "/regions/sankt-peterburg"
     },
     {
-      "kind": "region",
-      "name": "Московская область",
-      "href": "/regions/moskva#moskovskaya-oblast"
-    },
-    {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "region",
+      "name": "Московская область",
+      "href": "/regions/moskva#moskovskaya-oblast"
     },
     {
       "kind": "region",
@@ -4824,6 +5344,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Самара",
+      "href": "/regions/samara"
+    },
+    {
+      "kind": "city",
       "name": "Тольятти",
       "href": "/regions/samara#tolyatti"
     },
@@ -4833,9 +5358,19 @@ export const productDeliveries = {
       "href": "/regions/saratov#saratovskaya-oblast"
     },
     {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg"
+    },
+    {
       "kind": "region",
       "name": "Свердловская область",
       "href": "/regions/ekaterinburg#sverdlovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     },
     {
       "kind": "region",
@@ -4870,6 +5405,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#novokuznetsk"
     },
     {
+      "kind": "city",
+      "name": "Прокопьевск",
+      "href": "/regions/kemerovo#prokopevsk"
+    },
+    {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast"
@@ -4883,6 +5423,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "region",
@@ -4918,6 +5463,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Кириши",
+      "href": "/regions/sankt-peterburg#kirishi"
+    },
+    {
+      "kind": "city",
       "name": "Липецк",
       "href": "/regions/lipetsk"
     },
@@ -4935,6 +5485,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Республика Бурятия",
       "href": "/regions/ulan-ude#respublika-buryatiya"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     }
   ],
   "kpvs-572x572": [
@@ -5001,6 +5556,16 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#novokuznetsk"
     },
     {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Киров",
+      "href": "/regions/kirov"
+    },
+    {
       "kind": "city",
       "name": "Красноярск",
       "href": "/regions/krasnoyarsk"
@@ -5019,6 +5584,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "region",
+      "name": "Московская область",
+      "href": "/regions/moskva#moskovskaya-oblast"
     },
     {
       "kind": "city",
@@ -5056,9 +5626,9 @@ export const productDeliveries = {
       "href": "/regions/syktyvkar"
     },
     {
-      "kind": "region",
-      "name": "Республика Саха (Якутия)",
-      "href": "/regions/yakutsk#respublika-saha-yakutiya"
+      "kind": "city",
+      "name": "Казань",
+      "href": "/regions/kazan"
     },
     {
       "kind": "region",
@@ -5179,6 +5749,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk"
     },
@@ -5193,6 +5768,11 @@ export const productDeliveries = {
       "href": "/regions/orel"
     },
     {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
+    },
+    {
       "kind": "region",
       "name": "Республика Башкортостан",
       "href": "/regions/ufa#respublika-bashkortostan"
@@ -5201,6 +5781,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Республика Саха (Якутия)",
       "href": "/regions/yakutsk#respublika-saha-yakutiya"
+    },
+    {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg"
     },
     {
       "kind": "city",
@@ -5344,8 +5929,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
       "name": "Прокопьевск",
       "href": "/regions/kemerovo#prokopevsk"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "city",
@@ -5391,13 +5986,28 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
-      "name": "Киров",
-      "href": "/regions/kirov"
+      "name": "Киселевск",
+      "href": "/regions/kemerovo#kiselevsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
     },
     {
       "kind": "city",
       "name": "Краснодар",
       "href": "/regions/krasnodar"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "city",
@@ -5441,6 +6051,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Казань",
+      "href": "/regions/kazan"
+    },
+    {
+      "kind": "city",
       "name": "Томск",
       "href": "/regions/tomsk"
     },
@@ -5453,6 +6068,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Челябинск",
       "href": "/regions/chelyabinsk"
+    },
+    {
+      "kind": "city",
+      "name": "Чебоксары",
+      "href": "/regions/cheboksary"
     }
   ],
   "shkaf-upravleniia-shuk-160": [
@@ -5465,6 +6085,16 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Кемерово",
       "href": "/regions/kemerovo"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "city",
@@ -5569,6 +6199,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "elektrokalorifer-sfo-40": [
@@ -5699,6 +6334,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Уфа",
+      "href": "/regions/ufa"
+    },
+    {
+      "kind": "city",
       "name": "Сыктывкар",
       "href": "/regions/syktyvkar"
     },
@@ -5805,6 +6445,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "kalorifer-kpsk-3-12": [
@@ -5822,6 +6467,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Кемерово",
       "href": "/regions/kemerovo"
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
     },
     {
       "kind": "region",
@@ -5854,9 +6504,19 @@ export const productDeliveries = {
       "href": "/regions/rostov-na-donu#rostovskaya-oblast"
     },
     {
+      "kind": "city",
+      "name": "Тольятти",
+      "href": "/regions/samara#tolyatti"
+    },
+    {
       "kind": "region",
       "name": "Саратовская область",
       "href": "/regions/saratov#saratovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     }
   ],
   "agregat-ao2-4-ksk3-vozdushniy-parovoy": [
@@ -5888,6 +6548,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "region",
@@ -5992,6 +6657,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
       "name": "Уфа",
       "href": "/regions/ufa"
     },
@@ -6011,6 +6681,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Ивановская область",
       "href": "/regions/ivanovo#ivanovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
     },
     {
       "kind": "region",
@@ -6050,11 +6725,6 @@ export const productDeliveries = {
       "href": "/regions/kemerovo"
     },
     {
-      "kind": "city",
-      "name": "Новокузнецк",
-      "href": "/regions/kemerovo#novokuznetsk"
-    },
-    {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast"
@@ -6063,6 +6733,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -6095,6 +6770,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -6167,13 +6847,13 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
-      "name": "Новокузнецк",
-      "href": "/regions/kemerovo#novokuznetsk"
+      "name": "Москва",
+      "href": "/regions/moskva"
     },
     {
       "kind": "city",
-      "name": "Москва",
-      "href": "/regions/moskva"
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "agregat-ao2-25-ksk4-vozdushniy-vodyanoy": [
@@ -6181,6 +6861,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Иркутская область",
       "href": "/regions/irkutsk#irkutskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Анжеро-Судженск",
+      "href": "/regions/kemerovo#anzhero-sudzhensk"
     },
     {
       "kind": "region",
@@ -6230,6 +6915,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#novokuznetsk"
     },
     {
+      "kind": "city",
+      "name": "Прокопьевск",
+      "href": "/regions/kemerovo#prokopevsk"
+    },
+    {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast"
@@ -6246,6 +6936,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
     },
@@ -6253,6 +6948,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
     },
     {
       "kind": "region",
@@ -6298,6 +6998,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Полысаево",
+      "href": "/regions/kemerovo#polysaevo"
+    },
+    {
+      "kind": "city",
       "name": "Красноярск",
       "href": "/regions/krasnoyarsk"
     },
@@ -6310,6 +7015,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Новосибирская область",
       "href": "/regions/novosibirsk#novosibirskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -6355,6 +7065,21 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "region",
+      "name": "Красноярский край",
+      "href": "/regions/krasnoyarsk#krasnoyarskiy-kray"
+    },
+    {
+      "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
     },
@@ -6387,6 +7112,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Ставропольский край",
       "href": "/regions/stavropol#stavropolskiy-kray"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     }
   ],
   "kpvs-947x947": [
@@ -6414,8 +7144,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
       "name": "Полысаево",
       "href": "/regions/kemerovo#polysaevo"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
     },
     {
       "kind": "city",
@@ -6423,9 +7163,39 @@ export const productDeliveries = {
       "href": "/regions/krasnodar"
     },
     {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Омск",
+      "href": "/regions/omsk"
+    },
+    {
       "kind": "region",
       "name": "Пензенская область",
       "href": "/regions/penza#penzenskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
+    },
+    {
+      "kind": "city",
+      "name": "Абакан",
+      "href": "/regions/abakan"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     }
   ],
   "kpvs-1197x1197": [
@@ -6486,11 +7256,6 @@ export const productDeliveries = {
       "href": "/regions/irkutsk#irkutskaya-oblast"
     },
     {
-      "kind": "city",
-      "name": "Анжеро-Судженск",
-      "href": "/regions/kemerovo#anzhero-sudzhensk"
-    },
-    {
       "kind": "region",
       "name": "Краснодарский край",
       "href": "/regions/krasnodar#krasnodarskiy-kray"
@@ -6544,6 +7309,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
       "name": "Омск",
       "href": "/regions/omsk"
     },
@@ -6568,6 +7338,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Московская область",
       "href": "/regions/moskva#moskovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "kalorifer-kpsk-4-3": [
@@ -6575,6 +7350,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Анжеро-Судженск",
       "href": "/regions/kemerovo#anzhero-sudzhensk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "kalorifer-kp-411": [
@@ -6592,6 +7372,26 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Киселевск",
       "href": "/regions/kemerovo#kiselevsk"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk"
+    },
+    {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg"
     }
   ],
   "kalorifer-ksk-3-2": [
@@ -6636,6 +7436,16 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
       "name": "Пермь",
       "href": "/regions/perm"
     },
@@ -6655,11 +7465,6 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Кемерово",
       "href": "/regions/kemerovo"
-    },
-    {
-      "kind": "city",
-      "name": "Новокузнецк",
-      "href": "/regions/kemerovo#novokuznetsk"
     },
     {
       "kind": "region",
@@ -6683,6 +7488,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Омск",
+      "href": "/regions/omsk"
+    },
+    {
+      "kind": "city",
       "name": "Томск",
       "href": "/regions/tomsk"
     }
@@ -6694,6 +7504,11 @@ export const productDeliveries = {
       "href": "/regions/kemerovo"
     },
     {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast"
@@ -6702,6 +7517,16 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Мелитополь",
       "href": "/regions/melitopol"
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -6722,6 +7547,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Екатеринбург",
       "href": "/regions/ekaterinburg"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     },
     {
       "kind": "city",
@@ -6853,8 +7683,28 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
       "name": "Курск",
       "href": "/regions/kursk"
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     }
   ],
   "kalorifer-tvv-306": [
@@ -6865,13 +7715,13 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
-      "name": "Новокузнецк",
-      "href": "/regions/kemerovo#novokuznetsk"
+      "name": "Полысаево",
+      "href": "/regions/kemerovo#polysaevo"
     },
     {
       "kind": "city",
-      "name": "Полысаево",
-      "href": "/regions/kemerovo#polysaevo"
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "city",
@@ -6887,6 +7737,11 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Приморский край",
       "href": "/regions/vladivostok#primorskiy-kray"
+    },
+    {
+      "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk"
     },
     {
       "kind": "region",
@@ -6909,6 +7764,26 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
     }
   ],
   "kalorifer-ksk-2-9": [
@@ -6924,13 +7799,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
       "name": "Красноярск",
       "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk"
+      "name": "Томск",
+      "href": "/regions/tomsk"
     },
     {
       "kind": "city",
@@ -6943,6 +7823,16 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Кемерово",
       "href": "/regions/kemerovo"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Хабаровск",
+      "href": "/regions/habarovsk"
     }
   ],
   "shkaf-upravleniia-shuk-25": [
@@ -6970,6 +7860,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Санкт-Петербург",
       "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "region",
@@ -7015,6 +7910,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "city",
       "name": "Москва",
       "href": "/regions/moskva"
     },
@@ -7034,6 +7934,16 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Кемерово",
       "href": "/regions/kemerovo"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "shkaf-upravleniia-shuk-16": [
@@ -7044,8 +7954,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
       "name": "Полысаево",
       "href": "/regions/kemerovo#polysaevo"
+    },
+    {
+      "kind": "city",
+      "name": "Прокопьевск",
+      "href": "/regions/kemerovo#prokopevsk"
     },
     {
       "kind": "city",
@@ -7138,13 +8058,28 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
       "name": "Красноярск",
       "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Омск",
+      "href": "/regions/omsk"
     },
     {
       "kind": "region",
@@ -7214,6 +8149,21 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk"
     }
   ],
   "ustanovka-sfotc-160": [
@@ -7224,8 +8174,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
       "name": "Прокопьевск",
       "href": "/regions/kemerovo#prokopevsk"
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
     },
     {
       "kind": "city",
@@ -7234,8 +8194,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
       "name": "Омск",
       "href": "/regions/omsk"
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
     },
     {
       "kind": "region",
@@ -7263,6 +8233,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Ульяновск",
+      "href": "/regions/ulyanovsk"
     }
   ],
   "kalorifer-kfb-4-a3": [
@@ -7270,6 +8245,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Новокузнецк",
       "href": "/regions/kemerovo#novokuznetsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -7290,6 +8270,11 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
       "name": "Казань",
       "href": "/regions/kazan"
     }
@@ -7304,6 +8289,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Краснодар",
       "href": "/regions/krasnodar"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "city",
@@ -7326,6 +8316,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Санкт-Петербург",
       "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -7407,11 +8402,16 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
+    },
+    {
+      "kind": "city",
       "name": "Хабаровск",
       "href": "/regions/habarovsk"
     }
   ],
-  "kalorifer-kfb-2-a3": [
+  "kalorifer-kfb-12-a4": [
     {
       "kind": "city",
       "name": "Новокузнецк",
@@ -7419,13 +8419,18 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
-      "name": "Санкт-Петербург",
-      "href": "/regions/sankt-peterburg"
+      "name": "Москва",
+      "href": "/regions/moskva"
     },
     {
-      "kind": "region",
-      "name": "Московская область",
-      "href": "/regions/moskva#moskovskaya-oblast"
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Владивосток",
+      "href": "/regions/vladivostok"
     }
   ],
   "kalorifer-ksk-2-3": [
@@ -7460,6 +8465,55 @@ export const productDeliveries = {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    }
+  ],
+  "kalorifer-kp-309": [
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "region",
+      "name": "Тверская область",
+      "href": "/regions/tver#tverskaya-oblast"
+    }
+  ],
+  "kalorifer-kfb-14-a4": [
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Оренбург",
+      "href": "/regions/orenburg"
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm"
     }
   ],
   "kalorifer-kpsk-2-3": [
@@ -7467,6 +8521,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Киров",
       "href": "/regions/kirov"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "kalorifer-kfb-2-a4": [
@@ -7474,6 +8533,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Киров",
       "href": "/regions/kirov"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "agregat-ao2-4-ksk3-vozdushniy-vodyanoy": [
@@ -7486,6 +8550,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Краснодар",
       "href": "/regions/krasnodar"
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
     },
     {
       "kind": "region",
@@ -7525,6 +8594,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Краснодар",
       "href": "/regions/krasnodar"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "kpps-614x614": [
@@ -7539,28 +8613,16 @@ export const productDeliveries = {
       "href": "/regions/yaroslavl"
     }
   ],
-  "kalorifer-kfb-14-a4": [
-    {
-      "kind": "city",
-      "name": "Красноярск",
-      "href": "/regions/krasnoyarsk"
-    },
-    {
-      "kind": "city",
-      "name": "Оренбург",
-      "href": "/regions/orenburg"
-    },
-    {
-      "kind": "city",
-      "name": "Пермь",
-      "href": "/regions/perm"
-    }
-  ],
   "kalorifer-kpsk-2-7": [
     {
       "kind": "city",
       "name": "Красноярск",
       "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     }
   ],
   "agregat-ao2-4-ksk4-vozdushniy-vodyanoy": [
@@ -7568,6 +8630,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Красноярск",
       "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -7590,6 +8657,18 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Красноярск",
       "href": "/regions/krasnoyarsk"
+    }
+  ],
+  "agregat-ao2-25-ksk3-vozdushniy-parovoy": [
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk"
+    },
+    {
+      "kind": "city",
+      "name": "Уфа",
+      "href": "/regions/ufa"
     }
   ],
   "kppu-1572x1572": [
@@ -7618,6 +8697,23 @@ export const productDeliveries = {
       "href": "/regions/ekaterinburg"
     }
   ],
+  "kalorifer-kfb-2-a3": [
+    {
+      "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "region",
+      "name": "Московская область",
+      "href": "/regions/moskva#moskovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    }
+  ],
   "kpps-1072x1072": [
     {
       "kind": "city",
@@ -7637,6 +8733,11 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Санкт-Петербург",
       "href": "/regions/sankt-peterburg"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
     },
     {
       "kind": "city",
@@ -7695,8 +8796,40 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
       "name": "Чебоксары",
       "href": "/regions/cheboksary"
+    }
+  ],
+  "kalorifer-kfb-14-a3": [
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskva"
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Набережные Челны",
+      "href": "/regions/kazan#naberezhnye-chelny"
+    },
+    {
+      "kind": "region",
+      "name": "Ульяновская область",
+      "href": "/regions/ulyanovsk#ulyanovskaya-oblast"
+    },
+    {
+      "kind": "city",
+      "name": "Челябинск",
+      "href": "/regions/chelyabinsk"
     }
   ],
   "agregat-ao2-15-ksk4-vozdushniy-parovoy": [
@@ -7728,6 +8861,54 @@ export const productDeliveries = {
       "href": "/regions/ufa"
     }
   ],
+  "kalorifer-kp-407": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "region",
+      "name": "Ростовская область",
+      "href": "/regions/rostov-na-donu#rostovskaya-oblast"
+    }
+  ],
+  "kalorifer-ksk-2-4": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "region",
+      "name": "Республика Татарстан",
+      "href": "/regions/kazan#respublika-tatarstan"
+    },
+    {
+      "kind": "region",
+      "name": "Челябинская область",
+      "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
+    }
+  ],
+  "kalorifer-ksk-2-5": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    }
+  ],
+  "kalorifer-ksk-2-7": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk"
+    }
+  ],
   "kalorifer-ksk-3-3": [
     {
       "kind": "city",
@@ -7746,6 +8927,72 @@ export const productDeliveries = {
     }
   ],
   "kalorifer-ksk-4-2": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    }
+  ],
+  "kalorifer-kpsk-2-8": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    }
+  ],
+  "kalorifer-kpsk-3-3": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    }
+  ],
+  "kalorifer-kpsk-4-5": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    }
+  ],
+  "kalorifer-kp-408": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Тула",
+      "href": "/regions/tula"
+    }
+  ],
+  "kalorifer-kpsk-2-5": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    }
+  ],
+  "kalorifer-kpsk-2-9": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    },
+    {
+      "kind": "city",
+      "name": "Хабаровск",
+      "href": "/regions/habarovsk"
+    }
+  ],
+  "kalorifer-kpsk-4-2": [
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk"
+    }
+  ],
+  "kalorifer-kpsk-2-4": [
     {
       "kind": "city",
       "name": "Новосибирск",
@@ -7800,13 +9047,6 @@ export const productDeliveries = {
       "href": "/regions/tomsk"
     }
   ],
-  "kalorifer-kfb-12-a4": [
-    {
-      "kind": "city",
-      "name": "Владивосток",
-      "href": "/regions/vladivostok"
-    }
-  ],
   "agregat-ao2-20-ksk3-vozdushniy-parovoy": [
     {
       "kind": "city",
@@ -7831,13 +9071,6 @@ export const productDeliveries = {
       "href": "/regions/tyumen"
     }
   ],
-  "agregat-ao2-25-ksk3-vozdushniy-parovoy": [
-    {
-      "kind": "city",
-      "name": "Уфа",
-      "href": "/regions/ufa"
-    }
-  ],
   "kpvs-780x780": [
     {
       "kind": "region",
@@ -7860,42 +9093,6 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Сыктывкар",
       "href": "/regions/syktyvkar"
-    }
-  ],
-  "kalorifer-ksk-2-4": [
-    {
-      "kind": "region",
-      "name": "Республика Татарстан",
-      "href": "/regions/kazan#respublika-tatarstan"
-    },
-    {
-      "kind": "region",
-      "name": "Челябинская область",
-      "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
-    }
-  ],
-  "kalorifer-kfb-14-a3": [
-    {
-      "kind": "city",
-      "name": "Набережные Челны",
-      "href": "/regions/kazan#naberezhnye-chelny"
-    },
-    {
-      "kind": "region",
-      "name": "Ульяновская область",
-      "href": "/regions/ulyanovsk#ulyanovskaya-oblast"
-    },
-    {
-      "kind": "city",
-      "name": "Челябинск",
-      "href": "/regions/chelyabinsk"
-    }
-  ],
-  "kalorifer-kp-407": [
-    {
-      "kind": "region",
-      "name": "Ростовская область",
-      "href": "/regions/rostov-na-donu#rostovskaya-oblast"
     }
   ],
   "kpvu-890x890": [
@@ -7962,13 +9159,6 @@ export const productDeliveries = {
       "href": "/regions/hanty-mansiysk#surgut"
     }
   ],
-  "kalorifer-kp-309": [
-    {
-      "kind": "region",
-      "name": "Тверская область",
-      "href": "/regions/tver#tverskaya-oblast"
-    }
-  ],
   "agregat-ao2-15-ksk3-vozdushniy-vodyanoy": [
     {
       "kind": "city",
@@ -7979,20 +9169,6 @@ export const productDeliveries = {
       "kind": "city",
       "name": "Челябинск",
       "href": "/regions/chelyabinsk"
-    }
-  ],
-  "kalorifer-kp-408": [
-    {
-      "kind": "city",
-      "name": "Тула",
-      "href": "/regions/tula"
-    }
-  ],
-  "kalorifer-kpsk-2-9": [
-    {
-      "kind": "city",
-      "name": "Хабаровск",
-      "href": "/regions/habarovsk"
     }
   ],
   "kppu-1026x1026": [

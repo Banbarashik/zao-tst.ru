@@ -6590,8 +6590,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "АО 2-25 (КСк)",
-            "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+            "name": "АО 2-25 (КСк4)",
+            "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
           }
         ],
         "deliveries": [
@@ -6605,8 +6605,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "АО 2-25 (КСк)",
-                "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+                "name": "АО 2-25 (КСк4)",
+                "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
               }
             ]
           }
@@ -6751,6 +6751,11 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 7-165-01 В",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -6967,7 +6972,7 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КФБ-10 А4 М",
+            "name": "КФБ-10 А4 П",
             "id": "kalorifer-kfb-10-a4"
           }
         ],
@@ -6987,7 +6992,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 М",
+                "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
             ]
@@ -8710,43 +8715,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «ОФ «Тайбинская»",
-        "settlement": {
-          "name": "Киселевск",
-          "slug": "kiselevsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2012,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «Регион»",
         "settlement": {
           "name": "Киселевск",
@@ -8835,13 +8803,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
           }
         ],
         "deliveries": [
@@ -8855,13 +8818,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
               }
             ]
           }
@@ -8914,8 +8872,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
           },
           {
             "kind": "product",
@@ -8924,13 +8882,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
+            "name": "КФБ-10 А3 М",
+            "id": "kalorifer-kfb-10-a3"
           }
         ],
         "deliveries": [
@@ -8939,8 +8892,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
               },
               {
                 "kind": "product",
@@ -8949,13 +8902,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
+                "name": "КФБ-10 А3 М",
+                "id": "kalorifer-kfb-10-a3"
               }
             ]
           }
@@ -8976,8 +8924,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
+            "name": "СФОЦ-250",
+            "id": "ustanovka-sfotc-250"
           }
         ],
         "deliveries": [
@@ -8991,8 +8939,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
+                "name": "СФОЦ-250",
+                "id": "ustanovka-sfotc-250"
               }
             ]
           }
@@ -9018,8 +8966,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 411",
-            "id": "kalorifer-tvv-411"
+            "name": "ТВВ 311",
+            "id": "kalorifer-tvv-311"
           }
         ],
         "deliveries": [
@@ -9038,8 +8986,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 411",
-                "id": "kalorifer-tvv-411"
+                "name": "ТВВ 311",
+                "id": "kalorifer-tvv-311"
               }
             ]
           }
@@ -9116,8 +9064,13 @@ export const generatedRegions = {
             "href": "/avo-tvv-kp"
           },
           {
+            "kind": "category",
+            "name": "АВО 7-165-01 П",
+            "href": "/avo-tvv-kp"
+          },
+          {
             "kind": "product",
-            "name": "СТД-300 (КПСк)",
+            "name": "СТД-300 (КПСк3)",
             "id": "std300-kpsk"
           }
         ],
@@ -9137,7 +9090,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (КПСк)",
+                "name": "СТД-300 (КПСк3)",
                 "id": "std300-kpsk"
               }
             ]
@@ -9159,7 +9112,7 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (ТВВ)",
+            "name": "СТД-300 (ТВВ3)",
             "id": "std300-tvv"
           }
         ],
@@ -9174,7 +9127,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (ТВВ)",
+                "name": "СТД-300 (ТВВ3)",
                 "id": "std300-tvv"
               }
             ]
@@ -9362,8 +9315,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 4-9",
+            "id": "kalorifer-ksk-4-9"
           }
         ],
         "deliveries": [
@@ -9372,8 +9325,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 4-9",
+                "id": "kalorifer-ksk-4-9"
               }
             ]
           }
@@ -9389,8 +9342,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 4-8",
+            "id": "kalorifer-ksk-4-8"
           }
         ],
         "deliveries": [
@@ -9399,8 +9352,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 4-8",
+                "id": "kalorifer-ksk-4-8"
               }
             ]
           }
@@ -9697,8 +9650,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КФБ-5 А3 М",
-            "id": "kalorifer-kfb-5-a3"
+            "name": "КФБ-5 А4 М",
+            "id": "kalorifer-kfb-5-a4"
           },
           {
             "kind": "product",
@@ -9762,7 +9715,7 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (ТВВ)",
+            "name": "СТД-300 (ТВВ4)",
             "id": "std300-tvv"
           }
         ],
@@ -9777,8 +9730,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КФБ-5 А3 М",
-                "id": "kalorifer-kfb-5-a3"
+                "name": "КФБ-5 А4 М",
+                "id": "kalorifer-kfb-5-a4"
               },
               {
                 "kind": "product",
@@ -9842,7 +9795,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (ТВВ)",
+                "name": "СТД-300 (ТВВ4)",
                 "id": "std300-tvv"
               }
             ]
@@ -9913,7 +9866,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СТД-300 (КП)",
+            "name": "СТД-300 (КП4)",
             "id": "std300-kp"
           }
         ],
@@ -9923,7 +9876,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СТД-300 (КП)",
+                "name": "СТД-300 (КП4)",
                 "id": "std300-kp"
               }
             ]
@@ -9982,8 +9935,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "КСк 3-12",
+            "id": "kalorifer-ksk-3-12"
           },
           {
             "kind": "product",
@@ -9997,8 +9950,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КСк 2-11",
+            "id": "kalorifer-ksk-2-11"
           },
           {
             "kind": "product",
@@ -10027,7 +9980,7 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (КПСк)",
+            "name": "СТД-300 (КПСк4)",
             "id": "std300-kpsk"
           }
         ],
@@ -10052,8 +10005,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "КСк 3-12",
+                "id": "kalorifer-ksk-3-12"
               },
               {
                 "kind": "product",
@@ -10067,8 +10020,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КСк 2-11",
+                "id": "kalorifer-ksk-2-11"
               },
               {
                 "kind": "product",
@@ -10097,7 +10050,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (КПСк)",
+                "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
               }
             ]
@@ -10141,8 +10094,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 2-10",
+            "id": "kalorifer-ksk-2-10"
           },
           {
             "kind": "product",
@@ -10151,8 +10104,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 3-7",
-            "id": "kalorifer-kpsk-3-7"
+            "name": "КПСк 3-8",
+            "id": "kalorifer-kpsk-3-8"
           },
           {
             "kind": "product",
@@ -10161,13 +10114,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
           },
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
           },
           {
             "kind": "product",
@@ -10191,8 +10144,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 2-10",
+                "id": "kalorifer-ksk-2-10"
               },
               {
                 "kind": "product",
@@ -10201,8 +10154,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КПСк 3-7",
-                "id": "kalorifer-kpsk-3-7"
+                "name": "КПСк 3-8",
+                "id": "kalorifer-kpsk-3-8"
               },
               {
                 "kind": "product",
@@ -10211,13 +10164,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
               },
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               },
               {
                 "kind": "product",
@@ -10275,28 +10228,28 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 411",
-            "id": "kalorifer-tvv-411"
+            "name": "ТВВ 312",
+            "id": "kalorifer-tvv-312"
           },
           {
             "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "КП 412",
+            "id": "kalorifer-kp-412"
           },
           {
             "kind": "product",
-            "name": "КФБ-10 А3 П",
-            "id": "kalorifer-kfb-10-a3"
-          },
-          {
-            "kind": "product",
-            "name": "КФБ-10 А4 М",
+            "name": "КФБ-10 А4 П",
             "id": "kalorifer-kfb-10-a4"
           },
           {
             "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
+            "name": "КФБ-10 А3 М",
+            "id": "kalorifer-kfb-10-a3"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
           },
           {
             "kind": "product",
@@ -10320,18 +10273,18 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 411",
-                "id": "kalorifer-tvv-411"
+                "name": "ТВВ 312",
+                "id": "kalorifer-tvv-312"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "КП 412",
+                "id": "kalorifer-kp-412"
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А3 П",
-                "id": "kalorifer-kfb-10-a3"
+                "name": "КФБ-10 А4 П",
+                "id": "kalorifer-kfb-10-a4"
               },
               {
                 "kind": "product",
@@ -10345,8 +10298,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
               },
               {
                 "kind": "product",
@@ -10377,8 +10330,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-12",
-            "id": "kalorifer-ksk-3-12"
+            "name": "КСк 2-12",
+            "id": "kalorifer-ksk-2-12"
           }
         ],
         "deliveries": [
@@ -10387,8 +10340,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-12",
-                "id": "kalorifer-ksk-3-12"
+                "name": "КСк 2-12",
+                "id": "kalorifer-ksk-2-12"
               }
             ]
           }
@@ -10404,8 +10357,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "АО 2-10 (КСк3)",
-            "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
+            "name": "АО 2-10 (КСк4)",
+            "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
           },
           {
             "kind": "product",
@@ -10424,8 +10377,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "АО 2-10 (КСк3)",
-                "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
+                "name": "АО 2-10 (КСк4)",
+                "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
               },
               {
                 "kind": "product",
@@ -10451,8 +10404,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 311",
-            "id": "kalorifer-tvv-311"
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           }
         ],
         "deliveries": [
@@ -10461,62 +10414,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 311",
-                "id": "kalorifer-tvv-311"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «КузбассСтройМонтаж»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2013,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Кузбасстромсервис»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2011,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               }
             ]
           }
@@ -10532,23 +10431,18 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "КСк 4-7",
+            "id": "kalorifer-ksk-4-7"
           },
           {
             "kind": "product",
-            "name": "КСк 4-9",
-            "id": "kalorifer-ksk-4-9"
+            "name": "КСк 4-8",
+            "id": "kalorifer-ksk-4-8"
           },
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
+            "name": "КСк 3-6",
+            "id": "kalorifer-ksk-3-6"
           }
         ],
         "deliveries": [
@@ -10557,23 +10451,18 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "КСк 4-7",
+                "id": "kalorifer-ksk-4-7"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-9",
-                "id": "kalorifer-ksk-4-9"
+                "name": "КСк 4-8",
+                "id": "kalorifer-ksk-4-8"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
+                "name": "КСк 3-6",
+                "id": "kalorifer-ksk-3-6"
               }
             ]
           }
@@ -10589,13 +10478,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФОЦ-25",
-            "id": "ustanovka-sfotc-25"
+            "name": "СФОЦ-16",
+            "id": "ustanovka-sfotc-16"
           },
           {
             "kind": "product",
-            "name": "ШУК-25",
-            "id": "shkaf-upravleniia-shuk-25"
+            "name": "ШУК-16",
+            "id": "shkaf-upravleniia-shuk-16"
           }
         ],
         "deliveries": [
@@ -10604,13 +10493,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФОЦ-25",
-                "id": "ustanovka-sfotc-25"
+                "name": "СФОЦ-16",
+                "id": "ustanovka-sfotc-16"
               },
               {
                 "kind": "product",
-                "name": "ШУК-25",
-                "id": "shkaf-upravleniia-shuk-25"
+                "name": "ШУК-16",
+                "id": "shkaf-upravleniia-shuk-16"
               }
             ]
           }
@@ -10626,7 +10515,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СТД-300 (КСк)",
+            "name": "СТД-300 (КСк3)",
             "id": "std300-ksk"
           }
         ],
@@ -10636,7 +10525,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СТД-300 (КСк)",
+                "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
             ]
@@ -10685,8 +10574,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-11 А4 П",
+            "id": "kalorifer-kfb-11-a4"
           }
         ],
         "deliveries": [
@@ -10700,8 +10589,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-11 А4 П",
+                "id": "kalorifer-kfb-11-a4"
               }
             ]
           }
@@ -10717,8 +10606,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФОЦ-100",
-            "id": "ustanovka-sfotc-100"
+            "name": "СФОЦ-160",
+            "id": "ustanovka-sfotc-160"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -10727,8 +10621,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФОЦ-100",
-                "id": "ustanovka-sfotc-100"
+                "name": "СФОЦ-160",
+                "id": "ustanovka-sfotc-160"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ]
           }
@@ -10749,43 +10648,43 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 3-5",
+            "id": "kalorifer-ksk-3-5"
           },
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "КСк 2-9",
+            "id": "kalorifer-ksk-2-9"
           },
           {
             "kind": "product",
-            "name": "КСк 4-8",
-            "id": "kalorifer-ksk-4-8"
+            "name": "КСк 4-5",
+            "id": "kalorifer-ksk-4-5"
           },
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КПСк 4-12",
+            "id": "kalorifer-kpsk-4-12"
           },
           {
             "kind": "product",
-            "name": "ТВВ 312",
-            "id": "kalorifer-tvv-312"
+            "name": "ТВВ 410",
+            "id": "kalorifer-tvv-410"
           },
           {
             "kind": "product",
-            "name": "КФБ-10 А3 М",
-            "id": "kalorifer-kfb-10-a3"
+            "name": "КФБ-11 А3 М",
+            "id": "kalorifer-kfb-11-a3"
           },
           {
             "kind": "product",
-            "name": "КФБ-10 А4 М",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-11 А4 М",
+            "id": "kalorifer-kfb-11-a4"
           },
           {
             "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
+            "name": "КФБ-12 А4 П",
+            "id": "kalorifer-kfb-12-a4"
           }
         ],
         "deliveries": [
@@ -10799,48 +10698,43 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 3-5",
+                "id": "kalorifer-ksk-3-5"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "КСк 2-9",
+                "id": "kalorifer-ksk-2-9"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
+                "name": "КСк 4-5",
+                "id": "kalorifer-ksk-4-5"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КПСк 4-12",
+                "id": "kalorifer-kpsk-4-12"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 312",
-                "id": "kalorifer-tvv-312"
+                "name": "ТВВ 410",
+                "id": "kalorifer-tvv-410"
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А3 М",
-                "id": "kalorifer-kfb-10-a3"
+                "name": "КФБ-11 А3 М",
+                "id": "kalorifer-kfb-11-a3"
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 М",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-11 А4 М",
+                "id": "kalorifer-kfb-11-a4"
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
+                "name": "КФБ-12 А4 П",
+                "id": "kalorifer-kfb-12-a4"
               }
             ]
           }
@@ -10856,8 +10750,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КПСк 3-11",
+            "id": "kalorifer-kpsk-3-11"
           }
         ],
         "deliveries": [
@@ -10866,8 +10760,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КПСк 3-11",
+                "id": "kalorifer-kpsk-3-11"
               }
             ]
           }
@@ -10883,8 +10777,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-10 А4 М",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-12 А3 П",
+            "id": "kalorifer-kfb-12-a3"
           }
         ],
         "deliveries": [
@@ -10893,109 +10787,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 М",
-                "id": "kalorifer-kfb-10-a4"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «СибТепло»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 3-5",
-            "id": "kalorifer-ksk-3-5"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2018,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 3-5",
-                "id": "kalorifer-ksk-3-5"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Сибтрансмет»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2012,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Строительный полигон»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-4",
-            "id": "kalorifer-ksk-4-4"
-          },
-          {
-            "kind": "product",
-            "name": "КФБ 10 А3",
-            "id": "kalorifer-kfb-10-a3"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-4",
-                "id": "kalorifer-ksk-4-4"
-              },
-              {
-                "kind": "product",
-                "name": "КФБ 10 А3",
-                "id": "kalorifer-kfb-10-a3"
+                "name": "КФБ-12 А3 П",
+                "id": "kalorifer-kfb-12-a3"
               }
             ]
           }
@@ -11011,8 +10804,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КПСк 3-11",
-            "id": "kalorifer-kpsk-3-11"
+            "name": "КПСк 3-12",
+            "id": "kalorifer-kpsk-3-12"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-11",
+            "id": "kalorifer-kpsk-4-11"
           }
         ],
         "deliveries": [
@@ -11021,13 +10819,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КПСк 3-11",
-                "id": "kalorifer-kpsk-3-11"
+                "name": "КПСк 3-12",
+                "id": "kalorifer-kpsk-3-12"
               },
               {
                 "kind": "product",
-                "name": "КПСк 3-11",
-                "id": "kalorifer-kpsk-3-11"
+                "name": "КПСк 4-11",
+                "id": "kalorifer-kpsk-4-11"
               }
             ]
           }
@@ -11071,117 +10869,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Элит Климат»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "ТВВ 306",
-            "id": "kalorifer-tvv-306"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "product",
-                "name": "ТВВ 306",
-                "id": "kalorifer-tvv-306"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Энерготрейд»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2020,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО ТПК «Инвест-Строй»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "ТВВ 409",
-            "id": "kalorifer-tvv-409"
-          },
-          {
-            "kind": "product",
-            "name": "ТВВ 410",
-            "id": "kalorifer-tvv-410"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
-          },
-          {
-            "kind": "product",
-            "name": "КФБ-2 А3 М",
-            "id": "kalorifer-kfb-2-a3"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2010,
-            "products": [
-              {
-                "kind": "product",
-                "name": "ТВВ 409",
-                "id": "kalorifer-tvv-409"
-              },
-              {
-                "kind": "product",
-                "name": "ТВВ 410",
-                "id": "kalorifer-tvv-410"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "КФБ-2 А3 М",
-                "id": "kalorifer-kfb-2-a3"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО ТД «КузнецкЭлектро»",
         "settlement": {
           "name": "Новокузнецк",
@@ -11191,13 +10878,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
+            "name": "СФОЦ-250",
+            "id": "ustanovka-sfotc-250"
           },
           {
             "kind": "product",
@@ -11206,7 +10888,7 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КФБ 8 А4",
+            "name": "КФБ-8 А4 М",
             "id": "kalorifer-kfb-8-a4"
           }
         ],
@@ -11216,13 +10898,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
+                "name": "СФОЦ-250",
+                "id": "ustanovka-sfotc-250"
               },
               {
                 "kind": "product",
@@ -11231,7 +10908,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КФБ 8 А4",
+                "name": "КФБ-8 А4 М",
                 "id": "kalorifer-kfb-8-a4"
               }
             ]
@@ -11355,8 +11032,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КФБ-10 А4 М",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-10 А3 М",
+            "id": "kalorifer-kfb-10-a3"
           }
         ],
         "deliveries": [
@@ -11400,8 +11077,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 М",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-10 А3 М",
+                "id": "kalorifer-kfb-10-a3"
               }
             ]
           }
@@ -11417,8 +11094,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 406",
-            "id": "kalorifer-tvv-406"
+            "name": "ТВВ 407",
+            "id": "kalorifer-tvv-407"
           }
         ],
         "deliveries": [
@@ -11427,8 +11104,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 406",
-                "id": "kalorifer-tvv-406"
+                "name": "ТВВ 407",
+                "id": "kalorifer-tvv-407"
               }
             ]
           }
@@ -11668,8 +11345,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ШУК-40",
-            "id": "shkaf-upravleniia-shuk-40"
+            "name": "ШУК-16",
+            "id": "shkaf-upravleniia-shuk-16"
           },
           {
             "kind": "product",
@@ -11693,8 +11370,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ШУК-40",
-                "id": "shkaf-upravleniia-shuk-40"
+                "name": "ШУК-16",
+                "id": "shkaf-upravleniia-shuk-16"
               },
               {
                 "kind": "product",
@@ -11747,13 +11424,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФОЦ-25",
-            "id": "ustanovka-sfotc-25"
+            "name": "СФОЦ-60",
+            "id": "ustanovka-sfotc-60"
           },
           {
             "kind": "product",
-            "name": "ШУК-25",
-            "id": "shkaf-upravleniia-shuk-25"
+            "name": "ШУК-60",
+            "id": "shkaf-upravleniia-shuk-60"
           }
         ],
         "deliveries": [
@@ -11762,13 +11439,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФОЦ-25",
-                "id": "ustanovka-sfotc-25"
+                "name": "СФОЦ-60",
+                "id": "ustanovka-sfotc-60"
               },
               {
                 "kind": "product",
-                "name": "ШУК-25",
-                "id": "shkaf-upravleniia-shuk-25"
+                "name": "ШУК-60",
+                "id": "shkaf-upravleniia-shuk-60"
               }
             ]
           }
@@ -11950,33 +11627,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «ШПУ»",
-        "settlement": {
-          "name": "Прокопьевск",
-          "slug": "prokopevsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2015,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «Электропром»",
         "settlement": {
           "name": "Прокопьевск",
@@ -11986,7 +11636,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-10 А4 П",
+            "name": "КФБ-10 А4 М",
             "id": "kalorifer-kfb-10-a4"
           }
         ],
@@ -11996,7 +11646,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
+                "name": "КФБ-10 А4 М",
                 "id": "kalorifer-kfb-10-a4"
               }
             ]
@@ -12050,8 +11700,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 4-11",
+            "id": "kalorifer-ksk-4-11"
           }
         ],
         "deliveries": [
@@ -12060,8 +11710,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 4-11",
+                "id": "kalorifer-ksk-4-11"
               }
             ]
           }
@@ -12097,28 +11747,28 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
+            "name": "ТВВ 310",
+            "id": "kalorifer-tvv-310"
           },
           {
             "kind": "product",
-            "name": "ТВВ 311",
-            "id": "kalorifer-tvv-311"
+            "name": "ТВВ 410",
+            "id": "kalorifer-tvv-410"
           },
           {
             "kind": "product",
-            "name": "ТВВ 312",
-            "id": "kalorifer-tvv-312"
-          },
-          {
-            "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           },
           {
             "kind": "product",
             "name": "КП 312",
             "id": "kalorifer-kp-312"
+          },
+          {
+            "kind": "product",
+            "name": "КП 410",
+            "id": "kalorifer-kp-410"
           },
           {
             "kind": "product",
@@ -12146,14 +11796,9 @@ export const generatedRegions = {
             "id": "ustanovka-sfotc-100"
           },
           {
-            "kind": "category",
-            "name": "СТД-300",
-            "href": "/std300-ksk-kpsk"
-          },
-          {
             "kind": "product",
-            "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "СТД-300 (ТВВ4)",
+            "id": "std300-tvv"
           }
         ],
         "deliveries": [
@@ -12182,28 +11827,28 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
+                "name": "ТВВ 310",
+                "id": "kalorifer-tvv-310"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 311",
-                "id": "kalorifer-tvv-311"
+                "name": "ТВВ 410",
+                "id": "kalorifer-tvv-410"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 312",
-                "id": "kalorifer-tvv-312"
-              },
-              {
-                "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               },
               {
                 "kind": "product",
                 "name": "КП 312",
                 "id": "kalorifer-kp-312"
+              },
+              {
+                "kind": "product",
+                "name": "КП 410",
+                "id": "kalorifer-kp-410"
               },
               {
                 "kind": "product",
@@ -12231,14 +11876,9 @@ export const generatedRegions = {
                 "id": "ustanovka-sfotc-100"
               },
               {
-                "kind": "category",
-                "name": "СТД-300",
-                "href": "/std300-ksk-kpsk"
-              },
-              {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "СТД-300 (ТВВ4)",
+                "id": "std300-tvv"
               }
             ]
           }
@@ -12254,13 +11894,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-9",
-            "id": "kalorifer-ksk-3-9"
+            "name": "КСк 3-10",
+            "id": "kalorifer-ksk-3-10"
           },
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 4-9",
+            "id": "kalorifer-ksk-4-9"
           }
         ],
         "deliveries": [
@@ -12269,13 +11909,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-9",
-                "id": "kalorifer-ksk-3-9"
+                "name": "КСк 3-10",
+                "id": "kalorifer-ksk-3-10"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 4-9",
+                "id": "kalorifer-ksk-4-9"
               }
             ]
           }
@@ -12301,8 +11941,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФОЦ-25",
-            "id": "ustanovka-sfotc-25"
+            "name": "СФО-25",
+            "id": "elektrokalorifer-sfo-25"
           }
         ],
         "deliveries": [
@@ -12321,8 +11961,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФОЦ-25",
-                "id": "ustanovka-sfotc-25"
+                "name": "СФО-25",
+                "id": "elektrokalorifer-sfo-25"
               }
             ]
           }
@@ -12375,8 +12015,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 2-10",
+            "id": "kalorifer-ksk-2-10"
           }
         ],
         "deliveries": [
@@ -12385,8 +12025,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 2-10",
+                "id": "kalorifer-ksk-2-10"
               }
             ]
           }
@@ -12434,13 +12074,23 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "КП 412",
+            "id": "kalorifer-kp-412"
           },
           {
             "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
+            "name": "СФОЦ-250",
+            "id": "ustanovka-sfotc-250"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
+          },
+          {
+            "kind": "product",
+            "name": "КП 411",
+            "id": "kalorifer-kp-411"
           }
         ],
         "deliveries": [
@@ -12454,13 +12104,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "КП 412",
+                "id": "kalorifer-kp-412"
               },
               {
                 "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
+                "name": "СФОЦ-250",
+                "id": "ustanovka-sfotc-250"
               }
             ]
           },
@@ -12469,13 +12119,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "КП 411",
+                "id": "kalorifer-kp-411"
               }
             ]
           }
@@ -12523,8 +12173,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 3-11",
+            "id": "kalorifer-ksk-3-11"
           }
         ],
         "deliveries": [
@@ -12538,8 +12188,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 3-11",
+                "id": "kalorifer-ksk-3-11"
               }
             ],
             "note": "спецгабарит"
@@ -12556,7 +12206,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СТД-300 (КПСк)",
+            "name": "СТД-300 (КПСк4)",
             "id": "std300-kpsk"
           }
         ],
@@ -12566,7 +12216,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СТД-300 (КПСк)",
+                "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
               }
             ]
@@ -12746,18 +12396,18 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 4-8",
+            "id": "kalorifer-ksk-4-8"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 308",
+            "id": "kalorifer-tvv-308"
           },
           {
             "kind": "product",
             "name": "ТВВ 408",
             "id": "kalorifer-tvv-408"
-          },
-          {
-            "kind": "product",
-            "name": "ТВВ 410",
-            "id": "kalorifer-tvv-410"
           }
         ],
         "deliveries": [
@@ -12766,18 +12416,18 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 4-8",
+                "id": "kalorifer-ksk-4-8"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 308",
+                "id": "kalorifer-tvv-308"
               },
               {
                 "kind": "product",
                 "name": "ТВВ 408",
                 "id": "kalorifer-tvv-408"
-              },
-              {
-                "kind": "product",
-                "name": "ТВВ 410",
-                "id": "kalorifer-tvv-410"
               }
             ]
           }
@@ -12793,8 +12443,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КП 410",
-            "id": "kalorifer-kp-410"
+            "name": "КП 310",
+            "id": "kalorifer-kp-310"
           }
         ],
         "deliveries": [
@@ -12803,8 +12453,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КП 410",
-                "id": "kalorifer-kp-410"
+                "name": "КП 310",
+                "id": "kalorifer-kp-310"
               }
             ]
           }
@@ -12820,8 +12470,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 309",
-            "id": "kalorifer-tvv-309"
+            "name": "ТВВ 307",
+            "id": "kalorifer-tvv-307"
           },
           {
             "kind": "product",
@@ -12835,8 +12485,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 309",
-                "id": "kalorifer-tvv-309"
+                "name": "ТВВ 307",
+                "id": "kalorifer-tvv-307"
               },
               {
                 "kind": "product",
@@ -12894,102 +12544,6 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФОЦ-40",
-            "id": "ustanovka-sfotc-40"
-          },
-          {
-            "kind": "product",
-            "name": "ШУК-40",
-            "id": "shkaf-upravleniia-shuk-40"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФОЦ-40",
-                "id": "ustanovka-sfotc-40"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-40",
-                "id": "shkaf-upravleniia-shuk-40"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Разрез Пермяковский»",
-        "settlement": {
-          "name": "Каракан",
-          "slug": "karakan",
-          "type": "village"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "ТВВ 411",
-            "id": "kalorifer-tvv-411"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2009,
-            "products": [
-              {
-                "kind": "product",
-                "name": "ТВВ 411",
-                "id": "kalorifer-tvv-411"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ОАО «Завод Гидромаш»",
-        "settlement": {
-          "name": "Кругленькое",
-          "slug": "kruglenkoe",
-          "type": "village"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "ТВВ 410",
-            "id": "kalorifer-tvv-410"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2010,
-            "products": [
-              {
-                "kind": "product",
-                "name": "ТВВ 410",
-                "id": "kalorifer-tvv-410"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Шахта Байкаимская»",
-        "settlement": {
-          "name": "Мохово",
-          "slug": "mohovo",
-          "type": "village"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
-          },
-          {
-            "kind": "product",
             "name": "СФОЦ-60",
             "id": "ustanovka-sfotc-60"
           },
@@ -13001,13 +12555,8 @@ export const generatedRegions = {
         ],
         "deliveries": [
           {
-            "year": 2008,
+            "year": 2017,
             "products": [
-              {
-                "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
-              },
               {
                 "kind": "product",
                 "name": "СФОЦ-60",
@@ -13023,6 +12572,107 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "ООО «Разрез Пермяковский»",
+        "settlement": {
+          "name": "Каракан",
+          "slug": "karakan",
+          "type": "village"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КП 311",
+            "id": "kalorifer-kp-311"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2009,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КП 311",
+                "id": "kalorifer-kp-311"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ОАО «Завод Гидромаш»",
+        "settlement": {
+          "name": "Кругленькое",
+          "slug": "kruglenkoe",
+          "type": "village"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КП 309",
+            "id": "kalorifer-kp-309"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2010,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КП 309",
+                "id": "kalorifer-kp-309"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ООО «Шахта Байкаимская»",
+        "settlement": {
+          "name": "Мохово",
+          "slug": "mohovo",
+          "type": "village"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
+            "name": "СФОЦ-160",
+            "id": "ustanovka-sfotc-160"
+          },
+          {
+            "kind": "product",
+            "name": "ШУК-160",
+            "id": "shkaf-upravleniia-shuk-160"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2008,
+            "products": [
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
+              },
+              {
+                "kind": "product",
+                "name": "СФОЦ-160",
+                "id": "ustanovka-sfotc-160"
+              },
+              {
+                "kind": "product",
+                "name": "ШУК-160",
+                "id": "shkaf-upravleniia-shuk-160"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "ООО «Адамант»",
         "settlement": {
           "name": "Сидорово",
@@ -13032,7 +12682,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СТД-300 (КП)",
+            "name": "СТД-300 (КП3)",
             "id": "std300-kp"
           }
         ],
@@ -13042,7 +12692,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СТД-300 (КП)",
+                "name": "СТД-300 (КП3)",
                 "id": "std300-kp"
               }
             ]
@@ -13059,8 +12709,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 411",
-            "id": "kalorifer-tvv-411"
+            "name": "КФБ-14 А4 М",
+            "id": "kalorifer-kfb-14-a4"
           }
         ],
         "deliveries": [
@@ -13069,8 +12719,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 411",
-                "id": "kalorifer-tvv-411"
+                "name": "КФБ-14 А4 М",
+                "id": "kalorifer-kfb-14-a4"
               }
             ]
           }
@@ -13086,8 +12736,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-1",
-            "id": "kalorifer-ksk-4-1"
+            "name": "КСк 3-1",
+            "id": "kalorifer-ksk-3-1"
           }
         ],
         "deliveries": [
@@ -13096,8 +12746,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-1",
-                "id": "kalorifer-ksk-4-1"
+                "name": "КСк 3-1",
+                "id": "kalorifer-ksk-3-1"
               }
             ]
           }
@@ -13191,6 +12841,11 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 4-95-01 П",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -13427,13 +13082,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФО-25",
+            "id": "elektrokalorifer-sfo-25"
           },
           {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
+            "name": "СФО-40",
+            "id": "elektrokalorifer-sfo-40"
           },
           {
             "kind": "product",
@@ -13447,13 +13102,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФО-25",
+                "id": "elektrokalorifer-sfo-25"
               },
               {
                 "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
+                "name": "СФО-40",
+                "id": "elektrokalorifer-sfo-40"
               },
               {
                 "kind": "product",
@@ -13649,8 +13304,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-160",
-            "id": "elektrokalorifer-sfo-160"
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
           }
         ],
         "deliveries": [
@@ -13659,8 +13314,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-160",
-                "id": "elektrokalorifer-sfo-160"
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
               }
             ]
           }
@@ -13897,6 +13552,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "category",
+            "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
             "name": "АВО 7-165-01 В",
             "href": "/avo-tvv-kp"
           },
@@ -13915,6 +13575,11 @@ export const generatedRegions = {
           {
             "year": 2017,
             "products": [
+              {
+                "kind": "category",
+                "name": "АВО ХЛ",
+                "href": "/avo-tvv-kp"
+              },
               {
                 "kind": "category",
                 "name": "АВО 7-165-01 В",
@@ -14450,6 +14115,11 @@ export const generatedRegions = {
             "kind": "category",
             "name": "АВО ХЛ",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 4-95-01 П",
+            "href": "/avo-tvv-kp"
           }
         ],
         "deliveries": [
@@ -14531,6 +14201,11 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 3-55-01 В",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -14804,8 +14479,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 4-9",
+            "id": "kalorifer-ksk-4-9"
           }
         ],
         "deliveries": [
@@ -14824,8 +14499,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 4-9",
+                "id": "kalorifer-ksk-4-9"
               }
             ]
           }
@@ -14888,8 +14563,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ШУК-250",
-            "id": "shkaf-upravleniia-shuk-250"
+            "name": "ШУК-160",
+            "id": "shkaf-upravleniia-shuk-160"
           },
           {
             "kind": "product",
@@ -14913,8 +14588,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ШУК-250",
-                "id": "shkaf-upravleniia-shuk-250"
+                "name": "ШУК-160",
+                "id": "shkaf-upravleniia-shuk-160"
               },
               {
                 "kind": "product",
@@ -14984,11 +14659,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "АО 2-3 (КСк3)",
             "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -14999,11 +14669,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
               }
             ]
           }
@@ -15055,6 +14720,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "СФО",
+            "href": "/elektrokalorifery"
+          },
+          {
             "kind": "product",
             "name": "СФО-60",
             "id": "elektrokalorifer-sfo-60"
@@ -15064,6 +14734,11 @@ export const generatedRegions = {
           {
             "year": 2015,
             "products": [
+              {
+                "kind": "category",
+                "name": "СФО",
+                "href": "/elektrokalorifery"
+              },
               {
                 "kind": "product",
                 "name": "СФО-60",
@@ -15120,8 +14795,18 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КСк 3-8",
+            "id": "kalorifer-ksk-3-8"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-10",
+            "id": "kalorifer-ksk-3-10"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-11",
+            "id": "kalorifer-ksk-3-11"
           },
           {
             "kind": "product",
@@ -15130,8 +14815,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
           },
           {
             "kind": "product",
@@ -15160,8 +14845,18 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КСк 3-8",
+                "id": "kalorifer-ksk-3-8"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-10",
+                "id": "kalorifer-ksk-3-10"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-11",
+                "id": "kalorifer-ksk-3-11"
               },
               {
                 "kind": "product",
@@ -15170,8 +14865,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
               },
               {
                 "kind": "product",
@@ -15198,33 +14893,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «КрИТ»",
-        "settlement": {
-          "name": "Красноярск",
-          "slug": "krasnoyarsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «МегаВатт»",
         "settlement": {
           "name": "Красноярск",
@@ -15232,16 +14900,6 @@ export const generatedRegions = {
           "type": "city"
         },
         "products": [
-          {
-            "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
-          },
           {
             "kind": "product",
             "name": "ШУК-40",
@@ -15267,16 +14925,6 @@ export const generatedRegions = {
           {
             "year": 2020,
             "products": [
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
-              },
               {
                 "kind": "product",
                 "name": "ШУК-40",
@@ -15316,8 +14964,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "АО 2-25 (КПСк4)",
-            "id": "agregat-ao2-25-ksk4-vozdushniy-parovoy"
+            "name": "АО 2-25 (КПСк3)",
+            "id": "agregat-ao2-25-ksk3-vozdushniy-parovoy"
           }
         ],
         "deliveries": [
@@ -15331,45 +14979,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "АО 2-25 (КПСк4)",
-                "id": "agregat-ao2-25-ksk4-vozdushniy-parovoy"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Премьер»",
-        "settlement": {
-          "name": "Красноярск",
-          "slug": "krasnoyarsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СФОЦ",
-            "href": "/teploventilyatory"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-40",
-            "id": "ustanovka-sfotc-40"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2013,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФОЦ",
-                "href": "/teploventilyatory"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-40",
-                "id": "ustanovka-sfotc-40"
+                "name": "АО 2-25 (КПСк3)",
+                "id": "agregat-ao2-25-ksk3-vozdushniy-parovoy"
               }
             ]
           }
@@ -15486,33 +15097,23 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
-          },
-          {
-            "kind": "product",
             "name": "КСк 3-7",
             "id": "kalorifer-ksk-3-7"
           },
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 4-6",
+            "id": "kalorifer-ksk-4-6"
           },
           {
             "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
+            "name": "КПСк 4-6",
+            "id": "kalorifer-kpsk-4-6"
           },
           {
             "kind": "product",
-            "name": "КПСк 4-12",
-            "id": "kalorifer-kpsk-4-12"
+            "name": "КПСк 4-7",
+            "id": "kalorifer-kpsk-4-7"
           },
           {
             "kind": "product",
@@ -15528,6 +15129,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КП 410",
             "id": "kalorifer-kp-410"
+          },
+          {
+            "kind": "product",
+            "name": "КП 412",
+            "id": "kalorifer-kp-412"
           },
           {
             "kind": "product",
@@ -15550,19 +15156,18 @@ export const generatedRegions = {
             "id": "kalorifer-kfb-9-a4"
           },
           {
-            "kind": "product",
-            "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "kind": "text",
+            "name": "КФБ-11 А2 М"
           },
           {
             "kind": "product",
-            "name": "КФБ-11 А4 М",
-            "id": "kalorifer-kfb-11-a4"
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
           },
           {
             "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
+            "name": "АО 2-25 (КСк4)",
+            "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
           }
         ],
         "deliveries": [
@@ -15571,33 +15176,23 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
-              },
-              {
-                "kind": "product",
                 "name": "КСк 3-7",
                 "id": "kalorifer-ksk-3-7"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 4-6",
+                "id": "kalorifer-ksk-4-6"
               },
               {
                 "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
+                "name": "КПСк 4-6",
+                "id": "kalorifer-kpsk-4-6"
               },
               {
                 "kind": "product",
-                "name": "КПСк 4-12",
-                "id": "kalorifer-kpsk-4-12"
+                "name": "КПСк 4-7",
+                "id": "kalorifer-kpsk-4-7"
               },
               {
                 "kind": "product",
@@ -15613,6 +15208,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КП 410",
                 "id": "kalorifer-kp-410"
+              },
+              {
+                "kind": "product",
+                "name": "КП 412",
+                "id": "kalorifer-kp-412"
               },
               {
                 "kind": "product",
@@ -15636,18 +15236,22 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-10 А3 П",
+                "id": "kalorifer-kfb-10-a3"
+              },
+              {
+                "kind": "text",
+                "name": "КФБ-11 А2 М"
               },
               {
                 "kind": "product",
-                "name": "КФБ-11 А4 М",
-                "id": "kalorifer-kfb-11-a4"
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
               },
               {
                 "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
+                "name": "АО 2-25 (КСк4)",
+                "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
               }
             ]
           }
@@ -15668,13 +15272,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 406",
-            "id": "kalorifer-tvv-406"
+            "name": "ТВВ 306",
+            "id": "kalorifer-tvv-306"
           },
           {
             "kind": "product",
-            "name": "ТВВ 407",
-            "id": "kalorifer-tvv-407"
+            "name": "ТВВ 307",
+            "id": "kalorifer-tvv-307"
           },
           {
             "kind": "product",
@@ -15693,13 +15297,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 406",
-                "id": "kalorifer-tvv-406"
+                "name": "ТВВ 306",
+                "id": "kalorifer-tvv-306"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 407",
-                "id": "kalorifer-tvv-407"
+                "name": "ТВВ 307",
+                "id": "kalorifer-tvv-307"
               },
               {
                 "kind": "product",
@@ -15757,13 +15361,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
           },
           {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
+            "kind": "category",
+            "name": "СФОЦ",
+            "href": "/teploventilyatory"
           },
           {
             "kind": "product",
@@ -15782,13 +15386,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
               },
               {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
+                "kind": "category",
+                "name": "СФОЦ",
+                "href": "/teploventilyatory"
               },
               {
                 "kind": "product",
@@ -15799,207 +15403,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Спецпроект»",
-        "settlement": {
-          "name": "Красноярск",
-          "slug": "krasnoyarsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СФО",
-            "href": "/elektrokalorifery"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2022,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФО",
-                "href": "/elektrokalorifery"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «СПО» ",
-        "settlement": {
-          "name": "Красноярск",
-          "slug": "krasnoyarsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-6",
-            "id": "kalorifer-ksk-4-6"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 4-6",
-            "id": "kalorifer-kpsk-4-6"
-          },
-          {
-            "kind": "product",
-            "name": "КФБ-10 А3 М",
-            "id": "kalorifer-kfb-10-a3"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-8",
-            "id": "kalorifer-ksk-4-8"
-          },
-          {
-            "kind": "product",
-            "name": "АО 2-25 (КСк4)",
-            "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 4-12",
-            "id": "kalorifer-kpsk-4-12"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2015,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-6",
-                "id": "kalorifer-ksk-4-6"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 4-6",
-                "id": "kalorifer-kpsk-4-6"
-              },
-              {
-                "kind": "product",
-                "name": "КФБ-10 А3 М",
-                "id": "kalorifer-kfb-10-a3"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
-              },
-              {
-                "kind": "product",
-                "name": "АО 2-25 (КСк4)",
-                "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 4-12",
-                "id": "kalorifer-kpsk-4-12"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «С-Трейдинг»",
-        "settlement": {
-          "name": "Красноярск",
-          "slug": "krasnoyarsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 3-8",
-            "id": "kalorifer-ksk-3-8"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-8",
-            "id": "kalorifer-ksk-4-8"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-6",
-            "id": "kalorifer-ksk-4-6"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2019,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 3-8",
-                "id": "kalorifer-ksk-3-8"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-6",
-                "id": "kalorifer-ksk-4-6"
               }
             ]
           }
@@ -16052,8 +15455,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-9 А4 М",
-            "id": "kalorifer-kfb-9-a4"
+            "name": "КФБ-9 А3 П",
+            "id": "kalorifer-kfb-9-a3"
           }
         ],
         "deliveries": [
@@ -16062,8 +15465,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-9 А4 М",
-                "id": "kalorifer-kfb-9-a4"
+                "name": "КФБ-9 А3 П",
+                "id": "kalorifer-kfb-9-a3"
               }
             ]
           }
@@ -16079,8 +15482,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 311",
-            "id": "kalorifer-tvv-311"
+            "name": "ТВВ 312",
+            "id": "kalorifer-tvv-312"
           }
         ],
         "deliveries": [
@@ -16089,55 +15492,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 311",
-                "id": "kalorifer-tvv-311"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «ТД ППК»",
-        "settlement": {
-          "name": "Красноярск",
-          "slug": "krasnoyarsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
-          },
-          {
-            "kind": "category",
-            "name": "ШУК",
-            "href": "/shkafy-upravleniya"
-          },
-          {
-            "kind": "product",
-            "name": "ШУК-250",
-            "id": "shkaf-upravleniia-shuk-250"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2018,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
-              },
-              {
-                "kind": "category",
-                "name": "ШУК",
-                "href": "/shkafy-upravleniya"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-250",
-                "id": "shkaf-upravleniia-shuk-250"
+                "name": "ТВВ 312",
+                "id": "kalorifer-tvv-312"
               }
             ]
           }
@@ -16153,17 +15509,12 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
-          },
-          {
-            "kind": "category",
-            "name": "АО 2-10",
-            "href": "/ao2-ksk-kpsk"
+            "name": "АО 2-10 (КСк4)",
+            "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
           },
           {
             "kind": "product",
-            "name": "КФБ 8 А4",
+            "name": "КФБ-8 А4 М",
             "id": "kalorifer-kfb-8-a4"
           }
         ],
@@ -16173,17 +15524,12 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
-              },
-              {
-                "kind": "category",
-                "name": "АО 2-10",
-                "href": "/ao2-ksk-kpsk"
+                "name": "АО 2-10 (КСк4)",
+                "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
               },
               {
                 "kind": "product",
-                "name": "КФБ 8 А4",
+                "name": "КФБ-8 А4 М",
                 "id": "kalorifer-kfb-8-a4"
               }
             ]
@@ -16199,9 +15545,9 @@ export const generatedRegions = {
         },
         "products": [
           {
-            "kind": "category",
-            "name": "АО 2-4",
-            "href": "/ao2-ksk-kpsk"
+            "kind": "product",
+            "name": "АО 2-4 (КСк3)",
+            "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
           }
         ],
         "deliveries": [
@@ -16209,9 +15555,9 @@ export const generatedRegions = {
             "year": 2017,
             "products": [
               {
-                "kind": "category",
-                "name": "АО 2-4",
-                "href": "/ao2-ksk-kpsk"
+                "kind": "product",
+                "name": "АО 2-4 (КСк3)",
+                "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
               }
             ]
           }
@@ -16245,33 +15591,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Торговый проект»",
-        "settlement": {
-          "name": "Красноярск",
-          "slug": "krasnoyarsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2026,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «Тяжмашэлектросервис»",
         "settlement": {
           "name": "Красноярск",
@@ -16281,8 +15600,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-10 А3 М",
-            "id": "kalorifer-kfb-10-a3"
+            "name": "КФБ-13 А3 М",
+            "id": "kalorifer-kfb-13-a3"
           }
         ],
         "deliveries": [
@@ -16291,45 +15610,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-10 А3 М",
-                "id": "kalorifer-kfb-10-a3"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Электромашина»",
-        "settlement": {
-          "name": "Красноярск",
-          "slug": "krasnoyarsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2023,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
+                "name": "КФБ-13 А3 М",
+                "id": "kalorifer-kfb-13-a3"
               }
             ]
           }
@@ -16345,8 +15627,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 410",
-            "id": "kalorifer-tvv-410"
+            "name": "ТВВ 310",
+            "id": "kalorifer-tvv-310"
           },
           {
             "kind": "product",
@@ -16360,50 +15642,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 410",
-                "id": "kalorifer-tvv-410"
+                "name": "ТВВ 310",
+                "id": "kalorifer-tvv-310"
               },
               {
                 "kind": "product",
                 "name": "КСк 4-4",
                 "id": "kalorifer-ksk-4-4"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Ярсиб»",
-        "settlement": {
-          "name": "Красноярск",
-          "slug": "krasnoyarsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 3-12",
-            "id": "kalorifer-ksk-3-12"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 3-12",
-            "id": "kalorifer-kpsk-3-12"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2019,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 3-12",
-                "id": "kalorifer-ksk-3-12"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 3-12",
-                "id": "kalorifer-kpsk-3-12"
               }
             ]
           }
@@ -16424,8 +15669,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФОЦ-60",
-            "id": "ustanovka-sfotc-60"
+            "name": "СФОЦ-100",
+            "id": "ustanovka-sfotc-100"
           }
         ],
         "deliveries": [
@@ -16439,8 +15684,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФОЦ-60",
-                "id": "ustanovka-sfotc-60"
+                "name": "СФОЦ-100",
+                "id": "ustanovka-sfotc-100"
               }
             ]
           }
@@ -16662,7 +15907,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «ТПС» ",
+        "name": "ООО «ТПС»",
         "settlement": {
           "name": "Шарыпово",
           "slug": "sharypovo",
@@ -16799,8 +16044,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-8",
-            "id": "kalorifer-ksk-4-8"
+            "name": "КСк 3-10",
+            "id": "kalorifer-ksk-3-10"
           },
           {
             "kind": "product",
@@ -16809,13 +16054,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "ТВВ 311",
+            "id": "kalorifer-tvv-311"
           },
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "ТВВ 312",
+            "id": "kalorifer-tvv-312"
           }
         ],
         "deliveries": [
@@ -16824,8 +16069,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
+                "name": "КСк 3-10",
+                "id": "kalorifer-ksk-3-10"
               },
               {
                 "kind": "product",
@@ -16834,13 +16079,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "ТВВ 311",
+                "id": "kalorifer-tvv-311"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "ТВВ 312",
+                "id": "kalorifer-tvv-312"
               }
             ]
           }
@@ -17349,7 +16594,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-7 А4",
+            "name": "КФБ-7 А4 П",
             "id": "kalorifer-kfb-7-a4"
           }
         ],
@@ -17359,7 +16604,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-7 А4",
+                "name": "КФБ-7 А4 П",
                 "id": "kalorifer-kfb-7-a4"
               }
             ]
@@ -17405,6 +16650,11 @@ export const generatedRegions = {
             "kind": "category",
             "name": "АВО ХЛ",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО (КПВУ 1163х1163_4)",
+            "href": "/avo-tvv-kp"
           }
         ],
         "deliveries": [
@@ -17435,9 +16685,9 @@ export const generatedRegions = {
         },
         "products": [
           {
-            "kind": "category",
-            "name": "СТД-300",
-            "href": "/std300-ksk-kpsk"
+            "kind": "product",
+            "name": "СТД-300 (КПСк3)",
+            "id": "std300-kpsk"
           }
         ],
         "deliveries": [
@@ -17445,9 +16695,9 @@ export const generatedRegions = {
             "year": 2022,
             "products": [
               {
-                "kind": "category",
-                "name": "СТД-300",
-                "href": "/std300-ksk-kpsk"
+                "kind": "product",
+                "name": "СТД-300 (КПСк3)",
+                "id": "std300-kpsk"
               }
             ]
           }
@@ -17463,7 +16713,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ 5 А4",
+            "name": "КФБ-5 А4 П",
             "id": "kalorifer-kfb-5-a4"
           }
         ],
@@ -17473,7 +16723,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ 5 А4",
+                "name": "КФБ-5 А4 П",
                 "id": "kalorifer-kfb-5-a4"
               }
             ]
@@ -17572,6 +16822,11 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 7-165-01 В",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -17805,12 +17060,12 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ 6 А3",
+            "name": "КФБ-6 А3 М",
             "id": "kalorifer-kfb-6-a3"
           },
           {
             "kind": "product",
-            "name": "КФБ 2 А3",
+            "name": "КФБ-2 А3 М",
             "id": "kalorifer-kfb-2-a3"
           }
         ],
@@ -17820,12 +17075,12 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ 6 А3",
+                "name": "КФБ-6 А3 М",
                 "id": "kalorifer-kfb-6-a3"
               },
               {
                 "kind": "product",
-                "name": "КФБ 2 А3",
+                "name": "КФБ-2 А3 М",
                 "id": "kalorifer-kfb-2-a3"
               }
             ]
@@ -18200,13 +17455,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 4-9",
+            "id": "kalorifer-ksk-4-9"
           },
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КСк 4-11",
+            "id": "kalorifer-ksk-4-11"
           }
         ],
         "deliveries": [
@@ -18220,13 +17475,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 4-9",
+                "id": "kalorifer-ksk-4-9"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КСк 4-11",
+                "id": "kalorifer-ksk-4-11"
               }
             ]
           }
@@ -18247,8 +17502,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
+            "name": "КПСк 3-10",
+            "id": "kalorifer-kpsk-3-10"
           }
         ],
         "deliveries": [
@@ -18262,8 +17517,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
+                "name": "КПСк 3-10",
+                "id": "kalorifer-kpsk-3-10"
               }
             ]
           }
@@ -18308,11 +17563,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КФБ-3 А4 М",
             "id": "kalorifer-kfb-3-a4"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
           }
         ],
         "deliveries": [
@@ -18323,11 +17573,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КФБ-3 А4 М",
                 "id": "kalorifer-kfb-3-a4"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
               }
             ]
           }
@@ -18353,8 +17598,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
           }
         ],
         "deliveries": [
@@ -18373,8 +17618,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
               }
             ]
           }
@@ -18472,7 +17717,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «СФС-Строй»",
+        "name": "ООО «СЭТ Строительное Оборудование»",
         "settlement": {
           "name": "Санкт-Петербург",
           "slug": "sankt-peterburg",
@@ -18486,38 +17731,6 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2019,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФО",
-                "href": "/elektrokalorifery"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «СЭТ Строительное Оборудование»",
-        "settlement": {
-          "name": "Санкт-Петербург",
-          "slug": "sankt-peterburg",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
             "name": "СФО-160",
             "id": "elektrokalorifer-sfo-160"
           }
@@ -18527,36 +17740,14 @@ export const generatedRegions = {
             "year": 2017,
             "products": [
               {
+                "kind": "category",
+                "name": "СФО",
+                "href": "/elektrokalorifery"
+              },
+              {
                 "kind": "product",
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «ТИД»",
-        "settlement": {
-          "name": "Санкт-Петербург",
-          "slug": "sankt-peterburg",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2020,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
               }
             ]
           }
@@ -18574,11 +17765,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 2-1",
             "id": "kalorifer-ksk-2-1"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
           }
         ],
         "deliveries": [
@@ -18589,11 +17775,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
               }
             ]
           }
@@ -18711,13 +17892,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 411",
-            "id": "kalorifer-tvv-411"
+            "name": "ТВВ 311",
+            "id": "kalorifer-tvv-311"
           },
           {
             "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "ТВВ 312",
+            "id": "kalorifer-tvv-312"
           },
           {
             "kind": "product",
@@ -18731,45 +17912,18 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 411",
-                "id": "kalorifer-tvv-411"
+                "name": "ТВВ 311",
+                "id": "kalorifer-tvv-311"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "ТВВ 312",
+                "id": "kalorifer-tvv-312"
               },
               {
                 "kind": "product",
                 "name": "КФБ-11 А3 М",
                 "id": "kalorifer-kfb-11-a3"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Энергия-ДВ»",
-        "settlement": {
-          "name": "Санкт-Петербург",
-          "slug": "sankt-peterburg",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-160",
-            "id": "elektrokalorifer-sfo-160"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2024,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-160",
-                "id": "elektrokalorifer-sfo-160"
               }
             ]
           }
@@ -18790,8 +17944,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
+            "name": "СФОЦ-60",
+            "id": "ustanovka-sfotc-60"
           }
         ],
         "deliveries": [
@@ -18805,8 +17959,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
+                "name": "СФОЦ-60",
+                "id": "ustanovka-sfotc-60"
               }
             ]
           }
@@ -18886,8 +18040,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КФБ 8 А4 М",
-            "id": "kalorifer-kfb-8-a4"
+            "name": "КФБ 7 А4 М",
+            "id": "kalorifer-kfb-7-a4"
           }
         ],
         "deliveries": [
@@ -18906,8 +18060,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КФБ 8 А4 М",
-                "id": "kalorifer-kfb-8-a4"
+                "name": "КФБ 7 А4 М",
+                "id": "kalorifer-kfb-7-a4"
               }
             ]
           }
@@ -19054,7 +18208,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "category",
-            "name": "АВО 7-165-01",
+            "name": "АВО 7-165-01 П",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -19064,7 +18218,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "category",
-                "name": "АВО 7-165-01",
+                "name": "АВО 7-165-01 П",
                 "href": "/avo-tvv-kp"
               }
             ]
@@ -19489,8 +18643,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
           }
         ],
         "deliveries": [
@@ -19499,8 +18653,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
               }
             ]
           }
@@ -19834,11 +18988,6 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          },
-          {
-            "kind": "product",
             "name": "СФО-160",
             "id": "elektrokalorifer-sfo-160"
           }
@@ -19851,11 +19000,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
               },
               {
                 "kind": "product",
@@ -19904,8 +19048,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
+            "name": "СФОЦ-250",
+            "id": "ustanovka-sfotc-250"
           }
         ],
         "deliveries": [
@@ -19914,8 +19058,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
+                "name": "СФОЦ-250",
+                "id": "ustanovka-sfotc-250"
               }
             ]
           }
@@ -19931,8 +19075,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-160",
-            "id": "elektrokalorifer-sfo-160"
+            "name": "СФО-250",
+            "id": "elektrokalorifer-sfo-250"
           },
           {
             "kind": "product",
@@ -19946,8 +19090,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-160",
-                "id": "elektrokalorifer-sfo-160"
+                "name": "СФО-250",
+                "id": "elektrokalorifer-sfo-250"
               },
               {
                 "kind": "product",
@@ -20048,9 +19192,14 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "СФО",
+            "href": "/elektrokalorifery"
+          },
+          {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
+            "name": "СФО-40",
+            "id": "elektrokalorifer-sfo-40"
           }
         ],
         "deliveries": [
@@ -20058,9 +19207,14 @@ export const generatedRegions = {
             "year": 2022,
             "products": [
               {
+                "kind": "category",
+                "name": "СФО",
+                "href": "/elektrokalorifery"
+              },
+              {
                 "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
+                "name": "СФО-40",
+                "id": "elektrokalorifer-sfo-40"
               }
             ]
           }
@@ -20342,8 +19496,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "ТВВ 312",
+            "id": "kalorifer-tvv-312"
           }
         ],
         "deliveries": [
@@ -20352,35 +19506,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Вентинформ»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2018,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
+                "name": "ТВВ 312",
+                "id": "kalorifer-tvv-312"
               }
             ]
           }
@@ -20524,8 +19651,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-10 А4 М",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-10 А3 М",
+            "id": "kalorifer-kfb-10-a3"
           }
         ],
         "deliveries": [
@@ -20534,8 +19661,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 М",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-10 А3 М",
+                "id": "kalorifer-kfb-10-a3"
               }
             ]
           }
@@ -20578,8 +19705,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-12 А4 П",
+            "id": "kalorifer-kfb-12-a4"
           }
         ],
         "deliveries": [
@@ -20588,8 +19715,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-12 А4 П",
+                "id": "kalorifer-kfb-12-a4"
               }
             ]
           }
@@ -20605,8 +19732,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-9",
-            "id": "kalorifer-ksk-4-9"
+            "name": "КСк 4-10",
+            "id": "kalorifer-ksk-4-10"
           }
         ],
         "deliveries": [
@@ -20615,8 +19742,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-9",
-                "id": "kalorifer-ksk-4-9"
+                "name": "КСк 4-10",
+                "id": "kalorifer-ksk-4-10"
               }
             ]
           }
@@ -20644,33 +19771,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КФБ-9 А4 М",
                 "id": "kalorifer-kfb-9-a4"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «НПК «Энергоинфотранс»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-160",
-            "id": "elektrokalorifer-sfo-160"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2021,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-160",
-                "id": "elektrokalorifer-sfo-160"
               }
             ]
           }
@@ -20723,8 +19823,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФОЦ-40",
+            "id": "ustanovka-sfotc-40"
           }
         ],
         "deliveries": [
@@ -20733,8 +19833,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФОЦ-40",
+                "id": "ustanovka-sfotc-40"
               }
             ]
           }
@@ -20832,33 +19932,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Промстрой-Н»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2024,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «Промэлектроника»",
         "settlement": {
           "name": "Москва",
@@ -20868,13 +19941,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-160",
-            "id": "elektrokalorifer-sfo-160"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
+            "name": "СФОЦ-160",
+            "id": "ustanovka-sfotc-160"
           }
         ],
         "deliveries": [
@@ -20883,13 +19951,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-160",
-                "id": "elektrokalorifer-sfo-160"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
+                "name": "СФОЦ-160",
+                "id": "ustanovka-sfotc-160"
               }
             ]
           }
@@ -20917,33 +19980,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 3-8",
                 "id": "kalorifer-ksk-3-8"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «РИК»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2019,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
               }
             ]
           }
@@ -20991,13 +20027,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "КП 412",
+            "id": "kalorifer-kp-412"
           },
           {
             "kind": "product",
-            "name": "КСк 3-8",
-            "id": "kalorifer-ksk-3-8"
+            "name": "КСк 3-7",
+            "id": "kalorifer-ksk-3-7"
           },
           {
             "kind": "product",
@@ -21016,13 +20052,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "КП 412",
+                "id": "kalorifer-kp-412"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-8",
-                "id": "kalorifer-ksk-3-8"
+                "name": "КСк 3-7",
+                "id": "kalorifer-ksk-3-7"
               },
               {
                 "kind": "product",
@@ -21070,18 +20106,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФОЦ-16",
+            "id": "ustanovka-sfotc-16"
           },
           {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
+            "name": "СФОЦ-25",
+            "id": "ustanovka-sfotc-25"
           },
           {
             "kind": "category",
@@ -21110,18 +20141,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФОЦ-16",
+                "id": "ustanovka-sfotc-16"
               },
               {
                 "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
+                "name": "СФОЦ-25",
+                "id": "ustanovka-sfotc-25"
               },
               {
                 "kind": "category",
@@ -21189,18 +20215,18 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КСк 4-11",
+            "id": "kalorifer-ksk-4-11"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 2-11",
+            "id": "kalorifer-ksk-2-11"
           },
           {
             "kind": "product",
             "name": "КПСк 3-11",
             "id": "kalorifer-kpsk-3-11"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
           },
           {
             "kind": "product",
@@ -21219,18 +20245,18 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КСк 4-11",
+                "id": "kalorifer-ksk-4-11"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 2-11",
+                "id": "kalorifer-ksk-2-11"
               },
               {
                 "kind": "product",
                 "name": "КПСк 3-11",
                 "id": "kalorifer-kpsk-3-11"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
               },
               {
                 "kind": "product",
@@ -21256,7 +20282,7 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (КПСк4)",
+            "name": "СТД-300 (КПСк3)",
             "id": "std300-kpsk"
           }
         ],
@@ -21271,7 +20297,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (КПСк4)",
+                "name": "СТД-300 (КПСк3)",
                 "id": "std300-kpsk"
               }
             ]
@@ -21361,134 +20387,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Спецэлектросервис»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СФО",
-            "href": "/elektrokalorifery"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2022,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФО",
-                "href": "/elektrokalorifery"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «СПК»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «СТБ-Тех»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФОЦ-16",
-            "id": "ustanovka-sfotc-16"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2024,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФОЦ-16",
-                "id": "ustanovka-sfotc-16"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «ТД «Альва»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-160",
-            "id": "elektrokalorifer-sfo-160"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2016,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-160",
-                "id": "elektrokalorifer-sfo-160"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «ТД АСМ-Оборудование»",
         "settlement": {
           "name": "Москва",
@@ -21498,8 +20396,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КСк 2-12",
+            "id": "kalorifer-ksk-2-12"
           }
         ],
         "deliveries": [
@@ -21508,8 +20406,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КСк 2-12",
+                "id": "kalorifer-ksk-2-12"
               }
             ]
           }
@@ -21547,33 +20445,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «ТехноПарк-СПО»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
               }
             ]
           }
@@ -21663,7 +20534,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-3 А3 М",
+            "name": "КФБ-3 А3 П",
             "id": "kalorifer-kfb-3-a3"
           },
           {
@@ -21678,7 +20549,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-3 А3 М",
+                "name": "КФБ-3 А3 П",
                 "id": "kalorifer-kfb-3-a3"
               },
               {
@@ -21700,8 +20571,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-10 А3 М",
-            "id": "kalorifer-kfb-10-a3"
+            "name": "КФБ-14 А3 М",
+            "id": "kalorifer-kfb-14-a3"
           }
         ],
         "deliveries": [
@@ -21710,8 +20581,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-10 А3 М",
-                "id": "kalorifer-kfb-10-a3"
+                "name": "КФБ-14 А3 М",
+                "id": "kalorifer-kfb-14-a3"
               }
             ]
           }
@@ -21742,8 +20613,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 3-9",
-            "id": "kalorifer-kpsk-3-9"
+            "name": "КПСк 4-8",
+            "id": "kalorifer-kpsk-4-8"
           }
         ],
         "deliveries": [
@@ -21767,8 +20638,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КПСк 3-9",
-                "id": "kalorifer-kpsk-3-9"
+                "name": "КПСк 4-8",
+                "id": "kalorifer-kpsk-4-8"
               }
             ]
           }
@@ -21784,8 +20655,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 312",
-            "id": "kalorifer-tvv-312"
+            "name": "ТВВ 311",
+            "id": "kalorifer-tvv-311"
           }
         ],
         "deliveries": [
@@ -21794,35 +20665,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 312",
-                "id": "kalorifer-tvv-312"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Энергоремонт»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2020,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "ТВВ 311",
+                "id": "kalorifer-tvv-311"
               }
             ]
           }
@@ -21838,8 +20682,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 312",
-            "id": "kalorifer-tvv-312"
+            "name": "КП 312",
+            "id": "kalorifer-kp-312"
           }
         ],
         "deliveries": [
@@ -21848,8 +20692,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 312",
-                "id": "kalorifer-tvv-312"
+                "name": "КП 312",
+                "id": "kalorifer-kp-312"
               }
             ]
           }
@@ -21904,33 +20748,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО ТД «Гросс»",
-        "settlement": {
-          "name": "Москва",
-          "slug": "moskva",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
               }
             ]
           }
@@ -22000,8 +20817,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 2-10",
+            "id": "kalorifer-ksk-2-10"
           }
         ],
         "deliveries": [
@@ -22010,8 +20827,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 2-10",
+                "id": "kalorifer-ksk-2-10"
               }
             ]
           }
@@ -22032,18 +20849,18 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-12",
-            "id": "kalorifer-ksk-3-12"
+            "name": "КПСк 4-11",
+            "id": "kalorifer-kpsk-4-11"
           },
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 3-9",
+            "id": "kalorifer-ksk-3-9"
           },
           {
             "kind": "product",
-            "name": "КСк 4-9",
-            "id": "kalorifer-ksk-4-9"
+            "name": "КСк 4-6",
+            "id": "kalorifer-ksk-4-6"
           }
         ],
         "deliveries": [
@@ -22057,18 +20874,18 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-12",
-                "id": "kalorifer-ksk-3-12"
+                "name": "КПСк 4-11",
+                "id": "kalorifer-kpsk-4-11"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 3-9",
+                "id": "kalorifer-ksk-3-9"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-9",
-                "id": "kalorifer-ksk-4-9"
+                "name": "КСк 4-6",
+                "id": "kalorifer-ksk-4-6"
               }
             ]
           }
@@ -22210,8 +21027,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФО-25",
+            "id": "elektrokalorifer-sfo-25"
           }
         ],
         "deliveries": [
@@ -22225,8 +21042,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФО-25",
+                "id": "elektrokalorifer-sfo-25"
               }
             ]
           }
@@ -22559,7 +21376,7 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (КСк3)",
+            "name": "СТД-300 (КСк4)",
             "id": "std300-ksk"
           }
         ],
@@ -22574,7 +21391,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (КСк3)",
+                "name": "СТД-300 (КСк4)",
                 "id": "std300-ksk"
               }
             ]
@@ -22852,11 +21669,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-100",
             "id": "elektrokalorifer-sfo-100"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -22867,11 +21679,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
               }
             ]
           }
@@ -22892,8 +21699,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-7",
-            "id": "kalorifer-ksk-3-7"
+            "name": "КСк 3-6",
+            "id": "kalorifer-ksk-3-6"
           }
         ],
         "deliveries": [
@@ -22907,8 +21714,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-7",
-                "id": "kalorifer-ksk-3-7"
+                "name": "КСк 3-6",
+                "id": "kalorifer-ksk-3-6"
               }
             ]
           }
@@ -23128,11 +21935,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -23143,11 +21945,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
               }
             ]
           }
@@ -23522,8 +22319,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 4-9",
+            "id": "kalorifer-ksk-4-9"
           }
         ],
         "deliveries": [
@@ -23532,8 +22329,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 4-9",
+                "id": "kalorifer-ksk-4-9"
               }
             ]
           }
@@ -23726,11 +22523,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-40",
             "id": "ustanovka-sfotc-40"
-          },
-          {
-            "kind": "product",
-            "name": "ШУК-40",
-            "id": "shkaf-upravleniia-shuk-40"
           }
         ],
         "deliveries": [
@@ -23751,11 +22543,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-40",
-                "id": "shkaf-upravleniia-shuk-40"
               }
             ]
           }
@@ -23955,6 +22742,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "СФО",
+            "href": "/elektrokalorifery"
+          },
+          {
             "kind": "product",
             "name": "СФО-16",
             "id": "elektrokalorifer-sfo-16"
@@ -23969,6 +22761,11 @@ export const generatedRegions = {
           {
             "year": 2015,
             "products": [
+              {
+                "kind": "category",
+                "name": "СФО",
+                "href": "/elektrokalorifery"
+              },
               {
                 "kind": "product",
                 "name": "СФО-16",
@@ -24019,6 +22816,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "СФОЦ",
+            "href": "/teploventilyatory"
+          },
+          {
             "kind": "product",
             "name": "СФОЦ-16",
             "id": "ustanovka-sfotc-16"
@@ -24033,6 +22835,11 @@ export const generatedRegions = {
           {
             "year": 2010,
             "products": [
+              {
+                "kind": "category",
+                "name": "СФОЦ",
+                "href": "/teploventilyatory"
+              },
               {
                 "kind": "product",
                 "name": "СФОЦ-16",
@@ -24141,85 +22948,28 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 406",
-            "id": "kalorifer-tvv-406"
+            "name": "ТВВ 407",
+            "id": "kalorifer-tvv-407"
           },
           {
             "kind": "product",
-            "name": "ТВВ 407",
-            "id": "kalorifer-tvv-407"
+            "name": "ТВВ 408",
+            "id": "kalorifer-tvv-408"
           }
         ],
         "deliveries": [
           {
             "year": 2019,
             "products": [
-              {
-                "kind": "product",
-                "name": "ТВВ 406",
-                "id": "kalorifer-tvv-406"
-              },
               {
                 "kind": "product",
                 "name": "ТВВ 407",
                 "id": "kalorifer-tvv-407"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «ГлавЭлектроСнаб»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2019,
-            "products": [
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
               },
               {
                 "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "ТВВ 408",
+                "id": "kalorifer-tvv-408"
               }
             ]
           }
@@ -24280,43 +23030,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «ГЭС»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-25",
-            "id": "ustanovka-sfotc-25"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2016,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-25",
-                "id": "ustanovka-sfotc-25"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «Евразия Экспорт»",
         "settlement": {
           "name": "Новосибирск",
@@ -24328,21 +23041,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 3-1",
             "id": "kalorifer-ksk-3-1"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-25",
-            "id": "ustanovka-sfotc-25"
           }
         ],
         "deliveries": [
@@ -24353,48 +23051,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 3-1",
                 "id": "kalorifer-ksk-3-1"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-25",
-                "id": "ustanovka-sfotc-25"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Запсибстрой»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
               }
             ]
           }
@@ -24437,13 +23093,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КПСк 3-12",
-            "id": "kalorifer-kpsk-3-12"
+            "name": "КПСк 4-10",
+            "id": "kalorifer-kpsk-4-10"
           },
           {
             "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
+            "name": "КП 312",
+            "id": "kalorifer-kp-312"
           }
         ],
         "deliveries": [
@@ -24452,13 +23108,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КПСк 3-12",
-                "id": "kalorifer-kpsk-3-12"
+                "name": "КПСк 4-10",
+                "id": "kalorifer-kpsk-4-10"
               },
               {
                 "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
+                "name": "КП 312",
+                "id": "kalorifer-kp-312"
               }
             ]
           }
@@ -24474,8 +23130,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 408",
-            "id": "kalorifer-tvv-408"
+            "name": "ТВВ 409",
+            "id": "kalorifer-tvv-409"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 309",
+            "id": "kalorifer-tvv-309"
           }
         ],
         "deliveries": [
@@ -24484,8 +23145,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 408",
-                "id": "kalorifer-tvv-408"
+                "name": "ТВВ 409",
+                "id": "kalorifer-tvv-409"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 309",
+                "id": "kalorifer-tvv-309"
               }
             ]
           }
@@ -24565,13 +23231,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-9",
-            "id": "kalorifer-ksk-3-9"
+            "name": "КСк 3-5",
+            "id": "kalorifer-ksk-3-5"
           },
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 3-8",
+            "id": "kalorifer-ksk-3-8"
           },
           {
             "kind": "product",
@@ -24580,13 +23246,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-8",
-            "id": "kalorifer-ksk-4-8"
+            "name": "КСк 4-5",
+            "id": "kalorifer-ksk-4-5"
           },
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 4-7",
+            "id": "kalorifer-ksk-4-7"
           },
           {
             "kind": "product",
@@ -24595,8 +23261,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 3-6",
-            "id": "kalorifer-kpsk-3-6"
+            "name": "КПСк 3-5",
+            "id": "kalorifer-kpsk-3-5"
           },
           {
             "kind": "product",
@@ -24620,13 +23286,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 406",
-            "id": "kalorifer-tvv-406"
+            "name": "КП 406",
+            "id": "kalorifer-kp-406"
           },
           {
             "kind": "product",
-            "name": "ТВВ 407",
-            "id": "kalorifer-tvv-407"
+            "name": "КП 407",
+            "id": "kalorifer-kp-407"
           },
           {
             "kind": "product",
@@ -24660,13 +23326,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-9",
-                "id": "kalorifer-ksk-3-9"
+                "name": "КСк 3-5",
+                "id": "kalorifer-ksk-3-5"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 3-8",
+                "id": "kalorifer-ksk-3-8"
               },
               {
                 "kind": "product",
@@ -24675,13 +23341,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
+                "name": "КСк 4-5",
+                "id": "kalorifer-ksk-4-5"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 4-7",
+                "id": "kalorifer-ksk-4-7"
               },
               {
                 "kind": "product",
@@ -24690,8 +23356,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КПСк 3-6",
-                "id": "kalorifer-kpsk-3-6"
+                "name": "КПСк 3-5",
+                "id": "kalorifer-kpsk-3-5"
               },
               {
                 "kind": "product",
@@ -24715,13 +23381,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 406",
-                "id": "kalorifer-tvv-406"
+                "name": "КП 406",
+                "id": "kalorifer-kp-406"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 407",
-                "id": "kalorifer-tvv-407"
+                "name": "КП 407",
+                "id": "kalorifer-kp-407"
               },
               {
                 "kind": "product",
@@ -24757,8 +23423,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 4-9",
+            "id": "kalorifer-ksk-4-9"
           }
         ],
         "deliveries": [
@@ -24772,8 +23438,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 4-9",
+                "id": "kalorifer-ksk-4-9"
               }
             ]
           }
@@ -24789,8 +23455,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КСк 3-12",
+            "id": "kalorifer-ksk-3-12"
           }
         ],
         "deliveries": [
@@ -24799,8 +23465,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КСк 3-12",
+                "id": "kalorifer-ksk-3-12"
               }
             ]
           }
@@ -24816,8 +23482,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 2-10",
+            "id": "kalorifer-ksk-2-10"
           }
         ],
         "deliveries": [
@@ -24826,8 +23492,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 2-10",
+                "id": "kalorifer-ksk-2-10"
               }
             ]
           }
@@ -24848,18 +23514,23 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 2-2",
-            "id": "kalorifer-ksk-2-2"
+            "name": "КСк 2-3",
+            "id": "kalorifer-ksk-2-3"
           },
           {
             "kind": "product",
-            "name": "КСк 3-1",
-            "id": "kalorifer-ksk-3-1"
+            "name": "КСк 2-4",
+            "id": "kalorifer-ksk-2-4"
           },
           {
             "kind": "product",
-            "name": "КСк 3-2",
-            "id": "kalorifer-ksk-3-2"
+            "name": "КСк 2-5",
+            "id": "kalorifer-ksk-2-5"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 2-7",
+            "id": "kalorifer-ksk-2-7"
           },
           {
             "kind": "product",
@@ -24868,23 +23539,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-7",
-            "id": "kalorifer-ksk-3-7"
+            "name": "КСк 3-4",
+            "id": "kalorifer-ksk-3-4"
           },
           {
             "kind": "product",
-            "name": "КСк 3-8",
-            "id": "kalorifer-ksk-3-8"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-9",
-            "id": "kalorifer-ksk-3-9"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 4-1",
+            "id": "kalorifer-ksk-4-1"
           },
           {
             "kind": "product",
@@ -24893,8 +23554,18 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-7",
-            "id": "kalorifer-ksk-4-7"
+            "name": "КСк 4-3",
+            "id": "kalorifer-ksk-4-3"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-4",
+            "id": "kalorifer-ksk-4-4"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-5",
+            "id": "kalorifer-ksk-4-5"
           },
           {
             "kind": "product",
@@ -24903,12 +23574,12 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КФБ-8 А3",
+            "name": "КФБ-8 А3 М",
             "id": "kalorifer-kfb-8-a3"
           },
           {
             "kind": "product",
-            "name": "КФБ-11 А3",
+            "name": "КФБ-11 А3 М",
             "id": "kalorifer-kfb-11-a3"
           }
         ],
@@ -24923,18 +23594,23 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 2-2",
-                "id": "kalorifer-ksk-2-2"
+                "name": "КСк 2-3",
+                "id": "kalorifer-ksk-2-3"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-1",
-                "id": "kalorifer-ksk-3-1"
+                "name": "КСк 2-4",
+                "id": "kalorifer-ksk-2-4"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-2",
-                "id": "kalorifer-ksk-3-2"
+                "name": "КСк 2-5",
+                "id": "kalorifer-ksk-2-5"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 2-7",
+                "id": "kalorifer-ksk-2-7"
               },
               {
                 "kind": "product",
@@ -24943,23 +23619,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-7",
-                "id": "kalorifer-ksk-3-7"
+                "name": "КСк 3-4",
+                "id": "kalorifer-ksk-3-4"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-8",
-                "id": "kalorifer-ksk-3-8"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-9",
-                "id": "kalorifer-ksk-3-9"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 4-1",
+                "id": "kalorifer-ksk-4-1"
               },
               {
                 "kind": "product",
@@ -24968,8 +23634,18 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-7",
-                "id": "kalorifer-ksk-4-7"
+                "name": "КСк 4-3",
+                "id": "kalorifer-ksk-4-3"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-4",
+                "id": "kalorifer-ksk-4-4"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-5",
+                "id": "kalorifer-ksk-4-5"
               },
               {
                 "kind": "product",
@@ -24978,12 +23654,12 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КФБ-8 А3",
+                "name": "КФБ-8 А3 М",
                 "id": "kalorifer-kfb-8-a3"
               },
               {
                 "kind": "product",
-                "name": "КФБ-11 А3",
+                "name": "КФБ-11 А3 М",
                 "id": "kalorifer-kfb-11-a3"
               }
             ]
@@ -25000,8 +23676,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КПСк 3-11",
-            "id": "kalorifer-kpsk-3-11"
+            "name": "КПСк 4-11",
+            "id": "kalorifer-kpsk-4-11"
           }
         ],
         "deliveries": [
@@ -25010,8 +23686,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КПСк 3-11",
-                "id": "kalorifer-kpsk-3-11"
+                "name": "КПСк 4-11",
+                "id": "kalorifer-kpsk-4-11"
               }
             ]
           }
@@ -25027,18 +23703,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КСк 2-12",
+            "id": "kalorifer-ksk-2-12"
           },
           {
             "kind": "product",
-            "name": "КПСк 4-9",
-            "id": "kalorifer-kpsk-4-9"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-60",
-            "id": "ustanovka-sfotc-60"
+            "name": "КПСк 3-9",
+            "id": "kalorifer-kpsk-3-9"
           }
         ],
         "deliveries": [
@@ -25047,18 +23718,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КСк 2-12",
+                "id": "kalorifer-ksk-2-12"
               },
               {
                 "kind": "product",
-                "name": "КПСк 4-9",
-                "id": "kalorifer-kpsk-4-9"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-60",
-                "id": "ustanovka-sfotc-60"
+                "name": "КПСк 3-9",
+                "id": "kalorifer-kpsk-3-9"
               }
             ]
           }
@@ -25111,18 +23777,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-9 А4 П",
+            "id": "kalorifer-kfb-9-a4"
           },
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-100",
-            "id": "ustanovka-sfotc-100"
+            "name": "КСк 2-8",
+            "id": "kalorifer-ksk-2-8"
           },
           {
             "kind": "product",
@@ -25136,18 +23797,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-9 А4 П",
+                "id": "kalorifer-kfb-9-a4"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-100",
-                "id": "ustanovka-sfotc-100"
+                "name": "КСк 2-8",
+                "id": "kalorifer-ksk-2-8"
               },
               {
                 "kind": "product",
@@ -25195,8 +23851,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КСк 2-11",
+            "id": "kalorifer-ksk-2-11"
           }
         ],
         "deliveries": [
@@ -25205,8 +23861,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КСк 2-11",
+                "id": "kalorifer-ksk-2-11"
               }
             ]
           }
@@ -25223,6 +23879,11 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 3-55-01 В",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -25259,8 +23920,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "АО 2-3 (КПСк4)",
-            "id": "agregat-ao2-3-ksk4-vozdushniy-parovoy"
+            "name": "АО 2-3 (КПСк3)",
+            "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
           }
         ],
         "deliveries": [
@@ -25274,102 +23935,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "АО 2-3 (КПСк4)",
-                "id": "agregat-ao2-3-ksk4-vozdushniy-parovoy"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «ПромАвтоЛесТорг»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СФО",
-            "href": "/elektrokalorifery"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2015,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФО",
-                "href": "/elektrokalorifery"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Промтехнология»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФОЦ-16",
-            "id": "ustanovka-sfotc-16"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-25",
-            "id": "ustanovka-sfotc-25"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-40",
-            "id": "ustanovka-sfotc-40"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-60",
-            "id": "ustanovka-sfotc-60"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2007,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФОЦ-16",
-                "id": "ustanovka-sfotc-16"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-25",
-                "id": "ustanovka-sfotc-25"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-40",
-                "id": "ustanovka-sfotc-40"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-60",
-                "id": "ustanovka-sfotc-60"
+                "name": "АО 2-3 (КПСк3)",
+                "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
               }
             ]
           }
@@ -25385,18 +23952,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КПСк 3-12",
-            "id": "kalorifer-kpsk-3-12"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-40",
-            "id": "ustanovka-sfotc-40"
-          },
-          {
-            "kind": "product",
-            "name": "ШУК-40",
-            "id": "shkaf-upravleniia-shuk-40"
+            "name": "КПСк 2-12",
+            "id": "kalorifer-kpsk-2-12"
           },
           {
             "kind": "product",
@@ -25410,18 +23967,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КПСк 3-12",
-                "id": "kalorifer-kpsk-3-12"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-40",
-                "id": "ustanovka-sfotc-40"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-40",
-                "id": "shkaf-upravleniia-shuk-40"
+                "name": "КПСк 2-12",
+                "id": "kalorifer-kpsk-2-12"
               },
               {
                 "kind": "product",
@@ -25442,43 +23989,48 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-7",
-            "id": "kalorifer-ksk-3-7"
+            "name": "КСк 2-6",
+            "id": "kalorifer-ksk-2-6"
           },
           {
             "kind": "product",
-            "name": "КСк 3-8",
-            "id": "kalorifer-ksk-3-8"
+            "name": "КПСк 2-8",
+            "id": "kalorifer-kpsk-2-8"
           },
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КПСк 2-11",
+            "id": "kalorifer-kpsk-2-11"
           },
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "КПСк 3-7",
+            "id": "kalorifer-kpsk-3-7"
           },
           {
             "kind": "product",
-            "name": "КСк 3-12",
-            "id": "kalorifer-ksk-3-12"
+            "name": "КПСк 4-6",
+            "id": "kalorifer-kpsk-4-6"
           },
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КПСк 4-7",
+            "id": "kalorifer-kpsk-4-7"
           },
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КПСк 4-8",
+            "id": "kalorifer-kpsk-4-8"
           },
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КП 307",
+            "id": "kalorifer-kp-307"
+          },
+          {
+            "kind": "product",
+            "name": "КП 308",
+            "id": "kalorifer-kp-308"
           }
         ],
         "deliveries": [
@@ -25487,70 +24039,48 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-7",
-                "id": "kalorifer-ksk-3-7"
+                "name": "КСк 2-6",
+                "id": "kalorifer-ksk-2-6"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-8",
-                "id": "kalorifer-ksk-3-8"
+                "name": "КПСк 2-8",
+                "id": "kalorifer-kpsk-2-8"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КПСк 2-11",
+                "id": "kalorifer-kpsk-2-11"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "КПСк 3-7",
+                "id": "kalorifer-kpsk-3-7"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-12",
-                "id": "kalorifer-ksk-3-12"
+                "name": "КПСк 4-6",
+                "id": "kalorifer-kpsk-4-6"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КПСк 4-7",
+                "id": "kalorifer-kpsk-4-7"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КПСк 4-8",
+                "id": "kalorifer-kpsk-4-8"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Регион»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 2-11",
-            "id": "kalorifer-ksk-2-11"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2018,
-            "products": [
+                "name": "КП 307",
+                "id": "kalorifer-kp-307"
+              },
               {
                 "kind": "product",
-                "name": "КСк 2-11",
-                "id": "kalorifer-ksk-2-11"
+                "name": "КП 308",
+                "id": "kalorifer-kp-308"
               }
             ]
           }
@@ -25584,33 +24114,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Росмастер»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 3-1",
-            "id": "kalorifer-ksk-3-1"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2016,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 3-1",
-                "id": "kalorifer-ksk-3-1"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «СГК»",
         "settlement": {
           "name": "Новосибирск",
@@ -25620,8 +24123,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           }
         ],
         "deliveries": [
@@ -25630,35 +24133,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Сибаналитпром»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2021,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               }
             ]
           }
@@ -25674,8 +24150,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 306",
-            "id": "kalorifer-tvv-306"
+            "name": "ТВВ 307",
+            "id": "kalorifer-tvv-307"
           }
         ],
         "deliveries": [
@@ -25684,8 +24160,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 306",
-                "id": "kalorifer-tvv-306"
+                "name": "ТВВ 307",
+                "id": "kalorifer-tvv-307"
               }
             ]
           }
@@ -25701,8 +24177,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "ТВВ 311",
+            "id": "kalorifer-tvv-311"
           }
         ],
         "deliveries": [
@@ -25711,8 +24187,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "ТВВ 311",
+                "id": "kalorifer-tvv-311"
               }
             ]
           }
@@ -25728,78 +24204,63 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-1",
-            "id": "kalorifer-ksk-3-1"
+            "name": "КПСк 2-1",
+            "id": "kalorifer-kpsk-2-1"
           },
           {
             "kind": "product",
-            "name": "КСк 3-6",
-            "id": "kalorifer-ksk-3-6"
+            "name": "КПСк 2-2",
+            "id": "kalorifer-kpsk-2-2"
           },
           {
             "kind": "product",
-            "name": "КСк 3-7",
-            "id": "kalorifer-ksk-3-7"
+            "name": "КПСк 2-3",
+            "id": "kalorifer-kpsk-2-3"
           },
           {
             "kind": "product",
-            "name": "КСк 3-8",
-            "id": "kalorifer-ksk-3-8"
+            "name": "КПСк 3-3",
+            "id": "kalorifer-kpsk-3-3"
           },
           {
             "kind": "product",
-            "name": "КСк 3-9",
-            "id": "kalorifer-ksk-3-9"
+            "name": "КПСк 4-4",
+            "id": "kalorifer-kpsk-4-4"
           },
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "КПСк 4-5",
+            "id": "kalorifer-kpsk-4-5"
           },
           {
             "kind": "product",
-            "name": "КСк 4-4",
-            "id": "kalorifer-ksk-4-4"
+            "name": "КП 307",
+            "id": "kalorifer-kp-307"
           },
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КП 308",
+            "id": "kalorifer-kp-308"
           },
           {
             "kind": "product",
-            "name": "КПСк 4-7",
-            "id": "kalorifer-kpsk-4-7"
+            "name": "КП 409",
+            "id": "kalorifer-kp-409"
           },
           {
             "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "КП 411",
+            "id": "kalorifer-kp-411"
           },
           {
             "kind": "product",
-            "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-10 А3 М",
+            "id": "kalorifer-kfb-10-a3"
           },
           {
             "kind": "product",
-            "name": "СФОЦ-16",
-            "id": "ustanovka-sfotc-16"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-60",
-            "id": "ustanovka-sfotc-60"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
-          },
-          {
-            "kind": "product",
-            "name": "ШУК-16",
-            "id": "shkaf-upravleniia-shuk-16"
+            "name": "ШУК-25",
+            "id": "shkaf-upravleniia-shuk-25"
           }
         ],
         "deliveries": [
@@ -25808,78 +24269,68 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-1",
-                "id": "kalorifer-ksk-3-1"
+                "name": "КПСк 2-1",
+                "id": "kalorifer-kpsk-2-1"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-6",
-                "id": "kalorifer-ksk-3-6"
+                "name": "КПСк 2-2",
+                "id": "kalorifer-kpsk-2-2"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-7",
-                "id": "kalorifer-ksk-3-7"
+                "name": "КПСк 2-3",
+                "id": "kalorifer-kpsk-2-3"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-8",
-                "id": "kalorifer-ksk-3-8"
+                "name": "КПСк 3-3",
+                "id": "kalorifer-kpsk-3-3"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-9",
-                "id": "kalorifer-ksk-3-9"
+                "name": "КПСк 4-4",
+                "id": "kalorifer-kpsk-4-4"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "КПСк 4-5",
+                "id": "kalorifer-kpsk-4-5"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-4",
-                "id": "kalorifer-ksk-4-4"
+                "name": "КП 307",
+                "id": "kalorifer-kp-307"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КП 308",
+                "id": "kalorifer-kp-308"
               },
               {
                 "kind": "product",
-                "name": "КПСк 4-7",
-                "id": "kalorifer-kpsk-4-7"
+                "name": "КП 409",
+                "id": "kalorifer-kp-409"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "КП 411",
+                "id": "kalorifer-kp-411"
               },
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-10 А3 М",
+                "id": "kalorifer-kfb-10-a3"
               },
               {
                 "kind": "product",
-                "name": "СФОЦ-16",
-                "id": "ustanovka-sfotc-16"
+                "name": "КФБ-10 А3 П",
+                "id": "kalorifer-kfb-10-a3"
               },
               {
                 "kind": "product",
-                "name": "СФОЦ-60",
-                "id": "ustanovka-sfotc-60"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-16",
-                "id": "shkaf-upravleniia-shuk-16"
+                "name": "ШУК-25",
+                "id": "shkaf-upravleniia-shuk-25"
               }
             ]
           }
@@ -25895,13 +24346,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 308",
-            "id": "kalorifer-tvv-308"
+            "name": "КП 309",
+            "id": "kalorifer-kp-309"
           },
           {
             "kind": "product",
-            "name": "ТВВ 311",
-            "id": "kalorifer-tvv-311"
+            "name": "КП 408",
+            "id": "kalorifer-kp-408"
           }
         ],
         "deliveries": [
@@ -25910,13 +24361,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 308",
-                "id": "kalorifer-tvv-308"
+                "name": "КП 309",
+                "id": "kalorifer-kp-309"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 311",
-                "id": "kalorifer-tvv-311"
+                "name": "КП 408",
+                "id": "kalorifer-kp-408"
               }
             ]
           }
@@ -25932,8 +24383,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КФБ-14 А4 М",
+            "id": "kalorifer-kfb-14-a4"
           }
         ],
         "deliveries": [
@@ -25942,8 +24393,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КФБ-14 А4 М",
+                "id": "kalorifer-kfb-14-a4"
               }
             ]
           }
@@ -26004,33 +24455,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «СибЭнергоТехСервис»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2015,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «СМИЛС»",
         "settlement": {
           "name": "Новосибирск",
@@ -26040,8 +24464,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-12 А3 П",
+            "id": "kalorifer-kfb-12-a3"
           }
         ],
         "deliveries": [
@@ -26050,8 +24474,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-12 А3 П",
+                "id": "kalorifer-kfb-12-a3"
               }
             ]
           }
@@ -26094,8 +24518,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "КФБ-11 А4 М",
+            "id": "kalorifer-kfb-11-a4"
           }
         ],
         "deliveries": [
@@ -26104,55 +24528,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «СПВ»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СФОЦ",
-            "href": "/teploventilyatory"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-16",
-            "id": "ustanovka-sfotc-16"
-          },
-          {
-            "kind": "product",
-            "name": "ШУК-16",
-            "id": "shkaf-upravleniia-shuk-16"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2023,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФОЦ",
-                "href": "/teploventilyatory"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-16",
-                "id": "ustanovka-sfotc-16"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-16",
-                "id": "shkaf-upravleniia-shuk-16"
+                "name": "КФБ-11 А4 М",
+                "id": "kalorifer-kfb-11-a4"
               }
             ]
           }
@@ -26168,8 +24545,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 2-8",
-            "id": "kalorifer-ksk-2-8"
+            "name": "КПСк 2-7",
+            "id": "kalorifer-kpsk-2-7"
           }
         ],
         "deliveries": [
@@ -26178,8 +24555,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 2-8",
-                "id": "kalorifer-ksk-2-8"
+                "name": "КПСк 2-7",
+                "id": "kalorifer-kpsk-2-7"
               }
             ]
           }
@@ -26195,13 +24572,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-6",
-            "id": "kalorifer-ksk-3-6"
+            "name": "КПСк 3-2",
+            "id": "kalorifer-kpsk-3-2"
           },
           {
             "kind": "product",
-            "name": "КСк 2-3",
-            "id": "kalorifer-ksk-2-3"
+            "name": "КПСк 4-3",
+            "id": "kalorifer-kpsk-4-3"
           }
         ],
         "deliveries": [
@@ -26210,13 +24587,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-6",
-                "id": "kalorifer-ksk-3-6"
+                "name": "КПСк 3-2",
+                "id": "kalorifer-kpsk-3-2"
               },
               {
                 "kind": "product",
-                "name": "КСк 2-3",
-                "id": "kalorifer-ksk-2-3"
+                "name": "КПСк 4-3",
+                "id": "kalorifer-kpsk-4-3"
               }
             ]
           }
@@ -26296,28 +24673,28 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 2-9",
-            "id": "kalorifer-ksk-2-9"
+            "name": "КФБ-6 А3 М",
+            "id": "kalorifer-kfb-6-a3"
           },
           {
             "kind": "product",
-            "name": "КСк 3-9",
-            "id": "kalorifer-ksk-3-9"
+            "name": "КФБ-7 А3 М",
+            "id": "kalorifer-kfb-7-a3"
           },
           {
             "kind": "product",
-            "name": "КСк 4-6",
-            "id": "kalorifer-ksk-4-6"
+            "name": "КФБ-2 А4 М",
+            "id": "kalorifer-kfb-2-a4"
           },
           {
             "kind": "product",
-            "name": "КСк 4-8",
-            "id": "kalorifer-ksk-4-8"
+            "name": "КФБ-4 А4 М",
+            "id": "kalorifer-kfb-4-a4"
           },
           {
-            "kind": "category",
-            "name": "АО 2-20",
-            "href": "/ao2-ksk-kpsk"
+            "kind": "product",
+            "name": "АО 2-20 (КСк4)",
+            "id": "agregat-ao2-20-ksk4-vozdushniy-vodyanoy"
           }
         ],
         "deliveries": [
@@ -26326,55 +24703,28 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 2-9",
-                "id": "kalorifer-ksk-2-9"
+                "name": "КФБ-6 А3 М",
+                "id": "kalorifer-kfb-6-a3"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-9",
-                "id": "kalorifer-ksk-3-9"
+                "name": "КФБ-7 А3 М",
+                "id": "kalorifer-kfb-7-a3"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-6",
-                "id": "kalorifer-ksk-4-6"
+                "name": "КФБ-2 А4 М",
+                "id": "kalorifer-kfb-2-a4"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
+                "name": "КФБ-4 А4 М",
+                "id": "kalorifer-kfb-4-a4"
               },
               {
-                "kind": "category",
-                "name": "АО 2-20",
-                "href": "/ao2-ksk-kpsk"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Строй Ресурс-НК»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-160",
-            "id": "elektrokalorifer-sfo-160"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2018,
-            "products": [
-              {
                 "kind": "product",
-                "name": "СФО-160",
-                "id": "elektrokalorifer-sfo-160"
+                "name": "АО 2-20 (КСк4)",
+                "id": "agregat-ao2-20-ksk4-vozdushniy-vodyanoy"
               }
             ]
           }
@@ -26390,8 +24740,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КПСк 2-10",
+            "id": "kalorifer-kpsk-2-10"
           }
         ],
         "deliveries": [
@@ -26400,8 +24750,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КПСк 2-10",
+                "id": "kalorifer-kpsk-2-10"
               }
             ]
           }
@@ -26449,13 +24799,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ШУК-40",
-            "id": "shkaf-upravleniia-shuk-40"
+            "name": "ШУК-60",
+            "id": "shkaf-upravleniia-shuk-60"
           },
           {
             "kind": "product",
-            "name": "ШУК-100",
-            "id": "shkaf-upravleniia-shuk-100"
+            "name": "ШУК-250",
+            "id": "shkaf-upravleniia-shuk-250"
           }
         ],
         "deliveries": [
@@ -26469,13 +24819,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ШУК-40",
-                "id": "shkaf-upravleniia-shuk-40"
+                "name": "ШУК-60",
+                "id": "shkaf-upravleniia-shuk-60"
               },
               {
                 "kind": "product",
-                "name": "ШУК-100",
-                "id": "shkaf-upravleniia-shuk-100"
+                "name": "ШУК-250",
+                "id": "shkaf-upravleniia-shuk-250"
               }
             ]
           }
@@ -26491,13 +24841,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КФБ-14 А3 М",
+            "id": "kalorifer-kfb-14-a3"
           },
           {
             "kind": "product",
-            "name": "ТВВ 312",
-            "id": "kalorifer-tvv-312"
+            "name": "КФБ-12 А4 М",
+            "id": "kalorifer-kfb-12-a4"
           }
         ],
         "deliveries": [
@@ -26506,40 +24856,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КФБ-14 А3 М",
+                "id": "kalorifer-kfb-14-a3"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 312",
-                "id": "kalorifer-tvv-312"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «ТМС»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-6",
-            "id": "kalorifer-ksk-4-6"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-6",
-                "id": "kalorifer-ksk-4-6"
+                "name": "КФБ-12 А4 М",
+                "id": "kalorifer-kfb-12-a4"
               }
             ]
           }
@@ -26555,28 +24878,23 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КПСк 2-5",
+            "id": "kalorifer-kpsk-2-5"
           },
           {
             "kind": "product",
-            "name": "КСк 4-9",
-            "id": "kalorifer-ksk-4-9"
+            "name": "КПСк 2-9",
+            "id": "kalorifer-kpsk-2-9"
           },
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КПСк 4-2",
+            "id": "kalorifer-kpsk-4-2"
           },
           {
             "kind": "product",
-            "name": "КПСк 4-6",
-            "id": "kalorifer-kpsk-4-6"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-60",
-            "id": "ustanovka-sfotc-60"
+            "name": "КП 311",
+            "id": "kalorifer-kp-311"
           }
         ],
         "deliveries": [
@@ -26585,28 +24903,23 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КПСк 2-5",
+                "id": "kalorifer-kpsk-2-5"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-9",
-                "id": "kalorifer-ksk-4-9"
+                "name": "КПСк 2-9",
+                "id": "kalorifer-kpsk-2-9"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КПСк 4-2",
+                "id": "kalorifer-kpsk-4-2"
               },
               {
                 "kind": "product",
-                "name": "КПСк 4-6",
-                "id": "kalorifer-kpsk-4-6"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-60",
-                "id": "ustanovka-sfotc-60"
+                "name": "КП 311",
+                "id": "kalorifer-kp-311"
               }
             ]
           }
@@ -26659,8 +24972,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-1",
-            "id": "kalorifer-ksk-3-1"
+            "name": "КФБ-4 А3 М",
+            "id": "kalorifer-kfb-4-a3"
           }
         ],
         "deliveries": [
@@ -26669,8 +24982,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-1",
-                "id": "kalorifer-ksk-3-1"
+                "name": "КФБ-4 А3 М",
+                "id": "kalorifer-kfb-4-a3"
               }
             ]
           }
@@ -26686,8 +24999,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КПСк 3-5",
-            "id": "kalorifer-kpsk-3-5"
+            "name": "КПСк 2-6",
+            "id": "kalorifer-kpsk-2-6"
           }
         ],
         "deliveries": [
@@ -26696,8 +25009,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КПСк 3-5",
-                "id": "kalorifer-kpsk-3-5"
+                "name": "КПСк 2-6",
+                "id": "kalorifer-kpsk-2-6"
               }
             ]
           }
@@ -26718,7 +25031,7 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (КП4)",
+            "name": "СТД-300 (КП3)",
             "id": "std300-kp"
           }
         ],
@@ -26733,7 +25046,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (КП4)",
+                "name": "СТД-300 (КП3)",
                 "id": "std300-kp"
               }
             ]
@@ -26750,13 +25063,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "АО 2-4 (КСк3)",
-            "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+            "name": "АО 2-4 (КСк4)",
+            "id": "agregat-ao2-4-ksk4-vozdushniy-vodyanoy"
           },
           {
             "kind": "product",
-            "name": "КП 406",
-            "id": "kalorifer-kp-406"
+            "name": "КП 310",
+            "id": "kalorifer-kp-310"
           }
         ],
         "deliveries": [
@@ -26765,13 +25078,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "АО 2-4 (КСк3)",
-                "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+                "name": "АО 2-4 (КСк4)",
+                "id": "agregat-ao2-4-ksk4-vozdushniy-vodyanoy"
               },
               {
                 "kind": "product",
-                "name": "КП 406",
-                "id": "kalorifer-kp-406"
+                "name": "КП 310",
+                "id": "kalorifer-kp-310"
               }
             ]
           }
@@ -26787,8 +25100,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-10 А4 М",
-            "id": "kalorifer-kfb-10-a4"
+            "name": "КФБ-12 А3 М",
+            "id": "kalorifer-kfb-12-a3"
           }
         ],
         "deliveries": [
@@ -26797,8 +25110,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-10 А4 М",
-                "id": "kalorifer-kfb-10-a4"
+                "name": "КФБ-12 А3 М",
+                "id": "kalorifer-kfb-12-a3"
               }
             ]
           }
@@ -26814,18 +25127,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 311",
-            "id": "kalorifer-tvv-311"
+            "name": "ТВВ 310",
+            "id": "kalorifer-tvv-310"
           },
           {
             "kind": "product",
-            "name": "ТВВ 312",
-            "id": "kalorifer-tvv-312"
-          },
-          {
-            "kind": "product",
-            "name": "ТВВ 408",
-            "id": "kalorifer-tvv-408"
+            "name": "ТВВ 410",
+            "id": "kalorifer-tvv-410"
           }
         ],
         "deliveries": [
@@ -26834,18 +25142,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 311",
-                "id": "kalorifer-tvv-311"
+                "name": "ТВВ 310",
+                "id": "kalorifer-tvv-310"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 312",
-                "id": "kalorifer-tvv-312"
-              },
-              {
-                "kind": "product",
-                "name": "ТВВ 408",
-                "id": "kalorifer-tvv-408"
+                "name": "ТВВ 410",
+                "id": "kalorifer-tvv-410"
               }
             ]
           }
@@ -26861,8 +25164,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КФБ-13 А4 М",
+            "id": "kalorifer-kfb-13-a4"
           }
         ],
         "deliveries": [
@@ -26871,8 +25174,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КФБ-13 А4 М",
+                "id": "kalorifer-kfb-13-a4"
               }
             ]
           }
@@ -26888,13 +25191,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-8",
-            "id": "kalorifer-ksk-3-8"
+            "name": "КФБ-3 А3",
+            "id": "kalorifer-kfb-3-a3"
           },
           {
             "kind": "product",
-            "name": "АО 2-4 (КСк3)",
-            "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+            "name": "АО 2-3 (КСк4)",
+            "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
           },
           {
             "kind": "product",
@@ -26908,13 +25211,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-8",
-                "id": "kalorifer-ksk-3-8"
+                "name": "КФБ-3 А3",
+                "id": "kalorifer-kfb-3-a3"
               },
               {
                 "kind": "product",
-                "name": "АО 2-4 (КСк3)",
-                "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+                "name": "АО 2-3 (КСк4)",
+                "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
               },
               {
                 "kind": "product",
@@ -26935,13 +25238,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-8",
-            "id": "kalorifer-ksk-4-8"
+            "name": "КФБ-5 А3 М",
+            "id": "kalorifer-kfb-5-a3"
           },
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КФБ-3 А4 М",
+            "id": "kalorifer-kfb-3-a4"
           }
         ],
         "deliveries": [
@@ -26950,13 +25253,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
+                "name": "КФБ-5 А3 М",
+                "id": "kalorifer-kfb-5-a3"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КФБ-3 А4 М",
+                "id": "kalorifer-kfb-3-a4"
               }
             ]
           }
@@ -26972,13 +25275,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 411",
-            "id": "kalorifer-tvv-411"
+            "name": "КФБ-13 А3 М",
+            "id": "kalorifer-kfb-13-a3"
           },
           {
             "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "КФБ-13 А4 П",
+            "id": "kalorifer-kfb-13-a4"
           }
         ],
         "deliveries": [
@@ -26987,13 +25290,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 411",
-                "id": "kalorifer-tvv-411"
+                "name": "КФБ-13 А3 М",
+                "id": "kalorifer-kfb-13-a3"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "КФБ-13 А4 П",
+                "id": "kalorifer-kfb-13-a4"
               }
             ]
           }
@@ -27009,18 +25312,18 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КПСк 2-4",
+            "id": "kalorifer-kpsk-2-4"
           },
           {
             "kind": "product",
-            "name": "КСк 4-9",
-            "id": "kalorifer-ksk-4-9"
+            "name": "КФБ-2 А3 П",
+            "id": "kalorifer-kfb-2-a3"
           },
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КФБ-4 А3 П",
+            "id": "kalorifer-kfb-4-a3"
           },
           {
             "kind": "product",
@@ -27034,18 +25337,18 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КПСк 2-4",
+                "id": "kalorifer-kpsk-2-4"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-9",
-                "id": "kalorifer-ksk-4-9"
+                "name": "КФБ-2 А3 П",
+                "id": "kalorifer-kfb-2-a3"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КФБ-4 А3 П",
+                "id": "kalorifer-kfb-4-a3"
               },
               {
                 "kind": "product",
@@ -27585,8 +25888,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           }
         ],
         "deliveries": [
@@ -27595,8 +25898,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               }
             ]
           }
@@ -27612,8 +25915,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 2-10",
+            "id": "kalorifer-ksk-2-10"
           },
           {
             "kind": "category",
@@ -27632,8 +25935,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 2-10",
+                "id": "kalorifer-ksk-2-10"
               },
               {
                 "kind": "category",
@@ -27659,8 +25962,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "КСк 2-11",
+            "id": "kalorifer-ksk-2-11"
           }
         ],
         "deliveries": [
@@ -27669,8 +25972,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "КСк 2-11",
+                "id": "kalorifer-ksk-2-11"
               }
             ]
           }
@@ -27686,8 +25989,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-8",
-            "id": "kalorifer-ksk-4-8"
+            "name": "КСк 4-7",
+            "id": "kalorifer-ksk-4-7"
           }
         ],
         "deliveries": [
@@ -27696,8 +25999,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
+                "name": "КСк 4-7",
+                "id": "kalorifer-ksk-4-7"
               }
             ]
           }
@@ -27863,8 +26166,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-4",
-            "id": "kalorifer-ksk-3-4"
+            "name": "КСк 4-4",
+            "id": "kalorifer-ksk-4-4"
           }
         ],
         "deliveries": [
@@ -27878,8 +26181,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-4",
-                "id": "kalorifer-ksk-3-4"
+                "name": "КСк 4-4",
+                "id": "kalorifer-ksk-4-4"
               }
             ]
           }
@@ -28045,8 +26348,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 312",
-            "id": "kalorifer-tvv-312"
+            "name": "ТВВ 412",
+            "id": "kalorifer-tvv-412"
           }
         ],
         "deliveries": [
@@ -28060,8 +26363,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 312",
-                "id": "kalorifer-tvv-312"
+                "name": "ТВВ 412",
+                "id": "kalorifer-tvv-412"
               }
             ]
           }
@@ -28505,8 +26808,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
           }
         ],
         "deliveries": [
@@ -28515,8 +26818,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
               }
             ]
           }
@@ -28670,8 +26973,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
           }
         ],
         "deliveries": [
@@ -28680,8 +26983,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
               }
             ]
           }
@@ -29114,8 +27417,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КПСк 4-9",
-            "id": "kalorifer-kpsk-4-9"
+            "name": "КПСк 4-10",
+            "id": "kalorifer-kpsk-4-10"
           }
         ],
         "deliveries": [
@@ -29124,8 +27427,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КПСк 4-9",
-                "id": "kalorifer-kpsk-4-9"
+                "name": "КПСк 4-10",
+                "id": "kalorifer-kpsk-4-10"
               }
             ]
           }
@@ -29260,7 +27563,7 @@ export const generatedRegions = {
           },
           {
             "kind": "category",
-            "name": "АВО 7-165-01 П",
+            "name": "АВО 7-165-01 В",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -29275,7 +27578,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "category",
-                "name": "АВО 7-165-01 П",
+                "name": "АВО 7-165-01 В",
                 "href": "/avo-tvv-kp"
               }
             ]
@@ -29292,8 +27595,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
+            "name": "СФОЦ-100",
+            "id": "ustanovka-sfotc-100"
           },
           {
             "kind": "product",
@@ -29307,8 +27610,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
+                "name": "СФОЦ-100",
+                "id": "ustanovka-sfotc-100"
               },
               {
                 "kind": "product",
@@ -29330,6 +27633,11 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 7-165-01 П",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -29463,13 +27771,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
+            "name": "СФО-250",
+            "id": "elektrokalorifer-sfo-250"
           },
           {
             "kind": "product",
-            "name": "ШУК-100",
-            "id": "shkaf-upravleniia-shuk-100"
+            "name": "ШУК-250",
+            "id": "shkaf-upravleniia-shuk-250"
           }
         ],
         "deliveries": [
@@ -29478,13 +27786,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
+                "name": "СФО-250",
+                "id": "elektrokalorifer-sfo-250"
               },
               {
                 "kind": "product",
-                "name": "ШУК-100",
-                "id": "shkaf-upravleniia-shuk-100"
+                "name": "ШУК-250",
+                "id": "shkaf-upravleniia-shuk-250"
               }
             ]
           }
@@ -29601,8 +27909,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
+            "name": "СФОЦ-60",
+            "id": "ustanovka-sfotc-60"
           },
           {
             "kind": "product",
@@ -29626,8 +27934,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
+                "name": "СФОЦ-60",
+                "id": "ustanovka-sfotc-60"
               },
               {
                 "kind": "product",
@@ -29648,8 +27956,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "АО 2-3 (КСк3)",
-            "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
+            "name": "АО 2-3 (КСк4)",
+            "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
           },
           {
             "kind": "product",
@@ -29663,8 +27971,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "АО 2-3 (КСк3)",
-                "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
+                "name": "АО 2-3 (КСк4)",
+                "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
               },
               {
                 "kind": "product",
@@ -29722,8 +28030,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФОЦ-25",
+            "id": "ustanovka-sfotc-25"
           }
         ],
         "deliveries": [
@@ -29732,8 +28040,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФОЦ-25",
+                "id": "ustanovka-sfotc-25"
               }
             ]
           }
@@ -29951,8 +28259,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФОЦ-40",
+            "id": "ustanovka-sfotc-40"
           }
         ],
         "deliveries": [
@@ -29961,8 +28269,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФОЦ-40",
+                "id": "ustanovka-sfotc-40"
               }
             ]
           }
@@ -30047,8 +28355,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
+            "name": "СФОЦ-160",
+            "id": "ustanovka-sfotc-160"
           }
         ],
         "deliveries": [
@@ -30062,8 +28370,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
+                "name": "СФОЦ-160",
+                "id": "ustanovka-sfotc-160"
               }
             ]
           }
@@ -30079,8 +28387,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-8",
-            "id": "kalorifer-ksk-3-8"
+            "name": "КСк 3-10",
+            "id": "kalorifer-ksk-3-10"
           }
         ],
         "deliveries": [
@@ -30089,8 +28397,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-8",
-                "id": "kalorifer-ksk-3-8"
+                "name": "КСк 3-10",
+                "id": "kalorifer-ksk-3-10"
               }
             ]
           }
@@ -30111,8 +28419,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
+            "name": "КПСк 3-10",
+            "id": "kalorifer-kpsk-3-10"
           }
         ],
         "deliveries": [
@@ -30126,8 +28434,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
+                "name": "КПСк 3-10",
+                "id": "kalorifer-kpsk-3-10"
               }
             ]
           }
@@ -30161,33 +28469,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Хитинвест»",
-        "settlement": {
-          "name": "Пермь",
-          "slug": "perm",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2020,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «Энергия»",
         "settlement": {
           "name": "Пермь",
@@ -30197,8 +28478,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 2-10",
+            "id": "kalorifer-ksk-2-10"
           },
           {
             "kind": "category",
@@ -30217,8 +28498,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 2-10",
+                "id": "kalorifer-ksk-2-10"
               },
               {
                 "kind": "category",
@@ -30303,8 +28584,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
+            "name": "СФОЦ-160",
+            "id": "ustanovka-sfotc-160"
           }
         ],
         "deliveries": [
@@ -30318,8 +28599,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
+                "name": "СФОЦ-160",
+                "id": "ustanovka-sfotc-160"
               }
             ]
           }
@@ -30582,11 +28863,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-9",
             "id": "kalorifer-kpsk-4-9"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -30597,11 +28873,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-9",
                 "id": "kalorifer-kpsk-4-9"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
               }
             ]
           }
@@ -31074,8 +29345,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
+            "name": "КСк 3-10",
+            "id": "kalorifer-ksk-3-10"
           },
           {
             "kind": "product",
@@ -31089,8 +29360,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
+                "name": "КСк 3-10",
+                "id": "kalorifer-ksk-3-10"
               },
               {
                 "kind": "product",
@@ -31225,8 +29496,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
+            "name": "СФО-40",
+            "id": "elektrokalorifer-sfo-40"
           }
         ],
         "deliveries": [
@@ -31235,8 +29506,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
+                "name": "СФО-40",
+                "id": "elektrokalorifer-sfo-40"
               }
             ]
           }
@@ -31603,6 +29874,11 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 7-165-01 П",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -31990,12 +30266,17 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (КПСк)",
+            "name": "СТД-300 (КПСк4)",
             "id": "std300-kpsk"
           },
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 3-55-01 В",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -32015,7 +30296,7 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (КПСк)",
+                "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
               },
               {
@@ -32332,8 +30613,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
           },
           {
             "kind": "product",
@@ -32352,8 +30633,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
               },
               {
                 "kind": "product",
@@ -32665,11 +30946,6 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          },
-          {
-            "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
           },
@@ -32747,17 +31023,17 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-160",
             "id": "ustanovka-sfotc-160"
+          },
+          {
+            "kind": "product",
+            "name": "СФОЦ-250",
+            "id": "ustanovka-sfotc-250"
           }
         ],
         "deliveries": [
           {
             "year": 2016,
             "products": [
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
-              },
               {
                 "kind": "product",
                 "name": "СФО-40",
@@ -32837,6 +31113,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-160",
                 "id": "ustanovka-sfotc-160"
+              },
+              {
+                "kind": "product",
+                "name": "СФОЦ-250",
+                "id": "ustanovka-sfotc-250"
               }
             ]
           }
@@ -33013,6 +31294,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-16",
             "id": "elektrokalorifer-sfo-16"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -33028,6 +31314,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ]
           }
@@ -33330,8 +31621,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-16",
-            "id": "elektrokalorifer-sfo-16"
+            "name": "СФО-25",
+            "id": "elektrokalorifer-sfo-25"
           }
         ],
         "deliveries": [
@@ -33340,8 +31631,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-16",
-                "id": "elektrokalorifer-sfo-16"
+                "name": "СФО-25",
+                "id": "elektrokalorifer-sfo-25"
               }
             ]
           }
@@ -33357,8 +31648,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КСк 3-11",
+            "id": "kalorifer-ksk-3-11"
           }
         ],
         "deliveries": [
@@ -33367,8 +31658,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КСк 3-11",
+                "id": "kalorifer-ksk-3-11"
               }
             ]
           }
@@ -33411,8 +31702,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
           },
           {
             "kind": "product",
@@ -33426,8 +31717,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
               },
               {
                 "kind": "product",
@@ -34083,8 +32374,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 2-10",
+            "id": "kalorifer-ksk-2-10"
           }
         ],
         "deliveries": [
@@ -34093,8 +32384,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 2-10",
+                "id": "kalorifer-ksk-2-10"
               }
             ]
           }
@@ -34268,8 +32559,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 410",
-            "id": "kalorifer-tvv-410"
+            "name": "ТВВ 409",
+            "id": "kalorifer-tvv-409"
           },
           {
             "kind": "product",
@@ -34293,8 +32584,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 410",
-                "id": "kalorifer-tvv-410"
+                "name": "ТВВ 409",
+                "id": "kalorifer-tvv-409"
               },
               {
                 "kind": "product",
@@ -34325,8 +32616,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КСк 3-12",
+            "id": "kalorifer-ksk-3-12"
           },
           {
             "kind": "product",
@@ -34350,28 +32641,28 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "ТВВ 406",
+            "id": "kalorifer-tvv-406"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 407",
+            "id": "kalorifer-tvv-407"
+          },
+          {
+            "kind": "product",
             "name": "ТВВ 408",
             "id": "kalorifer-tvv-408"
           },
           {
             "kind": "product",
-            "name": "ТВВ 409",
-            "id": "kalorifer-tvv-409"
+            "name": "КП 411",
+            "id": "kalorifer-kp-411"
           },
           {
             "kind": "product",
-            "name": "ТВВ 410",
-            "id": "kalorifer-tvv-410"
-          },
-          {
-            "kind": "product",
-            "name": "ТВВ 411",
-            "id": "kalorifer-tvv-411"
-          },
-          {
-            "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "КП 412",
+            "id": "kalorifer-kp-412"
           },
           {
             "kind": "product",
@@ -34405,8 +32696,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КСк 3-12",
+                "id": "kalorifer-ksk-3-12"
               },
               {
                 "kind": "product",
@@ -34430,28 +32721,28 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
+                "name": "ТВВ 406",
+                "id": "kalorifer-tvv-406"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 407",
+                "id": "kalorifer-tvv-407"
+              },
+              {
+                "kind": "product",
                 "name": "ТВВ 408",
                 "id": "kalorifer-tvv-408"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 409",
-                "id": "kalorifer-tvv-409"
+                "name": "КП 411",
+                "id": "kalorifer-kp-411"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 410",
-                "id": "kalorifer-tvv-410"
-              },
-              {
-                "kind": "product",
-                "name": "ТВВ 411",
-                "id": "kalorifer-tvv-411"
-              },
-              {
-                "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "КП 412",
+                "id": "kalorifer-kp-412"
               },
               {
                 "kind": "product",
@@ -34502,28 +32793,23 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 406",
-            "id": "kalorifer-tvv-406"
+            "name": "ТВВ 306",
+            "id": "kalorifer-tvv-306"
           },
           {
             "kind": "product",
-            "name": "ТВВ 408",
-            "id": "kalorifer-tvv-408"
+            "name": "ТВВ 307",
+            "id": "kalorifer-tvv-307"
           },
           {
             "kind": "product",
-            "name": "ТВВ 410",
-            "id": "kalorifer-tvv-410"
+            "name": "КП 311",
+            "id": "kalorifer-kp-311"
           },
           {
             "kind": "product",
-            "name": "ТВВ 411",
-            "id": "kalorifer-tvv-411"
-          },
-          {
-            "kind": "product",
-            "name": "ТВВ 412",
-            "id": "kalorifer-tvv-412"
+            "name": "КП 312",
+            "id": "kalorifer-kp-312"
           },
           {
             "kind": "category",
@@ -34572,28 +32858,28 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 406",
-                "id": "kalorifer-tvv-406"
+                "name": "ТВВ 306",
+                "id": "kalorifer-tvv-306"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 408",
-                "id": "kalorifer-tvv-408"
+                "name": "ТВВ 307",
+                "id": "kalorifer-tvv-307"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 410",
-                "id": "kalorifer-tvv-410"
+                "name": "ТВВ 309",
+                "id": "kalorifer-tvv-309"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 411",
-                "id": "kalorifer-tvv-411"
+                "name": "КП 311",
+                "id": "kalorifer-kp-311"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 412",
-                "id": "kalorifer-tvv-412"
+                "name": "КП 312",
+                "id": "kalorifer-kp-312"
               },
               {
                 "kind": "category",
@@ -35077,12 +33363,7 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
-              }
-            ]
-          },
-          {
-            "year": 2019,
-            "products": [
+              },
               {
                 "kind": "category",
                 "name": "АО 2 В",
@@ -35596,8 +33877,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 311",
-            "id": "kalorifer-tvv-311"
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           }
         ],
         "deliveries": [
@@ -35611,8 +33892,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 311",
-                "id": "kalorifer-tvv-311"
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               }
             ]
           }
@@ -35835,6 +34116,11 @@ export const generatedRegions = {
             "kind": "category",
             "name": "АВО ХЛ",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 4-95-01 П",
+            "href": "/avo-tvv-kp"
           }
         ],
         "deliveries": [
@@ -36055,8 +34341,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
           }
         ],
         "deliveries": [
@@ -36070,8 +34356,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               }
             ]
           }
@@ -36168,8 +34454,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КСк 3-12",
+            "id": "kalorifer-ksk-3-12"
           }
         ],
         "deliveries": [
@@ -36178,8 +34464,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КСк 3-12",
+                "id": "kalorifer-ksk-3-12"
               }
             ]
           }
@@ -36252,11 +34538,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -36267,11 +34548,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
               }
             ]
           }
@@ -36469,8 +34745,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КПСк 4-12",
-            "id": "kalorifer-kpsk-4-12"
+            "name": "КПСк 3-12",
+            "id": "kalorifer-kpsk-3-12"
           }
         ],
         "deliveries": [
@@ -36479,8 +34755,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КПСк 4-12",
-                "id": "kalorifer-kpsk-4-12"
+                "name": "КПСк 3-12",
+                "id": "kalorifer-kpsk-3-12"
               }
             ]
           }
@@ -36931,13 +35207,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 3-7",
-            "id": "kalorifer-kpsk-3-7"
+            "name": "КПСк 3-8",
+            "id": "kalorifer-kpsk-3-8"
           },
           {
             "kind": "product",
-            "name": "КПСк 3-8",
-            "id": "kalorifer-kpsk-3-8"
+            "name": "КПСк 4-8",
+            "id": "kalorifer-kpsk-4-8"
           }
         ],
         "deliveries": [
@@ -36971,13 +35247,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КПСк 3-7",
-                "id": "kalorifer-kpsk-3-7"
+                "name": "КПСк 3-8",
+                "id": "kalorifer-kpsk-3-8"
               },
               {
                 "kind": "product",
-                "name": "КПСк 3-8",
-                "id": "kalorifer-kpsk-3-8"
+                "name": "КПСк 4-8",
+                "id": "kalorifer-kpsk-4-8"
               }
             ]
           }
@@ -37223,6 +35499,11 @@ export const generatedRegions = {
             "kind": "category",
             "name": "АВО ХЛ",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 4-95-01 В",
+            "href": "/avo-tvv-kp"
           }
         ],
         "deliveries": [
@@ -37255,11 +35536,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-25",
             "id": "elektrokalorifer-sfo-25"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -37270,11 +35546,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
               }
             ]
           }
@@ -37408,8 +35679,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
           }
         ],
         "deliveries": [
@@ -37418,8 +35689,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
               }
             ]
           }
@@ -37546,8 +35817,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
+            "name": "СФОЦ-100",
+            "id": "ustanovka-sfotc-100"
           }
         ],
         "deliveries": [
@@ -37556,8 +35827,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
+                "name": "СФОЦ-100",
+                "id": "ustanovka-sfotc-100"
               }
             ]
           }
@@ -37694,8 +35965,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
+            "name": "СФОЦ-25",
+            "id": "ustanovka-sfotc-25"
           },
           {
             "kind": "product",
@@ -37709,8 +35980,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
+                "name": "СФОЦ-25",
+                "id": "ustanovka-sfotc-25"
               },
               {
                 "kind": "product",
@@ -37771,53 +36042,6 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "КПСк",
                 "href": "/kalorifery-kpsk"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Оптимапрайс»",
-        "settlement": {
-          "name": "Екатеринбург",
-          "slug": "ekaterinburg",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СФОЦ",
-            "href": "/teploventilyatory"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-160",
-            "id": "ustanovka-sfotc-160"
-          },
-          {
-            "kind": "product",
-            "name": "ШУК-160",
-            "id": "shkaf-upravleniia-shuk-160"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2022,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФОЦ",
-                "href": "/teploventilyatory"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-160",
-                "id": "ustanovka-sfotc-160"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-160",
-                "id": "shkaf-upravleniia-shuk-160"
               }
             ]
           }
@@ -37999,8 +36223,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
           }
         ],
         "deliveries": [
@@ -38019,8 +36243,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               }
             ]
           }
@@ -38147,8 +36371,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 411",
-            "id": "kalorifer-tvv-411"
+            "name": "КП 411",
+            "id": "kalorifer-kp-411"
           }
         ],
         "deliveries": [
@@ -38157,8 +36381,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 411",
-                "id": "kalorifer-tvv-411"
+                "name": "КП 411",
+                "id": "kalorifer-kp-411"
               }
             ]
           }
@@ -38201,8 +36425,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КСк 3-12",
+            "id": "kalorifer-ksk-3-12"
           }
         ],
         "deliveries": [
@@ -38211,8 +36435,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КСк 3-12",
+                "id": "kalorifer-ksk-3-12"
               }
             ]
           }
@@ -38228,8 +36452,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФОЦ-40",
+            "id": "ustanovka-sfotc-40"
           }
         ],
         "deliveries": [
@@ -38238,45 +36462,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Электротовары»",
-        "settlement": {
-          "name": "Екатеринбург",
-          "slug": "ekaterinburg",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФОЦ-160",
-            "id": "ustanovka-sfotc-160"
-          },
-          {
-            "kind": "product",
-            "name": "ШУК-160",
-            "id": "shkaf-upravleniia-shuk-160"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2022,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФОЦ-160",
-                "id": "ustanovka-sfotc-160"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-160",
-                "id": "shkaf-upravleniia-shuk-160"
+                "name": "СФОЦ-40",
+                "id": "ustanovka-sfotc-40"
               }
             ]
           }
@@ -38290,6 +36477,11 @@ export const generatedRegions = {
           "type": "city"
         },
         "products": [
+          {
+            "kind": "category",
+            "name": "СФОЦ",
+            "href": "/teploventilyatory"
+          },
           {
             "kind": "product",
             "name": "СФОЦ-160",
@@ -38310,6 +36502,11 @@ export const generatedRegions = {
           {
             "year": 2023,
             "products": [
+              {
+                "kind": "category",
+                "name": "СФОЦ",
+                "href": "/teploventilyatory"
+              },
               {
                 "kind": "product",
                 "name": "СФОЦ-160",
@@ -38346,33 +36543,6 @@ export const generatedRegions = {
         "deliveries": [
           {
             "year": 2022,
-            "products": [
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО НПО «Рустехно»",
-        "settlement": {
-          "name": "Екатеринбург",
-          "slug": "ekaterinburg",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2024,
             "products": [
               {
                 "kind": "product",
@@ -38447,7 +36617,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ 3 А4",
+            "name": "КФБ 3 А4 П",
             "id": "kalorifer-kfb-3-a4"
           }
         ],
@@ -38457,7 +36627,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ 3 А4",
+                "name": "КФБ 3 А4 П",
                 "id": "kalorifer-kfb-3-a4"
               }
             ]
@@ -38748,9 +36918,9 @@ export const generatedRegions = {
         },
         "products": [
           {
-            "kind": "category",
-            "name": "АО 2-3",
-            "href": "/ao2-ksk-kpsk"
+            "kind": "product",
+            "name": "АО 2-3 (КСк4)",
+            "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
           }
         ],
         "deliveries": [
@@ -38758,9 +36928,9 @@ export const generatedRegions = {
             "year": 2024,
             "products": [
               {
-                "kind": "category",
-                "name": "АО 2-3",
-                "href": "/ao2-ksk-kpsk"
+                "kind": "product",
+                "name": "АО 2-3 (КСк4)",
+                "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
               }
             ]
           }
@@ -38872,6 +37042,11 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 7-165-01 В",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -39674,13 +37849,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "КСк 2-12",
+            "id": "kalorifer-ksk-2-12"
           },
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КПСк 4-11",
+            "id": "kalorifer-kpsk-4-11"
           }
         ],
         "deliveries": [
@@ -39689,13 +37864,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "КСк 2-12",
+                "id": "kalorifer-ksk-2-12"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КПСк 4-11",
+                "id": "kalorifer-kpsk-4-11"
               }
             ]
           }
@@ -39945,8 +38120,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 311",
-            "id": "kalorifer-tvv-311"
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           },
           {
             "kind": "product",
@@ -40005,8 +38180,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 311",
-                "id": "kalorifer-tvv-311"
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               },
               {
                 "kind": "product",
@@ -40047,8 +38222,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-9",
-            "id": "kalorifer-ksk-4-9"
+            "name": "КСк 3-9",
+            "id": "kalorifer-ksk-3-9"
           }
         ],
         "deliveries": [
@@ -40057,8 +38232,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-9",
-                "id": "kalorifer-ksk-4-9"
+                "name": "КСк 3-9",
+                "id": "kalorifer-ksk-3-9"
               }
             ]
           }
@@ -40074,8 +38249,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КСк 3-12",
+            "id": "kalorifer-ksk-3-12"
           }
         ],
         "deliveries": [
@@ -40084,8 +38259,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КСк 3-12",
+                "id": "kalorifer-ksk-3-12"
               }
             ]
           }
@@ -40138,8 +38313,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-6",
-            "id": "kalorifer-ksk-4-6"
+            "name": "КСк 4-7",
+            "id": "kalorifer-ksk-4-7"
           }
         ],
         "deliveries": [
@@ -40148,8 +38323,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-6",
-                "id": "kalorifer-ksk-4-6"
+                "name": "КСк 4-7",
+                "id": "kalorifer-ksk-4-7"
               }
             ]
           }
@@ -40192,13 +38367,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
+            "name": "КПСк 3-11",
+            "id": "kalorifer-kpsk-3-11"
           },
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КПСк 3-12",
+            "id": "kalorifer-kpsk-3-12"
           }
         ],
         "deliveries": [
@@ -40207,13 +38382,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
+                "name": "КПСк 3-11",
+                "id": "kalorifer-kpsk-3-11"
               },
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КПСк 3-12",
+                "id": "kalorifer-kpsk-3-12"
               }
             ]
           }
@@ -40229,8 +38404,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 2-10",
+            "id": "kalorifer-ksk-2-10"
           }
         ],
         "deliveries": [
@@ -40239,8 +38414,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 2-10",
+                "id": "kalorifer-ksk-2-10"
               }
             ]
           }
@@ -40293,8 +38468,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
+            "name": "КСк 2-9",
+            "id": "kalorifer-ksk-2-9"
           }
         ],
         "deliveries": [
@@ -40303,8 +38478,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
+                "name": "КСк 2-9",
+                "id": "kalorifer-ksk-2-9"
               }
             ]
           }
@@ -40320,8 +38495,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 311",
-            "id": "kalorifer-tvv-311"
+            "name": "ТВВ 312",
+            "id": "kalorifer-tvv-312"
           }
         ],
         "deliveries": [
@@ -40330,8 +38505,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 311",
-                "id": "kalorifer-tvv-311"
+                "name": "ТВВ 312",
+                "id": "kalorifer-tvv-312"
               }
             ]
           }
@@ -40463,8 +38638,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
           }
         ],
         "deliveries": [
@@ -40478,8 +38653,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               }
             ]
           }
@@ -40500,8 +38675,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (КСк4)",
-            "id": "std300-ksk"
+            "name": "СТД-300 (КПСк4)",
+            "id": "std300-kpsk"
           }
         ],
         "deliveries": [
@@ -40515,8 +38690,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (КСк4)",
-                "id": "std300-ksk"
+                "name": "СТД-300 (КПСк4)",
+                "id": "std300-kpsk"
               }
             ]
           }
@@ -40537,8 +38712,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-7",
-            "id": "kalorifer-ksk-3-7"
+            "name": "КСк 2-7",
+            "id": "kalorifer-ksk-2-7"
           }
         ],
         "deliveries": [
@@ -40552,8 +38727,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-7",
-                "id": "kalorifer-ksk-3-7"
+                "name": "КСк 2-7",
+                "id": "kalorifer-ksk-2-7"
               }
             ]
           }
@@ -40685,13 +38860,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 308",
-            "id": "kalorifer-tvv-308"
+            "name": "ТВВ 307",
+            "id": "kalorifer-tvv-307"
           },
           {
             "kind": "product",
-            "name": "ТВВ 311",
-            "id": "kalorifer-tvv-311"
+            "name": "ТВВ 410",
+            "id": "kalorifer-tvv-410"
           }
         ],
         "deliveries": [
@@ -40705,13 +38880,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "ТВВ 308",
-                "id": "kalorifer-tvv-308"
+                "name": "ТВВ 307",
+                "id": "kalorifer-tvv-307"
               },
               {
                 "kind": "product",
-                "name": "ТВВ 311",
-                "id": "kalorifer-tvv-311"
+                "name": "ТВВ 410",
+                "id": "kalorifer-tvv-410"
               }
             ]
           }
@@ -40727,8 +38902,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 4-9",
-            "id": "kalorifer-ksk-4-9"
+            "name": "КСк 4-5",
+            "id": "kalorifer-ksk-4-5"
           }
         ],
         "deliveries": [
@@ -40737,8 +38912,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 4-9",
-                "id": "kalorifer-ksk-4-9"
+                "name": "КСк 4-5",
+                "id": "kalorifer-ksk-4-5"
               }
             ]
           }
@@ -40764,13 +38939,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-4",
-            "id": "kalorifer-ksk-4-4"
+            "name": "КСк 3-4",
+            "id": "kalorifer-ksk-3-4"
           },
           {
             "kind": "product",
-            "name": "КСк 3-7",
-            "id": "kalorifer-ksk-3-7"
+            "name": "КСк 4-4",
+            "id": "kalorifer-ksk-4-4"
           }
         ],
         "deliveries": [
@@ -40789,13 +38964,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-4",
-                "id": "kalorifer-ksk-4-4"
+                "name": "КСк 3-4",
+                "id": "kalorifer-ksk-3-4"
               },
               {
                 "kind": "product",
-                "name": "КСк 3-7",
-                "id": "kalorifer-ksk-3-7"
+                "name": "КСк 4-4",
+                "id": "kalorifer-ksk-4-4"
               }
             ]
           }
@@ -40811,8 +38986,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "ТВВ 406",
-            "id": "kalorifer-tvv-406"
+            "name": "ТВВ 407",
+            "id": "kalorifer-tvv-407"
           }
         ],
         "deliveries": [
@@ -40821,8 +38996,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "ТВВ 406",
-                "id": "kalorifer-tvv-406"
+                "name": "ТВВ 407",
+                "id": "kalorifer-tvv-407"
               }
             ]
           }
@@ -40865,8 +39040,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 3-11",
-            "id": "kalorifer-ksk-3-11"
+            "name": "КПСк 2-11",
+            "id": "kalorifer-kpsk-2-11"
           }
         ],
         "deliveries": [
@@ -40875,8 +39050,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 3-11",
-                "id": "kalorifer-ksk-3-11"
+                "name": "КПСк 2-11",
+                "id": "kalorifer-kpsk-2-11"
               }
             ]
           }
@@ -42093,8 +40268,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 2-1",
-            "id": "kalorifer-ksk-2-1"
+            "name": "КСк 2-2",
+            "id": "kalorifer-ksk-2-2"
           }
         ],
         "deliveries": [
@@ -42108,8 +40283,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 2-1",
-                "id": "kalorifer-ksk-2-1"
+                "name": "КСк 2-2",
+                "id": "kalorifer-ksk-2-2"
               }
             ]
           }
@@ -42641,8 +40816,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 3-10",
-            "id": "kalorifer-kpsk-3-10"
+            "name": "КПСк 2-10",
+            "id": "kalorifer-kpsk-2-10"
           }
         ],
         "deliveries": [
@@ -42656,8 +40831,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КПСк 3-10",
-                "id": "kalorifer-kpsk-3-10"
+                "name": "КПСк 2-10",
+                "id": "kalorifer-kpsk-2-10"
               }
             ]
           }
@@ -42910,6 +41085,11 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 4-95-01 П",
             "href": "/avo-tvv-kp"
           }
         ],
@@ -43416,53 +41596,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "АО «НПФ «Башкирская золотодобывающая компания»",
-        "settlement": {
-          "name": "Миасс",
-          "slug": "miass",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
-          },
-          {
-            "kind": "category",
-            "name": "ШУК",
-            "href": "/shkafy-upravleniya"
-          },
-          {
-            "kind": "product",
-            "name": "ШУК-250",
-            "id": "shkaf-upravleniia-shuk-250"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2023,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
-              },
-              {
-                "kind": "category",
-                "name": "ШУК",
-                "href": "/shkafy-upravleniya"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-250",
-                "id": "shkaf-upravleniia-shuk-250"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "ООО «Уралспецгрупп»",
         "settlement": {
           "name": "Миасс",
@@ -43619,9 +41752,9 @@ export const generatedRegions = {
         },
         "products": [
           {
-            "kind": "category",
-            "name": "СТД-300",
-            "href": "/std300-ksk-kpsk"
+            "kind": "product",
+            "name": "СТД-300 (ТВВ3)",
+            "id": "std300-tvv"
           }
         ],
         "deliveries": [
@@ -43629,9 +41762,9 @@ export const generatedRegions = {
             "year": 2016,
             "products": [
               {
-                "kind": "category",
-                "name": "СТД-300",
-                "href": "/std300-ksk-kpsk"
+                "kind": "product",
+                "name": "СТД-300 (ТВВ3)",
+                "id": "std300-tvv"
               }
             ]
           }
@@ -44168,33 +42301,6 @@ export const generatedRegions = {
             ]
           }
         ]
-      },
-      {
-        "name": "ООО ТД «Венторг»",
-        "settlement": {
-          "name": "Челябинск",
-          "slug": "chelyabinsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-40",
-            "id": "elektrokalorifer-sfo-40"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2022,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-40",
-                "id": "elektrokalorifer-sfo-40"
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -44383,8 +42489,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-250",
-            "id": "elektrokalorifer-sfo-250"
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
           }
         ],
         "deliveries": [
@@ -44398,8 +42504,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-250",
-                "id": "elektrokalorifer-sfo-250"
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
               }
             ]
           }
@@ -44941,8 +43047,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
+            "name": "КСк 4-11",
+            "id": "kalorifer-ksk-4-11"
           }
         ],
         "deliveries": [
@@ -44971,8 +43077,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
+                "name": "КСк 4-11",
+                "id": "kalorifer-ksk-4-11"
               }
             ]
           }
