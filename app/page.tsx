@@ -8,6 +8,9 @@ import { JsonLd } from "@/components/utils/jsonLd";
 import Hero from "@/components/hero";
 import ContactForm from "@/components/contactForm";
 import Catalog from "@/components/catalog";
+import RussiaMap from "@/components/RussiaMap_2";
+import { cities } from "@/data/cities";
+import { regions } from "@/data/regions";
 
 export const metadata: Metadata = {
   title: "Предприятие-производитель воздушно-отопительного оборудования",
@@ -26,7 +29,7 @@ export default function Home() {
       <JsonLd data={ORGANIZATION_SCHEMA} />
 
       <Hero />
-      <main className="max-w-8xl mx-auto px-3 py-8 sm:px-6 sm:pt-11 sm:pb-11 md:pb-14 lg:px-12 lg:pt-16 lg:pb-24">
+      <main className="max-w-8xl mx-auto px-3 py-8 sm:px-6 sm:pt-11 lg:px-12 lg:pt-16">
         <h1 className="mb-4 text-lg font-bold uppercase sm:text-xl md:text-2xl lg:text-[26px] xl:text-[28px]">
           Производство воздушно-отопительного оборудования
         </h1>
@@ -41,6 +44,20 @@ export default function Home() {
         </p>
         <Catalog />
       </main>
+
+      <h2 className="max-w-8xl mx-auto text-base font-bold uppercase sm:text-lg md:text-xl lg:text-[22px] xl:text-2xl">
+        Региональные поставки изготовленного оборудования
+      </h2>
+      <div className="mx-auto mb-14 w-full max-w-7xl">
+        <div style={{ aspectRatio: "1150 / 627" }}>
+          <RussiaMap cities={cities} regions={regions} />
+        </div>
+        <p>
+          Микроклимат производственных помещений характеризуется рядом факторов,
+          среди которых температура и влажность воздуха, скорость его движения.
+          В холодный период года, ввиду разницы температуры снаружи и внутри
+        </p>
+      </div>
 
       {/* CONTACT FORM SECTION START */}
       <div className="relative flex w-full items-center justify-center gap-20 overflow-hidden px-2 pt-8 pb-20 sm:pt-14 lg:py-10">

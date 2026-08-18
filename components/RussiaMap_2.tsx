@@ -13,12 +13,17 @@ import {
   createTranslateExtent,
 } from "@vnedyalk0v/react19-simple-maps";
 import type { City, Region } from "@/types/map";
-import { TIER_MARKER_STYLE } from "@/types/map";
 
 interface RussiaMapProps {
   cities: City[];
   regions: Region[];
 }
+
+const TIER_MARKER_STYLE: Record<CityTier, { fill: string; radius: number }> = {
+  1: { fill: "var(--primary-dark)", radius: 3 }, // крупные города — самый большой маркер, акцентный оранжевый
+  2: { fill: "#e97958", radius: 2.5 }, // областные центры — средний, чуть светлее
+  3: { fill: "#f2ab97", radius: 2 }, // прочие города — самый маленький, ещё светлее
+};
 
 // ── Геометрия карты ──────────────────────────────────────────────────────
 //
@@ -91,7 +96,7 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
   }, []);
 
   return (
-    <div className="@container relative h-full w-full border p-2">
+    <div className="@container relative h-full w-full">
       <ComposableMap
         projection={projection}
         width={MAP_WIDTH}
@@ -150,29 +155,31 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
           }
         </Geographies>
 
-        {cities.map((city) => {
-          const markerStyle = TIER_MARKER_STYLE[city.tier];
-          return (
-            <Marker
-              key={city.id}
-              coordinates={createCoordinates(
-                city.coordinates[0],
-                city.coordinates[1],
-              )}
-            >
-              {/* Города больше не кликабельны — только hover-tooltip с названием.
+        {cities
+          .filter((city) => city.tier === 1)
+          .map((city) => {
+            const markerStyle = TIER_MARKER_STYLE[city.tier];
+            return (
+              <Marker
+                key={city.id}
+                coordinates={createCoordinates(
+                  city.coordinates[0],
+                  city.coordinates[1],
+                )}
+              >
+                {/* Города больше не кликабельны — только hover-tooltip с названием.
                     Вся интерактивность (popover, переход по ссылке) перенесена
                     на полигоны областей выше. */}
-              <title>{city.cityName}</title>
-              <circle
-                r={markerStyle.radius}
-                fill={markerStyle.fill}
-                className="stroke-black"
-                strokeWidth={0.4}
-              />
-            </Marker>
-          );
-        })}
+                <title>{city.cityName}</title>
+                <circle
+                  r={3}
+                  fill="var(--primary)"
+                  className="stroke-black"
+                  strokeWidth={0.4}
+                />
+              </Marker>
+            );
+          })}
       </ComposableMap>
 
       {activeRegion && (
