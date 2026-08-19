@@ -59,18 +59,12 @@ type ProductDisplayCategory =
   | "cabinet"
   | "electrokalorifer";
 
-const PRODUCT_CATEGORY_LABELS: Record<
-  ProductDisplayCategory,
-  { singular: string; plural: string }
-> = {
-  kalorifer: { singular: "калорифер", plural: "калориферы" },
-  aggregate: { singular: "агрегат", plural: "агрегаты" },
-  installation: { singular: "установка", plural: "установки" },
-  cabinet: { singular: "шкаф", plural: "шкафы" },
-  electrokalorifer: {
-    singular: "электрокалорифер",
-    plural: "электрокалориферы",
-  },
+const PRODUCT_CATEGORY_LABELS: Record<ProductDisplayCategory, string> = {
+  kalorifer: "калориферы",
+  aggregate: "агрегаты",
+  installation: "установки",
+  cabinet: "шкафы",
+  electrokalorifer: "электрокалориферы",
 };
 
 function getProductDisplayCategory(
@@ -106,31 +100,8 @@ function getProductDisplayCategory(
   return null;
 }
 
-function getFirstCategoryRunLength(
-  products: ProductReference[],
-  startIndex: number,
-  category: ProductDisplayCategory,
-) {
-  let length = 0;
-
-  for (let index = startIndex; index < products.length; index += 1) {
-    if (getProductDisplayCategory(products[index]) !== category) {
-      break;
-    }
-
-    length += 1;
-  }
-
-  return length;
-}
-
-function categoryLabel(
-  category: ProductDisplayCategory,
-  plural: boolean,
-  capitalize: boolean,
-) {
-  const labels = PRODUCT_CATEGORY_LABELS[category];
-  const label = plural ? labels.plural : labels.singular;
+function categoryLabel(category: ProductDisplayCategory, capitalize: boolean) {
+  const label = PRODUCT_CATEGORY_LABELS[category];
 
   return capitalize ? label[0].toUpperCase() + label.slice(1) : label;
 }
@@ -143,14 +114,7 @@ function ProductList({ products }: { products: ProductReference[] }) {
     let prefix: string | null = null;
 
     if (category && !announcedCategories.has(category)) {
-      const firstRunLength = getFirstCategoryRunLength(
-        products,
-        index,
-        category,
-      );
-
-      prefix = categoryLabel(category, firstRunLength >= 2, index === 0);
-
+      prefix = categoryLabel(category, index === 0);
       announcedCategories.add(category);
     }
 
