@@ -86,7 +86,7 @@ export interface TransportTerminal {
 export type TransportTerminals = Record<string, TransportTerminal[]>;
 
 export interface RegionData extends RegionSupplyData {
-  /** Терминалы по slug населённого пункта: capital/anchor city. */
+  /** Терминалы по slug населённого пункта: столица, anchor-город или remainder-пункт. */
   transportTerminals: TransportTerminals;
 }
 

@@ -229,6 +229,19 @@ function TransportTerminals({ terminals }: { terminals: TransportTerminal[] }) {
   );
 }
 
+function getTransportTerminalsForCompanies(
+  companies: Company[],
+  transportTerminals: Record<string, TransportTerminal[]>,
+) {
+  const settlementSlugs = [
+    ...new Set(companies.map((company) => company.settlement.slug)),
+  ];
+
+  return settlementSlugs.flatMap(
+    (settlementSlug) => transportTerminals[settlementSlug] ?? [],
+  );
+}
+
 export default async function RegionPage({
   params,
 }: {
@@ -248,6 +261,11 @@ export default async function RegionPage({
 
   const { capitalCompanies, anchorCities, remainderCompanies } =
     getRegionSections(region);
+
+  const remainderTransportTerminals = getTransportTerminalsForCompanies(
+    remainderCompanies,
+    region.transportTerminals,
+  );
 
   return (
     <article className="space-y-8">
@@ -285,6 +303,8 @@ export default async function RegionPage({
         </h3>
 
         <CompaniesList companies={remainderCompanies} showSettlement />
+
+        <TransportTerminals terminals={remainderTransportTerminals} />
       </section>
     </article>
   );
