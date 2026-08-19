@@ -358,6 +358,24 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
+    tulun: [
+      {
+        company: "ПЭК",
+        address: "г. Тулун, мкр. Угольщиков, 36",
+        deliveryTime: {
+          minDays: 9,
+        },
+      },
+    ],
+    "ust-kut": [
+      {
+        company: "Деловые Линии",
+        address: "г. Усть-Кут, ул. Шевченко, д.39",
+        deliveryTime: {
+          minDays: 7,
+        },
+      },
+    ],
   },
   nalchik: {
     nalchik: [
@@ -391,6 +409,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         address: "г. Калуга, ш. Грабцевское, д. 107",
         deliveryTime: {
           minDays: 7,
+        },
+      },
+    ],
+    kozelsk: [
+      {
+        company: "ПЭК",
+        address: "г. Козельск, ул. Чкалова, 84с3",
+        deliveryTime: {
+          minDays: 14,
         },
       },
     ],
@@ -444,6 +471,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
+    yurga: [
+      {
+        company: "Деловые Линии",
+        address: "г. Юрга, ул. Заводская, д. 1",
+        deliveryTime: {
+          minDays: 6,
+        },
+      },
+    ],
   },
   kirov: {
     kirov: [
@@ -459,6 +495,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         address: "г. Киров, ул. Дзержинского, д 81/3",
         deliveryTime: {
           minDays: 10,
+        },
+      },
+    ],
+    "kirovo-chepetsk": [
+      {
+        company: "ПЭК Деловые Линии",
+        address: "г. Кирово-Чепецк, ул. Производственная, д. 6/4",
+        deliveryTime: {
+          minDays: 13,
         },
       },
     ],
@@ -565,6 +610,24 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
+    minusinsk: [
+      {
+        company: "ПЭК",
+        address: "г. Минусинск, ул. Тимирязева, 43",
+        deliveryTime: {
+          minDays: 8,
+        },
+      },
+    ],
+    lesosibirsk: [
+      {
+        company: "ПЭК",
+        address: "г. Лесосибирск, ул. Енисейская, 25Ас7",
+        deliveryTime: {
+          minDays: 8,
+        },
+      },
+    ],
   },
   kurgan: {
     kurgan: [
@@ -616,6 +679,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         address: "г. Санкт-Петербург, ул. Кубинская, д. 75, лит. Б, корп. 2",
         deliveryTime: {
           minDays: 10,
+        },
+      },
+    ],
+    gatchinsky: [
+      {
+        company: "Деловые Линии",
+        address: "р-н Гатчинский, п. Пригородный, ш. Вырицкое, д. 2",
+        deliveryTime: {
+          minDays: 13,
         },
       },
     ],
@@ -721,6 +793,51 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
+    elektrostal: [
+      {
+        company: "ПЭК",
+        address: "г. Электросталь, ул. Рабочая, 35 А",
+        deliveryTime: {
+          minDays: 11,
+        },
+      },
+    ],
+    dubna: [
+      {
+        company: "ПЭК",
+        address: "г. Дубна, ул. Луговая, д. 26 А",
+        deliveryTime: {
+          minDays: 13,
+        },
+      },
+    ],
+    vidnoye: [
+      {
+        company: "Деловые Линии",
+        address: "г. Видное, проезд Проектируемый № 251, влд. 1",
+        deliveryTime: {
+          minDays: 8,
+        },
+      },
+    ],
+    shchelkovo: [
+      {
+        company: "ПЭК",
+        address: "г. Щелково, территория Ярославская, 8",
+        deliveryTime: {
+          minDays: 9,
+        },
+      },
+    ],
+    lyubertsy: [
+      {
+        company: "Деловые Линии",
+        address: "г. Люберцы, пгт. Октябрьский, ул. Ленина, д. 47 Д",
+        deliveryTime: {
+          minDays: 9,
+        },
+      },
+    ],
   },
   murmansk: {
     murmansk: [
@@ -773,6 +890,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
+    sarov: [
+      {
+        company: "ПЭК",
+        address: "г. Саров, Малая коммунальная дорога, д. 4, стр. 4",
+        deliveryTime: {
+          minDays: 13,
+        },
+      },
+    ],
   },
   "velikiy-novgorod": {
     "velikiy-novgorod": [
@@ -806,6 +932,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         address: "г. Новосибирск, ул. Петухова, д. 73, корп. 1",
         deliveryTime: {
           minDays: 4,
+        },
+      },
+    ],
+    berdsk: [
+      {
+        company: "Деловые Линии",
+        address: "г. Бердск, ул. Ленина, д. 136/1",
+        deliveryTime: {
+          minDays: 6,
         },
       },
     ],
@@ -944,6 +1079,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         address: "г. Пермь, ул. Танкистов, д. 50",
         deliveryTime: {
           minDays: 7,
+        },
+      },
+    ],
+    lysva: [
+      {
+        company: "ПЭК",
+        address: "г. Лысьва, ул. Коммунаров, 27",
+        deliveryTime: {
+          minDays: 9,
         },
       },
     ],
@@ -1449,6 +1593,33 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
+    budennovsk: [
+      {
+        company: "ПЭК",
+        address: "г. Буденновск, ул. Промышленная, 2",
+        deliveryTime: {
+          minDays: 13,
+        },
+      },
+    ],
+    pyatigorsk: [
+      {
+        company: "ПЭК",
+        address: "г. Пятигорск, ул. Егоршина, 6с1",
+        deliveryTime: {
+          minDays: 13,
+        },
+      },
+    ],
+    predgorny: [
+      {
+        company: "Деловые Линии",
+        address: "р-н Предгорный, с. Винсады, ш. Кисловодское, д. 48В, стр. 1",
+        deliveryTime: {
+          minDays: 9,
+        },
+      },
+    ],
   },
   tambov: {
     tambov: [
@@ -1482,6 +1653,24 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         address: "г. Тверь, п. Элеватор, пер. 3-й, д. 6, стр. 1",
         deliveryTime: {
           minDays: 8,
+        },
+      },
+    ],
+    "vyshny volochek": [
+      {
+        company: "ПЭК",
+        address: "г. Вышний Волочек, ул. Осташковская, 6",
+        deliveryTime: {
+          minDays: 13,
+        },
+      },
+    ],
+    kimry: [
+      {
+        company: "Деловые Линии",
+        address: "г. Кимры, ул. Дмитрия Баслыка, д. 4, лит. Д",
+        deliveryTime: {
+          minDays: 10,
         },
       },
     ],
@@ -1726,6 +1915,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
+    zlatoust: [
+      {
+        company: "Деловые Линии",
+        address: "г. Златоуст, ул. имени И. В. Панфилова, д. 4А, стр. 1",
+        deliveryTime: {
+          minDays: 7,
+        },
+      },
+    ],
   },
   groznyy: {
     groznyy: [
@@ -1762,6 +1960,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
+    novocheboksarsk: [
+      {
+        company: "Деловые Линии",
+        address: "г. Новочебоксарск, ул. Промышленная, д 40 А",
+        deliveryTime: {
+          minDays: 9,
+        },
+      },
+    ],
   },
   yaroslavl: {
     yaroslavl: [
@@ -1793,6 +2000,28 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         address: "г. Рыбинск, тракт Ярославский, д. 41 А",
         deliveryTime: {
           minDays: 8,
+        },
+      },
+    ],
+  },
+  "gorno-altaysk": {
+    "gorno-altaysk": [
+      {
+        company: "Деловые Линии",
+        address: "г. Горно-Алтайск, ул. Ленина, д 220",
+        deliveryTime: {
+          minDays: 6,
+        },
+      },
+    ],
+  },
+  kyzyl: {
+    kyzyl: [
+      {
+        company: "Деловые Линии",
+        address: "г. Кызыл, ул. Калинина, зд. 134",
+        deliveryTime: {
+          minDays: 9,
         },
       },
     ],
