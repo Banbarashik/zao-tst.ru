@@ -149,11 +149,7 @@ function ProductList({ products }: { products: ProductReference[] }) {
         category,
       );
 
-      prefix = categoryLabel(
-        category,
-        firstRunLength >= 2,
-        index === 0,
-      );
+      prefix = categoryLabel(category, firstRunLength >= 2, index === 0);
 
       announcedCategories.add(category);
     }
@@ -174,7 +170,25 @@ function ProductList({ products }: { products: ProductReference[] }) {
   );
 }
 
-function CompaniesList({ companies }: { companies: Company[] }) {
+function settlementLabel(settlement: Company["settlement"]) {
+  const prefix = {
+    city: "г.",
+    village: "с.",
+    settlement: "п.",
+    "urban-settlement": "пгт.",
+    other: "",
+  }[settlement.type];
+
+  return prefix ? `${prefix} ${settlement.name}` : settlement.name;
+}
+
+function CompaniesList({
+  companies,
+  showSettlement = false,
+}: {
+  companies: Company[];
+  showSettlement?: boolean;
+}) {
   if (companies.length === 0) {
     return null;
   }
@@ -182,10 +196,9 @@ function CompaniesList({ companies }: { companies: Company[] }) {
   return (
     <ul className="mb-3">
       {companies.map((company) => (
-        <li
-          key={`${company.settlement.slug}:${company.name}`}
-        >
-          🏭 {company.name}.{" "}
+        <li key={`${company.settlement.slug}:${company.name}`}>
+          🏭 {showSettlement ? `${settlementLabel(company.settlement)}. ` : ""}
+          {company.name}.{" "}
           <span>
             <ProductList products={company.products} />.
           </span>
@@ -228,11 +241,7 @@ function deliveryTimeText(terminal: TransportTerminal) {
   return `${minDays} ${daysWord(minDays)}`;
 }
 
-function TransportTerminals({
-  terminals,
-}: {
-  terminals: TransportTerminal[];
-}) {
+function TransportTerminals({ terminals }: { terminals: TransportTerminal[] }) {
   if (terminals.length === 0) {
     return null;
   }
@@ -311,7 +320,7 @@ export default async function RegionPage({
           {region.subject.name}
         </h3>
 
-        <CompaniesList companies={remainderCompanies} />
+        <CompaniesList companies={remainderCompanies} showSettlement />
       </section>
     </article>
   );
