@@ -155,7 +155,7 @@ export const regions: Region[] = [
   {
     id: "RU-MOS",
     name: "Москва",
-    url: "/moskva",
+    url: "/moskovskaya-oblast",
     hadDelivery: true,
   },
   {

@@ -74,17 +74,17 @@ export const REGION_CAPITALS = {
   "Чеченская Республика": "Грозный",
   "Чувашская Республика": "Чебоксары",
   "Ямало-Ненецкий АО": "Салехард",
-  "Ярославская область": "Ярославль"
+  "Ярославская область": "Ярославль",
 } as const;
 
 export const SUBJECT_ALIASES: Record<string, string> = {
   "Республика Саха": "Республика Саха (Якутия)",
   "Чувашская республика": "Чувашская Республика",
-  "Крым": "Республика Крым"
+  Крым: "Республика Крым",
 };
 
 export const SETTLEMENT_ALIASES: Record<string, string> = {
-  "Орел": "Орёл"
+  Орел: "Орёл",
 };
 
 export const EXCLUDED_SUBJECTS = new Set([
@@ -101,7 +101,7 @@ export const LOCATION_OVERRIDES: Record<
     settlement: "Донецк",
     type: "city",
   },
-  "Мелитополь": {
+  Мелитополь: {
     subject: "Запорожская область",
     settlement: "Мелитополь",
     type: "city",

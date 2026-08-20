@@ -731,7 +731,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
     ],
   },
   "moskovskaya-oblast": {
-    moskva: [
+    "moskovskaya-oblast": [
       {
         company: "ПЭК",
         address: "г. Москва, 2-я Мелитопольская улица, 12Ас1",
@@ -813,7 +813,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
-    vidnoye: [
+    vidnoe: [
       {
         company: "Деловые Линии",
         address: "г. Видное, проезд Проектируемый № 251, влд. 1",
