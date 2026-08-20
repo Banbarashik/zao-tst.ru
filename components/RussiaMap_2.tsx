@@ -19,12 +19,6 @@ interface RussiaMapProps {
   regions: Region[];
 }
 
-const TIER_MARKER_STYLE: Record<CityTier, { fill: string; radius: number }> = {
-  1: { fill: "var(--primary-dark)", radius: 3 }, // крупные города — самый большой маркер, акцентный оранжевый
-  2: { fill: "#e97958", radius: 2.5 }, // областные центры — средний, чуть светлее
-  3: { fill: "#f2ab97", radius: 2 }, // прочие города — самый маленький, ещё светлее
-};
-
 // ── Геометрия карты ──────────────────────────────────────────────────────
 //
 // Внутренняя система координат SVG. Соотношение сторон 1150:627 ≈ 1.8341,
@@ -158,7 +152,6 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
         {cities
           .filter((city) => city.tier === 1)
           .map((city) => {
-            const markerStyle = TIER_MARKER_STYLE[city.tier];
             return (
               <Marker
                 key={city.id}
@@ -185,7 +178,7 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
       {activeRegion && (
         <div
           ref={popupRef}
-          className="absolute bottom-4 left-4 z-10 max-w-xs rounded-lg border bg-white p-2 shadow-lg @2xl:p-4 @2xl:pr-6"
+          className="absolute bottom-4 left-4 z-10 max-w-sm rounded-lg border-2 border-gray-200 bg-white p-2 shadow-lg @xl:pl-4 @2xl:py-4 @2xl:pr-6 @5xl:py-5 @5xl:pr-7 @5xl:pl-5"
           role="dialog"
         >
           <button
@@ -195,12 +188,12 @@ export default function RussiaMap({ cities, regions }: RussiaMapProps) {
           >
             ×
           </button>
-          <h3 className="text-xs font-semibold @2xl:mb-2.5 @2xl:text-base">
+          <h3 className="text-xs @2xl:mb-2.5 @2xl:text-base @4xl:text-lg @5xl:text-2xl">
             {activeRegion.name}
           </h3>
           <Link
             href={`regions/${activeRegion.url}`}
-            className="text-primary text-xs font-medium hover:underline @2xl:text-sm"
+            className="text-primary text-xs font-medium hover:underline @2xl:text-sm @4xl:text-base @5xl:text-xl"
           >
             Региональные поставки →
           </Link>
