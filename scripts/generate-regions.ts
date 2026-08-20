@@ -193,15 +193,24 @@ function toSerializableRegions(
 function buildProductDeliveries(
   regions: Record<string, RegionSupplyData>,
 ): Record<string, ProductDeliveryLocation[]> {
-  const result = new Map<string, ProductDeliveryLocation[]>();
-  const seenLocations = new Map<string, Set<string>>();
+  type MutableProductDeliveryLocation = {
+    kind: ProductDeliveryLocation["kind"];
+    name: string;
+    href: string;
+    companies: Set<string>;
+  };
+
+  const result = new Map<
+    string,
+    Map<string, MutableProductDeliveryLocation>
+  >();
 
   for (const [regionSlug, region] of Object.entries(regions)) {
     const { anchorCitySlugs } = getRegionSections(region);
     const anchorCitySet = new Set(anchorCitySlugs);
 
     for (const company of region.companies) {
-      let location: ProductDeliveryLocation;
+      let location: Omit<MutableProductDeliveryLocation, "companies">;
 
       if (company.settlement.name === region.capital.name) {
         location = {
@@ -232,27 +241,33 @@ function buildProductDeliveries(
 
         let locations = result.get(product.id);
         if (!locations) {
-          locations = [];
+          locations = new Map();
           result.set(product.id, locations);
         }
 
-        let seen = seenLocations.get(product.id);
-        if (!seen) {
-          seen = new Set();
-          seenLocations.set(product.id, seen);
+        let deliveryLocation = locations.get(location.href);
+        if (!deliveryLocation) {
+          deliveryLocation = {
+            ...location,
+            companies: new Set<string>(),
+          };
+          locations.set(location.href, deliveryLocation);
         }
 
-        if (seen.has(location.href)) {
-          continue;
-        }
-
-        locations.push(location);
-        seen.add(location.href);
+        deliveryLocation.companies.add(company.name);
       }
     }
   }
 
-  return Object.fromEntries(result);
+  return Object.fromEntries(
+    [...result].map(([productId, locations]) => [
+      productId,
+      [...locations.values()].map(({ companies, ...location }) => ({
+        ...location,
+        companies: [...companies],
+      })),
+    ]),
+  );
 }
 
 async function main() {

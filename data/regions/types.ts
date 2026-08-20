@@ -67,11 +67,13 @@ export type ProductDeliveryLocation =
       kind: "city";
       name: string;
       href: string;
+      companies: string[];
     }
   | {
       kind: "region";
       name: string;
       href: string;
+      companies: string[];
     };
 
 export interface TransportTerminal {
