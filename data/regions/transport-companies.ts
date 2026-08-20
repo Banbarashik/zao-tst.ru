@@ -3,15 +3,17 @@ import type { TransportTerminals } from "./types";
 /**
  * Транспортные терминалы из финального source/regions.docx.
  *
- * В каждой паре строк DOCX:
- * - первый адрес — ПЭК;
- * - второй адрес — Деловые Линии.
+ * Slug-и населённых пунктов приведены к правилам транслитерации,
+ * используемым в regions(1).ts:
+ * - х -> kh, щ -> shch, ю -> yu, я -> ya и т. д.;
+ * - ь/ъ удаляются;
+ * - конечные -ий/-ый -> -y;
+ * - пробелы и знаки препинания -> "-";
+ * - внешний ключ региона берётся из regions(1).ts буквально,
+ *   поэтому сохраняются проектные исключения вроде
+ *   Московская область -> moskovskaya-oblast и ХМАО-Югра -> surgut.
  *
- * Пара добавляется только когда присутствуют оба адреса и населённый пункт
- * сопоставляется с данными страницы. Первый ключ — slug страницы региона,
- * второй ключ — slug населённого пункта.
- *
- * Адреса сохраняются ровно в том виде, в котором записаны в DOCX.
+ * Адреса и сроки доставки не нормализуются и сохраняются без изменений.
  */
 export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
   barnaul: {
@@ -64,8 +66,8 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
-  blagoveschensk: {
-    blagoveschensk: [
+  blagoveshchensk: {
+    blagoveshchensk: [
       {
         company: "ПЭК",
         address: "г. Благовещенск, ул. Калинина, 126",
@@ -82,8 +84,8 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
-  arhangelsk: {
-    arhangelsk: [
+  arkhangelsk: {
+    arkhangelsk: [
       {
         company: "ПЭК",
         address: "г. Архангельск, Талажское шоссе, 4с1",
@@ -118,7 +120,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
-    "staryy-oskol": [
+    "stary-oskol": [
       {
         company: "ПЭК",
         address: "г. Старый Оскол, ул. Заводская улица, 1 А",
@@ -439,7 +441,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
-    "leninsk-kuznetskiy": [
+    "leninsk-kuznetsky": [
       {
         company: "ПЭК",
         address: "г. Ленинск-Кузнецкий, ул. Ламповая, д. 6/2",
@@ -728,7 +730,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
-  moskva: {
+  "moskovskaya-oblast": {
     moskva: [
       {
         company: "ПЭК",
@@ -745,7 +747,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
-    serpuhov: [
+    serpukhov: [
       {
         company: "ПЭК",
         address: "г. Серпухов, Северное шоссе, стр. 2",
@@ -761,7 +763,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
-    balashiha: [
+    balashikha: [
       {
         company: "ПЭК",
         address: "г. Балашиха, ул. Твардовского, д. 24",
@@ -777,7 +779,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
-    himki: [
+    khimki: [
       {
         company: "ПЭК",
         address: "г. Химки, микрорайон Сходня, ул. Ленинградская, 4",
@@ -857,8 +859,8 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
-  "nizhniy-novgorod": {
-    "nizhniy-novgorod": [
+  "nizhny-novgorod": {
+    "nizhny-novgorod": [
       {
         company: "ПЭК",
         address: "г. Нижний Новгород, ул. Вторчермета, 1 к2",
@@ -900,8 +902,8 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
-  "velikiy-novgorod": {
-    "velikiy-novgorod": [
+  "veliky-novgorod": {
+    "veliky-novgorod": [
       {
         company: "ПЭК",
         address: "г. Великий Новгород, Базовый переулок, 13",
@@ -1125,7 +1127,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
-    nahodka: [
+    nakhodka: [
       {
         company: "ПЭК",
         address: "г. Находка, ул. Угольная, 61с19",
@@ -1403,7 +1405,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
-    shahty: [
+    shakhty: [
       {
         company: "ПЭК",
         address: "г. Шахты, Газетный переулок, 4 Г",
@@ -1506,8 +1508,8 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
-  "yuzhno-sahalinsk": {
-    "yuzhno-sahalinsk": [
+  "yuzhno-sakhalinsk": {
+    "yuzhno-sakhalinsk": [
       {
         company: "ПЭК",
         address: "г. Южно-Сахалинск, ул. Ленина, 474 А",
@@ -1541,7 +1543,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
         },
       },
     ],
-    "nizhniy-tagil": [
+    "nizhny-tagil": [
       {
         company: "ПЭК",
         address: "г. Нижний Тагил, Восточное шоссе, 17 А",
@@ -1781,8 +1783,8 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
-  habarovsk: {
-    habarovsk: [
+  khabarovsk: {
+    khabarovsk: [
       {
         company: "ПЭК",
         address: "г. Хабаровск, Тихоокеанская улица, 73Г/2",
@@ -1815,7 +1817,7 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
-  "hanty-mansiysk": {
+  surgut: {
     surgut: [
       {
         company: "ПЭК",
@@ -1925,8 +1927,8 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
-  groznyy: {
-    groznyy: [
+  grozny: {
+    grozny: [
       {
         company: "ПЭК",
         address: "г. Грозный, Краснофлотская улица, 7",

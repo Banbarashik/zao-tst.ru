@@ -7,7 +7,7 @@ export const generatedRegions = {
     slug: "barnaul",
     subject: {
       name: "Алтайский край",
-      slug: "altayskiy-kray",
+      slug: "altaysky-kray",
     },
     capital: {
       name: "Барнаул",
@@ -955,7 +955,7 @@ export const generatedRegions = {
         name: "ООО Санаторий «Родник Алтая»",
         settlement: {
           name: "Белокуриха",
-          slug: "belokuriha",
+          slug: "belokurikha",
           type: "city",
         },
         products: [
@@ -1619,7 +1619,7 @@ export const generatedRegions = {
         name: "ОАО «Благовещенский комбинат молочных продуктов»",
         settlement: {
           name: "Благовещенка",
-          slug: "blagoveschenka",
+          slug: "blagoveshchenka",
           type: "urban-settlement",
         },
         products: [
@@ -2161,7 +2161,7 @@ export const generatedRegions = {
         name: "АО «Амуруголь»",
         settlement: {
           name: "Райчихинск",
-          slug: "raychihinsk",
+          slug: "raychikhinsk",
           type: "city",
         },
         products: [
@@ -2263,22 +2263,22 @@ export const generatedRegions = {
       },
     ],
   },
-  arhangelsk: {
-    slug: "arhangelsk",
+  arkhangelsk: {
+    slug: "arkhangelsk",
     subject: {
       name: "Архангельская область",
-      slug: "arhangelskaya-oblast",
+      slug: "arkhangelskaya-oblast",
     },
     capital: {
       name: "Архангельск",
-      slug: "arhangelsk",
+      slug: "arkhangelsk",
     },
     companies: [
       {
         name: "ООО «Партнер»",
         settlement: {
           name: "Архангельск",
-          slug: "arhangelsk",
+          slug: "arkhangelsk",
           type: "city",
         },
         products: [
@@ -2315,7 +2315,7 @@ export const generatedRegions = {
         name: "ООО «Севнор Менеджмент»",
         settlement: {
           name: "Архангельск",
-          slug: "arhangelsk",
+          slug: "arkhangelsk",
           type: "city",
         },
         products: [
@@ -2343,7 +2343,7 @@ export const generatedRegions = {
         name: "ООО «Элфак»",
         settlement: {
           name: "Архангельск",
-          slug: "arhangelsk",
+          slug: "arkhangelsk",
           type: "city",
         },
         products: [
@@ -2608,7 +2608,7 @@ export const generatedRegions = {
         name: "ООО «Дар-Спец»",
         settlement: {
           name: "Старый Оскол",
-          slug: "staryy-oskol",
+          slug: "stary-oskol",
           type: "city",
         },
         products: [
@@ -2635,7 +2635,7 @@ export const generatedRegions = {
         name: "ООО «Ресурс»",
         settlement: {
           name: "Старый Оскол",
-          slug: "staryy-oskol",
+          slug: "stary-oskol",
           type: "city",
         },
         products: [
@@ -2672,7 +2672,7 @@ export const generatedRegions = {
         name: "ООО «Энергосервис»",
         settlement: {
           name: "Старый Оскол",
-          slug: "staryy-oskol",
+          slug: "stary-oskol",
           type: "city",
         },
         products: [
@@ -3097,7 +3097,7 @@ export const generatedRegions = {
         name: "ООО «МРМЗ»",
         settlement: {
           name: "Механизаторов",
-          slug: "mehanizatorov",
+          slug: "mekhanizatorov",
           type: "settlement",
         },
         products: [
@@ -3420,7 +3420,7 @@ export const generatedRegions = {
         name: "ООО «Энергомашсервис»",
         settlement: {
           name: "Волжский",
-          slug: "volzhskiy",
+          slug: "volzhsky",
           type: "city",
         },
         products: [
@@ -4225,7 +4225,7 @@ export const generatedRegions = {
     slug: "chita",
     subject: {
       name: "Забайкальский край",
-      slug: "zabaykalskiy-kray",
+      slug: "zabaykalsky-kray",
     },
     capital: {
       name: "Чита",
@@ -5704,7 +5704,7 @@ export const generatedRegions = {
         name: "ООО «НПО Электротехническая Компания»",
         settlement: {
           name: "Шелехов",
-          slug: "shelehov",
+          slug: "shelekhov",
           type: "city",
         },
         products: [
@@ -6373,7 +6373,7 @@ export const generatedRegions = {
         name: "ООО «Эркен-Шахарский сахарный завод»",
         settlement: {
           name: "Эркен-Шахар",
-          slug: "erken-shahar",
+          slug: "erken-shakhar",
           type: "settlement",
         },
         products: [
@@ -6899,7 +6899,7 @@ export const generatedRegions = {
         name: "АО «УК «Северный Кузбасс»",
         settlement: {
           name: "Березовский",
-          slug: "berezovskiy",
+          slug: "berezovsky",
           type: "city",
         },
         products: [
@@ -6956,7 +6956,7 @@ export const generatedRegions = {
         name: "ЗАО «Черниговец»",
         settlement: {
           name: "Березовский",
-          slug: "berezovskiy",
+          slug: "berezovsky",
           type: "city",
         },
         products: [
@@ -7003,7 +7003,7 @@ export const generatedRegions = {
         name: "ООО «Березовские коммунальные системы»",
         settlement: {
           name: "Березовский",
-          slug: "berezovskiy",
+          slug: "berezovsky",
           type: "city",
         },
         products: [
@@ -9054,7 +9054,7 @@ export const generatedRegions = {
         name: "ОАО «Горэлектротранспорт города Ленинска-Кузнецкого»",
         settlement: {
           name: "Ленинск-Кузнецкий",
-          slug: "leninsk-kuznetskiy",
+          slug: "leninsk-kuznetsky",
           type: "city",
         },
         products: [
@@ -9101,7 +9101,7 @@ export const generatedRegions = {
         name: "ОАО «ГЭТ Ленинска-Кузнецкого»",
         settlement: {
           name: "Ленинск-Кузнецкий",
-          slug: "leninsk-kuznetskiy",
+          slug: "leninsk-kuznetsky",
           type: "city",
         },
         products: [
@@ -9138,7 +9138,7 @@ export const generatedRegions = {
         name: "ОАО «СУЭК-Кузбасс»",
         settlement: {
           name: "Ленинск-Кузнецкий",
-          slug: "leninsk-kuznetskiy",
+          slug: "leninsk-kuznetsky",
           type: "city",
         },
         products: [
@@ -9245,7 +9245,7 @@ export const generatedRegions = {
         name: "ООО «Ленинск-Кузнецкие коммунальные системы»",
         settlement: {
           name: "Ленинск-Кузнецкий",
-          slug: "leninsk-kuznetskiy",
+          slug: "leninsk-kuznetsky",
           type: "city",
         },
         products: [
@@ -9282,7 +9282,7 @@ export const generatedRegions = {
         name: "ООО «Ленинск-Кузнецкий завод строительных материалов»",
         settlement: {
           name: "Ленинск-Кузнецкий",
-          slug: "leninsk-kuznetskiy",
+          slug: "leninsk-kuznetsky",
           type: "city",
         },
         products: [
@@ -9309,7 +9309,7 @@ export const generatedRegions = {
         name: "ООО «Ленинск-Кузнецкий хлебокомбинат»",
         settlement: {
           name: "Ленинск-Кузнецкий",
-          slug: "leninsk-kuznetskiy",
+          slug: "leninsk-kuznetsky",
           type: "city",
         },
         products: [
@@ -9336,7 +9336,7 @@ export const generatedRegions = {
         name: "ООО «Сиб-Дамель»",
         settlement: {
           name: "Ленинск-Кузнецкий",
-          slug: "leninsk-kuznetskiy",
+          slug: "leninsk-kuznetsky",
           type: "city",
         },
         products: [
@@ -9363,7 +9363,7 @@ export const generatedRegions = {
         name: "ООО «Эко-Строй»",
         settlement: {
           name: "Ленинск-Кузнецкий",
-          slug: "leninsk-kuznetskiy",
+          slug: "leninsk-kuznetsky",
           type: "city",
         },
         products: [
@@ -12135,7 +12135,7 @@ export const generatedRegions = {
         name: "ООО «Шахта Спиридоновская»",
         settlement: {
           name: "Карагайлинский",
-          slug: "karagaylinskiy",
+          slug: "karagaylinsky",
           type: "settlement",
         },
         products: [
@@ -12162,7 +12162,7 @@ export const generatedRegions = {
         name: "ООО «Гостиный двор»",
         settlement: {
           name: "Кузбасский",
-          slug: "kuzbasskiy",
+          slug: "kuzbassky",
           type: "settlement",
         },
         products: [
@@ -12200,7 +12200,7 @@ export const generatedRegions = {
         name: "ОАО «Суховский»",
         settlement: {
           name: "Металлплощадка",
-          slug: "metallploschadka",
+          slug: "metallploshchadka",
           type: "settlement",
         },
         products: [
@@ -12227,7 +12227,7 @@ export const generatedRegions = {
         name: "МКУ «УДЖНП Прокопьевского муниципального района»",
         settlement: {
           name: "Новосафрнрвский",
-          slug: "novosafrnrvskiy",
+          slug: "novosafrnrvsky",
           type: "settlement",
         },
         products: [
@@ -12282,7 +12282,7 @@ export const generatedRegions = {
         name: "ООО Племенная птицефабрика «Снежинская»",
         settlement: {
           name: "Снежинский",
-          slug: "snezhinskiy",
+          slug: "snezhinsky",
           type: "settlement",
         },
         products: [
@@ -12309,7 +12309,7 @@ export const generatedRegions = {
         name: "ООО «СДК»",
         settlement: {
           name: "Терехино",
-          slug: "terehino",
+          slug: "terekhino",
           type: "settlement",
         },
         products: [
@@ -12336,7 +12336,7 @@ export const generatedRegions = {
         name: "МАУ «ТРК»",
         settlement: {
           name: "Трудармейский",
-          slug: "trudarmeyskiy",
+          slug: "trudarmeysky",
           type: "settlement",
         },
         products: [
@@ -12363,7 +12363,7 @@ export const generatedRegions = {
         name: "ООО «ПФ «Трудармейская»",
         settlement: {
           name: "Трудармейский",
-          slug: "trudarmeyskiy",
+          slug: "trudarmeysky",
           type: "settlement",
         },
         products: [
@@ -12390,7 +12390,7 @@ export const generatedRegions = {
         name: "ОАО «Славино»",
         settlement: {
           name: "Чистогорский",
-          slug: "chistogorskiy",
+          slug: "chistogorsky",
           type: "settlement",
         },
         products: [
@@ -12437,7 +12437,7 @@ export const generatedRegions = {
         name: "ООО «Кузбассконсервмолоко»",
         settlement: {
           name: "Тяжинский",
-          slug: "tyazhinskiy",
+          slug: "tyazhinsky",
           type: "urban-settlement",
         },
         products: [
@@ -12629,7 +12629,7 @@ export const generatedRegions = {
         name: "ООО «Шахта Байкаимская»",
         settlement: {
           name: "Мохово",
-          slug: "mohovo",
+          slug: "mokhovo",
           type: "village",
         },
         products: [
@@ -13535,7 +13535,7 @@ export const generatedRegions = {
     slug: "krasnodar",
     subject: {
       name: "Краснодарский край",
-      slug: "krasnodarskiy-kray",
+      slug: "krasnodarsky-kray",
     },
     capital: {
       name: "Краснодар",
@@ -14183,7 +14183,7 @@ export const generatedRegions = {
     slug: "krasnoyarsk",
     subject: {
       name: "Красноярский край",
-      slug: "krasnoyarskiy-kray",
+      slug: "krasnoyarsky-kray",
     },
     capital: {
       name: "Красноярск",
@@ -15937,7 +15937,7 @@ export const generatedRegions = {
         name: "ООО «Гранит»",
         settlement: {
           name: "Подгорный",
-          slug: "podgornyy",
+          slug: "podgorny",
           type: "settlement",
         },
         products: [
@@ -15974,7 +15974,7 @@ export const generatedRegions = {
         name: "МУП ЖКХ ЗАТО Солнечный Красноярского края",
         settlement: {
           name: "Солнечный",
-          slug: "solnechnyy",
+          slug: "solnechny",
           type: "settlement",
         },
         products: [
@@ -16511,7 +16511,7 @@ export const generatedRegions = {
         name: "ООО «Олымский сахарный завод»",
         settlement: {
           name: "Олымский",
-          slug: "olymskiy",
+          slug: "olymsky",
           type: "settlement",
         },
         products: [
@@ -18071,7 +18071,7 @@ export const generatedRegions = {
         name: "ООО «Тихвинский ферросплавный завод»",
         settlement: {
           name: "Тихвин",
-          slug: "tihvin",
+          slug: "tikhvin",
           type: "city",
         },
         products: [
@@ -18155,7 +18155,7 @@ export const generatedRegions = {
         name: "ООО «МФЦ Выборг Лес»",
         settlement: {
           name: "Советский",
-          slug: "sovetskiy",
+          slug: "sovetsky",
           type: "urban-settlement",
         },
         products: [
@@ -18508,22 +18508,22 @@ export const generatedRegions = {
       },
     ],
   },
-  moskva: {
-    slug: "moskva",
+  "moskovskaya-oblast": {
+    slug: "moskovskaya-oblast",
     subject: {
       name: "Московская область",
       slug: "moskovskaya-oblast",
     },
     capital: {
       name: "Москва",
-      slug: "moskva",
+      slug: "moskovskaya-oblast",
     },
     companies: [
       {
         name: "ОАО АК «Рубин»",
         settlement: {
           name: "Балашиха",
-          slug: "balashiha",
+          slug: "balashikha",
           type: "city",
         },
         products: [
@@ -18580,7 +18580,7 @@ export const generatedRegions = {
         name: "ООО «Праймтекс»",
         settlement: {
           name: "Балашиха",
-          slug: "balashiha",
+          slug: "balashikha",
           type: "city",
         },
         products: [
@@ -18701,7 +18701,7 @@ export const generatedRegions = {
         name: "ФГУП «ФЦДТ Союз»",
         settlement: {
           name: "Дзержинский",
-          slug: "dzerzhinskiy",
+          slug: "dzerzhinsky",
           type: "city",
         },
         products: [
@@ -18839,7 +18839,7 @@ export const generatedRegions = {
         name: "ООО «ПК Термо»",
         settlement: {
           name: "Лосино-Петровский",
-          slug: "losino-petrovskiy",
+          slug: "losino-petrovsky",
           type: "city",
         },
         products: [
@@ -20942,7 +20942,7 @@ export const generatedRegions = {
         name: "ООО «Диапазон»",
         settlement: {
           name: "Павловский Посад",
-          slug: "pavlovskiy-posad",
+          slug: "pavlovsky-posad",
           type: "city",
         },
         products: [
@@ -21016,7 +21016,7 @@ export const generatedRegions = {
         name: "ОАО «Химволокно»",
         settlement: {
           name: "Серпухов",
-          slug: "serpuhov",
+          slug: "serpukhov",
           type: "city",
         },
         products: [
@@ -21080,7 +21080,7 @@ export const generatedRegions = {
         name: "АО «МКБ «Факел»",
         settlement: {
           name: "Химки",
-          slug: "himki",
+          slug: "khimki",
           type: "city",
         },
         products: [
@@ -21117,7 +21117,7 @@ export const generatedRegions = {
         name: "ООО «Химстаб»",
         settlement: {
           name: "Химки",
-          slug: "himki",
+          slug: "khimki",
           type: "city",
         },
         products: [
@@ -21154,7 +21154,7 @@ export const generatedRegions = {
         name: "ООО «ГТК»",
         settlement: {
           name: "Щелково",
-          slug: "schelkovo",
+          slug: "shchelkovo",
           type: "city",
         },
         products: [
@@ -21255,7 +21255,7 @@ export const generatedRegions = {
         name: "ООО «МК «Сторосс»",
         settlement: {
           name: "Правдинский",
-          slug: "pravdinskiy",
+          slug: "pravdinsky",
           type: "settlement",
         },
         products: [
@@ -21350,15 +21350,15 @@ export const generatedRegions = {
       },
     ],
   },
-  "nizhniy-novgorod": {
-    slug: "nizhniy-novgorod",
+  "nizhny-novgorod": {
+    slug: "nizhny-novgorod",
     subject: {
       name: "Нижегородская область",
       slug: "nizhegorodskaya-oblast",
     },
     capital: {
       name: "Нижний Новгород",
-      slug: "nizhniy-novgorod",
+      slug: "nizhny-novgorod",
     },
     companies: [
       {
@@ -21456,7 +21456,7 @@ export const generatedRegions = {
         name: "АО «НФ АК Практик»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21493,7 +21493,7 @@ export const generatedRegions = {
         name: "АО «РУМО»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21530,7 +21530,7 @@ export const generatedRegions = {
         name: "АО ПКО «Теплообменник»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21567,7 +21567,7 @@ export const generatedRegions = {
         name: "ГП НО «Нижегородпассажиравтотранс»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21604,7 +21604,7 @@ export const generatedRegions = {
         name: "ЗАО «Нижегородский завод энергооборудования»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21661,7 +21661,7 @@ export const generatedRegions = {
         name: "ООО «Волгастальпроект»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21688,7 +21688,7 @@ export const generatedRegions = {
         name: "ООО «Волго-Окский Химический Комбинат»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21725,7 +21725,7 @@ export const generatedRegions = {
         name: "ООО «Политэн»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21752,7 +21752,7 @@ export const generatedRegions = {
         name: "ООО «Промлаб»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21789,7 +21789,7 @@ export const generatedRegions = {
         name: "ООО «Регионхимснаб-НН»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21826,7 +21826,7 @@ export const generatedRegions = {
         name: "ООО «Строй Гарант»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21853,7 +21853,7 @@ export const generatedRegions = {
         name: "ООО «ТД «Толедо»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21890,7 +21890,7 @@ export const generatedRegions = {
         name: "ООО «ТД Деркер»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21927,7 +21927,7 @@ export const generatedRegions = {
         name: "ООО «Эй-Левел»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -21954,7 +21954,7 @@ export const generatedRegions = {
         name: "ООО «Энергострой НН»",
         settlement: {
           name: "Нижний Новгород",
-          slug: "nizhniy-novgorod",
+          slug: "nizhny-novgorod",
           type: "city",
         },
         products: [
@@ -22070,22 +22070,22 @@ export const generatedRegions = {
       },
     ],
   },
-  "velikiy-novgorod": {
-    slug: "velikiy-novgorod",
+  "veliky-novgorod": {
+    slug: "veliky-novgorod",
     subject: {
       name: "Новгородская область",
       slug: "novgorodskaya-oblast",
     },
     capital: {
       name: "Великий Новгород",
-      slug: "velikiy-novgorod",
+      slug: "veliky-novgorod",
     },
     companies: [
       {
         name: "ЗАО «Новгородский металлургический завод»",
         settlement: {
           name: "Великий Новгород",
-          slug: "velikiy-novgorod",
+          slug: "veliky-novgorod",
           type: "city",
         },
         products: [
@@ -22122,7 +22122,7 @@ export const generatedRegions = {
         name: "ОАО «Автобусный парк»",
         settlement: {
           name: "Великий Новгород",
-          slug: "velikiy-novgorod",
+          slug: "veliky-novgorod",
           type: "city",
         },
         products: [
@@ -25420,7 +25420,7 @@ export const generatedRegions = {
         name: "ООО «ТЭК»",
         settlement: {
           name: "Кудряшовский",
-          slug: "kudryashovskiy",
+          slug: "kudryashovsky",
           type: "settlement",
         },
         products: [
@@ -25474,7 +25474,7 @@ export const generatedRegions = {
         name: "АО «Новосибирский КБК»",
         settlement: {
           name: "Красный Яр",
-          slug: "krasnyy-yar",
+          slug: "krasny-yar",
           type: "settlement",
         },
         products: [
@@ -25511,7 +25511,7 @@ export const generatedRegions = {
         name: "ООО «ЦКТ»",
         settlement: {
           name: "Ленинский",
-          slug: "leninskiy",
+          slug: "leninsky",
           type: "settlement",
         },
         products: [
@@ -27021,7 +27021,7 @@ export const generatedRegions = {
         name: "ООО «Спиртзавод Оренбургский»",
         settlement: {
           name: "Первомайский",
-          slug: "pervomayskiy",
+          slug: "pervomaysky",
           type: "settlement",
         },
         products: [
@@ -27068,7 +27068,7 @@ export const generatedRegions = {
         name: "ООО «ТД «Антэл»",
         settlement: {
           name: "Пригородный",
-          slug: "prigorodnyy",
+          slug: "prigorodny",
           type: "settlement",
         },
         products: [
@@ -27185,7 +27185,7 @@ export const generatedRegions = {
         name: "ООО «Стройкапитал»",
         settlement: {
           name: "Заречный",
-          slug: "zarechnyy",
+          slug: "zarechny",
           type: "city",
         },
         products: [
@@ -27504,7 +27504,7 @@ export const generatedRegions = {
     slug: "perm",
     subject: {
       name: "Пермский край",
-      slug: "permskiy-kray",
+      slug: "permsky-kray",
     },
     capital: {
       name: "Пермь",
@@ -28649,7 +28649,7 @@ export const generatedRegions = {
     slug: "vladivostok",
     subject: {
       name: "Приморский край",
-      slug: "primorskiy-kray",
+      slug: "primorsky-kray",
     },
     capital: {
       name: "Владивосток",
@@ -28882,7 +28882,7 @@ export const generatedRegions = {
         name: "ООО «Ливадийский ремонтно-судостроительный завод»",
         settlement: {
           name: "Находка",
-          slug: "nahodka",
+          slug: "nakhodka",
           type: "city",
         },
         products: [
@@ -28919,7 +28919,7 @@ export const generatedRegions = {
         name: "ООО «СК Портовый Флот»",
         settlement: {
           name: "Находка",
-          slug: "nahodka",
+          slug: "nakhodka",
           type: "city",
         },
         products: [
@@ -30880,7 +30880,7 @@ export const generatedRegions = {
         name: "АО «Агрофирма «Октябрьская»",
         settlement: {
           name: "Б. Елховка",
-          slug: "b-elhovka",
+          slug: "b-elkhovka",
           type: "village",
         },
         products: [
@@ -30929,7 +30929,7 @@ export const generatedRegions = {
     slug: "yakutsk",
     subject: {
       name: "Республика Саха (Якутия)",
-      slug: "respublika-saha-yakutiya",
+      slug: "respublika-sakha-yakutiya",
     },
     capital: {
       name: "Якутск",
@@ -30940,7 +30940,7 @@ export const generatedRegions = {
         name: "ПАО АК «Алроса»",
         settlement: {
           name: "Мирный",
-          slug: "mirnyy",
+          slug: "mirny",
           type: "city",
         },
         products: [
@@ -31328,7 +31328,7 @@ export const generatedRegions = {
         name: "ООО «Стройдом»",
         settlement: {
           name: "Мохсоголлох",
-          slug: "mohsogolloh",
+          slug: "mokhsogollokh",
           type: "settlement",
         },
         products: [
@@ -32202,7 +32202,7 @@ export const generatedRegions = {
     slug: "abakan",
     subject: {
       name: "Республика Хакасия",
-      slug: "respublika-hakasiya",
+      slug: "respublika-khakasiya",
     },
     capital: {
       name: "Абакан",
@@ -33060,7 +33060,7 @@ export const generatedRegions = {
         name: "ООО «Альпина»",
         settlement: {
           name: "Сахарный",
-          slug: "saharnyy",
+          slug: "sakharny",
           type: "settlement",
         },
         products: [
@@ -33779,7 +33779,7 @@ export const generatedRegions = {
         name: "ЗАО «Шахтинский АРЗ ДОСААФ»",
         settlement: {
           name: "Шахты",
-          slug: "shahty",
+          slug: "shakhty",
           type: "city",
         },
         products: [
@@ -33816,7 +33816,7 @@ export const generatedRegions = {
         name: "ОАО «Донуголь»",
         settlement: {
           name: "Шахты",
-          slug: "shahty",
+          slug: "shakhty",
           type: "city",
         },
         products: [
@@ -35362,22 +35362,22 @@ export const generatedRegions = {
       },
     ],
   },
-  "yuzhno-sahalinsk": {
-    slug: "yuzhno-sahalinsk",
+  "yuzhno-sakhalinsk": {
+    slug: "yuzhno-sakhalinsk",
     subject: {
       name: "Сахалинская область",
-      slug: "sahalinskaya-oblast",
+      slug: "sakhalinskaya-oblast",
     },
     capital: {
       name: "Южно-Сахалинск",
-      slug: "yuzhno-sahalinsk",
+      slug: "yuzhno-sakhalinsk",
     },
     companies: [
       {
         name: "ООО «Сахалин-трейдинг»",
         settlement: {
           name: "Южно-Сахалинск",
-          slug: "yuzhno-sahalinsk",
+          slug: "yuzhno-sakhalinsk",
           type: "city",
         },
         products: [
@@ -35427,7 +35427,7 @@ export const generatedRegions = {
         name: "ООО «СГЦ»",
         settlement: {
           name: "Березовский",
-          slug: "berezovskiy",
+          slug: "berezovsky",
           type: "city",
         },
         products: [
@@ -36675,7 +36675,7 @@ export const generatedRegions = {
         name: "ООО «Универсальный поставщик»",
         settlement: {
           name: "Нижний Тагил",
-          slug: "nizhniy-tagil",
+          slug: "nizhny-tagil",
           type: "city",
         },
         products: [
@@ -36712,7 +36712,7 @@ export const generatedRegions = {
         name: "АО «Сухоложское Литье!",
         settlement: {
           name: "Сухой Лог",
-          slug: "suhoy-log",
+          slug: "sukhoy-log",
           type: "city",
         },
         products: [
@@ -36826,7 +36826,7 @@ export const generatedRegions = {
         name: "ООО «ЭКО РГС ГРУПП»",
         settlement: {
           name: "Стодолище",
-          slug: "stodolische",
+          slug: "stodolishche",
           type: "settlement",
         },
         products: [
@@ -36865,7 +36865,7 @@ export const generatedRegions = {
     slug: "stavropol",
     subject: {
       name: "Ставропольский край",
-      slug: "stavropolskiy-kray",
+      slug: "stavropolsky-kray",
     },
     capital: {
       name: "Ставрополь",
@@ -37030,7 +37030,7 @@ export const generatedRegions = {
         name: "ООО «Вышневолоцкий хлопчатобумажный комбинат»",
         settlement: {
           name: "Вышний Волочек",
-          slug: "vyshniy-volochek",
+          slug: "vyshny-volochek",
           type: "city",
         },
         products: [
@@ -37350,7 +37350,7 @@ export const generatedRegions = {
         name: "ООО «Завод Экострада»",
         settlement: {
           name: "Новозавидовский",
-          slug: "novozavidovskiy",
+          slug: "novozavidovsky",
           type: "urban-settlement",
         },
         products: [
@@ -39125,7 +39125,7 @@ export const generatedRegions = {
         name: "ООО «Санаторий Синий Утес»",
         settlement: {
           name: "Синий Утес",
-          slug: "siniy-utes",
+          slug: "siny-utes",
           type: "settlement",
         },
         products: [
@@ -40430,15 +40430,15 @@ export const generatedRegions = {
       },
     ],
   },
-  habarovsk: {
-    slug: "habarovsk",
+  khabarovsk: {
+    slug: "khabarovsk",
     subject: {
       name: "Хабаровский край",
-      slug: "habarovskiy-kray",
+      slug: "khabarovsky-kray",
     },
     capital: {
       name: "Хабаровск",
-      slug: "habarovsk",
+      slug: "khabarovsk",
     },
     companies: [
       {
@@ -40482,7 +40482,7 @@ export const generatedRegions = {
         name: "ООО «Актив-Строй»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40519,7 +40519,7 @@ export const generatedRegions = {
         name: "ООО «Газобетон ДВ»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40556,7 +40556,7 @@ export const generatedRegions = {
         name: "ООО «Дальневосточная Кабельная Компания»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40593,7 +40593,7 @@ export const generatedRegions = {
         name: "ООО «Дальхимфарм»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40620,7 +40620,7 @@ export const generatedRegions = {
         name: "ООО «ДКК»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40657,7 +40657,7 @@ export const generatedRegions = {
         name: "ООО «Мирэкс ДВ»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40704,7 +40704,7 @@ export const generatedRegions = {
         name: "ООО «Промвент»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40751,7 +40751,7 @@ export const generatedRegions = {
         name: "ООО «Промлайн»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40778,7 +40778,7 @@ export const generatedRegions = {
         name: "ООО «Рострейд»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40805,7 +40805,7 @@ export const generatedRegions = {
         name: "ООО «ТД «ВТР»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40842,7 +40842,7 @@ export const generatedRegions = {
         name: "ООО «Хабаровск-тара»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40879,7 +40879,7 @@ export const generatedRegions = {
         name: "ООО «Энерго учет»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40906,7 +40906,7 @@ export const generatedRegions = {
         name: "ООО «Энергогидроснаб»",
         settlement: {
           name: "Хабаровск",
-          slug: "habarovsk",
+          slug: "khabarovsk",
           type: "city",
         },
         products: [
@@ -40933,7 +40933,7 @@ export const generatedRegions = {
         name: "ООО «Шелтэк»",
         settlement: {
           name: "Ягодный",
-          slug: "yagodnyy",
+          slug: "yagodny",
           type: "settlement",
         },
         products: [
@@ -40968,15 +40968,15 @@ export const generatedRegions = {
       },
     ],
   },
-  "hanty-mansiysk": {
-    slug: "hanty-mansiysk",
+  surgut: {
+    slug: "surgut",
     subject: {
       name: "ХМАО-Югра",
-      slug: "hmao-yugra",
+      slug: "khmao-yugra",
     },
     capital: {
       name: "Ханты-Мансийск",
-      slug: "hanty-mansiysk",
+      slug: "surgut",
     },
     companies: [
       {
@@ -42304,22 +42304,22 @@ export const generatedRegions = {
       },
     ],
   },
-  groznyy: {
-    slug: "groznyy",
+  grozny: {
+    slug: "grozny",
     subject: {
       name: "Чеченская Республика",
       slug: "chechenskaya-respublika",
     },
     capital: {
       name: "Грозный",
-      slug: "groznyy",
+      slug: "grozny",
     },
     companies: [
       {
         name: "ФГБОУ ВО «Чеченский государственный университет им. А.А. Кадырова»",
         settlement: {
           name: "Грозный",
-          slug: "groznyy",
+          slug: "grozny",
           type: "city",
         },
         products: [
@@ -42513,15 +42513,15 @@ export const generatedRegions = {
       },
     ],
   },
-  salehard: {
-    slug: "salehard",
+  salekhard: {
+    slug: "salekhard",
     subject: {
       name: "Ямало-Ненецкий АО",
-      slug: "yamalo-nenetskiy-ao",
+      slug: "yamalo-nenetsky-ao",
     },
     capital: {
       name: "Салехард",
-      slug: "salehard",
+      slug: "salekhard",
     },
     companies: [
       {
@@ -42735,7 +42735,7 @@ export const generatedRegions = {
         name: "АО «Ярославский бройлер»",
         settlement: {
           name: "Октябрьский",
-          slug: "oktyabrskiy",
+          slug: "oktyabrsky",
           type: "settlement",
         },
         products: [

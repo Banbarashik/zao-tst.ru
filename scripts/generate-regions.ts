@@ -13,9 +13,11 @@ import {
   SUBJECT_ALIASES,
   type KnownRegionSubject,
 } from "../src/data/regions/region-meta";
-import { slugifyRussian } from "../src/data/regions/slugify";
+import { getRegionSections } from "../src/data/regions/region-sections";
+import { getRegionPageSlug, slugifyRussian } from "../src/data/regions/slugify";
 import type {
   Company,
+  ProductDeliveryLocation,
   ProductReference,
   RegionSupplyData,
   SettlementType,
@@ -25,6 +27,10 @@ const INPUT = path.resolve(process.cwd(), "source/regions.xlsx");
 const OUTPUT = path.resolve(
   process.cwd(),
   "src/data/regions/regions.generated.ts",
+);
+const PRODUCT_DELIVERIES_OUTPUT = path.resolve(
+  process.cwd(),
+  "src/data/regions/product-deliveries.generated.ts",
 );
 
 type ParsedLocation = {
@@ -168,7 +174,9 @@ function productIdentity(product: ProductReference) {
   return `text:${product.name}`;
 }
 
-function toSerializableRegions(regions: Map<string, MutableRegion>) {
+function toSerializableRegions(
+  regions: Map<string, MutableRegion>,
+): Record<string, RegionSupplyData> {
   return Object.fromEntries(
     [...regions].map(([slug, region]) => [
       slug,
@@ -180,6 +188,71 @@ function toSerializableRegions(regions: Map<string, MutableRegion>) {
       },
     ]),
   );
+}
+
+function buildProductDeliveries(
+  regions: Record<string, RegionSupplyData>,
+): Record<string, ProductDeliveryLocation[]> {
+  const result = new Map<string, ProductDeliveryLocation[]>();
+  const seenLocations = new Map<string, Set<string>>();
+
+  for (const [regionSlug, region] of Object.entries(regions)) {
+    const { anchorCitySlugs } = getRegionSections(region);
+    const anchorCitySet = new Set(anchorCitySlugs);
+
+    for (const company of region.companies) {
+      let location: ProductDeliveryLocation;
+
+      if (company.settlement.name === region.capital.name) {
+        location = {
+          kind: "city",
+          name: region.capital.name,
+          href: `/regions/${regionSlug}`,
+        };
+      } else if (anchorCitySet.has(company.settlement.slug)) {
+        location = {
+          kind: "city",
+          name: company.settlement.name,
+          href: `/regions/${regionSlug}#${company.settlement.slug}`,
+        };
+      } else {
+        // Населённые пункты без собственного anchor на товарной странице
+        // заменяются единственным упоминанием субъекта РФ.
+        location = {
+          kind: "region",
+          name: region.subject.name,
+          href: `/regions/${regionSlug}#${region.subject.slug}`,
+        };
+      }
+
+      for (const product of company.products) {
+        if (product.kind !== "product") {
+          continue;
+        }
+
+        let locations = result.get(product.id);
+        if (!locations) {
+          locations = [];
+          result.set(product.id, locations);
+        }
+
+        let seen = seenLocations.get(product.id);
+        if (!seen) {
+          seen = new Set();
+          seenLocations.set(product.id, seen);
+        }
+
+        if (seen.has(location.href)) {
+          continue;
+        }
+
+        locations.push(location);
+        seen.add(location.href);
+      }
+    }
+  }
+
+  return Object.fromEntries(result);
 }
 
 async function main() {
@@ -235,7 +308,7 @@ async function main() {
 
     const subject = location.subject as KnownRegionSubject;
     const capitalName = REGION_CAPITALS[subject];
-    const regionSlug = slugifyRussian(capitalName);
+    const regionSlug = getRegionPageSlug(subject, capitalName);
 
     let region = regions.get(regionSlug);
 
@@ -278,7 +351,7 @@ async function main() {
       if (resolved.kind === "product") {
         if (!PRODUCT_ID_SET.has(resolved.id)) {
           warnings.push(
-            `Строка ${rowNumber}: product id "${resolved.id}" отсутствует в product-ids.`,
+            `Строка ${rowNumber}: product id "${resolved.id}" отсутствует в products.json.`,
           );
         }
         productLinks += 1;
@@ -325,8 +398,33 @@ export const generatedRegions = ${JSON.stringify(serializable, null, 2)} satisfi
 export type RegionSlug = keyof typeof generatedRegions;
 `;
 
+  const productDeliveries = buildProductDeliveries(serializable);
+  const productDeliveriesSource = `// Generated from regions.xlsx by scripts/generate-regions.ts.
+// Do not edit by hand.
+import type { ProductDeliveryLocation, ProductId } from "./types";
+
+export const productDeliveries = ${JSON.stringify(productDeliveries, null, 2)} satisfies Partial<
+  Record<ProductId, ProductDeliveryLocation[]>
+>;
+
+export function getProductDeliveryLocations(
+  productId: ProductId,
+): readonly ProductDeliveryLocation[] {
+  const index: Partial<Record<ProductId, ProductDeliveryLocation[]>> =
+    productDeliveries;
+
+  return index[productId] ?? [];
+}
+`;
+
   await fs.mkdir(path.dirname(OUTPUT), { recursive: true });
   await fs.writeFile(OUTPUT, source, "utf8");
+  await fs.writeFile(PRODUCT_DELIVERIES_OUTPUT, productDeliveriesSource, "utf8");
+
+  const productLocationCount = Object.values(productDeliveries).reduce(
+    (sum, locations) => sum + locations.length,
+    0,
+  );
 
   console.log(`Исходных строк: ${sourceRows}`);
   console.log(`Исключено (Беларусь/Казахстан): ${excludedRows}`);
@@ -334,6 +432,8 @@ export type RegionSlug = keyof typeof generatedRegions;
   console.log(`Конкретных product-id: ${productLinks}`);
   console.log(`Ссылок на категории: ${categoryLinks}`);
   console.log(`Товаров без ссылки: ${textProducts}`);
+  console.log(`Товаров с географией поставок: ${Object.keys(productDeliveries).length}`);
+  console.log(`Уникальных географических упоминаний: ${productLocationCount}`);
 
   if (warnings.length > 0) {
     console.warn("\nПредупреждения:");
