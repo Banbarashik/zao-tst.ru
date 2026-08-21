@@ -8,11 +8,13 @@ import {
   type RegionSlug,
 } from "@/data/regions/regions.generated";
 import { getRegionClimateTable } from "@/data/regions/climate-tables.generated";
+import { getRegionGeo, type RegionGeoData } from "@/data/regions/region-geo";
 import { getRegion } from "@/data/regions/regions";
 import { getRegionSections } from "@/data/regions/region-sections";
 import type {
   Company,
   ProductReference,
+  RegionData,
   TransportTerminal,
 } from "@/data/regions/types";
 
@@ -20,6 +22,70 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   return Object.keys(generatedRegions).map((region) => ({ region }));
+}
+
+const SITE_URL = "https://zao-tst.ru";
+const ORGANIZATION_NAME = "ООО «Т.С.Т.»";
+
+function buildRegionJsonLd(region: RegionData, geo: RegionGeoData) {
+  const pageUrl = `${SITE_URL}/regions/${region.slug}`;
+  const cityId = `${pageUrl}#city`;
+  const regionId = `${pageUrl}#administrative-area`;
+  const serviceId = `${pageUrl}#delivery-service`;
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        name: ORGANIZATION_NAME,
+        url: SITE_URL,
+      },
+      {
+        "@type": "City",
+        "@id": cityId,
+        name: geo.cityName,
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: geo.latitude,
+          longitude: geo.longitude,
+        },
+      },
+      {
+        "@type": "AdministrativeArea",
+        "@id": regionId,
+        name: geo.regionName,
+      },
+      {
+        "@type": "Service",
+        "@id": serviceId,
+        name: `Поставка вентиляционно-отопительного оборудования в ${geo.regionName}`,
+        url: pageUrl,
+        provider: {
+          "@id": `${SITE_URL}/#organization`,
+        },
+        areaServed: {
+          "@id": regionId,
+        },
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${pageUrl}#webpage`,
+        url: pageUrl,
+        name: `Поставки вентиляционно-отопительного оборудования в ${geo.cityName} и ${geo.regionName}`,
+        inLanguage: "ru-RU",
+        about: [{ "@id": cityId }, { "@id": regionId }],
+        mainEntity: {
+          "@id": serviceId,
+        },
+      },
+    ],
+  };
+}
+
+function serializeJsonLd(value: unknown) {
+  return JSON.stringify(value).replace(/</g, "\\u003c");
 }
 
 function productKey(product: ProductReference) {
@@ -266,52 +332,61 @@ export default async function RegionPage({
 
   const climateTable = getRegionClimateTable(regionSlug as RegionSlug);
 
+  const geo = getRegionGeo(regionSlug as RegionSlug);
+  const jsonLd = buildRegionJsonLd(region, geo);
+
   const remainderTransportTerminals = getTransportTerminalsForCompanies(
     remainderCompanies,
     region.transportTerminals,
   );
 
   return (
-    <article className="space-y-8">
-      {climateTable ? <RegionClimateTable table={climateTable} /> : null}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
+      />
+      <article className="space-y-8">
+        {climateTable ? <RegionClimateTable table={climateTable} /> : null}
 
-      <section>
-        <h1 className="mb-3 text-xl font-bold uppercase">
-          {region.capital.name}
-        </h1>
+        <section>
+          <h1 className="mb-3 text-xl font-bold uppercase">
+            {region.capital.name}
+          </h1>
 
-        <CompaniesList companies={capitalCompanies} />
-
-        <TransportTerminals
-          terminals={region.transportTerminals[region.capital.slug] ?? []}
-        />
-      </section>
-
-      {anchorCities.map(({ settlement, companies }) => (
-        <section key={settlement.slug}>
-          <Anchor id={settlement.slug} device="all" />
-          <h2 className="mb-3 text-xl font-bold uppercase">
-            {settlement.name}
-          </h2>
-
-          <CompaniesList companies={companies} />
+          <CompaniesList companies={capitalCompanies} />
 
           <TransportTerminals
-            terminals={region.transportTerminals[settlement.slug] ?? []}
+            terminals={region.transportTerminals[region.capital.slug] ?? []}
           />
         </section>
-      ))}
 
-      <section>
-        <Anchor id={region.subject.slug} device="all" />
-        <h3 className="mb-3 text-xl font-bold uppercase">
-          {region.subject.name}
-        </h3>
+        {anchorCities.map(({ settlement, companies }) => (
+          <section key={settlement.slug}>
+            <Anchor id={settlement.slug} device="all" />
+            <h2 className="mb-3 text-xl font-bold uppercase">
+              {settlement.name}
+            </h2>
 
-        <CompaniesList companies={remainderCompanies} showSettlement />
+            <CompaniesList companies={companies} />
 
-        <TransportTerminals terminals={remainderTransportTerminals} />
-      </section>
-    </article>
+            <TransportTerminals
+              terminals={region.transportTerminals[settlement.slug] ?? []}
+            />
+          </section>
+        ))}
+
+        <section>
+          <Anchor id={region.subject.slug} device="all" />
+          <h3 className="mb-3 text-xl font-bold uppercase">
+            {region.subject.name}
+          </h3>
+
+          <CompaniesList companies={remainderCompanies} showSettlement />
+
+          <TransportTerminals terminals={remainderTransportTerminals} />
+        </section>
+      </article>
+    </>
   );
 }
