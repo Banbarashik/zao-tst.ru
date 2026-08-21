@@ -93,3 +93,25 @@ export interface RegionData extends RegionSupplyData {
 }
 
 export type ProductId = import("./product-catalog").ProductId;
+
+export interface ClimateTableLocation {
+  /** Название населённого пункта ровно в формулировке climate.docx. */
+  name: string;
+  slug: string;
+}
+
+export interface ClimateTableRow {
+  /** Название климатического показателя ровно в формулировке climate.docx. */
+  parameter: string;
+  /** Дополнительное условие/обеспеченность: 0.98, ≤ 0°С, ≤ 8°С и т. п. */
+  condition?: string;
+  /** Значения соответствуют locations по индексу. */
+  values: string[];
+}
+
+export interface RegionClimateTableData {
+  /** Заголовок субъекта РФ из climate.docx без префикса «РЕГИОН:». */
+  subject: string;
+  locations: ClimateTableLocation[];
+  rows: ClimateTableRow[];
+}

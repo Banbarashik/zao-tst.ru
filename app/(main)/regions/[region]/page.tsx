@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { RegionClimateTable } from "@/components/regions/region-climate-table";
 import { Anchor } from "@/components/utils/anchor";
 import {
   generatedRegions,
   type RegionSlug,
 } from "@/data/regions/regions.generated";
+import { getRegionClimateTable } from "@/data/regions/climate-tables.generated";
 import { getRegion } from "@/data/regions/regions";
 import { getRegionSections } from "@/data/regions/region-sections";
 import type {
@@ -262,6 +264,8 @@ export default async function RegionPage({
   const { capitalCompanies, anchorCities, remainderCompanies } =
     getRegionSections(region);
 
+  const climateTable = getRegionClimateTable(regionSlug as RegionSlug);
+
   const remainderTransportTerminals = getTransportTerminalsForCompanies(
     remainderCompanies,
     region.transportTerminals,
@@ -269,6 +273,8 @@ export default async function RegionPage({
 
   return (
     <article className="space-y-8">
+      {climateTable ? <RegionClimateTable table={climateTable} /> : null}
+
       <section>
         <h1 className="mb-3 text-xl font-bold uppercase">
           {region.capital.name}
