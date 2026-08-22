@@ -17,6 +17,7 @@ import { cities } from "@/data/cities";
 import { regions } from "@/data/regions";
 import Spoiler from "@/components/ui/spoiler";
 import SpoilerButtonsBlock from "@/components/spoilerButtonsBlock";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Производство промышленного воздушно-отопительного оборудования",
@@ -300,7 +301,43 @@ export default function ProdukciyaPage() {
 
         <SpoilerButtonsBlock
           buttons={[
-            { name: "РЕГИОН: СИБИРЬ", children: <p>test</p> },
+            {
+              name: "РЕГИОН: СИБИРЬ",
+              children: (
+                <table
+                  className="w-full border-0 outline-0"
+                  style={{ border: "none" }}
+                >
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/kemerovo"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Кемеровская область
+                      </Link>
+                    </td>
+
+                    <td style={{ border: "none" }}>
+                      <Link
+                        href="/regions/barnaul"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Алтайский край
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/novosibirsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Новосибирская область
+                      </Link>
+                    </td>
+                  </tr>
+                </table>
+              ),
+            },
             { name: "test" },
             { name: "test2", children: <p>test2</p> },
             { name: "РеГИОН ТЕСТ" },
