@@ -401,12 +401,139 @@ export default function ProdukciyaPage() {
                 </table>
               ),
             },
-            { name: "test" },
-            { name: "test2", children: <p>test2</p> },
-            { name: "РеГИОН ТЕСТ" },
-            { name: "РеГИОН ТЕСТ" },
-            { name: "РеГИОН ТЕСТ" },
-            { name: "РеГИОН ТЕСТ" },
+            {
+              name: "РЕГИОН: ПОВОЛЖЬЕ",
+              children: (
+                <table
+                  className="w-full border-0 outline-0"
+                  style={{ border: "none" }}
+                >
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/samara"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Самарская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/perm"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Пермский край
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/nizhny-novgorod"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Нижегородская область
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/orenburg"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Оренбургская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/saratov"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Саратовская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/ufa"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Башкортостан
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    {" "}
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/kirov"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Кировская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/kazan"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Татарстан
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/penza"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Пензенская область
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/cheboksary"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Чувашская Республика
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/izhevsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Удмуртская Республика
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/ulyanovsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ульяновская область
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/yoshkar-ola"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Марий Эл
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/saransk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Мордовия
+                      </Link>
+                    </td>
+                  </tr>
+                </table>
+              ),
+            },
           ]}
         ></SpoilerButtonsBlock>
       </section>
