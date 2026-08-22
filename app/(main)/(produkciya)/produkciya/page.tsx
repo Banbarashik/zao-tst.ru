@@ -270,7 +270,7 @@ export default function ProdukciyaPage() {
         <LinkButtonsBlock buttons={linkButtons} />
       </section>
 
-      <section>
+      <section className="space-y-3">
         <Heading
           lvl={2}
           text="ГЕОГРАФИЯ ОТГРУЗОК ТЕПЛООБМЕННОГО ОБОРУДОВАНИЯ ПО РЕГИОНАМ"
@@ -904,6 +904,83 @@ export default function ProdukciyaPage() {
                         className="text-primary hover:primary-dark text-lg hover:underline"
                       >
                         Орловская область
+                      </Link>
+                    </td>
+                  </tr>
+                </table>
+              ),
+            },
+          ]}
+        />
+        <SpoilerButtonsBlock
+          className="w-max max-w-full"
+          buttons={[
+            {
+              name: "РЕГИОН: ЮГ И КАВКАЗ",
+              children: (
+                <table
+                  className="outline-0s w-full border-0"
+                  style={{ border: "none" }}
+                >
+                  <tr>
+                    <td style={{ border: "none" }} className="p-2 px-5">
+                      <Link
+                        href="/regions/rostov-na-donu"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ростовская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="p-2 px-5">
+                      <Link
+                        href="/regions/krasnodar"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Краснодарский край
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="p-2 px-5">
+                      <Link
+                        href="/regions/volgograd"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Волгоградская область
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="p-2 px-5">
+                      <Link
+                        href="/regions/stavropol"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ставропольский край
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="p-2 px-5">
+                      <Link
+                        href="/regions/grozny"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Чеченская Республика
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="p-2 px-5">
+                      <Link
+                        href="/regions/nalchik"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Кабардино-Балкарская Республика
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="p-2 px-5">
+                      <Link
+                        href="/regions/cherkessk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Карачаево-Черкесская Республика
                       </Link>
                     </td>
                   </tr>
