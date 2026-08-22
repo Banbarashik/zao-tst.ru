@@ -15,8 +15,10 @@ import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSe
 import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODrawingAndCircuitSection";
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
 import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
+import { getProductDeliveryRecords } from "@/data/regions/product-deliveries.generated";
 
 const product = productData.find((p) => p.id === "elektrokalorifer-sfo-16");
+const deliveries = getProductDeliveryRecords(product.id);
 
 export const metadata = createSFOMetadata(product?.name, product?.size);
 
@@ -77,6 +79,24 @@ export default function SFO16Page() {
           },
         ]}
       />
+
+      <section>
+        <div className="w-full overflow-x-auto">
+          <table className="w-full min-w-231 xl:min-w-auto">
+            <tbody>
+              {deliveries.map((delivery) => (
+                <tr
+                  key={`${delivery.region.slug}:${delivery.settlement.slug}:${delivery.company}`}
+                >
+                  <td>{delivery.region.name}</td>
+                  <td>{delivery.settlement.name}</td>
+                  <td>{delivery.company}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
     </div>
   );
 }
