@@ -534,6 +534,68 @@ export default function ProdukciyaPage() {
                 </table>
               ),
             },
+            {
+              name: "РЕГИОН: УРАЛ",
+              children: (
+                <table
+                  className="w-full border-0 outline-0"
+                  style={{ border: "none" }}
+                >
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/ekaterinburg"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Свердловская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/chelyabinsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Челябинская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/surgut"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        ХМАО-Югра
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/tyumen"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Тюменская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/kurgan"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Курганская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/salekhard"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ямало-Ненецкий АО
+                      </Link>
+                    </td>
+                  </tr>
+                </table>
+              ),
+            },
           ]}
         ></SpoilerButtonsBlock>
       </section>
