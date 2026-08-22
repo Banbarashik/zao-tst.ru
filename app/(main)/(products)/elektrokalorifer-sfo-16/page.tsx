@@ -79,12 +79,6 @@ export default function SFO16Page() {
           },
         ]}
       />
-
-      <section>
-        <Spoiler title="Тест">
-          <DeliveriesTable deliveries={getProductDeliveryRecords(product.id)} />
-        </Spoiler>
-      </section>
     </div>
   );
 }

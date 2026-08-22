@@ -15,6 +15,7 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import RussiaMap from "@/components/RussiaMap";
 import { cities } from "@/data/cities";
 import { regions } from "@/data/regions";
+import Spoiler from "@/components/ui/spoiler";
 
 export const metadata: Metadata = {
   title: "Производство промышленного воздушно-отопительного оборудования",
@@ -295,6 +296,45 @@ export default function ProdukciyaPage() {
             структура спойлеров с разбивкой областей по основным макрорегионам.
           </ProductParagraph>
         </div>
+
+        <Spoiler title="Test" contentClassName="space-y-4">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "РЕГИОН: СИБИРЬ",
+                url: "#",
+              },
+              {
+                name: "РЕГИОН: ПОВОЛЖЬЕ",
+                url: "#",
+              },
+              {
+                name: "РЕГИОН: УРАЛ",
+                url: "#",
+              },
+              {
+                name: "РЕГИОН: СЕВЕРО-ЗАПАД",
+                url: "#",
+              },
+            ]}
+          />
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "РЕГИОН: ДАЛЬНИЙ ВОСТОК",
+                url: "#",
+              },
+              {
+                name: "ЦЕНТРАЛЬНЫЙ РЕГИОН",
+                url: "#",
+              },
+              {
+                name: "РЕГИОН: ЮГ И КАВКАЗ",
+                url: "#",
+              },
+            ]}
+          />
+        </Spoiler>
       </section>
     </article>
   );

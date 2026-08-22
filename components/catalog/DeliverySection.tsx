@@ -2,6 +2,9 @@ import type { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
+import { DeliveriesTable } from "@/components/catalog/DeliveriesTable";
+import { getProductDeliveryRecords } from "@/data/regions/product-deliveries.generated";
+import Spoiler from "../ui/spoiler";
 
 export function DeliverySection({
   product,
@@ -14,6 +17,7 @@ export function DeliverySection({
   className?: string;
 }) {
   const heatCarrierAdj = getHeatCarrierAdj(product.heatCarrier);
+  const deliveries = getProductDeliveryRecords(product.id);
 
   const isKalorifer = product.categories.includes("kalorifer");
   const isKSK = product.categories.includes("ksk");
@@ -159,6 +163,10 @@ export function DeliverySection({
           <li>• поставка автотранспортом нашего предприятия</li>
         </ul>
       </div>
+
+      <Spoiler title="Test">
+        <DeliveriesTable deliveries={deliveries} />
+      </Spoiler>
 
       <p className="text-base">{specsNote ?? defaultSpecsNote}</p>
     </section>
