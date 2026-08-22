@@ -1,4 +1,4 @@
-import type { Company, RegionSupplyData } from "./types";
+import type { Company, RegionSupplyData } from "@/data/regions/types";
 
 export interface RegionAnchorCity {
   settlement: Company["settlement"];

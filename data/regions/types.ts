@@ -62,6 +62,10 @@ export interface RegionSupplyData {
   companies: Company[];
 }
 
+/**
+ * Существующий ProductDeliveryLocation оставляем,
+ * но он должен содержать companies: string[].
+ */
 export type ProductDeliveryLocation =
   | {
       kind: "city";
@@ -114,4 +118,25 @@ export interface RegionClimateTableData {
   subject: string;
   locations: ClimateTableLocation[];
   rows: ClimateTableRow[];
+}
+
+export interface ProductDeliveryRecord {
+  region: {
+    name: string;
+    slug: string;
+    href: string;
+  };
+
+  settlement: {
+    name: string;
+    slug: string;
+    type: SettlementType;
+    /**
+     * Ссылка есть только у столицы и anchor-города.
+     * Для остальных населённых пунктов — null.
+     */
+    href: string | null;
+  };
+
+  company: string;
 }
