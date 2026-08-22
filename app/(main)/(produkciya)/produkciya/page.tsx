@@ -672,6 +672,86 @@ export default function ProdukciyaPage() {
                 </table>
               ),
             },
+            {
+              name: "РЕГИОН: ДАЛЬНИЙ ВОСТОК",
+              children: (
+                <table
+                  className="w-full border-0 outline-0"
+                  style={{ border: "none" }}
+                >
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/yakutsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Саха (Якутия)
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/vladivostok"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Приморский край
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/khabarovsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Хабаровский край
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/blagoveshchensk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Амурская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/chita"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Забайкальский край
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/magadan"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Магаданская область
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/yuzhno-sakhalinsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Сахалинская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/ulan-ude"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Бурятия
+                      </Link>
+                    </td>
+                  </tr>
+                </table>
+              ),
+            },
           ]}
         ></SpoilerButtonsBlock>
       </section>
