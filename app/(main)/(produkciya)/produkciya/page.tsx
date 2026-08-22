@@ -598,6 +598,82 @@ export default function ProdukciyaPage() {
             },
           ]}
         ></SpoilerButtonsBlock>
+        <SpoilerButtonsBlock
+          buttons={[
+            {
+              name: "РЕГИОН: СЕВЕРО-ЗАПАД",
+              children: (
+                <table
+                  className="w-full border-0 outline-0"
+                  style={{ border: "none" }}
+                >
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/sankt-peterburg"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ленинградская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/vologda"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Вологодская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/syktyvkar"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Коми
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/arkhangelsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Архангельская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/petrozavodsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Карелия
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/pskov"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Псковская область
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/murmansk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Мурманская область
+                      </Link>
+                    </td>
+                  </tr>
+                </table>
+              ),
+            },
+          ]}
+        ></SpoilerButtonsBlock>
       </section>
     </article>
   );
