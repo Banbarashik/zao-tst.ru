@@ -12,6 +12,9 @@ import CategoryCards from "@/components/categoryCards";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
+import RussiaMap from "@/components/RussiaMap";
+import { cities } from "@/data/cities";
+import { regions } from "@/data/regions";
 
 export const metadata: Metadata = {
   title: "Производство промышленного воздушно-отопительного оборудования",
@@ -94,6 +97,7 @@ export default function ProdukciyaPage() {
           спроектирована и запущена в работу серия теплообменников и агрегатов
           для эксплуатации в условиях пониженных температур.
         </ProductParagraph>
+
         <Carousel
           opts={{ loop: true }}
           className="relative mx-10 border-2 border-[#ccc] shadow-[0px,1px,0,3px,#bdbdbd_2px,4px,6px,3px,#dbdbdb] 2xl:mx-6"
@@ -215,6 +219,7 @@ export default function ProdukciyaPage() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+
         <ProductParagraph>
           На страницах сайта организации представлены подробные теплотехнические
           характеристики промышленной климатической продукции, программы для
@@ -257,9 +262,39 @@ export default function ProdukciyaPage() {
         </ProductParagraph>
       </section>
 
-      <section>
+      <section className="mb-10">
         <Heading lvl={2} text="Сертификаты" className="mb-4" />
         <LinkButtonsBlock buttons={linkButtons} />
+      </section>
+
+      <section>
+        <Heading
+          lvl={2}
+          text="ГЕОГРАФИЯ ОТГРУЗОК ТЕПЛООБМЕННОГО ОБОРУДОВАНИЯ ПО РЕГИОНАМ"
+          className="mb-4 text-center"
+        />
+        <div className="mb-6 w-full" style={{ aspectRatio: "1150 / 627" }}>
+          <RussiaMap cities={cities} regions={regions} />
+        </div>
+        <div className="space-y-1">
+          <ProductParagraph>
+            На интерактивной карте отмечены промышленные зоны и регионы страны,
+            в которые предприятие ООО «Т.С.Т.» ведет регулярные отгрузки
+            воздушно-отопительного оборудования. Функция масштабирования
+            позволяет детально приблизить интересующую вас область, найти
+            конкретные города и оценить плотность эксплуатации нашей продукции
+            на местных объектах. Через всплывающую таблицу выбранного участка
+            осуществляется прямой переход к подробной истории поставок.
+          </ProductParagraph>
+          <ProductParagraph>
+            На страницах регионов собраны спецификации выполненных отгрузок по
+            местным предприятиям, локальные климатические параметры для
+            теплотехнических расчетов, а также адреса грузовых терминалов и
+            сроки доставки транспортных компаний до конкретного города. Для
+            удобства проектирования и снабжения под картой доступна прямая
+            структура спойлеров с разбивкой областей по основным макрорегионам.
+          </ProductParagraph>
+        </div>
       </section>
     </article>
   );
