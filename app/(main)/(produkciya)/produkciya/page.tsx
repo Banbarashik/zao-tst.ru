@@ -318,6 +318,33 @@ export default function ProdukciyaPage() {
                       </Link>
                     </td>
 
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/novosibirsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Новосибирская область
+                      </Link>
+                    </td>
+
+                    <td style={{ border: "none" }}>
+                      <Link
+                        href="/regions/krasnoyarsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Красноярский край
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/tomsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Томская область
+                      </Link>
+                    </td>
                     <td style={{ border: "none" }}>
                       <Link
                         href="/regions/barnaul"
@@ -326,12 +353,48 @@ export default function ProdukciyaPage() {
                         Алтайский край
                       </Link>
                     </td>
-                    <td style={{ border: "none" }} className="py-2">
+                    <td style={{ border: "none" }}>
                       <Link
-                        href="/regions/novosibirsk"
+                        href="/regions/irkutsk"
                         className="text-primary hover:primary-dark text-lg hover:underline"
                       >
-                        Новосибирская область
+                        Иркутская область
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/abakan"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Хакасия
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }}>
+                      <Link
+                        href="/regions/omsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Омская область
+                      </Link>
+                    </td>
+                    <td style={{ border: "none" }}>
+                      <Link
+                        href="/regions/gorno-altaysk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Алтай
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "none" }} className="py-2">
+                      <Link
+                        href="/regions/kyzyl"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Тыва
                       </Link>
                     </td>
                   </tr>
