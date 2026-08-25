@@ -320,101 +320,88 @@ export default function ProdukciyaPage() {
                       логистическими узлами доставки и локальными климатическими
                       параметрами по СП 131.13330.
                     </p>
-                    <table
-                      className="w-full border-0 outline-0"
-                      style={{ border: "none" }}
-                    >
-                      <tr>
-                        <td style={{ border: "none" }} className="py-2">
-                          <Link
-                            href="/regions/kemerovo"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Кемеровская область
-                          </Link>
-                        </td>
-
-                        <td style={{ border: "none" }} className="py-2">
-                          <Link
-                            href="/regions/novosibirsk"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Новосибирская область
-                          </Link>
-                        </td>
-
-                        <td style={{ border: "none" }}>
-                          <Link
-                            href="/regions/krasnoyarsk"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Красноярский край
-                          </Link>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{ border: "none" }} className="py-2">
-                          <Link
-                            href="/regions/tomsk"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Томская область
-                          </Link>
-                        </td>
-                        <td style={{ border: "none" }}>
-                          <Link
-                            href="/regions/barnaul"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Алтайский край
-                          </Link>
-                        </td>
-                        <td style={{ border: "none" }}>
-                          <Link
-                            href="/regions/irkutsk"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Иркутская область
-                          </Link>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{ border: "none" }} className="py-2">
-                          <Link
-                            href="/regions/abakan"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Республика Хакасия
-                          </Link>
-                        </td>
-                        <td style={{ border: "none" }}>
-                          <Link
-                            href="/regions/omsk"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Омская область
-                          </Link>
-                        </td>
-                        <td style={{ border: "none" }}>
-                          <Link
-                            href="/regions/gorno-altaysk"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Республика Алтай
-                          </Link>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{ border: "none" }} className="py-2">
-                          <Link
-                            href="/regions/kyzyl"
-                            className="text-primary hover:primary-dark text-lg hover:underline"
-                          >
-                            Республика Тыва
-                          </Link>
-                        </td>
-                      </tr>
-                    </table>
+                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                      <li className="py-2">
+                        <Link
+                          href="/regions/kemerovo"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Кемеровская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/novosibirsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Новосибирская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/krasnoyarsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Красноярский край
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/tomsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Томская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/barnaul"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Алтайский край
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/irkutsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Иркутская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/abakan"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Хакасия
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/omsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Омская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/gorno-altaysk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Алтай
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/kyzyl"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Тыва
+                        </Link>
+                      </li>
+                    </ul>
                     <p>
                       В числе опорных объектов, укомплектованных нашим
                       оборудованием: Объединенный металлургический комбинат
@@ -435,268 +422,238 @@ export default function ProdukciyaPage() {
               {
                 name: "РЕГИОН: ПОВОЛЖЬЕ",
                 children: (
-                  <table
-                    className="w-full border-0 outline-0"
-                    style={{ border: "none" }}
-                  >
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/samara"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Самарская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/perm"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Пермский край
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/nizhny-novgorod"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Нижегородская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/orenburg"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Оренбургская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/saratov"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Саратовская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/ufa"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Республика Башкортостан
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      {" "}
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/kirov"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Кировская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/kazan"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Республика Татарстан
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/penza"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Пензенская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/cheboksary"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Чувашская Республика
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/izhevsk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Удмуртская Республика
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/ulyanovsk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Ульяновская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/yoshkar-ola"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Республика Марий Эл
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/saransk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Республика Мордовия
-                        </Link>
-                      </td>
-                    </tr>
-                  </table>
+                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <li className="py-2">
+                      <Link
+                        href="/regions/samara"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Самарская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/perm"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Пермский край
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/nizhny-novgorod"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Нижегородская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/orenburg"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Оренбургская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/saratov"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Саратовская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/ufa"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Башкортостан
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/kirov"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Кировская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/kazan"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Татарстан
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/penza"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Пензенская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/cheboksary"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Чувашская Республика
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/izhevsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Удмуртская Республика
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/ulyanovsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ульяновская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/yoshkar-ola"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Марий Эл
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/saransk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Мордовия
+                      </Link>
+                    </li>
+                  </ul>
                 ),
               },
               {
                 name: "РЕГИОН: УРАЛ",
                 children: (
-                  <table
-                    className="w-full border-0 outline-0"
-                    style={{ border: "none" }}
-                  >
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/ekaterinburg"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Свердловская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/chelyabinsk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Челябинская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/surgut"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          ХМАО-Югра
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/tyumen"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Тюменская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/kurgan"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Курганская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/salekhard"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Ямало-Ненецкий АО
-                        </Link>
-                      </td>
-                    </tr>
-                  </table>
+                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <li className="py-2">
+                      <Link
+                        href="/regions/ekaterinburg"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Свердловская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/chelyabinsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Челябинская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/surgut"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        ХМАО-Югра
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/tyumen"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Тюменская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/kurgan"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Курганская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/salekhard"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ямало-Ненецкий АО
+                      </Link>
+                    </li>
+                  </ul>
                 ),
               },
               {
                 name: "Южный регион",
                 children: (
-                  <table
-                    className="outline-0s w-full border-0"
-                    style={{ border: "none" }}
-                  >
-                    <tr>
-                      <td style={{ border: "none" }} className="p-2 px-5">
-                        <Link
-                          href="/regions/rostov-na-donu"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Ростовская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="p-2 px-5">
-                        <Link
-                          href="/regions/krasnodar"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Краснодарский край
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="p-2 px-5">
-                        <Link
-                          href="/regions/volgograd"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Волгоградская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="p-2 px-5">
-                        <Link
-                          href="/regions/stavropol"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Ставропольский край
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="p-2 px-5">
-                        <Link
-                          href="/regions/grozny"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Чеченская Республика
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="p-2 px-5">
-                        <Link
-                          href="/regions/nalchik"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Кабардино-Балкарская Республика
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="p-2 px-5">
-                        <Link
-                          href="/regions/cherkessk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Карачаево-Черкесская Республика
-                        </Link>
-                      </td>
-                    </tr>
-                  </table>
+                  <ul className="grid grid-cols-1 items-center gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <li className="p-2 px-5">
+                      <Link
+                        href="/regions/rostov-na-donu"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ростовская область
+                      </Link>
+                    </li>
+                    <li className="p-2 px-5">
+                      <Link
+                        href="/regions/krasnodar"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Краснодарский край
+                      </Link>
+                    </li>
+                    <li className="p-2 px-5">
+                      <Link
+                        href="/regions/volgograd"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Волгоградская область
+                      </Link>
+                    </li>
+                    <li className="p-2 px-5">
+                      <Link
+                        href="/regions/stavropol"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ставропольский край
+                      </Link>
+                    </li>
+                    <li className="p-2 px-5">
+                      <Link
+                        href="/regions/grozny"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Чеченская Республика
+                      </Link>
+                    </li>
+                    <li className="p-2 px-5">
+                      <Link
+                        href="/regions/nalchik"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Кабардино-Балкарская Республика
+                      </Link>
+                    </li>
+                    <li className="p-2 px-5">
+                      <Link
+                        href="/regions/cherkessk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Карачаево-Черкесская Республика
+                      </Link>
+                    </li>
+                  </ul>
                 ),
               },
             ]}
@@ -707,311 +664,278 @@ export default function ProdukciyaPage() {
               {
                 name: "РЕГИОН: СЕВЕРО-ЗАПАД",
                 children: (
-                  <table
-                    className="w-full border-0 outline-0"
-                    style={{ border: "none" }}
-                  >
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/sankt-peterburg"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Ленинградская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/vologda"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Вологодская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/syktyvkar"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Республика Коми
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/arkhangelsk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Архангельская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/petrozavodsk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Республика Карелия
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/pskov"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Псковская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/murmansk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Мурманская область
-                        </Link>
-                      </td>
-                    </tr>
-                  </table>
+                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <li className="py-2">
+                      <Link
+                        href="/regions/sankt-peterburg"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ленинградская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/vologda"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Вологодская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/syktyvkar"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Коми
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/arkhangelsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Архангельская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/petrozavodsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Карелия
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/pskov"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Псковская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/murmansk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Мурманская область
+                      </Link>
+                    </li>
+                  </ul>
                 ),
               },
               {
                 name: "РЕГИОН: ДАЛЬНИЙ ВОСТОК",
                 children: (
-                  <table
-                    className="w-full border-0 outline-0"
-                    style={{ border: "none" }}
-                  >
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/yakutsk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Республика Саха (Якутия)
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/vladivostok"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Приморский край
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/khabarovsk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Хабаровский край
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/blagoveshchensk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Амурская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/chita"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Забайкальский край
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/magadan"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Магаданская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/yuzhno-sakhalinsk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Сахалинская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/ulan-ude"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Республика Бурятия
-                        </Link>
-                      </td>
-                    </tr>
-                  </table>
+                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <li className="py-2">
+                      <Link
+                        href="/regions/yakutsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Саха (Якутия)
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/vladivostok"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Приморский край
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/khabarovsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Хабаровский край
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/blagoveshchensk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Амурская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/chita"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Забайкальский край
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/magadan"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Магаданская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/yuzhno-sakhalinsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Сахалинская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/ulan-ude"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Республика Бурятия
+                      </Link>
+                    </li>
+                  </ul>
                 ),
               },
               {
                 name: "ЦЕНТРАЛЬНЫЙ РЕГИОН",
                 children: (
-                  <table
-                    className="w-full border-0 outline-0"
-                    style={{ border: "none" }}
-                  >
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/moskovskaya-oblast"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Московская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/tver"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Тверская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/yaroslavl"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Ярославская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/tula"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Тульская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/belgorod"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Белгородская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/kaluga"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Калужская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/ivanovo"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Ивановская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/bryansk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Брянская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/vladimir"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Владимирская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/voronezh"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Воронежская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/lipetsk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Липецкая область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/kursk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Курская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/ryazan"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Рязанская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/tambov"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Тамбовская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/smolensk"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Смоленская область
-                        </Link>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/kostroma"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Костромская область
-                        </Link>
-                      </td>
-                      <td style={{ border: "none" }} className="py-2">
-                        <Link
-                          href="/regions/orel"
-                          className="text-primary hover:primary-dark text-lg hover:underline"
-                        >
-                          Орловская область
-                        </Link>
-                      </td>
-                    </tr>
-                  </table>
+                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <li className="py-2">
+                      <Link
+                        href="/regions/moskovskaya-oblast"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Московская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/tver"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Тверская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/yaroslavl"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ярославская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/tula"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Тульская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/belgorod"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Белгородская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/kaluga"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Калужская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/ivanovo"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Ивановская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/bryansk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Брянская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/vladimir"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Владимирская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/voronezh"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Воронежская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/lipetsk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Липецкая область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/kursk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Курская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/ryazan"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Рязанская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/tambov"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Тамбовская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/smolensk"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Смоленская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/kostroma"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Костромская область
+                      </Link>
+                    </li>
+                    <li className="py-2">
+                      <Link
+                        href="/regions/orel"
+                        className="text-primary hover:primary-dark text-lg hover:underline"
+                      >
+                        Орловская область
+                      </Link>
+                    </li>
+                  </ul>
                 ),
               },
             ]}
