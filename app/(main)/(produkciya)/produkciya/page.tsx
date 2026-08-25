@@ -1,5 +1,8 @@
+"use client";
+
 import type { Metadata } from "next";
 import Image from "next/image";
+import { useState } from "react";
 
 import {
   Carousel,
@@ -19,13 +22,13 @@ import Spoiler from "@/components/ui/spoiler";
 import SpoilerButtonsBlock from "@/components/spoilerButtonsBlock";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+/* export const metadata: Metadata = {
   title: "Производство промышленного воздушно-отопительного оборудования",
   description:
     "Промышленное воздушно-отопительное оборудование от предприятия-производителя Т.С.Т. Продажа калориферов, отопительных агрегатов, воздухонагревательных установок",
   keywords:
     "промышленное воздушно отопительное оборудование,промышленные агрегаты воздушного отопления,производитель промышленных калориферов,промышленные калориферы цена,промышленные калориферы расчет и подбор,промышленные водяные калориферы,промышленные паровые калориферы,промышленные отопительные агрегаты,промышленные электрокалориферы,промышленные калориферы купить",
-};
+}; */
 
 const produkciyaCategories = [
   {
@@ -67,6 +70,8 @@ const linkButtons = [
 ];
 
 export default function ProdukciyaPage() {
+  const [activeKey, setActiveKey] = useState<string | null>(null);
+
   return (
     <article className="@container w-full space-y-6">
       <Heading lvl={1} text="Промышленное воздушно-отопительное оборудование" />
@@ -300,6 +305,9 @@ export default function ProdukciyaPage() {
         </div>
 
         <SpoilerButtonsBlock
+          groupId="produkciya-1"
+          activeKey={activeKey}
+          onActiveKeyChange={setActiveKey}
           buttons={[
             {
               name: "РЕГИОН: СИБИРЬ",
@@ -699,6 +707,9 @@ export default function ProdukciyaPage() {
           ]}
         />
         <SpoilerButtonsBlock
+          groupId="produkciya-2"
+          activeKey={activeKey}
+          onActiveKeyChange={setActiveKey}
           buttons={[
             {
               name: "РЕГИОН: СЕВЕРО-ЗАПАД",
@@ -1012,7 +1023,6 @@ export default function ProdukciyaPage() {
             },
           ]}
         />
-        <SpoilerButtonsBlock className="w-max max-w-full" buttons={[]} />
       </section>
     </article>
   );

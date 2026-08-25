@@ -10,6 +10,9 @@ import useYandexMetrika from "@/hooks/useYandexMetrika";
 export default function SpoilerButtonsBlock({
   buttons,
   className = "",
+  groupId,
+  activeKey,
+  onActiveKeyChange,
 }: {
   buttons: {
     name: string;
@@ -19,27 +22,48 @@ export default function SpoilerButtonsBlock({
     goal?: string;
   }[];
   className?: string;
+  /** Optional id for grouping keys when controlled from parent */
+  groupId?: string;
+  /** Controlled active key (e.g. "groupId:2") or null */
+  activeKey?: string | null;
+  /** Controlled change handler */
+  onActiveKeyChange?: (key: string | null) => void;
 }) {
   const { reachGoal } = useYandexMetrika();
 
-  const [openIndex, setOpenIndex] = useState<number | null>(() => {
-    const defaultOpenIndex = buttons.findIndex((button) => button.defaultOpen);
-    return defaultOpenIndex >= 0 ? defaultOpenIndex : null;
-  });
+  const isControlled = typeof onActiveKeyChange === "function" && !!groupId;
+
+  const [internalOpenIndex, setInternalOpenIndex] = useState<number | null>(
+    () => {
+      const defaultOpenIndex = buttons.findIndex(
+        (button) => button.defaultOpen,
+      );
+      return defaultOpenIndex >= 0 ? defaultOpenIndex : null;
+    },
+  );
 
   const toggleButton = (index: number, goal?: string) => {
     if (goal) {
       reachGoal(goal);
     }
 
-    setOpenIndex((current) => (current === index ? null : index));
+    if (isControlled) {
+      const key = `${groupId}:${index}`;
+      onActiveKeyChange?.(activeKey === key ? null : key);
+      return;
+    }
+
+    setInternalOpenIndex((current) => (current === index ? null : index));
   };
 
   return (
     <div className={cn(className, "flex flex-col gap-2")}>
       <div className="flex flex-wrap gap-2">
         {buttons.map((btn, index) => {
-          const isOpen = openIndex === index;
+          const key = `${groupId}:${index}`;
+          const isOpen = isControlled
+            ? activeKey === key
+            : internalOpenIndex === index;
 
           return (
             <div
@@ -76,7 +100,10 @@ export default function SpoilerButtonsBlock({
       </div>
 
       {buttons.map((btn, index) => {
-        const isOpen = openIndex === index;
+        const key = `${groupId}:${index}`;
+        const isOpen = isControlled
+          ? activeKey === key
+          : internalOpenIndex === index;
 
         if (!isOpen) {
           return null;
