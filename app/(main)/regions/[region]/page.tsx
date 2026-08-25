@@ -17,6 +17,8 @@ import type {
   RegionData,
   TransportTerminal,
 } from "@/data/regions/types";
+import { LEFT_BLUE_BRACKET } from "@/constants/styles";
+import React from "react";
 
 export const dynamicParams = false;
 
@@ -279,7 +281,7 @@ function TransportTerminals({ terminals }: { terminals: TransportTerminal[] }) {
   }
 
   return (
-    <>
+    <div className={LEFT_BLUE_BRACKET}>
       <p>🚚 Адреса терминалов транспортных компаний:</p>
       <ul>
         {terminals.map((terminal) => {
@@ -293,7 +295,7 @@ function TransportTerminals({ terminals }: { terminals: TransportTerminal[] }) {
           );
         })}
       </ul>
-    </>
+    </div>
   );
 }
 
@@ -347,6 +349,28 @@ export default async function RegionPage({
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
       />
       <article className="space-y-8">
+        <h1 className="text-xl font-bold uppercase md:text-[22px] xl:text-2xl">
+          Кемеровская область
+        </h1>
+
+        <section className="space-y-2">
+          <p>
+            Поставки воздушно-отопительного оборудования выполнены в 18 городов
+            и 21 населенный пункт Кемеровской области. Отгрузки калориферов и
+            отопительных агрегатов производства ООО «Т.С.Т» ведутся на
+            крупнейшие добывающие, металлургические и химические площадки
+            региона, включая такие опорные объекты, как Объединенный
+            металлургический комбинат ЕВРАЗ ЗСМК, ОАО «Кузнецкие ферросплавы»,
+            КАО «Азот», угольные холдинги «Кузбассразрезуголь» (УГМК) и «Южный
+            Кузбасс» (Мечел), а также Томь-Усинскую ГРЭС.
+          </p>
+          <p className="text-secondary-text">
+            Ниже представлена официальная структура выполненных поставок:
+            детальные спецификации заказов, местные параметры СП 131.13330 и
+            логистические терминалы доставки.
+          </p>
+        </section>
+
         {climateTable ? <RegionClimateTable table={climateTable} /> : null}
 
         <section>
@@ -361,19 +385,25 @@ export default async function RegionPage({
           />
         </section>
 
+        <div className="mx-auto h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
         {anchorCities.map(({ settlement, companies }) => (
-          <section key={settlement.slug}>
-            <Anchor id={settlement.slug} device="all" />
-            <h2 className="mb-3 text-xl font-bold uppercase">
-              {settlement.name}
-            </h2>
+          <React.Fragment key={settlement.slug}>
+            <section>
+              <Anchor id={settlement.slug} device="all" />
+              <h2 className="mb-3 text-xl font-bold uppercase">
+                {settlement.name}
+              </h2>
 
-            <CompaniesList companies={companies} />
+              <CompaniesList companies={companies} />
 
-            <TransportTerminals
-              terminals={region.transportTerminals[settlement.slug] ?? []}
-            />
-          </section>
+              <TransportTerminals
+                terminals={region.transportTerminals[settlement.slug] ?? []}
+              />
+            </section>
+
+            <div className="mx-auto my-2 h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+          </React.Fragment>
         ))}
 
         <section>
