@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useState, useEffect, useRef, type ReactNode } from "react";
 import { Triangle } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -41,6 +41,41 @@ export default function SpoilerButtonsBlock({
       return defaultOpenIndex >= 0 ? defaultOpenIndex : null;
     },
   );
+
+  const contentRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const getOpenIndex = () => {
+      if (isControlled) {
+        if (!activeKey) return null;
+        const parts = activeKey.split(":");
+        const idx = Number(parts[1]);
+        return Number.isNaN(idx) ? null : idx;
+      }
+      return internalOpenIndex;
+    };
+
+    const updateHeight = () => {
+      const el = contentRef.current;
+      if (!el) return;
+
+      const openIndex = getOpenIndex();
+      if (openIndex !== null && buttons[openIndex]) {
+        el.style.maxHeight = `${el.scrollHeight}px`;
+        el.style.padding = "16px";
+        el.style.opacity = "1";
+      } else {
+        el.style.maxHeight = "0px";
+        el.style.padding = "0px";
+        el.style.opacity = "0";
+      }
+    };
+
+    // Update after render so content is present when measuring
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, [activeKey, internalOpenIndex, isControlled, buttons, groupId]);
 
   const toggleButton = (index: number, goal?: string) => {
     if (goal) {
@@ -96,25 +131,30 @@ export default function SpoilerButtonsBlock({
         })}
       </div>
 
-      {buttons.map((btn, index) => {
-        const key = `${groupId}:${index}`;
-        const isOpen = isControlled
-          ? activeKey === key
-          : internalOpenIndex === index;
-
-        if (!isOpen) {
-          return null;
+      {/* Single content container placed under the buttons rectangle so distance is consistent */}
+      <div
+        ref={(el) => (contentRef.current = el)}
+        aria-hidden={
+          isControlled ? !Boolean(activeKey) : internalOpenIndex === null
         }
-
-        return (
-          <div
-            key={`${btn.name}-content-${index}`}
-            className="w-full overflow-hidden border border-[#723910] bg-white p-4 text-base text-black"
-          >
-            {btn.children}
-          </div>
-        );
-      })}
+        className="w-full overflow-hidden border border-t-0 border-[#723910] bg-[rgb(233,239,247)] transition-[max-height,opacity,padding] duration-300"
+        style={{ maxHeight: 0, padding: 0, opacity: 0 }}
+      >
+        <div className="text-base text-black">
+          {
+            // render children of active index or null
+            (() => {
+              const openIndex = isControlled
+                ? activeKey
+                  ? Number(activeKey.split(":")[1])
+                  : null
+                : internalOpenIndex;
+              if (openIndex === null || !buttons[openIndex]) return null;
+              return buttons[openIndex].children;
+            })()
+          }
+        </div>
+      </div>
     </div>
   );
 }
