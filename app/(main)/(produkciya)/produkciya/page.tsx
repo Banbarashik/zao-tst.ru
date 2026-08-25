@@ -656,11 +656,6 @@ export default function ProdukciyaPage() {
                   </ul>
                 ),
               },
-            ]}
-          />
-          <SpoilerButtonsBlock
-            groupId="produkciya-2"
-            buttons={[
               {
                 name: "РЕГИОН: СЕВЕРО-ЗАПАД",
                 children: (
