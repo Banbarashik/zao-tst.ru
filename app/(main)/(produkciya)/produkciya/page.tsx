@@ -19,13 +19,13 @@ import { regions } from "@/data/regions";
 import SpoilerButtonsBlock from "@/components/spoilerButtonsBlock";
 import SpoilersClientWrapper from "@/components/SpoilersClientWrapper";
 
-/* export const metadata: Metadata = {
+export const metadata: Metadata = {
   title: "Производство промышленного воздушно-отопительного оборудования",
   description:
     "Промышленное воздушно-отопительное оборудование от предприятия-производителя Т.С.Т. Продажа калориферов, отопительных агрегатов, воздухонагревательных установок",
   keywords:
     "промышленное воздушно отопительное оборудование,промышленные агрегаты воздушного отопления,производитель промышленных калориферов,промышленные калориферы цена,промышленные калориферы расчет и подбор,промышленные водяные калориферы,промышленные паровые калориферы,промышленные отопительные агрегаты,промышленные электрокалориферы,промышленные калориферы купить",
-}; */
+};
 
 const produkciyaCategories = [
   {
@@ -296,21 +296,27 @@ export default function ProdukciyaPage() {
             groupId="produkciya-1"
             buttons={[
               {
-                name: "РЕГИОН: СИБИРЬ",
+                name: "Регион: Сибирь",
                 children: (
                   <div className="space-y-4 p-4 text-[15px]">
                     <p className="italic">
                       Поставки воздушно-отопительного оборудования производства
-                      ООО «Т.С.Т.» выполнены в ключевые индустриальные центры и
-                      автономные производственные комплексы Сибири. Отгрузки
-                      калориферов, отопительных агрегатов и установок
-                      осуществляются на крупнейшие добывающие, металлургические,
-                      химические, машиностроительные и агропромышленные площадки
-                      макрорегиона. Представлены 10 субъектов, 58 городов и 57
-                      населенных пунктов. Выберите интересующую вас область,
-                      чтобы ознакомится с номенклатурой отгруженной продукции,
-                      логистическими узлами доставки и локальными климатическими
-                      параметрами по СП 131.13330.
+                      ООО «Т.С.Т.» выполняются в ключевые индустриальные центры
+                      и автономные производственные комплексы Сибири,
+                      обеспечивая бесперебойную работу предприятий в условиях
+                      резко континентального климата, критической температуры
+                      воздуха и экстремально затяжного отопительного периода.
+                      Отгрузки калориферов, отопительных агрегатов и
+                      вентиляционных установок осуществляются на крупнейшие
+                      добывающие, металлургические, химические,
+                      машиностроительные и агропромышленные площадки
+                      макрорегиона. География поставок охватывает 10
+                      территориально-производственных комплексов, включающих в
+                      себя 56 городов и 57 иных населенных пунктов. Выберите
+                      интересующую вас область, чтобы ознакомиться с
+                      номенклатурой отгруженной продукции, логистическими узлами
+                      доставки и локальными климатическими параметрами по СП
+                      131.13330.
                     </p>
                     <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                       <li className="py-2">
@@ -395,534 +401,744 @@ export default function ProdukciyaPage() {
                       </li>
                     </ul>
                     <p className="italic">
-                      В числе опорных объектов, укомплектованных нашим
-                      оборудованием: Объединенный металлургический комбинат
-                      ЕВРАЗ ЗСМК, Братский алюминиевый завод (ОК РУСАЛ),
-                      Угледобывающий холдинг «СУЭК-Красноярск», Нефтехимический
-                      комбинат «Омский каучук» (ГК «Титан»), Новосибирский
-                      авиационный завод (НАЗ), Омское моторостроительное
+                      В числе опорных объектов, оснащенных нашим оборудованием:
+                      Объединенный металлургический комбинат ЕВРАЗ ЗСМК,
+                      Братский алюминиевый завод (ОК РУСАЛ), угледобывающий
+                      холдинг «СУЭК-Красноярск», нефтехимический комбинат
+                      «Омский каучук» (ГК «Титан»), Новосибирский авиационный
+                      завод имени В. П. Чкалова, Омское моторостроительное
                       объединение имени П. И. Баранова (ОДК Ростех),
-                      Саяногорский Вагоноремонтный Завод, АО ФНПЦ «Алтай» и
-                      Научно-производственный центр «Полюс» (Роскосмос),
-                      Кабельный завод «Сибкабель» (Холдинг Кабельный Альянс),
-                      Томский электротехнический завод, предприятия федерального
-                      агрохолдинга «Сибагро».
+                      Саяногорский вагоноремонтный завод,
+                      научно-производственный комплекс «Алтай»,
+                      научно-производственный центр «Полюс», кабельный завод
+                      «Сибкабель», Томский электротехнический завод, предприятия
+                      федерального агрохолдинга «Сибагро».
                     </p>
                   </div>
                 ),
               },
               {
-                name: "РЕГИОН: ПОВОЛЖЬЕ",
+                name: "Регион: Поволжье",
                 children: (
-                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    <li className="py-2">
-                      <Link
-                        href="/regions/samara"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Самарская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/perm"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Пермский край
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/nizhny-novgorod"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Нижегородская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/orenburg"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Оренбургская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/saratov"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Саратовская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/ufa"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Республика Башкортостан
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/kirov"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Кировская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/kazan"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Республика Татарстан
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/penza"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Пензенская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/cheboksary"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Чувашская Республика
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/izhevsk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Удмуртская Республика
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/ulyanovsk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Ульяновская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/yoshkar-ola"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Республика Марий Эл
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/saransk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Республика Мордовия
-                      </Link>
-                    </li>
-                  </ul>
+                  <div className="space-y-4 p-4 text-[15px]">
+                    <p className="italic">
+                      Теплообменное и вентиляционное оборудование производства
+                      ООО «Т.С.Т.» эксплуатируется в ключевых индустриальных
+                      центрах, логистических хабах и автономных производственных
+                      комплексах Поволжья, обеспечивая бесперебойную работу
+                      предприятий в условиях умеренно континентального климата,
+                      высокой влажности и затяжных межсезонных периодов.
+                      Отгрузки калориферов, отопительных агрегатов и
+                      вентиляционных установок осуществляются на крупнейшие
+                      машиностроительные, автомобилестроительные, нефтегазовые,
+                      химические, кабельные и агропромышленные площадки
+                      Приволжского макрорегиона. География поставок охватывает
+                      14 территориально-производственных комплексов, включающих
+                      в себя 42 города и 11 иных населенных пунктов. Выберите
+                      интересующую вас область, чтобы ознакомиться с
+                      номенклатурой отгруженной продукции, логистическими узлами
+                      доставки и локальными климатическими параметрами по СП
+                      131.13330.
+                    </p>
+                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                      <li className="py-2">
+                        <Link
+                          href="/regions/samara"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Самарская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/perm"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Пермский край
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/nizhny-novgorod"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Нижегородская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/orenburg"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Оренбургская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/saratov"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Саратовская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/ufa"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Башкортостан
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/kirov"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Кировская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/kazan"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Татарстан
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/penza"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Пензенская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/cheboksary"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Чувашская Республика
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/izhevsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Удмуртская Республика
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/ulyanovsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Ульяновская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/yoshkar-ola"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Марий Эл
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/saransk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Мордовия
+                        </Link>
+                      </li>
+                    </ul>
+                    <p className="italic">
+                      В числе опорных объектов, оснащенных нашим оборудованием:
+                      завод бурового оборудования АО «Волгабурмаш», Гайский ГОК
+                      (холдинг УГМК), Чебоксарский электроаппаратный завод ЗАО
+                      «ЧЭАЗ», фармацевтический комбинат ОАО
+                      «Татхимфармпрепараты», завод компрессорного машиностроения
+                      ОАО «Казанькомпрессормаш» (Группа ГМС), химический
+                      комплекс ЗАО «Дюпон Химпром», Ульяновский сахарный завод,
+                      АО «Литий-Элемент», завод электронной промышленности ООО
+                      «Хелиос-Ресурс», производственно-конструкторское
+                      объединение АО ПКО «Теплообменник», завод тяжелого
+                      электромашиностроения ООО «Электротяжмаш-Привод»,
+                      кабельные заводы АО «Кирскабель» и АО «Самарская Кабельная
+                      Компания».
+                    </p>
+                  </div>
                 ),
               },
               {
-                name: "РЕГИОН: УРАЛ",
+                name: "Регион: Урал",
                 children: (
-                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    <li className="py-2">
-                      <Link
-                        href="/regions/ekaterinburg"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Свердловская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/chelyabinsk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Челябинская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/surgut"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        ХМАО-Югра
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/tyumen"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Тюменская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/kurgan"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Курганская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/salekhard"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Ямало-Ненецкий АО
-                      </Link>
-                    </li>
-                  </ul>
+                  <div className="space-y-4 p-4 text-[15px]">
+                    <p className="italic">
+                      Вентиляционно-отопительное оборудование производства ООО
+                      «Т.С.Т.» эксплуатируется в ключевых индустриальных
+                      центрах, энергетических узлах и автономных
+                      производственных комплексах Уральского макрорегиона,
+                      обеспечивая бесперебойную работу предприятий в условиях
+                      сурового континентального климата, резких температурных
+                      перепадов и повышенных ветровых нагрузок. Отгрузки
+                      калориферов, отопительных агрегатов и вентиляционных
+                      установок осуществляются на крупнейшие металлургические,
+                      тяжелые машиностроительные, нефтегазовые,
+                      теплоэнергетические и агропромышленные площадки Урала.
+                      География поставок охватывает 6
+                      территориально-производственных комплексов, включающих в
+                      себя 18 городов и 4 иных населенных пункта. Выберите
+                      интересующую вас область, чтобы ознакомиться с
+                      номенклатурой отгруженной продукции, логистическими узлами
+                      доставки и локальными климатическими параметрами по СП
+                      131.13330.
+                    </p>
+                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                      <li className="py-2">
+                        <Link
+                          href="/regions/ekaterinburg"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Свердловская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/chelyabinsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Челябинская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/surgut"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          ХМАО-Югра
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/tyumen"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Тюменская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/kurgan"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Курганская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/salekhard"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Ямало-Ненецкий АО
+                        </Link>
+                      </li>
+                    </ul>
+                    <p className="italic">
+                      В числе опорных объектов, оснащенных нашим оборудованием:
+                      Уральский завод тяжелого машиностроения («Уралмашзавод»),
+                      ПАО «Курганская генерирующая компания», нефтедобывающий
+                      комплекс «Соровскнефть» (ПАО «НК «Роснефть»),
+                      экспериментальный завод ПИИ ОАО «Газтурбосервис»,
+                      газоперерабатывающий кластер АО «Сибуртюменьгаз» (холдинг
+                      СИБУР), производитель спецсталей АО «Уралкуз» (Мечел),
+                      Кировградский завод твердых сплавов (КЗТС), ПАО «Энел
+                      Россия», станкостроительное предприятие ООО
+                      «Ремстанкомаш», производственные комплексы пищевого
+                      холдинга «Союзпищепром».
+                    </p>
+                  </div>
+                ),
+              },
+              {
+                name: "Центральный регион",
+                children: (
+                  <div className="space-y-4 p-4 text-[15px]">
+                    <p className="italic">
+                      Поставки воздушно-отопительного оборудования производства
+                      ООО «Т.С.Т.» выполняются в ключевые индустриальные центры,
+                      научно-исследовательские хабы и автономные
+                      производственные комплексы Центрального макрорегиона,
+                      обеспечивая бесперебойную работу предприятий в условиях
+                      умеренно континентального климата, переменной влажности и
+                      значительного перепада температур. Отгрузки промышленных
+                      калориферов, отопительных агрегатов и вентиляционных
+                      установок регулярно осуществляются на крупнейшие
+                      авиакосмические, высокотехнологичные приборостроительные,
+                      нефтехимические, перерабатывающие и машиностроительные
+                      площадки Центрального округа. География поставок
+                      охватывает 17 территориально-производственных комплексов,
+                      включающих в себя 41 город и 15 иных населенных пунктов.
+                      Выберите интересующую вас область, чтобы ознакомиться с
+                      номенклатурой отгруженной продукции, логистическими узлами
+                      доставки и локальными климатическими параметрами по СП
+                      131.13330.
+                    </p>
+                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                      <li className="py-2">
+                        <Link
+                          href="/regions/moskovskaya-oblast"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Московская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/tver"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Тверская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/yaroslavl"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Ярославская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/tula"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Тульская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/belgorod"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Белгородская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/kaluga"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Калужская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/ivanovo"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Ивановская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/bryansk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Брянская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/vladimir"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Владимирская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/voronezh"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Воронежская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/lipetsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Липецкая область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/kursk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Курская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/ryazan"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Рязанская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/tambov"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Тамбовская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/smolensk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Смоленская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/kostroma"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Костромская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/orel"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Орловская область
+                        </Link>
+                      </li>
+                    </ul>
+                    <p className="italic">
+                      В числе опорных объектов, оснащенных нашим оборудованием:
+                      Авиационная корпорация «Рубин», предприятие газотурбинного
+                      машиностроения ПАО «ОДК-Сатурн» (ГК Ростех), Авиационный
+                      научно-производственный комплекс имени М. В. Хруничева,
+                      завод энергетического машиностроения ОАО «Калужский
+                      турбинный завод» (холдинг «Силовые машины»), Дмитриевский
+                      химический завод ООО «ДХЗ-Производство», завод аэрозольной
+                      продукции ООО «Аэрозоль Новомосковск» (ГК «Арнест»),
+                      Каменская бумажно-картонная фабрика холдинга «СФТ
+                      Пакеджинг», Олымский сахарный завод, химический завод
+                      катализаторов АО «Промкатализ», научно-производственное
+                      предприятие ООО «НПП «Юникорн».
+                    </p>
+                  </div>
+                ),
+              },
+              {
+                name: "Регион: Северо-Запад",
+                children: (
+                  <div className="space-y-4 p-4 text-[15px]">
+                    <p className="italic">
+                      Вентиляционное и теплообменное оборудование производства
+                      ООО «Т.С.Т.» успешно эксплуатируется в ключевых
+                      индустриальных центрах, портовых узлах и автономных
+                      производственных комплексах Северо-Запада, обеспечивая
+                      бесперебойную работу предприятий в условиях экстремальной
+                      влажности, повышенных штормовых нагрузок и низких
+                      заполярных температур. Отгрузки промышленных калориферов,
+                      отопительных агрегатов и вентиляционных установок
+                      осуществляются на крупнейшие судостроительные,
+                      металлургические, химические, целлюлозно-бумажные и
+                      биофармацевтические площадки Северо-Западного
+                      макрорегиона. География поставок охватывает 8
+                      территориально-производственных комплексов, включающих в
+                      себя 21 город и 6 иных населенных пунктов. Выберите
+                      интересующую вас область, чтобы ознакомиться с
+                      номенклатурой отгруженной продукции, логистическими узлами
+                      доставки и локальными климатическими параметрами по СП
+                      131.13330.
+                    </p>
+                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                      <li className="py-2">
+                        <Link
+                          href="/regions/sankt-peterburg"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Ленинградская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/vologda"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Вологодская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/syktyvkar"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Коми
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/arkhangelsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Архангельская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/petrozavodsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Карелия
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/pskov"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Псковская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/murmansk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Мурманская область
+                        </Link>
+                      </li>
+                    </ul>
+                    <p className="italic">
+                      В числе опорных объектов, оснащенных нашим оборудованием:
+                      Пикалевский глиноземный завод (холдинг РУСАЛ), целлюлозный
+                      комбинат ООО «РК-Гранд», центр судостроения АО «ЦС
+                      «Звездочка», Новгородский металлургический завод (холдинг
+                      РМК), биофармацевтический комплекс ООО «Герофарм»,
+                      Жешартский ЛПК, автоматизированный деревообрабатывающий
+                      комбинат ООО «Сокол СиЭлТи» (холдинг Segezha Group),
+                      подшипниковый завод ООО «ПО НПН», Боровичский Комбинат
+                      Огнеупоров, арктическое нефтедобывающее предприятие АО
+                      «Арктикнефть».
+                    </p>
+                  </div>
+                ),
+              },
+              {
+                name: "Регион: Дальний Восток",
+                children: (
+                  <div className="space-y-4 p-4 text-[15px]">
+                    <p className="italic">
+                      Вентиляционное и теплообменное оборудование производства
+                      ООО «Т.С.Т.» эксплуатируется в ключевых индустриальных
+                      центрах, портовых узлах и автономных производственных
+                      комплексах Дальнего Востока, обеспечивая бесперебойную
+                      работу предприятий в условиях сложного и контрастного
+                      климата, экстремально низких зимних температур и влажного
+                      морского воздуха. Отгрузки калориферов, отопительных
+                      агрегатов и вентиляционно-отопительных установок
+                      осуществляются на крупнейшие судостроительные,
+                      горно-металлургические, химико-фармацевтические и
+                      логистические площадки макрорегиона. География поставок
+                      охватывает 8 территориально-производственных комплексов,
+                      включающих в себя 17 городов и 7 иных населенных пунктов.
+                      Выберите интересующую вас область, чтобы ознакомиться с
+                      номенклатурой отгруженной продукции, логистическими узлами
+                      доставки и локальными климатическими параметрами по СП
+                      131.13330.
+                    </p>
+                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                      <li className="py-2">
+                        <Link
+                          href="/regions/yakutsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Саха (Якутия)
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/vladivostok"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Приморский край
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/khabarovsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Хабаровский край
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/blagoveshchensk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Амурская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/chita"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Забайкальский край
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/magadan"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Магаданская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/yuzhno-sakhalinsk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Сахалинская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/ulan-ude"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Республика Бурятия
+                        </Link>
+                      </li>
+                    </ul>
+                    <p className="italic">
+                      В числе опорных объектов, оснащенных нашим оборудованием:
+                      горно-обогатительные комплексы ПАО АК «Алроса»,
+                      золотодобывающий прииск «Соловьевский», Дальнегорский ГОК,
+                      Ново-Широкинский рудник, АО «Амуруголь», Улан-Удэнский
+                      авиационный завод (холдинг «Вертолеты России»),
+                      судостроительный комплекс «Дальневосточный завод «Звезда»,
+                      горнорудные хабы компании «Полиметалл» на Колыме,
+                      фармацевтический завод «Дальхимфарм», Амурский
+                      судостроительный завод (ОСК), производственные и
+                      топливно-распределительные комплексы ООО
+                      «Сахалин-трейдинг».
+                    </p>
+                  </div>
                 ),
               },
               {
                 name: "Южный регион",
                 children: (
-                  <ul className="grid grid-cols-1 items-center gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    <li className="p-2 px-5">
-                      <Link
-                        href="/regions/rostov-na-donu"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Ростовская область
-                      </Link>
-                    </li>
-                    <li className="p-2 px-5">
-                      <Link
-                        href="/regions/krasnodar"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Краснодарский край
-                      </Link>
-                    </li>
-                    <li className="p-2 px-5">
-                      <Link
-                        href="/regions/volgograd"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Волгоградская область
-                      </Link>
-                    </li>
-                    <li className="p-2 px-5">
-                      <Link
-                        href="/regions/stavropol"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Ставропольский край
-                      </Link>
-                    </li>
-                    <li className="p-2 px-5">
-                      <Link
-                        href="/regions/grozny"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Чеченская Республика
-                      </Link>
-                    </li>
-                    <li className="p-2 px-5">
-                      <Link
-                        href="/regions/nalchik"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Кабардино-Балкарская Республика
-                      </Link>
-                    </li>
-                    <li className="p-2 px-5">
-                      <Link
-                        href="/regions/cherkessk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Карачаево-Черкесская Республика
-                      </Link>
-                    </li>
-                  </ul>
-                ),
-              },
-              {
-                name: "РЕГИОН: СЕВЕРО-ЗАПАД",
-                children: (
-                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    <li className="py-2">
-                      <Link
-                        href="/regions/sankt-peterburg"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Ленинградская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/vologda"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Вологодская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/syktyvkar"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Республика Коми
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/arkhangelsk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Архангельская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/petrozavodsk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Республика Карелия
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/pskov"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Псковская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/murmansk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Мурманская область
-                      </Link>
-                    </li>
-                  </ul>
-                ),
-              },
-              {
-                name: "РЕГИОН: ДАЛЬНИЙ ВОСТОК",
-                children: (
-                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    <li className="py-2">
-                      <Link
-                        href="/regions/yakutsk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Республика Саха (Якутия)
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/vladivostok"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Приморский край
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/khabarovsk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Хабаровский край
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/blagoveshchensk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Амурская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/chita"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Забайкальский край
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/magadan"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Магаданская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/yuzhno-sakhalinsk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Сахалинская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/ulan-ude"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Республика Бурятия
-                      </Link>
-                    </li>
-                  </ul>
-                ),
-              },
-              {
-                name: "ЦЕНТРАЛЬНЫЙ РЕГИОН",
-                children: (
-                  <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    <li className="py-2">
-                      <Link
-                        href="/regions/moskovskaya-oblast"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Московская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/tver"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Тверская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/yaroslavl"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Ярославская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/tula"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Тульская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/belgorod"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Белгородская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/kaluga"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Калужская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/ivanovo"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Ивановская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/bryansk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Брянская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/vladimir"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Владимирская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/voronezh"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Воронежская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/lipetsk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Липецкая область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/kursk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Курская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/ryazan"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Рязанская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/tambov"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Тамбовская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/smolensk"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Смоленская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/kostroma"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Костромская область
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="/regions/orel"
-                        className="text-primary hover:primary-dark text-lg hover:underline"
-                      >
-                        Орловская область
-                      </Link>
-                    </li>
-                  </ul>
+                  <div className="space-y-4 p-4 text-[15px]">
+                    <p className="italic">
+                      Вентиляционное и теплообменное оборудование производства
+                      ООО «Т.С.Т.» успешно эксплуатируется в ключевых
+                      индустриальных центрах, портовых узлах и автономных
+                      производственных комплексах Южного макрорегиона,
+                      обеспечивая бесперебойную работу предприятий в условиях
+                      континентального климата, резких температурных перепадов и
+                      высокой ветровой нагрузки степных и прибрежных зон.
+                      Отгрузки промышленных калориферов, отопительных агрегатов
+                      и вентиляционных установок осуществляются на крупнейшие
+                      металлургические, угледобывающие, химические,
+                      перерабатывающие и машиностроительные площадки Южного
+                      округа. География поставок охватывает 7
+                      территориально-производственных комплексов, включающих в
+                      себя 18 городов и 6 иных населенных пунктов. Выберите
+                      интересующую вас область, чтобы ознакомиться с
+                      номенклатурой отгруженной продукции, логистическими узлами
+                      доставки и локальными климатическими параметрами по СП
+                      131.13330.
+                    </p>
+                    <ul className="grid grid-cols-1 items-center gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                      <li className="py-2">
+                        <Link
+                          href="/regions/rostov-na-donu"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Ростовская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/krasnodar"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Краснодарский край
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/volgograd"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Волгоградская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/stavropol"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Ставропольский край
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/grozny"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Чеченская Республика
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/nalchik"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Кабардино-Балкарская Республика
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
+                          href="/regions/cherkessk"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Карачаево-Черкесская Республика
+                        </Link>
+                      </li>
+                    </ul>
+                    <p className="italic">
+                      В числе опорных объектов, оснащенных нашим оборудованием:
+                      вагоноремонтный комплекс тяжелого машиностроения ООО
+                      «Депо-ЕвроХим», угледобывающая компания ОАО «Донуголь»,
+                      химический завод ООО «РусХимПром», Шахтинский
+                      авиационно-ремонтный завод, агропромышленный холдинг АО
+                      фирма «Агрокомплекс» им. Н. И. Ткачева, производитель
+                      упаковки для фармацевтической и пищевой промышленности ЗАО
+                      «Констанция Кубань», Эркен-Шахарский сахарный завод,
+                      научно-производственное предприятие специального
+                      машиностроения ООО «НПО «ХС Машиностроение», полимерные
+                      комбинаты ООО «Полипак» и ООО «ПО Полимар».
+                    </p>
+                  </div>
                 ),
               },
             ]}
