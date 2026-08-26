@@ -42,6 +42,11 @@ export default function SpoilerButtonsBlock({
     },
   );
 
+  const [renderedIndex, setRenderedIndex] = useState<number | null>(() => {
+    const defaultOpenIndex = buttons.findIndex((button) => button.defaultOpen);
+    return defaultOpenIndex >= 0 ? defaultOpenIndex : null;
+  });
+
   const contentRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -55,14 +60,17 @@ export default function SpoilerButtonsBlock({
       return internalOpenIndex;
     };
 
+    const openIndex = getOpenIndex();
+    if (openIndex !== null && buttons[openIndex]) {
+      setRenderedIndex(openIndex);
+    }
+
     const updateHeight = () => {
       const el = contentRef.current;
       if (!el) return;
 
-      const openIndex = getOpenIndex();
       if (openIndex !== null && buttons[openIndex]) {
         el.style.maxHeight = `${el.scrollHeight}px`;
-        // el.style.padding = "16px";
         el.style.opacity = "1";
       } else {
         el.style.maxHeight = "0px";
@@ -75,7 +83,14 @@ export default function SpoilerButtonsBlock({
     updateHeight();
     window.addEventListener("resize", updateHeight);
     return () => window.removeEventListener("resize", updateHeight);
-  }, [activeKey, internalOpenIndex, isControlled, buttons, groupId]);
+  }, [
+    activeKey,
+    internalOpenIndex,
+    isControlled,
+    buttons,
+    groupId,
+    renderedIndex,
+  ]);
 
   const toggleButton = (index: number, goal?: string) => {
     if (goal) {
@@ -133,7 +148,9 @@ export default function SpoilerButtonsBlock({
 
       {/* Single content container placed under the buttons rectangle so distance is consistent */}
       <div
-        ref={(el) => (contentRef.current = el)}
+        ref={(el) => {
+          contentRef.current = el;
+        }}
         aria-hidden={
           isControlled ? !Boolean(activeKey) : internalOpenIndex === null
         }
@@ -141,18 +158,9 @@ export default function SpoilerButtonsBlock({
         style={{ maxHeight: 0, padding: 0, opacity: 0 }}
       >
         <div className="text-base text-black">
-          {
-            // render children of active index or null
-            (() => {
-              const openIndex = isControlled
-                ? activeKey
-                  ? Number(activeKey.split(":")[1])
-                  : null
-                : internalOpenIndex;
-              if (openIndex === null || !buttons[openIndex]) return null;
-              return buttons[openIndex].children;
-            })()
-          }
+          {renderedIndex !== null && buttons[renderedIndex]
+            ? buttons[renderedIndex].children
+            : null}
         </div>
       </div>
     </div>
