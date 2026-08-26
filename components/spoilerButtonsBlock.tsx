@@ -62,7 +62,7 @@ export default function SpoilerButtonsBlock({
       const openIndex = getOpenIndex();
       if (openIndex !== null && buttons[openIndex]) {
         el.style.maxHeight = `${el.scrollHeight}px`;
-        el.style.padding = "16px";
+        // el.style.padding = "16px";
         el.style.opacity = "1";
       } else {
         el.style.maxHeight = "0px";

@@ -34,6 +34,54 @@ function normalizeName(value: string) {
     .replace(/\s+/g, " ");
 }
 
+
+function resolvePrefixedCategory(name: string): ProductReference | null {
+  // Описательная приписка хранится отдельно, а ссылкой остаётся
+  // только название категории в конце строки.
+  //
+  // Пример:
+  // "Калориферы специального конструктивного исполнения ТВВ"
+  // ->
+  // {
+  //   kind: "category",
+  //   prefix: "Калориферы специального конструктивного исполнения",
+  //   name: "ТВВ",
+  //   href: "/kalorifery-tvv"
+  // }
+  //
+  // Более длинные названия проверяем первыми:
+  // "КФБ-А М" раньше "КФБ-А" и "КФБ".
+  const categoryNames = Object.keys(PRODUCT_CATEGORY_ROUTES).sort(
+    (a, b) => b.length - a.length,
+  );
+
+  for (const categoryName of categoryNames) {
+    const suffix = ` ${categoryName}`;
+
+    if (!name.endsWith(suffix)) {
+      continue;
+    }
+
+    const prefix = name.slice(0, -suffix.length).trim();
+
+    // Новая форма из Excel относится именно к описаниям калориферов.
+    // Ограничение защищает от случайного превращения произвольного
+    // текста, заканчивающегося названием категории, в ссылку.
+    if (!/^Калориферы(?:\s|$)/i.test(prefix)) {
+      continue;
+    }
+
+    return {
+      kind: "category",
+      name: categoryName,
+      href: PRODUCT_CATEGORY_ROUTES[categoryName],
+      prefix,
+    };
+  }
+
+  return null;
+}
+
 function product(name: string, id: string): ProductReference | null {
   if (!PRODUCT_ID_SET.has(id)) {
     return null;
@@ -57,6 +105,11 @@ export function resolveProduct(rawName: string): ProductReference {
   const categoryHref = PRODUCT_CATEGORY_ROUTES[name];
   if (categoryHref) {
     return { kind: "category", name, href: categoryHref };
+  }
+
+  const prefixedCategory = resolvePrefixedCategory(name);
+  if (prefixedCategory) {
+    return prefixedCategory;
   }
 
   if (name === "ТЭНы") {

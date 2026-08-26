@@ -52,8 +52,8 @@ export default function Home() {
         <div style={{ aspectRatio: "1150 / 627" }}>
           <RussiaMap cities={cities} regions={regions} />
         </div>
-        <div className="border-primary-dark rounded-sm border p-3 shadow-md">
-          <p className="mb-2">
+        <div className="border-primary-dark mx-2 space-y-2 rounded-sm border p-3 shadow-md">
+          <p>
             За 25 лет работы наше предприятие осуществило отгрузки в 70 регионов
             страны, обеспечив надежным теплом сотни действующих промышленных
             объектов от Северо-Запада до Дальнего Востока. География выполненных

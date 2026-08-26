@@ -96,7 +96,7 @@ function productKey(product: ProductReference) {
   }
 
   if (product.kind === "category") {
-    return `category:${product.href}:${product.name}`;
+    return `category:${product.href}:${product.name}:${product.prefix ?? ""}`;
   }
 
   return `text:${product.name}`;
@@ -181,6 +181,21 @@ function ProductList({ products }: { products: ProductReference[] }) {
 
   const displayProducts = products.map((product, index) => {
     const category = getProductDisplayCategory(product);
+
+    // Для новой формы из Excel описательная приписка уже содержит
+    // нужный текст перед категорией. Например:
+    // "Калориферы специального конструктивного исполнения" + ссылка "ТВВ".
+    if (product.kind === "category" && product.prefix) {
+      if (category) {
+        announcedCategories.add(category);
+      }
+
+      return {
+        product,
+        prefix: product.prefix,
+      };
+    }
+
     let prefix: string | null = null;
 
     if (category && !announcedCategories.has(category)) {

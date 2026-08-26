@@ -298,7 +298,7 @@ export default function ProdukciyaPage() {
               {
                 name: "РЕГИОН: СИБИРЬ",
                 children: (
-                  <div className="space-y-4 text-[15px]">
+                  <div className="space-y-4 p-4 text-[15px]">
                     <p className="italic">
                       Поставки воздушно-отопительного оборудования производства
                       ООО «Т.С.Т.» выполнены в ключевые индустриальные центры и

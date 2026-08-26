@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ProductDeliveryRecord } from "@/data/regions/types";
 
 function getSettlementPrefix(type: string) {
   switch (type) {
@@ -15,7 +16,11 @@ function getSettlementPrefix(type: string) {
   }
 }
 
-export function DeliveriesTable({ deliveries }) {
+export function DeliveriesTable({
+  deliveries,
+}: {
+  deliveries: ProductDeliveryRecord[];
+}) {
   return (
     <div className="mb-2 w-full overflow-x-auto">
       <table className="w-full min-w-231 xl:min-w-auto">
@@ -24,6 +29,7 @@ export function DeliveriesTable({ deliveries }) {
             <th className="py-0.5">Регион</th>
             <th>Населенный пункт</th>
             <th>Компания</th>
+            <th>Отрасль промышленности</th>
           </tr>
         </thead>
 
@@ -56,6 +62,7 @@ export function DeliveriesTable({ deliveries }) {
                 </td>
 
                 <td>{delivery.company}</td>
+                <td>{delivery.industrySector}</td>
               </tr>
             );
           })}

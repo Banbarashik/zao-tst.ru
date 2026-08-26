@@ -47,7 +47,8 @@ export const generatedRegions = {
                 "name": "ТВВ 407",
                 "id": "kalorifer-tvv-407"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -94,7 +95,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 М",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Текстильная промышленность"
           }
         ]
       },
@@ -131,12 +133,13 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
       {
-        "name": "ЗАО «Комбинат химических волокон им. И.И. Юшкиной»",
+        "name": "ЗАО «Комбинат химических волокон»",
         "settlement": {
           "name": "Барнаул",
           "slug": "barnaul",
@@ -168,7 +171,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -245,7 +249,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -282,7 +287,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-6",
                 "id": "kalorifer-kpsk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Сельхозмашиностроение"
           }
         ]
       },
@@ -359,7 +365,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -396,7 +403,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-6",
                 "id": "kalorifer-kpsk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -433,7 +441,8 @@ export const generatedRegions = {
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -460,7 +469,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и водоснабжение"
           }
         ]
       },
@@ -497,7 +507,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Климатическое оборудование"
           }
         ]
       },
@@ -524,7 +535,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -551,7 +563,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -578,7 +591,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -593,7 +607,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "ТВВ",
-            "href": "/kalorifery-tvv"
+            "href": "/kalorifery-tvv",
+            "prefix": "Калориферы нестандартных габаритных размеров"
           }
         ],
         "deliveries": [
@@ -603,10 +618,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "ТВВ",
-                "href": "/kalorifery-tvv"
+                "href": "/kalorifery-tvv",
+                "prefix": "Калориферы нестандартных габаритных размеров"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -643,7 +659,8 @@ export const generatedRegions = {
                 "name": "КСк 4-8",
                 "id": "kalorifer-ksk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -670,7 +687,8 @@ export const generatedRegions = {
                 "name": "ТВВ 411",
                 "id": "kalorifer-tvv-411"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -707,7 +725,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-9",
                 "id": "kalorifer-kpsk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -754,7 +773,8 @@ export const generatedRegions = {
                 "name": "КСк 4-3",
                 "id": "kalorifer-ksk-4-3"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -781,7 +801,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -808,7 +829,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-8",
                 "id": "kalorifer-kpsk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -823,7 +845,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КП",
-            "href": "/kalorifery-kp"
+            "href": "/kalorifery-kp",
+            "prefix": "Калориферы по спецзаказу"
           }
         ],
         "deliveries": [
@@ -833,10 +856,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КП",
-                "href": "/kalorifery-kp"
+                "href": "/kalorifery-kp",
+                "prefix": "Калориферы по спецзаказу"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -883,7 +907,8 @@ export const generatedRegions = {
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Теплоэнергетическое машиностроение"
           }
         ]
       },
@@ -910,7 +935,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Теплоэнергетическое машиностроение"
           }
         ]
       },
@@ -947,7 +973,8 @@ export const generatedRegions = {
                 "name": "КП 406",
                 "id": "kalorifer-kp-406"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -974,7 +1001,8 @@ export const generatedRegions = {
                 "name": "ТВВ 308",
                 "id": "kalorifer-tvv-308"
               }
-            ]
+            ],
+            "industrySector": "Здравохранение и туризм"
           }
         ]
       },
@@ -1001,7 +1029,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-1",
                 "id": "kalorifer-kpsk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -1028,7 +1057,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -1043,7 +1073,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КСк",
-            "href": "/kalorifery-ksk"
+            "href": "/kalorifery-ksk",
+            "prefix": "Калориферы специального конструктивного исполнения"
           }
         ],
         "deliveries": [
@@ -1053,10 +1084,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КСк",
-                "href": "/kalorifery-ksk"
+                "href": "/kalorifery-ksk",
+                "prefix": "Калориферы специального конструктивного исполнения"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -1083,7 +1115,8 @@ export const generatedRegions = {
                 "name": "КП 311",
                 "id": "kalorifer-kp-311"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -1110,7 +1143,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -1137,7 +1171,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -1184,7 +1219,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-11",
                 "id": "kalorifer-kpsk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -1221,7 +1257,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -1248,7 +1285,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -1295,7 +1333,8 @@ export const generatedRegions = {
                 "name": "КСк 3-1",
                 "id": "kalorifer-ksk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -1322,7 +1361,8 @@ export const generatedRegions = {
                 "name": "КП 406",
                 "id": "kalorifer-kp-406"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -1349,7 +1389,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -1376,7 +1417,8 @@ export const generatedRegions = {
                 "name": "ТВВ 406",
                 "id": "kalorifer-tvv-406"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -1433,34 +1475,8 @@ export const generatedRegions = {
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «СофиТ»",
-        "settlement": {
-          "name": "Павловск",
-          "slug": "pavlovsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2014,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
-              }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -1487,7 +1503,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -1514,7 +1531,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -1611,7 +1629,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -1658,7 +1677,8 @@ export const generatedRegions = {
                 "name": "КФБ-13 А4 М",
                 "id": "kalorifer-kfb-13-a4"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -1695,7 +1715,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -1732,7 +1753,8 @@ export const generatedRegions = {
                 "name": "ТВВ 310",
                 "id": "kalorifer-tvv-310"
               }
-            ]
+            ],
+            "industrySector": "Фармацевтическая пром-сть"
           }
         ]
       },
@@ -1759,7 +1781,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -1796,7 +1819,36 @@ export const generatedRegions = {
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
+          }
+        ]
+      },
+      {
+        "name": "ООО «СофиТ»",
+        "settlement": {
+          "name": "Павловск",
+          "slug": "pavlovsk",
+          "type": "village"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КСк 4-12",
+            "id": "kalorifer-ksk-4-12"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2014,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КСк 4-12",
+                "id": "kalorifer-ksk-4-12"
+              }
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -1833,7 +1885,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А3 П",
                 "id": "kalorifer-kfb-8-a3"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -1860,7 +1913,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -1917,7 +1971,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-11",
                 "id": "kalorifer-kpsk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -1932,7 +1987,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КСк",
-            "href": "/kalorifery-ksk"
+            "href": "/kalorifery-ksk",
+            "prefix": "Калориферы по индивидуальному техническому заданию"
           }
         ],
         "deliveries": [
@@ -1942,10 +1998,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КСк",
-                "href": "/kalorifery-ksk"
+                "href": "/kalorifery-ksk",
+                "prefix": "Калориферы по индивидуальному техническому заданию"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -1972,7 +2029,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -2009,7 +2067,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       }
@@ -2059,7 +2118,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк4)",
                 "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -2116,7 +2176,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-10",
                 "id": "kalorifer-kpsk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -2153,7 +2214,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -2190,7 +2252,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -2257,7 +2320,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       }
@@ -2307,7 +2371,8 @@ export const generatedRegions = {
                 "name": "КП 308",
                 "id": "kalorifer-kp-308"
               }
-            ]
+            ],
+            "industrySector": "Лесопромышленный комплекс"
           }
         ]
       },
@@ -2322,7 +2387,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КСк",
-            "href": "/kalorifery-ksk"
+            "href": "/kalorifery-ksk",
+            "prefix": "Калориферы нестандартной комплектации"
           }
         ],
         "deliveries": [
@@ -2332,10 +2398,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КСк",
-                "href": "/kalorifery-ksk"
+                "href": "/kalorifery-ksk",
+                "prefix": "Калориферы нестандартной комплектации"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -2362,7 +2429,126 @@ export const generatedRegions = {
                 "name": "КСк 3-7",
                 "id": "kalorifer-ksk-3-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
+          }
+        ]
+      },
+      {
+        "name": "АО «ЦС «Звездочка»",
+        "settlement": {
+          "name": "Северодвинск",
+          "slug": "severodvinsk",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КСк 3-8",
+            "id": "kalorifer-ksk-3-8"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-9",
+            "id": "kalorifer-ksk-3-9"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-11",
+            "id": "kalorifer-ksk-3-11"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-12",
+            "id": "kalorifer-ksk-4-12"
+          },
+          {
+            "kind": "product",
+            "name": "КФБ-10 А3 М",
+            "id": "kalorifer-kfb-10-a3"
+          },
+          {
+            "kind": "category",
+            "name": "КФБ-А М",
+            "href": "/kalorifery-kfb-a"
+          },
+          {
+            "kind": "product",
+            "name": "КФБ-11 А4 М",
+            "id": "kalorifer-kfb-11-a4"
+          },
+          {
+            "kind": "category",
+            "name": "АО 2 В",
+            "href": "/ao2-ksk-kpsk"
+          },
+          {
+            "kind": "product",
+            "name": "АО 2-4 (КСк3)",
+            "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+          },
+          {
+            "kind": "product",
+            "name": "АО 2-20 (КСк3)",
+            "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2021,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КСк 3-8",
+                "id": "kalorifer-ksk-3-8"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-9",
+                "id": "kalorifer-ksk-3-9"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-11",
+                "id": "kalorifer-ksk-3-11"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-12",
+                "id": "kalorifer-ksk-4-12"
+              },
+              {
+                "kind": "product",
+                "name": "КФБ-10 А3 М",
+                "id": "kalorifer-kfb-10-a3"
+              },
+              {
+                "kind": "category",
+                "name": "КФБ-А М",
+                "href": "/kalorifery-kfb-a"
+              },
+              {
+                "kind": "product",
+                "name": "КФБ-11 А4 М",
+                "id": "kalorifer-kfb-11-a4"
+              },
+              {
+                "kind": "category",
+                "name": "АО 2 В",
+                "href": "/ao2-ksk-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "АО 2-4 (КСк3)",
+                "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+              },
+              {
+                "kind": "product",
+                "name": "АО 2-20 (КСк3)",
+                "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
+              }
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       }
@@ -2422,7 +2608,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-1",
                 "id": "kalorifer-kpsk-4-1"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -2459,7 +2646,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-7",
                 "id": "kalorifer-kpsk-3-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -2516,7 +2704,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ3)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -2543,7 +2732,8 @@ export const generatedRegions = {
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -2600,7 +2790,8 @@ export const generatedRegions = {
                 "name": "ШУК-60",
                 "id": "shkaf-upravleniia-shuk-60"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -2627,7 +2818,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -2664,7 +2856,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -2701,12 +2894,13 @@ export const generatedRegions = {
                 "name": "ТВВ 310",
                 "id": "kalorifer-tvv-310"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
       {
-        "name": "ООО «Научно-производственное предприятие «Юникорн»",
+        "name": "ООО «НПП «Юникорн»",
         "settlement": {
           "name": "Разумное",
           "slug": "razumnoe",
@@ -2738,7 +2932,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КПСк3)",
                 "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -2785,7 +2980,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -2823,7 +3019,7 @@ export const generatedRegions = {
                 "id": "kalorifer-kp-412"
               }
             ],
-            "note": "агрегатирование"
+            "industrySector": "Сельхозмашиностроение"
           }
         ]
       }
@@ -2898,7 +3094,8 @@ export const generatedRegions = {
                 "name": "КПВС 572х572_4",
                 "id": "kpvs-572x572"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -2936,7 +3133,7 @@ export const generatedRegions = {
                 "id": "kalorifer-kpsk-4-12"
               }
             ],
-            "note": "агрегатирование"
+            "industrySector": "Теплоэнергетическое машиностроение"
           }
         ]
       },
@@ -2951,7 +3148,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "ТВВ",
-            "href": "/kalorifery-tvv"
+            "href": "/kalorifery-tvv",
+            "prefix": "Калориферы нестандартных габаритных размеров"
           }
         ],
         "deliveries": [
@@ -2961,10 +3159,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "ТВВ",
-                "href": "/kalorifery-tvv"
+                "href": "/kalorifery-tvv",
+                "prefix": "Калориферы нестандартных габаритных размеров"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -3002,7 +3201,7 @@ export const generatedRegions = {
                 "id": "kalorifer-kpsk-3-11"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       }
@@ -3052,7 +3251,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -3089,7 +3289,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-10",
                 "id": "kalorifer-kpsk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -3146,7 +3347,8 @@ export const generatedRegions = {
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       }
@@ -3174,7 +3376,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КПСк",
-            "href": "/kalorifery-kpsk"
+            "href": "/kalorifery-kpsk",
+            "prefix": "Калориферы по спецзаказу"
           }
         ],
         "deliveries": [
@@ -3184,10 +3387,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КПСк",
-                "href": "/kalorifery-kpsk"
+                "href": "/kalorifery-kpsk",
+                "prefix": "Калориферы по спецзаказу"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -3264,7 +3468,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -3301,7 +3506,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А3 П",
                 "id": "kalorifer-kfb-11-a3"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -3348,7 +3554,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -3385,7 +3592,8 @@ export const generatedRegions = {
                 "name": "КСк 3-6",
                 "id": "kalorifer-ksk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -3412,7 +3620,8 @@ export const generatedRegions = {
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -3459,7 +3668,8 @@ export const generatedRegions = {
                 "name": "ШУК-160",
                 "id": "shkaf-upravleniia-shuk-160"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -3506,7 +3716,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       }
@@ -3556,7 +3767,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
               }
-            ]
+            ],
+            "industrySector": "Лесопромышленный комплекс"
           }
         ]
       },
@@ -3593,7 +3805,8 @@ export const generatedRegions = {
                 "name": "КФБ-3 А3 М",
                 "id": "kalorifer-kfb-3-a3"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -3630,7 +3843,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк4)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -3667,7 +3881,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -3714,7 +3929,8 @@ export const generatedRegions = {
                 "name": "ШУК-60",
                 "id": "shkaf-upravleniia-shuk-60"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -3741,7 +3957,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -3768,7 +3985,8 @@ export const generatedRegions = {
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -3795,7 +4013,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -3852,7 +4071,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -3879,7 +4099,8 @@ export const generatedRegions = {
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       }
@@ -3929,7 +4150,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-4",
                 "id": "kalorifer-kpsk-3-4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -3956,7 +4178,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-1",
                 "id": "kalorifer-kpsk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -3993,7 +4216,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-2",
                 "id": "kalorifer-kpsk-3-2"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -4020,7 +4244,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -4047,7 +4272,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-12",
                 "id": "kalorifer-kpsk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -4084,7 +4310,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КПСК3)",
                 "id": "agregat-ao2-4-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -4121,7 +4348,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -4148,7 +4376,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -4175,47 +4404,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "donetsk": {
-    "slug": "donetsk",
-    "subject": {
-      "name": "Донецкая Народная Республика",
-      "slug": "donetskaya-narodnaya-respublika"
-    },
-    "capital": {
-      "name": "Донецк",
-      "slug": "donetsk"
-    },
-    "companies": [
-      {
-        "name": "ИП Евсютин Д.В.",
-        "settlement": {
-          "name": "Донецк",
-          "slug": "donetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КПВС 115х1155_3",
-            "id": "kpvs-1155x1155"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2026,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КПВС 115х1155_3",
-                "id": "kpvs-1155x1155"
-              }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       }
@@ -4265,7 +4455,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КПСк3)",
                 "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -4302,7 +4493,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -4359,7 +4551,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       }
@@ -4409,7 +4602,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-9",
                 "id": "kalorifer-kpsk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -4446,7 +4640,8 @@ export const generatedRegions = {
                 "name": "АО 2-5 (КСк4)",
                 "id": "agregat-ao2-5-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -4493,7 +4688,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк4)",
                 "id": "agregat-ao2-20-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -4530,7 +4726,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -4567,7 +4764,8 @@ export const generatedRegions = {
                 "name": "КФБ-5 А4 П",
                 "id": "kalorifer-kfb-5-a4"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       }
@@ -4617,7 +4815,8 @@ export const generatedRegions = {
                 "name": "ТВВ 409",
                 "id": "kalorifer-tvv-409"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -4664,7 +4863,8 @@ export const generatedRegions = {
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -4691,7 +4891,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -4748,7 +4949,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А4 М",
                 "id": "kalorifer-kfb-8-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -4785,7 +4987,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -4822,7 +5025,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-6",
                 "id": "kalorifer-kpsk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -4859,7 +5063,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк4)",
                 "id": "agregat-ao2-20-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -4896,7 +5101,8 @@ export const generatedRegions = {
                 "name": "КФБ-5 А3 П",
                 "id": "kalorifer-kfb-5-a3"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -4923,7 +5129,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КСк4)",
                 "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -4970,7 +5177,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -5027,7 +5235,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 М",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -5064,7 +5273,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-1",
                 "id": "kalorifer-kpsk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -5111,7 +5321,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -5168,7 +5379,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А3 М",
                 "id": "kalorifer-kfb-8-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -5195,7 +5407,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -5252,7 +5465,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -5289,7 +5503,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -5326,7 +5541,8 @@ export const generatedRegions = {
                 "name": "КПВС 947х947_2",
                 "id": "kpvs-947x947"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -5353,7 +5569,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -5390,7 +5607,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -5457,7 +5675,8 @@ export const generatedRegions = {
                 "name": "КСк 3-8",
                 "id": "kalorifer-ksk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -5494,7 +5713,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -5521,7 +5741,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -5568,7 +5789,8 @@ export const generatedRegions = {
                 "name": "КПВС 1197х1197_4",
                 "id": "kpvs-1197x1197"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -5605,7 +5827,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 М",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -5632,7 +5855,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -5669,7 +5893,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-12",
                 "id": "kalorifer-kpsk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -5696,7 +5921,8 @@ export const generatedRegions = {
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -5773,7 +5999,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -5800,7 +6027,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -5837,7 +6065,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -5894,7 +6123,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КСк3)",
                 "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       }
@@ -5954,178 +6184,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "kaliningrad": {
-    "slug": "kaliningrad",
-    "subject": {
-      "name": "Калининградская область",
-      "slug": "kaliningradskaya-oblast"
-    },
-    "capital": {
-      "name": "Калининград",
-      "slug": "kaliningrad"
-    },
-    "companies": [
-      {
-        "name": "ОАО «БМК-Инвест»",
-        "settlement": {
-          "name": "Калининград",
-          "slug": "kaliningrad",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "КСк",
-            "href": "/kalorifery-ksk"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-1",
-            "id": "kalorifer-ksk-4-1"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2013,
-            "products": [
-              {
-                "kind": "category",
-                "name": "КСк",
-                "href": "/kalorifery-ksk"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-1",
-                "id": "kalorifer-ksk-4-1"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Балтэнергопром»",
-        "settlement": {
-          "name": "Калининград",
-          "slug": "kaliningrad",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СФО",
-            "href": "/elektrokalorifery"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2021,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФО",
-                "href": "/elektrokalorifery"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «ТПК «Балтптицепром»",
-        "settlement": {
-          "name": "Калининград",
-          "slug": "kaliningrad",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СФОЦ",
-            "href": "/teploventilyatory"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-25",
-            "id": "ustanovka-sfotc-25"
-          },
-          {
-            "kind": "product",
-            "name": "СФОЦ-40",
-            "id": "ustanovka-sfotc-40"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2019,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФОЦ",
-                "href": "/teploventilyatory"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-25",
-                "id": "ustanovka-sfotc-25"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-40",
-                "id": "ustanovka-sfotc-40"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Торговый Дом Прибалтийский кондитер»",
-        "settlement": {
-          "name": "Высокое",
-          "slug": "vysokoe",
-          "type": "settlement"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "КПСк",
-            "href": "/kalorifery-kpsk"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 4-4",
-            "id": "kalorifer-kpsk-4-4"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2017,
-            "products": [
-              {
-                "kind": "category",
-                "name": "КПСк",
-                "href": "/kalorifery-kpsk"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 4-4",
-                "id": "kalorifer-kpsk-4-4"
-              }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       }
@@ -6195,7 +6255,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -6232,7 +6293,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -6247,7 +6309,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "ТВВ",
-            "href": "/kalorifery-tvv"
+            "href": "/kalorifery-tvv",
+            "prefix": "Калориферы специального конструктивного исполнения"
           }
         ],
         "deliveries": [
@@ -6257,10 +6320,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "ТВВ",
-                "href": "/kalorifery-tvv"
+                "href": "/kalorifery-tvv",
+                "prefix": "Калориферы специального конструктивного исполнения"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Целлюлозно-бумажная пром-сть"
           }
         ]
       },
@@ -6297,7 +6361,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -6311,8 +6376,9 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "category",
-            "name": "КФБ",
-            "href": "/kalorifery-kfb"
+            "name": "КФБ-А М",
+            "href": "/kalorifery-kfb-a",
+            "prefix": "Калориферы по индивидуальному техническому заданию"
           }
         ],
         "deliveries": [
@@ -6321,11 +6387,12 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "category",
-                "name": "КФБ",
-                "href": "/kalorifery-kfb"
+                "name": "КФБ-А М",
+                "href": "/kalorifery-kfb-a",
+                "prefix": "Калориферы по индивидуальному техническому заданию"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -6352,7 +6419,8 @@ export const generatedRegions = {
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       }
@@ -6402,7 +6470,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       }
@@ -6452,7 +6521,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -6504,7 +6574,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -6571,7 +6642,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Фармацевтическая пром-сть"
           }
         ]
       },
@@ -6608,7 +6680,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КСк4)",
                 "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -6635,7 +6708,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -6672,7 +6746,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-10",
                 "id": "kalorifer-kpsk-3-10"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -6699,7 +6774,8 @@ export const generatedRegions = {
                 "name": "АО 2-6.3 (КСк4)",
                 "id": "agregat-ao2-6.3-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -6736,7 +6812,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Произ-во строительных материалов"
           }
         ]
       },
@@ -6773,7 +6850,8 @@ export const generatedRegions = {
                 "name": "АВО 7-165-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -6800,7 +6878,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -6827,7 +6906,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -6854,7 +6934,8 @@ export const generatedRegions = {
                 "name": "АВО 7-165-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -6891,7 +6972,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -6948,7 +7030,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -6995,7 +7078,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -7032,7 +7116,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и водоснабжение"
           }
         ]
       },
@@ -7059,7 +7144,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -7086,7 +7172,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -7253,7 +7340,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -7330,7 +7418,8 @@ export const generatedRegions = {
                 "name": "КФБ-5 А3 М",
                 "id": "kalorifer-kfb-5-a3"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -7377,7 +7466,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -7424,7 +7514,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк4)",
                 "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -7461,7 +7552,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -7498,7 +7590,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А3 П",
                 "id": "kalorifer-kfb-12-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -7605,7 +7698,8 @@ export const generatedRegions = {
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -7632,7 +7726,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -7679,7 +7774,8 @@ export const generatedRegions = {
                 "name": "АО 2-5 (КПСк3)",
                 "id": "agregat-ao2-5-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -7706,7 +7802,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -7743,7 +7840,8 @@ export const generatedRegions = {
                 "name": "КСк 2-12",
                 "id": "kalorifer-ksk-2-12"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -7780,7 +7878,8 @@ export const generatedRegions = {
                 "name": "ТВВ 307",
                 "id": "kalorifer-tvv-307"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -7817,7 +7916,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -7854,7 +7954,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -7891,7 +7992,8 @@ export const generatedRegions = {
                 "name": "КСк 2-10",
                 "id": "kalorifer-ksk-2-10"
               }
-            ]
+            ],
+            "industrySector": "Теплоэнергетическое машиностроение"
           }
         ]
       },
@@ -7918,7 +8020,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-7",
                 "id": "kalorifer-kpsk-3-7"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -7945,7 +8048,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -8012,7 +8116,8 @@ export const generatedRegions = {
                 "name": "ШУК-25",
                 "id": "shkaf-upravleniia-shuk-25"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -8059,7 +8164,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А3 М",
                 "id": "kalorifer-kfb-10-a3"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -8116,7 +8222,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -8143,7 +8250,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -8210,7 +8318,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -8247,7 +8356,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -8274,7 +8384,8 @@ export const generatedRegions = {
                 "name": "КФБ-6 А4 М",
                 "id": "kalorifer-kfb-6-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -8461,7 +8572,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -8488,7 +8600,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -8525,7 +8638,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -8552,7 +8666,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -8579,7 +8694,8 @@ export const generatedRegions = {
                 "name": "АВО 7-165-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -8616,7 +8732,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -8663,7 +8780,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Горнодобывающая пром-ть"
           }
         ]
       },
@@ -8710,7 +8828,8 @@ export const generatedRegions = {
                 "name": "КП 411",
                 "id": "kalorifer-kp-411"
               }
-            ]
+            ],
+            "industrySector": "Горнодобывающая пром-ть"
           }
         ]
       },
@@ -8747,7 +8866,8 @@ export const generatedRegions = {
                 "name": "КСк 2-9",
                 "id": "kalorifer-ksk-2-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -8784,7 +8904,8 @@ export const generatedRegions = {
                 "name": "ТВВ 408",
                 "id": "kalorifer-tvv-408"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -8821,7 +8942,8 @@ export const generatedRegions = {
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -8858,7 +8980,8 @@ export const generatedRegions = {
                 "name": "КСк 2-2",
                 "id": "kalorifer-ksk-2-2"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -8905,7 +9028,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А3 М",
                 "id": "kalorifer-kfb-10-a3"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -8942,7 +9066,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-250",
                 "id": "ustanovka-sfotc-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -8989,7 +9114,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Гидротехнические работы"
           }
         ]
       },
@@ -9046,7 +9172,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -9093,7 +9220,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КПСк3)",
                 "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -9130,7 +9258,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ3)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -9237,7 +9366,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -9274,7 +9404,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и водоснабжение"
           }
         ]
       },
@@ -9301,7 +9432,8 @@ export const generatedRegions = {
                 "name": "ТВВ 407",
                 "id": "kalorifer-tvv-407"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -9328,7 +9460,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -9355,7 +9488,8 @@ export const generatedRegions = {
                 "name": "КСк 4-8",
                 "id": "kalorifer-ksk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -9382,7 +9516,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -9409,7 +9544,8 @@ export const generatedRegions = {
                 "name": "КСк 2-8",
                 "id": "kalorifer-ksk-2-8"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -9446,7 +9582,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Горнодобывающая пром-ть"
           }
         ]
       },
@@ -9473,7 +9610,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -9540,7 +9678,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -9577,7 +9716,8 @@ export const generatedRegions = {
                 "name": "ШУК-60",
                 "id": "shkaf-upravleniia-shuk-60"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -9604,7 +9744,8 @@ export const generatedRegions = {
                 "name": "КСк 3-8",
                 "id": "kalorifer-ksk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Образование и инфраструктура"
           }
         ]
       },
@@ -9631,7 +9772,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КСк4)",
                 "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -9798,7 +9940,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ4)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -9825,7 +9968,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -9839,8 +9983,18 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КСк 2-11",
+            "id": "kalorifer-ksk-2-11"
+          },
+          {
+            "kind": "product",
             "name": "КСк 4-11",
             "id": "kalorifer-ksk-4-11"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-12",
+            "id": "kalorifer-ksk-4-12"
           }
         ],
         "deliveries": [
@@ -9849,10 +10003,21 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
+                "name": "КСк 2-11",
+                "id": "kalorifer-ksk-2-11"
+              },
+              {
+                "kind": "product",
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-12",
+                "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -9879,7 +10044,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КП4)",
                 "id": "std300-kp"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -9906,154 +10072,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
               }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ОАО «ЕВРАЗ ЗСМК»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 3-7",
-            "id": "kalorifer-ksk-3-7"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-9",
-            "id": "kalorifer-ksk-3-9"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-10",
-            "id": "kalorifer-ksk-3-10"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-12",
-            "id": "kalorifer-ksk-3-12"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-9",
-            "id": "kalorifer-ksk-4-9"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 2-11",
-            "id": "kalorifer-ksk-2-11"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 3-7",
-            "id": "kalorifer-kpsk-3-7"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 3-10",
-            "id": "kalorifer-kpsk-3-10"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
-          },
-          {
-            "kind": "product",
-            "name": "АО 2-5 (КПСк4)",
-            "id": "agregat-ao2-5-ksk4-vozdushniy-parovoy"
-          },
-          {
-            "kind": "product",
-            "name": "СТД-300 (КПСк4)",
-            "id": "std300-kpsk"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2012,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 3-7",
-                "id": "kalorifer-ksk-3-7"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-9",
-                "id": "kalorifer-ksk-3-9"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-10",
-                "id": "kalorifer-ksk-3-10"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-12",
-                "id": "kalorifer-ksk-3-12"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-9",
-                "id": "kalorifer-ksk-4-9"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 2-11",
-                "id": "kalorifer-ksk-2-11"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-12",
-                "id": "kalorifer-ksk-4-12"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 3-7",
-                "id": "kalorifer-kpsk-3-7"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 3-10",
-                "id": "kalorifer-kpsk-3-10"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "АО 2-5 (КПСк4)",
-                "id": "agregat-ao2-5-ksk4-vozdushniy-parovoy"
-              },
-              {
-                "kind": "product",
-                "name": "СТД-300 (КПСк4)",
-                "id": "std300-kpsk"
-              }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -10080,7 +10100,8 @@ export const generatedRegions = {
                 "name": "ТВВ 310",
                 "id": "kalorifer-tvv-310"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -10187,7 +10208,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -10203,6 +10225,16 @@ export const generatedRegions = {
             "kind": "product",
             "name": "АО 2-3 (КПСк3)",
             "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "АО 2-5 (КПСк4)",
+            "id": "agregat-ao2-5-ksk4-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "СТД-300 (КПСк4)",
+            "id": "std300-kpsk"
           }
         ],
         "deliveries": [
@@ -10213,8 +10245,19 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-3 (КПСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "АО 2-5 (КПСк4)",
+                "id": "agregat-ao2-5-ksk4-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "СТД-300 (КПСк4)",
+                "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -10316,7 +10359,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -10332,6 +10376,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 2-12",
             "id": "kalorifer-ksk-2-12"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-12",
+            "id": "kalorifer-ksk-3-12"
           }
         ],
         "deliveries": [
@@ -10342,8 +10391,14 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 2-12",
                 "id": "kalorifer-ksk-2-12"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-12",
+                "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -10390,7 +10445,8 @@ export const generatedRegions = {
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -10417,7 +10473,8 @@ export const generatedRegions = {
                 "name": "ТВВ 411",
                 "id": "kalorifer-tvv-411"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -10431,6 +10488,26 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КСк 3-6",
+            "id": "kalorifer-ksk-3-6"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-7",
+            "id": "kalorifer-ksk-3-7"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-9",
+            "id": "kalorifer-ksk-3-9"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-10",
+            "id": "kalorifer-ksk-3-10"
+          },
+          {
+            "kind": "product",
             "name": "КСк 4-7",
             "id": "kalorifer-ksk-4-7"
           },
@@ -10441,14 +10518,39 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КСк 3-6",
-            "id": "kalorifer-ksk-3-6"
+            "name": "КСк 4-9",
+            "id": "kalorifer-ksk-4-9"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-10",
+            "id": "kalorifer-ksk-4-10"
           }
         ],
         "deliveries": [
           {
             "year": 2009,
             "products": [
+              {
+                "kind": "product",
+                "name": "КСк 3-6",
+                "id": "kalorifer-ksk-3-6"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-7",
+                "id": "kalorifer-ksk-3-7"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-9",
+                "id": "kalorifer-ksk-3-9"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-10",
+                "id": "kalorifer-ksk-3-10"
+              },
               {
                 "kind": "product",
                 "name": "КСк 4-7",
@@ -10461,10 +10563,16 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КСк 3-6",
-                "id": "kalorifer-ksk-3-6"
+                "name": "КСк 4-9",
+                "id": "kalorifer-ksk-4-9"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-10",
+                "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -10501,7 +10609,8 @@ export const generatedRegions = {
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -10528,7 +10637,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -10555,7 +10665,8 @@ export const generatedRegions = {
                 "name": "КП 306",
                 "id": "kalorifer-kp-306"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -10592,12 +10703,13 @@ export const generatedRegions = {
                 "name": "КФБ-11 А4 П",
                 "id": "kalorifer-kfb-11-a4"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
       {
-        "name": "ООО «Производственная компания «Кузнецкий цементный завод»",
+        "name": "ООО «ПК «Кузнецкий цементный завод»",
         "settlement": {
           "name": "Новокузнецк",
           "slug": "novokuznetsk",
@@ -10629,7 +10741,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -10736,7 +10849,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А4 П",
                 "id": "kalorifer-kfb-12-a4"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -10750,8 +10864,23 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 3-7",
+            "id": "kalorifer-kpsk-3-7"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 3-10",
+            "id": "kalorifer-kpsk-3-10"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-11",
             "id": "kalorifer-kpsk-3-11"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-10",
+            "id": "kalorifer-kpsk-4-10"
           }
         ],
         "deliveries": [
@@ -10760,10 +10889,26 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
+                "name": "КПСк 3-7",
+                "id": "kalorifer-kpsk-3-7"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 3-10",
+                "id": "kalorifer-kpsk-3-10"
+              },
+              {
+                "kind": "product",
                 "name": "КПСк 3-11",
                 "id": "kalorifer-kpsk-3-11"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-10",
+                "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -10790,7 +10935,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А3 П",
                 "id": "kalorifer-kfb-12-a3"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -10827,7 +10973,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-11",
                 "id": "kalorifer-kpsk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -10864,7 +11011,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -10911,7 +11059,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А4 М",
                 "id": "kalorifer-kfb-8-a4"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -10983,7 +11132,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -11080,7 +11230,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А3 М",
                 "id": "kalorifer-kfb-10-a3"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -11107,7 +11258,8 @@ export const generatedRegions = {
                 "name": "ТВВ 407",
                 "id": "kalorifer-tvv-407"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -11144,7 +11296,8 @@ export const generatedRegions = {
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -11171,7 +11324,8 @@ export const generatedRegions = {
                 "name": "КСк 2-10",
                 "id": "kalorifer-ksk-2-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -11208,7 +11362,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -11235,7 +11390,8 @@ export const generatedRegions = {
                 "name": "КСк 4-8",
                 "id": "kalorifer-ksk-4-8"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -11262,7 +11418,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -11299,7 +11456,8 @@ export const generatedRegions = {
                 "name": "КФБ-9 А4 М",
                 "id": "kalorifer-kfb-9-a4"
               }
-            ]
+            ],
+            "industrySector": "Горнодобывающая пром-ть"
           }
         ]
       },
@@ -11326,7 +11484,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Горнодобывающая пром-ть"
           }
         ]
       },
@@ -11383,12 +11542,13 @@ export const generatedRegions = {
                 "name": "ШУК-25",
                 "id": "shkaf-upravleniia-shuk-25"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
       {
-        "name": "ООО «Производственное управление «Кузбассшахтопроходка»",
+        "name": "ООО «ПУ «Кузбассшахтопроходка»",
         "settlement": {
           "name": "Прокопьевск",
           "slug": "prokopevsk",
@@ -11410,7 +11570,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -11447,7 +11608,8 @@ export const generatedRegions = {
                 "name": "ШУК-60",
                 "id": "shkaf-upravleniia-shuk-60"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -11504,7 +11666,8 @@ export const generatedRegions = {
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -11531,7 +11694,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -11568,7 +11732,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-250",
                 "id": "ustanovka-sfotc-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -11595,7 +11760,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -11622,7 +11788,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -11649,7 +11816,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 М",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -11686,7 +11854,8 @@ export const generatedRegions = {
                 "name": "ШУК-25",
                 "id": "shkaf-upravleniia-shuk-25"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -11713,7 +11882,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -11880,7 +12050,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ4)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -11917,7 +12088,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -11964,7 +12136,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -12001,7 +12174,8 @@ export const generatedRegions = {
                 "name": "КП 409",
                 "id": "kalorifer-kp-409"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -12028,7 +12202,8 @@ export const generatedRegions = {
                 "name": "КСк 2-10",
                 "id": "kalorifer-ksk-2-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -12055,7 +12230,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-11",
                 "id": "kalorifer-kpsk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -12074,13 +12250,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КП 412",
-            "id": "kalorifer-kp-412"
+            "name": "КП 411",
+            "id": "kalorifer-kp-411"
           },
           {
             "kind": "product",
-            "name": "СФОЦ-250",
-            "id": "ustanovka-sfotc-250"
+            "name": "КП 412",
+            "id": "kalorifer-kp-412"
           },
           {
             "kind": "product",
@@ -12089,8 +12265,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КП 411",
-            "id": "kalorifer-kp-411"
+            "name": "СФОЦ-250",
+            "id": "ustanovka-sfotc-250"
           }
         ],
         "deliveries": [
@@ -12104,19 +12280,14 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КП 412",
-                "id": "kalorifer-kp-412"
+                "name": "КП 411",
+                "id": "kalorifer-kp-411"
               },
               {
                 "kind": "product",
-                "name": "СФОЦ-250",
-                "id": "ustanovka-sfotc-250"
-              }
-            ]
-          },
-          {
-            "year": 2006,
-            "products": [
+                "name": "КП 412",
+                "id": "kalorifer-kp-412"
+              },
               {
                 "kind": "product",
                 "name": "СФО-160",
@@ -12124,10 +12295,11 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КП 411",
-                "id": "kalorifer-kp-411"
+                "name": "СФОЦ-250",
+                "id": "ustanovka-sfotc-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -12154,7 +12326,8 @@ export const generatedRegions = {
                 "name": "ТВВ 309",
                 "id": "kalorifer-tvv-309"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -12192,7 +12365,7 @@ export const generatedRegions = {
                 "id": "kalorifer-ksk-3-11"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Здравоохранение и туризм"
           }
         ]
       },
@@ -12219,22 +12392,24 @@ export const generatedRegions = {
                 "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
       {
         "name": "МКУ «УДЖНП Прокопьевского муниципального района»",
         "settlement": {
-          "name": "Новосафрнрвский",
-          "slug": "novosafrnrvsky",
+          "name": "Новосафоновский",
+          "slug": "novosafonovsky",
           "type": "settlement"
         },
         "products": [
           {
             "kind": "category",
             "name": "КФБ-А П",
-            "href": "/kalorifery-kfb-a"
+            "href": "/kalorifery-kfb-a",
+            "prefix": "Калориферы нестандартной комплектации"
           }
         ],
         "deliveries": [
@@ -12244,10 +12419,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КФБ-А П",
-                "href": "/kalorifery-kfb-a"
+                "href": "/kalorifery-kfb-a",
+                "prefix": "Калориферы нестандартной комплектации"
               }
             ],
-            "note": "спецгабарит"
+            "industrySector": "Государственное управление"
           }
         ]
       },
@@ -12274,7 +12450,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -12301,7 +12478,8 @@ export const generatedRegions = {
                 "name": "ТВВ 307",
                 "id": "kalorifer-tvv-307"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -12328,7 +12506,8 @@ export const generatedRegions = {
                 "name": "ТВВ 409",
                 "id": "kalorifer-tvv-409"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -12355,7 +12534,8 @@ export const generatedRegions = {
                 "name": "КСк 4-1",
                 "id": "kalorifer-ksk-4-1"
               }
-            ]
+            ],
+            "industrySector": "Здравоохранение и туризм"
           }
         ]
       },
@@ -12382,7 +12562,8 @@ export const generatedRegions = {
                 "name": "АВО 4-95-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -12429,7 +12610,8 @@ export const generatedRegions = {
                 "name": "ТВВ 408",
                 "id": "kalorifer-tvv-408"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -12456,7 +12638,8 @@ export const generatedRegions = {
                 "name": "КП 310",
                 "id": "kalorifer-kp-310"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -12493,7 +12676,8 @@ export const generatedRegions = {
                 "name": "ТВВ 406",
                 "id": "kalorifer-tvv-406"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -12530,7 +12714,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -12567,7 +12752,8 @@ export const generatedRegions = {
                 "name": "ШУК-60",
                 "id": "shkaf-upravleniia-shuk-60"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -12594,7 +12780,8 @@ export const generatedRegions = {
                 "name": "КП 311",
                 "id": "kalorifer-kp-311"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -12621,7 +12808,8 @@ export const generatedRegions = {
                 "name": "КП 309",
                 "id": "kalorifer-kp-309"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -12668,7 +12856,8 @@ export const generatedRegions = {
                 "name": "ШУК-160",
                 "id": "shkaf-upravleniia-shuk-160"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -12695,7 +12884,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КП3)",
                 "id": "std300-kp"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -12722,7 +12912,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А4 М",
                 "id": "kalorifer-kfb-14-a4"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -12749,7 +12940,8 @@ export const generatedRegions = {
                 "name": "КСк 3-1",
                 "id": "kalorifer-ksk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       }
@@ -12799,7 +12991,8 @@ export const generatedRegions = {
                 "name": "ШУК-60",
                 "id": "shkaf-upravleniia-shuk-60"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -12826,7 +13019,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -12863,7 +13057,8 @@ export const generatedRegions = {
                 "name": "АВО 4-95-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -12900,7 +13095,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КПСк4)",
                 "id": "agregat-ao2-4-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -12937,7 +13133,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-3",
                 "id": "kalorifer-kpsk-2-3"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -12994,7 +13191,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-1",
                 "id": "kalorifer-kpsk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -13031,7 +13229,8 @@ export const generatedRegions = {
                 "name": "КФБ-2 А4 П",
                 "id": "kalorifer-kfb-2-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -13068,7 +13267,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -13115,7 +13315,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -13152,7 +13353,8 @@ export const generatedRegions = {
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -13199,7 +13401,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КСк3)",
                 "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -13226,7 +13429,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-8",
                 "id": "kalorifer-kpsk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -13253,7 +13457,8 @@ export const generatedRegions = {
                 "name": "АВО 4-95-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -13290,7 +13495,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -13317,7 +13523,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -13354,7 +13561,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -13391,7 +13599,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -13428,7 +13637,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -13475,7 +13685,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк4)",
                 "id": "agregat-ao2-20-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       }
@@ -13525,7 +13736,8 @@ export const generatedRegions = {
                 "name": "КППУ 799х799_4",
                 "id": "kppu-799x799"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       }
@@ -13595,7 +13807,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КСк3)",
                 "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -13632,7 +13845,8 @@ export const generatedRegions = {
                 "name": "КП 307",
                 "id": "kalorifer-kp-307"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -13669,7 +13883,8 @@ export const generatedRegions = {
                 "name": "КФБ-9 А3 М",
                 "id": "kalorifer-kfb-9-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -13706,7 +13921,8 @@ export const generatedRegions = {
                 "name": "КСк 2-10",
                 "id": "kalorifer-ksk-2-10"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -13763,7 +13979,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -13800,7 +14017,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А4 П",
                 "id": "kalorifer-kfb-8-a4"
               }
-            ]
+            ],
+            "industrySector": "Легкая промышленность"
           }
         ]
       },
@@ -13887,7 +14105,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -13924,7 +14143,8 @@ export const generatedRegions = {
                 "name": "КСк 3-2",
                 "id": "kalorifer-ksk-3-2"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -13971,7 +14191,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -14008,7 +14229,8 @@ export const generatedRegions = {
                 "name": "КППС 614х614_4",
                 "id": "kpps-614x614"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -14035,7 +14257,8 @@ export const generatedRegions = {
                 "name": "КСк 4-4",
                 "id": "kalorifer-ksk-4-4"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -14072,7 +14295,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -14099,7 +14323,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -14136,7 +14361,8 @@ export const generatedRegions = {
                 "name": "АВО 4-95-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -14173,7 +14399,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       }
@@ -14223,7 +14450,8 @@ export const generatedRegions = {
                 "name": "АВО 3-55-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -14250,7 +14478,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -14277,7 +14506,8 @@ export const generatedRegions = {
                 "name": "АВО 4-95-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -14314,12 +14544,13 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
       {
-        "name": "АО «Красноярский комбинат железобетонных и металлических конструкций»",
+        "name": "АО «Красноярский комбинат ЖиМК»",
         "settlement": {
           "name": "Красноярск",
           "slug": "krasnoyarsk",
@@ -14351,7 +14582,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -14378,7 +14610,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А4 М",
                 "id": "kalorifer-kfb-14-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -14455,7 +14688,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -14502,7 +14736,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -14539,7 +14774,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -14596,7 +14832,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -14643,7 +14880,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -14670,7 +14908,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -14707,7 +14946,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -14744,7 +14984,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -14781,7 +15022,8 @@ export const generatedRegions = {
                 "name": "ТВВ 407",
                 "id": "kalorifer-tvv-407"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -14888,7 +15130,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КПСк4)",
                 "id": "agregat-ao2-25-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -14945,7 +15188,8 @@ export const generatedRegions = {
                 "name": "АВО 3-55-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -14982,7 +15226,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КПСк3)",
                 "id": "agregat-ao2-25-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -15019,7 +15264,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -15056,7 +15302,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А4 П",
                 "id": "kalorifer-kfb-14-a4"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -15083,7 +15330,8 @@ export const generatedRegions = {
                 "name": "КСк 2-11",
                 "id": "kalorifer-ksk-2-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -15253,7 +15501,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КСк4)",
                 "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -15310,7 +15559,8 @@ export const generatedRegions = {
                 "name": "ТВВ 408",
                 "id": "kalorifer-tvv-408"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -15347,7 +15597,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 М",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -15404,7 +15655,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -15441,7 +15693,8 @@ export const generatedRegions = {
                 "name": "АО 2-6.3 (КСк4)",
                 "id": "agregat-ao2-6.3-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -15468,7 +15721,8 @@ export const generatedRegions = {
                 "name": "КФБ-9 А3 П",
                 "id": "kalorifer-kfb-9-a3"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -15495,7 +15749,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -15532,7 +15787,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А4 М",
                 "id": "kalorifer-kfb-8-a4"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -15559,7 +15815,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КСк3)",
                 "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -15586,7 +15843,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-4",
                 "id": "kalorifer-kpsk-4-4"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -15613,7 +15871,8 @@ export const generatedRegions = {
                 "name": "КФБ-13 А3 М",
                 "id": "kalorifer-kfb-13-a3"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -15650,7 +15909,8 @@ export const generatedRegions = {
                 "name": "КСк 4-4",
                 "id": "kalorifer-ksk-4-4"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -15687,7 +15947,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-100",
                 "id": "ustanovka-sfotc-100"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -15764,7 +16025,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк4)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -15801,7 +16063,8 @@ export const generatedRegions = {
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -15838,7 +16101,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -15865,7 +16129,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -15902,7 +16167,8 @@ export const generatedRegions = {
                 "name": "КППУ 1572х1572_4",
                 "id": "kppu-1572x1572"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -15929,7 +16195,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -15966,7 +16233,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-1",
                 "id": "kalorifer-kpsk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -16003,7 +16271,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -16030,7 +16299,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -16087,7 +16357,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -16134,7 +16405,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КСк3)",
                 "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -16171,7 +16443,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КПСк4)",
                 "id": "agregat-ao2-4-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -16198,84 +16471,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-60",
                 "id": "ustanovka-sfotc-60"
               }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "simferopol": {
-    "slug": "simferopol",
-    "subject": {
-      "name": "Республика Крым",
-      "slug": "respublika-krym"
-    },
-    "capital": {
-      "name": "Симферополь",
-      "slug": "simferopol"
-    },
-    "companies": [
-      {
-        "name": "ООО «Энергомир»",
-        "settlement": {
-          "name": "Симферополь",
-          "slug": "simferopol",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-11",
-            "id": "kalorifer-ksk-4-11"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-8",
-            "id": "kalorifer-ksk-4-8"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2019,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-11",
-                "id": "kalorifer-ksk-4-11"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ООО «Ленинский инкубатор»",
-        "settlement": {
-          "name": "Ленино",
-          "slug": "lenino",
-          "type": "urban-settlement"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-3",
-            "id": "kalorifer-ksk-4-3"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2025,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-3",
-                "id": "kalorifer-ksk-4-3"
-              }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       }
@@ -16315,7 +16512,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -16352,7 +16550,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Станкостроение"
           }
         ]
       },
@@ -16389,7 +16588,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       }
@@ -16439,7 +16639,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-9",
                 "id": "kalorifer-kpsk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -16466,7 +16667,8 @@ export const generatedRegions = {
                 "name": "КСк 2-12",
                 "id": "kalorifer-ksk-2-12"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -16503,7 +16705,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Текстильная промышленность"
           }
         ]
       },
@@ -16540,7 +16743,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       }
@@ -16580,7 +16784,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -16607,7 +16812,8 @@ export const generatedRegions = {
                 "name": "КФБ-7 А4 П",
                 "id": "kalorifer-kfb-7-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -16634,7 +16840,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -16672,7 +16879,7 @@ export const generatedRegions = {
                 "href": "/avo-tvv-kp"
               }
             ],
-            "note": "специзготовление"
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -16699,7 +16906,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КПСк3)",
                 "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -16726,7 +16934,8 @@ export const generatedRegions = {
                 "name": "КФБ-5 А4 П",
                 "id": "kalorifer-kfb-5-a4"
               }
-            ]
+            ],
+            "industrySector": "Целлюлозно-бумажная пром-сть"
           }
         ]
       },
@@ -16753,7 +16962,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -16780,7 +16990,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -16807,7 +17018,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -16844,7 +17056,8 @@ export const generatedRegions = {
                 "name": "АВО 7-165-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -16871,7 +17084,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -16898,7 +17112,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -16945,7 +17160,8 @@ export const generatedRegions = {
                 "name": "КПВУ 1208х1208_3",
                 "id": "kpvu-1208x1208"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -16992,7 +17208,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -17019,7 +17236,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -17046,7 +17264,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Фармацевтическая пром-сть"
           }
         ]
       },
@@ -17083,7 +17302,8 @@ export const generatedRegions = {
                 "name": "КФБ-2 А3 М",
                 "id": "kalorifer-kfb-2-a3"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -17110,7 +17330,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -17147,7 +17368,8 @@ export const generatedRegions = {
                 "name": "АО 2-6.3 (КПСк3)",
                 "id": "agregat-ao2-6.3-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Целлюлозно-бумажная пром-сть"
           }
         ]
       },
@@ -17184,7 +17406,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А4 М",
                 "id": "kalorifer-kfb-8-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -17211,7 +17434,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -17248,7 +17472,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А4 П",
                 "id": "kalorifer-kfb-11-a4"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -17285,7 +17510,8 @@ export const generatedRegions = {
                 "name": "КППС 1072х1072_4",
                 "id": "kpps-1072x1072"
               }
-            ]
+            ],
+            "industrySector": "Медицинская промышленность"
           }
         ]
       },
@@ -17372,7 +17598,8 @@ export const generatedRegions = {
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -17409,7 +17636,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -17436,7 +17664,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -17483,7 +17712,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -17520,7 +17750,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-10",
                 "id": "kalorifer-kpsk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -17547,7 +17778,8 @@ export const generatedRegions = {
                 "name": "КППС 780х780_3",
                 "id": "kpps-780x780"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -17574,7 +17806,8 @@ export const generatedRegions = {
                 "name": "КФБ-3 А4 М",
                 "id": "kalorifer-kfb-3-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -17621,7 +17854,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -17648,7 +17882,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -17685,7 +17920,8 @@ export const generatedRegions = {
                 "name": "ШУК-160",
                 "id": "shkaf-upravleniia-shuk-160"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -17712,7 +17948,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк3)",
                 "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -17749,7 +17986,8 @@ export const generatedRegions = {
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -17776,7 +18014,8 @@ export const generatedRegions = {
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -17813,7 +18052,8 @@ export const generatedRegions = {
                 "name": "АО 2-6.3 (КСк4)",
                 "id": "agregat-ao2-6.3-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -17841,7 +18081,7 @@ export const generatedRegions = {
                 "id": "kalorifer-ksk-4-3"
               }
             ],
-            "note": "специзготовление"
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -17878,7 +18118,8 @@ export const generatedRegions = {
                 "name": "ТВВ 411",
                 "id": "kalorifer-tvv-411"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -17925,7 +18166,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А3 М",
                 "id": "kalorifer-kfb-11-a3"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -17962,7 +18204,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-60",
                 "id": "ustanovka-sfotc-60"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -17989,7 +18232,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -18016,7 +18260,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -18063,7 +18308,8 @@ export const generatedRegions = {
                 "name": "КФБ 7 А4 М",
                 "id": "kalorifer-kfb-7-a4"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -18100,7 +18346,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -18147,7 +18394,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -18194,7 +18442,8 @@ export const generatedRegions = {
                 "name": "КПВС 1030х1030_4",
                 "id": "kpvs-1030x1030"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -18221,7 +18470,8 @@ export const generatedRegions = {
                 "name": "АВО 7-165-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       }
@@ -18291,7 +18541,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ4)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -18328,7 +18579,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -18365,7 +18617,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       }
@@ -18425,7 +18678,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -18462,47 +18716,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
               }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "melitopol": {
-    "slug": "melitopol",
-    "subject": {
-      "name": "Запорожская область",
-      "slug": "zaporozhskaya-oblast"
-    },
-    "capital": {
-      "name": "Мелитополь",
-      "slug": "melitopol"
-    },
-    "companies": [
-      {
-        "name": "ООО «Мелитопольский молокозавод»",
-        "settlement": {
-          "name": "Мелитополь",
-          "slug": "melitopol",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КПСк 4-11",
-            "id": "kalorifer-kpsk-4-11"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2024,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КПСк 4-11",
-                "id": "kalorifer-kpsk-4-11"
-              }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       }
@@ -18572,7 +18787,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-9",
                 "id": "kalorifer-kpsk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -18629,7 +18845,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Текстильная промышленность"
           }
         ]
       },
@@ -18656,7 +18873,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -18693,7 +18911,8 @@ export const generatedRegions = {
                 "name": "КФБ-2 А3 М",
                 "id": "kalorifer-kfb-2-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -18730,7 +18949,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -18767,7 +18987,8 @@ export const generatedRegions = {
                 "name": "КПВС 1197х1197_3",
                 "id": "kpvs-1197x1197"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -18794,7 +19015,8 @@ export const generatedRegions = {
                 "name": "КФБ-6 А4 М",
                 "id": "kalorifer-kfb-6-a4"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -18831,7 +19053,8 @@ export const generatedRegions = {
                 "name": "ТВВ 310",
                 "id": "kalorifer-tvv-310"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -18868,7 +19091,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Теплоэнергетическое машиностроение"
           }
         ]
       },
@@ -18905,7 +19129,8 @@ export const generatedRegions = {
                 "name": "КППС 655х655_3",
                 "id": "kpps-655x655"
               }
-            ]
+            ],
+            "industrySector": "Текстильная промышленность"
           }
         ]
       },
@@ -18932,7 +19157,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -18969,7 +19195,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -19006,7 +19233,8 @@ export const generatedRegions = {
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -19021,7 +19249,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "ТВВ",
-            "href": "/kalorifery-tvv"
+            "href": "/kalorifery-tvv",
+            "prefix": "Калориферы нестандартных габаритных размеров"
           }
         ],
         "deliveries": [
@@ -19031,10 +19260,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "ТВВ",
-                "href": "/kalorifery-tvv"
+                "href": "/kalorifery-tvv",
+                "prefix": "Калориферы нестандартных габаритных размеров"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -19061,7 +19291,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-250",
                 "id": "ustanovka-sfotc-250"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -19098,7 +19329,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -19125,7 +19357,8 @@ export const generatedRegions = {
                 "name": "ТВВ 308",
                 "id": "kalorifer-tvv-308"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -19152,7 +19385,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 М",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -19179,7 +19413,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -19216,7 +19451,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -19263,7 +19499,8 @@ export const generatedRegions = {
                 "name": "АО 2-6.3 (КСк3)",
                 "id": "agregat-ao2-6.3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -19300,7 +19537,8 @@ export const generatedRegions = {
                 "name": "КПВС 739х739_2",
                 "id": "kpvs-739x739"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -19327,7 +19565,8 @@ export const generatedRegions = {
                 "name": "КФБ-7 А4 М",
                 "id": "kalorifer-kfb-7-a4"
               }
-            ]
+            ],
+            "industrySector": "Наука и Инновации"
           }
         ]
       },
@@ -19364,7 +19603,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-9",
                 "id": "kalorifer-kpsk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -19401,7 +19641,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -19428,7 +19669,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -19455,7 +19697,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А3 М",
                 "id": "kalorifer-kfb-11-a3"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -19482,7 +19725,8 @@ export const generatedRegions = {
                 "name": "КФБ-9 А3 П",
                 "id": "kalorifer-kfb-9-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -19509,7 +19753,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -19536,7 +19781,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -19573,7 +19819,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -19600,7 +19847,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -19637,7 +19885,8 @@ export const generatedRegions = {
                 "name": "КФБ-5 А4 М",
                 "id": "kalorifer-kfb-5-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -19664,7 +19913,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А3 М",
                 "id": "kalorifer-kfb-10-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -19691,7 +19941,8 @@ export const generatedRegions = {
                 "name": "КСк 2-6",
                 "id": "kalorifer-ksk-2-6"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -19718,7 +19969,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А4 П",
                 "id": "kalorifer-kfb-12-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -19745,7 +19997,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -19772,7 +20025,8 @@ export const generatedRegions = {
                 "name": "КФБ-9 А4 М",
                 "id": "kalorifer-kfb-9-a4"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -19809,7 +20063,8 @@ export const generatedRegions = {
                 "name": "ТВВ 309",
                 "id": "kalorifer-tvv-309"
               }
-            ]
+            ],
+            "industrySector": "Экология и чистка"
           }
         ]
       },
@@ -19836,7 +20091,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -19873,7 +20129,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -19900,7 +20157,8 @@ export const generatedRegions = {
                 "name": "КСк 3-6",
                 "id": "kalorifer-ksk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -19927,7 +20185,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -19954,7 +20213,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-160",
                 "id": "ustanovka-sfotc-160"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -19981,7 +20241,8 @@ export const generatedRegions = {
                 "name": "КСк 3-8",
                 "id": "kalorifer-ksk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -20008,7 +20269,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-9",
                 "id": "kalorifer-kpsk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -20065,7 +20327,8 @@ export const generatedRegions = {
                 "name": "КСк 4-8",
                 "id": "kalorifer-ksk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -20092,7 +20355,8 @@ export const generatedRegions = {
                 "name": "КСк 3-1",
                 "id": "kalorifer-ksk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -20169,7 +20433,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -20196,7 +20461,8 @@ export const generatedRegions = {
                 "name": "КСк 4-1",
                 "id": "kalorifer-ksk-4-1"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -20263,7 +20529,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк3)",
                 "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -20300,7 +20567,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КПСк3)",
                 "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -20315,7 +20583,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КСк",
-            "href": "/kalorifery-ksk"
+            "href": "/kalorifery-ksk",
+            "prefix": "Калориферы по спецзаказу"
           }
         ],
         "deliveries": [
@@ -20325,10 +20594,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КСк",
-                "href": "/kalorifery-ksk"
+                "href": "/kalorifery-ksk",
+                "prefix": "Калориферы по спецзаказу"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -20355,7 +20625,8 @@ export const generatedRegions = {
                 "name": "ТВВ 408",
                 "id": "kalorifer-tvv-408"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -20382,7 +20653,8 @@ export const generatedRegions = {
                 "name": "КФБ-3 А3 М",
                 "id": "kalorifer-kfb-3-a3"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -20409,7 +20681,8 @@ export const generatedRegions = {
                 "name": "КСк 2-12",
                 "id": "kalorifer-ksk-2-12"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -20446,7 +20719,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -20473,7 +20747,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -20520,7 +20795,8 @@ export const generatedRegions = {
                 "name": "КФБ-7 А3 П",
                 "id": "kalorifer-kfb-7-a3"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -20557,7 +20833,8 @@ export const generatedRegions = {
                 "name": "КФБ-5 А3 М",
                 "id": "kalorifer-kfb-5-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -20584,7 +20861,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А3 М",
                 "id": "kalorifer-kfb-14-a3"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -20641,7 +20919,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -20668,7 +20947,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -20695,7 +20975,8 @@ export const generatedRegions = {
                 "name": "КП 312",
                 "id": "kalorifer-kp-312"
               }
-            ]
+            ],
+            "industrySector": "Энергосберегающие технологии"
           }
         ]
       },
@@ -20722,7 +21003,8 @@ export const generatedRegions = {
                 "name": "АО 2-15 (КПСк4)",
                 "id": "agregat-ao2-15-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -20749,7 +21031,8 @@ export const generatedRegions = {
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -20776,7 +21059,8 @@ export const generatedRegions = {
                 "name": "КСк 4-4",
                 "id": "kalorifer-ksk-4-4"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -20803,7 +21087,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -20830,7 +21115,8 @@ export const generatedRegions = {
                 "name": "КСк 2-10",
                 "id": "kalorifer-ksk-2-10"
               }
-            ]
+            ],
+            "industrySector": "Образование и инфраструктура"
           }
         ]
       },
@@ -20887,7 +21173,8 @@ export const generatedRegions = {
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -20934,7 +21221,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-100",
                 "id": "ustanovka-sfotc-100"
               }
-            ]
+            ],
+            "industrySector": "Наука и Инновации"
           }
         ]
       },
@@ -20981,7 +21269,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -21008,7 +21297,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А4 П",
                 "id": "kalorifer-kfb-11-a4"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -21045,7 +21335,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -21072,7 +21363,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -21109,7 +21401,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -21146,7 +21439,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -21183,7 +21477,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк4)",
                 "id": "agregat-ao2-3-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -21220,7 +21515,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А4 М",
                 "id": "kalorifer-kfb-8-a4"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -21247,7 +21543,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -21294,7 +21591,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       }
@@ -21344,7 +21642,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       }
@@ -21361,43 +21660,6 @@ export const generatedRegions = {
       "slug": "nizhny-novgorod"
     },
     "companies": [
-      {
-        "name": "АО «Боровичский Комбинат Огнеупоров»",
-        "settlement": {
-          "name": "Боровичи",
-          "slug": "borovichi",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СТД-300 В",
-            "href": "/std300-ksk-kpsk"
-          },
-          {
-            "kind": "product",
-            "name": "СТД-300 (КСк4)",
-            "id": "std300-ksk"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2022,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СТД-300 В",
-                "href": "/std300-ksk-kpsk"
-              },
-              {
-                "kind": "product",
-                "name": "СТД-300 (КСк4)",
-                "id": "std300-ksk"
-              }
-            ]
-          }
-        ]
-      },
       {
         "name": "ООО «Мир Климата»",
         "settlement": {
@@ -21421,7 +21683,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -21448,7 +21711,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -21485,7 +21749,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -21522,7 +21787,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -21559,7 +21825,8 @@ export const generatedRegions = {
                 "name": "АО 2-5 (КПСк3)",
                 "id": "agregat-ao2-5-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -21596,7 +21863,8 @@ export const generatedRegions = {
                 "name": "КПВС 739х739_2",
                 "id": "kpvs-739x739"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -21653,7 +21921,8 @@ export const generatedRegions = {
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -21680,7 +21949,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -21717,7 +21987,8 @@ export const generatedRegions = {
                 "name": "КСк 3-6",
                 "id": "kalorifer-ksk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -21744,7 +22015,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -21781,7 +22053,8 @@ export const generatedRegions = {
                 "name": "ТВВ 306",
                 "id": "kalorifer-tvv-306"
               }
-            ]
+            ],
+            "industrySector": "Наука и Инновации"
           }
         ]
       },
@@ -21818,7 +22091,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КСк4)",
                 "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -21845,7 +22119,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -21882,7 +22157,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А3 М",
                 "id": "kalorifer-kfb-8-a3"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -21919,7 +22195,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-1",
                 "id": "kalorifer-kpsk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -21946,7 +22223,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -21983,7 +22261,8 @@ export const generatedRegions = {
                 "name": "КФБ-6 А4 П",
                 "id": "kalorifer-kfb-6-a4"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -22010,7 +22289,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -22037,7 +22317,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -22064,7 +22345,8 @@ export const generatedRegions = {
                 "name": "КСк 3-8",
                 "id": "kalorifer-ksk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Легкая промышленность"
           }
         ]
       }
@@ -22081,6 +22363,44 @@ export const generatedRegions = {
       "slug": "veliky-novgorod"
     },
     "companies": [
+      {
+        "name": "АО «Боровичский Комбинат Огнеупоров»",
+        "settlement": {
+          "name": "Боровичи",
+          "slug": "borovichi",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "category",
+            "name": "СТД-300 В",
+            "href": "/std300-ksk-kpsk"
+          },
+          {
+            "kind": "product",
+            "name": "СТД-300 (КСк4)",
+            "id": "std300-ksk"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2022,
+            "products": [
+              {
+                "kind": "category",
+                "name": "СТД-300 В",
+                "href": "/std300-ksk-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "СТД-300 (КСк4)",
+                "id": "std300-ksk"
+              }
+            ],
+            "industrySector": "Производство стройматериалов"
+          }
+        ]
+      },
       {
         "name": "ЗАО «Новгородский металлургический завод»",
         "settlement": {
@@ -22114,7 +22434,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -22141,7 +22462,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Транспортная инфраструктура"
           }
         ]
       },
@@ -22178,7 +22500,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-12",
                 "id": "kalorifer-kpsk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       }
@@ -22238,7 +22561,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -22305,7 +22629,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -22332,7 +22657,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -22369,7 +22695,8 @@ export const generatedRegions = {
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -22396,7 +22723,8 @@ export const generatedRegions = {
                 "name": "КСк 4-8",
                 "id": "kalorifer-ksk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -22433,7 +22761,8 @@ export const generatedRegions = {
                 "name": "КФБ-9 А4 М",
                 "id": "kalorifer-kfb-9-a4"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -22470,7 +22799,8 @@ export const generatedRegions = {
                 "name": "ТВВ 406",
                 "id": "kalorifer-tvv-406"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -22497,7 +22827,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -22544,7 +22875,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -22581,7 +22913,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -22628,7 +22961,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк4)",
                 "id": "agregat-ao2-3-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -22655,7 +22989,8 @@ export const generatedRegions = {
                 "name": "ТВВ 308",
                 "id": "kalorifer-tvv-308"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -22692,7 +23027,8 @@ export const generatedRegions = {
                 "name": "ШУК-160",
                 "id": "shkaf-upravleniia-shuk-160"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -22729,7 +23065,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ3)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -22776,7 +23113,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -22803,7 +23141,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -22850,7 +23189,8 @@ export const generatedRegions = {
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -22877,7 +23217,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -22934,7 +23275,8 @@ export const generatedRegions = {
                 "name": "КФБ-13 А3 П",
                 "id": "kalorifer-kfb-13-a3"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -22971,7 +23313,8 @@ export const generatedRegions = {
                 "name": "ТВВ 408",
                 "id": "kalorifer-tvv-408"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -22998,7 +23341,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 М",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -23025,7 +23369,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -23052,7 +23397,8 @@ export const generatedRegions = {
                 "name": "КСк 3-1",
                 "id": "kalorifer-ksk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -23079,7 +23425,8 @@ export const generatedRegions = {
                 "name": "КСк 2-2",
                 "id": "kalorifer-ksk-2-2"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -23116,7 +23463,8 @@ export const generatedRegions = {
                 "name": "КП 312",
                 "id": "kalorifer-kp-312"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -23153,7 +23501,8 @@ export const generatedRegions = {
                 "name": "ТВВ 309",
                 "id": "kalorifer-tvv-309"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -23180,7 +23529,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-8",
                 "id": "kalorifer-kpsk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -23207,7 +23557,8 @@ export const generatedRegions = {
                 "name": "КСк 3-7",
                 "id": "kalorifer-ksk-3-7"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -23404,7 +23755,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-100",
                 "id": "ustanovka-sfotc-100"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -23441,7 +23793,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -23468,7 +23821,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -23495,7 +23849,8 @@ export const generatedRegions = {
                 "name": "КСк 2-10",
                 "id": "kalorifer-ksk-2-10"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -23662,7 +24017,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А3 М",
                 "id": "kalorifer-kfb-11-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -23689,7 +24045,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-11",
                 "id": "kalorifer-kpsk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -23726,7 +24083,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-9",
                 "id": "kalorifer-kpsk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -23763,7 +24121,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А4 П",
                 "id": "kalorifer-kfb-11-a4"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -23810,7 +24169,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -23837,7 +24197,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -23864,7 +24225,8 @@ export const generatedRegions = {
                 "name": "КСк 2-11",
                 "id": "kalorifer-ksk-2-11"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -23901,7 +24263,8 @@ export const generatedRegions = {
                 "name": "АВО 3-55-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -23938,7 +24301,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -23975,7 +24339,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -24082,7 +24447,8 @@ export const generatedRegions = {
                 "name": "КП 308",
                 "id": "kalorifer-kp-308"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -24109,7 +24475,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -24136,7 +24503,8 @@ export const generatedRegions = {
                 "name": "ТВВ 411",
                 "id": "kalorifer-tvv-411"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -24163,7 +24531,8 @@ export const generatedRegions = {
                 "name": "ТВВ 307",
                 "id": "kalorifer-tvv-307"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -24190,7 +24559,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -24332,7 +24702,8 @@ export const generatedRegions = {
                 "name": "ШУК-25",
                 "id": "shkaf-upravleniia-shuk-25"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -24369,7 +24740,8 @@ export const generatedRegions = {
                 "name": "КП 408",
                 "id": "kalorifer-kp-408"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -24396,7 +24768,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А4 М",
                 "id": "kalorifer-kfb-14-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -24423,7 +24796,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КП4)",
                 "id": "std300-kp"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -24450,7 +24824,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КСк3)",
                 "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -24477,7 +24852,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А3 П",
                 "id": "kalorifer-kfb-12-a3"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -24504,7 +24880,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-1",
                 "id": "kalorifer-kpsk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -24531,7 +24908,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А4 М",
                 "id": "kalorifer-kfb-11-a4"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -24558,7 +24936,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-7",
                 "id": "kalorifer-kpsk-2-7"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -24595,7 +24974,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-3",
                 "id": "kalorifer-kpsk-4-3"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -24622,7 +25002,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-1",
                 "id": "kalorifer-kpsk-4-1"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -24659,7 +25040,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КПСк3)",
                 "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Энергосберегающие технологии"
           }
         ]
       },
@@ -24726,7 +25108,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк4)",
                 "id": "agregat-ao2-20-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -24753,7 +25136,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-10",
                 "id": "kalorifer-kpsk-2-10"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -24780,7 +25164,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -24827,7 +25212,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -24864,7 +25250,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А4 М",
                 "id": "kalorifer-kfb-12-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -24921,7 +25308,8 @@ export const generatedRegions = {
                 "name": "КП 311",
                 "id": "kalorifer-kp-311"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -24958,7 +25346,8 @@ export const generatedRegions = {
                 "name": "КП 410",
                 "id": "kalorifer-kp-410"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -24985,7 +25374,8 @@ export const generatedRegions = {
                 "name": "КФБ-4 А3 М",
                 "id": "kalorifer-kfb-4-a3"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -25012,7 +25402,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-6",
                 "id": "kalorifer-kpsk-2-6"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -25049,7 +25440,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КП3)",
                 "id": "std300-kp"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -25086,7 +25478,8 @@ export const generatedRegions = {
                 "name": "КП 310",
                 "id": "kalorifer-kp-310"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -25113,7 +25506,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А3 М",
                 "id": "kalorifer-kfb-12-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -25150,7 +25544,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -25177,7 +25572,8 @@ export const generatedRegions = {
                 "name": "КФБ-13 А4 М",
                 "id": "kalorifer-kfb-13-a4"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -25224,7 +25620,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк3)",
                 "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -25261,7 +25658,8 @@ export const generatedRegions = {
                 "name": "КФБ-3 А4 М",
                 "id": "kalorifer-kfb-3-a4"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -25298,7 +25696,8 @@ export const generatedRegions = {
                 "name": "КФБ-13 А4 П",
                 "id": "kalorifer-kfb-13-a4"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -25355,7 +25754,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -25412,7 +25812,8 @@ export const generatedRegions = {
                 "name": "ШУК-25",
                 "id": "shkaf-upravleniia-shuk-25"
               }
-            ]
+            ],
+            "industrySector": "Здравоохранение и туризм"
           }
         ]
       },
@@ -25439,7 +25840,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-8",
                 "id": "kalorifer-kpsk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -25466,7 +25868,8 @@ export const generatedRegions = {
                 "name": "КСк 2-3",
                 "id": "kalorifer-ksk-2-3"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -25503,7 +25906,8 @@ export const generatedRegions = {
                 "name": "КПВС 822х822_2",
                 "id": "kpvs-822x822"
               }
-            ]
+            ],
+            "industrySector": "Целлюлозно-бумажная пром-сть"
           }
         ]
       },
@@ -25518,7 +25922,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КПСк",
-            "href": "/kalorifery-kpsk"
+            "href": "/kalorifery-kpsk",
+            "prefix": "Калориферы специального конструктивного исполнения"
           }
         ],
         "deliveries": [
@@ -25528,10 +25933,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КПСк",
-                "href": "/kalorifery-kpsk"
+                "href": "/kalorifery-kpsk",
+                "prefix": "Калориферы специального конструктивного исполнения"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -25558,7 +25964,8 @@ export const generatedRegions = {
                 "name": "КФБ-6 А4 П",
                 "id": "kalorifer-kfb-6-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -25585,7 +25992,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Фармацевтическая пром-сть"
           }
         ]
       },
@@ -25612,7 +26020,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -25639,7 +26048,8 @@ export const generatedRegions = {
                 "name": "КСк 4-3",
                 "id": "kalorifer-ksk-4-3"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -25666,7 +26076,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       }
@@ -25756,7 +26167,8 @@ export const generatedRegions = {
                 "name": "КСк 4-1",
                 "id": "kalorifer-ksk-4-1"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -25783,7 +26195,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -25810,7 +26223,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -25847,7 +26261,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КПСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -25874,7 +26289,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -25901,7 +26317,8 @@ export const generatedRegions = {
                 "name": "ТВВ 411",
                 "id": "kalorifer-tvv-411"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -25948,7 +26365,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -25975,7 +26393,8 @@ export const generatedRegions = {
                 "name": "КСк 2-11",
                 "id": "kalorifer-ksk-2-11"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -26002,7 +26421,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -26029,7 +26449,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -26056,7 +26477,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -26093,7 +26515,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -26120,7 +26543,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -26147,7 +26571,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -26184,7 +26609,8 @@ export const generatedRegions = {
                 "name": "КСк 4-4",
                 "id": "kalorifer-ksk-4-4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -26211,7 +26637,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-6",
                 "id": "kalorifer-kpsk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -26238,7 +26665,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-7",
                 "id": "kalorifer-kpsk-3-7"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -26265,7 +26693,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -26302,7 +26731,8 @@ export const generatedRegions = {
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -26329,7 +26759,8 @@ export const generatedRegions = {
                 "name": "КСк 4-8",
                 "id": "kalorifer-ksk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -26366,7 +26797,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -26393,7 +26825,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-11",
                 "id": "kalorifer-kpsk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -26440,7 +26873,8 @@ export const generatedRegions = {
                 "name": "ШУК-160",
                 "id": "shkaf-upravleniia-shuk-160"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -26455,7 +26889,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КПСк",
-            "href": "/kalorifery-kpsk"
+            "href": "/kalorifery-kpsk",
+            "prefix": "Калориферы по индивидуальному техническому заданию"
           }
         ],
         "deliveries": [
@@ -26465,10 +26900,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КПСк",
-                "href": "/kalorifery-kpsk"
+                "href": "/kalorifery-kpsk",
+                "prefix": "Калориферы по индивидуальному техническому заданию"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Масличная промышленность"
           }
         ]
       },
@@ -26495,7 +26931,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       }
@@ -26535,7 +26972,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -26572,7 +27010,8 @@ export const generatedRegions = {
                 "name": "КФБ-6 А4 П",
                 "id": "kalorifer-kfb-6-a4"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -26599,7 +27038,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А3 М",
                 "id": "kalorifer-kfb-11-a3"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -26636,7 +27076,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -26673,7 +27114,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А4 М",
                 "id": "kalorifer-kfb-14-a4"
               }
-            ]
+            ],
+            "industrySector": "Образование и инфраструктура"
           }
         ]
       },
@@ -26710,7 +27152,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -26757,7 +27200,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -26794,7 +27238,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -26821,7 +27266,8 @@ export const generatedRegions = {
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -26858,7 +27304,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -26895,7 +27342,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -26932,7 +27380,8 @@ export const generatedRegions = {
                 "name": "КФБ-11 А3 М",
                 "id": "kalorifer-kfb-11-a3"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -26959,7 +27408,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -26986,7 +27436,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -27013,7 +27464,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -27060,7 +27512,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-9",
                 "id": "kalorifer-kpsk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -27087,7 +27540,8 @@ export const generatedRegions = {
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       }
@@ -27127,12 +27581,13 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
       {
-        "name": "Орловский завод резиновых изделий ОАО «Объединение Альфапластик»",
+        "name": "Орловский завод РИ ОАО «Объединение Альфапластик»",
         "settlement": {
           "name": "Орёл",
           "slug": "orel",
@@ -27164,7 +27619,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       }
@@ -27214,7 +27670,8 @@ export const generatedRegions = {
                 "name": "КППС 1197х1197_3",
                 "id": "kpps-1197x1197"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -27281,7 +27738,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КСк3)",
                 "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -27318,7 +27776,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КПСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -27333,7 +27792,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КП",
-            "href": "/kalorifery-kp"
+            "href": "/kalorifery-kp",
+            "prefix": "Калориферы нестандартной комплектации"
           }
         ],
         "deliveries": [
@@ -27343,10 +27803,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КП",
-                "href": "/kalorifery-kp"
+                "href": "/kalorifery-kp",
+                "prefix": "Калориферы нестандартной комплектации"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Целлюлозно-бумажная пром-сть"
           }
         ]
       },
@@ -27403,7 +27864,8 @@ export const generatedRegions = {
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -27430,7 +27892,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -27457,7 +27920,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -27494,7 +27958,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-9",
                 "id": "kalorifer-kpsk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       }
@@ -27544,7 +28009,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -27581,7 +28047,8 @@ export const generatedRegions = {
                 "name": "АВО 7-165-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -27618,7 +28085,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -27655,7 +28123,8 @@ export const generatedRegions = {
                 "name": "АВО 7-165-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -27702,7 +28171,8 @@ export const generatedRegions = {
                 "name": "КФБ-7 А4 М",
                 "id": "kalorifer-kfb-7-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -27717,7 +28187,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КСк",
-            "href": "/kalorifery-ksk"
+            "href": "/kalorifery-ksk",
+            "prefix": "Калориферы нестандартных габаритных размеров"
           }
         ],
         "deliveries": [
@@ -27727,10 +28198,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КСк",
-                "href": "/kalorifery-ksk"
+                "href": "/kalorifery-ksk",
+                "prefix": "Калориферы нестандартных габаритных размеров"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -27757,7 +28229,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -27794,7 +28267,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -27831,7 +28305,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Наука и Инновации"
           }
         ]
       },
@@ -27858,7 +28333,8 @@ export const generatedRegions = {
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -27885,7 +28361,8 @@ export const generatedRegions = {
                 "name": "КСк 3-8",
                 "id": "kalorifer-ksk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -27942,7 +28419,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -27979,7 +28457,8 @@ export const generatedRegions = {
                 "name": "АО 2-5 (КСк4)",
                 "id": "agregat-ao2-5-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -28016,7 +28495,8 @@ export const generatedRegions = {
                 "name": "КППС 572х572_2",
                 "id": "kpps-572x572"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -28043,7 +28523,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -28070,7 +28551,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -28107,7 +28589,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -28144,7 +28627,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А4 П",
                 "id": "kalorifer-kfb-14-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -28181,7 +28665,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -28218,7 +28703,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -28245,7 +28731,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Легкая промышленность"
           }
         ]
       },
@@ -28272,7 +28759,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -28299,7 +28787,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А3 М",
                 "id": "kalorifer-kfb-10-a3"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -28336,7 +28825,8 @@ export const generatedRegions = {
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -28373,7 +28863,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-160",
                 "id": "ustanovka-sfotc-160"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -28400,7 +28891,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -28437,7 +28929,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-10",
                 "id": "kalorifer-kpsk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -28464,7 +28957,8 @@ export const generatedRegions = {
                 "name": "КСк 4-8",
                 "id": "kalorifer-ksk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -28511,7 +29005,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А3 П",
                 "id": "kalorifer-kfb-12-a3"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -28538,7 +29033,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -28565,7 +29061,8 @@ export const generatedRegions = {
                 "name": "КСк 4-5",
                 "id": "kalorifer-ksk-4-5"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -28602,7 +29099,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-160",
                 "id": "ustanovka-sfotc-160"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -28639,7 +29137,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       }
@@ -28689,7 +29188,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -28736,7 +29236,8 @@ export const generatedRegions = {
                 "name": "КПВС 905х905_3",
                 "id": "kpvs-905x905"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -28773,7 +29274,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Рыбодобывающая отрасль"
           }
         ]
       },
@@ -28810,7 +29312,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А4 М",
                 "id": "kalorifer-kfb-12-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -28847,7 +29350,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -28874,7 +29378,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-9",
                 "id": "kalorifer-kpsk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -28911,7 +29416,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -28948,7 +29454,8 @@ export const generatedRegions = {
                 "name": "КСк 2-8",
                 "id": "kalorifer-ksk-2-8"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -28985,7 +29492,66 @@ export const generatedRegions = {
                 "name": "ТВВ 306",
                 "id": "kalorifer-tvv-306"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
+          }
+        ]
+      },
+      {
+        "name": "ООО «Уссурийская картонная фабрика»",
+        "settlement": {
+          "name": "Уссурийск",
+          "slug": "ussuriysk",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КСк 2-8",
+            "id": "kalorifer-ksk-2-8"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 3-11",
+            "id": "kalorifer-kpsk-3-11"
+          },
+          {
+            "kind": "category",
+            "name": "СТД-300 П",
+            "href": "/std300-ksk-kpsk"
+          },
+          {
+            "kind": "product",
+            "name": "СТД-300 (КПСк3)",
+            "id": "std300-kpsk"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2026,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КСк 2-8",
+                "id": "kalorifer-ksk-2-8"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 3-11",
+                "id": "kalorifer-kpsk-3-11"
+              },
+              {
+                "kind": "category",
+                "name": "СТД-300 П",
+                "href": "/std300-ksk-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "СТД-300 (КПСк3)",
+                "id": "std300-kpsk"
+              }
+            ],
+            "industrySector": "Целлюлозно-бумажная пром-сть"
           }
         ]
       },
@@ -29012,7 +29578,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-11",
                 "id": "kalorifer-kpsk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -29039,7 +29606,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       }
@@ -29089,7 +29657,8 @@ export const generatedRegions = {
                 "name": "КПВС 1030х1030_4",
                 "id": "kpvs-1030x1030"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -29116,7 +29685,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -29153,7 +29723,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КПСк3)",
                 "id": "agregat-ao2-20-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -29190,7 +29761,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-1",
                 "id": "kalorifer-kpsk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       }
@@ -29230,7 +29802,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -29267,7 +29840,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -29294,7 +29868,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -29331,7 +29906,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк4)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -29368,7 +29944,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -29405,7 +29982,8 @@ export const generatedRegions = {
                 "name": "КСк 3-6",
                 "id": "kalorifer-ksk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       }
@@ -29445,7 +30023,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -29482,7 +30061,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -29509,7 +30089,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и водоснабжение"
           }
         ]
       },
@@ -29556,7 +30137,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк4)",
                 "id": "agregat-ao2-20-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -29593,7 +30175,8 @@ export const generatedRegions = {
                 "name": "ШУК-160",
                 "id": "shkaf-upravleniia-shuk-160"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -29630,7 +30213,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-1",
                 "id": "kalorifer-kpsk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -29667,7 +30251,8 @@ export const generatedRegions = {
                 "name": "АО 2-15 (КСк4)",
                 "id": "agregat-ao2-15-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -29704,7 +30289,8 @@ export const generatedRegions = {
                 "name": "КСк 3-6",
                 "id": "kalorifer-ksk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -29731,7 +30317,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -29768,7 +30355,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк4)",
                 "id": "agregat-ao2-3-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -29795,7 +30383,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -29822,7 +30411,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КПСк3)",
                 "id": "agregat-ao2-25-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -29859,7 +30449,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -29896,7 +30487,8 @@ export const generatedRegions = {
                 "name": "АВО 7-165-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -29933,7 +30525,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -29960,7 +30553,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -29987,7 +30581,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -30034,7 +30629,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       }
@@ -30084,7 +30680,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Транспортное машиностроение"
           }
         ]
       },
@@ -30121,7 +30718,8 @@ export const generatedRegions = {
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -30158,7 +30756,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -30205,7 +30804,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -30242,7 +30842,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -30309,7 +30910,8 @@ export const generatedRegions = {
                 "name": "АВО 3-55-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -30346,7 +30948,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк3)",
                 "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Горнодобывающая пром-ть"
           }
         ]
       }
@@ -30396,7 +30999,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -30433,7 +31037,8 @@ export const generatedRegions = {
                 "name": "КПВС 780х780_2",
                 "id": "kpvs-780x780"
               }
-            ]
+            ],
+            "industrySector": "Целлюлозно-бумажная пром-сть"
           }
         ]
       },
@@ -30470,7 +31075,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ4)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       }
@@ -30498,7 +31104,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "ТВВ",
-            "href": "/kalorifery-tvv"
+            "href": "/kalorifery-tvv",
+            "prefix": "Калориферы по спецзаказу"
           }
         ],
         "deliveries": [
@@ -30508,9 +31115,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "ТВВ",
-                "href": "/kalorifery-tvv"
+                "href": "/kalorifery-tvv",
+                "prefix": "Калориферы по спецзаказу"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -30537,7 +31146,8 @@ export const generatedRegions = {
                 "name": "КСк 4-5",
                 "id": "kalorifer-ksk-4-5"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -30594,7 +31204,8 @@ export const generatedRegions = {
                 "name": "ШУК-25",
                 "id": "shkaf-upravleniia-shuk-25"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -30641,7 +31252,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -30678,7 +31290,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -30725,7 +31338,8 @@ export const generatedRegions = {
                 "name": "КПВУ 572х572_3",
                 "id": "kpvu-572x572"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -30762,7 +31376,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       }
@@ -30822,7 +31437,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк4)",
                 "id": "agregat-ao2-20-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       }
@@ -30872,7 +31488,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Электронная промышленность"
           }
         ]
       },
@@ -30919,7 +31536,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       }
@@ -31119,7 +31737,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-250",
                 "id": "ustanovka-sfotc-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -31176,7 +31795,8 @@ export const generatedRegions = {
                 "name": "ШУК-25",
                 "id": "shkaf-upravleniia-shuk-25"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -31273,7 +31893,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -31320,7 +31941,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -31357,7 +31979,8 @@ export const generatedRegions = {
                 "name": "КСк 2-11",
                 "id": "kalorifer-ksk-2-11"
               }
-            ]
+            ],
+            "industrySector": "Производство стройматериалов"
           }
         ]
       },
@@ -31384,7 +32007,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       }
@@ -31412,7 +32036,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КСк",
-            "href": "/kalorifery-ksk"
+            "href": "/kalorifery-ksk",
+            "prefix": "Калориферы специального конструктивного исполнения"
           }
         ],
         "deliveries": [
@@ -31422,10 +32047,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КСк",
-                "href": "/kalorifery-ksk"
+                "href": "/kalorifery-ksk",
+                "prefix": "Калориферы специального конструктивного исполнения"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Транспортное машиностроение"
           }
         ]
       },
@@ -31462,7 +32088,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -31489,7 +32116,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Фармацевтическая пром-сть"
           }
         ]
       },
@@ -31526,7 +32154,8 @@ export const generatedRegions = {
                 "name": "КФБ-6 А3 М",
                 "id": "kalorifer-kfb-6-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -31553,7 +32182,8 @@ export const generatedRegions = {
                 "name": "КФБ-9 А4 М",
                 "id": "kalorifer-kfb-9-a4"
               }
-            ]
+            ],
+            "industrySector": "Автоматизация и ИТ"
           }
         ]
       },
@@ -31580,7 +32210,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -31607,7 +32238,8 @@ export const generatedRegions = {
                 "name": "КФБ-5 А4 М",
                 "id": "kalorifer-kfb-5-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -31634,7 +32266,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -31661,7 +32294,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -31688,7 +32322,8 @@ export const generatedRegions = {
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -31725,7 +32360,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -31752,7 +32388,8 @@ export const generatedRegions = {
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -31789,7 +32426,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -31826,7 +32464,8 @@ export const generatedRegions = {
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -31873,7 +32512,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -31900,7 +32540,8 @@ export const generatedRegions = {
                 "name": "КСк 2-4",
                 "id": "kalorifer-ksk-2-4"
               }
-            ]
+            ],
+            "industrySector": "Экология и очистка"
           }
         ]
       },
@@ -31937,7 +32578,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А3 П",
                 "id": "kalorifer-kfb-14-a3"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -31964,7 +32606,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -32011,7 +32654,8 @@ export const generatedRegions = {
                 "name": "КП 410",
                 "id": "kalorifer-kp-410"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -32068,7 +32712,8 @@ export const generatedRegions = {
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -32105,7 +32750,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КПСк4)",
                 "id": "agregat-ao2-4-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -32142,7 +32788,8 @@ export const generatedRegions = {
                 "name": "КСк 4-5",
                 "id": "kalorifer-ksk-4-5"
               }
-            ]
+            ],
+            "industrySector": "Сельхозмашиностроение"
           }
         ]
       }
@@ -32192,7 +32839,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк4)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       }
@@ -32232,7 +32880,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -32269,7 +32918,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -32296,7 +32946,8 @@ export const generatedRegions = {
                 "name": "КСк 3-7",
                 "id": "kalorifer-ksk-3-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -32333,7 +32984,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -32360,7 +33012,8 @@ export const generatedRegions = {
                 "name": "КСк 4-5",
                 "id": "kalorifer-ksk-4-5"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -32387,7 +33040,8 @@ export const generatedRegions = {
                 "name": "КСк 2-10",
                 "id": "kalorifer-ksk-2-10"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -32424,7 +33078,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -32461,7 +33116,8 @@ export const generatedRegions = {
                 "name": "КСк 3-1",
                 "id": "kalorifer-ksk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -32498,7 +33154,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КП4)",
                 "id": "std300-kp"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -32535,7 +33192,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -32592,7 +33250,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КП3)",
                 "id": "std300-kp"
               }
-            ]
+            ],
+            "industrySector": "Транспортное машиностроение"
           }
         ]
       },
@@ -32759,7 +33418,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ4)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -32901,7 +33561,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ3)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -32938,7 +33599,8 @@ export const generatedRegions = {
                 "name": "КП 406",
                 "id": "kalorifer-kp-406"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -32975,7 +33637,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -33052,7 +33715,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       },
@@ -33089,7 +33753,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       }
@@ -33139,7 +33804,8 @@ export const generatedRegions = {
                 "name": "КФБ 8 А4 М",
                 "id": "kalorifer-kfb-8-a4"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -33176,7 +33842,8 @@ export const generatedRegions = {
                 "name": "КФБ 8 А4 П",
                 "id": "kalorifer-kfb-8-a4"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -33213,7 +33880,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-12",
                 "id": "kalorifer-kpsk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -33270,7 +33938,8 @@ export const generatedRegions = {
                 "name": "КП 412",
                 "id": "kalorifer-kp-412"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -33307,7 +33976,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -33374,7 +34044,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КСк4)",
                 "id": "agregat-ao2-25-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -33411,7 +34082,8 @@ export const generatedRegions = {
                 "name": "КПВУ 890х890_3",
                 "id": "kpvu-890x890"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -33448,7 +34120,8 @@ export const generatedRegions = {
                 "name": "КПВС 974х974_4",
                 "id": "kpvs-947x947"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -33475,7 +34148,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -33502,7 +34176,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -33539,7 +34214,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -33586,7 +34262,8 @@ export const generatedRegions = {
                 "name": "АО 2-5 (КПСк3)",
                 "id": "agregat-ao2-5-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -33623,7 +34300,8 @@ export const generatedRegions = {
                 "name": "КСк 3-7",
                 "id": "kalorifer-ksk-3-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -33660,7 +34338,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -33697,7 +34376,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-8",
                 "id": "kalorifer-kpsk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -33724,7 +34404,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -33771,7 +34452,8 @@ export const generatedRegions = {
                 "name": "КППС 572х572_2",
                 "id": "kpps-572x572"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -33808,7 +34490,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Транспортное машиностроение"
           }
         ]
       },
@@ -33845,7 +34528,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Добывающая отрасль"
           }
         ]
       }
@@ -33895,7 +34579,8 @@ export const generatedRegions = {
                 "name": "ТВВ 411",
                 "id": "kalorifer-tvv-411"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -33922,7 +34607,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -33959,7 +34645,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -33996,7 +34683,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А3 М",
                 "id": "kalorifer-kfb-12-a3"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -34033,7 +34721,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       }
@@ -34073,7 +34762,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-11",
                 "id": "kalorifer-kpsk-2-11"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -34100,7 +34790,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -34137,7 +34828,8 @@ export const generatedRegions = {
                 "name": "АВО 4-95-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -34174,7 +34866,8 @@ export const generatedRegions = {
                 "name": "КФБ-7 А3 М",
                 "id": "kalorifer-kfb-7-a3"
               }
-            ]
+            ],
+            "industrySector": "Транспортное машиностроение"
           }
         ]
       },
@@ -34211,7 +34904,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Автомобильная промышленность"
           }
         ]
       },
@@ -34248,7 +34942,8 @@ export const generatedRegions = {
                 "name": "КФБ-7 А4 П",
                 "id": "kalorifer-kfb-7-a4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -34285,7 +34980,8 @@ export const generatedRegions = {
                 "name": "КППС 697х697_3",
                 "id": "kpps-697x697"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -34322,7 +35018,8 @@ export const generatedRegions = {
                 "name": "ТВВ 310",
                 "id": "kalorifer-tvv-310"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -34359,7 +35056,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -34386,7 +35084,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -34413,7 +35112,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -34440,7 +35140,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -34467,7 +35168,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -34482,7 +35184,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КСк",
-            "href": "/kalorifery-ksk"
+            "href": "/kalorifery-ksk",
+            "prefix": "Калориферы по индивидуальному техническому заданию"
           }
         ],
         "deliveries": [
@@ -34492,10 +35195,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КСк",
-                "href": "/kalorifery-ksk"
+                "href": "/kalorifery-ksk",
+                "prefix": "Калориферы по индивидуальному техническому заданию"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Косметическая промышленность"
           }
         ]
       },
@@ -34522,7 +35226,8 @@ export const generatedRegions = {
                 "name": "КФБ-9 А3 П",
                 "id": "kalorifer-kfb-9-a3"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -34549,7 +35254,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -34576,7 +35282,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -34603,7 +35310,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КПСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -34630,7 +35338,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -34667,7 +35376,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Автомобильная промышленность"
           }
         ]
       },
@@ -34704,7 +35414,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -34731,7 +35442,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -34758,7 +35470,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-12",
                 "id": "kalorifer-kpsk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Автомобильная промышленность"
           }
         ]
       },
@@ -34795,7 +35508,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -34832,7 +35546,8 @@ export const generatedRegions = {
                 "name": "КПВС 697х697_3",
                 "id": "kpvs-697x697"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -34859,7 +35574,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       }
@@ -34909,7 +35625,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -34946,7 +35663,8 @@ export const generatedRegions = {
                 "name": "КСк 4-1",
                 "id": "kalorifer-ksk-4-1"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -34973,7 +35691,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Масличная промышленность"
           }
         ]
       },
@@ -35010,7 +35729,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Масличная промышленность"
           }
         ]
       },
@@ -35037,7 +35757,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -35094,7 +35815,8 @@ export const generatedRegions = {
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -35131,7 +35853,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -35168,7 +35891,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-7",
                 "id": "kalorifer-kpsk-3-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -35255,7 +35979,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -35292,7 +36017,8 @@ export const generatedRegions = {
                 "name": "КППУ 935х935_3",
                 "id": "kppu-935x935"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -35329,7 +36055,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -35356,7 +36083,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-12",
                 "id": "kalorifer-kpsk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       }
@@ -35406,7 +36134,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Промышленное снабжение"
           }
         ]
       }
@@ -35446,7 +36175,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -35483,7 +36213,8 @@ export const generatedRegions = {
                 "name": "КПВС 1239х1239_4",
                 "id": "kpvs-1239x1239"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -35520,7 +36251,8 @@ export const generatedRegions = {
                 "name": "АВО 4-95-01 В",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -35547,7 +36279,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Наука и Инновации"
           }
         ]
       },
@@ -35574,7 +36307,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -35601,7 +36335,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -35638,7 +36373,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк4)",
                 "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -35665,7 +36401,8 @@ export const generatedRegions = {
                 "name": "КФБ-13 А4 М",
                 "id": "kalorifer-kfb-13-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -35692,7 +36429,8 @@ export const generatedRegions = {
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -35729,7 +36467,8 @@ export const generatedRegions = {
                 "name": "АО 2-5 (КПСк4)",
                 "id": "agregat-ao2-5-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -35766,7 +36505,8 @@ export const generatedRegions = {
                 "name": "КФБ-6 А4 П",
                 "id": "kalorifer-kfb-6-a4"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -35803,7 +36543,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Экология и очистка"
           }
         ]
       },
@@ -35830,7 +36571,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-100",
                 "id": "ustanovka-sfotc-100"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -35867,7 +36609,8 @@ export const generatedRegions = {
                 "name": "КПВС 697х697_4",
                 "id": "kpvs-697x697"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -35904,7 +36647,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -35951,7 +36695,8 @@ export const generatedRegions = {
                 "name": "КППУ 754х754_4",
                 "id": "kppu-754x754"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -35988,7 +36733,8 @@ export const generatedRegions = {
                 "name": "ШУК-25",
                 "id": "shkaf-upravleniia-shuk-25"
               }
-            ]
+            ],
+            "industrySector": "Экология и очистка"
           }
         ]
       },
@@ -36016,7 +36762,7 @@ export const generatedRegions = {
                 "id": "kpvs-1572x1572"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -36031,7 +36777,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КПСк",
-            "href": "/kalorifery-kpsk"
+            "href": "/kalorifery-kpsk",
+            "prefix": "Калориферы нестандартной комплектации"
           }
         ],
         "deliveries": [
@@ -36041,9 +36788,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КПСк",
-                "href": "/kalorifery-kpsk"
+                "href": "/kalorifery-kpsk",
+                "prefix": "Калориферы нестандартной комплектации"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -36070,7 +36819,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-11",
                 "id": "kalorifer-kpsk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -36107,7 +36857,8 @@ export const generatedRegions = {
                 "name": "КПВУ 1208х1208_4",
                 "id": "kpvu-1208x1208"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -36134,7 +36885,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -36149,7 +36901,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КП",
-            "href": "/kalorifery-kp"
+            "href": "/kalorifery-kp",
+            "prefix": "Калориферы нестандартных габаритных размеров"
           }
         ],
         "deliveries": [
@@ -36159,10 +36912,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КП",
-                "href": "/kalorifery-kp"
+                "href": "/kalorifery-kp",
+                "prefix": "Калориферы нестандартных габаритных размеров"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Текстильная промышленность"
           }
         ]
       },
@@ -36199,7 +36953,8 @@ export const generatedRegions = {
                 "name": "КПВУ 890х890_3",
                 "id": "kpvu-890x890"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -36246,7 +37001,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -36283,7 +37039,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -36320,7 +37077,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -36357,7 +37115,8 @@ export const generatedRegions = {
                 "name": "КФБ-6 А4 М",
                 "id": "kalorifer-kfb-6-a4"
               }
-            ]
+            ],
+            "industrySector": "Наука и Инновации"
           }
         ]
       },
@@ -36384,7 +37143,8 @@ export const generatedRegions = {
                 "name": "КП 411",
                 "id": "kalorifer-kp-411"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -36411,7 +37171,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -36438,7 +37199,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -36465,7 +37227,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -36522,7 +37285,8 @@ export const generatedRegions = {
                 "name": "ШУК-160",
                 "id": "shkaf-upravleniia-shuk-160"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -36549,7 +37313,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -36576,7 +37341,8 @@ export const generatedRegions = {
                 "name": "КФБ-12 А3 П",
                 "id": "kalorifer-kfb-12-a3"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -36603,7 +37369,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-11",
                 "id": "kalorifer-kpsk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -36630,7 +37397,8 @@ export const generatedRegions = {
                 "name": "КФБ 3 А4 П",
                 "id": "kalorifer-kfb-3-a4"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -36667,7 +37435,8 @@ export const generatedRegions = {
                 "name": "КФБ-13 А4 М",
                 "id": "kalorifer-kfb-13-a4"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -36704,12 +37473,13 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
       {
-        "name": "АО «Сухоложское Литье!",
+        "name": "АО «Сухоложское Литье»",
         "settlement": {
           "name": "Сухой Лог",
           "slug": "sukhoy-log",
@@ -36741,7 +37511,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -36768,7 +37539,8 @@ export const generatedRegions = {
                 "name": "АВО 4-95-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       }
@@ -36818,7 +37590,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -36855,7 +37628,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Экология и очистка"
           }
         ]
       }
@@ -36905,7 +37679,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -36932,7 +37707,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк4)",
                 "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -36959,7 +37735,8 @@ export const generatedRegions = {
                 "name": "КСк 2-3",
                 "id": "kalorifer-ksk-2-3"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       }
@@ -37009,7 +37786,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       }
@@ -37070,7 +37848,7 @@ export const generatedRegions = {
                 "href": "/avo-tvv-kp"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Текстильная промышленность"
           }
         ]
       },
@@ -37127,7 +37905,8 @@ export const generatedRegions = {
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -37164,7 +37943,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Целлюлозно-бумажная пром-сть"
           }
         ]
       },
@@ -37201,7 +37981,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -37278,7 +38059,8 @@ export const generatedRegions = {
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -37305,7 +38087,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -37342,7 +38125,8 @@ export const generatedRegions = {
                 "name": "АО 2-20 (КСк4)",
                 "id": "agregat-ao2-20-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -37419,7 +38203,8 @@ export const generatedRegions = {
                 "name": "КП 309",
                 "id": "kalorifer-kp-309"
               }
-            ]
+            ],
+            "industrySector": "Экология и очистка"
           }
         ]
       },
@@ -37456,7 +38241,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       }
@@ -37484,7 +38270,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КПСк",
-            "href": "/kalorifery-kpsk"
+            "href": "/kalorifery-kpsk",
+            "prefix": "Калориферы по спецзаказу"
           }
         ],
         "deliveries": [
@@ -37494,10 +38281,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КПСк",
-                "href": "/kalorifery-kpsk"
+                "href": "/kalorifery-kpsk",
+                "prefix": "Калориферы по спецзаказу"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Лесопромышленный комплекс"
           }
         ]
       },
@@ -37512,7 +38300,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КП",
-            "href": "/kalorifery-kp"
+            "href": "/kalorifery-kp",
+            "prefix": "Калориферы специального конструктивного исполнения"
           }
         ],
         "deliveries": [
@@ -37522,10 +38311,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КП",
-                "href": "/kalorifery-kp"
+                "href": "/kalorifery-kp",
+                "prefix": "Калориферы специального конструктивного исполнения"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -37552,7 +38342,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -37589,7 +38380,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -37626,7 +38418,8 @@ export const generatedRegions = {
                 "name": "АО 2-15 (КПСк4)",
                 "id": "agregat-ao2-15-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -37653,7 +38446,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -37680,7 +38474,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -37717,7 +38512,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 М",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -37744,7 +38540,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -37771,7 +38568,8 @@ export const generatedRegions = {
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -37808,12 +38606,13 @@ export const generatedRegions = {
                 "name": "АО 2-6.3 (КСк4)",
                 "id": "agregat-ao2-6.3-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
       {
-        "name": "ОАО «Научно-исследовательский институт полупроводниковых приборов»",
+        "name": "ОАО «НИИ полупроводниковых приборов»",
         "settlement": {
           "name": "Томск",
           "slug": "tomsk",
@@ -37835,7 +38634,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -37872,7 +38672,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-11",
                 "id": "kalorifer-kpsk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -37899,7 +38700,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -37936,7 +38738,8 @@ export const generatedRegions = {
                 "name": "КППС 572х572_2",
                 "id": "kpps-572x572"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -37973,7 +38776,8 @@ export const generatedRegions = {
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -38000,7 +38804,8 @@ export const generatedRegions = {
                 "name": "АО 2-15 (КСк3)",
                 "id": "agregat-ao2-15-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -38027,7 +38832,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-9",
                 "id": "kalorifer-kpsk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -38054,7 +38860,8 @@ export const generatedRegions = {
                 "name": "КСк 2-11",
                 "id": "kalorifer-ksk-2-11"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -38081,7 +38888,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -38208,7 +39016,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Автоматизация и ИТ"
           }
         ]
       },
@@ -38235,7 +39044,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -38262,7 +39072,8 @@ export const generatedRegions = {
                 "name": "КСк 3-12",
                 "id": "kalorifer-ksk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Автоматизация и ИТ"
           }
         ]
       },
@@ -38299,7 +39110,8 @@ export const generatedRegions = {
                 "name": "КСк 3-8",
                 "id": "kalorifer-ksk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -38326,7 +39138,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -38353,7 +39166,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -38390,7 +39204,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-12",
                 "id": "kalorifer-kpsk-3-12"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -38417,7 +39232,8 @@ export const generatedRegions = {
                 "name": "КСк 2-10",
                 "id": "kalorifer-ksk-2-10"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -38454,7 +39270,8 @@ export const generatedRegions = {
                 "name": "КПВС 780х780_4",
                 "id": "kpvs-780x780"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -38481,7 +39298,8 @@ export const generatedRegions = {
                 "name": "КСк 2-9",
                 "id": "kalorifer-ksk-2-9"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -38508,7 +39326,8 @@ export const generatedRegions = {
                 "name": "ТВВ 312",
                 "id": "kalorifer-tvv-312"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -38545,7 +39364,8 @@ export const generatedRegions = {
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -38592,7 +39412,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -38619,7 +39440,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -38656,7 +39478,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -38693,7 +39516,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -38730,7 +39554,8 @@ export const generatedRegions = {
                 "name": "КСк 2-7",
                 "id": "kalorifer-ksk-2-7"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -38767,7 +39592,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А3 М",
                 "id": "kalorifer-kfb-10-a3"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -38804,7 +39630,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -38841,7 +39668,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-a4"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -38888,7 +39716,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -38915,7 +39744,8 @@ export const generatedRegions = {
                 "name": "КСк 4-5",
                 "id": "kalorifer-ksk-4-5"
               }
-            ]
+            ],
+            "industrySector": "Сельхозмашиностроение"
           }
         ]
       },
@@ -38972,7 +39802,8 @@ export const generatedRegions = {
                 "name": "КСк 4-4",
                 "id": "kalorifer-ksk-4-4"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -38999,7 +39830,8 @@ export const generatedRegions = {
                 "name": "ТВВ 407",
                 "id": "kalorifer-tvv-407"
               }
-            ]
+            ],
+            "industrySector": "Легкая промышленность"
           }
         ]
       },
@@ -39026,7 +39858,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-6",
                 "id": "kalorifer-kpsk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -39053,7 +39886,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-11",
                 "id": "kalorifer-kpsk-2-11"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -39090,7 +39924,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -39117,7 +39952,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КСк3)",
                 "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -39144,7 +39980,8 @@ export const generatedRegions = {
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Здравоохранение и туризм"
           }
         ]
       }
@@ -39194,7 +40031,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -39231,7 +40069,8 @@ export const generatedRegions = {
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -39268,7 +40107,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -39305,7 +40145,8 @@ export const generatedRegions = {
                 "name": "КП 408",
                 "id": "kalorifer-kp-408"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -39342,7 +40183,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Наука и Инновации"
           }
         ]
       },
@@ -39369,7 +40211,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -39406,7 +40249,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       }
@@ -39456,7 +40300,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-6",
                 "id": "kalorifer-kpsk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -39493,7 +40338,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-160",
                 "id": "ustanovka-sfotc-160"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -39520,7 +40366,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -39557,7 +40404,8 @@ export const generatedRegions = {
                 "name": "АО 2-15 (КСк4)",
                 "id": "agregat-ao2-15-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -39584,7 +40432,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -39621,7 +40470,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -39648,7 +40498,8 @@ export const generatedRegions = {
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -39685,7 +40536,8 @@ export const generatedRegions = {
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -39722,7 +40574,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КПСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -39749,7 +40602,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -39786,7 +40640,8 @@ export const generatedRegions = {
                 "name": "КСк 4-5",
                 "id": "kalorifer-ksk-4-5"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -39823,7 +40678,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -39860,7 +40716,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КСк4)",
                 "id": "std300-ksk"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -39887,7 +40744,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       }
@@ -39937,7 +40795,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -39964,7 +40823,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -39991,7 +40851,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -40028,7 +40889,8 @@ export const generatedRegions = {
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -40145,7 +41007,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А3 П",
                 "id": "kalorifer-kfb-8-a3"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       }
@@ -40185,7 +41048,8 @@ export const generatedRegions = {
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
               }
-            ]
+            ],
+            "industrySector": "Автомобильная промышленность"
           }
         ]
       },
@@ -40212,7 +41076,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-11",
                 "id": "kalorifer-kpsk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -40249,7 +41114,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -40286,7 +41152,8 @@ export const generatedRegions = {
                 "name": "КСк 2-2",
                 "id": "kalorifer-ksk-2-2"
               }
-            ]
+            ],
+            "industrySector": "Легкая промышленность"
           }
         ]
       },
@@ -40323,7 +41190,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-10",
                 "id": "kalorifer-kpsk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -40360,7 +41228,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -40387,7 +41256,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-9",
                 "id": "kalorifer-kpsk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -40424,7 +41294,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А3 П",
                 "id": "kalorifer-kfb-14-a3"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       }
@@ -40474,7 +41345,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А4 П",
                 "id": "kalorifer-kfb-8-a4"
               }
-            ]
+            ],
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -40511,7 +41383,8 @@ export const generatedRegions = {
                 "name": "КСк 3-4",
                 "id": "kalorifer-ksk-3-4"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -40548,7 +41421,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (КП4)",
                 "id": "std300-kp"
               }
-            ]
+            ],
+            "industrySector": "Производство стройматериалов"
           }
         ]
       },
@@ -40585,7 +41459,8 @@ export const generatedRegions = {
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -40612,7 +41487,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-10",
                 "id": "kalorifer-kpsk-3-10"
               }
-            ]
+            ],
+            "industrySector": "Фармацевтическая пром-сть"
           }
         ]
       },
@@ -40649,7 +41525,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-9",
                 "id": "kalorifer-kpsk-2-9"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -40696,7 +41573,8 @@ export const generatedRegions = {
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -40743,7 +41621,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -40770,7 +41649,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-9",
                 "id": "kalorifer-kpsk-3-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -40797,7 +41677,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -40834,7 +41715,8 @@ export const generatedRegions = {
                 "name": "КПСк 2-10",
                 "id": "kalorifer-kpsk-2-10"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -40871,7 +41753,8 @@ export const generatedRegions = {
                 "name": "КППУ 1026х1026_3",
                 "id": "kppu-1026x1026"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       },
@@ -40898,7 +41781,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-6",
                 "id": "kalorifer-kpsk-3-6"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -40925,7 +41809,8 @@ export const generatedRegions = {
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -40962,7 +41847,8 @@ export const generatedRegions = {
                 "name": "АО 2-4 (КСк4)",
                 "id": "agregat-ao2-4-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Лесопромышленный комплекс"
           }
         ]
       }
@@ -41033,7 +41919,7 @@ export const generatedRegions = {
                 "id": "kalorifer-ksk-3-9"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -41070,7 +41956,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КПСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -41107,7 +41994,8 @@ export const generatedRegions = {
                 "name": "АВО 4-95-01 П",
                 "href": "/avo-tvv-kp"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -41134,7 +42022,8 @@ export const generatedRegions = {
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
               }
-            ]
+            ],
+            "industrySector": "Нефтегазовый сектор"
           }
         ]
       },
@@ -41171,7 +42060,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -41208,7 +42098,8 @@ export const generatedRegions = {
                 "name": "АО 2-5 (КСк4)",
                 "id": "agregat-ao2-5-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -41245,7 +42136,8 @@ export const generatedRegions = {
                 "name": "КСк 4-9",
                 "id": "kalorifer-ksk-4-9"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -41282,7 +42174,8 @@ export const generatedRegions = {
                 "name": "КПВС 1572х1572_2",
                 "id": "kpvs-1572x1572"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -41309,7 +42202,8 @@ export const generatedRegions = {
                 "name": "КПВС 1572х1572_4",
                 "id": "kpvs-1572x1572"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -41346,7 +42240,8 @@ export const generatedRegions = {
                 "name": "КФБ-5 А4 М",
                 "id": "kalorifer-kfb-5-a4"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -41373,7 +42268,8 @@ export const generatedRegions = {
                 "name": "КСк 4-8",
                 "id": "kalorifer-ksk-4-8"
               }
-            ]
+            ],
+            "industrySector": "ЖКХ и теплосети"
           }
         ]
       },
@@ -41410,7 +42306,8 @@ export const generatedRegions = {
                 "name": "КСк 4-5",
                 "id": "kalorifer-ksk-4-5"
               }
-            ]
+            ],
+            "industrySector": "Деревообрабатывающая пром-сть"
           }
         ]
       }
@@ -41428,7 +42325,7 @@ export const generatedRegions = {
     },
     "companies": [
       {
-        "name": "ООО «Торговый Дом Златоустовский электрометаллургический завод»",
+        "name": "ООО «ТД Златоустовский электрометаллургический завод»",
         "settlement": {
           "name": "Златоуст",
           "slug": "zlatoust",
@@ -41470,7 +42367,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-60",
                 "id": "ustanovka-sfotc-60"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -41507,7 +42405,8 @@ export const generatedRegions = {
                 "name": "АО 2-5 (КСк4)",
                 "id": "agregat-ao2-5-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -41544,7 +42443,8 @@ export const generatedRegions = {
                 "name": "ТВВ 410",
                 "id": "kalorifer-tvv-410"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -41591,7 +42491,8 @@ export const generatedRegions = {
                 "name": "ТВВ 409",
                 "id": "kalorifer-tvv-409"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -41628,7 +42529,8 @@ export const generatedRegions = {
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -41655,7 +42557,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -41692,7 +42595,8 @@ export const generatedRegions = {
                 "name": "КФБ-7 А3 П",
                 "id": "kalorifer-kfb-7-a3"
               }
-            ]
+            ],
+            "industrySector": "Металлургия"
           }
         ]
       },
@@ -41739,7 +42643,8 @@ export const generatedRegions = {
                 "name": "КПСк 3-8",
                 "id": "kalorifer-kpsk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -41766,7 +42671,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ3)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -41803,7 +42709,8 @@ export const generatedRegions = {
                 "name": "КФБ-14 А3 М",
                 "id": "kalorifer-kfb-14-a3"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -41830,7 +42737,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -41867,7 +42775,8 @@ export const generatedRegions = {
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -41904,7 +42813,8 @@ export const generatedRegions = {
                 "name": "АО 2-3 (КПСк3)",
                 "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Теплоэнергетическое машиностроение"
           }
         ]
       },
@@ -41941,7 +42851,8 @@ export const generatedRegions = {
                 "name": "КСк 3-1",
                 "id": "kalorifer-ksk-3-1"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -41968,7 +42879,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -41995,7 +42907,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -42022,7 +42935,8 @@ export const generatedRegions = {
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -42049,7 +42963,8 @@ export const generatedRegions = {
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -42076,7 +42991,8 @@ export const generatedRegions = {
                 "name": "АО 2-15 (КСк3)",
                 "id": "agregat-ao2-15-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -42103,7 +43019,8 @@ export const generatedRegions = {
                 "name": "КСк 3-8",
                 "id": "kalorifer-ksk-3-8"
               }
-            ]
+            ],
+            "industrySector": "Логистика и транспорт"
           }
         ]
       },
@@ -42140,7 +43057,8 @@ export const generatedRegions = {
                 "name": "КПСк 4-11",
                 "id": "kalorifer-kpsk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -42197,7 +43115,8 @@ export const generatedRegions = {
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -42234,7 +43153,8 @@ export const generatedRegions = {
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
               }
-            ]
+            ],
+            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -42261,7 +43181,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -42298,7 +43219,8 @@ export const generatedRegions = {
                 "name": "КСк 2-9",
                 "id": "kalorifer-ksk-2-9"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       }
@@ -42316,7 +43238,7 @@ export const generatedRegions = {
     },
     "companies": [
       {
-        "name": "ФГБОУ ВО «Чеченский государственный университет им. А.А. Кадырова»",
+        "name": "ФГБОУ ВО «Чеченский государственный университет»",
         "settlement": {
           "name": "Грозный",
           "slug": "grozny",
@@ -42326,7 +43248,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КСк",
-            "href": "/kalorifery-ksk"
+            "href": "/kalorifery-ksk",
+            "prefix": "Калориферы по индивидуальному техническому заданию"
           }
         ],
         "deliveries": [
@@ -42336,10 +43259,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КСк",
-                "href": "/kalorifery-ksk"
+                "href": "/kalorifery-ksk",
+                "prefix": "Калориферы по индивидуальному техническому заданию"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Образование и инфраструктура"
           }
         ]
       }
@@ -42389,7 +43313,8 @@ export const generatedRegions = {
                 "name": "КСк 2-1",
                 "id": "kalorifer-ksk-2-1"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -42416,7 +43341,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -42443,7 +43369,8 @@ export const generatedRegions = {
                 "name": "КСк 2-6",
                 "id": "kalorifer-ksk-2-6"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -42470,7 +43397,8 @@ export const generatedRegions = {
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
               }
-            ]
+            ],
+            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -42507,7 +43435,8 @@ export const generatedRegions = {
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       }
@@ -42535,7 +43464,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "КСк",
-            "href": "/kalorifery-ksk"
+            "href": "/kalorifery-ksk",
+            "prefix": "Калориферы нестандартных габаритных размеров"
           }
         ],
         "deliveries": [
@@ -42545,10 +43475,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "КСк",
-                "href": "/kalorifery-ksk"
+                "href": "/kalorifery-ksk",
+                "prefix": "Калориферы нестандартных габаритных размеров"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Строительный сектор"
           }
         ]
       }
@@ -42598,7 +43529,8 @@ export const generatedRegions = {
                 "name": "КФБ-10 А3 М",
                 "id": "kalorifer-kfb-10-a3"
               }
-            ]
+            ],
+            "industrySector": "Теплоэнергетическое машиностроение"
           }
         ]
       },
@@ -42635,7 +43567,8 @@ export const generatedRegions = {
                 "name": "АО 2-25 (КСк3)",
                 "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -42650,7 +43583,8 @@ export const generatedRegions = {
           {
             "kind": "category",
             "name": "ТВВ",
-            "href": "/kalorifery-tvv"
+            "href": "/kalorifery-tvv",
+            "prefix": "Калориферы по спецзаказу"
           }
         ],
         "deliveries": [
@@ -42660,10 +43594,11 @@ export const generatedRegions = {
               {
                 "kind": "category",
                 "name": "ТВВ",
-                "href": "/kalorifery-tvv"
+                "href": "/kalorifery-tvv",
+                "prefix": "Калориферы по спецзаказу"
               }
             ],
-            "note": "нестандарт"
+            "industrySector": "Тяжелое машиностроение"
           }
         ]
       },
@@ -42700,7 +43635,8 @@ export const generatedRegions = {
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
               }
-            ]
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -42727,7 +43663,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-vodyanoy"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -42764,7 +43701,8 @@ export const generatedRegions = {
                 "name": "КПВС 780х780_3",
                 "id": "kpvs-780x780"
               }
-            ]
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -42801,7 +43739,8 @@ export const generatedRegions = {
                 "name": "КППС 614х614_4",
                 "id": "kpps-614x614"
               }
-            ]
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -42838,7 +43777,8 @@ export const generatedRegions = {
                 "name": "СТД-300 (ТВВ4)",
                 "id": "std300-tvv"
               }
-            ]
+            ],
+            "industrySector": "Здравоохранение и туризм"
           }
         ]
       },
@@ -42865,7 +43805,8 @@ export const generatedRegions = {
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -42902,7 +43843,8 @@ export const generatedRegions = {
                 "name": "КФБ-5 А4 П",
                 "id": "kalorifer-kfb-5-a4"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -42939,7 +43881,8 @@ export const generatedRegions = {
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
               }
-            ]
+            ],
+            "industrySector": "Машиностроение"
           }
         ]
       },
@@ -42976,7 +43919,8 @@ export const generatedRegions = {
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -43013,7 +43957,8 @@ export const generatedRegions = {
                 "name": "АО 2-10 (КПСк4)",
                 "id": "agregat-ao2-10-ksk4-vozdushniy-parovoy"
               }
-            ]
+            ],
+            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -43080,7 +44025,8 @@ export const generatedRegions = {
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
               }
-            ]
+            ],
+            "industrySector": "Металлообработка"
           }
         ]
       },
@@ -43107,7 +44053,8 @@ export const generatedRegions = {
                 "name": "КФБ-8 А3 П",
                 "id": "kalorifer-kfb-8-a3"
               }
-            ]
+            ],
+            "industrySector": "Химическая промышленность"
           }
         ]
       }

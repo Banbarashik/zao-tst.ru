@@ -161,7 +161,7 @@ function productIdentity(product: ProductReference) {
   }
 
   if (product.kind === "category") {
-    return `category:${product.href}:${product.name}`;
+    return `category:${product.href}:${product.name}:${product.prefix ?? ""}`;
   }
 
   return `text:${product.name}`;
@@ -211,9 +211,15 @@ async function main() {
     const companyName = cellText(row.getCell(2).value).trim();
     const locationText = cellText(row.getCell(3).value).trim();
     const productsText = cellText(row.getCell(4).value).trim();
-    const note = cellText(row.getCell(5).value).trim();
+    const industrySector = cellText(row.getCell(5).value).trim();
 
-    if (!companyName || !locationText || !productsText || !year) {
+    if (
+      !companyName ||
+      !locationText ||
+      !productsText ||
+      !industrySector ||
+      !year
+    ) {
       warnings.push(`Строка ${rowNumber}: пропущено обязательное значение.`);
       return;
     }
@@ -298,7 +304,7 @@ async function main() {
     company.deliveries.push({
       year,
       products,
-      ...(note ? { note } : {}),
+      industrySector,
     });
 
     const existingProducts = new Set(company.products.map(productIdentity));

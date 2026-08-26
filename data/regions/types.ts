@@ -15,6 +15,11 @@ export type ProductReference =
       kind: "category";
       name: string;
       href: string;
+      /**
+       * Необязательная описательная приписка перед названием категории.
+       * Например: "Калориферы по спецзаказу" + ссылка "КСк".
+       */
+      prefix?: string;
     }
   | {
       kind: "text";
@@ -24,6 +29,18 @@ export type ProductReference =
 export interface Delivery {
   year: number;
   products: ProductReference[];
+
+  /**
+   * Отраслевой сектор из соответствующей строки regions.xlsx.
+   * Храним на уровне поставки, а не Company, чтобы не делать
+   * отраслевой сектор свойством компании в региональных данных.
+   */
+  industrySector: string;
+
+  /**
+   * Оставлено для обратной совместимости со старыми данными.
+   * В актуальном regions.xlsx столбца "ПРИМЕЧАНИЯ" больше нет.
+   */
   note?: string;
 }
 
@@ -139,4 +156,7 @@ export interface ProductDeliveryRecord {
   };
 
   company: string;
+
+  /** Отраслевой сектор поставки из regions.xlsx. */
+  industrySector: string;
 }

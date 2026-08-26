@@ -101,21 +101,6 @@ export function buildProductDeliveryIndexes(
         anchorCitySet,
       );
 
-      const record: ProductDeliveryRecord = {
-        region: {
-          name: region.subject.name,
-          slug: region.subject.slug,
-          href: `/regions/${regionSlug}#${region.subject.slug}`,
-        },
-        settlement: {
-          name: company.settlement.name,
-          slug: company.settlement.slug,
-          type: company.settlement.type,
-          href: settlementHref,
-        },
-        company: company.name,
-      };
-
       const location = getAggregatedLocation(
         regionSlug,
         region,
@@ -124,49 +109,87 @@ export function buildProductDeliveryIndexes(
         anchorCitySet,
       );
 
-      for (const product of company.products) {
-        if (product.kind !== "product") {
-          continue;
-        }
+      // В отличие от агрегированного company.products, deliveries сохраняют
+      // отраслевой сектор конкретной строки Excel. Поэтому атомарный индекс
+      // строим именно из поставок.
+      for (const delivery of company.deliveries) {
+        for (const product of delivery.products) {
+          if (product.kind !== "product") {
+            continue;
+          }
 
-        // ----- Атомарный индекс -----
-        let productRecords = recordsByProduct.get(product.id);
-        if (!productRecords) {
-          productRecords = new Map();
-          recordsByProduct.set(product.id, productRecords);
-        }
-
-        // Точная уникальность: регион + населённый пункт + компания.
-        // Используем значения, а не только slug, чтобы не зависеть
-        // от потенциальных slug-коллизий.
-        const recordKey = JSON.stringify([
-          record.region.name,
-          record.settlement.name,
-          record.settlement.type,
-          record.company,
-        ]);
-
-        if (!productRecords.has(recordKey)) {
-          productRecords.set(recordKey, record);
-        }
-
-        // ----- Агрегированный индекс -----
-        let productLocations = locationsByProduct.get(product.id);
-        if (!productLocations) {
-          productLocations = new Map();
-          locationsByProduct.set(product.id, productLocations);
-        }
-
-        let deliveryLocation = productLocations.get(location.href);
-        if (!deliveryLocation) {
-          deliveryLocation = {
-            ...location,
-            companies: new Set<string>(),
+          const record: ProductDeliveryRecord = {
+            region: {
+              name: region.subject.name,
+              slug: region.subject.slug,
+              href: `/regions/${regionSlug}#${region.subject.slug}`,
+            },
+            settlement: {
+              name: company.settlement.name,
+              slug: company.settlement.slug,
+              type: company.settlement.type,
+              href: settlementHref,
+            },
+            company: company.name,
+            industrySector: delivery.industrySector,
           };
-          productLocations.set(location.href, deliveryLocation);
-        }
 
-        deliveryLocation.companies.add(company.name);
+          // ----- Атомарный индекс -----
+          let productRecords = recordsByProduct.get(product.id);
+          if (!productRecords) {
+            productRecords = new Map();
+            recordsByProduct.set(product.id, productRecords);
+          }
+
+          // Уникальность остаётся прежней:
+          // регион + населённый пункт + компания.
+          // Год и число поставок не влияют на количество строк.
+          const recordKey = JSON.stringify([
+            record.region.name,
+            record.settlement.name,
+            record.settlement.type,
+            record.company,
+          ]);
+
+          const existingRecord = productRecords.get(recordKey);
+
+          if (
+            existingRecord &&
+            existingRecord.industrySector !== record.industrySector
+          ) {
+            throw new Error(
+              [
+                `Конфликт отраслевого сектора для товара "${product.id}".`,
+                `Регион: "${record.region.name}".`,
+                `Населённый пункт: "${record.settlement.name}".`,
+                `Компания: "${record.company}".`,
+                `Найдены значения: "${existingRecord.industrySector}" и "${record.industrySector}".`,
+              ].join(" "),
+            );
+          }
+
+          if (!existingRecord) {
+            productRecords.set(recordKey, record);
+          }
+
+          // ----- Агрегированный индекс -----
+          let productLocations = locationsByProduct.get(product.id);
+          if (!productLocations) {
+            productLocations = new Map();
+            locationsByProduct.set(product.id, productLocations);
+          }
+
+          let deliveryLocation = productLocations.get(location.href);
+          if (!deliveryLocation) {
+            deliveryLocation = {
+              ...location,
+              companies: new Set<string>(),
+            };
+            productLocations.set(location.href, deliveryLocation);
+          }
+
+          deliveryLocation.companies.add(company.name);
+        }
       }
     }
   }
