@@ -160,3 +160,14 @@ export interface ProductDeliveryRecord {
   /** Отраслевой сектор поставки из regions.xlsx. */
   industrySector: string;
 }
+
+/**
+ * Краткое текстовое описание истории поставок в субъект РФ.
+ * Тексты берутся из region-overviews.docx.
+ */
+export interface RegionOverview {
+  /** Название субъекта РФ в исходном DOCX. */
+  regionName: string;
+  /** Готовый обзорный текст для вывода на странице /regions/[region]. */
+  text: string;
+}

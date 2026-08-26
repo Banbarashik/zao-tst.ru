@@ -8,6 +8,7 @@ import {
   type RegionSlug,
 } from "@/data/regions/regions.generated";
 import { getRegionClimateTable } from "@/data/regions/climate-tables.generated";
+import { getRegionOverview } from "@/data/regions/region-overviews";
 import { getRegionGeo, type RegionGeoData } from "@/data/regions/region-geo";
 import { getRegion } from "@/data/regions/regions";
 import { getRegionSections } from "@/data/regions/region-sections";
@@ -348,6 +349,7 @@ export default async function RegionPage({
     getRegionSections(region);
 
   const climateTable = getRegionClimateTable(regionSlug as RegionSlug);
+  const overview = getRegionOverview(regionSlug as RegionSlug);
 
   const geo = getRegionGeo(regionSlug as RegionSlug);
   const jsonLd = buildRegionJsonLd(region, geo);
@@ -365,20 +367,11 @@ export default async function RegionPage({
       />
       <article className="space-y-8">
         <h1 className="text-xl font-bold uppercase md:text-[22px] xl:text-2xl">
-          Кемеровская область
+          {region.subject.name}
         </h1>
 
         <section className="space-y-2">
-          <p>
-            Поставки воздушно-отопительного оборудования выполнены в 18 городов
-            и 21 населенный пункт Кемеровской области. Отгрузки калориферов и
-            отопительных агрегатов производства ООО «Т.С.Т» ведутся на
-            крупнейшие добывающие, металлургические и химические площадки
-            региона, включая такие опорные объекты, как Объединенный
-            металлургический комбинат ЕВРАЗ ЗСМК, ОАО «Кузнецкие ферросплавы»,
-            КАО «Азот», угольные холдинги «Кузбассразрезуголь» (УГМК) и «Южный
-            Кузбасс» (Мечел), а также Томь-Усинскую ГРЭС.
-          </p>
+          {overview ? <p>{overview.text}</p> : null}
           <p className="text-secondary-text">
             Ниже представлена официальная структура выполненных поставок:
             детальные спецификации заказов, местные параметры СП 131.13330 и
