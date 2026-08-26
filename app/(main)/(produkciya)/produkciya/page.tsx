@@ -318,7 +318,7 @@ export default function ProdukciyaPage() {
                       доставки и локальными климатическими параметрами по СП
                       131.13330.
                     </p>
-                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
                       <li className="py-2">
                         <Link
                           href="/regions/kemerovo"
@@ -440,7 +440,7 @@ export default function ProdukciyaPage() {
                       доставки и локальными климатическими параметрами по СП
                       131.13330.
                     </p>
-                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
                       <li className="py-2">
                         <Link
                           href="/regions/samara"
@@ -596,7 +596,7 @@ export default function ProdukciyaPage() {
                       доставки и локальными климатическими параметрами по СП
                       131.13330.
                     </p>
-                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
                       <li className="py-2">
                         <Link
                           href="/regions/ekaterinburg"
@@ -686,7 +686,7 @@ export default function ProdukciyaPage() {
                       доставки и локальными климатическими параметрами по СП
                       131.13330.
                     </p>
-                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
                       <li className="py-2">
                         <Link
                           href="/regions/moskovskaya-oblast"
@@ -865,7 +865,7 @@ export default function ProdukciyaPage() {
                       доставки и локальными климатическими параметрами по СП
                       131.13330.
                     </p>
-                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
                       <li className="py-2">
                         <Link
                           href="/regions/sankt-peterburg"
@@ -961,7 +961,7 @@ export default function ProdukciyaPage() {
                       доставки и локальными климатическими параметрами по СП
                       131.13330.
                     </p>
-                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
                       <li className="py-2">
                         <Link
                           href="/regions/yakutsk"
@@ -1067,7 +1067,7 @@ export default function ProdukciyaPage() {
                       доставки и локальными климатическими параметрами по СП
                       131.13330.
                     </p>
-                    <ul className="grid grid-cols-1 items-center gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="grid grid-cols-1 items-center gap-1 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
                       <li className="py-2">
                         <Link
                           href="/regions/rostov-na-donu"

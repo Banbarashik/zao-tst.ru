@@ -107,7 +107,7 @@ export default function SpoilerButtonsBlock({
                 aria-expanded={isOpen}
                 onClick={() => toggleButton(index, btn.goal)}
                 className={cn(
-                  "flex w-full items-center justify-between gap-3 rounded-none border border-[#723910] bg-gray-200 px-4 py-3 text-left text-base font-medium text-black uppercase",
+                  "group flex w-full cursor-pointer items-center justify-between gap-3 rounded-none border border-[#723910] bg-gray-200 px-4 py-3 text-left text-base font-medium text-black uppercase",
                   isOpen && "border-b-0",
                 )}
               >
@@ -119,7 +119,7 @@ export default function SpoilerButtonsBlock({
                   fill="var(--primary-dark)"
                   strokeWidth={0}
                   className={cn(
-                    "shrink-0 transition-transform duration-300",
+                    "transition duration-300 group-hover:-rotate-180",
                     isOpen ? "-rotate-180" : "-rotate-90",
                   )}
                   width={18}
