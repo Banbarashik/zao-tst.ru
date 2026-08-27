@@ -59,7 +59,7 @@ export default function SFO60Page() {
 
       <DeliverySection
         product={product}
-        specs={{ dimensions: [0.395, 0.72, 0.24], weight: 25 }}
+        specs={{ dimensions: [0.53, 0.72, 0.24], weight: 25 }}
         className="mb-6"
       />
 
