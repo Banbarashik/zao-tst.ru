@@ -196,7 +196,7 @@ export default function Header() {
                 : "hover:text-accent border-transparent"
             }`}
           >
-            Продукция Сертификаты
+            Продукция Карта поставок
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
           <Link
@@ -251,7 +251,7 @@ export default function Header() {
                 : "hover:text-accent border-transparent"
             }`}
           >
-            Контакты Прайс лист
+            Контакты Прайс-лист
             <span className="bg-accent absolute -bottom-0.5 left-0 h-0.5 w-0 transition-all group-hover:w-full"></span>
           </Link>
         </div>
