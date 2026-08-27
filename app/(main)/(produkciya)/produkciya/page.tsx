@@ -19,6 +19,7 @@ import { regions } from "@/data/regions";
 import SpoilerButtonsBlock from "@/components/spoilerButtonsBlock";
 import SpoilersClientWrapper from "@/components/SpoilersClientWrapper";
 import Spoiler from "@/components/ui/spoiler";
+import { BankDetailsTable } from "@/components/BankDetailsTable";
 
 export const metadata: Metadata = {
   title: "Производство промышленного воздушно-отопительного оборудования",
@@ -277,7 +278,9 @@ export default function ProdukciyaPage() {
             </ul>
           </div>
 
-          <Spoiler title="Банковские реквизиты ООО «Т.С.Т.»"></Spoiler>
+          <Spoiler title="Банковские реквизиты ООО «Т.С.Т.»">
+            <BankDetailsTable cellClassName="py-1" />
+          </Spoiler>
         </section>
 
         <section className="space-y-4">
