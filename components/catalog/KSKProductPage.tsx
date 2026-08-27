@@ -5,6 +5,7 @@ import Image from "next/image";
 import { capitalizeFirst, sortProducts } from "@/lib/utils";
 import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
 import { getRowsNumberAdj } from "@/lib/rowsNumberAdj";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 import ProductCard from "@/components/catalog/productCard";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
@@ -12,7 +13,7 @@ import ProductSubheader from "@/components/catalog/productSubheader";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import SimilarProductLink from "@/components/catalog/similarProductLink";
 import LegacyHtml from "@/components/legacyHtml";
-import { getLegacyHtml } from "@/lib/legacyHtml";
+import { DeliverySection } from "@/components/catalog/DeliverySection";
 
 const tableEquipment: Record<string, string> = {
   water: "насосно-смесительного",
@@ -148,6 +149,7 @@ export default async function KSKProductPage({
   const isCalorifier = product.categories.includes("kalorifer");
   const isAgregat = product.categories.includes("agregaty");
   const isKFB = product.categories.includes("kfb");
+  const isWater = product.heatCarrier === "water";
 
   const categories = ["ksk", "kpsk", "tvv", "kp", "kfb", "ao2"];
   const category = categories.find((cat) => product.categories.includes(cat));
@@ -176,6 +178,14 @@ export default async function KSKProductPage({
   ];
 
   const rowsNumberAdj = getRowsNumberAdj(product.rows);
+
+  const productFrontWidth =
+    (isWater ? product.sizeTableValues[3] : product.sizeTableValues[6]) / 1000;
+  const productFullHeight =
+    (isWater ? product.sizeTableValues[6] : product.sizeTableValues[3] + 65) /
+    1000;
+  const reshetkaWidth = 0.18;
+  const productWeight = product.specsTableValues[9] as number;
 
   //TODO change to an object
   let URLs: string[] = [];
@@ -543,6 +553,14 @@ export default async function KSKProductPage({
       </section>
 
       <LinkButtonsBlock buttons={linkButtons} />
+
+      <DeliverySection
+        product={product}
+        specs={{
+          dimensions: [productFrontWidth, productFullHeight, reshetkaWidth],
+          weight: productWeight,
+        }}
+      />
     </article>
   );
 }
