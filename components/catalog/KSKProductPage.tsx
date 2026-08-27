@@ -210,9 +210,10 @@ export default async function KSKProductPage({
   ];
 
   return (
-    <div className="@container w-full lg:overflow-x-auto">
+    <article className="@container w-full lg:overflow-x-auto">
       <h1 className="mb-8 text-xl font-bold uppercase">{product.name}</h1>
-      <div className="mb-6 grid grid-rows-[minmax(0,max-content)_1fr] gap-y-5 sm:grid-cols-[max-content_minmax(0,1fr)] sm:gap-x-6">
+
+      <section className="mb-6 grid grid-rows-[minmax(0,max-content)_1fr] gap-y-5 sm:grid-cols-[max-content_minmax(0,1fr)] sm:gap-x-6">
         <ProductCard
           product={product}
           isLink={false}
@@ -281,7 +282,7 @@ export default async function KSKProductPage({
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 
       <section className="mb-4">
         <ProductSubheader
@@ -422,123 +423,126 @@ export default async function KSKProductPage({
         )}
       </section>
 
-      <ProductSubheader
-        text={`Таблица расчета и подбора ${heatCarrierAdj?.gen} ${isCalorifier ? "калорифера" : "агрегата"} ${isCalorifier ? product.shortName : product.model}`}
-      />
-      <ProductParagraph className="mb-3">
-        Ниже представлены расчетные данные {heatCarrierAdj?.gen}{" "}
-        {isCalorifier
-          ? `калорифера ${product.shortName}`
-          : `агрегата ${product.shortName.replace(" ", "")} (на базе ${rowsNumberAdj.gen} ${heatCarrierAdj.gen} калорифера ${product.calorifier.replace(/[0-9]/g, "")})`}{" "}
-        производства ООО «Т.С.Т.». Выбрав в верхней части таблицы подходящий вам
-        график теплоносителя, можно ознакомиться с основными теплотехническими
-        показателями: температурой воздуха на выходе,
-        {isCalorifier &&
-          product.heatCarrier === "water" &&
-          " гидравлическим и аэродинамическим сопротивлением,"}{" "}
-        {!isCalorifier &&
-          product.heatCarrier === "water" &&
-          " сопротивлением по воде и расходом теплоносителя,"}{" "}
-        {isCalorifier &&
-          product.heatCarrier === "steam" &&
-          " аэродинамическим сопротивлением,"}{" "}
-        вырабатываемой мощностью
-        {product.heatCarrier === "steam" && " и расходом пара"}.
-      </ProductParagraph>
-      <div className="overflow-x-auto">
-        <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
-      </div>
-      <ProductParagraph className={isCalorifier ? "mb-4" : "mb-8"}>
-        Табличные данные можно использовать при подборе сопутствующего
-        {isCalorifier && " вентиляционного и"}{" "}
-        {tableEquipment[product.heatCarrier]} оборудования.
-      </ProductParagraph>
+      <section>
+        <ProductSubheader
+          text={`Таблица расчета и подбора ${heatCarrierAdj?.gen} ${isCalorifier ? "калорифера" : "агрегата"} ${isCalorifier ? product.shortName : product.model}`}
+        />
+        <ProductParagraph className="mb-3">
+          Ниже представлены расчетные данные {heatCarrierAdj?.gen}{" "}
+          {isCalorifier
+            ? `калорифера ${product.shortName}`
+            : `агрегата ${product.shortName.replace(" ", "")} (на базе ${rowsNumberAdj.gen} ${heatCarrierAdj.gen} калорифера ${product.calorifier.replace(/[0-9]/g, "")})`}{" "}
+          производства ООО «Т.С.Т.». Выбрав в верхней части таблицы подходящий
+          вам график теплоносителя, можно ознакомиться с основными
+          теплотехническими показателями: температурой воздуха на выходе,
+          {isCalorifier &&
+            product.heatCarrier === "water" &&
+            " гидравлическим и аэродинамическим сопротивлением,"}{" "}
+          {!isCalorifier &&
+            product.heatCarrier === "water" &&
+            " сопротивлением по воде и расходом теплоносителя,"}{" "}
+          {isCalorifier &&
+            product.heatCarrier === "steam" &&
+            " аэродинамическим сопротивлением,"}{" "}
+          вырабатываемой мощностью
+          {product.heatCarrier === "steam" && " и расходом пара"}.
+        </ProductParagraph>
+        <div className="overflow-x-auto">
+          <LegacyHtml html={tableHtml} className="legacy-table min-w-231" />
+        </div>
+        <ProductParagraph className={isCalorifier ? "mb-4" : "mb-8"}>
+          Табличные данные можно использовать при подборе сопутствующего
+          {isCalorifier && " вентиляционного и"}{" "}
+          {tableEquipment[product.heatCarrier]} оборудования.
+        </ProductParagraph>
 
-      <ProductSubheader
-        text={`Габаритные размеры ${isCalorifier ? "калорифера" : `${heatCarrierAdj.gen} агрегата`} ${isCalorifier ? product.shortName : product.model}`}
-      />
-      <Image
-        src={product.drawing}
-        title={`${capitalizeFirst(heatCarrierAdj.nom)} ${isCalorifier ? `калорифер ${product.shortName}` : `агрегат ${product.model}`} габаритные размеры`}
-        alt={`${isCalorifier ? `Калорифер ${product.shortName} ${heatCarrierAdj?.nom}` : `Отопительный агрегат ${product.model}`} технические характеристики`}
-        width={968}
-        height={1}
-        className="mb-4"
-      />
-      {isCalorifier && (
-        <div className="mb-10 w-full overflow-x-auto">
-          <table className={`w-full min-w-231 xl:min-w-auto`}>
+        <ProductSubheader
+          text={`Габаритные размеры ${isCalorifier ? "калорифера" : `${heatCarrierAdj.gen} агрегата`} ${isCalorifier ? product.shortName : product.model}`}
+        />
+        <Image
+          src={product.drawing}
+          title={`${capitalizeFirst(heatCarrierAdj.nom)} ${isCalorifier ? `калорифер ${product.shortName}` : `агрегат ${product.model}`} габаритные размеры`}
+          alt={`${isCalorifier ? `Калорифер ${product.shortName} ${heatCarrierAdj?.nom}` : `Отопительный агрегат ${product.model}`} технические характеристики`}
+          width={968}
+          height={1}
+          className="mb-4"
+        />
+        {isCalorifier && (
+          <div className="mb-10 w-full overflow-x-auto">
+            <table className={`w-full min-w-231 xl:min-w-auto`}>
+              <thead>
+                <tr>
+                  <th
+                    colSpan={9}
+                    className="pl-1 text-left"
+                    style={{ fontSize: "11pt" }}
+                  >
+                    Габаритные и присоединительные размеры калорифера{" "}
+                    {product.shortName} {heatCarrierAdj?.gen}, мм
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  {product.heatCarrier === "water" ? (
+                    <>
+                      <td>L</td>
+                      <td>L 1</td>
+                      <td>L 2</td>
+                      <td>L 3</td>
+                      <td>H</td>
+                      <td>H 1</td>
+                      <td>H 2</td>
+                    </>
+                  ) : (
+                    <>
+                      <td>H</td>
+                      <td>H 1</td>
+                      <td>H 2</td>
+                      <td>H 3</td>
+                      <td>B</td>
+                      <td>B 1</td>
+                      <td>B 2</td>
+                    </>
+                  )}
+                  <td>C</td>
+                  <td>dy</td>
+                </tr>
+                <tr>
+                  {product.sizeTableValues.map((value, i) => (
+                    <td key={i} style={{ fontSize: "11pt" }}>
+                      {value}
+                    </td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+        {isAgregat && (
+          <table className="mb-10 w-full">
             <thead>
               <tr>
-                <th
-                  colSpan={9}
-                  className="pl-1 text-left"
-                  style={{ fontSize: "11pt" }}
-                >
-                  Габаритные и присоединительные размеры калорифера{" "}
-                  {product.shortName} {heatCarrierAdj?.gen}, мм
-                </th>
+                <th colSpan={3}>Габаритные размеры, мм</th>
+              </tr>
+              <tr>
+                <th className="w-1/3">L</th>
+                <th className="w-1/3">B</th>
+                <th className="w-1/3">H</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                {product.heatCarrier === "water" ? (
-                  <>
-                    <td>L</td>
-                    <td>L 1</td>
-                    <td>L 2</td>
-                    <td>L 3</td>
-                    <td>H</td>
-                    <td>H 1</td>
-                    <td>H 2</td>
-                  </>
-                ) : (
-                  <>
-                    <td>H</td>
-                    <td>H 1</td>
-                    <td>H 2</td>
-                    <td>H 3</td>
-                    <td>B</td>
-                    <td>B 1</td>
-                    <td>B 2</td>
-                  </>
-                )}
-                <td>C</td>
-                <td>dy</td>
-              </tr>
-              <tr>
-                {product.sizeTableValues.map((value, i) => (
-                  <td key={i} style={{ fontSize: "11pt" }}>
-                    {value}
-                  </td>
+                {product.sizeTableValues.map((v, idx) => (
+                  <td key={idx}>{v}</td>
                 ))}
               </tr>
             </tbody>
           </table>
-        </div>
-      )}
-      {isAgregat && (
-        <table className="mb-10 w-full">
-          <thead>
-            <tr>
-              <th colSpan={3}>Габаритные размеры, мм</th>
-            </tr>
-            <tr>
-              <th className="w-1/3">L</th>
-              <th className="w-1/3">B</th>
-              <th className="w-1/3">H</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              {product.sizeTableValues.map((v, idx) => (
-                <td key={idx}>{v}</td>
-              ))}
-            </tr>
-          </tbody>
-        </table>
-      )}
+        )}
+      </section>
+
       <LinkButtonsBlock buttons={linkButtons} />
-    </div>
+    </article>
   );
 }

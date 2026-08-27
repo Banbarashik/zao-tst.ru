@@ -1,11 +1,13 @@
+import { getProductDeliveryRecords } from "@/data/regions/product-deliveries.generated";
+
 import type { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 import { getHeatCarrierAdj } from "@/lib/heatCarrierAdj";
+
 import { DeliveriesTable } from "@/components/catalog/DeliveriesTable";
-import { getProductDeliveryRecords } from "@/data/regions/product-deliveries.generated";
-import Spoiler from "../ui/spoiler";
-import { BankDetailsTable } from "../BankDetailsTable";
+import Spoiler from "@/components/ui/spoiler";
+import { BankDetailsTable } from "@/components/BankDetailsTable";
 
 export function DeliverySection({
   product,
