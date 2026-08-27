@@ -184,7 +184,7 @@ export default async function KSKProductPage({
   const productFullHeight =
     (isWater ? product.sizeTableValues[6] : product.sizeTableValues[3] + 65) /
     1000;
-  const reshetkaWidth = 0.18;
+  const reshetkaWidth = product.rows === 3 ? 0.18 : 0.22;
   const productWeight = product.specsTableValues[9] as number;
 
   //TODO change to an object
