@@ -71,7 +71,10 @@ const linkButtons = [
 export default function ProdukciyaPage() {
   return (
     <article className="@container w-full space-y-6">
-      <Heading lvl={1} text="Промышленное воздушно-отопительное оборудование" />
+      <Heading
+        lvl={1}
+        text="Промышленные калориферы и агрегаты — Поставки в регионы"
+      />
       <ProductParagraph>
         Машиностроительное предприятие по производству промышленного
         воздушно-отопительного оборудования ЗАО «Т.С.Т.» образовано в 2001 году
@@ -97,7 +100,7 @@ export default function ProdukciyaPage() {
           cardClassName="2xl:text-sm xl:px-6"
         />
         <ProductParagraph>
-          На производственных мощностях завода изготавливаются водяные и паровые
+          В производственных цехах завода изготавливаются водяные и паровые
           воздушно-отопительные агрегаты с широким спектром производительности
           по воздуху и теплу, электрические воздухонагревательные установки и
           комплектующие к этому теплообменному оборудованию. В 2002 году
@@ -238,6 +241,8 @@ export default function ProdukciyaPage() {
           сопровождение поставляемого оборудования.
         </ProductParagraph>
 
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
         <section>
           <Heading lvl={3} text="Приобретение продукции" />
           <ProductParagraph>
@@ -305,10 +310,14 @@ export default function ProdukciyaPage() {
         </section>
       </section>
 
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
       <section className="mb-10">
         <Heading lvl={2} text="Сертификаты" className="mb-4" />
         <LinkButtonsBlock buttons={linkButtons} />
       </section>
+
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       <section className="space-y-3">
         <Heading
