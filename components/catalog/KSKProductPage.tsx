@@ -552,15 +552,17 @@ export default async function KSKProductPage({
         )}
       </section>
 
-      <LinkButtonsBlock buttons={linkButtons} />
+      <LinkButtonsBlock buttons={linkButtons} className="mb-6" />
 
-      <DeliverySection
-        product={product}
-        specs={{
-          dimensions: [productFrontWidth, productFullHeight, reshetkaWidth],
-          weight: productWeight,
-        }}
-      />
+      {!isAgregat && (
+        <DeliverySection
+          product={product}
+          specs={{
+            dimensions: [productFrontWidth, productFullHeight, reshetkaWidth],
+            weight: productWeight,
+          }}
+        />
+      )}
     </article>
   );
 }
