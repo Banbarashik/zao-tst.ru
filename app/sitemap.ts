@@ -1,5 +1,6 @@
 import { categoryTree } from "@/data/categories";
 import productData from "@/data/products.json";
+import { generatedRegions } from "@/data/regions/regions.generated";
 
 import type { MetadataRoute } from "next";
 
@@ -105,13 +106,25 @@ function traverseProducts(nodes: Product[]): MetadataRoute.Sitemap {
   });
 }
 
+
+function traverseRegions(): MetadataRoute.Sitemap {
+  return Object.keys(generatedRegions).map((regionSlug) => ({
+    url: `${SITE_URL}/regions/${regionSlug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const categoriesMap = traverseCategories(categoryTree);
   const productsMap = traverseProducts(productData);
+  const regionsMap = traverseRegions();
 
   return [
     ...categoriesMap,
     ...productsMap,
+    ...regionsMap,
     {
       url: `${SITE_URL}`,
       lastModified: new Date(),
