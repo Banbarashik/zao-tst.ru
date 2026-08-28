@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -9,6 +10,7 @@ import {
 } from "@/data/regions/regions.generated";
 import { getRegionClimateTable } from "@/data/regions/climate-tables.generated";
 import { getRegionOverview } from "@/data/regions/region-overviews";
+import { getRegionNameForms } from "@/data/regions/region-name-forms";
 import { getRegionGeo, type RegionGeoData } from "@/data/regions/region-geo";
 import { getRegion } from "@/data/regions/regions";
 import { getRegionSections } from "@/data/regions/region-sections";
@@ -25,6 +27,60 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   return Object.keys(generatedRegions).map((region) => ({ region }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ region: string }>;
+}): Promise<Metadata> {
+  const { region: regionSlug } = await params;
+
+  if (!(regionSlug in generatedRegions)) {
+    return {};
+  }
+
+  const region = getRegion(regionSlug as RegionSlug);
+
+  if (!region) {
+    return {};
+  }
+
+  const nameForms = getRegionNameForms(regionSlug as RegionSlug);
+
+  if (!nameForms) {
+    return {};
+  }
+
+  const regionName = region.subject.name;
+  const capitalName = region.capital.name;
+
+  const regionLower = regionName.toLowerCase();
+  const capitalLower = capitalName.toLowerCase();
+  const regionPrepositionalLower = nameForms.prepositional.toLowerCase();
+
+  return {
+    title: {
+      absolute: `Калориферы и отопительное оборудование в ${nameForms.prepositional} | Завод Т.С.Т.`,
+    },
+    description:
+      `Поставки водяных, паровых калориферов и отопительных агрегатов ` +
+      `в ${nameForms.accusative} напрямую от завода ООО «Т.С.Т.». ` +
+      `Референс-лист отгрузок в ${nameForms.prepositional}, ` +
+      `расчетные температуры по СП 131.13330 и сроки доставки ТК в г. ${capitalName}`,
+    keywords: [
+      `${capitalLower} калориферы`,
+      `купить калориферы в ${regionPrepositionalLower}`,
+      `отопительные агрегаты ${capitalLower}`,
+      "расчет калорифера по сп 131.13330",
+      `промышленные калориферы ${regionLower}`,
+      `доставка калориферов ${capitalLower}`,
+      `воздухонагреватели в ${regionPrepositionalLower}`,
+      `водяные калориферы ${capitalLower}`,
+      `паровые калориферы в ${regionPrepositionalLower}`,
+      `воздушно-отопительное оборудование ${regionLower}`,
+    ],
+  };
 }
 
 const SITE_URL = "https://zao-tst.ru";
