@@ -401,6 +401,8 @@ export default async function RegionPage({
     notFound();
   }
 
+  const nameForms = getRegionNameForms(regionSlug as RegionSlug);
+
   const { capitalCompanies, anchorCities, remainderCompanies } =
     getRegionSections(region);
 
@@ -422,8 +424,9 @@ export default async function RegionPage({
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
       />
       <article className="space-y-8">
-        <h1 className="text-xl font-bold uppercase md:text-[22px] xl:text-2xl">
-          {region.subject.name}
+        <h1 className="text-lg font-bold uppercase">
+          Поставки калориферов и отопительных агрегатов в{" "}
+          {nameForms?.accusative}
         </h1>
 
         <section className="space-y-2">
@@ -435,50 +438,64 @@ export default async function RegionPage({
           </p>
         </section>
 
-        {climateTable ? <RegionClimateTable table={climateTable} /> : null}
+        {climateTable && (
+          <section>
+            <h2 className="mb-4 font-bold uppercase">
+              Климатологические параметры {nameForms?.genitive} по СП 131.13330
+            </h2>
+            <RegionClimateTable table={climateTable} />
+          </section>
+        )}
 
-        <section>
-          <h1 className="mb-3 text-xl font-bold uppercase">
-            {region.capital.name}
-          </h1>
+        <section className="space-y-8">
+          <h2 className="text-lg font-bold uppercase">
+            Референс-лист: опыт эксплуатации оборудования Т.С.Т. в{" "}
+            {nameForms?.prepositional}
+          </h2>
 
-          <CompaniesList companies={capitalCompanies} />
+          <section>
+            <h3 className="mb-3 text-lg font-bold uppercase">
+              {region.capital.name}
+            </h3>
 
-          <TransportTerminals
-            terminals={region.transportTerminals[region.capital.slug] ?? []}
-          />
-        </section>
+            <CompaniesList companies={capitalCompanies} />
 
-        <div className="mx-auto h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+            <TransportTerminals
+              terminals={region.transportTerminals[region.capital.slug] ?? []}
+            />
+          </section>
 
-        {anchorCities.map(({ settlement, companies }) => (
-          <React.Fragment key={settlement.slug}>
-            <section>
-              <Anchor id={settlement.slug} device="all" />
-              <h2 className="mb-3 text-xl font-bold uppercase">
-                {settlement.name}
-              </h2>
+          <div className="mx-auto h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
-              <CompaniesList companies={companies} />
+          {anchorCities.map(({ settlement, companies }) => (
+            <React.Fragment key={settlement.slug}>
+              <section>
+                <Anchor id={settlement.slug} device="all" />
+                <h3 className="mb-3 text-lg font-bold uppercase">
+                  {settlement.name}
+                </h3>
 
-              <TransportTerminals
-                terminals={region.transportTerminals[settlement.slug] ?? []}
-              />
-            </section>
+                <CompaniesList companies={companies} />
 
-            <div className="mx-auto my-2 h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
-          </React.Fragment>
-        ))}
+                <TransportTerminals
+                  terminals={region.transportTerminals[settlement.slug] ?? []}
+                />
+              </section>
 
-        <section>
-          <Anchor id={region.subject.slug} device="all" />
-          <h3 className="mb-3 text-xl font-bold uppercase">
-            {region.subject.name}
-          </h3>
+              <div className="mx-auto my-2 h-1 w-2/3 rounded-full bg-blue-300/50 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+            </React.Fragment>
+          ))}
 
-          <CompaniesList companies={remainderCompanies} showSettlement />
+          <section>
+            <Anchor id={region.subject.slug} device="all" />
+            <h3 className="mb-3 text-lg font-bold uppercase">
+              {region.subject.name}
+            </h3>
 
-          <TransportTerminals terminals={remainderTransportTerminals} />
+            <CompaniesList companies={remainderCompanies} showSettlement />
+
+            <TransportTerminals terminals={remainderTransportTerminals} />
+          </section>
         </section>
       </article>
     </>
