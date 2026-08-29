@@ -119,8 +119,8 @@ export default function ProdukciyaPage() {
           <CarouselContent className="aspect-2/1">
             <CarouselItem className="relative cursor-grab">
               <Image
-                src="/img/produkciya/gallery/1. kalorifery.png"
-                alt="Калориферы водяные"
+                src="/img/produkciya/gallery/11. kalorifery_nestandart.png"
+                alt="Промышленный калорифер"
                 fill
               />
             </CarouselItem>
@@ -189,8 +189,8 @@ export default function ProdukciyaPage() {
             </CarouselItem>
             <CarouselItem className="relative cursor-grab">
               <Image
-                src="/img/produkciya/gallery/11. kalorifery_nestandart.png"
-                alt="Промышленный калорифер"
+                src="/img/produkciya/gallery/1. kalorifery.png"
+                alt="Калориферы водяные"
                 fill
               />
             </CarouselItem>
