@@ -123,7 +123,7 @@ export function DeliverySection({
         </ul>
       </div>
 
-      <Spoiler title="Test">
+      <Spoiler title="Региональные поставки">
         <DeliveriesTable deliveries={deliveries} />
       </Spoiler>
 
