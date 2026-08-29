@@ -20,6 +20,7 @@ import SpoilerButtonsBlock from "@/components/spoilerButtonsBlock";
 import SpoilersClientWrapper from "@/components/SpoilersClientWrapper";
 import Spoiler from "@/components/ui/spoiler";
 import { BankDetailsTable } from "@/components/BankDetailsTable";
+import { Anchor } from "@/components/utils/anchor";
 
 export const metadata: Metadata = {
   title:
@@ -321,6 +322,8 @@ export default function ProdukciyaPage() {
       <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       <section className="space-y-3">
+        <Anchor id="karta-postavok" />
+
         <Heading
           lvl={2}
           text="География отгрузок теплообменного оборудования по регионам"

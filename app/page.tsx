@@ -11,6 +11,7 @@ import Catalog from "@/components/catalog";
 import RussiaMap from "@/components/RussiaMap_2";
 import { cities } from "@/data/cities";
 import { regions } from "@/data/regions";
+import { Anchor } from "@/components/utils/anchor";
 
 export const metadata: Metadata = {
   title:
@@ -62,6 +63,7 @@ export default function Home() {
         </section>
 
         <section>
+          <Anchor id="karta-postavok" />
           <h2 className="mb-5 text-center text-base font-bold uppercase sm:text-lg md:text-xl lg:text-[22px] xl:text-2xl">
             География поставок воздушно-отопительного оборудования
           </h2>
