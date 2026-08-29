@@ -106,6 +106,12 @@ export default function ContactsAndPricesPage() {
               openNewTab
             />
             <SlidingButton
+              url="/produkciya#karta-postavok"
+              frontText="Объекты поставок"
+              backText="Перейти"
+              className="sm:w-65"
+            />
+            <SlidingButton
               url="/documents/Price_list_zao_tst_2025.pdf"
               frontText="Прайс-лист"
               backText="Скачать"
