@@ -551,7 +551,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -561,7 +561,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -1868,7 +1868,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-8 А3 П",
-            "id": "kalorifer-kfb-8-a3"
+            "id": "kalorifer-kfb-8"
           }
         ],
         "deliveries": [
@@ -1883,7 +1883,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-8 А3 П",
-                "id": "kalorifer-kfb-8-a3"
+                "id": "kalorifer-kfb-8"
               }
             ],
             "industrySector": "Агропромышленный комплекс"
@@ -1901,7 +1901,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -1911,7 +1911,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -3489,7 +3489,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-11 А3 П",
-            "id": "kalorifer-kfb-11-a3"
+            "id": "kalorifer-kfb-11"
           }
         ],
         "deliveries": [
@@ -3504,7 +3504,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-11 А3 П",
-                "id": "kalorifer-kfb-11-a3"
+                "id": "kalorifer-kfb-11"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -4747,7 +4747,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-5 А4 П",
-            "id": "kalorifer-kfb-5-a4"
+            "id": "kalorifer-kfb-5-p"
           }
         ],
         "deliveries": [
@@ -4762,7 +4762,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-5 А4 П",
-                "id": "kalorifer-kfb-5-a4"
+                "id": "kalorifer-kfb-5-p"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -5084,7 +5084,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-5 А3 П",
-            "id": "kalorifer-kfb-5-a3"
+            "id": "kalorifer-kfb-5"
           }
         ],
         "deliveries": [
@@ -5099,7 +5099,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-5 А3 П",
-                "id": "kalorifer-kfb-5-a3"
+                "id": "kalorifer-kfb-5"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -6546,6 +6546,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КФБ-10 А4 П",
+            "id": "kalorifer-kfb-10-p"
+          },
+          {
+            "kind": "product",
             "name": "ТЭНы",
             "id": "teny-orebrenny'e"
           }
@@ -6567,7 +6572,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               },
               {
                 "kind": "product",
@@ -7056,7 +7061,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -7076,7 +7081,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Добывающая отрасль"
@@ -7573,7 +7578,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-12 А3 П",
-            "id": "kalorifer-kfb-12-a3"
+            "id": "kalorifer-kfb-12"
           }
         ],
         "deliveries": [
@@ -7588,7 +7593,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-12 А3 П",
-                "id": "kalorifer-kfb-12-a3"
+                "id": "kalorifer-kfb-12"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -7631,7 +7636,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-9 А4 П",
-            "id": "kalorifer-kfb-9-a4"
+            "id": "kalorifer-kfb-9-p"
           },
           {
             "kind": "product",
@@ -7641,7 +7646,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-5-А3 П",
-            "id": "kalorifer-kfb-5-a3"
+            "id": "kalorifer-kfb-5"
           },
           {
             "kind": "product",
@@ -7681,7 +7686,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-9 А4 П",
-                "id": "kalorifer-kfb-9-a4"
+                "id": "kalorifer-kfb-9-p"
               },
               {
                 "kind": "product",
@@ -7691,7 +7696,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-5-А3 П",
-                "id": "kalorifer-kfb-5-a3"
+                "id": "kalorifer-kfb-5"
               },
               {
                 "kind": "product",
@@ -8137,7 +8142,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-7 А4 П",
-            "id": "kalorifer-kfb-7-a4"
+            "id": "kalorifer-kfb-7-p"
           },
           {
             "kind": "product",
@@ -8157,7 +8162,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-7 А4 П",
-                "id": "kalorifer-kfb-7-a4"
+                "id": "kalorifer-kfb-7-p"
               },
               {
                 "kind": "product",
@@ -8450,12 +8455,12 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А3 П",
-            "id": "kalorifer-kfb-10-a3"
+            "id": "kalorifer-kfb-10"
           },
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           },
           {
             "kind": "product",
@@ -8540,12 +8545,12 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А3 П",
-                "id": "kalorifer-kfb-10-a3"
+                "id": "kalorifer-kfb-10"
               },
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               },
               {
                 "kind": "product",
@@ -8621,7 +8626,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -8636,7 +8641,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Тяжелое машиностроение"
@@ -8748,7 +8753,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А3 П",
-            "id": "kalorifer-kfb-10-a3"
+            "id": "kalorifer-kfb-10"
           },
           {
             "kind": "product",
@@ -8768,7 +8773,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А3 П",
-                "id": "kalorifer-kfb-10-a3"
+                "id": "kalorifer-kfb-10"
               },
               {
                 "kind": "product",
@@ -9309,7 +9314,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           },
           {
             "kind": "product",
@@ -9359,7 +9364,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               },
               {
                 "kind": "product",
@@ -9798,12 +9803,12 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-6 А3 П",
-            "id": "kalorifer-kfb-6-a3"
+            "id": "kalorifer-kfb-6"
           },
           {
             "kind": "product",
             "name": "КФБ-8 А3 П",
-            "id": "kalorifer-kfb-8-a3"
+            "id": "kalorifer-kfb-8"
           },
           {
             "kind": "product",
@@ -9818,12 +9823,12 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-11 А3 П",
-            "id": "kalorifer-kfb-11-a3"
+            "id": "kalorifer-kfb-11"
           },
           {
             "kind": "product",
             "name": "КФБ-4 А4 П",
-            "id": "kalorifer-kfb-4-a4"
+            "id": "kalorifer-kfb-4-p"
           },
           {
             "kind": "product",
@@ -9878,12 +9883,12 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-6 А3 П",
-                "id": "kalorifer-kfb-6-a3"
+                "id": "kalorifer-kfb-6"
               },
               {
                 "kind": "product",
                 "name": "КФБ-8 А3 П",
-                "id": "kalorifer-kfb-8-a3"
+                "id": "kalorifer-kfb-8"
               },
               {
                 "kind": "product",
@@ -9898,12 +9903,12 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-11 А3 П",
-                "id": "kalorifer-kfb-11-a3"
+                "id": "kalorifer-kfb-11"
               },
               {
                 "kind": "product",
                 "name": "КФБ-4 А4 П",
-                "id": "kalorifer-kfb-4-a4"
+                "id": "kalorifer-kfb-4-p"
               },
               {
                 "kind": "product",
@@ -10282,12 +10287,17 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           },
           {
             "kind": "product",
             "name": "КФБ-10 А3 М",
             "id": "kalorifer-kfb-10-a3"
+          },
+          {
+            "kind": "product",
+            "name": "КФБ-10 А4 М",
+            "id": "kalorifer-kfb-10-a4"
           },
           {
             "kind": "product",
@@ -10327,7 +10337,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               },
               {
                 "kind": "product",
@@ -10686,7 +10696,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-11 А4 П",
-            "id": "kalorifer-kfb-11-a4"
+            "id": "kalorifer-kfb-11-p"
           }
         ],
         "deliveries": [
@@ -10701,7 +10711,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-11 А4 П",
-                "id": "kalorifer-kfb-11-a4"
+                "id": "kalorifer-kfb-11-p"
               }
             ],
             "industrySector": "Тяжелое машиностроение"
@@ -10797,7 +10807,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-12 А4 П",
-            "id": "kalorifer-kfb-12-a4"
+            "id": "kalorifer-kfb-12-p"
           }
         ],
         "deliveries": [
@@ -10847,7 +10857,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-12 А4 П",
-                "id": "kalorifer-kfb-12-a4"
+                "id": "kalorifer-kfb-12-p"
               }
             ],
             "industrySector": "Добывающая отрасль"
@@ -10923,7 +10933,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-12 А3 П",
-            "id": "kalorifer-kfb-12-a3"
+            "id": "kalorifer-kfb-12"
           }
         ],
         "deliveries": [
@@ -10933,7 +10943,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-12 А3 П",
-                "id": "kalorifer-kfb-12-a3"
+                "id": "kalorifer-kfb-12"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -11096,6 +11106,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КФБ-10 А4 М",
             "id": "kalorifer-kfb-10-a4"
+          },
+          {
+            "kind": "product",
+            "name": "КФБ-10 А4 П",
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -11130,7 +11145,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -11472,7 +11487,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -11482,7 +11497,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Горнодобывающая пром-ть"
@@ -13159,7 +13174,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           },
           {
             "kind": "product",
@@ -13184,7 +13199,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               },
               {
                 "kind": "product",
@@ -13212,7 +13227,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-2 А4 П",
-            "id": "kalorifer-kfb-2-a4"
+            "id": "kalorifer-kfb-2-p"
           }
         ],
         "deliveries": [
@@ -13227,7 +13242,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-2 А4 П",
-                "id": "kalorifer-kfb-2-a4"
+                "id": "kalorifer-kfb-2-p"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -14000,7 +14015,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-8 А4 П",
-            "id": "kalorifer-kfb-8-a4"
+            "id": "kalorifer-kfb-8-p"
           }
         ],
         "deliveries": [
@@ -14015,7 +14030,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-8 А4 П",
-                "id": "kalorifer-kfb-8-a4"
+                "id": "kalorifer-kfb-8-p"
               }
             ],
             "industrySector": "Легкая промышленность"
@@ -14527,7 +14542,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -14542,7 +14557,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -15151,7 +15166,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           },
           {
             "kind": "product",
@@ -15176,7 +15191,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               },
               {
                 "kind": "product",
@@ -15285,7 +15300,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-14 А4 П",
-            "id": "kalorifer-kfb-14-a4"
+            "id": "kalorifer-kfb-14-p"
           }
         ],
         "deliveries": [
@@ -15300,7 +15315,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-14 А4 П",
-                "id": "kalorifer-kfb-14-a4"
+                "id": "kalorifer-kfb-14-p"
               }
             ],
             "industrySector": "Логистика и транспорт"
@@ -15391,17 +15406,22 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-7 А4 П",
-            "id": "kalorifer-kfb-7-a4"
+            "id": "kalorifer-kfb-7-p"
           },
           {
             "kind": "product",
             "name": "КФБ-8 А4 П",
-            "id": "kalorifer-kfb-8-a4"
+            "id": "kalorifer-kfb-8-p"
           },
           {
             "kind": "product",
             "name": "КФБ-9 А4 М",
             "id": "kalorifer-kfb-9-a4"
+          },
+          {
+            "kind": "product",
+            "name": "КФБ-10 А3 П",
+            "id": "kalorifer-kfb-10"
           },
           {
             "kind": "text",
@@ -15470,12 +15490,12 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-7 А4 П",
-                "id": "kalorifer-kfb-7-a4"
+                "id": "kalorifer-kfb-7-p"
               },
               {
                 "kind": "product",
                 "name": "КФБ-8 А4 П",
-                "id": "kalorifer-kfb-8-a4"
+                "id": "kalorifer-kfb-8-p"
               },
               {
                 "kind": "product",
@@ -15485,7 +15505,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А3 П",
-                "id": "kalorifer-kfb-10-a3"
+                "id": "kalorifer-kfb-10"
               },
               {
                 "kind": "text",
@@ -15709,7 +15729,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-9 А3 П",
-            "id": "kalorifer-kfb-9-a3"
+            "id": "kalorifer-kfb-9"
           }
         ],
         "deliveries": [
@@ -15719,7 +15739,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-9 А3 П",
-                "id": "kalorifer-kfb-9-a3"
+                "id": "kalorifer-kfb-9"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -16800,7 +16820,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-7 А4 П",
-            "id": "kalorifer-kfb-7-a4"
+            "id": "kalorifer-kfb-7-p"
           }
         ],
         "deliveries": [
@@ -16810,7 +16830,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-7 А4 П",
-                "id": "kalorifer-kfb-7-a4"
+                "id": "kalorifer-kfb-7-p"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -16922,7 +16942,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-5 А4 П",
-            "id": "kalorifer-kfb-5-a4"
+            "id": "kalorifer-kfb-5-p"
           }
         ],
         "deliveries": [
@@ -16932,7 +16952,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-5 А4 П",
-                "id": "kalorifer-kfb-5-a4"
+                "id": "kalorifer-kfb-5-p"
               }
             ],
             "industrySector": "Целлюлозно-бумажная пром-сть"
@@ -17455,7 +17475,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-11 А4 П",
-            "id": "kalorifer-kfb-11-a4"
+            "id": "kalorifer-kfb-11-p"
           }
         ],
         "deliveries": [
@@ -17470,7 +17490,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-11 А4 П",
-                "id": "kalorifer-kfb-11-a4"
+                "id": "kalorifer-kfb-11-p"
               }
             ],
             "industrySector": "Нефтегазовый сектор"
@@ -17870,7 +17890,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -17880,7 +17900,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -18932,7 +18952,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -18947,7 +18967,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -19624,7 +19644,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -19639,7 +19659,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Добывающая отрасль"
@@ -19713,7 +19733,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-9 А3 П",
-            "id": "kalorifer-kfb-9-a3"
+            "id": "kalorifer-kfb-9"
           }
         ],
         "deliveries": [
@@ -19723,7 +19743,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-9 А3 П",
-                "id": "kalorifer-kfb-9-a3"
+                "id": "kalorifer-kfb-9"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -19957,7 +19977,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-12 А4 П",
-            "id": "kalorifer-kfb-12-a4"
+            "id": "kalorifer-kfb-12-p"
           }
         ],
         "deliveries": [
@@ -19967,7 +19987,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-12 А4 П",
-                "id": "kalorifer-kfb-12-a4"
+                "id": "kalorifer-kfb-12-p"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -20763,17 +20783,17 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-9 А4 П",
-            "id": "kalorifer-kfb-9-a4"
+            "id": "kalorifer-kfb-9-p"
           },
           {
             "kind": "product",
             "name": "КФБ-10 А3 П",
-            "id": "kalorifer-kfb-10-a3"
+            "id": "kalorifer-kfb-10"
           },
           {
             "kind": "product",
             "name": "КФБ-7 А3 П",
-            "id": "kalorifer-kfb-7-a3"
+            "id": "kalorifer-kfb-7"
           }
         ],
         "deliveries": [
@@ -20783,17 +20803,17 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-9 А4 П",
-                "id": "kalorifer-kfb-9-a4"
+                "id": "kalorifer-kfb-9-p"
               },
               {
                 "kind": "product",
                 "name": "КФБ-10 А3 П",
-                "id": "kalorifer-kfb-10-a3"
+                "id": "kalorifer-kfb-10"
               },
               {
                 "kind": "product",
                 "name": "КФБ-7 А3 П",
-                "id": "kalorifer-kfb-7-a3"
+                "id": "kalorifer-kfb-7"
               }
             ],
             "industrySector": "Машиностроение"
@@ -20811,7 +20831,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-3 А3 П",
-            "id": "kalorifer-kfb-3-a3"
+            "id": "kalorifer-kfb-3"
           },
           {
             "kind": "product",
@@ -20826,7 +20846,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-3 А3 П",
-                "id": "kalorifer-kfb-3-a3"
+                "id": "kalorifer-kfb-3"
               },
               {
                 "kind": "product",
@@ -21285,7 +21305,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-11 А4 П",
-            "id": "kalorifer-kfb-11-a4"
+            "id": "kalorifer-kfb-11-p"
           }
         ],
         "deliveries": [
@@ -21295,7 +21315,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-11 А4 П",
-                "id": "kalorifer-kfb-11-a4"
+                "id": "kalorifer-kfb-11-p"
               }
             ],
             "industrySector": "Металлообработка"
@@ -22244,7 +22264,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-6 А4 П",
-            "id": "kalorifer-kfb-6-a4"
+            "id": "kalorifer-kfb-6-p"
           }
         ],
         "deliveries": [
@@ -22259,7 +22279,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-6 А4 П",
-                "id": "kalorifer-kfb-6-a4"
+                "id": "kalorifer-kfb-6-p"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -22592,7 +22612,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А3 П",
-            "id": "kalorifer-kfb-10-a3"
+            "id": "kalorifer-kfb-10"
           },
           {
             "kind": "product",
@@ -22622,7 +22642,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А3 П",
-                "id": "kalorifer-kfb-10-a3"
+                "id": "kalorifer-kfb-10"
               },
               {
                 "kind": "product",
@@ -23248,7 +23268,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-13 А3 П",
-            "id": "kalorifer-kfb-13-a3"
+            "id": "kalorifer-kfb-13"
           }
         ],
         "deliveries": [
@@ -23273,7 +23293,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-13 А3 П",
-                "id": "kalorifer-kfb-13-a3"
+                "id": "kalorifer-kfb-13"
               }
             ],
             "industrySector": "Логистика и транспорт"
@@ -24104,7 +24124,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-11 А4 П",
-            "id": "kalorifer-kfb-11-a4"
+            "id": "kalorifer-kfb-11-p"
           }
         ],
         "deliveries": [
@@ -24119,7 +24139,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-11 А4 П",
-                "id": "kalorifer-kfb-11-a4"
+                "id": "kalorifer-kfb-11-p"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -24137,7 +24157,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-9 А4 П",
-            "id": "kalorifer-kfb-9-a4"
+            "id": "kalorifer-kfb-9-p"
           },
           {
             "kind": "product",
@@ -24157,7 +24177,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-9 А4 П",
-                "id": "kalorifer-kfb-9-a4"
+                "id": "kalorifer-kfb-9-p"
               },
               {
                 "kind": "product",
@@ -24629,6 +24649,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КФБ-10 А3 П",
+            "id": "kalorifer-kfb-10"
+          },
+          {
+            "kind": "product",
             "name": "ШУК-25",
             "id": "shkaf-upravleniia-shuk-25"
           }
@@ -24695,7 +24720,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А3 П",
-                "id": "kalorifer-kfb-10-a3"
+                "id": "kalorifer-kfb-10"
               },
               {
                 "kind": "product",
@@ -24840,7 +24865,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-12 А3 П",
-            "id": "kalorifer-kfb-12-a3"
+            "id": "kalorifer-kfb-12"
           }
         ],
         "deliveries": [
@@ -24850,7 +24875,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-12 А3 П",
-                "id": "kalorifer-kfb-12-a3"
+                "id": "kalorifer-kfb-12"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -25679,7 +25704,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-13 А4 П",
-            "id": "kalorifer-kfb-13-a4"
+            "id": "kalorifer-kfb-13-p"
           }
         ],
         "deliveries": [
@@ -25694,7 +25719,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-13 А4 П",
-                "id": "kalorifer-kfb-13-a4"
+                "id": "kalorifer-kfb-13-p"
               }
             ],
             "industrySector": "Машиностроение"
@@ -25717,12 +25742,12 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-2 А3 П",
-            "id": "kalorifer-kfb-2-a3"
+            "id": "kalorifer-kfb-2"
           },
           {
             "kind": "product",
             "name": "КФБ-4 А3 П",
-            "id": "kalorifer-kfb-4-a3"
+            "id": "kalorifer-kfb-4"
           },
           {
             "kind": "product",
@@ -25742,12 +25767,12 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-2 А3 П",
-                "id": "kalorifer-kfb-2-a3"
+                "id": "kalorifer-kfb-2"
               },
               {
                 "kind": "product",
                 "name": "КФБ-4 А3 П",
-                "id": "kalorifer-kfb-4-a3"
+                "id": "kalorifer-kfb-4"
               },
               {
                 "kind": "product",
@@ -25952,7 +25977,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-6 А4 П",
-            "id": "kalorifer-kfb-6-a4"
+            "id": "kalorifer-kfb-6-p"
           }
         ],
         "deliveries": [
@@ -25962,7 +25987,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-6 А4 П",
-                "id": "kalorifer-kfb-6-a4"
+                "id": "kalorifer-kfb-6-p"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -26993,7 +27018,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-6 А4 П",
-            "id": "kalorifer-kfb-6-a4"
+            "id": "kalorifer-kfb-6-p"
           }
         ],
         "deliveries": [
@@ -27008,7 +27033,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-6 А4 П",
-                "id": "kalorifer-kfb-6-a4"
+                "id": "kalorifer-kfb-6-p"
               }
             ],
             "industrySector": "Металлообработка"
@@ -28605,12 +28630,12 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-13 А4 П",
-            "id": "kalorifer-kfb-13-a4"
+            "id": "kalorifer-kfb-13-p"
           },
           {
             "kind": "product",
             "name": "КФБ-14 А4 П",
-            "id": "kalorifer-kfb-14-a4"
+            "id": "kalorifer-kfb-14-p"
           }
         ],
         "deliveries": [
@@ -28620,12 +28645,12 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-13 А4 П",
-                "id": "kalorifer-kfb-13-a4"
+                "id": "kalorifer-kfb-13-p"
               },
               {
                 "kind": "product",
                 "name": "КФБ-14 А4 П",
-                "id": "kalorifer-kfb-14-a4"
+                "id": "kalorifer-kfb-14-p"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -28983,7 +29008,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-12 А3 П",
-            "id": "kalorifer-kfb-12-a3"
+            "id": "kalorifer-kfb-12"
           }
         ],
         "deliveries": [
@@ -29003,7 +29028,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-12 А3 П",
-                "id": "kalorifer-kfb-12-a3"
+                "id": "kalorifer-kfb-12"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -32561,7 +32586,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-14 А3 П",
-            "id": "kalorifer-kfb-14-a3"
+            "id": "kalorifer-kfb-14"
           }
         ],
         "deliveries": [
@@ -32576,7 +32601,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-14 А3 П",
-                "id": "kalorifer-kfb-14-a3"
+                "id": "kalorifer-kfb-14"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -33825,7 +33850,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ 8 А4 П",
-            "id": "kalorifer-kfb-8-a4"
+            "id": "kalorifer-kfb-8-p"
           }
         ],
         "deliveries": [
@@ -33840,7 +33865,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ 8 А4 П",
-                "id": "kalorifer-kfb-8-a4"
+                "id": "kalorifer-kfb-8-p"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -34925,7 +34950,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-7 А4 П",
-            "id": "kalorifer-kfb-7-a4"
+            "id": "kalorifer-kfb-7-p"
           }
         ],
         "deliveries": [
@@ -34940,7 +34965,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-7 А4 П",
-                "id": "kalorifer-kfb-7-a4"
+                "id": "kalorifer-kfb-7-p"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -35214,7 +35239,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-9 А3 П",
-            "id": "kalorifer-kfb-9-a3"
+            "id": "kalorifer-kfb-9"
           }
         ],
         "deliveries": [
@@ -35224,7 +35249,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-9 А3 П",
-                "id": "kalorifer-kfb-9-a3"
+                "id": "kalorifer-kfb-9"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -36488,7 +36513,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-6 А4 П",
-            "id": "kalorifer-kfb-6-a4"
+            "id": "kalorifer-kfb-6-p"
           }
         ],
         "deliveries": [
@@ -36503,7 +36528,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-6 А4 П",
-                "id": "kalorifer-kfb-6-a4"
+                "id": "kalorifer-kfb-6-p"
               }
             ],
             "industrySector": "Машиностроение"
@@ -36663,7 +36688,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-11 А4 П",
-            "id": "kalorifer-kfb-11-a4"
+            "id": "kalorifer-kfb-11-p"
           },
           {
             "kind": "category",
@@ -36683,7 +36708,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-11 А4 П",
-                "id": "kalorifer-kfb-11-a4"
+                "id": "kalorifer-kfb-11-p"
               },
               {
                 "kind": "category",
@@ -37329,7 +37354,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-12 А3 П",
-            "id": "kalorifer-kfb-12-a3"
+            "id": "kalorifer-kfb-12"
           }
         ],
         "deliveries": [
@@ -37339,7 +37364,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-12 А3 П",
-                "id": "kalorifer-kfb-12-a3"
+                "id": "kalorifer-kfb-12"
               }
             ],
             "industrySector": "Приборостроение и электротехника"
@@ -37385,7 +37410,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ 3 А4 П",
-            "id": "kalorifer-kfb-3-a4"
+            "id": "kalorifer-kfb-3-p"
           }
         ],
         "deliveries": [
@@ -37395,7 +37420,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ 3 А4 П",
-                "id": "kalorifer-kfb-3-a4"
+                "id": "kalorifer-kfb-3-p"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -39385,7 +39410,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-4 А4 П",
-            "id": "kalorifer-kfb-4-a4"
+            "id": "kalorifer-kfb-4-p"
           },
           {
             "kind": "product",
@@ -39405,7 +39430,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-4 А4 П",
-                "id": "kalorifer-kfb-4-a4"
+                "id": "kalorifer-kfb-4-p"
               },
               {
                 "kind": "product",
@@ -39651,7 +39676,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-10 А4 П",
-            "id": "kalorifer-kfb-10-a4"
+            "id": "kalorifer-kfb-10-p"
           }
         ],
         "deliveries": [
@@ -39666,7 +39691,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
-                "id": "kalorifer-kfb-10-a4"
+                "id": "kalorifer-kfb-10-p"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -40950,7 +40975,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-8 А3 П",
-            "id": "kalorifer-kfb-8-a3"
+            "id": "kalorifer-kfb-8"
           }
         ],
         "deliveries": [
@@ -41005,7 +41030,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-8 А3 П",
-                "id": "kalorifer-kfb-8-a3"
+                "id": "kalorifer-kfb-8"
               }
             ],
             "industrySector": "Приборостроение и электротехника"
@@ -41277,7 +41302,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-14 А3 П",
-            "id": "kalorifer-kfb-14-a3"
+            "id": "kalorifer-kfb-14"
           }
         ],
         "deliveries": [
@@ -41292,7 +41317,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-14 А3 П",
-                "id": "kalorifer-kfb-14-a3"
+                "id": "kalorifer-kfb-14"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -41328,7 +41353,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-8 А4 П",
-            "id": "kalorifer-kfb-8-a4"
+            "id": "kalorifer-kfb-8-p"
           }
         ],
         "deliveries": [
@@ -41343,7 +41368,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-8 А4 П",
-                "id": "kalorifer-kfb-8-a4"
+                "id": "kalorifer-kfb-8-p"
               }
             ],
             "industrySector": "Тяжелое машиностроение"
@@ -42578,7 +42603,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-7 А3 П",
-            "id": "kalorifer-kfb-7-a3"
+            "id": "kalorifer-kfb-7"
           }
         ],
         "deliveries": [
@@ -42593,7 +42618,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-7 А3 П",
-                "id": "kalorifer-kfb-7-a3"
+                "id": "kalorifer-kfb-7"
               }
             ],
             "industrySector": "Металлургия"
@@ -43826,7 +43851,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-5 А4 П",
-            "id": "kalorifer-kfb-5-a4"
+            "id": "kalorifer-kfb-5-p"
           }
         ],
         "deliveries": [
@@ -43841,7 +43866,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-5 А4 П",
-                "id": "kalorifer-kfb-5-a4"
+                "id": "kalorifer-kfb-5-p"
               }
             ],
             "industrySector": "Металлообработка"
@@ -44041,7 +44066,7 @@ export const generatedRegions = {
           {
             "kind": "product",
             "name": "КФБ-8 А3 П",
-            "id": "kalorifer-kfb-8-a3"
+            "id": "kalorifer-kfb-8"
           }
         ],
         "deliveries": [
@@ -44051,7 +44076,7 @@ export const generatedRegions = {
               {
                 "kind": "product",
                 "name": "КФБ-8 А3 П",
-                "id": "kalorifer-kfb-8-a3"
+                "id": "kalorifer-kfb-8"
               }
             ],
             "industrySector": "Химическая промышленность"

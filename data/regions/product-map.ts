@@ -176,20 +176,50 @@ export function resolveProduct(rawName: string): ProductReference {
     );
   }
 
-  // КФБ: допускаем КФБ-10 А4 М, КФБ 8 А4, КФБ-5-А3 П и т. п.
+  // КФБ.
+  //
+  // ID у водяных и паровых моделей исторически имеют разную структуру:
+  //
+  // водяные:
+  //   КФБ-14 А3 М -> kalorifer-kfb-14-a3
+  //   КФБ-14 А4 М -> kalorifer-kfb-14-a4
+  //
+  // паровые:
+  //   КФБ-14 А3 П -> kalorifer-kfb-14
+  //   КФБ-14 А4 П -> kalorifer-kfb-14-p
+  //
+  // Также допускаем варианты записи вроде:
+  //   КФБ 8 А3 М
+  //   КФБ-5-А3 П
   const normalizedKfb = name
     .replace(/^КФБ-/, "КФБ ")
     .replace(/-А/g, " А")
     .replace(/\s+/g, " ");
 
-  match = normalizedKfb.match(/^КФБ\s*(\d{1,2})\s*А([34])(?:\s+[МП])?$/);
+  match = normalizedKfb.match(
+    /^КФБ\s*(\d{1,2})\s*А([34])(?:\s+([МП]))?$/i,
+  );
+
   if (match) {
-    return (
-      product(name, `kalorifer-kfb-${Number(match[1])}-a${match[2]}`) ?? {
-        kind: "text",
-        name,
-      }
-    );
+    const size = Number(match[1]);
+    const rows = match[2];
+    const medium = match[3]?.toUpperCase();
+
+    let id: string;
+
+    if (medium === "П") {
+      id =
+        rows === "3"
+          ? `kalorifer-kfb-${size}`
+          : `kalorifer-kfb-${size}-p`;
+    } else {
+      // "М" — водяной КФБ.
+      // Если буква среды отсутствует, сохраняем прежнее поведение
+      // и считаем такую запись водяной.
+      id = `kalorifer-kfb-${size}-a${rows}`;
+    }
+
+    return product(name, id) ?? { kind: "text", name };
   }
 
   // АО 2-10 (КСк3) -> водяной; АО 2-10 (КПСк3) -> паровой.
