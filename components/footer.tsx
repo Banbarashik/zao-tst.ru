@@ -25,16 +25,80 @@ export default function Footer() {
           {/* 1-й столбик */}
           <div></div>
 
-          {/* 2-й столбик */}
+          {/* 2-й столбик - КАТАЛОГ ОБОРУДОВАНИЯ */}
           <div className="space-y-6">
             <p className="border-b-2 border-white/10 pb-4 text-xl font-bold">
               Каталог оборудования
             </p>
             <ul className="space-y-2">
-              <li>Водяные калориферы</li>
-              <li>Паровые калориферы</li>
-              <li>Электрические калориферы</li>
-              <li>Блок расчета и подбора</li>
+              <li>
+                <Link href="/kalorifery-voda" className="hover:text-accent">
+                  Приточные водяные калориферы КПВС, КПВУ
+                </Link>
+              </li>
+              <li>
+                <Link href="/kalorifery-par" className="hover:text-accent">
+                  Приточные паровые калориферы КППС, КППУ
+                </Link>
+              </li>
+              <li>
+                Калориферы{" "}
+                <Link href="/kalorifery-ksk" className="hover:text-accent">
+                  КСк
+                </Link>
+                ,{" "}
+                <Link href="/kalorifery-kpsk" className="hover:text-accent">
+                  КПСк
+                </Link>
+                ,{" "}
+                <Link href="/kalorifery-tvv" className="hover:text-accent">
+                  ТВВ
+                </Link>
+                ,{" "}
+                <Link href="/kalorifery-kp" className="hover:text-accent">
+                  КП
+                </Link>
+                ,{" "}
+                <Link href="/kalorifery-kfb-a" className="hover:text-accent">
+                  КФБ-А М
+                </Link>
+                ,{" "}
+                <Link href="/kalorifery-kfb" className="hover:text-accent">
+                  КФБ-А П
+                </Link>
+              </li>
+              <li>
+                Агрегаты{" "}
+                <Link href="/ao2-ksk-kpsk" className="hover:text-accent">
+                  АО2 В
+                </Link>
+                ,{" "}
+                <Link href="/ao2-kpsk-ksk" className="hover:text-accent">
+                  АО2 П
+                </Link>
+                ,{" "}
+                <Link href="/avo-tvv-kp" className="hover:text-accent">
+                  АВО ХЛ
+                </Link>
+                ,{" "}
+                <Link href="/std300-ksk-kpsk" className="hover:text-accent">
+                  СТД-300 В
+                </Link>
+                ,{" "}
+                <Link href="/std300-tvv-kp" className="hover:text-accent">
+                  СТД-300 П
+                </Link>
+              </li>
+              <li>
+                Электронагревательное оборудование{" "}
+                <Link href="/elektronagrevateli" className="hover:text-accent">
+                  СФО
+                </Link>
+                ,{" "}
+                <Link href="/teploventilyatory" className="hover:text-accent">
+                  СФОЦ
+                </Link>
+              </li>
             </ul>
           </div>
 
