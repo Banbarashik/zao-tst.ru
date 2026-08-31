@@ -18,15 +18,15 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="border-t-4 border-white/25 bg-[#303030] pt-5 text-white"
+      className="border-t-4 border-white/25 bg-[#303030] px-6 pt-5 text-white"
     >
       {/* ЦЕНТРИРОВАННЫЙ БЛОК КОНТЕНТА ФУТЕРА */}
-      <div className="max-w-8xl mx-auto">
+      <div className="mx-auto max-w-400">
         {/* ВЕРХНИЙ БЛОК */}
-        <div className="flex justify-between gap-px pb-6">
+        <div className="flex justify-between gap-2 pb-6 text-[15px]">
           {/* 1-й столбик - ИНФОРМАЦИЯ И ДОКУМЕНТЫ */}
           <div className="space-y-6">
-            <p className="border-b-2 border-white/10 pb-4 text-xl font-bold">
+            <p className="border-b-2 border-white/10 pb-4 text-lg font-bold">
               Информация и документы
             </p>
             <ul className="space-y-2">
@@ -68,7 +68,7 @@ export default function Footer() {
 
           {/* 2-й столбик - КАТАЛОГ ОБОРУДОВАНИЯ */}
           <div className="space-y-6">
-            <p className="border-b-2 border-white/10 pb-4 text-xl font-bold">
+            <p className="border-b-2 border-white/10 pb-4 text-lg font-bold">
               Каталог оборудования
             </p>
             <ul className="space-y-2">
@@ -145,7 +145,7 @@ export default function Footer() {
 
           {/* 3-й столбик - БЛОК РАСЧЕТА И ПОДБОРА */}
           <div className="space-y-6">
-            <p className="border-b-2 border-white/10 pb-4 text-xl font-bold">
+            <p className="border-b-2 border-white/10 pb-4 text-lg font-bold">
               Блок расчета и подбора
             </p>
             <ul className="space-y-2">
@@ -186,7 +186,7 @@ export default function Footer() {
 
           {/* 4-й столбик - КОНТАКТЫ ПРЕДПРИЯТИЯ */}
           <div className="space-y-6">
-            <p className="border-b-2 border-white/10 pb-4 text-xl font-bold">
+            <p className="border-b-2 border-white/10 pb-4 text-lg font-bold">
               Контакты предприятия
             </p>
             <address className="not-italic">
@@ -266,7 +266,7 @@ export default function Footer() {
         </div>
 
         {/* НИЖНИЙ БЛОК */}
-        <div className="flex justify-between py-2 text-sm">
+        <div className="flex justify-between py-2 text-[13px]">
           <p className="flex items-center gap-3">
             Разработка сайта:{" "}
             <Link
