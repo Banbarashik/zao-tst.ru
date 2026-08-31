@@ -191,17 +191,41 @@ export default function Footer() {
             </p>
             <address className="not-italic">
               <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <div className="w-min rounded-full bg-white p-1.25">
-                    <Phone fill="#303030" width={16} height={16} />
+                <li className="flex items-center">
+                  <a
+                    href="tel:+79617378314"
+                    className="peer hover:text-accent pl-2 text-white transition-colors"
+                  >
+                    8-961-737-83-14
+                  </a>
+                  <div className="peer-hover:bg-accent order-first w-min rounded-full bg-white p-1.5">
+                    <Phone
+                      fill="#303030"
+                      strokeWidth={0}
+                      width={14}
+                      height={14}
+                    />
                   </div>
-                  <p>8-961-737-83-14. Технический отдел</p>
+
+                  <span className="text-white">. Технический отдел</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-min rounded-full bg-white p-1.25">
-                    <Phone fill="#303030" width={16} height={16} />
+                <li className="flex items-center">
+                  <a
+                    href="tel:+79049681488"
+                    className="peer hover:text-accent pl-2 text-white transition-colors"
+                  >
+                    8-904-968-14-88
+                  </a>
+                  <div className="peer-hover:bg-accent order-first w-min rounded-full bg-white p-1.5">
+                    <Phone
+                      fill="#303030"
+                      strokeWidth={0}
+                      width={14}
+                      height={14}
+                    />
                   </div>
-                  <p>8-904-968-14-88. Отдел продаж</p>
+
+                  <span className="text-white">. Отдел продаж</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-min rounded-full bg-white p-1.25">
