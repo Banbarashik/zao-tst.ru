@@ -20,10 +20,51 @@ export default function Footer() {
       id="footer"
       className="border-t-4 border-white/25 bg-[#303030] pt-5 text-white"
     >
+      {/* ЦЕНТРИРОВАННЫЙ БЛОК КОНТЕНТА ФУТЕРА */}
       <div className="max-w-8xl mx-auto">
-        <div className="flex justify-between pb-6">
-          {/* 1-й столбик */}
-          <div></div>
+        {/* ВЕРХНИЙ БЛОК */}
+        <div className="flex justify-between gap-px pb-6">
+          {/* 1-й столбик - ИНФОРМАЦИЯ И ДОКУМЕНТЫ */}
+          <div className="space-y-6">
+            <p className="border-b-2 border-white/10 pb-4 text-xl font-bold">
+              Информация и документы
+            </p>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/documents/Company_zao_tst_card.pdf"
+                  target="_blank"
+                  className="hover:text-accent"
+                >
+                  Карточка предприятия
+                </Link>
+              </li>
+              <li>
+                <Link href="" className="hover:text-accent">
+                  Оплата и доставка
+                </Link>
+              </li>
+              <li>
+                <Link href="" className="hover:text-accent">
+                  Сертификаты соответствия
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/documents/Price_list_zao_tst_2025.pdf"
+                  target="_blank"
+                  className="hover:text-accent"
+                >
+                  Прайс-лист
+                </Link>
+              </li>
+              <li>
+                <Link href="/personal-data" className="hover:text-accent">
+                  Политика обработки персональных данных
+                </Link>
+              </li>
+            </ul>
+          </div>
 
           {/* 2-й столбик - КАТАЛОГ ОБОРУДОВАНИЯ */}
           <div className="space-y-6">
