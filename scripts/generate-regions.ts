@@ -104,7 +104,7 @@ function parseLocation(rawValue: string): ParsedLocation | null {
   const normalized = raw.replace(". г.", ", г.");
   const parts = normalized.split(",").map((part) => part.trim());
 
-  let subject = SUBJECT_ALIASES[parts[0]] ?? parts[0];
+  const subject = SUBJECT_ALIASES[parts[0]] ?? parts[0];
 
   if (EXCLUDED_SUBJECTS.has(subject)) {
     return null;

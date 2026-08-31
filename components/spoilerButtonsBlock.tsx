@@ -42,29 +42,22 @@ export default function SpoilerButtonsBlock({
     },
   );
 
-  const [renderedIndex, setRenderedIndex] = useState<number | null>(() => {
-    const defaultOpenIndex = buttons.findIndex((button) => button.defaultOpen);
-    return defaultOpenIndex >= 0 ? defaultOpenIndex : null;
-  });
-
   const contentRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    const getOpenIndex = () => {
-      if (isControlled) {
-        if (!activeKey) return null;
-        const parts = activeKey.split(":");
-        const idx = Number(parts[1]);
-        return Number.isNaN(idx) ? null : idx;
-      }
-      return internalOpenIndex;
-    };
-
-    const openIndex = getOpenIndex();
-    if (openIndex !== null && buttons[openIndex]) {
-      setRenderedIndex(openIndex);
+  const openIndex = (() => {
+    if (isControlled) {
+      if (!activeKey) return null;
+      const parts = activeKey.split(":");
+      const idx = Number(parts[1]);
+      return Number.isNaN(idx) ? null : idx;
     }
+    return internalOpenIndex;
+  })();
 
+  const renderedIndex =
+    openIndex !== null && buttons[openIndex] ? openIndex : null;
+
+  useEffect(() => {
     const updateHeight = () => {
       const el = contentRef.current;
       if (!el) return;
@@ -83,14 +76,7 @@ export default function SpoilerButtonsBlock({
     updateHeight();
     window.addEventListener("resize", updateHeight);
     return () => window.removeEventListener("resize", updateHeight);
-  }, [
-    activeKey,
-    internalOpenIndex,
-    isControlled,
-    buttons,
-    groupId,
-    renderedIndex,
-  ]);
+  }, [openIndex, buttons]);
 
   const toggleButton = (index: number, goal?: string) => {
     if (goal) {
@@ -151,9 +137,7 @@ export default function SpoilerButtonsBlock({
         ref={(el) => {
           contentRef.current = el;
         }}
-        aria-hidden={
-          isControlled ? !Boolean(activeKey) : internalOpenIndex === null
-        }
+        aria-hidden={openIndex === null}
         className="w-full overflow-hidden border border-t-0 border-[#723910] bg-[rgb(233,239,247)] transition-[max-height,opacity,padding] duration-300"
         style={{ maxHeight: 0, padding: 0, opacity: 0 }}
       >
