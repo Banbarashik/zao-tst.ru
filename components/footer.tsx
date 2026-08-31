@@ -10,9 +10,9 @@ export default function Footer() {
       className="border-accent/80 border-t-3 bg-[#303030] pt-5 text-white"
     >
       {/* ЦЕНТРИРОВАННЫЙ БЛОК КОНТЕНТА ФУТЕРА */}
-      <div className="mx-auto max-w-406 px-6">
+      <div className="mx-auto max-w-406 px-3">
         {/* ВЕРХНИЙ БЛОК */}
-        <div className="flex justify-between gap-2 pb-6 text-[15px]">
+        <div className="flex flex-col justify-between gap-10 pb-6 text-[15px]">
           {/* 1-й столбик - ИНФОРМАЦИЯ И ДОКУМЕНТЫ */}
           <div className="space-y-6">
             <p className="border-b-2 border-white/10 pb-4 text-lg font-bold">
@@ -179,7 +179,7 @@ export default function Footer() {
               Контакты предприятия
             </p>
             <address className="not-italic">
-              <ul className="space-y-2">
+              <ul className="space-y-3.5">
                 <li className="flex items-center">
                   <a
                     href="tel:+79617378314"
@@ -196,7 +196,7 @@ export default function Footer() {
                     />
                   </div>
 
-                  <span className="text-white">. Технический отдел</span>
+                  <span className="hidden text-white">. Технический отдел</span>
                 </li>
 
                 <li className="flex items-center">
@@ -215,7 +215,7 @@ export default function Footer() {
                     />
                   </div>
 
-                  <span className="text-white">. Отдел продаж</span>
+                  <span className="hidden text-white">. Отдел продаж</span>
                 </li>
 
                 <li className="flex items-center">
@@ -229,7 +229,7 @@ export default function Footer() {
                     <Mail stroke="#303030" width={16} height={16} />
                   </div>
 
-                  <span className="text-white">. Электронная почта</span>
+                  <span className="hidden text-white">. Электронная почта</span>
                 </li>
 
                 <li className="flex items-center gap-2">
@@ -257,8 +257,8 @@ export default function Footer() {
 
       {/* НИЖНИЙ БЛОК */}
       <div className="border-t border-white/10 bg-[#454545]">
-        <div className="mx-auto flex max-w-406 justify-between px-6 py-2 text-[13px]">
-          <p className="flex items-center gap-3">
+        <div className="mx-auto flex max-w-406 flex-col justify-between gap-1 px-3 py-2 text-[13px]">
+          <p className="flex flex-wrap gap-x-1">
             Разработка сайта:{" "}
             <Link
               href="https://github.com/Banbarashik"
