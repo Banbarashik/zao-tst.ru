@@ -1,27 +1,16 @@
 import Link from "next/link";
 
-import {
-  Cog,
-  Factory,
-  Mail,
-  MapPinned,
-  Phone,
-  Smartphone,
-  Wrench,
-} from "lucide-react";
+import { Cog, Factory, Mail, Phone } from "lucide-react";
 import { GithubIcon } from "@/components/icons/github";
-
-import Logo from "@/components/ui/logo";
-import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer
       id="footer"
-      className="border-t-4 border-white/25 bg-[#303030] px-6 pt-5 text-white"
+      className="border-accent/80 border-t-3 bg-[#303030] pt-5 text-white"
     >
       {/* ЦЕНТРИРОВАННЫЙ БЛОК КОНТЕНТА ФУТЕРА */}
-      <div className="mx-auto max-w-400">
+      <div className="mx-auto max-w-406 px-6">
         {/* ВЕРХНИЙ БЛОК */}
         <div className="flex justify-between gap-2 pb-6 text-[15px]">
           {/* 1-й столбик - ИНФОРМАЦИЯ И ДОКУМЕНТЫ */}
@@ -264,9 +253,11 @@ export default function Footer() {
             </address>
           </div>
         </div>
+      </div>
 
-        {/* НИЖНИЙ БЛОК */}
-        <div className="flex justify-between py-2 text-[13px]">
+      {/* НИЖНИЙ БЛОК */}
+      <div className="border-t border-white/10 bg-[#454545]">
+        <div className="mx-auto flex max-w-406 justify-between px-6 py-2 text-[13px]">
           <p className="flex items-center gap-3">
             Разработка сайта:{" "}
             <Link
