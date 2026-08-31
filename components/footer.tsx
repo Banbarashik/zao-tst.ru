@@ -198,7 +198,7 @@ export default function Footer() {
                   >
                     8-961-737-83-14
                   </a>
-                  <div className="peer-hover:bg-accent order-first w-min rounded-full bg-white p-1.5">
+                  <div className="peer-hover:bg-accent order-first w-min rounded-full bg-white p-1.5 transition-colors">
                     <Phone
                       fill="#303030"
                       strokeWidth={0}
@@ -209,6 +209,7 @@ export default function Footer() {
 
                   <span className="text-white">. Технический отдел</span>
                 </li>
+
                 <li className="flex items-center">
                   <a
                     href="tel:+79049681488"
@@ -216,7 +217,7 @@ export default function Footer() {
                   >
                     8-904-968-14-88
                   </a>
-                  <div className="peer-hover:bg-accent order-first w-min rounded-full bg-white p-1.5">
+                  <div className="peer-hover:bg-accent order-first w-min rounded-full bg-white p-1.5 transition-colors">
                     <Phone
                       fill="#303030"
                       strokeWidth={0}
@@ -227,20 +228,21 @@ export default function Footer() {
 
                   <span className="text-white">. Отдел продаж</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-min rounded-full bg-white p-1.25">
+
+                <li className="flex items-center">
+                  <a
+                    href="mailto:zao_tst@mail.ru"
+                    className="peer hover:text-accent pl-2 text-white transition-colors"
+                  >
+                    zao_tst@mail.ru
+                  </a>
+                  <div className="peer-hover:bg-accent order-first w-min rounded-full bg-white p-1.25 transition-colors">
                     <Mail stroke="#303030" width={16} height={16} />
                   </div>
-                  <div>
-                    <a
-                      href="mailto:zao_tst@mail.ru"
-                      className="hover:text-accent"
-                    >
-                      zao_tst@mail.ru
-                    </a>
-                    . Электронная почта
-                  </div>
+
+                  <span className="text-white">. Электронная почта</span>
                 </li>
+
                 <li className="flex items-center gap-2">
                   <div className="w-min rounded-full bg-white p-0.75">
                     <Factory fill="#303030" width={20} height={20} />
