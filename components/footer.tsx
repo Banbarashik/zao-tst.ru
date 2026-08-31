@@ -38,7 +38,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* 3-й столбик */}
+          {/* 4-й столбик - КОНТАКТЫ ПРЕДПРИЯТИЯ */}
           <div className="space-y-6">
             <p className="border-b-2 border-white/10 pb-4 text-xl font-bold">
               Контакты предприятия
@@ -49,19 +49,27 @@ export default function Footer() {
                   <div className="w-min rounded-full bg-white p-1.25">
                     <Phone fill="#303030" width={16} height={16} />
                   </div>
-                  <p>8-961-737-83-14</p>
+                  <p>8-961-737-83-14. Технический отдел</p>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-min rounded-full bg-white p-1.25">
                     <Phone fill="#303030" width={16} height={16} />
                   </div>
-                  <p>8-904-968-14-88</p>
+                  <p>8-904-968-14-88. Отдел продаж</p>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-min rounded-full bg-white p-1.25">
                     <Mail stroke="#303030" width={16} height={16} />
                   </div>
-                  <a href="mailto:zao_tst@mail.ru">zao_tst@mail.ru</a>
+                  <div>
+                    <a
+                      href="mailto:zao_tst@mail.ru"
+                      className="hover:text-accent"
+                    >
+                      zao_tst@mail.ru
+                    </a>
+                    . Электронная почта
+                  </div>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-min rounded-full bg-white p-0.75">
@@ -78,7 +86,7 @@ export default function Footer() {
                       stroke="#303030"
                     />
                   </div>
-                  <p>Время работы: пн.-пт. 8:00-17.00; сб.-вс. – выходной</p>
+                  <p>Режим работы: пн.-пт. 8:00-17.00; сб.-вс. – выходной</p>
                 </li>
               </ul>
             </address>
