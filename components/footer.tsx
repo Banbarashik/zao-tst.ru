@@ -18,7 +18,7 @@ export default function Footer() {
       className="border-accent/80 border-t-3 bg-[#303030] pt-5 text-white"
     >
       {/* ЦЕНТРИРОВАННЫЙ БЛОК КОНТЕНТА ФУТЕРА */}
-      <div className="mx-auto max-w-406 px-3">
+      <div className="mx-auto max-w-406 px-3 lg:px-6">
         {/* ВЕРХНИЙ БЛОК */}
         <div className="flex flex-col justify-between pb-6 text-[15px]">
           <Accordion type="single" collapsible className="space-y-6 md:hidden">
@@ -535,8 +535,8 @@ export default function Footer() {
 
       {/* НИЖНИЙ БЛОК */}
       <div className="border-t border-white/10 bg-[#454545]">
-        <div className="mx-auto flex max-w-406 flex-col justify-between gap-1 px-3 py-2 text-[13px]">
-          <p className="flex flex-wrap gap-x-1">
+        <div className="mx-auto flex max-w-406 flex-col justify-between gap-1 px-3 py-2 text-[13px] lg:flex-row lg:px-6">
+          <p className="flex flex-wrap gap-x-1 sm:gap-2">
             Разработка сайта:{" "}
             <Link
               href="https://github.com/Banbarashik"
