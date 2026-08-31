@@ -38,6 +38,47 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* 3-й столбик - БЛОК РАСЧЕТА И ПОДБОРА */}
+          <div className="space-y-6">
+            <p className="border-b-2 border-white/10 pb-4 text-xl font-bold">
+              Блок расчета и подбора
+            </p>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/kalorifery-voda#anchor1"
+                  className="hover:text-accent"
+                >
+                  Калькулятор водяных калориферов
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/kalorifery-par#anchor1"
+                  className="hover:text-accent"
+                >
+                  Калькулятор паровых калориферов
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/elektronagrevateli#anchor1"
+                  className="hover:text-accent"
+                >
+                  Калькулятор электрокалориферов
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/tehnicheskaya-stranica"
+                  className="hover:text-accent"
+                >
+                  Подбор воздухонагревателей
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* 4-й столбик - КОНТАКТЫ ПРЕДПРИЯТИЯ */}
           <div className="space-y-6">
             <p className="border-b-2 border-white/10 pb-4 text-xl font-bold">
