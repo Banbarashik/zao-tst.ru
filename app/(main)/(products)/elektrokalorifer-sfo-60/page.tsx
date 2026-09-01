@@ -15,6 +15,7 @@ import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSe
 import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODrawingAndCircuitSection";
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
 import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 
 const product = productData.find((p) => p.id === "elektrokalorifer-sfo-60");
 
@@ -84,6 +85,8 @@ export default function SFO60Page() {
 function TechReviewSection() {
   return (
     <section className="mb-4 space-y-4 text-[17px]">
+      <NumberedAnchor num={1} />
+
       <ProductSubheader text="Технический обзор эксплуатации электрокалорифера СФО-60" />
       <p>
         Электрокалорифер СФО-60 — это компактная промышленная установка

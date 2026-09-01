@@ -15,8 +15,7 @@ import { ElectroSpecsSection } from "@/components/catalog/electro/ElectroSpecsSe
 import { SFODrawingAndCircuitSection } from "@/components/catalog/electro/SFODrawingAndCircuitSection";
 import { SFOComparativeAnalysisTable } from "@/components/catalog/electro/SFOComparativeAnalysisTable";
 import { SFOOperatingParameterTable } from "@/components/catalog/electro/SFOOperatingParameterTable";
-import { DeliveriesTable } from "@/components/catalog/DeliveriesTable";
-import { getProductDeliveryRecords } from "@/data/regions/product-deliveries.generated";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 
 const product = productData.find((p) => p.id === "elektrokalorifer-sfo-16");
 
@@ -86,6 +85,8 @@ export default function SFO16Page() {
 function TechReviewSection() {
   return (
     <section className="mb-4 space-y-4 text-[17px]">
+      <NumberedAnchor num={1} />
+
       <ProductSubheader text="Технический обзор эксплуатации электрокалорифера СФО-16" />
       <p>
         Электрокалорифер СФО-16 является универсальным тепловым модулем малой
