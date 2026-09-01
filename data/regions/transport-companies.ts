@@ -2028,4 +2028,22 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
+  salekhard: {
+    "tarko-sale": [
+      {
+        company: "Деловые Линии",
+        address: "г. Новый Уренгой, ул. Таежная, 224/1",
+        deliveryTime: {
+          minDays: 10,
+        },
+      },
+      {
+        company: "ПЭК",
+        address: "г. Новый Уренгой, ул. Имени В. Я. Петуха, д. 17",
+        deliveryTime: {
+          minDays: 9,
+        },
+      },
+    ],
+  },
 };
