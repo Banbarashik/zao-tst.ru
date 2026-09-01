@@ -40,12 +40,15 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="" className="hover:text-accent">
+                <Link href="/produkciya#dostavka" className="hover:text-accent">
                   Оплата и доставка
                 </Link>
               </li>
               <li>
-                <Link href="" className="hover:text-accent">
+                <Link
+                  href="/produkciya#sertifikat"
+                  className="hover:text-accent"
+                >
                   Сертификаты соответствия
                 </Link>
               </li>
@@ -292,12 +295,12 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="" className="hover:text-accent">
+              <Link href="/produkciya#dostavka" className="hover:text-accent">
                 Оплата и доставка
               </Link>
             </li>
             <li>
-              <Link href="" className="hover:text-accent">
+              <Link href="/produkciya#sertifikat" className="hover:text-accent">
                 Сертификаты соответствия
               </Link>
             </li>

@@ -246,6 +246,8 @@ export default function ProdukciyaPage() {
         <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
         <section>
+          <Anchor id="dostavka" />
+
           <Heading lvl={3} text="Приобретение продукции" />
           <ProductParagraph>
             Для покупки воздушно-отопительного оборудования вы можете заполнить
@@ -315,6 +317,8 @@ export default function ProdukciyaPage() {
       <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       <section className="mb-10">
+        <Anchor id="sertifikat" />
+
         <Heading lvl={2} text="Сертификаты" className="mb-4" />
         <LinkButtonsBlock buttons={linkButtons} />
       </section>
