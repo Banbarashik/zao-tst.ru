@@ -2046,4 +2046,24 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
       },
     ],
   },
+  cherkessk: {
+    cherkessk: [
+      {
+        company: "Деловые Линии",
+        address: "г. Черкесск, ул. 1-ая Подгорная, д. 22 Г",
+        deliveryTime: {
+          minDays: 14,
+        },
+      },
+    ],
+    "erken-shakhar": [
+      {
+        company: "Деловые Линии",
+        address: "г. Невинномысск, ш. Пятигорское, д 7",
+        deliveryTime: {
+          minDays: 10,
+        },
+      },
+    ],
+  },
 };
