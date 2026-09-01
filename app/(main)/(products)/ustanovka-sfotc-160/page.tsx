@@ -15,6 +15,7 @@ import { ElectroProductOverviewSection } from "@/components/catalog/electro/Elec
 import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimensionsSection";
 import { DeliverySection } from "@/components/catalog/DeliverySection";
 import { ModelDownloadButton } from "@/components/catalog/modelDownloadButton";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 
 const getTable = (airFlow) =>
   sfotcOperatingModes.find((mode) => mode.id === `sfotc-160-${airFlow}`);
@@ -76,6 +77,8 @@ export default function SFOTC160Page() {
 function TechReviewSection() {
   return (
     <section className="mb-4 space-y-4 text-[17px]">
+      <NumberedAnchor num={1} />
+
       <ProductSubheader text="Принципы подбора и режимы эксплуатации СФОЦ-160" />
       <p>
         Электрокалориферная приточная установка СФОЦ-160 с

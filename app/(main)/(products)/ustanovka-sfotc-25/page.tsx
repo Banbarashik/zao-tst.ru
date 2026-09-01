@@ -15,6 +15,7 @@ import { SFOTCDimensionsSection } from "@/components/catalog/electro/SFOTCDimens
 import { DeliverySection } from "@/components/catalog/DeliverySection";
 import { SfotcSpecSection } from "@/components/catalog/electro/SfotcSpecSection";
 import { ModelDownloadButton } from "@/components/catalog/modelDownloadButton";
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 
 const getTable = (airFlow) =>
   sfotcOperatingModes.find((mode) => mode.id === `sfotc-25-${airFlow}`);
@@ -76,6 +77,8 @@ export default function SFOTC25Page() {
 function TechReviewSection() {
   return (
     <section className="mb-4 space-y-4 text-[17px]">
+      <NumberedAnchor num={1} />
+
       <ProductSubheader text="Принципы подбора и режимы эксплуатации СФОЦ-25" />
       <p>
         Электрокалориферная приточная установка СФОЦ-25 с
