@@ -949,6 +949,14 @@ export default function ProdukciyaPage() {
                       </li>
                       <li className="py-2">
                         <Link
+                          href="/regions/veliky-novgorod"
+                          className="text-primary hover:primary-dark text-lg hover:underline"
+                        >
+                          Новгородская область
+                        </Link>
+                      </li>
+                      <li className="py-2">
+                        <Link
                           href="/regions/arkhangelsk"
                           className="text-primary hover:primary-dark text-lg hover:underline"
                         >
