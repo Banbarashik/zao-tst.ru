@@ -22,6 +22,21 @@ const parovyPritochnyKalorifery = productData
 const kaloriferyKsk = productData
   .filter((p) => p.categories.includes("ksk"))
   .sort((a, b) => sortProducts(a.name, b.name));
+const kaloriferyTvv = productData
+  .filter((p) => p.categories.includes("tvv"))
+  .sort((a, b) => sortProducts(a.name, b.name));
+const kaloriferyKfbAM = productData
+  .filter((p) => p.categories.includes("kfb-a-m"))
+  .sort((a, b) => sortProducts(a.name, b.name));
+const kaloriferyKpsk = productData
+  .filter((p) => p.categories.includes("kpsk"))
+  .sort((a, b) => sortProducts(a.name, b.name));
+const kaloriferyKp = productData
+  .filter((p) => p.categories.includes("kp"))
+  .sort((a, b) => sortProducts(a.name, b.name));
+const kaloriferyKfbAP = productData
+  .filter((p) => p.categories.includes("kfb-a-p"))
+  .sort((a, b) => sortProducts(a.name, b.name));
 
 export default function SitemapPage() {
   return (
