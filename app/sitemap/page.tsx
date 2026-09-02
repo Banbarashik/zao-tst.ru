@@ -55,6 +55,15 @@ const kaloriferyAvoKp = productData
 const kaloriferyStd300P = productData
   .filter((p) => p.categories.includes("std300-p"))
   .sort((a, b) => sortProducts(a.name, b.name));
+const kaloriferySfo = productData
+  .filter((p) => p.categories.includes("sfo"))
+  .sort((a, b) => sortProducts(a.name, b.name));
+const ustanovkiSfotc = productData
+  .filter((p) => p.categories.includes("sfotc"))
+  .sort((a, b) => sortProducts(a.name, b.name));
+const shkafyShuk = productData
+  .filter((p) => p.categories.includes("shuk"))
+  .sort((a, b) => sortProducts(a.name, b.name));
 
 export default function SitemapPage() {
   return (
