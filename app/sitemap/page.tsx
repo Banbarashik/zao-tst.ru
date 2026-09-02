@@ -19,6 +19,9 @@ const vodianyPritochnyKalorifery = productData
 const parovyPritochnyKalorifery = productData
   .filter((p) => p.categories.includes("pritochny-parovy-kalorifery"))
   .sort((a, b) => sortProducts(a.name, b.name));
+const kaloriferyKsk = productData
+  .filter((p) => p.categories.includes("ksk"))
+  .sort((a, b) => sortProducts(a.name, b.name));
 
 export default function SitemapPage() {
   return (
@@ -27,6 +30,7 @@ export default function SitemapPage() {
         <li>
           <Link href="/">Главная. Завод ООО «Т.С.Т.»</Link>
         </li>
+        {/* Приточные водяные калориферы КПВС, КПВУ */}
         <li>
           <Accordion type="single" collapsible>
             <AccordionItem value="pritochny-kalorifery">
@@ -45,6 +49,7 @@ export default function SitemapPage() {
             </AccordionItem>
           </Accordion>
         </li>
+        {/* Приточные паровые калориферы КППС, КППУ */}
         <li>
           <Accordion type="single" collapsible>
             <AccordionItem value="pritochny-kalorifery">
@@ -54,6 +59,23 @@ export default function SitemapPage() {
               <AccordionContent>
                 <ul>
                   {parovyPritochnyKalorifery.map((p) => (
+                    <li key={p.id}>
+                      <Link href={`${SITE_URL}/${p.id}`}>{p.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </li>
+        {/* Водяные калориферы КСк */}
+        <li>
+          <Accordion type="single" collapsible>
+            <AccordionItem value="pritochny-kalorifery">
+              <AccordionTrigger>Водяные калориферы КСк</AccordionTrigger>
+              <AccordionContent>
+                <ul>
+                  {kaloriferyKsk.map((p) => (
                     <li key={p.id}>
                       <Link href={`${SITE_URL}/${p.id}`}>{p.name}</Link>
                     </li>
