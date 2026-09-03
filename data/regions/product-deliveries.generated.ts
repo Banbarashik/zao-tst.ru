@@ -1580,6 +1580,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Ремспецстрой»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
         "name": "Красноярский край",
         "slug": "krasnoyarsky-kray",
         "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
@@ -1772,6 +1787,23 @@ export const productDeliveryRecords = {
       },
       "company": "ПИИ ОАО «Газтурбосервис»",
       "industrySector": "Тяжелое машиностроение"
+    }
+  ],
+  "kpvs-1364x1364": [
+    {
+      "region": {
+        "name": "Алтайский край",
+        "slug": "altaysky-kray",
+        "href": "/regions/barnaul#altaysky-kray"
+      },
+      "settlement": {
+        "name": "Барнаул",
+        "slug": "barnaul",
+        "type": "city",
+        "href": "/regions/barnaul"
+      },
+      "company": "АО ПО «Алтайский шинный комбинат»",
+      "industrySector": "Химическая промышленность"
     }
   ],
   "kalorifer-tvv-412": [
@@ -3466,6 +3498,38 @@ export const productDeliveryRecords = {
       "industrySector": "Здравоохранение и туризм"
     }
   ],
+  "kpvu-1345x1345": [
+    {
+      "region": {
+        "name": "Алтайский край",
+        "slug": "altaysky-kray",
+        "href": "/regions/barnaul#altaysky-kray"
+      },
+      "settlement": {
+        "name": "Барнаул",
+        "slug": "barnaul",
+        "type": "city",
+        "href": "/regions/barnaul"
+      },
+      "company": "МУП «Горэлектротранс» Барнаула",
+      "industrySector": "Транспортная инфраструктура"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «СМЦ»",
+      "industrySector": "Ремонт машин и оборудования"
+    }
+  ],
   "kalorifer-tvv-309": [
     {
       "region": {
@@ -3958,7 +4022,7 @@ export const productDeliveryRecords = {
       "settlement": {
         "name": "Лебедево",
         "slug": "lebedevo",
-        "type": "village",
+        "type": "settlement",
         "href": null
       },
       "company": "ООО «Промизоляция»",
@@ -4240,6 +4304,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тяжинский",
+        "slug": "tyazhinsky",
+        "type": "urban-settlement",
+        "href": null
+      },
+      "company": "ООО «Кузбассконсервмолоко»",
+      "industrySector": "Пищевая промышленность"
+    },
+    {
+      "region": {
         "name": "Новосибирская область",
         "slug": "novosibirskaya-oblast",
         "href": "/regions/novosibirsk#novosibirskaya-oblast"
@@ -4252,6 +4331,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СибПромРезина»",
       "industrySector": "Химическая промышленность"
+    },
+    {
+      "region": {
+        "name": "Приморский край",
+        "slug": "primorsky-kray",
+        "href": "/regions/vladivostok#primorsky-kray"
+      },
+      "settlement": {
+        "name": "Уссурийск",
+        "slug": "ussuriysk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Энерготехника»",
+      "industrySector": "Вентиляция/Монтаж"
     },
     {
       "region": {
@@ -5693,6 +5787,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО ИЦ «Промэнерго»",
       "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Челябинская область",
+        "slug": "chelyabinskaya-oblast",
+        "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
+      },
+      "settlement": {
+        "name": "Магнитогорск",
+        "slug": "magnitogorsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Авто К»",
+      "industrySector": "Логистика и транспорт"
     }
   ],
   "kalorifer-kpsk-3-11": [
@@ -6224,6 +6333,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Электроснаб НСК»",
       "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "Ростовская область",
+        "slug": "rostovskaya-oblast",
+        "href": "/regions/rostov-na-donu#rostovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Таганрог",
+        "slug": "taganrog",
+        "type": "city",
+        "href": "/regions/rostov-na-donu#taganrog"
+      },
+      "company": "ООО «Лугань»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kalorifer-kpsk-4-6": [
@@ -6316,6 +6440,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Райвл-НСК»",
       "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "АО «Сибирская Аграрная Группа Мясопереработка»",
+      "industrySector": "Агропромышленный комплекс"
     }
   ],
   "elektrokalorifer-sfo-16": [
@@ -6576,6 +6715,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Свердловская область",
+        "slug": "sverdlovskaya-oblast",
+        "href": "/regions/ekaterinburg#sverdlovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Екатеринбург",
+        "slug": "ekaterinburg",
+        "type": "city",
+        "href": "/regions/ekaterinburg"
+      },
+      "company": "ООО «Уральская производственная компания»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
         "name": "Томская область",
         "slug": "tomskaya-oblast",
         "href": "/regions/tomsk#tomskaya-oblast"
@@ -6665,6 +6819,81 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Лаукар Сибирь»",
       "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Республика Алтай",
+        "slug": "respublika-altay",
+        "href": "/regions/gorno-altaysk#respublika-altay"
+      },
+      "settlement": {
+        "name": "Горно-Алтайск",
+        "slug": "gorno-altaysk",
+        "type": "city",
+        "href": "/regions/gorno-altaysk"
+      },
+      "company": "ООО «Металлургмонтаж»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Компания Буран»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Тюменская область",
+        "slug": "tyumenskaya-oblast",
+        "href": "/regions/tyumen#tyumenskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тюмень",
+        "slug": "tyumen",
+        "type": "city",
+        "href": "/regions/tyumen"
+      },
+      "company": "ООО НПП «СГТ»",
+      "industrySector": "Нефтегазовый сектор"
+    },
+    {
+      "region": {
+        "name": "Хабаровский край",
+        "slug": "khabarovsky-kray",
+        "href": "/regions/khabarovsk#khabarovsky-kray"
+      },
+      "settlement": {
+        "name": "Хабаровск",
+        "slug": "khabarovsk",
+        "type": "city",
+        "href": "/regions/khabarovsk"
+      },
+      "company": "ООО «Энергогидроснаб»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "ХМАО-Югра",
+        "slug": "khmao-yugra",
+        "href": "/regions/surgut#khmao-yugra"
+      },
+      "settlement": {
+        "name": "Сургут",
+        "slug": "surgut",
+        "type": "city",
+        "href": "/regions/surgut#surgut"
+      },
+      "company": "ООО «ГазЭнергоСтрой»",
+      "industrySector": "Строительный сектор"
     }
   ],
   "kalorifer-kpsk-3-10": [
@@ -6879,6 +7108,36 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «АЦ Евро-Империя»",
       "industrySector": "Техническое обслуживание и ремонт"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Гринкоал»",
+      "industrySector": "Химическая промышленность"
+    },
+    {
+      "region": {
+        "name": "Кировская область",
+        "slug": "kirovskaya-oblast",
+        "href": "/regions/kirov#kirovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Киров",
+        "slug": "kirov",
+        "type": "city",
+        "href": "/regions/kirov"
+      },
+      "company": "ООО «Регионтранскомплект»",
+      "industrySector": "Логистика и транспорт"
     }
   ],
   "kpvu-617x617": [
@@ -6956,7 +7215,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/kemerovo#novokuznetsk"
       },
-      "company": "ОАО «ПАТП №1»",
+      "company": "АО «ПАТП»",
       "industrySector": "Транспортная инфраструктура"
     },
     {
@@ -7819,7 +8078,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/kemerovo#novokuznetsk"
       },
-      "company": "ООО «ПК «Кузнецкий цементный завод»",
+      "company": "ООО «Кузнецкий цементный завод»",
       "industrySector": "Строительный сектор"
     },
     {
@@ -8303,6 +8562,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СеЛеон»",
       "industrySector": "Пищевая промышленность"
+    },
+    {
+      "region": {
+        "name": "Иркутская область",
+        "slug": "irkutskaya-oblast",
+        "href": "/regions/irkutsk#irkutskaya-oblast"
+      },
+      "settlement": {
+        "name": "Иркутск",
+        "slug": "irkutsk",
+        "type": "city",
+        "href": "/regions/irkutsk"
+      },
+      "company": "ООО «Продимэкс»",
+      "industrySector": "Вентиляция/Монтаж"
     },
     {
       "region": {
@@ -9327,7 +9601,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/kemerovo#novokuznetsk"
       },
-      "company": "ОАО «ПАТП №1»",
+      "company": "АО «ПАТП»",
       "industrySector": "Транспортная инфраструктура"
     },
     {
@@ -9787,6 +10061,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Глобалтек»",
       "industrySector": "Климатическое оборудование"
+    },
+    {
+      "region": {
+        "name": "Челябинская область",
+        "slug": "chelyabinskaya-oblast",
+        "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
+      },
+      "settlement": {
+        "name": "Челябинск",
+        "slug": "chelyabinsk",
+        "type": "city",
+        "href": "/regions/chelyabinsk"
+      },
+      "company": "ООО «Аванта»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kpvu-1526x1526": [
@@ -10063,6 +10352,248 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «ТК СПК»",
       "industrySector": "Металлообработка"
+    }
+  ],
+  "kalorifer-kfb-10": [
+    {
+      "region": {
+        "name": "Алтайский край",
+        "slug": "altaysky-kray",
+        "href": "/regions/barnaul#altaysky-kray"
+      },
+      "settlement": {
+        "name": "Барнаул",
+        "slug": "barnaul",
+        "type": "city",
+        "href": "/regions/barnaul"
+      },
+      "company": "ООО «Корчинский элеватор»",
+      "industrySector": "Пищевая промышленность"
+    },
+    {
+      "region": {
+        "name": "Забайкальский край",
+        "slug": "zabaykalsky-kray",
+        "href": "/regions/chita#zabaykalsky-kray"
+      },
+      "settlement": {
+        "name": "Чита",
+        "slug": "chita",
+        "type": "city",
+        "href": "/regions/chita"
+      },
+      "company": "ООО «Энергокомплект»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Кемерово",
+        "slug": "kemerovo",
+        "type": "city",
+        "href": "/regions/kemerovo"
+      },
+      "company": "ООО ТД «СДС-Трейд»",
+      "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Киселевск",
+        "slug": "kiselevsk",
+        "type": "city",
+        "href": "/regions/kemerovo#kiselevsk"
+      },
+      "company": "ООО «Обогатительная фабрика «Каро»",
+      "industrySector": "Горнодобывающая пром-ть"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «АИР»",
+      "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Сосновка",
+        "slug": "sosnovka",
+        "type": "village",
+        "href": null
+      },
+      "company": "ООО «Трейд-Авто НК»",
+      "industrySector": "Логистика и транспорт"
+    },
+    {
+      "region": {
+        "name": "Кировская область",
+        "slug": "kirovskaya-oblast",
+        "href": "/regions/kirov#kirovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Киров",
+        "slug": "kirov",
+        "type": "city",
+        "href": "/regions/kirov"
+      },
+      "company": "ООО «Арком»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Красноярск",
+        "slug": "krasnoyarsk",
+        "type": "city",
+        "href": "/regions/krasnoyarsk"
+      },
+      "company": "ООО «Сибирское промышленное оборудование»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Московская область",
+        "slug": "moskovskaya-oblast",
+        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Москва",
+        "slug": "moskva",
+        "type": "city",
+        "href": "/regions/moskovskaya-oblast"
+      },
+      "company": "ООО «Упак-Мол»",
+      "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
+        "name": "Новосибирская область",
+        "slug": "novosibirskaya-oblast",
+        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+      },
+      "settlement": {
+        "name": "Бердск",
+        "slug": "berdsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Представительство «Машзавод № 1»",
+      "industrySector": "Тяжелое машиностроение"
+    },
+    {
+      "region": {
+        "name": "Новосибирская область",
+        "slug": "novosibirskaya-oblast",
+        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новосибирск",
+        "slug": "novosibirsk",
+        "type": "city",
+        "href": "/regions/novosibirsk"
+      },
+      "company": "ООО «СибПромКомплект»",
+      "industrySector": "Металлообработка"
+    },
+    {
+      "region": {
+        "name": "Республика Хакасия",
+        "slug": "respublika-khakasiya",
+        "href": "/regions/abakan#respublika-khakasiya"
+      },
+      "settlement": {
+        "name": "Черногорск",
+        "slug": "chernogorsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «СУЭК-Хакасия»",
+      "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
+        "name": "Свердловская область",
+        "slug": "sverdlovskaya-oblast",
+        "href": "/regions/ekaterinburg#sverdlovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Екатеринбург",
+        "slug": "ekaterinburg",
+        "type": "city",
+        "href": "/regions/ekaterinburg"
+      },
+      "company": "ООО «К «Электрогидромаш»",
+      "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "АО «Сибкабель»",
+      "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "Челябинская область",
+        "slug": "chelyabinskaya-oblast",
+        "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
+      },
+      "settlement": {
+        "name": "Чебаркуль",
+        "slug": "chebarkul",
+        "type": "city",
+        "href": null
+      },
+      "company": "ОАО «Уралкуз»",
+      "industrySector": "Металлургия"
+    },
+    {
+      "region": {
+        "name": "Ярославская область",
+        "slug": "yaroslavskaya-oblast",
+        "href": "/regions/yaroslavl#yaroslavskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ярославль",
+        "slug": "yaroslavl",
+        "type": "city",
+        "href": "/regions/yaroslavl"
+      },
+      "company": "ООО ПО «Химтэк-Яр»",
+      "industrySector": "Химическая промышленность"
     }
   ],
   "kalorifer-ksk-3-9": [
@@ -10398,6 +10929,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Сахалинская область",
+        "slug": "sakhalinskaya-oblast",
+        "href": "/regions/yuzhno-sakhalinsk#sakhalinskaya-oblast"
+      },
+      "settlement": {
+        "name": "Южно-Сахалинск",
+        "slug": "yuzhno-sakhalinsk",
+        "type": "city",
+        "href": "/regions/yuzhno-sakhalinsk"
+      },
+      "company": "ООО «Сахалин-трейдинг»",
+      "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
         "name": "Томская область",
         "slug": "tomskaya-oblast",
         "href": "/regions/tomsk#tomskaya-oblast"
@@ -10561,6 +11107,21 @@ export const productDeliveryRecords = {
         "href": "/regions/saratov"
       },
       "company": "ООО «Промресурс»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «ГК Альянс»",
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
@@ -10956,6 +11517,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО ТД «Энергосила»",
       "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Тамбовская область",
+        "slug": "tambovskaya-oblast",
+        "href": "/regions/tambov#tambovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тамбов",
+        "slug": "tambov",
+        "type": "city",
+        "href": "/regions/tambov"
+      },
+      "company": "«ЭТП Инжиниринг»",
+      "industrySector": "Вентиляция/Отопление"
     },
     {
       "region": {
@@ -12171,6 +12747,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Пензенская область",
+        "slug": "penzenskaya-oblast",
+        "href": "/regions/penza#penzenskaya-oblast"
+      },
+      "settlement": {
+        "name": "Пенза",
+        "slug": "penza",
+        "type": "city",
+        "href": "/regions/penza"
+      },
+      "company": "ООО «Техком»",
+      "industrySector": "Вентиляция/Отопление"
+    },
+    {
+      "region": {
         "name": "Пермский край",
         "slug": "permsky-kray",
         "href": "/regions/perm#permsky-kray"
@@ -12455,6 +13046,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Байкал Полимер»",
       "industrySector": "Химическая промышленность"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «ЕвразСервис-Сибирь»",
+      "industrySector": "Вентиляция/Отопление"
     },
     {
       "region": {
@@ -13568,6 +14174,21 @@ export const productDeliveryRecords = {
         "href": "/regions/kemerovo#kemerovskaya-oblast"
       },
       "settlement": {
+        "name": "Прокопьевск",
+        "slug": "prokopevsk",
+        "type": "city",
+        "href": "/regions/kemerovo#prokopevsk"
+      },
+      "company": "ООО «УПТК»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
         "name": "Таштагол",
         "slug": "tashtagol",
         "type": "city",
@@ -13817,6 +14438,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СУЭК-Хакасия»",
       "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Компания Айтигеоком»",
+      "industrySector": "Автоматизация и ИТ"
     }
   ],
   "kalorifer-tvv-409": [
@@ -13972,6 +14608,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Компания Айтигеоком»",
+      "industrySector": "Автоматизация и ИТ"
+    },
+    {
+      "region": {
         "name": "Челябинская область",
         "slug": "chelyabinskaya-oblast",
         "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
@@ -14001,6 +14652,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СтройТрансКомпани»",
       "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Вента»",
+      "industrySector": "Промышленное снабжение"
     }
   ],
   "kpvu-935x935": [
@@ -14018,6 +14684,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СтройТрансКомпани»",
       "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Краснодарский край",
+        "slug": "krasnodarsky-kray",
+        "href": "/regions/krasnodar#krasnodarsky-kray"
+      },
+      "settlement": {
+        "name": "Краснодар",
+        "slug": "krasnodar",
+        "type": "city",
+        "href": "/regions/krasnodar"
+      },
+      "company": "ООО «Альтмебель»",
+      "industrySector": "Деревообрабатывающая пром-сть"
     }
   ],
   "kalorifer-kfb-5-a4": [
@@ -14748,6 +15429,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «ПТК»",
       "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Компстар»",
+      "industrySector": "Автоматизация и ИТ"
     }
   ],
   "kalorifer-kp-311": [
@@ -14895,6 +15591,21 @@ export const productDeliveryRecords = {
         "href": "/regions/kemerovo#kemerovskaya-oblast"
       },
       "settlement": {
+        "name": "Ленинск-Кузнецкий",
+        "slug": "leninsk-kuznetsky",
+        "type": "city",
+        "href": "/regions/kemerovo#leninsk-kuznetsky"
+      },
+      "company": "ОАО «СУЭК-Кузбасс»",
+      "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
         "name": "Таштагол",
         "slug": "tashtagol",
         "type": "city",
@@ -14947,6 +15658,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Управление Бытового Обслуживания»",
       "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Монотомь»",
+      "industrySector": "Приборостроение и электротехника"
     }
   ],
   "kalorifer-kp-411": [
@@ -17320,6 +18046,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СибПромКомплект»",
       "industrySector": "Металлообработка"
+    },
+    {
+      "region": {
+        "name": "Тюменская область",
+        "slug": "tyumenskaya-oblast",
+        "href": "/regions/tyumen#tyumenskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тюмень",
+        "slug": "tyumen",
+        "type": "city",
+        "href": "/regions/tyumen"
+      },
+      "company": "ООО «Интека»",
+      "industrySector": "Строительный сектор"
     }
   ],
   "kalorifer-kpsk-4-5": [
@@ -17340,6 +18081,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Красноярск",
+        "slug": "krasnoyarsk",
+        "type": "city",
+        "href": "/regions/krasnoyarsk"
+      },
+      "company": "ООО «ТИЭС»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
         "name": "Новосибирская область",
         "slug": "novosibirskaya-oblast",
         "href": "/regions/novosibirsk#novosibirskaya-oblast"
@@ -17352,6 +18108,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СибПромКомплект»",
       "industrySector": "Металлообработка"
+    },
+    {
+      "region": {
+        "name": "Саратовская область",
+        "slug": "saratovskaya-oblast",
+        "href": "/regions/saratov#saratovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Саратов",
+        "slug": "saratov",
+        "type": "city",
+        "href": "/regions/saratov"
+      },
+      "company": "АО «Жировой комбинат»",
+      "industrySector": "Масличная промышленность"
     }
   ],
   "kalorifer-kfb-14-a4": [
@@ -17484,6 +18255,21 @@ export const productDeliveryRecords = {
         "href": "/regions/kemerovo#kemerovskaya-oblast"
       },
       "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ОАО «Западно-Сибирский испытательный центр»",
+      "industrySector": "Металлургия"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
         "name": "Чистогорский",
         "slug": "chistogorsky",
         "type": "settlement",
@@ -17521,6 +18307,36 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Артель А»",
       "industrySector": "Деревообрабатывающая пром-сть"
+    },
+    {
+      "region": {
+        "name": "Республика Алтай",
+        "slug": "respublika-altay",
+        "href": "/regions/gorno-altaysk#respublika-altay"
+      },
+      "settlement": {
+        "name": "Горно-Алтайск",
+        "slug": "gorno-altaysk",
+        "type": "city",
+        "href": "/regions/gorno-altaysk"
+      },
+      "company": "ЗАО ИК «ЮКАС-Холдинг»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Республика Бурятия",
+        "slug": "respublika-buryatiya",
+        "href": "/regions/ulan-ude#respublika-buryatiya"
+      },
+      "settlement": {
+        "name": "Улан-Удэ",
+        "slug": "ulan-ude",
+        "type": "city",
+        "href": "/regions/ulan-ude"
+      },
+      "company": "ООО «Китой»",
+      "industrySector": "Строительный сектор"
     },
     {
       "region": {
@@ -17663,6 +18479,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Вологодская область",
+        "slug": "vologodskaya-oblast",
+        "href": "/regions/vologda#vologodskaya-oblast"
+      },
+      "settlement": {
+        "name": "Сокол",
+        "slug": "sokol",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Сокол СиЭлТи»",
+      "industrySector": "Деревообрабатывающая пром-сть"
+    },
+    {
+      "region": {
         "name": "Свердловская область",
         "slug": "sverdlovskaya-oblast",
         "href": "/regions/ekaterinburg#sverdlovskaya-oblast"
@@ -17715,6 +18546,21 @@ export const productDeliveryRecords = {
         "href": "/regions/irkutsk#irkutskaya-oblast"
       },
       "settlement": {
+        "name": "Братск",
+        "slug": "bratsk",
+        "type": "city",
+        "href": "/regions/irkutsk#bratsk"
+      },
+      "company": "ООО «Энергия»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Иркутская область",
+        "slug": "irkutskaya-oblast",
+        "href": "/regions/irkutsk#irkutskaya-oblast"
+      },
+      "settlement": {
         "name": "Тулун",
         "slug": "tulun",
         "type": "city",
@@ -17752,6 +18598,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «ЛС-Энерго»",
       "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "Смоленская область",
+        "slug": "smolenskaya-oblast",
+        "href": "/regions/smolensk#smolenskaya-oblast"
+      },
+      "settlement": {
+        "name": "Стодолище",
+        "slug": "stodolishche",
+        "type": "settlement",
+        "href": null
+      },
+      "company": "ООО «ЭКО РГС ГРУПП»",
+      "industrySector": "Экология и очистка"
     }
   ],
   "kalorifer-ksk-2-8": [
@@ -17799,6 +18660,21 @@ export const productDeliveryRecords = {
       },
       "company": "ЗАО «ПВВ»",
       "industrySector": "Химическая промышленность"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Прокопьевск",
+        "slug": "prokopevsk",
+        "type": "city",
+        "href": "/regions/kemerovo#prokopevsk"
+      },
+      "company": "МУП «Прокопьевское Теплоснабжающее Хозяйство»",
+      "industrySector": "ЖКХ и теплосети"
     },
     {
       "region": {
@@ -18231,7 +19107,7 @@ export const productDeliveryRecords = {
       "settlement": {
         "name": "Меленки",
         "slug": "melenki",
-        "type": "village",
+        "type": "settlement",
         "href": null
       },
       "company": "ООО «Янтарь»",
@@ -18253,6 +19129,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СТМ»",
       "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Киселевск",
+        "slug": "kiselevsk",
+        "type": "city",
+        "href": "/regions/kemerovo#kiselevsk"
+      },
+      "company": "ООО «Обогатительная фабрика «Тайбинская»",
+      "industrySector": "Горнодобывающая пром-ть"
     },
     {
       "region": {
@@ -18437,6 +19328,68 @@ export const productDeliveryRecords = {
       },
       "company": "ЗАО «Трест Коксохиммонтаж»",
       "industrySector": "Строительный сектор"
+    }
+  ],
+  "kpvs-780x780": [
+    {
+      "region": {
+        "name": "Алтайский край",
+        "slug": "altaysky-kray",
+        "href": "/regions/barnaul#altaysky-kray"
+      },
+      "settlement": {
+        "name": "Бийск",
+        "slug": "biysk",
+        "type": "city",
+        "href": "/regions/barnaul#biysk"
+      },
+      "company": "ООО «ТД «Бэст Фрут»",
+      "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
+        "name": "Республика Карелия",
+        "slug": "respublika-kareliya",
+        "href": "/regions/petrozavodsk#respublika-kareliya"
+      },
+      "settlement": {
+        "name": "Пусунсаари",
+        "slug": "pusunsaari",
+        "type": "other",
+        "href": null
+      },
+      "company": "ООО «РК-Гранд»",
+      "industrySector": "Целлюлозно-бумажная пром-сть"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «НГК-Томск»",
+      "industrySector": "Нефтегазовый сектор"
+    },
+    {
+      "region": {
+        "name": "Ярославская область",
+        "slug": "yaroslavskaya-oblast",
+        "href": "/regions/yaroslavl#yaroslavskaya-oblast"
+      },
+      "settlement": {
+        "name": "Октябрьский",
+        "slug": "oktyabrsky",
+        "type": "settlement",
+        "href": null
+      },
+      "company": "АО «Ярославский бройлер»",
+      "industrySector": "Агропромышленный комплекс"
     }
   ],
   "kalorifer-ksk-4-7": [
@@ -20925,6 +21878,68 @@ export const productDeliveryRecords = {
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
+  "kpps-614x614": [
+    {
+      "region": {
+        "name": "Амурская область",
+        "slug": "amurskaya-oblast",
+        "href": "/regions/blagoveshchensk#amurskaya-oblast"
+      },
+      "settlement": {
+        "name": "Соловьевск",
+        "slug": "solovevsk",
+        "type": "village",
+        "href": null
+      },
+      "company": "АО «Прииск Соловьевский»",
+      "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Белово",
+        "slug": "belovo",
+        "type": "city",
+        "href": "/regions/kemerovo#belovo"
+      },
+      "company": "ООО «Аэровент»",
+      "industrySector": "Вентиляция/Кондиционирование"
+    },
+    {
+      "region": {
+        "name": "Краснодарский край",
+        "slug": "krasnodarsky-kray",
+        "href": "/regions/krasnodar#krasnodarsky-kray"
+      },
+      "settlement": {
+        "name": "Тимашевск",
+        "slug": "timashevsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ЗАО «Констанция Кубань»",
+      "industrySector": "Химическая промышленность"
+    },
+    {
+      "region": {
+        "name": "Ярославская область",
+        "slug": "yaroslavskaya-oblast",
+        "href": "/regions/yaroslavl#yaroslavskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ярославль",
+        "slug": "yaroslavl",
+        "type": "city",
+        "href": "/regions/yaroslavl"
+      },
+      "company": "АО «ГК «ЕКС»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
   "agregat-ao2-6.3-ksk3-vozdushniy-parovoy": [
     {
       "region": {
@@ -20955,6 +21970,53 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Карелия ПАЛП»",
       "industrySector": "Целлюлозно-бумажная пром-сть"
+    }
+  ],
+  "kpps-780x780": [
+    {
+      "region": {
+        "name": "Амурская область",
+        "slug": "amurskaya-oblast",
+        "href": "/regions/blagoveshchensk#amurskaya-oblast"
+      },
+      "settlement": {
+        "name": "Соловьевск",
+        "slug": "solovevsk",
+        "type": "village",
+        "href": null
+      },
+      "company": "АО «Прииск Соловьевский»",
+      "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
+        "name": "Иркутская область",
+        "slug": "irkutskaya-oblast",
+        "href": "/regions/irkutsk#irkutskaya-oblast"
+      },
+      "settlement": {
+        "name": "Алужино",
+        "slug": "aluzhino",
+        "type": "village",
+        "href": null
+      },
+      "company": "СЗСППК «Сагаан гол»",
+      "industrySector": "Агропромышленный комплекс"
+    },
+    {
+      "region": {
+        "name": "Ленинградская область",
+        "slug": "leningradskaya-oblast",
+        "href": "/regions/sankt-peterburg#leningradskaya-oblast"
+      },
+      "settlement": {
+        "name": "Санкт-Петербург",
+        "slug": "sankt-peterburg",
+        "type": "city",
+        "href": "/regions/sankt-peterburg"
+      },
+      "company": "ООО «ПроТехно»",
+      "industrySector": "Машиностроение"
     }
   ],
   "kalorifer-kfb-10-a3": [
@@ -21672,6 +22734,83 @@ export const productDeliveryRecords = {
       },
       "company": "ПАО АК «Алроса»",
       "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
+        "name": "Свердловская область",
+        "slug": "sverdlovskaya-oblast",
+        "href": "/regions/ekaterinburg#sverdlovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Екатеринбург",
+        "slug": "ekaterinburg",
+        "type": "city",
+        "href": "/regions/ekaterinburg"
+      },
+      "company": "ООО «Оптимапрайс»",
+      "industrySector": "Промышленное снабжение"
+    }
+  ],
+  "kalorifer-kpsk-4-4": [
+    {
+      "region": {
+        "name": "Белгородская область",
+        "slug": "belgorodskaya-oblast",
+        "href": "/regions/belgorod#belgorodskaya-oblast"
+      },
+      "settlement": {
+        "name": "Старый Оскол",
+        "slug": "stary-oskol",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Дар-Спец»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Красноярск",
+        "slug": "krasnoyarsk",
+        "type": "city",
+        "href": "/regions/krasnoyarsk"
+      },
+      "company": "ООО «ТИЭС»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Московская область",
+        "slug": "moskovskaya-oblast",
+        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Балашиха",
+        "slug": "balashikha",
+        "type": "city",
+        "href": null
+      },
+      "company": "ОАО АК «Рубин»",
+      "industrySector": "Тяжелое машиностроение"
+    },
+    {
+      "region": {
+        "name": "Новосибирская область",
+        "slug": "novosibirskaya-oblast",
+        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новосибирск",
+        "slug": "novosibirsk",
+        "type": "city",
+        "href": "/regions/novosibirsk"
+      },
+      "company": "ООО «СибПромКомплект»",
+      "industrySector": "Металлообработка"
     }
   ],
   "std300-kpsk": [
@@ -21871,6 +23010,53 @@ export const productDeliveryRecords = {
       "industrySector": "Химическая промышленность"
     }
   ],
+  "kpps-1239x1239": [
+    {
+      "region": {
+        "name": "Белгородская область",
+        "slug": "belgorodskaya-oblast",
+        "href": "/regions/belgorod#belgorodskaya-oblast"
+      },
+      "settlement": {
+        "name": "Разумное",
+        "slug": "razumnoe",
+        "type": "settlement",
+        "href": null
+      },
+      "company": "ООО «НПП «Юникорн»",
+      "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "Забайкальский край",
+        "slug": "zabaykalsky-kray",
+        "href": "/regions/chita#zabaykalsky-kray"
+      },
+      "settlement": {
+        "name": "Чита",
+        "slug": "chita",
+        "type": "city",
+        "href": "/regions/chita"
+      },
+      "company": "ООО «Мир»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ОАО «Новокузнецкий металлургический комбинат»",
+      "industrySector": "Металлургия"
+    }
+  ],
   "kpvs-572x572": [
     {
       "region": {
@@ -21885,6 +23071,81 @@ export const productDeliveryRecords = {
         "href": "/regions/bryansk"
       },
       "company": "ООО «НПО «Техноком»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Тандем»",
+      "industrySector": "Ремонт машин и оборудования"
+    },
+    {
+      "region": {
+        "name": "Краснодарский край",
+        "slug": "krasnodarsky-kray",
+        "href": "/regions/krasnodar#krasnodarsky-kray"
+      },
+      "settlement": {
+        "name": "Новороссийск",
+        "slug": "novorossiysk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Полимерактив»",
+      "industrySector": "Химическая промышленность"
+    },
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Красноярск",
+        "slug": "krasnoyarsk",
+        "type": "city",
+        "href": "/regions/krasnoyarsk"
+      },
+      "company": "ООО «Диалог-Агро-2»",
+      "industrySector": "Агропромышленный комплекс"
+    },
+    {
+      "region": {
+        "name": "Ростовская область",
+        "slug": "rostovskaya-oblast",
+        "href": "/regions/rostov-na-donu#rostovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Таганрог",
+        "slug": "taganrog",
+        "type": "city",
+        "href": "/regions/rostov-na-donu#taganrog"
+      },
+      "company": "ООО «НПО «ХС Машиностроение»",
+      "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
+        "name": "Тульская область",
+        "slug": "tulskaya-oblast",
+        "href": "/regions/tula#tulskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тула",
+        "slug": "tula",
+        "type": "city",
+        "href": "/regions/tula"
+      },
+      "company": "ООО «Авангард»",
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
@@ -22841,8 +24102,8 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/perm"
       },
-      "company": "ООО «Универсалстройинвест»",
-      "industrySector": "Строительный сектор"
+      "company": "АО «ПНИТИ»",
+      "industrySector": "Тяжелое машиностроение"
     },
     {
       "region": {
@@ -23379,6 +24640,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Кировская область",
+        "slug": "kirovskaya-oblast",
+        "href": "/regions/kirov#kirovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Киров",
+        "slug": "kirov",
+        "type": "city",
+        "href": "/regions/kirov"
+      },
+      "company": "ООО «Совместный проект»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
         "name": "Новосибирская область",
         "slug": "novosibirskaya-oblast",
         "href": "/regions/novosibirsk#novosibirskaya-oblast"
@@ -23391,6 +24667,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «ВнешТорг»",
       "industrySector": "Логистика и транспорт"
+    },
+    {
+      "region": {
+        "name": "Тюменская область",
+        "slug": "tyumenskaya-oblast",
+        "href": "/regions/tyumen#tyumenskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тюмень",
+        "slug": "tyumen",
+        "type": "city",
+        "href": "/regions/tyumen"
+      },
+      "company": "ООО «АирПроф»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kalorifer-kpsk-3-2": [
@@ -23454,6 +24745,53 @@ export const productDeliveryRecords = {
         "href": "/regions/voronezh"
       },
       "company": "ООО «Стандарт»",
+      "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
+  "kppu-617x617": [
+    {
+      "region": {
+        "name": "Воронежская область",
+        "slug": "voronezhskaya-oblast",
+        "href": "/regions/voronezh#voronezhskaya-oblast"
+      },
+      "settlement": {
+        "name": "Воронеж",
+        "slug": "voronezh",
+        "type": "city",
+        "href": "/regions/voronezh"
+      },
+      "company": "ООО «Стандарт»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Железногорск",
+        "slug": "zheleznogorsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Сибинторг»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Саратовская область",
+        "slug": "saratovskaya-oblast",
+        "href": "/regions/saratov#saratovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Саратов",
+        "slug": "saratov",
+        "type": "city",
+        "href": "/regions/saratov"
+      },
+      "company": "ООО «Промресурс»",
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
@@ -23748,6 +25086,38 @@ export const productDeliveryRecords = {
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
+  "kpvu-1072x1072": [
+    {
+      "region": {
+        "name": "Ивановская область",
+        "slug": "ivanovskaya-oblast",
+        "href": "/regions/ivanovo#ivanovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Иваново",
+        "slug": "ivanovo",
+        "type": "city",
+        "href": "/regions/ivanovo"
+      },
+      "company": "ООО «ТрансКоммерц»",
+      "industrySector": "Логистика и транспорт"
+    },
+    {
+      "region": {
+        "name": "Самарская область",
+        "slug": "samarskaya-oblast",
+        "href": "/regions/samara#samarskaya-oblast"
+      },
+      "settlement": {
+        "name": "Самара",
+        "slug": "samara",
+        "type": "city",
+        "href": "/regions/samara"
+      },
+      "company": "ООО «Модуль»",
+      "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
   "kalorifer-kfb-5-p": [
     {
       "region": {
@@ -23813,6 +25183,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Киселевск",
+        "slug": "kiselevsk",
+        "type": "city",
+        "href": "/regions/kemerovo#kiselevsk"
+      },
+      "company": "ОАО «Разрез Киселевский»",
+      "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
         "name": "Новосибирская область",
         "slug": "novosibirskaya-oblast",
         "href": "/regions/novosibirsk#novosibirskaya-oblast"
@@ -23842,6 +25227,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Интех»",
       "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Автопилот»",
+      "industrySector": "Логистика и транспорт"
     },
     {
       "region": {
@@ -24531,6 +25931,85 @@ export const productDeliveryRecords = {
       "industrySector": "Приборостроение и электротехника"
     }
   ],
+  "kpvu-1390x1390": [
+    {
+      "region": {
+        "name": "Иркутская область",
+        "slug": "irkutskaya-oblast",
+        "href": "/regions/irkutsk#irkutskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ангарск",
+        "slug": "angarsk",
+        "type": "city",
+        "href": "/regions/irkutsk#angarsk"
+      },
+      "company": "ООО ПКФ «Ангара ресурс»",
+      "industrySector": "Деревообрабатывающая пром-сть"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Тулс-Трейд»",
+      "industrySector": "Промышленное снабжение"
+    }
+  ],
+  "kpvs-1072x1072": [
+    {
+      "region": {
+        "name": "Иркутская область",
+        "slug": "irkutskaya-oblast",
+        "href": "/regions/irkutsk#irkutskaya-oblast"
+      },
+      "settlement": {
+        "name": "Братск",
+        "slug": "bratsk",
+        "type": "city",
+        "href": "/regions/irkutsk#bratsk"
+      },
+      "company": "ООО «Ангара Плюс»",
+      "industrySector": "Деревообрабатывающая пром-сть"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «КузбассСтройМонтаж»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Тверская область",
+        "slug": "tverskaya-oblast",
+        "href": "/regions/tver#tverskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тверь",
+        "slug": "tver",
+        "type": "city",
+        "href": "/regions/tver"
+      },
+      "company": "ООО «Форум Тверь»",
+      "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
   "kalorifer-kfb-5": [
     {
       "region": {
@@ -24883,6 +26362,36 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Свердловская область",
+        "slug": "sverdlovskaya-oblast",
+        "href": "/regions/ekaterinburg#sverdlovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Екатеринбург",
+        "slug": "ekaterinburg",
+        "type": "city",
+        "href": "/regions/ekaterinburg"
+      },
+      "company": "ООО «Оптимапрайс»",
+      "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Престо»",
+      "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
         "name": "Челябинская область",
         "slug": "chelyabinskaya-oblast",
         "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
@@ -24926,6 +26435,190 @@ export const productDeliveryRecords = {
         "href": "/regions/rostov-na-donu"
       },
       "company": "ООО «Ровен-Регионы»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Тюменская область",
+        "slug": "tyumenskaya-oblast",
+        "href": "/regions/tyumen#tyumenskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тюмень",
+        "slug": "tyumen",
+        "type": "city",
+        "href": "/regions/tyumen"
+      },
+      "company": "ООО «Макстерм»",
+      "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
+  "kpvs-822x822": [
+    {
+      "region": {
+        "name": "Иркутская область",
+        "slug": "irkutskaya-oblast",
+        "href": "/regions/irkutsk#irkutskaya-oblast"
+      },
+      "settlement": {
+        "name": "Иркутск",
+        "slug": "irkutsk",
+        "type": "city",
+        "href": "/regions/irkutsk"
+      },
+      "company": "ООО «Эл-Пред»",
+      "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "Калужская область",
+        "slug": "kaluzhskaya-oblast",
+        "href": "/regions/kaluga#kaluzhskaya-oblast"
+      },
+      "settlement": {
+        "name": "Калуга",
+        "slug": "kaluga",
+        "type": "city",
+        "href": "/regions/kaluga"
+      },
+      "company": "ОАО «Калужский турбинный завод»",
+      "industrySector": "Тяжелое машиностроение"
+    },
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Красноярск",
+        "slug": "krasnoyarsk",
+        "type": "city",
+        "href": "/regions/krasnoyarsk"
+      },
+      "company": "ООО «Технологическое оборудование»",
+      "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
+        "name": "Курганская область",
+        "slug": "kurganskaya-oblast",
+        "href": "/regions/kurgan#kurganskaya-oblast"
+      },
+      "settlement": {
+        "name": "Курган",
+        "slug": "kurgan",
+        "type": "city",
+        "href": "/regions/kurgan"
+      },
+      "company": "ООО «Ремстанкомаш»",
+      "industrySector": "Станкостроение"
+    },
+    {
+      "region": {
+        "name": "Новосибирская область",
+        "slug": "novosibirskaya-oblast",
+        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+      },
+      "settlement": {
+        "name": "Красный Яр",
+        "slug": "krasny-yar",
+        "type": "settlement",
+        "href": null
+      },
+      "company": "АО «Новосибирский КБК»",
+      "industrySector": "Целлюлозно-бумажная пром-сть"
+    },
+    {
+      "region": {
+        "name": "Пермский край",
+        "slug": "permsky-kray",
+        "href": "/regions/perm#permsky-kray"
+      },
+      "settlement": {
+        "name": "Полазна",
+        "slug": "polazna",
+        "type": "urban-settlement",
+        "href": null
+      },
+      "company": "ООО «Промышленная группа Прогрессия»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Гарант»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
+  "kpvs-697x697": [
+    {
+      "region": {
+        "name": "Иркутская область",
+        "slug": "irkutskaya-oblast",
+        "href": "/regions/irkutsk#irkutskaya-oblast"
+      },
+      "settlement": {
+        "name": "Иркутск",
+        "slug": "irkutsk",
+        "type": "city",
+        "href": "/regions/irkutsk"
+      },
+      "company": "ООО «Эл-Пред»",
+      "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "Самарская область",
+        "slug": "samarskaya-oblast",
+        "href": "/regions/samara#samarskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тольятти",
+        "slug": "tolyatti",
+        "type": "city",
+        "href": "/regions/samara#tolyatti"
+      },
+      "company": "ООО «Системы ОВК»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Свердловская область",
+        "slug": "sverdlovskaya-oblast",
+        "href": "/regions/ekaterinburg#sverdlovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Екатеринбург",
+        "slug": "ekaterinburg",
+        "type": "city",
+        "href": "/regions/ekaterinburg"
+      },
+      "company": "ООО «Ктарос»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "ХМАО-Югра",
+        "slug": "khmao-yugra",
+        "href": "/regions/surgut#khmao-yugra"
+      },
+      "settlement": {
+        "name": "Нижневартовск",
+        "slug": "nizhnevartovsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Норд-Сервис»",
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
@@ -24975,7 +26668,7 @@ export const productDeliveryRecords = {
         "href": null
       },
       "company": "ООО «Полимерактив»",
-      "industrySector": "Вентиляция/Монтаж"
+      "industrySector": "Химическая промышленность"
     },
     {
       "region": {
@@ -25056,6 +26749,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Красноярск",
+        "slug": "krasnoyarsk",
+        "type": "city",
+        "href": "/regions/krasnoyarsk"
+      },
+      "company": "ООО «ТИЭС»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
         "name": "Новосибирская область",
         "slug": "novosibirskaya-oblast",
         "href": "/regions/novosibirsk#novosibirskaya-oblast"
@@ -25068,53 +26776,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Спецхлебмаш»",
       "industrySector": "Машиностроение"
-    }
-  ],
-  "kpps-614x614": [
-    {
-      "region": {
-        "name": "Кемеровская область",
-        "slug": "kemerovskaya-oblast",
-        "href": "/regions/kemerovo#kemerovskaya-oblast"
-      },
-      "settlement": {
-        "name": "Белово",
-        "slug": "belovo",
-        "type": "city",
-        "href": "/regions/kemerovo#belovo"
-      },
-      "company": "ООО «Аэровент»",
-      "industrySector": "Вентиляция/Кондиционирование"
     },
     {
       "region": {
-        "name": "Краснодарский край",
-        "slug": "krasnodarsky-kray",
-        "href": "/regions/krasnodar#krasnodarsky-kray"
+        "name": "Тюменская область",
+        "slug": "tyumenskaya-oblast",
+        "href": "/regions/tyumen#tyumenskaya-oblast"
       },
       "settlement": {
-        "name": "Тимашевск",
-        "slug": "timashevsk",
+        "name": "Тюмень",
+        "slug": "tyumen",
         "type": "city",
-        "href": null
+        "href": "/regions/tyumen"
       },
-      "company": "ЗАО «Констанция Кубань»",
-      "industrySector": "Химическая промышленность"
-    },
-    {
-      "region": {
-        "name": "Ярославская область",
-        "slug": "yaroslavskaya-oblast",
-        "href": "/regions/yaroslavl#yaroslavskaya-oblast"
-      },
-      "settlement": {
-        "name": "Ярославль",
-        "slug": "yaroslavl",
-        "type": "city",
-        "href": "/regions/yaroslavl"
-      },
-      "company": "АО «ГК «ЕКС»",
-      "industrySector": "Строительный сектор"
+      "company": "ООО «Тэнко»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kpps-1364x1364": [
@@ -25239,6 +26915,21 @@ export const productDeliveryRecords = {
       },
       "company": "АО «Агрокомплекс «Калининский»",
       "industrySector": "Агропромышленный комплекс"
+    },
+    {
+      "region": {
+        "name": "Саратовская область",
+        "slug": "saratovskaya-oblast",
+        "href": "/regions/saratov#saratovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Энгельс-2",
+        "slug": "engels-2",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «СМТ»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kalorifer-kfb-11-p": [
@@ -25351,6 +27042,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ГУ КО «РЦСП»",
+      "industrySector": "Образование и инфраструктура"
+    },
+    {
+      "region": {
         "name": "Московская область",
         "slug": "moskovskaya-oblast",
         "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
@@ -25410,6 +27116,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Пермэнергопроект»",
       "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Республика Хакасия",
+        "slug": "respublika-khakasiya",
+        "href": "/regions/abakan#respublika-khakasiya"
+      },
+      "settlement": {
+        "name": "Черногорск",
+        "slug": "chernogorsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Бентонит Хакасия»",
+      "industrySector": "Добывающая отрасль"
     },
     {
       "region": {
@@ -25502,6 +27223,36 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Вентпромстрой»",
       "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Саратовская область",
+        "slug": "saratovskaya-oblast",
+        "href": "/regions/saratov#saratovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Саратов",
+        "slug": "saratov",
+        "type": "city",
+        "href": "/regions/saratov"
+      },
+      "company": "АО «Литий-Элемент»",
+      "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Ладвуд»",
+      "industrySector": "Деревообрабатывающая пром-сть"
     }
   ],
   "kpvu-663x663": [
@@ -25519,6 +27270,21 @@ export const productDeliveryRecords = {
       },
       "company": "ОАО «КемВод»",
       "industrySector": "ЖКХ и водоснабжение"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Трудармейский",
+        "slug": "trudarmeysky",
+        "type": "settlement",
+        "href": null
+      },
+      "company": "ООО «ПФ «Трудармейская»",
+      "industrySector": "Агропромышленный комплекс"
     }
   ],
   "kpvu-708x708": [
@@ -25568,6 +27334,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Компания «Энергопарк»",
       "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Пермский край",
+        "slug": "permsky-kray",
+        "href": "/regions/perm#permsky-kray"
+      },
+      "settlement": {
+        "name": "Пермь",
+        "slug": "perm",
+        "type": "city",
+        "href": "/regions/perm"
+      },
+      "company": "ООО «Форпласт»",
+      "industrySector": "Химическая промышленность"
     }
   ],
   "kalorifer-kfb-12": [
@@ -25765,6 +27546,21 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/tomsk"
       },
+      "company": "ООО «Колмакс»",
+      "industrySector": "Нефтегазовый сектор"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
       "company": "ООО «ФальКО»",
       "industrySector": "Металлообработка"
     }
@@ -25834,6 +27630,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Тандем»",
+      "industrySector": "Ремонт машин и оборудования"
+    },
+    {
+      "region": {
         "name": "Кировская область",
         "slug": "kirovskaya-oblast",
         "href": "/regions/kirov#kirovskaya-oblast"
@@ -25860,7 +27671,7 @@ export const productDeliveryRecords = {
         "href": null
       },
       "company": "ООО «Полимерактив»",
-      "industrySector": "Вентиляция/Монтаж"
+      "industrySector": "Химическая промышленность"
     },
     {
       "region": {
@@ -26277,6 +28088,21 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Самарская область",
+        "slug": "samarskaya-oblast",
+        "href": "/regions/samara#samarskaya-oblast"
+      },
+      "settlement": {
+        "name": "Самара",
+        "slug": "samara",
+        "type": "city",
+        "href": "/regions/samara"
+      },
+      "company": "ООО «СтальНефтеГаз»",
+      "industrySector": "Нефтегазовый сектор"
+    },
+    {
+      "region": {
         "name": "Томская область",
         "slug": "tomskaya-oblast",
         "href": "/regions/tomsk#tomskaya-oblast"
@@ -26289,6 +28115,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СК «ЕвроСибСтрой»",
       "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Тюменская область",
+        "slug": "tyumenskaya-oblast",
+        "href": "/regions/tyumen#tyumenskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тюмень",
+        "slug": "tyumen",
+        "type": "city",
+        "href": "/regions/tyumen"
+      },
+      "company": "ООО «СиМ»",
+      "industrySector": "Металлообработка"
     }
   ],
   "kalorifer-kfb-6-a3": [
@@ -26368,6 +28209,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Профжилстрой»",
       "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ОАО «Западно-Сибирский испытательный центр»",
+      "industrySector": "Металлургия"
     },
     {
       "region": {
@@ -26513,6 +28369,36 @@ export const productDeliveryRecords = {
         "href": "/regions/kemerovo#kemerovskaya-oblast"
       },
       "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ОАО «Западно-Сибирский испытательный центр»",
+      "industrySector": "Металлургия"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Прокопьевск",
+        "slug": "prokopevsk",
+        "type": "city",
+        "href": "/regions/kemerovo#prokopevsk"
+      },
+      "company": "ООО «УПТК»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
         "name": "Снежинский",
         "slug": "snezhinsky",
         "type": "settlement",
@@ -26565,6 +28451,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Сибирский бензовоз»",
       "industrySector": "Логистика и транспорт"
+    },
+    {
+      "region": {
+        "name": "Республика Алтай",
+        "slug": "respublika-altay",
+        "href": "/regions/gorno-altaysk#respublika-altay"
+      },
+      "settlement": {
+        "name": "Горно-Алтайск",
+        "slug": "gorno-altaysk",
+        "type": "city",
+        "href": "/regions/gorno-altaysk"
+      },
+      "company": "ЗАО ИК «ЮКАС-Холдинг»",
+      "industrySector": "Промышленная энергетика"
     },
     {
       "region": {
@@ -26689,6 +28590,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Технологии комфорта»",
       "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Рязанская область",
+        "slug": "ryazanskaya-oblast",
+        "href": "/regions/ryazan#ryazanskaya-oblast"
+      },
+      "settlement": {
+        "name": "Рязань",
+        "slug": "ryazan",
+        "type": "city",
+        "href": "/regions/ryazan"
+      },
+      "company": "ООО «СпецПромСнаб»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kpvu-1572x1572": [
@@ -26706,6 +28622,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СибПром»",
       "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
+        "name": "Республика Хакасия",
+        "slug": "respublika-khakasiya",
+        "href": "/regions/abakan#respublika-khakasiya"
+      },
+      "settlement": {
+        "name": "Саяногорск",
+        "slug": "sayanogorsk",
+        "type": "city",
+        "href": "/regions/abakan#sayanogorsk"
+      },
+      "company": "ООО «Саянцветметремонт»",
+      "industrySector": "Металлургия"
     }
   ],
   "kalorifer-kfb-14-p": [
@@ -27611,98 +29542,6 @@ export const productDeliveryRecords = {
       "industrySector": "Металлообработка"
     }
   ],
-  "kalorifer-kfb-10": [
-    {
-      "region": {
-        "name": "Кемеровская область",
-        "slug": "kemerovskaya-oblast",
-        "href": "/regions/kemerovo#kemerovskaya-oblast"
-      },
-      "settlement": {
-        "name": "Кемерово",
-        "slug": "kemerovo",
-        "type": "city",
-        "href": "/regions/kemerovo"
-      },
-      "company": "ООО ТД «СДС-Трейд»",
-      "industrySector": "Добывающая отрасль"
-    },
-    {
-      "region": {
-        "name": "Кемеровская область",
-        "slug": "kemerovskaya-oblast",
-        "href": "/regions/kemerovo#kemerovskaya-oblast"
-      },
-      "settlement": {
-        "name": "Киселевск",
-        "slug": "kiselevsk",
-        "type": "city",
-        "href": "/regions/kemerovo#kiselevsk"
-      },
-      "company": "ООО «Обогатительная фабрика «Каро»",
-      "industrySector": "Горнодобывающая пром-ть"
-    },
-    {
-      "region": {
-        "name": "Красноярский край",
-        "slug": "krasnoyarsky-kray",
-        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
-      },
-      "settlement": {
-        "name": "Красноярск",
-        "slug": "krasnoyarsk",
-        "type": "city",
-        "href": "/regions/krasnoyarsk"
-      },
-      "company": "ООО «Сибирское промышленное оборудование»",
-      "industrySector": "Вентиляция/Монтаж"
-    },
-    {
-      "region": {
-        "name": "Московская область",
-        "slug": "moskovskaya-oblast",
-        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
-      },
-      "settlement": {
-        "name": "Москва",
-        "slug": "moskva",
-        "type": "city",
-        "href": "/regions/moskovskaya-oblast"
-      },
-      "company": "ООО «Упак-Мол»",
-      "industrySector": "Машиностроение"
-    },
-    {
-      "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
-      },
-      "settlement": {
-        "name": "Бердск",
-        "slug": "berdsk",
-        "type": "city",
-        "href": null
-      },
-      "company": "ООО «Представительство «Машзавод № 1»",
-      "industrySector": "Тяжелое машиностроение"
-    },
-    {
-      "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
-      },
-      "settlement": {
-        "name": "Новосибирск",
-        "slug": "novosibirsk",
-        "type": "city",
-        "href": "/regions/novosibirsk"
-      },
-      "company": "ООО «СибПромКомплект»",
-      "industrySector": "Металлообработка"
-    }
-  ],
   "ustanovka-sfotc-160": [
     {
       "region": {
@@ -27731,7 +29570,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/kemerovo#novokuznetsk"
       },
-      "company": "ООО «ПК «Кузнецкий цементный завод»",
+      "company": "ООО «Кузнецкий цементный завод»",
       "industrySector": "Строительный сектор"
     },
     {
@@ -27885,6 +29724,53 @@ export const productDeliveryRecords = {
       "industrySector": "Строительный сектор"
     }
   ],
+  "kpvu-845x845": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Киселевск",
+        "slug": "kiselevsk",
+        "type": "city",
+        "href": "/regions/kemerovo#kiselevsk"
+      },
+      "company": "ООО «Вахрушевец»",
+      "industrySector": "Агропромышленный комплекс"
+    },
+    {
+      "region": {
+        "name": "Ленинградская область",
+        "slug": "leningradskaya-oblast",
+        "href": "/regions/sankt-peterburg#leningradskaya-oblast"
+      },
+      "settlement": {
+        "name": "Санкт-Петербург",
+        "slug": "sankt-peterburg",
+        "type": "city",
+        "href": "/regions/sankt-peterburg"
+      },
+      "company": "ООО «Альянс Импэкс»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Межрегиональное объединение Аргумент»",
+      "industrySector": "Логистика и транспорт"
+    }
+  ],
   "kalorifer-ksk-2-2": [
     {
       "region": {
@@ -27918,6 +29804,36 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Республика Татарстан",
+        "slug": "respublika-tatarstan",
+        "href": "/regions/kazan#respublika-tatarstan"
+      },
+      "settlement": {
+        "name": "Лениногорск",
+        "slug": "leninogorsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Экосистемы»",
+      "industrySector": "Экология и очистка"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Новотех»",
+      "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
         "name": "Ульяновская область",
         "slug": "ulyanovskaya-oblast",
         "href": "/regions/ulyanovsk#ulyanovskaya-oblast"
@@ -27930,6 +29846,162 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «ПКП ИВ»",
       "industrySector": "Легкая промышленность"
+    },
+    {
+      "region": {
+        "name": "Челябинская область",
+        "slug": "chelyabinskaya-oblast",
+        "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
+      },
+      "settlement": {
+        "name": "Магнитогорск",
+        "slug": "magnitogorsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «МСК»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
+  "kppu-708x708": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ленинск-Кузнецкий",
+        "slug": "leninsk-kuznetsky",
+        "type": "city",
+        "href": "/regions/kemerovo#leninsk-kuznetsky"
+      },
+      "company": "ОАО «Горэлектротранспорт города Ленинска-Кузнецкого»",
+      "industrySector": "Транспортная инфраструктура"
+    },
+    {
+      "region": {
+        "name": "Краснодарский край",
+        "slug": "krasnodarsky-kray",
+        "href": "/regions/krasnodar#krasnodarsky-kray"
+      },
+      "settlement": {
+        "name": "Северская",
+        "slug": "severskaya",
+        "type": "settlement",
+        "href": null
+      },
+      "company": "ООО «НАМА»",
+      "industrySector": "Пищевая промышленность"
+    },
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Родники",
+        "slug": "rodniki",
+        "type": "village",
+        "href": null
+      },
+      "company": "ЗАО «Разрез Березовский»",
+      "industrySector": "Добывающая отрасль"
+    }
+  ],
+  "kpvu-1163x1163": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ленинск-Кузнецкий",
+        "slug": "leninsk-kuznetsky",
+        "type": "city",
+        "href": "/regions/kemerovo#leninsk-kuznetsky"
+      },
+      "company": "ОАО «ГЭТ Ленинска-Кузнецкого»",
+      "industrySector": "Транспортная инфраструктура"
+    }
+  ],
+  "kalorifer-kpsk-2-4": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ленинск-Кузнецкий",
+        "slug": "leninsk-kuznetsky",
+        "type": "city",
+        "href": "/regions/kemerovo#leninsk-kuznetsky"
+      },
+      "company": "ООО «Сиб-Дамель»",
+      "industrySector": "Тяжелое машиностроение"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «ЕвразСервис-Сибирь»",
+      "industrySector": "Вентиляция/Отопление"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «СибТепло»",
+      "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
+        "name": "Новосибирская область",
+        "slug": "novosibirskaya-oblast",
+        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новосибирск",
+        "slug": "novosibirsk",
+        "type": "city",
+        "href": "/regions/novosibirsk"
+      },
+      "company": "ООО УПК «Армаком»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Псковская область",
+        "slug": "pskovskaya-oblast",
+        "href": "/regions/pskov#pskovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Псков",
+        "slug": "pskov",
+        "type": "city",
+        "href": "/regions/pskov"
+      },
+      "company": "ООО «ПО НПН»",
+      "industrySector": "Тяжелое машиностроение"
     }
   ],
   "kalorifer-kfb-4-a3": [
@@ -28135,6 +30207,87 @@ export const productDeliveryRecords = {
       "industrySector": "Производство стройматериалов"
     }
   ],
+  "kppu-1345x1345": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ЗАО НПП «Сибэкотехника»",
+      "industrySector": "Тяжелое машиностроение"
+    }
+  ],
+  "kpvs-655x655": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "АО «НХС»",
+      "industrySector": "Производство нефтепродуктов"
+    },
+    {
+      "region": {
+        "name": "Тюменская область",
+        "slug": "tyumenskaya-oblast",
+        "href": "/regions/tyumen#tyumenskaya-oblast"
+      },
+      "settlement": {
+        "name": "Тюмень",
+        "slug": "tyumen",
+        "type": "city",
+        "href": "/regions/tyumen"
+      },
+      "company": "ООО ПКФ «Аква-Т»",
+      "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
+  "kpvs-989x989": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "Муниципальное трамвайное предприятие № 1",
+      "industrySector": "Транспортная инфраструктура"
+    },
+    {
+      "region": {
+        "name": "Самарская область",
+        "slug": "samarskaya-oblast",
+        "href": "/regions/samara#samarskaya-oblast"
+      },
+      "settlement": {
+        "name": "Самара",
+        "slug": "samara",
+        "type": "city",
+        "href": "/regions/samara"
+      },
+      "company": "ООО «Стройсервис»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
   "agregat-ao2-5-ksk4-vozdushniy-parovoy": [
     {
       "region": {
@@ -28165,6 +30318,499 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Завод БМК Энерголидер»",
       "industrySector": "Промышленная энергетика"
+    }
+  ],
+  "kpps-739x739": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ОАО «Новокузнецкий металлургический комбинат»",
+      "industrySector": "Металлургия"
+    }
+  ],
+  "kalorifer-kpsk-2-3": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Боровково»",
+      "industrySector": "Пищевая промышленность"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «ЕвразСервис-Сибирь»",
+      "industrySector": "Вентиляция/Отопление"
+    },
+    {
+      "region": {
+        "name": "Кировская область",
+        "slug": "kirovskaya-oblast",
+        "href": "/regions/kirov#kirovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Киров",
+        "slug": "kirov",
+        "type": "city",
+        "href": "/regions/kirov"
+      },
+      "company": "ООО «Анион»",
+      "industrySector": "Химическая промышленность"
+    },
+    {
+      "region": {
+        "name": "Новосибирская область",
+        "slug": "novosibirskaya-oblast",
+        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новосибирск",
+        "slug": "novosibirsk",
+        "type": "city",
+        "href": "/regions/novosibirsk"
+      },
+      "company": "ООО «СибПромКомплект»",
+      "industrySector": "Металлообработка"
+    }
+  ],
+  "kalorifer-kpsk-2-5": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Боровково»",
+      "industrySector": "Пищевая промышленность"
+    },
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «СибТепло»",
+      "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
+        "name": "Новосибирская область",
+        "slug": "novosibirskaya-oblast",
+        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новосибирск",
+        "slug": "novosibirsk",
+        "type": "city",
+        "href": "/regions/novosibirsk"
+      },
+      "company": "ООО «ТЭК»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Хабаровский край",
+        "slug": "khabarovsky-kray",
+        "href": "/regions/khabarovsk#khabarovsky-kray"
+      },
+      "settlement": {
+        "name": "Хабаровск",
+        "slug": "khabarovsk",
+        "type": "city",
+        "href": "/regions/khabarovsk"
+      },
+      "company": "ООО «ДКК»",
+      "industrySector": "Приборостроение и электротехника"
+    }
+  ],
+  "kalorifer-kfb-3": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Компания «Системы Вентиляции»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Московская область",
+        "slug": "moskovskaya-oblast",
+        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Москва",
+        "slug": "moskva",
+        "type": "city",
+        "href": "/regions/moskovskaya-oblast"
+      },
+      "company": "ООО «Управляющая Компания Регион Климат»",
+      "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
+  "kpps-822x822": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Переработка»",
+      "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "АО «Аграрная Группа МП»",
+      "industrySector": "Агропромышленный комплекс"
+    },
+    {
+      "region": {
+        "name": "ХМАО-Югра",
+        "slug": "khmao-yugra",
+        "href": "/regions/surgut#khmao-yugra"
+      },
+      "settlement": {
+        "name": "Нефтеюганск",
+        "slug": "nefteyugansk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «СеверПромАльянс»",
+      "industrySector": "Нефтегазовый сектор"
+    },
+    {
+      "region": {
+        "name": "Ярославская область",
+        "slug": "yaroslavskaya-oblast",
+        "href": "/regions/yaroslavl#yaroslavskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ярославль",
+        "slug": "yaroslavl",
+        "type": "city",
+        "href": "/regions/yaroslavl"
+      },
+      "company": "ООО «Симметрия»",
+      "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
+  "kppu-1526x1526": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Компания «Фортек»",
+      "industrySector": "Промышленное снабжение"
+    }
+  ],
+  "kpvs-1114x1114": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Кузнецкий цементный завод»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Краснодарский край",
+        "slug": "krasnodarsky-kray",
+        "href": "/regions/krasnodar#krasnodarsky-kray"
+      },
+      "settlement": {
+        "name": "Новороссийск",
+        "slug": "novorossiysk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Полимерактив»",
+      "industrySector": "Химическая промышленность"
+    }
+  ],
+  "kpvu-1117x1117": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Ремспецстрой»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
+  "kpvu-1299x1299": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «СМЦ»",
+      "industrySector": "Ремонт машин и оборудования"
+    },
+    {
+      "region": {
+        "name": "Ярославская область",
+        "slug": "yaroslavskaya-oblast",
+        "href": "/regions/yaroslavl#yaroslavskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ярославль",
+        "slug": "yaroslavl",
+        "type": "city",
+        "href": "/regions/yaroslavl"
+      },
+      "company": "ООО «Аквапарк»",
+      "industrySector": "Здравоохранение и туризм"
+    }
+  ],
+  "kppu-981x981": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «ТД КузбассЭлектромаш-Сервис»",
+      "industrySector": "Промышленное снабжение"
+    }
+  ],
+  "kpps-905x905": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Сити-сервис НК»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
+  "kppu-663x663": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО «Сибтрансмет»",
+      "industrySector": "Логистика и транспорт"
+    },
+    {
+      "region": {
+        "name": "Кировская область",
+        "slug": "kirovskaya-oblast",
+        "href": "/regions/kirov#kirovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Киров",
+        "slug": "kirov",
+        "type": "city",
+        "href": "/regions/kirov"
+      },
+      "company": "ООО «Агрострой»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
+  "kalorifer-kfb-2-a3": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО ТПК «Инвест-Строй»",
+      "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
+        "name": "Ленинградская область",
+        "slug": "leningradskaya-oblast",
+        "href": "/regions/sankt-peterburg#leningradskaya-oblast"
+      },
+      "settlement": {
+        "name": "Санкт-Петербург",
+        "slug": "sankt-peterburg",
+        "type": "city",
+        "href": "/regions/sankt-peterburg"
+      },
+      "company": "ООО «ДАДЛ»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Московская область",
+        "slug": "moskovskaya-oblast",
+        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Видное",
+        "slug": "vidnoe",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Комплекс-Инжиниринг»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Республика Хакасия",
+        "slug": "respublika-khakasiya",
+        "href": "/regions/abakan#respublika-khakasiya"
+      },
+      "settlement": {
+        "name": "Абакан",
+        "slug": "abakan",
+        "type": "city",
+        "href": "/regions/abakan"
+      },
+      "company": "ООО «Промснаб»",
+      "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
+  "kalorifer-kfb-4": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новокузнецк",
+        "slug": "novokuznetsk",
+        "type": "city",
+        "href": "/regions/kemerovo#novokuznetsk"
+      },
+      "company": "ООО ТПК «Инвест-Строй»",
+      "industrySector": "Промышленное снабжение"
+    },
+    {
+      "region": {
+        "name": "Новосибирская область",
+        "slug": "novosibirskaya-oblast",
+        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новосибирск",
+        "slug": "novosibirsk",
+        "type": "city",
+        "href": "/regions/novosibirsk"
+      },
+      "company": "ООО УПК «Армаком»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kalorifer-ksk-2-3": [
@@ -28244,36 +30890,70 @@ export const productDeliveryRecords = {
       "industrySector": "Тяжелое машиностроение"
     }
   ],
-  "kalorifer-kpsk-2-3": [
+  "kpvu-754x754": [
     {
       "region": {
-        "name": "Кировская область",
-        "slug": "kirovskaya-oblast",
-        "href": "/regions/kirov#kirovskaya-oblast"
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
       },
       "settlement": {
-        "name": "Киров",
-        "slug": "kirov",
+        "name": "Прокопьевск",
+        "slug": "prokopevsk",
         "type": "city",
-        "href": "/regions/kirov"
+        "href": "/regions/kemerovo#prokopevsk"
       },
-      "company": "ООО «Анион»",
-      "industrySector": "Химическая промышленность"
+      "company": "ООО «Квадро групп»",
+      "industrySector": "Вентиляция/Монтаж"
     },
     {
       "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+        "name": "Республика Коми",
+        "slug": "respublika-komi",
+        "href": "/regions/syktyvkar#respublika-komi"
       },
       "settlement": {
-        "name": "Новосибирск",
-        "slug": "novosibirsk",
+        "name": "Сыктывкар",
+        "slug": "syktyvkar",
         "type": "city",
-        "href": "/regions/novosibirsk"
+        "href": "/regions/syktyvkar"
       },
-      "company": "ООО «СибПромКомплект»",
-      "industrySector": "Металлообработка"
+      "company": "ООО «Горстрой»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
+  "kppu-1390x1390": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Каракан",
+        "slug": "karakan",
+        "type": "village",
+        "href": null
+      },
+      "company": "ООО «Разрез Пермяковский»",
+      "industrySector": "Добывающая отрасль"
+    }
+  ],
+  "kppu-1435x1435": [
+    {
+      "region": {
+        "name": "Кемеровская область",
+        "slug": "kemerovskaya-oblast",
+        "href": "/regions/kemerovo#kemerovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Сидорово",
+        "slug": "sidorovo",
+        "type": "village",
+        "href": null
+      },
+      "company": "ООО «Адамант»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kalorifer-kfb-2-p": [
@@ -28291,6 +30971,68 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Венткиров»",
       "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Ростовская область",
+        "slug": "rostovskaya-oblast",
+        "href": "/regions/rostov-na-donu#rostovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Белая Калитва",
+        "slug": "belaya-kalitva",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Продконтактинвест»",
+      "industrySector": "Пищевая промышленность"
+    }
+  ],
+  "kppu-572x572": [
+    {
+      "region": {
+        "name": "Кировская область",
+        "slug": "kirovskaya-oblast",
+        "href": "/regions/kirov#kirovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Кирово-Чепецк",
+        "slug": "kirovo-chepetsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Спецмонтаж»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Пермский край",
+        "slug": "permsky-kray",
+        "href": "/regions/perm#permsky-kray"
+      },
+      "settlement": {
+        "name": "Пермь",
+        "slug": "perm",
+        "type": "city",
+        "href": "/regions/perm"
+      },
+      "company": "ООО «НГЭС»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Тульская область",
+        "slug": "tulskaya-oblast",
+        "href": "/regions/tula#tulskaya-oblast"
+      },
+      "settlement": {
+        "name": "Белев",
+        "slug": "belev",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Белевский консервный завод»",
+      "industrySector": "Пищевая промышленность"
     }
   ],
   "kppu-799x799": [
@@ -28355,6 +31097,68 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СибПромКомплект»",
       "industrySector": "Металлообработка"
+    },
+    {
+      "region": {
+        "name": "Ульяновская область",
+        "slug": "ulyanovskaya-oblast",
+        "href": "/regions/ulyanovsk#ulyanovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ульяновск",
+        "slug": "ulyanovsk",
+        "type": "city",
+        "href": "/regions/ulyanovsk"
+      },
+      "company": "ООО «МТК Групп»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
+  "kpvu-572x572": [
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Ачинск",
+        "slug": "achinsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «ЮИИ-Сибирь»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Республика Бурятия",
+        "slug": "respublika-buryatiya",
+        "href": "/regions/ulan-ude#respublika-buryatiya"
+      },
+      "settlement": {
+        "name": "Саган-Нур",
+        "slug": "sagan-nur",
+        "type": "settlement",
+        "href": null
+      },
+      "company": "ОАО «Разрез Тугнуйский»",
+      "industrySector": "Добывающая отрасль"
+    },
+    {
+      "region": {
+        "name": "Республика Коми",
+        "slug": "respublika-komi",
+        "href": "/regions/syktyvkar#respublika-komi"
+      },
+      "settlement": {
+        "name": "Сыктывкар",
+        "slug": "syktyvkar",
+        "type": "city",
+        "href": "/regions/syktyvkar"
+      },
+      "company": "ООО «Сантехстройком»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kalorifer-kpsk-2-7": [
@@ -28386,6 +31190,21 @@ export const productDeliveryRecords = {
         "href": "/regions/novosibirsk"
       },
       "company": "ООО «Спецстрой»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Северск",
+        "slug": "seversk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «УК «Техсервис»",
       "industrySector": "Строительный сектор"
     }
   ],
@@ -28483,6 +31302,23 @@ export const productDeliveryRecords = {
       "industrySector": "Металлообработка"
     }
   ],
+  "kpps-1155x1155": [
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Красноярск",
+        "slug": "krasnoyarsk",
+        "type": "city",
+        "href": "/regions/krasnoyarsk"
+      },
+      "company": "ООО «Красспецкомплект»",
+      "industrySector": "Металлообработка"
+    }
+  ],
   "agregat-ao2-25-ksk3-vozdushniy-parovoy": [
     {
       "region": {
@@ -28513,6 +31349,70 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Торговый дом»",
       "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
+  "kpps-1114x1114": [
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Красноярск",
+        "slug": "krasnoyarsk",
+        "type": "city",
+        "href": "/regions/krasnoyarsk"
+      },
+      "company": "ООО «Нортес»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
+  "kpvs-739x739": [
+    {
+      "region": {
+        "name": "Красноярский край",
+        "slug": "krasnoyarsky-kray",
+        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
+      },
+      "settlement": {
+        "name": "Красноярск",
+        "slug": "krasnoyarsk",
+        "type": "city",
+        "href": "/regions/krasnoyarsk"
+      },
+      "company": "ООО «СТС»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Московская область",
+        "slug": "moskovskaya-oblast",
+        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Москва",
+        "slug": "moskva",
+        "type": "city",
+        "href": "/regions/moskovskaya-oblast"
+      },
+      "company": "ЗАО «Энергокомплектоборудование»",
+      "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Нижегородская область",
+        "slug": "nizhegorodskaya-oblast",
+        "href": "/regions/nizhny-novgorod#nizhegorodskaya-oblast"
+      },
+      "settlement": {
+        "name": "Нижний Новгород",
+        "slug": "nizhny-novgorod",
+        "type": "city",
+        "href": "/regions/nizhny-novgorod"
+      },
+      "company": "ГП НО «Нижегородпассажиравтотранс»",
+      "industrySector": "Транспортная инфраструктура"
     }
   ],
   "kalorifer-kfb-9": [
@@ -28562,53 +31462,6 @@ export const productDeliveryRecords = {
       "industrySector": "Промышленная энергетика"
     }
   ],
-  "kalorifer-kpsk-4-4": [
-    {
-      "region": {
-        "name": "Красноярский край",
-        "slug": "krasnoyarsky-kray",
-        "href": "/regions/krasnoyarsk#krasnoyarsky-kray"
-      },
-      "settlement": {
-        "name": "Красноярск",
-        "slug": "krasnoyarsk",
-        "type": "city",
-        "href": "/regions/krasnoyarsk"
-      },
-      "company": "ООО «ТИЭС»",
-      "industrySector": "Промышленная энергетика"
-    },
-    {
-      "region": {
-        "name": "Московская область",
-        "slug": "moskovskaya-oblast",
-        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
-      },
-      "settlement": {
-        "name": "Балашиха",
-        "slug": "balashikha",
-        "type": "city",
-        "href": null
-      },
-      "company": "ОАО АК «Рубин»",
-      "industrySector": "Тяжелое машиностроение"
-    },
-    {
-      "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
-      },
-      "settlement": {
-        "name": "Новосибирск",
-        "slug": "novosibirsk",
-        "type": "city",
-        "href": "/regions/novosibirsk"
-      },
-      "company": "ООО «СибПромКомплект»",
-      "industrySector": "Металлообработка"
-    }
-  ],
   "kppu-1572x1572": [
     {
       "region": {
@@ -28626,21 +31479,66 @@ export const productDeliveryRecords = {
       "industrySector": "Строительный сектор"
     }
   ],
-  "kpvu-845x845": [
+  "kalorifer-kpsk-2-8": [
     {
       "region": {
-        "name": "Ленинградская область",
-        "slug": "leningradskaya-oblast",
-        "href": "/regions/sankt-peterburg#leningradskaya-oblast"
+        "name": "Курская область",
+        "slug": "kurskaya-oblast",
+        "href": "/regions/kursk#kurskaya-oblast"
       },
       "settlement": {
-        "name": "Санкт-Петербург",
-        "slug": "sankt-peterburg",
+        "name": "Курск",
+        "slug": "kursk",
         "type": "city",
-        "href": "/regions/sankt-peterburg"
+        "href": "/regions/kursk"
       },
-      "company": "ООО «Альянс Импэкс»",
+      "company": "ООО «Кварта-Л»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Новосибирская область",
+        "slug": "novosibirskaya-oblast",
+        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+      },
+      "settlement": {
+        "name": "Новосибирск",
+        "slug": "novosibirsk",
+        "type": "city",
+        "href": "/regions/novosibirsk"
+      },
+      "company": "ООО «Райвл-НСК»",
+      "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
+        "name": "Саратовская область",
+        "slug": "saratovskaya-oblast",
+        "href": "/regions/saratov#saratovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Саратов",
+        "slug": "saratov",
+        "type": "city",
+        "href": "/regions/saratov"
+      },
+      "company": "ООО «Промресурс»",
       "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «ТК СПК»",
+      "industrySector": "Металлообработка"
     }
   ],
   "kpvu-1208x1208": [
@@ -28675,38 +31573,6 @@ export const productDeliveryRecords = {
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
-  "kalorifer-kfb-2-a3": [
-    {
-      "region": {
-        "name": "Ленинградская область",
-        "slug": "leningradskaya-oblast",
-        "href": "/regions/sankt-peterburg#leningradskaya-oblast"
-      },
-      "settlement": {
-        "name": "Санкт-Петербург",
-        "slug": "sankt-peterburg",
-        "type": "city",
-        "href": "/regions/sankt-peterburg"
-      },
-      "company": "ООО «ДАДЛ»",
-      "industrySector": "Строительный сектор"
-    },
-    {
-      "region": {
-        "name": "Московская область",
-        "slug": "moskovskaya-oblast",
-        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
-      },
-      "settlement": {
-        "name": "Видное",
-        "slug": "vidnoe",
-        "type": "city",
-        "href": null
-      },
-      "company": "ООО «Комплекс-Инжиниринг»",
-      "industrySector": "Вентиляция/Монтаж"
-    }
-  ],
   "kpps-1072x1072": [
     {
       "region": {
@@ -28722,23 +31588,6 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Орто.Ник»",
       "industrySector": "Медицинская промышленность"
-    }
-  ],
-  "kpps-780x780": [
-    {
-      "region": {
-        "name": "Ленинградская область",
-        "slug": "leningradskaya-oblast",
-        "href": "/regions/sankt-peterburg#leningradskaya-oblast"
-      },
-      "settlement": {
-        "name": "Санкт-Петербург",
-        "slug": "sankt-peterburg",
-        "type": "city",
-        "href": "/regions/sankt-peterburg"
-      },
-      "company": "ООО «ПроТехно»",
-      "industrySector": "Машиностроение"
     }
   ],
   "kalorifer-kfb-3-a4": [
@@ -28771,6 +31620,36 @@ export const productDeliveryRecords = {
       },
       "company": "ООО ТД «ЗНВИ»",
       "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "Республика Хакасия",
+        "slug": "respublika-khakasiya",
+        "href": "/regions/abakan#respublika-khakasiya"
+      },
+      "settlement": {
+        "name": "Абакан",
+        "slug": "abakan",
+        "type": "city",
+        "href": "/regions/abakan"
+      },
+      "company": "ООО «Тепломонтаж»",
+      "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Ростовская область",
+        "slug": "rostovskaya-oblast",
+        "href": "/regions/rostov-na-donu#rostovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Батайск",
+        "slug": "bataysk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Водогазсервис»",
+      "industrySector": "ЖКХ и теплосети"
     }
   ],
   "kpvs-864x864": [
@@ -28854,38 +31733,6 @@ export const productDeliveryRecords = {
       "industrySector": "Текстильная промышленность"
     }
   ],
-  "kpvs-739x739": [
-    {
-      "region": {
-        "name": "Московская область",
-        "slug": "moskovskaya-oblast",
-        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
-      },
-      "settlement": {
-        "name": "Москва",
-        "slug": "moskva",
-        "type": "city",
-        "href": "/regions/moskovskaya-oblast"
-      },
-      "company": "ЗАО «Энергокомплектоборудование»",
-      "industrySector": "Промышленная энергетика"
-    },
-    {
-      "region": {
-        "name": "Нижегородская область",
-        "slug": "nizhegorodskaya-oblast",
-        "href": "/regions/nizhny-novgorod#nizhegorodskaya-oblast"
-      },
-      "settlement": {
-        "name": "Нижний Новгород",
-        "slug": "nizhny-novgorod",
-        "type": "city",
-        "href": "/regions/nizhny-novgorod"
-      },
-      "company": "ГП НО «Нижегородпассажиравтотранс»",
-      "industrySector": "Транспортная инфраструктура"
-    }
-  ],
   "kalorifer-kfb-7": [
     {
       "region": {
@@ -28916,23 +31763,6 @@ export const productDeliveryRecords = {
       },
       "company": "ОАО «Уралкуз»",
       "industrySector": "Металлургия"
-    }
-  ],
-  "kalorifer-kfb-3": [
-    {
-      "region": {
-        "name": "Московская область",
-        "slug": "moskovskaya-oblast",
-        "href": "/regions/moskovskaya-oblast#moskovskaya-oblast"
-      },
-      "settlement": {
-        "name": "Москва",
-        "slug": "moskva",
-        "type": "city",
-        "href": "/regions/moskovskaya-oblast"
-      },
-      "company": "ООО «Управляющая Компания Регион Климат»",
-      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "agregat-ao2-15-ksk4-vozdushniy-parovoy": [
@@ -29111,6 +31941,36 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Приморский край",
+        "slug": "primorsky-kray",
+        "href": "/regions/vladivostok#primorsky-kray"
+      },
+      "settlement": {
+        "name": "Находка",
+        "slug": "nakhodka",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «СК Портовый Флот»",
+      "industrySector": "Логистика и транспорт"
+    },
+    {
+      "region": {
+        "name": "Республика Татарстан",
+        "slug": "respublika-tatarstan",
+        "href": "/regions/kazan#respublika-tatarstan"
+      },
+      "settlement": {
+        "name": "Казань",
+        "slug": "kazan",
+        "type": "city",
+        "href": "/regions/kazan"
+      },
+      "company": "ООО «ТД Белохолуницксервис»",
+      "industrySector": "Тяжелое машиностроение"
+    },
+    {
+      "region": {
         "name": "Республика Татарстан",
         "slug": "respublika-tatarstan",
         "href": "/regions/kazan#respublika-tatarstan"
@@ -29123,6 +31983,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Экосистемы»",
       "industrySector": "Экология и очистка"
+    },
+    {
+      "region": {
+        "name": "Хабаровский край",
+        "slug": "khabarovsky-kray",
+        "href": "/regions/khabarovsk#khabarovsky-kray"
+      },
+      "settlement": {
+        "name": "Хабаровск",
+        "slug": "khabarovsk",
+        "type": "city",
+        "href": "/regions/khabarovsk"
+      },
+      "company": "ООО «Актив-Строй»",
+      "industrySector": "Строительный сектор"
     },
     {
       "region": {
@@ -29155,6 +32030,81 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Лаукар Сибирь»",
       "industrySector": "Вентиляция/Монтаж"
+    },
+    {
+      "region": {
+        "name": "Республика Хакасия",
+        "slug": "respublika-khakasiya",
+        "href": "/regions/abakan#respublika-khakasiya"
+      },
+      "settlement": {
+        "name": "Абакан",
+        "slug": "abakan",
+        "type": "city",
+        "href": "/regions/abakan"
+      },
+      "company": "ООО «Теплосервис»",
+      "industrySector": "ЖКХ и теплосети"
+    },
+    {
+      "region": {
+        "name": "Ставропольский край",
+        "slug": "stavropolsky-kray",
+        "href": "/regions/stavropol#stavropolsky-kray"
+      },
+      "settlement": {
+        "name": "Невинномысск",
+        "slug": "nevinnomyssk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «Депо-ЕвроХим»",
+      "industrySector": "Тяжелое машиностроение"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Новотех»",
+      "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
+        "name": "Челябинская область",
+        "slug": "chelyabinskaya-oblast",
+        "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
+      },
+      "settlement": {
+        "name": "Челябинск",
+        "slug": "chelyabinsk",
+        "type": "city",
+        "href": "/regions/chelyabinsk"
+      },
+      "company": "ООО «Объединение «Союзпищепром»",
+      "industrySector": "Пищевая промышленность"
+    },
+    {
+      "region": {
+        "name": "Ярославская область",
+        "slug": "yaroslavskaya-oblast",
+        "href": "/regions/yaroslavl#yaroslavskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ярославль",
+        "slug": "yaroslavl",
+        "type": "city",
+        "href": "/regions/yaroslavl"
+      },
+      "company": "ООО «Траверс»",
+      "industrySector": "Металлообработка"
     }
   ],
   "kalorifer-ksk-3-3": [
@@ -29190,6 +32140,36 @@ export const productDeliveryRecords = {
     },
     {
       "region": {
+        "name": "Ростовская область",
+        "slug": "rostovskaya-oblast",
+        "href": "/regions/rostov-na-donu#rostovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Шахты",
+        "slug": "shakhty",
+        "type": "city",
+        "href": null
+      },
+      "company": "ЗАО «Шахтинский АРЗ ДОСААФ»",
+      "industrySector": "Транспортное машиностроение"
+    },
+    {
+      "region": {
+        "name": "Саратовская область",
+        "slug": "saratovskaya-oblast",
+        "href": "/regions/saratov#saratovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Калининск",
+        "slug": "kalininsk",
+        "type": "city",
+        "href": null
+      },
+      "company": "АО «Агрокомплекс «Калининский»",
+      "industrySector": "Агропромышленный комплекс"
+    },
+    {
+      "region": {
         "name": "Томская область",
         "slug": "tomskaya-oblast",
         "href": "/regions/tomsk#tomskaya-oblast"
@@ -29202,23 +32182,36 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «ФальКО»",
       "industrySector": "Металлообработка"
-    }
-  ],
-  "kalorifer-kpsk-2-8": [
+    },
     {
       "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+        "name": "Тульская область",
+        "slug": "tulskaya-oblast",
+        "href": "/regions/tula#tulskaya-oblast"
       },
       "settlement": {
-        "name": "Новосибирск",
-        "slug": "novosibirsk",
+        "name": "Тула",
+        "slug": "tula",
         "type": "city",
-        "href": "/regions/novosibirsk"
+        "href": "/regions/tula"
       },
-      "company": "ООО «Райвл-НСК»",
-      "industrySector": "Машиностроение"
+      "company": "ЗАО «Индустрия Сервис»",
+      "industrySector": "Тяжелое машиностроение"
+    },
+    {
+      "region": {
+        "name": "Челябинская область",
+        "slug": "chelyabinskaya-oblast",
+        "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
+      },
+      "settlement": {
+        "name": "Челябинск",
+        "slug": "chelyabinsk",
+        "type": "city",
+        "href": "/regions/chelyabinsk"
+      },
+      "company": "ООО «Транс МТС»",
+      "industrySector": "Логистика и транспорт"
     }
   ],
   "kalorifer-kpsk-3-3": [
@@ -29236,23 +32229,36 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «СибПромКомплект»",
       "industrySector": "Металлообработка"
-    }
-  ],
-  "kalorifer-kpsk-2-5": [
+    },
     {
       "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+        "name": "Хабаровский край",
+        "slug": "khabarovsky-kray",
+        "href": "/regions/khabarovsk#khabarovsky-kray"
       },
       "settlement": {
-        "name": "Новосибирск",
-        "slug": "novosibirsk",
+        "name": "Хабаровск",
+        "slug": "khabarovsk",
         "type": "city",
-        "href": "/regions/novosibirsk"
+        "href": "/regions/khabarovsk"
       },
-      "company": "ООО «ТЭК»",
-      "industrySector": "Промышленная энергетика"
+      "company": "ООО «Энерго учет»",
+      "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "Челябинская область",
+        "slug": "chelyabinskaya-oblast",
+        "href": "/regions/chelyabinsk#chelyabinskaya-oblast"
+      },
+      "settlement": {
+        "name": "Челябинск",
+        "slug": "chelyabinsk",
+        "type": "city",
+        "href": "/regions/chelyabinsk"
+      },
+      "company": "АО «Первый хлебокомбинат»",
+      "industrySector": "Пищевая промышленность"
     }
   ],
   "kalorifer-kpsk-2-9": [
@@ -29270,6 +32276,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «ТЭК»",
       "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Томск",
+        "slug": "tomsk",
+        "type": "city",
+        "href": "/regions/tomsk"
+      },
+      "company": "ООО «Луквис»",
+      "industrySector": "Вентиляция/Монтаж"
     },
     {
       "region": {
@@ -29302,6 +32323,36 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «ТЭК»",
       "industrySector": "Промышленная энергетика"
+    },
+    {
+      "region": {
+        "name": "Ульяновская область",
+        "slug": "ulyanovskaya-oblast",
+        "href": "/regions/ulyanovsk#ulyanovskaya-oblast"
+      },
+      "settlement": {
+        "name": "п. Кузоватово",
+        "slug": "p-kuzovatovo",
+        "type": "settlement",
+        "href": null
+      },
+      "company": "ООО «Стройизделия»",
+      "industrySector": "Строительный сектор"
+    },
+    {
+      "region": {
+        "name": "Хабаровский край",
+        "slug": "khabarovsky-kray",
+        "href": "/regions/khabarovsk#khabarovsky-kray"
+      },
+      "settlement": {
+        "name": "Хабаровск",
+        "slug": "khabarovsk",
+        "type": "city",
+        "href": "/regions/khabarovsk"
+      },
+      "company": "ООО «Рострейд»",
+      "industrySector": "Строительный сектор"
     }
   ],
   "kalorifer-kfb-13-p": [
@@ -29336,23 +32387,6 @@ export const productDeliveryRecords = {
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
-  "kalorifer-kpsk-2-4": [
-    {
-      "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
-      },
-      "settlement": {
-        "name": "Новосибирск",
-        "slug": "novosibirsk",
-        "type": "city",
-        "href": "/regions/novosibirsk"
-      },
-      "company": "ООО УПК «Армаком»",
-      "industrySector": "Вентиляция/Монтаж"
-    }
-  ],
   "kalorifer-kfb-2": [
     {
       "region": {
@@ -29368,40 +32402,21 @@ export const productDeliveryRecords = {
       },
       "company": "ООО УПК «Армаком»",
       "industrySector": "Вентиляция/Монтаж"
-    }
-  ],
-  "kalorifer-kfb-4": [
+    },
     {
       "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
+        "name": "Хабаровский край",
+        "slug": "khabarovsky-kray",
+        "href": "/regions/khabarovsk#khabarovsky-kray"
       },
       "settlement": {
-        "name": "Новосибирск",
-        "slug": "novosibirsk",
+        "name": "Комсомольск-на-Амуре",
+        "slug": "komsomolsk-na-amure",
         "type": "city",
-        "href": "/regions/novosibirsk"
-      },
-      "company": "ООО УПК «Армаком»",
-      "industrySector": "Вентиляция/Монтаж"
-    }
-  ],
-  "kpvs-822x822": [
-    {
-      "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
-      },
-      "settlement": {
-        "name": "Красный Яр",
-        "slug": "krasny-yar",
-        "type": "settlement",
         "href": null
       },
-      "company": "АО «Новосибирский КБК»",
-      "industrySector": "Целлюлозно-бумажная пром-сть"
+      "company": "ПАО «Амурский судостроительный завод»",
+      "industrySector": "Тяжелое машиностроение"
     }
   ],
   "kpps-1197x1197": [
@@ -29468,6 +32483,40 @@ export const productDeliveryRecords = {
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
+  "kpvu-981x981": [
+    {
+      "region": {
+        "name": "Пермский край",
+        "slug": "permsky-kray",
+        "href": "/regions/perm#permsky-kray"
+      },
+      "settlement": {
+        "name": "Пермь",
+        "slug": "perm",
+        "type": "city",
+        "href": "/regions/perm"
+      },
+      "company": "ЗАО «Энергомашкомплект»",
+      "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
+  "kppu-890x890": [
+    {
+      "region": {
+        "name": "Пермский край",
+        "slug": "permsky-kray",
+        "href": "/regions/perm#permsky-kray"
+      },
+      "settlement": {
+        "name": "Пермь",
+        "slug": "perm",
+        "type": "city",
+        "href": "/regions/perm"
+      },
+      "company": "ООО «21-ВЕК»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
   "agregat-ao2-20-ksk3-vozdushniy-parovoy": [
     {
       "region": {
@@ -29483,6 +32532,23 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Контакт-Оптима»",
       "industrySector": "Вентиляция/Монтаж"
+    }
+  ],
+  "kpvs-1280x1280": [
+    {
+      "region": {
+        "name": "Республика Башкортостан",
+        "slug": "respublika-bashkortostan",
+        "href": "/regions/ufa#respublika-bashkortostan"
+      },
+      "settlement": {
+        "name": "Уфа",
+        "slug": "ufa",
+        "type": "city",
+        "href": "/regions/ufa"
+      },
+      "company": "ООО «Авто Плюс»",
+      "industrySector": "Логистика и транспорт"
     }
   ],
   "agregat-ao2-15-ksk4-vozdushniy-vodyanoy": [
@@ -29532,70 +32598,6 @@ export const productDeliveryRecords = {
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
-  "kpvs-780x780": [
-    {
-      "region": {
-        "name": "Республика Карелия",
-        "slug": "respublika-kareliya",
-        "href": "/regions/petrozavodsk#respublika-kareliya"
-      },
-      "settlement": {
-        "name": "Пусунсаари",
-        "slug": "pusunsaari",
-        "type": "other",
-        "href": null
-      },
-      "company": "ООО «РК-Гранд»",
-      "industrySector": "Целлюлозно-бумажная пром-сть"
-    },
-    {
-      "region": {
-        "name": "Томская область",
-        "slug": "tomskaya-oblast",
-        "href": "/regions/tomsk#tomskaya-oblast"
-      },
-      "settlement": {
-        "name": "Томск",
-        "slug": "tomsk",
-        "type": "city",
-        "href": "/regions/tomsk"
-      },
-      "company": "ООО «НГК-Томск»",
-      "industrySector": "Нефтегазовый сектор"
-    },
-    {
-      "region": {
-        "name": "Ярославская область",
-        "slug": "yaroslavskaya-oblast",
-        "href": "/regions/yaroslavl#yaroslavskaya-oblast"
-      },
-      "settlement": {
-        "name": "Октябрьский",
-        "slug": "oktyabrsky",
-        "type": "settlement",
-        "href": null
-      },
-      "company": "АО «Ярославский бройлер»",
-      "industrySector": "Агропромышленный комплекс"
-    }
-  ],
-  "kpvu-572x572": [
-    {
-      "region": {
-        "name": "Республика Коми",
-        "slug": "respublika-komi",
-        "href": "/regions/syktyvkar#respublika-komi"
-      },
-      "settlement": {
-        "name": "Сыктывкар",
-        "slug": "syktyvkar",
-        "type": "city",
-        "href": "/regions/syktyvkar"
-      },
-      "company": "ООО «Сантехстройком»",
-      "industrySector": "Вентиляция/Монтаж"
-    }
-  ],
   "kalorifer-kfb-14": [
     {
       "region": {
@@ -29626,6 +32628,40 @@ export const productDeliveryRecords = {
       },
       "company": "АО «Ульяновский сахарный завод»",
       "industrySector": "Пищевая промышленность"
+    }
+  ],
+  "kppu-1481x1481": [
+    {
+      "region": {
+        "name": "Республика Хакасия",
+        "slug": "respublika-khakasiya",
+        "href": "/regions/abakan#respublika-khakasiya"
+      },
+      "settlement": {
+        "name": "Саяногорск",
+        "slug": "sayanogorsk",
+        "type": "city",
+        "href": "/regions/abakan#sayanogorsk"
+      },
+      "company": "ООО «НТП Саяногорск»",
+      "industrySector": "Машиностроение"
+    }
+  ],
+  "kpvs-1155x1155": [
+    {
+      "region": {
+        "name": "Ростовская область",
+        "slug": "rostovskaya-oblast",
+        "href": "/regions/rostov-na-donu#rostovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Ростов-на-Дону",
+        "slug": "rostov-na-donu",
+        "type": "city",
+        "href": "/regions/rostov-na-donu"
+      },
+      "company": "ООО «Комплект-Юг»",
+      "industrySector": "Вентиляция/Монтаж"
     }
   ],
   "kpvu-890x890": [
@@ -29677,7 +32713,7 @@ export const productDeliveryRecords = {
       "industrySector": "Тяжелое машиностроение"
     }
   ],
-  "kpvs-697x697": [
+  "kpps-864x864": [
     {
       "region": {
         "name": "Самарская область",
@@ -29685,27 +32721,12 @@ export const productDeliveryRecords = {
         "href": "/regions/samara#samarskaya-oblast"
       },
       "settlement": {
-        "name": "Тольятти",
-        "slug": "tolyatti",
+        "name": "Самара",
+        "slug": "samara",
         "type": "city",
-        "href": "/regions/samara#tolyatti"
+        "href": "/regions/samara"
       },
-      "company": "ООО «Системы ОВК»",
-      "industrySector": "Вентиляция/Монтаж"
-    },
-    {
-      "region": {
-        "name": "Свердловская область",
-        "slug": "sverdlovskaya-oblast",
-        "href": "/regions/ekaterinburg#sverdlovskaya-oblast"
-      },
-      "settlement": {
-        "name": "Екатеринбург",
-        "slug": "ekaterinburg",
-        "type": "city",
-        "href": "/regions/ekaterinburg"
-      },
-      "company": "ООО «Ктарос»",
+      "company": "ООО ТД «ПромСтройСнаб»",
       "industrySector": "Вентиляция/Монтаж"
     }
   ],
@@ -29741,6 +32762,36 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «МК «Технэкс»",
       "industrySector": "Машиностроение"
+    },
+    {
+      "region": {
+        "name": "Свердловская область",
+        "slug": "sverdlovskaya-oblast",
+        "href": "/regions/ekaterinburg#sverdlovskaya-oblast"
+      },
+      "settlement": {
+        "name": "Курьи",
+        "slug": "kuri",
+        "type": "village",
+        "href": null
+      },
+      "company": "ООО «Энергоавтоматика»",
+      "industrySector": "Приборостроение и электротехника"
+    },
+    {
+      "region": {
+        "name": "ХМАО-Югра",
+        "slug": "khmao-yugra",
+        "href": "/regions/surgut#khmao-yugra"
+      },
+      "settlement": {
+        "name": "Нефтеюганск",
+        "slug": "nefteyugansk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «СервисУралМонтаж»",
+      "industrySector": "Строительный сектор"
     }
   ],
   "kpvs-1572x1572": [
@@ -29807,6 +32858,23 @@ export const productDeliveryRecords = {
       "industrySector": "Промышленная энергетика"
     }
   ],
+  "kppu-845x845": [
+    {
+      "region": {
+        "name": "Томская область",
+        "slug": "tomskaya-oblast",
+        "href": "/regions/tomsk#tomskaya-oblast"
+      },
+      "settlement": {
+        "name": "Северск",
+        "slug": "seversk",
+        "type": "city",
+        "href": null
+      },
+      "company": "ООО «УК «Техсервис»",
+      "industrySector": "Строительный сектор"
+    }
+  ],
   "agregat-ao2-15-ksk3-vozdushniy-vodyanoy": [
     {
       "region": {
@@ -29837,6 +32905,23 @@ export const productDeliveryRecords = {
       },
       "company": "ООО «Тотал Авто»",
       "industrySector": "Логистика и транспорт"
+    }
+  ],
+  "kppu-1299x1299": [
+    {
+      "region": {
+        "name": "Хабаровский край",
+        "slug": "khabarovsky-kray",
+        "href": "/regions/khabarovsk#khabarovsky-kray"
+      },
+      "settlement": {
+        "name": "Хабаровск",
+        "slug": "khabarovsk",
+        "type": "city",
+        "href": "/regions/khabarovsk"
+      },
+      "company": "ООО «Газобетон ДВ»",
+      "industrySector": "Производство стройматериалов"
     }
   ],
   "kppu-1026x1026": [
@@ -30687,7 +33772,8 @@ export const productDeliveries = {
       "name": "Новокузнецк",
       "href": "/regions/kemerovo#novokuznetsk",
       "companies": [
-        "ООО «Кузнецкий цементный завод»"
+        "ООО «Кузнецкий цементный завод»",
+        "ООО «Ремспецстрой»"
       ]
     },
     {
@@ -30792,6 +33878,16 @@ export const productDeliveries = {
       "href": "/regions/tyumen",
       "companies": [
         "ПИИ ОАО «Газтурбосервис»"
+      ]
+    }
+  ],
+  "kpvs-1364x1364": [
+    {
+      "kind": "city",
+      "name": "Барнаул",
+      "href": "/regions/barnaul",
+      "companies": [
+        "АО ПО «Алтайский шинный комбинат»"
       ]
     }
   ],
@@ -31682,6 +34778,24 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kpvu-1345x1345": [
+    {
+      "kind": "city",
+      "name": "Барнаул",
+      "href": "/regions/barnaul",
+      "companies": [
+        "МУП «Горэлектротранс» Барнаула"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «СМЦ»"
+      ]
+    }
+  ],
   "kalorifer-tvv-309": [
     {
       "kind": "city",
@@ -32084,11 +35198,27 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast",
+      "companies": [
+        "ООО «Кузбассконсервмолоко»"
+      ]
+    },
+    {
       "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «СибПромРезина»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Приморский край",
+      "href": "/regions/vladivostok#primorsky-kray",
+      "companies": [
+        "ООО «Энерготехника»"
       ]
     },
     {
@@ -32859,6 +35989,14 @@ export const productDeliveries = {
       "companies": [
         "ООО ИЦ «Промэнерго»"
       ]
+    },
+    {
+      "kind": "region",
+      "name": "Челябинская область",
+      "href": "/regions/chelyabinsk#chelyabinskaya-oblast",
+      "companies": [
+        "ООО «Авто К»"
+      ]
     }
   ],
   "kalorifer-kpsk-3-11": [
@@ -33131,6 +36269,14 @@ export const productDeliveries = {
       "companies": [
         "ООО «Электроснаб НСК»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Таганрог",
+      "href": "/regions/rostov-na-donu#taganrog",
+      "companies": [
+        "ООО «Лугань»"
+      ]
     }
   ],
   "kalorifer-kpsk-4-6": [
@@ -33180,6 +36326,14 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «Райвл-НСК»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "АО «Сибирская Аграрная Группа Мясопереработка»"
       ]
     }
   ],
@@ -33317,7 +36471,8 @@ export const productDeliveries = {
       "name": "Екатеринбург",
       "href": "/regions/ekaterinburg",
       "companies": [
-        "ООО «Гранит-Урал»"
+        "ООО «Гранит-Урал»",
+        "ООО «Уральская производственная компания»"
       ]
     },
     {
@@ -33368,6 +36523,46 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «Лаукар Сибирь»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Горно-Алтайск",
+      "href": "/regions/gorno-altaysk",
+      "companies": [
+        "ООО «Металлургмонтаж»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Компания Буран»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Тюмень",
+      "href": "/regions/tyumen",
+      "companies": [
+        "ООО НПП «СГТ»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Хабаровск",
+      "href": "/regions/khabarovsk",
+      "companies": [
+        "ООО «Энергогидроснаб»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Сургут",
+      "href": "/regions/surgut#surgut",
+      "companies": [
+        "ООО «ГазЭнергоСтрой»"
       ]
     }
   ],
@@ -33485,6 +36680,22 @@ export const productDeliveries = {
       "companies": [
         "ООО «АЦ Евро-Империя»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Гринкоал»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Киров",
+      "href": "/regions/kirov",
+      "companies": [
+        "ООО «Регионтранскомплект»"
+      ]
     }
   ],
   "kpvu-617x617": [
@@ -33520,7 +36731,7 @@ export const productDeliveries = {
       "name": "Новокузнецк",
       "href": "/regions/kemerovo#novokuznetsk",
       "companies": [
-        "ОАО «ПАТП №1»"
+        "АО «ПАТП»"
       ]
     },
     {
@@ -33977,7 +37188,7 @@ export const productDeliveries = {
       "name": "Новокузнецк",
       "href": "/regions/kemerovo#novokuznetsk",
       "companies": [
-        "ООО «ПК «Кузнецкий цементный завод»"
+        "ООО «Кузнецкий цементный завод»"
       ]
     },
     {
@@ -34229,6 +37440,14 @@ export const productDeliveries = {
       "href": "/regions/barnaul#altaysky-kray",
       "companies": [
         "ООО «СеЛеон»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Иркутск",
+      "href": "/regions/irkutsk",
+      "companies": [
+        "ООО «Продимэкс»"
       ]
     },
     {
@@ -34764,7 +37983,7 @@ export const productDeliveries = {
       "name": "Новокузнецк",
       "href": "/regions/kemerovo#novokuznetsk",
       "companies": [
-        "ОАО «ПАТП №1»"
+        "АО «ПАТП»"
       ]
     },
     {
@@ -35014,6 +38233,14 @@ export const productDeliveries = {
       "companies": [
         "ООО «Глобалтек»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Челябинск",
+      "href": "/regions/chelyabinsk",
+      "companies": [
+        "ООО «Аванта»"
+      ]
     }
   ],
   "kpvu-1526x1526": [
@@ -35163,6 +38390,136 @@ export const productDeliveries = {
       "href": "/regions/tomsk",
       "companies": [
         "ООО «ТК СПК»"
+      ]
+    }
+  ],
+  "kalorifer-kfb-10": [
+    {
+      "kind": "city",
+      "name": "Барнаул",
+      "href": "/regions/barnaul",
+      "companies": [
+        "ООО «Корчинский элеватор»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Чита",
+      "href": "/regions/chita",
+      "companies": [
+        "ООО «Энергокомплект»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Кемерово",
+      "href": "/regions/kemerovo",
+      "companies": [
+        "ООО ТД «СДС-Трейд»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Киселевск",
+      "href": "/regions/kemerovo#kiselevsk",
+      "companies": [
+        "ООО «Обогатительная фабрика «Каро»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «АИР»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast",
+      "companies": [
+        "ООО «Трейд-Авто НК»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Киров",
+      "href": "/regions/kirov",
+      "companies": [
+        "ООО «Арком»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk",
+      "companies": [
+        "ООО «Сибирское промышленное оборудование»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskovskaya-oblast",
+      "companies": [
+        "ООО «Упак-Мол»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Новосибирская область",
+      "href": "/regions/novosibirsk#novosibirskaya-oblast",
+      "companies": [
+        "ООО «Представительство «Машзавод № 1»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk",
+      "companies": [
+        "ООО «СибПромКомплект»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Республика Хакасия",
+      "href": "/regions/abakan#respublika-khakasiya",
+      "companies": [
+        "ООО «СУЭК-Хакасия»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg",
+      "companies": [
+        "ООО «К «Электрогидромаш»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "АО «Сибкабель»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Челябинская область",
+      "href": "/regions/chelyabinsk#chelyabinskaya-oblast",
+      "companies": [
+        "ОАО «Уралкуз»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Ярославль",
+      "href": "/regions/yaroslavl",
+      "companies": [
+        "ООО ПО «Химтэк-Яр»"
       ]
     }
   ],
@@ -35345,6 +38702,14 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Южно-Сахалинск",
+      "href": "/regions/yuzhno-sakhalinsk",
+      "companies": [
+        "ООО «Сахалин-трейдинг»"
+      ]
+    },
+    {
+      "kind": "city",
       "name": "Томск",
       "href": "/regions/tomsk",
       "companies": [
@@ -35431,6 +38796,14 @@ export const productDeliveries = {
       "href": "/regions/saratov",
       "companies": [
         "ООО «Промресурс»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «ГК Альянс»"
       ]
     }
   ],
@@ -35643,6 +39016,14 @@ export const productDeliveries = {
       "href": "/regions/ekaterinburg",
       "companies": [
         "ООО ТД «Энергосила»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Тамбов",
+      "href": "/regions/tambov",
+      "companies": [
+        "«ЭТП Инжиниринг»"
       ]
     },
     {
@@ -36285,6 +39666,14 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Пенза",
+      "href": "/regions/penza",
+      "companies": [
+        "ООО «Техком»"
+      ]
+    },
+    {
+      "kind": "city",
       "name": "Пермь",
       "href": "/regions/perm",
       "companies": [
@@ -36435,6 +39824,14 @@ export const productDeliveries = {
       "href": "/regions/irkutsk",
       "companies": [
         "ООО «Байкал Полимер»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «ЕвразСервис-Сибирь»"
       ]
     },
     {
@@ -37032,6 +40429,14 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "city",
+      "name": "Прокопьевск",
+      "href": "/regions/kemerovo#prokopevsk",
+      "companies": [
+        "ООО «УПТК»"
+      ]
+    },
+    {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast",
@@ -37168,6 +40573,14 @@ export const productDeliveries = {
       "companies": [
         "ООО «СУЭК-Хакасия»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Компания Айтигеоком»"
+      ]
     }
   ],
   "kalorifer-tvv-409": [
@@ -37245,6 +40658,14 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Компания Айтигеоком»"
+      ]
+    },
+    {
       "kind": "region",
       "name": "Челябинская область",
       "href": "/regions/chelyabinsk#chelyabinskaya-oblast",
@@ -37261,6 +40682,14 @@ export const productDeliveries = {
       "companies": [
         "ООО «СтройТрансКомпани»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Вента»"
+      ]
     }
   ],
   "kpvu-935x935": [
@@ -37270,6 +40699,14 @@ export const productDeliveries = {
       "href": "/regions/barnaul",
       "companies": [
         "ООО «СтройТрансКомпани»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Краснодар",
+      "href": "/regions/krasnodar",
+      "companies": [
+        "ООО «Альтмебель»"
       ]
     }
   ],
@@ -37658,6 +41095,14 @@ export const productDeliveries = {
       "companies": [
         "ООО «ПТК»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Компстар»"
+      ]
     }
   ],
   "kalorifer-kp-311": [
@@ -37736,6 +41181,14 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "city",
+      "name": "Ленинск-Кузнецкий",
+      "href": "/regions/kemerovo#leninsk-kuznetsky",
+      "companies": [
+        "ОАО «СУЭК-Кузбасс»"
+      ]
+    },
+    {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast",
@@ -37765,6 +41218,14 @@ export const productDeliveries = {
       "href": "/regions/abakan#sayanogorsk",
       "companies": [
         "ООО «Управление Бытового Обслуживания»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Монотомь»"
       ]
     }
   ],
@@ -39019,6 +42480,14 @@ export const productDeliveries = {
       "companies": [
         "ООО «СибПромКомплект»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Тюмень",
+      "href": "/regions/tyumen",
+      "companies": [
+        "ООО «Интека»"
+      ]
     }
   ],
   "kalorifer-kpsk-4-5": [
@@ -39032,10 +42501,26 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk",
+      "companies": [
+        "ООО «ТИЭС»"
+      ]
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «СибПромКомплект»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Саратов",
+      "href": "/regions/saratov",
+      "companies": [
+        "АО «Жировой комбинат»"
       ]
     }
   ],
@@ -39107,6 +42592,14 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ОАО «Западно-Сибирский испытательный центр»"
+      ]
+    },
+    {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast",
@@ -39128,6 +42621,22 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «Артель А»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Горно-Алтайск",
+      "href": "/regions/gorno-altaysk",
+      "companies": [
+        "ЗАО ИК «ЮКАС-Холдинг»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Улан-Удэ",
+      "href": "/regions/ulan-ude",
+      "companies": [
+        "ООО «Китой»"
       ]
     },
     {
@@ -39207,6 +42716,14 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "region",
+      "name": "Вологодская область",
+      "href": "/regions/vologda#vologodskaya-oblast",
+      "companies": [
+        "ООО «Сокол СиЭлТи»"
+      ]
+    },
+    {
       "kind": "city",
       "name": "Екатеринбург",
       "href": "/regions/ekaterinburg",
@@ -39233,6 +42750,14 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "city",
+      "name": "Братск",
+      "href": "/regions/irkutsk#bratsk",
+      "companies": [
+        "ООО «Энергия»"
+      ]
+    },
+    {
       "kind": "region",
       "name": "Иркутская область",
       "href": "/regions/irkutsk#irkutskaya-oblast",
@@ -39254,6 +42779,14 @@ export const productDeliveries = {
       "href": "/regions/moskovskaya-oblast#moskovskaya-oblast",
       "companies": [
         "ООО «ЛС-Энерго»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Смоленская область",
+      "href": "/regions/smolensk#smolenskaya-oblast",
+      "companies": [
+        "ООО «ЭКО РГС ГРУПП»"
       ]
     }
   ],
@@ -39280,6 +42813,14 @@ export const productDeliveries = {
       "href": "/regions/kemerovo#mezhdurechensk",
       "companies": [
         "ЗАО «ПВВ»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Прокопьевск",
+      "href": "/regions/kemerovo#prokopevsk",
+      "companies": [
+        "МУП «Прокопьевское Теплоснабжающее Хозяйство»"
       ]
     },
     {
@@ -39521,6 +43062,14 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Киселевск",
+      "href": "/regions/kemerovo#kiselevsk",
+      "companies": [
+        "ООО «Обогатительная фабрика «Тайбинская»"
+      ]
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk",
       "companies": [
@@ -39617,6 +43166,40 @@ export const productDeliveries = {
       "href": "/regions/moskovskaya-oblast",
       "companies": [
         "ЗАО «Трест Коксохиммонтаж»"
+      ]
+    }
+  ],
+  "kpvs-780x780": [
+    {
+      "kind": "city",
+      "name": "Бийск",
+      "href": "/regions/barnaul#biysk",
+      "companies": [
+        "ООО «ТД «Бэст Фрут»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Республика Карелия",
+      "href": "/regions/petrozavodsk#respublika-kareliya",
+      "companies": [
+        "ООО «РК-Гранд»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «НГК-Томск»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Ярославская область",
+      "href": "/regions/yaroslavl#yaroslavskaya-oblast",
+      "companies": [
+        "АО «Ярославский бройлер»"
       ]
     }
   ],
@@ -40937,6 +44520,40 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kpps-614x614": [
+    {
+      "kind": "region",
+      "name": "Амурская область",
+      "href": "/regions/blagoveshchensk#amurskaya-oblast",
+      "companies": [
+        "АО «Прииск Соловьевский»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Белово",
+      "href": "/regions/kemerovo#belovo",
+      "companies": [
+        "ООО «Аэровент»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Краснодарский край",
+      "href": "/regions/krasnodar#krasnodarsky-kray",
+      "companies": [
+        "ЗАО «Констанция Кубань»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Ярославль",
+      "href": "/regions/yaroslavl",
+      "companies": [
+        "АО «ГК «ЕКС»"
+      ]
+    }
+  ],
   "agregat-ao2-6.3-ksk3-vozdushniy-parovoy": [
     {
       "kind": "region",
@@ -40952,6 +44569,32 @@ export const productDeliveries = {
       "href": "/regions/sankt-peterburg",
       "companies": [
         "ООО «Карелия ПАЛП»"
+      ]
+    }
+  ],
+  "kpps-780x780": [
+    {
+      "kind": "region",
+      "name": "Амурская область",
+      "href": "/regions/blagoveshchensk#amurskaya-oblast",
+      "companies": [
+        "АО «Прииск Соловьевский»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Иркутская область",
+      "href": "/regions/irkutsk#irkutskaya-oblast",
+      "companies": [
+        "СЗСППК «Сагаан гол»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg",
+      "companies": [
+        "ООО «ПроТехно»"
       ]
     }
   ],
@@ -41334,6 +44977,48 @@ export const productDeliveries = {
       "companies": [
         "ПАО АК «Алроса»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg",
+      "companies": [
+        "ООО «Оптимапрайс»"
+      ]
+    }
+  ],
+  "kalorifer-kpsk-4-4": [
+    {
+      "kind": "region",
+      "name": "Белгородская область",
+      "href": "/regions/belgorod#belgorodskaya-oblast",
+      "companies": [
+        "ООО «Дар-Спец»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk",
+      "companies": [
+        "ООО «ТИЭС»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Московская область",
+      "href": "/regions/moskovskaya-oblast#moskovskaya-oblast",
+      "companies": [
+        "ОАО АК «Рубин»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk",
+      "companies": [
+        "ООО «СибПромКомплект»"
+      ]
     }
   ],
   "std300-kpsk": [
@@ -41435,6 +45120,32 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kpps-1239x1239": [
+    {
+      "kind": "region",
+      "name": "Белгородская область",
+      "href": "/regions/belgorod#belgorodskaya-oblast",
+      "companies": [
+        "ООО «НПП «Юникорн»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Чита",
+      "href": "/regions/chita",
+      "companies": [
+        "ООО «Мир»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ОАО «Новокузнецкий металлургический комбинат»"
+      ]
+    }
+  ],
   "kpvs-572x572": [
     {
       "kind": "city",
@@ -41442,6 +45153,46 @@ export const productDeliveries = {
       "href": "/regions/bryansk",
       "companies": [
         "ООО «НПО «Техноком»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Тандем»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Краснодарский край",
+      "href": "/regions/krasnodar#krasnodarsky-kray",
+      "companies": [
+        "ООО «Полимерактив»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk",
+      "companies": [
+        "ООО «Диалог-Агро-2»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Таганрог",
+      "href": "/regions/rostov-na-donu#taganrog",
+      "companies": [
+        "ООО «НПО «ХС Машиностроение»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Тула",
+      "href": "/regions/tula",
+      "companies": [
+        "ООО «Авангард»"
       ]
     }
   ],
@@ -41950,7 +45701,7 @@ export const productDeliveries = {
       "name": "Пермь",
       "href": "/regions/perm",
       "companies": [
-        "ООО «Универсалстройинвест»"
+        "АО «ПНИТИ»"
       ]
     },
     {
@@ -42243,10 +45994,26 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Киров",
+      "href": "/regions/kirov",
+      "companies": [
+        "ООО «Совместный проект»"
+      ]
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «ВнешТорг»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Тюмень",
+      "href": "/regions/tyumen",
+      "companies": [
+        "ООО «АирПроф»"
       ]
     }
   ],
@@ -42283,6 +46050,32 @@ export const productDeliveries = {
       "href": "/regions/voronezh",
       "companies": [
         "ООО «Стандарт»"
+      ]
+    }
+  ],
+  "kppu-617x617": [
+    {
+      "kind": "city",
+      "name": "Воронеж",
+      "href": "/regions/voronezh",
+      "companies": [
+        "ООО «Стандарт»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Красноярский край",
+      "href": "/regions/krasnoyarsk#krasnoyarsky-kray",
+      "companies": [
+        "ООО «Сибинторг»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Саратов",
+      "href": "/regions/saratov",
+      "companies": [
+        "ООО «Промресурс»"
       ]
     }
   ],
@@ -42444,6 +46237,24 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kpvu-1072x1072": [
+    {
+      "kind": "city",
+      "name": "Иваново",
+      "href": "/regions/ivanovo",
+      "companies": [
+        "ООО «ТрансКоммерц»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Самара",
+      "href": "/regions/samara",
+      "companies": [
+        "ООО «Модуль»"
+      ]
+    }
+  ],
   "kalorifer-kfb-5-p": [
     {
       "kind": "region",
@@ -42481,6 +46292,14 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Киселевск",
+      "href": "/regions/kemerovo#kiselevsk",
+      "companies": [
+        "ОАО «Разрез Киселевский»"
+      ]
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk",
       "companies": [
@@ -42495,6 +46314,14 @@ export const productDeliveries = {
       "href": "/regions/irkutsk#angarsk",
       "companies": [
         "ООО «Интех»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Автопилот»"
       ]
     },
     {
@@ -42870,6 +46697,50 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kpvu-1390x1390": [
+    {
+      "kind": "city",
+      "name": "Ангарск",
+      "href": "/regions/irkutsk#angarsk",
+      "companies": [
+        "ООО ПКФ «Ангара ресурс»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Тулс-Трейд»"
+      ]
+    }
+  ],
+  "kpvs-1072x1072": [
+    {
+      "kind": "city",
+      "name": "Братск",
+      "href": "/regions/irkutsk#bratsk",
+      "companies": [
+        "ООО «Ангара Плюс»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «КузбассСтройМонтаж»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Тверь",
+      "href": "/regions/tver",
+      "companies": [
+        "ООО «Форум Тверь»"
+      ]
+    }
+  ],
   "kalorifer-kfb-5": [
     {
       "kind": "city",
@@ -43060,6 +46931,22 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg",
+      "companies": [
+        "ООО «Оптимапрайс»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Престо»"
+      ]
+    },
+    {
       "kind": "region",
       "name": "Челябинская область",
       "href": "/regions/chelyabinsk#chelyabinskaya-oblast",
@@ -43083,6 +46970,106 @@ export const productDeliveries = {
       "href": "/regions/rostov-na-donu",
       "companies": [
         "ООО «Ровен-Регионы»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Тюмень",
+      "href": "/regions/tyumen",
+      "companies": [
+        "ООО «Макстерм»"
+      ]
+    }
+  ],
+  "kpvs-822x822": [
+    {
+      "kind": "city",
+      "name": "Иркутск",
+      "href": "/regions/irkutsk",
+      "companies": [
+        "ООО «Эл-Пред»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Калуга",
+      "href": "/regions/kaluga",
+      "companies": [
+        "ОАО «Калужский турбинный завод»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk",
+      "companies": [
+        "ООО «Технологическое оборудование»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Курган",
+      "href": "/regions/kurgan",
+      "companies": [
+        "ООО «Ремстанкомаш»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Новосибирская область",
+      "href": "/regions/novosibirsk#novosibirskaya-oblast",
+      "companies": [
+        "АО «Новосибирский КБК»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Пермский край",
+      "href": "/regions/perm#permsky-kray",
+      "companies": [
+        "ООО «Промышленная группа Прогрессия»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Гарант»"
+      ]
+    }
+  ],
+  "kpvs-697x697": [
+    {
+      "kind": "city",
+      "name": "Иркутск",
+      "href": "/regions/irkutsk",
+      "companies": [
+        "ООО «Эл-Пред»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Тольятти",
+      "href": "/regions/samara#tolyatti",
+      "companies": [
+        "ООО «Системы ОВК»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Екатеринбург",
+      "href": "/regions/ekaterinburg",
+      "companies": [
+        "ООО «Ктарос»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "ХМАО-Югра",
+      "href": "/regions/surgut#khmao-yugra",
+      "companies": [
+        "ООО «Норд-Сервис»"
       ]
     }
   ],
@@ -43157,36 +47144,26 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk",
+      "companies": [
+        "ООО «ТИЭС»"
+      ]
+    },
+    {
+      "kind": "city",
       "name": "Новосибирск",
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «Спецхлебмаш»"
       ]
-    }
-  ],
-  "kpps-614x614": [
-    {
-      "kind": "city",
-      "name": "Белово",
-      "href": "/regions/kemerovo#belovo",
-      "companies": [
-        "ООО «Аэровент»"
-      ]
-    },
-    {
-      "kind": "region",
-      "name": "Краснодарский край",
-      "href": "/regions/krasnodar#krasnodarsky-kray",
-      "companies": [
-        "ЗАО «Констанция Кубань»"
-      ]
     },
     {
       "kind": "city",
-      "name": "Ярославль",
-      "href": "/regions/yaroslavl",
+      "name": "Тюмень",
+      "href": "/regions/tyumen",
       "companies": [
-        "АО «ГК «ЕКС»"
+        "ООО «Тэнко»"
       ]
     }
   ],
@@ -43254,7 +47231,8 @@ export const productDeliveries = {
       "name": "Саратовская область",
       "href": "/regions/saratov#saratovskaya-oblast",
       "companies": [
-        "АО «Агрокомплекс «Калининский»"
+        "АО «Агрокомплекс «Калининский»",
+        "ООО «СМТ»"
       ]
     }
   ],
@@ -43319,6 +47297,14 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ГУ КО «РЦСП»"
+      ]
+    },
+    {
+      "kind": "city",
       "name": "Москва",
       "href": "/regions/moskovskaya-oblast",
       "companies": [
@@ -43349,6 +47335,14 @@ export const productDeliveries = {
       "href": "/regions/perm",
       "companies": [
         "ООО «Пермэнергопроект»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Республика Хакасия",
+      "href": "/regions/abakan#respublika-khakasiya",
+      "companies": [
+        "ООО «Бентонит Хакасия»"
       ]
     },
     {
@@ -43400,6 +47394,22 @@ export const productDeliveries = {
       "companies": [
         "ООО «Вентпромстрой»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Саратов",
+      "href": "/regions/saratov",
+      "companies": [
+        "АО «Литий-Элемент»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Ладвуд»"
+      ]
     }
   ],
   "kpvu-663x663": [
@@ -43409,6 +47419,14 @@ export const productDeliveries = {
       "href": "/regions/kemerovo",
       "companies": [
         "ОАО «КемВод»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast",
+      "companies": [
+        "ООО «ПФ «Трудармейская»"
       ]
     }
   ],
@@ -43437,6 +47455,14 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «Компания «Энергопарк»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm",
+      "companies": [
+        "ООО «Форпласт»"
       ]
     }
   ],
@@ -43537,6 +47563,7 @@ export const productDeliveries = {
       "name": "Томск",
       "href": "/regions/tomsk",
       "companies": [
+        "ООО «Колмакс»",
         "ООО «ФальКО»"
       ]
     }
@@ -43574,6 +47601,14 @@ export const productDeliveries = {
       "href": "/regions/kemerovo",
       "companies": [
         "ООО «ДРСУ № 8»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Тандем»"
       ]
     },
     {
@@ -43811,10 +47846,26 @@ export const productDeliveries = {
     },
     {
       "kind": "city",
+      "name": "Самара",
+      "href": "/regions/samara",
+      "companies": [
+        "ООО «СтальНефтеГаз»"
+      ]
+    },
+    {
+      "kind": "city",
       "name": "Томск",
       "href": "/regions/tomsk",
       "companies": [
         "ООО «СК «ЕвроСибСтрой»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Тюмень",
+      "href": "/regions/tyumen",
+      "companies": [
+        "ООО «СиМ»"
       ]
     }
   ],
@@ -43859,6 +47910,14 @@ export const productDeliveries = {
       "href": "/regions/kemerovo",
       "companies": [
         "ООО «Профжилстрой»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ОАО «Западно-Сибирский испытательный центр»"
       ]
     },
     {
@@ -43936,6 +47995,22 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ОАО «Западно-Сибирский испытательный центр»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Прокопьевск",
+      "href": "/regions/kemerovo#prokopevsk",
+      "companies": [
+        "ООО «УПТК»"
+      ]
+    },
+    {
       "kind": "region",
       "name": "Кемеровская область",
       "href": "/regions/kemerovo#kemerovskaya-oblast",
@@ -43958,6 +48033,14 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «Сибирский бензовоз»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Горно-Алтайск",
+      "href": "/regions/gorno-altaysk",
+      "companies": [
+        "ЗАО ИК «ЮКАС-Холдинг»"
       ]
     },
     {
@@ -44027,6 +48110,14 @@ export const productDeliveries = {
       "companies": [
         "ООО «Технологии комфорта»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Рязань",
+      "href": "/regions/ryazan",
+      "companies": [
+        "ООО «СпецПромСнаб»"
+      ]
     }
   ],
   "kpvu-1572x1572": [
@@ -44036,6 +48127,14 @@ export const productDeliveries = {
       "href": "/regions/kemerovo",
       "companies": [
         "ООО «СибПром»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk",
+      "companies": [
+        "ООО «Саянцветметремонт»"
       ]
     }
   ],
@@ -44522,56 +48621,6 @@ export const productDeliveries = {
       ]
     }
   ],
-  "kalorifer-kfb-10": [
-    {
-      "kind": "city",
-      "name": "Кемерово",
-      "href": "/regions/kemerovo",
-      "companies": [
-        "ООО ТД «СДС-Трейд»"
-      ]
-    },
-    {
-      "kind": "city",
-      "name": "Киселевск",
-      "href": "/regions/kemerovo#kiselevsk",
-      "companies": [
-        "ООО «Обогатительная фабрика «Каро»"
-      ]
-    },
-    {
-      "kind": "city",
-      "name": "Красноярск",
-      "href": "/regions/krasnoyarsk",
-      "companies": [
-        "ООО «Сибирское промышленное оборудование»"
-      ]
-    },
-    {
-      "kind": "city",
-      "name": "Москва",
-      "href": "/regions/moskovskaya-oblast",
-      "companies": [
-        "ООО «Упак-Мол»"
-      ]
-    },
-    {
-      "kind": "region",
-      "name": "Новосибирская область",
-      "href": "/regions/novosibirsk#novosibirskaya-oblast",
-      "companies": [
-        "ООО «Представительство «Машзавод № 1»"
-      ]
-    },
-    {
-      "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk",
-      "companies": [
-        "ООО «СибПромКомплект»"
-      ]
-    }
-  ],
   "ustanovka-sfotc-160": [
     {
       "kind": "city",
@@ -44586,7 +48635,7 @@ export const productDeliveries = {
       "name": "Новокузнецк",
       "href": "/regions/kemerovo#novokuznetsk",
       "companies": [
-        "ООО «ПК «Кузнецкий цементный завод»"
+        "ООО «Кузнецкий цементный завод»"
       ]
     },
     {
@@ -44663,6 +48712,32 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kpvu-845x845": [
+    {
+      "kind": "city",
+      "name": "Киселевск",
+      "href": "/regions/kemerovo#kiselevsk",
+      "companies": [
+        "ООО «Вахрушевец»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg",
+      "companies": [
+        "ООО «Альянс Импэкс»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Межрегиональное объединение Аргумент»"
+      ]
+    }
+  ],
   "kalorifer-ksk-2-2": [
     {
       "kind": "city",
@@ -44681,11 +48756,106 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "region",
+      "name": "Республика Татарстан",
+      "href": "/regions/kazan#respublika-tatarstan",
+      "companies": [
+        "ООО «Экосистемы»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Новотех»"
+      ]
+    },
+    {
       "kind": "city",
       "name": "Ульяновск",
       "href": "/regions/ulyanovsk",
       "companies": [
         "ООО «ПКП ИВ»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Челябинская область",
+      "href": "/regions/chelyabinsk#chelyabinskaya-oblast",
+      "companies": [
+        "ООО «МСК»"
+      ]
+    }
+  ],
+  "kppu-708x708": [
+    {
+      "kind": "city",
+      "name": "Ленинск-Кузнецкий",
+      "href": "/regions/kemerovo#leninsk-kuznetsky",
+      "companies": [
+        "ОАО «Горэлектротранспорт города Ленинска-Кузнецкого»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Краснодарский край",
+      "href": "/regions/krasnodar#krasnodarsky-kray",
+      "companies": [
+        "ООО «НАМА»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Красноярский край",
+      "href": "/regions/krasnoyarsk#krasnoyarsky-kray",
+      "companies": [
+        "ЗАО «Разрез Березовский»"
+      ]
+    }
+  ],
+  "kpvu-1163x1163": [
+    {
+      "kind": "city",
+      "name": "Ленинск-Кузнецкий",
+      "href": "/regions/kemerovo#leninsk-kuznetsky",
+      "companies": [
+        "ОАО «ГЭТ Ленинска-Кузнецкого»"
+      ]
+    }
+  ],
+  "kalorifer-kpsk-2-4": [
+    {
+      "kind": "city",
+      "name": "Ленинск-Кузнецкий",
+      "href": "/regions/kemerovo#leninsk-kuznetsky",
+      "companies": [
+        "ООО «Сиб-Дамель»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «ЕвразСервис-Сибирь»",
+        "ООО «СибТепло»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk",
+      "companies": [
+        "ООО УПК «Армаком»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Псков",
+      "href": "/regions/pskov",
+      "companies": [
+        "ООО «ПО НПН»"
       ]
     }
   ],
@@ -44787,6 +48957,52 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kppu-1345x1345": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ЗАО НПП «Сибэкотехника»"
+      ]
+    }
+  ],
+  "kpvs-655x655": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "АО «НХС»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Тюмень",
+      "href": "/regions/tyumen",
+      "companies": [
+        "ООО ПКФ «Аква-Т»"
+      ]
+    }
+  ],
+  "kpvs-989x989": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "Муниципальное трамвайное предприятие № 1"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Самара",
+      "href": "/regions/samara",
+      "companies": [
+        "ООО «Стройсервис»"
+      ]
+    }
+  ],
   "agregat-ao2-5-ksk4-vozdushniy-parovoy": [
     {
       "kind": "city",
@@ -44802,6 +49018,268 @@ export const productDeliveries = {
       "href": "/regions/ekaterinburg",
       "companies": [
         "ООО «Завод БМК Энерголидер»"
+      ]
+    }
+  ],
+  "kpps-739x739": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ОАО «Новокузнецкий металлургический комбинат»"
+      ]
+    }
+  ],
+  "kalorifer-kpsk-2-3": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Боровково»",
+        "ООО «ЕвразСервис-Сибирь»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Киров",
+      "href": "/regions/kirov",
+      "companies": [
+        "ООО «Анион»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk",
+      "companies": [
+        "ООО «СибПромКомплект»"
+      ]
+    }
+  ],
+  "kalorifer-kpsk-2-5": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Боровково»",
+        "ООО «СибТепло»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk",
+      "companies": [
+        "ООО «ТЭК»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Хабаровск",
+      "href": "/regions/khabarovsk",
+      "companies": [
+        "ООО «ДКК»"
+      ]
+    }
+  ],
+  "kalorifer-kfb-3": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Компания «Системы Вентиляции»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskovskaya-oblast",
+      "companies": [
+        "ООО «Управляющая Компания Регион Климат»"
+      ]
+    }
+  ],
+  "kpps-822x822": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Переработка»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "АО «Аграрная Группа МП»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "ХМАО-Югра",
+      "href": "/regions/surgut#khmao-yugra",
+      "companies": [
+        "ООО «СеверПромАльянс»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Ярославль",
+      "href": "/regions/yaroslavl",
+      "companies": [
+        "ООО «Симметрия»"
+      ]
+    }
+  ],
+  "kppu-1526x1526": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Компания «Фортек»"
+      ]
+    }
+  ],
+  "kpvs-1114x1114": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Кузнецкий цементный завод»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Краснодарский край",
+      "href": "/regions/krasnodar#krasnodarsky-kray",
+      "companies": [
+        "ООО «Полимерактив»"
+      ]
+    }
+  ],
+  "kpvu-1117x1117": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Ремспецстрой»"
+      ]
+    }
+  ],
+  "kpvu-1299x1299": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «СМЦ»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Ярославль",
+      "href": "/regions/yaroslavl",
+      "companies": [
+        "ООО «Аквапарк»"
+      ]
+    }
+  ],
+  "kppu-981x981": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «ТД КузбассЭлектромаш-Сервис»"
+      ]
+    }
+  ],
+  "kpps-905x905": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Сити-сервис НК»"
+      ]
+    }
+  ],
+  "kppu-663x663": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО «Сибтрансмет»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Киров",
+      "href": "/regions/kirov",
+      "companies": [
+        "ООО «Агрострой»"
+      ]
+    }
+  ],
+  "kalorifer-kfb-2-a3": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО ТПК «Инвест-Строй»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Санкт-Петербург",
+      "href": "/regions/sankt-peterburg",
+      "companies": [
+        "ООО «ДАДЛ»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Московская область",
+      "href": "/regions/moskovskaya-oblast#moskovskaya-oblast",
+      "companies": [
+        "ООО «Комплекс-Инжиниринг»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Абакан",
+      "href": "/regions/abakan",
+      "companies": [
+        "ООО «Промснаб»"
+      ]
+    }
+  ],
+  "kalorifer-kfb-4": [
+    {
+      "kind": "city",
+      "name": "Новокузнецк",
+      "href": "/regions/kemerovo#novokuznetsk",
+      "companies": [
+        "ООО ТПК «Инвест-Строй»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk",
+      "companies": [
+        "ООО УПК «Армаком»"
       ]
     }
   ],
@@ -44847,21 +49325,41 @@ export const productDeliveries = {
       ]
     }
   ],
-  "kalorifer-kpsk-2-3": [
+  "kpvu-754x754": [
     {
       "kind": "city",
-      "name": "Киров",
-      "href": "/regions/kirov",
+      "name": "Прокопьевск",
+      "href": "/regions/kemerovo#prokopevsk",
       "companies": [
-        "ООО «Анион»"
+        "ООО «Квадро групп»"
       ]
     },
     {
       "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk",
+      "name": "Сыктывкар",
+      "href": "/regions/syktyvkar",
       "companies": [
-        "ООО «СибПромКомплект»"
+        "ООО «Горстрой»"
+      ]
+    }
+  ],
+  "kppu-1390x1390": [
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast",
+      "companies": [
+        "ООО «Разрез Пермяковский»"
+      ]
+    }
+  ],
+  "kppu-1435x1435": [
+    {
+      "kind": "region",
+      "name": "Кемеровская область",
+      "href": "/regions/kemerovo#kemerovskaya-oblast",
+      "companies": [
+        "ООО «Адамант»"
       ]
     }
   ],
@@ -44872,6 +49370,40 @@ export const productDeliveries = {
       "href": "/regions/kirov",
       "companies": [
         "ООО «Венткиров»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Ростовская область",
+      "href": "/regions/rostov-na-donu#rostovskaya-oblast",
+      "companies": [
+        "ООО «Продконтактинвест»"
+      ]
+    }
+  ],
+  "kppu-572x572": [
+    {
+      "kind": "region",
+      "name": "Кировская область",
+      "href": "/regions/kirov#kirovskaya-oblast",
+      "companies": [
+        "ООО «Спецмонтаж»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm",
+      "companies": [
+        "ООО «НГЭС»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Тульская область",
+      "href": "/regions/tula#tulskaya-oblast",
+      "companies": [
+        "ООО «Белевский консервный завод»"
       ]
     }
   ],
@@ -44902,6 +49434,40 @@ export const productDeliveries = {
         "ООО «Райвл-НСК»",
         "ООО «СибПромКомплект»"
       ]
+    },
+    {
+      "kind": "city",
+      "name": "Ульяновск",
+      "href": "/regions/ulyanovsk",
+      "companies": [
+        "ООО «МТК Групп»"
+      ]
+    }
+  ],
+  "kpvu-572x572": [
+    {
+      "kind": "region",
+      "name": "Красноярский край",
+      "href": "/regions/krasnoyarsk#krasnoyarsky-kray",
+      "companies": [
+        "ООО «ЮИИ-Сибирь»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Республика Бурятия",
+      "href": "/regions/ulan-ude#respublika-buryatiya",
+      "companies": [
+        "ОАО «Разрез Тугнуйский»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Сыктывкар",
+      "href": "/regions/syktyvkar",
+      "companies": [
+        "ООО «Сантехстройком»"
+      ]
     }
   ],
   "kalorifer-kpsk-2-7": [
@@ -44919,6 +49485,14 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «Спецстрой»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Томская область",
+      "href": "/regions/tomsk#tomskaya-oblast",
+      "companies": [
+        "ООО «УК «Техсервис»"
       ]
     }
   ],
@@ -44974,6 +49548,16 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kpps-1155x1155": [
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk",
+      "companies": [
+        "ООО «Красспецкомплект»"
+      ]
+    }
+  ],
   "agregat-ao2-25-ksk3-vozdushniy-parovoy": [
     {
       "kind": "city",
@@ -44989,6 +49573,42 @@ export const productDeliveries = {
       "href": "/regions/ufa",
       "companies": [
         "ООО «Торговый дом»"
+      ]
+    }
+  ],
+  "kpps-1114x1114": [
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk",
+      "companies": [
+        "ООО «Нортес»"
+      ]
+    }
+  ],
+  "kpvs-739x739": [
+    {
+      "kind": "city",
+      "name": "Красноярск",
+      "href": "/regions/krasnoyarsk",
+      "companies": [
+        "ООО «СТС»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Москва",
+      "href": "/regions/moskovskaya-oblast",
+      "companies": [
+        "ЗАО «Энергокомплектоборудование»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Нижний Новгород",
+      "href": "/regions/nizhny-novgorod",
+      "companies": [
+        "ГП НО «Нижегородпассажиравтотранс»"
       ]
     }
   ],
@@ -45018,32 +49638,6 @@ export const productDeliveries = {
       ]
     }
   ],
-  "kalorifer-kpsk-4-4": [
-    {
-      "kind": "city",
-      "name": "Красноярск",
-      "href": "/regions/krasnoyarsk",
-      "companies": [
-        "ООО «ТИЭС»"
-      ]
-    },
-    {
-      "kind": "region",
-      "name": "Московская область",
-      "href": "/regions/moskovskaya-oblast#moskovskaya-oblast",
-      "companies": [
-        "ОАО АК «Рубин»"
-      ]
-    },
-    {
-      "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk",
-      "companies": [
-        "ООО «СибПромКомплект»"
-      ]
-    }
-  ],
   "kppu-1572x1572": [
     {
       "kind": "region",
@@ -45054,13 +49648,37 @@ export const productDeliveries = {
       ]
     }
   ],
-  "kpvu-845x845": [
+  "kalorifer-kpsk-2-8": [
     {
       "kind": "city",
-      "name": "Санкт-Петербург",
-      "href": "/regions/sankt-peterburg",
+      "name": "Курск",
+      "href": "/regions/kursk",
       "companies": [
-        "ООО «Альянс Импэкс»"
+        "ООО «Кварта-Л»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Новосибирск",
+      "href": "/regions/novosibirsk",
+      "companies": [
+        "ООО «Райвл-НСК»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Саратов",
+      "href": "/regions/saratov",
+      "companies": [
+        "ООО «Промресурс»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «ТК СПК»"
       ]
     }
   ],
@@ -45082,24 +49700,6 @@ export const productDeliveries = {
       ]
     }
   ],
-  "kalorifer-kfb-2-a3": [
-    {
-      "kind": "city",
-      "name": "Санкт-Петербург",
-      "href": "/regions/sankt-peterburg",
-      "companies": [
-        "ООО «ДАДЛ»"
-      ]
-    },
-    {
-      "kind": "region",
-      "name": "Московская область",
-      "href": "/regions/moskovskaya-oblast#moskovskaya-oblast",
-      "companies": [
-        "ООО «Комплекс-Инжиниринг»"
-      ]
-    }
-  ],
   "kpps-1072x1072": [
     {
       "kind": "city",
@@ -45107,16 +49707,6 @@ export const productDeliveries = {
       "href": "/regions/sankt-peterburg",
       "companies": [
         "ООО «Орто.Ник»"
-      ]
-    }
-  ],
-  "kpps-780x780": [
-    {
-      "kind": "city",
-      "name": "Санкт-Петербург",
-      "href": "/regions/sankt-peterburg",
-      "companies": [
-        "ООО «ПроТехно»"
       ]
     }
   ],
@@ -45135,6 +49725,22 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО ТД «ЗНВИ»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Абакан",
+      "href": "/regions/abakan",
+      "companies": [
+        "ООО «Тепломонтаж»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Ростовская область",
+      "href": "/regions/rostov-na-donu#rostovskaya-oblast",
+      "companies": [
+        "ООО «Водогазсервис»"
       ]
     }
   ],
@@ -45184,24 +49790,6 @@ export const productDeliveries = {
       ]
     }
   ],
-  "kpvs-739x739": [
-    {
-      "kind": "city",
-      "name": "Москва",
-      "href": "/regions/moskovskaya-oblast",
-      "companies": [
-        "ЗАО «Энергокомплектоборудование»"
-      ]
-    },
-    {
-      "kind": "city",
-      "name": "Нижний Новгород",
-      "href": "/regions/nizhny-novgorod",
-      "companies": [
-        "ГП НО «Нижегородпассажиравтотранс»"
-      ]
-    }
-  ],
   "kalorifer-kfb-7": [
     {
       "kind": "city",
@@ -45217,16 +49805,6 @@ export const productDeliveries = {
       "href": "/regions/chelyabinsk#chelyabinskaya-oblast",
       "companies": [
         "ОАО «Уралкуз»"
-      ]
-    }
-  ],
-  "kalorifer-kfb-3": [
-    {
-      "kind": "city",
-      "name": "Москва",
-      "href": "/regions/moskovskaya-oblast",
-      "companies": [
-        "ООО «Управляющая Компания Регион Климат»"
       ]
     }
   ],
@@ -45329,10 +49907,34 @@ export const productDeliveries = {
     },
     {
       "kind": "region",
+      "name": "Приморский край",
+      "href": "/regions/vladivostok#primorsky-kray",
+      "companies": [
+        "ООО «СК Портовый Флот»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Казань",
+      "href": "/regions/kazan",
+      "companies": [
+        "ООО «ТД Белохолуницксервис»"
+      ]
+    },
+    {
+      "kind": "region",
       "name": "Республика Татарстан",
       "href": "/regions/kazan#respublika-tatarstan",
       "companies": [
         "ООО «Экосистемы»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Хабаровск",
+      "href": "/regions/khabarovsk",
+      "companies": [
+        "ООО «Актив-Строй»"
       ]
     },
     {
@@ -45351,6 +49953,46 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «Лаукар Сибирь»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Абакан",
+      "href": "/regions/abakan",
+      "companies": [
+        "ООО «Теплосервис»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Ставропольский край",
+      "href": "/regions/stavropol#stavropolsky-kray",
+      "companies": [
+        "ООО «Депо-ЕвроХим»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Новотех»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Челябинск",
+      "href": "/regions/chelyabinsk",
+      "companies": [
+        "ООО «Объединение «Союзпищепром»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Ярославль",
+      "href": "/regions/yaroslavl",
+      "companies": [
+        "ООО «Траверс»"
       ]
     }
   ],
@@ -45372,21 +50014,43 @@ export const productDeliveries = {
       ]
     },
     {
+      "kind": "region",
+      "name": "Ростовская область",
+      "href": "/regions/rostov-na-donu#rostovskaya-oblast",
+      "companies": [
+        "ЗАО «Шахтинский АРЗ ДОСААФ»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Саратовская область",
+      "href": "/regions/saratov#saratovskaya-oblast",
+      "companies": [
+        "АО «Агрокомплекс «Калининский»"
+      ]
+    },
+    {
       "kind": "city",
       "name": "Томск",
       "href": "/regions/tomsk",
       "companies": [
         "ООО «ФальКО»"
       ]
-    }
-  ],
-  "kalorifer-kpsk-2-8": [
+    },
     {
       "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk",
+      "name": "Тула",
+      "href": "/regions/tula",
       "companies": [
-        "ООО «Райвл-НСК»"
+        "ЗАО «Индустрия Сервис»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Челябинск",
+      "href": "/regions/chelyabinsk",
+      "companies": [
+        "ООО «Транс МТС»"
       ]
     }
   ],
@@ -45398,15 +50062,21 @@ export const productDeliveries = {
       "companies": [
         "ООО «СибПромКомплект»"
       ]
-    }
-  ],
-  "kalorifer-kpsk-2-5": [
+    },
     {
       "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk",
+      "name": "Хабаровск",
+      "href": "/regions/khabarovsk",
       "companies": [
-        "ООО «ТЭК»"
+        "ООО «Энерго учет»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Челябинск",
+      "href": "/regions/chelyabinsk",
+      "companies": [
+        "АО «Первый хлебокомбинат»"
       ]
     }
   ],
@@ -45417,6 +50087,14 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «ТЭК»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Томск",
+      "href": "/regions/tomsk",
+      "companies": [
+        "ООО «Луквис»"
       ]
     },
     {
@@ -45435,6 +50113,22 @@ export const productDeliveries = {
       "href": "/regions/novosibirsk",
       "companies": [
         "ООО «ТЭК»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Ульяновская область",
+      "href": "/regions/ulyanovsk#ulyanovskaya-oblast",
+      "companies": [
+        "ООО «Стройизделия»"
+      ]
+    },
+    {
+      "kind": "city",
+      "name": "Хабаровск",
+      "href": "/regions/khabarovsk",
+      "companies": [
+        "ООО «Рострейд»"
       ]
     }
   ],
@@ -45456,16 +50150,6 @@ export const productDeliveries = {
       ]
     }
   ],
-  "kalorifer-kpsk-2-4": [
-    {
-      "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk",
-      "companies": [
-        "ООО УПК «Армаком»"
-      ]
-    }
-  ],
   "kalorifer-kfb-2": [
     {
       "kind": "city",
@@ -45474,25 +50158,13 @@ export const productDeliveries = {
       "companies": [
         "ООО УПК «Армаком»"
       ]
-    }
-  ],
-  "kalorifer-kfb-4": [
-    {
-      "kind": "city",
-      "name": "Новосибирск",
-      "href": "/regions/novosibirsk",
-      "companies": [
-        "ООО УПК «Армаком»"
-      ]
-    }
-  ],
-  "kpvs-822x822": [
+    },
     {
       "kind": "region",
-      "name": "Новосибирская область",
-      "href": "/regions/novosibirsk#novosibirskaya-oblast",
+      "name": "Хабаровский край",
+      "href": "/regions/khabarovsk#khabarovsky-kray",
       "companies": [
-        "АО «Новосибирский КБК»"
+        "ПАО «Амурский судостроительный завод»"
       ]
     }
   ],
@@ -45532,6 +50204,26 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kpvu-981x981": [
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm",
+      "companies": [
+        "ЗАО «Энергомашкомплект»"
+      ]
+    }
+  ],
+  "kppu-890x890": [
+    {
+      "kind": "city",
+      "name": "Пермь",
+      "href": "/regions/perm",
+      "companies": [
+        "ООО «21-ВЕК»"
+      ]
+    }
+  ],
   "agregat-ao2-20-ksk3-vozdushniy-parovoy": [
     {
       "kind": "city",
@@ -45539,6 +50231,16 @@ export const productDeliveries = {
       "href": "/regions/pskov",
       "companies": [
         "ООО «Контакт-Оптима»"
+      ]
+    }
+  ],
+  "kpvs-1280x1280": [
+    {
+      "kind": "city",
+      "name": "Уфа",
+      "href": "/regions/ufa",
+      "companies": [
+        "ООО «Авто Плюс»"
       ]
     }
   ],
@@ -45568,42 +50270,6 @@ export const productDeliveries = {
       ]
     }
   ],
-  "kpvs-780x780": [
-    {
-      "kind": "region",
-      "name": "Республика Карелия",
-      "href": "/regions/petrozavodsk#respublika-kareliya",
-      "companies": [
-        "ООО «РК-Гранд»"
-      ]
-    },
-    {
-      "kind": "city",
-      "name": "Томск",
-      "href": "/regions/tomsk",
-      "companies": [
-        "ООО «НГК-Томск»"
-      ]
-    },
-    {
-      "kind": "region",
-      "name": "Ярославская область",
-      "href": "/regions/yaroslavl#yaroslavskaya-oblast",
-      "companies": [
-        "АО «Ярославский бройлер»"
-      ]
-    }
-  ],
-  "kpvu-572x572": [
-    {
-      "kind": "city",
-      "name": "Сыктывкар",
-      "href": "/regions/syktyvkar",
-      "companies": [
-        "ООО «Сантехстройком»"
-      ]
-    }
-  ],
   "kalorifer-kfb-14": [
     {
       "kind": "city",
@@ -45619,6 +50285,26 @@ export const productDeliveries = {
       "href": "/regions/ulyanovsk#ulyanovskaya-oblast",
       "companies": [
         "АО «Ульяновский сахарный завод»"
+      ]
+    }
+  ],
+  "kppu-1481x1481": [
+    {
+      "kind": "city",
+      "name": "Саяногорск",
+      "href": "/regions/abakan#sayanogorsk",
+      "companies": [
+        "ООО «НТП Саяногорск»"
+      ]
+    }
+  ],
+  "kpvs-1155x1155": [
+    {
+      "kind": "city",
+      "name": "Ростов-на-Дону",
+      "href": "/regions/rostov-na-donu",
+      "companies": [
+        "ООО «Комплект-Юг»"
       ]
     }
   ],
@@ -45650,21 +50336,13 @@ export const productDeliveries = {
       ]
     }
   ],
-  "kpvs-697x697": [
+  "kpps-864x864": [
     {
       "kind": "city",
-      "name": "Тольятти",
-      "href": "/regions/samara#tolyatti",
+      "name": "Самара",
+      "href": "/regions/samara",
       "companies": [
-        "ООО «Системы ОВК»"
-      ]
-    },
-    {
-      "kind": "city",
-      "name": "Екатеринбург",
-      "href": "/regions/ekaterinburg",
-      "companies": [
-        "ООО «Ктарос»"
+        "ООО ТД «ПромСтройСнаб»"
       ]
     }
   ],
@@ -45685,6 +50363,22 @@ export const productDeliveries = {
       "href": "/regions/ekaterinburg",
       "companies": [
         "ООО «МК «Технэкс»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "Свердловская область",
+      "href": "/regions/ekaterinburg#sverdlovskaya-oblast",
+      "companies": [
+        "ООО «Энергоавтоматика»"
+      ]
+    },
+    {
+      "kind": "region",
+      "name": "ХМАО-Югра",
+      "href": "/regions/surgut#khmao-yugra",
+      "companies": [
+        "ООО «СервисУралМонтаж»"
       ]
     }
   ],
@@ -45717,6 +50411,16 @@ export const productDeliveries = {
       ]
     }
   ],
+  "kppu-845x845": [
+    {
+      "kind": "region",
+      "name": "Томская область",
+      "href": "/regions/tomsk#tomskaya-oblast",
+      "companies": [
+        "ООО «УК «Техсервис»"
+      ]
+    }
+  ],
   "agregat-ao2-15-ksk3-vozdushniy-vodyanoy": [
     {
       "kind": "city",
@@ -45732,6 +50436,16 @@ export const productDeliveries = {
       "href": "/regions/chelyabinsk",
       "companies": [
         "ООО «Тотал Авто»"
+      ]
+    }
+  ],
+  "kppu-1299x1299": [
+    {
+      "kind": "city",
+      "name": "Хабаровск",
+      "href": "/regions/khabarovsk",
+      "companies": [
+        "ООО «Газобетон ДВ»"
       ]
     }
   ],
