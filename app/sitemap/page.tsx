@@ -159,10 +159,10 @@ function ProductAccordion({
   return (
     <Accordion type="single" collapsible>
       <AccordionItem value={value} className="border-b border-blue-400">
-        <AccordionTrigger className="px-4 text-left text-lg text-[#185abc] hover:no-underline [&>svg]:text-black">
+        <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 text-left text-base text-[#185abc] hover:no-underline [&>svg]:text-black">
           {title}
         </AccordionTrigger>
-        <AccordionContent className="border-l border-blue-400">
+        <AccordionContent className="ml-6 border-b border-l border-blue-400 pb-0">
           <ul>
             {products.map((product) => (
               <li
@@ -188,7 +188,7 @@ export default function SitemapPage() {
   return (
     <section className="max-w-8xl mx-auto grid grid-cols-1 gap-9 px-4 py-14 md:grid-cols-2">
       <div>
-        <div className="border-l-2 border-blue-400">
+        <div className="border-l border-blue-400">
           <h2 className="px-4 text-2xl">О компании</h2>
           <ul className="mt-4">
             {companyLinks.map(([name, href]) => (
@@ -203,7 +203,7 @@ export default function SitemapPage() {
             ))}
           </ul>
         </div>
-        <div className="mt-9 border-l-2 border-blue-400">
+        <div className="mt-9 border-l border-blue-400">
           <h2 className="px-4 text-2xl">Продукция</h2>
           <div className="mt-4">
             {productSections.map((section) => (
