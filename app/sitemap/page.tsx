@@ -3,6 +3,7 @@ import productData from "@/data/products.json";
 import { sortProducts } from "@/lib/utils";
 
 import { SITE_URL } from "@/constants";
+import { generatedRegions } from "@/data/regions/regions.generated";
 
 import Link from "next/link";
 
@@ -109,7 +110,10 @@ const productSections: {
 
 const companyLinks = [
   ["Главная. Завод ООО «Т.С.Т.»", "/"],
-  ["Прайс-лист и контакты", "/kontakty-prajs"],
+  ["Карточка предприятия", "/"],
+  ["Оплата и доставка", "/"],
+  ["Сертификаты соответствия", "/"],
+  ["Контакты", "/"],
   ["Политика обработки персональных данных", "/personal-data"],
 ] as const;
 
@@ -146,6 +150,10 @@ const generalPageLinks = [
   ["Электрокалориферные установки СФОЦ. Производство", "/teploventilyatory"],
   ["Шкафы управления калорифером ШУК. Производство", "/shkafy-upravleniya"],
 ] as const;
+
+const regionLinks = Object.values(generatedRegions).sort((a, b) =>
+  a.subject.name.localeCompare(b.subject.name, "ru"),
+);
 
 function ProductAccordion({
   title,
@@ -186,7 +194,7 @@ function ProductAccordion({
 
 export default function SitemapPage() {
   return (
-    <section className="max-w-8xl mx-auto grid grid-cols-1 gap-9 px-4 py-14 md:grid-cols-2">
+    <section className="max-w-8xl mx-auto grid grid-cols-1 gap-9 px-4 py-14 md:grid-cols-2 2xl:grid-cols-3">
       <div>
         <div className="border-l border-blue-400">
           <h2 className="px-4 text-2xl">О компании</h2>
@@ -212,16 +220,36 @@ export default function SitemapPage() {
           </div>
         </div>
       </div>
-      <div className="border-l-2 border-blue-400">
-        <h2 className="px-4 text-2xl">Общие страницы</h2>
+      <div>
+        <div className="border-l border-blue-400">
+          <h2 className="px-4 text-2xl">Общие страницы</h2>
+          <ul className="mt-4">
+            {generalPageLinks.map(([name, href]) => (
+              <li
+                key={href}
+                className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+              >
+                <Link className="hover:underline" href={href}>
+                  {name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="border-l border-blue-400">
+        <h2 className="px-4 text-2xl">Регионы</h2>
         <ul className="mt-4">
-          {generalPageLinks.map(([name, href]) => (
+          {regionLinks.map((region) => (
             <li
-              key={href}
+              key={region.slug}
               className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
             >
-              <Link className="hover:underline" href={href}>
-                {name}
+              <Link
+                className="hover:underline"
+                href={`/regions/${region.slug}`}
+              >
+                {region.capital.name}, {region.subject.name}
               </Link>
             </li>
           ))}
