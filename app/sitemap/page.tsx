@@ -85,27 +85,64 @@ const productSections: {
   },
   { value: "ksk", title: "Водяные калориферы КСк", products: kaloriferyKsk },
   { value: "tvv", title: "Водяные калориферы ТВВ", products: kaloriferyTvv },
-  { value: "kfb-a-m", title: "Калориферы КФБ-А М", products: kaloriferyKfbAM },
-  { value: "ao2-v", title: "Агрегаты АО2 В", products: kaloriferyAo2M },
-  { value: "avo-tvv", title: "Агрегаты АВО ТВВ", products: kaloriferyAvoTvv },
+  {
+    value: "kfb-a-m",
+    title: "Водяные калориферы КФБ-А М",
+    products: kaloriferyKfbAM,
+  },
+  {
+    value: "ao2-v",
+    title: "Водяные отопительные агрегаты АО 2 В",
+    products: kaloriferyAo2M,
+  },
+  {
+    value: "avo-tvv",
+    title: "Водяные отопительные агрегаты АВО ХЛ",
+    products: kaloriferyAvoTvv,
+  },
   {
     value: "std300-v",
-    title: "Агрегаты СТД-300 В",
+    title: "Водяные отопительные агрегаты СТД-300",
     products: kaloriferyStd300V,
   },
-  { value: "kpsk", title: "Калориферы КПСк", products: kaloriferyKpsk },
-  { value: "kp", title: "Калориферы КП", products: kaloriferyKp },
-  { value: "kfb-a-p", title: "Калориферы КФБ-А П", products: kaloriferyKfbAP },
-  { value: "ao2-p", title: "Агрегаты АО2 П", products: kaloriferyAo2P },
-  { value: "avo-kp", title: "Агрегаты АВО КП", products: kaloriferyAvoKp },
+  { value: "kpsk", title: "Паровые калориферы КПСк", products: kaloriferyKpsk },
+  { value: "kp", title: "Паровые калориферы КП", products: kaloriferyKp },
+  {
+    value: "kfb-a-p",
+    title: "Паровые калориферы КФБ-А П",
+    products: kaloriferyKfbAP,
+  },
+  {
+    value: "ao2-p",
+    title: "Паровые отопительные агрегаты АО 2 П",
+    products: kaloriferyAo2P,
+  },
+  {
+    value: "avo-kp",
+    title: "Паровые отопительные агрегаты АВО ХЛ",
+    products: kaloriferyAvoKp,
+  },
   {
     value: "std300-p",
-    title: "Агрегаты СТД-300 П",
+    title: "Паровые отопительные агрегаты СТД-300",
     products: kaloriferyStd300P,
   },
-  { value: "sfo", title: "Рекуператоры СФО", products: kaloriferySfo },
-  { value: "sfotc", title: "Установки СФОТЦ", products: ustanovkiSfotc },
-  { value: "shuk", title: "Шкафы управления ШУК", products: shkafyShuk },
+  { value: "sfo", title: "Электрокалориферы СФО", products: kaloriferySfo },
+  {
+    value: "sfotc",
+    title: "Электрокалориферные установки СФОЦ",
+    products: ustanovkiSfotc,
+  },
+  {
+    value: "shuk",
+    title: "Шкафы управления калорифером ШУК",
+    products: shkafyShuk,
+  },
+  {
+    value: "teny",
+    title: "Оребренные тэны ТЭНор",
+    products: [],
+  },
 ];
 
 const companyLinks = [
@@ -117,38 +154,36 @@ const companyLinks = [
   ["Политика обработки персональных данных", "/personal-data"],
 ] as const;
 
+const productLinks = [
+  ["Каталог оборудования", "/"],
+  ["Прайс-лист", "/"],
+  ["Калориферы", "/"],
+  ["Агрегаты воздушно-отопительные", "/"],
+  ["Установки воздухонагревательные", "/"],
+] as const;
+
 const generalPageLinks = [
-  [
-    "Схемы подключения электрокалориферов СФО-16...СФО-250",
-    "/elektrokalorifery",
-  ],
-  ["Расчет и подбор диаметра паропроводов", "/paroprovod"],
-  [
-    "Расчет и подбор водяных, паровых и электрических калориферов",
-    "/raschet-kaloriferov",
-  ],
-  ["Расчет и подбор паровых калориферов", "/podbor-raschet-kaloriferov"],
-  ["Калориферы приточные водяные", "/kalorifery-voda"],
-  ["Калориферы приточные паровые", "/kalorifery-par"],
-  ["Паровые калориферы", "/kalorifer-par"],
-  [
-    "Коэффициент теплопередачи паровых калориферов",
-    "/koefficient-teploperedachi-parovyh-kaloriferov",
-  ],
-  ["Калориферы водяные КСк", "/kalorifery-ksk"],
-  ["Калориферы паровые КПСк", "/kalorifery-kpsk"],
-  ["Калориферы водяные ТВВ", "/kalorifery-tvv"],
-  ["Калориферы паровые КП", "/kalorifery-kp"],
-  ["Калориферы водяные КФБ-А М", "/kalorifery-kfb-a"],
-  ["Калориферы паровые КФБ-А П", "/kalorifery-kfb"],
-  ["Воздушно-отопительные агрегаты водяные", "/ao2-ksk-kpsk"],
-  ["Воздушно-отопительные агрегаты паровые", "/ao2-kpsk-ksk"],
-  ["Воздушно-отопительные агрегаты АВО ХЛ", "/avo-tvv-kp"],
-  ["Воздушно-отопительные агрегаты водяные СТД-300", "/std300-ksk-kpsk"],
-  ["Воздушно-отопительные агрегаты паровые СТД-300", "/std300-tvv-kp"],
-  ["Электрокалориферы СФО. Производство", "/elektronagrevateli"],
-  ["Электрокалориферные установки СФОЦ. Производство", "/teploventilyatory"],
-  ["Шкафы управления калорифером ШУК. Производство", "/shkafy-upravleniya"],
+  ["Техническая страница", "/"],
+  ["Калькулятор водяных калориферов", "/"],
+  ["Калькулятор паровых калориферов", "/"],
+  ["Калькулятор электрокалориферов", "/"],
+  ["Критерии расчета и подбора калориферов", "/"],
+  ["Водяные калориферы для сушильных камер", "/"],
+  ["Паровые калориферы", "/"],
+  ["Теплоноситель водяной пар", "/"],
+  ["Паровые калориферы для сушильных камер", "/"],
+  ["Технологический нагрев воздуха", "/"],
+  ["Расчет и подбор диаметра паропровода", "/"],
+  ["Расчет и подбор паровых калориферов", "/"],
+  ["Расчет тепловой мощности", "/"],
+  ["Расчет площади фронтального сечения", "/"],
+  ["Расчет массовой скорости воздуха", "/"],
+  ["Расчет расхода пара", "/"],
+  ["Расчет коэффициента теплопередачи", "/"],
+  ["Расчет среднего температурного напора", "/"],
+  ["Расчет аэродинамического сопротивления", "/"],
+  ["Схемы подключения электрокалориферов", "/"],
+  ["Расчет электрокалорифера мощностью", "/"],
 ] as const;
 
 const regionLinks = Object.values(generatedRegions).sort((a, b) =>
@@ -167,7 +202,7 @@ function ProductAccordion({
   return (
     <Accordion type="single" collapsible>
       <AccordionItem value={value} className="border-b border-blue-400">
-        <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 text-left text-base text-[#185abc] hover:no-underline [&>svg]:text-black">
+        <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] hover:no-underline [&>svg]:text-black">
           {title}
         </AccordionTrigger>
         <AccordionContent className="ml-6 border-b border-l border-blue-400 pb-0">
@@ -214,6 +249,18 @@ export default function SitemapPage() {
         <div className="mt-9 border-l border-blue-400">
           <h2 className="px-4 text-2xl">Продукция</h2>
           <div className="mt-4">
+            <ul>
+              {productLinks.map(([name, href]) => (
+                <li
+                  key={href}
+                  className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+                >
+                  <Link className="hover:underline" href={href}>
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
             {productSections.map((section) => (
               <ProductAccordion key={section.value} {...section} />
             ))}
@@ -240,6 +287,9 @@ export default function SitemapPage() {
       <div className="border-l border-blue-400">
         <h2 className="px-4 text-2xl">Регионы</h2>
         <ul className="mt-4">
+          <li className="border-b border-blue-400 px-4 py-2 text-[#185abc]">
+            Карта региональных поставок
+          </li>
           {regionLinks.map((region) => (
             <li
               key={region.slug}
