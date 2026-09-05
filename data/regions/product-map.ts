@@ -2,25 +2,25 @@ import { PRODUCT_ID_SET } from "./product-catalog";
 import type { ProductId, ProductReference } from "./types";
 
 export const PRODUCT_CATEGORY_ROUTES: Record<string, string> = {
-  "КСк": "/kalorifery-ksk",
-  "КСК": "/kalorifery-ksk",
-  "КПСк": "/kalorifery-kpsk",
-  "КПСК": "/kalorifery-kpsk",
-  "ТВВ": "/kalorifery-tvv",
-  "КП": "/kalorifery-kp",
-  "КФБ": "/kalorifery-kfb",
+  КСк: "/kalorifery-ksk",
+  КСК: "/kalorifery-ksk",
+  КПСк: "/kalorifery-kpsk",
+  КПСК: "/kalorifery-kpsk",
+  ТВВ: "/kalorifery-tvv",
+  КП: "/kalorifery-kp",
+  КФБ: "/kalorifery-kfb",
   "КФБ-А": "/kalorifery-kfb-a",
   "КФБ-А М": "/kalorifery-kfb-a",
   "КФБ-А П": "/kalorifery-kfb-a",
-  "СФО": "/elektrokalorifery",
-  "СФОЦ": "/teploventilyatory",
-  "ШУК": "/shkafy-upravleniya",
+  СФО: "/elektrokalorifery",
+  СФОЦ: "/teploventilyatory",
+  ШУК: "/shkafy-upravleniya",
   "АО 2 В": "/ao2-ksk-kpsk",
   "АО 2 П": "/ao2-ksk-kpsk",
-  "КПВС": "/kalorifery-voda",
-  "КПВУ": "/kalorifery-voda",
-  "КППС": "/kalorifery-par",
-  "КППУ": "/kalorifery-par",
+  КПВС: "/kalorifery-voda",
+  КПВУ: "/kalorifery-voda",
+  КППС: "/kalorifery-par",
+  КППУ: "/kalorifery-par",
   "СТД-300 В": "/std300-ksk-kpsk",
   "СТД-300 П": "/std300-ksk-kpsk",
   "СТД-300": "/std300-ksk-kpsk",
@@ -28,12 +28,8 @@ export const PRODUCT_CATEGORY_ROUTES: Record<string, string> = {
 };
 
 function normalizeName(value: string) {
-  return value
-    .trim()
-    .replace(/[–—]/g, "-")
-    .replace(/\s+/g, " ");
+  return value.trim().replace(/[–—]/g, "-").replace(/\s+/g, " ");
 }
-
 
 function resolvePrefixedCategory(name: string): ProductReference | null {
   // Описательная приписка хранится отдельно, а ссылкой остаётся
@@ -67,9 +63,9 @@ function resolvePrefixedCategory(name: string): ProductReference | null {
     // Новая форма из Excel относится именно к описаниям калориферов.
     // Ограничение защищает от случайного превращения произвольного
     // текста, заканчивающегося названием категории, в ссылку.
-    if (!/^Калориферы(?:\s|$)/i.test(prefix)) {
+    /* if (!/^Калориферы(?:\s|$)/i.test(prefix)) {
       continue;
-    }
+    } */
 
     return {
       kind: "category",
@@ -196,9 +192,7 @@ export function resolveProduct(rawName: string): ProductReference {
     .replace(/-А/g, " А")
     .replace(/\s+/g, " ");
 
-  match = normalizedKfb.match(
-    /^КФБ\s*(\d{1,2})\s*А([34])(?:\s+([МП]))?$/i,
-  );
+  match = normalizedKfb.match(/^КФБ\s*(\d{1,2})\s*А([34])(?:\s+([МП]))?$/i);
 
   if (match) {
     const size = Number(match[1]);
@@ -208,10 +202,7 @@ export function resolveProduct(rawName: string): ProductReference {
     let id: string;
 
     if (medium === "П") {
-      id =
-        rows === "3"
-          ? `kalorifer-kfb-${size}`
-          : `kalorifer-kfb-${size}-p`;
+      id = rows === "3" ? `kalorifer-kfb-${size}` : `kalorifer-kfb-${size}-p`;
     } else {
       // "М" — водяной КФБ.
       // Если буква среды отсутствует, сохраняем прежнее поведение

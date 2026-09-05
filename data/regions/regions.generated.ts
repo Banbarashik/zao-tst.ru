@@ -580,6 +580,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 2-7",
+            "id": "kalorifer-kpsk-2-7"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 2-10",
             "id": "kalorifer-kpsk-2-10"
           }
@@ -588,6 +593,11 @@ export const generatedRegions = {
           {
             "year": 2015,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 2-7",
+                "id": "kalorifer-kpsk-2-7"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 2-10",
@@ -884,6 +894,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-5",
             "id": "kalorifer-kpsk-4-5"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-5",
+            "id": "kalorifer-kpsk-2-5"
           }
         ],
         "deliveries": [
@@ -894,6 +909,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-5",
                 "id": "kalorifer-kpsk-4-5"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-5",
+                "id": "kalorifer-kpsk-2-5"
               }
             ],
             "industrySector": "Промышленное снабжение"
@@ -1743,6 +1763,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-16",
             "id": "elektrokalorifer-sfo-16"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
           }
         ],
         "deliveries": [
@@ -1758,6 +1783,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -1776,6 +1806,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-25",
             "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-9",
+            "id": "kalorifer-kpsk-2-9"
           }
         ],
         "deliveries": [
@@ -1786,6 +1821,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-9",
+                "id": "kalorifer-kpsk-2-9"
               }
             ],
             "industrySector": "Металлообработка"
@@ -1804,6 +1844,16 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
           }
         ],
         "deliveries": [
@@ -1814,6 +1864,16 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
               }
             ],
             "industrySector": "Деревообрабатывающая пром-сть"
@@ -1847,6 +1907,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-100",
             "id": "ustanovka-sfotc-100"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-250",
+            "id": "elektrokalorifer-sfo-250"
           },
           {
             "kind": "category",
@@ -1884,6 +1949,11 @@ export const generatedRegions = {
                 "id": "ustanovka-sfotc-100"
               },
               {
+                "kind": "product",
+                "name": "СФО-250",
+                "id": "elektrokalorifer-sfo-250"
+              },
+              {
                 "kind": "category",
                 "name": "ШУК",
                 "href": "/shkafy-upravleniya"
@@ -1894,7 +1964,7 @@ export const generatedRegions = {
                 "id": "shkaf-upravleniia-shuk-250"
               }
             ],
-            "industrySector": "Вентиляция/Монтаж"
+            "industrySector": "Промышленное снабжение"
           }
         ]
       },
@@ -2277,6 +2347,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КП 406",
             "id": "kalorifer-kp-406"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 3-2",
+            "id": "kalorifer-kpsk-3-2"
           }
         ],
         "deliveries": [
@@ -2292,6 +2367,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КП 406",
                 "id": "kalorifer-kp-406"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 3-2",
+                "id": "kalorifer-kpsk-3-2"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -2452,6 +2532,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-7",
             "id": "kalorifer-kpsk-4-7"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-3",
+            "id": "kalorifer-kpsk-2-3"
           }
         ],
         "deliveries": [
@@ -2462,6 +2547,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-3",
+                "id": "kalorifer-kpsk-2-3"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -3958,6 +4048,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-40",
             "id": "ustanovka-sfotc-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -3973,6 +4068,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Добывающая отрасль"
@@ -4526,6 +4626,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-60",
             "id": "shkaf-upravleniia-shuk-60"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -4551,6 +4656,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-60",
                 "id": "shkaf-upravleniia-shuk-60"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -5075,6 +5185,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-40",
             "id": "shkaf-upravleniia-shuk-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -5100,6 +5215,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Металлообработка"
@@ -5409,8 +5529,18 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "СФО-40",
+            "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
             "name": "ШУК-40",
             "id": "shkaf-upravleniia-shuk-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -5419,8 +5549,18 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
+                "name": "СФО-40",
+                "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -5497,6 +5637,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-100",
             "id": "shkaf-upravleniia-shuk-100"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -5517,6 +5662,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Металлообработка"
@@ -5591,6 +5741,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-16",
             "id": "ustanovka-sfotc-16"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -5606,6 +5761,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Лесопромышленный комплекс"
@@ -5729,7 +5889,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "АО «ЧМХС»",
+        "name": "АО «Череповецметаллургхимстрой»",
         "settlement": {
           "name": "Череповец",
           "slug": "cherepovets",
@@ -5862,6 +6022,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -5872,6 +6037,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Промышленное снабжение"
@@ -5989,6 +6159,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КППУ 617х617_3",
             "id": "kppu-617x617"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-2",
+            "id": "kalorifer-kpsk-4-2"
           }
         ],
         "deliveries": [
@@ -6009,6 +6184,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КППУ 617х617_3",
                 "id": "kppu-617x617"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-2",
+                "id": "kalorifer-kpsk-4-2"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -6131,6 +6311,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-7",
             "id": "kalorifer-kpsk-4-7"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-9",
+            "id": "kalorifer-kpsk-2-9"
           }
         ],
         "deliveries": [
@@ -6141,6 +6326,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-7",
                 "id": "kalorifer-kpsk-4-7"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-9",
+                "id": "kalorifer-kpsk-2-9"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -6494,6 +6684,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
+          },
+          {
+            "kind": "product",
             "name": "КСк 4-11",
             "id": "kalorifer-ksk-4-11"
           },
@@ -6516,6 +6711,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               },
               {
                 "kind": "product",
@@ -6656,6 +6856,16 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 2-2",
+            "id": "kalorifer-kpsk-2-2"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 3-2",
+            "id": "kalorifer-kpsk-3-2"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-9",
             "id": "kalorifer-kpsk-3-9"
           }
@@ -6668,6 +6878,16 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "КПСк",
                 "href": "/kalorifery-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-2",
+                "id": "kalorifer-kpsk-2-2"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 3-2",
+                "id": "kalorifer-kpsk-3-2"
               },
               {
                 "kind": "product",
@@ -6696,6 +6916,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-25",
             "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -6711,6 +6936,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Металлообработка"
@@ -7432,6 +7662,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
+          },
+          {
+            "kind": "product",
             "name": "КСк 4-10",
             "id": "kalorifer-ksk-4-10"
           }
@@ -7449,6 +7684,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               },
               {
                 "kind": "product",
@@ -7910,6 +8150,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "ТВВ 309",
+            "id": "kalorifer-tvv-309"
+          },
+          {
+            "kind": "product",
             "name": "ТВВ 311",
             "id": "kalorifer-tvv-311"
           },
@@ -7937,6 +8182,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КФБ-10 А3 М",
                 "id": "kalorifer-kfb-10-a3"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 309",
+                "id": "kalorifer-tvv-309"
               },
               {
                 "kind": "product",
@@ -7973,6 +8223,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
+          },
+          {
+            "kind": "product",
             "name": "СФО-160",
             "id": "elektrokalorifer-sfo-160"
           },
@@ -7989,12 +8244,17 @@ export const generatedRegions = {
         ],
         "deliveries": [
           {
-            "year": 2008,
+            "year": 2014,
             "products": [
               {
                 "kind": "category",
                 "name": "СФО",
                 "href": "/elektrokalorifery"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
               },
               {
                 "kind": "product",
@@ -8033,6 +8293,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-25",
             "id": "ustanovka-sfotc-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -8048,6 +8313,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -8076,6 +8346,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-40",
             "id": "ustanovka-sfotc-40"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
           }
         ],
         "deliveries": [
@@ -8096,6 +8371,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -8344,6 +8624,11 @@ export const generatedRegions = {
             "id": "elektrokalorifer-sfo-40"
           },
           {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
+          },
+          {
             "kind": "category",
             "name": "СФОЦ",
             "href": "/teploventilyatory"
@@ -8379,6 +8664,11 @@ export const generatedRegions = {
                 "id": "elektrokalorifer-sfo-40"
               },
               {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
+              },
+              {
                 "kind": "category",
                 "name": "СФОЦ",
                 "href": "/teploventilyatory"
@@ -8410,6 +8700,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-25",
             "id": "ustanovka-sfotc-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -8420,6 +8715,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -8733,7 +9033,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ПАО «Кадви»",
+        "name": "ПАО «Калужский двигатель»",
         "settlement": {
           "name": "Калуга",
           "slug": "kaluga",
@@ -8965,6 +9265,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 2-10",
+            "id": "kalorifer-kpsk-2-10"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-10",
             "id": "kalorifer-kpsk-3-10"
           }
@@ -8977,6 +9282,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КП 411",
                 "id": "kalorifer-kp-411"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-10",
+                "id": "kalorifer-kpsk-2-10"
               },
               {
                 "kind": "product",
@@ -9213,6 +9523,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "СФО-250",
+            "id": "elektrokalorifer-sfo-250"
+          },
+          {
+            "kind": "product",
             "name": "ТЭНы",
             "id": "teny-orebrenny'e"
           }
@@ -9235,6 +9550,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КФБ-10 А4 П",
                 "id": "kalorifer-kfb-10-p"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-250",
+                "id": "elektrokalorifer-sfo-250"
               },
               {
                 "kind": "product",
@@ -9524,6 +9844,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 2-9",
             "id": "kalorifer-ksk-2-9"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-8",
+            "id": "kalorifer-kpsk-2-8"
           }
         ],
         "deliveries": [
@@ -9544,6 +9869,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 2-9",
                 "id": "kalorifer-ksk-2-9"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-8",
+                "id": "kalorifer-kpsk-2-8"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -9605,6 +9935,16 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-100",
             "id": "shkaf-upravleniia-shuk-100"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -9620,6 +9960,16 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-100",
                 "id": "shkaf-upravleniia-shuk-100"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Произ-во строительных материалов"
@@ -10132,6 +10482,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КП 406",
             "id": "kalorifer-kp-406"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-6",
+            "id": "kalorifer-kpsk-4-6"
           }
         ],
         "deliveries": [
@@ -10142,6 +10497,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КП 406",
                 "id": "kalorifer-kp-406"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-6",
+                "id": "kalorifer-kpsk-4-6"
               }
             ],
             "industrySector": "Промышленное снабжение"
@@ -10507,6 +10867,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-8",
             "id": "kalorifer-kpsk-4-8"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-5",
+            "id": "kalorifer-kpsk-2-5"
           }
         ],
         "deliveries": [
@@ -10522,6 +10887,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-5",
+                "id": "kalorifer-kpsk-2-5"
               }
             ],
             "industrySector": "ЖКХ и теплосети"
@@ -10711,11 +11081,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-160",
             "id": "shkaf-upravleniia-shuk-160"
-          },
-          {
-            "kind": "product",
-            "name": "ТЭНы",
-            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -10801,11 +11166,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-160",
                 "id": "shkaf-upravleniia-shuk-160"
-              },
-              {
-                "kind": "product",
-                "name": "ТЭНы",
-                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Добывающая отрасль"
@@ -11114,26 +11474,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 3-4",
             "id": "kalorifer-ksk-3-4"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-5",
-            "id": "kalorifer-ksk-3-5"
-          },
-          {
-            "kind": "product",
-            "name": "КСК 3-6",
-            "id": "kalorifer-ksk-3-6"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-1",
-            "id": "kalorifer-ksk-4-1"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 4-4",
-            "id": "kalorifer-ksk-4-4"
           }
         ],
         "deliveries": [
@@ -11144,26 +11484,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 3-4",
                 "id": "kalorifer-ksk-3-4"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-5",
-                "id": "kalorifer-ksk-3-5"
-              },
-              {
-                "kind": "product",
-                "name": "КСК 3-6",
-                "id": "kalorifer-ksk-3-6"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-1",
-                "id": "kalorifer-ksk-4-1"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 4-4",
-                "id": "kalorifer-ksk-4-4"
               }
             ],
             "industrySector": "Вентиляция/Кондиционирование"
@@ -11730,6 +12050,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 3-2",
+            "id": "kalorifer-kpsk-3-2"
+          },
+          {
+            "kind": "product",
             "name": "КФБ-14 А4 П",
             "id": "kalorifer-kfb-14-p"
           }
@@ -11738,6 +12063,11 @@ export const generatedRegions = {
           {
             "year": 2013,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 3-2",
+                "id": "kalorifer-kpsk-3-2"
+              },
               {
                 "kind": "product",
                 "name": "КФБ-14 А4 П",
@@ -11975,6 +12305,62 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "product",
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2015,
+            "products": [
+              {
+                "kind": "product",
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
+              }
+            ],
+            "industrySector": "Машиностроение"
+          }
+        ]
+      },
+      {
+        "name": "ООО «ЭлТехПром»",
+        "settlement": {
+          "name": "Кемерово",
+          "slug": "kemerovo",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2015,
+            "products": [
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
+              }
+            ],
+            "industrySector": "Приборостроение и электротехника"
+          }
+        ]
+      },
+      {
+        "name": "ООО «Кокс-Майнинг»",
+        "settlement": {
+          "name": "Кемерово",
+          "slug": "kemerovo",
+          "type": "city"
+        },
+        "products": [
+          {
             "kind": "category",
             "name": "СФО",
             "href": "/elektrokalorifery"
@@ -12000,72 +12386,6 @@ export const generatedRegions = {
                 "id": "elektrokalorifer-sfo-250"
               }
             ],
-            "industrySector": "Машиностроение"
-          }
-        ]
-      },
-      {
-        "name": "ООО «ЭлТехПром»",
-        "settlement": {
-          "name": "Кемерово",
-          "slug": "kemerovo",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "СФО",
-            "href": "/elektrokalorifery"
-          },
-          {
-            "kind": "product",
-            "name": "СФО-60",
-            "id": "elektrokalorifer-sfo-60"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2015,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФО",
-                "href": "/elektrokalorifery"
-              },
-              {
-                "kind": "product",
-                "name": "СФО-60",
-                "id": "elektrokalorifer-sfo-60"
-              }
-            ],
-            "industrySector": "Приборостроение и электротехника"
-          }
-        ]
-      },
-      {
-        "name": "ООО «Кокс-Майнинг»",
-        "settlement": {
-          "name": "Кемерово",
-          "slug": "kemerovo",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФО-100",
-            "id": "elektrokalorifer-sfo-100"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2015,
-            "products": [
-              {
-                "kind": "product",
-                "name": "СФО-100",
-                "id": "elektrokalorifer-sfo-100"
-              }
-            ],
             "industrySector": "Добывающая отрасль"
           }
         ]
@@ -12082,6 +12402,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-16",
             "id": "elektrokalorifer-sfo-16"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -12092,6 +12417,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Техническое обслуживание и ремонт"
@@ -12529,6 +12859,94 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "АО «Знамя»",
+        "settlement": {
+          "name": "Киселевск",
+          "slug": "kiselevsk",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КПСк 3-6",
+            "id": "kalorifer-kpsk-3-6"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-10",
+            "id": "kalorifer-kpsk-4-10"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 309",
+            "id": "kalorifer-tvv-309"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 410",
+            "id": "kalorifer-tvv-410"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 312",
+            "id": "kalorifer-tvv-312"
+          },
+          {
+            "kind": "product",
+            "name": "АО 2-3 (КСк3)",
+            "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
+          },
+          {
+            "kind": "product",
+            "name": "АО 2-25 (КСк3)",
+            "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2025,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 3-6",
+                "id": "kalorifer-kpsk-3-6"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-10",
+                "id": "kalorifer-kpsk-4-10"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 309",
+                "id": "kalorifer-tvv-309"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 410",
+                "id": "kalorifer-tvv-410"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 312",
+                "id": "kalorifer-tvv-312"
+              },
+              {
+                "kind": "product",
+                "name": "АО 2-3 (КСк3)",
+                "id": "agregat-ao2-3-ksk3-vozdushniy-vodyanoy"
+              },
+              {
+                "kind": "product",
+                "name": "АО 2-25 (КСк3)",
+                "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+              }
+            ],
+            "industrySector": "Химическая промышленность"
+          }
+        ]
+      },
+      {
         "name": "ООО «Обогатительная фабрика «Тайбинская»",
         "settlement": {
           "name": "Киселевск",
@@ -12548,52 +12966,14 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 4-10",
-            "id": "kalorifer-kpsk-4-10"
+            "name": "КП 410",
+            "id": "kalorifer-kp-410"
           },
           {
             "kind": "product",
             "name": "КП 411",
             "id": "kalorifer-kp-411"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2013,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-8",
-                "id": "kalorifer-ksk-4-8"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 2-2",
-                "id": "kalorifer-kpsk-2-2"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 4-10",
-                "id": "kalorifer-kpsk-4-10"
-              },
-              {
-                "kind": "product",
-                "name": "КП 411",
-                "id": "kalorifer-kp-411"
-              }
-            ],
-            "industrySector": "Горнодобывающая пром-ть"
-          }
-        ]
-      },
-      {
-        "name": "ООО «Обогатительная фабрика «Каро»",
-        "settlement": {
-          "name": "Киселевск",
-          "slug": "kiselevsk",
-          "type": "city"
-        },
-        "products": [
+          },
           {
             "kind": "product",
             "name": "КФБ-10 А3 П",
@@ -12612,8 +12992,28 @@ export const generatedRegions = {
         ],
         "deliveries": [
           {
-            "year": 2008,
+            "year": 2013,
             "products": [
+              {
+                "kind": "product",
+                "name": "КСк 4-8",
+                "id": "kalorifer-ksk-4-8"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-2",
+                "id": "kalorifer-kpsk-2-2"
+              },
+              {
+                "kind": "product",
+                "name": "КП 410",
+                "id": "kalorifer-kp-410"
+              },
+              {
+                "kind": "product",
+                "name": "КП 411",
+                "id": "kalorifer-kp-411"
+              },
               {
                 "kind": "product",
                 "name": "КФБ-10 А3 П",
@@ -12651,6 +13051,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
           }
         ],
         "deliveries": [
@@ -12666,6 +13071,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -12721,6 +13131,44 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "ООО ППК «Орион»",
+        "settlement": {
+          "name": "Киселевск",
+          "slug": "kiselevsk",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "category",
+            "name": "АВО 4-95-01 В",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 7-165-01 В",
+            "href": "/avo-tvv-kp"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2024,
+            "products": [
+              {
+                "kind": "category",
+                "name": "АВО 4-95-01 В",
+                "href": "/avo-tvv-kp"
+              },
+              {
+                "kind": "category",
+                "name": "АВО 7-165-01 В",
+                "href": "/avo-tvv-kp"
+              }
+            ],
+            "industrySector": "Перерабатывающая пром-ть"
+          }
+        ]
+      },
+      {
         "name": "ЗАО «Салек»",
         "settlement": {
           "name": "Киселевск",
@@ -12728,6 +13176,11 @@ export const generatedRegions = {
           "type": "city"
         },
         "products": [
+          {
+            "kind": "product",
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
+          },
           {
             "kind": "product",
             "name": "СФО-250",
@@ -12738,6 +13191,11 @@ export const generatedRegions = {
           {
             "year": 2008,
             "products": [
+              {
+                "kind": "product",
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
+              },
               {
                 "kind": "product",
                 "name": "СФО-250",
@@ -13187,8 +13645,18 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
+          },
+          {
+            "kind": "product",
             "name": "СФО-25",
             "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -13202,8 +13670,18 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
+              },
+              {
+                "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "ЖКХ и водоснабжение"
@@ -13288,6 +13766,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 407",
             "id": "kalorifer-tvv-407"
+          },
+          {
+            "kind": "product",
+            "name": "КП 407",
+            "id": "kalorifer-kp-407"
           }
         ],
         "deliveries": [
@@ -13298,6 +13781,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 407",
                 "id": "kalorifer-tvv-407"
+              },
+              {
+                "kind": "product",
+                "name": "КП 407",
+                "id": "kalorifer-kp-407"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -13483,6 +13971,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-60",
             "id": "shkaf-upravleniia-shuk-60"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -13498,6 +13991,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-60",
                 "id": "shkaf-upravleniia-shuk-60"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -13579,6 +14077,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "АО 2 В",
+            "href": "/ao2-ksk-kpsk"
+          },
+          {
             "kind": "product",
             "name": "АО 2-10 (КСк3)",
             "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
@@ -13593,6 +14096,11 @@ export const generatedRegions = {
           {
             "year": 2013,
             "products": [
+              {
+                "kind": "category",
+                "name": "АО 2 В",
+                "href": "/ao2-ksk-kpsk"
+              },
               {
                 "kind": "product",
                 "name": "АО 2-10 (КСк3)",
@@ -13665,6 +14173,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "АО 2 П",
+            "href": "/ao2-ksk-kpsk"
+          },
+          {
             "kind": "product",
             "name": "АО 2-3 (КПСк3)",
             "id": "agregat-ao2-3-ksk3-vozdushniy-parovoy"
@@ -13694,6 +14207,11 @@ export const generatedRegions = {
           {
             "year": 2007,
             "products": [
+              {
+                "kind": "category",
+                "name": "АО 2 П",
+                "href": "/ao2-ksk-kpsk"
+              },
               {
                 "kind": "product",
                 "name": "АО 2-3 (КПСк3)",
@@ -13771,6 +14289,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "КП",
+            "href": "/kalorifery-kp"
+          },
+          {
             "kind": "product",
             "name": "КП 306",
             "id": "kalorifer-kp-306"
@@ -13780,6 +14303,11 @@ export const generatedRegions = {
           {
             "year": 2016,
             "products": [
+              {
+                "kind": "category",
+                "name": "КП",
+                "href": "/kalorifery-kp"
+              },
               {
                 "kind": "product",
                 "name": "КП 306",
@@ -13827,6 +14355,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "КПВС",
+            "href": "/kalorifery-voda"
+          },
+          {
             "kind": "product",
             "name": "КПВС 614х614_3",
             "id": "kpvs-614x614"
@@ -13836,6 +14369,11 @@ export const generatedRegions = {
           {
             "year": 2022,
             "products": [
+              {
+                "kind": "category",
+                "name": "КПВС",
+                "href": "/kalorifery-voda"
+              },
               {
                 "kind": "product",
                 "name": "КПВС 614х614_3",
@@ -13883,6 +14421,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "КПВУ",
+            "href": "/kalorifery-voda"
+          },
+          {
             "kind": "product",
             "name": "КПВУ 1299х1299_4",
             "id": "kpvu-1299x1299"
@@ -13897,6 +14440,11 @@ export const generatedRegions = {
           {
             "year": 2018,
             "products": [
+              {
+                "kind": "category",
+                "name": "КПВУ",
+                "href": "/kalorifery-voda"
+              },
               {
                 "kind": "product",
                 "name": "КПВУ 1299х1299_4",
@@ -13922,6 +14470,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "СТД-300 (ТВВ4)",
+            "id": "std300-tvv"
+          },
+          {
+            "kind": "product",
             "name": "КПВУ 1390х1390_4",
             "id": "kpvu-1390x1390"
           }
@@ -13930,6 +14483,11 @@ export const generatedRegions = {
           {
             "year": 2015,
             "products": [
+              {
+                "kind": "product",
+                "name": "СТД-300 (ТВВ4)",
+                "id": "std300-tvv"
+              },
               {
                 "kind": "product",
                 "name": "КПВУ 1390х1390_4",
@@ -14005,6 +14563,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "КППС",
+            "href": "/kalorifery-par"
+          },
+          {
             "kind": "product",
             "name": "КППС 905х905_3",
             "id": "kpps-905x905"
@@ -14014,6 +14577,11 @@ export const generatedRegions = {
           {
             "year": 2017,
             "products": [
+              {
+                "kind": "category",
+                "name": "КППС",
+                "href": "/kalorifery-par"
+              },
               {
                 "kind": "product",
                 "name": "КППС 905х905_3",
@@ -14061,6 +14629,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "КППУ",
+            "href": "/kalorifery-par"
+          },
+          {
             "kind": "product",
             "name": "КППУ 663х663_2",
             "id": "kppu-663x663"
@@ -14070,6 +14643,11 @@ export const generatedRegions = {
           {
             "year": 2012,
             "products": [
+              {
+                "kind": "category",
+                "name": "КППУ",
+                "href": "/kalorifery-par"
+              },
               {
                 "kind": "product",
                 "name": "КППУ 663х663_2",
@@ -14123,11 +14701,6 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПСк 2-4",
-            "id": "kalorifer-kpsk-2-4"
-          },
-          {
-            "kind": "product",
             "name": "КПСк 3-1",
             "id": "kalorifer-kpsk-3-1"
           }
@@ -14140,11 +14713,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 2-3",
                 "id": "kalorifer-kpsk-2-3"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 2-4",
-                "id": "kalorifer-kpsk-2-4"
               },
               {
                 "kind": "product",
@@ -14165,6 +14733,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "КПСк",
+            "href": "/kalorifery-kpsk"
+          },
+          {
             "kind": "product",
             "name": "КПСк 2-2",
             "id": "kalorifer-kpsk-2-2"
@@ -14179,6 +14752,11 @@ export const generatedRegions = {
           {
             "year": 2018,
             "products": [
+              {
+                "kind": "category",
+                "name": "КПСк",
+                "href": "/kalorifery-kpsk"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 2-2",
@@ -14280,6 +14858,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 3-3",
+            "id": "kalorifer-kpsk-3-3"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-7",
             "id": "kalorifer-kpsk-3-7"
           },
@@ -14303,6 +14886,11 @@ export const generatedRegions = {
           {
             "year": 2013,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 3-3",
+                "id": "kalorifer-kpsk-3-3"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 3-7",
@@ -14358,6 +14946,16 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КП 308",
+            "id": "kalorifer-kp-308"
+          },
+          {
+            "kind": "category",
+            "name": "СФО",
+            "href": "/elektrokalorifery"
+          },
+          {
+            "kind": "product",
             "name": "СФО-16",
             "id": "elektrokalorifer-sfo-16"
           },
@@ -14405,6 +15003,16 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
+              },
+              {
+                "kind": "product",
+                "name": "КП 308",
+                "id": "kalorifer-kp-308"
+              },
+              {
+                "kind": "category",
+                "name": "СФО",
+                "href": "/elektrokalorifery"
               },
               {
                 "kind": "product",
@@ -14531,6 +15139,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "КСк",
+            "href": "/kalorifery-ksk"
+          },
+          {
             "kind": "product",
             "name": "КСк 3-11",
             "id": "kalorifer-ksk-3-11"
@@ -14540,6 +15153,11 @@ export const generatedRegions = {
           {
             "year": 2025,
             "products": [
+              {
+                "kind": "category",
+                "name": "КСк",
+                "href": "/kalorifery-ksk"
+              },
               {
                 "kind": "product",
                 "name": "КСк 3-11",
@@ -14705,6 +15323,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 4-10",
             "id": "kalorifer-ksk-4-10"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-5",
+            "id": "kalorifer-kpsk-4-5"
           }
         ],
         "deliveries": [
@@ -14750,6 +15373,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 4-10",
                 "id": "kalorifer-ksk-4-10"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-5",
+                "id": "kalorifer-kpsk-4-5"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -15027,6 +15655,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "КФБ-А М",
+            "href": "/kalorifery-kfb-a"
+          },
+          {
             "kind": "product",
             "name": "КФБ-4 А4 М",
             "id": "kalorifer-kfb-4-a4"
@@ -15036,6 +15669,11 @@ export const generatedRegions = {
           {
             "year": 2019,
             "products": [
+              {
+                "kind": "category",
+                "name": "КФБ-А М",
+                "href": "/kalorifery-kfb-a"
+              },
               {
                 "kind": "product",
                 "name": "КФБ-4 А4 М",
@@ -15217,6 +15855,11 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "СТД-300 В",
+            "href": "/std300-ksk-kpsk"
+          },
+          {
             "kind": "product",
             "name": "СТД-300 (КСк4)",
             "id": "std300-ksk"
@@ -15231,6 +15874,11 @@ export const generatedRegions = {
           {
             "year": 2025,
             "products": [
+              {
+                "kind": "category",
+                "name": "СТД-300 В",
+                "href": "/std300-ksk-kpsk"
+              },
               {
                 "kind": "product",
                 "name": "СТД-300 (КСк4)",
@@ -15255,9 +15903,19 @@ export const generatedRegions = {
         },
         "products": [
           {
+            "kind": "category",
+            "name": "СФОЦ",
+            "href": "/teploventilyatory"
+          },
+          {
             "kind": "product",
             "name": "СФОЦ-16",
             "id": "ustanovka-sfotc-16"
+          },
+          {
+            "kind": "category",
+            "name": "ШУК",
+            "href": "/shkafy-upravleniya"
           },
           {
             "kind": "product",
@@ -15270,9 +15928,19 @@ export const generatedRegions = {
             "year": 2013,
             "products": [
               {
+                "kind": "category",
+                "name": "СФОЦ",
+                "href": "/teploventilyatory"
+              },
+              {
                 "kind": "product",
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
+              },
+              {
+                "kind": "category",
+                "name": "ШУК",
+                "href": "/shkafy-upravleniya"
               },
               {
                 "kind": "product",
@@ -15440,6 +16108,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "ШУК-160",
+            "id": "shkaf-upravleniia-shuk-160"
+          },
+          {
+            "kind": "product",
             "name": "СФО-250",
             "id": "elektrokalorifer-sfo-250"
           }
@@ -15487,6 +16160,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-60",
                 "id": "shkaf-upravleniia-shuk-60"
+              },
+              {
+                "kind": "product",
+                "name": "ШУК-160",
+                "id": "shkaf-upravleniia-shuk-160"
               },
               {
                 "kind": "product",
@@ -15833,6 +16511,16 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-16",
             "id": "shkaf-upravleniia-shuk-16"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-1",
+            "id": "kalorifer-kpsk-4-1"
           }
         ],
         "deliveries": [
@@ -15848,6 +16536,16 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-1",
+                "id": "kalorifer-kpsk-4-1"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -16206,6 +16904,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
+          },
+          {
+            "kind": "product",
             "name": "СФОЦ-160",
             "id": "ustanovka-sfotc-160"
           },
@@ -16219,6 +16922,11 @@ export const generatedRegions = {
           {
             "year": 2014,
             "products": [
+              {
+                "kind": "product",
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
+              },
               {
                 "kind": "product",
                 "name": "СФОЦ-160",
@@ -16244,6 +16952,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
             "name": "СФОЦ-60",
             "id": "ustanovka-sfotc-60"
           },
@@ -16257,6 +16970,11 @@ export const generatedRegions = {
           {
             "year": 2007,
             "products": [
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
+              },
               {
                 "kind": "product",
                 "name": "СФОЦ-60",
@@ -16358,6 +17076,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
+          },
+          {
+            "kind": "product",
             "name": "ТЭНы",
             "id": "teny-orebrenny'e"
           }
@@ -16366,6 +17089,11 @@ export const generatedRegions = {
           {
             "year": 2012,
             "products": [
+              {
+                "kind": "product",
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
+              },
               {
                 "kind": "product",
                 "name": "ТЭНы",
@@ -16725,6 +17453,34 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "ООО «ИК Стокс»",
+        "settlement": {
+          "name": "Юрга",
+          "slug": "yurga",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КФБ-6 А4 П",
+            "id": "kalorifer-kfb-6-p"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2025,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КФБ-6 А4 П",
+                "id": "kalorifer-kfb-6-p"
+              }
+            ],
+            "industrySector": "Металлообработка"
+          }
+        ]
+      },
+      {
         "name": "ООО «ЭраЮрга»",
         "settlement": {
           "name": "Юрга",
@@ -16869,6 +17625,64 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "СПК «Береговой»",
+        "settlement": {
+          "name": "Береговая",
+          "slug": "beregovaya",
+          "type": "settlement"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "СФОЦ-25",
+            "id": "ustanovka-sfotc-25"
+          },
+          {
+            "kind": "product",
+            "name": "ШУК-25",
+            "id": "shkaf-upravleniia-shuk-25"
+          },
+          {
+            "kind": "product",
+            "name": "СФОЦ-40",
+            "id": "ustanovka-sfotc-40"
+          },
+          {
+            "kind": "product",
+            "name": "ШУК-40",
+            "id": "shkaf-upravleniia-shuk-40"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2026,
+            "products": [
+              {
+                "kind": "product",
+                "name": "СФОЦ-25",
+                "id": "ustanovka-sfotc-25"
+              },
+              {
+                "kind": "product",
+                "name": "ШУК-25",
+                "id": "shkaf-upravleniia-shuk-25"
+              },
+              {
+                "kind": "product",
+                "name": "СФОЦ-40",
+                "id": "ustanovka-sfotc-40"
+              },
+              {
+                "kind": "product",
+                "name": "ШУК-40",
+                "id": "shkaf-upravleniia-shuk-40"
+              }
+            ],
+            "industrySector": "Агропромышленный комплекс"
+          }
+        ]
+      },
+      {
         "name": "ООО «Шахта Спиридоновская»",
         "settlement": {
           "name": "Карагайлинский",
@@ -16946,6 +17760,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СТД-300 (КПСк4)",
             "id": "std300-kpsk"
+          },
+          {
+            "kind": "product",
+            "name": "КППС 1155х1155_4",
+            "id": "kpps-1155x1155"
           }
         ],
         "deliveries": [
@@ -16956,9 +17775,62 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "КППС 1155х1155_4",
+                "id": "kpps-1155x1155"
               }
             ],
             "industrySector": "Агропромышленный комплекс"
+          }
+        ]
+      },
+      {
+        "name": "ООО «Кузбасский бройлер»",
+        "settlement": {
+          "name": "Металлургов",
+          "slug": "metallurgov",
+          "type": "settlement"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КСк 3-10",
+            "id": "kalorifer-ksk-3-10"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-5",
+            "id": "kalorifer-ksk-4-5"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-10",
+            "id": "kalorifer-ksk-4-10"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2026,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КСк 3-10",
+                "id": "kalorifer-ksk-3-10"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-5",
+                "id": "kalorifer-ksk-4-5"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-10",
+                "id": "kalorifer-ksk-4-10"
+              }
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -17143,13 +18015,28 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ОАО «Славино»",
+        "name": "ООО СПК «Чистогорский»",
         "settlement": {
           "name": "Чистогорский",
           "slug": "chistogorsky",
           "type": "settlement"
         },
         "products": [
+          {
+            "kind": "product",
+            "name": "КСк 3-6",
+            "id": "kalorifer-ksk-3-6"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-7",
+            "id": "kalorifer-ksk-3-7"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-8",
+            "id": "kalorifer-ksk-3-8"
+          },
           {
             "kind": "product",
             "name": "КСк 4-8",
@@ -17168,8 +18055,23 @@ export const generatedRegions = {
         ],
         "deliveries": [
           {
-            "year": 2008,
+            "year": 2019,
             "products": [
+              {
+                "kind": "product",
+                "name": "КСк 3-6",
+                "id": "kalorifer-ksk-3-6"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-7",
+                "id": "kalorifer-ksk-3-7"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-8",
+                "id": "kalorifer-ksk-3-8"
+              },
               {
                 "kind": "product",
                 "name": "КСк 4-8",
@@ -17187,6 +18089,44 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Агропромышленный комплекс"
+          }
+        ]
+      },
+      {
+        "name": "ООО «Биоиндустрия»",
+        "settlement": {
+          "name": "Промышленная",
+          "slug": "promyshlennaya",
+          "type": "urban-settlement"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КППС 614х614_4",
+            "id": "kpps-614x614"
+          },
+          {
+            "kind": "product",
+            "name": "КФБ-11 А4 П",
+            "id": "kalorifer-kfb-11-p"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2026,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КППС 614х614_4",
+                "id": "kpps-614x614"
+              },
+              {
+                "kind": "product",
+                "name": "КФБ-11 А4 П",
+                "id": "kalorifer-kfb-11-p"
+              }
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -17453,6 +18393,54 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Добывающая отрасль"
+          }
+        ]
+      },
+      {
+        "name": "ООО «ПТФ Инская»",
+        "settlement": {
+          "name": "Осиновка",
+          "slug": "osinovka",
+          "type": "village"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "ТВВ 310",
+            "id": "kalorifer-tvv-310"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 407",
+            "id": "kalorifer-tvv-407"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 409",
+            "id": "kalorifer-tvv-409"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2025,
+            "products": [
+              {
+                "kind": "product",
+                "name": "ТВВ 310",
+                "id": "kalorifer-tvv-310"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 407",
+                "id": "kalorifer-tvv-407"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 409",
+                "id": "kalorifer-tvv-409"
+              }
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -17831,6 +18819,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 4-3",
+            "id": "kalorifer-kpsk-4-3"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 4-6",
             "id": "kalorifer-kpsk-4-6"
           },
@@ -17844,6 +18837,11 @@ export const generatedRegions = {
           {
             "year": 2018,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 4-3",
+                "id": "kalorifer-kpsk-4-3"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 4-6",
@@ -17874,6 +18872,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 2-2",
+            "id": "kalorifer-kpsk-2-2"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 2-3",
             "id": "kalorifer-kpsk-2-3"
           }
@@ -17886,6 +18889,11 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "КПСк",
                 "href": "/kalorifery-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-2",
+                "id": "kalorifer-kpsk-2-2"
               },
               {
                 "kind": "product",
@@ -18162,6 +19170,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-25",
             "id": "ustanovka-sfotc-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -18177,6 +19190,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -18564,6 +19582,94 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»",
+        "settlement": {
+          "name": "Краснодар",
+          "slug": "krasnodar",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КСк 4-5",
+            "id": "kalorifer-ksk-4-5"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-8",
+            "id": "kalorifer-ksk-4-8"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-9",
+            "id": "kalorifer-ksk-4-9"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-6",
+            "id": "kalorifer-kpsk-4-6"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-11",
+            "id": "kalorifer-kpsk-4-11"
+          },
+          {
+            "kind": "product",
+            "name": "АО 2-25 (КСк3)",
+            "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 1197х1197_3",
+            "id": "kpvs-1197x1197"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2025,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КСк 4-5",
+                "id": "kalorifer-ksk-4-5"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-8",
+                "id": "kalorifer-ksk-4-8"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-9",
+                "id": "kalorifer-ksk-4-9"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-6",
+                "id": "kalorifer-kpsk-4-6"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-11",
+                "id": "kalorifer-kpsk-4-11"
+              },
+              {
+                "kind": "product",
+                "name": "АО 2-25 (КСк3)",
+                "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 1197х1197_3",
+                "id": "kpvs-1197x1197"
+              }
+            ],
+            "industrySector": "Фармацевтическая пром-сть"
+          }
+        ]
+      },
+      {
         "name": "ООО «Технологии комфорта»",
         "settlement": {
           "name": "Краснодар",
@@ -18828,6 +19934,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
             "name": "СФО-100",
             "id": "elektrokalorifer-sfo-100"
           },
@@ -18865,6 +19976,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               },
               {
                 "kind": "product",
@@ -19015,6 +20131,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 4-11",
+            "id": "kalorifer-kpsk-4-11"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 4-12",
             "id": "kalorifer-kpsk-4-12"
           }
@@ -19023,6 +20144,11 @@ export const generatedRegions = {
           {
             "year": 2017,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 4-11",
+                "id": "kalorifer-kpsk-4-11"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 4-12",
@@ -19190,6 +20316,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
             "name": "СФО-100",
             "id": "elektrokalorifer-sfo-100"
           }
@@ -19198,6 +20329,11 @@ export const generatedRegions = {
           {
             "year": 2014,
             "products": [
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
+              },
               {
                 "kind": "product",
                 "name": "СФО-100",
@@ -20045,6 +21181,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 3-3",
+            "id": "kalorifer-kpsk-3-3"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 4-10",
             "id": "kalorifer-kpsk-4-10"
           },
@@ -20077,6 +21218,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 2-7",
                 "id": "kalorifer-kpsk-2-7"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 3-3",
+                "id": "kalorifer-kpsk-3-3"
               },
               {
                 "kind": "product",
@@ -20612,6 +21758,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "ТВВ 309",
+            "id": "kalorifer-tvv-309"
+          },
+          {
+            "kind": "product",
             "name": "ТВВ 406",
             "id": "kalorifer-tvv-406"
           },
@@ -20625,6 +21776,11 @@ export const generatedRegions = {
           {
             "year": 2018,
             "products": [
+              {
+                "kind": "product",
+                "name": "ТВВ 309",
+                "id": "kalorifer-tvv-309"
+              },
               {
                 "kind": "product",
                 "name": "ТВВ 406",
@@ -20657,6 +21813,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 311",
             "id": "kalorifer-tvv-311"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           }
         ],
         "deliveries": [
@@ -20672,6 +21833,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -20907,6 +22073,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 412",
             "id": "kalorifer-tvv-412"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           }
         ],
         "deliveries": [
@@ -20922,6 +22093,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -20950,6 +22126,64 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТЭНы",
                 "id": "teny-orebrenny'e"
+              }
+            ],
+            "industrySector": "Пищевая промышленность"
+          }
+        ]
+      },
+      {
+        "name": "АО «Искра»",
+        "settlement": {
+          "name": "Ужур",
+          "slug": "uzhur",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "СФО-40",
+            "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
+            "name": "СФОЦ-40",
+            "id": "ustanovka-sfotc-40"
+          },
+          {
+            "kind": "product",
+            "name": "СФОЦ-60",
+            "id": "ustanovka-sfotc-60"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2025,
+            "products": [
+              {
+                "kind": "product",
+                "name": "СФО-40",
+                "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
+              },
+              {
+                "kind": "product",
+                "name": "СФОЦ-40",
+                "id": "ustanovka-sfotc-40"
+              },
+              {
+                "kind": "product",
+                "name": "СФОЦ-60",
+                "id": "ustanovka-sfotc-60"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -21039,6 +22273,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 3-1",
             "id": "kalorifer-kpsk-3-1"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-1",
+            "id": "kalorifer-kpsk-4-1"
           }
         ],
         "deliveries": [
@@ -21054,6 +22293,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 3-1",
                 "id": "kalorifer-kpsk-3-1"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-1",
+                "id": "kalorifer-kpsk-4-1"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -21129,9 +22373,9 @@ export const generatedRegions = {
       {
         "name": "ОАО «Краснокаменский рудник»",
         "settlement": {
-          "name": "Краснокаменск",
-          "slug": "krasnokamensk",
-          "type": "urban-settlement"
+          "name": "п.п. Краснокаменск",
+          "slug": "p-p-krasnokamensk",
+          "type": "other"
         },
         "products": [
           {
@@ -21185,6 +22429,84 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "АО «Птицефабрика Бархатовская»",
+        "settlement": {
+          "name": "Бархатово",
+          "slug": "barkhatovo",
+          "type": "village"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КСк 3-10",
+            "id": "kalorifer-ksk-3-10"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-10",
+            "id": "kalorifer-ksk-4-10"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 3-8",
+            "id": "kalorifer-kpsk-3-8"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-9",
+            "id": "kalorifer-kpsk-4-9"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-10",
+            "id": "kalorifer-kpsk-4-10"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 1489х1489_4",
+            "id": "kpvs-1489x1489"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2026,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КСк 3-10",
+                "id": "kalorifer-ksk-3-10"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-10",
+                "id": "kalorifer-ksk-4-10"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 3-8",
+                "id": "kalorifer-kpsk-3-8"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-9",
+                "id": "kalorifer-kpsk-4-9"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-10",
+                "id": "kalorifer-kpsk-4-10"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 1489х1489_4",
+                "id": "kpvs-1489x1489"
+              }
+            ],
+            "industrySector": "Агропромышленный комплекс"
+          }
+        ]
+      },
+      {
         "name": "ООО «Красноярский Центр Строительства»",
         "settlement": {
           "name": "Ванавара",
@@ -21229,6 +22551,34 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Строительный сектор"
+          }
+        ]
+      },
+      {
+        "name": "АО «ЕнисейАгроСоюз»",
+        "settlement": {
+          "name": "Миндерла",
+          "slug": "minderla",
+          "type": "village"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КПВС 822х822_3",
+            "id": "kpvs-822x822"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2024,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КПВС 822х822_3",
+                "id": "kpvs-822x822"
+              }
+            ],
+            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -21419,6 +22769,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-100",
             "id": "elektrokalorifer-sfo-100"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -21429,6 +22784,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -21579,6 +22939,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-25",
             "id": "ustanovka-sfotc-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -21594,6 +22959,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -21625,6 +22995,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СТД-300 (КСк3)",
             "id": "std300-ksk"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 1197х1197_3",
+            "id": "kpvs-1197x1197"
           }
         ],
         "deliveries": [
@@ -21635,6 +23010,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СТД-300 (КСк3)",
                 "id": "std300-ksk"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 1197х1197_3",
+                "id": "kpvs-1197x1197"
               }
             ],
             "industrySector": "Тяжелое машиностроение"
@@ -21691,6 +23071,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КФБ-7 А4 П",
             "id": "kalorifer-kfb-7-p"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-5",
+            "id": "kalorifer-kpsk-4-5"
           }
         ],
         "deliveries": [
@@ -21701,6 +23086,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КФБ-7 А4 П",
                 "id": "kalorifer-kfb-7-p"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-5",
+                "id": "kalorifer-kpsk-4-5"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -21803,6 +23193,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-12",
             "id": "kalorifer-kpsk-4-12"
+          },
+          {
+            "kind": "product",
+            "name": "КП 412",
+            "id": "kalorifer-kp-412"
           }
         ],
         "deliveries": [
@@ -21813,6 +23208,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
+              },
+              {
+                "kind": "product",
+                "name": "КП 412",
+                "id": "kalorifer-kp-412"
               }
             ],
             "industrySector": "Металлургия"
@@ -22146,6 +23546,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 2-4",
+            "id": "kalorifer-kpsk-2-4"
+          },
+          {
+            "kind": "product",
             "name": "КСк 4-9",
             "id": "kalorifer-ksk-4-9"
           },
@@ -22163,6 +23568,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-4",
+                "id": "kalorifer-kpsk-2-4"
               },
               {
                 "kind": "product",
@@ -22191,6 +23601,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-12",
             "id": "kalorifer-kpsk-4-12"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-11",
+            "id": "kalorifer-kpsk-4-11"
           }
         ],
         "deliveries": [
@@ -22201,6 +23616,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-11",
+                "id": "kalorifer-kpsk-4-11"
               }
             ],
             "industrySector": "Металлообработка"
@@ -22224,6 +23644,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 3-10",
             "id": "kalorifer-kpsk-3-10"
+          },
+          {
+            "kind": "product",
+            "name": "КП 310",
+            "id": "kalorifer-kp-310"
           }
         ],
         "deliveries": [
@@ -22239,6 +23664,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 3-10",
                 "id": "kalorifer-kpsk-3-10"
+              },
+              {
+                "kind": "product",
+                "name": "КП 310",
+                "id": "kalorifer-kp-310"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -22283,11 +23713,6 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 2-3",
-            "id": "kalorifer-ksk-2-3"
-          },
-          {
-            "kind": "product",
             "name": "КСк 2-6",
             "id": "kalorifer-ksk-2-6"
           },
@@ -22301,11 +23726,6 @@ export const generatedRegions = {
           {
             "year": 2016,
             "products": [
-              {
-                "kind": "product",
-                "name": "КСк 2-3",
-                "id": "kalorifer-ksk-2-3"
-              },
               {
                 "kind": "product",
                 "name": "КСк 2-6",
@@ -22408,6 +23828,92 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "ООО «МФЦ Капитал»",
+        "settlement": {
+          "name": "Санкт-Петербург",
+          "slug": "sankt-peterburg",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "АО 2-4 (КСк3)",
+            "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+          },
+          {
+            "kind": "category",
+            "name": "КПВС",
+            "href": "/kalorifery-voda"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 1030х1030_4",
+            "id": "kpvs-1030x1030"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 572х572_4",
+            "id": "kpvs-572x572"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2025,
+            "products": [
+              {
+                "kind": "product",
+                "name": "АО 2-4 (КСк3)",
+                "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+              },
+              {
+                "kind": "category",
+                "name": "КПВС",
+                "href": "/kalorifery-voda"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 1030х1030_4",
+                "id": "kpvs-1030x1030"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 572х572_4",
+                "id": "kpvs-572x572"
+              }
+            ],
+            "industrySector": "Целлюлозно-бумажная пром-сть"
+          }
+        ]
+      },
+      {
+        "name": "ООО «Орион»",
+        "settlement": {
+          "name": "Санкт-Петербург",
+          "slug": "sankt-peterburg",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КПВУ 572х572_4",
+            "id": "kpvu-572x572"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2023,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КПВУ 572х572_4",
+                "id": "kpvu-572x572"
+              }
+            ],
+            "industrySector": "Логистика и транспорт"
+          }
+        ]
+      },
+      {
         "name": "ООО «Альфакапитал»",
         "settlement": {
           "name": "Санкт-Петербург",
@@ -22436,7 +23942,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Металлинвест»",
+        "name": "ООО «Глобальные научные технологии»",
         "settlement": {
           "name": "Санкт-Петербург",
           "slug": "sankt-peterburg",
@@ -22451,12 +23957,40 @@ export const generatedRegions = {
         ],
         "deliveries": [
           {
-            "year": 2020,
+            "year": 2022,
             "products": [
               {
                 "kind": "product",
                 "name": "КСк 4-12",
                 "id": "kalorifer-ksk-4-12"
+              }
+            ],
+            "industrySector": "Наука и Инновации"
+          }
+        ]
+      },
+      {
+        "name": "ООО «Металлинвест»",
+        "settlement": {
+          "name": "Санкт-Петербург",
+          "slug": "sankt-peterburg",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КСк 2-12",
+            "id": "kalorifer-ksk-2-12"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2020,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КСк 2-12",
+                "id": "kalorifer-ksk-2-12"
               }
             ],
             "industrySector": "Металлообработка"
@@ -22473,8 +24007,19 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КСк 4-1",
+            "id": "kalorifer-ksk-4-1"
+          },
+          {
+            "kind": "product",
             "name": "КСк 4-3",
             "id": "kalorifer-ksk-4-3"
+          },
+          {
+            "kind": "category",
+            "name": "КСк",
+            "href": "/kalorifery-ksk",
+            "prefix": "Секция в сборе калориферов"
           }
         ],
         "deliveries": [
@@ -22483,8 +24028,19 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
+                "name": "КСк 4-1",
+                "id": "kalorifer-ksk-4-1"
+              },
+              {
+                "kind": "product",
                 "name": "КСк 4-3",
                 "id": "kalorifer-ksk-4-3"
+              },
+              {
+                "kind": "category",
+                "name": "КСк",
+                "href": "/kalorifery-ksk",
+                "prefix": "Секция в сборе калориферов"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -22500,11 +24056,6 @@ export const generatedRegions = {
         },
         "products": [
           {
-            "kind": "category",
-            "name": "КСк",
-            "href": "/kalorifery-ksk"
-          },
-          {
             "kind": "product",
             "name": "КСк 2-3",
             "id": "kalorifer-ksk-2-3"
@@ -22519,11 +24070,6 @@ export const generatedRegions = {
           {
             "year": 2018,
             "products": [
-              {
-                "kind": "category",
-                "name": "КСк",
-                "href": "/kalorifery-ksk"
-              },
               {
                 "kind": "product",
                 "name": "КСк 2-3",
@@ -23582,6 +25128,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-25",
             "id": "ustanovka-sfotc-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -23597,6 +25148,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-25",
                 "id": "ustanovka-sfotc-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -23713,6 +25269,11 @@ export const generatedRegions = {
             "id": "ustanovka-sfotc-100"
           },
           {
+            "kind": "product",
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
+          },
+          {
             "kind": "category",
             "name": "ШУК",
             "href": "/shkafy-upravleniya"
@@ -23736,6 +25297,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-100",
                 "id": "ustanovka-sfotc-100"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
               },
               {
                 "kind": "category",
@@ -23909,8 +25475,28 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "СФО-25",
+            "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-40",
+            "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
             "name": "СФО-100",
             "id": "elektrokalorifer-sfo-100"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
           },
           {
             "kind": "product",
@@ -23929,8 +25515,28 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
+                "name": "СФО-25",
+                "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-40",
+                "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
+              },
+              {
+                "kind": "product",
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
               },
               {
                 "kind": "product",
@@ -24482,6 +26088,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 3-3",
+            "id": "kalorifer-kpsk-3-3"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-6",
             "id": "kalorifer-kpsk-3-6"
           },
@@ -24505,6 +26116,11 @@ export const generatedRegions = {
           {
             "year": 2013,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 3-3",
+                "id": "kalorifer-kpsk-3-3"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 3-6",
@@ -24661,11 +26277,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 2-8",
             "id": "kalorifer-ksk-2-8"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 2-9",
-            "id": "kalorifer-ksk-2-9"
           }
         ],
         "deliveries": [
@@ -24681,11 +26292,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 2-8",
                 "id": "kalorifer-ksk-2-8"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 2-9",
-                "id": "kalorifer-ksk-2-9"
               }
             ],
             "industrySector": "Нефтегазовый сектор"
@@ -24730,18 +26336,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КСк 2-2",
-            "id": "kalorifer-ksk-2-2"
-          },
-          {
-            "kind": "product",
             "name": "КСк 2-6",
             "id": "kalorifer-ksk-2-6"
-          },
-          {
-            "kind": "product",
-            "name": "КСк 3-4",
-            "id": "kalorifer-ksk-3-4"
           },
           {
             "kind": "product",
@@ -24760,18 +26356,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КСк 2-2",
-                "id": "kalorifer-ksk-2-2"
-              },
-              {
-                "kind": "product",
                 "name": "КСк 2-6",
                 "id": "kalorifer-ksk-2-6"
-              },
-              {
-                "kind": "product",
-                "name": "КСк 3-4",
-                "id": "kalorifer-ksk-3-4"
               },
               {
                 "kind": "product",
@@ -25460,8 +27046,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-14 А3 М",
-            "id": "kalorifer-kfb-14-a3"
+            "name": "КФБ-14 А3 П",
+            "id": "kalorifer-kfb-14"
           }
         ],
         "deliveries": [
@@ -25470,8 +27056,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ-14 А3 М",
-                "id": "kalorifer-kfb-14-a3"
+                "name": "КФБ-14 А3 П",
+                "id": "kalorifer-kfb-14"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -26949,8 +28535,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СФО-25",
-            "id": "elektrokalorifer-sfo-25"
+            "name": "СФО-40",
+            "id": "elektrokalorifer-sfo-40"
           }
         ],
         "deliveries": [
@@ -26964,8 +28550,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СФО-25",
-                "id": "elektrokalorifer-sfo-25"
+                "name": "СФО-40",
+                "id": "elektrokalorifer-sfo-40"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -27182,6 +28768,16 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КСК 2-11",
+            "id": "kalorifer-ksk-2-11"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 3-11",
+            "id": "kalorifer-ksk-3-11"
+          },
+          {
+            "kind": "product",
             "name": "ТВВ 308",
             "id": "kalorifer-tvv-308"
           },
@@ -27220,6 +28816,16 @@ export const generatedRegions = {
           {
             "year": 2026,
             "products": [
+              {
+                "kind": "product",
+                "name": "КСК 2-11",
+                "id": "kalorifer-ksk-2-11"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 3-11",
+                "id": "kalorifer-ksk-3-11"
+              },
               {
                 "kind": "product",
                 "name": "ТВВ 308",
@@ -27671,6 +29277,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 2-1",
+            "id": "kalorifer-kpsk-2-1"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-1",
             "id": "kalorifer-kpsk-3-1"
           }
@@ -27683,6 +29294,11 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "КПСк",
                 "href": "/kalorifery-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-1",
+                "id": "kalorifer-kpsk-2-1"
               },
               {
                 "kind": "product",
@@ -29526,11 +31142,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 4-11",
             "id": "kalorifer-ksk-4-11"
-          },
-          {
-            "kind": "product",
-            "name": "КФБ-11 А4 П",
-            "id": "kalorifer-kfb-11-p"
           }
         ],
         "deliveries": [
@@ -29541,11 +31152,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
-              },
-              {
-                "kind": "product",
-                "name": "КФБ-11 А4 П",
-                "id": "kalorifer-kfb-11-p"
               }
             ],
             "industrySector": "Логистика и транспорт"
@@ -30195,11 +31801,6 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "ТВВ 309",
-            "id": "kalorifer-tvv-309"
-          },
-          {
-            "kind": "product",
             "name": "ТВВ 312",
             "id": "kalorifer-tvv-312"
           },
@@ -30287,11 +31888,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 306",
                 "id": "kalorifer-tvv-306"
-              },
-              {
-                "kind": "product",
-                "name": "ТВВ 309",
-                "id": "kalorifer-tvv-309"
               },
               {
                 "kind": "product",
@@ -30698,11 +32294,6 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ-13 А3 М",
-            "id": "kalorifer-kfb-13-a3"
-          },
-          {
-            "kind": "product",
             "name": "КФБ-13 А4 П",
             "id": "kalorifer-kfb-13-p"
           }
@@ -30711,11 +32302,6 @@ export const generatedRegions = {
           {
             "year": 2015,
             "products": [
-              {
-                "kind": "product",
-                "name": "КФБ-13 А3 М",
-                "id": "kalorifer-kfb-13-a3"
-              },
               {
                 "kind": "product",
                 "name": "КФБ-13 А4 П",
@@ -32061,34 +33647,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «ТЭК»",
-        "settlement": {
-          "name": "Кудряшовский",
-          "slug": "kudryashovsky",
-          "type": "settlement"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КПСк 3-8",
-            "id": "kalorifer-kpsk-3-8"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2024,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КПСк 3-8",
-                "id": "kalorifer-kpsk-3-8"
-              }
-            ],
-            "industrySector": "Промышленная энергетика"
-          }
-        ]
-      },
-      {
         "name": "ООО «Аграрные Технологии»",
         "settlement": {
           "name": "Каинская Заимка",
@@ -32123,6 +33681,34 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Агропромышленный комплекс"
+          }
+        ]
+      },
+      {
+        "name": "ООО «Гарт»",
+        "settlement": {
+          "name": "Краснообск",
+          "slug": "krasnoobsk",
+          "type": "settlement"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КФБ-6 А4 П",
+            "id": "kalorifer-kfb-6-p"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2025,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КФБ-6 А4 П",
+                "id": "kalorifer-kfb-6-p"
+              }
+            ],
+            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -32165,6 +33751,34 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "ООО «ТЭК»",
+        "settlement": {
+          "name": "Кудряшовский",
+          "slug": "kudryashovsky",
+          "type": "settlement"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КПСк 3-8",
+            "id": "kalorifer-kpsk-3-8"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2024,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 3-8",
+                "id": "kalorifer-kpsk-3-8"
+              }
+            ],
+            "industrySector": "Промышленная энергетика"
+          }
+        ]
+      },
+      {
         "name": "ООО «ЦКТ»",
         "settlement": {
           "name": "Ленинский",
@@ -32191,34 +33805,6 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Пищевая промышленность"
-          }
-        ]
-      },
-      {
-        "name": "ООО «Гарт»",
-        "settlement": {
-          "name": "Краснообск",
-          "slug": "krasnoobsk",
-          "type": "settlement"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КФБ-6 А4 П",
-            "id": "kalorifer-kfb-6-p"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2025,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КФБ-6 А4 П",
-                "id": "kalorifer-kfb-6-p"
-              }
-            ],
-            "industrySector": "Строительный сектор"
           }
         ]
       },
@@ -32279,34 +33865,6 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Сибирский океан»",
-        "settlement": {
-          "name": "Марусино",
-          "slug": "marusino",
-          "type": "village"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-3",
-            "id": "kalorifer-ksk-4-3"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2026,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-3",
-                "id": "kalorifer-ksk-4-3"
-              }
-            ],
-            "industrySector": "Пищевая промышленность"
-          }
-        ]
-      },
-      {
         "name": "ОАО «Птицефабрика «Евсинская»",
         "settlement": {
           "name": "Евсино",
@@ -32331,6 +33889,34 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Агропромышленный комплекс"
+          }
+        ]
+      },
+      {
+        "name": "ООО «Сибирский океан»",
+        "settlement": {
+          "name": "Марусино",
+          "slug": "marusino",
+          "type": "village"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "КСк 4-3",
+            "id": "kalorifer-ksk-4-3"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2026,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КСк 4-3",
+                "id": "kalorifer-ksk-4-3"
+              }
+            ],
+            "industrySector": "Пищевая промышленность"
           }
         ]
       }
@@ -32402,6 +33988,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "АО 2-10 (КПСк3)",
             "id": "agregat-ao2-10-ksk3-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "КППС 822х822_3",
+            "id": "kpps-822x822"
           }
         ],
         "deliveries": [
@@ -32417,6 +34008,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-10 (КПСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "КППС 822х822_3",
+                "id": "kpps-822x822"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -32435,6 +34031,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 3-6",
             "id": "kalorifer-kpsk-3-6"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-5",
+            "id": "kalorifer-kpsk-2-5"
           }
         ],
         "deliveries": [
@@ -32445,6 +34046,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 3-6",
                 "id": "kalorifer-kpsk-3-6"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-5",
+                "id": "kalorifer-kpsk-2-5"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -32461,6 +34067,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 3-4",
+            "id": "kalorifer-kpsk-3-4"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-7",
             "id": "kalorifer-kpsk-3-7"
           }
@@ -32469,6 +34080,11 @@ export const generatedRegions = {
           {
             "year": 2016,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 3-4",
+                "id": "kalorifer-kpsk-3-4"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 3-7",
@@ -32489,6 +34105,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 2-10",
+            "id": "kalorifer-kpsk-2-10"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 4-10",
             "id": "kalorifer-kpsk-4-10"
           }
@@ -32497,6 +34118,11 @@ export const generatedRegions = {
           {
             "year": 2018,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 2-10",
+                "id": "kalorifer-kpsk-2-10"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 4-10",
@@ -32880,8 +34506,18 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КСк 2-2",
+            "id": "kalorifer-ksk-2-2"
+          },
+          {
+            "kind": "product",
             "name": "КСк 4-4",
             "id": "kalorifer-ksk-4-4"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
           }
         ],
         "deliveries": [
@@ -32895,11 +34531,21 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
+                "name": "КСк 2-2",
+                "id": "kalorifer-ksk-2-2"
+              },
+              {
+                "kind": "product",
                 "name": "КСк 4-4",
                 "id": "kalorifer-ksk-4-4"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               }
             ],
-            "industrySector": "Вентиляция/Монтаж"
+            "industrySector": "Промышленное снабжение"
           }
         ]
       },
@@ -33003,6 +34649,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-160",
             "id": "shkaf-upravleniia-shuk-160"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -33023,6 +34674,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-160",
                 "id": "shkaf-upravleniia-shuk-160"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Тяжелое машиностроение"
@@ -33067,6 +34723,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КП 310",
+            "id": "kalorifer-kp-310"
+          },
+          {
+            "kind": "product",
             "name": "КП 312",
             "id": "kalorifer-kp-312"
           }
@@ -33075,6 +34736,11 @@ export const generatedRegions = {
           {
             "year": 2017,
             "products": [
+              {
+                "kind": "product",
+                "name": "КП 310",
+                "id": "kalorifer-kp-310"
+              },
               {
                 "kind": "product",
                 "name": "КП 312",
@@ -33130,6 +34796,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 412",
             "id": "kalorifer-tvv-412"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-11",
+            "id": "kalorifer-kpsk-2-11"
           }
         ],
         "deliveries": [
@@ -33145,6 +34816,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-11",
+                "id": "kalorifer-kpsk-2-11"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -33234,6 +34910,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-12",
             "id": "kalorifer-kpsk-4-12"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-11",
+            "id": "kalorifer-kpsk-4-11"
           }
         ],
         "deliveries": [
@@ -33244,6 +34925,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-12",
                 "id": "kalorifer-kpsk-4-12"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-11",
+                "id": "kalorifer-kpsk-4-11"
               }
             ],
             "industrySector": "Нефтегазовый сектор"
@@ -33333,6 +35019,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 412",
             "id": "kalorifer-tvv-412"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           }
         ],
         "deliveries": [
@@ -33348,6 +35039,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -33457,6 +35153,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-60",
+            "id": "elektrokalorifer-sfo-60"
           }
         ],
         "deliveries": [
@@ -33472,6 +35173,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-60",
+                "id": "elektrokalorifer-sfo-60"
               }
             ],
             "industrySector": "Тяжелое машиностроение"
@@ -33533,6 +35239,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 4-11",
             "id": "kalorifer-ksk-4-11"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-1",
+            "id": "kalorifer-kpsk-4-1"
           }
         ],
         "deliveries": [
@@ -33548,6 +35259,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-1",
+                "id": "kalorifer-kpsk-4-1"
               }
             ],
             "industrySector": "Приборостроение и электротехника"
@@ -33881,6 +35597,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-40",
             "id": "ustanovka-sfotc-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -33891,6 +35612,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Приборостроение и электротехника"
@@ -34218,8 +35944,18 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
+          },
+          {
+            "kind": "product",
             "name": "СФО-25",
             "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-10",
+            "id": "kalorifer-kpsk-2-10"
           }
         ],
         "deliveries": [
@@ -34228,8 +35964,18 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
+              },
+              {
+                "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-10",
+                "id": "kalorifer-kpsk-2-10"
               }
             ],
             "industrySector": "Вентиляция/Отопление"
@@ -36314,6 +38060,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 412",
             "id": "kalorifer-tvv-412"
+          },
+          {
+            "kind": "product",
+            "name": "КП 412",
+            "id": "kalorifer-kp-412"
           }
         ],
         "deliveries": [
@@ -36324,6 +38075,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 412",
                 "id": "kalorifer-tvv-412"
+              },
+              {
+                "kind": "product",
+                "name": "КП 412",
+                "id": "kalorifer-kp-412"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -36357,6 +38113,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 311",
             "id": "kalorifer-tvv-311"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           }
         ],
         "deliveries": [
@@ -36382,6 +38143,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -36593,6 +38359,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "АО 2-25 (КПСк3)",
             "id": "agregat-ao2-25-ksk3-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-8",
+            "id": "kalorifer-kpsk-2-8"
           }
         ],
         "deliveries": [
@@ -36603,9 +38374,14 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-25 (КПСк3)",
                 "id": "agregat-ao2-25-ksk3-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-8",
+                "id": "kalorifer-kpsk-2-8"
               }
             ],
-            "industrySector": "Вентиляция/Монтаж"
+            "industrySector": "Промышленное снабжение"
           }
         ]
       },
@@ -36788,6 +38564,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-25",
             "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -36803,6 +38584,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Нефтегазовый сектор"
@@ -37247,6 +39033,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-40",
             "id": "ustanovka-sfotc-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -37262,6 +39053,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -37839,6 +39635,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-16",
             "id": "ustanovka-sfotc-16"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -37854,6 +39655,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Деревообрабатывающая пром-сть"
@@ -38043,6 +39849,16 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "СФО-16",
+            "id": "elektrokalorifer-sfo-16"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-25",
+            "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
           },
@@ -38070,6 +39886,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-16",
             "id": "shkaf-upravleniia-shuk-16"
+          },
+          {
+            "kind": "product",
+            "name": "ШУК-25",
+            "id": "shkaf-upravleniia-shuk-25"
           },
           {
             "kind": "product",
@@ -38103,6 +39924,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "СФОЦ-25",
+            "id": "ustanovka-sfotc-25"
+          },
+          {
+            "kind": "product",
             "name": "СФОЦ-40",
             "id": "ustanovka-sfotc-40"
           },
@@ -38131,6 +39957,16 @@ export const generatedRegions = {
           {
             "year": 2016,
             "products": [
+              {
+                "kind": "product",
+                "name": "СФО-16",
+                "id": "elektrokalorifer-sfo-16"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-25",
+                "id": "elektrokalorifer-sfo-25"
+              },
               {
                 "kind": "product",
                 "name": "СФО-40",
@@ -38163,6 +39999,11 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
+                "name": "ШУК-25",
+                "id": "shkaf-upravleniia-shuk-25"
+              },
+              {
+                "kind": "product",
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
               },
@@ -38190,6 +40031,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
+              },
+              {
+                "kind": "product",
+                "name": "СФОЦ-25",
+                "id": "ustanovka-sfotc-25"
               },
               {
                 "kind": "product",
@@ -38759,6 +40605,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 311",
             "id": "kalorifer-tvv-311"
+          },
+          {
+            "kind": "product",
+            "name": "ТВВ 411",
+            "id": "kalorifer-tvv-411"
           }
         ],
         "deliveries": [
@@ -38774,6 +40625,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
+              },
+              {
+                "kind": "product",
+                "name": "ТВВ 411",
+                "id": "kalorifer-tvv-411"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -38962,6 +40818,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-25",
             "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -38972,6 +40833,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -39180,6 +41046,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-60",
             "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
           }
         ],
         "deliveries": [
@@ -39190,6 +41061,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -39223,6 +41099,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-16",
             "id": "shkaf-upravleniia-shuk-16"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -39248,6 +41129,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Тяжелое машиностроение"
@@ -39611,6 +41497,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-16",
             "id": "ustanovka-sfotc-16"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -39626,6 +41517,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-16",
                 "id": "ustanovka-sfotc-16"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Приборостроение и электротехника"
@@ -40779,6 +42675,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФОЦ-40",
             "id": "ustanovka-sfotc-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -40794,6 +42695,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФОЦ-40",
                 "id": "ustanovka-sfotc-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -41298,6 +43204,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-60",
             "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -41313,6 +43224,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -41899,6 +43815,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-60",
             "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-100",
+            "id": "elektrokalorifer-sfo-100"
           }
         ],
         "deliveries": [
@@ -41914,6 +43835,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-100",
+                "id": "elektrokalorifer-sfo-100"
               }
             ],
             "industrySector": "Металлообработка"
@@ -42138,6 +44064,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 2-12",
+            "id": "kalorifer-kpsk-2-12"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-12",
             "id": "kalorifer-kpsk-3-12"
           }
@@ -42146,6 +44077,11 @@ export const generatedRegions = {
           {
             "year": 2014,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 2-12",
+                "id": "kalorifer-kpsk-2-12"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 3-12",
@@ -42521,6 +44457,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 2-6",
+            "id": "kalorifer-kpsk-2-6"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 4-5",
             "id": "kalorifer-kpsk-4-5"
           },
@@ -42539,6 +44480,11 @@ export const generatedRegions = {
           {
             "year": 2016,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 2-6",
+                "id": "kalorifer-kpsk-2-6"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 4-5",
@@ -42642,6 +44588,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 2-3",
+            "id": "kalorifer-kpsk-2-3"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-6",
             "id": "kalorifer-kpsk-3-6"
           },
@@ -42684,6 +44635,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 3-10",
                 "id": "kalorifer-ksk-3-10"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-3",
+                "id": "kalorifer-kpsk-2-3"
               },
               {
                 "kind": "product",
@@ -42732,6 +44688,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-16",
             "id": "shkaf-upravleniia-shuk-16"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -42757,6 +44718,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-16",
                 "id": "shkaf-upravleniia-shuk-16"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -42816,6 +44782,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "СФО-40",
+            "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
             "name": "СФО-60",
             "id": "elektrokalorifer-sfo-60"
           }
@@ -42828,6 +44799,11 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "СФО",
                 "href": "/elektrokalorifery"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-40",
+                "id": "elektrokalorifer-sfo-40"
               },
               {
                 "kind": "product",
@@ -43353,6 +45329,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 3-11",
             "id": "kalorifer-kpsk-3-11"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-12",
+            "id": "kalorifer-kpsk-2-12"
           }
         ],
         "deliveries": [
@@ -43363,6 +45344,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 3-11",
                 "id": "kalorifer-kpsk-3-11"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-12",
+                "id": "kalorifer-kpsk-2-12"
               }
             ],
             "industrySector": "Металлообработка"
@@ -43407,6 +45393,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 2-7",
+            "id": "kalorifer-kpsk-2-7"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 4-7",
             "id": "kalorifer-kpsk-4-7"
           }
@@ -43415,6 +45406,11 @@ export const generatedRegions = {
           {
             "year": 2018,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 2-7",
+                "id": "kalorifer-kpsk-2-7"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 4-7",
@@ -43577,7 +45573,7 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КФБ 3 А4 П",
+            "name": "КФБ-3 А4 П",
             "id": "kalorifer-kfb-3-p"
           }
         ],
@@ -43587,7 +45583,7 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КФБ 3 А4 П",
+                "name": "КФБ-3 А4 П",
                 "id": "kalorifer-kfb-3-p"
               }
             ],
@@ -44322,6 +46318,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-25",
             "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -44337,6 +46338,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -44449,6 +46455,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -44464,6 +46475,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -44812,6 +46828,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-40",
             "id": "shkaf-upravleniia-shuk-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -44837,6 +46858,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-40",
                 "id": "shkaf-upravleniia-shuk-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Машиностроение"
@@ -45712,6 +47738,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 3-6",
             "id": "kalorifer-kpsk-3-6"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 3-4",
+            "id": "kalorifer-kpsk-3-4"
           }
         ],
         "deliveries": [
@@ -45722,6 +47753,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 3-6",
                 "id": "kalorifer-kpsk-3-6"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 3-4",
+                "id": "kalorifer-kpsk-3-4"
               }
             ],
             "industrySector": "Приборостроение и электротехника"
@@ -45776,6 +47812,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 4-4",
+            "id": "kalorifer-kpsk-4-4"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 4-6",
             "id": "kalorifer-kpsk-4-6"
           },
@@ -45789,6 +47830,11 @@ export const generatedRegions = {
           {
             "year": 2016,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 4-4",
+                "id": "kalorifer-kpsk-4-4"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 4-6",
@@ -46412,6 +48458,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 4-11",
             "id": "kalorifer-ksk-4-11"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-12",
+            "id": "kalorifer-ksk-4-12"
           }
         ],
         "deliveries": [
@@ -46422,30 +48473,7 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 4-11",
                 "id": "kalorifer-ksk-4-11"
-              }
-            ],
-            "industrySector": "Приборостроение и электротехника"
-          }
-        ]
-      },
-      {
-        "name": "ОАО «Томский электротехнический завод»",
-        "settlement": {
-          "name": "Томск",
-          "slug": "tomsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-12",
-            "id": "kalorifer-ksk-4-12"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2013,
-            "products": [
+              },
               {
                 "kind": "product",
                 "name": "КСк 4-12",
@@ -46537,6 +48565,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 2-6",
+            "id": "kalorifer-kpsk-2-6"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 2-9",
             "id": "kalorifer-kpsk-2-9"
           }
@@ -46549,6 +48582,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 4-7",
                 "id": "kalorifer-ksk-4-7"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-6",
+                "id": "kalorifer-kpsk-2-6"
               },
               {
                 "kind": "product",
@@ -46767,6 +48805,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СТД-300 (КПСк4)",
             "id": "std300-kpsk"
+          },
+          {
+            "kind": "product",
+            "name": "КП 306",
+            "id": "kalorifer-kp-306"
           }
         ],
         "deliveries": [
@@ -46782,6 +48825,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "КП 306",
+                "id": "kalorifer-kp-306"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -46827,7 +48875,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ЗАО «ТЗЭМ»",
+        "name": "ЗАО «Томский завод электрических машин»",
         "settlement": {
           "name": "Томск",
           "slug": "tomsk",
@@ -46838,6 +48886,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-160",
             "id": "elektrokalorifer-sfo-160"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-250",
+            "id": "elektrokalorifer-sfo-250"
           }
         ],
         "deliveries": [
@@ -46848,6 +48901,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-250",
+                "id": "elektrokalorifer-sfo-250"
               }
             ],
             "industrySector": "Тяжелое машиностроение"
@@ -47348,6 +49406,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-40",
             "id": "elektrokalorifer-sfo-40"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -47363,6 +49426,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-40",
                 "id": "elektrokalorifer-sfo-40"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Наука и Инновации"
@@ -47650,8 +49718,18 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 3-5",
+            "id": "kalorifer-kpsk-3-5"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 3-6",
             "id": "kalorifer-kpsk-3-6"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-4",
+            "id": "kalorifer-kpsk-4-4"
           }
         ],
         "deliveries": [
@@ -47670,8 +49748,18 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
+                "name": "КПСк 3-5",
+                "id": "kalorifer-kpsk-3-5"
+              },
+              {
+                "kind": "product",
                 "name": "КПСк 3-6",
                 "id": "kalorifer-kpsk-3-6"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-4",
+                "id": "kalorifer-kpsk-4-4"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -47933,6 +50021,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-16",
             "id": "elektrokalorifer-sfo-16"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -47948,6 +50041,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-16",
                 "id": "elektrokalorifer-sfo-16"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Нефтегазовый сектор"
@@ -48531,6 +50629,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-25",
             "id": "elektrokalorifer-sfo-25"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -48546,6 +50649,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-25",
                 "id": "elektrokalorifer-sfo-25"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Металлообработка"
@@ -48569,6 +50677,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-9",
             "id": "kalorifer-kpsk-4-9"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 3-5",
+            "id": "kalorifer-kpsk-3-5"
           }
         ],
         "deliveries": [
@@ -48584,6 +50697,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-9",
                 "id": "kalorifer-kpsk-4-9"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 3-5",
+                "id": "kalorifer-kpsk-3-5"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -48876,6 +50994,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 4-10",
             "id": "kalorifer-kpsk-4-10"
+          },
+          {
+            "kind": "product",
+            "name": "КП 307",
+            "id": "kalorifer-kp-307"
           }
         ],
         "deliveries": [
@@ -48891,6 +51014,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-10",
                 "id": "kalorifer-kpsk-4-10"
+              },
+              {
+                "kind": "product",
+                "name": "КП 307",
+                "id": "kalorifer-kp-307"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -49056,6 +51184,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КСк 2-3",
+            "id": "kalorifer-ksk-2-3"
+          },
+          {
+            "kind": "product",
             "name": "КСк 2-4",
             "id": "kalorifer-ksk-2-4"
           },
@@ -49073,6 +51206,11 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "КСк",
                 "href": "/kalorifery-ksk"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 2-3",
+                "id": "kalorifer-ksk-2-3"
               },
               {
                 "kind": "product",
@@ -49197,6 +51335,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-250",
             "id": "shkaf-upravleniia-shuk-250"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -49217,6 +51360,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ШУК-250",
                 "id": "shkaf-upravleniia-shuk-250"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -49521,6 +51669,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-100",
             "id": "elektrokalorifer-sfo-100"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -49536,6 +51689,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -50859,6 +53017,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-250",
             "id": "elektrokalorifer-sfo-250"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -50869,6 +53032,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-250",
                 "id": "elektrokalorifer-sfo-250"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -50920,6 +53088,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-160",
             "id": "elektrokalorifer-sfo-160"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -50935,6 +53108,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-160",
                 "id": "elektrokalorifer-sfo-160"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -51176,6 +53354,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-100",
             "id": "elektrokalorifer-sfo-100"
+          },
+          {
+            "kind": "product",
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
           }
         ],
         "deliveries": [
@@ -51191,6 +53374,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-100",
                 "id": "elektrokalorifer-sfo-100"
+              },
+              {
+                "kind": "product",
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -51621,6 +53809,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СФО-60",
             "id": "elektrokalorifer-sfo-60"
+          },
+          {
+            "kind": "product",
+            "name": "ТЭНы",
+            "id": "teny-orebrenny'e"
           }
         ],
         "deliveries": [
@@ -51631,6 +53824,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СФО-60",
                 "id": "elektrokalorifer-sfo-60"
+              },
+              {
+                "kind": "product",
+                "name": "ТЭНы",
+                "id": "teny-orebrenny'e"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
