@@ -547,8 +547,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КПВУ 617х617_2",
-            "id": "kpvu-617x617"
+            "name": "КПВУ 663х663_2",
+            "id": "kpvu-663x663"
           }
         ],
         "deliveries": [
@@ -562,8 +562,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КПВУ 617х617_2",
-                "id": "kpvu-617x617"
+                "name": "КПВУ 663х663_2",
+                "id": "kpvu-663x663"
               }
             ],
             "industrySector": "Агропромышленный комплекс"
@@ -8914,8 +8914,18 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КППС 739х739_4",
+            "id": "kpps-739x739"
+          },
+          {
+            "kind": "product",
             "name": "АО 2-20 (КСк3)",
             "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
+          },
+          {
+            "kind": "product",
+            "name": "КПВУ 1117х1117_3",
+            "id": "kpvu-1117x1117"
           },
           {
             "kind": "product",
@@ -8944,8 +8954,18 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
+                "name": "КППС 739х739_4",
+                "id": "kpps-739x739"
+              },
+              {
+                "kind": "product",
                 "name": "АО 2-20 (КСк3)",
                 "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
+              },
+              {
+                "kind": "product",
+                "name": "КПВУ 1117х1117_3",
+                "id": "kpvu-1117x1117"
               },
               {
                 "kind": "product",
@@ -9718,6 +9738,11 @@ export const generatedRegions = {
             "kind": "category",
             "name": "АВО 7-165-01 П",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "product",
+            "name": "КППУ 845х845_4",
+            "id": "kppu-845x845"
           }
         ],
         "deliveries": [
@@ -9728,6 +9753,11 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "АВО 7-165-01 П",
                 "href": "/avo-tvv-kp"
+              },
+              {
+                "kind": "product",
+                "name": "КППУ 845х845_4",
+                "id": "kppu-845x845"
               }
             ],
             "industrySector": "Добывающая отрасль"
@@ -18821,6 +18851,11 @@ export const generatedRegions = {
             "kind": "category",
             "name": "АВО 4-95-01 В",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "product",
+            "name": "КПВУ 708х708_4",
+            "id": "kpvu-708x708"
           }
         ],
         "deliveries": [
@@ -18831,6 +18866,11 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "АВО 4-95-01 В",
                 "href": "/avo-tvv-kp"
+              },
+              {
+                "kind": "product",
+                "name": "КПВУ 708х708_4",
+                "id": "kpvu-708x708"
               }
             ],
             "industrySector": "Металлообработка"
@@ -18960,6 +19000,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "АО 2-4 (КПСк4)",
             "id": "agregat-ao2-4-ksk4-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "КПВУ 617х617_4",
+            "id": "kpvu-617x617"
           }
         ],
         "deliveries": [
@@ -18975,6 +19020,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-4 (КПСк4)",
                 "id": "agregat-ao2-4-ksk4-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "КПВУ 617х617_4",
+                "id": "kpvu-617x617"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -20822,8 +20872,13 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "АО 2-4 (КСк3)",
-            "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+            "name": "АО 2-4 (КПСк3)",
+            "id": "agregat-ao2-4-ksk3-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "КППС 655х655_3",
+            "id": "kpps-655x655"
           }
         ],
         "deliveries": [
@@ -20832,8 +20887,13 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "АО 2-4 (КСк3)",
-                "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
+                "name": "АО 2-4 (КПСк3)",
+                "id": "agregat-ao2-4-ksk3-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "КППС 655х655_3",
+                "id": "kpps-655x655"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -21303,6 +21363,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПВУ 799х799_3",
+            "id": "kpvu-799x799"
+          },
+          {
+            "kind": "product",
             "name": "КППС 1155х1155_4",
             "id": "kpps-1155x1155"
           }
@@ -21355,6 +21420,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-25 (КПСк4)",
                 "id": "agregat-ao2-25-ksk4-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "КПВУ 799х799_3",
+                "id": "kpvu-799x799"
               },
               {
                 "kind": "product",
@@ -22074,13 +22144,18 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "АО 2-25 (КСк3)",
-            "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+            "name": "АО 2-25 (КПСк3)",
+            "id": "agregat-ao2-25-ksk3-vozdushniy-parovoy"
           },
           {
             "kind": "category",
             "name": "АВО 3-55-01 В",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "product",
+            "name": "КППУ 1208х1208_3",
+            "id": "kppu-1208x1208"
           }
         ],
         "deliveries": [
@@ -22099,13 +22174,18 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "АО 2-25 (КСк3)",
-                "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+                "name": "АО 2-25 (КПСк3)",
+                "id": "agregat-ao2-25-ksk3-vozdushniy-parovoy"
               },
               {
                 "kind": "category",
                 "name": "АВО 3-55-01 В",
                 "href": "/avo-tvv-kp"
+              },
+              {
+                "kind": "product",
+                "name": "КППУ 1208х1208_3",
+                "id": "kppu-1208x1208"
               }
             ],
             "industrySector": "Машиностроение"
@@ -22185,8 +22265,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (КСк4)",
-            "id": "std300-ksk"
+            "name": "СТД-300 (КПСк4)",
+            "id": "std300-kpsk"
+          },
+          {
+            "kind": "product",
+            "name": "КППУ 1163х1163_4",
+            "id": "kppu-1163x1163"
           }
         ],
         "deliveries": [
@@ -22220,8 +22305,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (КСк4)",
-                "id": "std300-ksk"
+                "name": "СТД-300 (КПСк4)",
+                "id": "std300-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "КППУ 1163х1163_4",
+                "id": "kppu-1163x1163"
               }
             ],
             "industrySector": "Металлообработка"
@@ -23246,8 +23336,13 @@ export const generatedRegions = {
           },
           {
             "kind": "category",
-            "name": "АВО (КПВУ 1163х1163_4)",
-            "href": "/avo-tvv-kp"
+            "name": "КПВУ",
+            "href": "/kalorifery-voda"
+          },
+          {
+            "kind": "product",
+            "name": "КПВУ 1163х1163_4",
+            "id": "kpvu-1163x1163"
           }
         ],
         "deliveries": [
@@ -23261,8 +23356,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "category",
-                "name": "АВО (КПВУ 1163х1163_4)",
-                "href": "/avo-tvv-kp"
+                "name": "КПВУ",
+                "href": "/kalorifery-voda"
+              },
+              {
+                "kind": "product",
+                "name": "КПВУ 1163х1163_4",
+                "id": "kpvu-1163x1163"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -23581,8 +23681,8 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КППС 780х780_3",
-            "id": "kpps-780x780"
+            "name": "КППС 739х739_3",
+            "id": "kpps-739x739"
           }
         ],
         "deliveries": [
@@ -23601,8 +23701,8 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "КППС 780х780_3",
-                "id": "kpps-780x780"
+                "name": "КППС 739х739_3",
+                "id": "kpps-739x739"
               }
             ],
             "industrySector": "Целлюлозно-бумажная пром-сть"
@@ -25107,6 +25207,11 @@ export const generatedRegions = {
             "kind": "category",
             "name": "АВО 7-165-01 П",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "product",
+            "name": "КППУ 890х890_4",
+            "id": "kppu-890x890"
           }
         ],
         "deliveries": [
@@ -25117,6 +25222,11 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "АВО 7-165-01 П",
                 "href": "/avo-tvv-kp"
+              },
+              {
+                "kind": "product",
+                "name": "КППУ 890х890_4",
+                "id": "kppu-890x890"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -25163,6 +25273,16 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СТД-300 (ТВВ4)",
             "id": "std300-tvv"
+          },
+          {
+            "kind": "product",
+            "name": "КПВУ 1026х1026_4",
+            "id": "kpvu-1026x1026"
+          },
+          {
+            "kind": "product",
+            "name": "КПВУ 1117х1117_4",
+            "id": "kpvu-1117x1117"
           }
         ],
         "deliveries": [
@@ -25188,6 +25308,16 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СТД-300 (ТВВ4)",
                 "id": "std300-tvv"
+              },
+              {
+                "kind": "product",
+                "name": "КПВУ 1026х1026_4",
+                "id": "kpvu-1026x1026"
+              },
+              {
+                "kind": "product",
+                "name": "КПВУ 1117х1117_4",
+                "id": "kpvu-1117x1117"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -25249,6 +25379,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СТД-300 (КПСк4)",
             "id": "std300-kpsk"
+          },
+          {
+            "kind": "product",
+            "name": "КППС 1114х1114_4",
+            "id": "kpps-1114x1114"
           }
         ],
         "deliveries": [
@@ -25264,6 +25399,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "КППС 1114х1114_4",
+                "id": "kpps-1114x1114"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -26052,7 +26192,7 @@ export const generatedRegions = {
                 "id": "kppu-1072x1072"
               }
             ],
-            "industrySector": "Строительный сектор"
+            "industrySector": "Химическая промышленность"
           }
         ]
       },
@@ -26758,8 +26898,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "АО 2-20 (КСк3)",
-            "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
+            "name": "АО 2-20 (КПСк3)",
+            "id": "agregat-ao2-20-ksk3-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "КППС 1030х1030_3",
+            "id": "kpps-1030x1030"
           }
         ],
         "deliveries": [
@@ -26788,8 +26933,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "АО 2-20 (КСк3)",
-                "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
+                "name": "АО 2-20 (КПСк3)",
+                "id": "agregat-ao2-20-ksk3-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "КППС 1030х1030_3",
+                "id": "kpps-1030x1030"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -30861,8 +31011,13 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "СТД-300 (КСк3)",
-            "id": "std300-ksk"
+            "name": "СТД-300 (КПСк3)",
+            "id": "std300-kpsk"
+          },
+          {
+            "kind": "product",
+            "name": "КППУ 1299х1299_3",
+            "id": "kppu-1299x1299"
           }
         ],
         "deliveries": [
@@ -30886,8 +31041,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
-                "name": "СТД-300 (КСк3)",
-                "id": "std300-ksk"
+                "name": "СТД-300 (КПСк3)",
+                "id": "std300-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "КППУ 1299х1299_3",
+                "id": "kppu-1299x1299"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -35340,6 +35500,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 311",
             "id": "kalorifer-tvv-311"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 1280х1280_3",
+            "id": "kpvs-1280x1280"
           }
         ],
         "deliveries": [
@@ -35360,6 +35525,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 1280х1280_3",
+                "id": "kpvs-1280x1280"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -36465,13 +36635,23 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "АО 2-3 (КСк4)",
-            "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
+            "name": "АО 2-3 (КПСк4)",
+            "id": "agregat-ao2-3-ksk4-vozdushniy-parovoy"
           },
           {
             "kind": "product",
-            "name": "АО 2-5 (КСк4)",
-            "id": "agregat-ao2-5-ksk4-vozdushniy-vodyanoy"
+            "name": "АО 2-5 (КПСк4)",
+            "id": "agregat-ao2-5-ksk4-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "КППУ 663х663_4",
+            "id": "kppu-663x663"
+          },
+          {
+            "kind": "product",
+            "name": "КППС 697х697_4",
+            "id": "kpps-697x697"
           }
         ],
         "deliveries": [
@@ -36480,13 +36660,23 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "АО 2-3 (КСк4)",
-                "id": "agregat-ao2-3-ksk4-vozdushniy-vodyanoy"
+                "name": "АО 2-3 (КПСк4)",
+                "id": "agregat-ao2-3-ksk4-vozdushniy-parovoy"
               },
               {
                 "kind": "product",
-                "name": "АО 2-5 (КСк4)",
-                "id": "agregat-ao2-5-ksk4-vozdushniy-vodyanoy"
+                "name": "АО 2-5 (КПСк4)",
+                "id": "agregat-ao2-5-ksk4-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "КППУ 663х663_4",
+                "id": "kppu-663x663"
+              },
+              {
+                "kind": "product",
+                "name": "КППС 697х697_4",
+                "id": "kpps-697x697"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -38654,6 +38844,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 2-8",
             "id": "kalorifer-kpsk-2-8"
+          },
+          {
+            "kind": "product",
+            "name": "КППУ 1117х1117_3",
+            "id": "kppu-1117x1117"
           }
         ],
         "deliveries": [
@@ -38669,6 +38864,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 2-8",
                 "id": "kalorifer-kpsk-2-8"
+              },
+              {
+                "kind": "product",
+                "name": "КППУ 1117х1117_3",
+                "id": "kppu-1117x1117"
               }
             ],
             "industrySector": "Промышленное снабжение"
@@ -39402,13 +39602,18 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "category",
-            "name": "АО 2 В",
+            "name": "АО 2 П",
             "href": "/ao2-ksk-kpsk"
           },
           {
             "kind": "product",
-            "name": "АО 2-20 (КСк3)",
-            "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
+            "name": "АО 2-20 (КПСк3)",
+            "id": "agregat-ao2-20-ksk3-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "КППС 989х989_3",
+            "id": "kpps-989x989"
           }
         ],
         "deliveries": [
@@ -39417,13 +39622,18 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "category",
-                "name": "АО 2 В",
+                "name": "АО 2 П",
                 "href": "/ao2-ksk-kpsk"
               },
               {
                 "kind": "product",
-                "name": "АО 2-20 (КСк3)",
-                "id": "agregat-ao2-20-ksk3-vozdushniy-vodyanoy"
+                "name": "АО 2-20 (КПСк3)",
+                "id": "agregat-ao2-20-ksk3-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "КППС 989х989_3",
+                "id": "kpps-989x989"
               }
             ],
             "industrySector": "Горнодобывающая пром-ть"
@@ -39452,6 +39662,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "СТД-300 (КПСк4)",
             "id": "std300-kpsk"
+          },
+          {
+            "kind": "product",
+            "name": "КППС 1280х1280_4",
+            "id": "kpps-1280x1280"
           },
           {
             "kind": "category",
@@ -39487,6 +39702,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СТД-300 (КПСк4)",
                 "id": "std300-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "КППС 1280х1280_4",
+                "id": "kpps-1280x1280"
               },
               {
                 "kind": "category",
@@ -39564,7 +39784,7 @@ export const generatedRegions = {
         "settlement": {
           "name": "Пусунсаари",
           "slug": "pusunsaari",
-          "type": "other"
+          "type": "settlement"
         },
         "products": [
           {
@@ -40657,6 +40877,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "АО 2-10 (КСк3)",
             "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 864х864_3",
+            "id": "kpvs-864x864"
           }
         ],
         "deliveries": [
@@ -40672,6 +40897,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-10 (КСк3)",
                 "id": "agregat-ao2-10-ksk3-vozdushniy-vodyanoy"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 864х864_3",
+                "id": "kpvs-864x864"
               }
             ],
             "industrySector": "Тяжелое машиностроение"
@@ -43647,8 +43877,13 @@ export const generatedRegions = {
           },
           {
             "kind": "category",
-            "name": "АВО 4-95-01 П",
+            "name": "АВО 4-95-01 В",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "product",
+            "name": "КПВУ 708х708_4",
+            "id": "kpvu-708x708"
           }
         ],
         "deliveries": [
@@ -43662,8 +43897,13 @@ export const generatedRegions = {
               },
               {
                 "kind": "category",
-                "name": "АВО 4-95-01 П",
+                "name": "АВО 4-95-01 В",
                 "href": "/avo-tvv-kp"
+              },
+              {
+                "kind": "product",
+                "name": "КПВУ 708х708_4",
+                "id": "kpvu-708x708"
               }
             ],
             "industrySector": "Приборостроение и электротехника"
@@ -45356,6 +45596,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "АО 2-5 (КПСк4)",
             "id": "agregat-ao2-5-ksk4-vozdushniy-parovoy"
+          },
+          {
+            "kind": "product",
+            "name": "КППС 655х655_4",
+            "id": "kpps-655x655"
           }
         ],
         "deliveries": [
@@ -45371,6 +45616,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-5 (КПСк4)",
                 "id": "agregat-ao2-5-ksk4-vozdushniy-parovoy"
+              },
+              {
+                "kind": "product",
+                "name": "КППС 655х655_4",
+                "id": "kpps-655x655"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -49100,6 +49350,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КП 306",
             "id": "kalorifer-kp-306"
+          },
+          {
+            "kind": "product",
+            "name": "КППУ 1254х1254_4",
+            "id": "kppu-1254x1254"
           }
         ],
         "deliveries": [
@@ -49120,6 +49375,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КП 306",
                 "id": "kalorifer-kp-306"
+              },
+              {
+                "kind": "product",
+                "name": "КППУ 1254х1254_4",
+                "id": "kppu-1254x1254"
               }
             ],
             "industrySector": "Химическая промышленность"
@@ -49450,6 +49710,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "АО 2-25 (КСк3)",
             "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 1155х1155_3",
+            "id": "kpvs-1155x1155"
           }
         ],
         "deliveries": [
@@ -49460,6 +49725,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-25 (КСк3)",
                 "id": "agregat-ao2-25-ksk3-vozdushniy-vodyanoy"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 1155х1155_3",
+                "id": "kpvs-1155x1155"
               }
             ],
             "industrySector": "Строительный сектор"
@@ -51739,6 +52009,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 3-9",
             "id": "kalorifer-ksk-3-9"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 864х864_2",
+            "id": "kpvs-864x864"
           }
         ],
         "deliveries": [
@@ -51764,6 +52039,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 3-9",
                 "id": "kalorifer-ksk-3-9"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 864х864_2",
+                "id": "kpvs-864x864"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -51789,6 +52069,11 @@ export const generatedRegions = {
             "href": "/avo-tvv-kp"
           },
           {
+            "kind": "category",
+            "name": "КППУ",
+            "href": "/kalorifery-par"
+          },
+          {
             "kind": "product",
             "name": "КППУ 754х754_4",
             "id": "kppu-754x754"
@@ -51807,6 +52092,11 @@ export const generatedRegions = {
                 "kind": "category",
                 "name": "АВО 4-95-01 П",
                 "href": "/avo-tvv-kp"
+              },
+              {
+                "kind": "category",
+                "name": "КППУ",
+                "href": "/kalorifery-par"
               },
               {
                 "kind": "product",
@@ -52000,8 +52290,8 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
-            "name": "КПВС 1572х1572_4",
-            "id": "kpvs-1572x1572"
+            "name": "КПВС 1530х1530_4",
+            "id": "kpvs-1530x1530"
           }
         ],
         "deliveries": [
@@ -52010,8 +52300,8 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "product",
-                "name": "КПВС 1572х1572_4",
-                "id": "kpvs-1572x1572"
+                "name": "КПВС 1530х1530_4",
+                "id": "kpvs-1530x1530"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
