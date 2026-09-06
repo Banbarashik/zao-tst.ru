@@ -3911,7 +3911,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/krasnodar"
       },
-      "company": "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»",
+      "company": "ООО «КЗИР СТЕРИТЕК»",
       "industrySector": "Фармацевтическая пром-сть"
     },
     {
@@ -5170,7 +5170,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/krasnodar"
       },
-      "company": "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»",
+      "company": "ООО «КЗИР СТЕРИТЕК»",
       "industrySector": "Фармацевтическая пром-сть"
     },
     {
@@ -6247,7 +6247,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/krasnodar"
       },
-      "company": "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»",
+      "company": "ООО «КЗИР СТЕРИТЕК»",
       "industrySector": "Фармацевтическая пром-сть"
     },
     {
@@ -6746,7 +6746,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/krasnodar"
       },
-      "company": "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»",
+      "company": "ООО «КЗИР СТЕРИТЕК»",
       "industrySector": "Фармацевтическая пром-сть"
     },
     {
@@ -10235,7 +10235,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/krasnodar"
       },
-      "company": "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»",
+      "company": "ООО «КЗИР СТЕРИТЕК»",
       "industrySector": "Фармацевтическая пром-сть"
     },
     {
@@ -23816,7 +23816,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/krasnodar"
       },
-      "company": "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»",
+      "company": "ООО «КЗИР СТЕРИТЕК»",
       "industrySector": "Фармацевтическая пром-сть"
     },
     {
@@ -30945,21 +30945,6 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/novosibirsk"
       },
-      "company": "ООО «Райвл-НСК»",
-      "industrySector": "Машиностроение"
-    },
-    {
-      "region": {
-        "name": "Новосибирская область",
-        "slug": "novosibirskaya-oblast",
-        "href": "/regions/novosibirsk#novosibirskaya-oblast"
-      },
-      "settlement": {
-        "name": "Новосибирск",
-        "slug": "novosibirsk",
-        "type": "city",
-        "href": "/regions/novosibirsk"
-      },
       "company": "ООО «Экспортер»",
       "industrySector": "Логистика и транспорт"
     }
@@ -31634,7 +31619,7 @@ export const productDeliveryRecords = {
         "type": "city",
         "href": "/regions/krasnodar"
       },
-      "company": "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»",
+      "company": "ООО «КЗИР СТЕРИТЕК»",
       "industrySector": "Фармацевтическая пром-сть"
     },
     {
@@ -40723,7 +40708,7 @@ export const productDeliveries = {
       "name": "Краснодар",
       "href": "/regions/krasnodar",
       "companies": [
-        "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»"
+        "ООО «КЗИР СТЕРИТЕК»"
       ]
     },
     {
@@ -41401,7 +41386,7 @@ export const productDeliveries = {
       "name": "Краснодар",
       "href": "/regions/krasnodar",
       "companies": [
-        "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»"
+        "ООО «КЗИР СТЕРИТЕК»"
       ]
     },
     {
@@ -41981,7 +41966,7 @@ export const productDeliveries = {
       "name": "Краснодар",
       "href": "/regions/krasnodar",
       "companies": [
-        "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»"
+        "ООО «КЗИР СТЕРИТЕК»"
       ]
     },
     {
@@ -42249,7 +42234,7 @@ export const productDeliveries = {
       "name": "Краснодар",
       "href": "/regions/krasnodar",
       "companies": [
-        "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»"
+        "ООО «КЗИР СТЕРИТЕК»"
       ]
     },
     {
@@ -44086,7 +44071,7 @@ export const productDeliveries = {
       "name": "Краснодар",
       "href": "/regions/krasnodar",
       "companies": [
-        "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»"
+        "ООО «КЗИР СТЕРИТЕК»"
       ]
     },
     {
@@ -51241,7 +51226,7 @@ export const productDeliveries = {
       "name": "Краснодар",
       "href": "/regions/krasnodar",
       "companies": [
-        "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»"
+        "ООО «КЗИР СТЕРИТЕК»"
       ]
     },
     {
@@ -55059,7 +55044,6 @@ export const productDeliveries = {
       "name": "Новосибирск",
       "href": "/regions/novosibirsk",
       "companies": [
-        "ООО «Райвл-НСК»",
         "ООО «Экспортер»"
       ]
     }
@@ -55419,7 +55403,7 @@ export const productDeliveries = {
       "name": "Краснодар",
       "href": "/regions/krasnodar",
       "companies": [
-        "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»"
+        "ООО «КЗИР СТЕРИТЕК»"
       ]
     },
     {

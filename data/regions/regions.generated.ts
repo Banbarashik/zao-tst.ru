@@ -19842,7 +19842,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Краснодарский завод инфузионных растворов СТЕРИТЕК»",
+        "name": "ООО «КЗИР СТЕРИТЕК»",
         "settlement": {
           "name": "Краснодар",
           "slug": "krasnodar",
@@ -31873,11 +31873,6 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
-            "name": "КФБ-5 А3 П",
-            "id": "kalorifer-kfb-5"
-          },
-          {
-            "kind": "product",
             "name": "КФБ-6 А3 П",
             "id": "kalorifer-kfb-6"
           }
@@ -31920,11 +31915,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-8",
                 "id": "kalorifer-kpsk-4-8"
-              },
-              {
-                "kind": "product",
-                "name": "КФБ-5 А3 П",
-                "id": "kalorifer-kfb-5"
               },
               {
                 "kind": "product",
