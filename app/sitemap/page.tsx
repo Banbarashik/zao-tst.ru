@@ -227,6 +227,45 @@ const regionLinks = Object.values(generatedRegions).sort((a, b) =>
   a.subject.name.localeCompare(b.subject.name, "ru"),
 );
 
+function formatProductLinkLabel(product: Product) {
+  const displayName = Array.isArray(product.variants)
+    ? product.shortName
+    : product.name;
+  const airPower =
+    typeof product.airPower === "number" ? `${product.airPower} м3/час` : null;
+
+  const variantHeatPowers = Array.isArray(product.variants)
+    ? product.variants
+        .map((variant) => variant.heatPower)
+        .filter((value): value is number => typeof value === "number")
+    : [];
+
+  const directHeatPower =
+    typeof product.heatPower === "number" ? `${product.heatPower} кВт` : null;
+  const variantHeatPowerText =
+    variantHeatPowers.length > 0 ? `${variantHeatPowers.join(", ")} кВт` : null;
+
+  const heatPowerText = directHeatPower ?? variantHeatPowerText;
+
+  if (variantHeatPowerText && airPower) {
+    return `${displayName} |${variantHeatPowerText}; ${airPower}|`;
+  }
+
+  if (airPower && heatPowerText) {
+    return `${displayName} |${heatPowerText}; ${airPower}|`;
+  }
+
+  if (airPower) {
+    return `${displayName} |${airPower}|`;
+  }
+
+  if (heatPowerText) {
+    return `${displayName} |${heatPowerText}|`;
+  }
+
+  return displayName;
+}
+
 function ProductAccordion({
   title,
   value,
@@ -253,7 +292,7 @@ function ProductAccordion({
                   className="block px-2 py-2 text-[#185abc] hover:underline"
                   href={`${SITE_URL}/${product.id}`}
                 >
-                  {product.name}
+                  {formatProductLinkLabel(product)}
                 </Link>
               </li>
             ))}
