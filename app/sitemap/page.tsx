@@ -152,6 +152,8 @@ const companyLinks = [
   ["Сертификаты соответствия", "/"],
   ["Контакты", "/"],
   ["Политика обработки персональных данных", "/personal-data"],
+  ["Каталог оборудования", "/"],
+  ["Прайс-лист", "/"],
 ] as const;
 
 const productLinks = [
@@ -185,6 +187,13 @@ const generalPageLinks = [
   ["Схемы подключения электрокалориферов", "/"],
   ["Расчет электрокалорифера мощностью", "/"],
 ] as const;
+
+const companyGroups = [companyLinks.slice(0, 6), companyLinks.slice(6)];
+const engineeringGroups = [
+  generalPageLinks.slice(0, 6),
+  generalPageLinks.slice(6, 12),
+  generalPageLinks.slice(12),
+];
 
 const regionLinks = Object.values(generatedRegions).sort((a, b) =>
   a.subject.name.localeCompare(b.subject.name, "ru"),
@@ -231,25 +240,36 @@ export default function SitemapPage() {
   return (
     <section className="max-w-8xl mx-auto grid grid-cols-1 gap-9 px-4 py-14 md:grid-cols-2 2xl:grid-cols-3">
       <div>
-        <div className="border-l border-blue-400">
-          <h2 className="px-4 text-2xl">О компании</h2>
-          <ul className="mt-4">
-            {companyLinks.map(([name, href]) => (
-              <li
-                key={href}
-                className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
-              >
-                <Link className="hover:underline" href={href}>
-                  {name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div>
+          <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
+            Информационно-производственный раздел
+          </h2>
+          {companyGroups.map((group, groupIndex) => (
+            <ul
+              key={`company-group-${groupIndex}`}
+              className={
+                groupIndex === 0
+                  ? "border-l border-blue-400"
+                  : "mt-8 border-l border-blue-400"
+              }
+            >
+              {group.map(([name, href]) => (
+                <li
+                  key={href}
+                  className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+                >
+                  <Link className="hover:underline" href={href}>
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ))}
         </div>
-        <div className="mt-9 border-l border-blue-400">
+        <div className="mt-9">
           <h2 className="px-4 text-2xl">Продукция</h2>
           <div className="mt-4">
-            <ul>
+            <ul className="border-l border-blue-400">
               {productLinks.map(([name, href]) => (
                 <li
                   key={href}
@@ -268,25 +288,36 @@ export default function SitemapPage() {
         </div>
       </div>
       <div>
-        <div className="border-l border-blue-400">
-          <h2 className="px-4 text-2xl">Общие страницы</h2>
-          <ul className="mt-4">
-            {generalPageLinks.map(([name, href]) => (
-              <li
-                key={href}
-                className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
-              >
-                <Link className="hover:underline" href={href}>
-                  {name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div>
+          <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
+            Инженерно-расчетный блок
+          </h2>
+          {engineeringGroups.map((group, groupIndex) => (
+            <ul
+              key={`engineering-group-${groupIndex}`}
+              className={
+                groupIndex === 0
+                  ? "border-l border-blue-400"
+                  : "mt-8 border-l border-blue-400"
+              }
+            >
+              {group.map(([name, href]) => (
+                <li
+                  key={href}
+                  className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+                >
+                  <Link className="hover:underline" href={href}>
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ))}
         </div>
       </div>
-      <div className="border-l border-blue-400">
-        <h2 className="px-4 text-2xl">Регионы</h2>
-        <ul className="mt-4">
+      <div>
+        <h2 className="px-4 text-2xl">География и логистика поставок</h2>
+        <ul className="mt-4 border-l border-blue-400">
           <li className="border-b border-blue-400 px-4 py-2 text-[#185abc]">
             Карта региональных поставок
           </li>
