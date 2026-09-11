@@ -383,144 +383,146 @@ function ProductAccordion({
 
 export default function SitemapPage() {
   return (
-    <section className="max-w-8xl mx-auto grid grid-cols-1 gap-9 px-4 py-14 md:grid-cols-2 2xl:grid-cols-3">
-      {/* Информационно-производственный раздел */}
-      <div>
+    <div className="bg-[#E9EEF4]">
+      <article className="max-w-8xl mx-auto grid grid-cols-1 gap-9 px-4 py-14 md:grid-cols-2 2xl:grid-cols-3">
+        {/* Информационно-производственный раздел */}
         <div>
-          <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
-            Информационно-производственный раздел
-          </h2>
-          {companyGroups.map((group, groupIndex) => (
-            <ul
-              key={`company-group-${groupIndex}`}
-              className={
-                groupIndex === 0
-                  ? "border-l border-blue-400"
-                  : "mt-8 border-l border-blue-400"
-              }
-            >
-              {group.map(([name, href]) => (
-                <li
-                  key={href}
-                  className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
-                >
-                  <Link className="hover:underline" href={href}>
-                    {name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          ))}
-        </div>
-        {/* Продукция */}
-        <div className="mt-9 space-y-8">
-          {productGroups.map((group) => (
-            <div key={group.title} className="border-l border-blue-400">
-              <h3 className="px-4 pb-3 text-lg font-medium text-black">
-                {group.title}
-              </h3>
-              <div>
-                {group.items.map((section) => (
-                  <ProductAccordion key={section.value} {...section} />
+          <div>
+            <h2 className="border-l border-blue-400 px-4 pb-4 text-xl">
+              Информационно-производственный раздел
+            </h2>
+            {companyGroups.map((group, groupIndex) => (
+              <ul
+                key={`company-group-${groupIndex}`}
+                className={
+                  groupIndex === 0
+                    ? "border-l border-blue-400"
+                    : "mt-8 border-l border-blue-400"
+                }
+              >
+                {group.map(([name, href]) => (
+                  <li
+                    key={href}
+                    className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+                  >
+                    <Link className="hover:underline" href={href}>
+                      {name}
+                    </Link>
+                  </li>
                 ))}
+              </ul>
+            ))}
+          </div>
+          {/* Продукция */}
+          <div className="mt-9 space-y-8">
+            {productGroups.map((group) => (
+              <div key={group.title} className="border-l border-blue-400">
+                <h3 className="px-4 pb-3 text-lg font-medium text-black">
+                  {group.title}
+                </h3>
+                <div>
+                  {group.items.map((section) => (
+                    <ProductAccordion key={section.value} {...section} />
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Инженерно-расчетный блок */}
-      <div>
-        <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
-          Инженерно-расчетный блок
-        </h2>
-        <div className="space-y-8">
-          {engineeringGroups.map((group, groupIndex) => {
-            if (group.type !== "mixed") {
-              return null;
-            }
+        {/* Инженерно-расчетный блок */}
+        <div>
+          <h2 className="border-l border-blue-400 px-4 pb-4 text-xl">
+            Инженерно-расчетный блок
+          </h2>
+          <div className="space-y-8">
+            {engineeringGroups.map((group, groupIndex) => {
+              if (group.type !== "mixed") {
+                return null;
+              }
 
-            return (
-              <div
-                key={`engineering-mixed-${groupIndex}`}
-                className="border-l border-blue-400"
-              >
-                {group.items.map((item, itemIndex) => {
-                  if (item.type === "link") {
+              return (
+                <div
+                  key={`engineering-mixed-${groupIndex}`}
+                  className="border-l border-blue-400"
+                >
+                  {group.items.map((item, itemIndex) => {
+                    if (item.type === "link") {
+                      return (
+                        <div
+                          key={`${item.name}-${itemIndex}`}
+                          className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+                        >
+                          <Link className="hover:underline" href={item.href}>
+                            {item.name}
+                          </Link>
+                        </div>
+                      );
+                    }
+
                     return (
-                      <div
-                        key={`${item.name}-${itemIndex}`}
-                        className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+                      <Accordion
+                        key={`${item.label}-${itemIndex}`}
+                        type="single"
+                        collapsible
                       >
-                        <Link className="hover:underline" href={item.href}>
-                          {item.name}
-                        </Link>
-                      </div>
-                    );
-                  }
-
-                  return (
-                    <Accordion
-                      key={`${item.label}-${itemIndex}`}
-                      type="single"
-                      collapsible
-                    >
-                      <AccordionItem
-                        value={item.label}
-                        className="border-b border-blue-400"
-                      >
-                        <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] hover:no-underline [&>svg]:text-black">
-                          {item.label}
-                        </AccordionTrigger>
-                        <AccordionContent className="ml-6 border-b border-l border-blue-400 pb-0">
-                          <ul>
-                            {item.items.map(([name, href]) => (
-                              <li
-                                key={name}
-                                className="border-b border-blue-400 last:border-b-0"
-                              >
-                                <Link
-                                  className="block px-2 py-2 text-[#185abc] hover:underline"
-                                  href={href}
+                        <AccordionItem
+                          value={item.label}
+                          className="border-b border-blue-400"
+                        >
+                          <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] hover:no-underline [&>svg]:text-black">
+                            {item.label}
+                          </AccordionTrigger>
+                          <AccordionContent className="ml-6 border-b border-l border-blue-400 pb-0">
+                            <ul>
+                              {item.items.map(([name, href]) => (
+                                <li
+                                  key={name}
+                                  className="border-b border-blue-400 last:border-b-0"
                                 >
-                                  {name}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  );
-                })}
-              </div>
-            );
-          })}
+                                  <Link
+                                    className="block px-2 py-2 text-[#185abc] hover:underline"
+                                    href={href}
+                                  >
+                                    {name}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
 
-      {/* География и логистика поставок */}
-      <div>
-        <h2 className="px-4 text-2xl">География и логистика поставок</h2>
-        <ul className="mt-4 border-l border-blue-400">
-          <li className="border-b border-blue-400 px-4 py-2 text-[#185abc]">
-            Карта региональных поставок
-          </li>
-          {regionLinks.map((region) => (
-            <li
-              key={region.slug}
-              className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
-            >
-              <Link
-                className="hover:underline"
-                href={`/regions/${region.slug}`}
-              >
-                {region.capital.name}, {region.subject.name}
-              </Link>
+        {/* География и логистика поставок */}
+        <div>
+          <h2 className="px-4 text-xl">География и логистика поставок</h2>
+          <ul className="mt-4 border-l border-blue-400">
+            <li className="border-b border-blue-400 px-4 py-2 text-[#185abc]">
+              Карта региональных поставок
             </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+            {regionLinks.map((region) => (
+              <li
+                key={region.slug}
+                className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+              >
+                <Link
+                  className="hover:underline"
+                  href={`/regions/${region.slug}`}
+                >
+                  {region.capital.name}, {region.subject.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </article>
+    </div>
   );
 }
