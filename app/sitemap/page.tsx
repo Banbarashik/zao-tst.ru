@@ -145,6 +145,42 @@ const productSections: {
   },
 ];
 
+const productGroups = [
+  {
+    title: "Калориферы водяные и паровые",
+    items: [
+      productSections[0],
+      productSections[1],
+      productSections[2],
+      productSections[3],
+      productSections[4],
+      productSections[8],
+      productSections[9],
+      productSections[10],
+    ],
+  },
+  {
+    title: "Агрегаты воздушно-отопительные",
+    items: [
+      productSections[5],
+      productSections[11],
+      productSections[6],
+      productSections[12],
+      productSections[7],
+      productSections[13],
+    ],
+  },
+  {
+    title: "Установки электрические нагревательные",
+    items: [
+      productSections[14],
+      productSections[15],
+      productSections[16],
+      productSections[17],
+    ],
+  },
+];
+
 const companyLinks = [
   ["Главная. Завод ООО «Т.С.Т.»", "/"],
   ["Карточка предприятия", "/"],
@@ -154,14 +190,6 @@ const companyLinks = [
   ["Политика обработки персональных данных", "/personal-data"],
   ["Каталог оборудования", "/"],
   ["Прайс-лист", "/"],
-] as const;
-
-const productLinks = [
-  ["Каталог оборудования", "/"],
-  ["Прайс-лист", "/"],
-  ["Калориферы", "/"],
-  ["Агрегаты воздушно-отопительные", "/"],
-  ["Установки воздухонагревательные", "/"],
 ] as const;
 
 const generalPageLinks = [
@@ -240,6 +268,7 @@ export default function SitemapPage() {
   return (
     <section className="max-w-8xl mx-auto grid grid-cols-1 gap-9 px-4 py-14 md:grid-cols-2 2xl:grid-cols-3">
       <div>
+        {/* Информационно-производственный раздел */}
         <div>
           <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
             Информационно-производственный раздел
@@ -266,55 +295,52 @@ export default function SitemapPage() {
             </ul>
           ))}
         </div>
-        <div className="mt-9">
-          <h2 className="px-4 text-2xl">Продукция</h2>
-          <div className="mt-4">
-            <ul className="border-l border-blue-400">
-              {productLinks.map(([name, href]) => (
-                <li
-                  key={href}
-                  className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
-                >
-                  <Link className="hover:underline" href={href}>
-                    {name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            {productSections.map((section) => (
-              <ProductAccordion key={section.value} {...section} />
-            ))}
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
-            Инженерно-расчетный блок
-          </h2>
-          {engineeringGroups.map((group, groupIndex) => (
-            <ul
-              key={`engineering-group-${groupIndex}`}
-              className={
-                groupIndex === 0
-                  ? "border-l border-blue-400"
-                  : "mt-8 border-l border-blue-400"
-              }
-            >
-              {group.map(([name, href]) => (
-                <li
-                  key={href}
-                  className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
-                >
-                  <Link className="hover:underline" href={href}>
-                    {name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+        {/* Продукция */}
+        <div className="mt-9 space-y-8">
+          {productGroups.map((group) => (
+            <div key={group.title} className="border-l border-blue-400">
+              <h3 className="px-4 pb-3 text-lg font-medium text-black">
+                {group.title}
+              </h3>
+              <div>
+                {group.items.map((section) => (
+                  <ProductAccordion key={section.value} {...section} />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
+
+      {/* Инженерно-расчетный блок */}
+      <div>
+        <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
+          Инженерно-расчетный блок
+        </h2>
+        {engineeringGroups.map((group, groupIndex) => (
+          <ul
+            key={`engineering-group-${groupIndex}`}
+            className={
+              groupIndex === 0
+                ? "border-l border-blue-400"
+                : "mt-8 border-l border-blue-400"
+            }
+          >
+            {group.map(([name, href]) => (
+              <li
+                key={href}
+                className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+              >
+                <Link className="hover:underline" href={href}>
+                  {name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        ))}
+      </div>
+
+      {/* География и логистика поставок */}
       <div>
         <h2 className="px-4 text-2xl">География и логистика поставок</h2>
         <ul className="mt-4 border-l border-blue-400">
