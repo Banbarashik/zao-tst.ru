@@ -194,17 +194,18 @@ const companyLinks = [
 
 const companyGroups = [companyLinks.slice(0, 6), companyLinks.slice(6)];
 
-const engineeringEntries = [
+const engineeringGroups = [
   {
-    type: "link",
-    name: "Подбор воздушно-отопительного оборудования",
-    href: "/",
+    type: "links",
+    items: [
+      ["Подбор воздушно-отопительного оборудования", "/"],
+      ["Критерии расчета и подбора калориферов", "/"],
+      ["Калькулятор водяных калориферов", "/"],
+      ["Калькулятор паровых калориферов", "/"],
+      ["Калькулятор электрокалориферов", "/"],
+      ["Водяные калориферы для сушильных камер", "/"],
+    ] as const,
   },
-  { type: "link", name: "Критерии расчета и подбора калориферов", href: "/" },
-  { type: "link", name: "Калькулятор водяных калориферов", href: "/" },
-  { type: "link", name: "Калькулятор паровых калориферов", href: "/" },
-  { type: "link", name: "Калькулятор электрокалориферов", href: "/" },
-  { type: "link", name: "Водяные калориферы для сушильных камер", href: "/" },
   {
     type: "accordion",
     label: "Паровые калориферы",
@@ -221,9 +222,13 @@ const engineeringEntries = [
       ["Расчет коэффициента теплопередачи", "/"],
       ["Расчет среднего температурного напора", "/"],
       ["Расчет аэродинамического сопротивления", "/"],
-    ],
+    ] as const,
   },
-  { type: "link", name: "Схемы подключения электрокалориферов", href: "/" },
+  {
+    type: "link",
+    name: "Схемы подключения электрокалориферов",
+    href: "/",
+  },
   {
     type: "accordion",
     label: "Расчет и подбор электрокалориферов",
@@ -235,7 +240,7 @@ const engineeringEntries = [
       ["Электрокалорифер 90 кВт, 7000 м3/час", "/"],
       ["Электрокалорифер 157.5 кВт, 12000 м3/час", "/"],
       ["Электрокалорифер 247.5 кВт, 18000 м3/час", "/"],
-    ],
+    ] as const,
   },
   {
     type: "accordion",
@@ -248,7 +253,7 @@ const engineeringEntries = [
       ["Установка 90 кВт, 7000 м3/час", "/"],
       ["Установка 157.5 кВт, 12000 м3/час", "/"],
       ["Установка 247.5 кВт, 18000 м3/час", "/"],
-    ],
+    ] as const,
   },
 ] as const;
 
@@ -385,50 +390,73 @@ export default function SitemapPage() {
         <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
           Инженерно-расчетный блок
         </h2>
-        <div className="space-y-0 border-l border-blue-400">
-          {engineeringEntries.map((entry, index) => {
-            if (entry.type === "link") {
+        <div className="space-y-8">
+          {engineeringGroups.map((group, groupIndex) => {
+            if (group.type === "links") {
               return (
-                <div
-                  key={`${entry.name}-${index}`}
-                  className="border-b border-blue-400 px-4 py-2 text-[#185abc]"
+                <ul
+                  key={`engineering-links-${groupIndex}`}
+                  className="border-l border-blue-400"
                 >
-                  <Link className="hover:underline" href={entry.href}>
-                    {entry.name}
-                  </Link>
-                </div>
+                  {group.items.map(([name, href]) => (
+                    <li
+                      key={name}
+                      className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+                    >
+                      <Link className="hover:underline" href={href}>
+                        {name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              );
+            }
+
+            if (group.type === "link") {
+              return (
+                <ul
+                  key={`engineering-single-link-${groupIndex}`}
+                  className="border-l border-blue-400"
+                >
+                  <li className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t">
+                    <Link className="hover:underline" href={group.href}>
+                      {group.name}
+                    </Link>
+                  </li>
+                </ul>
               );
             }
 
             return (
-              <Accordion
-                key={`${entry.label}-${index}`}
-                type="single"
-                collapsible
+              <div
+                key={`engineering-accordion-${groupIndex}`}
+                className="border-l border-blue-400"
               >
-                <AccordionItem
-                  value={entry.label}
-                  className="border-b border-blue-400"
-                >
-                  <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#d93025] hover:no-underline [&>svg]:text-black">
-                    {entry.label}
-                  </AccordionTrigger>
-                  <AccordionContent className="border-b border-l border-blue-400 pb-0">
-                    <ul>
-                      {entry.items.map(([name, href]) => (
-                        <li
-                          key={name}
-                          className="border-b border-blue-400 px-4 py-2 text-[#1fae51] last:border-b-0"
-                        >
-                          <Link className="hover:underline" href={href}>
-                            {name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
+                <Accordion type="single" collapsible>
+                  <AccordionItem
+                    value={group.label}
+                    className="border-b border-blue-400"
+                  >
+                    <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#d93025] hover:no-underline [&>svg]:text-black">
+                      {group.label}
+                    </AccordionTrigger>
+                    <AccordionContent className="border-b border-l border-blue-400 pb-0">
+                      <ul>
+                        {group.items.map(([name, href]) => (
+                          <li
+                            key={name}
+                            className="border-b border-blue-400 px-4 py-2 text-[#1fae51] last:border-b-0"
+                          >
+                            <Link className="hover:underline" href={href}>
+                              {name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
             );
           })}
         </div>
