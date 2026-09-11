@@ -192,35 +192,52 @@ const companyLinks = [
   ["Прайс-лист", "/"],
 ] as const;
 
-const generalPageLinks = [
-  ["Техническая страница", "/"],
+const companyGroups = [companyLinks.slice(0, 6), companyLinks.slice(6)];
+
+const engineeringAccordionGroups = [
+  {
+    title: "Расчет и подбор электрокалориферов",
+    items: [
+      ["Электрокалорифер 15 кВт, 2000 м3/час", "/"],
+      ["Электрокалорифер 22.5 кВт, 2500 м3/час", "/"],
+      ["Электрокалорифер 45 кВт, 4000 м3/час", "/"],
+      ["Электрокалорифер 67.5 кВт, 5000 м3/час", "/"],
+      ["Электрокалорифер 90 кВт, 7000 м3/час", "/"],
+      ["Электрокалорифер 157.5 кВт, 12000 м3/час", "/"],
+      ["Электрокалорифер 247.5 кВт, 18000 м3/час", "/"],
+    ] as const,
+  },
+  {
+    title: "Подбор электрокалориферных установок",
+    items: [
+      ["Установка 15 кВт, 2000 м3/час", "/"],
+      ["Установка 22.5 кВт, 2500 м3/час", "/"],
+      ["Установка 45 кВт, 4000 м3/час", "/"],
+      ["Установка 67.5 кВт, 5000 м3/час", "/"],
+      ["Установка 90 кВт, 7000 м3/час", "/"],
+      ["Установка 157.5 кВт, 12000 м3/час", "/"],
+      ["Установка 247.5 кВт, 18000 м3/час", "/"],
+    ] as const,
+  },
+];
+
+const engineeringLinks = [
+  ["Подбор воздушно-отопительного оборудования", "/"],
+  ["Критерии расчета и подбора калориферов", "/"],
   ["Калькулятор водяных калориферов", "/"],
   ["Калькулятор паровых калориферов", "/"],
   ["Калькулятор электрокалориферов", "/"],
-  ["Критерии расчета и подбора калориферов", "/"],
   ["Водяные калориферы для сушильных камер", "/"],
   ["Паровые калориферы", "/"],
   ["Теплоноситель водяной пар", "/"],
   ["Паровые калориферы для сушильных камер", "/"],
-  ["Технологический нагрев воздуха", "/"],
+  ["Технологический нагрев воздуха паром", "/"],
   ["Расчет и подбор диаметра паропровода", "/"],
-  ["Расчет и подбор паровых калориферов", "/"],
-  ["Расчет тепловой мощности", "/"],
-  ["Расчет площади фронтального сечения", "/"],
-  ["Расчет массовой скорости воздуха", "/"],
-  ["Расчет расхода пара", "/"],
-  ["Расчет коэффициента теплопередачи", "/"],
-  ["Расчет среднего температурного напора", "/"],
-  ["Расчет аэродинамического сопротивления", "/"],
-  ["Схемы подключения электрокалориферов", "/"],
-  ["Расчет электрокалорифера мощностью", "/"],
 ] as const;
 
-const companyGroups = [companyLinks.slice(0, 6), companyLinks.slice(6)];
 const engineeringGroups = [
-  generalPageLinks.slice(0, 6),
-  generalPageLinks.slice(6, 12),
-  generalPageLinks.slice(12),
+  engineeringLinks.slice(0, 6),
+  engineeringLinks.slice(6),
 ];
 
 const regionLinks = Object.values(generatedRegions).sort((a, b) =>
@@ -306,8 +323,8 @@ function ProductAccordion({
 export default function SitemapPage() {
   return (
     <section className="max-w-8xl mx-auto grid grid-cols-1 gap-9 px-4 py-14 md:grid-cols-2 2xl:grid-cols-3">
+      {/* Информационно-производственный раздел */}
       <div>
-        {/* Информационно-производственный раздел */}
         <div>
           <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
             Информационно-производственный раздел
@@ -376,6 +393,33 @@ export default function SitemapPage() {
               </li>
             ))}
           </ul>
+        ))}
+
+        {engineeringAccordionGroups.map((group) => (
+          <Accordion key={group.title} type="single" collapsible>
+            <AccordionItem
+              value={group.title}
+              className="border-b border-blue-400"
+            >
+              <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#d93025] hover:no-underline [&>svg]:text-black">
+                {group.title}
+              </AccordionTrigger>
+              <AccordionContent className="border-b border-l border-blue-400 pb-0">
+                <ul>
+                  {group.items.map(([name, href]) => (
+                    <li
+                      key={name}
+                      className="border-b border-blue-400 px-4 py-2 text-[#1fae51] last:border-b-0"
+                    >
+                      <Link className="hover:underline" href={href}>
+                        {name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         ))}
       </div>
 
