@@ -200,21 +200,36 @@ const engineeringGroups = [
     items: [
       ["Подбор воздушно-отопительного оборудования", "/"],
       ["Критерии расчета и подбора калориферов", "/"],
-      ["Калькулятор водяных калориферов", "/"],
-      ["Калькулятор паровых калориферов", "/"],
-      ["Калькулятор электрокалориферов", "/"],
       ["Водяные калориферы для сушильных камер", "/"],
     ] as const,
   },
   {
-    type: "accordion",
-    label: "Паровые калориферы",
+    type: "links",
     items: [
+      ["Калькулятор водяных калориферов", "/"],
+      ["Калькулятор паровых калориферов", "/"],
+      ["Калькулятор электрокалориферов", "/"],
+    ] as const,
+  },
+  {
+    type: "link",
+    name: "Водяные калориферы для сушильных камер",
+    href: "/",
+  },
+  {
+    type: "links",
+    items: [
+      ["Паровые калориферы", "/"],
       ["Теплоноситель водяной пар", "/"],
       ["Паровые калориферы для сушильных камер", "/"],
       ["Технологический нагрев воздуха паром", "/"],
       ["Расчет и подбор диаметра паропровода", "/"],
-      ["Расчет и подбор паровых калориферов", "/"],
+    ] as const,
+  },
+  {
+    type: "accordion",
+    label: "Расчет и подбор паровых калориферов",
+    items: [
       ["Расчет тепловой мощности", "/"],
       ["Расчет площади фронтального сечения", "/"],
       ["Расчет массовой скорости воздуха", "/"],
@@ -437,17 +452,20 @@ export default function SitemapPage() {
                     value={group.label}
                     className="border-b border-blue-400"
                   >
-                    <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#d93025] hover:no-underline [&>svg]:text-black">
+                    <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] first:border-t hover:no-underline [&>svg]:text-black">
                       {group.label}
                     </AccordionTrigger>
-                    <AccordionContent className="border-b border-l border-blue-400 pb-0">
+                    <AccordionContent className="ml-6 border-b border-l border-blue-400 pb-0">
                       <ul>
                         {group.items.map(([name, href]) => (
                           <li
                             key={name}
-                            className="border-b border-blue-400 px-4 py-2 text-[#1fae51] last:border-b-0"
+                            className="border-b border-blue-400 last:border-b-0"
                           >
-                            <Link className="hover:underline" href={href}>
+                            <Link
+                              className="block px-2 py-2 text-[#185abc] hover:underline"
+                              href={href}
+                            >
                               {name}
                             </Link>
                           </li>
