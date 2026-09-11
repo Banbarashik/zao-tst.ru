@@ -196,79 +196,108 @@ const companyGroups = [companyLinks.slice(0, 6), companyLinks.slice(6)];
 
 const engineeringGroups = [
   {
-    type: "links",
+    type: "mixed",
     items: [
-      ["Подбор воздушно-отопительного оборудования", "/"],
-      ["Критерии расчета и подбора калориферов", "/"],
-      ["Водяные калориферы для сушильных камер", "/"],
-    ] as const,
+      {
+        type: "link",
+        name: "Подбор воздушно-отопительного оборудования",
+        href: "/",
+      },
+      {
+        type: "link",
+        name: "Критерии расчета и подбора калориферов",
+        href: "/",
+      },
+    ],
   },
   {
-    type: "links",
+    type: "mixed",
     items: [
-      ["Калькулятор водяных калориферов", "/"],
-      ["Калькулятор паровых калориферов", "/"],
-      ["Калькулятор электрокалориферов", "/"],
-    ] as const,
+      { type: "link", name: "Калькулятор водяных калориферов", href: "/" },
+      { type: "link", name: "Калькулятор паровых калориферов", href: "/" },
+      { type: "link", name: "Калькулятор электрокалориферов", href: "/" },
+    ],
   },
   {
-    type: "link",
-    name: "Водяные калориферы для сушильных камер",
-    href: "/",
-  },
-  {
-    type: "links",
+    type: "mixed",
     items: [
-      ["Паровые калориферы", "/"],
-      ["Теплоноситель водяной пар", "/"],
-      ["Паровые калориферы для сушильных камер", "/"],
-      ["Технологический нагрев воздуха паром", "/"],
-      ["Расчет и подбор диаметра паропровода", "/"],
-    ] as const,
+      {
+        type: "link",
+        name: "Водяные калориферы для сушильных камер",
+        href: "/",
+      },
+    ],
   },
   {
-    type: "accordion",
-    label: "Расчет и подбор паровых калориферов",
+    type: "mixed",
     items: [
-      ["Расчет тепловой мощности", "/"],
-      ["Расчет площади фронтального сечения", "/"],
-      ["Расчет массовой скорости воздуха", "/"],
-      ["Расчет расхода пара", "/"],
-      ["Расчет коэффициента теплопередачи", "/"],
-      ["Расчет среднего температурного напора", "/"],
-      ["Расчет аэродинамического сопротивления", "/"],
-    ] as const,
+      {
+        type: "link",
+        name: "Теплоноситель водяной пар",
+        href: "/",
+      },
+      {
+        type: "link",
+        name: "Паровые калориферы для сушильных камер",
+        href: "/",
+      },
+      {
+        type: "link",
+        name: "Технологический нагрев воздуха паром",
+        href: "/",
+      },
+      {
+        type: "link",
+        name: "Расчет и подбор диаметра паропровода",
+        href: "/",
+      },
+      {
+        type: "accordion",
+        label: "Расчет и подбор паровых калориферов",
+        items: [
+          ["Расчет и подбор паровых калориферов", "/"],
+          ["Расчет тепловой мощности", "/"],
+          ["Расчет площади фронтального сечения", "/"],
+          ["Расчет массовой скорости воздуха", "/"],
+          ["Расчет расхода пара", "/"],
+          ["Расчет коэффициента теплопередачи", "/"],
+          ["Расчет среднего температурного напора", "/"],
+          ["Расчет аэродинамического сопротивления", "/"],
+        ] as const,
+      },
+    ],
   },
   {
-    type: "link",
-    name: "Схемы подключения электрокалориферов",
-    href: "/",
-  },
-  {
-    type: "accordion",
-    label: "Расчет и подбор электрокалориферов",
+    type: "mixed",
     items: [
-      ["Электрокалорифер 15 кВт, 2000 м3/час", "/"],
-      ["Электрокалорифер 22.5 кВт, 2500 м3/час", "/"],
-      ["Электрокалорифер 45 кВт, 4000 м3/час", "/"],
-      ["Электрокалорифер 67.5 кВт, 5000 м3/час", "/"],
-      ["Электрокалорифер 90 кВт, 7000 м3/час", "/"],
-      ["Электрокалорифер 157.5 кВт, 12000 м3/час", "/"],
-      ["Электрокалорифер 247.5 кВт, 18000 м3/час", "/"],
-    ] as const,
-  },
-  {
-    type: "accordion",
-    label: "Подбор электрокалориферных установок",
-    items: [
-      ["Установка 15 кВт, 2000 м3/час", "/"],
-      ["Установка 22.5 кВт, 2500 м3/час", "/"],
-      ["Установка 45 кВт, 4000 м3/час", "/"],
-      ["Установка 67.5 кВт, 5000 м3/час", "/"],
-      ["Установка 90 кВт, 7000 м3/час", "/"],
-      ["Установка 157.5 кВт, 12000 м3/час", "/"],
-      ["Установка 247.5 кВт, 18000 м3/час", "/"],
-    ] as const,
+      { type: "link", name: "Схемы подключения электрокалориферов", href: "/" },
+      {
+        type: "accordion",
+        label: "Расчет и подбор электрокалориферов",
+        items: [
+          ["Электрокалорифер 15 кВт, 2000 м3/час", "/"],
+          ["Электрокалорифер 22.5 кВт, 2500 м3/час", "/"],
+          ["Электрокалорифер 45 кВт, 4000 м3/час", "/"],
+          ["Электрокалорифер 67.5 кВт, 5000 м3/час", "/"],
+          ["Электрокалорифер 90 кВт, 7000 м3/час", "/"],
+          ["Электрокалорифер 157.5 кВт, 12000 м3/час", "/"],
+          ["Электрокалорифер 247.5 кВт, 18000 м3/час", "/"],
+        ] as const,
+      },
+      {
+        type: "accordion",
+        label: "Подбор электрокалориферных установок",
+        items: [
+          ["Установка 15 кВт, 2000 м3/час", "/"],
+          ["Установка 22.5 кВт, 2500 м3/час", "/"],
+          ["Установка 45 кВт, 4000 м3/час", "/"],
+          ["Установка 67.5 кВт, 5000 м3/час", "/"],
+          ["Установка 90 кВт, 7000 м3/час", "/"],
+          ["Установка 157.5 кВт, 12000 м3/час", "/"],
+          ["Установка 247.5 кВт, 18000 м3/час", "/"],
+        ] as const,
+      },
+    ],
   },
 ] as const;
 
@@ -407,73 +436,63 @@ export default function SitemapPage() {
         </h2>
         <div className="space-y-8">
           {engineeringGroups.map((group, groupIndex) => {
-            if (group.type === "links") {
-              return (
-                <ul
-                  key={`engineering-links-${groupIndex}`}
-                  className="border-l border-blue-400"
-                >
-                  {group.items.map(([name, href]) => (
-                    <li
-                      key={name}
-                      className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
-                    >
-                      <Link className="hover:underline" href={href}>
-                        {name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              );
-            }
-
-            if (group.type === "link") {
-              return (
-                <ul
-                  key={`engineering-single-link-${groupIndex}`}
-                  className="border-l border-blue-400"
-                >
-                  <li className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t">
-                    <Link className="hover:underline" href={group.href}>
-                      {group.name}
-                    </Link>
-                  </li>
-                </ul>
-              );
+            if (group.type !== "mixed") {
+              return null;
             }
 
             return (
               <div
-                key={`engineering-accordion-${groupIndex}`}
+                key={`engineering-mixed-${groupIndex}`}
                 className="border-l border-blue-400"
               >
-                <Accordion type="single" collapsible>
-                  <AccordionItem
-                    value={group.label}
-                    className="border-b border-blue-400"
-                  >
-                    <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] first:border-t hover:no-underline [&>svg]:text-black">
-                      {group.label}
-                    </AccordionTrigger>
-                    <AccordionContent className="ml-6 border-b border-l border-blue-400 pb-0">
-                      <ul>
-                        {group.items.map(([name, href]) => (
-                          <li
-                            key={name}
-                            className="border-b border-blue-400 last:border-b-0"
-                          >
-                            <Link
-                              className="block px-2 py-2 text-[#185abc] hover:underline"
-                              href={href}
-                            >
-                              {name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
+                {group.items.map((item, itemIndex) => {
+                  if (item.type === "link") {
+                    return (
+                      <div
+                        key={`${item.name}-${itemIndex}`}
+                        className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+                      >
+                        <Link className="hover:underline" href={item.href}>
+                          {item.name}
+                        </Link>
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <Accordion
+                      key={`${item.label}-${itemIndex}`}
+                      type="single"
+                      collapsible
+                    >
+                      <AccordionItem
+                        value={item.label}
+                        className="border-b border-blue-400"
+                      >
+                        <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] hover:no-underline [&>svg]:text-black">
+                          {item.label}
+                        </AccordionTrigger>
+                        <AccordionContent className="ml-6 border-b border-l border-blue-400 pb-0">
+                          <ul>
+                            {item.items.map(([name, href]) => (
+                              <li
+                                key={name}
+                                className="border-b border-blue-400 last:border-b-0"
+                              >
+                                <Link
+                                  className="block px-2 py-2 text-[#185abc] hover:underline"
+                                  href={href}
+                                >
+                                  {name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                  );
+                })}
               </div>
             );
           })}
