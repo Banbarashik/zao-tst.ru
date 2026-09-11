@@ -194,9 +194,39 @@ const companyLinks = [
 
 const companyGroups = [companyLinks.slice(0, 6), companyLinks.slice(6)];
 
-const engineeringAccordionGroups = [
+const engineeringEntries = [
   {
-    title: "Расчет и подбор электрокалориферов",
+    type: "link",
+    name: "Подбор воздушно-отопительного оборудования",
+    href: "/",
+  },
+  { type: "link", name: "Критерии расчета и подбора калориферов", href: "/" },
+  { type: "link", name: "Калькулятор водяных калориферов", href: "/" },
+  { type: "link", name: "Калькулятор паровых калориферов", href: "/" },
+  { type: "link", name: "Калькулятор электрокалориферов", href: "/" },
+  { type: "link", name: "Водяные калориферы для сушильных камер", href: "/" },
+  {
+    type: "accordion",
+    label: "Паровые калориферы",
+    items: [
+      ["Теплоноситель водяной пар", "/"],
+      ["Паровые калориферы для сушильных камер", "/"],
+      ["Технологический нагрев воздуха паром", "/"],
+      ["Расчет и подбор диаметра паропровода", "/"],
+      ["Расчет и подбор паровых калориферов", "/"],
+      ["Расчет тепловой мощности", "/"],
+      ["Расчет площади фронтального сечения", "/"],
+      ["Расчет массовой скорости воздуха", "/"],
+      ["Расчет расхода пара", "/"],
+      ["Расчет коэффициента теплопередачи", "/"],
+      ["Расчет среднего температурного напора", "/"],
+      ["Расчет аэродинамического сопротивления", "/"],
+    ],
+  },
+  { type: "link", name: "Схемы подключения электрокалориферов", href: "/" },
+  {
+    type: "accordion",
+    label: "Расчет и подбор электрокалориферов",
     items: [
       ["Электрокалорифер 15 кВт, 2000 м3/час", "/"],
       ["Электрокалорифер 22.5 кВт, 2500 м3/час", "/"],
@@ -205,10 +235,11 @@ const engineeringAccordionGroups = [
       ["Электрокалорифер 90 кВт, 7000 м3/час", "/"],
       ["Электрокалорифер 157.5 кВт, 12000 м3/час", "/"],
       ["Электрокалорифер 247.5 кВт, 18000 м3/час", "/"],
-    ] as const,
+    ],
   },
   {
-    title: "Подбор электрокалориферных установок",
+    type: "accordion",
+    label: "Подбор электрокалориферных установок",
     items: [
       ["Установка 15 кВт, 2000 м3/час", "/"],
       ["Установка 22.5 кВт, 2500 м3/час", "/"],
@@ -217,28 +248,9 @@ const engineeringAccordionGroups = [
       ["Установка 90 кВт, 7000 м3/час", "/"],
       ["Установка 157.5 кВт, 12000 м3/час", "/"],
       ["Установка 247.5 кВт, 18000 м3/час", "/"],
-    ] as const,
+    ],
   },
-];
-
-const engineeringLinks = [
-  ["Подбор воздушно-отопительного оборудования", "/"],
-  ["Критерии расчета и подбора калориферов", "/"],
-  ["Калькулятор водяных калориферов", "/"],
-  ["Калькулятор паровых калориферов", "/"],
-  ["Калькулятор электрокалориферов", "/"],
-  ["Водяные калориферы для сушильных камер", "/"],
-  ["Паровые калориферы", "/"],
-  ["Теплоноситель водяной пар", "/"],
-  ["Паровые калориферы для сушильных камер", "/"],
-  ["Технологический нагрев воздуха паром", "/"],
-  ["Расчет и подбор диаметра паропровода", "/"],
 ] as const;
-
-const engineeringGroups = [
-  engineeringLinks.slice(0, 6),
-  engineeringLinks.slice(6),
-];
 
 const regionLinks = Object.values(generatedRegions).sort((a, b) =>
   a.subject.name.localeCompare(b.subject.name, "ru"),
@@ -373,54 +385,53 @@ export default function SitemapPage() {
         <h2 className="border-l border-blue-400 px-4 pb-4 text-2xl">
           Инженерно-расчетный блок
         </h2>
-        {engineeringGroups.map((group, groupIndex) => (
-          <ul
-            key={`engineering-group-${groupIndex}`}
-            className={
-              groupIndex === 0
-                ? "border-l border-blue-400"
-                : "mt-8 border-l border-blue-400"
+        <div className="space-y-0 border-l border-blue-400">
+          {engineeringEntries.map((entry, index) => {
+            if (entry.type === "link") {
+              return (
+                <div
+                  key={`${entry.name}-${index}`}
+                  className="border-b border-blue-400 px-4 py-2 text-[#185abc]"
+                >
+                  <Link className="hover:underline" href={entry.href}>
+                    {entry.name}
+                  </Link>
+                </div>
+              );
             }
-          >
-            {group.map(([name, href]) => (
-              <li
-                key={href}
-                className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
-              >
-                <Link className="hover:underline" href={href}>
-                  {name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        ))}
 
-        {engineeringAccordionGroups.map((group) => (
-          <Accordion key={group.title} type="single" collapsible>
-            <AccordionItem
-              value={group.title}
-              className="border-b border-blue-400"
-            >
-              <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#d93025] hover:no-underline [&>svg]:text-black">
-                {group.title}
-              </AccordionTrigger>
-              <AccordionContent className="border-b border-l border-blue-400 pb-0">
-                <ul>
-                  {group.items.map(([name, href]) => (
-                    <li
-                      key={name}
-                      className="border-b border-blue-400 px-4 py-2 text-[#1fae51] last:border-b-0"
-                    >
-                      <Link className="hover:underline" href={href}>
-                        {name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        ))}
+            return (
+              <Accordion
+                key={`${entry.label}-${index}`}
+                type="single"
+                collapsible
+              >
+                <AccordionItem
+                  value={entry.label}
+                  className="border-b border-blue-400"
+                >
+                  <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#d93025] hover:no-underline [&>svg]:text-black">
+                    {entry.label}
+                  </AccordionTrigger>
+                  <AccordionContent className="border-b border-l border-blue-400 pb-0">
+                    <ul>
+                      {entry.items.map(([name, href]) => (
+                        <li
+                          key={name}
+                          className="border-b border-blue-400 px-4 py-2 text-[#1fae51] last:border-b-0"
+                        >
+                          <Link className="hover:underline" href={href}>
+                            {name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            );
+          })}
+        </div>
       </div>
 
       {/* География и логистика поставок */}
