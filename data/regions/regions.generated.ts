@@ -22019,7 +22019,7 @@ export const generatedRegions = {
     },
     "capital": {
       "name": "Москва",
-      "slug": "moskovskaya-oblast"
+      "slug": "moskva"
     },
     "companies": [
       {
@@ -45155,7 +45155,7 @@ export const generatedRegions = {
     },
     "capital": {
       "name": "Ханты-Мансийск",
-      "slug": "surgut"
+      "slug": "khanty-mansiysk"
     },
     "companies": [
       {

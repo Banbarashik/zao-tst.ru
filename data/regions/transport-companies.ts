@@ -1818,6 +1818,15 @@ export const TRANSPORT_TERMINALS: Record<string, TransportTerminals> = {
     ],
   },
   surgut: {
+    "khanty-mansiysk": [
+      {
+        company: "ПЭК",
+        address: "г. Ханты-Мансийск, ул. Мира, д. 120/7",
+        deliveryTime: {
+          minDays: 16,
+        },
+      },
+    ],
     surgut: [
       {
         company: "ПЭК",

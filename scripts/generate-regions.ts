@@ -255,7 +255,7 @@ async function main() {
         },
         capital: {
           name: capitalName,
-          slug: regionSlug,
+          slug: slugifyRussian(capitalName),
         },
         companies: [],
         __companyByKey: new Map(),
