@@ -138,11 +138,6 @@ const productSections: {
     title: "Шкафы управления калорифером ШУК",
     products: shkafyShuk,
   },
-  {
-    value: "teny",
-    title: "Оребренные тэны ТЭНор",
-    products: [],
-  },
 ];
 
 const productGroups = [
@@ -176,10 +171,14 @@ const productGroups = [
       productSections[14],
       productSections[15],
       productSections[16],
-      productSections[17],
+      {
+        type: "link",
+        name: "Оребренные тэны ТЭНР",
+        href: "/",
+      },
     ],
   },
-];
+] as const;
 
 const companyLinks = [
   ["Главная. Завод ООО «Т.С.Т.»", "/"],
@@ -421,9 +420,22 @@ export default function SitemapPage() {
                   {group.title}
                 </h3>
                 <div>
-                  {group.items.map((section) => (
-                    <ProductAccordion key={section.value} {...section} />
-                  ))}
+                  {group.items.map((item, index) => {
+                    if ("type" in item && item.type === "link") {
+                      return (
+                        <div
+                          key={`${item.name}-${index}`}
+                          className="border-b border-blue-400 px-4 py-2 text-[#185abc] first:border-t"
+                        >
+                          <Link className="hover:underline" href={item.href}>
+                            {item.name}
+                          </Link>
+                        </div>
+                      );
+                    }
+
+                    return <ProductAccordion key={item.value} {...item} />;
+                  })}
                 </div>
               </div>
             ))}
