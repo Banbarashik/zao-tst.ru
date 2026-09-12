@@ -360,7 +360,15 @@ function ProductAccordion({
   return (
     <Accordion type="single" collapsible>
       <AccordionItem value={value} className="border-b border-blue-400">
-        <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] hover:no-underline [&>svg]:text-black">
+        <AccordionTrigger
+          className="group cursor-pointer rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] hover:no-underline"
+          icon={
+            <span className="text-lg leading-none text-[#185abc]">
+              <span className="hidden group-data-[state=open]:inline">−</span>
+              <span className="hidden group-data-[state=closed]:inline">+</span>
+            </span>
+          }
+        >
           {title}
         </AccordionTrigger>
         <AccordionContent className="ml-6 border-b border-l border-blue-400 pb-0">
@@ -487,7 +495,19 @@ export default function SitemapPage() {
                           value={item.label}
                           className="border-b border-blue-400"
                         >
-                          <AccordionTrigger className="rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] hover:no-underline [&>svg]:text-black">
+                          <AccordionTrigger
+                            className="group cursor-pointer rounded-none border-b border-blue-400 px-4 py-3 text-left text-base text-[#185abc] hover:no-underline"
+                            icon={
+                              <span className="text-lg leading-none text-[#185abc]">
+                                <span className="hidden group-data-[state=open]:inline">
+                                  −
+                                </span>
+                                <span className="hidden group-data-[state=closed]:inline">
+                                  +
+                                </span>
+                              </span>
+                            }
+                          >
                             {item.label}
                           </AccordionTrigger>
                           <AccordionContent className="ml-6 border-b border-l border-blue-400 pb-0">
