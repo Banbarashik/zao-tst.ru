@@ -68,6 +68,19 @@ const shkafyShuk = productData
 
 type Product = (typeof productData)[number];
 
+const companyLinks = [
+  ["Главная. Завод ООО «Т.С.Т.»", "/"],
+  ["Карточка предприятия", "/"],
+  ["Оплата и доставка", "/"],
+  ["Сертификаты соответствия", "/"],
+  ["Контакты", "/"],
+  ["Политика обработки персональных данных", "/personal-data"],
+  ["Каталог оборудования", "/"],
+  ["Прайс-лист", "/"],
+] as const;
+
+const companyGroups = [companyLinks.slice(0, 6), companyLinks.slice(6)];
+
 const productSections: {
   value: string;
   title: string;
@@ -180,19 +193,6 @@ const productGroups = [
   },
 ] as const;
 
-const companyLinks = [
-  ["Главная. Завод ООО «Т.С.Т.»", "/"],
-  ["Карточка предприятия", "/"],
-  ["Оплата и доставка", "/"],
-  ["Сертификаты соответствия", "/"],
-  ["Контакты", "/"],
-  ["Политика обработки персональных данных", "/personal-data"],
-  ["Каталог оборудования", "/"],
-  ["Прайс-лист", "/"],
-] as const;
-
-const companyGroups = [companyLinks.slice(0, 6), companyLinks.slice(6)];
-
 const engineeringGroups = [
   {
     type: "mixed",
@@ -230,6 +230,11 @@ const engineeringGroups = [
   {
     type: "mixed",
     items: [
+      {
+        type: "link",
+        name: "Паровые калориферы",
+        href: "/",
+      },
       {
         type: "link",
         name: "Теплоноситель водяной пар",
@@ -514,11 +519,15 @@ export default function SitemapPage() {
 
         {/* География и логистика поставок */}
         <div>
-          <h2 className="px-4 text-xl">География и логистика поставок</h2>
-          <ul className="mt-4 border-l border-blue-400">
-            <li className="border-b border-blue-400 px-4 py-2 text-[#185abc]">
+          <h2 className="border-l border-blue-400 px-4 pb-4 text-xl">
+            География и логистика поставок
+          </h2>
+          <div className="border-t border-b border-l border-blue-400 px-4 py-2 text-[#185abc]">
+            <Link className="hover:underline" href="/">
               Карта региональных поставок
-            </li>
+            </Link>
+          </div>
+          <ul className="mt-4 border-l border-blue-400">
             {regionLinks.map((region) => (
               <li
                 key={region.slug}
