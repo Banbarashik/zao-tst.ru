@@ -106,7 +106,6 @@ function traverseProducts(nodes: Product[]): MetadataRoute.Sitemap {
   });
 }
 
-
 function traverseRegions(): MetadataRoute.Sitemap {
   return Object.keys(generatedRegions).map((regionSlug) => ({
     url: `${SITE_URL}/regions/${regionSlug}`,
@@ -189,6 +188,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         `${pathToImgFolders.tehnicheskaya}/kalorifer_sfo_16-250.png`,
         `${pathToImgFolders.tehnicheskaya}/kalorifer_sfotc_16-250.png`,
       ],
+    },
+    {
+      url: `${SITE_URL}/sitemap`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
     },
     {
       url: `${SITE_URL}/kontakty-prajs`,
