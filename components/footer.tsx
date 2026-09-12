@@ -188,6 +188,11 @@ export default function Footer() {
                   Подбор воздухонагревателей
                 </Link>
               </li>
+              <li>
+                <Link href="/sitemap" className="hover:text-accent">
+                  Инженерная карта сайта
+                </Link>
+              </li>
             </ul>
           </AccordionContent>
         </AccordionItem>
@@ -434,6 +439,11 @@ export default function Footer() {
                 className="hover:text-accent"
               >
                 Подбор воздухонагревателей
+              </Link>
+            </li>
+            <li>
+              <Link href="/sitemap" className="hover:text-accent">
+                Инженерная карта сайта
               </Link>
             </li>
           </ul>
