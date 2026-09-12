@@ -70,13 +70,13 @@ type Product = (typeof productData)[number];
 
 const companyLinks = [
   ["Главная. Завод ООО «Т.С.Т.»", "/"],
-  ["Карточка предприятия", "/"],
-  ["Оплата и доставка", "/"],
-  ["Сертификаты соответствия", "/"],
-  ["Контакты", "/"],
+  ["Карточка предприятия", "/documents/Company_zao_tst_card.pdf"],
+  ["Оплата и доставка", "/produkciya#dostavka"],
+  ["Сертификаты соответствия", "/produkciya#sertifikat"],
+  ["Контакты", "/kontakty-prajs"],
   ["Политика обработки персональных данных", "/personal-data"],
-  ["Каталог оборудования", "/"],
-  ["Прайс-лист", "/"],
+  ["Каталог оборудования", "/catalog/all"],
+  ["Прайс-лист", "/documents/Price_list_zao_tst_2025.pdf"],
 ] as const;
 
 const companyGroups = [companyLinks.slice(0, 6), companyLinks.slice(6)];
@@ -200,21 +200,33 @@ const engineeringGroups = [
       {
         type: "link",
         name: "Подбор воздушно-отопительного оборудования",
-        href: "/",
+        href: "/tehnicheskaya-stranica",
       },
       {
         type: "link",
         name: "Критерии расчета и подбора калориферов",
-        href: "/",
+        href: "/raschet-kaloriferov",
       },
     ],
   },
   {
     type: "mixed",
     items: [
-      { type: "link", name: "Калькулятор водяных калориферов", href: "/" },
-      { type: "link", name: "Калькулятор паровых калориферов", href: "/" },
-      { type: "link", name: "Калькулятор электрокалориферов", href: "/" },
+      {
+        type: "link",
+        name: "Калькулятор водяных калориферов",
+        href: "/kalorifery-voda#anchor1",
+      },
+      {
+        type: "link",
+        name: "Калькулятор паровых калориферов",
+        href: "/kalorifery-par#anchor1",
+      },
+      {
+        type: "link",
+        name: "Калькулятор электрокалориферов",
+        href: "/elektronagrevateli#anchor1",
+      },
     ],
   },
   {
@@ -223,7 +235,7 @@ const engineeringGroups = [
       {
         type: "link",
         name: "Водяные калориферы для сушильных камер",
-        href: "/",
+        href: "/kalorifer-sushilnaia-kamera",
       },
     ],
   },
@@ -233,40 +245,58 @@ const engineeringGroups = [
       {
         type: "link",
         name: "Паровые калориферы",
-        href: "/",
+        href: "/kalorifer-par",
       },
       {
         type: "link",
         name: "Теплоноситель водяной пар",
-        href: "/",
+        href: "/kalorifer-par#anchor1",
       },
       {
         type: "link",
         name: "Паровые калориферы для сушильных камер",
-        href: "/",
+        href: "/kalorifer-sushilnaia-kamera",
       },
       {
         type: "link",
         name: "Технологический нагрев воздуха паром",
-        href: "/",
+        href: "/podbor-raschet-kaloriferov#anchor12",
       },
       {
         type: "link",
         name: "Расчет и подбор диаметра паропровода",
-        href: "/",
+        href: "/paroprovod",
       },
       {
         type: "accordion",
         label: "Расчет и подбор паровых калориферов",
         items: [
-          ["Расчет и подбор паровых калориферов", "/"],
+          [
+            "Расчет и подбор паровых калориферов",
+            "/podbor-raschet-kaloriferov#anchor1",
+          ],
           ["Расчет тепловой мощности", "/"],
-          ["Расчет площади фронтального сечения", "/"],
-          ["Расчет массовой скорости воздуха", "/"],
-          ["Расчет расхода пара", "/"],
-          ["Расчет коэффициента теплопередачи", "/"],
-          ["Расчет среднего температурного напора", "/"],
-          ["Расчет аэродинамического сопротивления", "/"],
+          [
+            "Расчет площади фронтального сечения",
+            "/podbor-raschet-kaloriferov#anchor2",
+          ],
+          [
+            "Расчет массовой скорости воздуха",
+            "/podbor-raschet-kaloriferov#anchor3",
+          ],
+          ["Расчет расхода пара", "/podbor-raschet-kaloriferov#anchor4"],
+          [
+            "Расчет коэффициента теплопередачи",
+            "/koefficient-teploperedachi-parovyh-kaloriferov",
+          ],
+          [
+            "Расчет среднего температурного напора",
+            "/podbor-raschet-kaloriferov#anchor6",
+          ],
+          [
+            "Расчет аэродинамического сопротивления",
+            "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+          ],
         ] as const,
       },
     ],
@@ -274,31 +304,59 @@ const engineeringGroups = [
   {
     type: "mixed",
     items: [
-      { type: "link", name: "Схемы подключения электрокалориферов", href: "/" },
+      {
+        type: "link",
+        name: "Схемы подключения электрокалориферов",
+        href: "/elektrokalorifery",
+      },
       {
         type: "accordion",
         label: "Расчет и подбор электрокалориферов",
         items: [
-          ["Электрокалорифер 15 кВт, 2000 м3/час", "/"],
-          ["Электрокалорифер 22.5 кВт, 2500 м3/час", "/"],
-          ["Электрокалорифер 45 кВт, 4000 м3/час", "/"],
-          ["Электрокалорифер 67.5 кВт, 5000 м3/час", "/"],
-          ["Электрокалорифер 90 кВт, 7000 м3/час", "/"],
-          ["Электрокалорифер 157.5 кВт, 12000 м3/час", "/"],
-          ["Электрокалорифер 247.5 кВт, 18000 м3/час", "/"],
+          [
+            "Электрокалорифер 15 кВт, 2000 м3/час",
+            "/elektrokalorifer-sfo-16#anchor1",
+          ],
+          [
+            "Электрокалорифер 22.5 кВт, 2500 м3/час",
+            "/elektrokalorifer-sfo-25#anchor1",
+          ],
+          [
+            "Электрокалорифер 45 кВт, 4000 м3/час",
+            "/elektrokalorifer-sfo-40#anchor1",
+          ],
+          [
+            "Электрокалорифер 67.5 кВт, 5000 м3/час",
+            "/elektrokalorifer-sfo-60#anchor1",
+          ],
+          [
+            "Электрокалорифер 90 кВт, 7000 м3/час",
+            "/elektrokalorifer-sfo-100#anchor1",
+          ],
+          [
+            "Электрокалорифер 157.5 кВт, 12000 м3/час",
+            "/elektrokalorifer-sfo-160#anchor1",
+          ],
+          [
+            "Электрокалорифер 247.5 кВт, 18000 м3/час",
+            "/elektrokalorifer-sfo-250#anchor1",
+          ],
         ] as const,
       },
       {
         type: "accordion",
         label: "Подбор электрокалориферных установок",
         items: [
-          ["Установка 15 кВт, 2000 м3/час", "/"],
-          ["Установка 22.5 кВт, 2500 м3/час", "/"],
-          ["Установка 45 кВт, 4000 м3/час", "/"],
-          ["Установка 67.5 кВт, 5000 м3/час", "/"],
-          ["Установка 90 кВт, 7000 м3/час", "/"],
-          ["Установка 157.5 кВт, 12000 м3/час", "/"],
-          ["Установка 247.5 кВт, 18000 м3/час", "/"],
+          ["Установка 15 кВт, 2000 м3/час", "/ustanovka-sfotc-16#anchor1"],
+          ["Установка 22.5 кВт, 2500 м3/час", "/ustanovka-sfotc-25#anchor1"],
+          ["Установка 45 кВт, 4000 м3/час", "/ustanovka-sfotc-40#anchor1"],
+          ["Установка 67.5 кВт, 5000 м3/час", "/ustanovka-sfotc-60#anchor1"],
+          ["Установка 90 кВт, 7000 м3/час", "/ustanovka-sfotc-100#anchor1"],
+          [
+            "Установка 157.5 кВт, 12000 м3/час",
+            "/ustanovka-sfotc-160#anchor1]",
+          ],
+          ["Установка 247.5 кВт, 18000 м3/час", "/ustanovka-sfotc-250#anchor1"],
         ] as const,
       },
     ],
@@ -380,7 +438,7 @@ function ProductAccordion({
               >
                 <Link
                   className="block px-2 py-2 text-[#185abc] hover:underline"
-                  href={`${SITE_URL}/${product.id}`}
+                  href={`/${product.id}`}
                 >
                   {formatProductLinkLabel(product)}
                 </Link>
@@ -543,7 +601,7 @@ export default function SitemapPage() {
             География и логистика поставок
           </h2>
           <div className="border-t border-b border-l border-blue-400 px-4 py-2 text-[#185abc]">
-            <Link className="hover:underline" href="/">
+            <Link className="hover:underline" href="/produkciya">
               Карта региональных поставок
             </Link>
           </div>
