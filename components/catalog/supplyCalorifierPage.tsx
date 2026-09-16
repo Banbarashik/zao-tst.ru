@@ -68,10 +68,15 @@ export default async function SupplyCalorifierPage({
 
   const threeRowsVariant = variants.find((v) => v.rows === 3);
   const fourRowsVariant = variants.find((v) => v.rows === 4);
+  const heatPowers = new Intl.ListFormat("ru-RU", {
+    style: "long",
+    type: "conjunction",
+  }).format(variants.map((variant) => String(variant.heatPower)));
+
   const threeRowsImageMetadata = {
     kpvs_kpps: {
-      alt: `Чертеж ${heatCarrierAdj.gen} калорифера для приточных систем трехрядного с тепловой мощностью ${threeRowsVariant?.heatPower} кВт`,
-      title: `${capitalizeFirst(heatCarrierAdj.nom)} калорифер производительностью: ${airPower} м3/час; ${threeRowsVariant?.heatPower} кВт`,
+      alt: `Чертеж ${heatCarrierAdj.gen} калорифера для приточных систем производительностью ${airPower} м3/час`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} приточный калорифер производительностью ${airPower} м3/час`,
     },
     kpvu_kppu: {
       alt: `Чертеж ${heatCarrierAdj.gen} воздухонагревателя для приточных установок с мощностью по теплу ${threeRowsVariant?.heatPower} кВт`,
@@ -80,8 +85,8 @@ export default async function SupplyCalorifierPage({
   };
   const fourRowsImageMetadata = {
     kpvs_kpps: {
-      alt: `3 d модель ${heatCarrierAdj.gen} приточного калорифера четырехрядного производительностью ${airPower} м3/час`,
-      title: `${capitalizeFirst(heatCarrierAdj.nom)} калорифер: объем ${airPower} м3/час; мощность ${fourRowsVariant?.heatPower} кВт`,
+      alt: `3 d модель ${heatCarrierAdj.gen} калорифера приточных установок мощностью ${heatPowers} кВт`,
+      title: `2-х, 3-х и 4-х рядная модель ${shortName} мощностью ${heatPowers} кВт`,
     },
     kpvu_kppu: {
       alt: `3 d модель ${heatCarrierAdj.gen} приточного воздухонагревателя производительностью ${airPower} м3/час`,
@@ -90,11 +95,6 @@ export default async function SupplyCalorifierPage({
   };
   const threeRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`;
   const fourRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_4.png`;
-
-  const heatPowers = new Intl.ListFormat("ru-RU", {
-    style: "long",
-    type: "conjunction",
-  }).format(variants.map((variant) => String(variant.heatPower)));
 
   const modelText = (
     <ProductParagraph className="mb-8">
