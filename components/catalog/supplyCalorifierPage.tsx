@@ -148,6 +148,13 @@ export default async function SupplyCalorifierPage({
     url: `/models/${seriesEng[series]}/kalorifer_${seriesEng[series]}-${size}_${v.rows}.zip`,
   }));
 
+  let threeAndFourRowsImgAspectRatio = "1";
+
+  if (size <= 780) threeAndFourRowsImgAspectRatio = "2/1";
+  else if (size <= 1030) threeAndFourRowsImgAspectRatio = "5/3";
+  else if (size <= 1280) threeAndFourRowsImgAspectRatio = "10/7";
+  else if (size <= 1572) threeAndFourRowsImgAspectRatio = "5/4";
+
   return (
     <div className="@container w-full lg:overflow-x-auto">
       <div className="mb-4 flex items-center justify-between gap-4">
@@ -237,7 +244,9 @@ export default async function SupplyCalorifierPage({
         className="mb-6"
       />
       <div className="mb-8 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-        <div className={`relative aspect-5/4 w-full`}>
+        <div
+          className={`relative aspect-${threeAndFourRowsImgAspectRatio} w-full`}
+        >
           <Image
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             src={threeRowsImage}
@@ -254,7 +263,9 @@ export default async function SupplyCalorifierPage({
             fill
           />
         </div>
-        <div className={`relative aspect-5/4 w-full`}>
+        <div
+          className={`relative aspect-${threeAndFourRowsImgAspectRatio} w-full`}
+        >
           <Image
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             src={fourRowsImage}
