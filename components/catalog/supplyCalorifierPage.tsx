@@ -237,10 +237,9 @@ export default async function SupplyCalorifierPage({
         className="mb-6"
       />
       <div className="mb-8 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-        <div
-          className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
-        >
+        <div className={`relative aspect-5/4 w-full`}>
           <Image
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             src={threeRowsImage}
             alt={
               threeRowsImageMetadata[
@@ -255,10 +254,9 @@ export default async function SupplyCalorifierPage({
             fill
           />
         </div>
-        <div
-          className={`relative aspect-1000/${size < 1072 ? "500" : "600"} w-full`}
-        >
+        <div className={`relative aspect-5/4 w-full`}>
           <Image
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             src={fourRowsImage}
             alt={
               fourRowsImageMetadata[
