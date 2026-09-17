@@ -79,8 +79,8 @@ export default async function SupplyCalorifierPage({
       title: `${capitalizeFirst(heatCarrierAdj.nom)} приточный калорифер производительностью ${airPower} м3/час`,
     },
     kpvu_kppu: {
-      alt: `Чертеж ${heatCarrierAdj.gen} воздухонагревателя для приточных установок с мощностью по теплу ${threeRowsVariant?.heatPower} кВт`,
-      title: `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель производительностью: ${airPower} м3/час; ${threeRowsVariant?.heatPower} кВт`,
+      alt: `Чертеж ${heatCarrierAdj.gen} воздухонагревателя приточных камер производительностью ${airPower} м3/час`,
+      title: `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель производительностью ${airPower} м3/час`,
     },
   };
   const fourRowsImageMetadata = {
@@ -89,8 +89,8 @@ export default async function SupplyCalorifierPage({
       title: `2-х, 3-х и 4-х рядная модель ${shortName} мощностью ${heatPowers} кВт`,
     },
     kpvu_kppu: {
-      alt: `3 d модель ${heatCarrierAdj.gen} приточного воздухонагревателя производительностью ${airPower} м3/час`,
-      title: `${capitalizeFirst(heatCarrierAdj.nom)} воздухонагреватель: объем ${airPower} м3/час; мощность ${fourRowsVariant?.heatPower} кВт`,
+      alt: `3 d модель ${heatCarrierAdj.gen} воздухонагревателя приточной вентиляции мощностью ${heatPowers} кВт`,
+      title: `2-х, 3-х и 4-х рядная модель ${shortName} мощностью ${heatPowers} кВт`,
     },
   };
   const threeRowsImage = `/img/kalorifery/${seriesEng[series]}/${seriesEng[series]}-${size}_3.png`;
@@ -150,9 +150,9 @@ export default async function SupplyCalorifierPage({
 
   let threeAndFourRowsImgAspectRatio = "1";
 
-  if (size <= 780) threeAndFourRowsImgAspectRatio = "2/1";
+  if (size <= 799) threeAndFourRowsImgAspectRatio = "2/1";
   else if (size <= 1030) threeAndFourRowsImgAspectRatio = "5/3";
-  else if (size <= 1280) threeAndFourRowsImgAspectRatio = "10/7";
+  else if (size <= 1299) threeAndFourRowsImgAspectRatio = "10/7";
   else if (size <= 1572) threeAndFourRowsImgAspectRatio = "5/4";
 
   return (
