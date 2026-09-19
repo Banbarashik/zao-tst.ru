@@ -4,7 +4,7 @@ import searchIndex from "@/data/general-pages-search-index.json";
 
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useMemo, useState, useEffect, useRef } from "react";
 
 import { cn } from "@/lib/utils";
@@ -19,9 +19,17 @@ interface SearchItem {
 
 export default function NavSearch({ className = "" }) {
   const router = useRouter();
+  const pathname = usePathname();
   const [searchInput, setSearchInput] = useState("");
   const [showResults, setShowResults] = useState(false);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (pathname !== "/search") {
+      setSearchInput("");
+      setShowResults(false);
+    }
+  }, [pathname]);
 
   const searchResults = useMemo(
     () =>
