@@ -2641,6 +2641,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 4-6",
             "id": "kalorifer-ksk-4-6"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-7",
+            "id": "kalorifer-ksk-4-7"
           }
         ],
         "deliveries": [
@@ -2656,6 +2661,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КСк 4-6",
                 "id": "kalorifer-ksk-4-6"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-7",
+                "id": "kalorifer-ksk-4-7"
               }
             ],
             "industrySector": "Пищевая промышленность"
@@ -2811,34 +2821,6 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
-          }
-        ]
-      },
-      {
-        "name": "ООО «Фром Вайлд»",
-        "settlement": {
-          "name": "Бийск",
-          "slug": "biysk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-7",
-            "id": "kalorifer-ksk-4-7"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2016,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-7",
-                "id": "kalorifer-ksk-4-7"
-              }
-            ],
-            "industrySector": "Пищевая промышленность"
           }
         ]
       },
@@ -4610,6 +4592,11 @@ export const generatedRegions = {
             "id": "kalorifer-kfb-13-a3"
           },
           {
+            "kind": "product",
+            "name": "КПВС 989х989_4",
+            "id": "kpvs-989x989"
+          },
+          {
             "kind": "category",
             "name": "СТД-300 В",
             "href": "/std300-ksk-kpsk"
@@ -4633,6 +4620,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КФБ-13 А3 М",
                 "id": "kalorifer-kfb-13-a3"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 989х989_4",
+                "id": "kpvs-989x989"
               },
               {
                 "kind": "category",
@@ -13618,8 +13610,28 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "category",
+            "name": "АВО ХЛ",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
+            "name": "АВО 7-165-01 П",
+            "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "category",
             "name": "АВО 7-165-01 В",
             "href": "/avo-tvv-kp"
+          },
+          {
+            "kind": "product",
+            "name": "КППУ 708х708_4",
+            "id": "kppu-708x708"
+          },
+          {
+            "kind": "product",
+            "name": "СТД-300 (КПСк3)",
+            "id": "std300-kpsk"
           },
           {
             "kind": "product",
@@ -13638,65 +13650,17 @@ export const generatedRegions = {
             "products": [
               {
                 "kind": "category",
-                "name": "АВО 7-165-01 В",
-                "href": "/avo-tvv-kp"
-              },
-              {
-                "kind": "product",
-                "name": "СТД-300 (ТВВ3)",
-                "id": "std300-tvv"
-              },
-              {
-                "kind": "product",
-                "name": "КПВУ 1163х1163_3",
-                "id": "kpvu-1163x1163"
-              }
-            ],
-            "industrySector": "Транспортная инфраструктура"
-          }
-        ]
-      },
-      {
-        "name": "ОАО «Горэлектротранспорт города Ленинска-Кузнецкого»",
-        "settlement": {
-          "name": "Ленинск-Кузнецкий",
-          "slug": "leninsk-kuznetsky",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "category",
-            "name": "АВО ХЛ",
-            "href": "/avo-tvv-kp"
-          },
-          {
-            "kind": "category",
-            "name": "АВО 7-165-01 П",
-            "href": "/avo-tvv-kp"
-          },
-          {
-            "kind": "product",
-            "name": "КППУ 708х708_4",
-            "id": "kppu-708x708"
-          },
-          {
-            "kind": "product",
-            "name": "СТД-300 (КПСк3)",
-            "id": "std300-kpsk"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2007,
-            "products": [
-              {
-                "kind": "category",
                 "name": "АВО ХЛ",
                 "href": "/avo-tvv-kp"
               },
               {
                 "kind": "category",
                 "name": "АВО 7-165-01 П",
+                "href": "/avo-tvv-kp"
+              },
+              {
+                "kind": "category",
+                "name": "АВО 7-165-01 В",
                 "href": "/avo-tvv-kp"
               },
               {
@@ -13708,6 +13672,16 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "СТД-300 (КПСк3)",
                 "id": "std300-kpsk"
+              },
+              {
+                "kind": "product",
+                "name": "СТД-300 (ТВВ3)",
+                "id": "std300-tvv"
+              },
+              {
+                "kind": "product",
+                "name": "КПВУ 1163х1163_3",
+                "id": "kpvu-1163x1163"
               }
             ],
             "industrySector": "Транспортная инфраструктура"
@@ -13995,7 +13969,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Ленинск-Кузнецкий завод строительных материалов»",
+        "name": "ООО «Ленинск-Кузнецкий ЗСМ»",
         "settlement": {
           "name": "Ленинск-Кузнецкий",
           "slug": "leninsk-kuznetsky",
@@ -15157,7 +15131,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ОАО «Кузнецкие ферросплавы»",
+        "name": "АО «Кузнецкие ферросплавы»",
         "settlement": {
           "name": "Новокузнецк",
           "slug": "novokuznetsk",
@@ -16153,6 +16127,11 @@ export const generatedRegions = {
             "id": "ustanovka-sfotc-16"
           },
           {
+            "kind": "product",
+            "name": "СФОЦ-250",
+            "id": "ustanovka-sfotc-250"
+          },
+          {
             "kind": "category",
             "name": "ШУК",
             "href": "/shkafy-upravleniya"
@@ -16161,49 +16140,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ШУК-16",
             "id": "shkaf-upravleniia-shuk-16"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2013,
-            "products": [
-              {
-                "kind": "category",
-                "name": "СФОЦ",
-                "href": "/teploventilyatory"
-              },
-              {
-                "kind": "product",
-                "name": "СФОЦ-16",
-                "id": "ustanovka-sfotc-16"
-              },
-              {
-                "kind": "category",
-                "name": "ШУК",
-                "href": "/shkafy-upravleniya"
-              },
-              {
-                "kind": "product",
-                "name": "ШУК-16",
-                "id": "shkaf-upravleniia-shuk-16"
-              }
-            ],
-            "industrySector": "Приборостроение и электротехника"
-          }
-        ]
-      },
-      {
-        "name": "ООО ТД «КузнецкЭлектро»",
-        "settlement": {
-          "name": "Новокузнецк",
-          "slug": "novokuznetsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "СФОЦ-250",
-            "id": "ustanovka-sfotc-250"
           },
           {
             "kind": "product",
@@ -16221,9 +16157,29 @@ export const generatedRegions = {
             "year": 2018,
             "products": [
               {
+                "kind": "category",
+                "name": "СФОЦ",
+                "href": "/teploventilyatory"
+              },
+              {
+                "kind": "product",
+                "name": "СФОЦ-16",
+                "id": "ustanovka-sfotc-16"
+              },
+              {
                 "kind": "product",
                 "name": "СФОЦ-250",
                 "id": "ustanovka-sfotc-250"
+              },
+              {
+                "kind": "category",
+                "name": "ШУК",
+                "href": "/shkafy-upravleniya"
+              },
+              {
+                "kind": "product",
+                "name": "ШУК-16",
+                "id": "shkaf-upravleniia-shuk-16"
               },
               {
                 "kind": "product",
@@ -21639,7 +21595,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "АО 2АК Инжиниринг»",
+        "name": "АО «АК Инжиниринг»",
         "settlement": {
           "name": "Красноярск",
           "slug": "krasnoyarsk",
@@ -24148,6 +24104,62 @@ export const generatedRegions = {
         ]
       },
       {
+        "name": "ООО «Альфакапитал»",
+        "settlement": {
+          "name": "Санкт-Петербург",
+          "slug": "sankt-peterburg",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "category",
+            "name": "КПВС",
+            "href": "/kalorifery-voda",
+            "prefix": "Калориферы по индивидуальному техническому заданию"
+          },
+          {
+            "kind": "product",
+            "name": "КПВС 989х989_4",
+            "id": "kpvs-989x989"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-10",
+            "id": "kalorifer-ksk-4-10"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2026,
+            "products": [
+              {
+                "kind": "category",
+                "name": "КПВС",
+                "href": "/kalorifery-voda",
+                "prefix": "Калориферы по индивидуальному техническому заданию"
+              },
+              {
+                "kind": "product",
+                "name": "КПВС 989х989_4",
+                "id": "kpvs-989x989"
+              }
+            ],
+            "industrySector": "Промышленное снабжение"
+          },
+          {
+            "year": 2020,
+            "products": [
+              {
+                "kind": "product",
+                "name": "КСк 4-10",
+                "id": "kalorifer-ksk-4-10"
+              }
+            ],
+            "industrySector": "Вентиляция/Монтаж"
+          }
+        ]
+      },
+      {
         "name": "ООО «МФЦ Капитал»",
         "settlement": {
           "name": "Санкт-Петербург",
@@ -24159,11 +24171,6 @@ export const generatedRegions = {
             "kind": "product",
             "name": "АО 2-4 (КСк3)",
             "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
-          },
-          {
-            "kind": "category",
-            "name": "КПВС",
-            "href": "/kalorifery-voda"
           },
           {
             "kind": "product",
@@ -24184,11 +24191,6 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "АО 2-4 (КСк3)",
                 "id": "agregat-ao2-4-ksk3-vozdushniy-vodyanoy"
-              },
-              {
-                "kind": "category",
-                "name": "КПВС",
-                "href": "/kalorifery-voda"
               },
               {
                 "kind": "product",
@@ -24230,34 +24232,6 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Логистика и транспорт"
-          }
-        ]
-      },
-      {
-        "name": "ООО «Альфакапитал»",
-        "settlement": {
-          "name": "Санкт-Петербург",
-          "slug": "sankt-peterburg",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-10",
-            "id": "kalorifer-ksk-4-10"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2020,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-10",
-                "id": "kalorifer-ksk-4-10"
-              }
-            ],
-            "industrySector": "Вентиляция/Монтаж"
           }
         ]
       },
@@ -30827,6 +30801,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КФБ-3 А3 П",
+            "id": "kalorifer-kfb-3"
+          },
+          {
+            "kind": "product",
             "name": "КФБ-9 А3 П",
             "id": "kalorifer-kfb-9"
           },
@@ -30902,6 +30881,11 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
+                "name": "КФБ-3 А3 П",
+                "id": "kalorifer-kfb-3"
+              },
+              {
+                "kind": "product",
                 "name": "КФБ-9 А3 П",
                 "id": "kalorifer-kfb-9"
               },
@@ -30930,6 +30914,11 @@ export const generatedRegions = {
         "products": [
           {
             "kind": "product",
+            "name": "КПСк 2-9",
+            "id": "kalorifer-kpsk-2-9"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 2-10",
             "id": "kalorifer-kpsk-2-10"
           }
@@ -30938,6 +30927,11 @@ export const generatedRegions = {
           {
             "year": 2017,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 2-9",
+                "id": "kalorifer-kpsk-2-9"
+              },
               {
                 "kind": "product",
                 "name": "КПСк 2-10",
@@ -31001,6 +30995,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 2-5",
+            "id": "kalorifer-kpsk-2-5"
+          },
+          {
+            "kind": "product",
             "name": "КФБ-2 А3 П",
             "id": "kalorifer-kfb-2"
           },
@@ -31031,6 +31030,11 @@ export const generatedRegions = {
               },
               {
                 "kind": "product",
+                "name": "КПСк 2-5",
+                "id": "kalorifer-kpsk-2-5"
+              },
+              {
+                "kind": "product",
                 "name": "КФБ-2 А3 П",
                 "id": "kalorifer-kfb-2"
               },
@@ -31051,74 +31055,6 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
-          }
-        ]
-      },
-      {
-        "name": "ООО «ТЭК»",
-        "settlement": {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КПСк 2-5",
-            "id": "kalorifer-kpsk-2-5"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 2-9",
-            "id": "kalorifer-kpsk-2-9"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 4-2",
-            "id": "kalorifer-kpsk-4-2"
-          },
-          {
-            "kind": "product",
-            "name": "КФБ-3 А3 П",
-            "id": "kalorifer-kfb-3"
-          },
-          {
-            "kind": "product",
-            "name": "КП 311",
-            "id": "kalorifer-kp-311"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2015,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КПСк 2-5",
-                "id": "kalorifer-kpsk-2-5"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 2-9",
-                "id": "kalorifer-kpsk-2-9"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 4-2",
-                "id": "kalorifer-kpsk-4-2"
-              },
-              {
-                "kind": "product",
-                "name": "КФБ-3 А3 П",
-                "id": "kalorifer-kfb-3"
-              },
-              {
-                "kind": "product",
-                "name": "КП 311",
-                "id": "kalorifer-kp-311"
-              }
-            ],
-            "industrySector": "Промышленная энергетика"
           }
         ]
       },
@@ -31863,6 +31799,11 @@ export const generatedRegions = {
           },
           {
             "kind": "product",
+            "name": "КПСк 4-2",
+            "id": "kalorifer-kpsk-4-2"
+          },
+          {
+            "kind": "product",
             "name": "КПСк 4-7",
             "id": "kalorifer-kpsk-4-7"
           },
@@ -31905,6 +31846,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 4-6",
                 "id": "kalorifer-kpsk-4-6"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-2",
+                "id": "kalorifer-kpsk-4-2"
               },
               {
                 "kind": "product",
@@ -33734,6 +33680,11 @@ export const generatedRegions = {
             "kind": "product",
             "name": "ТВВ 311",
             "id": "kalorifer-tvv-311"
+          },
+          {
+            "kind": "product",
+            "name": "КП 311",
+            "id": "kalorifer-kp-311"
           }
         ],
         "deliveries": [
@@ -33744,6 +33695,11 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "ТВВ 311",
                 "id": "kalorifer-tvv-311"
+              },
+              {
+                "kind": "product",
+                "name": "КП 311",
+                "id": "kalorifer-kp-311"
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
@@ -34131,7 +34087,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «ТЭК»",
+        "name": "ООО «ТехЭлектроКомплект»",
         "settlement": {
           "name": "Кудряшовский",
           "slug": "kudryashovsky",
@@ -34142,6 +34098,31 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КПСк 3-8",
             "id": "kalorifer-kpsk-3-8"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-5",
+            "id": "kalorifer-kpsk-2-5"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 2-9",
+            "id": "kalorifer-kpsk-2-9"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-2",
+            "id": "kalorifer-kpsk-4-2"
+          },
+          {
+            "kind": "product",
+            "name": "КФБ-3 А3 П",
+            "id": "kalorifer-kfb-3"
+          },
+          {
+            "kind": "product",
+            "name": "КП 311",
+            "id": "kalorifer-kp-311"
           }
         ],
         "deliveries": [
@@ -34152,6 +34133,31 @@ export const generatedRegions = {
                 "kind": "product",
                 "name": "КПСк 3-8",
                 "id": "kalorifer-kpsk-3-8"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-5",
+                "id": "kalorifer-kpsk-2-5"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 2-9",
+                "id": "kalorifer-kpsk-2-9"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-2",
+                "id": "kalorifer-kpsk-4-2"
+              },
+              {
+                "kind": "product",
+                "name": "КФБ-3 А3 П",
+                "id": "kalorifer-kfb-3"
+              },
+              {
+                "kind": "product",
+                "name": "КП 311",
+                "id": "kalorifer-kp-311"
               }
             ],
             "industrySector": "Промышленная энергетика"
@@ -48057,13 +48063,28 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "АО «Аграрная Группа МП»",
+        "name": "АО «Сибирская Аграрная Группа Мясопереработка»",
         "settlement": {
           "name": "Томск",
           "slug": "tomsk",
           "type": "city"
         },
         "products": [
+          {
+            "kind": "product",
+            "name": "КПСк 4-4",
+            "id": "kalorifer-kpsk-4-4"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-6",
+            "id": "kalorifer-kpsk-4-6"
+          },
+          {
+            "kind": "product",
+            "name": "КПСк 4-12",
+            "id": "kalorifer-kpsk-4-12"
+          },
           {
             "kind": "product",
             "name": "АО 2-5 (КПСк3)",
@@ -48084,6 +48105,21 @@ export const generatedRegions = {
           {
             "year": 2023,
             "products": [
+              {
+                "kind": "product",
+                "name": "КПСк 4-4",
+                "id": "kalorifer-kpsk-4-4"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-6",
+                "id": "kalorifer-kpsk-4-6"
+              },
+              {
+                "kind": "product",
+                "name": "КПСк 4-12",
+                "id": "kalorifer-kpsk-4-12"
+              },
               {
                 "kind": "product",
                 "name": "АО 2-5 (КПСк3)",
@@ -48257,7 +48293,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ООО «Элмаш-Пертнер»",
+        "name": "ООО «Элмаш-Партнер»",
         "settlement": {
           "name": "Томск",
           "slug": "tomsk",
@@ -48329,54 +48365,6 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
-          }
-        ]
-      },
-      {
-        "name": "АО «Сибирская Аграрная Группа Мясопереработка»",
-        "settlement": {
-          "name": "Томск",
-          "slug": "tomsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КПСк 4-4",
-            "id": "kalorifer-kpsk-4-4"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 4-6",
-            "id": "kalorifer-kpsk-4-6"
-          },
-          {
-            "kind": "product",
-            "name": "КПСк 4-12",
-            "id": "kalorifer-kpsk-4-12"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2016,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КПСк 4-4",
-                "id": "kalorifer-kpsk-4-4"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 4-6",
-                "id": "kalorifer-kpsk-4-6"
-              },
-              {
-                "kind": "product",
-                "name": "КПСк 4-12",
-                "id": "kalorifer-kpsk-4-12"
-              }
-            ],
-            "industrySector": "Агропромышленный комплекс"
           }
         ]
       },
@@ -48725,7 +48713,7 @@ export const generatedRegions = {
         ]
       },
       {
-        "name": "ОАО «НИИ полупроводниковых приборов»",
+        "name": "АО «НИИ полупроводниковых приборов»",
         "settlement": {
           "name": "Томск",
           "slug": "tomsk",
@@ -48736,16 +48724,26 @@ export const generatedRegions = {
             "kind": "product",
             "name": "КСк 3-11",
             "id": "kalorifer-ksk-3-11"
+          },
+          {
+            "kind": "product",
+            "name": "КСк 4-9",
+            "id": "kalorifer-ksk-4-9"
           }
         ],
         "deliveries": [
           {
-            "year": 2014,
+            "year": 2020,
             "products": [
               {
                 "kind": "product",
                 "name": "КСк 3-11",
                 "id": "kalorifer-ksk-3-11"
+              },
+              {
+                "kind": "product",
+                "name": "КСк 4-9",
+                "id": "kalorifer-ksk-4-9"
               }
             ],
             "industrySector": "Приборостроение и электротехника"
@@ -49125,34 +49123,6 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
-          }
-        ]
-      },
-      {
-        "name": "АО «НИИПП»",
-        "settlement": {
-          "name": "Томск",
-          "slug": "tomsk",
-          "type": "city"
-        },
-        "products": [
-          {
-            "kind": "product",
-            "name": "КСк 4-9",
-            "id": "kalorifer-ksk-4-9"
-          }
-        ],
-        "deliveries": [
-          {
-            "year": 2020,
-            "products": [
-              {
-                "kind": "product",
-                "name": "КСк 4-9",
-                "id": "kalorifer-ksk-4-9"
-              }
-            ],
-            "industrySector": "Приборостроение и электротехника"
           }
         ]
       },
@@ -50427,6 +50397,34 @@ export const generatedRegions = {
               }
             ],
             "industrySector": "Вентиляция/Монтаж"
+          }
+        ]
+      },
+      {
+        "name": "ООО «Вент Про»",
+        "settlement": {
+          "name": "Тюмень",
+          "slug": "tyumen",
+          "type": "city"
+        },
+        "products": [
+          {
+            "kind": "product",
+            "name": "СФО-160",
+            "id": "elektrokalorifer-sfo-160"
+          }
+        ],
+        "deliveries": [
+          {
+            "year": 2026,
+            "products": [
+              {
+                "kind": "product",
+                "name": "СФО-160",
+                "id": "elektrokalorifer-sfo-160"
+              }
+            ],
+            "industrySector": "Промышленное снабжение"
           }
         ]
       },
