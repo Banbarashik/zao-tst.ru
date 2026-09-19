@@ -3,7 +3,7 @@
 import searchIndex from "@/public/search-index.json";
 
 import { useEffect, useMemo, useState, useRef, useCallback } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import MiniSearch from "minisearch";
 
@@ -19,11 +19,17 @@ export default function SearchResults({
 }: {
   initialQuery?: string;
 }) {
+  const searchParams = useSearchParams();
   const [docs, setDocs] = useState<Doc[] | null>(null);
   const [q, setQ] = useState(initialQuery);
   const [results, setResults] = useState<[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const router = useRouter();
+
+  useEffect(() => {
+    const urlQuery = searchParams.get("q") ?? "";
+    setQ(urlQuery || initialQuery);
+  }, [searchParams, initialQuery]);
 
   const abortControllerRef = useRef<AbortController | null>(null);
   const debounceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
