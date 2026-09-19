@@ -56,7 +56,7 @@ export default function NavSearch({ className = "" }) {
     const q = searchInput.trim();
     if (q.length > 0) {
       router.push(`/search?q=${encodeURIComponent(q)}`);
-      handleResetSearch();
+      setShowResults(false);
     }
   };
 
