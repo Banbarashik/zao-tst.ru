@@ -118,7 +118,7 @@ export default function NavSearch({ className = "" }) {
           <li>
             <Link
               href={`/search?q=${encodeURIComponent(searchInput.trim())}`}
-              onClick={handleResetSearch}
+              onClick={() => setShowResults(false)}
               className="flex items-center gap-2 rounded p-2 text-gray-900 hover:bg-gray-200"
             >
               Все результаты
