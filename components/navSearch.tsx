@@ -52,14 +52,18 @@ export default function NavSearch({ className = "" }) {
     setShowResults(false);
   };
 
+  const handleSearchSubmit = () => {
+    const q = searchInput.trim();
+    if (q.length > 0) {
+      router.push(`/search?q=${encodeURIComponent(q)}`);
+      handleResetSearch();
+    }
+  };
+
   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       e.preventDefault();
-      const q = searchInput.trim();
-      if (q.length > 0) {
-        router.push(`/search?q=${encodeURIComponent(q)}`);
-        handleResetSearch();
-      }
+      handleSearchSubmit();
     }
   };
 
@@ -76,7 +80,14 @@ export default function NavSearch({ className = "" }) {
         placeholder="Поиск по сайту..."
         className="border-accent/10 focus:ring-accent/50 w-full rounded-lg border bg-white/10 px-4 py-2.5 pl-10 text-sm text-white placeholder-white/60 outline-none focus:ring"
       />
-      <Search className="absolute top-1/2 left-2 -translate-y-1/2 text-white/60" />
+      <button
+        type="button"
+        onClick={handleSearchSubmit}
+        className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer text-white/60 transition-opacity hover:text-white/80 focus:outline-none"
+        aria-label="Поиск"
+      >
+        <Search className="h-5.5 w-5.5" />
+      </button>
 
       {showResults && searchResults.length > 0 && (
         <ul
