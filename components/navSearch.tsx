@@ -89,7 +89,7 @@ export default function NavSearch({ className = "" }) {
         <Search className="h-5.5 w-5.5" />
       </button>
 
-      {showResults && searchResults.length > 0 && (
+      {showResults && searchInput.trim().length > 0 && (
         <ul
           className="absolute right-0 left-0 z-50 mt-0 border-t bg-white shadow-sm outline outline-[#A5A5A5]"
           style={{
@@ -117,7 +117,7 @@ export default function NavSearch({ className = "" }) {
           ))}
           <li>
             <Link
-              href={`/search?q=${searchInput}`}
+              href={`/search?q=${encodeURIComponent(searchInput.trim())}`}
               onClick={handleResetSearch}
               className="flex items-center gap-2 rounded p-2 text-gray-900 hover:bg-gray-200"
             >
