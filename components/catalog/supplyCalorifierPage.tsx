@@ -150,10 +150,18 @@ export default async function SupplyCalorifierPage({
 
   let threeAndFourRowsImgAspectRatio = "1";
 
-  if (size <= 799) threeAndFourRowsImgAspectRatio = "2/1";
-  else if (size <= 1030) threeAndFourRowsImgAspectRatio = "5/3";
-  else if (size <= 1299) threeAndFourRowsImgAspectRatio = "10/7";
-  else if (size <= 1572) threeAndFourRowsImgAspectRatio = "5/4";
+  if (isKPVS || isKPVU) {
+    if (size <= 799) threeAndFourRowsImgAspectRatio = "2/1";
+    else if (size <= 1030) threeAndFourRowsImgAspectRatio = "5/3";
+    else if (size <= 1299) threeAndFourRowsImgAspectRatio = "10/7";
+    else if (size <= 1572) threeAndFourRowsImgAspectRatio = "5/4";
+  }
+  if (isKPPU || isKPPS) {
+    if (size <= 799) threeAndFourRowsImgAspectRatio = "5/3";
+    else if (size <= 1030) threeAndFourRowsImgAspectRatio = "10/7";
+    else if (size <= 1299) threeAndFourRowsImgAspectRatio = "4/3";
+    else if (size <= 1572) threeAndFourRowsImgAspectRatio = "5/4";
+  }
 
   return (
     <div className="@container w-full lg:overflow-x-auto">
