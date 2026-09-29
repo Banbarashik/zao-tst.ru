@@ -11,6 +11,7 @@ import {
 import { getRegionClimateTable } from "@/data/regions/climate-tables.generated";
 import { getRegionOverview } from "@/data/regions/region-overviews";
 import { getRegionNameForms } from "@/data/regions/region-name-forms";
+import { getRegionalProductAriaLabel } from "@/data/regions/product-link-aria";
 import { getRegionGeo, type RegionGeoData } from "@/data/regions/region-geo";
 import { getRegion } from "@/data/regions/regions";
 import { getRegionSections } from "@/data/regions/region-sections";
@@ -159,10 +160,20 @@ function productKey(product: ProductReference) {
   return `text:${product.name}`;
 }
 
-function ProductItem({ product }: { product: ProductReference }) {
+function ProductItem({
+  product,
+  settlement,
+}: {
+  product: ProductReference;
+  settlement: Company["settlement"];
+}) {
   if (product.kind === "product") {
     return (
-      <Link href={`/${product.id}`} className="text-primary">
+      <Link
+        href={`/${product.id}`}
+        className="text-primary"
+        aria-label={getRegionalProductAriaLabel(product, settlement)}
+      >
         {product.name}
       </Link>
     );
@@ -170,7 +181,11 @@ function ProductItem({ product }: { product: ProductReference }) {
 
   if (product.kind === "category") {
     return (
-      <Link href={product.href} className="text-primary">
+      <Link
+        href={product.href}
+        className="text-primary"
+        aria-label={getRegionalProductAriaLabel(product, settlement)}
+      >
         {product.name}
       </Link>
     );
@@ -233,7 +248,13 @@ function categoryLabel(category: ProductDisplayCategory, capitalize: boolean) {
   return capitalize ? label[0].toUpperCase() + label.slice(1) : label;
 }
 
-function ProductList({ products }: { products: ProductReference[] }) {
+function ProductList({
+  products,
+  settlement,
+}: {
+  products: ProductReference[];
+  settlement: Company["settlement"];
+}) {
   const announcedCategories = new Set<ProductDisplayCategory>();
 
   const displayProducts = products.map((product, index) => {
@@ -269,7 +290,7 @@ function ProductList({ products }: { products: ProductReference[] }) {
         <span key={`${productKey(product)}:${index}`}>
           {index > 0 ? ", " : ""}
           {prefix ? `${prefix} ` : ""}
-          <ProductItem product={product} />
+          <ProductItem product={product} settlement={settlement} />
         </span>
       ))}
     </>
@@ -306,7 +327,11 @@ function CompaniesList({
           🏭 {showSettlement ? `${settlementLabel(company.settlement)}. ` : ""}
           {company.name}.{" "}
           <span>
-            <ProductList products={company.products} />.
+            <ProductList
+              products={company.products}
+              settlement={company.settlement}
+            />
+            .
           </span>
         </li>
       ))}
