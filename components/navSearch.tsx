@@ -24,13 +24,6 @@ export default function NavSearch({ className = "" }) {
   const [showResults, setShowResults] = useState(false);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    if (pathname !== "/search") {
-      setSearchInput("");
-      setShowResults(false);
-    }
-  }, [pathname]);
-
   const searchResults = useMemo(
     () =>
       searchInput
@@ -76,7 +69,11 @@ export default function NavSearch({ className = "" }) {
   };
 
   return (
-    <div ref={wrapperRef} className={cn("relative max-w-md", className)}>
+    <div
+      key={pathname}
+      ref={wrapperRef}
+      className={cn("relative max-w-md", className)}
+    >
       <input
         value={searchInput}
         onChange={(e) => {
