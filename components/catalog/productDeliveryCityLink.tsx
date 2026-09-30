@@ -8,6 +8,10 @@ type ProductForDeliveryLink = {
   id?: string;
 };
 
+function cleanSettlementName(name: string) {
+  return name.replace(/^(?:г\.|с\.|п\.|пгт\.)\s*/i, "").trim();
+}
+
 function settlementPrefix(type: ProductDeliveryRecord["settlement"]["type"]) {
   switch (type) {
     case "city":
@@ -33,22 +37,18 @@ export function ProductDeliveryCityLink({
   className?: string;
 }) {
   const prefix = settlementPrefix(delivery.settlement.type);
-  const text = prefix
-    ? `${prefix} ${delivery.settlement.name}`
-    : delivery.settlement.name;
+  const settlementName = cleanSettlementName(delivery.settlement.name);
+  const text = prefix ? `${prefix} ${settlementName}` : settlementName;
 
-  if (!delivery.settlement.href) {
-    return <>{text}</>;
-  }
+  // Столица / anchor-город ведут на собственный URL/anchor.
+  // Остальные населённые пункты ведут на h3 субъекта.
+  const href = delivery.settlement.href ?? delivery.region.href;
 
-  const ariaLabel = getProductDeliveryCityAriaLabel(
-    product,
-    delivery.settlement.name,
-  );
+  const ariaLabel = getProductDeliveryCityAriaLabel(product, delivery);
 
   return (
     <Link
-      href={delivery.settlement.href}
+      href={href}
       className={className}
       aria-label={ariaLabel ?? undefined}
     >

@@ -172,7 +172,9 @@ function ProductItem({
       <Link
         href={`/${product.id}`}
         className="text-primary"
-        aria-label={getRegionalProductAriaLabel(product, settlement)}
+        aria-label={
+          getRegionalProductAriaLabel(product, settlement) ?? undefined
+        }
       >
         {product.name}
       </Link>
@@ -184,7 +186,9 @@ function ProductItem({
       <Link
         href={product.href}
         className="text-primary"
-        aria-label={getRegionalProductAriaLabel(product, settlement)}
+        aria-label={
+          getRegionalProductAriaLabel(product, settlement) ?? undefined
+        }
       >
         {product.name}
       </Link>

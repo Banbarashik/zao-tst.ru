@@ -1,5 +1,13 @@
-import { getCityNameForms } from "./city-name-forms";
-import type { ProductReference, Settlement } from "./types";
+import {
+  generatedRegions,
+  type RegionSlug,
+} from "./regions.generated";
+import { getRegionNameForms } from "./region-name-forms";
+import type {
+  ProductDeliveryRecord,
+  ProductReference,
+  Settlement,
+} from "./types";
 
 type LinkedProductReference = Extract<
   ProductReference,
@@ -15,12 +23,11 @@ type ProductLike = {
 type EquipmentKind =
   | "water-kalorifer"
   | "steam-kalorifer"
-  | "kalorifer"
-  | "electrokalorifer"
-  | "installation"
-  | "cabinet"
+  | "generic-kfb"
+  | "electric-kalorifer"
+  | "electric-installation"
   | "aggregate"
-  | "ten";
+  | "skip";
 
 const PRODUCT_TOKEN_PATTERN =
   /(?:КПСк|КПСК|КСк|КСК|КПВС|КПВУ|КППС|КППУ|КФБ|ТВВ|КП|СФОЦ|СФО|ШУК|АО\s*2|СТД-300|АВО|ТЭН)/i;
@@ -48,30 +55,40 @@ function equipmentKind(product: ProductLike): EquipmentKind | null {
   const search = productSearchText(product);
   const designation = productDesignation(product);
 
-  if (/^СФОЦ(?:\s|-|$)/i.test(designation) || /\bustanovka-sfotc-/i.test(search)) {
-    return "installation";
+  // ШУК и ТЭНы должны оставаться ссылками, но без aria-label.
+  if (
+    /^ШУК(?:\s|-|$)/i.test(designation) ||
+    /\bshkaf-upravleniia-shuk-/i.test(search) ||
+    /^ТЭН/i.test(designation) ||
+    /\bteny-/i.test(search)
+  ) {
+    return "skip";
   }
 
-  if (/^СФО(?:\s|-|$)/i.test(designation) || /\belektrokalorifer-sfo-/i.test(search)) {
-    return "electrokalorifer";
+  // СФОЦ проверяем раньше СФО.
+  if (
+    /^СФОЦ(?:\s|-|$)/i.test(designation) ||
+    /\bustanovka-sfotc-/i.test(search)
+  ) {
+    return "electric-installation";
   }
 
-  if (/^ШУК(?:\s|-|$)/i.test(designation) || /\bshkaf-upravleniia-shuk-/i.test(search)) {
-    return "cabinet";
+  if (
+    /^СФО(?:\s|-|$)/i.test(designation) ||
+    /\belektrokalorifer-sfo-/i.test(search)
+  ) {
+    return "electric-kalorifer";
   }
 
   if (
     /^(?:АО\s*2|СТД-300|АВО)(?:\s|-|$)/i.test(designation) ||
-    /\bagregat-/i.test(search)
+    /\bagregat-/i.test(search) ||
+    /^std300-/i.test(product.id ?? "")
   ) {
     return "aggregate";
   }
 
-  if (/^ТЭН/i.test(designation) || /\bteny-/i.test(search)) {
-    return "ten";
-  }
-
-  // Сначала более длинные обозначения, чтобы общий "КП" не перехватывал их.
+  // Более длинные обозначения проверяем раньше общего "КП".
   if (/^КП(?:ВС|ВУ)(?:\s|-|$)/i.test(designation)) {
     return "water-kalorifer";
   }
@@ -84,7 +101,10 @@ function equipmentKind(product: ProductLike): EquipmentKind | null {
     return "steam-kalorifer";
   }
 
-  if (/^КСк(?:\s|-|$)/i.test(designation) || /^КСК(?:\s|-|$)/i.test(designation)) {
+  if (
+    /^КСк(?:\s|-|$)/i.test(designation) ||
+    /^КСК(?:\s|-|$)/i.test(designation)
+  ) {
     return "water-kalorifer";
   }
 
@@ -93,6 +113,12 @@ function equipmentKind(product: ProductLike): EquipmentKind | null {
   }
 
   if (/^КФБ(?:\s|-|$)/i.test(designation)) {
+    // Единственное согласованное исключение:
+    // общая категория /kalorifery-kfb не содержит типа теплоносителя.
+    if (product.href === "/kalorifery-kfb") {
+      return "generic-kfb";
+    }
+
     if (/(?:^|\s)П$/i.test(designation) || /-p(?:\s|$)/i.test(product.id ?? "")) {
       return "steam-kalorifer";
     }
@@ -101,26 +127,22 @@ function equipmentKind(product: ProductLike): EquipmentKind | null {
       return "water-kalorifer";
     }
 
-    return "kalorifer";
+    // Не придумываем теплоноситель для неоднозначного КФБ.
+    return null;
   }
 
   if (/^КП(?:\s|-|$)/i.test(designation)) {
     return "steam-kalorifer";
   }
 
-  if (
-    /\bkalorifer-/i.test(search) ||
-    /\/kalorifery-/i.test(search) ||
-    /\/kalorifery$/i.test(search)
-  ) {
-    return "kalorifer";
-  }
-
   return null;
 }
 
-function orderNoun(kind: EquipmentKind, plural: boolean) {
-  const labels: Record<EquipmentKind, { singular: string; plural: string }> = {
+function regionalNoun(kind: Exclude<EquipmentKind, "skip">, plural: boolean) {
+  const labels: Record<
+    Exclude<EquipmentKind, "skip">,
+    { singular: string; plural: string }
+  > = {
     "water-kalorifer": {
       singular: "водяной калорифер",
       plural: "водяные калориферы",
@@ -129,132 +151,140 @@ function orderNoun(kind: EquipmentKind, plural: boolean) {
       singular: "паровой калорифер",
       plural: "паровые калориферы",
     },
-    kalorifer: {
+    "generic-kfb": {
       singular: "калорифер",
       plural: "калориферы",
     },
-    electrokalorifer: {
-      singular: "электрокалорифер",
-      plural: "электрокалориферы",
+    "electric-kalorifer": {
+      singular: "электрический калорифер",
+      plural: "электрические калориферы",
     },
-    installation: {
-      singular: "отопительную установку",
-      plural: "отопительные установки",
-    },
-    cabinet: {
-      singular: "шкаф управления",
-      plural: "шкафы управления",
+    "electric-installation": {
+      // После "Купить" нужен винительный падеж:
+      // "электрическую установку".
+      singular: "электрическую установку",
+      plural: "электрические установки",
     },
     aggregate: {
-      singular: "отопительный агрегат",
-      plural: "отопительные агрегаты",
-    },
-    ten: {
-      singular: "оребренный ТЭН",
-      plural: "оребренные ТЭНы",
+      singular: "агрегат",
+      plural: "агрегаты",
     },
   };
 
   return plural ? labels[kind].plural : labels[kind].singular;
 }
 
-function experienceNoun(kind: EquipmentKind) {
-  const labels: Record<EquipmentKind, string> = {
-    "water-kalorifer": "калориферов",
-    "steam-kalorifer": "калориферов",
-    kalorifer: "калориферов",
-    electrokalorifer: "электрокалориферов",
-    installation: "отопительных установок",
-    cabinet: "шкафов управления",
-    aggregate: "отопительных агрегатов",
-    ten: "оребренных ТЭНов",
+function productPageNoun(kind: Exclude<EquipmentKind, "skip">) {
+  const labels: Record<Exclude<EquipmentKind, "skip">, string> = {
+    "water-kalorifer": "калорифера",
+    "steam-kalorifer": "калорифера",
+    "generic-kfb": "калорифера",
+    "electric-kalorifer": "электрокалорифера",
+    "electric-installation": "отопительной установки",
+    aggregate: "агрегата",
   };
 
   return labels[kind];
-}
-
-function productPhrase(noun: string, designation: string, kind: EquipmentKind) {
-  // "ТЭНы" — уже само название товарной группы, повторять его после
-  // "оребренный ТЭН / оребренных ТЭНов" не нужно.
-  if (kind === "ten" && /^ТЭН/i.test(designation)) {
-    return noun;
-  }
-
-  return `${noun} ${designation}`.trim();
 }
 
 function cleanSettlementName(name: string) {
   return name.replace(/^(?:г\.|с\.|п\.|пгт\.)\s*/i, "").trim();
 }
 
-function deliveryDestination(settlement: Settlement) {
-  const name = cleanSettlementName(settlement.name);
-
-  switch (settlement.type) {
+function settlementShortPrefix(type: Settlement["type"]) {
+  switch (type) {
     case "city":
-      return `город ${name}`;
+      return "г.";
     case "village":
-      return `село ${name}`;
+      return "с.";
     case "settlement":
-      return `посёлок ${name}`;
+      return "п.";
     case "urban-settlement":
-      return `посёлок городского типа ${name}`;
+      return "пгт.";
     case "other":
-      return `населённый пункт ${name}`;
+      return "";
   }
 }
 
+function settlementShortLabel(settlement: Settlement) {
+  const name = cleanSettlementName(settlement.name);
+  const prefix = settlementShortPrefix(settlement.type);
+
+  return prefix ? `${prefix} ${name}` : name;
+}
+
+function regionSlugFromHref(href: string): RegionSlug | null {
+  const match = href.match(/^\/regions\/([^#/?]+)/);
+  const slug = match?.[1];
+
+  if (!slug || !(slug in generatedRegions)) {
+    return null;
+  }
+
+  return slug as RegionSlug;
+}
+
 /**
- * aria-label для ссылок с региональной страницы на товар / категорию.
+ * aria-label для ссылки с региональной страницы на товар или категорию.
  *
  * Пример:
- * "Заказать паровой калорифер КПСк 4-11 с доставкой в город Омск"
+ * "Купить водяной калорифер КСк 2-1 с доставкой в г. Барнаул"
+ *
+ * ШУК и ТЭНы возвращают null — ссылка остаётся, aria-label не добавляется.
  */
 export function getRegionalProductAriaLabel(
   product: LinkedProductReference,
   settlement: Settlement,
-): string {
-  const kind = equipmentKind(product);
-  const designation = productDesignation(product);
-
-  if (!kind) {
-    return `Заказать ${designation} с доставкой в ${deliveryDestination(settlement)}`;
-  }
-
-  const plural = product.kind === "category";
-  const phrase = productPhrase(orderNoun(kind, plural), designation, kind);
-
-  return `Заказать ${phrase} с доставкой в ${deliveryDestination(settlement)}`;
-}
-
-/**
- * aria-label для кликабельного города в таблице на странице конкретного товара.
- *
- * Здесь намеренно используем нейтральную товарную группу во множественном
- * родительном падеже: для КПСк и КСк это "калориферов", без повторения
- * "паровых / водяных".
- *
- * Пример:
- * "Опыт эксплуатации калориферов КПСк 4-11 на предприятиях города Омска"
- */
-export function getProductDeliveryCityAriaLabel(
-  product: ProductLike,
-  cityName: string,
 ): string | null {
-  const cityForms = getCityNameForms(cleanSettlementName(cityName));
+  const kind = equipmentKind(product);
 
-  if (!cityForms) {
+  if (!kind || kind === "skip") {
     return null;
   }
 
-  const kind = equipmentKind(product);
   const designation = productDesignation(product);
+  const noun = regionalNoun(kind, product.kind === "category");
 
-  if (!kind) {
-    return `Опыт эксплуатации ${designation} на предприятиях города ${cityForms.genitive}`;
+  return `Купить ${noun} ${designation} с доставкой в ${settlementShortLabel(settlement)}`;
+}
+
+/**
+ * aria-label для ссылки населённого пункта в таблице на странице товара.
+ *
+ * Пример:
+ * "Опыт эксплуатации калорифера КСк 2-1 на промышленных предприятиях
+ * в Алтайском крае: г. Барнаул"
+ *
+ * Здесь не указываем тип теплоносителя. ШУК и ТЭНы возвращают null.
+ */
+export function getProductDeliveryCityAriaLabel(
+  product: ProductLike,
+  delivery: Pick<ProductDeliveryRecord, "region" | "settlement">,
+): string | null {
+  const kind = equipmentKind(product);
+
+  if (!kind || kind === "skip") {
+    return null;
   }
 
-  const phrase = productPhrase(experienceNoun(kind), designation, kind);
+  const regionSlug = regionSlugFromHref(delivery.region.href);
 
-  return `Опыт эксплуатации ${phrase} на предприятиях города ${cityForms.genitive}`;
+  if (!regionSlug) {
+    return null;
+  }
+
+  const regionForms = getRegionNameForms(regionSlug);
+
+  if (!regionForms) {
+    return null;
+  }
+
+  const designation = productDesignation(product);
+  const noun = productPageNoun(kind);
+  const settlement = settlementShortLabel(delivery.settlement);
+
+  return (
+    `Опыт эксплуатации ${noun} ${designation} ` +
+    `на промышленных предприятиях в ${regionForms.prepositional}: ${settlement}`
+  );
 }

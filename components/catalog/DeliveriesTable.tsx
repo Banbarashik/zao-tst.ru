@@ -1,22 +1,9 @@
-import Link from "next/link";
 import type { ProductDeliveryRecord } from "@/data/regions/types";
 
-function getSettlementPrefix(type: string) {
-  switch (type) {
-    case "city":
-      return "г.";
-    case "village":
-      return "с.";
-    case "settlement":
-      return "п.";
-    case "urban-settlement":
-      return "пгт.";
-    default:
-      return "";
-  }
-}
+import { ProductDeliveryCityLink } from "@/components/catalog/productDeliveryCityLink";
 
 export function DeliveriesTable({
+  product,
   deliveries,
 }: {
   deliveries: ProductDeliveryRecord[];
@@ -52,13 +39,10 @@ export function DeliveriesTable({
                 </td>
 
                 <td className="pl-1.5 text-left">
-                  <Link
-                    href={deliveryLocLink}
-                    className="text-primary-dark hover:text-primary"
-                  >
-                    {getSettlementPrefix(delivery.settlement.type)}{" "}
-                    {delivery.settlement.name}
-                  </Link>
+                  <ProductDeliveryCityLink
+                    product={product}
+                    delivery={delivery}
+                  />
                 </td>
 
                 <td>{delivery.company}</td>

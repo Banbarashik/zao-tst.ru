@@ -124,7 +124,7 @@ export function DeliverySection({
       </div>
 
       <Spoiler title="Региональные поставки">
-        <DeliveriesTable deliveries={deliveries} />
+        <DeliveriesTable product={product} deliveries={deliveries} />
       </Spoiler>
 
       <p className="text-base">{specsNote ?? defaultSpecsNote}</p>
