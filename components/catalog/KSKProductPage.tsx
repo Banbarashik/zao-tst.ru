@@ -394,6 +394,7 @@ export default async function KSKProductPage({
               }}
             >
               <Image
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 src={product.frontView.url}
                 alt={
                   isCalorifier
@@ -415,6 +416,7 @@ export default async function KSKProductPage({
               }}
             >
               <Image
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 src={product.parts.url}
                 alt={
                   isCalorifier
