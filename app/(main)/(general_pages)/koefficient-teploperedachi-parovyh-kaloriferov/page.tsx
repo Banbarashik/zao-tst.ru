@@ -9,8 +9,8 @@ import { sortProducts } from "@/lib/utils";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
-import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
-import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
+import SteamCalcHeatTransferCoefficientTables from "@/components/general_pages/steamCalcHeatTransferCoefficientTables";
+import SteamCalcAerodynamicResistanceTables from "@/components/general_pages/steamCalcAerodynamicResistanceTables";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
 
@@ -590,7 +590,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             рядности воздухонагревателя.
           </li>
         </ul>
-        <CalcHeatTransferCoefficientTables />
+        <SteamCalcHeatTransferCoefficientTables />
         <div className="space-y-4 text-[#6a2d2d]">
           <div>
             <ProductParagraph>⚙️ Пример расчета 1</ProductParagraph>
@@ -753,7 +753,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             рядности воздухонагревателя.
           </li>
         </ul>
-        <CalcAerodynamicResistanceTables />
+        <SteamCalcAerodynamicResistanceTables />
         <div className="space-y-4 text-[#6a2d2d]">
           <div>
             <ProductParagraph>⚙️ Пример расчета 4</ProductParagraph>
