@@ -572,7 +572,7 @@ export default async function PodborRaschetKaloriferovPage() {
           ].map((item, i, arr) => (
             <li key={item} className="flex gap-2">
               <Link
-                href={`/podbor-raschet-kaloriferov#anchor${i + 1}`}
+                href={`/raschet-podbor-kaloriferov#anchor${i + 1}`}
                 className="text-primary-darker hover:text-primary-dark flex font-bold"
               >
                 <ArrowBigDownDash />
@@ -660,6 +660,133 @@ export default async function PodborRaschetKaloriferovPage() {
         </ProductParagraph>
 
         <WaterHeaterTempTable data={cityTemps} />
+      </section>
+
+      <Separator />
+
+      {/* Расчет мощности по теплу */}
+      <section className="mb-4 space-y-4">
+        <NumberedAnchor num={1} />
+        <Heading lvl={2} text="Расчет мощности по теплу" />
+        <div>
+          <ProductParagraph>
+            1. Находим тепловую мощность для нагрева необходимого объема
+            воздуха.
+          </ProductParagraph>
+          <ol>
+            <li>
+              <ProductParagraph>
+                1.1 Определяем массовый расход приточного воздуха:{" "}
+                <span className="text-2xl font-bold">G = V • р</span>
+              </ProductParagraph>
+              <ul>
+                <li>G - массовый расход воздуха, кг/час;</li>
+                <li>V - объемное количество нагреваемого воздуха, м³/час;</li>
+                <li>
+                  p - плотность воздуха при средней температуре на входе и
+                  выходе из воздухоподогревателя, кг/м³.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ProductParagraph>
+                1.2 Определяем количество теплоты для нагревания воздуха:{" "}
+                <span className="text-2xl font-bold">
+                  Q = (G / 3600) • c • (t{" "}
+                  <span className="font-normal">кон</span> - t{" "}
+                  <span className="font-normal">нач</span>)
+                </span>
+              </ProductParagraph>
+              <ul>
+                <li>Q – требуемая тепловая мощность теплообменника, Вт;</li>
+                <li>G – массовый расход воздуха, кг/час;</li>
+                <li>
+                  с – удельная теплоемкость воздуха при средней температуре на
+                  входе и выходе из прибора, Дж/(кг•°С);
+                </li>
+                <li>
+                  t кон – температура нагретого воздуха на выходе из калорифера,
+                  °С;
+                </li>
+                <li>
+                  t нач – температура наружного воздуха на входе в калорифер,
+                  °С;
+                </li>
+                <li>
+                  3600 – коэффициент перевода часового расхода в секундный для
+                  вычисления мощности в Ваттах.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div className="overflow-x-auto">
+          <LegacyHtml html={table1Html} className="legacy-table min-w-231" />
+        </div>
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              ⚙️ Пример расчета и подбора водяного калорифера. ШАГ 1
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать водяной калорифер для нагрева приточного воздуха объемом
+              15000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г.
+              Нижневартовска -40°С с обеспеченностью 0.92. Для компенсации
+              теплопотерь здания системой совмещенного воздушного отопления
+              требуемая температура подаваемого воздуха на выходе из калорифера
+              должна составлять +25°С. Теплоноситель - горячая вода с
+              параметрами температурного графика 95/70°С.
+            </ProductParagraph>
+          </div>
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 1. Определить тепловую мощность, необходимую для нагрева
+              15000 м³/час с температуры -40 до +25 градусов.
+            </ProductParagraph>
+            <ol>
+              <li>
+                <ProductParagraph>
+                  1.1 Определяем массовый расход нагреваемого воздуха:{" "}
+                  <span className="text-xl font-bold">
+                    G = 15000 • 1.33 = 19950 кг/час
+                  </span>
+                </ProductParagraph>
+                <ul>
+                  <li>G – массовый расход воздуха, кг/час;</li>
+                  <li>
+                    15000 – объемное количество нагреваемого воздуха, м³/час;
+                  </li>
+                  <li>
+                    1.33 – плотность воздуха при средней температуре воздуха
+                    -7.5°С.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ProductParagraph>
+                  1.2 Определяем расход теплоты для нагрева воздушного потока:{" "}
+                  <span className="block text-xl font-bold">
+                    Q = (19950/3600) • 1006 • (25 - (-40)) = 362370 Вт
+                  </span>
+                </ProductParagraph>
+                <ul>
+                  <li>Q – требуемая тепловая мощность, Вт;</li>
+                  <li>19950 – массовый расход воздуха, кг/час;</li>
+                  <li>
+                    1006 – удельная теплоемкость воздуха при средней температуре
+                    воздуха -7.5°С, Дж/(кг•°С);
+                  </li>
+                  <li>
+                    +25 – температура воздуха на выходе из калорифера, °С;
+                  </li>
+                  <li>-40 – температура воздуха на входе в калорифер, °С;</li>
+                  <li>65 – перепад температур воздуха, °С.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
       </section>
 
       <Separator />
