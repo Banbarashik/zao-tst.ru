@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CalcHeatTransferCoefficientTables() {
+export default function SteamCalcHeatTransferCoefficientTables() {
   return (
     <div className="mb-6 space-y-4">
       {/* TODO make DRYer */}

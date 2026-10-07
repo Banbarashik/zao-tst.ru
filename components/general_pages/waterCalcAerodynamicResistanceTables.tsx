@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function calcAerodynamicResistanceTables() {
+export default function WaterCalcAerodynamicResistanceTables() {
   return (
     <div className="mb-6 space-y-4">
       {/* TODO make DRYer */}
