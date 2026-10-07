@@ -530,12 +530,5 @@ export default async function PodborRaschetKaloriferovPage() {
     "/legacy/table-raschet-podbor-vodyanyh-kaloriferov-2.html",
   ]);
 
-  return (
-    <>
-      <KaloriferPropsTable
-        columns={kaloriferPropColumns}
-        data={kaloriferProps}
-      />
-    </>
-  );
+  return <></>;
 }

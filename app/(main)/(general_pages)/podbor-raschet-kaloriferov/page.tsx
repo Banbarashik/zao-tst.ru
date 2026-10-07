@@ -11,8 +11,8 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
-import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
-import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
+import SteamCalcHeatTransferCoefficientTables from "@/components/general_pages/steamCalcHeatTransferCoefficientTables";
+import SteamCalcAerodynamicResistanceTables from "@/components/general_pages/steamCalcAerodynamicResistanceTables";
 import LegacyHtml from "@/components/legacyHtml";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
@@ -476,7 +476,20 @@ export default async function PodborRaschetKaloriferovPage() {
 
   return (
     <>
-      <Heading lvl={1} text="Подбор и расчет калорифера парового" />
+      <div className="space-y-4">
+        <Heading lvl={1} text="Подбор и расчет калорифера парового" />
+
+        <ProductParagraph>
+          Теплоаэродинамический расчет и подбор паровых промышленных калориферов
+          основывается на совместном решении уравнений теплового баланса и
+          конвективного переноса энергии в оребренных трубных пучках. Пошаговый
+          инженерный алгоритм позволяет верифицировать требуемую мощность,
+          фактический расход пара и потери давления как одиночных аппаратов, так
+          и многорядных блочных установок технологического нагрева с учетом
+          температурных параметров приточного воздуха и аэродинамических
+          ограничений вентиляционной системы.
+        </ProductParagraph>
+      </div>
 
       <section className="mb-4 space-y-5">
         <Heading lvl={2} text="Расчет и подбор калориферов КПСК КП КФБ-А П" />
@@ -1021,7 +1034,7 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>A, n, r - значение модуля и степеней из таблицы.</li>
           </ul>
         </div>
-        <CalcHeatTransferCoefficientTables />
+        <SteamCalcHeatTransferCoefficientTables />
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1710,7 +1723,7 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>B, m - значение модуля и степени из таблицы.</li>
           </ul>
         </div>
-        <CalcAerodynamicResistanceTables />
+        <SteamCalcAerodynamicResistanceTables />
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
