@@ -12,7 +12,7 @@ export const PRODUCT_CATEGORY_ROUTES: Record<string, string> = {
   "КФБ-А": "/kalorifery-kfb-a",
   "КФБ-А М": "/kalorifery-kfb-a",
   "КФБ-А П": "/kalorifery-kfb-a",
-  СФО: "/elektrokalorifery",
+  СФО: "/elektronagrevateli",
   СФОЦ: "/teploventilyatory",
   ШУК: "/shkafy-upravleniya",
   "АО 2 В": "/ao2-ksk-kpsk",
