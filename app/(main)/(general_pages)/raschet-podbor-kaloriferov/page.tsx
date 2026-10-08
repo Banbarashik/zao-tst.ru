@@ -1344,7 +1344,7 @@ export default async function RaschetPodborKaloriferovPage() {
 
       {/* 6. Расчет коэффициента теплопередачи */}
       <section className="mb-4 space-y-4">
-        <NumberedAnchor num={5} />
+        <NumberedAnchor num={6} />
         <Heading lvl={2} text="Расчет коэффициента теплопередачи" />
 
         <div>
@@ -1485,6 +1485,210 @@ export default async function RaschetPodborKaloriferovPage() {
           модели можно посмотреть на странице сайта: Коэффициент теплопередачи
           водяных калориферов.
         </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Расчет коэффициентов пар",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+              hiddenText:
+                "Расчет коэффициента теплопередачи парового воздухонагревателя",
+            },
+            {
+              name: "Таблицы коэффициентов пар",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+              hiddenText:
+                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+            },
+          ]}
+        />
+      </section>
+
+      <Separator />
+
+      {/* 7. Расчет температурного напора калорифера */}
+      <section className="mb-4 space-y-4">
+        <NumberedAnchor num={7} />
+        <Heading lvl={2} text="Расчет температурного напора калорифера" />
+        <ProductParagraph>
+          7. Расчет среднего по поверхности температурного напора. Принцип
+          работы водяного калорифера построен на теплообмене двух контуров:
+          греющего (первичный теплоноситель — горячая вода) и нагреваемого
+          (вторичный теплоноситель — воздух). Нагрев воздушного потока
+          происходит за счет непрерывного остывания циркулирующей жидкости,
+          движущейся по каналам гидравлического тракта. Чем выше разница
+          температур между потоками, тем интенсивнее происходит теплоперенос.
+        </ProductParagraph>
+
+        <div>
+          <ProductParagraph>
+            Определение температурного напора выполняется в следующей
+            последовательности:
+          </ProductParagraph>
+          <ol>
+            <li>
+              <ProductParagraph>
+                1. Находим разности температур сред на входе и выходе из
+                аппарата:
+              </ProductParagraph>
+              <ProductParagraph className="text-2xl font-bold">
+                Δ t1 = T1 - T3
+              </ProductParagraph>
+              <ProductParagraph className="text-2xl font-bold">
+                Δ t2 = T2 - T4
+              </ProductParagraph>
+              Где:
+              <ul>
+                <li>
+                  T1 – температура горячей воды на входе в калорифер (подача),
+                  °С;
+                </li>
+                <li>
+                  T2 – температура охлажденной воды на выходе из калорифера
+                  (обратка), °С;
+                </li>
+                <li>
+                  T3 – температура нагретого воздуха на выходе из калорифера,
+                  °С;
+                </li>
+                <li>
+                  T4 – температура наружного воздуха на входе в калорифер, °С.
+                </li>
+              </ul>
+              <ProductParagraph>
+                Из полученных значений Δ t1 и Δ t2 большее принимается как Δ T{" "}
+                <sub>Б</sub>, а меньшее — как Δ T <sub>М</sub>.
+              </ProductParagraph>
+            </li>
+
+            <li>
+              <ProductParagraph>
+                2. На основании соотношения полученных величин выбирается
+                расчетная формула:
+              </ProductParagraph>
+              <ProductParagraph>
+                Если отношение Δ T <sub>Б</sub> / Δ T <sub>М</sub> меньше или
+                равно 1.8, температурный напор вычисляется как среднее
+                арифметическое:{" "}
+                <span className="block text-2xl font-bold">
+                  Δ T = (Δ T <sub>Б</sub> + Δ T <sub>М</sub>) / 2
+                </span>
+              </ProductParagraph>
+              <ProductParagraph>
+                Если отношение Δ T <sub>Б</sub> / Δ T <sub>М</sub> больше 1.8,
+                температурный напор вычисляется по среднелогарифмической
+                зависимости:{" "}
+                <span className="block text-2xl font-bold">
+                  Δ T = (Δ T <sub>Б</sub> - Δ T <sub>М</sub>) / ln (Δ T{" "}
+                  <sub>Б</sub> / Δ T <sub>М</sub>)
+                </span>
+              </ProductParagraph>
+              <ProductParagraph>
+                Натуральный логарифм ln(x) — это логарифм по основанию e
+                (иррациональная константа, равная приблизительно 2.71828),
+                определяющий показатель степени, в которую нужно возвести число
+                e, чтобы получить x.
+              </ProductParagraph>
+            </li>
+          </ol>
+        </div>
+
+        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <div className="relative aspect-800/500 w-full">
+            <Image
+              src="/img/general_pages/voda_kalorifer_temperatura_napor.png"
+              alt="Расчет температурного напора водяного калорифера"
+              title="Средний арифметический температурный напор"
+              fill
+            />
+          </div>
+          <div className="relative aspect-800/500 w-full">
+            <Image
+              src="/img/general_pages/water_kalorifer_temperatura_napor.png "
+              alt="Дельта температур при расчете и подборе водяного калорифера"
+              title="Формула арифметического температурного напора"
+              fill
+            />
+          </div>
+        </div>
+
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              ⚙️ Пример расчета и подбора водяного калорифера. ШАГ 7
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать водяной калорифер для нагрева приточного воздуха объемом
+              15000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г.
+              Нижневартовска -40°С с обеспеченностью 0.92. Для компенсации
+              теплопотерь здания системой совмещенного воздушного отопления
+              требуемая температура подаваемого воздуха на выходе из калорифера
+              должна составлять +25°С. Теплоноситель — горячая вода с
+              параметрами температурного графика 95/70°С.
+            </ProductParagraph>
+          </div>
+
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 7. Найти средний температурный напор для заданного
+              теплового режима работы приточной установки.
+            </ProductParagraph>
+            <ol>
+              <li>
+                <ProductParagraph>
+                  1. Определяем разности температур греющей и нагреваемой сред
+                  на входах и выходах из контура:
+                  <span className="block text-xl font-bold">
+                    Δ t1 = T1 - T3 = 95 - 25 = 70°С
+                  </span>{" "}
+                  <span className="block text-xl font-bold">
+                    Δ t2 = T2 - T4 = 70 - (-40) = 110°С
+                  </span>
+                </ProductParagraph>
+                <ul>
+                  <li>
+                    T1 – температура горячей воды на входе (подача), 95°С;
+                  </li>
+                  <li>
+                    T2 – температура охлажденной воды на выходе (обратка), 70°С;
+                  </li>
+                  <li>T3 – температура приточного воздуха на выходе, +25°С;</li>
+                  <li>
+                    T4 – температура наружного холодного воздуха на входе,
+                    -40°С.
+                  </li>
+                </ul>
+                <ProductParagraph>
+                  Из полученных значений большее принимается как Δ T{" "}
+                  <sub>Б</sub> = 110°С, меньшее — как Δ T <sub>М</sub> = 70°С.
+                </ProductParagraph>
+              </li>
+              <li>
+                <ProductParagraph>
+                  2. Проверяем соотношение полученных температурных перепадов
+                  для выбора расчетной формулы:{" "}
+                  <span className="block text-xl font-bold">
+                    Δ T <sub>Б</sub> / Δ T <sub>М</sub> = 110 / 70 = 1.57
+                  </span>
+                </ProductParagraph>
+                <ProductParagraph>
+                  Поскольку полученное отношение 1.57 меньше нормативного порога
+                  1.8 (Δ T <sub>Б</sub> / Δ T <sub>М</sub> ≤ 1.8), для расчета
+                  среднего температурного напора применяется упрощенная формула
+                  среднего арифметического:{" "}
+                  <span className="block text-xl font-bold">
+                    Δ T = (Δ T <sub>Б</sub> + Δ T <sub>М</sub>) / 2 = (110 + 70)
+                    / 2 = 90.0°С
+                  </span>
+                </ProductParagraph>
+                <ul>
+                  <li>Δ T – расчетный средний температурный напор, °С.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
 
         <LinkButtonsBlock
           buttons={[
