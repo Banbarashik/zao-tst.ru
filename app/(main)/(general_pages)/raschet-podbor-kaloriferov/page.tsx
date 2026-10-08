@@ -524,7 +524,7 @@ function KaloriferPropsTable<T extends Record<string, unknown>>({
   );
 }
 
-export default async function PodborRaschetKaloriferovPage() {
+export default async function RaschetPodborKaloriferovPage() {
   const [table1Html, table2Html] = await getLegacyHtmls([
     "/legacy/table-raschet-podbor-kaloriferov-1.html",
     "/legacy/table-raschet-podbor-vodyanyh-kaloriferov-2.html",
@@ -550,10 +550,12 @@ export default async function PodborRaschetKaloriferovPage() {
       {/* Расчет и подбор калориферов КСК ТВВ КФБ-А М */}
       <section className="mb-4 space-y-5">
         <Heading lvl={2} text="Расчет и подбор калориферов КСК ТВВ КФБ-А М" />
+
         <ProductParagraph className="mb-1">
           Расчет и подбор водяных калориферов осуществляется в следующей
           последовательности:
         </ProductParagraph>
+
         <ul className="space-y-1.5">
           {[
             "оценка требуемой тепловой мощности для нагрева заданного объема воздуха на расчетный перепад температур",
@@ -586,29 +588,8 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           ))}
         </ul>
-        <ProductParagraph className="text-[#5a769a]">
-          Подробное описание устройства и принципа работы водяных
-          теплообменников представлено на странице сайта: Водяные калориферы.
-          Для онлайн подбора водовоздушных нагревателей можно воспользоваться
-          калькулятором, выложенным на странице сайта: Калориферы приточные
-          водяные.
-        </ProductParagraph>
-        <LinkButtonsBlock
-          buttons={[
-            {
-              name: "Паровые калориферы",
-              url: "/kalorifer-par",
-              hiddenText:
-                "Температура и давление теплоносителя для парового калорифера",
-            },
-            {
-              name: "Калькулятор паровой калорифер",
-              url: "/kalorifery-par#anchor3",
-              hiddenText: "Калькулятор подбора паровых калориферов онлайн",
-            },
-          ]}
-        />
-        <div className="mb-12 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+
+        <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/370 w-full">
             <Image
               src="/img/general_pages/kalorifer_podbor_voda.png"
@@ -626,6 +607,31 @@ export default async function PodborRaschetKaloriferovPage() {
             />
           </div>
         </div>
+
+        <ProductParagraph className="text-[#5a769a]">
+          Подробное описание устройства и принципа работы водяных
+          теплообменников представлено на странице сайта: Водяные калориферы.
+          Для онлайн подбора водовоздушных нагревателей можно воспользоваться
+          калькулятором, выложенным на странице сайта: Калориферы приточные
+          водяные.
+        </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Паровые калориферы",
+              url: "/kalorifer-par",
+              hiddenText:
+                "Температура и давление теплоносителя для парового калорифера",
+            },
+            {
+              name: "Калькулятор паровой калорифер",
+              url: "/kalorifery-par#anchor3",
+              hiddenText: "Калькулятор подбора паровых калориферов онлайн",
+            },
+          ]}
+        />
+
         <ProductParagraph>
           Все действия по подбору водяных воздухонагревателей КСк, ТВВ, КФБ-А М
           производства нашего завода выложены в пошаговых расчетах. Прилагаются
@@ -634,6 +640,7 @@ export default async function PodborRaschetKaloriferovPage() {
           аппроксимации для каждого модельного ряда, приводятся пояснения и
           примеры к каждому вычислению.
         </ProductParagraph>
+
         <LinkButtonsBlock
           buttons={[
             {
@@ -649,6 +656,7 @@ export default async function PodborRaschetKaloriferovPage() {
             },
           ]}
         />
+
         <ProductParagraph className="text-[#5a769a]">
           Расчетная температура входящего воздуха подбирается в зависимости от
           технического задания и схемы включения водяного калорифера в систему
@@ -1333,6 +1341,170 @@ export default async function PodborRaschetKaloriferovPage() {
           </div>
         </div>
       </section>
+
+      {/* 6. Расчет коэффициента теплопередачи */}
+      <section className="mb-4 space-y-4">
+        <NumberedAnchor num={5} />
+        <Heading lvl={2} text="Расчет коэффициента теплопередачи" />
+
+        <div>
+          <ProductParagraph>
+            6. Произвести расчет коэффициента теплопередачи выбранных водяных
+            воздухонагревателей приточной вентиляции. Коэффициент теплопередачи
+            можно установить двумя способами: используя формулу со значениями,
+            полученными на основе обработки экспериментальных теплотехнических
+            испытаний; воспользовавшись таблицами с рассчитанными результатами
+            по каждой модели спирально-накатных калориферов, выпускаемых нашим
+            предприятием.
+          </ProductParagraph>
+          <ProductParagraph>
+            Формула для нахождения коэффициента теплопередачи имеет вид:{" "}
+            <span className="text-2xl font-bold">
+              К = A • v <sup>n</sup> • W <sup>r</sup>
+            </span>
+          </ProductParagraph>
+          <ul>
+            <li>
+              К – коэффициент теплопередачи биметаллического калорифера,
+              Вт/(м²·°С);
+            </li>
+            <li>
+              v – действительная массовая скорость воздуха в фронтальном сечении
+              подобранного водяного калорифера, кг/(м²·с);
+            </li>
+            <li>
+              W – скорость движения воды в трубках воздухоподогревателя, м/с;
+            </li>
+            <li>
+              A, n, r – эмпирические значения модуля и степеней, определяемые
+              экспериментально для каждого типоразмера и рядности
+              теплообменников по каталожным таблицам.
+            </li>
+          </ul>
+        </div>
+
+        <WaterCalcHeatTransferCoefficientTables />
+
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              ⚙️ Пример расчета и подбора водяного калорифера. ШАГ 6
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать водяной калорифер для нагрева приточного воздуха объемом
+              15000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г.
+              Нижневартовска -40°С с обеспеченностью 0.92. Для компенсации
+              теплопотерь здания системой совмещенного воздушного отопления
+              требуемая температура подаваемого воздуха на выходе из калорифера
+              должна составлять +25°С. Теплоноситель — горячая вода с
+              параметрами температурного графика 95/70°С.
+            </ProductParagraph>
+          </div>
+
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 6. Рассчитать коэффициент теплопередачи для всех моделей
+              калориферов, соответствующих гидравлическим критериям предыдущего
+              этапа. Принимаем модели КСк 4-11, ТВВ 311, ТВВ 411 с массовой
+              скоростью 3.34 кг/(м²•с), КФБ-14 А3 М и КФБ-14 А4 М с массовой
+              скоростью 3.51 кг/(м²•с). Скорость теплоносителя берется из
+              предыдущего расчета, эмпирические коэффициенты завода-изготовителя
+              принимаются по табличным данным.
+            </ProductParagraph>
+            <FormulasList>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КСк 4-11
+                <span className="text-xl font-bold">
+                  К = 25.5 • 3.34 <sup>0.496</sup> • 1.14 <sup>0.160</sup> =
+                  47.36 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер ТВВ 311 (4 хода)
+                <span className="text-xl font-bold">
+                  К = 29.4 • 3.34 <sup>0.515</sup> • 0.77 <sup>0.0945 </sup> =
+                  53.38 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер ТВВ 311 (6 ходов)
+                <span className="text-xl font-bold">
+                  К = 29.4 • 3.34 <sup>0.515</sup> • 1.16 <sup>0.0945 </sup> =
+                  55.48 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер ТВВ 411 (4 хода)
+                <span className="text-xl font-bold">
+                  К = 28.1 • 3.34 <sup>0.518</sup> • 0.58 <sup>0.0681</sup> =
+                  50.57 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер ТВВ 411 (6 ходов)
+                <span className="text-xl font-bold">
+                  К = 28.1 • 3.34 <sup>0.518</sup> • 0.88 <sup>0.0681</sup> =
+                  52.03 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КФБ-14 А3 М
+                <span className="text-xl font-bold">
+                  К = 29.4 • 3.51 <sup>0.515</sup> • 1.06 <sup>0.0945 </sup> =
+                  56.44 Вт/(м²•°C)
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                Калорифер КФБ-14 А4 М
+                <span className="text-xl font-bold">
+                  К = 28.1 • 3.51 <sup>0.518</sup> • 0.80 <sup>0.0681</sup> =
+                  53.04 Вт/(м²•°C)
+                </span>
+              </li>
+            </FormulasList>
+            <ul>
+              <li>
+                К – коэффициент теплопередачи биметаллического калорифера,
+                Вт/(м²·°С);
+              </li>
+              <li>
+                3.34, 3.51 – действительные массовые скорости воздуха,
+                кг/(м²·с);
+              </li>
+              <li>
+                0.58...1.16 – скорости движения теплоносителя в трубках, м/с.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ProductParagraph className="text-secondary-text">
+          Подробное описание нахождения коэффициента теплопередачи водяных
+          биметаллических калориферов и таблицы с расчетными данными по каждой
+          модели можно посмотреть на странице сайта: Коэффициент теплопередачи
+          водяных калориферов.
+        </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Расчет коэффициентов пар",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+              hiddenText:
+                "Расчет коэффициента теплопередачи парового воздухонагревателя",
+            },
+            {
+              name: "Таблицы коэффициентов пар",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+              hiddenText:
+                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+            },
+          ]}
+        />
+      </section>
+
+      <Separator />
     </>
   );
 }
