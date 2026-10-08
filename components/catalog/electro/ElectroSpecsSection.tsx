@@ -150,9 +150,13 @@ export function ElectroSpecsSection({ product }) {
               <React.Fragment key={label}>
                 <tr>
                   <td className="py-1 pl-1 text-left">
-                    {isSHUK && label === "kmi_to_change"
-                      ? `Пускатель КМИ (КМН) ${product.kmi}А 220-230В`
-                      : label}
+                    {isSHUK &&
+                    label === "Реле тепловое РТИ (РТН) 5.5 - 8А" &&
+                    product.size === 250
+                      ? "Реле тепловое РТИ (РТН) 9 - 13А"
+                      : isSHUK && label === "kmi_to_change"
+                        ? `Пускатель КМИ (КМН) ${product.kmi}А 220-230В`
+                        : label}
                   </td>
                   <td>{product.specsTableValues[i]}</td>
                 </tr>
