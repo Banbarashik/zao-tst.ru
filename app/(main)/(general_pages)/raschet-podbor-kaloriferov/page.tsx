@@ -1709,6 +1709,155 @@ export default async function RaschetPodborKaloriferovPage() {
       </section>
 
       <Separator />
+
+      {/* 8. Расчет тепловой мощности водяного калорифера */}
+      <section className="mb-4 space-y-4">
+        <NumberedAnchor num={7} />
+        <Heading lvl={2} text="Расчет тепловой мощности водяного калорифера" />
+
+        <div>
+          <ProductParagraph>
+            8. Расчет фактической тепловой мощности калорифера. Уточняем
+            фактическую теплопроизводительность подобранных моделей водяных
+            воздухонагревателей для приточной вентиляции.
+          </ProductParagraph>
+          <ProductParagraph>
+            Расчет фактической тепловой мощности производится по формуле:{" "}
+            <span className="block text-2xl font-bold">
+              Q <sub className="font-normal">ФАКТ</sub> = K • F <sub>К</sub> • Δ
+              T
+            </span>
+          </ProductParagraph>
+          <ProductParagraph>
+            Если расчет среднего температурного напора на предыдущем этапе не
+            выполнялся, допускается вычисление мощности через среднеинтервальную
+            разность температур сред:{" "}
+            <span className="block text-2xl font-bold">
+              Q <sub className="font-normal">ФАКТ</sub> = K • F <sub>К</sub> •
+              (((T1 + T2) / 2) - ((T4 + T3) / 2))
+            </span>
+          </ProductParagraph>
+          Где:
+          <ul>
+            <li>
+              Q факт – вырабатываемая калорифером фактическая производительность
+              по теплу, Вт;
+            </li>
+            <li>
+              K – действительный коэффициент теплопередачи выбранной модификации
+              калорифера, Вт/(м²·°С);
+            </li>
+            <li>
+              F <sub>к</sub> – площадь поверхности теплообмена (нагрева)
+              выбранного калорифера, принимаемая по каталогу производителя, м²;
+            </li>
+            <li>
+              Δ T – расчетный средний температурный напор при заданных
+              параметрах теплоносителей, °С;
+            </li>
+            <li>
+              T1 – температура горячей воды на входе в калорифер (подающий
+              контур), °С;
+            </li>
+            <li>
+              T2 – температура охлажденной воды на выходе из калорифера
+              (обратный контур), °С;
+            </li>
+            <li>
+              T3 – температура нагретого воздуха на выходе из калорифера, °С;
+            </li>
+            <li>
+              T4 – температура наружного воздуха на входе в калорифер, °С.
+            </li>
+          </ul>
+        </div>
+
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              ⚙️ Пример расчета и подбора водяного калорифера. ШАГ 8
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать водяной калорифер для нагрева приточного воздуха объемом
+              15000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г.
+              Нижневартовска -40°С с обеспеченностью 0.92. Для компенсации
+              теплопотерь здания системой совмещенного воздушного отопления
+              требуемая температура подаваемого воздуха на выходе из калорифера
+              должна составлять +25°С. Теплоноситель — горячая вода с
+              параметрами температурного графика 95/70°С.
+            </ProductParagraph>
+          </div>
+
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 8. Рассчитать действительную (фактическую) тепловую
+              мощность подобранных водяных воздухонагревателей.
+            </ProductParagraph>
+            <ul className="max-w-xl space-y-2 sm:space-y-0.5">
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КСк 4-11</span>
+                <span className="text-xl font-bold">
+                  Q = 47.36 • 114.2 • 90.0 = 486766 Вт
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 311 (4 хода)</span>
+                <span className="text-xl font-bold">
+                  Q = 53.38 • 63.6 • 90.0 = 305547 Вт
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 311 (6 ходов)</span>
+                <span className="text-xl font-bold">
+                  Q = 55.48 • 63.6 • 90.0 = 317568 Вт
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 411 (4 хода)</span>
+                <span className="text-xl font-bold">
+                  Q = 50.57 • 84.2 • 90.0 = 383219 Вт
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 411 (6 ходов)</span>
+                <span className="text-xl font-bold">
+                  Q = 52.03 • 84.2 • 90.0 = 394283 Вт
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-14 А3 М</span>
+                <span className="text-xl font-bold">
+                  Q = 56.44 • 61.5 • 90.0 = 312395 Вт
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-14 А4 М</span>
+                <span className="text-xl font-bold">
+                  Q = 53.04 • 81.4 • 90.0 = 388571 Вт
+                </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Q факт – вырабатываемая калорифером фактическая
+                производительность по теплу, Вт;
+              </li>
+              <li>
+                47.36...56.44 – коэффициенты теплопередачи соответствующих
+                модификаций, Вт/(м²·°С);
+              </li>
+              <li>
+                61.5...114.2 – площадь поверхности нагрева выбранных калориферов
+                по каталогу, м²;
+              </li>
+              <li>90.0 – средний температурный напор, °С.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <Separator />
     </>
   );
 }
