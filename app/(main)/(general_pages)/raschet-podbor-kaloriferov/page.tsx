@@ -1712,7 +1712,7 @@ export default async function RaschetPodborKaloriferovPage() {
 
       {/* 8. Расчет тепловой мощности водяного калорифера */}
       <section className="mb-4 space-y-4">
-        <NumberedAnchor num={7} />
+        <NumberedAnchor num={8} />
         <Heading lvl={2} text="Расчет тепловой мощности водяного калорифера" />
 
         <div>
@@ -1858,6 +1858,227 @@ export default async function RaschetPodborKaloriferovPage() {
       </section>
 
       <Separator />
+
+      {/* 9. Расчет расхода и скорости воды */}
+      <section className="mb-4 space-y-4">
+        <NumberedAnchor num={9} />
+        <Heading lvl={2} text="Расчет расхода и скорости воды" />
+
+        <div>
+          <ProductParagraph>
+            9. Расчет фактического расхода и скорости теплоносителя. Уточняем
+            фактический расход и скорость движения теплоносителя в
+            нагревательных трубках на основании выработанной тепловой мощности
+            подобранных калориферов.
+          </ProductParagraph>
+          <ol>
+            <li>
+              <ProductParagraph>
+                9.1 Расчет фактического (действительного) расхода горячей воды:{" "}
+                <span className="block text-2xl font-bold">
+                  G w <sub className="font-normal">ФАКТ</sub> = Q{" "}
+                  <sub className="font-normal">ФАКТ</sub> / (c <sub>w</sub> •
+                  (T1 - T2))
+                </span>
+              </ProductParagraph>
+              Где:
+              <ul>
+                <li>
+                  G w факт – фактический массовый расход воды через калорифер,
+                  кг/сек;
+                </li>
+                <li>
+                  Q факт – фактическая тепловая мощность выбранной модели
+                  калорифера, Вт;
+                </li>
+                <li>
+                  c w – удельная теплоемкость воды при ее средней температуре в
+                  воздухонагревателе, Дж/(кг•°С);
+                </li>
+                <li>
+                  T1 – температура горячей воды на входе в калорифер (подающий
+                  контур), °С;
+                </li>
+                <li>
+                  T2 – температура охлажденной воды на выходе из калорифера
+                  (обратный контур), °С.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ProductParagraph>
+                9.2 Расчет фактической (действительной) скорости движения
+                теплоносителя:{" "}
+                <span className="block text-2xl font-bold">
+                  W <sub className="font-normal">ФАКТ</sub> = G <sub>w</sub>{" "}
+                  <sub className="font-normal">ФАКТ</sub> / (p <sub>w</sub> • f{" "}
+                  <sub>w</sub>)
+                </span>
+              </ProductParagraph>
+              Где:
+              <ul>
+                <li>
+                  W факт – фактическая скорость движения воды в трубках
+                  калорифера, м/с;
+                </li>
+                <li>
+                  G w факт – фактический массовый расход теплоносителя, кг/сек;
+                </li>
+                <li>
+                  p w – плотность воды при ее средней рабочей температуре,
+                  кг/м³;
+                </li>
+                <li>
+                  f w – площадь живого сечения одного хода выбранного калорифера
+                  для прохода воды, м².
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+        <div className="text-example space-y-2">
+          <div>
+            <ProductParagraph>
+              ⚙️ Пример расчета и подбора водяного калорифера. ШАГ 9
+            </ProductParagraph>
+            <ProductParagraph>
+              Подобрать водяной калорифер для нагрева приточного воздуха объемом
+              15000 м³/час. Расчетная температура наружного воздуха принимается
+              по средней температуре наиболее холодной пятидневки г.
+              Нижневартовска -40°С с обеспеченностью 0.92. Для компенсации
+              теплопотерь здания системой совмещенного воздушного отопления
+              требуемая температура подаваемого воздуха на выходе из калорифера
+              должна составлять +25°С. Теплоноситель — горячая вода с
+              параметрами температурного графика 95/70°С.
+            </ProductParagraph>
+          </div>
+
+          <div>
+            <ProductParagraph>
+              ДЕЙСТВИЕ 9. Рассчитать фактический расход воды и фактическую
+              скорость ее движения в трубках на основании реальной тепловой
+              мощности, вырабатываемой каждым калорифером.
+            </ProductParagraph>
+            <ProductParagraph>
+              Знаменатель для расчета расхода воды одинаков для всех моделей:{" "}
+              <span className="block text-2xl font-bold">
+                c w • (T1 - T2) = 4198 • (95 - 70) = 104950
+              </span>
+            </ProductParagraph>
+
+            <ul className="max-w-4xl space-y-2 sm:space-y-0.5">
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КСк 4-11</span>
+                <span className="text-xl font-bold">
+                  G w факт = 486766 / 104950 = 4.638 кг/сек = 16697 кг/час
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 311 (4 хода)</span>
+                <span className="text-xl font-bold">
+                  G w факт = 305547 / 104950 = 2.911 кг/сек = 10481 кг/час
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 311 (6 ходов)</span>
+                <span className="text-xl font-bold">
+                  G w факт = 317568 / 104950 = 3.026 кг/сек = 10893 кг/час
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 411 (4 хода)</span>
+                <span className="text-xl font-bold">
+                  G w факт = 383219 / 104950 = 3.651 кг/сек = 13145 кг/час
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 411 (6 ходов)</span>
+                <span className="text-xl font-bold">
+                  G w факт = 394283 / 104950 = 3.757 кг/сек = 13525 кг/час
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-14 А3 М</span>
+                <span className="text-xl font-bold">
+                  G w факт = 312395 / 104950 = 2.977 кг/сек = 10716 кг/час
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-14 А4 М</span>
+                <span className="text-xl font-bold">
+                  G w факт = 388571 / 104950 = 3.702 кг/сек = 13329 кг/час
+                </span>
+              </li>
+            </ul>
+            <ul className="max-w-4xl space-y-2 sm:space-y-0.5">
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КСк 4-11</span>
+                <span className="text-xl font-bold">
+                  W факт = 4.638 / (970 • 0.00312) = 4.638 / 3.026 = 1.53 м/с
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 311 (4 хода)</span>
+                <span className="text-xl font-bold">
+                  W факт = 2.911 / (970 • 0.00461) = 2.911 / 4.472 = 0.65 м/с
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 311 (6 ходов)</span>
+                <span className="text-xl font-bold">
+                  W факт = 3.026 / (970 • 0.00307) = 3.026 / 2.978 = 1.02 м/с
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 411 (4 хода)</span>
+                <span className="text-xl font-bold">
+                  W факт = 3.651 / (970 • 0.00610) = 3.651 / 5.917 = 0.62 м/с
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер ТВВ 411 (6 ходов)</span>
+                <span className="text-xl font-bold">
+                  W факт = 3.757 / (970 • 0.00406) = 3.757 / 3.938 = 0.95 м/с
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-14 А3 М</span>
+                <span className="text-xl font-bold">
+                  W факт = 2.977 / (970 • 0.00336) = 2.977 / 3.259 = 0.91 м/с
+                </span>
+              </li>
+              <li className="flex items-baseline justify-between gap-2">
+                <span>Калорифер КФБ-14 А4 М</span>
+                <span className="text-xl font-bold">
+                  W факт = 3.702 / (970 • 0.00444) = 3.702 / 4.307 = 0.86 м/с
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="text-secondary-text">
+            <ProductParagraph>
+              На основании выполненного расчета фактических параметров
+              теплоносителя проведен повторный анализ применимости оборудования,
+              по результатам которого из дальнейшего рассмотрения исключена
+              модель, не соответствующая эксплуатационным требованиям:
+            </ProductParagraph>
+            <ProductParagraph>
+              • Модель КСк 4-11 исключается из дальнейшего расчета. Из-за
+              избыточной площади поверхности нагрева ее фактическая
+              теплопроизводительность возрастает до 487 кВт. Данный избыток
+              мощности приводит к увеличению расхода теплоносителя через
+              калорифер до 16.7 т/ч. Как следствие, фактическая скорость
+              движения воды в трубках достигает 1.53 м/с, что превышает
+              предельно допустимый нормативный порог 1.2 м/с. Работа
+              оборудования в данном режиме приведет к возникновению
+              акустического шума в гидравлическом тракте, росту потерь давления,
+              а также вызовет ускоренную эрозию внутренних поверхностей каналов.
+            </ProductParagraph>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
