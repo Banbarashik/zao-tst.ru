@@ -760,7 +760,7 @@ export default async function RaschetPodborKaloriferovPage() {
               <li>
                 <ProductParagraph>
                   1.1 Определяем массовый расход нагреваемого воздуха:{" "}
-                  <span className="text-xl font-bold">
+                  <span className="font-bold">
                     G = 15000 • 1.33 = 19950 кг/час
                   </span>
                 </ProductParagraph>
@@ -778,7 +778,7 @@ export default async function RaschetPodborKaloriferovPage() {
               <li>
                 <ProductParagraph>
                   1.2 Определяем расход теплоты для нагрева воздушного потока:{" "}
-                  <span className="block text-xl font-bold">
+                  <span className="block font-bold">
                     Q = (19950/3600) • 1006 • (25 - (-40)) = 362370 Вт
                   </span>
                 </ProductParagraph>
@@ -1642,10 +1642,10 @@ export default async function RaschetPodborKaloriferovPage() {
                 <ProductParagraph>
                   1. Определяем разности температур греющей и нагреваемой сред
                   на входах и выходах из контура:
-                  <span className="block text-xl font-bold">
+                  <span className="block font-bold">
                     Δ t1 = T1 - T3 = 95 - 25 = 70°С
                   </span>{" "}
-                  <span className="block text-xl font-bold">
+                  <span className="block font-bold">
                     Δ t2 = T2 - T4 = 70 - (-40) = 110°С
                   </span>
                 </ProductParagraph>
@@ -1671,7 +1671,7 @@ export default async function RaschetPodborKaloriferovPage() {
                 <ProductParagraph>
                   2. Проверяем соотношение полученных температурных перепадов
                   для выбора расчетной формулы:{" "}
-                  <span className="block text-xl font-bold">
+                  <span className="block font-bold">
                     Δ T <sub>Б</sub> / Δ T <sub>М</sub> = 110 / 70 = 1.57
                   </span>
                 </ProductParagraph>
@@ -1680,7 +1680,7 @@ export default async function RaschetPodborKaloriferovPage() {
                   1.8 (Δ T <sub>Б</sub> / Δ T <sub>М</sub> ≤ 1.8), для расчета
                   среднего температурного напора применяется упрощенная формула
                   среднего арифметического:{" "}
-                  <span className="block text-xl font-bold">
+                  <span className="block font-bold">
                     Δ T = (Δ T <sub>Б</sub> + Δ T <sub>М</sub>) / 2 = (110 + 70)
                     / 2 = 90.0°С
                   </span>
@@ -1800,43 +1800,43 @@ export default async function RaschetPodborKaloriferovPage() {
             <ul className="max-w-xl space-y-2 sm:space-y-0.5">
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КСк 4-11</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q = 47.36 • 114.2 • 90.0 = 486766 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 311 (4 хода)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q = 53.38 • 63.6 • 90.0 = 305547 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 311 (6 ходов)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q = 55.48 • 63.6 • 90.0 = 317568 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q = 50.57 • 84.2 • 90.0 = 383219 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q = 52.03 • 84.2 • 90.0 = 394283 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А3 М</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q = 56.44 • 61.5 • 90.0 = 312395 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А4 М</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q = 53.04 • 81.4 • 90.0 = 388571 Вт
                 </span>
               </li>
@@ -1965,7 +1965,7 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
             <ProductParagraph>
               Знаменатель для расчета расхода воды одинаков для всех моделей:{" "}
-              <span className="block text-xl font-bold">
+              <span className="block font-bold">
                 c w • (T1 - T2) = 4198 • (95 - 70) = 104950
               </span>
             </ProductParagraph>
@@ -1973,43 +1973,43 @@ export default async function RaschetPodborKaloriferovPage() {
             <ul className="max-w-4xl space-y-2 sm:space-y-0.5">
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КСк 4-11</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   G w факт = 486766 / 104950 = 4.638 кг/сек = 16697 кг/час
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 311 (4 хода)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   G w факт = 305547 / 104950 = 2.911 кг/сек = 10481 кг/час
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 311 (6 ходов)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   G w факт = 317568 / 104950 = 3.026 кг/сек = 10893 кг/час
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   G w факт = 383219 / 104950 = 3.651 кг/сек = 13145 кг/час
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   G w факт = 394283 / 104950 = 3.757 кг/сек = 13525 кг/час
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А3 М</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   G w факт = 312395 / 104950 = 2.977 кг/сек = 10716 кг/час
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А4 М</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   G w факт = 388571 / 104950 = 3.702 кг/сек = 13329 кг/час
                 </span>
               </li>
@@ -2017,43 +2017,43 @@ export default async function RaschetPodborKaloriferovPage() {
             <ul className="max-w-4xl space-y-2 sm:space-y-0.5">
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КСк 4-11</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W факт = 4.638 / (970 • 0.00312) = 4.638 / 3.026 = 1.53 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 311 (4 хода)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W факт = 2.911 / (970 • 0.00461) = 2.911 / 4.472 = 0.65 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 311 (6 ходов)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W факт = 3.026 / (970 • 0.00307) = 3.026 / 2.978 = 1.02 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W факт = 3.651 / (970 • 0.00610) = 3.651 / 5.917 = 0.62 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W факт = 3.757 / (970 • 0.00406) = 3.757 / 3.938 = 0.95 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А3 М</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W факт = 2.977 / (970 • 0.00336) = 2.977 / 3.259 = 0.91 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А4 М</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W факт = 3.702 / (970 • 0.00444) = 3.702 / 4.307 = 0.86 м/с
                 </span>
               </li>
@@ -2151,42 +2151,42 @@ export default async function RaschetPodborKaloriferovPage() {
             <ul className="space-y-2 sm:space-y-0.5">
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 311 (4 хода)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   φ = ((305547 - 362370) / 362370) • 100 = (-56823 / 362370) •
                   100 = -15.7%
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 311 (6 ходов)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   φ = ((317568 - 362370) / 362370) • 100 = (-44802 / 362370) •
                   100 = -12.4%
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   φ = ((383219 - 362370) / 362370) • 100 = (20849 / 362370) •
                   100 = +5.8%
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   φ = ((394283 - 362370) / 362370) • 100 = (31913 / 362370) •
                   100 = +8.8%
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А3 М</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   φ = ((312395 - 362370) / 362370) • 100 = (-49975 / 362370) •
                   100 = -13.8%
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А4 М</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   φ = ((388571 - 362370) / 362370) • 100 = (26201 / 362370) •
                   100 = +7.2%
                 </span>
@@ -2329,15 +2329,15 @@ export default async function RaschetPodborKaloriferovPage() {
             <ul className="max-w-3xl space-y-2 sm:space-y-1">
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (4 и 6 ходов)</span>
-                <Formula example>
+                <span className="font-bold">
                   ΔP = 8.67 • 3.34 <sup>1848</sup> = 8.67 • 9.29 = 80.5 Па
-                </Formula>
+                </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А4 М</span>
-                <Formula example>
+                <span className="font-bold">
                   ΔP = 8.67 • 3.51 <sup>1848</sup> = 8.67 • 10.18 = 88.3 Па
-                </Formula>
+                </span>
               </li>
             </ul>
             <ul>
@@ -2465,19 +2465,19 @@ export default async function RaschetPodborKaloriferovPage() {
             <ul className="max-w-3xl space-y-2 sm:space-y-0.5">
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   ΔPw = 19.20 • 0.62² = 19.20 • 0.3844 = 7.38 кПа
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   ΔPw = 19.20 • 0.95² = 19.20 • 0.9025 = 17.33 кПа
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-14 А4 М</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   ΔPw = 19.08 • 0.86² = 19.08 • 0.7396 = 14.11 кПа
                 </span>
               </li>
