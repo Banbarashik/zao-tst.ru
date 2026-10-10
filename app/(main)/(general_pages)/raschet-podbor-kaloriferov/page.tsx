@@ -1,3 +1,5 @@
+import { KFB_12_A3, KFB_12_A4 } from "@/data/ntu-summary";
+
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -19,6 +21,7 @@ import LegacyHtml from "@/components/legacyHtml";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
 import WaterPropsOnSaturationLineTable from "@/components/general_pages/waterPropsOnSaturationLineTable";
+import { NtuSummaryTable } from "@/components/general_pages/ntuSummaryTable";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор паровых калориферов",
@@ -2649,6 +2652,18 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
           </div>
         </div>
+      </section>
+
+      {/* 14. Расчет и подбор водяных калориферов для технологического нагрева */}
+      <section className="mb-4 space-y-4">
+        <NumberedAnchor num={14} />
+        <Heading
+          lvl={2}
+          text="Расчет и подбор водяных калориферов для технологического нагрева"
+        />
+
+        <NtuSummaryTable data={KFB_12_A3} />
+        <NtuSummaryTable data={KFB_12_A4} />
       </section>
     </>
   );
