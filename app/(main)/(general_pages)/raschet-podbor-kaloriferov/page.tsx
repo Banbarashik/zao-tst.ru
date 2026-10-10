@@ -622,15 +622,15 @@ export default async function RaschetPodborKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Паровые калориферы",
-              url: "/kalorifer-par",
+              name: "Водяные калориферы",
+              url: "/kalorifer-voda",
               hiddenText:
-                "Температура и давление теплоносителя для парового калорифера",
+                "Конструкция и устройство водяного воздухонагревателя",
             },
             {
-              name: "Калькулятор паровой калорифер",
-              url: "/kalorifery-par#anchor3",
-              hiddenText: "Калькулятор подбора паровых калориферов онлайн",
+              name: "Калькулятор водяной калорифер",
+              url: "/kalorifery-voda#anchor3",
+              hiddenText: "Онлайн-расчет тепловой мощности водяных калориферов",
             },
           ]}
         />
@@ -647,15 +647,16 @@ export default async function RaschetPodborKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчетная температура воздуха",
+              name: "Методика расчета температуры",
               url: "/raschet-kaloriferov#anchor1",
               hiddenText:
-                "Температура воздуха при расчете калориферов приточной вентиляции",
+                "Температура для расчета и подбора водяных калориферов",
             },
             {
-              name: "Модели паровых калориферов",
-              url: "/kalorifer-par#anchor2",
-              hiddenText: "Калориферы для парового воздушного отопления",
+              name: "Модели водяных калориферов",
+              url: "/kalorifer-voda#anchor2",
+              hiddenText:
+                "Оребренные водяные калориферы для воздушного отопления",
             },
           ]}
         />
@@ -1016,13 +1017,13 @@ export default async function RaschetPodborKaloriferovPage() {
               name: "Массовая скорость воздуха",
               url: "/raschet-kaloriferov#anchor2",
               hiddenText:
-                "Массовая скорость воздуха в фронтальном сечении калорифера",
+                "Рекомендуемая массовая скорость воздуха в водяных калориферах",
             },
             {
-              name: "Параметры водяного пара",
-              url: "/kalorifer-par#anchor1",
+              name: "Параметры сетевой воды",
+              url: "/kalorifer-voda#anchor1",
               hiddenText:
-                "Таблица свойств водяного пара в зависимости от давления",
+                "Теплофизические свойства воды для расчетов калориферов",
             },
           ]}
         />
@@ -1498,16 +1499,16 @@ export default async function RaschetPodborKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчет коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+              name: "Расчет теплопередачи ",
+              url: "/koefficient-teploperedachi-kaloriferov#anchor2",
               hiddenText:
-                "Расчет коэффициента теплопередачи парового воздухонагревателя",
+                "Формула коэффициента теплопередачи водяного калорифера",
             },
             {
-              name: "Таблицы коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+              name: "Таблицы коэффициентов вода",
+              url: "/koefficient-teploperedachi-kaloriferov#anchor3",
               hiddenText:
-                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+                "Таблицы коэффициентов теплопередачи водяных калориферов",
             },
           ]}
         />
@@ -1701,16 +1702,14 @@ export default async function RaschetPodborKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчет коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
-              hiddenText:
-                "Расчет коэффициента теплопередачи парового воздухонагревателя",
+              name: "Теплоотдача калорифера",
+              url: "/koefficient-teploperedachi-kaloriferov#anchor4",
+              hiddenText: "Особенности теплоотдачи в водяных калориферах",
             },
             {
-              name: "Таблицы коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
-              hiddenText:
-                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+              name: "Интенсификация теплообмена",
+              url: "/koefficient-teploperedachi-kaloriferov#anchor5",
+              hiddenText: "Увеличение теплоотдачи водяного воздухонагревателя",
             },
           ]}
         />
@@ -2266,16 +2265,16 @@ export default async function RaschetPodborKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчет коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+              name: "Запас поверхности нагрева",
+              url: "/raschet-kaloriferov#anchor3",
               hiddenText:
-                "Расчет коэффициента теплопередачи парового воздухонагревателя",
+                "Методика расчета запаса мощности водяных калориферов",
             },
             {
-              name: "Таблицы коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+              name: "Выбор компоновки калориферов",
+              url: "/raschet-kaloriferov#anchor6",
               hiddenText:
-                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+                "Принципы подбора оптимальной компоновки водяных калориферов",
             },
           ]}
         />
@@ -2386,16 +2385,16 @@ export default async function RaschetPodborKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Запас поверхности нагрева",
-              url: "/raschet-kaloriferov#anchor3",
+              name: "Расчет воздушных потерь",
+              url: "/koefficient-teploperedachi-kaloriferov#anchor1",
               hiddenText:
-                "Запас поверхности теплообмена при расчете калориферов",
+                "Расчет потерь давления по воздуху в водяных теплообменниках",
             },
             {
-              name: "Запас сопротивления пар",
+              name: "Аэродинамический запас",
               url: "/raschet-kaloriferov#anchor4",
               hiddenText:
-                "Запас аэродинамического сопротивления при подборе калориферов",
+                "Методика расчета сопротивления по воздуху водяных калориферов",
             },
           ]}
         />
@@ -2532,16 +2531,16 @@ export default async function RaschetPodborKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчет коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+              name: "Гидравлическое сопротивление",
+              url: "/gidravlicheskoe-soprotivlenie-kaloriferov",
               hiddenText:
-                "Расчет коэффициента теплопередачи парового воздухонагревателя",
+                "Определение потерь давления по водяному контуру калориферов",
             },
             {
-              name: "Таблицы коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+              name: "Методика расчета потерь",
+              url: "/raschet-kaloriferov#anchor2",
               hiddenText:
-                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+                "Выбор гидравлического режима работы водяных калориферов",
             },
           ]}
         />
@@ -2576,16 +2575,15 @@ export default async function RaschetPodborKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчет коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
-              hiddenText:
-                "Расчет коэффициента теплопередачи парового воздухонагревателя",
+              name: "Расчет и подбор калориферов",
+              url: "/raschet-kaloriferov",
+              hiddenText: "Порядок расчета и подбора калориферов",
             },
             {
-              name: "Таблицы коэффициентов пар",
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+              name: "Производство калориферов",
+              url: "/kalorifery",
               hiddenText:
-                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+                "Промышленные водяные калориферы для северных районов",
             },
           ]}
         />
@@ -3061,16 +3059,16 @@ export default async function RaschetPodborKaloriferovPage() {
           <LinkButtonsBlock
             buttons={[
               {
-                name: "Расчет коэффициентов пар",
-                url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+                name: "Расчет водяных блоков",
+                url: "/kalorifer-blocks",
                 hiddenText:
-                  "Расчет коэффициента теплопередачи парового воздухонагревателя",
+                  "Многорядный нагрев водяными калориферами сушильных камер",
               },
               {
-                name: "Таблицы коэффициентов пар",
-                url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+                name: "Расчет паровых блоков",
+                url: "/podbor-raschet-kaloriferov#anchor12",
                 hiddenText:
-                  "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+                  "Многорядный нагрев паровыми калориферами сушильных камер",
               },
             ]}
           />
@@ -3111,10 +3109,6 @@ export default async function RaschetPodborKaloriferovPage() {
       </section>
     </>
   );
-}
-
-function FormulasList({ children }) {
-  return <ul className="max-w-3xl space-y-2 sm:space-y-0.5">{children}</ul>;
 }
 
 function Formula({ example = false, className = "", children }) {
