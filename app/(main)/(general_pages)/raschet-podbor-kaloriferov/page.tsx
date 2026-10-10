@@ -689,7 +689,7 @@ export default async function RaschetPodborKaloriferovPage() {
             <li>
               <ProductParagraph>
                 1.1 Определяем массовый расход приточного воздуха:{" "}
-                <span className="text-2xl font-bold">G = V • р</span>
+                <span className="text-xl font-bold">G = V • р</span>
               </ProductParagraph>
               <ul>
                 <li>G - массовый расход воздуха, кг/час;</li>
@@ -703,7 +703,7 @@ export default async function RaschetPodborKaloriferovPage() {
             <li>
               <ProductParagraph>
                 1.2 Определяем количество теплоты для нагревания воздуха:{" "}
-                <span className="text-2xl font-bold">
+                <span className="text-xl font-bold">
                   Q = (G / 3600) • c • (t{" "}
                   <span className="font-normal">кон</span> - t{" "}
                   <span className="font-normal">нач</span>)
@@ -817,7 +817,7 @@ export default async function RaschetPodborKaloriferovPage() {
           </ProductParagraph>
           <ProductParagraph>
             Площадь фронтального сечения определяем по формуле:{" "}
-            <span className="text-2xl font-bold">f = (G / 3600) / v</span>
+            <span className="text-xl font-bold">f = (G / 3600) / v</span>
           </ProductParagraph>
           <ul>
             <li>f – площадь фронтального сечения, м²;</li>
@@ -857,7 +857,7 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
             <ProductParagraph>
               Находим требуемую площадь фронтального сечения:{" "}
-              <span className="text-xl font-bold">
+              <span className="font-bold">
                 f = (19950/3600) / 3.6 = 1.539 м²
               </span>
             </ProductParagraph>
@@ -935,7 +935,7 @@ export default async function RaschetPodborKaloriferovPage() {
           <ProductParagraph>
             3. Находим действительную массовую скорость для выбранных
             калориферов:{" "}
-            <span className="text-2xl font-bold">
+            <span className="text-xl font-bold">
               v = (G / 3600) / F <sub>ф</sub>
             </span>
           </ProductParagraph>
@@ -984,13 +984,13 @@ export default async function RaschetPodborKaloriferovPage() {
             <FormulasList>
               <li className="flex items-baseline justify-between gap-2">
                 Калориферы КСк и ТВВ 11-го номера
-                <span className="block text-xl font-bold">
+                <span className="block font-bold">
                   v = (19950/3600) / 1.660 = 3.34 кг/(м²•с)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калориферы КФБ-А М 14-го номера
-                <span className="block text-xl font-bold">
+                <span className="block font-bold">
                   v = (19950/3600) / 1.577 = 3.51 кг/(м²•с)
                 </span>
               </li>
@@ -1037,7 +1037,7 @@ export default async function RaschetPodborKaloriferovPage() {
             4. Рассчитываем необходимый массовый расход теплоносителя (воды)
             исходя из требуемой тепловой мощности для нагрева заданного объема
             воздуха:{" "}
-            <span className="block text-2xl font-bold">
+            <span className="block text-xl font-bold">
               G<sub>w</sub> = Q / (c<sub>w</sub> • (t{" "}
               <sub className="font-normal">вх</sub> - t{" "}
               <sub className="font-normal">вых</sub>))
@@ -1104,7 +1104,7 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
             <ProductParagraph>
               Подсчет расхода воды:{" "}
-              <span className="text-xl font-bold">
+              <span className="font-bold">
                 G<sub>w</sub> = 362370 / (4198 • (95 - 70)) = 362370 / 104950 =
                 3.453 кг/сек = 12430 кг/час
               </span>
@@ -1141,7 +1141,7 @@ export default async function RaschetPodborKaloriferovPage() {
           <ProductParagraph>
             5. Находим скорость теплоносителя внутри трубок подобранных
             калориферов:{" "}
-            <span className="text-2xl font-bold">
+            <span className="text-xl font-bold">
               W = G<sub>w</sub> / (p<sub>w</sub> • f<sub>w</sub>)
             </span>
           </ProductParagraph>
@@ -1203,55 +1203,55 @@ export default async function RaschetPodborKaloriferovPage() {
             <FormulasList>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КСк 2-11
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W = 3.453 / (970 • 0.00156) = 3.453 / 1.513 = 2.28 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КСк 3-11
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W = 3.453 / (970 • 0.00236) = 3.453 / 2.289 = 1.51 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КСк 4-11
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W = 3.453 / (970 • 0.00312) = 3.453 / 3.026 = 1.14 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер ТВВ 311 (4 хода)
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W = 3.453 / (970 • 0.00461) = 3.453 / 4.472 = 0.77 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер ТВВ 311 (6 ходов)
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W = 3.453 / (970 • 0.00307) = 3.453 / 2.978 = 1.16 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер ТВВ 411 (4 хода)
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W = 3.453 / (970 • 0.00610) = 3.453 / 5.917 = 0.58 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер ТВВ 411 (6 ходов)
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W = 3.453 / (970 • 0.00406) = 3.453 / 3.938 = 0.88 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-14 А3 М
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W = 3.453 / (970 • 0.00336) = 3.453 / 3.259 = 1.06 м/с
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-14 А4 М
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   W = 3.453 / (970 • 0.00444) = 3.453 / 4.307 = 0.80 м/с
                 </span>
               </li>
@@ -1362,7 +1362,7 @@ export default async function RaschetPodborKaloriferovPage() {
           </ProductParagraph>
           <ProductParagraph>
             Формула для нахождения коэффициента теплопередачи имеет вид:{" "}
-            <span className="text-2xl font-bold">
+            <span className="text-xl font-bold">
               К = A • v <sup>n</sup> • W <sup>r</sup>
             </span>
           </ProductParagraph>
@@ -1418,49 +1418,49 @@ export default async function RaschetPodborKaloriferovPage() {
             <FormulasList>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КСк 4-11
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 25.5 • 3.34 <sup>0.496</sup> • 1.14 <sup>0.160</sup> =
                   47.36 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер ТВВ 311 (4 хода)
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 29.4 • 3.34 <sup>0.515</sup> • 0.77 <sup>0.0945 </sup> =
                   53.38 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер ТВВ 311 (6 ходов)
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 29.4 • 3.34 <sup>0.515</sup> • 1.16 <sup>0.0945 </sup> =
                   55.48 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер ТВВ 411 (4 хода)
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 28.1 • 3.34 <sup>0.518</sup> • 0.58 <sup>0.0681</sup> =
                   50.57 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер ТВВ 411 (6 ходов)
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 28.1 • 3.34 <sup>0.518</sup> • 0.88 <sup>0.0681</sup> =
                   52.03 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-14 А3 М
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 29.4 • 3.51 <sup>0.515</sup> • 1.06 <sup>0.0945 </sup> =
                   56.44 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-14 А4 М
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 28.1 • 3.51 <sup>0.518</sup> • 0.80 <sup>0.0681</sup> =
                   53.04 Вт/(м²•°C)
                 </span>
@@ -1534,10 +1534,10 @@ export default async function RaschetPodborKaloriferovPage() {
                 1. Находим разности температур сред на входе и выходе из
                 аппарата:
               </ProductParagraph>
-              <ProductParagraph className="text-2xl font-bold">
+              <ProductParagraph className="text-xl font-bold">
                 Δ t1 = T1 - T3
               </ProductParagraph>
-              <ProductParagraph className="text-2xl font-bold">
+              <ProductParagraph className="text-xl font-bold">
                 Δ t2 = T2 - T4
               </ProductParagraph>
               Где:
@@ -1573,7 +1573,7 @@ export default async function RaschetPodborKaloriferovPage() {
                 Если отношение Δ T <sub>Б</sub> / Δ T <sub>М</sub> меньше или
                 равно 1.8, температурный напор вычисляется как среднее
                 арифметическое:{" "}
-                <span className="block text-2xl font-bold">
+                <span className="block text-xl font-bold">
                   Δ T = (Δ T <sub>Б</sub> + Δ T <sub>М</sub>) / 2
                 </span>
               </ProductParagraph>
@@ -1581,7 +1581,7 @@ export default async function RaschetPodborKaloriferovPage() {
                 Если отношение Δ T <sub>Б</sub> / Δ T <sub>М</sub> больше 1.8,
                 температурный напор вычисляется по среднелогарифмической
                 зависимости:{" "}
-                <span className="block text-2xl font-bold">
+                <span className="block text-xl font-bold">
                   Δ T = (Δ T <sub>Б</sub> - Δ T <sub>М</sub>) / ln (Δ T{" "}
                   <sub>Б</sub> / Δ T <sub>М</sub>)
                 </span>
@@ -1726,7 +1726,7 @@ export default async function RaschetPodborKaloriferovPage() {
           </ProductParagraph>
           <ProductParagraph>
             Расчет фактической тепловой мощности производится по формуле:{" "}
-            <span className="block text-2xl font-bold">
+            <span className="block text-xl font-bold">
               Q <sub className="font-normal">ФАКТ</sub> = K • F <sub>К</sub> • Δ
               T
             </span>
@@ -1735,7 +1735,7 @@ export default async function RaschetPodborKaloriferovPage() {
             Если расчет среднего температурного напора на предыдущем этапе не
             выполнялся, допускается вычисление мощности через среднеинтервальную
             разность температур сред:{" "}
-            <span className="block text-2xl font-bold">
+            <span className="block text-xl font-bold">
               Q <sub className="font-normal">ФАКТ</sub> = K • F <sub>К</sub> •
               (((T1 + T2) / 2) - ((T4 + T3) / 2))
             </span>
@@ -1878,7 +1878,7 @@ export default async function RaschetPodborKaloriferovPage() {
             <li>
               <ProductParagraph>
                 9.1 Расчет фактического (действительного) расхода горячей воды:{" "}
-                <span className="block text-2xl font-bold">
+                <span className="block text-xl font-bold">
                   G w <sub className="font-normal">ФАКТ</sub> = Q{" "}
                   <sub className="font-normal">ФАКТ</sub> / (c <sub>w</sub> •
                   (T1 - T2))
@@ -1912,7 +1912,7 @@ export default async function RaschetPodborKaloriferovPage() {
               <ProductParagraph>
                 9.2 Расчет фактической (действительной) скорости движения
                 теплоносителя:{" "}
-                <span className="block text-2xl font-bold">
+                <span className="block text-xl font-bold">
                   W <sub className="font-normal">ФАКТ</sub> = G <sub>w</sub>{" "}
                   <sub className="font-normal">ФАКТ</sub> / (p <sub>w</sub> • f{" "}
                   <sub>w</sub>)
@@ -1965,7 +1965,7 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
             <ProductParagraph>
               Знаменатель для расчета расхода воды одинаков для всех моделей:{" "}
-              <span className="block text-2xl font-bold">
+              <span className="block text-xl font-bold">
                 c w • (T1 - T2) = 4198 • (95 - 70) = 104950
               </span>
             </ProductParagraph>
@@ -2095,7 +2095,7 @@ export default async function RaschetPodborKaloriferovPage() {
           <ProductParagraph>
             Определяем запас тепловой производительности (поверхности нагрева)
             подобранных моделей воздухонагревателей по формуле:
-            <span className="block text-2xl font-bold">
+            <span className="block text-xl font-bold">
               φ = ((Q <sub className="font-normal">ФАКТ</sub> - Q) / Q) • 100
             </span>
           </ProductParagraph>
@@ -2399,7 +2399,7 @@ export default async function RaschetPodborKaloriferovPage() {
           <ProductParagraph>
             Упрощенный расчет гидравлического сопротивления калорифера по воде
             производится по формуле:{" "}
-            <span className="block text-2xl font-bold">
+            <span className="block text-xl font-bold">
               ΔP<sub>w</sub> = C • W²
             </span>
           </ProductParagraph>
@@ -2662,8 +2662,426 @@ export default async function RaschetPodborKaloriferovPage() {
           text="Расчет и подбор водяных калориферов для технологического нагрева"
         />
 
+        <ProductParagraph>
+          При проектировании систем общеобменной вентиляции стандартный алгоритм
+          подбора (пункты 1–13) полностью закрывает потребности инженера. Однако
+          в производственных процессах (камерная сушка древесины, полимеров и
+          лакокрасочных покрытий, термообработка зернового сырья,
+          технологические циклы химической, текстильной или пищевой
+          промышленности) целевая температура воздуха должна составлять от +45
+          до +80 °C. Если на объекте доступны пар или перегретая вода, подбор
+          упрощается, но при наличии стандартного сетевого теплоносителя с
+          температурой +95 °C мощности одного прибора становится недостаточно.
+          Главным ограничивающим фактором в данном случае является крайне малая
+          разность температур (дельта) между греющей водой на входе и требуемым
+          горячим воздухом на выходе. Чтобы понять пределы возможностей
+          стандартной сетевой воды и выявить термодинамические тенденции
+          нагрева, необходимо компоновать многорядные калориферные установки
+          (блоки из нескольких теплообменников по ходу воздуха).
+        </ProductParagraph>
+
+        <ProductParagraph>
+          Если для расчета одиночных калориферов общеобменной вентиляции
+          стандартно используются простые методы среднеарифметического или
+          среднелогарифмического (LMTD) температурного напора, то для
+          многорядных технологических блоков они некорректны из-за эффекта
+          термодинамического затухания сред. В этих условиях вычисления строятся
+          на интегральном методе NTU и уравнениях Кэйса-Босмана. В то же время
+          порядный тепловой и гидравлический расчет позволяет увидеть скрытые
+          физические тенденции, неуловимые при общем осреднении. В частности, он
+          вскрывает зоны риска в хвостовых рядах при параллельной
+          перекрестноточной обвязке, где скорость движения воды падает до
+          ламинарных 0.08–0.15 м/с. Столь низкая скорость делает невозможным
+          естественный вынос выделяющихся газов потоком жидкости, что
+          гарантирует завоздушивание трубок, образование воздушных пробок и
+          требует особого внимания при проектировании автоматики смесительных
+          узлов.
+        </ProductParagraph>
+
+        <div>
+          <ProductParagraph>
+            Ниже приведены данные подбора 4-рядных установок при следующих
+            базовых условиях:
+          </ProductParagraph>
+          <ul>
+            <li>• Объем воздуха: 25 000 м³/ч (массовый расход 31 250 кг/ч).</li>
+            <li>• Начальная температура воздуха: +10 °C.</li>
+            <li>• Температура воды на входе: +95 °C.</li>
+          </ul>
+          <ProductParagraph>
+            Расчет выполнен для двух моделей калориферов со следующими площадями
+            поверхностей теплообмена:
+          </ProductParagraph>
+          <li>
+            • КФБ-12 А3 М — 48.2 м² (суммарная площадь поверхности нагрева 192.8
+            м²);
+          </li>
+          <li>
+            • КФБ-12 А4 М — 63.7 м² (суммарная площадь поверхности нагрева 254.8
+            м²).
+          </li>
+        </div>
+
         <NtuSummaryTable data={KFB_12_A3} />
         <NtuSummaryTable data={KFB_12_A4} />
+
+        {/* Сравнительный технический анализ схем обвязки */}
+        <section>
+          <Heading
+            lvl={3}
+            text="Сравнительный технический анализ схем обвязки"
+          />
+
+          <ol>
+            <li>
+              <ProductParagraph>
+                1. Термодинамическое сопоставление и съем мощности
+              </ProductParagraph>
+              <ul>
+                <li>
+                  • Температурные показатели противоточной схемы:
+                  Последовательный противоток на базе калорифера КФБ-12 А4 М
+                  обеспечивает нагрев воздуха до +77 °C в номинальном режиме при
+                  тепловой мощности 589 кВт. Данный показатель превышает
+                  расчетную мощность перекрестноточной схемы в обычном режиме на
+                  22 кВт, а прямоточной схемы — на 126 кВт (+27%).
+                </li>
+                <li>
+                  <p>
+                    • Температурный паритет: Противоточная и перекрестноточная
+                    (в обычном балансовом режиме) схемы обеспечивают
+                    сопоставимые тепловые параметры для модели А3 М (+68.4 °C и
+                    +68.5 °C) и близкие значения для модели А4 М (+77.1 °C и
+                    +74.5 °C).
+                  </p>
+                  <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+                    <div className="relative aspect-1000/600 w-full">
+                      <Image
+                        src="/img/general_pages/perecrest_standart_4_kalor_3_riada.png"
+                        alt="Гидравлическая параллельная схема обвязки блока 3-рядных калориферов"
+                        title="Блок 3-рядных калориферов. Перекрестная стандартная схема"
+                        fill
+                      />
+                    </div>
+                    <div className="relative aspect-1000/600 w-full">
+                      <Image
+                        src="/img/general_pages/perecrest_forsir_4_kalor_3_riada.png"
+                        alt="Форсированный гидравлический режим перекрестного тока калориферов"
+                        title="Блок 3-рядных калориферов. Перекрестная форсированная схема"
+                        fill
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  • Эффективность прямоточной схемы: Попутное движение сред
+                  характеризуется наименьшей тепловой эффективностью с КПД в
+                  диапазоне 54.6–62.0%. Вследствие взаимного выравнивания
+                  температур теплоносителей прямоточная схема ограничивает
+                  нагрев воздуха отметками +56...+63 °C, что делает ее
+                  нецелесообразной для применения в высокотемпературных
+                  процессах сушки.
+                </li>
+                <li>
+                  <p>
+                    • Интенсификация параметров в перекрестноточном
+                    форсированном режиме: Перекрестноточная схема при
+                    максимальном открытии регулирующей арматуры обеспечивает
+                    съем мощности с модели А4 М до 615 кВт при температуре
+                    воздуха +80.0 °C. Данный режим характеризуется увеличением
+                    расхода сетевой воды до 36.2 т/ч и возвратом в сеть
+                    недоохлажденного теплоносителя с температурой +80.4 °C.
+                  </p>
+                  <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+                    <div className="relative aspect-1000/600 w-full">
+                      <Image
+                        src="/img/general_pages/perecrest_standart_4_kalor_4_riada.png"
+                        alt="Параллельное подключение четырехрядных водяных воздухонагревателей"
+                        title="Блок 4-рядных калориферов. Перекрестная стандартная схема"
+                        fill
+                      />
+                    </div>
+                    <div className="relative aspect-1000/600 w-full">
+                      <Image
+                        src="/img/general_pages/perecrest_forsir_4_kalor_4_riada.png"
+                        alt="Чертеж блока 4-рядных водяных калориферов"
+                        title="Блок 4-рядных калориферов. Перекрестная форсированная схема"
+                        fill
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ProductParagraph>
+                2. Гидравлический анализ и сетевые ограничения
+              </ProductParagraph>
+              <ul>
+                <li>
+                  • Расходные характеристики теплоносителя: Противоточная схема
+                  является наиболее экономичной по потреблению сетевой воды. Для
+                  обеспечения мощности 589 кВт (модель А4 М) требуется проток в
+                  объеме 13 440 кг/ч, в то время как перекрестноточной схеме для
+                  достижения аналогичных параметров необходим расход от 19 500
+                  до 36 200 кг/ч.
+                </li>
+                <li>
+                  • Охлаждение обратной линии: Противоток обеспечивает снижение
+                  температуры обратной воды до +51.5...+57.3 °C, что снижает
+                  термическую нагрузку на тепловую сеть. Перекрестноточный
+                  форсированный режим повышает температуру обратной воды до
+                  +79.0...+80.4 °C, что требует согласования с источником
+                  теплоснабжения (котельной или ТЭЦ).
+                </li>
+                <li>
+                  <p>
+                    • Гидравлическое сопротивление контуров: Применение
+                    последовательных схем обвязки (прямоток и противоток)
+                    приводит к линейному суммированию потерь давления, в
+                    результате чего гидравлическое сопротивление четырехрядного
+                    блока достигает 80.1–80.6 кПа (порядка 8 метров водяного
+                    столба). Данный фактор требует установки высоконапорного
+                    насосного оборудования. Перекрестноточная схема за счет
+                    параллельного распределения потока по коллекторам
+                    характеризуется потерями давления в пределах 2.6–3.8 кПа в
+                    обычном режиме, что позволяет использовать циркуляционные
+                    насосы малой мощности.
+                  </p>
+                  <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+                    <div className="relative aspect-1000/600 w-full">
+                      <Image
+                        src="/img/general_pages/priamotok_4_kalor_3_riada.png"
+                        alt="Последовательный прямоток блоков водяных калориферов"
+                        title="Блок 3-рядных калориферов. Прямоточная схема обвязки"
+                        fill
+                      />
+                    </div>
+                    <div className="relative aspect-1000/600 w-full">
+                      <Image
+                        src="/img/general_pages/protivotok_4_kalor_3_riada.png"
+                        alt="Противоток в многорядных калориферных установках: расчет"
+                        title="Блок 3-рядных калориферов. Противоточная схема обвязки"
+                        fill
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ProductParagraph>
+                3. Аэродинамические показатели
+              </ProductParagraph>
+              <ul>
+                <li>
+                  <p>
+                    • Сопротивление по воздушному контуру инвариантно
+                    относительно схемы гидравлической обвязки и определяется
+                    геометрическими параметрами трубного пучка. Четырехрядный
+                    блок на базе модификации А3 М создает сопротивление
+                    воздушному потоку в 929 Па, а на базе модификации А4 М —
+                    1226 Па, что накладывает строгие ограничения на напорные
+                    характеристики приточного вентиляционного агрегата.
+                  </p>
+                  <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+                    <div className="relative aspect-1000/600 w-full">
+                      <Image
+                        src="/img/general_pages/priamotok_4_kalor_4_riada.png"
+                        alt="Расчет блоков водяных теплообменников по прямоточной схеме"
+                        title="Блок 4-рядных калориферов. Прямоточная схема обвязки"
+                        fill
+                      />
+                    </div>
+                    <div className="relative aspect-1000/600 w-full">
+                      <Image
+                        src="/img/general_pages/protivotok_4_kalor_4_riada.png"
+                        alt="Гидравлическая последовательная схема обвязки блока 4-рядных калориферов"
+                        title="Блок 4-рядных калориферов. Противоточная схема обвязки"
+                        fill
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        {/* Заключение по выбору схемы обвязки */}
+        <section>
+          <Heading lvl={3} text="Заключение по выбору схемы обвязки" />
+
+          <ol>
+            <li>
+              1. Применение перекрестноточной схемы (Обычный режим) технически
+              обосновано в качестве универсального и сбалансированного решения
+              для технологических процессов с целевой температурой воздуха до
+              +68...+74 °C. Схема обеспечивает удержание нормативной температуры
+              обратной воды (+70 °C) при минимальном гидравлическом
+              сопротивлении (до 4 кПа), исключая необходимость применения
+              высоконапорных насосных групп.
+            </li>
+            <li>
+              2. Применение последовательной противоточной схемы целесообразно в
+              проектах, где приоритетом является достижение максимальных
+              температурных параметров воздуха (до +77 °C) при установленном
+              лимите на расход сетевой воды и техническом требовании к глубокому
+              охлаждению обратной линии (до +57 °C). При проектировании данной
+              схемы гидравлический контур должен быть рассчитан на рабочее
+              давление не менее 80 кПа.
+            </li>
+            <li>
+              3. Перекрестноточный форсированный режим рекомендуется
+              использовать исключительно в качестве временной или аварийной меры
+              для интенсификации процесса сушки сырья, при условии готовности
+              тепловой сети объекта принять теплоноситель с температурой
+              обратной линии до +80 °C.
+            </li>
+            <li>
+              <p>
+                4. Последовательная прямоточная схема технически нерациональна
+                для применения в многорядных блоках технологического нагрева.
+                При идентичных прямотоку гидравлических нагрузках (80 кПа) схема
+                уступает альтернативным вариантам обвязки по развиваемой
+                тепловой мощности и ограничена по температуре нагрева воздуха
+                нижними отметками.
+              </p>
+              <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+                <div className="relative aspect-1000/600 w-full">
+                  <Image
+                    src="/img/general_pages/kalorifery_blok_sravnenie_temperatura.png"
+                    alt="График изменения температуры воздуха в блоке водяных калориферов по NTU"
+                    title="Сравнение температуры воздуха секции по схемам обвязки"
+                    fill
+                  />
+                </div>
+                <div className="relative aspect-1000/600 w-full">
+                  <Image
+                    src="/img/general_pages/kalorifery_blok_sravnenie_teplo.png"
+                    alt="Сравнение тепловой мощности калориферов по гидравлическим схемам"
+                    title="Сравнение тепловой мощности секции по схемам обвязки"
+                    fill
+                  />
+                </div>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        {/* Оптимизация рядности и высокотемпературный нагрев */}
+        <section className="space-y-4">
+          <Heading
+            lvl={3}
+            text="Оптимизация рядности и высокотемпературный нагрев"
+          />
+
+          <ProductParagraph>
+            Представленный технический анализ демонстрирует, что при
+            использовании стандартного сетевого теплоносителя с температурой +95
+            °C четырехрядные блоки в зависимости от схемы гидравлической обвязки
+            способны обеспечить нагрев воздуха в диапазоне от +56 до +80 °C.
+            Однако при проектировании сушильных камер и циркуляционных контуров
+            важно определить необходимое количество теплообменников в пакете в
+            зависимости от индивидуального технологического задания (целевой
+            температуры сушки, начальных параметров воздуха и лимитов по расходу
+            сред).
+          </ProductParagraph>
+
+          <ProductParagraph>
+            Если регламент процесса требует более умеренных конечных температур
+            (например, от +45 до +55 °C), максимальный 4-рядный пакет становится
+            избыточным. В таких условиях подбор оптимизируется уменьшением
+            рядности блока — калориферы эффективно компонуются по ходу движения
+            воздуха в группы из двух или трех приборов. Порядный расчет
+            позволяет обосновать, какое количество последовательно установленных
+            калориферов обеспечит проектный нагрев без нерационального
+            увеличения напорных характеристик вентиляторов и циркуляционных
+            насосов.
+          </ProductParagraph>
+
+          <div>
+            <ProductParagraph>
+              В случаях, когда целевая температура воздуха по ТЗ превышает этот
+              порог, необходимо перейти на альтернативные, более
+              высокопотенциальные теплоносители:
+            </ProductParagraph>
+            <ul>
+              <li>
+                • Перегретая вода (с графиком до +150 °C): сдвигает возможный
+                диапазон нагрева технологического воздуха до отметок +90...+110
+                °C;
+              </li>
+              <li>
+                • Сухой насыщенный пар: позволяет достичь предельных параметров
+                нагрева в диапазоне +130...+150 °C для линий скоростной сушки
+                или химической обработки сырья.
+              </li>
+            </ul>
+            <ProductParagraph>
+              За счет постоянной температуры фазового перехода пара по всей
+              поверхности теплообмена, многорядные пароконденсатные блоки
+              значительно ослабляют эффект термодинамического затухания по
+              сравнению с жидкостными системами.
+            </ProductParagraph>
+          </div>
+
+          <ProductParagraph>
+            Для инженеров-проектировщиков и технологов подготовлены профильные
+            расчетно-методические разделы с детальными базами расчетов и
+            алгоритмами подбора по многорядному водяному и паровому нагреву.
+          </ProductParagraph>
+
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "Расчет коэффициентов пар",
+                url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+                hiddenText:
+                  "Расчет коэффициента теплопередачи парового воздухонагревателя",
+              },
+              {
+                name: "Таблицы коэффициентов пар",
+                url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
+                hiddenText:
+                  "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+              },
+            ]}
+          />
+
+          <div>
+            <ProductParagraph>
+              Инженерные методики, представленные в специализированных разделах,
+              включают:
+            </ProductParagraph>
+            <ul>
+              <li>
+                • Пошаговые алгоритмы вычислений: примеры порядных расчетов для
+                блоков серий КФБ-А3 и КФБ-А4 с определением перепадов больших и
+                малых дельт температур, а также оценкой аэродинамических потерь
+                давления и гидравлического сопротивления контуров при
+                параллельном или последовательном подключении оборудования.
+              </li>
+              <li>
+                • Расчетные модели движения сред: теоретическое описание и
+                формулы эффективности для прямоточной, противоточной и
+                перекрестноточной схем гидравлической обвязки.
+              </li>
+              <li>
+                • Сравнительный теплоаэродинамический анализ: сопоставление
+                ключевых эксплуатационных показателей, таких как суммарная
+                выработанная теплопроизводительность, фактический расход пара
+                или воды, и напорные потери по воздушной стороне.
+              </li>
+              <li>
+                • Границы применимости схем: рекомендации по выбору конфигураций
+                для низкотемпературных режимов (деликатная сушка сырья),
+                среднетемпературных и высокотемпературных промышленных
+                комплексов.
+              </li>
+            </ul>
+          </div>
+        </section>
       </section>
     </>
   );
@@ -2676,7 +3094,7 @@ function FormulasList({ children }) {
 function Formula({ example = false, className = "", children }) {
   return (
     <span
-      className={`font-bold ${example ? "text-xl" : "text-2xl"} ${className}`}
+      className={`font-bold ${example ? "text-xl" : "text-xl"} ${className}`}
     >
       {children}
     </span>
