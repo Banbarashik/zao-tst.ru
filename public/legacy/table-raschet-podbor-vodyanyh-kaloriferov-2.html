@@ -36,11 +36,15 @@
       }
       .legacy-table.legacy-raschet-podbor-table th {
         font-size: 14px;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 2px;
+        padding-bottom: 2px;
       }
       .legacy-table.legacy-raschet-podbor-table .steam_kal_name {
-        width: 180px;
-        padding-left: 16px;
-        padding-right: 16px;
+        width: 120px;
+        padding-left: 8px;
+        padding-right: 8px;
       }
       .legacy-table.legacy-raschet-podbor-table .length {
         width: 200px;
@@ -85,19 +89,32 @@
                 <th rowspan="2" class="steam_kal_name">
                   Наименование водяного калорифера
                 </th>
-                <th colspan="5">Площадь, м<sup>2</sup></th>
-                <th rowspan="2">
-                  Число ходов по внутреннему теплоносителю, nx
-                </th>
-                <th rowspan="2">Емкость (объем), л</th>
-                <th rowspan="2">Масса, кг</th>
+                <th colspan="5" class="square">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="num_of_passes">Число ходов, nx</th>
+                <th rowspan="2" class="volume">Емкость (объем), л</th>
+                <th rowspan="2" class="weight">Масса, кг</th>
               </tr>
-              <tr>
-                <th>поверхности нагрева, F к</th>
-                <th>фронтального сечения, F ф</th>
-                <th>сечения коллектора, f к</th>
-                <th>сечения патрубка, f п</th>
-                <th>живого сечения для прохода воды, f w</th>
+              <tr class="square_of">
+                <th>
+                  поверхности нагрева,<br />
+                  F к
+                </th>
+                <th>
+                  фронтального сечения,<br />
+                  F ф
+                </th>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
               </tr>
             </thead>
 
@@ -270,24 +287,39 @@
                   Наименование водяного калорифера
                 </th>
                 <th colspan="5">Площадь, м<sup>2</sup></th>
-                <th rowspan="2">
-                  Число ходов по внутреннему теплоносителю, nx
-                </th>
+                <th rowspan="2">Число ходов, nx</th>
                 <th rowspan="2">Емкость (объем), л</th>
                 <th rowspan="2">Масса, кг</th>
               </tr>
-              <tr>
-                <th>поверхности нагрева, F к</th>
-                <th>фронтального сечения, F ф</th>
-                <th>сечения коллектора, f к</th>
-                <th>сечения патрубка, f п</th>
-                <th>живого сечения для прохода воды, f w</th>
+              <tr class="square_of">
+                <th>
+                  поверхности нагрева,<br />
+                  F к
+                </th>
+                <th>
+                  фронтального сечения,<br />
+                  F ф
+                </th>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td><a href="/kalorifer-kfb-2-m" target="_top">КФБ-2 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-2-m" target="_top">КФБ-2 А3 М</a>
+                </td>
                 <td>7.7</td>
                 <td>0.202</td>
                 <td>0.00379</td>
@@ -298,7 +330,9 @@
                 <td>35</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-3-m" target="_top">КФБ-3 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-3-m" target="_top">КФБ-3 А3 М</a>
+                </td>
                 <td>9.7</td>
                 <td>0.269</td>
                 <td>0.00379</td>
@@ -309,7 +343,9 @@
                 <td>44</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-4-m" target="_top">КФБ-4 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-4-m" target="_top">КФБ-4 А3 М</a>
+                </td>
                 <td>12.3</td>
                 <td>0.341</td>
                 <td>0.00379</td>
@@ -320,7 +356,9 @@
                 <td>49</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-5-m" target="_top">КФБ-5 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-5-m" target="_top">КФБ-5 А3 М</a>
+                </td>
                 <td>16.1</td>
                 <td>0.426</td>
                 <td>0.00379</td>
@@ -331,7 +369,9 @@
                 <td>61</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-6-m" target="_top">КФБ-6 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-6-m" target="_top">КФБ-6 А3 М</a>
+                </td>
                 <td>19.4</td>
                 <td>0.516</td>
                 <td>0.00379</td>
@@ -342,7 +382,9 @@
                 <td>72</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-7-m" target="_top">КФБ-7 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-7-m" target="_top">КФБ-7 А3 М</a>
+                </td>
                 <td>24.1</td>
                 <td>0.619</td>
                 <td>0.00379</td>
@@ -353,7 +395,9 @@
                 <td>87</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-8-m" target="_top">КФБ-8 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-8-m" target="_top">КФБ-8 А3 М</a>
+                </td>
                 <td>28.2</td>
                 <td>0.727</td>
                 <td>0.00379</td>
@@ -364,7 +408,9 @@
                 <td>100</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-9-m" target="_top">КФБ-9 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-9-m" target="_top">КФБ-9 А3 М</a>
+                </td>
                 <td>31.8</td>
                 <td>0.848</td>
                 <td>0.00379</td>
@@ -375,7 +421,9 @@
                 <td>115</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-10-m" target="_top">КФБ-10 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-10-m" target="_top">КФБ-10 А3 М</a>
+                </td>
                 <td>36.5</td>
                 <td>0.974</td>
                 <td>0.00379</td>
@@ -386,7 +434,9 @@
                 <td>132</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-11-m" target="_top">КФБ-11 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-11-m" target="_top">КФБ-11 А3 М</a>
+                </td>
                 <td>42.7</td>
                 <td>1.114</td>
                 <td>0.00379</td>
@@ -397,7 +447,9 @@
                 <td>149</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-12-m" target="_top">КФБ-12 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-12-m" target="_top">КФБ-12 А3 М</a>
+                </td>
                 <td>48.2</td>
                 <td>1.258</td>
                 <td>0.00379</td>
@@ -408,7 +460,9 @@
                 <td>167</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-13-m" target="_top">КФБ-13 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-13-m" target="_top">КФБ-13 А3 М</a>
+                </td>
                 <td>55.2</td>
                 <td>1.415</td>
                 <td>0.00379</td>
@@ -419,7 +473,9 @@
                 <td>194</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-14-m" target="_top">КФБ-14 А3 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-14-m" target="_top">КФБ-14 А3 М</a>
+                </td>
                 <td>61.5</td>
                 <td>1.577</td>
                 <td>0.00379</td>
@@ -443,24 +499,39 @@
                   Наименование водяного калорифера
                 </th>
                 <th colspan="5">Площадь, м<sup>2</sup></th>
-                <th rowspan="2">
-                  Число ходов по внутреннему теплоносителю, nx
-                </th>
+                <th rowspan="2">Число ходов, nx</th>
                 <th rowspan="2">Емкость (объем), л</th>
                 <th rowspan="2">Масса, кг</th>
               </tr>
-              <tr>
-                <th>поверхности нагрева, F к</th>
-                <th>фронтального сечения, F ф</th>
-                <th>сечения коллектора, f к</th>
-                <th>сечения патрубка, f п</th>
-                <th>живого сечения для прохода воды, f w</th>
+              <tr class="square_of">
+                <th>
+                  поверхности нагрева,<br />
+                  F к
+                </th>
+                <th>
+                  фронтального сечения,<br />
+                  F ф
+                </th>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td><a href="/kalorifer-kfb-2-m-p" target="_top">КФБ-2 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-2-m-p" target="_top">КФБ-2 А4 М</a>
+                </td>
                 <td>10.0</td>
                 <td>0.202</td>
                 <td>0.00523</td>
@@ -471,7 +542,9 @@
                 <td>41</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-3-m-p" target="_top">КФБ-3 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-3-m-p" target="_top">КФБ-3 А4 М</a>
+                </td>
                 <td>13.4</td>
                 <td>0.269</td>
                 <td>0.00523</td>
@@ -482,7 +555,9 @@
                 <td>53</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-4-m-p" target="_top">КФБ-4 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-4-m-p" target="_top">КФБ-4 А4 М</a>
+                </td>
                 <td>16.9</td>
                 <td>0.341</td>
                 <td>0.00523</td>
@@ -493,7 +568,9 @@
                 <td>65</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-5-m-p" target="_top">КФБ-5 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-5-m-p" target="_top">КФБ-5 А4 М</a>
+                </td>
                 <td>21.2</td>
                 <td>0.426</td>
                 <td>0.00523</td>
@@ -504,7 +581,9 @@
                 <td>81</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-6-m-p" target="_top">КФБ-6 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-6-m-p" target="_top">КФБ-6 А4 М</a>
+                </td>
                 <td>25.6</td>
                 <td>0.516</td>
                 <td>0.00523</td>
@@ -515,7 +594,9 @@
                 <td>96</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-7-m-p" target="_top">КФБ-7 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-7-m-p" target="_top">КФБ-7 А4 М</a>
+                </td>
                 <td>31.7</td>
                 <td>0.619</td>
                 <td>0.00523</td>
@@ -526,7 +607,9 @@
                 <td>116</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-8-m-p" target="_top">КФБ-8 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-8-m-p" target="_top">КФБ-8 А4 М</a>
+                </td>
                 <td>37.2</td>
                 <td>0.727</td>
                 <td>0.00523</td>
@@ -537,7 +620,9 @@
                 <td>133</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-9-m-p" target="_top">КФБ-9 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-9-m-p" target="_top">КФБ-9 А4 М</a>
+                </td>
                 <td>43.2</td>
                 <td>0.848</td>
                 <td>0.00523</td>
@@ -548,7 +633,9 @@
                 <td>154</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-10-m-p" target="_top">КФБ-10 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-10-m-p" target="_top">КФБ-10 А4 М</a>
+                </td>
                 <td>49.5</td>
                 <td>0.974</td>
                 <td>0.00523</td>
@@ -559,7 +646,9 @@
                 <td>173</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-11-m-p" target="_top">КФБ-11 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-11-m-p" target="_top">КФБ-11 А4 М</a>
+                </td>
                 <td>56.5</td>
                 <td>1.114</td>
                 <td>0.00523</td>
@@ -570,7 +659,9 @@
                 <td>198</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-12-m-p" target="_top">КФБ-12 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-12-m-p" target="_top">КФБ-12 А4 М</a>
+                </td>
                 <td>63.7</td>
                 <td>1.258</td>
                 <td>0.00523</td>
@@ -581,7 +672,9 @@
                 <td>220</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-13-m-p" target="_top">КФБ-13 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-13-m-p" target="_top">КФБ-13 А4 М</a>
+                </td>
                 <td>73.0</td>
                 <td>1.415</td>
                 <td>0.00523</td>
@@ -592,7 +685,9 @@
                 <td>256</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-kfb-14-m-p" target="_top">КФБ-14 А4 М</a></td>
+                <td>
+                  <a href="/kalorifer-kfb-14-m-p" target="_top">КФБ-14 А4 М</a>
+                </td>
                 <td>81.4</td>
                 <td>1.577</td>
                 <td>0.00523</td>
@@ -616,18 +711,31 @@
                   Наименование водяного калорифера
                 </th>
                 <th colspan="5">Площадь, м<sup>2</sup></th>
-                <th rowspan="2">
-                  Число ходов по внутреннему теплоносителю, nx
-                </th>
+                <th rowspan="2">Число ходов, nx</th>
                 <th rowspan="2">Емкость (объем), л</th>
                 <th rowspan="2">Масса, кг</th>
               </tr>
-              <tr>
-                <th>поверхности нагрева, F к</th>
-                <th>фронтального сечения, F ф</th>
-                <th>сечения коллектора, f к</th>
-                <th>сечения патрубка, f п</th>
-                <th>живого сечения для прохода воды, f w</th>
+              <tr class="square_of">
+                <th>
+                  поверхности нагрева,<br />
+                  F к
+                </th>
+                <th>
+                  фронтального сечения,<br />
+                  F ф
+                </th>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
               </tr>
             </thead>
 
@@ -732,7 +840,9 @@
                 <td>39</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-ksk-2-10" target="_top">КСк 2-10</a></td>
+                <td>
+                  <a href="/kalorifer-ksk-2-10" target="_top">КСк 2-10</a>
+                </td>
                 <td>19.5</td>
                 <td>0.581</td>
                 <td>0.00152</td>
@@ -743,7 +853,9 @@
                 <td>46</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-ksk-2-11" target="_top">КСк 2-11</a></td>
+                <td>
+                  <a href="/kalorifer-ksk-2-11" target="_top">КСк 2-11</a>
+                </td>
                 <td>57.1</td>
                 <td>1.660</td>
                 <td>0.00152</td>
@@ -754,7 +866,9 @@
                 <td>120</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-ksk-2-12" target="_top">КСк 2-12</a></td>
+                <td>
+                  <a href="/kalorifer-ksk-2-12" target="_top">КСк 2-12</a>
+                </td>
                 <td>86.2</td>
                 <td>2.488</td>
                 <td>0.00152</td>
@@ -778,18 +892,31 @@
                   Наименование водяного калорифера
                 </th>
                 <th colspan="5">Площадь, м<sup>2</sup></th>
-                <th rowspan="2">
-                  Число ходов по внутреннему теплоносителю, nx
-                </th>
+                <th rowspan="2">Число ходов, nx</th>
                 <th rowspan="2">Емкость (объем), л</th>
                 <th rowspan="2">Масса, кг</th>
               </tr>
-              <tr>
-                <th>поверхности нагрева, F к</th>
-                <th>фронтального сечения, F ф</th>
-                <th>сечения коллектора, f к</th>
-                <th>сечения патрубка, f п</th>
-                <th>живого сечения для прохода воды, f w</th>
+              <tr class="square_of">
+                <th>
+                  поверхности нагрева,<br />
+                  F к
+                </th>
+                <th>
+                  фронтального сечения,<br />
+                  F ф
+                </th>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
               </tr>
             </thead>
 
@@ -894,7 +1021,9 @@
                 <td>54</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-ksk-3-10" target="_top">КСк 3-10</a></td>
+                <td>
+                  <a href="/kalorifer-ksk-3-10" target="_top">КСк 3-10</a>
+                </td>
                 <td>29.7</td>
                 <td>0.581</td>
                 <td>0.00164</td>
@@ -905,7 +1034,9 @@
                 <td>65</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-ksk-3-11" target="_top">КСк 3-11</a></td>
+                <td>
+                  <a href="/kalorifer-ksk-3-11" target="_top">КСк 3-11</a>
+                </td>
                 <td>86.2</td>
                 <td>1.660</td>
                 <td>0.00164</td>
@@ -916,7 +1047,9 @@
                 <td>163</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-ksk-3-12" target="_top">КСк 3-12</a></td>
+                <td>
+                  <a href="/kalorifer-ksk-3-12" target="_top">КСк 3-12</a>
+                </td>
                 <td>129.9</td>
                 <td>2.488</td>
                 <td>0.00164</td>
@@ -940,18 +1073,31 @@
                   Наименование водяного калорифера
                 </th>
                 <th colspan="5">Площадь, м<sup>2</sup></th>
-                <th rowspan="2">
-                  Число ходов по внутреннему теплоносителю, nx
-                </th>
+                <th rowspan="2">Число ходов, nx</th>
                 <th rowspan="2">Емкость (объем), л</th>
                 <th rowspan="2">Масса, кг</th>
               </tr>
-              <tr>
-                <th>поверхности нагрева, F к</th>
-                <th>фронтального сечения, F ф</th>
-                <th>сечения коллектора, f к</th>
-                <th>сечения патрубка, f п</th>
-                <th>живого сечения для прохода воды, f w</th>
+              <tr class="square_of">
+                <th>
+                  поверхности нагрева,<br />
+                  F к
+                </th>
+                <th>
+                  фронтального сечения,<br />
+                  F ф
+                </th>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
               </tr>
             </thead>
 
@@ -1056,7 +1202,9 @@
                 <td>65</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-ksk-4-10" target="_top">КСк 4-10</a></td>
+                <td>
+                  <a href="/kalorifer-ksk-4-10" target="_top">КСк 4-10</a>
+                </td>
                 <td>39.0</td>
                 <td>0.581</td>
                 <td>0.00224</td>
@@ -1067,7 +1215,9 @@
                 <td>79</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-ksk-4-11" target="_top">КСк 4-11</a></td>
+                <td>
+                  <a href="/kalorifer-ksk-4-11" target="_top">КСк 4-11</a>
+                </td>
                 <td>114.2</td>
                 <td>1.660</td>
                 <td>0.00224</td>
@@ -1078,7 +1228,9 @@
                 <td>206</td>
               </tr>
               <tr>
-                <td><a href="/kalorifer-ksk-4-12" target="_top">КСк 4-12</a></td>
+                <td>
+                  <a href="/kalorifer-ksk-4-12" target="_top">КСк 4-12</a>
+                </td>
                 <td>172.4</td>
                 <td>2.488</td>
                 <td>0.00224</td>
