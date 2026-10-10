@@ -970,7 +970,7 @@ export default async function RaschetPodborKaloriferovPage() {
               параметрами температурного графика 95/70°С.
             </ProductParagraph>
           </div>
-          <div>
+          <div className="space-y-3">
             <ProductParagraph>
               ДЕЙСТВИЕ 3. Найти действительную массовую скорость во фронтальном
               сечении теплообменников, выбранных для расчета и подбора.
@@ -981,31 +981,33 @@ export default async function RaschetPodborKaloriferovPage() {
               водяного промышленного воздухоподогревателя одного типоразмера,
               вне зависимости от рядности, будет одинакова.
             </ProductParagraph>
-            <FormulasList>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калориферы КСк и ТВВ 11-го номера
-                <span className="block font-bold">
-                  v = (19950/3600) / 1.660 = 3.34 кг/(м²•с)
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калориферы КФБ-А М 14-го номера
-                <span className="block font-bold">
-                  v = (19950/3600) / 1.577 = 3.51 кг/(м²•с)
-                </span>
-              </li>
-            </FormulasList>
-            <ul>
-              <li>
-                v – действительная массовая скорость во фронтальном сечении,
-                кг/(м²•с);
-              </li>
-              <li>19950 – массовый расход воздуха, кг/час;</li>
-              <li>
-                1.660, 1.577 – площадь фронтального сечения калориферов КСк,
-                ТВВ, КФБ-А М, принимаемых в расчет, м².
-              </li>
-            </ul>
+            <div className="space-y-1">
+              <ul className="max-w-5xl space-y-2 sm:space-y-0.5">
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калориферы КСк и ТВВ 11-го номера
+                  <span className="block font-bold">
+                    v = (19950/3600) / 1.660 = 3.34 кг/(м²•с)
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калориферы КФБ-А М 14-го номера
+                  <span className="block font-bold">
+                    v = (19950/3600) / 1.577 = 3.51 кг/(м²•с)
+                  </span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  v – действительная массовая скорость во фронтальном сечении,
+                  кг/(м²•с);
+                </li>
+                <li>19950 – массовый расход воздуха, кг/час;</li>
+                <li>
+                  1.660, 1.577 – площадь фронтального сечения калориферов КСк,
+                  ТВВ, КФБ-А М, принимаемых в расчет, м².
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <LinkButtonsBlock
@@ -1192,7 +1194,7 @@ export default async function RaschetPodborKaloriferovPage() {
               параметрами температурного графика 95/70°С.
             </ProductParagraph>
           </div>
-          <div>
+          <div className="space-y-3">
             <ProductParagraph>
               ДЕЙСТВИЕ 5. Найти скорость движения воды внутри нагревательных
               трубок подобранных теплообменников при расходе теплоносителя 3.453
@@ -1200,73 +1202,75 @@ export default async function RaschetPodborKaloriferovPage() {
               шестиходовом исполнении, поэтому в расчете задействованы оба
               варианта.
             </ProductParagraph>
-            <FormulasList>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер КСк 2-11
-                <span className="font-bold">
-                  W = 3.453 / (970 • 0.00156) = 3.453 / 1.513 = 2.28 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер КСк 3-11
-                <span className="font-bold">
-                  W = 3.453 / (970 • 0.00236) = 3.453 / 2.289 = 1.51 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер КСк 4-11
-                <span className="font-bold">
-                  W = 3.453 / (970 • 0.00312) = 3.453 / 3.026 = 1.14 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер ТВВ 311 (4 хода)
-                <span className="font-bold">
-                  W = 3.453 / (970 • 0.00461) = 3.453 / 4.472 = 0.77 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер ТВВ 311 (6 ходов)
-                <span className="font-bold">
-                  W = 3.453 / (970 • 0.00307) = 3.453 / 2.978 = 1.16 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер ТВВ 411 (4 хода)
-                <span className="font-bold">
-                  W = 3.453 / (970 • 0.00610) = 3.453 / 5.917 = 0.58 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер ТВВ 411 (6 ходов)
-                <span className="font-bold">
-                  W = 3.453 / (970 • 0.00406) = 3.453 / 3.938 = 0.88 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер КФБ-14 А3 М
-                <span className="font-bold">
-                  W = 3.453 / (970 • 0.00336) = 3.453 / 3.259 = 1.06 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер КФБ-14 А4 М
-                <span className="font-bold">
-                  W = 3.453 / (970 • 0.00444) = 3.453 / 4.307 = 0.80 м/с
-                </span>
-              </li>
-            </FormulasList>
-            <ul>
-              <li>W – скорость движения воды в трубках калорифера, м/с;</li>
-              <li>3.453 – массовый расход теплоносителя, кг/сек;</li>
-              <li>
-                970 – плотность воды при ее средней температуре 82.5°С, кг/м³;
-              </li>
-              <li>
-                0.00156...0.00610 – площади живого сечения одного хода
-                соответствующих моделей, м².
-              </li>
-            </ul>
+            <div className="space-y-1">
+              <ul className="max-w-3xl space-y-2 sm:space-y-0.5">
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер КСк 2-11
+                  <span className="font-bold">
+                    W = 3.453 / (970 • 0.00156) = 3.453 / 1.513 = 2.28 м/с
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер КСк 3-11
+                  <span className="font-bold">
+                    W = 3.453 / (970 • 0.00236) = 3.453 / 2.289 = 1.51 м/с
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер КСк 4-11
+                  <span className="font-bold">
+                    W = 3.453 / (970 • 0.00312) = 3.453 / 3.026 = 1.14 м/с
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер ТВВ 311 (4 хода)
+                  <span className="font-bold">
+                    W = 3.453 / (970 • 0.00461) = 3.453 / 4.472 = 0.77 м/с
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер ТВВ 311 (6 ходов)
+                  <span className="font-bold">
+                    W = 3.453 / (970 • 0.00307) = 3.453 / 2.978 = 1.16 м/с
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер ТВВ 411 (4 хода)
+                  <span className="font-bold">
+                    W = 3.453 / (970 • 0.00610) = 3.453 / 5.917 = 0.58 м/с
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер ТВВ 411 (6 ходов)
+                  <span className="font-bold">
+                    W = 3.453 / (970 • 0.00406) = 3.453 / 3.938 = 0.88 м/с
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер КФБ-14 А3 М
+                  <span className="font-bold">
+                    W = 3.453 / (970 • 0.00336) = 3.453 / 3.259 = 1.06 м/с
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер КФБ-14 А4 М
+                  <span className="font-bold">
+                    W = 3.453 / (970 • 0.00444) = 3.453 / 4.307 = 0.80 м/с
+                  </span>
+                </li>
+              </ul>
+              <ul>
+                <li>W – скорость движения воды в трубках калорифера, м/с;</li>
+                <li>3.453 – массовый расход теплоносителя, кг/сек;</li>
+                <li>
+                  970 – плотность воды при ее средней температуре 82.5°С, кг/м³;
+                </li>
+                <li>
+                  0.00156...0.00610 – площади живого сечения одного хода
+                  соответствующих моделей, м².
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="text-secondary-text space-y-4">
@@ -1405,7 +1409,7 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
           </div>
 
-          <div>
+          <div className="space-y-3">
             <ProductParagraph>
               ДЕЙСТВИЕ 6. Рассчитать коэффициент теплопередачи для всех моделей
               калориферов, соответствующих гидравлическим критериям предыдущего
@@ -1415,70 +1419,72 @@ export default async function RaschetPodborKaloriferovPage() {
               предыдущего расчета, эмпирические коэффициенты завода-изготовителя
               принимаются по табличным данным.
             </ProductParagraph>
-            <FormulasList>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер КСк 4-11
-                <span className="font-bold">
-                  К = 25.5 • 3.34 <sup>0.496</sup> • 1.14 <sup>0.160</sup> =
-                  47.36 Вт/(м²•°C)
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер ТВВ 311 (4 хода)
-                <span className="font-bold">
-                  К = 29.4 • 3.34 <sup>0.515</sup> • 0.77 <sup>0.0945 </sup> =
-                  53.38 Вт/(м²•°C)
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер ТВВ 311 (6 ходов)
-                <span className="font-bold">
-                  К = 29.4 • 3.34 <sup>0.515</sup> • 1.16 <sup>0.0945 </sup> =
-                  55.48 Вт/(м²•°C)
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер ТВВ 411 (4 хода)
-                <span className="font-bold">
-                  К = 28.1 • 3.34 <sup>0.518</sup> • 0.58 <sup>0.0681</sup> =
-                  50.57 Вт/(м²•°C)
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер ТВВ 411 (6 ходов)
-                <span className="font-bold">
-                  К = 28.1 • 3.34 <sup>0.518</sup> • 0.88 <sup>0.0681</sup> =
-                  52.03 Вт/(м²•°C)
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер КФБ-14 А3 М
-                <span className="font-bold">
-                  К = 29.4 • 3.51 <sup>0.515</sup> • 1.06 <sup>0.0945 </sup> =
-                  56.44 Вт/(м²•°C)
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                Калорифер КФБ-14 А4 М
-                <span className="font-bold">
-                  К = 28.1 • 3.51 <sup>0.518</sup> • 0.80 <sup>0.0681</sup> =
-                  53.04 Вт/(м²•°C)
-                </span>
-              </li>
-            </FormulasList>
-            <ul>
-              <li>
-                К – коэффициент теплопередачи биметаллического калорифера,
-                Вт/(м²·°С);
-              </li>
-              <li>
-                3.34, 3.51 – действительные массовые скорости воздуха,
-                кг/(м²·с);
-              </li>
-              <li>
-                0.58...1.16 – скорости движения теплоносителя в трубках, м/с.
-              </li>
-            </ul>
+            <div className="space-y-1">
+              <ul className="max-w-3xl space-y-2 sm:space-y-0.5">
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер КСк 4-11
+                  <span className="font-bold">
+                    К = 25.5 • 3.34 <sup>0.496</sup> • 1.14 <sup>0.160</sup> =
+                    47.36 Вт/(м²•°C)
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер ТВВ 311 (4 хода)
+                  <span className="font-bold">
+                    К = 29.4 • 3.34 <sup>0.515</sup> • 0.77 <sup>0.0945 </sup> =
+                    53.38 Вт/(м²•°C)
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер ТВВ 311 (6 ходов)
+                  <span className="font-bold">
+                    К = 29.4 • 3.34 <sup>0.515</sup> • 1.16 <sup>0.0945 </sup> =
+                    55.48 Вт/(м²•°C)
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер ТВВ 411 (4 хода)
+                  <span className="font-bold">
+                    К = 28.1 • 3.34 <sup>0.518</sup> • 0.58 <sup>0.0681</sup> =
+                    50.57 Вт/(м²•°C)
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер ТВВ 411 (6 ходов)
+                  <span className="font-bold">
+                    К = 28.1 • 3.34 <sup>0.518</sup> • 0.88 <sup>0.0681</sup> =
+                    52.03 Вт/(м²•°C)
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер КФБ-14 А3 М
+                  <span className="font-bold">
+                    К = 29.4 • 3.51 <sup>0.515</sup> • 1.06 <sup>0.0945 </sup> =
+                    56.44 Вт/(м²•°C)
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  Калорифер КФБ-14 А4 М
+                  <span className="font-bold">
+                    К = 28.1 • 3.51 <sup>0.518</sup> • 0.80 <sup>0.0681</sup> =
+                    53.04 Вт/(м²•°C)
+                  </span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  К – коэффициент теплопередачи биметаллического калорифера,
+                  Вт/(м²·°С);
+                </li>
+                <li>
+                  3.34, 3.51 – действительные массовые скорости воздуха,
+                  кг/(м²·с);
+                </li>
+                <li>
+                  0.58...1.16 – скорости движения теплоносителя в трубках, м/с.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -1790,70 +1796,72 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
           </div>
 
-          <div>
+          <div className="space-y-3">
             <ProductParagraph>
               ДЕЙСТВИЕ 8. Рассчитать действительную (фактическую) тепловую
               мощность подобранных водяных воздухонагревателей.
             </ProductParagraph>
-            <ul className="max-w-3xl space-y-2 sm:space-y-0.5">
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КСк 4-11</span>
-                <span className="font-bold">
-                  Q факт = 47.36 • 114.2 • 90.0 = 486766 Вт
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 311 (4 хода)</span>
-                <span className="font-bold">
-                  Q факт = 53.38 • 63.6 • 90.0 = 305547 Вт
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 311 (6 ходов)</span>
-                <span className="font-bold">
-                  Q факт = 55.48 • 63.6 • 90.0 = 317568 Вт
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="font-bold">
-                  Q факт = 50.57 • 84.2 • 90.0 = 383219 Вт
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="font-bold">
-                  Q факт = 52.03 • 84.2 • 90.0 = 394283 Вт
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А3 М</span>
-                <span className="font-bold">
-                  Q факт = 56.44 • 61.5 • 90.0 = 312395 Вт
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А4 М</span>
-                <span className="font-bold">
-                  Q факт = 53.04 • 81.4 • 90.0 = 388571 Вт
-                </span>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                Q <sub>факт</sub> – вырабатываемая калорифером фактическая
-                производительность по теплу, Вт;
-              </li>
-              <li>
-                47.36...56.44 – коэффициенты теплопередачи соответствующих
-                модификаций, Вт/(м²·°С);
-              </li>
-              <li>
-                61.5...114.2 – площадь поверхности нагрева выбранных калориферов
-                по каталогу, м²;
-              </li>
-              <li>90.0 – средний температурный напор, °С.</li>
-            </ul>
+            <div className="space-y-1">
+              <ul className="max-w-3xl space-y-2 sm:space-y-0.5">
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер КСк 4-11</span>
+                  <span className="font-bold">
+                    Q факт = 47.36 • 114.2 • 90.0 = 486766 Вт
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 311 (4 хода)</span>
+                  <span className="font-bold">
+                    Q факт = 53.38 • 63.6 • 90.0 = 305547 Вт
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 311 (6 ходов)</span>
+                  <span className="font-bold">
+                    Q факт = 55.48 • 63.6 • 90.0 = 317568 Вт
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 411 (4 хода)</span>
+                  <span className="font-bold">
+                    Q факт = 50.57 • 84.2 • 90.0 = 383219 Вт
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 411 (6 ходов)</span>
+                  <span className="font-bold">
+                    Q факт = 52.03 • 84.2 • 90.0 = 394283 Вт
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер КФБ-14 А3 М</span>
+                  <span className="font-bold">
+                    Q факт = 56.44 • 61.5 • 90.0 = 312395 Вт
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер КФБ-14 А4 М</span>
+                  <span className="font-bold">
+                    Q факт = 53.04 • 81.4 • 90.0 = 388571 Вт
+                  </span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  Q <sub>факт</sub> – вырабатываемая калорифером фактическая
+                  производительность по теплу, Вт;
+                </li>
+                <li>
+                  47.36...56.44 – коэффициенты теплопередачи соответствующих
+                  модификаций, Вт/(м²·°С);
+                </li>
+                <li>
+                  61.5...114.2 – площадь поверхности нагрева выбранных
+                  калориферов по каталогу, м²;
+                </li>
+                <li>90.0 – средний температурный напор, °С.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -1954,107 +1962,118 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
           </div>
 
-          <div>
+          <div className="space-y-3">
             <ProductParagraph>
               ДЕЙСТВИЕ 9. Рассчитать фактический расход воды и фактическую
               скорость ее движения в трубках на основании реальной тепловой
               мощности, вырабатываемой каждым калорифером.
             </ProductParagraph>
-            <ProductParagraph>
-              Знаменатель для расчета расхода воды одинаков для всех моделей:{" "}
-              <span className="font-bold">
-                c w • (T1 - T2) = 4198 • (95 - 70) = 104950
-              </span>
-            </ProductParagraph>
 
-            <ul className="max-w-4xl space-y-2 sm:space-y-0.5">
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КСк 4-11</span>
+            <div className="space-y-1">
+              <ProductParagraph>
+                Знаменатель для расчета расхода воды одинаков для всех моделей:{" "}
                 <span className="font-bold">
-                  G w факт = 486766 / 104950 = 4.638 кг/сек = 16697 кг/час
+                  c w • (T1 - T2) = 4198 • (95 - 70) = 104950
                 </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 311 (4 хода)</span>
-                <span className="font-bold">
-                  G w факт = 305547 / 104950 = 2.911 кг/сек = 10481 кг/час
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 311 (6 ходов)</span>
-                <span className="font-bold">
-                  G w факт = 317568 / 104950 = 3.026 кг/сек = 10893 кг/час
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="font-bold">
-                  G w факт = 383219 / 104950 = 3.651 кг/сек = 13145 кг/час
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="font-bold">
-                  G w факт = 394283 / 104950 = 3.757 кг/сек = 13525 кг/час
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А3 М</span>
-                <span className="font-bold">
-                  G w факт = 312395 / 104950 = 2.977 кг/сек = 10716 кг/час
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А4 М</span>
-                <span className="font-bold">
-                  G w факт = 388571 / 104950 = 3.702 кг/сек = 13329 кг/час
-                </span>
-              </li>
-            </ul>
-            <ul className="max-w-4xl space-y-2 sm:space-y-0.5">
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КСк 4-11</span>
-                <span className="font-bold">
-                  W факт = 4.638 / (970 • 0.00312) = 4.638 / 3.026 = 1.53 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 311 (4 хода)</span>
-                <span className="font-bold">
-                  W факт = 2.911 / (970 • 0.00461) = 2.911 / 4.472 = 0.65 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 311 (6 ходов)</span>
-                <span className="font-bold">
-                  W факт = 3.026 / (970 • 0.00307) = 3.026 / 2.978 = 1.02 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="font-bold">
-                  W факт = 3.651 / (970 • 0.00610) = 3.651 / 5.917 = 0.62 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="font-bold">
-                  W факт = 3.757 / (970 • 0.00406) = 3.757 / 3.938 = 0.95 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А3 М</span>
-                <span className="font-bold">
-                  W факт = 2.977 / (970 • 0.00336) = 2.977 / 3.259 = 0.91 м/с
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А4 М</span>
-                <span className="font-bold">
-                  W факт = 3.702 / (970 • 0.00444) = 3.702 / 4.307 = 0.86 м/с
-                </span>
-              </li>
-            </ul>
+              </ProductParagraph>
+              <div className="space-y-4">
+                <ul className="max-w-4xl space-y-2 sm:space-y-0.5">
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер КСк 4-11</span>
+                    <span className="font-bold">
+                      G w факт = 486766 / 104950 = 4.638 кг/сек = 16697 кг/час
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер ТВВ 311 (4 хода)</span>
+                    <span className="font-bold">
+                      G w факт = 305547 / 104950 = 2.911 кг/сек = 10481 кг/час
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер ТВВ 311 (6 ходов)</span>
+                    <span className="font-bold">
+                      G w факт = 317568 / 104950 = 3.026 кг/сек = 10893 кг/час
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер ТВВ 411 (4 хода)</span>
+                    <span className="font-bold">
+                      G w факт = 383219 / 104950 = 3.651 кг/сек = 13145 кг/час
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер ТВВ 411 (6 ходов)</span>
+                    <span className="font-bold">
+                      G w факт = 394283 / 104950 = 3.757 кг/сек = 13525 кг/час
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер КФБ-14 А3 М</span>
+                    <span className="font-bold">
+                      G w факт = 312395 / 104950 = 2.977 кг/сек = 10716 кг/час
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер КФБ-14 А4 М</span>
+                    <span className="font-bold">
+                      G w факт = 388571 / 104950 = 3.702 кг/сек = 13329 кг/час
+                    </span>
+                  </li>
+                </ul>
+                <ul className="max-w-4xl space-y-2 sm:space-y-0.5">
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер КСк 4-11</span>
+                    <span className="font-bold">
+                      W факт = 4.638 / (970 • 0.00312) = 4.638 / 3.026 = 1.53
+                      м/с
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер ТВВ 311 (4 хода)</span>
+                    <span className="font-bold">
+                      W факт = 2.911 / (970 • 0.00461) = 2.911 / 4.472 = 0.65
+                      м/с
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер ТВВ 311 (6 ходов)</span>
+                    <span className="font-bold">
+                      W факт = 3.026 / (970 • 0.00307) = 3.026 / 2.978 = 1.02
+                      м/с
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер ТВВ 411 (4 хода)</span>
+                    <span className="font-bold">
+                      W факт = 3.651 / (970 • 0.00610) = 3.651 / 5.917 = 0.62
+                      м/с
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер ТВВ 411 (6 ходов)</span>
+                    <span className="font-bold">
+                      W факт = 3.757 / (970 • 0.00406) = 3.757 / 3.938 = 0.95
+                      м/с
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер КФБ-14 А3 М</span>
+                    <span className="font-bold">
+                      W факт = 2.977 / (970 • 0.00336) = 2.977 / 3.259 = 0.91
+                      м/с
+                    </span>
+                  </li>
+                  <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                    <span>Калорифер КФБ-14 А4 М</span>
+                    <span className="font-bold">
+                      W факт = 3.702 / (970 • 0.00444) = 3.702 / 4.307 = 0.86
+                      м/с
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div className="text-secondary-text">
@@ -2140,68 +2159,70 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
           </div>
 
-          <div>
+          <div className="space-y-3">
             <ProductParagraph>
               ДЕЙСТВИЕ 10. Определить процентный запас тепловой мощности для
               моделей водяных воздухонагревателей, прошедших гидравлическую
               отбраковку по предельным скоростям теплоносителя.
             </ProductParagraph>
-            <ul className="space-y-2 sm:space-y-0.5">
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 311 (4 хода)</span>
-                <span className="font-bold">
-                  φ = ((305547 - 362370) / 362370) • 100 = (-56823 / 362370) •
-                  100 = -15.7%
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 311 (6 ходов)</span>
-                <span className="font-bold">
-                  φ = ((317568 - 362370) / 362370) • 100 = (-44802 / 362370) •
-                  100 = -12.4%
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="font-bold">
-                  φ = ((383219 - 362370) / 362370) • 100 = (20849 / 362370) •
-                  100 = +5.8%
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="font-bold">
-                  φ = ((394283 - 362370) / 362370) • 100 = (31913 / 362370) •
-                  100 = +8.8%
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А3 М</span>
-                <span className="font-bold">
-                  φ = ((312395 - 362370) / 362370) • 100 = (-49975 / 362370) •
-                  100 = -13.8%
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А4 М</span>
-                <span className="font-bold">
-                  φ = ((388571 - 362370) / 362370) • 100 = (26201 / 362370) •
-                  100 = +7.2%
-                </span>
-              </li>
-            </ul>
 
-            <ul>
-              <li>φ – запас тепловой мощности калорифера, %;</li>
-              <li>
-                362370 – требуемая расчетная тепловая мощность для нагрева
-                воздуха, Вт;
-              </li>
-              <li>
-                305547...394283 – фактическая тепловая мощность соответствующих
-                модификаций калориферов, Вт.
-              </li>
-            </ul>
+            <div className="space-y-1">
+              <ul className="space-y-2 sm:space-y-0.5">
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 311 (4 хода)</span>
+                  <span className="font-bold">
+                    φ = ((305547 - 362370) / 362370) • 100 = (-56823 / 362370) •
+                    100 = -15.7%
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 311 (6 ходов)</span>
+                  <span className="font-bold">
+                    φ = ((317568 - 362370) / 362370) • 100 = (-44802 / 362370) •
+                    100 = -12.4%
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 411 (4 хода)</span>
+                  <span className="font-bold">
+                    φ = ((383219 - 362370) / 362370) • 100 = (20849 / 362370) •
+                    100 = +5.8%
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 411 (6 ходов)</span>
+                  <span className="font-bold">
+                    φ = ((394283 - 362370) / 362370) • 100 = (31913 / 362370) •
+                    100 = +8.8%
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер КФБ-14 А3 М</span>
+                  <span className="font-bold">
+                    φ = ((312395 - 362370) / 362370) • 100 = (-49975 / 362370) •
+                    100 = -13.8%
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер КФБ-14 А4 М</span>
+                  <span className="font-bold">
+                    φ = ((388571 - 362370) / 362370) • 100 = (26201 / 362370) •
+                    100 = +7.2%
+                  </span>
+                </li>
+              </ul>
+              <ul>
+                <li>φ – запас тепловой мощности калорифера, %;</li>
+                <li>
+                  362370 – требуемая расчетная тепловая мощность для нагрева
+                  воздуха, Вт;
+                </li>
+                <li>
+                  305547...394283 – фактическая тепловая мощность
+                  соответствующих модификаций калориферов, Вт.
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="text-secondary-text">
@@ -2315,40 +2336,44 @@ export default async function RaschetPodborKaloriferovPage() {
               параметрами температурного графика 95/70°С.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-3">
             <ProductParagraph>
               ДЕЙСТВИЕ 11. Рассчитать действительное аэродинамическое
               сопротивление (потери давления по воздуху) для моделей
               калориферов, успешно прошедших гидравлический и теплотехнический
               отбор. Для вычислений используются значения фактической массовой
               скорости воздуха и аэродинамические коэффициенты
-              завода-изготовителя
+              завода-изготовителя.
             </ProductParagraph>
-            <ul className="max-w-3xl space-y-2 sm:space-y-1">
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (4 и 6 ходов)</span>
-                <span className="font-bold">
-                  ΔP = 8.67 • 3.34 <sup>1848</sup> = 8.67 • 9.29 = 80.5 Па
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А4 М</span>
-                <span className="font-bold">
-                  ΔP = 8.67 • 3.51 <sup>1848</sup> = 8.67 • 10.18 = 88.3 Па
-                </span>
-              </li>
-            </ul>
-            <ul>
-              <li>ΔP – аэродинамическое сопротивление калорифера, Па;</li>
-              <li>
-                3.34, 3.51 – действительные массовые скорости воздуха,
-                кг/(м²·с);
-              </li>
-              <li>
-                8.67, 1.848 – эмпирические значения модуля и степеней
-                аэродинамических потерь по ТУ 4863-002-55613706-02.
-              </li>
-            </ul>
+
+            <div className="space-y-1">
+              <ul className="max-w-4xl space-y-2 sm:space-y-1">
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 411 (4 и 6 ходов)</span>
+                  <span className="font-bold">
+                    ΔP = 8.67 • 3.34 <sup>1848</sup> = 8.67 • 9.29 = 80.5 Па
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер КФБ-14 А4 М</span>
+                  <span className="font-bold">
+                    ΔP = 8.67 • 3.51 <sup>1848</sup> = 8.67 • 10.18 = 88.3 Па
+                  </span>
+                </li>
+              </ul>
+              <ul>
+                <li>ΔP – аэродинамическое сопротивление калорифера, Па;</li>
+                <li>
+                  3.34, 3.51 – действительные массовые скорости воздуха,
+                  кг/(м²·с);
+                </li>
+                <li>
+                  8.67, 1.848 – эмпирические значения модуля и степеней
+                  аэродинамических потерь по ТУ 4863-002-55613706-02.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <ProductParagraph className="text-secondary-text">
@@ -2451,7 +2476,7 @@ export default async function RaschetPodborKaloriferovPage() {
             </ProductParagraph>
           </div>
 
-          <div>
+          <div className="space-y-3">
             <ProductParagraph>
               ДЕЙСТВИЕ 12. Рассчитать действительное гидравлическое
               сопротивление (потери давления по воде) для моделей калориферов,
@@ -2460,37 +2485,40 @@ export default async function RaschetPodborKaloriferovPage() {
               коэффициенты гидравлического сопротивления из каталожных таблиц
               завода-изготовителя.
             </ProductParagraph>
-            <ul className="max-w-3xl space-y-2 sm:space-y-0.5">
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (4 хода)</span>
-                <span className="font-bold">
-                  ΔPw = 19.20 • 0.62² = 19.20 • 0.3844 = 7.38 кПа
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер ТВВ 411 (6 ходов)</span>
-                <span className="font-bold">
-                  ΔPw = 19.20 • 0.95² = 19.20 • 0.9025 = 17.33 кПа
-                </span>
-              </li>
-              <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
-                <span>Калорифер КФБ-14 А4 М</span>
-                <span className="font-bold">
-                  ΔPw = 19.08 • 0.86² = 19.08 • 0.7396 = 14.11 кПа
-                </span>
-              </li>
-            </ul>
-            <ul>
-              <li>ΔPw – гидравлическое сопротивление калорифера, кПа;</li>
-              <li>
-                0.62...0.95 – фактическая скорость движения теплоносителя в
-                трубках, м/с;
-              </li>
-              <li>
-                19.08...20.75 – экспериментальные значения коэффициентов
-                гидравлического сопротивления по ТУ 4863-002-55613706-02.
-              </li>
-            </ul>
+
+            <div className="space-y-1">
+              <ul className="max-w-3xl space-y-2 sm:space-y-0.5">
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 411 (4 хода)</span>
+                  <span className="font-bold">
+                    ΔPw = 19.20 • 0.62² = 19.20 • 0.3844 = 7.38 кПа
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер ТВВ 411 (6 ходов)</span>
+                  <span className="font-bold">
+                    ΔPw = 19.20 • 0.95² = 19.20 • 0.9025 = 17.33 кПа
+                  </span>
+                </li>
+                <li className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-baseline gap-2">
+                  <span>Калорифер КФБ-14 А4 М</span>
+                  <span className="font-bold">
+                    ΔPw = 19.08 • 0.86² = 19.08 • 0.7396 = 14.11 кПа
+                  </span>
+                </li>
+              </ul>
+              <ul>
+                <li>ΔPw – гидравлическое сопротивление калорифера, кПа;</li>
+                <li>
+                  0.62...0.95 – фактическая скорость движения теплоносителя в
+                  трубках, м/с;
+                </li>
+                <li>
+                  19.08...20.75 – экспериментальные значения коэффициентов
+                  гидравлического сопротивления по ТУ 4863-002-55613706-02.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -2936,7 +2964,7 @@ export default async function RaschetPodborKaloriferovPage() {
               тепловой сети объекта принять теплоноситель с температурой
               обратной линии до +80 °C.
             </li>
-            <li>
+            <li className="space-y-8">
               <p>
                 4. Последовательная прямоточная схема технически нерациональна
                 для применения в многорядных блоках технологического нагрева.
