@@ -1727,7 +1727,7 @@ export default async function RaschetPodborKaloriferovPage() {
           <ProductParagraph>
             Расчет фактической тепловой мощности производится по формуле:{" "}
             <span className="block text-xl font-bold">
-              Q <sub className="font-normal">ФАКТ</sub> = K • F <sub>К</sub> • Δ
+              Q <sub className="font-normal">факт</sub> = K • F <sub>К</sub> • Δ
               T
             </span>
           </ProductParagraph>
@@ -1736,15 +1736,15 @@ export default async function RaschetPodborKaloriferovPage() {
             выполнялся, допускается вычисление мощности через среднеинтервальную
             разность температур сред:{" "}
             <span className="block text-xl font-bold">
-              Q <sub className="font-normal">ФАКТ</sub> = K • F <sub>К</sub> •
+              Q <sub className="font-normal">факт</sub> = K • F <sub>К</sub> •
               (((T1 + T2) / 2) - ((T4 + T3) / 2))
             </span>
           </ProductParagraph>
           Где:
           <ul>
             <li>
-              Q факт – вырабатываемая калорифером фактическая производительность
-              по теплу, Вт;
+              Q <sub>факт</sub> – вырабатываемая калорифером фактическая
+              производительность по теплу, Вт;
             </li>
             <li>
               K – действительный коэффициент теплопередачи выбранной модификации
@@ -1843,7 +1843,7 @@ export default async function RaschetPodborKaloriferovPage() {
             </ul>
             <ul>
               <li>
-                Q факт – вырабатываемая калорифером фактическая
+                Q <sub>факт</sub> – вырабатываемая калорифером фактическая
                 производительность по теплу, Вт;
               </li>
               <li>
@@ -1879,8 +1879,8 @@ export default async function RaschetPodborKaloriferovPage() {
               <ProductParagraph>
                 9.1 Расчет фактического (действительного) расхода горячей воды:{" "}
                 <span className="block text-xl font-bold">
-                  G w <sub className="font-normal">ФАКТ</sub> = Q{" "}
-                  <sub className="font-normal">ФАКТ</sub> / (c <sub>w</sub> •
+                  G w <sub className="font-normal">факт</sub> = Q{" "}
+                  <sub className="font-normal">факт</sub> / (c <sub>w</sub> •
                   (T1 - T2))
                 </span>
               </ProductParagraph>
@@ -1891,8 +1891,8 @@ export default async function RaschetPodborKaloriferovPage() {
                   кг/сек;
                 </li>
                 <li>
-                  Q факт – фактическая тепловая мощность выбранной модели
-                  калорифера, Вт;
+                  Q <sub>факт</sub> – фактическая тепловая мощность выбранной
+                  модели калорифера, Вт;
                 </li>
                 <li>
                   c w – удельная теплоемкость воды при ее средней температуре в
@@ -1913,8 +1913,8 @@ export default async function RaschetPodborKaloriferovPage() {
                 9.2 Расчет фактической (действительной) скорости движения
                 теплоносителя:{" "}
                 <span className="block text-xl font-bold">
-                  W <sub className="font-normal">ФАКТ</sub> = G <sub>w</sub>{" "}
-                  <sub className="font-normal">ФАКТ</sub> / (p <sub>w</sub> • f{" "}
+                  W <sub className="font-normal">факт</sub> = G <sub>w</sub>{" "}
+                  <sub className="font-normal">факт</sub> / (p <sub>w</sub> • f{" "}
                   <sub>w</sub>)
                 </span>
               </ProductParagraph>
@@ -2096,7 +2096,7 @@ export default async function RaschetPodborKaloriferovPage() {
             Определяем запас тепловой производительности (поверхности нагрева)
             подобранных моделей воздухонагревателей по формуле:
             <span className="block text-xl font-bold">
-              φ = ((Q <sub className="font-normal">ФАКТ</sub> - Q) / Q) • 100
+              φ = ((Q <sub className="font-normal">факт</sub> - Q) / Q) • 100
             </span>
           </ProductParagraph>
           Где:
@@ -2106,8 +2106,9 @@ export default async function RaschetPodborKaloriferovPage() {
               калорифера, %;
             </li>
             <li>
-              Q факт – фактическая тепловая мощность, вырабатываемая выбранной
-              моделью воздухонагревателя при заданных параметрах сред, Вт;
+              Q <sub>факт</sub> – фактическая тепловая мощность, вырабатываемая
+              выбранной моделью воздухонагревателя при заданных параметрах сред,
+              Вт;
             </li>
             <li>
               Q – требуемая расчетная тепловая мощность для нагрева заданного
