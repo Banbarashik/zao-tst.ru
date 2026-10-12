@@ -12,9 +12,6 @@ import { getLegacyHtmls } from "@/lib/legacyHtml";
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
-import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
-import SteamCalcHeatTransferCoefficientTables from "@/components/general_pages/steamCalcHeatTransferCoefficientTables";
-import SteamCalcAerodynamicResistanceTables from "@/components/general_pages/steamCalcAerodynamicResistanceTables";
 import WaterCalcHeatTransferCoefficientTables from "@/components/general_pages/waterCalcHeatTransferCoefficientTables";
 import WaterCalcAerodynamicResistanceTables from "@/components/general_pages/waterCalcAerodynamicResistanceTables";
 import LegacyHtml from "@/components/legacyHtml";
@@ -25,11 +22,11 @@ import { NtuSummaryTable } from "@/components/general_pages/ntuSummaryTable";
 import { LEFT_BLUE_BRACKET } from "@/constants/styles";
 
 export const metadata: Metadata = {
-  title: "Расчет и подбор паровых калориферов",
+  title: "Расчет и подбор водяных калориферов",
   description:
-    "Расчет и подбор паровых калориферов. Технические характеристики, расчетные таблицы и формулы для подбора воздухонагревателей КПСк КП КФБ с теплоносителем пар",
+    "Расчет и подбор водяных калориферов. Технические характеристики, расчетные таблицы и формулы для подбора воздухонагревателей КСк ТВВ КФБ с теплоносителем вода",
   keywords:
-    "расчет и подбор парового калорифера,формула для расчета и подбора паровых калориферов,формула тепловой мощности парового калорифера,расчет производительности парового калорифера,расчет температурного напора парового калорифера,формула температурного напора парового калорифера,расчет калориферов кпск,расчет паровых калориферов кпск,подбор калориферов кпск,подбор паровых калориферов кпск",
+    "расчет и подбор водяного калорифера,формула для расчета и подбора водяных калориферов,формула тепловой мощности водяного калорифера,расчет производительности водяного калорифера,расчет температурного напора водяного калорифера,формула температурного напора водяного калорифера,расчет калориферов кск,расчет водяных калориферов кск,подбор калориферов кск,подбор водяных калориферов кск",
 };
 
 export type CityTemp = {
