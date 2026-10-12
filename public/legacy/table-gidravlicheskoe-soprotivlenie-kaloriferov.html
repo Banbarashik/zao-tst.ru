@@ -1,0 +1,1156 @@
+<!doctype html>
+
+<html>
+  <head>
+    <script>
+      function setupRadioSwitch(primaryId, secondaryId) {
+        const primary = document.getElementById(primaryId);
+        const secondaryDivs = document.querySelectorAll(`#${secondaryId} div`);
+
+        if (!primary) return;
+
+        primary.addEventListener("click", function (e) {
+          if (e.target.matches('input[type="radio"]')) {
+            const radios = Array.from(
+              primary.querySelectorAll('input[type="radio"]'),
+            );
+            const index = radios.indexOf(e.target);
+
+            secondaryDivs.forEach((div) => {
+              div.style.display = "none";
+            });
+
+            if (secondaryDivs[index]) {
+              secondaryDivs[index].style.display = "block";
+            }
+          }
+        });
+      }
+
+      setupRadioSwitch("primary2", "secondary2");
+    </script>
+
+    <style>
+      .legacy-table.legacy-raschet-podbor-table * {
+        box-sizing: border-box;
+      }
+      .legacy-table.legacy-raschet-podbor-table th {
+        font-size: 14px;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+      .legacy-table.legacy-raschet-podbor-table .steam_kal_name {
+        width: 116px;
+      }
+      .legacy-table.legacy-raschet-podbor-table .length,
+      .legacy-table.legacy-raschet-podbor-table .square_of_puchka {
+        width: 150px;
+      }
+      .legacy-table.legacy-raschet-podbor-table .btn {
+        font-size: 13.3px;
+      }
+      .legacy-table.legacy-raschet-podbor-table a {
+        color: #5e2129;
+        text-decoration: none;
+      }
+      .legacy-table.legacy-raschet-podbor-table a:hover {
+        color: #c74f2b;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Таблицы (начало) -->
+    <div id="primary2" class="table-with-scroll">
+      <form class="table-buttons-wrap">
+        <input id="table_btn3" type="radio" checked name="as" />
+        <input id="table_btn4" type="radio" name="as" />
+        <input id="table_btn5" type="radio" name="as" />
+        <input id="table_btn6" type="radio" name="as" />
+        <input id="table_btn7" type="radio" name="as" />
+        <input id="table_btn8" type="radio" name="as" />
+        <label for="table_btn3" class="btn btn3">Калориферы ТВВ</label>
+        <label for="table_btn4" class="btn btn4">Калориферы КФБ-А3 М</label>
+        <label for="table_btn5" class="btn btn5">Калориферы КФБ-А4 М</label>
+        <label for="table_btn6" class="btn btn6">Калориферы КСк2</label>
+        <label for="table_btn7" class="btn btn7">Калориферы КСк3</label>
+        <label for="table_btn8" class="btn btn8">Калориферы КСк4</label>
+      </form>
+    </div>
+    <div class="table-wrap table-with-scroll">
+      <div id="secondary2">
+        <!-- Начало 1-й таблицы -->
+        <div style="display: block">
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование водяного калорифера
+                </th>
+                <th colspan="3">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="square_of_puchka">
+                  Внутренний диаметр трубок пучка, d, (м)
+                </th>
+                <th rowspan="2" class="length">
+                  Длина теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Число ходов, nx</th>
+                <th rowspan="2">Емкость (объем), л</th>
+              </tr>
+              <tr>
+                <th>
+                  сечения коллектора,<br />
+                  f кол
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><a href="/kalorifer-tvv-306" target="_top">ТВВ 306</a></td>
+                <td>0.00379</td>
+                <td>0.00101</td>
+                <td>0.00227 (0.00151)</td>
+                <td>0.019</td>
+                <td>0.530</td>
+                <td>4 (6)</td>
+                <td>8.7</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-307" target="_top">ТВВ 307</a></td>
+                <td>0.00379</td>
+                <td>0.00101</td>
+                <td>0.00227 (0.00151)</td>
+                <td>0.019</td>
+                <td>0.655</td>
+                <td>4 (6)</td>
+                <td>9.9</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-308" target="_top">ТВВ 308</a></td>
+                <td>0.00379</td>
+                <td>0.00101</td>
+                <td>0.00227 (0.00151)</td>
+                <td>0.019</td>
+                <td>0.780</td>
+                <td>4 (6)</td>
+                <td>11.0</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-309" target="_top">ТВВ 309</a></td>
+                <td>0.00379</td>
+                <td>0.00101</td>
+                <td>0.00227 (0.00151)</td>
+                <td>0.019</td>
+                <td>0.905</td>
+                <td>4 (6)</td>
+                <td>12.1</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-310" target="_top">ТВВ 310</a></td>
+                <td>0.00379</td>
+                <td>0.00101</td>
+                <td>0.00227 (0.00151)</td>
+                <td>0.019</td>
+                <td>1.155</td>
+                <td>4 (6)</td>
+                <td>14.4</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-311" target="_top">ТВВ 311</a></td>
+                <td>0.00379</td>
+                <td>0.00363</td>
+                <td>0.00461 (0.00307)</td>
+                <td>0.019</td>
+                <td>1.655</td>
+                <td>4 (6)</td>
+                <td>38.3</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-312" target="_top">ТВВ 312</a></td>
+                <td>0.00379</td>
+                <td>0.00363</td>
+                <td>0.00695 (0.00463)</td>
+                <td>0.019</td>
+                <td>1.655</td>
+                <td>4 (6)</td>
+                <td>57.7</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-406" target="_top">ТВВ 406</a></td>
+                <td>0.00523</td>
+                <td>0.00101</td>
+                <td>0.00298 (0.00199)</td>
+                <td>0.019</td>
+                <td>0.530</td>
+                <td>4 (6)</td>
+                <td>11.7</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-407" target="_top">ТВВ 407</a></td>
+                <td>0.00523</td>
+                <td>0.00101</td>
+                <td>0.00298 (0.00199)</td>
+                <td>0.019</td>
+                <td>0.655</td>
+                <td>4 (6)</td>
+                <td>13.2</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-408" target="_top">ТВВ 408</a></td>
+                <td>0.00523</td>
+                <td>0.00101</td>
+                <td>0.00298 (0.00199)</td>
+                <td>0.019</td>
+                <td>0.780</td>
+                <td>4 (6)</td>
+                <td>14.7</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-409" target="_top">ТВВ 409</a></td>
+                <td>0.00523</td>
+                <td>0.00101</td>
+                <td>0.00298 (0.00199)</td>
+                <td>0.019</td>
+                <td>0.905</td>
+                <td>4 (6)</td>
+                <td>16.2</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-410" target="_top">ТВВ 410</a></td>
+                <td>0.00523</td>
+                <td>0.00101</td>
+                <td>0.00298 (0.00199)</td>
+                <td>0.019</td>
+                <td>1.155</td>
+                <td>4 (6)</td>
+                <td>19.1</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-411" target="_top">ТВВ 411</a></td>
+                <td>0.00523</td>
+                <td>0.00363</td>
+                <td>0.00610 (0.00406)</td>
+                <td>0.019</td>
+                <td>1.655</td>
+                <td>4 (6)</td>
+                <td>51.1</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-tvv-412" target="_top">ТВВ 412</a></td>
+                <td>0.00523</td>
+                <td>0.00363</td>
+                <td>0.00921 (0.00614)</td>
+                <td>0.019</td>
+                <td>1.655</td>
+                <td>4 (6)</td>
+                <td>77.2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 1-й таблицы -->
+
+        <!-- Начало 2-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование водяного калорифера
+                </th>
+                <th colspan="3">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="square_of_puchka">
+                  Внутренний диаметр трубок пучка, d, (м)
+                </th>
+                <th rowspan="2" class="length">
+                  Длина теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Число ходов, nx</th>
+                <th rowspan="2">Емкость (объем), л</th>
+              </tr>
+              <tr>
+                <th>
+                  сечения коллектора,<br />
+                  f кол
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-2-m" target="_top">КФБ-2 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00101</td>
+                <td>0.00163</td>
+                <td>0.019</td>
+                <td>0.560</td>
+                <td>4</td>
+                <td>6.5</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-3-m" target="_top">КФБ-3 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00101</td>
+                <td>0.00206</td>
+                <td>0.019</td>
+                <td>0.560</td>
+                <td>4</td>
+                <td>8.3</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-4-m" target="_top">КФБ-4 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00101</td>
+                <td>0.00206</td>
+                <td>0.019</td>
+                <td>0.710</td>
+                <td>4</td>
+                <td>9.6</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-5-m" target="_top">КФБ-5 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00221</td>
+                <td>0.00180</td>
+                <td>0.019</td>
+                <td>0.710</td>
+                <td>6</td>
+                <td>12.3</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-6-m" target="_top">КФБ-6 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00221</td>
+                <td>0.00180</td>
+                <td>0.019</td>
+                <td>0.860</td>
+                <td>6</td>
+                <td>13.9</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-7-m" target="_top">КФБ-7 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00221</td>
+                <td>0.00222</td>
+                <td>0.019</td>
+                <td>0.860</td>
+                <td>6</td>
+                <td>17.1</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-8-m" target="_top">КФБ-8 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00221</td>
+                <td>0.00222</td>
+                <td>0.019</td>
+                <td>1.010</td>
+                <td>6</td>
+                <td>19.1</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-9-m" target="_top">КФБ-9 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00363</td>
+                <td>0.00250</td>
+                <td>0.019</td>
+                <td>1.010</td>
+                <td>6</td>
+                <td>21.7</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-10-m" target="_top">КФБ-10 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00363</td>
+                <td>0.00250</td>
+                <td>0.019</td>
+                <td>1.160</td>
+                <td>6</td>
+                <td>24.0</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-11-m" target="_top">КФБ-11 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00363</td>
+                <td>0.00293</td>
+                <td>0.019</td>
+                <td>1.160</td>
+                <td>6</td>
+                <td>27.9</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-12-m" target="_top">КФБ-12 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00363</td>
+                <td>0.00293</td>
+                <td>0.019</td>
+                <td>1.310</td>
+                <td>6</td>
+                <td>30.5</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-13-m" target="_top">КФБ-13 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00363</td>
+                <td>0.00336</td>
+                <td>0.019</td>
+                <td>1.310</td>
+                <td>6</td>
+                <td>34.8</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-14-m" target="_top">КФБ-14 А3 М</a>
+                </td>
+                <td>0.00379</td>
+                <td>0.00363</td>
+                <td>0.00336</td>
+                <td>0.019</td>
+                <td>1.460</td>
+                <td>6</td>
+                <td>37.8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 2-й таблицы -->
+
+        <!-- Начало 3-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование водяного калорифера
+                </th>
+                <th colspan="3">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="square_of_puchka">
+                  Внутренний диаметр трубок пучка, d, (м)
+                </th>
+                <th rowspan="2" class="length">
+                  Длина теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Число ходов, nx</th>
+                <th rowspan="2">Емкость (объем), л</th>
+              </tr>
+              <tr>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-2-m-p" target="_top">КФБ-2 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00101</td>
+                <td>0.00213</td>
+                <td>0.019</td>
+                <td>0.560</td>
+                <td>4</td>
+                <td>8.6</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-3-m-p" target="_top">КФБ-3 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00101</td>
+                <td>0.00283</td>
+                <td>0.019</td>
+                <td>0.560</td>
+                <td>4</td>
+                <td>11.5</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-4-m-p" target="_top">КФБ-4 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00101</td>
+                <td>0.00283</td>
+                <td>0.019</td>
+                <td>0.710</td>
+                <td>4</td>
+                <td>13.2</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-5-m-p" target="_top">КФБ-5 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00221</td>
+                <td>0.00236</td>
+                <td>0.019</td>
+                <td>0.710</td>
+                <td>6</td>
+                <td>16.5</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-6-m-p" target="_top">КФБ-6 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00221</td>
+                <td>0.00236</td>
+                <td>0.019</td>
+                <td>0.860</td>
+                <td>6</td>
+                <td>18.6</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-7-m-p" target="_top">КФБ-7 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00221</td>
+                <td>0.00293</td>
+                <td>0.019</td>
+                <td>0.860</td>
+                <td>6</td>
+                <td>22.9</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-8-m-p" target="_top">КФБ-8 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00221</td>
+                <td>0.00293</td>
+                <td>0.019</td>
+                <td>1.010</td>
+                <td>6</td>
+                <td>25.5</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-9-m-p" target="_top">КФБ-9 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00363</td>
+                <td>0.00331</td>
+                <td>0.019</td>
+                <td>1.010</td>
+                <td>6</td>
+                <td>29.1</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-10-m-p" target="_top">КФБ-10 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00363</td>
+                <td>0.00331</td>
+                <td>0.019</td>
+                <td>1.160</td>
+                <td>6</td>
+                <td>32.0</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-11-m-p" target="_top">КФБ-11 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00363</td>
+                <td>0.00388</td>
+                <td>0.019</td>
+                <td>1.160</td>
+                <td>6</td>
+                <td>37.3</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-12-m-p" target="_top">КФБ-12 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00363</td>
+                <td>0.00388</td>
+                <td>0.019</td>
+                <td>1.310</td>
+                <td>6</td>
+                <td>40.8</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-13-m-p" target="_top">КФБ-13 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00363</td>
+                <td>0.00444</td>
+                <td>0.019</td>
+                <td>1.310</td>
+                <td>6</td>
+                <td>46.5</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-kfb-14-m-p" target="_top">КФБ-14 А4 М</a>
+                </td>
+                <td>0.00523</td>
+                <td>0.00363</td>
+                <td>0.00444</td>
+                <td>0.019</td>
+                <td>1.460</td>
+                <td>6</td>
+                <td>50.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 3-й таблицы -->
+
+        <!-- Начало 4-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование водяного калорифера
+                </th>
+                <th colspan="3">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="square_of_puchka">
+                  Внутренний диаметр трубок пучка, d, (м)
+                </th>
+                <th rowspan="2" class="length">
+                  Длина теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Число ходов, nx</th>
+                <th rowspan="2">Емкость (объем), л</th>
+              </tr>
+              <tr>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><a href="/kalorifer-ksk-2-1" target="_top">КСк 2-1</a></td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00057</td>
+                <td>0.013</td>
+                <td>0.530</td>
+                <td>4</td>
+                <td>2.4</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-2-2" target="_top">КСк 2-2</a></td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00057</td>
+                <td>0.013</td>
+                <td>0.655</td>
+                <td>4</td>
+                <td>2.7</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-2-3" target="_top">КСк 2-3</a></td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00057</td>
+                <td>0.013</td>
+                <td>0.780</td>
+                <td>4</td>
+                <td>2.9</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-2-4" target="_top">КСк 2-4</a></td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00057</td>
+                <td>0.013</td>
+                <td>0.905</td>
+                <td>4</td>
+                <td>3.2</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-2-5" target="_top">КСк 2-5</a></td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00057</td>
+                <td>0.013</td>
+                <td>1.155</td>
+                <td>4</td>
+                <td>3.8</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-2-6" target="_top">КСк 2-6</a></td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00076</td>
+                <td>0.013</td>
+                <td>0.530</td>
+                <td>4</td>
+                <td>3.2</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-2-7" target="_top">КСк 2-7</a></td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00076</td>
+                <td>0.013</td>
+                <td>0.655</td>
+                <td>4</td>
+                <td>3.6</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-2-8" target="_top">КСк 2-8</a></td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00076</td>
+                <td>0.013</td>
+                <td>0.780</td>
+                <td>4</td>
+                <td>3.9</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-2-9" target="_top">КСк 2-9</a></td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00076</td>
+                <td>0.013</td>
+                <td>0.905</td>
+                <td>4</td>
+                <td>4.3</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-ksk-2-10" target="_top">КСк 2-10</a>
+                </td>
+                <td>0.00152</td>
+                <td>0.00101</td>
+                <td>0.00076</td>
+                <td>0.013</td>
+                <td>1.155</td>
+                <td>4</td>
+                <td>5.1</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-ksk-2-11" target="_top">КСк 2-11</a>
+                </td>
+                <td>0.00152</td>
+                <td>0.00221</td>
+                <td>0.00156</td>
+                <td>0.013</td>
+                <td>1.655</td>
+                <td>4</td>
+                <td>13.4</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-ksk-2-12" target="_top">КСк 2-12</a>
+                </td>
+                <td>0.00152</td>
+                <td>0.00221</td>
+                <td>0.00235</td>
+                <td>0.013</td>
+                <td>1.655</td>
+                <td>4</td>
+                <td>20.3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 4-й таблицы -->
+
+        <!-- Начало 5-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование водяного калорифера
+                </th>
+                <th colspan="3">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="square_of_puchka">
+                  Внутренний диаметр трубок пучка, d, (м)
+                </th>
+                <th rowspan="2" class="length">
+                  Длина теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Число ходов, nx</th>
+                <th rowspan="2">Емкость (объем), л</th>
+              </tr>
+              <tr>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><a href="/kalorifer-ksk-3-1" target="_top">КСк 3-1</a></td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00086</td>
+                <td>0.013</td>
+                <td>0.530</td>
+                <td>4</td>
+                <td>3.1</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-3-2" target="_top">КСк 3-2</a></td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00086</td>
+                <td>0.013</td>
+                <td>0.655</td>
+                <td>4</td>
+                <td>3.5</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-3-3" target="_top">КСк 3-3</a></td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00086</td>
+                <td>0.013</td>
+                <td>0.780</td>
+                <td>4</td>
+                <td>4.0</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-3-4" target="_top">КСк 3-4</a></td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00086</td>
+                <td>0.013</td>
+                <td>0.905</td>
+                <td>4</td>
+                <td>4.4</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-3-5" target="_top">КСк 3-5</a></td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00086</td>
+                <td>0.013</td>
+                <td>1.155</td>
+                <td>4</td>
+                <td>5.3</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-3-6" target="_top">КСк 3-6</a></td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00116 (0.00078)</td>
+                <td>0.013</td>
+                <td>0.530</td>
+                <td>4 (6)</td>
+                <td>4.4</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-3-7" target="_top">КСк 3-7</a></td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00116 (0.00078)</td>
+                <td>0.013</td>
+                <td>0.655</td>
+                <td>4 (6)</td>
+                <td>4.7</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-3-8" target="_top">КСк 3-8</a></td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00116 (0.00078)</td>
+                <td>0.013</td>
+                <td>0.780</td>
+                <td>4 (6)</td>
+                <td>5.3</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-3-9" target="_top">КСк 3-9</a></td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00116 (0.00078)</td>
+                <td>0.013</td>
+                <td>0.905</td>
+                <td>4 (6)</td>
+                <td>5.9</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-ksk-3-10" target="_top">КСк 3-10</a>
+                </td>
+                <td>0.00164</td>
+                <td>0.00101</td>
+                <td>0.00116 (0.00078)</td>
+                <td>0.013</td>
+                <td>1.155</td>
+                <td>4 (6)</td>
+                <td>7.1</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-ksk-3-11" target="_top">КСк 3-11</a>
+                </td>
+                <td>0.00164</td>
+                <td>0.00221</td>
+                <td>0.00236</td>
+                <td>0.013</td>
+                <td>1.655</td>
+                <td>4</td>
+                <td>19.0</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-ksk-3-12" target="_top">КСк 3-12</a>
+                </td>
+                <td>0.00164</td>
+                <td>0.00221</td>
+                <td>0.00355</td>
+                <td>0.013</td>
+                <td>1.655</td>
+                <td>4</td>
+                <td>28.6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 5-й таблицы -->
+
+        <!-- Начало 6-й таблицы -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2" class="steam_kal_name">
+                  Наименование водяного калорифера
+                </th>
+                <th colspan="3">Площадь, м<sup>2</sup></th>
+                <th rowspan="2" class="square_of_puchka">
+                  Внутренний диаметр трубок пучка, d, (м)
+                </th>
+                <th rowspan="2" class="length">
+                  Длина теплоотдающего элемента (в свету), м
+                </th>
+                <th rowspan="2">Число ходов, nx</th>
+                <th rowspan="2">Емкость (объем), л</th>
+              </tr>
+              <tr>
+                <th>
+                  сечения коллектора,<br />
+                  f к
+                </th>
+                <th>
+                  сечения патрубка,<br />
+                  f п
+                </th>
+                <th>
+                  живого сечения для прохода воды,<br />
+                  f w
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><a href="/kalorifer-ksk-4-1" target="_top">КСк 4-1</a></td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00113</td>
+                <td>0.013</td>
+                <td>0.530</td>
+                <td>4</td>
+                <td>4.2</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-4-2" target="_top">КСк 4-2</a></td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00113</td>
+                <td>0.013</td>
+                <td>0.655</td>
+                <td>4</td>
+                <td>4.7</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-4-3" target="_top">КСк 4-3</a></td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00113</td>
+                <td>0.013</td>
+                <td>0.780</td>
+                <td>4</td>
+                <td>5.3</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-4-4" target="_top">КСк 4-4</a></td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00113</td>
+                <td>0.013</td>
+                <td>0.905</td>
+                <td>4</td>
+                <td>5.8</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-4-5" target="_top">КСк 4-5</a></td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00113</td>
+                <td>0.013</td>
+                <td>1.155</td>
+                <td>4</td>
+                <td>7.0</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-4-6" target="_top">КСк 4-6</a></td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00153 (0.00102)</td>
+                <td>0.013</td>
+                <td>0.530</td>
+                <td>4 (6)</td>
+                <td>5.6</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-4-7" target="_top">КСк 4-7</a></td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00153 (0.00102)</td>
+                <td>0.013</td>
+                <td>0.655</td>
+                <td>4 (6)</td>
+                <td>6.3</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-4-8" target="_top">КСк 4-8</a></td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00153 (0.00102)</td>
+                <td>0.013</td>
+                <td>0.780</td>
+                <td>4 (6)</td>
+                <td>7.1</td>
+              </tr>
+              <tr>
+                <td><a href="/kalorifer-ksk-4-9" target="_top">КСк 4-9</a></td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00153 (0.00102)</td>
+                <td>0.013</td>
+                <td>0.905</td>
+                <td>4 (6)</td>
+                <td>7.9</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-ksk-4-10" target="_top">КСк 4-10</a>
+                </td>
+                <td>0.00224</td>
+                <td>0.00101</td>
+                <td>0.00153 (0.00102)</td>
+                <td>0.013</td>
+                <td>1.155</td>
+                <td>4 (6)</td>
+                <td>9.4</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-ksk-4-11" target="_top">КСк 4-11</a>
+                </td>
+                <td>0.00224</td>
+                <td>0.00221</td>
+                <td>0.00312</td>
+                <td>0.013</td>
+                <td>1.655</td>
+                <td>4</td>
+                <td>25.3</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="/kalorifer-ksk-4-12" target="_top">КСк 4-12</a>
+                </td>
+                <td>0.00224</td>
+                <td>0.00221</td>
+                <td>0.00471</td>
+                <td>0.013</td>
+                <td>1.655</td>
+                <td>4</td>
+                <td>38.2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Конец 6-й таблицы -->
+      </div>
+      <!-- Таблицы (конец) -->
+    </div>
+  </body>
+</html>
