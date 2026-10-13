@@ -98,11 +98,6 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
-        source: "/gidravlicheskoe-soprotivlenie-kaloriferov",
-        destination: "/kalorifery-voda",
-        permanent: false,
-      },
-      {
         source: "/komplektatciia-kaloriferov",
         destination: "/",
         permanent: false,
