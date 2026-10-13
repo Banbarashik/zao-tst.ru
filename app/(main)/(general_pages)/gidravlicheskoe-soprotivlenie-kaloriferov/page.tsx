@@ -145,6 +145,25 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
             циркуляционному контуру.
           </li>
         </ol>
+
+        <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <div className="relative aspect-1000/500 w-full">
+            <Image
+              src="/img/general_pages/vodianaia_sistema_kalorifera.png"
+              alt="Система направления и распределения потока воды в калориферах"
+              title="Гидравлическая система водяного калорифера"
+              fill
+            />
+          </div>
+          <div className="relative aspect-1000/500 w-full">
+            <Image
+              src="/img/general_pages/gidravlicheski_trakt_kalorifera.png"
+              alt="Элементы гидравлического тракта водяного воздухонагревателя"
+              title="Гидравлический тракт водяного калорифера"
+              fill
+            />
+          </div>
+        </div>
       </section>
 
       {/* Структура гидравлических потерь давления */}
@@ -251,6 +270,25 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           аппарата.
         </ProductParagraph>
 
+        <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <div className="relative aspect-1200/990 w-full">
+            <Image
+              src="/img/general_pages/gidravlicheskoe_soprotivlenie_4_hoda.png"
+              alt="Потери давления четырехходового воздухонагревателя"
+              title="Гидравлическое сопротивление 4 ходового калорифера"
+              fill
+            />
+          </div>
+          <div className="relative aspect-1200/990 w-full">
+            <Image
+              src="/img/general_pages/gidravlicheskoe_soprotivlenie_6_hodov.png"
+              alt="Схема распределения линейных и местных гидравлических потерь давления"
+              title="Гидравлическое сопротивление 6 ходового калорифера"
+              fill
+            />
+          </div>
+        </div>
+
         <ProductParagraph>
           При четырехходовой компоновке теплоноситель через входной штуцер
           поступает в первую локализованную группу трубок, проходит по ней, а
@@ -272,6 +310,25 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           увеличиваются за счет принудительной смены направления движения
           жидкости на 180 градусов при переходе потока из одной камеры в другую.
         </ProductParagraph>
+
+        <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+          <div className="relative aspect-600/400 w-full">
+            <Image
+              src="/img/general_pages/vodianoi_kalorifer_4_hoda.png"
+              alt="Устройство водяного контура калориферов"
+              title="Четырехходовая компоновка водяного калорифера"
+              fill
+            />
+          </div>
+          <div className="relative aspect-600/400 w-full">
+            <Image
+              src="/img/general_pages/vodianoi_kalorifer_6_hodov.png"
+              alt="Схема движения теплоносителя по шести ходам калорифера"
+              title="Шестиходовая компоновка водяного калорифера"
+              fill
+            />
+          </div>
+        </div>
 
         <ProductParagraph>
           Подобный гидродинамический компромисс ограничивает целесообразность
@@ -737,6 +794,25 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
                 необходимого для эффективного теплообмена.
               </li>
             </ul>
+          </div>
+
+          <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+            <div className="relative aspect-600/400 w-full">
+              <Image
+                src="/img/general_pages/gidravlicheskoe_soprotivlenie.png"
+                alt="Сравнительные гидродинамические характеристики калориферов"
+                title="Сравнительное гидравлическое сопротивление калориферов"
+                fill
+              />
+            </div>
+            <div className="relative aspect-600/400 w-full">
+              <Image
+                src="/img/general_pages/gidravlika_kaloriferov.png"
+                alt="Оптимизация гидравлических потерь калорифера"
+                title="Скорость теплоносителя в калориферах"
+                fill
+              />
+            </div>
           </div>
         </section>
 
