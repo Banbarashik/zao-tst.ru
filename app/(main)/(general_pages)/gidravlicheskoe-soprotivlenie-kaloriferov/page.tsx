@@ -52,6 +52,22 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
         экспресс-анализа.
       </ProductParagraph>
 
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Расчет сопротивления по воде",
+            url: "/gidravlicheskoe-soprotivlenie-kaloriferov#anchor1",
+            hiddenText:
+              "Гидравлический расчет калориферов по эмпирическим формулам",
+          },
+          {
+            name: "Таблицы потерь давления",
+            url: "/gidravlicheskoe-soprotivlenie-kaloriferov#anchor2",
+            hiddenText: "Гидравлические параметры водяных теплообменников",
+          },
+        ]}
+      />
+
       {/* Устройство и элементы гидравлического тракта калорифера */}
       <section className="space-y-4">
         <Heading
@@ -85,7 +101,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
             сопряжения теплообменного модуля с внешними трубопроводами
             гидравлической сети здания или технологической установки.
             Номинальный диаметр патрубков (Ду 25, 32, 40, 50, 65 мм) или
-            штуцеров (1'', 1<sup>{1}</sup>/<sub>{4}</sub> '', 1<sup>{1}</sup>/
+            штуцеров (1'', 1<sup>{1}</sup>/<sub>{4}</sub>'', 1<sup>{1}</sup>/
             <sub>{2}</sub>'', 2'', 2<sup>{1}</sup>/<sub>{2}</sub>'') напрямую
             определяется общей производительностью аппарата и расчетным расходом
             прокачиваемого теплоносителя.
@@ -189,6 +205,23 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           </ul>
         </div>
       </section>
+
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Водяные воздухонагреватели",
+            url: "/kalorifer-voda",
+            hiddenText:
+              "Теплофизические параметры воды для расчета калориферов",
+          },
+          {
+            name: "Онлайн-подбор калорифера",
+            url: "/kalorifery-voda#anchor1",
+            hiddenText:
+              "Калькулятор гидравлического расчета водяных калориферов",
+          },
+        ]}
+      />
 
       {/* Влияние многоходовой схемы движения теплоносителя на потери давления */}
       <section className="space-y-4">
@@ -308,6 +341,22 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           источника теплоснабжения без риска перегрузки циркуляционных насосов.
         </ProductParagraph>
       </section>
+
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Расчет водяных калориферов",
+            url: "/raschet-podbor-kaloriferov",
+            hiddenText:
+              "Расчет и подбор водяных воздухонагревателей приточных камер",
+          },
+          {
+            name: "Изготовление калориферов",
+            url: "/kalorifery",
+            hiddenText: "Назначение и конструкция промышленных калориферов",
+          },
+        ]}
+      />
 
       {/* Расчет гидравлического сопротивления калориферов */}
       <section className="space-y-4">
@@ -449,10 +498,12 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
                   температурных графиков.
                 </ProductParagraph>
 
-                <LegacyHtml
-                  html={tableHtml}
-                  className="legacy-table legacy-raschet-podbor-table min-w-231"
-                />
+                <div className="overflow-x-auto">
+                  <LegacyHtml
+                    html={tableHtml}
+                    className="legacy-table legacy-raschet-podbor-table min-w-231"
+                  />
+                </div>
               </li>
 
               {/* Действие 2. Рассчитываем гидравлическое сопротивление у подобранных калориферов */}
@@ -1049,6 +1100,23 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           напрямую зависит от выбранной схемы распределения потоков.
         </ProductParagraph>
 
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Водяные воздухонагреватели",
+              url: "/kalorifer-voda",
+              hiddenText:
+                "Теплофизические параметры воды для расчета калориферов",
+            },
+            {
+              name: "Онлайн-подбор калорифера",
+              url: "/kalorifery-voda#anchor1",
+              hiddenText:
+                "Калькулятор гидравлического расчета водяных калориферов",
+            },
+          ]}
+        />
+
         <div>
           <ProductParagraph>
             Конструктивно выделяют два основных типа сопряжения модулей в
@@ -1079,6 +1147,51 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           </ul>
         </div>
       </section>
+
+      <div className="space-y-2">
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Калориферы КСК",
+              url: "/kalorifery-ksk",
+              hiddenText:
+                "Теплофизические параметры пара для расчета калориферов",
+            },
+            {
+              name: "Калориферы ТВВ",
+              url: "/kalorifery-tvv",
+              hiddenText:
+                "Теплофизические параметры пара для расчета калориферов",
+            },
+            {
+              name: "Калориферы КФБ-А М",
+              url: "/kalorifery-kfb-a",
+              hiddenText:
+                "Теплофизические параметры пара для расчета калориферов",
+            },
+          ]}
+        />
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Каталог КСК",
+              url: "/documents/Kalorifer_KSK_katalog_2025.pdf",
+              hiddenText: "Технические характеристики водяных калориферов КСк",
+            },
+            {
+              name: "Каталог ТВВ",
+              url: "/documents/Kalorifer_TVV_katalog_2025.pdf",
+              hiddenText: "Технические характеристики водяных калориферов ТВВ",
+            },
+            {
+              name: "Каталог КФБ-А М",
+              url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
+              hiddenText:
+                "Технические характеристики водяных калориферов КФБ-А М",
+            },
+          ]}
+        />
+      </div>
     </>
   );
 }

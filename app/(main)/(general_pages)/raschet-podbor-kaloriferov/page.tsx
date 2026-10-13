@@ -1495,7 +1495,7 @@ export default async function RaschetPodborKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчет теплопередачи ",
+              name: "Расчет теплопередачи",
               url: "/koefficient-teploperedachi-kaloriferov#anchor2",
               hiddenText:
                 "Формула коэффициента теплопередачи водяного калорифера",
