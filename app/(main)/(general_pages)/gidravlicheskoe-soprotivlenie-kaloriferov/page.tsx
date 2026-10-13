@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import { ArrowBigDownDash } from "lucide-react";
 
-import { getLegacyHtmls } from "@/lib/legacyHtml";
+import { getLegacyHtml, getLegacyHtmls } from "@/lib/legacyHtml";
 
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
@@ -14,6 +14,12 @@ import LegacyHtml from "@/components/legacyHtml";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
 import { LEFT_BLUE_BRACKET } from "@/constants/styles";
+import {
+  HydraulicResistanceTable,
+  KskComparisonTable,
+  TvvComparisonTable,
+} from "@/components/general_pages/gidravlicheskoe-soprotivlenie-kaloriferov/table";
+import HydraulicResistanceTables from "@/components/general_pages/gidravlicheskoe-soprotivlenie-kaloriferov/hydraulicResistanceTables";
 
 export const metadata: Metadata = {
   title: "Гидравлическое сопротивление калориферов: расчет потерь давления",
@@ -23,7 +29,11 @@ export const metadata: Metadata = {
     "гидравлическое сопротивление водяного калорифера,расчет гидравлического сопротивления калорифера,формула гидравлического сопротивления калорифера,потери давления по воде в калорифере,коэффициент гидравлического сопротивления калорифера,скорость теплоносителя в трубках калорифера,гидравлический расчет водяных калориферов,таблица гидравлического сопротивления калориферов,сопротивление калорифера на гликолевом растворе,расчет гидравлического сопротивления калорифера кск",
 };
 
-export default function GidravlicheskoeSoprotivlenieKaloriferovPage() {
+export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
+  const tableHtml = await getLegacyHtml(
+    "/legacy/table-gidravlicheskoe-soprotivlenie-kaloriferov.html",
+  );
+
   return (
     <>
       <Heading
@@ -251,6 +261,8 @@ export default function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           с входящим параметром 95 °C.
         </ProductParagraph>
 
+        <KskComparisonTable />
+
         <ProductParagraph className="text-secondary-text">
           Полученные данные наглядно подтверждают физику процесса: переход от
           2-х ходовой схемы к 4-х ходовой обеспечивает прирост тепловой мощности
@@ -271,6 +283,8 @@ export default function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           режима течения. Ниже представлены расчетные параметры для данного типа
           воздухонагревателей при аналогичных внешних условиях.
         </ProductParagraph>
+
+        <TvvComparisonTable />
 
         <ProductParagraph className="text-secondary-text">
           Масштабирование диаметра базовых трубок до 22 мм позволяет
@@ -352,8 +366,8 @@ export default function GidravlicheskoeSoprotivlenieKaloriferovPage() {
 
             <ol className="space-y-4">
               {/* Действие 1. Находим скорость теплоносителя внутри трубок подобранных калориферов */}
-              <li className="text-example space-y-4">
-                <div>
+              <li className="space-y-4">
+                <div className="text-example">
                   <ProductParagraph>
                     Действие 1. Находим скорость теплоносителя внутри трубок
                     подобранных калориферов: W = G w / (p w • f w)
@@ -433,6 +447,11 @@ export default function GidravlicheskoeSoprotivlenieKaloriferovPage() {
                   перейти к его подробным гидравлическим расчетам для различных
                   температурных графиков.
                 </ProductParagraph>
+
+                <LegacyHtml
+                  html={tableHtml}
+                  className="legacy-table legacy-raschet-podbor-table min-w-231"
+                />
               </li>
 
               {/* Действие 2. Рассчитываем гидравлическое сопротивление у подобранных калориферов */}
@@ -586,6 +605,8 @@ export default function GidravlicheskoeSoprotivlenieKaloriferovPage() {
                     </span>
                   </li>
                 </ul>
+
+                <HydraulicResistanceTable />
               </li>
             </ol>
           </div>
@@ -722,6 +743,8 @@ export default function GidravlicheskoeSoprotivlenieKaloriferovPage() {
               <li>• 8.96 — результат подсчета потерь давления в кПа.</li>
             </ul>
           </div>
+
+          <HydraulicResistanceTables />
         </section>
 
         {/* Нахождение гидравлических потерь калорифера по табличным данным */}
