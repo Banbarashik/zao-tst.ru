@@ -311,6 +311,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
 
       {/* Расчет гидравлического сопротивления калориферов */}
       <section className="space-y-4">
+        <NumberedAnchor num={1} />
         <Heading
           lvl={2}
           text="Расчет гидравлического сопротивления калориферов"
@@ -690,6 +691,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
 
         {/* Упрощенный расчет гидравлического сопротивления калорифера */}
         <section className="space-y-4">
+          <NumberedAnchor num={2} />
           <Heading
             lvl={3}
             text="Упрощенный расчет гидравлического сопротивления калорифера"
