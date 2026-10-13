@@ -160,14 +160,14 @@ const tvvTable: TableData = {
 
 const hydraulicResistanceTable: TableData = {
   firstColumnHeader: {
-    text: "МОДЕЛЬ КАЛОРИФЕРА И СХЕМА КОНТУРА",
+    text: "Модель калорифера и схема контура",
     padding: "2px 8px",
   },
   columns: [
-    "ПЛОЩАДЬ ЖИВОГО СЕЧЕНИЯ ДЛЯ ПРОХОДА ВОДЫ, м²",
-    "ДЛИНА ТРУБОК В СВЕТУ, м",
+    "Площадь живого сечения для прохода воды, м²",
+    { text: "Длина трубок в свету, м", padding: "0 10px" },
     "Число ходов",
-    "ГИДРАВЛИЧЕСКОЕ СОПРОТИВЛЕНИЕ, кПа",
+    "Гидравлическое сопротивление, кПа",
   ],
   rows: [
     {
@@ -275,7 +275,69 @@ function TvvComparisonTable() {
 }
 
 function HydraulicResistanceTable() {
-  return <Table data={hydraulicResistanceTable} />;
+  return (
+    <div className="w-full overflow-x-auto">
+      <table className="w-full min-w-231 xl:min-w-auto">
+        <thead>
+          <tr>
+            <th className="py-1.5 text-center">
+              Модель калорифера и<br /> схема контура
+            </th>
+            <th className="text-center">
+              Площадь живого сечения
+              <br /> для прохода воды, м²
+            </th>
+            <th>
+              Длина трубок
+              <br /> в свету, м
+            </th>
+            <th className="text-center">Число ходов</th>
+            <th className="text-center">
+              Гидравлическое
+              <br /> сопротивление, кПа
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="pl-1.5 text-left">КСК 3-10 (4-ходовой)</td>
+            <td className="text-center">0.00116</td>
+            <td className="text-center">1.155</td>
+            <td className="text-center">4</td>
+            <td className="text-center">8.44</td>
+          </tr>
+          <tr>
+            <td className="pl-1.5 text-left">КСК 3-10 (6-ходовой)</td>
+            <td className="text-center">0.00078</td>
+            <td className="text-center">1.155</td>
+            <td className="text-center">6</td>
+            <td className="text-center">20.64</td>
+          </tr>
+          <tr>
+            <td className="pl-1.5 text-left">ТВВ 310 (4-ходовой)</td>
+            <td className="text-center">0.00227</td>
+            <td className="text-center">1.155</td>
+            <td className="text-center">4</td>
+            <td className="text-center">2.36</td>
+          </tr>
+          <tr>
+            <td className="pl-1.5 text-left">ТВВ 310 (6-ходовой)</td>
+            <td className="text-center">0.00151</td>
+            <td className="text-center">1.155</td>
+            <td className="text-center">6</td>
+            <td className="text-center">4.63</td>
+          </tr>
+          <tr>
+            <td className="pl-1.5 text-left">КФБ-7 АЗ (6-ходовой)</td>
+            <td className="text-center">0.00222</td>
+            <td className="text-center">0.860</td>
+            <td className="text-center">6</td>
+            <td className="text-center">2.18</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
 }
 
 export { KskComparisonTable, TvvComparisonTable, HydraulicResistanceTable };
