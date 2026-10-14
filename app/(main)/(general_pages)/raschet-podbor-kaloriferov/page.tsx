@@ -22,9 +22,9 @@ import { NtuSummaryTable } from "@/components/general_pages/ntuSummaryTable";
 import { LEFT_BLUE_BRACKET } from "@/constants/styles";
 
 export const metadata: Metadata = {
-  title: "Расчет и подбор водяных калориферов",
+  title: "Расчет и подбор водяных калориферов для приточной вентиляции",
   description:
-    "Расчет и подбор водяных калориферов. Технические характеристики, расчетные таблицы и формулы для подбора воздухонагревателей КСк ТВВ КФБ с теплоносителем вода",
+    "Пошаговый расчет водяных калориферов. Базовые формулы мощности, сопротивления и расхода воды для подбора воздухонагревателей систем вентиляции и технологического нагрева",
   keywords:
     "расчет и подбор водяного калорифера,формула для расчета и подбора водяных калориферов,формула тепловой мощности водяного калорифера,расчет производительности водяного калорифера,расчет температурного напора водяного калорифера,формула температурного напора водяного калорифера,расчет калориферов кск,расчет водяных калориферов кск,подбор калориферов кск,подбор водяных калориферов кск",
 };
@@ -1346,6 +1346,8 @@ export default async function RaschetPodborKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       {/* 6. Расчет коэффициента теплопередачи */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={6} />
@@ -2094,6 +2096,8 @@ export default async function RaschetPodborKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       {/* 10. Расчет запаса тепловой мощности калорифера */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={10} />
@@ -2543,6 +2547,8 @@ export default async function RaschetPodborKaloriferovPage() {
         />
       </section>
 
+      <Separator />
+
       {/* 13. Подбор водяного калорифера */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={13} />
@@ -2674,6 +2680,8 @@ export default async function RaschetPodborKaloriferovPage() {
           </div>
         </div>
       </section>
+
+      <Separator />
 
       {/* 14. Расчет и подбор водяных калориферов для технологического нагрева */}
       <section className="mb-4 space-y-4">
@@ -2924,7 +2932,7 @@ export default async function RaschetPodborKaloriferovPage() {
         </section>
 
         {/* Заключение по выбору схемы обвязки */}
-        <section className="text-example">
+        <section className="text-example mb-10">
           <Heading lvl={3} text="Заключение по выбору схемы обвязки" />
 
           <ol>
@@ -2983,6 +2991,8 @@ export default async function RaschetPodborKaloriferovPage() {
             </li>
           </ol>
         </section>
+
+        <Separator className="mb-6" />
 
         {/* Оптимизация рядности и высокотемпературный нагрев */}
         <section className="space-y-4">
