@@ -618,6 +618,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={1} />
         <Heading lvl={2} text="Расчет мощности по теплу" />
+
         <div>
           <ProductParagraph>
             1. Находим тепловую мощность для нагрева необходимого объема
@@ -736,6 +737,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={2} />
         <Heading lvl={2} text="Расчет площади фронтального сечения" />
+
         <div>
           <ProductParagraph>
             2. Установив необходимую тепловую мощность, определяем площадь
@@ -798,24 +800,27 @@ export default async function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
           </div>
         </div>
-        <ProductParagraph className="text-[#5a769a]">
+
+        <p className="text-[#5a769a]">
           Ниже представлена таблица с техническими характеристиками двух, трех и
-          четырехрядных паровых воздухонагревателей производства ООО «Т.С.Т.»
-          следующих серий: КП-02-УХЛ3, КФБ-А П УХЛ3, КПСк-02-У3. В таблице
-          выложены данные, необходимые для расчета и подбора: площадь
-          поверхности нагрева и фронтального сечения, длина теплообменных
-          элементов. Кликнув на модель выбранного парового теплообменника из
-          таблицы, можно ознакомиться с выполненными расчетными показателями на
-          разные объем и температуру нагреваемого воздуха, давление и
-          температуру теплоносителя.
-        </ProductParagraph>
+          четырехрядных паровых воздухонагревателей производства ООО Т.С.Т.
+          следующих серий: КП-02-УХЛ3, КФБ-А П УХЛ3, КПСк-02-У3 по ТУ
+          4863-002-55613706-02. В таблице выложены данные, необходимые для
+          расчета и подбора: площадь поверхности нагрева и фронтального сечения,
+          длина теплообменных элементов. Кликнув на модель выбранного парового
+          теплообменника из таблицы, можно ознакомиться с выполненными
+          расчетными показателями на разные объем и температуру нагреваемого
+          воздуха, давление и температуру теплоносителя.
+        </p>
+
         <div className="overflow-x-auto">
           <LegacyHtml
             html={table2Html}
             className="legacy-table legacy-raschet-podbor-table min-w-231"
           />
         </div>
-        <ProductParagraph className="text-[#5a769a]">
+
+        <p className="text-[#5a769a]">
           Если при поверочном расчете определена площадь фронтального сечения, а
           в таблице для подбора паровых калориферов нет моделей с таким
           показателями, тогда принимаем два или более оребренных
@@ -834,7 +839,7 @@ export default async function PodborRaschetKaloriferovPage() {
           четырехрядной модели осуществляется с учетом поставленной задачи,
           параметров пара и требуемого нагрева воздуха на меньшую или большую
           разницу температур входящего и выходящего воздуха.
-        </ProductParagraph>
+        </p>
       </section>
 
       <Separator />
@@ -961,7 +966,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
-        <ProductParagraph className="text-secondary-text">
+        <p className="text-secondary-text">
           Скрытая теплота парообразования или конденсации отображает количество
           энергии, которое расходуется для превращения одного килограмма кипящей
           воды при определенном давлении в килограмм пара. Такое же количество
@@ -970,7 +975,7 @@ export default async function PodborRaschetKaloriferovPage() {
           скрытая теплота парообразования, наоборот, уменьшается. Значение
           принимается с учетом параметров используемого теплоносителя по
           выложенной таблице теплофизических свойств насыщенного водяного пара.
-        </ProductParagraph>
+        </p>
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1061,7 +1066,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 5. Находим коэффициент теплопередачи для паровых
               воздухонагревателей, выбранных для расчета и подбора. Принимаем
@@ -1138,12 +1143,12 @@ export default async function PodborRaschetKaloriferovPage() {
             </FormulasList>
           </div>
         </div>
-        <ProductParagraph className="text-secondary-text">
+        <p className="text-secondary-text">
           Подробное описание нахождения коэффициента теплопередачи паровых
           биметаллических калориферов и таблицы с расчетными данными по каждой
           модели можно посмотреть на странице сайта: Коэффициент теплопередачи
           паровых калориферов.
-        </ProductParagraph>
+        </p>
         <LinkButtonsBlock
           buttons={[
             {
@@ -1168,6 +1173,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={6} />
         <Heading lvl={2} text="Расчет температурного напора" />
+
         <ProductParagraph>
           6. Выполнить расчет среднего по поверхности температурного напора.
           Ниже представлена формула для определения температурного напора с
@@ -1175,7 +1181,8 @@ export default async function PodborRaschetKaloriferovPage() {
           и воздуха на входе и выходе из калорифера. Вычисления проводятся с
           помощью калькулятора с функцией нахождения логарифма.
         </ProductParagraph>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-secondary-text">
           Принцип работы паровоздушного калорифера построен на теплообмене двух
           сред, которые можно разделить на два потока или контура: первый контур
           или греющая сторона - теплоноситель пар, второй контур или нагреваемая
@@ -1184,7 +1191,8 @@ export default async function PodborRaschetKaloriferovPage() {
           стороны остается неизменной, температура с холодной стороны
           повышается. Чем больше разница температур потоков, тем эффективней
           происходит теплообмен.
-        </ProductParagraph>
+        </p>
+
         <div>
           <ProductParagraph>
             Средний логарифмический температурный напор рассчитывается в
@@ -1246,6 +1254,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ol>
         </div>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-800/500 w-full">
             <Image
@@ -1264,6 +1273,7 @@ export default async function PodborRaschetKaloriferovPage() {
             />
           </div>
         </div>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
