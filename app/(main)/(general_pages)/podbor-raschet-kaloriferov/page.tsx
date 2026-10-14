@@ -16,6 +16,7 @@ import SteamCalcAerodynamicResistanceTables from "@/components/general_pages/ste
 import LegacyHtml from "@/components/legacyHtml";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
+import { LEFT_BLUE_BRACKET } from "@/constants/styles";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор паровых калориферов для вентиляции и сушки",
@@ -822,7 +823,7 @@ export default async function PodborRaschetKaloriferovPage() {
           />
         </div>
 
-        <p className="text-[#5a769a]">
+        <p className={LEFT_BLUE_BRACKET + " text-[#5a769a]"}>
           Если при поверочном расчете определена площадь фронтального сечения, а
           в таблице для подбора паровых калориферов нет моделей с таким
           показателями, тогда принимаем два или более оребренных
@@ -1644,7 +1645,7 @@ export default async function PodborRaschetKaloriferovPage() {
               φ = ((Q 1 - Q) / Q) • 100
             </span>
           </ProductParagraph>
-          <ul>
+          <ul className="mb-3">
             <li>φ – запас поверхности нагрева или мощности, %;</li>
             <li>
               Q <sub>1</sub> – вырабатываемая калорифером производительность по
@@ -1652,7 +1653,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
             <li>Q - требуемая тепловая мощность, Вт.</li>
           </ul>
-          <p className="text-secondary-text">
+          <p className={LEFT_BLUE_BRACKET + " text-secondary-text"}>
             Фактическая мощность по теплу паровоздушного калорифера должна быть
             больше, чем расчетная. Диапазон допустимого соотношения фактической
             и расчетной мощности, в зависимости от условий поставленной задачи и
