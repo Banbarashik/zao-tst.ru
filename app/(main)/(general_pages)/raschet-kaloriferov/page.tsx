@@ -128,6 +128,8 @@ export default function RaschetKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       {/* Методика расчета калориферов */}
       <section className="space-y-2">
         <Heading lvl={2} text="Методика расчета калориферов" />
@@ -266,6 +268,8 @@ export default function RaschetKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       {/* Массовая скорость воздуха при расчете калориферов */}
       <section className="space-y-2">
         <NumberedAnchor num={2} />
@@ -323,6 +327,8 @@ export default function RaschetKaloriferovPage() {
           ]}
         />
       </section>
+
+      <Separator />
 
       {/* Гидравлическое сопротивление при расчете калориферов */}
       <section className="space-y-6">
@@ -551,6 +557,8 @@ export default function RaschetKaloriferovPage() {
         />
       </section>
 
+      <Separator />
+
       {/* Запас поверхности теплообмена при расчете */}
       <section className="space-y-6">
         <NumberedAnchor num={3} />
@@ -594,6 +602,8 @@ export default function RaschetKaloriferovPage() {
           воздухонагревателя и пересчитать вариант.
         </ProductParagraph>
       </section>
+
+      <Separator />
 
       {/* Калькуляторы подбора и расчета калориферов */}
       <section className="space-y-2">
