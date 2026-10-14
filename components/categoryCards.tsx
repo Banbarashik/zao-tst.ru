@@ -44,6 +44,9 @@ function CategoryCard({ category, className }) {
           height={750}
         />
         <p className="font-bold tracking-wide uppercase">{category.name}</p>
+        {category.hiddenText && (
+          <span className="sr-only">{category.hiddenText}</span>
+        )}
       </Link>
     </li>
   );

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
-import Image from "next/image";
 import CategoryCards from "@/components/categoryCards";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
@@ -21,33 +22,40 @@ const kaloriferyCategories = [
   {
     name: "Калориферы КПСк",
     url: "/kalorifery-kpsk",
+    hiddenText:
+      "Технические характеристики, габаритные размеры и чертежи калориферов КПСк",
     img: {
       url: "/img/produkciya/kalorifery/kalorifer_kpsk.png",
-      alt: "Паровые калориферы КПСк",
+      alt: "Паровые калориферы КПСк от производителя с поставкой в регионы страны",
     },
   },
   {
     name: "Калориферы КП",
     url: "/kalorifery-kp",
+    hiddenText:
+      "Паровые промышленные калориферы увеличенного диаметра серии КП",
     img: {
       url: "/img/produkciya/kalorifery/kalorifer_kp.png",
-      alt: "Паровые калориферы КП",
+      alt: "Паровые калориферы КП от производителя с поставкой в регионы страны",
     },
   },
   {
     name: "Калориферы КППС КППУ",
     url: "/kalorifery-par",
+    hiddenText:
+      "Приточные паровые калориферы квадратного сечения серий КППС и КППУ",
     img: {
       url: "/img/produkciya/kalorifery/kalorifer_kpps_kppu.png",
-      alt: "Паровые калориферы КППС КППУ",
+      alt: "Паровые калориферы КППС и КППУ от производителя с поставкой в регионы страны",
     },
   },
   {
     name: "Калориферы КФБ-А П",
     url: "/kalorifery-kfb",
+    hiddenText: "Паровые калориферы серии КФБ-А П для компоновки в секции",
     img: {
       url: "/img/produkciya/kalorifery/kalorifer_kfb-p.png",
-      alt: "Паровые калориферы КФБ-А П",
+      alt: "Паровые калориферы КФБ-А П от производителя с поставкой в регионы страны",
     },
   },
 ];
@@ -423,6 +431,94 @@ export default function KaloriferParPage() {
           широкий диапазон производительности, мощности, температур наружного
           воздуха и рабочих параметров водяного пара.
         </ProductParagraph>
+
+        <section>
+          <Heading lvl={3} text="Калориферы КПСК" className="text-[17px]" />
+          <ProductParagraph>
+            Стандартная серия воздухонагревателей. Конструкция базируется на
+            несущих трубках диаметром 16 мм с накатным алюминиевым оребрением.
+            Линейка включает в себя 12 типоразмеров и выпускается в трех
+            вариантах: двухрядные КПСк 2, трехрядные КПСк 3 и четырехрядные КПСк
+            4. Ознакомиться с действующим прайс-листом и условиями поставки
+            можно в разделе{" "}
+            <Link
+              href="/catalog/kpsk"
+              className="text-primary-dark hover:text-primary"
+            >
+              каталог и цены на калориферы КПСк
+            </Link>
+            .
+          </ProductParagraph>
+        </section>
+
+        <section>
+          <Heading lvl={3} text="Калориферы КП" className="text-[17px]" />
+          <ProductParagraph>
+            Линейка, конструктивно близкая к серии КПСк, но разработанная для
+            более неблагоприятных условий эксплуатации. Благодаря увеличенному
+            до 22 мм диаметру несущих трубок, воздухоподогреватели этой серии
+            оптимально подходят для северных регионов и систем с повышенным
+            риском загрязнения теплоносителя. Включает 7 номеров в трех- и
+            четырехрядном исполнении. Актуальная стоимость оборудования и форма
+            онлайн-заказа представлены на странице{" "}
+            <Link
+              href="/catalog/kp"
+              className="text-primary-dark hover:text-primary"
+            >
+              продажа паровых калориферов КП
+            </Link>
+            .
+          </ProductParagraph>
+        </section>
+
+        <section>
+          <Heading
+            lvl={3}
+            text="Калориферы КППС и КППУ"
+            className="text-[17px]"
+          />
+          <ProductParagraph>
+            Специализированные серии калориферов квадратного сечения, которые
+            отличаются гибким и точным подбором габаритных размеров. Модели КППС
+            (несущая трубка 16 мм) и КППУ (несущая трубка 22 мм) насчитывают 25
+            и 23 типоразмера соответственно с рядностью от 2 до 4. Малый шаг
+            между номерами позволяет подобрать оптимальную мощность, а на
+            страницах конкретных моделей предусмотрен индивидуальный калькулятор
+            расчета. Оформить заводскую заявку и{" "}
+            <Link
+              href="/catalog/pritochny-parovy-kalorifery"
+              className="text-primary-dark hover:text-primary"
+            >
+              узнать стоимость калориферов КППС КППУ
+            </Link>{" "}
+            вы можете в корзине каталога.
+          </ProductParagraph>
+        </section>
+
+        <section>
+          <Heading lvl={3} text="Калориферы КФБ-А П" className="text-[17px]" />
+          <ProductParagraph>
+            Модернизированный аналог классических советских калориферов КФБ,
+            переведенный на современные стандарты энергоэффективности благодаря
+            биметаллическому исполнению с алюминиевым оребрением. Модели
+            изготавливаются на базе трубок диаметром 22 мм и представлены в 13
+            типоразмерах (3 и 4 ряда трубок). Посмотреть наличие, выбрать
+            параметры и{" "}
+            <Link
+              href="/catalog/kfb-a-p"
+              className="text-primary-dark hover:text-primary"
+            >
+              купить калориферы КФБ-А П от производителя
+            </Link>{" "}
+            можно в нашем интернет-каталоге.
+          </ProductParagraph>
+        </section>
+
+        <p className="text-secondary-text">
+          Подробные технические характеристики, габаритные размеры и чертежи
+          каждой серии доступны на отдельных страницах — для перехода к
+          справочной информации кликните на изображение нужной вам модели ниже.
+        </p>
 
         <CategoryCards
           categories={kaloriferyCategories}
