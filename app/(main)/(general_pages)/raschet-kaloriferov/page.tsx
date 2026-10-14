@@ -8,6 +8,7 @@ import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import ProductLinks from "@/components/general_pages/productLinks";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
+import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор водяных, паровых и электрических калориферов",
@@ -62,6 +63,26 @@ export default function RaschetKaloriferovPage() {
         калькуляторы для детального расчета водяных, паровых и электрических
         калориферных систем.
       </ProductParagraph>
+
+      <LinkButtonsBlock
+        buttons={[
+          {
+            url: "/raschet-podbor-kaloriferov",
+            name: "Расчет ТО вода",
+            hiddenText: "Поверочный расчет водяных калориферов",
+          },
+          {
+            url: "/podbor-raschet-kaloriferov",
+            name: "Расчет ТО пар",
+            hiddenText: "Поверочный расчет паровых калориферов",
+          },
+          {
+            url: "/raschet-elektrokaloriferov",
+            name: "Расчет ТО электро",
+            hiddenText: "Поверочный расчет электрических калориферов",
+          },
+        ]}
+      />
 
       {/* Расчет калориферов */}
       <section className="space-y-2">
@@ -124,8 +145,11 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
+      <Separator />
+
       {/* Подбор калориферов */}
       <section className="space-y-6">
+        <NumberedAnchor num={6} />
         <Heading lvl={2} text="Подбор калориферов" />
         <ProductParagraph>
           Практически для каждой задачи подбора воздухонагревателей может
@@ -136,18 +160,20 @@ export default function RaschetKaloriferovPage() {
           требуют компромисса.
         </ProductParagraph>
 
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                url: "/podbor-raschet-kaloriferov",
-                name: "Подбор паровых калориферов",
-                hiddenText:
-                  "Расчет и подбор калориферов для технологического нагрева",
-              },
-            ]}
-          />
-        </div>
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/raschet-podbor-kaloriferov#anchor13",
+              name: "Подбор водяных калориферов",
+              hiddenText: "Подбор модели и типоразмера водяного калорифера",
+            },
+            {
+              url: "/podbor-raschet-kaloriferov#anchor11",
+              name: "Подбор паровых калориферов",
+              hiddenText: "Подбор модели и типоразмера парового калорифера",
+            },
+          ]}
+        />
 
         <ProductParagraph>
           Например, меньшая рядность подобранных калориферов снижает
@@ -165,8 +191,10 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
+      <Separator />
+
       {/* Расчетная температура воздуха */}
-      <section className="space-y-2">
+      <section className="space-y-6">
         <NumberedAnchor num={1} />
         <Heading lvl={2} text="Расчетная температура воздуха" />
         <ProductParagraph>
@@ -182,7 +210,25 @@ export default function RaschetKaloriferovPage() {
           таком режиме теплопроизводительность воздухонагревателей получается
           наибольшей, поэтому он задает расчетный максимум.
         </ProductParagraph>
-        <ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/produkciya#karta-postavok",
+              name: "Параметры по карте регионов",
+              hiddenText:
+                "Климатологические параметры по СП 131.13330 для расчета ТО",
+            },
+            {
+              url: "/sitemap",
+              name: "Инженерно-расчетный блок",
+              hiddenText:
+                "Техническая карта для расчета и подбора воздухонагревателей",
+            },
+          ]}
+        />
+
+        <ProductParagraph className="mb-4">
           Если рециркуляция не применяется, начальную температуру нагреваемого
           воздуха берут по параметрам наружного воздуха, нормируемым СНиП. В
           общих случаях для вентиляции используют среднюю температуру наиболее
@@ -199,6 +245,7 @@ export default function RaschetKaloriferovPage() {
           тепловому балансу совмещенных систем, или по заданию технологических
           процессов.
         </ProductParagraph>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/600 w-full">
             <Image
@@ -228,14 +275,21 @@ export default function RaschetKaloriferovPage() {
         />
         <ProductParagraph>
           Чтобы сократить число вариантов подбора и удержать сопротивление
-          установки на уровне до 25% аэродинамического сопротивления всего
-          воздушного тракта, весовую скорость воздуха в фронтальном сечении
-          обычно принимают 3–6 кг/(м<sup>2</sup>·с), подбирая нужное число
-          калориферов таким образом, чтобы фактическое значение попадало в этот
-          диапазон.
+          установки в пределах 25% от потерь во всем воздушном тракте, весовую
+          скорость потока во фронтальном сечении водяных и паровых приборов
+          обычно принимают в интервале 3–6 кг/(м²·с) при технически допустимых
+          границах от 1.5 до 8.0 кг/(м²·с). Для электрических
+          воздухонагревателей определенных конструкций с высокой плотностью
+          теплового потока этот показатель закладывают выше — в диапазоне 6–8
+          кг/(м²·с) с порогом до 10 кг/(м²·с), что необходимо для интенсивного
+          обдува и защиты от перегрева элементов с большой удельной мощностью на
+          единицу длины ТЭНа.
         </ProductParagraph>
       </section>
 
+      <Separator />
+
+      {/* Аэродинамическое сопротивление при расчете калориферов */}
       <section className="space-y-2">
         <NumberedAnchor num={4} />
         <Heading
@@ -253,21 +307,26 @@ export default function RaschetKaloriferovPage() {
           аэродинамическое сопротивление считают как произведение сопротивления
           одного ряда на количество рядов.
         </ProductParagraph>
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                name: "Сопротивление калориферов пар",
-                url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
-                hiddenText:
-                  "Формулы для расчета аэродинамического сопротивления паровых калориферов",
-              },
-            ]}
-          />
-        </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Аэродинамика водяных ТО",
+              url: "/koefficient-teploperedachi-kaloriferov#anchor1",
+              hiddenText: "Аэродинамическое сопротивление водяных калориферов",
+            },
+            {
+              name: "Аэродинамика паровых ТО",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+              hiddenText: "Аэродинамическое сопротивление паровых калориферов",
+            },
+          ]}
+        />
       </section>
 
-      <section className="space-y-2">
+      {/* Гидравлическое сопротивление при расчете калориферов */}
+      <section className="space-y-6">
+        <NumberedAnchor num={5} />
         <Heading
           lvl={2}
           text="Гидравлическое сопротивление при расчете калориферов"
@@ -285,6 +344,24 @@ export default function RaschetKaloriferovPage() {
           и 20% на арматуру. К рассчитанному гидравлическому сопротивлению
           воздухонагревателей вводят запас 10–20%.
         </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Гидравлика водяных ТО",
+              url: "/gidravlicheskoe-soprotivlenie-kaloriferov#anchor1",
+              hiddenText:
+                "Методика расчета гидравлического контура водяных калориферов",
+            },
+            {
+              name: "Потери водяных калориферов",
+              url: "/gidravlicheskoe-soprotivlenie-kaloriferov#anchor2",
+              hiddenText:
+                "Табличные данные потерь давления водяных теплообменников",
+            },
+          ]}
+        />
+
         <ProductParagraph>
           При высокотемпературном теплоносителе и малом расходе воды
           предпочтительна схема, где калориферы внутри группы соединены
@@ -298,9 +375,12 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
-      <section className="space-y-2">
+      <Separator />
+
+      {/* Порядок расчета и подбора калориферов */}
+      <section className="space-y-6">
         <Heading lvl={2} text="Порядок расчета и подбора калориферов" />
-        <ProductParagraph className="mb-4">
+        <ProductParagraph>
           Подбор электрической, паровой и водяной воздухонагревательной
           установки начинается с расчета теплового потока, который нужно
           передать воздуху, при известном его расходе и температуре на входе и
@@ -308,23 +388,27 @@ export default function RaschetKaloriferovPage() {
           первичного теплоносителя: график горячей воды, параметры пара,
           температура поверхности электронагревателей.
         </ProductParagraph>
-        <div className="mb-4">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                url: "/podbor-raschet-kaloriferov#anchor1",
-                name: "Расчет мощности пар",
-                hiddenText: "Расчет тепловой мощности парового калорифера",
-              },
-              {
-                url: "/podbor-raschet-kaloriferov#anchor2",
-                name: "Расчет фронтального сечения",
-                hiddenText:
-                  "Подбор фронтального сечения парового калорифера для прохода воздуха",
-              },
-            ]}
-          />
-        </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/raschet-podbor-kaloriferov#anchor1",
+              name: "Мощность вода",
+              hiddenText: "Расчет мощности водяного калорифера",
+            },
+            {
+              url: "/podbor-raschet-kaloriferov#anchor1",
+              name: "Мощность пар",
+              hiddenText: "Расчет мощности парового калорифера",
+            },
+            {
+              url: "/raschet-elektrokaloriferov#anchor1",
+              name: "Электромощность",
+              hiddenText: "Расчет мощности электрического калорифера",
+            },
+          ]}
+        />
+
         <ProductParagraph>
           Далее задаются массовой скоростью воздуха и вычисляют требуемое
           фронтальное сечение для прохода нагреваемого воздушного потока через
@@ -335,57 +419,108 @@ export default function RaschetKaloriferovPage() {
           уточняют фактическую весовую скорость воздуха в подобранных
           теплообменниках.
         </ProductParagraph>
-        <ProductParagraph className="mb-4">
-          Определяют расход и скорость греющей воды в трубках многоходового
-          воздухонагревателя, расход греющего пара у одноходовых моделей.
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/raschet-podbor-kaloriferov#anchor2",
+              name: "Расчет сечения водяных ТО",
+              hiddenText:
+                "Расчет площади фронтального сечения водяного калорифера",
+            },
+            {
+              url: "/podbor-raschet-kaloriferov#anchor2",
+              name: "Расчет сечения паровых ТО",
+              hiddenText:
+                "Расчет площади фронтального сечения парового калорифера",
+            },
+          ]}
+        />
+
+        <ProductParagraph>
+          На основе ранее вычисленной тепловой мощности определяют требуемый
+          расход первичного теплоносителя. Для водяных многоходовых моделей
+          дополнительно рассчитывают скорость движения жидкости в трубках,
+          которая напрямую определяет интенсивность теплоотдачи. У паровых
+          приборов находят массовое часовое потребление пара, необходимое для
+          компенсации заданных теплопотерь воздушного потока.
         </ProductParagraph>
-        <div className="mb-4">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                url: "/podbor-raschet-kaloriferov#anchor8",
-                name: "Расход насыщенного пара",
-                hiddenText: "Расчет расхода пара воздухонагревателем",
-              },
-              {
-                url: "/podbor-raschet-kaloriferov#anchor5",
-                name: "Теплопередача пар",
-                hiddenText:
-                  "Расчет коэффициента теплопередачи парового калорифера",
-              },
-            ]}
-          />
-        </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/raschet-podbor-kaloriferov#anchor4",
+              name: "Расход и скорость воды",
+              hiddenText:
+                "Расчет расхода и скорости воды калорифером для нагрева воздуха",
+            },
+            {
+              url: "/podbor-raschet-kaloriferov#anchor4",
+              name: "Расход насыщенного пара",
+              hiddenText: "Методика расчета расхода пара для калориферов",
+            },
+          ]}
+        />
+
         <ProductParagraph>
           Рассчитывают коэффициент теплопередачи, который зависит от вида
           теплоносителя и скорости его прохождения по теплообменным трубкам,
           весовой скорости воздуха в фронтальном сечении, габаритных размеров,
           конструкционных и теплотехнических характеристик калориферов.
         </ProductParagraph>
-        <ProductParagraph className="mb-4">
-          Находят средний температурный напор.
-        </ProductParagraph>
-        <div className="mb-4 sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                url: "/podbor-raschet-kaloriferov#anchor6",
-                name: "Температурный напор пар",
-                hiddenText: "Расчет среднего логарифмического напора",
-              },
-            ]}
-          />
-        </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/koefficient-teploperedachi-kaloriferov",
+              name: "Теплопередача водяных ТО",
+              hiddenText:
+                "Расчет коэффициента теплопередачи водяного калорифера",
+            },
+            {
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov",
+              name: "Теплопередача паровых ТО",
+              hiddenText:
+                "Расчет коэффициента теплопередачи парового калорифера",
+            },
+          ]}
+        />
+
         <ProductParagraph>
+          Находят средний температурный напор. При расчете водяных калориферов в
+          вентиляционных режимах, как правило, используют среднеарифметическую
+          разность температур сред. Для паровых одноходовых моделей, из-за
+          неизменной температуры фазового перехода пара на греющей стороне,
+          вычисляют среднелогарифмический температурный напор.
+        </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/raschet-podbor-kaloriferov#anchor7",
+              name: "Температурный напор вода",
+              hiddenText:
+                "Расчет арифметической разности температур в теплообменниках",
+            },
+            {
+              url: "/podbor-raschet-kaloriferov#anchor6",
+              name: "Температурный напор пар",
+              hiddenText:
+                "Расчет логарифмической разности температур в теплообменниках",
+            },
+          ]}
+        />
+
+        <ProductParagraph className="mb-0">
           Подсчитывают фактическую тепловую мощность подобранных многоходовых и
           одноходовых воздухонагревателей, электрокалориферной установки.
         </ProductParagraph>
-        <ProductParagraph>
+        <ProductParagraph className="mb-0">
           Вычисляют действительные расход и скорость греющей воды в трубках
           многоходового теплообменника, расход греющего пара у одноходовых
           моделей.
         </ProductParagraph>
-        <ProductParagraph>
+        <ProductParagraph className="mb-0">
           К концу расчета фиксируют значения аэродинамических и гидравлических
           сопротивлений.
         </ProductParagraph>
@@ -397,9 +532,27 @@ export default function RaschetKaloriferovPage() {
           ее упрощения частично компенсируют введением запаса поверхности
           теплопередачи.
         </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/raschet-podbor-kaloriferov#anchor14",
+              name: "Расчет многорядных ТО вода",
+              hiddenText:
+                "Расчет водяных калориферов для технологического нагрева",
+            },
+            {
+              url: "/podbor-raschet-kaloriferov#anchor12",
+              name: "Расчет многорядных ТО пар",
+              hiddenText:
+                "Расчет паровых калориферов для технологического нагрева",
+            },
+          ]}
+        />
       </section>
 
-      <section className="space-y-2">
+      {/* Запас поверхности теплообмена при расчете */}
+      <section className="space-y-6">
         <NumberedAnchor num={3} />
         <Heading lvl={2} text="Запас поверхности теплообмена при расчете" />
         <ProductParagraph>
@@ -415,6 +568,22 @@ export default function RaschetKaloriferovPage() {
           температурами на входе, а в реальных вентиляционно-отопительных
           системах такое поле часто не соблюдается.
         </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/raschet-podbor-kaloriferov#anchor10",
+              name: "Запас поверхности водяных ТО",
+              hiddenText: "Расчет запаса тепловой мощности водяного калорифера",
+            },
+            {
+              url: "/podbor-raschet-kaloriferov#anchor9",
+              name: "Запас поверхности паровых ТО",
+              hiddenText: "Расчет запаса тепловой мощности парового калорифера",
+            },
+          ]}
+        />
+
         <ProductParagraph>
           Избыточный запас может привести к перегреву выходящего воздуха, а
           также увеличить риск замерзания калориферов в переходный период – при
@@ -426,6 +595,7 @@ export default function RaschetKaloriferovPage() {
         </ProductParagraph>
       </section>
 
+      {/* Калькуляторы подбора и расчета калориферов */}
       <section className="space-y-2">
         <Heading lvl={2} text="Калькуляторы подбора и расчета калориферов" />
         <ProductParagraph className="mb-4">
@@ -435,6 +605,7 @@ export default function RaschetKaloriferovPage() {
           производительностью по воздуху. По умолчанию установлена двухрядная
           модель, представлены трехрядный и четырехрядный теплообменники.
         </ProductParagraph>
+
         <ProductLinks
           products={productLinks.water.map((p) => ({
             ...p,
@@ -443,6 +614,7 @@ export default function RaschetKaloriferovPage() {
           gridTemplateCols="grid-cols-[repeat(auto-fill,minmax(140px,max-content))]"
           className="mb-4"
         />
+
         <ProductParagraph className="mb-4">
           В поля значений вносятся данные по объему нагреваемого воздуха и его
           температуре на входе и выходе, типу и параметрам теплоносителя.
@@ -453,6 +625,7 @@ export default function RaschetKaloriferovPage() {
           скорость в фронтальном сечении калорифера и делает вывод о
           соответствии требованиям вышеперечисленных параметров.
         </ProductParagraph>
+
         <ProductLinks
           products={productLinks.steam.map((p) => ({
             ...p,
@@ -461,6 +634,7 @@ export default function RaschetKaloriferovPage() {
           gridTemplateCols="grid-cols-[repeat(auto-fill,minmax(140px,max-content))]"
           className="mb-4"
         />
+
         <ProductParagraph>
           Проверку можно производить и на другие эксплуатационные режимы, не
           ограничиваясь расчетной точкой. Программа поддерживает моделирование
