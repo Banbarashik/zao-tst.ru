@@ -928,6 +928,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
+
         <LinkButtonsBlock
           buttons={[
             {
@@ -952,6 +953,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={4} />
         <Heading lvl={2} text="Расчет расхода пара для нагрева" />
+
         <div>
           <ProductParagraph>
             4. Рассчитываем расход пара, исходя из требуемой тепловой мощности
@@ -971,6 +973,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
+
         <p className="text-secondary-text">
           Скрытая теплота парообразования или конденсации отображает количество
           энергии, которое расходуется для превращения одного килограмма кипящей
@@ -981,6 +984,7 @@ export default async function PodborRaschetKaloriferovPage() {
           принимается с учетом параметров используемого теплоносителя по
           выложенной таблице теплофизических свойств насыщенного водяного пара.
         </p>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -994,6 +998,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
+
           <div>
             <ProductParagraph>
               ДЕЙСТВИЕ 4. Рассчитать потребление сухого насыщенного пара
@@ -1019,7 +1024,23 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
+
         <SaturatedSteamPropertiesTable />
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Подбор диаметра паропровода",
+              url: "/paroprovod#anchor2",
+              hiddenText: "Калькулятор расчета диаметра паропровода",
+            },
+            {
+              name: "Подбор конденсатопровода",
+              url: "/kondensatoprovod#anchor2",
+              hiddenText: "Калькулятор расчета диаметра конденсатопровода",
+            },
+          ]}
+        />
       </section>
 
       <Separator />
@@ -1028,6 +1049,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={5} />
         <Heading lvl={2} text="Расчет коэффициента теплопередачи" />
+
         <div>
           <ProductParagraph>
             5. Произвести расчет коэффициента теплопередачи выбранных паровых
@@ -1057,7 +1079,9 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>A, n, r - значение модуля и степеней из таблицы.</li>
           </ul>
         </div>
+
         <SteamCalcHeatTransferCoefficientTables />
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1071,6 +1095,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
+
           <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 5. Находим коэффициент теплопередачи для паровых
@@ -1148,25 +1173,27 @@ export default async function PodborRaschetKaloriferovPage() {
             </FormulasList>
           </div>
         </div>
+
         <p className="text-secondary-text">
           Подробное описание нахождения коэффициента теплопередачи паровых
           биметаллических калориферов и таблицы с расчетными данными по каждой
           модели можно посмотреть на странице сайта: Коэффициент теплопередачи
           паровых калориферов.
         </p>
+
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчет коэффициентов пар",
+              name: "Расчет теплопередачи",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
               hiddenText:
-                "Расчет коэффициента теплопередачи парового воздухонагревателя",
+                "Формула коэффициента теплопередачи парового калорифера",
             },
             {
               name: "Таблицы коэффициентов пар",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
               hiddenText:
-                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+                "Таблицы коэффициентов теплопередачи паровых калориферов",
             },
           ]}
         />
@@ -1292,6 +1319,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
+
           <div>
             <ProductParagraph>
               ДЕЙСТВИЕ 6. Рассчитываем температурный напор для выбранных
@@ -1343,6 +1371,21 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Теплоотдача калорифера",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor4",
+              hiddenText: "Особенности теплоотдачи в паровых калориферах",
+            },
+            {
+              name: "Интенсификация теплообмена",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor5",
+              hiddenText: "Увеличение теплоотдачи парового воздухонагревателя",
+            },
+          ]}
+        />
       </section>
 
       <Separator />
@@ -1495,7 +1538,7 @@ export default async function PodborRaschetKaloriferovPage() {
           </ul>
         </div>
 
-        <div className="text-example mb-6 space-y-2">
+        <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
               ⚙️ Пример расчета и подбора парового калорифера. ШАГ 8
@@ -1583,18 +1626,6 @@ export default async function PodborRaschetKaloriferovPage() {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                name: "Подбор диаметра паропровода",
-                url: "/paroprovod#anchor5",
-                hiddenText:
-                  "Таблица подбора диаметра паропровода от скорости пара",
-              },
-            ]}
-          />
         </div>
       </section>
 
@@ -1718,19 +1749,20 @@ export default async function PodborRaschetKaloriferovPage() {
           воздухонагревателей КФБ-7 А4, КФБ-8 А3 и КФБ-8 А4 превышает
           рекомендуемый диапазон.
         </p>
+
         <LinkButtonsBlock
           buttons={[
             {
               name: "Запас поверхности нагрева",
               url: "/raschet-kaloriferov#anchor3",
               hiddenText:
-                "Запас поверхности теплообмена при расчете калориферов",
+                "Методика расчета запаса мощности паровых калориферов",
             },
             {
-              name: "Запас сопротивления пар",
-              url: "/raschet-kaloriferov#anchor4",
+              name: "Выбор компоновки калориферов",
+              url: "/raschet-kaloriferov#anchor6",
               hiddenText:
-                "Запас аэродинамического сопротивления при подборе калориферов",
+                "Принципы подбора оптимальной компоновки паровых калориферов",
             },
           ]}
         />
@@ -1859,18 +1891,22 @@ export default async function PodborRaschetKaloriferovPage() {
           калориферов.
         </p>
 
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                name: "Расчет сопротивления пар",
-                url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
-                hiddenText:
-                  "Расчет аэродинамического сопротивления калориферов КПСк",
-              },
-            ]}
-          />
-        </div>
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Расчет потерь по воздуху",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+              hiddenText:
+                "Расчет потерь давления по воздуху в паровых теплообменниках",
+            },
+            {
+              name: "Аэродинамический запас",
+              url: "/raschet-kaloriferov#anchor4",
+              hiddenText:
+                "Методика расчета сопротивления по воздуху паровых калориферов",
+            },
+          ]}
+        />
       </section>
 
       <Separator />
@@ -1905,13 +1941,13 @@ export default async function PodborRaschetKaloriferovPage() {
             {
               name: "Расчет и подбор калориферов",
               url: "/raschet-kaloriferov",
-              hiddenText:
-                "Расчет и подбор калориферов для приточной вентиляции",
+              hiddenText: "Общая методика расчета и подбора калориферов",
             },
             {
               name: "Производство калориферов",
               url: "/kalorifery",
-              hiddenText: "Изготовление калориферов для приточной вентиляции",
+              hiddenText:
+                "Промышленные паровые калориферы для горных предприятий",
             },
           ]}
         />
@@ -2466,6 +2502,23 @@ export default async function PodborRaschetKaloriferovPage() {
             водяного нагрева:
           </ProductParagraph>
         </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Подбор водяных секций",
+              url: "/raschet-podbor-kaloriferov#anchor14",
+              hiddenText:
+                "Подбор водяных воздухонагревателей в секции теплообмена",
+            },
+            {
+              name: "Расчет водяных секций",
+              url: "/kalorifer-blocks",
+              hiddenText:
+                "Расчет многорядных секций водяных калориферов по методу NTU",
+            },
+          ]}
+        />
 
         <ProductParagraph>
           В указанных материалах подробно рассмотрены инженерные методики,
