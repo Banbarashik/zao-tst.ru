@@ -18,9 +18,9 @@ import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
-  title: "Расчет и подбор паровых калориферов",
+  title: "Расчет и подбор паровых калориферов для вентиляции и сушки",
   description:
-    "Расчет и подбор паровых калориферов. Технические характеристики, расчетные таблицы и формулы для подбора воздухонагревателей КПСк КП КФБ с теплоносителем пар",
+    "Пошаговый расчет паровых калориферов. Базовые формулы мощности, сопротивления и расхода пара для подбора воздухонагревателей систем вентиляции и сушильных камер",
   keywords:
     "расчет и подбор парового калорифера,формула для расчета и подбора паровых калориферов,формула тепловой мощности парового калорифера,расчет производительности парового калорифера,расчет температурного напора парового калорифера,формула температурного напора парового калорифера,расчет калориферов кпск,расчет паровых калориферов кпск,подбор калориферов кпск,подбор паровых калориферов кпск",
 };
@@ -480,19 +480,21 @@ export default async function PodborRaschetKaloriferovPage() {
         <Heading lvl={1} text="Подбор и расчет калорифера парового" />
 
         <ProductParagraph>
-          Теплоаэродинамический расчет и подбор паровых промышленных калориферов
-          основывается на совместном решении уравнений теплового баланса и
-          конвективного переноса энергии в оребренных трубных пучках. Пошаговый
-          инженерный алгоритм позволяет верифицировать требуемую мощность,
-          фактический расход пара и потери давления как одиночных аппаратов, так
-          и многорядных блочных установок технологического нагрева с учетом
-          температурных параметров приточного воздуха и аэродинамических
-          ограничений вентиляционной системы.
+          Инженерная методика, пошаговый теплоаэродинамический расчет и подбор
+          паровых промышленных калориферов для вентиляции и высокотемпературного
+          нагрева. На странице приведен подробный алгоритм вычисления мощности,
+          фактического расхода пара и скрытой теплоты парообразования.
+          Представлены формулы определения среднелогарифмического напора,
+          коэффициентов теплопередачи и воздушного сопротивления. Рассмотрены
+          особенности порядной компоновки теплообменников в составе сушильных
+          блоков.
         </ProductParagraph>
       </div>
 
+      {/* Расчет и подбор калориферов КПСК КП КФБ-А П */}
       <section className="mb-4 space-y-5">
         <Heading lvl={2} text="Расчет и подбор калориферов КПСК КП КФБ-А П" />
+
         <ProductParagraph className="mb-1">
           Расчет и подбор паровых калориферов осуществляется в следующей
           последовательности:
@@ -527,13 +529,15 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           ))}
         </ul>
-        <ProductParagraph className="text-[#5a769a]">
+
+        <p className="text-[#5a769a]">
           Подробное описание устройства и принципа работы паровых
           теплообменников представлено на странице сайта: Паровые калориферы.
           Для онлайн подбора паровоздушных нагревателей можно воспользоваться
           калькулятором, выложенным на странице сайта: Калориферы приточные
           паровые.
-        </ProductParagraph>
+        </p>
+
         <LinkButtonsBlock
           buttons={[
             {
@@ -549,6 +553,7 @@ export default async function PodborRaschetKaloriferovPage() {
             },
           ]}
         />
+
         <div className="mb-12 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/500 w-full">
             <Image
@@ -567,6 +572,7 @@ export default async function PodborRaschetKaloriferovPage() {
             />
           </div>
         </div>
+
         <ProductParagraph>
           Все действия по подбору паровых воздухонагревателей КПСк, КП, КФБ-А П
           производства нашего завода выложены в пошаговых расчетах. Прилагаются
@@ -575,6 +581,7 @@ export default async function PodborRaschetKaloriferovPage() {
           аппроксимации для каждого модельного ряда, приводятся пояснения и
           примеры к каждому вычислению.
         </ProductParagraph>
+
         <LinkButtonsBlock
           buttons={[
             {
@@ -590,7 +597,8 @@ export default async function PodborRaschetKaloriferovPage() {
             },
           ]}
         />
-        <ProductParagraph className="text-[#5a769a]">
+
+        <p className="text-[#5a769a]">
           Расчетная температура входящего воздуха подбирается в зависимости от
           технического задания и схемы включения парового калорифера в систему
           воздухообмена. При нагреве приточного воздуха в качестве исходных
@@ -599,13 +607,14 @@ export default async function PodborRaschetKaloriferovPage() {
           холодного периода и наиболее холодной пятидневки для ряда городов.
           Если в таблице отсутствует ваш населенный пункт, следует принять
           показатели близлежащего города.
-        </ProductParagraph>
+        </p>
 
         <SteamHeaterTempTable data={cityTemps} />
       </section>
 
       <Separator />
 
+      {/* 1. Расчет мощности по теплу */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={1} />
         <Heading lvl={2} text="Расчет мощности по теплу" />
@@ -723,6 +732,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 2. Расчет площади фронтального сечения */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={2} />
         <Heading lvl={2} text="Расчет площади фронтального сечения" />
@@ -829,6 +839,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 3. Расчет массовой скорости воздуха */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={3} />
         <Heading
@@ -927,6 +938,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 4. Расчет расхода пара для нагрева */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={4} />
         <Heading lvl={2} text="Расчет расхода пара для нагрева" />
@@ -1002,6 +1014,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 5. Расчет коэффициента теплопередачи */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={5} />
         <Heading lvl={2} text="Расчет коэффициента теплопередачи" />
@@ -1151,6 +1164,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 6. Расчет температурного напора */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={6} />
         <Heading lvl={2} text="Расчет температурного напора" />
@@ -1318,6 +1332,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 7. Расчет тепловой мощности парового калорифера */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={7} />
         <Heading lvl={2} text="Расчет тепловой мощности парового калорифера" />
@@ -1432,6 +1447,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 8. Расчет расхода пара для нагрева */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={8} />
         <Heading
@@ -1563,6 +1579,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 9. Запас тепловой мощности парового калорифера */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={9} />
         <Heading lvl={2} text="Запас тепловой мощности парового калорифера" />
@@ -1696,6 +1713,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 10. Расчет воздушного сопротивления */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={10} />
         <Heading lvl={2} text="Расчет воздушного сопротивления" />
@@ -1826,6 +1844,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 11. Подбор парового калорифера */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={11} />
         <Heading lvl={2} text="Подбор парового калорифера" />
@@ -1929,6 +1948,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 12. Расчет и подбор паровых калориферов для технологического нагрева */}
       <section className="space-y-4">
         <NumberedAnchor num={12} />
         <Heading
