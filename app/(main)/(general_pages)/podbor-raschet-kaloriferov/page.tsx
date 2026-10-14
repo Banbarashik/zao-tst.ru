@@ -544,12 +544,13 @@ export default async function PodborRaschetKaloriferovPage() {
               name: "Паровые калориферы",
               url: "/kalorifer-par",
               hiddenText:
-                "Температура и давление теплоносителя для парового калорифера",
+                "Конструкция и устройство парового воздухонагревателя",
             },
             {
               name: "Калькулятор паровой калорифер",
               url: "/kalorifery-par#anchor3",
-              hiddenText: "Калькулятор подбора паровых калориферов онлайн",
+              hiddenText:
+                "Онлайн-расчет мощности приточных паровых калориферов",
             },
           ]}
         />
@@ -585,15 +586,16 @@ export default async function PodborRaschetKaloriferovPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчетная температура воздуха",
+              name: "Методика расчета температуры",
               url: "/raschet-kaloriferov#anchor1",
               hiddenText:
-                "Температура воздуха при расчете калориферов приточной вентиляции",
+                "Температура для расчета и подбора паровых калориферов",
             },
             {
               name: "Модели паровых калориферов",
               url: "/kalorifer-par#anchor2",
-              hiddenText: "Калориферы для парового воздушного отопления",
+              hiddenText:
+                "Биметаллические паровые калориферы для нагрева воздуха",
             },
           ]}
         />
@@ -852,6 +854,7 @@ export default async function PodborRaschetKaloriferovPage() {
           text="Расчет массовой скорости воздуха"
           className="mb-0"
         />
+
         <div>
           <ProductParagraph>
             3. Находим действительную массовую скорость для выбранных
@@ -869,6 +872,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -882,6 +886,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
+
           <div>
             <ProductParagraph>
               ДЕЙСТВИЕ 3. Найти действительную массовую скорость в фронтальном
@@ -929,13 +934,13 @@ export default async function PodborRaschetKaloriferovPage() {
               name: "Массовая скорость воздуха",
               url: "/raschet-kaloriferov#anchor2",
               hiddenText:
-                "Массовая скорость воздуха в фронтальном сечении калорифера",
+                "Рекомендуемая массовая скорость воздуха в паровых калориферах",
             },
             {
               name: "Параметры водяного пара",
               url: "/kalorifer-par#anchor1",
               hiddenText:
-                "Таблица свойств водяного пара в зависимости от давления",
+                "Теплофизические свойства пара для расчетов калориферов",
             },
           ]}
         />
