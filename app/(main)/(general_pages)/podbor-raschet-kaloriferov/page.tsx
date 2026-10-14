@@ -1346,6 +1346,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={7} />
         <Heading lvl={2} text="Расчет тепловой мощности парового калорифера" />
+
         <div>
           <ProductParagraph>
             7. Уточняем фактическую тепловую мощность выбранных паровых
@@ -1374,6 +1375,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1387,7 +1389,8 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 7. Рассчитываем действительную тепловую мощность
               подобранных паровых воздухонагревателей. Коэффициент теплопередачи
@@ -1465,6 +1468,7 @@ export default async function PodborRaschetKaloriferovPage() {
           text="Расчет расхода пара для нагрева"
           className="mb-0"
         />
+
         <div>
           <ProductParagraph>
             8. Уточняем фактический расход пара выбранных калориферов:{" "}
@@ -1485,6 +1489,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
+
         <div className="text-example mb-6 space-y-2">
           <div>
             <ProductParagraph>
@@ -1498,7 +1503,8 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 8. Рассчитывается действительный расход сухого
               насыщенного пара давлением 0.1 МПа подобранными паровыми
@@ -1593,6 +1599,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={9} />
         <Heading lvl={2} text="Запас тепловой мощности парового калорифера" />
+
         <div>
           <ProductParagraph>
             9. Определяем запас тепловой производительности или поверхности
@@ -1609,7 +1616,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
             <li>Q - требуемая тепловая мощность, Вт.</li>
           </ul>
-          <ProductParagraph className="text-secondary-text">
+          <p className="text-secondary-text">
             Фактическая мощность по теплу паровоздушного калорифера должна быть
             больше, чем расчетная. Диапазон допустимого соотношения фактической
             и расчетной мощности, в зависимости от условий поставленной задачи и
@@ -1618,8 +1625,9 @@ export default async function PodborRaschetKaloriferovPage() {
             находиться на уровне 10%, допустимый интервал от 0 до 20%. Если при
             подборе получен меньший или больший запас рекомендуется принять
             другой теплообменник и произвести повторный расчет.
-          </ProductParagraph>
+          </p>
         </div>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1633,7 +1641,8 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 9. Рассчитывается запас площади поверхности теплообмена
               выбранных воздухонагревателей, проводится анализ его соответствия
@@ -1697,12 +1706,13 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-example">
           Из подобранных моделей калориферы КПСк 2-10 и КПСк 3-10 имеют
           недостаточную тепловую мощность. Запас площади поверхности паровых
           воздухонагревателей КФБ-7 А4, КФБ-8 А3 и КФБ-8 А4 превышает
           рекомендуемый диапазон.
-        </ProductParagraph>
+        </p>
         <LinkButtonsBlock
           buttons={[
             {
@@ -1727,6 +1737,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={10} />
         <Heading lvl={2} text="Расчет воздушного сопротивления" />
+
         <div>
           <ProductParagraph>
             10. Произвести расчет аэродинамического сопротивления подобранных
@@ -1751,7 +1762,9 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>B, m - значение модуля и степени из таблицы.</li>
           </ul>
         </div>
+
         <SteamCalcAerodynamicResistanceTables />
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1765,7 +1778,8 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 10. Рассчитывается аэродинамическое сопротивление
               выбранных воздушных обогревателей. Принимаем модели КПСк и КП с
@@ -1832,12 +1846,14 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-secondary-text">
           Подробное описание нахождения потерь по воздушной стороне паровых
           калориферов и таблицы с расчетными данными по каждой модели можно
           посмотреть на странице сайта: Аэродинамическое сопротивление паровых
           калориферов.
-        </ProductParagraph>
+        </p>
+
         <div className="sm:w-1/2">
           <LinkButtonsBlock
             buttons={[
@@ -1858,6 +1874,7 @@ export default async function PodborRaschetKaloriferovPage() {
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={11} />
         <Heading lvl={2} text="Подбор парового калорифера" />
+
         <ProductParagraph>
           11. Правильный и корректный подбор паровых калориферов направлен на
           поиск технического решения, обеспечивающего требуемый нагрев воздуха
@@ -1869,13 +1886,15 @@ export default async function PodborRaschetKaloriferovPage() {
           и рациональным запасом тепловой мощности при минимальном сопротивлении
           воздушному потоку.
         </ProductParagraph>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-secondary-text">
           Критерии подбора и методика расчета воздухонагревателей представлены
           на странице сайта: Расчет и подбор водяных, паровых и электрических
           калориферов. С конструкционными особенностями, видами и типами
           выпускаемых нашим предприятием спирально-накатных теплообменников
           можно ознакомиться на странице: Калориферы. Производство.
-        </ProductParagraph>
+        </p>
+
         <LinkButtonsBlock
           buttons={[
             {
@@ -1891,6 +1910,7 @@ export default async function PodborRaschetKaloriferovPage() {
             },
           ]}
         />
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1904,6 +1924,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
+
           <div>
             <ProductParagraph>
               ДЕЙСТВИЕ 11. Для подбора было выбрано девять моделей одноходовых
@@ -1931,10 +1952,12 @@ export default async function PodborRaschetKaloriferovPage() {
               </li>
             </ul>
           </div>
+
           <KaloriferPropsTable
             columns={kaloriferPropColumns}
             data={kaloriferProps}
           />
+
           <div>
             <ProductParagraph>
               В результате расчета и подбора паровых калориферов для обеспечения
