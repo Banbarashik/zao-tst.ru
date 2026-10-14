@@ -627,7 +627,7 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>
               <ProductParagraph>
                 1.1 Определяем массовый расход нагреваемого воздуха:{" "}
-                <span className="text-2xl font-bold">G = V • р</span>
+                <span className="text-xl font-bold">G = V • р</span>
               </ProductParagraph>
               <ul>
                 <li>G - массовый расход воздуха, кг/час;</li>
@@ -641,7 +641,7 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>
               <ProductParagraph>
                 1.2 Определяем расход теплоты для нагревания воздуха:{" "}
-                <span className="text-2xl font-bold">
+                <span className="text-xl font-bold">
                   Q = G • c • (t <span className="font-normal">кон</span> - t{" "}
                   <span className="font-normal">нач</span>)
                 </span>
@@ -689,7 +689,7 @@ export default async function PodborRaschetKaloriferovPage() {
               <li>
                 <ProductParagraph>
                   1.1 Определяем массовый расход нагреваемого воздуха:{" "}
-                  <span className="text-xl font-bold">
+                  <span className="font-bold">
                     G = 9000 • 1.34 = 12060 кг/час
                   </span>
                 </ProductParagraph>
@@ -706,7 +706,7 @@ export default async function PodborRaschetKaloriferovPage() {
               <li>
                 <ProductParagraph>
                   1.2 Определяем расход теплоты для нагрева воздушного потока:{" "}
-                  <span className="block text-xl font-bold">
+                  <span className="block font-bold">
                     Q = (12060/3600) • 1006 • ((22-(-39)) = 3.35 • 1006 • 61 =
                     205576 Вт
                   </span>
@@ -746,7 +746,7 @@ export default async function PodborRaschetKaloriferovPage() {
           </ProductParagraph>
           <ProductParagraph>
             Площадь фронтального сечения определяем по формуле:{" "}
-            <span className="text-2xl font-bold">f = G / v</span>
+            <span className="text-xl font-bold">f = G / v</span>
           </ProductParagraph>
           <ul>
             <li>f - площадь фронтального сечения, м²;</li>
@@ -778,7 +778,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <ProductParagraph>
               Находим площадь фронтального сечения:{" "}
-              <span className="text-xl font-bold">
+              <span className="font-bold">
                 f = (12060/3600) / 5.0 = 0.670 м²
               </span>
             </ProductParagraph>
@@ -851,7 +851,7 @@ export default async function PodborRaschetKaloriferovPage() {
           <ProductParagraph>
             3. Находим действительную массовую скорость для выбранных
             калориферов:{" "}
-            <span className="text-2xl font-bold">
+            <span className="text-xl font-bold">
               v = G / F <sub>ф</sub>
             </span>
           </ProductParagraph>
@@ -891,19 +891,19 @@ export default async function PodborRaschetKaloriferovPage() {
             <FormulasList>
               <li className="flex items-baseline justify-between gap-2">
                 Калориферы КПСк и КП 10-го номера
-                <span className="block text-xl font-bold">
+                <span className="block font-bold">
                   v = (12060/3600) / 0.581 = 5.77 кг/(м²•с)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калориферы КФБ-А 7-го номера
-                <span className="block text-xl font-bold">
+                <span className="block font-bold">
                   v = (12060/3600) / 0.619 = 5.41 кг/(м²•с)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калориферы КФБ-А 8-го номера
-                <span className="block text-xl font-bold">
+                <span className="block font-bold">
                   v = (12060/3600) / 0.727 = 4.61 кг/(м²•с)
                 </span>
               </li>
@@ -946,7 +946,7 @@ export default async function PodborRaschetKaloriferovPage() {
           <ProductParagraph>
             4. Рассчитываем расход пара, исходя из требуемой тепловой мощности
             для нагрева заданного объема воздуха.{" "}
-            <span className="block text-2xl font-bold">
+            <span className="block text-xl font-bold">
               G <sub className="font-normal">пар</sub> = Q / r{" "}
               <sub className="font-normal">пар</sub>
             </span>
@@ -992,7 +992,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <ProductParagraph>
               Подсчет расхода пара:{" "}
-              <span className="text-xl font-bold">
+              <span className="font-bold">
                 G <sub>пар</sub> = 205576 / 2257510 = 0.091 кг/сек = 328 кг/час
               </span>
             </ProductParagraph>
@@ -1030,7 +1030,7 @@ export default async function PodborRaschetKaloriferovPage() {
           </ProductParagraph>
           <ProductParagraph>
             Формула для нахождения коэффициента теплопередачи имеет вид:{" "}
-            <span className="text-2xl font-bold">
+            <span className="text-xl font-bold">
               К = A • v <sup>n</sup> • L <sup>r</sup>
             </span>
           </ProductParagraph>
@@ -1074,63 +1074,63 @@ export default async function PodborRaschetKaloriferovPage() {
             <FormulasList>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КПСк 2-10
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 34.3 • 5.77 <sup>0.357</sup> • 1.155 <sup>-0.072</sup> =
                   63.50 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КПСк 3-10
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 30.3 • 5.77 <sup>0.405</sup> • 1.155 <sup>-0.066</sup> =
                   61.08 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КПСк 4-10
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 26.1 • 5.77 <sup>0.476</sup> • 1.155 <sup>-0.036</sup> =
                   59.81 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КП 310
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 43.5 • 5.77 <sup>0.431</sup> • 1.155 <sup>-0.072</sup> =
                   91.64 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КП 410
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 37.2 • 5.77 <sup>0.452</sup> • 1.155 <sup>-0.063</sup> =
                   81.40 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-7 А3
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 43.5 • 5.41 <sup>0.431</sup> • 0.860 <sup>-0.072</sup> =
                   91.04 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-7 А4
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 37.2 • 5.41 <sup>0.452</sup> • 0.860 <sup>-0.063</sup> =
                   80.59 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-8 А3
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 43.5 • 4.61 <sup>0.431</sup> • 1.010 <sup>-0.072</sup> =
                   83.96 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-8 А4
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 37.2 • 4.61 <sup>0.452</sup> • 1.010 <sup>-0.063</sup> =
                   74.14 Вт/(м²•°C)
                 </span>
@@ -1196,11 +1196,11 @@ export default async function PodborRaschetKaloriferovPage() {
                 - определяется разница температур двух потоков в их крайних
                 точках
               </ProductParagraph>
-              <ProductParagraph className="text-2xl font-bold">
+              <ProductParagraph className="text-xl font-bold">
                 Δ T <sub>Б</sub> = T s - t{" "}
                 <span className="font-normal">нач</span>
               </ProductParagraph>
-              <ProductParagraph className="text-2xl font-bold">
+              <ProductParagraph className="text-xl font-bold">
                 Δ T <sub>М</sub> = T s - t{" "}
                 <span className="font-normal">кон</span>
               </ProductParagraph>
@@ -1233,7 +1233,7 @@ export default async function PodborRaschetKaloriferovPage() {
                 - полученные значения температурных перепадов включаем в формулу
                 расчета температурного напора
               </ProductParagraph>
-              <ProductParagraph className="text-2xl font-bold">
+              <ProductParagraph className="text-xl font-bold">
                 Δ T = (Δ T <sub>Б</sub> - Δ T <sub>М</sub>) / ln (Δ T{" "}
                 <sub>Б</sub> / Δ T <sub>М</sub>)
               </ProductParagraph>
@@ -1284,10 +1284,10 @@ export default async function PodborRaschetKaloriferovPage() {
               сухой насыщенный пар давлением 0.1 МПа, температура воздуха на
               входе -39°С, температура воздуха на выходе +22°С.
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               Δ T <sub>Б</sub> = 99.6 – (-39) = 138.6
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               Δ T <sub>М</sub> = 99.6 – 22 = 77.6
             </ProductParagraph>
             <ul>
@@ -1307,7 +1307,7 @@ export default async function PodborRaschetKaloriferovPage() {
                 выходе из калорифера, °С.
               </li>
             </ul>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               Δ T = (138.6 – 77.6) / ln (138.6 / 77.6) = 61 / ln 1.78608 = 61 /
               2.71828 n 1.78608 = 61 / 0.580 = 105.2 °С
             </ProductParagraph>
@@ -1343,7 +1343,7 @@ export default async function PodborRaschetKaloriferovPage() {
           </ProductParagraph>
           <ProductParagraph>
             Формула для нахождения теплопроизводительности имеет вид:{" "}
-            <span className="text-2xl font-bold">
+            <span className="text-xl font-bold">
               Q <sub>1</sub> = К • F к • Δ T
             </span>
           </ProductParagraph>
@@ -1388,55 +1388,55 @@ export default async function PodborRaschetKaloriferovPage() {
             <ul className="max-w-xl space-y-2 sm:space-y-0.5">
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 2-10</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 63.50 • 19.5 • 105.2 = 130264 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 3-10</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 61.08 • 29.7 • 105.2 = 190841 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 4-10</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 59.81 • 39.0 • 105.2 = 245389 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КП 310</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 91.64 • 21.9 • 105.2 = 211128 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КП 410</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 81.40 • 28.7 • 105.2 = 245766 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-7 А3</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 91.04 • 24.1 • 105.2 = 230816 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-7 А4</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 80.59 • 31.7 • 105.2 = 268755 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-8 А3</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 83.96 • 28.2 • 105.2 = 249079 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-8 А4</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 74.14 • 37.2 • 105.2 = 290142 Вт
                 </span>
               </li>
@@ -1587,7 +1587,7 @@ export default async function PodborRaschetKaloriferovPage() {
           <ProductParagraph>
             9. Определяем запас тепловой производительности или поверхности
             нагрева принятых калориферов:
-            <span className="block text-2xl font-bold">
+            <span className="block text-xl font-bold">
               φ = ((Q 1 - Q) / Q) • 100
             </span>
           </ProductParagraph>
@@ -2414,9 +2414,7 @@ function FormulasList({ children }) {
 
 function Formula({ example = false, className = "", children }) {
   return (
-    <span
-      className={`font-bold ${example ? "text-xl" : "text-2xl"} ${className}`}
-    >
+    <span className={`font-bold ${example ? "" : "text-xl"} ${className}`}>
       {children}
     </span>
   );
