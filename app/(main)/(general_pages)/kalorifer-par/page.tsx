@@ -79,6 +79,24 @@ export default function KaloriferParPage() {
         сушильных камер.
       </ProductParagraph>
 
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Паровые воздухоподогреватели",
+            url: "/kalorifer-par#anchor2",
+            hiddenText:
+              "Паровые оребренные воздухонагреватели для систем вентиляции",
+          },
+          {
+            name: "Таблица свойств пара",
+            url: "/kalorifer-par#anchor1",
+            hiddenText:
+              "Таблица свойств насыщенного водяного пара для калориферов",
+          },
+        ]}
+      />
+
+      {/* Принцип работы парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Принцип работы парового калорифера" />
         <ProductParagraph>
@@ -93,6 +111,9 @@ export default function KaloriferParPage() {
           отсутствие необходимости применения циркуляционных насосов для
           транспортировки пара.
         </ProductParagraph>
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Теплоноситель – водяной пар" />
           <ProductParagraph className="text-base">
@@ -103,6 +124,7 @@ export default function KaloriferParPage() {
             теплосодержание или удельную энтальпию кипящей воды.
           </ProductParagraph>
         </section>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
@@ -123,8 +145,12 @@ export default function KaloriferParPage() {
         </div>
       </section>
 
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+      {/* Устройство парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Устройство парового калорифера" />
+
         <ProductParagraph>
           Конструктивно паровой калорифер представляет собой стальной корпус с
           автономным пароконденсатным трактом, включающим в себя элементы
@@ -134,8 +160,11 @@ export default function KaloriferParPage() {
           сверху которых при производстве монтируются распределительно-сборные
           одноходовые коллекторы с боковыми планками. С обратной стороны
           коллекторов крепятся патрубки для подачи пара и вывода конденсата.
-          Патрубки могут дополняться фланцами или резьбовым соединением. Для
-          монтажа парового калорифера к элементам вентиляционно-отопительной
+          Патрубки могут дополняться фланцами или резьбовым соединением.
+        </ProductParagraph>
+
+        <ProductParagraph>
+          Для монтажа парового калорифера к элементам вентиляционно-отопительной
           системы к торцам решеток прикручиваются съемные боковые щитки с
           присоединительными отверстиями. Совместно с трубными решетками они
           образуют кожух воздухонагревателя. При установке промышленных
@@ -143,21 +172,25 @@ export default function KaloriferParPage() {
           соединяются между собой и образуют сплошную поверхность нагрева без
           пропусков холодных воздушных струй.
         </ProductParagraph>
+
         <LinkButtonsBlock
           buttons={[
             {
               url: "/podbor-raschet-kaloriferov",
-              name: "Расчет паровых калориферов",
-              hiddenText: "Расчет и подбор паровых калориферов КПСк",
+              name: "Расчет парового калорифера",
+              hiddenText: "Методика расчета и подбора паровых калориферов",
             },
             {
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
-              name: "Сопротивление калориферов",
+              url: "/kalorifery-par#anchor1",
+              name: "Калькулятор подбора",
               hiddenText:
-                "Расчет аэродинамического сопротивления парового калорифера",
+                "Программа подбора паровых приточных воздухонагревателей",
             },
           ]}
         />
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Процесс парообразования" />
           <ProductParagraph className="text-base">
@@ -183,8 +216,12 @@ export default function KaloriferParPage() {
         </section>
       </section>
 
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+      {/* Поверхность нагрева парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Поверхность нагрева парового калорифера" />
+
         <ProductParagraph>
           Ребра теплоотдающих элементов имеют округлую форму, внешнее развитие
           поверхности обеспечивается методом винтовой прокатки на специальном
@@ -198,6 +235,25 @@ export default function KaloriferParPage() {
           турбулизации воздушного потока и интенсификации теплообмена
           биметаллического калорифера.
         </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Подбор фронтального сечения",
+              url: "/podbor-raschet-kaloriferov#anchor2",
+              hiddenText: "Определение площади сечения калориферов",
+            },
+            {
+              name: "Коэффициент теплопередачи",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov",
+              hiddenText:
+                "Коэффициент теплопередачи парового воздухонагревателя",
+            },
+          ]}
+        />
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Скрытая теплота парообразования" />
           <ProductParagraph className="text-base">
@@ -214,6 +270,9 @@ export default function KaloriferParPage() {
         </section>
       </section>
 
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+      {/* Теплопередача парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Теплопередача парового калорифера" />
         <ProductParagraph>
@@ -231,6 +290,7 @@ export default function KaloriferParPage() {
           перепад температур теплоносителя и нагреваемой среды, тем интенсивнее
           будет теплоперенос.
         </ProductParagraph>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
@@ -249,6 +309,7 @@ export default function KaloriferParPage() {
             />
           </div>
         </div>
+
         <ProductParagraph>
           Поскольку процесс конденсации идет при практически постоянных давлении
           и температуре, на поверхности нагрева получается равномерное
@@ -262,23 +323,29 @@ export default function KaloriferParPage() {
           случае нижняя часть теплообменника может быть заполнена воздухом и
           конденсатом.
         </ProductParagraph>
+
         <LinkButtonsBlock
           buttons={[
             {
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov",
-              name: "Коэффициент теплопередачи",
-              hiddenText: "Коэффициент теплопередачи парового калорифера",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+              name: "Сопротивление по воздуху",
+              hiddenText:
+                "Расчет потерь давления по воздуху в паровых калориферах",
             },
             {
               url: "/podbor-raschet-kaloriferov#anchor4",
               name: "Расчет расхода пара",
-              hiddenText: "Расчет расхода пара для подачи в калорифер",
+              hiddenText: "Определение расхода пара паровым калорифером",
             },
           ]}
         />
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
         <section className="text-[#5a769a]">
           <NumberedAnchor num={1} />
           <Heading lvl={3} text="Температура и давление насыщенного пара" />
+
           <ProductParagraph className="text-base">
             Температура кипения воды зависит от давления. При уменьшении
             давления, температура закипания воды понижается, при увеличении –
@@ -289,8 +356,10 @@ export default function KaloriferParPage() {
             градусов.
           </ProductParagraph>
         </section>
+
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Температура конденсата" />
+
           <ProductParagraph className="text-base">
             Температуру образованного конденсата, с достаточной точностью, можно
             принимать равной температуре пара или чуть ниже. При этом
@@ -303,24 +372,17 @@ export default function KaloriferParPage() {
             его температура.
           </ProductParagraph>
         </section>
+
         <SaturatedSteamPropertiesTable />
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
         <ProductParagraph>
           На интенсивность теплообмена существенно влияет подготовка и качество
           подаваемого в оребренный калорифер водяного пара, содержание в нем
           жидкости и температура. Высокий коэффициент теплопередачи достигается
           при использовании сухого насыщенного пара.
         </ProductParagraph>
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                name: "Расчет диаметра паропровода",
-                url: "/paroprovod#anchor2",
-                hiddenText: "Калькулятор расчета диаметра паропровода",
-              },
-            ]}
-          />
-        </div>
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Сухой и влажный насыщенный пар" />
           <ProductParagraph className="text-base">
@@ -335,6 +397,22 @@ export default function KaloriferParPage() {
             теплообмен и снижает коэффициент теплопередачи.
           </ProductParagraph>
         </section>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Расчет диаметра паропровода",
+              url: "/paroprovod",
+              hiddenText: "Расчет и подбор диаметра труб для паропроводов",
+            },
+            {
+              name: "Расчет конденсатопровода",
+              url: "kondensatoprovod",
+              hiddenText: "Расчет и подбор диаметра труб для паропроводов",
+            },
+          ]}
+        />
+
         <section className="space-y-1 text-[#5a769a]">
           <Heading lvl={3} text="Перегретый пар" />
           <ProductParagraph className="text-base">
@@ -368,6 +446,7 @@ export default function KaloriferParPage() {
             паровоздушным отопительным агрегатам с осевым вентилятором.
           </ProductParagraph>
         </section>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
@@ -388,7 +467,10 @@ export default function KaloriferParPage() {
         </div>
       </section>
 
-      <section className="space-y-1">
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+      {/* Работа парового калорифера */}
+      <section className="space-y-6">
         <Heading lvl={2} text="Работа парового калорифера" />
         <ProductParagraph>
           Установка калорифера осуществляется таким образом, чтобы
@@ -402,6 +484,24 @@ export default function KaloriferParPage() {
           пакетом параллельно расположенных нагревательных элементов, выполнит
           роль демпфера.
         </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Процесс теплоотдачи",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor4",
+              hiddenText:
+                "Передача энергии тепла при конденсации пара в калорифере",
+            },
+            {
+              name: "Повышение теплообмена",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor5",
+              hiddenText:
+                "Увеличение интенсивности теплообмена в паровых калориферах",
+            },
+          ]}
+        />
+
         <ProductParagraph>
           Давление в пароводяном обогревателе относительно давления в подводящем
           паропроводе существенно не отличается. Температура пара равна
@@ -419,8 +519,9 @@ export default function KaloriferParPage() {
         </ProductParagraph>
       </section>
 
-      <Separator />
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
+      {/* Модели паровых калориферов */}
       <section className="space-y-6">
         <NumberedAnchor num={2} />
         <Heading lvl={2} text="Модели паровых калориферов" />
