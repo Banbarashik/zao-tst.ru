@@ -281,6 +281,7 @@ export default function KaloriferParPage() {
       {/* Теплопередача парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Теплопередача парового калорифера" />
+
         <ProductParagraph>
           Накопленная скрытая теплота хранится внутри пара, который
           транспортируется по теплоцентрали к калориферам. Поступая в
@@ -348,6 +349,7 @@ export default function KaloriferParPage() {
 
         <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
+        {/* Температура и давление насыщенного пара */}
         <section className="text-[#5a769a]">
           <NumberedAnchor num={1} />
           <Heading lvl={3} text="Температура и давление насыщенного пара" />
@@ -363,6 +365,7 @@ export default function KaloriferParPage() {
           </ProductParagraph>
         </section>
 
+        {/* Температура конденсата */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Температура конденсата" />
 
@@ -389,6 +392,8 @@ export default function KaloriferParPage() {
           жидкости и температура. Высокий коэффициент теплопередачи достигается
           при использовании сухого насыщенного пара.
         </ProductParagraph>
+
+        {/* Сухой и влажный насыщенный пар */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Сухой и влажный насыщенный пар" />
           <ProductParagraph className="text-base">
@@ -407,20 +412,22 @@ export default function KaloriferParPage() {
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчет диаметра паропровода",
               url: "/paroprovod",
+              name: "Расчет диаметра паропровода",
               hiddenText: "Расчет и подбор диаметра труб для паропроводов",
             },
             {
+              url: "/kondensatoprovod",
               name: "Расчет конденсатопровода",
-              url: "kondensatoprovod",
               hiddenText: "Расчет и подбор диаметра труб для паропроводов",
             },
           ]}
         />
 
+        {/* Перегретый пар */}
         <section className="space-y-1 text-[#5a769a]">
           <Heading lvl={3} text="Перегретый пар" />
+
           <ProductParagraph className="text-base">
             Перегретый пар – это пар, который имеет более высокую температуру,
             чем насыщенный пар при том же давлении. Перегрев пара осуществляется
