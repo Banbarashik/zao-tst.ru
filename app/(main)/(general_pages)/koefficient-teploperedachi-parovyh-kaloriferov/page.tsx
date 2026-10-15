@@ -28,14 +28,17 @@ const linkButtons = {
     {
       name: "Калориферы КПСК",
       url: "/kalorifery-kpsk",
+      hiddenText: "Тепловая мощность и производительность калориферов КПСк",
     },
     {
       name: "Калориферы КП",
       url: "/kalorifery-kp",
+      hiddenText: "Тепловая мощность и производительность калориферов ТВВ",
     },
     {
       name: "Калориферы КФБ-А П",
       url: "/kalorifery-kfb",
+      hiddenText: "Тепловая мощность и производительность калориферов КФБ-А П",
     },
   ],
   documents: [
@@ -44,18 +47,21 @@ const linkButtons = {
       url: "/documents/Kalorifer_KPSK_katalog_2025.pdf",
       openNewTab: true,
       goal: "open_pdf",
+      hiddenText: "Технические характеристики паровых калориферов КПСк",
     },
     {
       name: "Каталог КП",
       url: "/documents/Kalorifer_KP_katalog_2025.pdf",
       openNewTab: true,
       goal: "open_pdf",
+      hiddenText: "Технические характеристики паровых калориферов КП",
     },
     {
       name: "Каталог КФБ-А П",
       url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
       openNewTab: true,
       goal: "open_pdf",
+      hiddenText: "Технические характеристики паровых калориферов КФБ-А П",
     },
   ],
 };
@@ -354,6 +360,22 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         аппроксимационные модули и параметры аэродинамического сопротивления.
       </ProductParagraph>
 
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Расчет теплопередачи",
+            url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
+            hiddenText: "Расчет коэффициента теплопередачи водяного калорифера",
+          },
+          {
+            name: "Расчет аэродинамики",
+            url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+            hiddenText:
+              "Расчет аэродинамического сопротивления водяного калорифера",
+          },
+        ]}
+      />
+
       {/* Коэффициент теплопередачи калориферов КПСК КП КФБ-А */}
       <section className="space-y-6">
         <Heading
@@ -390,6 +412,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             воздуху конвективным путем.
           </li>
         </ul>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
@@ -408,10 +431,15 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             />
           </div>
         </div>
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+        {/* Теплоотдача парового калорифера */}
         <section className="space-y-4 text-[#496486]">
           <Heading lvl={3} text="Теплоотдача парового калорифера" />
+
           <div className="mb-6 space-y-1">
-            <ProductParagraph className="text-base">
+            <p>
               При теплоотдаче от пара к стенке перенос тепла осуществляется в
               момент соприкосновения движущегося парового потока с охлаждаемой
               внутренней поверхностью. Пар оседает на более холодной стенке и
@@ -424,8 +452,9 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               тяжести эта пленка стекает вниз, обеспечивая непрерывное
               обновление конденсата и постоянное выделение теплоты фазового
               перехода.
-            </ProductParagraph>
-            <ProductParagraph className="text-base">
+            </p>
+
+            <p>
               При пленочной конденсации термическое сопротивление собственно
               паровой фазы относительно мало; основное сопротивление
               теплопередаче создает именно слой конденсата. Внутри трубок
@@ -437,8 +466,25 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               направлением стекания конденсата, трение способствует ускорению
               течения пленки, уменьшению ее толщины и, как следствие, увеличению
               коэффициента теплопередачи.
-            </ProductParagraph>
-            <ProductParagraph className="text-base">
+            </p>
+
+            <LinkButtonsBlock
+              buttons={[
+                {
+                  name: "Таблица подбора паропровода",
+                  url: "/paroprovod",
+                  hiddenText: "Таблица подбора диаметра паропровода",
+                },
+                {
+                  name: "Подбор конденсатопровода",
+                  url: "/kondensatoprovod",
+                  hiddenText: "Таблица подбора диаметра конденсатопровода",
+                },
+              ]}
+              className="my-5"
+            />
+
+            <p>
               Негативное влияние на теплоотдачу оказывает присутствие в паре
               воздуха или других неконденсирующихся газов. Это приводит к тому,
               что газы остаются в приповерхностной зоне, накапливаясь у стенки и
@@ -449,20 +495,9 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               фактически уменьшает активную теплопередающую поверхность
               воздухонагревателя, что приводит к падению его
               теплопроизводительности.
-            </ProductParagraph>
+            </p>
           </div>
-          <div className="sm:w-1/2">
-            <LinkButtonsBlock
-              buttons={[
-                {
-                  name: "Таблица подбора паропровода",
-                  url: "/paroprovod#anchor5",
-                  hiddenText:
-                    "Таблица подбора диаметра паропровода от давления пара",
-                },
-              ]}
-            />
-          </div>
+
           <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
             <div className="relative aspect-1000/650 w-full">
               <Image
@@ -482,13 +517,18 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </div>
           </div>
         </section>
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+        {/* Интенсификация теплоотдачи парового калорифера */}
         <section className="text-[#496486]">
           <Heading
             lvl={3}
             text="Интенсификация теплоотдачи парового калорифера"
           />
-          <div className="mb-6 space-y-1">
-            <ProductParagraph className="text-base">
+
+          <div className="space-y-1">
+            <p>
               При нагреве воздуха паром условия теплопередачи по обе стороны
               разделяющей их стенки заметно различаются. Коэффициент теплоотдачи
               со стороны греющего пара к стенке многократно превышает
@@ -497,8 +537,9 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               коэффициентов теплоотдачи со стороны воздушного потока при
               производстве паровых калориферов используются теплопередающие
               элементы с развитой оребренной поверхностью.
-            </ProductParagraph>
-            <ProductParagraph className="text-base">
+            </p>
+
+            <p>
               На эффективность работы парового теплообменника заметно влияют как
               материал труб и оребрения, так и качество контакта между ними. Чем
               выше коэффициент теплопроводности материала оребрения, тем выше
@@ -514,8 +555,27 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               оправданным как с точки зрения интенсификации теплообмена, так и с
               позиции улучшения массовых и конструктивных характеристик
               обогревателя в целом.
-            </ProductParagraph>
-            <ProductParagraph className="text-base">
+            </p>
+
+            <LinkButtonsBlock
+              buttons={[
+                {
+                  name: "Расчет тепловой мощности",
+                  url: "/podbor-raschet-kaloriferov#anchor1",
+                  hiddenText:
+                    "Требуемый расход тепла на нагрев воздуха паровым калорифером",
+                },
+                {
+                  name: "Среднелогарифмический напор",
+                  url: "/podbor-raschet-kaloriferov#anchor6",
+                  hiddenText:
+                    "Расчет температурного напора парового калорифера",
+                },
+              ]}
+              className="my-5"
+            />
+
+            <p>
               В отличие от ряда других отопительных приборов, калориферы
               специально предназначены для работы в условиях принудительной
               конвекции воздуха, поэтому прирост коэффициентов теплообмена при
@@ -535,24 +595,27 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               спирально-оребренных труб способствует турбулизации воздушного
               потока, усиливает перемешивание в межтрубном пространстве, и
               дополнительно увеличивает коэффициент теплопередачи.
-            </ProductParagraph>
+            </p>
+
+            <LinkButtonsBlock
+              buttons={[
+                {
+                  name: "Работа парового калорифера",
+                  url: "/kalorifer-par",
+                  hiddenText:
+                    "Характеристики поверхности нагрева паровых калориферов",
+                },
+                {
+                  name: "Онлайн-расчет паровых ТО",
+                  url: "/kalorifery-par#anchor3",
+                  hiddenText:
+                    "Калькулятор аэродинамического расчета паровых калориферов",
+                },
+              ]}
+              className="mt-5"
+            />
           </div>
         </section>
-        <LinkButtonsBlock
-          buttons={[
-            {
-              name: "Паровые калориферы",
-              url: "/kalorifer-par",
-              hiddenText:
-                "Пар как теплоноситель для парового воздухонагревателя",
-            },
-            {
-              name: "Расчет парового калорифера",
-              url: "/podbor-raschet-kaloriferov",
-              hiddenText: "Формулы для расчета и подбора паровых калориферов",
-            },
-          ]}
-        />
       </section>
 
       <Separator />
@@ -576,6 +639,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
           теплопередачи паровоздушных теплообменников КПСк, КП и КФБ-А П по
           табличным данным представлен ниже.
         </ProductParagraph>
+
         <ProductParagraph>
           Формула для расчета коэффициента теплопередачи парового калорифера
           имеет вид:{" "}
@@ -605,7 +669,9 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             рядности воздухонагревателя.
           </li>
         </ul>
+
         <SteamCalcHeatTransferCoefficientTables />
+
         <div className="space-y-4 text-[#6a2d2d]">
           <div>
             <ProductParagraph>⚙️ Пример расчета 1</ProductParagraph>
@@ -646,6 +712,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               </li>
             </ul>
           </div>
+
           <div>
             <ProductParagraph>⚙️ Пример расчета 2</ProductParagraph>
             <ProductParagraph>
@@ -685,6 +752,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               </li>
             </ul>
           </div>
+
           <div>
             <ProductParagraph>⚙️ Пример расчета 3</ProductParagraph>
             <ProductParagraph>
@@ -724,6 +792,23 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
             </ul>
           </div>
         </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Расчет массовой скорости",
+              url: "/podbor-raschet-kaloriferov#anchor3",
+              hiddenText: "Расчет массовой скорости в паровом калорифере",
+            },
+            {
+              name: "Расчет парового калорифера",
+              url: "/podbor-raschet-kaloriferov",
+              hiddenText:
+                "Инженерный расчет паровых калориферов приточной вентиляции",
+            },
+          ]}
+          className="mt-5"
+        />
       </section>
 
       <Separator />
@@ -895,6 +980,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         {/* render all tables generated above */}
         {tables}
       </section>
+
+      <Separator />
 
       {/* Справочно-техническая документация */}
       <section className="space-y-4">
