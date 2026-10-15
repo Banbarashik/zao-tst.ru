@@ -258,8 +258,10 @@ export default function KaloriferParPage() {
 
         <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
+        {/* Скрытая теплота парообразования */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Скрытая теплота парообразования" />
+
           <ProductParagraph className="text-base">
             Общее теплосодержание, или полная энтальпия пара определяется как
             количество тепла, необходимого для получения 1 кг пара из 1 кг воды
