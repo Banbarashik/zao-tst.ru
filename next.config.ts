@@ -93,11 +93,6 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
-        source: "/koefficient-teploperedachi-kaloriferov",
-        destination: "/kalorifery-voda",
-        permanent: false,
-      },
-      {
         source: "/komplektatciia-kaloriferov",
         destination: "/",
         permanent: false,
