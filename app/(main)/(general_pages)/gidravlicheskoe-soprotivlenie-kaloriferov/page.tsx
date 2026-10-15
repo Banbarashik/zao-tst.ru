@@ -13,7 +13,7 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
-import { LEFT_BLUE_BRACKET } from "@/constants/styles";
+import { LEFT_BLUE_BRACKET, LEFT_PRIMARY_BRACKET } from "@/constants/styles";
 import {
   HydraulicResistanceTable,
   KskComparisonTable,
@@ -171,6 +171,8 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
         </div>
       </section>
 
+      <Separator />
+
       {/* Структура гидравлических потерь давления */}
       <section className="space-y-4">
         <Heading lvl={2} text="Структура гидравлических потерь давления" />
@@ -202,7 +204,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           </li>
         </ul>
 
-        <div className="text-secondary-text">
+        <div className={LEFT_PRIMARY_BRACKET + " text-secondary-text"}>
           <p>
             В конструкции калорифера данные потери локализованы в следующих
             узлах:
@@ -246,6 +248,8 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           },
         ]}
       />
+
+      <Separator />
 
       {/* Влияние многоходовой схемы движения теплоносителя на потери давления */}
       <section className="space-y-4">
@@ -347,6 +351,8 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           модификаций.
         </ProductParagraph>
 
+        <Separator />
+
         <p className="text-example">
           Ниже представлены теплотехнические и гидродинамические характеристики
           калорифера КСк 4-11 с несущими трубками диаметром 16 мм при различных
@@ -419,6 +425,8 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           },
         ]}
       />
+
+      <Separator />
 
       {/* Расчет гидравлического сопротивления калориферов */}
       <section className="space-y-4">
@@ -820,6 +828,8 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           </div>
         </section>
 
+        <Separator />
+
         {/* Упрощенный расчет гидравлического сопротивления калорифера */}
         <section className="space-y-4">
           <NumberedAnchor num={2} />
@@ -882,6 +892,8 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           <HydraulicResistanceTables />
         </section>
 
+        <Separator />
+
         {/* Нахождение гидравлических потерь калорифера по табличным данным */}
         <section className="space-y-4">
           <Heading
@@ -941,7 +953,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
             </ul>
           </div>
 
-          <div className="text-secondary-text">
+          <div className={LEFT_PRIMARY_BRACKET + " text-secondary-text"}>
             <ProductParagraph>
               Техническое примечание: Представленные эмпирические таблицы и
               паспортные коэффициенты гидравлического сопротивления (C) являются
@@ -965,6 +977,8 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           </div>
         </section>
       </section>
+
+      <Separator />
 
       {/* Эксплуатационные ограничения и гидродинамические режимы работы */}
       <section className="space-y-4">
@@ -1089,7 +1103,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
               гидродинамическим причинам:
             </li>
           </ul>
-          <ol className="text-[17px]">
+          <ol>
             <li>
               1. Завоздушивание контура. При низких скоростях нисходящий поток
               жидкости теряет способность увлекать за собой и выталкивать
@@ -1106,14 +1120,14 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
               приточного воздуха.
             </li>
           </ol>
-          <ProductParagraph>
+          <p>
             При проектировании узлов автоматического регулирования калориферов
             на базе чистой сетевой воды необходимо полностью исключать глубокое
             дросселирование расхода в зимний период. Изменение тепловой мощности
             должно происходить за счет качественного регулирования (подмеса
             обратной воды), сохраняющего скорость циркуляции внутри
             теплообменных каналов в безопасных пределах.
-          </ProductParagraph>
+          </p>
         </section>
 
         {/* Влияние внутренней коррозии и накипеобразования на гидравлическое сопротивление контура */}
@@ -1169,6 +1183,8 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           </ul>
         </section>
       </section>
+
+      <Separator />
 
       {/* Гидравлика секционных сборок и схемы подключения калориферов */}
       <section className="space-y-4">
@@ -1233,50 +1249,67 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
         </div>
       </section>
 
-      <div className="space-y-2">
-        <LinkButtonsBlock
-          buttons={[
-            {
-              name: "Калориферы КСК",
-              url: "/kalorifery-ksk",
-              hiddenText:
-                "Теплофизические параметры пара для расчета калориферов",
-            },
-            {
-              name: "Калориферы ТВВ",
-              url: "/kalorifery-tvv",
-              hiddenText:
-                "Теплофизические параметры пара для расчета калориферов",
-            },
-            {
-              name: "Калориферы КФБ-А М",
-              url: "/kalorifery-kfb-a",
-              hiddenText:
-                "Теплофизические параметры пара для расчета калориферов",
-            },
-          ]}
-        />
-        <LinkButtonsBlock
-          buttons={[
-            {
-              name: "Каталог КСК",
-              url: "/documents/Kalorifer_KSK_katalog_2025.pdf",
-              hiddenText: "Технические характеристики водяных калориферов КСк",
-            },
-            {
-              name: "Каталог ТВВ",
-              url: "/documents/Kalorifer_TVV_katalog_2025.pdf",
-              hiddenText: "Технические характеристики водяных калориферов ТВВ",
-            },
-            {
-              name: "Каталог КФБ-А М",
-              url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
-              hiddenText:
-                "Технические характеристики водяных калориферов КФБ-А М",
-            },
-          ]}
-        />
-      </div>
+      <Separator />
+
+      {/* Справочно-техническая документация */}
+      <section className="space-y-4">
+        <Heading lvl={2} text="Справочно-техническая документация" />
+
+        <ProductParagraph>
+          Таблицы габаритных размеров и развернутые теплоаэродинамические и
+          гидродинамические характеристики оборудования представлены на
+          страницах серий водяных калориферов. Для перехода к детальному
+          описанию или скачиванию технической документации воспользуйтесь
+          интерактивным меню ниже.
+        </ProductParagraph>
+
+        <div className="space-y-2">
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "Калориферы КСК",
+                url: "/kalorifery-ksk",
+                hiddenText:
+                  "Теплофизические параметры пара для расчета калориферов",
+              },
+              {
+                name: "Калориферы ТВВ",
+                url: "/kalorifery-tvv",
+                hiddenText:
+                  "Теплофизические параметры пара для расчета калориферов",
+              },
+              {
+                name: "Калориферы КФБ-А М",
+                url: "/kalorifery-kfb-a",
+                hiddenText:
+                  "Теплофизические параметры пара для расчета калориферов",
+              },
+            ]}
+          />
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "Каталог КСК",
+                url: "/documents/Kalorifer_KSK_katalog_2025.pdf",
+                hiddenText:
+                  "Технические характеристики водяных калориферов КСк",
+              },
+              {
+                name: "Каталог ТВВ",
+                url: "/documents/Kalorifer_TVV_katalog_2025.pdf",
+                hiddenText:
+                  "Технические характеристики водяных калориферов ТВВ",
+              },
+              {
+                name: "Каталог КФБ-А М",
+                url: "/documents/Kalorifer_KFB_katalog_2025.pdf",
+                hiddenText:
+                  "Технические характеристики водяных калориферов КФБ-А М",
+              },
+            ]}
+          />
+        </div>
+      </section>
     </>
   );
 }
