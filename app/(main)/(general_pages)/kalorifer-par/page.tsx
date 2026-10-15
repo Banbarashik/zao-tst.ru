@@ -98,6 +98,7 @@ export default function KaloriferParPage() {
       {/* Принцип работы парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Принцип работы парового калорифера" />
+
         <ProductParagraph>
           Высокие значения теплоты конденсации определяют целесообразность
           использования пара в качестве экономичного и энергоэффективного
@@ -113,6 +114,7 @@ export default function KaloriferParPage() {
 
         <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
+        {/* Теплоноситель – водяной пар */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Теплоноситель – водяной пар" />
           <ProductParagraph className="text-base">
