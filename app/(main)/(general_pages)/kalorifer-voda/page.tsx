@@ -93,17 +93,17 @@ export default function KaloriferParPage() {
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
-              src="/img/general_pages/kalorifer_par_2.png"
-              alt=""
-              title=""
+              src="/img/general_pages/kalorifer_voda_2_3.png"
+              alt="Устройство водяного калорифера"
+              title="Водяной калорифер двухрядный и трехрядный"
               fill
             />
           </div>
           <div className="relative aspect-1000/650 w-full">
             <Image
-              src="/img/general_pages/kalorifer_par_3_4.png"
-              alt=""
-              title=""
+              src="/img/general_pages/kalorifer_voda_4.png"
+              alt="Конструкция водовоздушного калорифера"
+              title="Водяной калорифер четырехрядный"
               fill
             />
           </div>
@@ -252,17 +252,17 @@ export default function KaloriferParPage() {
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
-              src="/img/general_pages/par_kalorifer_3.png"
-              alt=""
-              title=""
+              src="/img/general_pages/voda_kalorifer_3_4.png"
+              alt="Воздухонагреватель с теплоносителем вода"
+              title="Водяной воздухонагреватель биметаллический"
               fill
             />
           </div>
           <div className="relative aspect-1000/650 w-full">
             <Image
-              src="/img/general_pages/par_kalorifer_4.png"
-              alt=""
-              title=""
+              src="/img/general_pages/voda_kalorifer_4.png"
+              alt="Теплообменник многоходовой"
+              title="Водяной теплообменник оребренный"
               fill
             />
           </div>
