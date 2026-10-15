@@ -8,7 +8,6 @@ import CategoryCards from "@/components/categoryCards";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
-import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Паровые калориферы и свойства пара как теплоносителя",
