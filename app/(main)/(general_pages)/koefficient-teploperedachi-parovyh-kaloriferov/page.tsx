@@ -15,11 +15,12 @@ import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
-  title: "Коэффициент теплопередачи паровых калориферов",
+  title:
+    "Коэффициент теплопередачи и аэродинамическое сопротивление паровых калориферов",
   description:
     "Коэффициент теплопередачи паровых калориферов. Расчет коэффициента теплопередачи и аэродинамического сопротивления воздухонагревателей с теплоносителем пар",
   keywords:
-    "коэффициент теплопередачи парового калорифера,коэффициент теплопередачи парового воздухонагревателя,коэффициент теплопередачи парового теплообменника,расчет коэффициента теплопередачи парового калорифера,формула коэффициента теплопередачи парового калорифера,аэродинамическое сопротивление парового калорифера,расчет аэродинамического сопротивления парового калорифера,формула аэродинамического сопротивления парового калорифера,коэффициент теплопередачи калориферов кпск,аэродинамическое сопротивление калориферов кпск",
+    "коэффициент теплопередачи парового калорифера,расчет коэффициента теплопередачи парового калорифера,формула коэффициента теплопередачи парового калорифера,коэффициент теплопередачи парового воздухонагревателя,аэродинамическое сопротивление парового калорифера,расчет аэродинамического сопротивления парового калорифера,формула аэродинамического сопротивления парового калорифера,коэффициент теплопередачи калориферов кпск,расчет теплопередачи калориферов кпск,аэродинамическое сопротивление калориферов кпск",
 };
 
 const linkButtons = {
@@ -343,11 +344,23 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
     <>
       <Heading lvl={1} text="Коэффициент теплопередачи парового калорифера" />
 
+      <ProductParagraph>
+        Теплотехнические расчетные данные, базовые уравнения и таблицы
+        показателей плотности теплового потока в паровых промышленных
+        воздухонагревателях. На странице описаны стадии фазового перехода,
+        условия пленочной конденсации и методы интенсификации конвективного
+        обмена в оребренных трубных пучках. Представлены эмпирические
+        зависимости коэффициента теплопередачи от массовой скорости воздуха,
+        аппроксимационные модули и параметры аэродинамического сопротивления.
+      </ProductParagraph>
+
+      {/* Коэффициент теплопередачи калориферов КПСК КП КФБ-А */}
       <section className="space-y-6">
         <Heading
           lvl={2}
           text="Коэффициент теплопередачи калориферов КПСК КП КФБ-А"
         />
+
         <ProductParagraph className="mb-2">
           Коэффициент теплопередачи паровых калориферов есть показатель
           интенсивности переноса тепловой энергии от греющего теплоносителя,
@@ -544,12 +557,14 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
 
       <Separator />
 
+      {/* Расчет коэффициента теплопередачи парового калорифера */}
       <section>
         <NumberedAnchor num={2} />
         <Heading
           lvl={2}
           text="Расчет коэффициента теплопередачи парового калорифера"
         />
+
         <ProductParagraph>
           Теплоаэродинамические характеристики паровых воздухонагревателей
           обозначаются с помощью двух основных параметров: коэффициента
@@ -564,7 +579,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         <ProductParagraph>
           Формула для расчета коэффициента теплопередачи парового калорифера
           имеет вид:{" "}
-          <span className="text-2xl font-bold">
+          <span className="text-xl font-bold">
             K = A • V <sup>n</sup> • L <sup>r</sup>
           </span>
         </ProductParagraph>
@@ -600,7 +615,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               <sup>2</sup>
               •с.
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               К = 30.3 • 4.4<sup>0.405</sup> • 1.655<sup>-0.066</sup> = 30.3 •
               1.8222 • 0.9673 = 53.407
             </ProductParagraph>
@@ -639,7 +654,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               <sup>2</sup>
               •с.
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               К = 43.5 • 4.4<sup>0.431</sup> • 1.655<sup>-0.072</sup> = 43.5 •
               1.8938 • 0.9644 = 79.448
             </ProductParagraph>
@@ -677,7 +692,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               при массовой скорости воздуха в фронтальном сечении 6.2 кг/м
               <sup>2</sup>•с.
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               К = 37.2 • 6.2<sup>0.452</sup> • 1.160<sup>-0.063</sup> = 37.2 •
               2.2812 • 0.9907 = 84.071
             </ProductParagraph>
@@ -713,12 +728,14 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
 
       <Separator />
 
+      {/* Расчет аэродинамического сопротивления парового калорифера */}
       <section>
         <NumberedAnchor num={1} />
         <Heading
           lvl={2}
           text="Расчет аэродинамического сопротивления парового калорифера"
         />
+
         <ProductParagraph>
           Для расчета аэродинамического сопротивления паровых калориферов
           используются эмпирические формулы с соответствующими
@@ -734,7 +751,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         <ProductParagraph>
           Формула для расчета аэродинамического сопротивления парового
           калорифера имеет вид:{" "}
-          <span className="text-2xl font-bold">
+          <span className="text-xl font-bold">
             ΔP = B • V <sup>m</sup>
           </span>
         </ProductParagraph>
@@ -762,7 +779,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               2-6 при массовой скорости воздуха в фронтальном сечении 5.3 кг/м
               <sup>2</sup>•с.
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               ΔP = 4.23 • 5.3<sup>1.832</sup> = 4.23 • 21.23 = 89.80
             </ProductParagraph>
             <ul>
@@ -789,7 +806,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               307 при массовой скорости воздуха в фронтальном сечении 3.6 кг/м
               <sup>2</sup>•с.
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               ΔP = 6.37 • 3.6<sup>1.864</sup> = 6.37 • 10.89 = 69.37
             </ProductParagraph>
             <ul>
@@ -817,7 +834,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
               кг/м
               <sup>2</sup>•с.
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               ΔP = 8.67 • 7.2<sup>1.848</sup> = 8.67 • 38.40 = 332.93
             </ProductParagraph>
             <ul>
@@ -842,12 +859,14 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
 
       <Separator />
 
+      {/* Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов */}
       <section>
         <NumberedAnchor num={3} />
         <Heading
           lvl={2}
           text="Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов"
         />
+
         <ProductParagraph className="mb-6">
           В таблицах представлены значения коэффициентов теплопередачи паровых
           калориферов всех серий, выпускаемых предприятием ООО «Т.С.Т.».
@@ -877,9 +896,23 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         {tables}
       </section>
 
-      {[linkButtons.pages, linkButtons.documents].map((btns, i) => (
-        <LinkButtonsBlock key={i} buttons={btns} />
-      ))}
+      {/* Справочно-техническая документация */}
+      <section className="space-y-4">
+        <Heading lvl={2} text="Справочно-техническая документация" />
+
+        <ProductParagraph>
+          Таблицы габаритных размеров и развернутые теплоаэродинамические
+          характеристики оборудования представлены на страницах серий паровых
+          калориферов. Для перехода к детальному описанию или скачиванию
+          технической документации воспользуйтесь интерактивным меню ниже.
+        </ProductParagraph>
+
+        <div className="space-y-2">
+          {[linkButtons.pages, linkButtons.documents].map((btns, i) => (
+            <LinkButtonsBlock key={i} buttons={btns} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
