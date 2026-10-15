@@ -192,6 +192,7 @@ export default function KaloriferParPage() {
 
         <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
+        {/* Процесс парообразования */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Процесс парообразования" />
           <ProductParagraph className="text-base">
@@ -205,6 +206,8 @@ export default function KaloriferParPage() {
             аккумулируется и составляет скрытую теплоту парообразования.
           </ProductParagraph>
         </section>
+
+        {/* Температура насыщения */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Температура насыщения" />
           <ProductParagraph className="text-base">
