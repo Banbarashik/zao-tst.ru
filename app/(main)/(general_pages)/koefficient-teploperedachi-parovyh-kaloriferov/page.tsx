@@ -395,8 +395,8 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
         </ProductParagraph>
         <ProductParagraph className="mb-0">
           Процесс теплопередачи в паровом биметаллическом теплообменнике серии
-          КПСк, КП, КФБ-А П включает несколько последовательно протекающих
-          стадий:
+          КПСк, КП, КФБ-А П по ТУ 4863-002-55613706-02 включает несколько
+          последовательно протекающих стадий:
         </ProductParagraph>
         <ul>
           <li>
