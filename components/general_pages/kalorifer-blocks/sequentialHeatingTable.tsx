@@ -55,7 +55,7 @@ const verticalAlignmentClasses = {
 } as const;
 
 /** Classes shared by <th> and <td> */
-const cellClasses = "px-1 py-1.5";
+const cellClasses = "px-1 py-1";
 
 function renderCellContent(content: TableCellContent): ReactNode {
   if (typeof content === "string") return content;
