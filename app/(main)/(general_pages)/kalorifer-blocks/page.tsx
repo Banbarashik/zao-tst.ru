@@ -25,6 +25,7 @@ import { Separator } from "@/components/ui/separator";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import { TechnicalTable } from "@/components/general_pages/kalorifer-blocks/sequentialHeatingTable";
 import Image from "next/image";
+import LinkButtonsBlock from "@/components/linkButtonsBlock";
 
 export const metadata: Metadata = {
   title: "Расчет и подбор блоков калориферов для технологического нагрева",
@@ -994,7 +995,6 @@ export default function KaloriferBlocksPage() {
               />
             </div>
           </div>
-
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
             <div className="relative aspect-1000/500 w-full">
               <Image
@@ -1015,6 +1015,43 @@ export default function KaloriferBlocksPage() {
           </div>
 
           <TechnicalTable table={sequentialCoCurrentA4Table} />
+
+          <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+            <div className="relative aspect-1000/500 w-full">
+              <Image
+                src="/img/general_pages/priamotok_2_kalor_4_riada.png"
+                alt="Схема соосного движения сред в водяных воздухонагревателях"
+                title="Градиент температур в блоке двух А4 при прямоточной схеме"
+                fill
+              />
+            </div>
+            <div className="relative aspect-1000/500 w-full">
+              <Image
+                src="/img/general_pages/priamotok_3_kalor_4_riada.png"
+                alt="Температура теплоносителя при последовательном прямоточном подключении"
+                title="Градиент температур в блоке трех А4 при прямоточной схеме"
+                fill
+              />
+            </div>
+          </div>
+          <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
+            <div className="relative aspect-1000/500 w-full">
+              <Image
+                src="/img/general_pages/priamotok_4_kalor_4_riada.png"
+                alt="Обвязка блока воздухонагревателей при прямоточной гидравлической схеме"
+                title="Градиент температур в блоке четырех А4 при прямоточной схеме"
+                fill
+              />
+            </div>
+            <div className="relative aspect-1000/500 w-full">
+              <Image
+                src="/img/general_pages/kalorifer_kfb-12_a4_blok_priamotok.png"
+                alt="Температура и сопротивление блоков 4-рядных калориферов в прямотоке"
+                title="График температуры и потерь давления блока А4 в прямотоке"
+                fill
+              />
+            </div>
+          </div>
         </section>
 
         {/* Оценка критических гидравлических нагрузок */}
@@ -1816,6 +1853,64 @@ export default function KaloriferBlocksPage() {
             </li>
           </ol>
         </section>
+      </section>
+
+      {/* Подбор конфигурации под технологические задачи */}
+      <section className="space-y-4">
+        <Heading
+          lvl={2}
+          text="Подбор конфигурации под технологические задачи"
+        />
+
+        <ProductParagraph>
+          Представленный расчет калориферных блоков на предельном расходе
+          показывает максимальные эксплуатационные нагрузки оборудования, но
+          из-за высокой массы проходящего воздуха ограничивает его конечный
+          прогрев. Снижение объема воздуха до номинального значения существенно
+          меняет рабочие параметры системы. Итоговый выбор типа теплоносителя,
+          компоновки калориферного блока, количества рядов и гидравлической
+          схемы обвязки всегда индивидуален и определяется исключительно
+          температурным регламентом конкретного технологического процесса сушки.
+        </ProductParagraph>
+
+        <div>
+          <ProductParagraph>
+            В продолжении темы представлен детальный разбор отраслевых
+            компоновочных решений для семи температурных диапазонов:
+          </ProductParagraph>
+
+          <ul>
+            <li>
+              • 💧 — от +35 °C до +80 °C (разбор четырех конфигураций блоков на
+              базе стандартного сетевого графика 95/70 °C);
+            </li>
+            <li>
+              • 🌊 — от +80 °C до +100 °C (анализ параметров оборудования при
+              переходе на высокотемпературный график 115/70 °C);
+            </li>
+            <li>
+              • 💨 — выше +100 °C (границы применимости многорядных установок на
+              базе систем парового нагрева).
+            </li>
+          </ul>
+        </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Вода 95/70 °C",
+              url: "/",
+            },
+            {
+              name: "ВОДА 115/70 °C",
+              url: "/",
+            },
+            {
+              name: "ПАР 100-180 °C",
+              url: "/",
+            },
+          ]}
+        />
       </section>
     </>
   );
