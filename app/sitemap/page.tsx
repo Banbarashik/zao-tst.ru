@@ -187,7 +187,7 @@ const productGroups = [
       {
         type: "link",
         name: "Оребренные тэны ТЭНР",
-        href: "/",
+        href: "/teny-orebrenny'e",
       },
     ],
   },
@@ -273,9 +273,9 @@ const engineeringGroups = [
         items: [
           [
             "Расчет и подбор паровых калориферов",
-            "/podbor-raschet-kaloriferov#anchor1",
+            "/podbor-raschet-kaloriferov",
           ],
-          ["Расчет тепловой мощности", "/"],
+          ["Расчет тепловой мощности", "/podbor-raschet-kaloriferov#anchor1"],
           [
             "Расчет площади фронтального сечения",
             "/podbor-raschet-kaloriferov#anchor2",
