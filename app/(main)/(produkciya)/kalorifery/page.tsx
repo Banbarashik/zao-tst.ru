@@ -90,6 +90,21 @@ export default function KaloriferyPage() {
         </ProductParagraph>
       </section>
 
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Онлайн-подбор водяных ТО",
+            url: "/kalorifery-voda#anchor1",
+            hiddenText: "Онлайн-расчет и подбор водяных калориферов ООО Т.С.Т.",
+          },
+          {
+            name: "Онлайн-подбор паровых ТО",
+            url: "/kalorifery-par#anchor1",
+            hiddenText: "Онлайн-расчет и подбор паровых калориферов ООО Т.С.Т.",
+          },
+        ]}
+      />
+
       <section>
         <Heading lvl={2} text="Производство калориферов" />
         <ProductParagraph>
@@ -102,16 +117,7 @@ export default function KaloriferyPage() {
       </section>
 
       <section className="space-y-4">
-        <Heading lvl={2} text="Конструкция калориферов" />
-        <ProductParagraph>
-          Конструктивно калориферы представляют собой модуль квадратного или
-          прямоугольного сечения с несколькими рядами теплообменных элементов,
-          объединенных общим гидравлическим трактом. Нагревательные элементы
-          состоят из несущих металлических трубок. Для увеличения площади
-          теплообмена, интенсивности теплоотдачи и повышения коррозионной
-          стойкости на несущие трубки накатывается алюминиевое оребрение.
-        </ProductParagraph>
-        <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-10">
+        <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-10">
           <div className="relative aspect-24/17 w-full">
             <Image
               src="/img/produkciya/kalorifery/kalorifer.png"
@@ -129,6 +135,16 @@ export default function KaloriferyPage() {
             />
           </div>
         </div>
+
+        <Heading lvl={2} text="Конструкция калориферов" />
+        <ProductParagraph>
+          Конструктивно калориферы представляют собой модуль квадратного или
+          прямоугольного сечения с несколькими рядами теплообменных элементов,
+          объединенных общим гидравлическим трактом. Нагревательные элементы
+          состоят из несущих металлических трубок. Для увеличения площади
+          теплообмена, интенсивности теплоотдачи и повышения коррозионной
+          стойкости на несущие трубки накатывается алюминиевое оребрение.
+        </ProductParagraph>
       </section>
 
       <section>
@@ -143,17 +159,20 @@ export default function KaloriferyPage() {
           последовательное движение теплоносителя; калориферы размещаются с
           горизонтальным расположением нагревательных элементов.
         </ProductParagraph>
+
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Паровой калорифер",
-              url: "/kalorifer-par",
-              hiddenText: "Устройство и принцип работы парового калорифера",
+              name: "Водяной калорифер",
+              url: "/kalorifer-voda",
+              hiddenText:
+                "Техническое описание и принцип работы водяного калорифера",
             },
             {
-              name: "Расчет паровых калориферов",
-              url: "/podbor-raschet-kaloriferov",
-              hiddenText: "Расчет и подбор паровых калориферов",
+              name: "Паровой калорифер",
+              url: "/kalorifer-par",
+              hiddenText:
+                "Техническое описание и принцип работы парового калорифера",
             },
           ]}
         />
@@ -170,6 +189,24 @@ export default function KaloriferyPage() {
           рядности возрастает тепловая мощность воздухонагревателя, но
           одновременно повышается его аэродинамическое сопротивление.
         </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Расчет водяных калориферов",
+              url: "/raschet-podbor-kaloriferov",
+              hiddenText:
+                "Пошаговый расчет водяных калориферов производства ООО Т.С.Т.",
+            },
+            {
+              name: "Расчет паровых калориферов",
+              url: "/podbor-raschet-kaloriferov",
+              hiddenText:
+                "Пошаговый расчет паровых калориферов производства ООО Т.С.Т.",
+            },
+          ]}
+        />
+
         <section>
           <Heading lvl={3} text="Приточные калориферы" />
           <ProductParagraph>
@@ -187,7 +224,7 @@ export default function KaloriferyPage() {
           categories={kaloriferyCategories[0]}
           cardClassName="2xl:text-sm xl:px-3"
         />
-        <section className="space-y-4">
+        <section className="space-y-6">
           <Heading lvl={3} text="Стандартные калориферы" />
           <ProductParagraph>
             Водяные и паровые биметаллические калориферы серии КСк и КПСк
@@ -195,6 +232,23 @@ export default function KaloriferyPage() {
             состоит из 72 типоразмеров с производительностью по воздуху от двух
             до двадцати пяти тысяч кубических метров в час.
           </ProductParagraph>
+
+          <LinkButtonsBlock
+            buttons={[
+              {
+                name: "Методика подбора калориферов",
+                url: "/raschet-kaloriferov",
+                hiddenText:
+                  "Критерии расчета водяных паровых и электрических калориферов",
+              },
+              {
+                name: "Калориферы для сушки",
+                url: "/kalorifer-sushilnaia-kamera",
+                hiddenText: "Расчет и подбор калориферов для сушильных камер",
+              },
+            ]}
+          />
+
           <section>
             <Heading lvl={3} text="Калориферы для низких температур" />
             <ProductParagraph>
@@ -239,14 +293,16 @@ export default function KaloriferyPage() {
       <LinkButtonsBlock
         buttons={[
           {
-            name: "Расчет и подбор калориферов",
-            url: "/raschet-kaloriferov",
-            hiddenText: "Порядок расчета и подбора калориферов",
+            name: "Секции технагрева: водяные ТО",
+            url: "/raschet-podbor-kaloriferov#anchor14",
+            hiddenText:
+              "Расчет и подбор многорядных блоков водяных калориферов",
           },
           {
-            name: "Калориферы для сушки",
-            url: "/kalorifer-sushilnaia-kamera",
-            hiddenText: "Изготовление калориферов для сушильных камер",
+            name: "Секции технагрева: паровые ТО",
+            url: "/podbor-raschet-kaloriferov#anchor12",
+            hiddenText:
+              "Расчет и подбор многорядных блоков паровых калориферов",
           },
         ]}
       />
