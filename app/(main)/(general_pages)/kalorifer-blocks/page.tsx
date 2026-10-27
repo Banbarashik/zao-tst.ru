@@ -16,15 +16,16 @@ import {
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 import { ArrowBigDownDash } from "lucide-react";
 
+import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import Spoiler from "@/components/ui/spoiler";
 import Heading from "@/components/general_pages/heading";
 import { Separator } from "@/components/ui/separator";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import { TechnicalTable } from "@/components/general_pages/kalorifer-blocks/sequentialHeatingTable";
-import Image from "next/image";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 
 export const metadata: Metadata = {
@@ -94,6 +95,7 @@ export default function KaloriferBlocksPage() {
 
       {/* Физика многорядного нагрева в условиях технологического процесса */}
       <section className="space-y-4">
+        <NumberedAnchor num={1} />
         <Heading
           lvl={2}
           text="Физика многорядного нагрева в условиях технологического процесса"
@@ -126,6 +128,7 @@ export default function KaloriferBlocksPage() {
 
       {/* Интегральный метод NTU и уравнения эффективности Кэйса-Босмана */}
       <section className="space-y-4">
+        <NumberedAnchor num={2} />
         <Heading
           lvl={2}
           text="Интегральный метод NTU и уравнения эффективности Кэйса-Босмана"
@@ -175,6 +178,7 @@ export default function KaloriferBlocksPage() {
 
       {/* Сравнительный анализ эффективности схем гидравлической обвязки */}
       <section className="space-y-4">
+        <NumberedAnchor num={3} />
         <Heading
           lvl={2}
           text="Сравнительный анализ эффективности схем гидравлической обвязки"
@@ -431,6 +435,7 @@ export default function KaloriferBlocksPage() {
 
       {/* Параллельно-перекрестная схема воздухонагревательных блоков */}
       <section className="space-y-4">
+        <NumberedAnchor num={4} />
         <Heading
           lvl={2}
           text="Параллельно-перекрестная схема воздухонагревательных блоков"
@@ -878,6 +883,7 @@ export default function KaloriferBlocksPage() {
 
       {/* Последовательная прямоточная схема вентиляционных секций */}
       <section className="space-y-4">
+        <NumberedAnchor num={5} />
         <Heading
           lvl={2}
           text="Последовательная прямоточная схема вентиляционных секций"
@@ -1300,6 +1306,7 @@ export default function KaloriferBlocksPage() {
 
       {/* Последовательная противоточная схема промышленных теплообменников */}
       <section className="space-y-4">
+        <NumberedAnchor num={6} />
         <Heading
           lvl={2}
           text="Последовательная противоточная схема промышленных теплообменников"
@@ -1720,6 +1727,7 @@ export default function KaloriferBlocksPage() {
 
       {/* Эксплуатационные ограничения и критические нагрузки блоков */}
       <section className="space-y-4">
+        <NumberedAnchor num={7} />
         <Heading
           lvl={2}
           text="Эксплуатационные ограничения и критические нагрузки блоков"
@@ -1857,6 +1865,7 @@ export default function KaloriferBlocksPage() {
 
       {/* Подбор конфигурации под технологические задачи */}
       <section className="space-y-4">
+        <NumberedAnchor num={8} />
         <Heading
           lvl={2}
           text="Подбор конфигурации под технологические задачи"
