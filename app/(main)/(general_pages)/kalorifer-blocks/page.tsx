@@ -77,7 +77,7 @@ export default function KaloriferBlocksPage() {
           ].map((item, i, arr) => (
             <li key={item} className="flex gap-2">
               <Link
-                href={`/raschet-podbor-kaloriferov#anchor${i + 1}`}
+                href={`/kalorifer-blocks#anchor${i + 1}`}
                 className="text-primary-darker hover:text-primary-dark flex font-bold"
               >
                 <ArrowBigDownDash />
@@ -223,7 +223,7 @@ export default function KaloriferBlocksPage() {
           </ProductParagraph>
 
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1309/910 w-full">
               <Image
                 src="/img/general_pages/blok_kaloriferov_kfb-12_a3_NTU_KPD.png"
                 alt="График зависимости КПД и NTU калорифера А3 от гидравлической схемы"
@@ -231,7 +231,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1307/906 w-full">
               <Image
                 src="/img/general_pages/blok_kaloriferov_kfb-12_a4_NTU_KPD.png"
                 alt="График зависимости КПД и NTU калорифера А4 от гидравлической схемы"
@@ -472,7 +472,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-620/324 w-full">
               <Image
                 src="/img/general_pages/kalorifer_kfb-12_a3_perecrest_standart.png"
                 alt="Схема перекрестного тока в блоке трехрядных водяных калориферов"
@@ -493,7 +493,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-620/324 w-full">
               <Image
                 src="/img/general_pages/kalorifer_kfb-12_a4_perecrest_standart.png"
                 alt="Схема перекрестного тока в блоке четырехрядных водяных калориферов"
@@ -514,7 +514,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-620/324 w-full">
               <Image
                 src="/img/general_pages/kalorifer_kfb-12_a3_perecrest_forsir.png"
                 alt="Параметры теплоносителей при форсированном режиме перекрестной схемы"
@@ -535,7 +535,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-620/324 w-full">
               <Image
                 src="/img/general_pages/kalorifer_kfb-12_a4_perecrest_forsir.png"
                 alt="Форсированный режим перекрестноточной гидравлической схемы подключения"
@@ -737,7 +737,7 @@ export default function KaloriferBlocksPage() {
           <TechnicalTable table={ntuTable2} />
 
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-620/342 w-full">
               <Image
                 src="/img/general_pages/kalorifer_blok_perecrest_temperatura.png"
                 alt="Тепловая мощность и температура воздухонагревательных секций"
@@ -745,7 +745,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-620/342 w-full">
               <Image
                 src="/img/general_pages/kalorifer_blok_perecrest_soprotivlenie.png"
                 alt="Расход теплоносителя и аэродинамическое сопротивление блоков теплообменников"
@@ -978,7 +978,7 @@ export default function KaloriferBlocksPage() {
           <TechnicalTable table={sequentialCoCurrentA3Table} />
 
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/priamotok_2_kalor_3_riada.png"
                 alt="Схема соосного движения сред в водяных калориферах"
@@ -986,7 +986,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/priamotok_3_kalor_3_riada.png"
                 alt="Температура воды при последовательной прямоточной схеме"
@@ -996,7 +996,7 @@ export default function KaloriferBlocksPage() {
             </div>
           </div>
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/priamotok_4_kalor_3_riada.png"
                 alt="Схема многорядного технологического нагрева водяными секциями"
@@ -1004,7 +1004,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-640/342 w-full">
               <Image
                 src="/img/general_pages/kalorifer_kfb-12_a3_blok_priamotok.png"
                 alt="Температура и сопротивление блоков 3-рядных калориферов в прямотоке"
@@ -1017,7 +1017,7 @@ export default function KaloriferBlocksPage() {
           <TechnicalTable table={sequentialCoCurrentA4Table} />
 
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/priamotok_2_kalor_4_riada.png"
                 alt="Схема соосного движения сред в водяных воздухонагревателях"
@@ -1025,7 +1025,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/priamotok_3_kalor_4_riada.png"
                 alt="Температура теплоносителя при последовательном прямоточном подключении"
@@ -1035,7 +1035,7 @@ export default function KaloriferBlocksPage() {
             </div>
           </div>
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/priamotok_4_kalor_4_riada.png"
                 alt="Обвязка блока воздухонагревателей при прямоточной гидравлической схеме"
@@ -1043,7 +1043,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-620/342 w-full">
               <Image
                 src="/img/general_pages/kalorifer_kfb-12_a4_blok_priamotok.png"
                 alt="Температура и сопротивление блоков 4-рядных калориферов в прямотоке"
@@ -1398,7 +1398,7 @@ export default function KaloriferBlocksPage() {
           <TechnicalTable table={sequentialCounterCurrentA3Table} />
 
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/protivotok_2_kalor_3_riada.png"
                 alt="Схема встречного движения сред в водяных калориферах"
@@ -1406,7 +1406,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/protivotok_3_kalor_3_riada.png"
                 alt="Температура воды при последовательной противоточной схеме"
@@ -1416,7 +1416,7 @@ export default function KaloriferBlocksPage() {
             </div>
           </div>
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/protivotok_4_kalor_3_riada.png"
                 alt="Схема многорядного технологического нагрева водяными теплообменниками"
@@ -1424,7 +1424,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-620/342 w-full">
               <Image
                 src="/img/general_pages/kalorifer_kfb-12_a3_blok_protivotok.png"
                 alt="Температура и сопротивление блоков 3-рядных калориферов в противотоке"
@@ -1437,7 +1437,7 @@ export default function KaloriferBlocksPage() {
           <TechnicalTable table={sequentialCounterCurrentA4Table} />
 
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/protivotok_2_kalor_4_riada.png"
                 alt="Схема встречного движения сред в водяных воздухонагревателях"
@@ -1445,7 +1445,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/protivotok_3_kalor_4_riada.png"
                 alt="Температура воды при последовательном противоточном подключении"
@@ -1455,7 +1455,7 @@ export default function KaloriferBlocksPage() {
             </div>
           </div>
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-1000/600 w-full">
               <Image
                 src="/img/general_pages/protivotok_4_kalor_4_riada.png"
                 alt="Обвязка блока воздухонагревателей при противоточной гидравлической схеме"
@@ -1463,7 +1463,7 @@ export default function KaloriferBlocksPage() {
                 fill
               />
             </div>
-            <div className="relative aspect-1000/500 w-full">
+            <div className="relative aspect-620/342 w-full">
               <Image
                 src="/img/general_pages/kalorifer_kfb-12_a4_blok_protivotok.png"
                 alt="Температура и сопротивление блоков 4-рядных калориферов в противотоке"
