@@ -42,24 +42,25 @@ const SPOILER_CONTENT_CLASS =
 export default function KaloriferBlocksPage() {
   return (
     <>
-      <Heading
-        lvl={1}
-        text="Расчет калориферных блоков для технологического нагрева"
-      />
-
-      <ProductParagraph>
-        Сравнительный анализ по расчету и подбору калориферных блоков для
-        технологического нагрева, сушильных камер и высокотемпературных
-        вентиляционных систем. На странице представлены данные тепловой
-        мощности, расхода теплоносителя и температурных параметров воздуха для
-        различных конфигураций оборудования. Приведены готовые показатели,
-        позволяющие оценить фактическое аэродинамическое сопротивление
-        калориферного блока и гидравлическое сопротивление калориферных секций.
-        Подробно рассмотрен подбор водяных воздухонагревателей в секции нагрева
-        при последовательном и параллельном подключении оборудования по воде, а
-        также определены границы применимости прямоточной, противоточной и
-        перекрестноточной схем обвязки.
-      </ProductParagraph>
+      <div className="space-y-4">
+        <Heading
+          lvl={1}
+          text="Расчет калориферных блоков для технологического нагрева"
+        />
+        <ProductParagraph>
+          Сравнительный анализ по расчету и подбору калориферных блоков для
+          технологического нагрева, сушильных камер и высокотемпературных
+          вентиляционных систем. На странице представлены данные тепловой
+          мощности, расхода теплоносителя и температурных параметров воздуха для
+          различных конфигураций оборудования. Приведены готовые показатели,
+          позволяющие оценить фактическое аэродинамическое сопротивление
+          калориферного блока и гидравлическое сопротивление калориферных
+          секций. Подробно рассмотрен подбор водяных воздухонагревателей в
+          секции нагрева при последовательном и параллельном подключении
+          оборудования по воде, а также определены границы применимости
+          прямоточной, противоточной и перекрестноточной схем обвязки.
+        </ProductParagraph>
+      </div>
 
       <div className="space-y-1">
         <ProductParagraph>
@@ -93,6 +94,8 @@ export default function KaloriferBlocksPage() {
         </ul>
       </div>
 
+      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
       {/* Физика многорядного нагрева в условиях технологического процесса */}
       <section className="space-y-4">
         <NumberedAnchor num={1} />
@@ -125,6 +128,8 @@ export default function KaloriferBlocksPage() {
           </Spoiler>
         </section>
       </section>
+
+      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Интегральный метод NTU и уравнения эффективности Кэйса-Босмана */}
       <section className="space-y-4">
@@ -175,6 +180,8 @@ export default function KaloriferBlocksPage() {
           </section>
         </section>
       </section>
+
+      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Сравнительный анализ эффективности схем гидравлической обвязки */}
       <section className="space-y-4">
@@ -245,6 +252,8 @@ export default function KaloriferBlocksPage() {
             </div>
           </div>
         </section>
+
+        <Separator />
 
         {/* Сравнительный технический анализ результатов расчета */}
         <section className="space-y-4">
@@ -383,6 +392,8 @@ export default function KaloriferBlocksPage() {
           </ol>
         </section>
 
+        <Separator />
+
         {/* Заключение по выбору схемы обвязки */}
         <section className="space-y-4">
           <Heading lvl={3} text="Заключение по выбору схемы обвязки" />
@@ -432,6 +443,8 @@ export default function KaloriferBlocksPage() {
           </ol>
         </section>
       </section>
+
+      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Параллельно-перекрестная схема воздухонагревательных блоков */}
       <section className="space-y-4">
@@ -623,6 +636,8 @@ export default function KaloriferBlocksPage() {
           </section>
         </section>
 
+        <Separator />
+
         {/* Рекомендации для проектирования */}
         <section className="space-y-4">
           <Heading lvl={3} text="Рекомендации для проектирования" />
@@ -762,6 +777,8 @@ export default function KaloriferBlocksPage() {
         </section>
       </section>
 
+      <Separator />
+
       {/* Сравнительный технический анализ результатов */}
       <section className="space-y-4">
         <Heading lvl={2} text="Сравнительный технический анализ результатов" />
@@ -817,6 +834,8 @@ export default function KaloriferBlocksPage() {
             </li>
           </ul>
         </div>
+
+        <Separator />
 
         {/* Инженерные примеры порядных и интегральных расчетов перекрестного тока */}
         <section className="space-y-4">
@@ -880,6 +899,8 @@ export default function KaloriferBlocksPage() {
           </section>
         </section>
       </section>
+
+      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Последовательная прямоточная схема вентиляционных секций */}
       <section className="space-y-4">
@@ -966,6 +987,8 @@ export default function KaloriferBlocksPage() {
             </ProductParagraph>
           </div>
         </section>
+
+        <Separator />
 
         {/* Сводные параметры порядного нагрева в прямотоке */}
         <section className="space-y-4">
@@ -1060,6 +1083,8 @@ export default function KaloriferBlocksPage() {
           </div>
         </section>
 
+        <Separator />
+
         {/* Оценка критических гидравлических нагрузок */}
         <section className="space-y-4">
           <Heading lvl={3} text="Оценка критических гидравлических нагрузок" />
@@ -1120,6 +1145,8 @@ export default function KaloriferBlocksPage() {
             </ProductParagraph>
           </div>
         </section>
+
+        <Separator />
 
         {/* Сравнительный анализ эффективности модификаций КФБ-12 А3 М и А4 М в прямотоке */}
         <section className="space-y-4">
@@ -1195,6 +1222,8 @@ export default function KaloriferBlocksPage() {
           </div>
         </section>
 
+        <Separator />
+
         {/* Оценка применимости прямоточной схемы в промышленных технологических процессах */}
         <section className="space-y-4">
           <Heading
@@ -1268,6 +1297,8 @@ export default function KaloriferBlocksPage() {
           </div>
         </section>
 
+        <Separator />
+
         {/* Инженерная методика и примеры расчета прямотока по методу NTU */}
         <section className="space-y-4">
           <Heading
@@ -1303,6 +1334,8 @@ export default function KaloriferBlocksPage() {
           </section>
         </section>
       </section>
+
+      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Последовательная противоточная схема промышленных теплообменников */}
       <section className="space-y-4">
@@ -1387,6 +1420,8 @@ export default function KaloriferBlocksPage() {
             </ProductParagraph>
           </div>
         </section>
+
+        <Separator />
 
         {/* Сводные параметры порядного нагрева в противотоке */}
         <section className="space-y-4">
@@ -1481,6 +1516,8 @@ export default function KaloriferBlocksPage() {
           </div>
         </section>
 
+        <Separator />
+
         {/* Оценка гидравлических параметров последовательного контура  */}
         <section className="space-y-4">
           <Heading
@@ -1546,6 +1583,8 @@ export default function KaloriferBlocksPage() {
             </ProductParagraph>
           </div>
         </section>
+
+        <Separator />
 
         {/* Сравнительный анализ эффективности модификаций КФБ-12 А3 М и А4 М в противотоке */}
         <section className="space-y-4">
@@ -1628,6 +1667,8 @@ export default function KaloriferBlocksPage() {
           </div>
         </section>
 
+        <Separator />
+
         {/* Оценка применимости противоточной схемы в промышленных технологических процессах */}
         <section className="space-y-4">
           <Heading
@@ -1694,6 +1735,8 @@ export default function KaloriferBlocksPage() {
           </div>
         </section>
 
+        <Separator />
+
         {/* Инженерная методика и примеры расчета противотока по методу NTU */}
         <section className="space-y-4">
           <Heading
@@ -1724,6 +1767,8 @@ export default function KaloriferBlocksPage() {
           </section>
         </section>
       </section>
+
+      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Эксплуатационные ограничения и критические нагрузки блоков */}
       <section className="space-y-4">
@@ -1783,6 +1828,8 @@ export default function KaloriferBlocksPage() {
             рассчитанной на повышенные нагрузки.
           </ProductParagraph>
         </section>
+
+        <Separator />
 
         {/* Зависимость параметров блока от объема воздуха */}
         <section className="space-y-4">
@@ -1863,6 +1910,8 @@ export default function KaloriferBlocksPage() {
         </section>
       </section>
 
+      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
       {/* Подбор конфигурации под технологические задачи */}
       <section className="space-y-4">
         <NumberedAnchor num={8} />
@@ -1894,7 +1943,7 @@ export default function KaloriferBlocksPage() {
               базе стандартного сетевого графика 95/70 °C);
             </li>
             <li>
-              • 🌊 — от +80 °C до +100 °C (анализ параметров оборудования при
+              • 💧 — от +80 °C до +100 °C (анализ параметров оборудования при
               переходе на высокотемпературный график 115/70 °C);
             </li>
             <li>
