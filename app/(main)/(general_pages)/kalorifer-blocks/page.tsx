@@ -24,7 +24,6 @@ import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import Spoiler from "@/components/ui/spoiler";
 import Heading from "@/components/general_pages/heading";
 import { Separator } from "@/components/ui/separator";
-import ProductParagraph from "@/components/catalog/productParagraph";
 import { TechnicalTable } from "@/components/general_pages/kalorifer-blocks/sequentialHeatingTable";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 
@@ -38,6 +37,16 @@ export const metadata: Metadata = {
 
 const SPOILER_CONTENT_CLASS =
   "space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 inset-shadow-sm mt-4";
+
+function ProductParagraph({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return <p className={className}>{children}</p>;
+}
 
 export default function KaloriferBlocksPage() {
   return (
