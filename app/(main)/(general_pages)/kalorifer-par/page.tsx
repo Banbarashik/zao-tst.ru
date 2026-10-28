@@ -1,53 +1,60 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
-import Image from "next/image";
 import CategoryCards from "@/components/categoryCards";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
-import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
-  title: "Паровые калориферы",
+  title: "Паровые калориферы и свойства пара как теплоносителя",
   description:
-    "Паровой калорифер для нагрева воздуха. Принцип работы паровоздушного теплообменника, модели паровых калориферов с теплоносителем насыщенный и перегретый пар",
+    "Паровые промышленные калориферы. Работа в системах вентиляции, правила эксплуатации на производстве, процессы парообразования и конденсации в воздухонагревателе",
   keywords:
-    "паровой калорифер,паровой воздухонагреватель,паровой теплообменник,паровоздушный калорифер,паровой калорифер принцип работы,паровой калорифер устройство,паровой калорифер давление и температура,паровой калорифер поверхность нагрева,работа парового калорифера,модели паровых калориферов",
+    "паровой калорифер,воздухонагреватель паровой,паровые промышленные калориферы,свойства пара как теплоносителя,конденсация пара в калорифере,принцип работы парового калорифера,правила эксплуатации паровых калориферов,давление и температура в паровом калорифере,производство паровых калориферов,модели биметаллических паровых калориферов",
 };
 
 const kaloriferyCategories = [
   {
     name: "Калориферы КПСк",
     url: "/kalorifery-kpsk",
+    hiddenText:
+      "Технические характеристики, габаритные размеры и чертежи калориферов КПСк",
     img: {
       url: "/img/produkciya/kalorifery/kalorifer_kpsk.png",
-      alt: "Паровые калориферы КПСк",
+      alt: "Паровые калориферы КПСк от производителя с поставкой в регионы страны",
     },
   },
   {
     name: "Калориферы КП",
     url: "/kalorifery-kp",
+    hiddenText:
+      "Паровые промышленные калориферы увеличенного диаметра серии КП",
     img: {
       url: "/img/produkciya/kalorifery/kalorifer_kp.png",
-      alt: "Паровые калориферы КП",
+      alt: "Паровые калориферы КП от производителя с поставкой в регионы страны",
     },
   },
   {
     name: "Калориферы КППС КППУ",
     url: "/kalorifery-par",
+    hiddenText:
+      "Приточные паровые калориферы квадратного сечения серий КППС и КППУ",
     img: {
       url: "/img/produkciya/kalorifery/kalorifer_kpps_kppu.png",
-      alt: "Паровые калориферы КППС КППУ",
+      alt: "Паровые калориферы КППС и КППУ от производителя с поставкой в регионы страны",
     },
   },
   {
     name: "Калориферы КФБ-А П",
     url: "/kalorifery-kfb",
+    hiddenText: "Паровые калориферы серии КФБ-А П для компоновки в секции",
     img: {
       url: "/img/produkciya/kalorifery/kalorifer_kfb-p.png",
-      alt: "Паровые калориферы КФБ-А П",
+      alt: "Паровые калориферы КФБ-А П от производителя с поставкой в регионы страны",
     },
   },
 ];
@@ -57,8 +64,41 @@ export default function KaloriferParPage() {
     <>
       <Heading lvl={1} text="Паровой калорифер" />
 
+      <ProductParagraph>
+        Конструктивные особенности, термодинамический потенциал и возможности
+        использования промышленных паровоздушных нагревателей. В разделах
+        детально описаны основы функционирования теплообменников с
+        использованием скрытой теплоты фазового перехода, внутреннее устройство
+        приборов и равномерное распределение тепловых нагрузок по рабочей
+        поверхности. Представлена таблица зависимости теплофизических свойств
+        рабочей среды от давления для точного выбора расчетных параметров.
+        Описаны эксплуатационные различия между сухим, влажным и перегретым
+        паром, а также приведена номенклатура базовых серий выпускаемых заводом
+        калориферов для комплектации систем вентиляции, воздушного отопления и
+        сушильных камер.
+      </ProductParagraph>
+
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Паровые воздухоподогреватели",
+            url: "/kalorifer-par#anchor2",
+            hiddenText:
+              "Паровые оребренные воздухонагреватели для систем вентиляции",
+          },
+          {
+            name: "Таблица свойств пара",
+            url: "/kalorifer-par#anchor1",
+            hiddenText:
+              "Таблица свойств насыщенного водяного пара для калориферов",
+          },
+        ]}
+      />
+
+      {/* Принцип работы парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Принцип работы парового калорифера" />
+
         <ProductParagraph>
           Высокие значения теплоты конденсации определяют целесообразность
           использования пара в качестве экономичного и энергоэффективного
@@ -71,6 +111,10 @@ export default function KaloriferParPage() {
           отсутствие необходимости применения циркуляционных насосов для
           транспортировки пара.
         </ProductParagraph>
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+        {/* Теплоноситель – водяной пар */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Теплоноситель – водяной пар" />
           <ProductParagraph className="text-base">
@@ -81,6 +125,7 @@ export default function KaloriferParPage() {
             теплосодержание или удельную энтальпию кипящей воды.
           </ProductParagraph>
         </section>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
@@ -101,8 +146,12 @@ export default function KaloriferParPage() {
         </div>
       </section>
 
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+      {/* Устройство парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Устройство парового калорифера" />
+
         <ProductParagraph>
           Конструктивно паровой калорифер представляет собой стальной корпус с
           автономным пароконденсатным трактом, включающим в себя элементы
@@ -112,8 +161,11 @@ export default function KaloriferParPage() {
           сверху которых при производстве монтируются распределительно-сборные
           одноходовые коллекторы с боковыми планками. С обратной стороны
           коллекторов крепятся патрубки для подачи пара и вывода конденсата.
-          Патрубки могут дополняться фланцами или резьбовым соединением. Для
-          монтажа парового калорифера к элементам вентиляционно-отопительной
+          Патрубки могут дополняться фланцами или резьбовым соединением.
+        </ProductParagraph>
+
+        <ProductParagraph>
+          Для монтажа парового калорифера к элементам вентиляционно-отопительной
           системы к торцам решеток прикручиваются съемные боковые щитки с
           присоединительными отверстиями. Совместно с трубными решетками они
           образуют кожух воздухонагревателя. При установке промышленных
@@ -121,21 +173,26 @@ export default function KaloriferParPage() {
           соединяются между собой и образуют сплошную поверхность нагрева без
           пропусков холодных воздушных струй.
         </ProductParagraph>
+
         <LinkButtonsBlock
           buttons={[
             {
               url: "/podbor-raschet-kaloriferov",
-              name: "Расчет паровых калориферов",
-              hiddenText: "Расчет и подбор паровых калориферов КПСк",
+              name: "Расчет парового калорифера",
+              hiddenText: "Методика расчета и подбора паровых калориферов",
             },
             {
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
-              name: "Сопротивление калориферов",
+              url: "/kalorifery-par#anchor1",
+              name: "Калькулятор подбора",
               hiddenText:
-                "Расчет аэродинамического сопротивления парового калорифера",
+                "Программа подбора паровых приточных воздухонагревателей",
             },
           ]}
         />
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+        {/* Процесс парообразования */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Процесс парообразования" />
           <ProductParagraph className="text-base">
@@ -149,6 +206,8 @@ export default function KaloriferParPage() {
             аккумулируется и составляет скрытую теплоту парообразования.
           </ProductParagraph>
         </section>
+
+        {/* Температура насыщения */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Температура насыщения" />
           <ProductParagraph className="text-base">
@@ -161,8 +220,12 @@ export default function KaloriferParPage() {
         </section>
       </section>
 
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+      {/* Поверхность нагрева парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Поверхность нагрева парового калорифера" />
+
         <ProductParagraph>
           Ребра теплоотдающих элементов имеют округлую форму, внешнее развитие
           поверхности обеспечивается методом винтовой прокатки на специальном
@@ -176,8 +239,29 @@ export default function KaloriferParPage() {
           турбулизации воздушного потока и интенсификации теплообмена
           биметаллического калорифера.
         </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Подбор фронтального сечения",
+              url: "/podbor-raschet-kaloriferov#anchor2",
+              hiddenText: "Определение площади сечения калориферов",
+            },
+            {
+              name: "Коэффициент теплопередачи",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov",
+              hiddenText:
+                "Коэффициент теплопередачи парового воздухонагревателя",
+            },
+          ]}
+        />
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+        {/* Скрытая теплота парообразования */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Скрытая теплота парообразования" />
+
           <ProductParagraph className="text-base">
             Общее теплосодержание, или полная энтальпия пара определяется как
             количество тепла, необходимого для получения 1 кг пара из 1 кг воды
@@ -192,8 +276,12 @@ export default function KaloriferParPage() {
         </section>
       </section>
 
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+      {/* Теплопередача парового калорифера */}
       <section className="space-y-6">
         <Heading lvl={2} text="Теплопередача парового калорифера" />
+
         <ProductParagraph>
           Накопленная скрытая теплота хранится внутри пара, который
           транспортируется по теплоцентрали к калориферам. Поступая в
@@ -209,6 +297,7 @@ export default function KaloriferParPage() {
           перепад температур теплоносителя и нагреваемой среды, тем интенсивнее
           будет теплоперенос.
         </ProductParagraph>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
@@ -227,6 +316,7 @@ export default function KaloriferParPage() {
             />
           </div>
         </div>
+
         <ProductParagraph>
           Поскольку процесс конденсации идет при практически постоянных давлении
           и температуре, на поверхности нагрева получается равномерное
@@ -240,23 +330,30 @@ export default function KaloriferParPage() {
           случае нижняя часть теплообменника может быть заполнена воздухом и
           конденсатом.
         </ProductParagraph>
+
         <LinkButtonsBlock
           buttons={[
             {
-              url: "/koefficient-teploperedachi-parovyh-kaloriferov",
-              name: "Коэффициент теплопередачи",
-              hiddenText: "Коэффициент теплопередачи парового калорифера",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+              name: "Сопротивление по воздуху",
+              hiddenText:
+                "Расчет потерь давления по воздуху в паровых калориферах",
             },
             {
               url: "/podbor-raschet-kaloriferov#anchor4",
               name: "Расчет расхода пара",
-              hiddenText: "Расчет расхода пара для подачи в калорифер",
+              hiddenText: "Определение расхода пара паровым калорифером",
             },
           ]}
         />
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+        {/* Температура и давление насыщенного пара */}
         <section className="text-[#5a769a]">
           <NumberedAnchor num={1} />
           <Heading lvl={3} text="Температура и давление насыщенного пара" />
+
           <ProductParagraph className="text-base">
             Температура кипения воды зависит от давления. При уменьшении
             давления, температура закипания воды понижается, при увеличении –
@@ -267,8 +364,11 @@ export default function KaloriferParPage() {
             градусов.
           </ProductParagraph>
         </section>
+
+        {/* Температура конденсата */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Температура конденсата" />
+
           <ProductParagraph className="text-base">
             Температуру образованного конденсата, с достаточной точностью, можно
             принимать равной температуре пара или чуть ниже. При этом
@@ -281,24 +381,19 @@ export default function KaloriferParPage() {
             его температура.
           </ProductParagraph>
         </section>
+
         <SaturatedSteamPropertiesTable />
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
         <ProductParagraph>
           На интенсивность теплообмена существенно влияет подготовка и качество
           подаваемого в оребренный калорифер водяного пара, содержание в нем
           жидкости и температура. Высокий коэффициент теплопередачи достигается
           при использовании сухого насыщенного пара.
         </ProductParagraph>
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                name: "Расчет диаметра паропровода",
-                url: "/paroprovod#anchor2",
-                hiddenText: "Калькулятор расчета диаметра паропровода",
-              },
-            ]}
-          />
-        </div>
+
+        {/* Сухой и влажный насыщенный пар */}
         <section className="text-[#5a769a]">
           <Heading lvl={3} text="Сухой и влажный насыщенный пар" />
           <ProductParagraph className="text-base">
@@ -313,8 +408,28 @@ export default function KaloriferParPage() {
             теплообмен и снижает коэффициент теплопередачи.
           </ProductParagraph>
         </section>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              url: "/paroprovod",
+              name: "Расчет диаметра паропровода",
+              hiddenText: "Расчет и подбор диаметра труб для паропроводов",
+            },
+            {
+              url: "/kondensatoprovod",
+              name: "Расчет конденсатопровода",
+              hiddenText:
+                "Расчет и подбор диаметра труб для конденсатопроводов",
+              isNavigable: false,
+            },
+          ]}
+        />
+
+        {/* Перегретый пар */}
         <section className="space-y-1 text-[#5a769a]">
           <Heading lvl={3} text="Перегретый пар" />
+
           <ProductParagraph className="text-base">
             Перегретый пар – это пар, который имеет более высокую температуру,
             чем насыщенный пар при том же давлении. Перегрев пара осуществляется
@@ -346,6 +461,7 @@ export default function KaloriferParPage() {
             паровоздушным отопительным агрегатам с осевым вентилятором.
           </ProductParagraph>
         </section>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
@@ -366,7 +482,10 @@ export default function KaloriferParPage() {
         </div>
       </section>
 
-      <section className="space-y-1">
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
+      {/* Работа парового калорифера */}
+      <section className="space-y-6">
         <Heading lvl={2} text="Работа парового калорифера" />
         <ProductParagraph>
           Установка калорифера осуществляется таким образом, чтобы
@@ -380,6 +499,24 @@ export default function KaloriferParPage() {
           пакетом параллельно расположенных нагревательных элементов, выполнит
           роль демпфера.
         </ProductParagraph>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Процесс теплоотдачи",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor4",
+              hiddenText:
+                "Передача энергии тепла при конденсации пара в калорифере",
+            },
+            {
+              name: "Повышение теплообмена",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor5",
+              hiddenText:
+                "Увеличение интенсивности теплообмена в паровых калориферах",
+            },
+          ]}
+        />
+
         <ProductParagraph>
           Давление в пароводяном обогревателе относительно давления в подводящем
           паропроводе существенно не отличается. Температура пара равна
@@ -397,21 +534,113 @@ export default function KaloriferParPage() {
         </ProductParagraph>
       </section>
 
-      <Separator />
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
+      {/* Модели паровых калориферов */}
       <section className="space-y-6">
         <NumberedAnchor num={2} />
         <Heading lvl={2} text="Модели паровых калориферов" />
+
         <ProductParagraph>
           На предприятии ООО «Т.С.Т.» выпускаются паровоздушные биметаллические
-          калориферы четырех серий, спроектированных и рассчитанных на широкий
-          диапазон производительности и мощности, температур наружного воздуха и
-          водяного пара, условий эксплуатации.
+          калориферы четырех базовых серий. Они спроектированы и рассчитаны на
+          широкий диапазон производительности, мощности, температур наружного
+          воздуха и рабочих параметров водяного пара.
         </ProductParagraph>
+
+        <section>
+          <Heading lvl={3} text="Калориферы КПСК" className="text-[17px]" />
+          <ProductParagraph>
+            Стандартная серия воздухонагревателей. Конструкция базируется на
+            несущих трубках диаметром 16 мм с накатным алюминиевым оребрением.
+            Линейка включает в себя 12 типоразмеров и выпускается в трех
+            вариантах: двухрядные КПСк 2, трехрядные КПСк 3 и четырехрядные КПСк
+            4. Ознакомиться с действующим прайс-листом и условиями поставки
+            можно в разделе{" "}
+            <Link
+              href="/catalog/kpsk"
+              className="text-primary-dark hover:text-primary"
+            >
+              каталог и цены на калориферы КПСк
+            </Link>
+            .
+          </ProductParagraph>
+        </section>
+
+        <section>
+          <Heading lvl={3} text="Калориферы КП" className="text-[17px]" />
+          <ProductParagraph>
+            Линейка, конструктивно близкая к серии КПСк, но разработанная для
+            более неблагоприятных условий эксплуатации. Благодаря увеличенному
+            до 22 мм диаметру несущих трубок, воздухоподогреватели этой серии
+            оптимально подходят для северных регионов и систем с повышенным
+            риском загрязнения теплоносителя. Включает 7 номеров в трех- и
+            четырехрядном исполнении. Актуальная стоимость оборудования и форма
+            онлайн-заказа представлены на странице{" "}
+            <Link
+              href="/catalog/kp"
+              className="text-primary-dark hover:text-primary"
+            >
+              продажа паровых калориферов КП
+            </Link>
+            .
+          </ProductParagraph>
+        </section>
+
+        <section>
+          <Heading
+            lvl={3}
+            text="Калориферы КППС и КППУ"
+            className="text-[17px]"
+          />
+          <ProductParagraph>
+            Специализированные серии калориферов квадратного сечения, которые
+            отличаются гибким и точным подбором габаритных размеров. Модели КППС
+            (несущая трубка 16 мм) и КППУ (несущая трубка 22 мм) насчитывают 25
+            и 23 типоразмера соответственно с рядностью от 2 до 4. Малый шаг
+            между номерами позволяет подобрать оптимальную мощность, а на
+            страницах конкретных моделей предусмотрен индивидуальный калькулятор
+            расчета. Оформить заводскую заявку и{" "}
+            <Link
+              href="/catalog/pritochny-parovy-kalorifery"
+              className="text-primary-dark hover:text-primary"
+            >
+              узнать стоимость калориферов КППС КППУ
+            </Link>{" "}
+            вы можете в корзине каталога.
+          </ProductParagraph>
+        </section>
+
+        <section>
+          <Heading lvl={3} text="Калориферы КФБ-А П" className="text-[17px]" />
+          <ProductParagraph>
+            Модернизированный аналог классических советских калориферов КФБ,
+            переведенный на современные стандарты энергоэффективности благодаря
+            биметаллическому исполнению с алюминиевым оребрением. Модели
+            изготавливаются на базе трубок диаметром 22 мм и представлены в 13
+            типоразмерах (3 и 4 ряда трубок). Посмотреть наличие, выбрать
+            параметры и{" "}
+            <Link
+              href="/catalog/kfb-a-p"
+              className="text-primary-dark hover:text-primary"
+            >
+              купить калориферы КФБ-А П от производителя
+            </Link>{" "}
+            можно в нашем интернет-каталоге.
+          </ProductParagraph>
+        </section>
+
+        <p className="text-secondary-text">
+          Подробные технические характеристики, габаритные размеры и чертежи
+          каждой серии доступны на отдельных страницах — для перехода к
+          справочной информации кликните на изображение нужной вам модели ниже.
+        </p>
+
         <CategoryCards
           categories={kaloriferyCategories}
           cardClassName="2xl:text-sm xl:px-3"
         />
+
         <ProductParagraph>
           Паровые оребренные воздухонагреватели от завода отличает относительная
           простота в техническом обслуживании, довольно высокая надежность,

@@ -15,6 +15,7 @@ export default function LinkButtonsBlock({
   buttons: {
     name: string;
     url: string;
+    isNavigable?: boolean;
     hiddenText?: string;
     openNewTab?: boolean;
     goal?: string;
@@ -32,21 +33,41 @@ export default function LinkButtonsBlock({
         "@3xl:flex-row": buttonsAmount >= 3,
       })}
     >
-      {buttons.map((btn) => (
-        <Button
-          key={btn.name}
-          asChild
-          className="shrink basis-full rounded-none border border-[#723910] bg-gray-200 text-black uppercase"
-          onClick={() => btn.goal && reachGoal(btn.goal)}
-        >
-          <Link href={btn.url} target={btn.openNewTab ? "_blank" : "_self"}>
+      {buttons.map((btn) => {
+        const content = (
+          <>
             {btn.name}
             {btn.hiddenText && (
               <span className="sr-only">{btn.hiddenText}</span>
             )}
-          </Link>
-        </Button>
-      ))}
+          </>
+        );
+        const className =
+          "shrink basis-full rounded-none border border-[#723910] bg-gray-200 text-black uppercase";
+        const onClick = () => btn.goal && reachGoal(btn.goal);
+
+        return btn.isNavigable === false ? (
+          <Button
+            key={btn.name}
+            className={className}
+            disabled
+            onClick={onClick}
+          >
+            {content}
+          </Button>
+        ) : (
+          <Button
+            key={btn.name}
+            asChild
+            className={className}
+            onClick={onClick}
+          >
+            <Link href={btn.url} target={btn.openNewTab ? "_blank" : "_self"}>
+              {content}
+            </Link>
+          </Button>
+        );
+      })}
     </div>
   );
 }

@@ -7,5 +7,5 @@ export default function ProductParagraph({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <p className={cn("text-[17px]", className)}>{children}</p>;
+  return <p className={cn("text-[16px]", className)}>{children}</p>;
 }

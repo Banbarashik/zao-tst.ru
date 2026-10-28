@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function calcAerodynamicResistanceTables() {
+export default function WaterCalcAerodynamicResistanceTables() {
   return (
     <div className="mb-6 space-y-4">
       {/* TODO make DRYer */}
@@ -10,16 +10,16 @@ export default function calcAerodynamicResistanceTables() {
             <tr>
               <th colSpan={12} className="py-0.5 uppercase">
                 Эмпирические зависимости для расчета аэродинамического
-                сопротивления паровых калориферов КПСК
+                сопротивления водяных калориферов КСК
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               {[
-                "Калорифер КПСк2 двухрядная модель",
-                "Калорифер КПСк3 трехрядная модель",
-                "Калорифер КПСк4 четырехрядная модель",
+                "Калорифер КСк2 двухрядная модель",
+                "Калорифер КСк3 трехрядная модель",
+                "Калорифер КСк4 четырехрядная модель",
               ].map((head) => (
                 <React.Fragment key={head}>
                   <th rowSpan={2} className="w-38 py-1">
@@ -49,15 +49,15 @@ export default function calcAerodynamicResistanceTables() {
             <tr>
               <th colSpan={12} className="py-0.5 uppercase">
                 Эмпирические зависимости для расчета аэродинамического
-                сопротивления паровых калориферов КП и КФБ-А П
+                сопротивления водяных калориферов ТВВ и КФБ-А М
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               {[
-                "Калорифер КП3 Калорифер КФБ А3 трехрядная модель",
-                "Калорифер КП4 Калорифер КФБ А4 четырехрядная модель",
+                "Калорифер ТВВ3 Калорифер КФБ А3 М трехрядная модель",
+                "Калорифер ТВВ4 Калорифер КФБ А4 М четырехрядная модель",
               ].map((head) => (
                 <React.Fragment key={head}>
                   <th rowSpan={2} className="w-40 py-1">

@@ -11,16 +11,17 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
-import CalcHeatTransferCoefficientTables from "@/components/general_pages/calcHeatTransferCoefficientTables";
-import CalcAerodynamicResistanceTables from "@/components/general_pages/calcAerodynamicResistanceTables";
+import SteamCalcHeatTransferCoefficientTables from "@/components/general_pages/steamCalcHeatTransferCoefficientTables";
+import SteamCalcAerodynamicResistanceTables from "@/components/general_pages/steamCalcAerodynamicResistanceTables";
 import LegacyHtml from "@/components/legacyHtml";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
+import { LEFT_BLUE_BRACKET } from "@/constants/styles";
 
 export const metadata: Metadata = {
-  title: "Расчет и подбор паровых калориферов",
+  title: "Расчет и подбор паровых калориферов для вентиляции и сушки",
   description:
-    "Расчет и подбор паровых калориферов. Технические характеристики, расчетные таблицы и формулы для подбора воздухонагревателей КПСк КП КФБ с теплоносителем пар",
+    "Пошаговый расчет паровых калориферов. Базовые формулы мощности, сопротивления и расхода пара для подбора воздухонагревателей систем вентиляции и сушильных камер",
   keywords:
     "расчет и подбор парового калорифера,формула для расчета и подбора паровых калориферов,формула тепловой мощности парового калорифера,расчет производительности парового калорифера,расчет температурного напора парового калорифера,формула температурного напора парового калорифера,расчет калориферов кпск,расчет паровых калориферов кпск,подбор калориферов кпск,подбор паровых калориферов кпск",
 };
@@ -476,10 +477,25 @@ export default async function PodborRaschetKaloriferovPage() {
 
   return (
     <>
-      <Heading lvl={1} text="Подбор и расчет калорифера парового" />
+      <div className="space-y-4">
+        <Heading lvl={1} text="Подбор и расчет калорифера парового" />
 
+        <ProductParagraph>
+          Инженерная методика, пошаговый теплоаэродинамический расчет и подбор
+          паровых промышленных калориферов для вентиляции и высокотемпературного
+          нагрева. На странице приведен подробный алгоритм вычисления мощности,
+          фактического расхода пара и скрытой теплоты парообразования.
+          Представлены формулы определения среднелогарифмического напора,
+          коэффициентов теплопередачи и воздушного сопротивления. Рассмотрены
+          особенности порядной компоновки теплообменников в составе сушильных
+          блоков.
+        </ProductParagraph>
+      </div>
+
+      {/* Расчет и подбор калориферов КПСК КП КФБ-А П */}
       <section className="mb-4 space-y-5">
         <Heading lvl={2} text="Расчет и подбор калориферов КПСК КП КФБ-А П" />
+
         <ProductParagraph className="mb-1">
           Расчет и подбор паровых калориферов осуществляется в следующей
           последовательности:
@@ -514,28 +530,32 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           ))}
         </ul>
-        <ProductParagraph className="text-[#5a769a]">
+
+        <p className="text-[#5a769a]">
           Подробное описание устройства и принципа работы паровых
           теплообменников представлено на странице сайта: Паровые калориферы.
           Для онлайн подбора паровоздушных нагревателей можно воспользоваться
           калькулятором, выложенным на странице сайта: Калориферы приточные
           паровые.
-        </ProductParagraph>
+        </p>
+
         <LinkButtonsBlock
           buttons={[
             {
               name: "Паровые калориферы",
               url: "/kalorifer-par",
               hiddenText:
-                "Температура и давление теплоносителя для парового калорифера",
+                "Конструкция и устройство парового воздухонагревателя",
             },
             {
               name: "Калькулятор паровой калорифер",
               url: "/kalorifery-par#anchor3",
-              hiddenText: "Калькулятор подбора паровых калориферов онлайн",
+              hiddenText:
+                "Онлайн-расчет мощности приточных паровых калориферов",
             },
           ]}
         />
+
         <div className="mb-12 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/500 w-full">
             <Image
@@ -554,6 +574,7 @@ export default async function PodborRaschetKaloriferovPage() {
             />
           </div>
         </div>
+
         <ProductParagraph>
           Все действия по подбору паровых воздухонагревателей КПСк, КП, КФБ-А П
           производства нашего завода выложены в пошаговых расчетах. Прилагаются
@@ -562,22 +583,25 @@ export default async function PodborRaschetKaloriferovPage() {
           аппроксимации для каждого модельного ряда, приводятся пояснения и
           примеры к каждому вычислению.
         </ProductParagraph>
+
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчетная температура воздуха",
+              name: "Методика расчета температуры",
               url: "/raschet-kaloriferov#anchor1",
               hiddenText:
-                "Температура воздуха при расчете калориферов приточной вентиляции",
+                "Температура для расчета и подбора паровых калориферов",
             },
             {
               name: "Модели паровых калориферов",
               url: "/kalorifer-par#anchor2",
-              hiddenText: "Калориферы для парового воздушного отопления",
+              hiddenText:
+                "Биметаллические паровые калориферы для нагрева воздуха",
             },
           ]}
         />
-        <ProductParagraph className="text-[#5a769a]">
+
+        <p className="text-[#5a769a]">
           Расчетная температура входящего воздуха подбирается в зависимости от
           технического задания и схемы включения парового калорифера в систему
           воздухообмена. При нагреве приточного воздуха в качестве исходных
@@ -586,16 +610,18 @@ export default async function PodborRaschetKaloriferovPage() {
           холодного периода и наиболее холодной пятидневки для ряда городов.
           Если в таблице отсутствует ваш населенный пункт, следует принять
           показатели близлежащего города.
-        </ProductParagraph>
+        </p>
 
         <SteamHeaterTempTable data={cityTemps} />
       </section>
 
       <Separator />
 
+      {/* 1. Расчет мощности по теплу */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={1} />
         <Heading lvl={2} text="Расчет мощности по теплу" />
+
         <div>
           <ProductParagraph>
             1. Находим тепловую мощность для нагрева необходимого объема
@@ -605,7 +631,7 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>
               <ProductParagraph>
                 1.1 Определяем массовый расход нагреваемого воздуха:{" "}
-                <span className="text-2xl font-bold">G = V • р</span>
+                <span className="text-xl font-bold">G = V • р</span>
               </ProductParagraph>
               <ul>
                 <li>G - массовый расход воздуха, кг/час;</li>
@@ -619,7 +645,7 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>
               <ProductParagraph>
                 1.2 Определяем расход теплоты для нагревания воздуха:{" "}
-                <span className="text-2xl font-bold">
+                <span className="text-xl font-bold">
                   Q = G • c • (t <span className="font-normal">кон</span> - t{" "}
                   <span className="font-normal">нач</span>)
                 </span>
@@ -667,7 +693,7 @@ export default async function PodborRaschetKaloriferovPage() {
               <li>
                 <ProductParagraph>
                   1.1 Определяем массовый расход нагреваемого воздуха:{" "}
-                  <span className="text-xl font-bold">
+                  <span className="font-bold">
                     G = 9000 • 1.34 = 12060 кг/час
                   </span>
                 </ProductParagraph>
@@ -684,7 +710,7 @@ export default async function PodborRaschetKaloriferovPage() {
               <li>
                 <ProductParagraph>
                   1.2 Определяем расход теплоты для нагрева воздушного потока:{" "}
-                  <span className="block text-xl font-bold">
+                  <span className="block font-bold">
                     Q = (12060/3600) • 1006 • ((22-(-39)) = 3.35 • 1006 • 61 =
                     205576 Вт
                   </span>
@@ -710,9 +736,11 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 2. Расчет площади фронтального сечения */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={2} />
         <Heading lvl={2} text="Расчет площади фронтального сечения" />
+
         <div>
           <ProductParagraph>
             2. Установив необходимую тепловую мощность, определяем площадь
@@ -723,7 +751,7 @@ export default async function PodborRaschetKaloriferovPage() {
           </ProductParagraph>
           <ProductParagraph>
             Площадь фронтального сечения определяем по формуле:{" "}
-            <span className="text-2xl font-bold">f = G / v</span>
+            <span className="text-xl font-bold">f = G / v</span>
           </ProductParagraph>
           <ul>
             <li>f - площадь фронтального сечения, м²;</li>
@@ -755,7 +783,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <ProductParagraph>
               Находим площадь фронтального сечения:{" "}
-              <span className="text-xl font-bold">
+              <span className="font-bold">
                 f = (12060/3600) / 5.0 = 0.670 м²
               </span>
             </ProductParagraph>
@@ -775,24 +803,27 @@ export default async function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
           </div>
         </div>
-        <ProductParagraph className="text-[#5a769a]">
+
+        <p className="text-[#5a769a]">
           Ниже представлена таблица с техническими характеристиками двух, трех и
-          четырехрядных паровых воздухонагревателей производства ООО «Т.С.Т.»
-          следующих серий: КП-02-УХЛ3, КФБ-А П УХЛ3, КПСк-02-У3. В таблице
-          выложены данные, необходимые для расчета и подбора: площадь
-          поверхности нагрева и фронтального сечения, длина теплообменных
-          элементов. Кликнув на модель выбранного парового теплообменника из
-          таблицы, можно ознакомиться с выполненными расчетными показателями на
-          разные объем и температуру нагреваемого воздуха, давление и
-          температуру теплоносителя.
-        </ProductParagraph>
+          четырехрядных паровых воздухонагревателей производства ООО Т.С.Т.
+          следующих серий: КП-02-УХЛ3, КФБ-А П УХЛ3, КПСк-02-У3 по ТУ
+          4863-002-55613706-02. В таблице выложены данные, необходимые для
+          расчета и подбора: площадь поверхности нагрева и фронтального сечения,
+          длина теплообменных элементов. Кликнув на модель выбранного парового
+          теплообменника из таблицы, можно ознакомиться с выполненными
+          расчетными показателями на разные объем и температуру нагреваемого
+          воздуха, давление и температуру теплоносителя.
+        </p>
+
         <div className="overflow-x-auto">
           <LegacyHtml
             html={table2Html}
             className="legacy-table legacy-raschet-podbor-table min-w-231"
           />
         </div>
-        <ProductParagraph className="text-[#5a769a]">
+
+        <p className={LEFT_BLUE_BRACKET + " text-[#5a769a]"}>
           Если при поверочном расчете определена площадь фронтального сечения, а
           в таблице для подбора паровых калориферов нет моделей с таким
           показателями, тогда принимаем два или более оребренных
@@ -811,11 +842,12 @@ export default async function PodborRaschetKaloriferovPage() {
           четырехрядной модели осуществляется с учетом поставленной задачи,
           параметров пара и требуемого нагрева воздуха на меньшую или большую
           разницу температур входящего и выходящего воздуха.
-        </ProductParagraph>
+        </p>
       </section>
 
       <Separator />
 
+      {/* 3. Расчет массовой скорости воздуха */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={3} />
         <Heading
@@ -823,11 +855,12 @@ export default async function PodborRaschetKaloriferovPage() {
           text="Расчет массовой скорости воздуха"
           className="mb-0"
         />
+
         <div>
           <ProductParagraph>
             3. Находим действительную массовую скорость для выбранных
             калориферов:{" "}
-            <span className="text-2xl font-bold">
+            <span className="text-xl font-bold">
               v = G / F <sub>ф</sub>
             </span>
           </ProductParagraph>
@@ -840,6 +873,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -853,6 +887,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
+
           <div>
             <ProductParagraph>
               ДЕЙСТВИЕ 3. Найти действительную массовую скорость в фронтальном
@@ -867,19 +902,19 @@ export default async function PodborRaschetKaloriferovPage() {
             <FormulasList>
               <li className="flex items-baseline justify-between gap-2">
                 Калориферы КПСк и КП 10-го номера
-                <span className="block text-xl font-bold">
+                <span className="block font-bold">
                   v = (12060/3600) / 0.581 = 5.77 кг/(м²•с)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калориферы КФБ-А 7-го номера
-                <span className="block text-xl font-bold">
+                <span className="block font-bold">
                   v = (12060/3600) / 0.619 = 5.41 кг/(м²•с)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калориферы КФБ-А 8-го номера
-                <span className="block text-xl font-bold">
+                <span className="block font-bold">
                   v = (12060/3600) / 0.727 = 4.61 кг/(м²•с)
                 </span>
               </li>
@@ -894,19 +929,20 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
+
         <LinkButtonsBlock
           buttons={[
             {
               name: "Массовая скорость воздуха",
               url: "/raschet-kaloriferov#anchor2",
               hiddenText:
-                "Массовая скорость воздуха в фронтальном сечении калорифера",
+                "Рекомендуемая массовая скорость воздуха в паровых калориферах",
             },
             {
               name: "Параметры водяного пара",
               url: "/kalorifer-par#anchor1",
               hiddenText:
-                "Таблица свойств водяного пара в зависимости от давления",
+                "Теплофизические свойства пара для расчетов калориферов",
             },
           ]}
         />
@@ -914,14 +950,16 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 4. Расчет расхода пара для нагрева */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={4} />
         <Heading lvl={2} text="Расчет расхода пара для нагрева" />
+
         <div>
           <ProductParagraph>
             4. Рассчитываем расход пара, исходя из требуемой тепловой мощности
             для нагрева заданного объема воздуха.{" "}
-            <span className="block text-2xl font-bold">
+            <span className="block text-xl font-bold">
               G <sub className="font-normal">пар</sub> = Q / r{" "}
               <sub className="font-normal">пар</sub>
             </span>
@@ -936,7 +974,8 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-secondary-text">
           Скрытая теплота парообразования или конденсации отображает количество
           энергии, которое расходуется для превращения одного килограмма кипящей
           воды при определенном давлении в килограмм пара. Такое же количество
@@ -945,7 +984,8 @@ export default async function PodborRaschetKaloriferovPage() {
           скрытая теплота парообразования, наоборот, уменьшается. Значение
           принимается с учетом параметров используемого теплоносителя по
           выложенной таблице теплофизических свойств насыщенного водяного пара.
-        </ProductParagraph>
+        </p>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -959,6 +999,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
+
           <div>
             <ProductParagraph>
               ДЕЙСТВИЕ 4. Рассчитать потребление сухого насыщенного пара
@@ -967,7 +1008,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </ProductParagraph>
             <ProductParagraph>
               Подсчет расхода пара:{" "}
-              <span className="text-xl font-bold">
+              <span className="font-bold">
                 G <sub>пар</sub> = 205576 / 2257510 = 0.091 кг/сек = 328 кг/час
               </span>
             </ProductParagraph>
@@ -984,14 +1025,33 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
+
         <SaturatedSteamPropertiesTable />
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Подбор диаметра паропровода",
+              url: "/paroprovod#anchor2",
+              hiddenText: "Калькулятор расчета диаметра паропровода",
+            },
+            {
+              name: "Подбор конденсатопровода",
+              url: "/kondensatoprovod",
+              hiddenText: "Калькулятор расчета диаметра конденсатопровода",
+              isNavigable: false,
+            },
+          ]}
+        />
       </section>
 
       <Separator />
 
+      {/* 5. Расчет коэффициента теплопередачи */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={5} />
         <Heading lvl={2} text="Расчет коэффициента теплопередачи" />
+
         <div>
           <ProductParagraph>
             5. Произвести расчет коэффициента теплопередачи выбранных паровых
@@ -1004,7 +1064,7 @@ export default async function PodborRaschetKaloriferovPage() {
           </ProductParagraph>
           <ProductParagraph>
             Формула для нахождения коэффициента теплопередачи имеет вид:{" "}
-            <span className="text-2xl font-bold">
+            <span className="text-xl font-bold">
               К = A • v <sup>n</sup> • L <sup>r</sup>
             </span>
           </ProductParagraph>
@@ -1021,7 +1081,9 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>A, n, r - значение модуля и степеней из таблицы.</li>
           </ul>
         </div>
-        <CalcHeatTransferCoefficientTables />
+
+        <SteamCalcHeatTransferCoefficientTables />
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1035,7 +1097,8 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 5. Находим коэффициент теплопередачи для паровых
               воздухонагревателей, выбранных для расчета и подбора. Принимаем
@@ -1048,63 +1111,63 @@ export default async function PodborRaschetKaloriferovPage() {
             <FormulasList>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КПСк 2-10
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 34.3 • 5.77 <sup>0.357</sup> • 1.155 <sup>-0.072</sup> =
                   63.50 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КПСк 3-10
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 30.3 • 5.77 <sup>0.405</sup> • 1.155 <sup>-0.066</sup> =
                   61.08 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КПСк 4-10
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 26.1 • 5.77 <sup>0.476</sup> • 1.155 <sup>-0.036</sup> =
                   59.81 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КП 310
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 43.5 • 5.77 <sup>0.431</sup> • 1.155 <sup>-0.072</sup> =
                   91.64 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КП 410
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 37.2 • 5.77 <sup>0.452</sup> • 1.155 <sup>-0.063</sup> =
                   81.40 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-7 А3
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 43.5 • 5.41 <sup>0.431</sup> • 0.860 <sup>-0.072</sup> =
                   91.04 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-7 А4
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 37.2 • 5.41 <sup>0.452</sup> • 0.860 <sup>-0.063</sup> =
                   80.59 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-8 А3
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 43.5 • 4.61 <sup>0.431</sup> • 1.010 <sup>-0.072</sup> =
                   83.96 Вт/(м²•°C)
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 Калорифер КФБ-8 А4
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   К = 37.2 • 4.61 <sup>0.452</sup> • 1.010 <sup>-0.063</sup> =
                   74.14 Вт/(м²•°C)
                 </span>
@@ -1112,25 +1175,27 @@ export default async function PodborRaschetKaloriferovPage() {
             </FormulasList>
           </div>
         </div>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-secondary-text">
           Подробное описание нахождения коэффициента теплопередачи паровых
           биметаллических калориферов и таблицы с расчетными данными по каждой
           модели можно посмотреть на странице сайта: Коэффициент теплопередачи
           паровых калориферов.
-        </ProductParagraph>
+        </p>
+
         <LinkButtonsBlock
           buttons={[
             {
-              name: "Расчет коэффициентов пар",
+              name: "Расчет теплопередачи",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor2",
               hiddenText:
-                "Расчет коэффициента теплопередачи парового воздухонагревателя",
+                "Формула коэффициента теплопередачи парового калорифера",
             },
             {
               name: "Таблицы коэффициентов пар",
               url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor3",
               hiddenText:
-                "Таблицы коэффициентов теплопередачи и аэродинамического сопротивления паровых калориферов ",
+                "Таблицы коэффициентов теплопередачи паровых калориферов",
             },
           ]}
         />
@@ -1138,9 +1203,11 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 6. Расчет температурного напора */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={6} />
         <Heading lvl={2} text="Расчет температурного напора" />
+
         <ProductParagraph>
           6. Выполнить расчет среднего по поверхности температурного напора.
           Ниже представлена формула для определения температурного напора с
@@ -1148,7 +1215,8 @@ export default async function PodborRaschetKaloriferovPage() {
           и воздуха на входе и выходе из калорифера. Вычисления проводятся с
           помощью калькулятора с функцией нахождения логарифма.
         </ProductParagraph>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-secondary-text">
           Принцип работы паровоздушного калорифера построен на теплообмене двух
           сред, которые можно разделить на два потока или контура: первый контур
           или греющая сторона - теплоноситель пар, второй контур или нагреваемая
@@ -1157,7 +1225,8 @@ export default async function PodborRaschetKaloriferovPage() {
           стороны остается неизменной, температура с холодной стороны
           повышается. Чем больше разница температур потоков, тем эффективней
           происходит теплообмен.
-        </ProductParagraph>
+        </p>
+
         <div>
           <ProductParagraph>
             Средний логарифмический температурный напор рассчитывается в
@@ -1169,11 +1238,11 @@ export default async function PodborRaschetKaloriferovPage() {
                 - определяется разница температур двух потоков в их крайних
                 точках
               </ProductParagraph>
-              <ProductParagraph className="text-2xl font-bold">
+              <ProductParagraph className="text-xl font-bold">
                 Δ T <sub>Б</sub> = T s - t{" "}
                 <span className="font-normal">нач</span>
               </ProductParagraph>
-              <ProductParagraph className="text-2xl font-bold">
+              <ProductParagraph className="text-xl font-bold">
                 Δ T <sub>М</sub> = T s - t{" "}
                 <span className="font-normal">кон</span>
               </ProductParagraph>
@@ -1206,7 +1275,7 @@ export default async function PodborRaschetKaloriferovPage() {
                 - полученные значения температурных перепадов включаем в формулу
                 расчета температурного напора
               </ProductParagraph>
-              <ProductParagraph className="text-2xl font-bold">
+              <ProductParagraph className="text-xl font-bold">
                 Δ T = (Δ T <sub>Б</sub> - Δ T <sub>М</sub>) / ln (Δ T{" "}
                 <sub>Б</sub> / Δ T <sub>М</sub>)
               </ProductParagraph>
@@ -1219,6 +1288,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ol>
         </div>
+
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-800/500 w-full">
             <Image
@@ -1237,6 +1307,7 @@ export default async function PodborRaschetKaloriferovPage() {
             />
           </div>
         </div>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1250,6 +1321,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
+
           <div>
             <ProductParagraph>
               ДЕЙСТВИЕ 6. Рассчитываем температурный напор для выбранных
@@ -1257,10 +1329,10 @@ export default async function PodborRaschetKaloriferovPage() {
               сухой насыщенный пар давлением 0.1 МПа, температура воздуха на
               входе -39°С, температура воздуха на выходе +22°С.
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               Δ T <sub>Б</sub> = 99.6 – (-39) = 138.6
             </ProductParagraph>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               Δ T <sub>М</sub> = 99.6 – 22 = 77.6
             </ProductParagraph>
             <ul>
@@ -1280,7 +1352,7 @@ export default async function PodborRaschetKaloriferovPage() {
                 выходе из калорифера, °С.
               </li>
             </ul>
-            <ProductParagraph className="text-xl font-bold">
+            <ProductParagraph className="font-bold">
               Δ T = (138.6 – 77.6) / ln (138.6 / 77.6) = 61 / ln 1.78608 = 61 /
               2.71828 n 1.78608 = 61 / 0.580 = 105.2 °С
             </ProductParagraph>
@@ -1301,13 +1373,30 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Теплоотдача калорифера",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor4",
+              hiddenText: "Особенности теплоотдачи в паровых калориферах",
+            },
+            {
+              name: "Интенсификация теплообмена",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor5",
+              hiddenText: "Увеличение теплоотдачи парового воздухонагревателя",
+            },
+          ]}
+        />
       </section>
 
       <Separator />
 
+      {/* 7. Расчет тепловой мощности парового калорифера */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={7} />
         <Heading lvl={2} text="Расчет тепловой мощности парового калорифера" />
+
         <div>
           <ProductParagraph>
             7. Уточняем фактическую тепловую мощность выбранных паровых
@@ -1315,7 +1404,7 @@ export default async function PodborRaschetKaloriferovPage() {
           </ProductParagraph>
           <ProductParagraph>
             Формула для нахождения теплопроизводительности имеет вид:{" "}
-            <span className="text-2xl font-bold">
+            <span className="text-xl font-bold">
               Q <sub>1</sub> = К • F к • Δ T
             </span>
           </ProductParagraph>
@@ -1336,6 +1425,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1349,7 +1439,8 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 7. Рассчитываем действительную тепловую мощность
               подобранных паровых воздухонагревателей. Коэффициент теплопередачи
@@ -1360,55 +1451,55 @@ export default async function PodborRaschetKaloriferovPage() {
             <ul className="max-w-xl space-y-2 sm:space-y-0.5">
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 2-10</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 63.50 • 19.5 • 105.2 = 130264 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 3-10</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 61.08 • 29.7 • 105.2 = 190841 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КПСк 4-10</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 59.81 • 39.0 • 105.2 = 245389 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КП 310</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 91.64 • 21.9 • 105.2 = 211128 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КП 410</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 81.40 • 28.7 • 105.2 = 245766 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-7 А3</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 91.04 • 24.1 • 105.2 = 230816 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-7 А4</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 80.59 • 31.7 • 105.2 = 268755 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-8 А3</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 83.96 • 28.2 • 105.2 = 249079 Вт
                 </span>
               </li>
               <li className="flex items-baseline justify-between gap-2">
                 <span>Калорифер КФБ-8 А4</span>
-                <span className="text-xl font-bold">
+                <span className="font-bold">
                   Q 1 = 74.14 • 37.2 • 105.2 = 290142 Вт
                 </span>
               </li>
@@ -1419,6 +1510,7 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 8. Расчет расхода пара для нагрева */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={8} />
         <Heading
@@ -1426,6 +1518,7 @@ export default async function PodborRaschetKaloriferovPage() {
           text="Расчет расхода пара для нагрева"
           className="mb-0"
         />
+
         <div>
           <ProductParagraph>
             8. Уточняем фактический расход пара выбранных калориферов:{" "}
@@ -1446,7 +1539,8 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
           </ul>
         </div>
-        <div className="text-example mb-6 space-y-2">
+
+        <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
               ⚙️ Пример расчета и подбора парового калорифера. ШАГ 8
@@ -1459,7 +1553,8 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 8. Рассчитывается действительный расход сухого
               насыщенного пара давлением 0.1 МПа подобранными паровыми
@@ -1534,34 +1629,24 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                name: "Подбор диаметра паропровода",
-                url: "/paroprovod#anchor5",
-                hiddenText:
-                  "Таблица подбора диаметра паропровода от скорости пара",
-              },
-            ]}
-          />
-        </div>
       </section>
 
       <Separator />
 
+      {/* 9. Запас тепловой мощности парового калорифера */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={9} />
         <Heading lvl={2} text="Запас тепловой мощности парового калорифера" />
+
         <div>
           <ProductParagraph>
             9. Определяем запас тепловой производительности или поверхности
             нагрева принятых калориферов:
-            <span className="block text-2xl font-bold">
+            <span className="block text-xl font-bold">
               φ = ((Q 1 - Q) / Q) • 100
             </span>
           </ProductParagraph>
-          <ul>
+          <ul className="mb-3">
             <li>φ – запас поверхности нагрева или мощности, %;</li>
             <li>
               Q <sub>1</sub> – вырабатываемая калорифером производительность по
@@ -1569,7 +1654,7 @@ export default async function PodborRaschetKaloriferovPage() {
             </li>
             <li>Q - требуемая тепловая мощность, Вт.</li>
           </ul>
-          <ProductParagraph className="text-secondary-text">
+          <p className={LEFT_BLUE_BRACKET + " text-secondary-text"}>
             Фактическая мощность по теплу паровоздушного калорифера должна быть
             больше, чем расчетная. Диапазон допустимого соотношения фактической
             и расчетной мощности, в зависимости от условий поставленной задачи и
@@ -1578,8 +1663,9 @@ export default async function PodborRaschetKaloriferovPage() {
             находиться на уровне 10%, допустимый интервал от 0 до 20%. Если при
             подборе получен меньший или больший запас рекомендуется принять
             другой теплообменник и произвести повторный расчет.
-          </ProductParagraph>
+          </p>
         </div>
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1593,7 +1679,8 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 9. Рассчитывается запас площади поверхности теплообмена
               выбранных воздухонагревателей, проводится анализ его соответствия
@@ -1657,25 +1744,27 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-example">
           Из подобранных моделей калориферы КПСк 2-10 и КПСк 3-10 имеют
           недостаточную тепловую мощность. Запас площади поверхности паровых
           воздухонагревателей КФБ-7 А4, КФБ-8 А3 и КФБ-8 А4 превышает
           рекомендуемый диапазон.
-        </ProductParagraph>
+        </p>
+
         <LinkButtonsBlock
           buttons={[
             {
               name: "Запас поверхности нагрева",
               url: "/raschet-kaloriferov#anchor3",
               hiddenText:
-                "Запас поверхности теплообмена при расчете калориферов",
+                "Методика расчета запаса мощности паровых калориферов",
             },
             {
-              name: "Запас сопротивления пар",
-              url: "/raschet-kaloriferov#anchor4",
+              name: "Выбор компоновки калориферов",
+              url: "/raschet-kaloriferov#anchor6",
               hiddenText:
-                "Запас аэродинамического сопротивления при подборе калориферов",
+                "Принципы подбора оптимальной компоновки паровых калориферов",
             },
           ]}
         />
@@ -1683,9 +1772,11 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
+      {/* 10. Расчет воздушного сопротивления */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={10} />
         <Heading lvl={2} text="Расчет воздушного сопротивления" />
+
         <div>
           <ProductParagraph>
             10. Произвести расчет аэродинамического сопротивления подобранных
@@ -1710,7 +1801,9 @@ export default async function PodborRaschetKaloriferovPage() {
             <li>B, m - значение модуля и степени из таблицы.</li>
           </ul>
         </div>
-        <CalcAerodynamicResistanceTables />
+
+        <SteamCalcAerodynamicResistanceTables />
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1724,7 +1817,8 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
-          <div>
+
+          <div className="space-y-2">
             <ProductParagraph>
               ДЕЙСТВИЕ 10. Рассчитывается аэродинамическое сопротивление
               выбранных воздушных обогревателей. Принимаем модели КПСк и КП с
@@ -1791,31 +1885,39 @@ export default async function PodborRaschetKaloriferovPage() {
             </ul>
           </div>
         </div>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-secondary-text">
           Подробное описание нахождения потерь по воздушной стороне паровых
           калориферов и таблицы с расчетными данными по каждой модели можно
           посмотреть на странице сайта: Аэродинамическое сопротивление паровых
           калориферов.
-        </ProductParagraph>
-        <div className="sm:w-1/2">
-          <LinkButtonsBlock
-            buttons={[
-              {
-                name: "Расчет сопротивления пар",
-                url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
-                hiddenText:
-                  "Расчет аэродинамического сопротивления калориферов КПСк",
-              },
-            ]}
-          />
-        </div>
+        </p>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Расчет потерь по воздуху",
+              url: "/koefficient-teploperedachi-parovyh-kaloriferov#anchor1",
+              hiddenText:
+                "Расчет потерь давления по воздуху в паровых теплообменниках",
+            },
+            {
+              name: "Аэродинамический запас",
+              url: "/raschet-kaloriferov#anchor4",
+              hiddenText:
+                "Методика расчета сопротивления по воздуху паровых калориферов",
+            },
+          ]}
+        />
       </section>
 
       <Separator />
 
+      {/* 11. Подбор парового калорифера */}
       <section className="mb-4 space-y-4">
         <NumberedAnchor num={11} />
         <Heading lvl={2} text="Подбор парового калорифера" />
+
         <ProductParagraph>
           11. Правильный и корректный подбор паровых калориферов направлен на
           поиск технического решения, обеспечивающего требуемый нагрев воздуха
@@ -1827,28 +1929,31 @@ export default async function PodborRaschetKaloriferovPage() {
           и рациональным запасом тепловой мощности при минимальном сопротивлении
           воздушному потоку.
         </ProductParagraph>
-        <ProductParagraph className="text-secondary-text">
+
+        <p className="text-secondary-text">
           Критерии подбора и методика расчета воздухонагревателей представлены
           на странице сайта: Расчет и подбор водяных, паровых и электрических
           калориферов. С конструкционными особенностями, видами и типами
           выпускаемых нашим предприятием спирально-накатных теплообменников
           можно ознакомиться на странице: Калориферы. Производство.
-        </ProductParagraph>
+        </p>
+
         <LinkButtonsBlock
           buttons={[
             {
               name: "Расчет и подбор калориферов",
               url: "/raschet-kaloriferov",
-              hiddenText:
-                "Расчет и подбор калориферов для приточной вентиляции",
+              hiddenText: "Общая методика расчета и подбора калориферов",
             },
             {
               name: "Производство калориферов",
               url: "/kalorifery",
-              hiddenText: "Изготовление калориферов для приточной вентиляции",
+              hiddenText:
+                "Промышленные паровые калориферы для горных предприятий",
             },
           ]}
         />
+
         <div className="text-example space-y-2">
           <div>
             <ProductParagraph>
@@ -1862,6 +1967,7 @@ export default async function PodborRaschetKaloriferovPage() {
               +22°С. Теплоноситель - сухой насыщенный пар давлением 0.1 МПа.
             </ProductParagraph>
           </div>
+
           <div>
             <ProductParagraph>
               ДЕЙСТВИЕ 11. Для подбора было выбрано девять моделей одноходовых
@@ -1889,10 +1995,12 @@ export default async function PodborRaschetKaloriferovPage() {
               </li>
             </ul>
           </div>
+
           <KaloriferPropsTable
             columns={kaloriferPropColumns}
             data={kaloriferProps}
           />
+
           <div>
             <ProductParagraph>
               В результате расчета и подбора паровых калориферов для обеспечения
@@ -1916,7 +2024,8 @@ export default async function PodborRaschetKaloriferovPage() {
 
       <Separator />
 
-      <section className="space-y-4">
+      {/* 12. Расчет и подбор паровых калориферов для технологического нагрева */}
+      <section className="mb-4 space-y-4">
         <NumberedAnchor num={12} />
         <Heading
           lvl={2}
@@ -2371,6 +2480,58 @@ export default async function PodborRaschetKaloriferovPage() {
           технических ресурсов в рамках обеспечения технологического процесса.
         </ProductParagraph>
       </section>
+
+      {/* Технологический нагрев альтернативным теплоносителем */}
+      <section className="space-y-4">
+        <Heading
+          lvl={3}
+          text="Технологический нагрев альтернативным теплоносителем"
+        />
+
+        <div>
+          <ProductParagraph>
+            Если технологический регламент процесса требует более умеренных
+            температур нагрева воздуха, либо на объекте приоритетным является
+            использование жидкостного теплоносителя, многорядные установки
+            проектируют на базе водяных контуров. В отличие от изотермической
+            конденсации пара, расчет таких систем требует обязательного учета
+            эффекта термодинамического затухания сред по глубине калориферного
+            блока.
+          </ProductParagraph>
+          <ProductParagraph>
+            Для проведения сравнительного теплотехнического анализа и подбора
+            альтернативного оборудования вы можете перейти к профильным разделам
+            водяного нагрева:
+          </ProductParagraph>
+        </div>
+
+        <LinkButtonsBlock
+          buttons={[
+            {
+              name: "Подбор водяных секций",
+              url: "/raschet-podbor-kaloriferov#anchor14",
+              hiddenText:
+                "Подбор водяных воздухонагревателей в секции теплообмена",
+            },
+            {
+              name: "Расчет водяных секций",
+              url: "/kalorifer-blocks",
+              hiddenText:
+                "Расчет многорядных секций водяных калориферов по методу NTU",
+            },
+          ]}
+        />
+
+        <ProductParagraph>
+          В указанных материалах подробно рассмотрены инженерные методики,
+          позволяющие с высокой точностью рассчитать динамику изменения
+          параметров сред в каждом ряду трубного пучка. Представленные расчетные
+          модели и таблицы ТЭО рядности помогут обосновать выбор оптимальной
+          схемы гидравлической обвязки (перекрестноточной или последовательной)
+          в зависимости от типа сушильного комплекса и требуемой интенсивности
+          влагоудаления.
+        </ProductParagraph>
+      </section>
     </>
   );
 }
@@ -2381,9 +2542,7 @@ function FormulasList({ children }) {
 
 function Formula({ example = false, className = "", children }) {
   return (
-    <span
-      className={`font-bold ${example ? "text-xl" : "text-2xl"} ${className}`}
-    >
+    <span className={`font-bold ${example ? "" : "text-xl"} ${className}`}>
       {children}
     </span>
   );
