@@ -436,6 +436,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
 
         {/* Теплоотдача парового калорифера */}
         <section className="space-y-4 text-[#496486]">
+          <NumberedAnchor num={4} />
           <Heading lvl={3} text="Теплоотдача парового калорифера" />
 
           <div className="mb-6 space-y-1">
@@ -523,6 +524,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
 
         {/* Интенсификация теплоотдачи парового калорифера */}
         <section className="text-[#496486]">
+          <NumberedAnchor num={5} />
           <Heading
             lvl={3}
             text="Интенсификация теплоотдачи парового калорифера"

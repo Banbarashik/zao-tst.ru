@@ -90,6 +90,7 @@ export default async function KaloriferyVodaPage() {
         </ProductParagraph>
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <NumberedAnchor num={1} />
+
           <div className="relative aspect-16/10 w-full">
             <Image
               src="/img/general_pages/kalorifer_pritochnyi_vodianoi.png"
@@ -112,6 +113,7 @@ export default async function KaloriferyVodaPage() {
       <section className="space-y-6">
         <section>
           <NumberedAnchor num={2} device="mobile" />
+
           <Heading lvl={2} text="Онлайн-расчет мощности водяного калорифера" />
           <ProductParagraph className="mb-3">
             Расход тепла водяным калорифером на подогрев приточного воздуха. В
@@ -153,6 +155,7 @@ export default async function KaloriferyVodaPage() {
       </section>
 
       <section>
+        <NumberedAnchor num={3} />
         <Heading lvl={2} text="Расчет и подбор приточных водяных калориферов" />
         <ProductParagraph>
           Выбрав номер калорифера с приближенным для выполнения вашей задачи

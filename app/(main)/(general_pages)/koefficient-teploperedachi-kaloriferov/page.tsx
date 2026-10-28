@@ -456,6 +456,7 @@ export default function KoefficientTeploperedachiVodianyhKaloriferovPage() {
 
         {/* Теплоотдача водяного калорифера и гидродинамический режим */}
         <section className="space-y-4 text-[#496486]">
+          <NumberedAnchor num={4} />
           <Heading
             lvl={3}
             text="Теплоотдача водяного калорифера и гидродинамический режим"
@@ -579,6 +580,7 @@ export default function KoefficientTeploperedachiVodianyhKaloriferovPage() {
 
         {/* Интенсификация теплоотдачи водяного калорифера */}
         <section className="text-[#496486]">
+          <NumberedAnchor num={5} />
           <Heading
             lvl={3}
             text="Интенсификация теплоотдачи водяного калорифера"
