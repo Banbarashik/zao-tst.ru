@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
-import { getLegacyHtml, getLegacyHtmls } from "@/lib/legacyHtml";
+import { getLegacyHtml } from "@/lib/legacyHtml";
 
 import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
@@ -118,6 +118,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
               <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
                 <div className="relative aspect-1000/500 w-full">
                   <Image
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     src="/img/general_pages/vodianaia_sistema_kalorifera.png"
                     alt="Система направления и распределения потока воды в калориферах"
                     title="Гидравлическая система водяного калорифера"
@@ -126,6 +127,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
                 </div>
                 <div className="relative aspect-1000/500 w-full">
                   <Image
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     src="/img/general_pages/gidravlicheski_trakt_kalorifera.png"
                     alt="Элементы гидравлического тракта водяного воздухонагревателя"
                     title="Гидравлический тракт водяного калорифера"
@@ -279,6 +281,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
         <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1200/990 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/gidravlicheskoe_soprotivlenie_4_hoda.png"
               alt="Потери давления четырехходового воздухонагревателя"
               title="Гидравлическое сопротивление 4 ходового калорифера"
@@ -287,6 +290,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           </div>
           <div className="relative aspect-1200/990 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/gidravlicheskoe_soprotivlenie_6_hodov.png"
               alt="Схема распределения линейных и местных гидравлических потерь давления"
               title="Гидравлическое сопротивление 6 ходового калорифера"
@@ -320,6 +324,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
         <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-600/400 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/vodianoi_kalorifer_4_hoda.png"
               alt="Устройство водяного контура калориферов"
               title="Четырехходовая компоновка водяного калорифера"
@@ -328,6 +333,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           </div>
           <div className="relative aspect-600/400 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/vodianoi_kalorifer_6_hodov.png"
               alt="Схема движения теплоносителя по шести ходам калорифера"
               title="Шестиходовая компоновка водяного калорифера"
@@ -808,6 +814,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
             <div className="relative aspect-600/400 w-full">
               <Image
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 src="/img/general_pages/gidravlicheskoe_soprotivlenie.png"
                 alt="Сравнительные гидродинамические характеристики калориферов"
                 title="Сравнительное гидравлическое сопротивление калориферов"
@@ -816,6 +823,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
             </div>
             <div className="relative aspect-600/400 w-full">
               <Image
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 src="/img/general_pages/gidravlika_kaloriferov.png"
                 alt="Оптимизация гидравлических потерь калорифера"
                 title="Скорость теплоносителя в калориферах"

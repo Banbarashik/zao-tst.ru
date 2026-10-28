@@ -593,6 +593,7 @@ export default async function RaschetPodborKaloriferovPage() {
         <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/370 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/kalorifer_podbor_voda.png"
               alt="Расчет площади фронтального сечения водяного калорифера"
               title="Расчет водяного калорифера"
@@ -601,6 +602,7 @@ export default async function RaschetPodborKaloriferovPage() {
           </div>
           <div className="relative aspect-1000/370 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/kalorifer_podbor_water.png"
               alt="Расчет массовой скорости в фронтальном сечении водяного калорифера"
               title="Подбор водяного калорифера"
@@ -1608,6 +1610,7 @@ export default async function RaschetPodborKaloriferovPage() {
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-800/500 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/voda_kalorifer_temperatura_napor.png"
               alt="Расчет температурного напора водяного калорифера"
               title="Средний арифметический температурный напор"
@@ -1616,6 +1619,7 @@ export default async function RaschetPodborKaloriferovPage() {
           </div>
           <div className="relative aspect-800/500 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/water_kalorifer_temperatura_napor.png "
               alt="Дельта температур при расчете и подборе водяного калорифера"
               title="Формула арифметического температурного напора"
@@ -2788,6 +2792,7 @@ export default async function RaschetPodborKaloriferovPage() {
                   <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
                     <div className="relative aspect-1000/600 w-full">
                       <Image
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         src="/img/general_pages/perecrest_standart_4_kalor_3_riada.png"
                         alt="Гидравлическая параллельная схема обвязки блока 3-рядных калориферов"
                         title="Блок 3-рядных калориферов. Перекрестная стандартная схема"
@@ -2796,6 +2801,7 @@ export default async function RaschetPodborKaloriferovPage() {
                     </div>
                     <div className="relative aspect-1000/600 w-full">
                       <Image
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         src="/img/general_pages/perecrest_forsir_4_kalor_3_riada.png"
                         alt="Форсированный гидравлический режим перекрестного тока калориферов"
                         title="Блок 3-рядных калориферов. Перекрестная форсированная схема"
@@ -2824,6 +2830,7 @@ export default async function RaschetPodborKaloriferovPage() {
                   <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
                     <div className="relative aspect-1000/600 w-full">
                       <Image
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         src="/img/general_pages/perecrest_standart_4_kalor_4_riada.png"
                         alt="Параллельное подключение четырехрядных водяных воздухонагревателей"
                         title="Блок 4-рядных калориферов. Перекрестная стандартная схема"
@@ -2832,6 +2839,7 @@ export default async function RaschetPodborKaloriferovPage() {
                     </div>
                     <div className="relative aspect-1000/600 w-full">
                       <Image
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         src="/img/general_pages/perecrest_forsir_4_kalor_4_riada.png"
                         alt="Чертеж блока 4-рядных водяных калориферов"
                         title="Блок 4-рядных калориферов. Перекрестная форсированная схема"
@@ -2872,6 +2880,7 @@ export default async function RaschetPodborKaloriferovPage() {
                   <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
                     <div className="relative aspect-1000/600 w-full">
                       <Image
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         src="/img/general_pages/priamotok_4_kalor_3_riada.png"
                         alt="Последовательный прямоток блоков водяных калориферов"
                         title="Блок 3-рядных калориферов. Прямоточная схема обвязки"
@@ -2880,6 +2889,7 @@ export default async function RaschetPodborKaloriferovPage() {
                     </div>
                     <div className="relative aspect-1000/600 w-full">
                       <Image
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         src="/img/general_pages/protivotok_4_kalor_3_riada.png"
                         alt="Противоток в многорядных калориферных установках: расчет"
                         title="Блок 3-рядных калориферов. Противоточная схема обвязки"
@@ -2904,6 +2914,7 @@ export default async function RaschetPodborKaloriferovPage() {
                   <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
                     <div className="relative aspect-1000/600 w-full">
                       <Image
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         src="/img/general_pages/priamotok_4_kalor_4_riada.png"
                         alt="Расчет блоков водяных теплообменников по прямоточной схеме"
                         title="Блок 4-рядных калориферов. Прямоточная схема обвязки"
@@ -2912,6 +2923,7 @@ export default async function RaschetPodborKaloriferovPage() {
                     </div>
                     <div className="relative aspect-1000/600 w-full">
                       <Image
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         src="/img/general_pages/protivotok_4_kalor_4_riada.png"
                         alt="Гидравлическая последовательная схема обвязки блока 4-рядных калориферов"
                         title="Блок 4-рядных калориферов. Противоточная схема обвязки"
@@ -2960,6 +2972,7 @@ export default async function RaschetPodborKaloriferovPage() {
               <div className="mb-6 flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
                 <div className="relative aspect-1000/600 w-full">
                   <Image
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     src="/img/general_pages/kalorifery_blok_sravnenie_temperatura.png"
                     alt="График изменения температуры воздуха в блоке водяных калориферов по NTU"
                     title="Сравнение температуры воздуха секции по схемам обвязки"
@@ -2968,6 +2981,7 @@ export default async function RaschetPodborKaloriferovPage() {
                 </div>
                 <div className="relative aspect-1000/600 w-full">
                   <Image
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     src="/img/general_pages/kalorifery_blok_sravnenie_teplo.png"
                     alt="Сравнение тепловой мощности калориферов по гидравлическим схемам"
                     title="Сравнение тепловой мощности секции по схемам обвязки"

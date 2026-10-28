@@ -6,7 +6,6 @@ import Heading from "@/components/general_pages/heading";
 import ProductParagraph from "@/components/catalog/productParagraph";
 import CategoryCards from "@/components/categoryCards";
 import LinkButtonsBlock from "@/components/linkButtonsBlock";
-import SaturatedSteamPropertiesTable from "@/components/general_pages/saturatedSteamPropertiesTable";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import WaterPropsOnSaturationLineTable from "@/components/general_pages/waterPropsOnSaturationLineTable";
 
@@ -135,6 +134,7 @@ export default function KaloriferParPage() {
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/kalorifer_voda_2_3.png"
               alt="Устройство водяного калорифера"
               title="Водяной калорифер двухрядный и трехрядный"
@@ -143,6 +143,7 @@ export default function KaloriferParPage() {
           </div>
           <div className="relative aspect-1000/650 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/kalorifer_voda_4.png"
               alt="Конструкция водовоздушного калорифера"
               title="Водяной калорифер четырехрядный"
@@ -294,6 +295,7 @@ export default function KaloriferParPage() {
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/voda_kalorifer_3_4.png"
               alt="Воздухонагреватель с теплоносителем вода"
               title="Водяной воздухонагреватель биметаллический"
@@ -302,6 +304,7 @@ export default function KaloriferParPage() {
           </div>
           <div className="relative aspect-1000/650 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/voda_kalorifer_4.png"
               alt="Теплообменник многоходовой"
               title="Водяной теплообменник оребренный"
@@ -469,6 +472,7 @@ export default function KaloriferParPage() {
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/agregat_voda.png"
               alt="Водяной воздухонагреватель с вентилятором"
               title="Водяной калорифер с осевым вентилятором"
@@ -477,6 +481,7 @@ export default function KaloriferParPage() {
           </div>
           <div className="relative aspect-1000/650 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/voda_agregat.png"
               alt="Водяной теплообменник с вентилятором"
               title="Водовоздушный калорифер с вентилятором"

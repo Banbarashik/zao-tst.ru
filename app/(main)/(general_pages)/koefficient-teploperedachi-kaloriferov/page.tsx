@@ -434,6 +434,7 @@ export default function KoefficientTeploperedachiVodianyhKaloriferovPage() {
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
           <div className="relative aspect-1000/650 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/kalorifer_voda_teploperedacha.png"
               alt="Расчет коэффициента теплопередачи водяных теплообменников"
               title="Водяной калорифер коэффициент теплопередачи"
@@ -442,6 +443,7 @@ export default function KoefficientTeploperedachiVodianyhKaloriferovPage() {
           </div>
           <div className="relative aspect-1000/650 w-full">
             <Image
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               src="/img/general_pages/kalorifer_voda_soprotivlenie.png"
               alt="Аэродинамическое сопротивление калориферов КСк2 КСк3 КСк4"
               title="Аэродинамическое сопротивление водяных калориферов"
@@ -554,6 +556,7 @@ export default function KoefficientTeploperedachiVodianyhKaloriferovPage() {
           <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-0">
             <div className="relative aspect-1000/650 w-full">
               <Image
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 src="/img/general_pages/voda_kalorifer_teploperedacha.png"
                 alt="Коэффициент теплопередачи калориферов КСк"
                 title="Несущие стальные трубки водяного калорифера"
@@ -562,6 +565,7 @@ export default function KoefficientTeploperedachiVodianyhKaloriferovPage() {
             </div>
             <div className="relative aspect-1000/650 w-full">
               <Image
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 src="/img/general_pages/voda_kalorifer_soprotivlenie.png"
                 alt="Формула для расчета теплоотдачи и сопротивления водяных калориферов"
                 title="Водяные воздухонагреватели расчет теплопередачи"
