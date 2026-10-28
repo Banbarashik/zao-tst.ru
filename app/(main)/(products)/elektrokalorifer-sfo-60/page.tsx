@@ -84,7 +84,7 @@ export default function SFO60Page() {
 
 function TechReviewSection() {
   return (
-    <section className="mb-4 space-y-4 text-[17px]">
+    <section className="mb-4 space-y-4">
       <NumberedAnchor num={1} />
 
       <ProductSubheader text="Технический обзор эксплуатации электрокалорифера СФО-60" />
@@ -312,7 +312,7 @@ function TechReviewSection() {
 }
 
 const ANALYSIS_SECTION_CLASS =
-  "space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm mt-4";
+  "space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3  inset-shadow-sm mt-4";
 const TEXT_UNDER_ANALYSIS_TABLE_CLASS = "text-[15px] leading-4.5";
 
 function Analysis4000() {

@@ -186,7 +186,7 @@ export default async function KaloriferSushilnaiaKameraPage() {
             6000 м³/ч, что соответствует вентилятору ВО 6-300 №6.3 (1.1 кВт,
             1500 об. мин.).
           </ProductParagraph>
-          <ul className="text-[17px]">
+          <ul className="">
             <li>
               1. в поле «Объем нагреваемого воздуха» вписываем значение «6000»;
             </li>
@@ -263,7 +263,7 @@ export default async function KaloriferSushilnaiaKameraPage() {
             воздуху 24000 м³/ч, что соответствует вентилятору ВО 6-300 №8 (3
             кВт, 1500 об. мин.).
           </ProductParagraph>
-          <ul className="text-[17px]">
+          <ul className="">
             <li>
               1. в поле «Объем нагреваемого воздуха» вписываем значение «25000»;
             </li>

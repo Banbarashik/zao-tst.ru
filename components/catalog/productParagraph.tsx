@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-
 export default function ProductParagraph({
   children,
   className = "",
@@ -7,5 +5,5 @@ export default function ProductParagraph({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <p className={cn("text-[16px]", className)}>{children}</p>;
+  return <p className={className}>{children}</p>;
 }

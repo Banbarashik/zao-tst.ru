@@ -170,7 +170,7 @@ export default async function STDPage({ product }) {
                 Теплоотдающие элементы {heatCarrierAdj.gen} калорифера{" "}
                 {variant.calorifier}:
               </ProductParagraph>
-              <ul className="text-[17px]">
+              <ul className="">
                 <li>
                   - электросварные прямошовные трубки {variant.tubeSize} мм по
                   ГОСТ 10704-91

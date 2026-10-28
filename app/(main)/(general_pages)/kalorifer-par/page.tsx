@@ -568,7 +568,7 @@ export default function KaloriferParPage() {
         </section>
 
         <section>
-          <Heading lvl={3} text="Калориферы КП" className="text-[17px]" />
+          <Heading lvl={3} text="Калориферы КП" className="" />
           <ProductParagraph>
             Линейка, конструктивно близкая к серии КПСк, но разработанная для
             более неблагоприятных условий эксплуатации. Благодаря увеличенному

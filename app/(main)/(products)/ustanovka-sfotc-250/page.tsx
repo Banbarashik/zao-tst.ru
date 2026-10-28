@@ -76,7 +76,7 @@ export default function SFOTC250Page() {
 
 function TechReviewSection() {
   return (
-    <section className="mb-4 space-y-4 text-[17px]">
+    <section className="mb-4 space-y-4">
       <NumberedAnchor num={1} />
 
       <ProductSubheader text="Принципы подбора и режимы эксплуатации СФОЦ-250" />
@@ -440,7 +440,7 @@ function TechReviewSection() {
 }
 
 const ANALYSIS_SECTION_CLASS =
-  "space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3 text-[17px] inset-shadow-sm mt-4";
+  "space-y-4 rounded bg-[rgb(233,239,247)] px-5 py-3  inset-shadow-sm mt-4";
 
 function Analysis12000() {
   return (

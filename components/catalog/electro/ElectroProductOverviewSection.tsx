@@ -69,7 +69,7 @@ export function ElectroProductOverviewSection({ product }) {
             <ProductParagraph>
               Теплоотдающие элементы{isSFOTC ? " калорифера СФО:" : ":"}
             </ProductParagraph>
-            <ul className="text-[17px]">
+            <ul className="">
               <li>- трубчатые электронагреватели Р-54А-13/2.5о220</li>
               <li>с алюминиевым (АД1 ТУ 1-8-267-99) накатным оребрением</li>
             </ul>

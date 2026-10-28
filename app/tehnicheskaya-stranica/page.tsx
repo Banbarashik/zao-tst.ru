@@ -95,7 +95,7 @@ export default function TehnicheskayaStranica() {
         </ProductParagraph>
       </section>
 
-      <div className="mx-auto h-1 w-2/3 rounded-full bg-purple-400/70 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+      <div className="bg-primary-dark/50 mx-auto h-1 w-3/4 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       <section>
         <NumberedAnchor num={1} />
@@ -107,7 +107,7 @@ export default function TehnicheskayaStranica() {
         <TechEntries entries={waterHeaterEntries} />
       </section>
 
-      <div className="mx-auto h-1 w-2/3 rounded-full bg-purple-400/70 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+      <div className="bg-primary-dark/50 mx-auto h-1 w-3/4 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       <section>
         <NumberedAnchor num={2} />
@@ -119,7 +119,7 @@ export default function TehnicheskayaStranica() {
         <TechEntries entries={steamHeaterEntries} />
       </section>
 
-      <div className="mx-auto h-1 w-2/3 rounded-full bg-purple-400/70 mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+      <div className="bg-primary-dark/50 mx-auto h-1 w-3/4 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       <section>
         <NumberedAnchor num={3} />

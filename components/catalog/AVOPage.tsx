@@ -124,7 +124,7 @@ export default async function AVOPage({ product }) {
             Теплоотдающие элементы {heatCarrierAdj.gen} калорифера{" "}
             {product.calorifier}:
           </ProductParagraph>
-          <ul className="mb-4 text-[17px]">
+          <ul className="mb-4">
             <li>
               - электросварные прямошовные трубки {product.tubeSize} мм по ГОСТ
               10704-91

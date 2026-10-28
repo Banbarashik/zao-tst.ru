@@ -183,7 +183,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
           отдельных участках контура.
         </ProductParagraph>
 
-        <ul className="text-[17px]">
+        <ul className="">
           <li>
             <span className="text-example">
               • Линейные потери (потери на трение по длине):
@@ -457,7 +457,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
 
           <div>
             <ProductParagraph>Исходные данные:</ProductParagraph>
-            <ul className="text-[17px]">
+            <ul className="">
               <li>• Фиксированный объемный расход воды (Gv): 3.0 м³/час;</li>
               <li>• Температурный график теплоносителя: 95/70 °С;</li>
               <li>
@@ -873,7 +873,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
               помощью упрощенного метода.
             </ProductParagraph>
             <ProductParagraph>Исходные данные:</ProductParagraph>
-            <ul className="text-[17px]">
+            <ul className="">
               <li>• Модель прибора: калорифер ТВВ 412 (6-ходовой);</li>
               <li>
                 • Заданная скорость теплоносителя в трубках (W): 0.550 м/сек;
@@ -925,7 +925,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
               табличным данным.
             </ProductParagraph>
             <ProductParagraph>Исходные данные:</ProductParagraph>
-            <ul className="text-[17px]">
+            <ul className="">
               <li>• Модель прибора: калорифер КСк 2-11;</li>
               <li>
                 • Заданная скорость теплоносителя в трубках (W): 0.390 м/сек.
@@ -1005,7 +1005,7 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
             В данном разделе подробно рассмотрены три ключевых эксплуатационных
             аспекта:
           </ProductParagraph>
-          <ul className="text-[17px]">
+          <ul className="">
             <li>
               <span className="text-example">
                 • Гидродинамика гликолевых антифризов:

@@ -48,7 +48,7 @@ export function DeliverySection({
   );
 
   return (
-    <section className={cn("text-example space-y-4 text-[17px]", className)}>
+    <section className={cn("text-example space-y-4", className)}>
       <h3 className="mb-2 text-xl">
         Оплата и доставка {isSHUK && "шкафа управления"}
         {isSFO && "электрокалорифера"} {(isKSK || isKPSK) && "калорифера"}{" "}

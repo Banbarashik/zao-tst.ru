@@ -460,7 +460,7 @@ export default async function KaloriferySFO() {
         <section className={LEFT_BLUE_BRACKET}>
           <Heading lvl={3} text="Базовые инженерные стандарты линейки СФО" />
 
-          <ul className="text-[17px]">
+          <ul className="">
             <li>
               <span className="text-example">Фланцевое присоединение:</span>{" "}
               Входные и выходные сечения воздухонагревателей оснащены
