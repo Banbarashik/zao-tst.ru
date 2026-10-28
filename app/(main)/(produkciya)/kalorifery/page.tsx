@@ -148,6 +148,8 @@ export default function KaloriferyPage() {
         </ProductParagraph>
       </section>
 
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+
       <section>
         <Heading lvl={2} text="Виды калориферов" />
         <ProductParagraph className="mb-4">
@@ -207,6 +209,8 @@ export default function KaloriferyPage() {
             },
           ]}
         />
+
+        <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
         <section>
           <Heading lvl={3} text="Приточные калориферы" />

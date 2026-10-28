@@ -1,7 +1,10 @@
-import Heading from "@/components/general_pages/heading";
 import type { Metadata } from "next";
-import type { PressureBlock } from "@/components/general_pages/paroprovodTable";
 
+import { LEFT_BLUE_BRACKET } from "@/constants/styles";
+
+import { Separator } from "@/components/ui/separator";
+import Heading from "@/components/general_pages/heading";
+import type { PressureBlock } from "@/components/general_pages/paroprovodTable";
 import ParoprovodCalculator from "@/components/general_pages/paroprovodCalculator";
 import { ParoprovodTable } from "@/components/general_pages/paroprovodTable";
 import ProductParagraph from "@/components/catalog/productParagraph";
@@ -572,8 +575,19 @@ export default function ParoprovodPage() {
     <>
       <Heading lvl={1} text="Подбор диаметра паропровода для калориферов" />
 
+      <ProductParagraph>
+        Инженерный расчет и подбор диаметра паровых магистралей выполняются для
+        обеспечения стабильной подачи теплоносителя с заданными
+        термодинамическими параметрами и расходом к воздухонагревательным
+        установкам. Точное определение внутреннего сечения труб позволяет
+        оптимизировать скорость движения пара для эффективной работы калориферов
+        в составе отопительных систем промышленного предприятия.
+      </ProductParagraph>
+
+      {/* Структура паропровода */}
       <section className="space-y-4">
         <Heading lvl={2} text="Структура паропровода" />
+
         <ProductParagraph>
           Проектирование и монтаж паропроводов осуществляется на заводах и
           комбинатах, использующих пар для производственных процессов и
@@ -584,18 +598,24 @@ export default function ParoprovodPage() {
           труб, запорно-регулирующей арматуры и контрольно-измерительных
           приборов.
         </ProductParagraph>
+
         <LinkButtonsBlock
           buttons={[
             {
               name: "Калькулятор подбора диаметра",
               url: "/paroprovod#anchor2",
+              hiddenText:
+                "Расчет диаметра труб по давлению, скорости и расходу пара",
             },
             {
               name: "Таблица подбора паропровода",
               url: "/paroprovod#anchor5",
+              hiddenText:
+                "Таблица труб паропровода по давлению от 0.1 до 1.2 МПа",
             },
           ]}
         />
+
         <div className="text-[#5a769a]">
           <ProductParagraph>
             К составным элементам паропровода относятся:
@@ -635,7 +655,8 @@ export default function ParoprovodPage() {
             </li>
           </ol>
         </div>
-        <div className="space-y-1">
+
+        <div className={"space-y-1 " + LEFT_BLUE_BRACKET}>
           <ProductParagraph>
             Одним из ключевых условий стабильного протекания технологического
             нагрева воздуха калориферами является обеспечение требуемых
@@ -659,6 +680,25 @@ export default function ParoprovodPage() {
         </div>
       </section>
 
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Свойства водяного пара",
+            url: "/kalorifer-par#anchor1",
+            hiddenText:
+              "Свойства насыщенного водяного пара в зависимости от давления",
+          },
+          {
+            name: "Калькулятор парового ТО",
+            url: "/kalorifery-par#anchor1",
+            hiddenText: "Онлайн-расчет расхода пара для теплообменников",
+          },
+        ]}
+      />
+
+      <Separator />
+
+      {/* Дренаж паропровода */}
       <section className="space-y-1">
         <NumberedAnchor num={1} />
         <Heading lvl={2} text="Дренаж паропровода" />
@@ -699,6 +739,9 @@ export default function ParoprovodPage() {
         </ProductParagraph>
       </section>
 
+      <Separator />
+
+      {/* Калькулятор расчета диаметра паропровода */}
       <section className="space-y-3">
         <NumberedAnchor num={2} />
         <Heading lvl={2} text="Калькулятор расчета диаметра паропровода" />
@@ -722,6 +765,9 @@ export default function ParoprovodPage() {
         </ProductParagraph>
       </section>
 
+      <Separator />
+
+      {/* Скорость пара в трубопроводе */}
       <section className="space-y-4">
         <NumberedAnchor num={3} />
         <Heading lvl={2} text="Скорость пара в трубопроводе" />
@@ -773,13 +819,16 @@ export default function ParoprovodPage() {
         </div>
       </section>
 
+      <Separator />
+
+      {/* Формула для расчета диаметра паропровода */}
       <section className="space-y-4">
         <NumberedAnchor num={4} />
         <Heading lvl={2} text="Формула для расчета диаметра паропровода" />
         <div>
           <ProductParagraph>
             Формула расчета диаметра трубопровода пара имеет вид:{" "}
-            <math className="font-arial text-2xl font-bold">
+            <math className="font-arial text-xl font-bold">
               <mrow>
                 <mi>D</mi>
                 <mo>=</mo>
@@ -808,10 +857,10 @@ export default function ParoprovodPage() {
           <ul>
             <li>D – расчетное значение внутреннего диаметра, мм;</li>
             <li>
-              G <sub>ПАР</sub> – массовый расход пара, кг/час;
+              G <sub>пар</sub> – массовый расход пара, кг/час;
             </li>
             <li>
-              V <sub>ПАР</sub> – удельный объем пара при соответствующем
+              V <sub>пар</sub> – удельный объем пара при соответствующем
               давлении, м³/кг;
             </li>
             <li>v — принимаемая скорость пара, м/с.</li>
@@ -864,7 +913,7 @@ export default function ParoprovodPage() {
               25 м/сек.
             </ProductParagraph>
             <ProductParagraph>
-              <math className="font-arial text-xl font-bold">
+              <math className="font-arial font-bold">
                 <mrow>
                   <mi>D</mi>
                   <mo>=</mo>
@@ -906,7 +955,7 @@ export default function ParoprovodPage() {
               потока 30 м/сек.
             </ProductParagraph>
             <ProductParagraph>
-              <math className="font-arial text-xl font-bold">
+              <math className="font-arial font-bold">
                 <mrow>
                   <mi>D</mi>
                   <mo>=</mo>
@@ -945,17 +994,18 @@ export default function ParoprovodPage() {
             {
               name: "Расчет расхода пара",
               url: "/podbor-raschet-kaloriferov#anchor4",
-              hiddenText: "Расчет расхода пара для нагрева воздуха",
+              hiddenText: "Вычисление расхода пара по тепловой мощности",
             },
             {
               name: "Расчет паровых калориферов",
               url: "/podbor-raschet-kaloriferov",
-              hiddenText: "Подбор паровых воздухонагревателей",
+              hiddenText: "Расчет температурного напора парового калорифера",
             },
           ]}
         />
       </section>
 
+      {/* Подбор размера паропровода */}
       <section className="space-y-4">
         <Heading lvl={2} text="Подбор размера паропровода" />
         <ProductParagraph>
@@ -973,6 +1023,24 @@ export default function ParoprovodPage() {
         </ProductParagraph>
       </section>
 
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Многорядные паровые секции",
+            url: "/podbor-raschet-kaloriferov#anchor12",
+            hiddenText: "Расход пара при многоступенчатом нагреве калориферами",
+          },
+          {
+            name: "Диаметр конденсатной линии",
+            url: "/kondensatoprovod",
+            hiddenText: "Определение диаметра конденсатного трубопровода",
+          },
+        ]}
+      />
+
+      <Separator />
+
+      {/* Таблица подбора диаметра паропровода */}
       <section className="space-y-4">
         <NumberedAnchor num={5} />
         <Heading lvl={2} text="Таблица подбора диаметра паропровода" />
@@ -1004,12 +1072,12 @@ export default function ParoprovodPage() {
             name: "Паровые воздухонагреватели",
             url: "/kalorifer-par",
             hiddenText:
-              "Модели паровых калориферов с теплоносителем водяной пар",
+              "Теплофизические параметры пара для расчета калориферов",
           },
           {
             name: "Производство калориферов",
             url: "/kalorifery",
-            hiddenText: "Производство водяных и паровых калориферов",
+            hiddenText: "Промышленные воздухонагреватели для шахт и рудников",
           },
         ]}
       />
