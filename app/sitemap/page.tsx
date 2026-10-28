@@ -234,8 +234,64 @@ const engineeringGroups = [
     items: [
       {
         type: "link",
+        name: "Водяные калориферы",
+        href: "/kalorifer-voda",
+      },
+      {
+        type: "link",
+        name: "Теплоноситель горячая и перегретая вода",
+        href: "/kalorifer-voda#anchor1",
+      },
+      {
+        type: "link",
         name: "Водяные калориферы для сушильных камер",
         href: "/kalorifer-sushilnaia-kamera",
+      },
+      {
+        type: "link",
+        name: "Технологический нагрев воздуха водой",
+        href: "/raschet-podbor-kaloriferov#anchor14",
+      },
+      {
+        type: "link",
+        name: "Компоновка многорядных установок",
+        href: "/kalorifer-blocks",
+      },
+      {
+        type: "accordion",
+        label: "Расчет и подбор водяных калориферов",
+        items: [
+          ["Расчет тепловой мощности", "/raschet-podbor-kaloriferov#anchor1"],
+          [
+            "Расчет площади фронтального сечения",
+            "/raschet-podbor-kaloriferov#anchor2",
+          ],
+          [
+            "Расчет массовой скорости воздуха",
+            "/raschet-podbor-kaloriferov#anchor3",
+          ],
+          ["Расчет расхода воды", "/raschet-podbor-kaloriferov#anchor4"],
+          [
+            "Расчет скорости теплоносителя",
+            "/raschet-podbor-kaloriferov#anchor5",
+          ],
+          [
+            "Расчет коэффициента теплопередачи",
+            "/koefficient-teploperedachi-kaloriferov",
+          ],
+          [
+            "Расчет среднего температурного напора",
+            "/raschet-podbor-kaloriferov#anchor7",
+          ],
+          [
+            "Расчет аэродинамического сопротивления",
+            "/koefficient-teploperedachi-kaloriferov#anchor1",
+          ],
+          [
+            "Расчет гидравлического сопротивления",
+            "/gidravlicheskoe-soprotivlenie-kaloriferov",
+          ],
+        ],
       },
     ],
   },
