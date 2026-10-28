@@ -103,7 +103,22 @@ export default function KaloriferBlocksPage() {
         </ul>
       </div>
 
-      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Калькулятор водяного ТО",
+            url: "/kalorifery-voda#anchor1",
+            hiddenText: "Калькулятор подбора водяного теплообменника",
+          },
+          {
+            name: "Конструкция водяного ТО",
+            url: "/kalorifer-voda",
+            hiddenText: "Конструкция водяного многоходового теплообменника",
+          },
+        ]}
+      />
+
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Физика многорядного нагрева в условиях технологического процесса */}
       <section className="space-y-4">
@@ -453,7 +468,23 @@ export default function KaloriferBlocksPage() {
         </section>
       </section>
 
-      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Аэродинамика водяного то",
+            url: "/koefficient-teploperedachi-kaloriferov#anchor1",
+            hiddenText:
+              "Аэродинамическое сопротивление водяного теплообменника",
+          },
+          {
+            name: "Гидравлика водяного то",
+            url: "/gidravlicheskoe-soprotivlenie-kaloriferov",
+            hiddenText: "Гидравлическое сопротивление водяного теплообменника",
+          },
+        ]}
+      />
+
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Параллельно-перекрестная схема воздухонагревательных блоков */}
       <section className="space-y-4">
@@ -909,7 +940,22 @@ export default function KaloriferBlocksPage() {
         </section>
       </section>
 
-      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Термический напор водяного ТО",
+            url: "/raschet-podbor-kaloriferov#anchor7",
+            hiddenText: "Температурный напор водяного теплообменника",
+          },
+          {
+            name: "Теплопередача водяного ТО",
+            url: "/koefficient-teploperedachi-kaloriferov",
+            hiddenText: "Теплопередача водяного оребренного теплообменника",
+          },
+        ]}
+      />
+
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Последовательная прямоточная схема вентиляционных секций */}
       <section className="space-y-4">
@@ -1344,7 +1390,24 @@ export default function KaloriferBlocksPage() {
         </section>
       </section>
 
-      <div className="bg-primary-dark/50 mx-auto my-4 h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
+      <LinkButtonsBlock
+        buttons={[
+          {
+            name: "Модели водяных ТО",
+            url: "/kalorifer-voda#anchor2",
+            hiddenText:
+              "Серийные модели водяных биметаллических теплообменников",
+          },
+          {
+            name: "Изготовление водяных ТО",
+            url: "/kalorifery",
+            hiddenText:
+              "Изготовление водяных спирально-накатных теплообменников",
+          },
+        ]}
+      />
+
+      <div className="bg-primary-dark/50 mx-auto h-1 w-2/3 rounded-full mask-[linear-gradient(to_right,transparent,black,transparent)]" />
 
       {/* Последовательная противоточная схема промышленных теплообменников */}
       <section className="space-y-4">
@@ -1966,15 +2029,21 @@ export default function KaloriferBlocksPage() {
           buttons={[
             {
               name: "Вода 95/70 °C",
-              url: "/",
+              url: "/kalorifer-sushilnaia-kamera",
+              hiddenText:
+                "Конвективная сушка сырья и материалов с водой 95/70 °C",
             },
             {
               name: "ВОДА 115/70 °C",
-              url: "/",
+              url: "/kalorifer-sushilnaia-kamera",
+              hiddenText:
+                "Конвективная сушка сырья и материалов с водой 115/70 °C",
             },
             {
               name: "ПАР 100-180 °C",
-              url: "/",
+              url: "/kalorifer-sushilnaia-kamera",
+              hiddenText:
+                "Конвективная сушка сырья и материалов с паром 100-180 °C",
             },
           ]}
         />
