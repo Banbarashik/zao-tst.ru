@@ -2032,18 +2032,21 @@ export default function KaloriferBlocksPage() {
               url: "/kalorifer-sushilnaia-kamera",
               hiddenText:
                 "Конвективная сушка сырья и материалов с водой 95/70 °C",
+              isNavigable: false,
             },
             {
               name: "ВОДА 115/70 °C",
               url: "/kalorifer-sushilnaia-kamera",
               hiddenText:
                 "Конвективная сушка сырья и материалов с водой 115/70 °C",
+              isNavigable: false,
             },
             {
               name: "ПАР 100-180 °C",
               url: "/kalorifer-sushilnaia-kamera",
               hiddenText:
                 "Конвективная сушка сырья и материалов с паром 100-180 °C",
+              isNavigable: false,
             },
           ]}
         />

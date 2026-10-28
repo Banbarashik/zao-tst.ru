@@ -479,6 +479,7 @@ export default function KoefficientTeploperedachiParovyhKaloriferovPage() {
                   name: "Подбор конденсатопровода",
                   url: "/kondensatoprovod",
                   hiddenText: "Таблица подбора диаметра конденсатопровода",
+                  isNavigable: false,
                 },
               ]}
               className="my-5"

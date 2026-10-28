@@ -80,6 +80,7 @@ export default function RaschetKaloriferovPage() {
             url: "/raschet-elektrokaloriferov",
             name: "Расчет ТО электро",
             hiddenText: "Поверочный расчет электрических калориферов",
+            isNavigable: false,
           },
         ]}
       />
@@ -411,6 +412,7 @@ export default function RaschetKaloriferovPage() {
               url: "/raschet-elektrokaloriferov#anchor1",
               name: "Электромощность",
               hiddenText: "Расчет мощности электрического калорифера",
+              isNavigable: false,
             },
           ]}
         />

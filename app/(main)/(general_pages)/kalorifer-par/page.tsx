@@ -421,6 +421,7 @@ export default function KaloriferParPage() {
               name: "Расчет конденсатопровода",
               hiddenText:
                 "Расчет и подбор диаметра труб для конденсатопроводов",
+              isNavigable: false,
             },
           ]}
         />

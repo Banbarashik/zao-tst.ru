@@ -1,9 +1,5 @@
-import React from "react";
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
-
-import { ArrowBigDownDash } from "lucide-react";
 
 import { getLegacyHtml, getLegacyHtmls } from "@/lib/legacyHtml";
 
@@ -13,7 +9,7 @@ import LinkButtonsBlock from "@/components/linkButtonsBlock";
 import LegacyHtml from "@/components/legacyHtml";
 import { NumberedAnchor } from "@/components/utils/anchor/numbered";
 import { Separator } from "@/components/ui/separator";
-import { LEFT_BLUE_BRACKET, LEFT_PRIMARY_BRACKET } from "@/constants/styles";
+import { LEFT_PRIMARY_BRACKET } from "@/constants/styles";
 import {
   HydraulicResistanceTable,
   KskComparisonTable,
@@ -102,10 +98,11 @@ export default async function GidravlicheskoeSoprotivlenieKaloriferovPage() {
               сопряжения теплообменного модуля с внешними трубопроводами
               гидравлической сети здания или технологической установки.
               Номинальный диаметр патрубков (Ду 25, 32, 40, 50, 65 мм) или
-              штуцеров (1'', 1<sup>{1}</sup>/<sub>{4}</sub>'', 1<sup>{1}</sup>/
-              <sub>{2}</sub>'', 2'', 2<sup>{1}</sup>/<sub>{2}</sub>'') напрямую
-              определяется общей производительностью аппарата и расчетным
-              расходом прокачиваемого теплоносителя.
+              штуцеров (1{"''"}, 1<sup>{1}</sup>/<sub>{4}</sub>
+              {"''"}, 1<sup>{1}</sup>/<sub>{2}</sub>
+              {"''"}, 2{"''"}, 2<sup>{1}</sup>/<sub>{2}</sub>
+              {"''"}) напрямую определяется общей производительностью аппарата и
+              расчетным расходом прокачиваемого теплоносителя.
             </li>
             <li className="mb-4 space-y-4">
               <p>

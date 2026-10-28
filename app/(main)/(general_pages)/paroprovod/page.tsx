@@ -1034,6 +1034,7 @@ export default function ParoprovodPage() {
             name: "Диаметр конденсатной линии",
             url: "/kondensatoprovod",
             hiddenText: "Определение диаметра конденсатного трубопровода",
+            isNavigable: false,
           },
         ]}
       />

@@ -1037,8 +1037,9 @@ export default async function PodborRaschetKaloriferovPage() {
             },
             {
               name: "Подбор конденсатопровода",
-              url: "/kondensatoprovod#anchor2",
+              url: "/kondensatoprovod",
               hiddenText: "Калькулятор расчета диаметра конденсатопровода",
+              isNavigable: false,
             },
           ]}
         />
