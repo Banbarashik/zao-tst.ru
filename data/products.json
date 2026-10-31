@@ -11101,13 +11101,13 @@
     },
     "frontView": {
       "url": "/img/kalorifery/kp/kalorifer_kp_412_front_view.png",
-      "width": 1000,
-      "height": 900
+      "width": 1333,
+      "height": 1200
     },
     "parts": {
       "url": "/img/kalorifery/kp/kalorifer_kp_412_parts.png",
-      "width": 1000,
-      "height": 900
+      "width": 1333,
+      "height": 1200
     },
     "drawing": "/img/kalorifery/kp/kalorifer_kp_412_chertez.png",
     "tableWithTabs": "/legacy/table-kp-412.html",
@@ -11134,6 +11134,16 @@
       "url": "/img/kalorifery/kp/kalorifer_kp_411.png",
       "alt": "Воздухонагреватель КП 411",
       "title": "Калорифер КП 411 паровой"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_411_front_view.png",
+      "width": 1333,
+      "height": 1200
+    },
+    "parts": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_411_parts.png",
+      "width": 1000,
+      "height": 900
     },
     "drawing": "/img/kalorifery/kp/kalorifer_kp_411_chertez.png",
     "tableWithTabs": "/legacy/table-kp-411.html",
@@ -11163,6 +11173,16 @@
       "alt": "Воздухонагреватель КП 410",
       "title": "Калорифер КП 410 паровой"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_410_front_view.png",
+      "width": 2000,
+      "height": 1800
+    },
+    "parts": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_410_parts.png",
+      "width": 1333,
+      "height": 1200
+    },
     "drawing": "/img/kalorifery/kp/kalorifer_kp_410_chertez.png",
     "tableWithTabs": "/legacy/table-kp-410.html",
     "specsTableValues": [
@@ -11190,6 +11210,16 @@
       "url": "/img/kalorifery/kp/kalorifer_kp_406_410.png",
       "alt": "Воздухонагреватель КП 409",
       "title": "Калорифер КП 409 паровой"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_409_front_view.png",
+      "width": 4000,
+      "height": 3000
+    },
+    "parts": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_409_parts.png",
+      "width": 1333,
+      "height": 1000
     },
     "drawing": "/img/kalorifery/kp/kalorifer_kp_409_chertez.png",
     "tableWithTabs": "/legacy/table-kp-409.html",
@@ -11233,6 +11263,16 @@
       "alt": "Воздухонагреватель КП 408",
       "title": "Калорифер КП 408 паровой"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_408_front_view.png",
+      "width": 4000,
+      "height": 2600
+    },
+    "parts": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_408_parts.png",
+      "width": 1333,
+      "height": 867
+    },
     "drawing": "/img/kalorifery/kp/kalorifer_kp_408_chertez.png",
     "tableWithTabs": "/legacy/table-kp-408.html",
     "specsTableValues": [
@@ -11261,6 +11301,16 @@
       "alt": "Воздухонагреватель КП 407",
       "title": "Калорифер КП 407 паровой"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_407_front_view.png",
+      "width": 4000,
+      "height": 2400
+    },
+    "parts": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_407_parts.png",
+      "width": 1333,
+      "height": 800
+    },
     "drawing": "/img/kalorifery/kp/kalorifer_kp_407_chertez.png",
     "tableWithTabs": "/legacy/table-kp-407.html",
     "specsTableValues": [
@@ -11288,6 +11338,16 @@
       "url": "/img/kalorifery/kp/kalorifer_kp_406_410.png",
       "alt": "Воздухонагреватель КП 406",
       "title": "Калорифер КП 406 паровой"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_406_front_view.png",
+      "width": 4000,
+      "height": 2000
+    },
+    "parts": {
+      "url": "/img/kalorifery/kp/kalorifer_kp_406_parts.png",
+      "width": 1333,
+      "height": 667
     },
     "drawing": "/img/kalorifery/kp/kalorifer_kp_406_chertez.png",
     "tableWithTabs": "/legacy/table-kp-406.html",
