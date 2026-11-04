@@ -5561,6 +5561,16 @@
       "alt": "Воздухонагреватель КФБ-14 А3 М",
       "title": "Калорифер КФБ-14 А3 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-14_a3_m_front_view.png",
+      "width": 1000,
+      "height": 750
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-14_a3_m_parts.png",
+      "width": 2000,
+      "height": 1500
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_14-a3_m.html",
     "specsTableValues": [
@@ -5593,6 +5603,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_10_14.png",
       "alt": "Воздухонагреватель КФБ-13 А3 М",
       "title": "Калорифер КФБ-13 А3 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-13_a3_m_front_view.png",
+      "width": 1000,
+      "height": 750
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-13_a3_m_parts.png",
+      "width": 2000,
+      "height": 1500
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_13-a3_m.html",
@@ -5628,6 +5648,16 @@
       "alt": "Воздухонагреватель КФБ-12 А3 М",
       "title": "Калорифер КФБ-12 А3 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-12_a3_m_front_view.png",
+      "width": 1000,
+      "height": 700
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-12_a3_m_parts.png",
+      "width": 2000,
+      "height": 1400
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_12-a3_m.html",
     "specsTableValues": [
@@ -5662,6 +5692,16 @@
       "alt": "Воздухонагреватель КФБ-11 А3 М",
       "title": "Калорифер КФБ-11 А3 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-11_a3_m_front_view.png",
+      "width": 1000,
+      "height": 700
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-11_a3_m_parts.png",
+      "width": 2000,
+      "height": 1400
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_11-a3_m.html",
     "specsTableValues": [
@@ -5695,6 +5735,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_10_14.png",
       "alt": "Воздухонагреватель КФБ-10 А3 М",
       "title": "Калорифер КФБ-10 А3 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-10_a3_m_front_view.png",
+      "width": 1000,
+      "height": 650
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-10_a3_m_parts.png",
+      "width": 2000,
+      "height": 1300
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_10-a3_m.html",
@@ -5748,6 +5798,16 @@
       "alt": "Воздухонагреватель КФБ-9 А3 М",
       "title": "Калорифер КФБ-9 А3 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-9_a3_m_front_view.png",
+      "width": 1000,
+      "height": 650
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-9_a3_m_parts.png",
+      "width": 2000,
+      "height": 1300
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_9-a3_m.html",
     "specsTableValues": [
@@ -5781,6 +5841,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_7_9.png",
       "alt": "Воздухонагреватель КФБ-8 А3 М",
       "title": "Калорифер КФБ-8 А3 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-8_a3_m_front_view.png",
+      "width": 1000,
+      "height": 600
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-8_a3_m_parts.png",
+      "width": 2000,
+      "height": 1200
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_8-a3_m.html",
@@ -5816,6 +5886,16 @@
       "alt": "Воздухонагреватель КФБ-7 А3 М",
       "title": "Калорифер КФБ-7 А3 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-7_a3_m_front_view.png",
+      "width": 1333,
+      "height": 800
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-7_a3_m_parts.png",
+      "width": 2000,
+      "height": 1200
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_7-a3_m.html",
     "specsTableValues": [
@@ -5849,6 +5929,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_2_6.png",
       "alt": "Воздухонагреватель КФБ-6 А3 М",
       "title": "Калорифер КФБ-6 А3 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-6_a3_m_front_view.png",
+      "width": 2000,
+      "height": 1100
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-6_a3_m_parts.png",
+      "width": 2000,
+      "height": 1100
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_6-a3_m.html",
@@ -5884,6 +5974,16 @@
       "alt": "Воздухонагреватель КФБ-5 А3 М",
       "title": "Калорифер КФБ-5 А3 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-5_a3_m_front_view.png",
+      "width": 2000,
+      "height": 1100
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-5_a3_m_parts.png",
+      "width": 2000,
+      "height": 1100
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_5-a3_m.html",
     "specsTableValues": [
@@ -5917,6 +6017,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_2_6.png",
       "alt": "Воздухонагреватель КФБ-4 А3 М",
       "title": "Калорифер КФБ-4 А3 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-4_a3_m_front_view.png",
+      "width": 1000,
+      "height": 500
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-4_a3_m_parts.png",
+      "width": 2000,
+      "height": 1000
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_4-a3_m.html",
@@ -5952,6 +6062,16 @@
       "alt": "Воздухонагреватель КФБ-3 А3 М",
       "title": "Калорифер КФБ-3 А3 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-3_a3_m_front_view.png",
+      "width": 1333,
+      "height": 667
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-3_a3_m_parts.png",
+      "width": 2000,
+      "height": 1000
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_3-a3_m.html",
     "specsTableValues": [
@@ -5985,6 +6105,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_2_6.png",
       "alt": "Воздухонагреватель КФБ-2 А3 М",
       "title": "Калорифер КФБ-2 А3 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-2_a3_m_front_view.png",
+      "width": 1333,
+      "height": 600
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-2_a3_m_parts.png",
+      "width": 2000,
+      "height": 900
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a3_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_2-a3_m.html",
@@ -6020,6 +6150,16 @@
       "alt": "Воздухонагреватель КФБ-14 А4 М",
       "title": "Калорифер КФБ-14 А4 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-14_a4_m_front_view.png",
+      "width": 1000,
+      "height": 750
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-14_a4_m_parts.png",
+      "width": 2000,
+      "height": 1500
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_14-a4_m.html",
     "specsTableValues": [
@@ -6053,6 +6193,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_10_14.png",
       "alt": "Воздухонагреватель КФБ-13 А4 М",
       "title": "Калорифер КФБ-13 А4 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-13_a4_m_front_view.png",
+      "width": 1000,
+      "height": 750
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-13_a4_m_parts.png",
+      "width": 1333,
+      "height": 1000
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_13-a4_m.html",
@@ -6106,6 +6256,16 @@
       "alt": "Воздухонагреватель КФБ-12 А4 М",
       "title": "Калорифер КФБ-12 А4 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-12_a4_m_front_view.png",
+      "width": 1333,
+      "height": 933
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-12_a4_m_parts.png",
+      "width": 1333,
+      "height": 933
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_12-a4_m.html",
     "specsTableValues": [
@@ -6139,6 +6299,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_10_14.png",
       "alt": "Воздухонагреватель КФБ-11 А4 М",
       "title": "Калорифер КФБ-11 А4 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-11_a4_m_front_view.png",
+      "width": 1333,
+      "height": 933
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-11_a4_m_parts.png",
+      "width": 1333,
+      "height": 933
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_11-a4_m.html",
@@ -6176,13 +6346,13 @@
     },
     "frontView": {
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-10_a4_m_front_view.png",
-      "width": 1000,
-      "height": 650
+      "width": 1333,
+      "height": 867
     },
     "parts": {
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-10_a4_m_parts.png",
-      "width": 1000,
-      "height": 650
+      "width": 1333,
+      "height": 867
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_10-a4_m.html",
@@ -6236,6 +6406,16 @@
       "alt": "Воздухонагреватель КФБ-9 А4 М",
       "title": "Калорифер КФБ-9 А4 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-9_a4_m_front_view.png",
+      "width": 1333,
+      "height": 867
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-9_a4_m_parts.png",
+      "width": 2000,
+      "height": 1300
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_9-a4_m.html",
     "specsTableValues": [
@@ -6269,6 +6449,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_7_9.png",
       "alt": "Воздухонагреватель КФБ-8 А4 М",
       "title": "Калорифер КФБ-8 А4 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-8_a4_m_front_view.png",
+      "width": 2000,
+      "height": 1200
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-8_a4_m_parts.png",
+      "width": 2000,
+      "height": 1200
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_8-a4_m.html",
@@ -6322,6 +6512,16 @@
       "alt": "Воздухонагреватель КФБ-7 А4 М",
       "title": "Калорифер КФБ-7 А4 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-7_a4_m_front_view.png",
+      "width": 2000,
+      "height": 1200
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-7_a4_m_parts.png",
+      "width": 2000,
+      "height": 1200
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_7-a4_m.html",
     "specsTableValues": [
@@ -6356,6 +6556,16 @@
       "alt": "Воздухонагреватель КФБ-6 А4 М",
       "title": "Калорифер КФБ-6 А4 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-6_a4_m_front_view.png",
+      "width": 2000,
+      "height": 1100
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-6_a4_m_parts.png",
+      "width": 2000,
+      "height": 1100
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_6-a4_m.html",
     "specsTableValues": [
@@ -6389,6 +6599,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_2_6.png",
       "alt": "Воздухонагреватель КФБ-5 А4 М",
       "title": "Калорифер КФБ-5 А4 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-5_a4_m_front_view.png",
+      "width": 2000,
+      "height": 1100
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-5_a4_m_parts.png",
+      "width": 2000,
+      "height": 1100
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_5-a4_m.html",
@@ -6442,6 +6662,16 @@
       "alt": "Воздухонагреватель КФБ-4 А4 М",
       "title": "Калорифер КФБ-4 А4 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-4_a4_m_front_view.png",
+      "width": 1333,
+      "height": 667
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-4_a4_m_parts.png",
+      "width": 2000,
+      "height": 1000
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_4-a4_m.html",
     "specsTableValues": [
@@ -6494,6 +6724,16 @@
       "alt": "Воздухонагреватель КФБ-3 А4 М",
       "title": "Калорифер КФБ-3 А4 водяной"
     },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-3_a4_m_front_view.png",
+      "width": 2000,
+      "height": 1000
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-3_a4_m_parts.png",
+      "width": 2000,
+      "height": 1000
+    },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_3-a4_m.html",
     "specsTableValues": [
@@ -6545,6 +6785,16 @@
       "url": "/img/kalorifery/kfb-m/kalorifer_kfb-m_2_6.png",
       "alt": "Воздухонагреватель КФБ-2 А4 М",
       "title": "Калорифер КФБ-2 А4 водяной"
+    },
+    "frontView": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-2_a4_m_front_view.png",
+      "width": 1333,
+      "height": 600
+    },
+    "parts": {
+      "url": "/img/kalorifery/kfb-m/kalorifer_kfb-2_a4_m_parts.png",
+      "width": 2000,
+      "height": 900
     },
     "drawing": "/img/kalorifery/kfb-m/kalorifer_kfb_a4_m_chertez.png",
     "tableWithTabs": "/legacy/table-kfb_2-a4_m.html",
