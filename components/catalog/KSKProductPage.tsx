@@ -149,6 +149,8 @@ export default async function KSKProductPage({
   const isCalorifier = product.categories.includes("kalorifer");
   const isAgregat = product.categories.includes("agregaty");
   const isKFB = product.categories.includes("kfb");
+  const isTVV = product.categories.includes("tvv");
+  const isKP = product.categories.includes("kp");
   const isWater = product.heatCarrier === "water";
 
   const categories = ["ksk", "kpsk", "tvv", "kp", "kfb", "ao2"];
@@ -218,6 +220,32 @@ export default async function KSKProductPage({
       goal: "open_pdf",
     },
   ];
+
+  let frontViewAlt = "";
+  let frontViewTitle = "";
+  let partsAlt = "";
+  let partsTitle = "";
+
+  if (isAgregat) {
+    frontViewAlt = `${capitalizeFirst(heatCarrierAdj.nom)} воздушный агрегат ${product.shortName} ${product.rows === 3 ? "трехрядный" : "четырехрядный"}`;
+    frontViewTitle = `Агрегат ${product.model} ${heatCarrierAdj.nom}`;
+    partsAlt = `Воздушно-отопительный агрегат ${product.shortName} ${product.calorifier} ${heatCarrierAdj.nom}`;
+    partsTitle = `${capitalizeFirst(heatCarrierAdj.nom)} отопительный агрегат ${product.model}`;
+  }
+  if (isKFB) {
+    frontViewAlt = `Воздухонагреватель ${product.shortName} ${heatCarrierAdj.nom} биметаллический`;
+    frontViewTitle = product.name;
+    partsAlt = `${product.name} для секций и блоков`;
+    partsTitle = `Калорифер ${heatCarrierAdj.nom} ${product.shortName}`;
+  }
+  if (isTVV || isKP) {
+    const size = `${product.rows}${product.size < 10 ? "0" + product.size : product.size}`;
+
+    frontViewAlt = `Воздухонагреватель ${product.series} ${isTVV ? "(ВНВ 113…22 ХЛ)" : "(ВНП 113…22 ХЛ)"} ${size} ${heatCarrierAdj.nom}`;
+    frontViewTitle = product.name;
+    partsAlt = `${product.name} с увеличенным диаметром трубок`;
+    partsTitle = `Калорифер ${heatCarrierAdj.nom} ${product.shortName}`;
+  }
 
   return (
     <article className="@container w-full lg:overflow-x-auto">
@@ -396,16 +424,8 @@ export default async function KSKProductPage({
               <Image
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 src={product.frontView.url}
-                alt={
-                  isCalorifier
-                    ? `Воздухонагреватель ${isKFB ? product.model : product.shortName} ${heatCarrierAdj.nom}`
-                    : `${capitalizeFirst(heatCarrierAdj.nom)} воздушный агрегат ${product.shortName} ${product.rows === 3 ? "трехрядный" : "четырехрядный"}`
-                }
-                title={
-                  isCalorifier
-                    ? product.name
-                    : `Агрегат ${product.model} ${heatCarrierAdj.nom}`
-                }
+                alt={frontViewAlt}
+                title={frontViewTitle}
                 fill
               />
             </div>
@@ -418,16 +438,8 @@ export default async function KSKProductPage({
               <Image
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 src={product.parts.url}
-                alt={
-                  isCalorifier
-                    ? `${product.name} чертеж`
-                    : `Воздушно-отопительный агрегат ${product.shortName} ${product.calorifier} ${heatCarrierAdj.nom}`
-                }
-                title={
-                  isCalorifier
-                    ? `Калорифер ${heatCarrierAdj.nom} ${isKFB ? product.model : product.shortName}`
-                    : `${capitalizeFirst(heatCarrierAdj.nom)} отопительный агрегат ${product.model}`
-                }
+                alt={partsAlt}
+                title={partsTitle}
                 fill
               />
             </div>
