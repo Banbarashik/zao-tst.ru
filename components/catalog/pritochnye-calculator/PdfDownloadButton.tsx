@@ -40,7 +40,7 @@ export function PdfDownloadButton({
     window.open(url, "_blank");
     // Небольшая задержка перед revoke — нужна, чтобы браузер
     // успел открыть вкладку до того, как URL станет недействительным
-    setTimeout(() => URL.revokeObjectURL(url), 10_000);
+    // setTimeout(() => URL.revokeObjectURL(url), 10_000);
   }
 
   return (
